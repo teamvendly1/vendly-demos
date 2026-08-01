@@ -174,23 +174,6 @@ footer li{margin-bottom:10px}
 footer li a{display:inline-block;padding:4px 0}
 .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8FA8C6}
 
-/* concierge */
-#cg-launch{position:fixed;right:20px;bottom:20px;z-index:120;display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;border:0;cursor:pointer;font:700 15px/1 Inter,sans-serif;padding:16px 21px;border-radius:999px;box-shadow:0 16px 34px -14px rgba(200,32,46,.85)}
-#cg-launch:hover{background:#a91a26}
-#cg-panel{position:fixed;right:20px;bottom:20px;z-index:130;width:min(376px,calc(100vw - 32px));background:#fff;border-radius:18px;box-shadow:0 34px 70px -26px rgba(16,23,36,.55);border:1px solid var(--line);overflow:hidden;display:none}
-#cg-panel[data-open="1"]{display:block}
-.cg-top{background:var(--blue-dk);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:11px}
-.cg-top b{font-size:15.5px}
-.cg-top small{display:block;color:#A9C6EA;font-size:12.5px;font-weight:400}
-.cg-x{margin-left:auto;background:transparent;border:0;color:#fff;font-size:23px;cursor:pointer;line-height:1;min-width:44px;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
-.cg-body{padding:17px 18px;max-height:296px;overflow-y:auto;background:var(--mist)}
-.cg-msg{background:#fff;border:1px solid var(--line);border-radius:13px;padding:13px 15px;font-size:15px;margin-bottom:11px}
-.cg-msg.me{background:var(--blue);color:#fff;border-color:var(--blue);margin-left:34px}
-.cg-quick{display:flex;gap:8px;flex-wrap:wrap;padding:0 18px 15px;background:var(--mist)}
-.cg-q{font:600 13px/1 Inter,sans-serif;background:#fff;border:1px solid var(--line);color:var(--blue-dk);padding:9px 12px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;cursor:pointer}
-.cg-q:hover{border-color:var(--blue);color:var(--blue)}
-.cg-foot{padding:14px 18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
-
 /* mobile call bar */
 .mobile-callbar{display:none}.mobile-callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif}.mobile-callbar .mcb-est{background:#0E2A52}.mobile-callbar .mcb-call{background:var(--red)}
 
@@ -202,8 +185,6 @@ footer li a{display:inline-block;padding:4px 0}
 @media(max-width:640px){
   .mobile-callbar{display:flex;align-items:stretch;justify-content:stretch;gap:0;position:fixed;left:0;right:0;bottom:0;z-index:110;background:var(--blue-dk);color:#fff;min-height:52px;padding:0;box-shadow:0 -8px 24px -12px rgba(16,23,36,.45)}
   .bizmeta .btn{display:none}
-  #cg-launch{bottom:78px}
-  #cg-panel{bottom:78px}
   footer{padding-bottom:96px}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -467,69 +448,30 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </footer>
 
-<button id="cg-launch" aria-haspopup="dialog" aria-controls="cg-panel">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.4 8.4 0 0 1 4 11.5a8.5 8.5 0 0 1 8.5-8.5A8.4 8.4 0 0 1 21 11.5z"/></svg>
-  Ask a question
-</button>
-
-<div id="cg-panel" role="dialog" aria-modal="false" aria-labelledby="cg-title">
-  <div class="cg-top">
-    <div>
-      <b id="cg-title">RiverTown Cooling</b>
-      <small>Heating and air questions, any time. Or just call Luke.</small>
-    </div>
-    <button class="cg-x" id="cg-close" aria-label="Close">&times;</button>
-  </div>
-  <div class="cg-body" id="cg-body">
-    <div class="cg-msg">Hey, thanks for stopping by. Ask me about hours, what we work on, or getting Luke out to look at your system.</div>
-  </div>
-  <div class="cg-quick">
-    <button class="cg-q">Do you offer free estimates?</button>
-    <button class="cg-q">Do you do maintenance?</button>
-    <button class="cg-q">Can I get a second opinion?</button>
-    <button class="cg-q">What are your hours?</button>
-    <button class="cg-q">Do you come to Myrtle Beach?</button>
-    <button class="cg-q">My AC is not cooling</button>
-    <button class="cg-q">Can I get a quote?</button>
-    <button class="cg-q">I need to talk to Luke</button>
-  </div>
-  <div class="cg-foot">Preview mode. Live version passes names, numbers and emails straight to Luke. It never quotes a price and never promises a time, and you can call him direct on <a href="tel:+18432514307">(843) 251-4307</a> any time.</div>
-</div>
-
 <script>
 (function(){
-  var L=document.getElementById('cg-launch'),P=document.getElementById('cg-panel'),
-      X=document.getElementById('cg-close'),B=document.getElementById('cg-body');
-  function open(){P.setAttribute('data-open','1');L.style.display='none';}
-  function close(){P.removeAttribute('data-open');L.style.display='inline-flex';}
-  L.addEventListener('click',open); X.addEventListener('click',close);
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&P.getAttribute('data-open'))close();});
-  var A={
-    'Do you offer free estimates?':'Yes. Free estimates on system replacements, and if a repair could make more sense than a new system, Luke will give you a free estimate for that too.',
-    'Do you do maintenance?':'Yes. Maintenance and tune-ups are available to keep your system running efficiently and catch small problems early. Call (843) 251-4307 to get on the schedule.',
-    'Can I get a second opinion?':'Absolutely. If someone else told you that you need a whole new system, call (843) 251-4307 and Luke will take an honest look before you spend the money.',
-    'What are your hours?':'Regular hours are Monday to Friday, 8am to 4pm. Weekends and evenings, Luke still answers if it is urgent. Give him a ring on (843) 251-4307.',
-    'Do you come to Myrtle Beach?':'Yes. RiverTown covers Conway, Myrtle Beach and the surrounding Horry County area. If you are not sure you are in range, call and ask.',
-    'My AC is not cooling':'That is worth looking at quickly, especially in summer. Call (843) 251-4307, or leave your name and number and Luke will get back to you.',
-    'Can I get a quote?':'Sure. Use the quote form on this page, or call (843) 251-4307. Luke does the visit himself, so you are getting the numbers from the person doing the work.',
-    'I need to talk to Luke':'No problem, I will get out of your way. Luke Long, (843) 251-4307. He owns it and he does the work, so you are not being passed around.'
-  };
-  document.querySelectorAll('.cg-q').forEach(function(b){
-    b.addEventListener('click',function(){
-      var q=b.textContent;
-      B.insertAdjacentHTML('beforeend','<div class="cg-msg me">'+q+'</div>');
-      setTimeout(function(){
-        B.insertAdjacentHTML('beforeend','<div class="cg-msg">'+(A[q]||'Good question. Give Luke a call on (843) 251-4307 and he will sort you out.')+'</div>');
-        B.scrollTop=B.scrollHeight;
-      },380);
-      B.scrollTop=B.scrollHeight;
-    });
-  });
   document.getElementById('leadform').addEventListener('submit',function(e){
     e.preventDefault();
     alert('Preview only. On the live site this goes straight to Luke and is captured as a lead.');
   });
 })();
 </script>
+
+<script>
+  window.SiteAssistantConfig = {
+    tenantId: "rivertown",
+    endpoint: "https://vendly-jarvis.vercel.app",
+    name: "RiverTown Cooling",
+    greeting: "Hey, RiverTown Cooling. Ask me anything about heating or air and I will help where I can. If you would rather just talk to Luke, his number is (843) 251-4307 and he is the one who does the work.",
+    phone: "+18432514307",
+    sms: "+18432514307",
+    quoteUrl: "/#quote",
+    bookUrl: "/#quote",
+    contactUrl: "/#quote",
+    suggestions: ["Free estimates?", "Hours", "Myrtle Beach?", "My AC is not cooling", "Talk to Luke"],
+    accent: "#C8202E"
+  };
+</script>
+<script src="https://vendly-jarvis.vercel.app/siteassistant-v2.js" defer></script>
 </body>
 </html>
