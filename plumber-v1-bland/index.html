@@ -1,0 +1,237 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sample plumbing page | Preview by Vendly</title>
+<meta name="description" content="A sample mobile page Vendly builds for plumbing companies. Not a real business.">
+<style>
+  :root{
+    --ink:#14140F;
+    --paper:#FBFAF6;
+    --gold:#6A5A1E;
+    --gold-lift:#8A7526;
+    --line:#E3DFD2;
+    --muted:#5A5647;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  a{color:var(--gold)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px}
+
+  .previewbar{
+    background:var(--ink);color:#F6F1DF;font-size:13px;line-height:1.45;
+    padding:10px 20px;text-align:center;position:sticky;top:0;z-index:20;
+  }
+  .previewbar strong{color:#D9C169;font-weight:600}
+
+  header.site{padding:26px 0 18px;border-bottom:1px solid var(--line)}
+  .brandrow{display:flex;align-items:center;gap:12px}
+  .mark{width:44px;height:44px;flex:0 0 44px}
+  .bizname{font-size:21px;font-weight:700;letter-spacing:-.01em;margin:0}
+  .bizmeta{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+  .hero{padding:30px 0 26px}
+  .hero h2{font-size:29px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
+  .hero p{margin:0 0 22px;font-size:17px;color:var(--muted)}
+  .cta{display:flex;flex-direction:column;gap:10px}
+  .btn{
+    display:block;text-align:center;padding:15px 18px;border-radius:10px;
+    font-weight:600;font-size:17px;text-decoration:none;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--gold);color:#FFFDF5}
+  .btn-primary:hover{background:var(--gold-lift)}
+  .btn-secondary{background:transparent;color:var(--ink);border-color:var(--line)}
+
+  .trust{display:flex;flex-wrap:wrap;gap:8px 18px;padding:16px 0 24px;border-bottom:1px solid var(--line)}
+  .trust span{display:flex;align-items:center;gap:7px;font-size:14px;color:var(--muted)}
+  .trust svg{flex:0 0 16px}
+
+  /* Photo slots stay as labelled placeholders on purpose. A sample page must not
+     borrow a real company's pictures, so nothing here is anyone's photograph. */
+  .shot{
+    position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--line);
+    aspect-ratio:16/10;
+    background:
+      repeating-linear-gradient(135deg,rgba(106,90,30,.055) 0 14px,rgba(106,90,30,0) 14px 28px),
+      linear-gradient(160deg,#EFEAD9 0%,#E2DBC4 55%,#D7CDB0 100%);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .shot .slotlabel{
+    font-size:13px;color:#6E6753;text-align:center;padding:0 22px;max-width:300px;
+  }
+  .shot .wm{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    transform:rotate(-19deg);pointer-events:none;
+  }
+  .shot .wm span{
+    font-size:15px;font-weight:700;letter-spacing:.22em;color:rgba(106,90,30,.30);
+    white-space:nowrap;
+  }
+  .shot .corner{
+    position:absolute;right:9px;bottom:8px;font-size:10px;letter-spacing:.1em;
+    color:rgba(20,20,15,.5);background:rgba(251,250,246,.82);padding:3px 7px;border-radius:5px;
+  }
+
+  section{padding:28px 0;border-bottom:1px solid var(--line)}
+  h3{font-size:20px;margin:0 0 6px;letter-spacing:-.01em}
+  .lede{margin:0 0 18px;color:var(--muted);font-size:15px}
+
+  ul.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:10px}
+  ul.svc li{
+    border:1px solid var(--line);border-radius:10px;padding:13px 15px;background:#fff;
+  }
+  ul.svc strong{display:block;font-size:15px}
+  ul.svc small{color:var(--muted);font-size:13.5px}
+  @media (min-width:520px){ul.svc{grid-template-columns:1fr 1fr}}
+
+  .areas{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+  .areas li{
+    font-size:13.5px;border:1px solid var(--line);border-radius:999px;
+    padding:6px 13px;background:#fff;color:var(--muted);
+  }
+
+  blockquote{
+    margin:0 0 12px;padding:14px 16px;background:#fff;border:1px solid var(--line);
+    border-left:3px solid var(--gold);border-radius:0 10px 10px 0;font-size:15px;
+  }
+  blockquote footer{margin-top:6px;font-size:13px;color:var(--muted)}
+
+  form{display:grid;gap:12px}
+  label{font-size:14px;font-weight:600;display:block;margin-bottom:5px}
+  input,textarea{
+    width:100%;padding:12px 13px;font:inherit;font-size:16px;color:var(--ink);
+    background:#fff;border:1px solid var(--line);border-radius:9px;
+  }
+  .formnote{font-size:13px;color:var(--muted);margin:0}
+
+  footer.site{padding:26px 0 40px;font-size:13px;color:var(--muted);text-align:center}
+  footer.site .stamp{font-weight:600;color:var(--gold)}
+</style>
+</head>
+<body>
+
+<div class="previewbar">
+  <strong>Sample page by Vendly.</strong> Not a real company. Yours would use your name, your photos, and your area.
+</div>
+
+<div class="wrap">
+
+  <header class="site">
+    <div class="brandrow">
+      <svg class="mark" viewBox="0 0 44 44" role="img" aria-label="Sample company logo mark">
+        <rect width="44" height="44" rx="11" fill="#6A5A1E"></rect>
+        <path d="M12 14 L22 31 L32 14" fill="none" stroke="#FBFAF6" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <div>
+        <h1 class="bizname">Your Plumbing Company</h1>
+        <p class="bizmeta">Licensed plumber, your city</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h2>Burst pipe at 11pm? Somebody actually picks up.</h2>
+    <p>Same day repairs, water heaters, and drains. Straight pricing before the work starts.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#quote">Get a quote</a>
+      <a class="btn btn-secondary" href="#quote">Call now</a>
+    </div>
+  </div>
+
+  <div class="trust" aria-label="What this business stands behind">
+    <span>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Licensed and insured
+    </span>
+    <span>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Price before we start
+    </span>
+    <span>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      Emergency callouts
+    </span>
+  </div>
+
+  <section aria-label="Photo placement">
+    <div class="shot">
+      <p class="slotlabel">Your work photo goes here. Most plumbers already have these on their phone.</p>
+      <div class="wm" aria-hidden="true"><span>PREVIEW BY VENDLY</span></div>
+      <span class="corner">SAMPLE</span>
+    </div>
+  </section>
+
+  <section>
+    <h3>What you do</h3>
+    <p class="lede">Six is usually the right number. People scan, they do not read.</p>
+    <ul class="svc">
+      <li><strong>Emergency repairs</strong><small>Leaks, burst pipes, no hot water</small></li>
+      <li><strong>Water heaters</strong><small>Repair, replace, tankless</small></li>
+      <li><strong>Drains and sewer</strong><small>Clearing, camera, root cutting</small></li>
+      <li><strong>Repipes</strong><small>Whole house, PEX or copper</small></li>
+      <li><strong>Fixtures</strong><small>Toilets, taps, disposals</small></li>
+      <li><strong>Inspections</strong><small>Pre purchase and annual checks</small></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Where you work</h3>
+    <p class="lede">Naming the neighborhoods is what gets you found in local search.</p>
+    <ul class="areas">
+      <li>Your city</li><li>Neighborhood one</li><li>Neighborhood two</li>
+      <li>Neighborhood three</li><li>Surrounding county</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>What people say</h3>
+    <p class="lede">Sample wording. Yours would be your real reviews, pulled across from Google.</p>
+    <blockquote>
+      Came out the same evening and had the hot water back on before nine.
+      <footer>Sample review placement</footer>
+    </blockquote>
+    <blockquote>
+      Told me the price up front and it did not change.
+      <footer>Sample review placement</footer>
+    </blockquote>
+  </section>
+
+  <section id="quote">
+    <h3>Request a quote</h3>
+    <p class="lede">On the real page this lands in your inbox and texts your phone.</p>
+    <form onsubmit="return false;" aria-describedby="quotenote">
+      <div>
+        <label for="q-name">Name</label>
+        <input id="q-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+      </div>
+      <div>
+        <label for="q-phone">Phone</label>
+        <input id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you">
+      </div>
+      <div>
+        <label for="q-job">What is going on</label>
+        <textarea id="q-job" name="job" rows="3" placeholder="Water heater, leak, blocked drain"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Send it</button>
+      <p class="formnote" id="quotenote">This sample form does not send anything. It is here to show the layout.</p>
+    </form>
+  </section>
+
+  <footer class="site">
+    <p class="stamp">Preview by Vendly - vendly.ink</p>
+    <p>Sample page, not a real business and not a live site. Built to show what your page would look like on a phone.</p>
+  </footer>
+
+</div>
+</body>
+</html>
+

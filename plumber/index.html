@@ -1,237 +1,484 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Sample plumbing page | Preview by Vendly</title>
-<meta name="description" content="A sample mobile page Vendly builds for plumbing companies. Not a real business.">
+<meta name="description" content="A sample mobile page Vendly builds for plumbing companies. Not a real business, not a live site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#14140F;
     --paper:#FBFAF6;
     --gold:#6A5A1E;
     --gold-lift:#8A7526;
+    --gold-soft:#D9C169;
     --line:#E3DFD2;
     --muted:#5A5647;
+    --radius:14px;
+    --shadow:0 10px 26px -14px rgba(20,20,15,.28);
+    --shadow-lg:0 22px 46px -20px rgba(20,20,15,.34);
   }
   *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
   body{
     margin:0;
     background:var(--paper);
     color:var(--ink);
-    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   }
+  h1,h2,h3,.wordmark{font-family:Fraunces,Georgia,serif}
   a{color:var(--gold)}
-  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
+    outline:3px solid var(--gold);outline-offset:3px;border-radius:4px;
+  }
+  img{max-width:100%;display:block}
   .wrap{max-width:640px;margin:0 auto;padding:0 20px}
 
-  .previewbar{
-    background:var(--ink);color:#F6F1DF;font-size:13px;line-height:1.45;
-    padding:10px 20px;text-align:center;position:sticky;top:0;z-index:20;
+  .skiplink{
+    position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;
+    padding:10px 16px;z-index:100;border-radius:0 0 8px 0;
   }
-  .previewbar strong{color:#D9C169;font-weight:600}
+  .skiplink:focus{left:0}
 
-  header.site{padding:26px 0 18px;border-bottom:1px solid var(--line)}
-  .brandrow{display:flex;align-items:center;gap:12px}
-  .mark{width:44px;height:44px;flex:0 0 44px}
-  .bizname{font-size:21px;font-weight:700;letter-spacing:-.01em;margin:0}
-  .bizmeta{margin:2px 0 0;font-size:13px;color:var(--muted)}
+  .previewbar{
+    background:var(--ink);color:#F6F1DF;font-size:12.5px;line-height:1.45;
+    padding:9px 20px;text-align:center;position:sticky;top:0;z-index:40;
+  }
+  .previewbar strong{color:var(--gold-soft);font-weight:600}
 
-  .hero{padding:30px 0 26px}
-  .hero h2{font-size:29px;line-height:1.2;letter-spacing:-.02em;margin:0 0 12px}
-  .hero p{margin:0 0 22px;font-size:17px;color:var(--muted)}
+  /* header */
+  header.site{padding:18px 0}
+  .brandrow{display:flex;align-items:center;gap:11px}
+  .mark{width:38px;height:38px;flex:0 0 38px}
+  .wordmark{font-size:19px;font-weight:700;letter-spacing:-.01em;margin:0;line-height:1.15}
+  .bizmeta{margin:1px 0 0;font-size:12.5px;color:var(--muted)}
+
+  /* hero: full-bleed photo */
+  .hero{
+    position:relative;overflow:hidden;min-height:78vh;
+    display:flex;align-items:flex-end;
+  }
+  .hero img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+    background:linear-gradient(160deg,#3a3324 0%,#242015 60%,#14140F 100%);
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(0deg,rgba(14,13,8,.88) 0%,rgba(14,13,8,.55) 42%,rgba(14,13,8,.15) 70%,rgba(14,13,8,.05) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;padding:34px 20px 26px;color:#FBFAF6;width:100%}
+  .hero-inner .wrap{padding:0}
+  .hero h1{font-size:32px;line-height:1.14;letter-spacing:-.02em;margin:0 0 12px;max-width:20ch}
+  .hero p{margin:0 0 22px;font-size:16.5px;color:#EDE8D8;max-width:36ch}
+  .heroshot-tag{
+    position:absolute;z-index:2;left:20px;bottom:calc(100% + 0px);display:none;
+  }
+
   .cta{display:flex;flex-direction:column;gap:10px}
   .btn{
-    display:block;text-align:center;padding:15px 18px;border-radius:10px;
-    font-weight:600;font-size:17px;text-decoration:none;border:1px solid transparent;
+    display:block;text-align:center;padding:15px 18px;border-radius:11px;
+    font-weight:600;font-size:16.5px;text-decoration:none;border:1px solid transparent;
+    box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease;
   }
+  .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
   .btn-primary{background:var(--gold);color:#FFFDF5}
   .btn-primary:hover{background:var(--gold-lift)}
-  .btn-secondary{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-secondary{background:rgba(251,250,246,.08);color:#FBFAF6;border-color:rgba(251,250,246,.45);backdrop-filter:blur(2px)}
+  .btn-onlight{background:transparent;color:var(--ink);border-color:var(--line);box-shadow:none}
 
-  .trust{display:flex;flex-wrap:wrap;gap:8px 18px;padding:16px 0 24px;border-bottom:1px solid var(--line)}
-  .trust span{display:flex;align-items:center;gap:7px;font-size:14px;color:var(--muted)}
-  .trust svg{flex:0 0 16px}
+  /* trust strip */
+  .trust{
+    display:flex;flex-wrap:wrap;gap:10px 16px;padding:18px 0;margin-top:-4px;
+  }
+  .trust span{
+    display:flex;align-items:center;gap:7px;font-size:13.5px;color:var(--muted);
+    background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 12px;
+    box-shadow:var(--shadow);
+  }
+  .trust svg{flex:0 0 15px}
 
-  /* Photo slots stay as labelled placeholders on purpose. A sample page must not
-     borrow a real company's pictures, so nothing here is anyone's photograph. */
+  section{padding:32px 0}
+  .section-tight{padding-top:8px}
+  h2{font-size:23px;margin:0 0 6px;letter-spacing:-.01em}
+  h3{font-size:16px;margin:0 0 4px}
+  .lede{margin:0 0 20px;color:var(--muted);font-size:15px;max-width:42ch}
+
+  /* photo containers: watermarked, graceful if the image fails */
   .shot{
-    position:relative;overflow:hidden;border-radius:12px;border:1px solid var(--line);
-    aspect-ratio:16/10;
+    position:relative;overflow:hidden;border-radius:var(--radius);
+    box-shadow:var(--shadow-lg);aspect-ratio:4/3;
+  }
+  .shot img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
     background:
-      repeating-linear-gradient(135deg,rgba(106,90,30,.055) 0 14px,rgba(106,90,30,0) 14px 28px),
+      repeating-linear-gradient(135deg,rgba(106,90,30,.10) 0 14px,rgba(106,90,30,0) 14px 28px),
       linear-gradient(160deg,#EFEAD9 0%,#E2DBC4 55%,#D7CDB0 100%);
-    display:flex;align-items:center;justify-content:center;
   }
-  .shot .slotlabel{
-    font-size:13px;color:#6E6753;text-align:center;padding:0 22px;max-width:300px;
-  }
+  .shot .scrim{position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,20,15,.42) 0%,rgba(20,20,15,0) 45%)}
   .shot .wm{
     position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    transform:rotate(-19deg);pointer-events:none;
+    transform:rotate(-18deg);pointer-events:none;
   }
   .shot .wm span{
-    font-size:15px;font-weight:700;letter-spacing:.22em;color:rgba(106,90,30,.30);
-    white-space:nowrap;
+    font-size:14px;font-weight:700;letter-spacing:.2em;color:rgba(251,250,246,.55);
+    text-shadow:0 1px 3px rgba(0,0,0,.35);white-space:nowrap;
   }
   .shot .corner{
-    position:absolute;right:9px;bottom:8px;font-size:10px;letter-spacing:.1em;
-    color:rgba(20,20,15,.5);background:rgba(251,250,246,.82);padding:3px 7px;border-radius:5px;
+    position:absolute;right:9px;bottom:9px;font-size:10px;letter-spacing:.1em;
+    color:rgba(20,20,15,.75);background:rgba(251,250,246,.88);padding:3px 8px;border-radius:5px;
+    font-weight:600;
+  }
+  .shot .caption{
+    position:absolute;left:10px;bottom:9px;font-size:11.5px;letter-spacing:.08em;
+    color:#FBFAF6;background:rgba(20,20,15,.55);padding:4px 10px;border-radius:999px;
+    text-transform:uppercase;font-weight:600;
   }
 
-  section{padding:28px 0;border-bottom:1px solid var(--line)}
-  h3{font-size:20px;margin:0 0 6px;letter-spacing:-.01em}
-  .lede{margin:0 0 18px;color:var(--muted);font-size:15px}
+  .hero-photo-credit{display:none}
 
   ul.svc{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:10px}
   ul.svc li{
-    border:1px solid var(--line);border-radius:10px;padding:13px 15px;background:#fff;
+    border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px;background:#fff;
+    box-shadow:var(--shadow);display:flex;gap:12px;align-items:flex-start;
+  }
+  ul.svc .icn{
+    flex:0 0 34px;width:34px;height:34px;border-radius:9px;background:#F1ECD9;
+    display:flex;align-items:center;justify-content:center;
   }
   ul.svc strong{display:block;font-size:15px}
-  ul.svc small{color:var(--muted);font-size:13.5px}
+  ul.svc small{color:var(--muted);font-size:13.5px;display:block;margin-top:2px}
   @media (min-width:520px){ul.svc{grid-template-columns:1fr 1fr}}
+
+  .ba-grid{display:grid;grid-template-columns:1fr;gap:14px}
+  .ba-grid .shot{aspect-ratio:5/4}
+  @media (min-width:560px){.ba-grid{grid-template-columns:1fr 1fr}}
 
   .areas{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
   .areas li{
     font-size:13.5px;border:1px solid var(--line);border-radius:999px;
-    padding:6px 13px;background:#fff;color:var(--muted);
+    padding:7px 14px;background:#fff;color:var(--muted);box-shadow:var(--shadow);
   }
 
+  .stars{display:flex;gap:3px;margin-bottom:9px}
   blockquote{
-    margin:0 0 12px;padding:14px 16px;background:#fff;border:1px solid var(--line);
-    border-left:3px solid var(--gold);border-radius:0 10px 10px 0;font-size:15px;
+    margin:0 0 14px;padding:16px 17px;background:#fff;border:1px solid var(--line);
+    border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;font-size:15px;
+    box-shadow:var(--shadow);
   }
-  blockquote footer{margin-top:6px;font-size:13px;color:var(--muted)}
+  blockquote footer{margin-top:8px;font-size:12.5px;color:var(--muted)}
 
-  form{display:grid;gap:12px}
+  /* recurring plan block */
+  .plans{
+    background:var(--ink);border-radius:18px;padding:26px 20px 24px;color:#F6F1DF;
+    box-shadow:var(--shadow-lg);
+  }
+  .plans h2{color:#fff}
+  .plans .lede{color:#C9C2A9}
+  .plancards{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+  @media (min-width:560px){.plancards{grid-template-columns:1fr 1fr}}
+  .plancard{
+    position:relative;border:1px solid rgba(246,241,223,.18);border-radius:13px;
+    padding:18px 16px 16px;background:rgba(251,250,246,.04);
+  }
+  .plancard.featured{border-color:var(--gold-soft);background:rgba(217,193,105,.08)}
+  .ribbon{
+    position:absolute;top:-11px;left:16px;background:var(--gold-soft);color:#1a1608;
+    font-size:11px;font-weight:700;letter-spacing:.06em;padding:4px 10px;border-radius:999px;
+    text-transform:uppercase;
+  }
+  .plancard .price{font-size:27px;font-weight:700;margin:6px 0 2px;font-family:Fraunces,Georgia,serif}
+  .plancard .price small{font-size:14px;font-weight:500;color:#C9C2A9}
+  .plancard p{margin:6px 0 0;font-size:14px;color:#DCD6C0}
+  .plans .fineprint{margin:16px 0 0;font-size:12.5px;color:#B7AF92}
+  .plans .btn-primary{margin-top:16px}
+
+  form{display:grid;gap:13px}
   label{font-size:14px;font-weight:600;display:block;margin-bottom:5px}
   input,textarea{
-    width:100%;padding:12px 13px;font:inherit;font-size:16px;color:var(--ink);
-    background:#fff;border:1px solid var(--line);border-radius:9px;
+    width:100%;padding:13px 14px;font:inherit;font-size:16px;color:var(--ink);
+    background:#fff;border:1px solid var(--line);border-radius:10px;
   }
-  .formnote{font-size:13px;color:var(--muted);margin:0}
+  .formnote{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+  .formcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow-lg)}
 
-  footer.site{padding:26px 0 40px;font-size:13px;color:var(--muted);text-align:center}
+  footer.site{padding:24px 0 96px;font-size:12.5px;color:var(--muted);text-align:center}
   footer.site .stamp{font-weight:600;color:var(--gold)}
+
+  /* sticky mobile call bar */
+  .callbar{
+    position:fixed;left:0;right:0;bottom:0;z-index:45;background:var(--ink);
+    display:flex;gap:10px;padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+    box-shadow:0 -10px 26px rgba(0,0,0,.22);
+  }
+  .callbar a{
+    flex:1;text-align:center;color:#FFFDF5;background:var(--gold);border-radius:10px;
+    padding:12px 10px;font-weight:600;font-size:15px;text-decoration:none;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+  }
+  .callbar a.secondary{background:rgba(251,250,246,.1);border:1px solid rgba(251,250,246,.35)}
+  @media (min-width:860px){
+    .callbar{display:none}
+  }
+  @media (max-width:859px){
+    body{padding-bottom:70px}
+  }
+
+  /* scroll reveal: default visible; only hides once JS confirms it can restore it */
+  .reveal{opacity:1;transform:none}
+  .js-reveal .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .js-reveal .reveal.inview{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{
+      animation-duration:.01ms !important;animation-iteration-count:1 !important;
+      transition-duration:.01ms !important;scroll-behavior:auto !important;
+    }
+    .reveal,.js-reveal .reveal{opacity:1 !important;transform:none !important}
+  }
 </style>
 </head>
 <body>
 
+<a class="skiplink" href="#main">Skip to main content</a>
+
 <div class="previewbar">
-  <strong>Sample page by Vendly.</strong> Not a real company. Yours would use your name, your photos, and your area.
+  <strong>Sample page by Vendly.</strong> Not a real company. Photos are royalty-free stock, watermarked so this cannot be lifted as a live site.
 </div>
 
-<div class="wrap">
-
-  <header class="site">
-    <div class="brandrow">
-      <svg class="mark" viewBox="0 0 44 44" role="img" aria-label="Sample company logo mark">
-        <rect width="44" height="44" rx="11" fill="#6A5A1E"></rect>
-        <path d="M12 14 L22 31 L32 14" fill="none" stroke="#FBFAF6" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-      <div>
-        <h1 class="bizname">Your Plumbing Company</h1>
-        <p class="bizmeta">Licensed plumber, your city</p>
-      </div>
+<header class="site">
+  <div class="wrap brandrow">
+    <svg class="mark" viewBox="0 0 44 44" role="img" aria-label="Steady Flow Plumbing Co. logo mark">
+      <rect width="44" height="44" rx="11" fill="#6A5A1E"></rect>
+      <path d="M12 14 L22 31 L32 14" fill="none" stroke="#FBFAF6" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <div>
+      <p class="wordmark">Steady Flow Plumbing Co.</p>
+      <p class="bizmeta">Licensed plumber, Millbrook &amp; surrounding area</p>
     </div>
-  </header>
+  </div>
+</header>
+
+<main id="main">
 
   <div class="hero">
-    <h2>Burst pipe at 11pm? Somebody actually picks up.</h2>
-    <p>Same day repairs, water heaters, and drains. Straight pricing before the work starts.</p>
-    <div class="cta">
-      <a class="btn btn-primary" href="#quote">Get a quote</a>
-      <a class="btn btn-secondary" href="#quote">Call now</a>
+    <img
+      src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=70&auto=format&fit=crop"
+      alt="Plumber in work gloves tightening a pipe fitting during a repair call">
+    <div class="hero-inner">
+      <div class="wrap">
+        <h1>Burst pipe at 2am? We already answered.</h1>
+        <p>Same day repairs, water heaters, and drains, with the price agreed before anyone touches a wrench.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="tel:+17045550182">Call now, (704) 555-0182</a>
+          <a class="btn btn-secondary" href="#quote">Get a free quote</a>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="trust" aria-label="What this business stands behind">
-    <span>
-      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      Licensed and insured
-    </span>
-    <span>
-      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      Price before we start
-    </span>
-    <span>
-      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-      Emergency callouts
-    </span>
-  </div>
+  <div class="wrap">
 
-  <section aria-label="Photo placement">
-    <div class="shot">
-      <p class="slotlabel">Your work photo goes here. Most plumbers already have these on their phone.</p>
-      <div class="wm" aria-hidden="true"><span>PREVIEW BY VENDLY</span></div>
-      <span class="corner">SAMPLE</span>
+    <div class="trust" aria-label="What this business stands behind">
+      <span>
+        <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        Licensed and insured
+      </span>
+      <span>
+        <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        Price before we start
+      </span>
+      <span>
+        <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.4l3.1 3.1L13 4.6" fill="none" stroke="#6A5A1E" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        Emergency callouts today
+      </span>
     </div>
-  </section>
 
-  <section>
-    <h3>What you do</h3>
-    <p class="lede">Six is usually the right number. People scan, they do not read.</p>
-    <ul class="svc">
-      <li><strong>Emergency repairs</strong><small>Leaks, burst pipes, no hot water</small></li>
-      <li><strong>Water heaters</strong><small>Repair, replace, tankless</small></li>
-      <li><strong>Drains and sewer</strong><small>Clearing, camera, root cutting</small></li>
-      <li><strong>Repipes</strong><small>Whole house, PEX or copper</small></li>
-      <li><strong>Fixtures</strong><small>Toilets, taps, disposals</small></li>
-      <li><strong>Inspections</strong><small>Pre purchase and annual checks</small></li>
-    </ul>
-  </section>
+    <section class="reveal">
+      <h2>What we fix</h2>
+      <p class="lede">The calls we get most, handled by people who show up when they say they will.</p>
+      <ul class="svc">
+        <li>
+          <span class="icn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 3l7 6v11a1 1 0 01-1 1h-4v-6H10v6H6a1 1 0 01-1-1V9z" fill="none" stroke="#6A5A1E" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <div><strong>Emergency repairs</strong><small>Someone shows up today, not next week.</small></div>
+        </li>
+        <li>
+          <span class="icn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 2s6 6.5 6 11a6 6 0 11-12 0c0-4.5 6-11 6-11z" fill="none" stroke="#6A5A1E" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <div><strong>Water heaters</strong><small>Hot water back on, same visit when we can.</small></div>
+        </li>
+        <li>
+          <span class="icn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M4 12h16M8 6l-4 6 4 6M16 6l4 6-4 6" fill="none" stroke="#6A5A1E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div><strong>Drains and sewer</strong><small>Camera inspection, so we fix the real problem.</small></div>
+        </li>
+        <li>
+          <span class="icn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M5 19V5a2 2 0 012-2h6l6 6v10a2 2 0 01-2 2H7a2 2 0 01-2-2z" fill="none" stroke="#6A5A1E" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <div><strong>Repipes</strong><small>Old pipes swapped out before they fail on their own.</small></div>
+        </li>
+        <li>
+          <span class="icn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M12 21c4-3.5 7-7.1 7-11a7 7 0 10-14 0c0 3.9 3 7.5 7 11z" fill="none" stroke="#6A5A1E" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <div><strong>Fixtures</strong><small>Toilets, faucets, and disposals, installed clean.</small></div>
+        </li>
+        <li>
+          <span class="icn" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path d="M11 3a8 8 0 105.3 14L21 21M11 3a8 8 0 015.3 14" fill="none" stroke="#6A5A1E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div><strong>Inspections</strong><small>Know what is going on before it becomes an emergency.</small></div>
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Where you work</h3>
-    <p class="lede">Naming the neighborhoods is what gets you found in local search.</p>
-    <ul class="areas">
-      <li>Your city</li><li>Neighborhood one</li><li>Neighborhood two</li>
-      <li>Neighborhood three</li><li>Surrounding county</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3>What people say</h3>
-    <p class="lede">Sample wording. Yours would be your real reviews, pulled across from Google.</p>
-    <blockquote>
-      Came out the same evening and had the hot water back on before nine.
-      <footer>Sample review placement</footer>
-    </blockquote>
-    <blockquote>
-      Told me the price up front and it did not change.
-      <footer>Sample review placement</footer>
-    </blockquote>
-  </section>
-
-  <section id="quote">
-    <h3>Request a quote</h3>
-    <p class="lede">On the real page this lands in your inbox and texts your phone.</p>
-    <form onsubmit="return false;" aria-describedby="quotenote">
-      <div>
-        <label for="q-name">Name</label>
-        <input id="q-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+    <section class="reveal">
+      <div class="shot">
+        <img
+          src="https://images.unsplash.com/photo-1734689604220-712f496a9e21?w=1200&q=70&auto=format&fit=crop"
+          alt="Waste pipe and trap under a worn kitchen sink cabinet">
+        <div class="scrim" aria-hidden="true"></div>
+        <div class="wm" aria-hidden="true"><span>PREVIEW BY VENDLY</span></div>
+        <span class="corner">SAMPLE</span>
       </div>
-      <div>
-        <label for="q-phone">Phone</label>
-        <input id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you">
+    </section>
+
+    <section class="reveal">
+      <h2>A real fix, not a quick patch</h2>
+      <p class="lede">Rusted out kitchen sink and tap, stripped out and replaced in a single afternoon.</p>
+      <div class="ba-grid">
+        <div class="shot">
+          <img
+            src="https://images.unsplash.com/photo-1608754048546-81f941e03de1?w=900&q=70&auto=format&fit=crop"
+            alt="Rusted kitchen sink and corroded tap before the replacement">
+          <div class="scrim" aria-hidden="true"></div>
+          <div class="wm" aria-hidden="true"><span>PREVIEW BY VENDLY</span></div>
+          <span class="caption">Before</span>
+          <span class="corner">SAMPLE</span>
+        </div>
+        <div class="shot">
+          <img
+            src="https://images.unsplash.com/photo-1722764386929-e6e1ac43f70a?w=900&q=70&auto=format&fit=crop"
+            alt="Clean stainless steel sink and new tap after the replacement">
+          <div class="scrim" aria-hidden="true"></div>
+          <div class="wm" aria-hidden="true"><span>PREVIEW BY VENDLY</span></div>
+          <span class="caption">After</span>
+          <span class="corner">SAMPLE</span>
+        </div>
       </div>
-      <div>
-        <label for="q-job">What is going on</label>
-        <textarea id="q-job" name="job" rows="3" placeholder="Water heater, leak, blocked drain"></textarea>
+    </section>
+
+    <section class="reveal">
+      <h2>Where we work</h2>
+      <p class="lede">If you are in Millbrook or nearby, we can be there today.</p>
+      <ul class="areas">
+        <li>Millbrook</li><li>Oakview</li><li>Riverside</li>
+        <li>The Heights</li><li>Millbrook County</li>
+      </ul>
+    </section>
+
+    <section class="reveal">
+      <h2>What people say</h2>
+      <div class="stars" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 20 20"><path fill="#6A5A1E" d="M10 1l2.7 6 6.3.6-4.8 4.2 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.6l6.3-.6z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 20 20"><path fill="#6A5A1E" d="M10 1l2.7 6 6.3.6-4.8 4.2 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.6l6.3-.6z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 20 20"><path fill="#6A5A1E" d="M10 1l2.7 6 6.3.6-4.8 4.2 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.6l6.3-.6z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 20 20"><path fill="#6A5A1E" d="M10 1l2.7 6 6.3.6-4.8 4.2 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.6l6.3-.6z"/></svg>
+        <svg width="15" height="15" viewBox="0 0 20 20"><path fill="#6A5A1E" d="M10 1l2.7 6 6.3.6-4.8 4.2 1.4 6.2L10 14.9 4.4 18l1.4-6.2L1 7.6l6.3-.6z"/></svg>
       </div>
-      <button class="btn btn-primary" type="submit">Send it</button>
-      <p class="formnote" id="quotenote">This sample form does not send anything. It is here to show the layout.</p>
-    </form>
-  </section>
+      <blockquote>
+        Came out the same evening and had the hot water back on before nine.
+        <footer>Sample review, not a real customer</footer>
+      </blockquote>
+      <blockquote>
+        Told me the price up front and it did not change.
+        <footer>Sample review, not a real customer</footer>
+      </blockquote>
+    </section>
+
+    <section class="reveal plans" aria-label="What a page like this costs to run">
+      <h2>What a page like this costs to run</h2>
+      <p class="lede">No big project fee. We build it, then we keep it fast, current, and online for one flat monthly rate.</p>
+      <div class="plancards">
+        <div class="plancard featured">
+          <span class="ribbon">Most popular</span>
+          <h3>Care Plan</h3>
+          <p class="price">$100<small>/month</small></p>
+          <p>Your site built and looked after. Nothing up front.</p>
+        </div>
+        <div class="plancard">
+          <h3>Commerce Plan</h3>
+          <p class="price">$150<small>/month</small></p>
+          <p>Same plan, plus you can sell products online.</p>
+        </div>
+      </div>
+      <p class="fineprint">Month to month. You own your Shopify and your domain, and you can leave with them anytime.</p>
+      <a class="btn btn-primary" href="#quote">See if this fits your business</a>
+    </section>
+
+    <section id="quote" class="reveal">
+      <h2>Request a quote</h2>
+      <p class="lede">On the real page this lands in your inbox and texts your phone.</p>
+      <div class="formcard">
+        <form onsubmit="return false;" aria-describedby="quotenote">
+          <div>
+            <label for="q-name">Name</label>
+            <input id="q-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+          </div>
+          <div>
+            <label for="q-phone">Phone</label>
+            <input id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="Best number to reach you">
+          </div>
+          <div>
+            <label for="q-job">What is going on</label>
+            <textarea id="q-job" name="job" rows="3" placeholder="Water heater, leak, blocked drain"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send it</button>
+          <p class="formnote" id="quotenote">This sample form does not send anything. It is here to show the layout.</p>
+        </form>
+      </div>
+    </section>
+
+  </div>
 
   <footer class="site">
-    <p class="stamp">Preview by Vendly - vendly.ink</p>
-    <p>Sample page, not a real business and not a live site. Built to show what your page would look like on a phone.</p>
+    <div class="wrap">
+      <p class="stamp">Preview by Vendly - vendly.ink</p>
+      <p>Sample page, not a real business and not a live site. Built to show what your page would look like on a phone.</p>
+    </div>
   </footer>
 
+</main>
+
+<div class="callbar">
+  <a href="tel:+17045550182">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.9 3.7 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.1 21 3 13.9 3 5c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="#FFFDF5"/></svg>
+    Call now
+  </a>
+  <a class="secondary" href="#quote">Get a quote</a>
 </div>
+
+<script>
+document.documentElement.classList.add('js-reveal');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('inview'); io.unobserve(e.target); }
+    });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+}else{
+  document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('inview'); });
+}
+</script>
+
 </body>
 </html>
-
