@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -142,8 +142,14 @@ form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);pa
 .field{margin-bottom:17px}
 label{display:block;font:600 14px/1 Inter,sans-serif;color:var(--ink);margin-bottom:8px}
 input,textarea,select{width:100%;font:400 16px/1.4 Inter,sans-serif;color:var(--ink);padding:14px 15px;border:2px solid var(--line);border-radius:11px;background:#fff}
-input:focus,textarea:focus,select:focus{border-color:var(--amber);outline:none}
+/* WCAG 2.1 AA 2.4.7 focus visible): same fix as the Rivertown demo.
+   the prior rule suppressed the only focus indicator for keyboard users on form
+   fields; a border-colour change alone is not sufficient. Internal build standard. Never stated as a claim client-facing. */
+input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var(--amber);outline:3px solid var(--amber);outline-offset:2px}
+input:focus,textarea:focus,select:focus{border-color:var(--amber)}
 textarea{min-height:112px;resize:vertical}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.req{font-weight:400;color:var(--ink-lt)}
 .hint{font-size:13.5px;color:var(--ink-lt);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--ink-lt);margin-top:16px}
 
@@ -168,7 +174,7 @@ footer li a{display:inline-block;padding:4px 0}
   .bizmeta .btn{display:none}
   .logo{height:50px}
   footer{padding-bottom:96px}
-  /* FAB above sticky CALL bar (law 2026-08-01) — never cover Call/Quote */
+  /* FAB above sticky CALL bar (law 2026-08-01) â€” never cover Call/Quote */
   .sa-launch,.sa-peek{bottom:72px!important}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -379,11 +385,11 @@ footer li a{display:inline-block;padding:4px 0}
       </div>
       <form id="leadform" novalidate>
         <div class="field">
-          <label for="f-name">Your name</label>
+          <label for="f-name">Your name <span class="req">(required)</span></label>
           <input id="f-name" name="name" type="text" autocomplete="name" required>
         </div>
         <div class="field">
-          <label for="f-phone">Phone</label>
+          <label for="f-phone">Phone <span class="req">(required)</span></label>
           <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
         </div>
         <div class="field">
