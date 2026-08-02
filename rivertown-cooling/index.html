@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -221,13 +221,14 @@ footer li a{display:inline-block;padding:4px 0}
 }
 @media(max-width:640px){
   .mobile-callbar{display:flex;align-items:stretch;justify-content:stretch;gap:0;position:fixed;left:0;right:0;bottom:0;z-index:110;background:var(--blue-dk);color:#fff;min-height:52px;padding:0;box-shadow:0 -8px 24px -12px rgba(16,23,36,.45)}
-  /* bizmeta has nothing left to show at this width (pill hidden at 860,
-     button hidden here) - hide the wrapper outright so the header becomes a
-     single flex item and centers cleanly instead of relying on an empty
-     grid track. */
+  /* Keep the 1fr / auto / 1fr grid. Switching .bar to flex+center after the
+     hamburger landed (nav1705) grouped Menu+logo as one centered cluster, so
+     the logo sat off true center. Jacob Pixel ~17:10 ET. Hide bizmeta; leave
+     the empty third track so the logo column stays viewport-centered. */
   .bizmeta{display:none}
-  .bar{display:flex;justify-content:center}
-  .logo{height:64px;margin:0 auto}
+  .bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
+  .navtoggle{grid-column:1;justify-self:start}
+  .logo{grid-column:2;justify-self:center;height:64px;margin:0}
   footer{padding-bottom:96px}
   /* Jacob phone audit 2026-08-02 (vnav1705): the service cards, their icons,
      the badge rows and the stat tiles read left-stuck on a narrow screen.
@@ -301,7 +302,7 @@ footer li a{display:inline-block;padding:4px 0}
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       <span class="navtoggle-text">Menu</span>
     </button>
-    <img class="logo" src="assets/logo-rivertown-mark.png?v=nav1705" alt="RiverTown Cooling logo">
+    <img class="logo" src="assets/logo-rivertown-mark.png?v=logo1711" alt="RiverTown Cooling logo">
     <div class="bizmeta">
       <span class="pill">Mon to Fri, 8am to 4pm</span>
       <a class="btn btn-red" href="tel:+18432514307">
@@ -323,7 +324,7 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=nav1705" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
+  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=logo1711" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -358,14 +359,14 @@ footer li a{display:inline-block;padding:4px 0}
       <h2 id="h-gallery">Photos from jobs around Conway and Myrtle Beach</h2>
     </div>
     <div class="gallery">
-      <img src="assets/job-bryant-air-handler-attic.jpg?v=nav1705" alt="Bryant air handler installed in a home attic" loading="lazy">
-      <img src="assets/job-bryant-outdoor-pad.jpg?v=nav1705" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
-      <img src="assets/job-coil-cleaning-before.jpg?v=nav1705" alt="Condenser coil during a cleaning service call" loading="lazy">
-      <img src="assets/job-condenser-electrical-bay.jpg?v=nav1705" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
-      <img src="assets/job-manifold-gauges-on-unit.jpg?v=nav1705" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
-      <img src="assets/job-outdoor-unit-residential.jpg?v=nav1705" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
-      <img src="assets/job-goodman-outdoor-install.jpg?v=nav1705" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
-      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=nav1705" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
+      <img src="assets/job-bryant-air-handler-attic.jpg?v=logo1711" alt="Bryant air handler installed in a home attic" loading="lazy">
+      <img src="assets/job-bryant-outdoor-pad.jpg?v=logo1711" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
+      <img src="assets/job-coil-cleaning-before.jpg?v=logo1711" alt="Condenser coil during a cleaning service call" loading="lazy">
+      <img src="assets/job-condenser-electrical-bay.jpg?v=logo1711" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
+      <img src="assets/job-manifold-gauges-on-unit.jpg?v=logo1711" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
+      <img src="assets/job-outdoor-unit-residential.jpg?v=logo1711" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
+      <img src="assets/job-goodman-outdoor-install.jpg?v=logo1711" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
+      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=logo1711" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
     </div>
   </div>
 </section>
@@ -466,7 +467,7 @@ footer li a{display:inline-block;padding:4px 0}
         </div>
       </div>
       <div class="shot">
-        <img src="assets/business-card-back.png?v=nav1705" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
+        <img src="assets/business-card-back.png?v=logo1711" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
         <span class="corner">Owner operated</span>
       </div>
     </div>
@@ -511,7 +512,7 @@ footer li a{display:inline-block;padding:4px 0}
      used as atmosphere; the alt text says so, and it is never presented as
      Luke's own work. This also gives the .ctaband CSS a real consumer. -->
 <section class="ctaband reveal" aria-labelledby="h-ctaband">
-  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=nav1705" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
+  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=logo1711" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
   <div class="wrap inner">
     <h2 id="h-ctaband">Still hot in there?</h2>
     <p>Call Luke direct. He answers his own phone, tells you straight whether it is a repair or a replacement, and the estimate on a replacement is free.</p>
@@ -577,7 +578,7 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=nav1705" alt="RiverTown Cooling logo">
+          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=logo1711" alt="RiverTown Cooling logo">
         </div>
         <p style="margin:0;max-width:34ch">Family operated residential HVAC serving Conway, Myrtle Beach and Horry County, South Carolina.</p>
       </div>
@@ -640,7 +641,7 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#C8202E"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=nav1705" defer></script>
+<script src="assets/siteassistant-v2.js?v=logo1711" defer></script>
 <script data-grind-motion="2357" data-ref-learn="0037">
 (function(){
   try{
