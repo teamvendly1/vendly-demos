@@ -199,6 +199,16 @@ footer li a{display:inline-block;padding:4px 0}
    field falls through to the UA default of roughly 13.3px and triggers it.
    !important is deliberate: the widget injects its stylesheet after this block. */
 .sa-input,.sa-form input,.sa-form textarea{font-size:16px!important;line-height:1.4}
+
+/* grind-2357 motion/pop - scroll reveal; respects reduced-motion */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+.hero .eyebrow{animation:popIn .5s ease both}
+@keyframes popIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero .eyebrow{animation:none}
+}
 </style>
 </head>
 <body>
@@ -258,7 +268,7 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </div>
 
-<section aria-labelledby="h-gallery">
+<section class="reveal" aria-labelledby="h-gallery">
   <div class="wrap">
     <div class="center">
       <p class="kicker">Recent work</p>
@@ -278,7 +288,7 @@ footer li a{display:inline-block;padding:4px 0}
 </section>
 
 
-<section class="mist" aria-labelledby="h-reviews">
+<section class="reveal mist" aria-labelledby="h-reviews">
   <div class="wrap">
     <div class="center">
       <p class="kicker">What homeowners say</p>
@@ -287,7 +297,7 @@ footer li a{display:inline-block;padding:4px 0}
     </div>
   </div>
 </section>
-<section aria-labelledby="h-svc">
+<section class="reveal" aria-labelledby="h-svc">
   <div class="wrap">
     <div class="center">
       <p class="kicker">What we do</p>
@@ -320,7 +330,7 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </section>
 
-<section class="mist" id="about" aria-labelledby="h-about">
+<section class="reveal mist" id="about" aria-labelledby="h-about">
   <div class="wrap">
     <div class="about">
       <div>
@@ -346,7 +356,7 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </section>
 
-<section aria-labelledby="h-hours">
+<section class="reveal" aria-labelledby="h-hours">
   <div class="wrap">
     <div class="center">
       <p class="kicker">Hours and coverage</p>
@@ -379,7 +389,7 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </section>
 
-<section class="mist" id="quote" aria-labelledby="h-quote">
+<section class="reveal mist" id="quote" aria-labelledby="h-quote">
   <div class="wrap">
     <div class="leadwrap">
       <div>
@@ -494,5 +504,19 @@ footer li a{display:inline-block;padding:4px 0}
   };
 </script>
 <script src="assets/siteassistant-v2.js?v=fab2249" defer></script>
+<script data-grind-motion="2357">
+(function(){
+  try{
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+      return;
+    }
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
