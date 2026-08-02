@@ -72,12 +72,15 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
 .btn-ghost:hover{border-color:var(--steel)}
 
-/* hero: abstract steel texture, no photo */
+/* hero: steel texture base + stock photo overlay */
 .hero{position:relative;color:#fff;overflow:hidden;background:
   repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 34px),
   linear-gradient(160deg,#26282D 0%,#1B1D21 55%,#111214 100%)}
-.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 18%, rgba(232,137,12,.20), transparent 42%)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;opacity:.4;z-index:0}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(27,29,33,.95) 0%,rgba(27,29,33,.8) 46%,rgba(27,29,33,.44) 100%);z-index:1}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 18%, rgba(232,137,12,.20), transparent 42%);z-index:1}
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
+.hero-credit{position:relative;z-index:2;font-size:11.5px;color:rgba(255,255,255,.5);margin-top:-8px}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F0C98D;border:1px solid rgba(232,137,12,.45);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:17ch;color:#fff}
 .hero h1 em{font-style:normal;color:var(--amber)}
@@ -103,6 +106,12 @@ section.mist{background:var(--mist)}
 .icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--ink) 0%,var(--ink-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(27,29,33,.8)}
 .icn svg{stroke:var(--amber)}
 .card p{color:var(--ink-lt);margin:0;font-size:15.5px}
+
+/* gallery: stock mood photography */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;border-radius:12px}
+@media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr);gap:17px}}
 
 /* trust / licensed-insured band */
 .trustband{background:var(--ink);color:#E4E2DE;border-radius:var(--radius);padding:clamp(30px,4vw,44px) clamp(26px,4vw,44px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,4vw,44px);align-items:center}
@@ -188,7 +197,7 @@ footer li a{display:inline-block;padding:4px 0}
   <a class="mcb-call" href="tel:+18434305067" aria-label="Call Rigging and Repair Welding at (843) 430-5067">CALL</a>
 </div>
 
-<div class="previewbar">PREVIEW BUILD FOR WARREN ROWELL &middot; not live yet &middot; Vendly 2026-08-01 v22e1f9c</div>
+<div class="previewbar">PREVIEW BUILD FOR WARREN ROWELL &middot; not live yet &middot; Vendly 2026-08-02 vREF0037</div>
 
 <div class="phone-strip">
   <a href="tel:+18434305067" aria-label="Call Rigging and Repair Welding at (843) 430-5067">Call (843) 430-5067</a>
@@ -209,6 +218,7 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
+  <img class="bg" src="assets/stock/metalwork-steel-01.jpg?v=REF0037" alt="Metal fabrication steel work, stock photography for mood" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -226,6 +236,7 @@ footer li a{display:inline-block;padding:4px 0}
       <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Rigging and repair welding</span>
     </div>
   </div>
+  <p class="hero-credit wrap">Stock photography for mood.</p>
 </section>
 
 <div class="strip">
@@ -234,6 +245,22 @@ footer li a{display:inline-block;padding:4px 0}
     <a href="tel:+18434305067">(843) 430-5067</a>
   </div>
 </div>
+
+<section class="reveal mist" aria-labelledby="h-gallery">
+  <div class="wrap">
+    <div class="center">
+      <p class="kicker">The work</p>
+      <h2 id="h-gallery">Welding and metalwork in the field</h2>
+      <p class="lede">Stock photography for mood. Warren's own job photos coming soon.</p>
+    </div>
+    <div class="gallery">
+      <img src="assets/stock/welding-sparks-01.jpg?v=REF0037" alt="Welding sparks close up, stock photography for mood" loading="lazy">
+      <img src="assets/stock/welding-sparks-02.jpg?v=REF0037" alt="Industrial welding sparks, stock photography for mood" loading="lazy">
+      <img src="assets/stock/welding-glove-torch-01.jpg?v=REF0037" alt="Gloved hand with welding torch, stock photography for mood" loading="lazy">
+      <img src="assets/stock/industrial-truck-01.jpg?v=REF0037" alt="Industrial work truck and tools, stock photography for mood" loading="lazy">
+    </div>
+  </div>
+</section>
 
 <section class="reveal" aria-labelledby="h-svc">
   <div class="wrap">
@@ -403,18 +430,43 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#E8890C"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=22e1f9c" defer></script>
-<script data-grind-motion="2357">
+<script src="assets/siteassistant-v2.js?v=REF0037" defer></script>
+<script data-grind-motion="2357" data-ref-learn="0037">
 (function(){
   try{
-    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced){
       document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+      document.querySelectorAll('[data-counter]').forEach(function(el){
+        var t=parseFloat(el.getAttribute('data-target'))||0;
+        var suf=el.getAttribute('data-suffix')||'';
+        el.textContent=t+suf;
+      });
       return;
     }
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
     },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+    var cio=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        cio.unobserve(e.target);
+        var el=e.target;
+        var target=parseFloat(el.getAttribute('data-target'))||0;
+        var suffix=el.getAttribute('data-suffix')||'';
+        var dur=1100,start=null;
+        function step(ts){
+          if(!start) start=ts;
+          var p=Math.min((ts-start)/dur,1);
+          el.textContent=Math.round(target*p)+suffix;
+          if(p<1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    },{threshold:0.5});
+    document.querySelectorAll('[data-counter]').forEach(function(el){cio.observe(el);});
   }catch(e){}
 })();
 </script>

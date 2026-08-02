@@ -140,6 +140,16 @@ section.mist{background:var(--mist)}
 .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
 .badge{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dk);background:#fff;border:2px solid var(--line);padding:11px 15px;border-radius:10px}
 .badge svg{stroke:var(--red)}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
+.stat{background:var(--mist);border:1px solid var(--line);border-radius:12px;padding:16px 22px;min-width:150px}
+.statnum{display:block;font:700 40px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
+.statlabel{display:block;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+
+/* honest FB review band */
+.reviewband{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;margin-bottom:6px}
+.revstat{text-align:center;min-width:120px}
+.revnum{display:block;font:700 46px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
+.revlabel{display:block;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:5px}
 
 /* hours */
 .hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:19px}
@@ -209,6 +219,32 @@ footer li a{display:inline-block;padding:4px 0}
   .reveal{opacity:1;transform:none;transition:none}
   .hero .eyebrow{animation:none}
 }
+
+/* ref-learn 0037: proof band high on the page.
+   Five of the six reference sites put social proof directly under the hero,
+   above services. Every number here is sourced in FB-FACTS-HARVEST-1925.md.
+   Numbers are real text in the HTML so they survive JS being off. */
+.proof{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(38px,5vw,58px) 0}
+.proofgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(20px,3vw,34px);align-items:stretch}
+.stat{text-align:center;padding:4px 8px}
+.stat .num{display:block;font:700 clamp(40px,5.4vw,58px)/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.stat .lbl{display:block;font:600 15px/1.35 Inter,sans-serif;color:var(--ink);margin-top:8px}
+.stat .src{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:#7A8798;margin-top:6px}
+.fbproof{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;text-align:center;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center}
+.fbproof .big{font:700 clamp(30px,4vw,40px)/1 Barlow Condensed,Inter,sans-serif;color:var(--blue);letter-spacing:-.01em}
+.fbproof .sub{font:500 14px/1.45 Inter,sans-serif;color:var(--muted);margin:9px 0 14px}
+.fbproof a{font:700 14px/1 Inter,sans-serif;color:var(--blue-dk);text-decoration:underline;text-underline-offset:3px}
+
+/* ref-learn 0037: closing CTA band over licensed atmosphere photography.
+   All six references close with a full-bleed CTA. The photo is licensed stock
+   used as atmosphere only and is never presented as Luke's own work. */
+.ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.34}
+.ctaband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,49,92,.90) 0%,rgba(18,49,92,.80) 100%)}
+.ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
+.ctaband h2{color:#fff}
+.ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 26px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:24px}
 </style>
 </head>
 <body>
@@ -219,14 +255,14 @@ footer li a{display:inline-block;padding:4px 0}
   <a class="mcb-call" href="tel:+18432514307" aria-label="Call RiverTown Cooling at (843) 251-4307">CALL</a>
 </div>
 
-<div class="previewbar">PREVIEW BUILD FOR LUKE LONG &middot; not live yet &middot; Vendly 2026-08-01 v22e1f9c</div>
+<div class="previewbar">PREVIEW BUILD FOR LUKE LONG &middot; not live yet &middot; Vendly 2026-08-02 vREF0037</div>
 
 <div class="phone-strip">
   <a href="tel:+18432514307" aria-label="Call RiverTown Cooling at (843) 251-4307">Call (843) 251-4307</a>
 </div>
 <header class="site">
   <div class="wrap bar">
-    <img class="logo" src="assets/logo-rivertown-mark.png?v=22e1f9c" alt="RiverTown Cooling logo">
+    <img class="logo" src="assets/logo-rivertown-mark.png?v=REF0037" alt="RiverTown Cooling logo">
     <div class="bizmeta">
       <span class="pill">Mon to Fri, 8am to 4pm</span>
       <a class="btn btn-red" href="tel:+18432514307">
@@ -240,7 +276,7 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=22e1f9c" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
+  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=REF0037" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -275,26 +311,52 @@ footer li a{display:inline-block;padding:4px 0}
       <h2 id="h-gallery">Photos from jobs around Conway and Myrtle Beach</h2>
     </div>
     <div class="gallery">
-      <img src="assets/job-bryant-air-handler-attic.jpg?v=22e1f9c" alt="Bryant air handler installed in a home attic" loading="lazy">
-      <img src="assets/job-bryant-outdoor-pad.jpg?v=22e1f9c" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
-      <img src="assets/job-coil-cleaning-before.jpg?v=22e1f9c" alt="Condenser coil during a cleaning service call" loading="lazy">
-      <img src="assets/job-condenser-electrical-bay.jpg?v=22e1f9c" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
-      <img src="assets/job-manifold-gauges-on-unit.jpg?v=22e1f9c" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
-      <img src="assets/job-outdoor-unit-residential.jpg?v=22e1f9c" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
-      <img src="assets/job-goodman-outdoor-install.jpg?v=22e1f9c" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
-      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=22e1f9c" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
+      <img src="assets/job-bryant-air-handler-attic.jpg?v=REF0037" alt="Bryant air handler installed in a home attic" loading="lazy">
+      <img src="assets/job-bryant-outdoor-pad.jpg?v=REF0037" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
+      <img src="assets/job-coil-cleaning-before.jpg?v=REF0037" alt="Condenser coil during a cleaning service call" loading="lazy">
+      <img src="assets/job-condenser-electrical-bay.jpg?v=REF0037" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
+      <img src="assets/job-manifold-gauges-on-unit.jpg?v=REF0037" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
+      <img src="assets/job-outdoor-unit-residential.jpg?v=REF0037" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
+      <img src="assets/job-goodman-outdoor-install.jpg?v=REF0037" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
+      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=REF0037" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
     </div>
   </div>
 </section>
 
+<section class="reveal" aria-labelledby="h-atmos">
+  <div class="wrap">
+    <div class="center">
+      <p class="kicker">Comfort at home</p>
+      <h2 id="h-atmos">Carolina heat, Horry County homes</h2>
+      <p class="lede">Stock photography for atmosphere. The gallery above is Luke's real work in the field.</p>
+    </div>
+    <div class="gallery">
+      <img src="assets/stock/hvac-residential-home-01.jpg?v=REF0037" alt="Residential home exterior, stock photography for atmosphere" loading="lazy">
+      <img src="assets/stock/hvac-outdoor-unit-01.jpg?v=REF0037" alt="Outdoor HVAC condenser unit, stock photography for atmosphere" loading="lazy">
+      <img src="assets/stock/coastal-residential-01.jpg?v=REF0037" alt="Coastal South Carolina residential neighborhood, stock photography for atmosphere" loading="lazy">
+      <img src="assets/stock/hvac-tech-tools-01.jpg?v=REF0037" alt="HVAC technician tools, stock photography for atmosphere" loading="lazy">
+    </div>
+  </div>
+</section>
 
 <section class="reveal mist" aria-labelledby="h-reviews">
   <div class="wrap">
     <div class="center">
       <p class="kicker">What homeowners say</p>
-      <h2 id="h-reviews">Reviews</h2>
-      <p class="lede">Real Google reviews will sit here once Luke links his Business Profile. We are not inventing quotes or star ratings for a demo.</p>
+      <h2 id="h-reviews">100% recommend from 5 Facebook reviews</h2>
+      <p class="lede">Real feedback from Luke's Facebook page. No star widget, no invented quotes, just the honest aggregate.</p>
     </div>
+    <div class="reviewband">
+      <div class="revstat">
+        <span class="revnum" data-counter data-target="100" data-suffix="%">0%</span>
+        <span class="revlabel">Recommend</span>
+      </div>
+      <div class="revstat">
+        <span class="revnum" data-counter data-target="5">0</span>
+        <span class="revlabel">Facebook reviews</span>
+      </div>
+    </div>
+    <p class="center" style="margin-top:24px;margin-bottom:0"><a class="btn btn-blue" href="https://www.facebook.com/Rivertowncooling" rel="noopener" target="_blank">See the reviews on Facebook</a></p>
   </div>
 </section>
 <section class="reveal" aria-labelledby="h-svc">
@@ -343,13 +405,19 @@ footer li a{display:inline-block;padding:4px 0}
           <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/></svg>Family owned</span>
           <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed and insured</span>
         </div>
+        <div class="stats">
+          <div class="stat">
+            <span class="statnum" data-counter data-target="5">0</span>
+            <span class="statlabel">Years HVAC experience</span>
+          </div>
+        </div>
         <div class="sig">
           <div class="nm">Luke Long</div>
           <div class="rl">Owner. Operator. Conway and Myrtle Beach HVAC.</div>
         </div>
       </div>
       <div class="shot">
-        <img src="assets/business-card-back.png?v=22e1f9c" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
+        <img src="assets/business-card-back.png?v=REF0037" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
         <span class="corner">Owner operated</span>
       </div>
     </div>
@@ -443,7 +511,7 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=22e1f9c" alt="RiverTown Cooling logo">
+          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=REF0037" alt="RiverTown Cooling logo">
         </div>
         <p style="margin:0;max-width:34ch">Family operated residential HVAC serving Conway, Myrtle Beach and Horry County, South Carolina.</p>
       </div>
@@ -503,18 +571,43 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#C8202E"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=22e1f9c" defer></script>
-<script data-grind-motion="2357">
+<script src="assets/siteassistant-v2.js?v=REF0037" defer></script>
+<script data-grind-motion="2357" data-ref-learn="0037">
 (function(){
   try{
-    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced){
       document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
+      document.querySelectorAll('[data-counter]').forEach(function(el){
+        var t=parseFloat(el.getAttribute('data-target'))||0;
+        var suf=el.getAttribute('data-suffix')||'';
+        el.textContent=t+suf;
+      });
       return;
     }
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
     },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+    var cio=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        cio.unobserve(e.target);
+        var el=e.target;
+        var target=parseFloat(el.getAttribute('data-target'))||0;
+        var suffix=el.getAttribute('data-suffix')||'';
+        var dur=1100,start=null;
+        function step(ts){
+          if(!start) start=ts;
+          var p=Math.min((ts-start)/dur,1);
+          el.textContent=Math.round(target*p)+suffix;
+          if(p<1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    },{threshold:0.5});
+    document.querySelectorAll('[data-counter]').forEach(function(el){cio.observe(el);});
   }catch(e){}
 })();
 </script>
