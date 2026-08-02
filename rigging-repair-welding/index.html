@@ -159,8 +159,15 @@ footer li a{display:inline-block;padding:4px 0}
   .bizmeta .btn{display:none}
   .logo{height:50px}
   footer{padding-bottom:96px}
+  /* FAB above sticky CALL bar (law 2026-08-01) — never cover Call/Quote */
+  .sa-launch,.sa-peek{bottom:72px!important}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* iOS auto-zoom fix, added 2026-08-01 23:18 ET. Same defect as the Rivertown demo.
+   Safari zooms in on focus for any input under 16px and does not zoom back out.
+   SiteAssistant declares no font-size on .sa-input, so it falls to the UA default. */
+.sa-input,.sa-form input,.sa-form textarea{font-size:16px!important;line-height:1.4}
 </style>
 </head>
 <body>
@@ -171,7 +178,7 @@ footer li a{display:inline-block;padding:4px 0}
   <a class="mcb-call" href="tel:+18434305067" aria-label="Call Rigging and Repair Welding at (843) 430-5067">CALL</a>
 </div>
 
-<div class="previewbar">PREVIEW BUILD FOR WARREN ROWELL &middot; not live yet &middot; Vendly 2026-08-01</div>
+<div class="previewbar">PREVIEW BUILD FOR WARREN ROWELL &middot; not live yet &middot; Vendly 2026-08-01 vfab2249</div>
 
 <div class="phone-strip">
   <a href="tel:+18434305067" aria-label="Call Rigging and Repair Welding at (843) 430-5067">Call (843) 430-5067</a>
@@ -386,6 +393,6 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#E8890C"
   };
 </script>
-<script src="assets/siteassistant-v2.js" defer></script>
+<script src="assets/siteassistant-v2.js?v=fab2249" defer></script>
 </body>
 </html>
