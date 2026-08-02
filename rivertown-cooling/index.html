@@ -72,7 +72,8 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .phone-strip a:hover{background:#0E2A52}
 @media(min-width:900px){.phone-strip a{padding:11px 16px;font-size:15px}}
 /* real logo mark, cropped from the logo Luke sent over SMS */
-.logo{height:68px;width:auto;display:block}
+/* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
+.logo{height:88px;width:auto;display:block}
 .logo-chip{display:inline-flex;background:#fff;padding:12px 16px;border-radius:12px}
 .logo-footer{height:44px;width:auto;display:block}
 
@@ -196,7 +197,7 @@ footer li a{display:inline-block;padding:4px 0}
 @media(max-width:640px){
   .mobile-callbar{display:flex;align-items:stretch;justify-content:stretch;gap:0;position:fixed;left:0;right:0;bottom:0;z-index:110;background:var(--blue-dk);color:#fff;min-height:52px;padding:0;box-shadow:0 -8px 24px -12px rgba(16,23,36,.45)}
   .bizmeta .btn{display:none}
-  .logo{height:56px}
+  .logo{height:64px}
   footer{padding-bottom:96px}
   /* FAB above sticky CALL bar (law 2026-08-01) — never cover Call/Quote */
   .sa-launch,.sa-peek{bottom:72px!important}
@@ -220,20 +221,9 @@ footer li a{display:inline-block;padding:4px 0}
   .hero .eyebrow{animation:none}
 }
 
-/* ref-learn 0037: proof band high on the page.
-   Five of the six reference sites put social proof directly under the hero,
-   above services. Every number here is sourced in FB-FACTS-HARVEST-1925.md.
-   Numbers are real text in the HTML so they survive JS being off. */
-.proof{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(38px,5vw,58px) 0}
-.proofgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:clamp(20px,3vw,34px);align-items:stretch}
-.stat{text-align:center;padding:4px 8px}
-.stat .num{display:block;font:700 clamp(40px,5.4vw,58px)/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk);letter-spacing:-.01em;font-variant-numeric:tabular-nums}
-.stat .lbl{display:block;font:600 15px/1.35 Inter,sans-serif;color:var(--ink);margin-top:8px}
-.stat .src{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:#7A8798;margin-top:6px}
-.fbproof{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;text-align:center;box-shadow:var(--shadow);display:flex;flex-direction:column;justify-content:center}
-.fbproof .big{font:700 clamp(30px,4vw,40px)/1 Barlow Condensed,Inter,sans-serif;color:var(--blue);letter-spacing:-.01em}
-.fbproof .sub{font:500 14px/1.45 Inter,sans-serif;color:var(--muted);margin:9px 0 14px}
-.fbproof a{font:700 14px/1 Inter,sans-serif;color:var(--blue-dk);text-decoration:underline;text-underline-offset:3px}
+/* ref-learn 0037: source line under a counter, so every number on the page
+   carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */
+.revsrc{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:#7A8798;margin-top:6px}
 
 /* ref-learn 0037: closing CTA band over licensed atmosphere photography.
    All six references close with a full-bleed CTA. The photo is licensed stock
@@ -262,7 +252,7 @@ footer li a{display:inline-block;padding:4px 0}
 </div>
 <header class="site">
   <div class="wrap bar">
-    <img class="logo" src="assets/logo-rivertown-mark.png?v=512092c" alt="RiverTown Cooling logo">
+    <img class="logo" src="assets/logo-rivertown-mark.png?v=a2595dc" alt="RiverTown Cooling logo">
     <div class="bizmeta">
       <span class="pill">Mon to Fri, 8am to 4pm</span>
       <a class="btn btn-red" href="tel:+18432514307">
@@ -276,7 +266,7 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=512092c" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
+  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=a2595dc" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -311,33 +301,27 @@ footer li a{display:inline-block;padding:4px 0}
       <h2 id="h-gallery">Photos from jobs around Conway and Myrtle Beach</h2>
     </div>
     <div class="gallery">
-      <img src="assets/job-bryant-air-handler-attic.jpg?v=512092c" alt="Bryant air handler installed in a home attic" loading="lazy">
-      <img src="assets/job-bryant-outdoor-pad.jpg?v=512092c" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
-      <img src="assets/job-coil-cleaning-before.jpg?v=512092c" alt="Condenser coil during a cleaning service call" loading="lazy">
-      <img src="assets/job-condenser-electrical-bay.jpg?v=512092c" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
-      <img src="assets/job-manifold-gauges-on-unit.jpg?v=512092c" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
-      <img src="assets/job-outdoor-unit-residential.jpg?v=512092c" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
-      <img src="assets/job-goodman-outdoor-install.jpg?v=512092c" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
-      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=512092c" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
+      <img src="assets/job-bryant-air-handler-attic.jpg?v=a2595dc" alt="Bryant air handler installed in a home attic" loading="lazy">
+      <img src="assets/job-bryant-outdoor-pad.jpg?v=a2595dc" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
+      <img src="assets/job-coil-cleaning-before.jpg?v=a2595dc" alt="Condenser coil during a cleaning service call" loading="lazy">
+      <img src="assets/job-condenser-electrical-bay.jpg?v=a2595dc" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
+      <img src="assets/job-manifold-gauges-on-unit.jpg?v=a2595dc" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
+      <img src="assets/job-outdoor-unit-residential.jpg?v=a2595dc" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
+      <img src="assets/job-goodman-outdoor-install.jpg?v=a2595dc" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
+      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=a2595dc" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
     </div>
   </div>
 </section>
 
-<section class="reveal" aria-labelledby="h-atmos">
-  <div class="wrap">
-    <div class="center">
-      <p class="kicker">Comfort at home</p>
-      <h2 id="h-atmos">Carolina heat, Horry County homes</h2>
-      <p class="lede">Stock photography for atmosphere. The gallery above is Luke's real work in the field.</p>
-    </div>
-    <div class="gallery">
-      <img src="assets/stock/hvac-residential-home-01.jpg?v=512092c" alt="Residential home exterior, stock photography for atmosphere" loading="lazy">
-      <img src="assets/stock/hvac-outdoor-unit-01.jpg?v=512092c" alt="Outdoor HVAC condenser unit, stock photography for atmosphere" loading="lazy">
-      <img src="assets/stock/coastal-residential-01.jpg?v=512092c" alt="Coastal South Carolina residential neighborhood, stock photography for atmosphere" loading="lazy">
-      <img src="assets/stock/hvac-tech-tools-01.jpg?v=512092c" alt="HVAC technician tools, stock photography for atmosphere" loading="lazy">
-    </div>
-  </div>
-</section>
+<!-- REMOVED 2026-08-02 (photo QA 0057): the "Carolina heat, Horry County homes"
+     stock gallery is gone. All four of its images failed a visual audit - a green
+     paint roller on a paint can lid, a mechanic under a car on a lift, and two
+     wrong-region luxury homes (one architectural, one Queenslander pool house).
+     The filenames claimed HVAC; the pixels did not.
+     Rivertown already carries nine real photos of Luke's own work, so the honest
+     fix is to let real job proof carry the page rather than pad it with
+     mismatched stock. Do not reinstate a stock gallery here without opening
+     every image and looking at it first. -->
 
 <section class="reveal mist" aria-labelledby="h-reviews">
   <div class="wrap">
@@ -348,12 +332,17 @@ footer li a{display:inline-block;padding:4px 0}
     </div>
     <div class="reviewband">
       <div class="revstat">
-        <span class="revnum" data-counter data-target="100" data-suffix="%">0%</span>
+        <!-- Fallback text is the TRUE value, not 0. With JS off this read "0%
+             Recommend" on Luke's own site, which is a false claim about his
+             reputation. The count-up still starts at 0 and animates up. -->
+        <span class="revnum" data-counter data-target="100" data-suffix="%">100%</span>
         <span class="revlabel">Recommend</span>
+        <span class="revsrc">Facebook page aggregate</span>
       </div>
       <div class="revstat">
-        <span class="revnum" data-counter data-target="5">0</span>
+        <span class="revnum" data-counter data-target="5">5</span>
         <span class="revlabel">Facebook reviews</span>
+        <span class="revsrc">Facebook page aggregate</span>
       </div>
     </div>
     <p class="center" style="margin-top:24px;margin-bottom:0"><a class="btn btn-blue" href="https://www.facebook.com/Rivertowncooling" rel="noopener" target="_blank">See the reviews on Facebook</a></p>
@@ -407,8 +396,11 @@ footer li a{display:inline-block;padding:4px 0}
         </div>
         <div class="stats">
           <div class="stat">
-            <span class="statnum" data-counter data-target="5">0</span>
+            <!-- Fallback is the true value, not 0: with JS off this said
+                 "0 Years HVAC experience" on Luke's own page. -->
+            <span class="statnum" data-counter data-target="5">5</span>
             <span class="statlabel">Years HVAC experience</span>
+            <span class="revsrc">Luke's own account, from Facebook</span>
           </div>
         </div>
         <div class="sig">
@@ -417,7 +409,7 @@ footer li a{display:inline-block;padding:4px 0}
         </div>
       </div>
       <div class="shot">
-        <img src="assets/business-card-back.png?v=512092c" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
+        <img src="assets/business-card-back.png?v=a2595dc" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
         <span class="corner">Owner operated</span>
       </div>
     </div>
@@ -454,6 +446,23 @@ footer li a{display:inline-block;padding:4px 0}
         <p class="hint">Not sure if you are in range? Call and ask, it takes a second.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ref-learn 0037: closing CTA band. All six reference sites end on a
+     full-bleed CTA and Rivertown had none. The background is licensed stock
+     used as atmosphere; the alt text says so, and it is never presented as
+     Luke's own work. This also gives the .ctaband CSS a real consumer. -->
+<section class="ctaband reveal" aria-labelledby="h-ctaband">
+  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=a2595dc" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
+  <div class="wrap inner">
+    <h2 id="h-ctaband">Still hot in there?</h2>
+    <p>Call Luke direct. He answers his own phone, tells you straight whether it is a repair or a replacement, and the estimate on a replacement is free.</p>
+    <div class="cta" style="justify-content:center;margin-bottom:0">
+      <a class="btn btn-red" href="tel:+18432514307">Call (843) 251-4307</a>
+      <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Send a message instead</a>
+    </div>
+    <p class="photonote">Photography on this band is licensed stock used for atmosphere. The job photos above are Luke's own.</p>
   </div>
 </section>
 
@@ -511,7 +520,7 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=512092c" alt="RiverTown Cooling logo">
+          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=a2595dc" alt="RiverTown Cooling logo">
         </div>
         <p style="margin:0;max-width:34ch">Family operated residential HVAC serving Conway, Myrtle Beach and Horry County, South Carolina.</p>
       </div>
@@ -571,7 +580,7 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#C8202E"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=512092c" defer></script>
+<script src="assets/siteassistant-v2.js?v=a2595dc" defer></script>
 <script data-grind-motion="2357" data-ref-learn="0037">
 (function(){
   try{

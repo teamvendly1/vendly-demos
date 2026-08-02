@@ -187,6 +187,19 @@ footer li a{display:inline-block;padding:4px 0}
   .reveal{opacity:1;transform:none;transition:none}
   .hero .eyebrow{animation:none}
 }
+
+/* ref-learn 0037: closing CTA band. All six reference sites end on a full-bleed
+   CTA and Warren had none. Background is licensed stock used as atmosphere and
+   is labelled as such on the page. Warren carries NO counters and NO reviews:
+   there is no sourceable number or review for him, and an empty honest slot
+   beats a fabricated full one. Do not "fix" this by inventing figures. */
+.ctaband{position:relative;overflow:hidden;background:var(--ink);color:#fff;text-align:center}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.30}
+.ctaband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,29,33,.90) 0%,rgba(27,29,33,.80) 100%)}
+.ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
+.ctaband h2{color:#fff}
+.ctaband p{color:#C9CDD3;max-width:54ch;margin:0 auto 26px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8A8E96;margin-top:24px}
 </style>
 </head>
 <body>
@@ -218,7 +231,13 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/stock/metalwork-steel-01.jpg?v=512092c" alt="Metal fabrication steel work, stock photography for mood" loading="eager">
+  <!-- Hero replaced 2026-08-02 (photo QA 0057). The previous file was named
+       metalwork-steel-01.jpg but the image was a motorsport suspension assembly
+       (coilover springs, braided lines, an anti-roll-bar adjuster) - an engine
+       bay on a mobile welder's site. Replaced with a welder doing structural
+       work on a ladder against open sky, which is what "on site when you need
+       it" actually looks like. -->
+  <img class="bg" src="assets/stock/welding-onsite-structural-01.jpg?v=a2595dc" alt="Welder on a ladder joining a steel structure outdoors against an evening sky, licensed stock photography for mood" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -254,10 +273,13 @@ footer li a{display:inline-block;padding:4px 0}
       <p class="lede">Stock photography for mood. Warren's own job photos coming soon.</p>
     </div>
     <div class="gallery">
-      <img src="assets/stock/welding-sparks-01.jpg?v=512092c" alt="Welding sparks close up, stock photography for mood" loading="lazy">
-      <img src="assets/stock/welding-sparks-02.jpg?v=512092c" alt="Industrial welding sparks, stock photography for mood" loading="lazy">
-      <img src="assets/stock/welding-glove-torch-01.jpg?v=512092c" alt="Gloved hand with welding torch, stock photography for mood" loading="lazy">
-      <img src="assets/stock/industrial-truck-01.jpg?v=512092c" alt="Industrial work truck and tools, stock photography for mood" loading="lazy">
+      <!-- Images 3 and 4 removed 2026-08-02 (photo QA 0057). welding-glove-torch-01.jpg
+           was a dentist examining a patient in a dental chair beside a swimming pool;
+           industrial-truck-01.jpg was wrenches hung on a pegboard. Neither had anything
+           to do with welding. Replaced with a third genuine field-welding shot. -->
+      <img src="assets/stock/welding-sparks-01.jpg?v=a2595dc" alt="Welder in a helmet joining metal, sparks flying, licensed stock photography for mood" loading="lazy">
+      <img src="assets/stock/welding-sparks-02.jpg?v=a2595dc" alt="Grinding a steel post outdoors with sparks flying, licensed stock photography for mood" loading="lazy">
+      <img src="assets/stock/welding-onsite-frame-01.jpg?v=a2595dc" alt="Welder joining a steel frame outdoors on open ground, licensed stock photography for mood" loading="lazy">
     </div>
   </div>
 </section>
@@ -327,6 +349,20 @@ footer li a{display:inline-block;padding:4px 0}
         <span class="corner">Owner operated</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ref-learn 0037: closing CTA band, matching the pattern in all six refs. -->
+<section class="ctaband reveal" aria-labelledby="h-ctaband">
+  <img class="bg" src="assets/stock/welding-sparks-02.jpg?v=a2595dc" alt="Grinding a steel post outdoors with sparks flying, licensed stock photography for mood" loading="lazy">
+  <div class="wrap inner">
+    <h2 id="h-ctaband">Got something that needs welding?</h2>
+    <p>Call Warren and describe the job. He brings the rig to your site, looks at it himself, and tells you straight what it takes.</p>
+    <div class="cta" style="justify-content:center;margin-bottom:0">
+      <a class="btn btn-amber" href="tel:+18434305067">Call (843) 430-5067</a>
+      <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Send a message instead</a>
+    </div>
+    <p class="photonote">Photography on this page is licensed stock used for mood. Warren's own job photos replace it as soon as he sends them.</p>
   </div>
 </section>
 
@@ -430,7 +466,7 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#E8890C"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=512092c" defer></script>
+<script src="assets/siteassistant-v2.js?v=a2595dc" defer></script>
 <script data-grind-motion="2357" data-ref-learn="0037">
 (function(){
   try{
