@@ -203,6 +203,9 @@ footer li a{display:inline-block;padding:4px 0}
 .navtoggle svg{stroke:var(--blue-dk)}
 .navtoggle .navtoggle-text{display:none}
 @media(min-width:700px){.navtoggle .navtoggle-text{display:inline}}
+/* Mirror spacer for mobile logo center only — never visible on desktop. */
+.navbalance{display:none}
+.navbalance .navtoggle-text{display:none}
 .sitemenu{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:70}
 .sitemenu[hidden]{display:none}
 .sitemenu ul{list-style:none;margin:0;padding:8px 0;max-width:var(--wrap);margin-inline:auto}
@@ -221,15 +224,17 @@ footer li a{display:inline-block;padding:4px 0}
 }
 @media(max-width:640px){
   .mobile-callbar{display:flex;align-items:stretch;justify-content:stretch;gap:0;position:fixed;left:0;right:0;bottom:0;z-index:110;background:var(--blue-dk);color:#fff;min-height:52px;padding:0;box-shadow:0 -8px 24px -12px rgba(16,23,36,.45)}
-  /* Logo must be TRUE viewport center with hamburger present. Grid 1fr/auto/1fr
-     still read right-shifted on Pixel (Jacob ~17:10, recheck ~17:15). Absolute
-     center the img; Menu stays left; bizmeta hidden. */
+  /* Logo TRUE viewport center with hamburger (Jacob Pixel ~17:10 FAIL, ~17:15
+     absolute still +58px right on measure). Mirror the Menu button width with an
+     invisible .navbalance so flex space-between centers the logo for real. */
   .bizmeta{display:none}
-  .bar{position:relative;display:flex;align-items:center;justify-content:flex-start;gap:12px;min-height:72px}
-  .navtoggle{position:relative;z-index:2;flex:0 0 auto;grid-column:unset;justify-self:unset}
-  .logo{position:absolute;left:50%;transform:translateX(-50%);height:64px;margin:0;grid-column:unset;justify-self:unset}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:0;min-height:72px}
+  .navtoggle{flex:0 0 auto;grid-column:unset;justify-self:unset;position:relative;z-index:2}
+  .navbalance{flex:0 0 auto;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
+  .navbalance svg{visibility:hidden}
+  .logo{position:static;left:auto;transform:none;height:64px;margin:0;grid-column:unset;justify-self:unset;flex:0 1 auto}
   footer{padding-bottom:96px}
-  /* Jacob phone audit 2026-08-02 (logo1715): the service cards, their icons,
+  /* Jacob phone audit 2026-08-02 (logo1718): the service cards, their icons,
      the badge rows and the stat tiles read left-stuck on a narrow screen.
      Center only these named attention blocks, not body copy. .reviewband
      and .revstat are already centered upstream. */
@@ -290,7 +295,7 @@ footer li a{display:inline-block;padding:4px 0}
   <a class="mcb-call" href="tel:+18432514307" aria-label="Call RiverTown Cooling at (843) 251-4307">CALL</a>
 </div>
 
-<div class="previewbar">PREVIEW BUILD FOR LUKE LONG &middot; not live yet &middot; Vendly 2026-08-02 logo1715</div>
+<div class="previewbar">PREVIEW BUILD FOR LUKE LONG &middot; not live yet &middot; Vendly 2026-08-02 logo1718</div>
 
 <div class="phone-strip">
   <a href="tel:+18432514307" aria-label="Call RiverTown Cooling at (843) 251-4307">Call (843) 251-4307</a>
@@ -301,7 +306,11 @@ footer li a{display:inline-block;padding:4px 0}
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       <span class="navtoggle-text">Menu</span>
     </button>
-    <img class="logo" src="assets/logo-rivertown-mark.png?v=logo1715" alt="RiverTown Cooling logo">
+    <img class="logo" src="assets/logo-rivertown-mark.png?v=logo1718" alt="RiverTown Cooling logo">
+    <span class="navbalance" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="navtoggle-text">Menu</span>
+    </span>
     <div class="bizmeta">
       <span class="pill">Mon to Fri, 8am to 4pm</span>
       <a class="btn btn-red" href="tel:+18432514307">
@@ -323,7 +332,7 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=logo1715" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
+  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=logo1718" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -358,14 +367,14 @@ footer li a{display:inline-block;padding:4px 0}
       <h2 id="h-gallery">Photos from jobs around Conway and Myrtle Beach</h2>
     </div>
     <div class="gallery">
-      <img src="assets/job-bryant-air-handler-attic.jpg?v=logo1715" alt="Bryant air handler installed in a home attic" loading="lazy">
-      <img src="assets/job-bryant-outdoor-pad.jpg?v=logo1715" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
-      <img src="assets/job-coil-cleaning-before.jpg?v=logo1715" alt="Condenser coil during a cleaning service call" loading="lazy">
-      <img src="assets/job-condenser-electrical-bay.jpg?v=logo1715" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
-      <img src="assets/job-manifold-gauges-on-unit.jpg?v=logo1715" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
-      <img src="assets/job-outdoor-unit-residential.jpg?v=logo1715" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
-      <img src="assets/job-goodman-outdoor-install.jpg?v=logo1715" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
-      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=logo1715" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
+      <img src="assets/job-bryant-air-handler-attic.jpg?v=logo1718" alt="Bryant air handler installed in a home attic" loading="lazy">
+      <img src="assets/job-bryant-outdoor-pad.jpg?v=logo1718" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
+      <img src="assets/job-coil-cleaning-before.jpg?v=logo1718" alt="Condenser coil during a cleaning service call" loading="lazy">
+      <img src="assets/job-condenser-electrical-bay.jpg?v=logo1718" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
+      <img src="assets/job-manifold-gauges-on-unit.jpg?v=logo1718" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
+      <img src="assets/job-outdoor-unit-residential.jpg?v=logo1718" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
+      <img src="assets/job-goodman-outdoor-install.jpg?v=logo1718" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
+      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=logo1718" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
     </div>
   </div>
 </section>
@@ -466,7 +475,7 @@ footer li a{display:inline-block;padding:4px 0}
         </div>
       </div>
       <div class="shot">
-        <img src="assets/business-card-back.png?v=logo1715" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
+        <img src="assets/business-card-back.png?v=logo1718" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
         <span class="corner">Owner operated</span>
       </div>
     </div>
@@ -511,7 +520,7 @@ footer li a{display:inline-block;padding:4px 0}
      used as atmosphere; the alt text says so, and it is never presented as
      Luke's own work. This also gives the .ctaband CSS a real consumer. -->
 <section class="ctaband reveal" aria-labelledby="h-ctaband">
-  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=logo1715" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
+  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=logo1718" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
   <div class="wrap inner">
     <h2 id="h-ctaband">Still hot in there?</h2>
     <p>Call Luke direct. He answers his own phone, tells you straight whether it is a repair or a replacement, and the estimate on a replacement is free.</p>
@@ -577,7 +586,7 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=logo1715" alt="RiverTown Cooling logo">
+          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=logo1718" alt="RiverTown Cooling logo">
         </div>
         <p style="margin:0;max-width:34ch">Family operated residential HVAC serving Conway, Myrtle Beach and Horry County, South Carolina.</p>
       </div>
@@ -640,11 +649,11 @@ footer li a{display:inline-block;padding:4px 0}
     accent: "#C8202E"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=logo1715" defer></script>
+<script src="assets/siteassistant-v2.js?v=logo1718" defer></script>
 <script data-grind-motion="2357" data-ref-learn="0037">
 (function(){
   try{
-    /* Jacob phone audit 2026-08-02 (logo1715): opening the demo on a phone
+    /* Jacob phone audit 2026-08-02 (logo1718): opening the demo on a phone
        landed partway down instead of the hero. Two causes stack: browsers
        restoring the prior scroll position on reload, and a stale #quote hash
        forcing a jump on first paint. scrollRestoration=manual kills the
@@ -688,7 +697,7 @@ footer li a{display:inline-block;padding:4px 0}
     },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
-    /* Jacob phone audit 2026-08-02 (logo1715): counters did not count up on
+    /* Jacob phone audit 2026-08-02 (logo1718): counters did not count up on
        first mobile scroll-into-view. Fix: lower threshold (0.15, not 0.5) so
        a partly-covered numeral still fires, a generous negative bottom
        rootMargin so it fires before the element is fully clear of the sticky
