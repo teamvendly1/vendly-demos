@@ -859,6 +859,9 @@
 
   SiteAssistant.prototype.schedulePeek = function () {
     var self = this;
+    // Photos / BA pages can set disablePeek:true so the proactive card never
+    // covers a before/after drag handle (OUT-2250 WAIT).
+    if (this.cfg && this.cfg.disablePeek === true) return;
     if (this.peekSeen()) return;
     // About 5 seconds after load, once per session, if the chat is still closed.
     setTimeout(function () {
