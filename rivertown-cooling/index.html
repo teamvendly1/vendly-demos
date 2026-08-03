@@ -32,260 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --blue:#1B56A9;
-  --blue-dk:#12315C;
-  --blue-lt:#3E7FD4;
-  --red:#C8202E;
-  --paper:#FFFFFF;
-  --mist:#F4F7FB;
-  --ink:#101724;
-  --muted:#54637A;
-  --line:#DDE5EF;
-  --radius:16px;
-  --shadow:0 12px 30px -16px rgba(16,23,36,.32);
-  --shadow-lg:0 30px 60px -28px rgba(18,49,92,.45);
-  --wrap:1120px;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block}
-a{color:var(--blue)}
-h1,h2,h3{line-height:1.1;margin:0 0 .5em;overflow-wrap:break-word;word-wrap:break-word}
-h1{font:700 clamp(34px,6.2vw,62px)/1.04 Barlow Condensed,Inter,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
-h2{font:700 clamp(27px,4vw,42px)/1.08 Barlow Condensed,Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em}
-h3{font:700 19px/1.25 Inter,sans-serif}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
-.skiplink{position:absolute;left:-9999px;top:0;background:var(--blue-dk);color:#fff;padding:12px 18px;z-index:200}
-.skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
-
-/* preview bar, internal only */
-.previewbar{background:var(--blue-dk);color:#DCE7F6;font:600 13px/1 Inter,sans-serif;text-align:center;padding:9px 14px;letter-spacing:.03em}
-
-
-/* phone-first strip (Hydro steal: number alone above chrome) */
-.phone-strip{background:var(--blue-dk);color:#fff;text-align:center;font:700 16px/1 Inter,sans-serif}
-.phone-strip a{display:block;padding:12px 16px;color:#fff;text-decoration:none;letter-spacing:.02em}
-.phone-strip a:hover{background:#0E2A52}
-@media(min-width:900px){.phone-strip a{padding:11px 16px;font-size:15px}}
-/* real logo mark, cropped from the logo Luke sent over SMS */
-/* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
-.logo{height:88px;width:auto;display:block}
-.logo-chip{display:inline-flex;background:#fff;padding:12px 16px;border-radius:12px}
-.logo-footer{height:44px;width:auto;display:block}
-
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:13px 0}
-.logo{grid-column:2;justify-self:center}
-.bizmeta{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-.pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
-.btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
-.btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(200,32,46,.7)}
-.btn-red:hover{background:#a91a26}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(27,86,169,.7)}
-.btn-blue:hover{background:#164a92}
-.btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
-.btn-ghost:hover{border-color:var(--blue)}
-
-/* hero */
-.hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk)}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.42}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(18,49,92,.96) 0%,rgba(18,49,92,.80) 46%,rgba(18,49,92,.42) 100%)}
-.hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#BFD6F2;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
-.hero h1{max-width:16ch;color:#fff}
-.hero h1 em{font-style:normal;color:#8FC0FF}
-.lede{font-size:19px;color:#CFDDF0;max-width:56ch;margin:0 0 28px}
-.cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:34px}
-.trust{display:flex;gap:9px;flex-wrap:wrap}
-.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#DCE7F6;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.19);padding:10px 14px;border-radius:999px}
-.tchip svg{flex:0 0 auto}
-
-/* urgency strip */
-.strip{background:var(--red);color:#fff;padding:15px 0}
-.strip .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;text-align:center;font:600 16px/1.4 Inter,sans-serif}
-.strip a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-
-section{padding:clamp(56px,8vw,102px) 0}
-section.mist{background:var(--mist)}
-.center{text-align:center;max-width:62ch;margin:0 auto clamp(34px,5vw,54px)}
-.center .lede{color:var(--muted);margin:0 auto}
-.kicker{font:700 12.5px/1 Inter,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--blue);margin-bottom:13px}
-
-/* services */
-.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#C6D8EE}
-.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(27,86,169,.8)}
-.icn svg{stroke:#fff}
-.card p{color:var(--muted);margin:0;font-size:15.5px}
-
-/* gallery */
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;border-radius:12px}
-@media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr)}}
-@media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr);gap:17px}}
-
-/* about */
-.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);align-items:center}
-.shot{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);background:var(--blue-dk)}
-.shot img{width:100%;height:100%;object-fit:contain;background:var(--blue-dk);aspect-ratio:4/3}
-.corner{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font:700 12px/1 Inter,sans-serif;letter-spacing:.13em;text-transform:uppercase;padding:11px 16px;border-radius:0 12px 0 0}
-.sig{margin-top:26px;padding-top:22px;border-top:2px solid var(--line)}
-.sig .nm{font:700 19px/1.2 Inter,sans-serif;color:var(--blue-dk)}
-.sig .rl{font-size:14.5px;color:var(--muted)}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
-.badge{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dk);background:#fff;border:2px solid var(--line);padding:11px 15px;border-radius:10px}
-.badge svg{stroke:var(--red)}
-.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
-.stat{background:var(--mist);border:1px solid var(--line);border-radius:12px;padding:16px 22px;min-width:150px}
-.statnum{display:block;font:700 40px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
-.statlabel{display:block;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
-
-/* honest FB review band */
-.reviewband{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;margin-bottom:6px}
-.revstat{text-align:center;min-width:120px}
-.revnum{display:block;font:700 46px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
-.revlabel{display:block;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:5px}
-
-/* hours */
-.hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:19px}
-.hrow{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
-.hrow:last-child{border-bottom:0}
-.hrow b{color:var(--blue-dk)}
-.hrow span{color:var(--muted)}
-.afterhours{background:var(--blue-dk);color:#DCE7F6;border-radius:var(--radius);padding:29px 26px}
-.afterhours h3{color:#fff}
-.afterhours p{margin:0 0 20px;font-size:15.5px;color:#BFD0E6}
-
-/* area */
-.areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
-.area{font:600 14.5px/1 Inter,sans-serif;color:var(--blue-dk);background:#fff;border:1px solid var(--line);padding:11px 16px;border-radius:999px}
-
-/* lead form */
-.leadwrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,52px);align-items:start}
-form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,3.4vw,34px);box-shadow:var(--shadow-lg)}
-.field{margin-bottom:17px}
-label{display:block;font:600 14px/1 Inter,sans-serif;color:var(--blue-dk);margin-bottom:8px}
-input,textarea,select{width:100%;font:400 16px/1.4 Inter,sans-serif;color:var(--ink);padding:14px 15px;border:2px solid var(--line);border-radius:11px;background:#fff}
-/* WCAG 2.1 AA 2.4.7 focus visible): the prior rule suppressed the focus
-   outline on form fields and replaced it with a border-colour change only.
-   Colour alone is not a sufficient focus indicator, so keyboard users lost
-   their place in the form. Restored a real focus ring that meets the 3:1
-   non-text contrast requirement. Internal build standard. Never stated as a claim client-facing. */
-input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var(--blue);outline:3px solid var(--red);outline-offset:2px}
-input:focus,textarea:focus,select:focus{border-color:var(--blue)}
-textarea{min-height:112px;resize:vertical}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.req{font-weight:400;color:var(--muted, #54637A)}
-.hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
-.formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
-
-footer{background:var(--blue-dk);color:#BFD0E6;padding:56px 0 30px;font-size:15px}
-footer a{color:#fff}
-.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
-footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8FB4E4;margin:0 0 15px}
-footer ul{list-style:none;margin:0;padding:0}
-footer li{margin-bottom:10px}
-footer li a{display:inline-block;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8FA8C6}
-
-/* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
-   three line and then you can choose between like About us, services offered,
-   customer reviews, photos". Shown at every width so the behaviour he described
-   is the behaviour he gets, on a phone or a desktop. */
-.navtoggle{grid-column:1;justify-self:start;display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 13px;cursor:pointer;font:700 14px/1 Inter,sans-serif;color:var(--blue-dk)}
-.navtoggle:hover{border-color:var(--blue)}
-.navtoggle svg{stroke:var(--blue-dk)}
-.navtoggle .navtoggle-text{display:none}
-@media(min-width:700px){.navtoggle .navtoggle-text{display:inline}}
-/* Mirror spacer for mobile logo center only - never visible on desktop. */
-.navbalance{display:none}
-.navbalance .navtoggle-text{display:none}
-.sitemenu{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:70}
-.sitemenu[hidden]{display:none}
-.sitemenu ul{list-style:none;margin:0;padding:8px 0;max-width:var(--wrap);margin-inline:auto}
-.sitemenu li{margin:0}
-.sitemenu a{display:block;padding:15px 22px;color:var(--blue-dk);text-decoration:none;font:600 17px/1.2 Inter,sans-serif;border-bottom:1px solid var(--mist)}
-.sitemenu li:last-child a{border-bottom:0}
-.sitemenu a:hover{background:var(--mist);color:var(--blue)}
-
-/* mobile call bar */
-.mobile-callbar{display:none}.mobile-callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif}.mobile-callbar .mcb-est{background:#0E2A52}.mobile-callbar .mcb-call{background:var(--red)}
-
-@media(max-width:860px){
-  .about,.leadwrap{grid-template-columns:1fr}
-  .bizmeta .pill{display:none}
-  .bar{gap:12px}
-}
-@media(max-width:640px){
-  .mobile-callbar{display:flex;align-items:stretch;justify-content:stretch;gap:0;position:fixed;left:0;right:0;bottom:0;z-index:110;background:var(--blue-dk);color:#fff;min-height:52px;padding:0;box-shadow:0 -8px 24px -12px rgba(16,23,36,.45)}
-  /* Logo TRUE viewport center with hamburger (Jacob Pixel ~17:10 FAIL, ~17:15
-     absolute still +58px right on measure). Mirror the Menu button width with an
-     invisible .navbalance so flex space-between centers the logo for real. */
-  .bizmeta{display:none}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:0;min-height:72px}
-  .navtoggle{flex:0 0 auto;grid-column:unset;justify-self:unset;position:relative;z-index:2}
-  .navbalance{flex:0 0 auto;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
-  .navbalance svg{visibility:hidden}
-  .logo{position:static;left:auto;transform:none;height:64px;margin:0;grid-column:unset;justify-self:unset;flex:0 1 auto}
-  footer{padding-bottom:96px}
-  /* Jacob phone audit 2026-08-02 (em2154): the service cards, their icons,
-     the badge rows and the stat tiles read left-stuck on a narrow screen.
-     Center only these named attention blocks, not body copy. .reviewband
-     and .revstat are already centered upstream. */
-  .svc .card{text-align:center}
-  /* Phone audit 15:10 screenshots: the trust chips under the hero were the
-     actually-ragged block, not the service cards. Center them too. */
-  .trust{justify-content:center}
-  .svc .card .icn{margin-left:auto;margin-right:auto}
-  .badges{justify-content:center}
-  .stats{justify-content:center}
-  .stat{text-align:center}
-  /* FAB above sticky CALL bar (law 2026-08-01) - never cover Call/Quote */
-  .sa-launch,.sa-peek{bottom:72px!important}
-}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-/* iOS auto-zoom fix, added 2026-08-01 23:15 ET.
-   Safari zooms in on focus for any input under 16px and does not zoom back out.
-   The SiteAssistant widget declares no font-size on .sa-input or .sa-form, so the
-   field falls through to the UA default of roughly 13.3px and triggers it.
-   !important is deliberate: the widget injects its stylesheet after this block. */
-.sa-input,.sa-form input,.sa-form textarea{font-size:16px!important;line-height:1.4}
-
-/* grind-2357 motion/pop - scroll reveal; respects reduced-motion */
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
-.reveal.in{opacity:1;transform:none}
-.hero .eyebrow{animation:popIn .5s ease both}
-@keyframes popIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){
-  .reveal{opacity:1;transform:none;transition:none}
-  .hero .eyebrow{animation:none}
-}
-
-/* ref-learn 0037: source line under a counter, so every number on the page
-   carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */
-/* WCAG 2.1 AA 1.4.3 contrast: #7A8798 on the #F4F7FB band measured
-   3.37:1, under the 4.5:1 floor for body text. My own 0037 edit introduced it.
-   var(--muted) #54637A measures 5.70:1 on the same background. */
-.revsrc{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
-
-/* ref-learn 0037: closing CTA band over licensed atmosphere photography.
-   All six references close with a full-bleed CTA. The photo is licensed stock
-   used as atmosphere only and is never presented as Luke's own work. */
-.ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.34}
-.ctaband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,49,92,.90) 0%,rgba(18,49,92,.80) 100%)}
-.ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
-.ctaband h2{color:#fff}
-.ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 26px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:24px}
-</style>
+<link rel="stylesheet" href="assets/site.css?v=mp2151">
 </head>
 <body>
 <a class="skiplink" href="#main">Skip to content</a>
@@ -295,7 +42,7 @@ footer li a{display:inline-block;padding:4px 0}
   <a class="mcb-call" href="tel:+18432514307" aria-label="Call RiverTown Cooling at (843) 251-4307">CALL</a>
 </div>
 
-<div class="previewbar">PREVIEW BUILD FOR LUKE LONG &middot; not live yet &middot; Vendly 2026-08-02 em2154</div>
+<div class="previewbar">PREVIEW BUILD FOR LUKE LONG &middot; not live yet &middot; Vendly 2026-08-02 mp2151</div>
 
 <div class="phone-strip">
   <a href="tel:+18432514307" aria-label="Call RiverTown Cooling at (843) 251-4307">Call (843) 251-4307</a>
@@ -306,7 +53,9 @@ footer li a{display:inline-block;padding:4px 0}
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       <span class="navtoggle-text">Menu</span>
     </button>
-    <img class="logo" src="assets/logo-rivertown-mark.png?v=em2154" alt="RiverTown Cooling logo">
+    <a href="index.html" aria-label="RiverTown Cooling home" style="grid-column:2;justify-self:center">
+      <img class="logo" src="assets/logo-rivertown-mark.png?v=mp2151" alt="RiverTown Cooling logo">
+    </a>
     <span class="navbalance" aria-hidden="true">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       <span class="navtoggle-text">Menu</span>
@@ -321,10 +70,11 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
   <nav class="sitemenu" id="sitemenu" aria-label="Site sections" hidden>
     <ul>
-      <li><a href="#about">About us</a></li>
-      <li><a href="#h-svc">Services offered</a></li>
-      <li><a href="#h-reviews">Customer reviews</a></li>
-      <li><a href="#h-gallery">Photos</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="services.html">Services offered</a></li>
+      <li><a href="reviews.html">Customer reviews</a></li>
+      <li><a href="photos.html">Photos</a></li>
     </ul>
   </nav>
 </header>
@@ -332,7 +82,7 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=em2154" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
+  <img class="bg" src="assets/job-tech-branded-condensers.jpg?v=mp2151" alt="RiverTown Cooling technician in branded shirt servicing outdoor condensers" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -360,47 +110,15 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </div>
 
-<section class="reveal" aria-labelledby="h-gallery">
+<section class="reveal mist" aria-labelledby="h-explore">
   <div class="wrap">
     <div class="center">
-      <p class="kicker">Recent work</p>
-      <h2 id="h-gallery">Photos from jobs around Conway and Myrtle Beach</h2>
-    </div>
-    <div class="gallery">
-      <img src="assets/job-bryant-air-handler-attic.jpg?v=em2154" alt="Bryant air handler installed in a home attic" loading="lazy">
-      <img src="assets/job-bryant-outdoor-pad.jpg?v=em2154" alt="Bryant outdoor condenser unit installed on a concrete pad" loading="lazy">
-      <img src="assets/job-coil-cleaning-before.jpg?v=em2154" alt="Condenser coil during a cleaning service call" loading="lazy">
-      <img src="assets/job-condenser-electrical-bay.jpg?v=em2154" alt="Electrical bay of an outdoor condenser unit during service" loading="lazy">
-      <img src="assets/job-manifold-gauges-on-unit.jpg?v=em2154" alt="Manifold gauges connected to an outdoor unit for diagnostics" loading="lazy">
-      <img src="assets/job-outdoor-unit-residential.jpg?v=em2154" alt="Outdoor air conditioning unit at a residential home" loading="lazy">
-      <img src="assets/job-goodman-outdoor-install.jpg?v=em2154" alt="Goodman outdoor condenser unit freshly installed" loading="lazy">
-      <img src="assets/job-outdoor-unit-rock-pad.jpg?v=em2154" alt="Outdoor condenser unit installed on a rock pad" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<!-- REMOVED 2026-08-02 (photo QA 0057): the "Carolina heat, Horry County homes"
-     stock gallery is gone. All four of its images failed a visual audit - a green
-     paint roller on a paint can lid, a mechanic under a car on a lift, and two
-     wrong-region luxury homes (one architectural, one Queenslander pool house).
-     The filenames claimed HVAC; the pixels did not.
-     Rivertown already carries nine real photos of Luke's own work, so the honest
-     fix is to let real job proof carry the page rather than pad it with
-     mismatched stock. Do not reinstate a stock gallery here without opening
-     every image and looking at it first. -->
-
-<section class="reveal mist" aria-labelledby="h-reviews">
-  <div class="wrap">
-    <div class="center">
-      <p class="kicker">What homeowners say</p>
-      <h2 id="h-reviews">100% recommend from 5 Facebook reviews</h2>
-      <p class="lede">Real feedback from Luke's Facebook page. No star widget, no invented quotes, just the honest aggregate.</p>
+      <p class="kicker">Explore RiverTown Cooling</p>
+      <h2 id="h-explore">Everything you need before you call</h2>
+      <p class="lede">Real feedback from Luke's Facebook page, straightforward service info, and photos from actual jobs around Conway and Myrtle Beach.</p>
     </div>
     <div class="reviewband">
       <div class="revstat">
-        <!-- Fallback text is the TRUE value, not 0. With JS off this read "0%
-             Recommend" on Luke's own site, which is a false claim about his
-             reputation. The count-up still starts at 0 and animates up. -->
         <span class="revnum" data-counter data-target="100" data-suffix="%">100%</span>
         <span class="revlabel">Recommend</span>
         <span class="revsrc">Facebook page aggregate</span>
@@ -411,73 +129,27 @@ footer li a{display:inline-block;padding:4px 0}
         <span class="revsrc">Facebook page aggregate</span>
       </div>
     </div>
-    <p class="center" style="margin-top:24px;margin-bottom:0"><a class="btn btn-blue" href="https://www.facebook.com/Rivertowncooling" rel="noopener" target="_blank">See the reviews on Facebook <span class="sr-only">(opens in a new tab)</span></a></p>
-  </div>
-</section>
-<section class="reveal" aria-labelledby="h-svc">
-  <div class="wrap">
-    <div class="center">
-      <p class="kicker">What we do</p>
-      <h2 id="h-svc">Residential heating and air, done right the first time</h2>
-      <p class="lede">Straightforward work on the systems that keep your house liveable. If it is not something we handle, we will tell you rather than guess.</p>
-    </div>
-    <div class="svc">
-      <article class="card">
+    <div class="svc" style="margin-top:34px">
+      <a class="card" href="about.html" style="color:inherit;text-decoration:none;display:block">
+        <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="5"/></svg></div>
+        <h3>About us</h3>
+        <p>Meet Luke Long, the owner who does the work himself. USMC veteran, family owned, Conway born and raised.</p>
+      </a>
+      <a class="card" href="services.html" style="color:inherit;text-decoration:none;display:block">
         <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18"/></svg></div>
-        <h3>Air conditioning</h3>
-        <p>Not cooling, freezing up, short cycling or making a noise it did not use to make. Diagnosed and explained in plain words.</p>
-      </article>
-      <article class="card">
-        <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><path d="M12 2a7 7 0 0 0-4 12.7V19a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4.3A7 7 0 0 0 12 2z"/><path d="M9 21h6"/></svg></div>
-        <h3>Heating</h3>
-        <p>Heat pump and furnace service through the cold snaps, including the seasonal changeover most systems here run on.</p>
-      </article>
-      <article class="card">
-        <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></div>
-        <h3>Maintenance and tune-ups</h3>
-        <p>Seasonal checkups that catch small problems before they turn into a summer breakdown. Keeps your system running efficiently.</p>
-      </article>
-      <article class="card">
-        <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h3>Second opinions</h3>
-        <p>Told you need a whole new system? Get a straight second opinion before you spend the money.</p>
-      </article>
-    </div>
-    <p class="center" style="margin-top:28px;margin-bottom:0">Not sure what you need? <a href="tel:+18432514307">Call and ask</a>, it takes a second.</p>
-  </div>
-</section>
-
-<section class="reveal mist" id="about" aria-labelledby="h-about">
-  <div class="wrap">
-    <div class="about">
-      <div>
-        <p class="kicker">Meet Luke</p>
-        <h2 id="h-about">The whole company is one guy who picks up</h2>
-        <p>Luke Long is RiverTown Cooling. Conway born and raised, with 5 years of HVAC experience. US Marine Corps veteran. Family owned. Licensed and insured. He shows up when he said he would, fixes what is broken, and tells you straight when a repair still makes sense versus a replacement.</p>
-        <p>Residential heating and air across Conway, Myrtle Beach and Horry County. When you call, you get Luke. He diagnoses it, he does the work, and he explains it afterwards in plain words. Free estimates on system replacements, and a straight second opinion any time you want one.</p>
-        <div class="badges">
-          <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>USMC veteran</span>
-          <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/></svg>Family owned</span>
-          <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed and insured</span>
-        </div>
-        <div class="stats">
-          <div class="stat">
-            <!-- Fallback is the true value, not 0: with JS off this said
-                 "0 Years HVAC experience" on Luke's own page. -->
-            <span class="statnum" data-counter data-target="5">5</span>
-            <span class="statlabel">Years HVAC experience</span>
-            <span class="revsrc">Luke's own account, from Facebook</span>
-          </div>
-        </div>
-        <div class="sig">
-          <div class="nm">Luke Long</div>
-          <div class="rl">Owner. Operator. Conway and Myrtle Beach HVAC.</div>
-        </div>
-      </div>
-      <div class="shot">
-        <img src="assets/business-card-back.png?v=em2154" alt="RiverTown Cooling business card showing Luke Long, owner and operator, and the United States Marine Corps emblem" loading="lazy">
-        <span class="corner">Owner operated</span>
-      </div>
+        <h3>Services offered</h3>
+        <p>Air conditioning, heating, maintenance and tune-ups, and honest second opinions.</p>
+      </a>
+      <a class="card" href="reviews.html" style="color:inherit;text-decoration:none;display:block">
+        <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+        <h3>Customer reviews</h3>
+        <p>Real feedback from Luke's Facebook page. No star widget, no invented quotes.</p>
+      </a>
+      <a class="card" href="photos.html" style="color:inherit;text-decoration:none;display:block">
+        <div class="icn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.6-2h4.8L16 6"/></svg></div>
+        <h3>Photos</h3>
+        <p>Real photos from jobs around Conway and Myrtle Beach. No stock photography.</p>
+      </a>
     </div>
   </div>
 </section>
@@ -487,40 +159,16 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="center">
       <p class="kicker">Hours and coverage</p>
       <h2 id="h-hours">When we work, and what happens when it cannot wait</h2>
+      <p class="lede">Monday to Friday, 8am to 4pm. After hours and weekends, call anyway; Luke picks up when he can. Serving Conway, Myrtle Beach and Horry County.</p>
     </div>
-    <div class="hours">
-      <div class="card">
-        <h3>Regular hours</h3>
-        <div class="hrow"><b>Monday to Friday</b><span>8:00am to 4:00pm</span></div>
-        <div class="hrow"><b>Saturday</b><span>By phone, if urgent</span></div>
-        <div class="hrow"><b>Sunday</b><span>By phone, if urgent</span></div>
-        <p class="hint">Calls during business hours are the fastest way to get on the schedule.</p>
-      </div>
-      <div class="afterhours">
-        <h3>After hours and weekends</h3>
-        <p>Systems do not fail politely. If your AC quits on a Saturday afternoon and the house is climbing, call anyway. Luke picks up when he can and will tell you straight whether it can hold until Monday.</p>
-        <a class="btn btn-red" href="tel:+18432514307">Call (843) 251-4307</a>
-      </div>
-      <div class="card">
-        <h3>Areas served</h3>
-        <div class="areas" style="justify-content:flex-start">
-          <span class="area">Conway</span>
-          <span class="area">Myrtle Beach</span>
-          <span class="area">Horry County</span>
-          <span class="area">Surrounding areas</span>
-        </div>
-        <p class="hint">Not sure if you are in range? Call and ask, it takes a second.</p>
-      </div>
-    </div>
+    <p class="center" style="margin-top:8px;margin-bottom:0">
+      <a class="btn btn-blue" href="about.html">See full hours and service area</a>
+    </p>
   </div>
 </section>
 
-<!-- ref-learn 0037: closing CTA band. All six reference sites end on a
-     full-bleed CTA and Rivertown had none. The background is licensed stock
-     used as atmosphere; the alt text says so, and it is never presented as
-     Luke's own work. This also gives the .ctaband CSS a real consumer. -->
 <section class="ctaband reveal" aria-labelledby="h-ctaband">
-  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=em2154" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
+  <img class="bg" src="assets/stock/hvac-condenser-residential-01.jpg?v=mp2151" alt="Outdoor air conditioning condenser unit beside a home, licensed stock photography used for atmosphere" loading="lazy">
   <div class="wrap inner">
     <h2 id="h-ctaband">Still hot in there?</h2>
     <p>Call Luke direct. He answers his own phone, tells you straight whether it is a repair or a replacement, and the estimate on a replacement is free.</p>
@@ -528,7 +176,7 @@ footer li a{display:inline-block;padding:4px 0}
       <a class="btn btn-red" href="tel:+18432514307">Call (843) 251-4307</a>
       <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Send a message instead</a>
     </div>
-    <p class="photonote">Photography on this band is licensed stock used for atmosphere. The job photos above are Luke's own.</p>
+    <p class="photonote">Photography on this band is licensed stock used for atmosphere. See real job photos on our <a href="photos.html" style="color:#fff">photos page</a>.</p>
   </div>
 </section>
 
@@ -586,7 +234,7 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=em2154" alt="RiverTown Cooling logo">
+          <img class="logo-footer" src="assets/logo-rivertown-mark.png?v=mp2151" alt="RiverTown Cooling logo">
         </div>
         <p style="margin:0;max-width:34ch">Family operated residential HVAC serving Conway, Myrtle Beach and Horry County, South Carolina.</p>
       </div>
@@ -599,10 +247,13 @@ footer li a{display:inline-block;padding:4px 0}
         </ul>
       </div>
       <div>
-        <h3 class="fh">Hours</h3>
+        <h3 class="fh">Menu</h3>
         <ul>
-          <li>Mon to Fri, 8am to 4pm</li>
-          <li>Weekends by phone if urgent</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services offered</a></li>
+          <li><a href="reviews.html">Customer reviews</a></li>
+          <li><a href="photos.html">Photos</a></li>
         </ul>
       </div>
       <div>
@@ -624,10 +275,13 @@ footer li a{display:inline-block;padding:4px 0}
 
 <script>
 (function(){
-  document.getElementById('leadform').addEventListener('submit',function(e){
-    e.preventDefault();
-    alert('Preview only. On the live site this goes straight to Luke and is captured as a lead.');
-  });
+  var lf=document.getElementById('leadform');
+  if(lf){
+    lf.addEventListener('submit',function(e){
+      e.preventDefault();
+      alert('Preview only. On the live site this goes straight to Luke and is captured as a lead.');
+    });
+  }
 })();
 </script>
 
@@ -642,98 +296,14 @@ footer li a{display:inline-block;padding:4px 0}
     nudge: "Ask me about heating or air, or get Luke on the phone. He is the one who does the work.",
     phone: "+18432514307",
     sms: "+18432514307",
-    quoteUrl: "#quote",
-    bookUrl: "#quote",
-    contactUrl: "#quote",
+    quoteUrl: "index.html#quote",
+    bookUrl: "index.html#quote",
+    contactUrl: "index.html#quote",
     suggestions: ["Free estimates?", "Hours", "Myrtle Beach?", "My AC is not cooling", "Talk to Luke"],
     accent: "#C8202E"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=em2154" defer></script>
-<script data-grind-motion="2357" data-ref-learn="0037">
-(function(){
-  try{
-    /* Jacob phone audit 2026-08-02 (em2154): opening the demo on a phone
-       landed partway down instead of the hero. Two causes stack: browsers
-       restoring the prior scroll position on reload, and a stale #quote hash
-       forcing a jump on first paint. scrollRestoration=manual kills the
-       first. For the second, only clear the hash when it was NOT the result
-       of an intentional in-page click this session (rc-quote-intent flag,
-       set below) - so a real "Get estimate" / #quote click still lands on
-       the quote section, on this load and on any later reload. */
-    if('scrollRestoration' in history){ history.scrollRestoration='manual'; }
-    if(window.location.hash==='#quote' && !sessionStorage.getItem('rc-quote-intent')){
-      history.replaceState(null,'',window.location.pathname+window.location.search);
-      window.scrollTo(0,0);
-    } else if(!window.location.hash){
-      window.scrollTo(0,0);
-    }
-    document.querySelectorAll('a[href="#quote"]').forEach(function(a){
-      a.addEventListener('click',function(){
-        try{ sessionStorage.setItem('rc-quote-intent','1'); }catch(e){}
-      });
-    });
-
-    var navBtn=document.getElementById('navtoggle'), navPanel=document.getElementById('sitemenu');
-    if(navBtn && navPanel){
-      var setNav=function(open){ navPanel.hidden=!open; navBtn.setAttribute('aria-expanded', open?'true':'false'); };
-      navBtn.addEventListener('click',function(e){ e.stopPropagation(); setNav(navPanel.hidden); });
-      navPanel.addEventListener('click',function(e){ if(e.target.tagName==='A') setNav(false); });
-      document.addEventListener('click',function(e){ if(!navPanel.hidden && !navPanel.contains(e.target) && e.target!==navBtn) setNav(false); });
-      document.addEventListener('keydown',function(e){ if(e.key==='Escape' && !navPanel.hidden){ setNav(false); navBtn.focus(); } });
-    }
-    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(reduced){
-      document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in');});
-      document.querySelectorAll('[data-counter]').forEach(function(el){
-        var t=parseFloat(el.getAttribute('data-target'))||0;
-        var suf=el.getAttribute('data-suffix')||'';
-        el.textContent=t+suf;
-      });
-      return;
-    }
-    var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
-    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
-
-    /* Jacob phone audit 2026-08-02 (em2154): counters did not count up on
-       first mobile scroll-into-view. Fix: lower threshold (0.15, not 0.5) so
-       a partly-covered numeral still fires, a generous negative bottom
-       rootMargin so it fires before the element is fully clear of the sticky
-       call bar, and an explicit already-intersecting check at observe time
-       so an element that is already on screen when JS runs (fast scroll,
-       short page) still animates instead of waiting for a scroll event that
-       may never come. */
-    function startCounter(el){
-      if(el.dataset.counted) return;
-      el.dataset.counted='1';
-      var target=parseFloat(el.getAttribute('data-target'))||0;
-      var suffix=el.getAttribute('data-suffix')||'';
-      var dur=1100,start=null;
-      function step(ts){
-        if(!start) start=ts;
-        var p=Math.min((ts-start)/dur,1);
-        el.textContent=Math.round(target*p)+suffix;
-        if(p<1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    }
-    var cio=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(!e.isIntersecting) return;
-        cio.unobserve(e.target);
-        startCounter(e.target);
-      });
-    },{threshold:0.15,rootMargin:'0px 0px -5% 0px'});
-    document.querySelectorAll('[data-counter]').forEach(function(el){
-      var r=el.getBoundingClientRect();
-      var vh=window.innerHeight||document.documentElement.clientHeight;
-      if(r.top<vh && r.bottom>0){ startCounter(el); }
-      else{ cio.observe(el); }
-    });
-  }catch(e){}
-})();
-</script>
+<script src="assets/siteassistant-v2.js?v=mp2151" defer></script>
+<script src="assets/site.js?v=mp2151" defer></script>
 </body>
 </html>
