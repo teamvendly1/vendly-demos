@@ -18,10 +18,10 @@
  * INSTALL (just before </body>):
  *   <script>
  *     window.SiteAssistantConfig = {
- *       tenantId: "palmetto",                       // your client id (required)
+ *       tenantId: "your-client-id",                       // your client id (required)
  *       endpoint: "https://vendly-assistant.vercel.app", // backend base URL
- *       name: "Palmetto Precision Strings",         // header label
- *       greeting: "Hi. Ask about our bowstrings or turnaround.",
+ *       name: "Your Business Name",              // header label
+ *       greeting: "Hi. Ask about our services or hours.",
  *       phone: "+18035551234",   // Call chip (optional)
  *       sms:   "+18035551234",   // Text chip (optional)
  *       quoteUrl: "/pages/contact", // Get a quote chip (optional)
