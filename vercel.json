@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/rivertown-cooling/:path*",
+      "destination": "https://teamvendly1.github.io/vendly-demos/rivertown-cooling/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/rigging-repair-welding/:path*",
+      "destination": "https://teamvendly1.github.io/vendly-demos/rigging-repair-welding/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/plumber/:path*",
+      "destination": "https://teamvendly1.github.io/vendly-demos/plumber/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/plumber-v1-bland/:path*",
+      "destination": "https://teamvendly1.github.io/vendly-demos/plumber-v1-bland/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/small-town-landscaping/:path*",
+      "destination": "https://teamvendly1.github.io/vendly-demos/small-town-landscaping/:path*",
+      "permanent": false
+    }
+  ]
+}
