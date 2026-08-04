@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * BeforeAfter - a drag-to-reveal before/after image slider.
  * Vendly LLC. Rentable micro-app. Dependency-free, no build step.
  *

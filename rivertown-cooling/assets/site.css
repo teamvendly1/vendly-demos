@@ -250,7 +250,6 @@ footer li a{display:inline-block;padding:4px 0}
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.34}
 .ctaband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,49,92,.90) 0%,rgba(18,49,92,.80) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
 .ctaband h2{color:#fff}

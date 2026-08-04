@@ -72,15 +72,15 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .btn-ghost{border-color:var(--line);color:var(--ink);background:#fff}
 .btn-ghost:hover{border-color:var(--steel)}
 
-/* hero: steel texture base + stock photo overlay */
+/* hero: steel texture, typography only. This page carries no photographs.
+   The only photographs that may ever go here are ones Warren shot himself.
+   Do not add an atmosphere image, a mood image, or a hero image from any
+   library: the heading below the fold reads as his portfolio on a phone. */
 .hero{position:relative;color:#fff;overflow:hidden;background:
   repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 34px),
   linear-gradient(160deg,#26282D 0%,#1B1D21 55%,#111214 100%)}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%;opacity:.4;z-index:0}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(27,29,33,.95) 0%,rgba(27,29,33,.8) 46%,rgba(27,29,33,.44) 100%);z-index:1}
 .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 82% 18%, rgba(232,137,12,.20), transparent 42%);z-index:1}
-.hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
-.hero-credit{position:relative;z-index:2;font-size:11.5px;color:rgba(255,255,255,.5);margin-top:-8px}
+.hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(64px,8vw,102px)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#F0C98D;border:1px solid rgba(232,137,12,.45);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:17ch;color:#fff}
 .hero h1 em{font-style:normal;color:var(--amber)}
@@ -106,12 +106,6 @@ section.mist{background:var(--mist)}
 .icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--ink) 0%,var(--ink-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(27,29,33,.8)}
 .icn svg{stroke:var(--amber)}
 .card p{color:var(--ink-lt);margin:0;font-size:15.5px}
-
-/* gallery: stock mood photography */
-.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;border-radius:12px}
-@media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr)}}
-@media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr);gap:17px}}
 
 /* trust / licensed-insured band */
 .trustband{background:var(--ink);color:#E4E2DE;border-radius:var(--radius);padding:clamp(30px,4vw,44px) clamp(26px,4vw,44px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,4vw,44px);align-items:center}
@@ -203,17 +197,16 @@ footer li a{display:inline-block;padding:4px 0}
 }
 
 /* ref-learn 0037: closing CTA band. All six reference sites end on a full-bleed
-   CTA and Warren had none. Background is licensed stock used as atmosphere and
-   is labelled as such on the page. Warren carries NO counters and NO reviews:
-   there is no sourceable number or review for him, and an empty honest slot
-   beats a fabricated full one. Do not "fix" this by inventing figures. */
+   CTA and Warren had none. The band is ink and amber, no image behind it.
+   Warren carries NO counters and NO reviews: there is no sourceable number or
+   review for him, and an empty honest slot beats a fabricated full one.
+   Do not "fix" this by inventing figures, and do not "fix" the flat background
+   by dropping a library photo behind it. */
 .ctaband{position:relative;overflow:hidden;background:var(--ink);color:#fff;text-align:center}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.30}
-.ctaband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(27,29,33,.90) 0%,rgba(27,29,33,.80) 100%)}
+.ctaband::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%, rgba(232,137,12,.16), transparent 58%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
 .ctaband h2{color:#fff}
 .ctaband p{color:#C9CDD3;max-width:54ch;margin:0 auto 26px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8A8E96;margin-top:24px}
 </style>
 </head>
 <body>
@@ -245,10 +238,10 @@ footer li a{display:inline-block;padding:4px 0}
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <!-- Hero 2026-08-02 ~13:55 (photo QA 1354). Prior hero was field welding only.
-       Warren builds/repairs trailers and heavy equipment - hero is now a lowboy
-       equipment hauler (opened and looked: JCB on flatbed). Stock mood only. -->
-  <img class="bg" src="assets/stock/trailer-equipment-hauler-01.jpg?v=w2245b18" alt="Heavy equipment on a lowboy trailer" loading="eager">
+  <!-- 2026-08-04: hero image removed. It was a library photo of someone else's
+       lowboy and JCB, sitting at the top of a one-man shop's page. Every
+       photograph on this page must be one Warren took. Until he sends job
+       photos, the hero is type on steel. -->
   <div class="wrap hero-inner">
     <span class="eyebrow">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6z"/></svg>
@@ -266,7 +259,6 @@ footer li a{display:inline-block;padding:4px 0}
       <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trailers, equipment, cookers</span>
     </div>
   </div>
-  <p class="hero-credit wrap">Stock photography for mood. Not Warren's job photos.</p>
 </section>
 
 <div class="strip">
@@ -276,28 +268,15 @@ footer li a{display:inline-block;padding:4px 0}
   </div>
 </div>
 
-<section class="reveal mist" aria-labelledby="h-gallery">
-  <div class="wrap">
-    <div class="center">
-      <p class="kicker">The work</p>
-      <h2 id="h-gallery">Trailers, equipment, containers, and weld work</h2>
-      <p class="lede">The kind of work that comes through the shop: trailers, farm and heavy equipment, containers, rigging, and weld repair.</p>
-    </div>
-    <div class="gallery">
-      <!-- 2026-08-02 ~13:55 photo QA 1354: every file opened and looked at before ship.
-           Rejects included Mazda lot, dentist, food BBQ, Scania semi, Unity IDE, night sky.
-           Bank: _tmp/warren-photo-bank-1354/PHOTO-QA.txt -->
-      <img src="assets/stock/trailer-livestock-farm-01.jpg?v=w2245b18" alt="Farm tractor hitched to a metal livestock trailer in a field" loading="lazy">
-      <img src="assets/stock/trailer-dump-tipper-01.jpg?v=w2245b18" alt="Heavy dump tipper trailer on an industrial lot" loading="lazy">
-      <img src="assets/stock/industrial-containers-01.jpg?v=w2245b18" alt="Stacked shipping containers in an industrial yard" loading="lazy">
-      <img src="assets/stock/farm-equipment-tractor-01.jpg?v=w2245b18" alt="Heavy farm tractor and equipment" loading="lazy">
-      <img src="assets/stock/industrial-rigging-hoist-01.jpg?v=w2245b18" alt="Worker guiding a large metal component suspended on a hoist" loading="lazy">
-      <img src="assets/stock/welding-onsite-frame-01.jpg?v=w2245b18" alt="Welder joining a steel frame outdoors" loading="lazy">
-      <img src="assets/stock/welding-sparks-01.jpg?v=w2245b18" alt="Welder in a helmet joining metal with sparks" loading="lazy">
-      <img src="assets/stock/welding-sparks-02.jpg?v=w2245b18" alt="Grinding a steel post outdoors with sparks" loading="lazy">
-    </div>
-  </div>
-</section>
+<!-- 2026-08-04: the gallery section was deleted, not re-photographed.
+     It carried eight library photographs under the heading "Trailers,
+     equipment, containers, and weld work" and the line "The kind of work
+     that comes through the shop." Nothing in that grid came through his
+     shop. On a phone that grid IS the portfolio, and the credit line that
+     was supposed to excuse it sat a full screen higher in 11px grey.
+     The work is stated in words in the section below, which is true.
+     A gallery goes back here when Warren sends photographs of his own jobs,
+     and not before. Do not repopulate it from a library. -->
 
 <section class="reveal" aria-labelledby="h-svc">
   <div class="wrap">
@@ -375,7 +354,6 @@ footer li a{display:inline-block;padding:4px 0}
 
 <!-- ref-learn 0037: closing CTA band, matching the pattern in all six refs. -->
 <section class="ctaband reveal" aria-labelledby="h-ctaband">
-  <img class="bg" src="assets/stock/industrial-rigging-hoist-01.jpg?v=w2245b18" alt="Industrial rigging of a large metal component" loading="lazy">
   <div class="wrap inner">
     <h2 id="h-ctaband">Got something that needs building or fixing?</h2>
     <p>Call Warren and describe the job. He builds it, repairs it, or keeps it running, and tells you straight what it takes.</p>
@@ -383,7 +361,6 @@ footer li a{display:inline-block;padding:4px 0}
       <a class="btn btn-amber" href="tel:+18434305067">Call (843) 430-5067</a>
       <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Send a message instead</a>
     </div>
-    <p class="photonote">Photography on this page is licensed stock used for mood (trailers, equipment, containers, welding). Warren's own finished trailers and cookers replace it when he sends them.</p>
   </div>
 </section>
 

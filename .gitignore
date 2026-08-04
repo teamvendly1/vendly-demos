@@ -1,0 +1,6 @@
+# Local backups and provenance notes never ship. A .bak copy of a scrubbed
+# page still contains the markup that was scrubbed, and GitHub Pages serves it.
+*.bak
+*.bak-*
+*.orig
+SOURCE.txt
