@@ -1,30 +1,40 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
+  "version": 2,
+  "routes": [
     {
-      "source": "/rivertown-cooling/:path*",
-      "destination": "https://teamvendly1.github.io/vendly-demos/rivertown-cooling/:path*",
-      "permanent": false
+      "src": "/rivertown-cooling/(.*)",
+      "status": 307,
+      "headers": {
+        "Location": "https://teamvendly1.github.io/vendly-demos/rivertown-cooling/$1"
+      }
     },
     {
-      "source": "/rigging-repair-welding/:path*",
-      "destination": "https://teamvendly1.github.io/vendly-demos/rigging-repair-welding/:path*",
-      "permanent": false
+      "src": "/rigging-repair-welding/(.*)",
+      "status": 307,
+      "headers": {
+        "Location": "https://teamvendly1.github.io/vendly-demos/rigging-repair-welding/$1"
+      }
     },
     {
-      "source": "/plumber/:path*",
-      "destination": "https://teamvendly1.github.io/vendly-demos/plumber/:path*",
-      "permanent": false
+      "src": "/plumber/(.*)",
+      "status": 307,
+      "headers": {
+        "Location": "https://teamvendly1.github.io/vendly-demos/plumber/$1"
+      }
     },
     {
-      "source": "/plumber-v1-bland/:path*",
-      "destination": "https://teamvendly1.github.io/vendly-demos/plumber-v1-bland/:path*",
-      "permanent": false
+      "src": "/plumber-v1-bland/(.*)",
+      "status": 307,
+      "headers": {
+        "Location": "https://teamvendly1.github.io/vendly-demos/plumber-v1-bland/$1"
+      }
     },
     {
-      "source": "/small-town-landscaping/:path*",
-      "destination": "https://teamvendly1.github.io/vendly-demos/small-town-landscaping/:path*",
-      "permanent": false
+      "src": "/small-town-landscaping/(.*)",
+      "status": 307,
+      "headers": {
+        "Location": "https://teamvendly1.github.io/vendly-demos/small-town-landscaping/$1"
+      }
     }
   ]
 }
