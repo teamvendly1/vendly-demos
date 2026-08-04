@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Helton Automotive | Gastonia</title>
+<meta name="description" content="Your honest auto mechanic.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{
+  --a:#123A5E;--b:#0B2740;--c:#B3311F;--mist:#F1F5F9;--ink:#111820;
+  --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--a)}
+h1,h2,h3{line-height:1.12;margin:0 0 .55em;overflow-wrap:break-word}
+h1{font:700 clamp(31px,6.6vw,54px)/1.06 "Barlow Condensed",Inter,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
+h2{font:700 clamp(25px,4.6vw,38px)/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase}
+h3{font:700 18px/1.3 Inter,sans-serif}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
+.skiplink:focus{left:8px;top:8px}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
+
+/* Vendly preview watermark bar. Carries the removal incentive: a demo defaced
+   enough to be theft-proof reads as cheap and loses the sale. */
+.vendly-wm-bar{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
+.vendly-wm-bar a{color:#fff}
+
+.phonestrip{background:var(--b)}
+.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
+  font:700 17px/1 Inter,sans-serif;letter-spacing:.02em}
+.phonestrip a:hover,.phonestrip a:focus{background:#0a1c2e}
+
+/* Header: THEIR logo, big and centred. The first question an owner asks is not
+   "is this good", it is "is this MINE". */
+header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px 0}
+.brand{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.brandmark{height:76px;width:auto;max-width:min(86vw,420px);object-fit:contain}
+@media(min-width:720px){.brandmark{height:104px}}
+.brand-fallback{font:700 26px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b)}
+nav.main ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:center}
+nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
+nav.main a:hover{text-decoration:underline}
+
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
+  padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
+.btn-c{background:var(--c);color:#fff}
+.btn-c:hover{filter:brightness(.9)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+
+/* Hero: the photograph is the point, so it is painted at full strength and the
+   text sits on a gradient scrim instead. The old build used opacity .32 over a
+   navy block, which renders as a colour slab with no readable photo. */
+.hero{position:relative;color:#fff;background:var(--b);isolation:isolate}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(6,18,31,.93) 0%,rgba(6,18,31,.86) 42%,rgba(6,18,31,.55) 100%)}
+.hero-in{position:relative;padding:74px 0 70px;max-width:660px}
+.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92;margin:0 0 14px}
+.hero p.lede{font-size:19px;max-width:44ch;margin:0 0 26px;color:#eef3f8}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+
+.strip{background:var(--mist);border-block:1px solid var(--line)}
+.strip ul{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:16px 0;
+  font:600 15px/1.4 Inter,sans-serif;color:var(--b)}
+
+section{padding:52px 0}
+.lead{color:var(--muted);max-width:62ch}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+.card h3{margin:0;color:var(--b)}
+
+.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{margin:0;position:relative}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--mist)}
+.gal figcaption{font:400 12px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
+/* Per-photo watermark. Small on purpose. */
+.vendly-wm-corner{position:absolute;right:8px;bottom:8px;pointer-events:none;
+  font:700 11px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;
+  color:#fff;background:rgba(10,20,32,.62);padding:5px 8px;border-radius:6px}
+.hero .vendly-wm-corner{right:16px;bottom:16px;font-size:12px}
+
+.factbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.factbox dl{margin:0;display:grid;gap:14px}
+.factbox dt{font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.factbox dd{margin:0;font-size:17px;overflow-wrap:anywhere}
+.factbox a{color:var(--a)}
+
+footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
+footer.site a{color:#fff}
+footer.site p{margin:0 0 12px}
+</style>
+</head>
+<body>
+<a class="skiplink" href="#main">Skip to main content</a>
+
+<div class="vendly-wm-bar">This is a free preview built by Vendly. It is not an official or affiliated site of Helton Automotive. The Vendly marks come off the day it goes live. <a href="https://vendly.ink">vendly.ink</a></div>
+
+<div class="phonestrip"><a href="tel:+17042633110">Call (704) 263-3110</a></div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#main"><img class="brandmark" src="assets/476628632_1113008340523599.jpg" alt="Helton Automotive logo"></a>
+    <nav class="main" aria-label="Main">
+      <ul>
+        <li><a href="#services">What we do</a></li>
+        <li><a href="#work">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <img class="hero-img" src="assets/415231248_861564442334658.jpg" alt="The Helton Automotive shop building in Gastonia">
+  <div class="wrap hero-in">
+    <p class="eyebrow">Automotive Repair Shop in Gastonia</p>
+    <h1>Helton Automotive</h1>
+    <p class="lede">Your honest auto mechanic.</p>
+    <div class="cta-row">
+      <a class="btn btn-c" href="tel:+17042633110">Call (704) 263-3110</a>
+      <a class="btn btn-ghost" href="mailto:Howardhelton41@gmail.com">Email us</a>
+    </div>
+  </div>
+  <span class="vendly-wm-corner">Preview by Vendly</span>
+</div>
+
+<div class="strip"><div class="wrap"><ul>
+  <li>100% recommend on Facebook, from 12 reviews</li>
+</ul></div></div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Helton Automotive Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Your honest auto mechanic</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Helton Automotive Facebook page. Pulled 2026-08-04.</p>
+    <div class="gal">
+      <figure>
+        <img src="assets/505238069_10222713465384180.jpg" alt="Supercharged Challenger engine bay with the shaker hood open" loading="lazy" width="800" height="600">
+        <figcaption>Supercharged Challenger engine bay with the shaker hood open</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/555721574_10223816569001081.jpg" alt="Classic Ford pickup on the lift during a restoration, bench seat out" loading="lazy" width="800" height="600">
+        <figcaption>Classic Ford pickup on the lift during a restoration, bench seat out</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/503485965_10222694608712775.jpg" alt="Dodge Challenger on the lift with the hood up" loading="lazy" width="800" height="600">
+        <figcaption>Dodge Challenger on the lift with the hood up</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/503833320_10222694612552871.jpg" alt="Front brake rotor and caliper exposed with the wheel off" loading="lazy" width="800" height="600">
+        <figcaption>Front brake rotor and caliper exposed with the wheel off</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/504281776_10222694611232838.jpg" alt="Wheel and tyre removed from a car on the lift" loading="lazy" width="800" height="600">
+        <figcaption>Wheel and tyre removed from a car on the lift</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/502972877_10222659542556143.jpg" alt="Technician working a classic Cadillac on the lift" loading="lazy" width="800" height="600">
+        <figcaption>Technician working a classic Cadillac on the lift</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/504522123_10222686343906160.jpg" alt="Finished Challenger parked outside the shop" loading="lazy" width="800" height="600">
+        <figcaption>Finished Challenger parked outside the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/500552520_1190806812743751.jpg" alt="Inside the shop with vehicles on the lifts" loading="lazy" width="800" height="600">
+        <figcaption>Inside the shop with vehicles on the lifts</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="factbox">
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+17042633110">(704) 263-3110</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:Howardhelton41@gmail.com">Howardhelton41@gmail.com</a></dd></div>
+        <div><dt>Address</dt><dd>2312 Rufus Ratchford Road, Gastonia, NC</dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/HeltonAutomotive" rel="noopener">www.facebook.com/HeltonAutomotive</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Helton Automotive. 2312 Rufus Ratchford Road, Gastonia, NC. (704) 263-3110</p>
+    <p>Preview built by Vendly from the Helton Automotive public Facebook page on 2026-08-04. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <p>Preview by Vendly - <a href="https://vendly.ink">vendly.ink</a></p>
+  </div>
+</footer>
+</body>
+</html>

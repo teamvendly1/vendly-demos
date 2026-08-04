@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DeVoss Auto Service | Richmond</title>
+<meta name="description" content="We are a full service automotive repair shop.">
+<meta name="robots" content="noindex,nofollow">
+<style>
+:root{
+  --a:#123A5E;--b:#0B2740;--c:#B3311F;--mist:#F1F5F9;--ink:#111820;
+  --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:var(--a)}
+h1,h2,h3{line-height:1.12;margin:0 0 .55em;overflow-wrap:break-word}
+h1{font:700 clamp(31px,6.6vw,54px)/1.06 "Barlow Condensed",Inter,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
+h2{font:700 clamp(25px,4.6vw,38px)/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase}
+h3{font:700 18px/1.3 Inter,sans-serif}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
+.skiplink:focus{left:8px;top:8px}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
+
+/* Vendly preview watermark bar. Carries the removal incentive: a demo defaced
+   enough to be theft-proof reads as cheap and loses the sale. */
+.vendly-wm-bar{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
+.vendly-wm-bar a{color:#fff}
+
+.phonestrip{background:var(--b)}
+.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
+  font:700 17px/1 Inter,sans-serif;letter-spacing:.02em}
+.phonestrip a:hover,.phonestrip a:focus{background:#0a1c2e}
+
+/* Header: THEIR logo, big and centred. The first question an owner asks is not
+   "is this good", it is "is this MINE". */
+header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px 0}
+.brand{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.brandmark{height:76px;width:auto;max-width:min(86vw,420px);object-fit:contain}
+@media(min-width:720px){.brandmark{height:104px}}
+.brand-fallback{font:700 26px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b)}
+nav.main ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:center}
+nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
+nav.main a:hover{text-decoration:underline}
+
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
+  padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
+.btn-c{background:var(--c);color:#fff}
+.btn-c:hover{filter:brightness(.9)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+
+/* Hero: the photograph is the point, so it is painted at full strength and the
+   text sits on a gradient scrim instead. The old build used opacity .32 over a
+   navy block, which renders as a colour slab with no readable photo. */
+.hero{position:relative;color:#fff;background:var(--b);isolation:isolate}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(6,18,31,.93) 0%,rgba(6,18,31,.86) 42%,rgba(6,18,31,.55) 100%)}
+.hero-in{position:relative;padding:74px 0 70px;max-width:660px}
+.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#fff;opacity:.92;margin:0 0 14px}
+.hero p.lede{font-size:19px;max-width:44ch;margin:0 0 26px;color:#eef3f8}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+
+.strip{background:var(--mist);border-block:1px solid var(--line)}
+.strip ul{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:16px 0;
+  font:600 15px/1.4 Inter,sans-serif;color:var(--b)}
+
+section{padding:52px 0}
+.lead{color:var(--muted);max-width:62ch}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+.card h3{margin:0;color:var(--b)}
+
+.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
+.gal figure{margin:0;position:relative}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--mist)}
+.gal figcaption{font:400 12px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
+/* Per-photo watermark. Small on purpose. */
+.vendly-wm-corner{position:absolute;right:8px;bottom:8px;pointer-events:none;
+  font:700 11px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;
+  color:#fff;background:rgba(10,20,32,.62);padding:5px 8px;border-radius:6px}
+.hero .vendly-wm-corner{right:16px;bottom:16px;font-size:12px}
+
+.factbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.factbox dl{margin:0;display:grid;gap:14px}
+.factbox dt{font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.factbox dd{margin:0;font-size:17px;overflow-wrap:anywhere}
+.factbox a{color:var(--a)}
+
+footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
+footer.site a{color:#fff}
+footer.site p{margin:0 0 12px}
+</style>
+</head>
+<body>
+<a class="skiplink" href="#main">Skip to main content</a>
+
+<div class="vendly-wm-bar">This is a free preview built by Vendly. It is not an official or affiliated site of DeVoss Auto Service. The Vendly marks come off the day it goes live. <a href="https://vendly.ink">vendly.ink</a></div>
+
+<div class="phonestrip"><a href="tel:+18042788990">Call (804) 278-8990</a></div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#main"><img class="brandmark" src="assets/302198866_490285229772578.png" alt="DeVoss Auto Service logo"></a>
+    <nav class="main" aria-label="Main">
+      <ul>
+        <li><a href="#services">What we do</a></li>
+        <li><a href="#work">Photos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <img class="hero-img" src="assets/305305701_490285233105911.png" alt="The DeVoss Auto Service sign on the sidewalk outside the shop">
+  <div class="wrap hero-in">
+    <p class="eyebrow">Automotive Repair Shop in Richmond</p>
+    <h1>DeVoss Auto Service</h1>
+    <p class="lede">We are a full service automotive repair shop.</p>
+    <div class="cta-row">
+      <a class="btn btn-c" href="tel:+18042788990">Call (804) 278-8990</a>
+      <a class="btn btn-ghost" href="mailto:devossauto@aol.com">Email us</a>
+    </div>
+  </div>
+  <span class="vendly-wm-corner">Preview by Vendly</span>
+</div>
+
+<div class="strip"><div class="wrap"><ul>
+  <li>100% recommend on Facebook, from 9 reviews</li>
+</ul></div></div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the DeVoss Auto Service Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Full service automotive repair</h3></div>
+      <div class="card"><h3>Domestic and foreign</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the DeVoss Auto Service Facebook page. Pulled 2026-08-04.</p>
+    <div class="gal">
+      <figure>
+        <img src="assets/493446914_1227073082760452.jpg" alt="Chevrolet TrailBlazer parked outside the shop" loading="lazy" width="800" height="600">
+        <figcaption>Chevrolet TrailBlazer parked outside the shop</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/493926392_1227073502760410.jpg" alt="Side view of the TrailBlazer in the shop parking area" loading="lazy" width="800" height="600">
+        <figcaption>Side view of the TrailBlazer in the shop parking area</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/493276756_1227073259427101.jpg" alt="Front of the TrailBlazer" loading="lazy" width="800" height="600">
+        <figcaption>Front of the TrailBlazer</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/493855151_1227073096093784.jpg" alt="Front interior of the TrailBlazer" loading="lazy" width="800" height="600">
+        <figcaption>Front interior of the TrailBlazer</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/493912485_1227073516093742.jpg" alt="Rear seats of the TrailBlazer" loading="lazy" width="800" height="600">
+        <figcaption>Rear seats of the TrailBlazer</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="factbox">
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+18042788990">(804) 278-8990</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:devossauto@aol.com">devossauto@aol.com</a></dd></div>
+        <div><dt>Address</dt><dd>1103 N Arthur Ashe Boulevard, Richmond, VA</dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/devossauto" rel="noopener">www.facebook.com/devossauto</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>DeVoss Auto Service. 1103 N Arthur Ashe Boulevard, Richmond, VA. (804) 278-8990</p>
+    <p>Preview built by Vendly from the DeVoss Auto Service public Facebook page on 2026-08-04. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <p>Preview by Vendly - <a href="https://vendly.ink">vendly.ink</a></p>
+  </div>
+</footer>
+</body>
+</html>
