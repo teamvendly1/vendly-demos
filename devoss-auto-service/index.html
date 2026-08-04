@@ -39,12 +39,15 @@ h3{font:700 18px/1.3 Inter,sans-serif}
 
 /* Header: THEIR logo, big and centred. The first question an owner asks is not
    "is this good", it is "is this MINE". */
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:14px 0}
+/* Not sticky. Their mark needs real height to read, and a tall band pinned to
+   the top eats a phone screen. The logo earns the space once, at the top. */
+header.site{background:#fff;border-bottom:1px solid var(--line)}
+.bar{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px 0 16px}
 .brand{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
-.brandmark{height:76px;width:auto;max-width:min(86vw,420px);object-fit:contain}
-@media(min-width:720px){.brandmark{height:104px}}
+/* Capped on BOTH axes so a wide mark and a square mark both land big and
+   neither overflows. height:auto keeps the aspect ratio honest. */
+.brandmark{height:auto;width:auto;max-height:118px;max-width:min(88vw,400px);object-fit:contain}
+@media(min-width:720px){.brandmark{max-height:172px}}
 .brand-fallback{font:700 26px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b)}
 nav.main ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap;justify-content:center}
 nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
@@ -206,5 +209,31 @@ footer.site p{margin:0 0 12px}
     <p>Preview by Vendly - <a href="https://vendly.ink">vendly.ink</a></p>
   </div>
 </footer>
+
+<!-- Concierge. The widget asks /api/status before it draws anything, and an
+     unknown tenant answers 404 {"active":false}, which is the widget's
+     definitive "off" and makes it hide itself. So this block is inert until
+     tenants/devoss.json ships with a vendly-jarvis deploy: no launcher, no
+     dead chat box on a page a prospect may already be looking at. The moment
+     that deploy lands the widget appears here with no edit to this file.
+     Do NOT tell anyone the chat works until an Origin-header POST proves it. -->
+<script>
+  window.SiteAssistantConfig = {
+    tenantId: "devoss",
+    endpoint: "https://vendly-jarvis.vercel.app",
+    name: "DeVoss Auto Service",
+    greeting: "Hey, DeVoss Auto Service. Domestic and foreign, on Arthur Ashe Boulevard. Ask me anything, or call (804) 278-8990.",
+    /* peekText() reads nudge, NOT greeting. An empty nudge falls back to
+       Vendly sales copy, which leaks our pitch onto their site. */
+    nudge: "Ask me what the shop works on, or call (804) 278-8990.",
+    phone: "+18042788990",
+    quoteUrl: "index.html#contact",
+    bookUrl: "index.html#contact",
+    contactUrl: "index.html#contact",
+    suggestions: ["What do you work on?", "Where are you?", "Foreign cars?", "Talk to a person"],
+    accent: "#C1272D"
+  };
+</script>
+<script src="assets/siteassistant-v2.js?v=20260804a" defer></script>
 </body>
 </html>
