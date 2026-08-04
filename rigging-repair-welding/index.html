@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Custom Fabrication and Repair | Warren Rowell | Rigging and Repair Welding</title>
-<meta name="description" content="Custom fabrication and repair for trailers, heavy and farm equipment, containers, and custom cookers. Built and repaired by Warren Rowell. Licensed and insured. Call (843) 430-5067.">
+<meta name="description" content="Custom fabrication and repair for trailers, heavy and farm equipment, containers, and custom cookers. Built and repaired by Warren Rowell. Call (843) 430-5067.">
 <meta name="theme-color" content="#1B1D21">
 <script type="application/ld+json">
 {
@@ -12,7 +12,7 @@
   "@type": "ProfessionalService",
   "name": "Rigging and Repair Welding",
   "telephone": "+1-843-430-5067",
-  "description": "Custom fabrication and repair: trailers, heavy and farm equipment, containers, and custom cookers. Licensed and insured."
+  "description": "Custom fabrication and repair: trailers, heavy and farm equipment, containers, and custom cookers."
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,7 +107,7 @@ section.mist{background:var(--mist)}
 .icn svg{stroke:var(--amber)}
 .card p{color:var(--ink-lt);margin:0;font-size:15.5px}
 
-/* trust / licensed-insured band */
+/* trust band */
 .trustband{background:var(--ink);color:#E4E2DE;border-radius:var(--radius);padding:clamp(30px,4vw,44px) clamp(26px,4vw,44px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,4vw,44px);align-items:center}
 .trustband h3{color:#fff;font:700 24px/1.2 Barlow Condensed,Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin-bottom:10px}
 .trustband p{margin:0;color:#C9CDD3;font-size:15.5px}
@@ -136,7 +136,7 @@ form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);pa
 .field{margin-bottom:17px}
 label{display:block;font:600 14px/1 Inter,sans-serif;color:var(--ink);margin-bottom:8px}
 input,textarea,select{width:100%;font:400 16px/1.4 Inter,sans-serif;color:var(--ink);padding:14px 15px;border:2px solid var(--line);border-radius:11px;background:#fff}
-/* WCAG 2.1 AA 2.4.7 focus visible): same fix as the Rivertown demo.
+/* WCAG 2.1 AA 2.4.7 focus visible.
    the prior rule suppressed the only focus indicator for keyboard users on form
    fields; a border-colour change alone is not sufficient. Internal build standard. Never stated as a claim client-facing. */
 input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var(--amber);outline:3px solid var(--amber);outline-offset:2px}
@@ -168,20 +168,19 @@ footer li a{display:inline-block;padding:4px 0}
   .bizmeta .btn{display:none}
   .logo{height:50px}
   footer{padding-bottom:96px}
-  /* Centered on narrow screens. Rivertown and Small Town both failed Jacob's
-     phone audit on exactly this: service cards and chip rows reading left-stuck.
-     Only the named attention blocks, never body copy. */
+  /* Centered on narrow screens: service cards and chip rows otherwise read
+     left-stuck on a phone. Only the named attention blocks, never body copy. */
   .svc .card{text-align:center}
   .svc .card .icn{margin-left:auto;margin-right:auto}
   .badges{justify-content:center}
   .trust{justify-content:center}
   .logo{margin-left:auto;margin-right:auto}
-  /* FAB above sticky CALL bar (law 2026-08-01) ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â never cover Call/Quote */
+  /* FAB above sticky CALL bar (law 2026-08-01) - never cover Call/Quote */
   .sa-launch,.sa-peek{bottom:72px!important}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
-/* iOS auto-zoom fix, added 2026-08-01 23:18 ET. Same defect as the Rivertown demo.
+/* iOS auto-zoom fix, added 2026-08-01 23:18 ET.
    Safari zooms in on focus for any input under 16px and does not zoom back out.
    SiteAssistant declares no font-size on .sa-input, so it falls to the UA default. */
 .sa-input,.sa-form input,.sa-form textarea{font-size:16px!important;line-height:1.4}
@@ -226,7 +225,7 @@ footer li a{display:inline-block;padding:4px 0}
   <div class="wrap bar">
     <img class="logo" src="assets/logo-wordmark-dark.svg" alt="Rigging and Repair Welding logo">
     <div class="bizmeta">
-      <span class="pill">Fabrication &amp; repair &middot; Licensed and insured</span>
+      <span class="pill">Fabrication &amp; repair &middot; Owner operated</span>
       <a class="btn btn-amber" href="tel:+18434305067">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
         (843) 430-5067
@@ -248,13 +247,13 @@ footer li a{display:inline-block;padding:4px 0}
       Fabrication &amp; repair
     </span>
     <h1 id="h-hero">If you can think it, <em>we will fabricate it.</em></h1>
-    <p class="lede">Custom fabrication and repair - trailers, heavy and farm equipment, containers, and custom cookers. Built and repaired by Warren Rowell, licensed and insured.</p>
+    <p class="lede">Custom fabrication and repair - trailers, heavy and farm equipment, containers, and custom cookers. Built and repaired by Warren Rowell.</p>
     <div class="cta">
       <a class="btn btn-amber" href="tel:+18434305067">Call (843) 430-5067</a>
       <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.22);color:#fff">Get a quote</a>
     </div>
     <div class="trust">
-      <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed and insured</span>
+      <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Warren does the work himself</span>
       <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Custom fabrication</span>
       <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trailers, equipment, cookers</span>
     </div>
@@ -315,11 +314,11 @@ footer li a{display:inline-block;padding:4px 0}
   <div class="wrap">
     <div class="trustband">
       <div>
-        <h3 id="h-trust">Licensed and insured, every job</h3>
-        <p>Rigging and Repair Welding operates fully licensed and insured. When Warren shows up, you are covered start to finish, on your site.</p>
+        <h3 id="h-trust">One person, start to finish</h3>
+        <p>Rigging and Repair Welding is Warren Rowell. The man who looks at your job is the man who does it, on your site, start to finish.</p>
       </div>
       <div class="badges">
-        <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed and insured</span>
+        <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Owner operated</span>
         <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M3 17h13V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10z"/></svg>Fabrication and repair</span>
       </div>
     </div>
@@ -335,7 +334,7 @@ footer li a{display:inline-block;padding:4px 0}
         <p>Warren Rowell is Rigging and Repair Welding, a custom fabrication and repair shop. He builds custom trailers and custom cookers, repairs trailers, dump equipment, heavy equipment, and farm equipment, and keeps containers and screen facilities running.</p>
         <p>When you call, you get Warren. He looks at the job, tells you straight what it takes, and does the work himself.</p>
         <div class="about-badges">
-          <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Licensed and insured</span>
+          <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Owner operated</span>
           <span class="badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke-width="2.3" aria-hidden="true"><path d="M3 17h13V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10z"/></svg>Fabrication and repair</span>
         </div>
         <div class="sig">
@@ -421,7 +420,7 @@ footer li a{display:inline-block;padding:4px 0}
     <div class="fgrid">
       <div>
         <img class="logo-footer" src="assets/logo-wordmark-light.svg" alt="Rigging and Repair Welding logo" style="margin-bottom:16px">
-        <p style="margin:0;max-width:34ch">Custom fabrication and repair. Licensed and insured, built and repaired by Warren Rowell.</p>
+        <p style="margin:0;max-width:34ch">Custom fabrication and repair, built and repaired by Warren Rowell.</p>
       </div>
       <div>
         <h3 class="fh">Contact</h3>
@@ -445,7 +444,7 @@ footer li a{display:inline-block;padding:4px 0}
       </div>
     </div>
     <div class="legal">
-      <span>&copy; 2026 Rigging and Repair Welding. Licensed and insured.</span>
+      <span>&copy; 2026 Rigging and Repair Welding.</span>
       <span>Site by Vendly</span>
     </div>
   </div>
