@@ -1,0 +1,331 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Fast Charleston House Buyer",
+  "facebook": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+  "slug": "fast-charleston-house-buyer",
+  "built_at": "2026-08-07T06:11:35.787Z",
+  "elapsed_ms": 6639,
+  "steps": [
+    {
+      "step": "harvest",
+      "at_ms": 2807
+    },
+    {
+      "step": "assets",
+      "at_ms": 6159
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 6544
+    },
+    {
+      "step": "layout",
+      "at_ms": 6544
+    },
+    {
+      "step": "render",
+      "at_ms": 6545
+    },
+    {
+      "step": "audit",
+      "at_ms": 6546
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 6639
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "emoji",
+        "detail": "\"🔥\""
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 12,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#3F5B98",
+      "b": "#1E2B48",
+      "c": "#3F5B98",
+      "brand": "#3F5B98",
+      "mist": "#F3F5F9",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#3F5B98",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#3F5B98",
+            "after": "#3F5B98",
+            "ratio": 6.64,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#3F5B98",
+            "after": "#3F5B98",
+            "ratio": 6.64,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#1E2B48",
+            "after": "#1E2B48",
+            "ratio": 14.05,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#1E2B48",
+            "after": "#1E2B48",
+            "ratio": 10.92,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#3F5B98",
+            "ratio": 6.64,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#3F5B98",
+            "ratio": 6.64,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#1E2B48",
+            "ratio": 14.05,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#1E2B48",
+            "ratio": 10.92,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F3F5F9",
+            "ratio": 16.39,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#1E2B48",
+            "bg_mist": "#F3F5F9",
+            "ratio": 12.88,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#3F5B98",
+        "ratio": 6.64,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#3F5B98",
+        "ratio": 6.64,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#1E2B48",
+        "ratio": 14.05,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#1E2B48",
+        "ratio": 10.92,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+1F525",
+        "count": 2,
+        "in_sourced_claim": true,
+        "char": "🔥"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "fast-charleston-house-buyer",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Fast Charleston House Buyer",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "og:title",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "(843) 790-8804",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "Info@FastCharlestonHouseBuyer.com",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "Open 24 hours",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "INTRO_CARD_BUSINESS_HOURS",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "The Fast Charleston House Buyer is a family-owned Charleston based business that buys houses fast and for cash at a fair price in any condition in the...",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "Real Estate Company",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "100% recommend (7 Reviews)",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T06:11:29.148Z"
+    },
+    {
+      "text": "🔥Offer for Assignment of Contract - Park Circle Area N. Charleston - Assignment of Contract 🔥",
+      "source": "https://www.facebook.com/TheFastCharlestonHouseBuyer/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T06:11:29.148Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:charleston"
+      ]
+    }
+  ],
+  "unresolved": [
+    "address"
+  ],
+  "link_preview": {
+    "og_title": "Fast Charleston House Buyer",
+    "og_url": "https://vendly-demos.vercel.app/fast-charleston-house-buyer/",
+    "og_image": "https://vendly-demos.vercel.app/fast-charleston-house-buyer/assets/160455267_268314771458933.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "a3f6c3487ba28ea3ccd8acbdeb3d3ed5ec2cec1da15b5d8f7ddbd5c4fc23c80d",
+    "image_px": "1280x720",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 13,
+    "rejected": 0,
+    "photographs": 12,
+    "logo_found": true
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 20
+}

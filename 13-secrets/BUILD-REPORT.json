@@ -1,0 +1,325 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "13 Secrets",
+  "facebook": null,
+  "slug": "13-secrets",
+  "built_at": "2026-08-07T18:09:00.380Z",
+  "elapsed_ms": 5128,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 3323
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 3324
+    },
+    {
+      "step": "assets",
+      "at_ms": 4642
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 5003
+    },
+    {
+      "step": "layout",
+      "at_ms": 5003
+    },
+    {
+      "step": "render",
+      "at_ms": 5004
+    },
+    {
+      "step": "audit",
+      "at_ms": 5005
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 5128
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 7,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#996F2C",
+      "b": "#4F3917",
+      "c": "#996F2C",
+      "brand": "#EBD8BA",
+      "mist": "#F9F7F3",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#EBD8BA",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EBD8BA",
+            "after": "#996F2C",
+            "ratio": 4.5,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EBD8BA",
+            "after": "#996F2C",
+            "ratio": 4.5,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#4F3917",
+            "after": "#4F3917",
+            "ratio": 10.88,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#4F3917",
+            "after": "#4F3917",
+            "ratio": 8.46,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#996F2C",
+            "ratio": 4.5,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#996F2C",
+            "ratio": 4.5,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#4F3917",
+            "ratio": 10.88,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#4F3917",
+            "ratio": 8.46,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F9F7F3",
+            "ratio": 16.72,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#4F3917",
+            "bg_mist": "#F9F7F3",
+            "ratio": 10.17,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#996F2C",
+        "ratio": 4.5,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#996F2C",
+        "ratio": 4.5,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#4F3917",
+        "ratio": 10.88,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#4F3917",
+        "ratio": 8.46,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 8,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "13-secrets",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "13 Secrets",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "(912) 484-0985",
+      "source": "https://www.facebook.com/13secretssavannah/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "13secretssavannah@gmail.com",
+      "source": "https://www.facebook.com/13secretssavannah/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "513 Whitaker Street, Savannah, GA",
+      "source": "https://www.facebook.com/13secretssavannah/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "The south's retreat for fine jewelry & luxury watches with locations in a Forsyth Park-facing mansion & Plant Riverside District.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "Page · Jewelry & Watches Store",
+      "source": "https://www.facebook.com/13secretssavannah/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "100% recommend (29 Reviews)",
+      "source": "https://www.facebook.com/13secretssavannah/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T18:08:58.575Z"
+    },
+    {
+      "text": "The south's retreat for fine jewelry & luxury watches with locations in a Forsyth Park-facing mansion & Plant Riverside District.",
+      "source": "https://www.13secret.com/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T18:08:58.575Z",
+      "relevance": [
+        "service_vocab:jewelry,watches,south,retreat"
+      ]
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "13 Secrets | Savannah",
+    "og_url": "https://vendly-demos.vercel.app/13-secrets/",
+    "og_image": "https://vendly-demos.vercel.app/13-secrets/assets/359765041_732757792193770.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "graphic",
+    "image_is_page_lead_image": true,
+    "image_sha256": "de701b9987c85dced62e626d7cb9da394641f6619e4567d398b58e69d69940e4",
+    "image_px": "959x959",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 11,
+    "rejected": 0,
+    "photographs": 7,
+    "logo_found": true
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 22
+}

@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "Blue India",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(404) 963-5775",
+      "source": "page-text-unambiguous"
+    },
+    "address": {
+      "value": "933 Peachtree Street Northeast, Atlanta, GA, 30309-7901",
+      "source": "jsonld"
+    },
+    "email": {
+      "value": "info@blueindiaatl.com",
+      "source": "site"
+    },
+    "categories": {
+      "value": "Local Business",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "about",
+    "post_text"
+  ],
+  "photos": [],
+  "voice": {
+    "post_text": [],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T17:56:02.429Z",
+  "resolved_url": "https://www.blueindiaatlanta.com/",
+  "sourceUrl": "https://www.blueindiaatlanta.com/"
+}

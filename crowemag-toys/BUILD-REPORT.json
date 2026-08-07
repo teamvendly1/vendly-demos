@@ -1,0 +1,328 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Crowemag Toys",
+  "facebook": null,
+  "slug": "crowemag-toys",
+  "built_at": "2026-08-07T18:08:17.902Z",
+  "elapsed_ms": 9719,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 7245
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 7245
+    },
+    {
+      "step": "assets",
+      "at_ms": 9617
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 9619
+    },
+    {
+      "step": "layout",
+      "at_ms": 9619
+    },
+    {
+      "step": "render",
+      "at_ms": 9620
+    },
+    {
+      "step": "audit",
+      "at_ms": 9621
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 9719
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 16,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#2B3A47",
+      "b": "#18232C",
+      "c": "#A4552A",
+      "brand": "#A4552A",
+      "mist": "#F4F5F6",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A4552A",
+            "after": "#A4552A",
+            "ratio": 5.37,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#2B3A47",
+            "after": "#2B3A47",
+            "ratio": 11.67,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#18232C",
+            "after": "#18232C",
+            "ratio": 15.96,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#18232C",
+            "after": "#18232C",
+            "ratio": 12.41,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A4552A",
+            "ratio": 5.37,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#2B3A47",
+            "ratio": 11.67,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#18232C",
+            "ratio": 15.96,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#18232C",
+            "ratio": 12.41,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F4F5F6",
+            "ratio": 16.39,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#18232C",
+            "bg_mist": "#F4F5F6",
+            "ratio": 14.62,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A4552A",
+        "ratio": 5.37,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#2B3A47",
+        "ratio": 11.67,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#18232C",
+        "ratio": 15.96,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#18232C",
+        "ratio": 12.41,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 11,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "crowemag-toys",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Crowemag Toys",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "(919) 719-9087",
+      "source": "https://www.facebook.com/crowemagtoys/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "store@crowemagtoys.com",
+      "source": "https://www.facebook.com/crowemagtoys/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "3721 Lynn Rd Ste 110, Raleigh, NC",
+      "source": "https://www.facebook.com/crowemagtoys/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "Place to find vintage to modern toys and comics for kids of all ages.",
+      "source": "https://www.facebook.com/crowemagtoys/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "Page · Toy Store",
+      "source": "https://www.facebook.com/crowemagtoys/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "98% recommend (263 Reviews)",
+      "source": "https://www.facebook.com/crowemagtoys/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T18:08:15.427Z"
+    },
+    {
+      "text": "We have all kinds of goodies, including some big boys from the world of Transformers! Check everything out in store or online at www.crowemagtoys.com/shop There are many more goodies coming out soon, so keep an eye peeled for posts here and additions on the website",
+      "source": "https://crowemagtoys.com/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T18:08:15.427Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:store,toys"
+      ]
+    }
+  ],
+  "unresolved": [
+    "post_text",
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "Crowemag Toys | Raleigh",
+    "og_url": "https://vendly-demos.vercel.app/crowemag-toys/",
+    "og_image": "https://vendly-demos.vercel.app/crowemag-toys/assets/480813900_1184109653718945.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "53c98085dd00790554443372d151c8ad0f3a128bae56edeb64a970d9fb0348bb",
+    "image_px": "2048x1536",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 16,
+    "rejected": 0,
+    "photographs": 16,
+    "logo_found": false
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 22
+}
