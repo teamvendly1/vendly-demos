@@ -2,9 +2,49 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "The One Nine",
-  "built_at": "2026-08-07T18:10:01.603Z",
+  "built_at": "2026-08-07T23:03:16.843Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
   "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "972e885fdf1c41d4b68cec8d1f3b0ef151b24ac122a6cef91cd69d0d37cfae4c",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 292322,
+      "remote_url": "https://static.wixstatic.com/media/ce23d9_1cf6ff89f18f46cbae34758501b6ea56~mv2.jpg/v1/fill/w_1500,h_1000,al_c/ce23d9_1cf6ff89f18f46cbae34758501b6ea56~mv2.jpg",
+      "remote_url_as_found": "https://static.wixstatic.com/media/ce23d9_1cf6ff89f18f46cbae34758501b6ea56~mv2.jpg/v1/fill/w_1500,h_1000,al_c/ce23d9_1cf6ff89f18f46cbae34758501b6ea56~mv2.jpg",
+      "source_url": "https://www.oneninebar.com/",
+      "fetched_at": "2026-08-07T23:03:15.221Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1500,
+        "height": 1000,
+        "distinct_colors": 49,
+        "pct_near_white": 0.1,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-2.png",
+      "rel": "assets/site-2.png",
+      "sha256": "07934bda2894b58fae972dd9598e76dd85876cffed6d9b1742c24793010f230d",
+      "media_id": "site-2",
+      "format": "png",
+      "bytes": 14477,
+      "remote_url": "https://static.wixstatic.com/media/ce23d9_37cb124e737d4fd1ae1926028da0965f~mv2.png/v1/fill/w_220,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/The%20One%20Nine%202.png",
+      "remote_url_as_found": "https://static.wixstatic.com/media/ce23d9_37cb124e737d4fd1ae1926028da0965f~mv2.png/v1/fill/w_220,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/The%20One%20Nine%202.png",
+      "source_url": "https://www.oneninebar.com/",
+      "fetched_at": "2026-08-07T23:03:15.257Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 220,
+        "height": 72,
+        "distinct_colors": 37,
+        "pct_near_white": 0.2,
+        "pct_border_white": 0.2
+      }
+    },
     {
       "file": "242332985_111434464620997.jpg",
       "rel": "assets/242332985_111434464620997.jpg",
@@ -167,6 +207,70 @@
     }
   ],
   "rejected": [
+    {
+      "url": "https://static.wixstatic.com/media/ce23d9_c7f1dfc2e28a412a8906c091bed372cc~mv2.jpg/v1/fill/w_288,h_155,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/ce23d9_c7f1dfc2e28a412a8906c091bed372cc~mv2.jpg",
+      "media_id": "site-1",
+      "source_url": "https://www.oneninebar.com/",
+      "sha256": "fa8e4169b91f776436818306b7de291b4630431c9c1558e79eae42cba070ee45",
+      "reason": "too_small",
+      "bytes": 5098
+    },
+    {
+      "url": "https://www.oneninebar.com/quality_auto/The%20One%20Nine%202.png",
+      "media_id": "site-3",
+      "source_url": "https://www.oneninebar.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01ab6619093f45388d66736ec22e5885.png",
+      "media_id": "site-4",
+      "source_url": "https://www.oneninebar.com/",
+      "sha256": "414a1a66aecd888f696d8bce08acfb56306e7bfba20b8285c94e84e41df7a1ec",
+      "reason": "too_small",
+      "bytes": 1067
+    },
+    {
+      "url": "https://www.oneninebar.com/quality_auto/01ab6619093f45388d66736ec22e5885.png",
+      "media_id": "site-5",
+      "source_url": "https://www.oneninebar.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+      "media_id": "site-6",
+      "source_url": "https://www.oneninebar.com/",
+      "sha256": "a98604bdccc7afd30a3ea23af431a52050f398bdc5629a0758fdc40d774dc6e3",
+      "reason": "too_small",
+      "bytes": 868
+    },
+    {
+      "url": "https://www.oneninebar.com/quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png",
+      "media_id": "site-7",
+      "source_url": "https://www.oneninebar.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_29,h_29,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+      "media_id": "site-8",
+      "source_url": "https://www.oneninebar.com/",
+      "sha256": "06934a4494709fb07227bfad94b8280bebc33c47cfb9cdb7de0d406f6ce2ff97",
+      "reason": "too_small",
+      "bytes": 1177
+    },
+    {
+      "url": "https://www.oneninebar.com/quality_auto/81af6121f84c41a5b4391d7d37fce12a.png",
+      "media_id": "site-9",
+      "source_url": "https://www.oneninebar.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
     {
       "0": "h",
       "1": "t",

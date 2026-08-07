@@ -2,10 +2,85 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Bond Brothers Beer Company",
-  "built_at": "2026-08-07T16:09:08.138Z",
+  "built_at": "2026-08-07T23:05:28.603Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.png",
+      "rel": "assets/site-0.png",
+      "sha256": "9de9d1ea1e3f224f9cf7010fdd3f9a736c9253094b65ae7dded60cbc77ce83d6",
+      "media_id": "site-0",
+      "format": "png",
+      "bytes": 16810,
+      "remote_url": "https://static1.squarespace.com/static/55ec4df7e4b0cee523051e54/t/5a1450feec212de0e44b5244/1786117361275/",
+      "remote_url_as_found": "https://static1.squarespace.com/static/55ec4df7e4b0cee523051e54/t/5a1450feec212de0e44b5244/1786117361275/",
+      "source_url": "https://www.bondbrothersbeer.com/",
+      "fetched_at": "2026-08-07T23:05:27.423Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1000,
+        "height": 275,
+        "distinct_colors": 6,
+        "pct_near_white": 27.1,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "1fcc79c0ee2edda11730633cdc78ea79dc0ce75bdc2300bb458ad000e9fcec8b",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 139852,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/55ec4df7e4b0cee523051e54/1617329455756-08DEBEWJ7DXY17ZDS4T6/HomepageSmall.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/55ec4df7e4b0cee523051e54/1617329455756-08DEBEWJ7DXY17ZDS4T6/HomepageSmall.jpg",
+      "source_url": "https://www.bondbrothersbeer.com/",
+      "fetched_at": "2026-08-07T23:05:27.602Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 720,
+        "height": 762,
+        "distinct_colors": 69,
+        "pct_near_white": 8.3,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-3.jpg",
+      "rel": "assets/site-3.jpg",
+      "sha256": "a37dd27d42dbc684d03460e6897aeedd5d504dd34ed12bb675ba89a2b6e0d30b",
+      "media_id": "site-3",
+      "format": "jpg",
+      "bytes": 220058,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/55ec4df7e4b0cee523051e54/1617329640513-0HBBG7DCIEMDOMQAAQ4E/EastsideHomepageSmall.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/55ec4df7e4b0cee523051e54/1617329640513-0HBBG7DCIEMDOMQAAQ4E/EastsideHomepageSmall.jpg",
+      "source_url": "https://www.bondbrothersbeer.com/",
+      "fetched_at": "2026-08-07T23:05:27.959Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 720,
+        "height": 762,
+        "distinct_colors": 67,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/55ec4df7e4b0cee523051e54/1617329455756-08DEBEWJ7DXY17ZDS4T6/HomepageSmall.jpg?format=2500w",
+      "media_id": "site-2",
+      "source_url": "https://www.bondbrothersbeer.com/",
+      "sha256": "1fcc79c0ee2edda11730633cdc78ea79dc0ce75bdc2300bb458ad000e9fcec8b",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/55ec4df7e4b0cee523051e54/1617329640513-0HBBG7DCIEMDOMQAAQ4E/EastsideHomepageSmall.jpg?format=2500w",
+      "media_id": "site-4",
+      "source_url": "https://www.bondbrothersbeer.com/",
+      "sha256": "a37dd27d42dbc684d03460e6897aeedd5d504dd34ed12bb675ba89a2b6e0d30b",
+      "reason": "duplicate_content"
+    },
     {
       "0": "h",
       "1": "t",

@@ -2,10 +2,91 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Lugano Ristorante",
-  "built_at": "2026-08-07T15:53:36.898Z",
+  "built_at": "2026-08-07T22:55:04.492Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "786dc191b42d11296d3fcd036a86c9f8a96f3a937fc32c842a71bbf93d0abfd9",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 34877,
+      "remote_url": "https://static.wixstatic.com/media/98d8b7_e45bfd02f99944c5976d4deb0dbd1c97~mv2.jpg",
+      "remote_url_as_found": "https://static.wixstatic.com/media/98d8b7_e45bfd02f99944c5976d4deb0dbd1c97~mv2.jpg",
+      "source_url": "https://www.luganocary.com/",
+      "fetched_at": "2026-08-07T22:55:03.706Z",
+      "kind": "graphic",
+      "image_metrics": {
+        "width": 500,
+        "height": 316,
+        "distinct_colors": 25,
+        "pct_near_white": 72.7,
+        "pct_border_white": 96.3
+      }
+    },
+    {
+      "file": "site-5.png",
+      "rel": "assets/site-5.png",
+      "sha256": "2f6cb118520018dc5836173013a57632e730c8fd5296c802be0d1be935cf1ccb",
+      "media_id": "site-5",
+      "format": "png",
+      "bytes": 13081,
+      "remote_url": "https://static.wixstatic.com/media/98d8b7_4c653d9d51984b9e934e35624e1e20fa~mv2.png/v1/fill/w_118,h_119,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025%20MAGGY%20WINNER%20CM%20REVERSE.png",
+      "remote_url_as_found": "https://static.wixstatic.com/media/98d8b7_4c653d9d51984b9e934e35624e1e20fa~mv2.png/v1/fill/w_118,h_119,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2025%20MAGGY%20WINNER%20CM%20REVERSE.png",
+      "source_url": "https://www.luganocary.com/",
+      "fetched_at": "2026-08-07T22:55:03.895Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 118,
+        "height": 119,
+        "distinct_colors": 119,
+        "pct_near_white": 23.2,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://static.wixstatic.com/media/98d8b7_e9dac9709369490c979224cbdc061210~mv2.jpg/v1/fill/w_123,h_124,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98d8b7_e9dac9709369490c979224cbdc061210~mv2.jpg",
+      "media_id": "site-1",
+      "source_url": "https://www.luganocary.com/",
+      "sha256": "3db04ae54219d1d1a61ee38d1cae92087e3666577a09079ab6bc7dc5d6cca775",
+      "reason": "too_small",
+      "bytes": 3756
+    },
+    {
+      "url": "https://static.wixstatic.com/media/98d8b7_39c9373e5794487d8bae2c5ad761a970~mv2.jpg/v1/fill/w_123,h_113,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/98d8b7_39c9373e5794487d8bae2c5ad761a970~mv2.jpg",
+      "media_id": "site-2",
+      "source_url": "https://www.luganocary.com/",
+      "sha256": "28d2313de2276be62c7bb113f2718879a35c793a5ef1632566daf7936ee48ddf",
+      "reason": "too_small",
+      "bytes": 3683
+    },
+    {
+      "url": "https://static.wixstatic.com/media/98d8b7_3219d176a3d44345b981d4f6cae475ca~mv2.jpg/v1/fill/w_151,h_85,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2023%20maggy_edited_edited_edited.jpg",
+      "media_id": "site-3",
+      "source_url": "https://www.luganocary.com/",
+      "sha256": "ef79bca858feae52ad229eed24da790e06bd6331dbbea9919c65cb6247a7baf0",
+      "reason": "too_small",
+      "bytes": 6463
+    },
+    {
+      "url": "https://www.luganocary.com/quality_auto/2023%20maggy_edited_edited_edited.jpg",
+      "media_id": "site-4",
+      "source_url": "https://www.luganocary.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
+    {
+      "url": "https://www.luganocary.com/quality_auto/2025%20MAGGY%20WINNER%20CM%20REVERSE.png",
+      "media_id": "site-6",
+      "source_url": "https://www.luganocary.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
     {
       "0": "h",
       "1": "t",

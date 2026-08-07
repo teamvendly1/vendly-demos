@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Imago MRI | Greenville</title>
-<meta name="description" content="Family-owned medical imaging company committed to patient-centered health. Self-referral and self-pay MRIs.">
+<meta name="description" content="Get high-quality MRI scans at Imago MRI with same-day appointments, upfront pricing, and no doctor referral required. Experience fast, affordable, and accurate imaging from trusted radiology experts.">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Imago MRI">
 <meta property="og:title" content="Imago MRI | Greenville">
-<meta property="og:description" content="Family-owned medical imaging company committed to patient-centered health. Self-referral and self-pay MRIs.">
+<meta property="og:description" content="Get high-quality MRI scans at Imago MRI with same-day appointments, upfront pricing, and no doctor referral required. Experience fast, affordable, and accurate imaging from trusted radiology experts.">
 <meta property="og:url" content="https://vendly-demos.vercel.app/imago-mri/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://vendly-demos.vercel.app/imago-mri/assets/428650590_122123242556188868.jpg">
@@ -21,15 +21,26 @@
 <meta name="twitter:image" content="https://vendly-demos.vercel.app/imago-mri/assets/428650590_122123242556188868.jpg">
 <meta name="twitter:image:alt" content="Imago MRI">
 <meta name="twitter:title" content="Imago MRI | Greenville">
-<meta name="twitter:description" content="Family-owned medical imaging company committed to patient-centered health. Self-referral and self-pay MRIs.">
+<meta name="twitter:description" content="Get high-quality MRI scans at Imago MRI with same-day appointments, upfront pricing, and no doctor referral required. Experience fast, affordable, and accurate imaging from trusted radiology experts.">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#0F6070;--b:#0B3239;--c:#127287;--mist:#F3F9FB;--ink:#101F23;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#127287;--scrim:6,26,30;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -170,7 +181,7 @@ footer.site a{color:#fff}
     <a class="brand" href="#main">Imago MRI</a>
     <nav class="main" aria-label="Main">
       <ul>
-        
+        <li><a href="#services">Services</a></li>
         <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -180,18 +191,66 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
-  <div class="wrap hero-in">
-    
-    <p class="eyebrow">Medical &amp; health in Greenville</p>
-    <h1>Imago MRI</h1>
-    <p class="lede">Family-owned medical imaging company committed to patient-centered health. Self-referral and self-pay MRIs.</p>
-    <div class="cta-row">
-      <a class="btn btn-c" href="tel:+18646523160">Call (864) 652-3160</a>
-      <a class="btn btn-ghost" href="mailto:hello@imagomri.com">Email us</a>
+<div class="hero hero-split">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Page · Medical &amp; health in Greenville</p>
+      <h1>Imago MRI</h1>
+      <p class="lede">Get high-quality MRI scans at Imago MRI with same-day appointments, upfront pricing, and no doctor referral required. Experience fast, affordable, and accurate imaging from trusted radiology experts.</p>
+      <div class="cta-row">
+      <a class="btn btn-c" href="tel:+18646523160">Call to Book</a>
+      
     </div>
+    <p class="hero-facts">(864) 652-3160 &middot; 19 Milestone Plz, Greenville</p>
+    </div>
+    <div class="hero-shot"><img src="assets/428650590_122123242556188868.jpg" alt="upfront pricing" width="800" height="600"></div>
   </div>
 </div>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Imago MRI page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+18646523160">(864) 652-3160</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 19 Milestone Plz, Greenville, SC. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Imago MRI Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>upfront pricing</h3></div>
+      <div class="card"><h3>and no doctor referral required. Experience fast</h3></div>
+      <div class="card"><h3>affordable</h3></div>
+      <div class="card"><h3>and accurate imaging from trusted radiology experts</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Imago MRI Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-wide">
+      <figure><img src="assets/523530507_122230706132188868.png" alt="and no doctor referral required. Experience fast" loading="lazy" width="800" height="600"><figcaption>and no doctor referral required. Experience fast</figcaption></figure>
+      <figure><img src="assets/733209465_122285903600188868.jpg" alt="affordable" loading="lazy" width="800" height="600"><figcaption>affordable</figcaption></figure>
+      <figure><img src="assets/719565988_122283032342188868.jpg" alt="and accurate imaging from trusted radiology experts" loading="lazy" width="800" height="600"><figcaption>and accurate imaging from trusted radiology experts</figcaption></figure>
+      <figure><img src="assets/654863709_122271761762188868.jpg" alt="Imago MRI - Page · Medical &amp; health" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/649178480_122269473260188868.jpg" alt="Imago MRI - Page · Medical &amp; health" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/649349467_122269473116188868.jpg" alt="Imago MRI - Page · Medical &amp; health" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/649183455_122269473200188868.jpg" alt="Imago MRI - Page · Medical &amp; health" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/649203250_122269473158188868.jpg" alt="Imago MRI - Page · Medical &amp; health" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/649195046_122269473296188868.jpg" alt="Imago MRI - Page · Medical &amp; health" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
 
 <div class="strip"><div class="wrap"><ul>
   
@@ -199,6 +258,15 @@ footer.site a{color:#fff}
   
   
 </ul></div></div>
+
+<section class="words">
+  <div class="wrap">
+    <h2>In their words</h2>
+    <blockquote class="quote">The wait will be worth it! This isn&#39;t just a new machine. It&#39;s an investment in a better experience for every patient who walks through our doors. Join our waitlist to be the first to know when we&#39;re back!
+      <cite>Posted by Imago MRI on Facebook. Read on <a href="https://www.imagomri.com/">their page</a>.</cite>
+    </blockquote>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -209,36 +277,8 @@ footer.site a{color:#fff}
         <div><dt>Email</dt><dd><a href="mailto:hello@imagomri.com">hello@imagomri.com</a></dd></div>
         <div><dt>Address</dt><dd>19 Milestone Plz, Greenville, SC</dd></div>
         
-        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/imagomri/">www.facebook.com/imagomri/</a></dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.imagomri.com/">www.imagomri.com/</a></dd></div>
       </dl>
-    </div>
-  </div>
-</section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">The wait will be worth it! This isn&#39;t just a new machine. It&#39;s an investment in a better experience for every patient who walks through our doors. Join our waitlist to be the first to know when we&#39;re back!
-      <cite>Posted by Imago MRI on Facebook. Read on <a href="https://www.facebook.com/imagomri/">their page</a>.</cite>
-    </blockquote>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the Imago MRI Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/428650590_122123242556188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/523530507_122230706132188868.png" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/733209465_122285903600188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/719565988_122283032342188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/654863709_122271761762188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/649178480_122269473260188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/649349467_122269473116188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/649183455_122269473200188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/649203250_122269473158188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/649195046_122269473296188868.jpg" alt="Imago MRI - Medical &amp; health" loading="lazy" width="800" height="600"></figure>
     </div>
   </div>
 </section>

@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Taziki's Mediterranean Cafe",
   "facebook": null,
   "slug": "taziki-s-mediterranean-cafe",
-  "built_at": "2026-08-07T15:53:44.030Z",
-  "elapsed_ms": 2573,
+  "built_at": "2026-08-07T22:55:20.761Z",
+  "elapsed_ms": 2178,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2478
+      "at_ms": 102
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 103
     },
     {
       "step": "assets",
-      "at_ms": 2480
+      "at_ms": 1519
+    },
+    {
+      "step": "template",
+      "at_ms": 1638
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1675
     },
     {
       "step": "brand_palette",
-      "at_ms": 2482
+      "at_ms": 2065
     },
     {
       "step": "layout",
-      "at_ms": 2482
+      "at_ms": 2066
     },
     {
       "step": "render",
-      "at_ms": 2482
+      "at_ms": 2067
     },
     {
       "step": "audit",
-      "at_ms": 2484
+      "at_ms": 2068
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2573
+      "at_ms": 2178
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 8,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 8 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#8E469B",
+      "b": "#402046",
+      "c": "#8E469B",
+      "brand": "#8E469B",
+      "mist": "#F8F3F9",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#8E469B",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#8E469B",
+            "after": "#8E469B",
+            "ratio": 6,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#8E469B",
+            "after": "#8E469B",
+            "ratio": 6,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#402046",
+            "after": "#402046",
+            "ratio": 13.88,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#402046",
+            "after": "#402046",
+            "ratio": 10.79,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#8E469B",
+            "ratio": 6,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#8E469B",
+            "ratio": 6,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#402046",
+            "ratio": 13.88,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#402046",
+            "ratio": 10.79,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F8F3F9",
+            "ratio": 16.76,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#402046",
+            "bg_mist": "#F8F3F9",
+            "ratio": 12.68,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/65f315c1ff62b273e9ba7a3e/7a53c978-1ef3-43d5-b8e5-e18980129866/Social+Media_Instagram.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#8E469B",
+        "ratio": 6,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#8E469B",
+        "ratio": 6,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#402046",
+        "ratio": 13.88,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#402046",
+        "ratio": 10.79,
         "pass": true
       }
     ]
@@ -229,46 +289,36 @@
   "claims": [
     {
       "text": "Taziki's Mediterranean Cafe",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "(865) 444-0661",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "Discover Taziki's in Bearden, Knoxville, offering fresh Mediterranean-inspired cuisine, catering, and friendly service near Downtown Knoxville and the University of Tennessee (GO VOLS!).",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "Discover Taziki's in Bearden",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "Knoxville",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "offering fresh Mediterranean-inspired cuisine",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     },
     {
       "text": "catering",
-      "fetched_at": "2026-08-07T15:53:43.935Z"
-    },
-    {
-      "text": "Discover Taziki's in Bearden, Knoxville, offering fresh Mediterranean-inspired cuisine, catering, and friendly service near Downtown Knoxville and the University of Tennessee (GO VOLS!).",
-      "source": "https://www.tazikis.com/location/knoxville",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:53:43.935Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:discover,taziki,bearden,knoxville"
-      ]
+      "fetched_at": "2026-08-07T22:55:18.685Z"
     }
   ],
   "unresolved": [
@@ -277,30 +327,65 @@
   "link_preview": {
     "og_title": "Taziki&#39;s Mediterranean Cafe",
     "og_url": "https://vendly-demos.vercel.app/taziki-s-mediterranean-cafe/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/taziki-s-mediterranean-cafe/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "0ee715dfb570df7268c4c87b9620020fbfffa8ef7fe4617e973397e3ae228a13",
+    "image_px": "1000x358",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
+    "accepted": 8,
+    "rejected": 9,
+    "photographs": 8,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "ae651878706056c7618246f243c5a53b8d824b2d2978af2e2e2721fafb3fa95d",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "d9544dc91d8473011f3d13b7647a587f4c100e64427dad7eb5900d2384c3e9fd",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "c9fe0c500e235bb10a64a85c8d909b0c40606d5fa3dbcab46c0b0e9f37dadbe6",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "c58dbc5bade1a89c660a5b98037e00f80b45155ac69c95b1dc384946c667f211",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "c93d38a49e9cec0ce21f4230b90ae892e96dfa5426eaa7f236ff040ad2846a18",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "53176ead9c0c811a6c8c7afe92976c9aec3ecb64fda5d43e737111ad91e25930",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "53176ead9c0c811a6c8c7afe92976c9aec3ecb64fda5d43e737111ad91e25930",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "70b7af0a297a89902ff49741c4b20fe80ed1bac9fc2ed5a6c195bb4445599020",
+      "media_id": "site-15"
     },
     {
       "reason": "download_failed",
@@ -312,9 +397,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

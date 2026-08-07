@@ -2,8 +2,106 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "McLean's Restaurant",
-  "built_at": "2026-08-07T16:03:36.819Z",
+  "built_at": "2026-08-07T23:00:24.082Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
-  "rejected": []
+  "accepted": [
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "a07bc3f330a182ae70ad6dae38d8fcffa6bef253ca9b9099f81757a45f46f54c",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 41415,
+      "remote_url": "https://static.wixstatic.com/media/10b388_6566eadc542b40308606bb1d077a4809~mv2.jpg/v1/crop/x_0,y_320,w_1080,h_515/fill/w_600,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/McLean's%20Templates.jpg",
+      "remote_url_as_found": "https://static.wixstatic.com/media/10b388_6566eadc542b40308606bb1d077a4809~mv2.jpg/v1/crop/x_0,y_320,w_1080,h_515/fill/w_600,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/McLean's%20Templates.jpg",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "fetched_at": "2026-08-07T23:00:23.156Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 600,
+        "height": 286,
+        "distinct_colors": 50,
+        "pct_near_white": 4.5,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-8.png",
+      "rel": "assets/site-8.png",
+      "sha256": "413ceef823554859011bed84f84e032b7b804cac59be6ced4ea8192e32dc4912",
+      "media_id": "site-8",
+      "format": "png",
+      "bytes": 40949,
+      "remote_url": "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/sloppyframe.3214ce8e.png",
+      "remote_url_as_found": "https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/media/sloppyframe.3214ce8e.png",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "fetched_at": "2026-08-07T23:00:23.621Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1970,
+        "height": 1970,
+        "distinct_colors": 1,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://static.wixstatic.com/media/10b388_5b2ef4e14bd94a9699b1dce56ff6ee36~mv2.jpg/v1/fill/w_147,h_83,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/10b388_5b2ef4e14bd94a9699b1dce56ff6ee36~mv2.jpg",
+      "media_id": "site-0",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "sha256": "fe06a1d250ca0d29d9f471bef84e96ba26c9390cb30110dbd2a100460d0fda2b",
+      "reason": "too_small",
+      "bytes": 4008
+    },
+    {
+      "url": "https://www.mcleansrestaurant.com/quality_auto/McLean's%20Templates.jpg",
+      "media_id": "site-2",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/8f50ea_9d010913204241788ab21efd07e873a7f000.jpg/v1/fill/w_147,h_83,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/8f50ea_9d010913204241788ab21efd07e873a7f000.jpg",
+      "media_id": "site-3",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "sha256": "520d40c8b04265914556eaacd34e7e98fd0b5625a129b2bb500cb3557d407eac",
+      "reason": "too_small",
+      "bytes": 3681
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png",
+      "media_id": "site-4",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "sha256": "9f765985a340aa54ee607bbe2e948ec2cfe6d9c7df818e0104aab2a8e0493fa5",
+      "reason": "too_small",
+      "bytes": 1004
+    },
+    {
+      "url": "https://www.mcleansrestaurant.com/quality_auto/11062b_366f7fdbcafc4effaeddb0dba92014c1~mv2.png",
+      "media_id": "site-5",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    },
+    {
+      "url": "https://static.wixstatic.com/media/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png/v1/fill/w_22,h_22,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png",
+      "media_id": "site-6",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "sha256": "d843b665ac3f1bb79ffdf632028786a7f9412eed77cacc6fe66d175a52efbd46",
+      "reason": "too_small",
+      "bytes": 1184
+    },
+    {
+      "url": "https://www.mcleansrestaurant.com/quality_auto/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png",
+      "media_id": "site-7",
+      "source_url": "https://www.mcleansrestaurant.com/",
+      "reason": "download_failed",
+      "status": null,
+      "error": "no_response"
+    }
+  ]
 }

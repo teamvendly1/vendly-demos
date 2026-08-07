@@ -1,38 +1,51 @@
 {
+  "niche": "bar",
   "schema": "vendly.autodemo.build/1",
   "business": "Bitters Social House",
   "facebook": null,
   "slug": "bitters-social-house",
-  "built_at": "2026-08-07T16:11:51.615Z",
-  "elapsed_ms": 308,
+  "built_at": "2026-08-07T23:09:43.741Z",
+  "elapsed_ms": 2201,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 216
+      "at_ms": 107
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 107
     },
     {
       "step": "assets",
-      "at_ms": 217
+      "at_ms": 1443
+    },
+    {
+      "step": "template",
+      "at_ms": 1558
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1579
     },
     {
       "step": "brand_palette",
-      "at_ms": 218
+      "at_ms": 2097
     },
     {
       "step": "layout",
-      "at_ms": 219
+      "at_ms": 2097
     },
     {
       "step": "render",
-      "at_ms": 219
+      "at_ms": 2098
     },
     {
       "step": "audit",
-      "at_ms": 221
+      "at_ms": 2099
     },
     {
       "step": "beacon_probe",
-      "at_ms": 308
+      "at_ms": 2201
     }
   ],
   "audit": {
@@ -40,41 +53,86 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "bar",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "bar",
+      "photo_count": 2,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (2): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
+      "gallery",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "See Tonight",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "bar",
+      "file": "bar.js",
+      "resolved_by": "niche",
+      "resolved_from": "bar",
+      "sources": [
+        "https://thedeadrabbit.com/",
+        "https://www.tspdallas.com/",
+        "https://www.smugglerscovesf.com/",
+        "https://www.bisouschicago.com/"
+      ],
+      "rationale": "Smuggler's Cove converts with no booking path at all by stating the door policy in plain words at the top, so the single CTA anchors to hours and policy rather than a reservation widget, and Bisous plus Smuggler's Cove both put press and award proof above the fold, which is why trust sits second and gallery outranks the drinks list.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#324E7C",
+      "b": "#1D2E49",
+      "c": "#324E7C",
+      "brand": "#324E7C",
+      "mist": "#F3F5F9",
+      "ink": "#12201F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#324E7C",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +141,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#324E7C",
+            "after": "#324E7C",
+            "ratio": 8.35,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +151,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#324E7C",
+            "after": "#324E7C",
+            "ratio": 8.35,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +161,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#1D2E49",
+            "after": "#1D2E49",
+            "ratio": 13.64,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +171,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#1D2E49",
+            "after": "#1D2E49",
+            "ratio": 10.6,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +183,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#324E7C",
+            "ratio": 8.35,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#324E7C",
+            "ratio": 8.35,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#1D2E49",
+            "ratio": 13.64,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#1D2E49",
+            "ratio": 10.6,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#12201F",
+            "bg_mist": "#F3F5F9",
+            "ratio": 15.37,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#1D2E49",
+            "bg_mist": "#F3F5F9",
+            "ratio": 12.5,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://bitterssocial.com/wp-content/uploads/2023/06/bitters-logo1-01.png"
     }
   },
   "accessibility": {
@@ -181,46 +240,39 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#324E7C",
+        "ratio": 8.35,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#324E7C",
+        "ratio": 8.35,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#1D2E49",
+        "ratio": 13.64,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#1D2E49",
+        "ratio": 10.6,
         "pass": true
       }
     ]
   },
   "output_charset": {
-    "pure_ascii": false,
-    "non_ascii_from_their_own_text": [
-      {
-        "codepoint": "U+2019",
-        "count": 1,
-        "in_sourced_claim": true,
-        "char": "’"
-      }
-    ],
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
     "non_ascii_unsourced_blocking": []
   },
   "beacon": {
@@ -236,44 +288,42 @@
   "claims": [
     {
       "text": "Bitters Social House",
-      "fetched_at": "2026-08-07T16:11:51.522Z"
+      "fetched_at": "2026-08-07T23:09:41.646Z"
     },
     {
       "text": "(336) 542-0038",
-      "fetched_at": "2026-08-07T16:11:51.522Z"
+      "fetched_at": "2026-08-07T23:09:41.646Z"
     },
     {
       "text": "bitters@bitterssocial.com",
-      "fetched_at": "2026-08-07T16:11:51.522Z"
+      "fetched_at": "2026-08-07T23:09:41.646Z"
     },
     {
       "text": "Bitters Social House: Discover Greensboro's favorite screen-free cocktail lounge, home bar supplies, rotating local art, & community events in the heart of NC",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:11:51.522Z",
+      "fetched_at": "2026-08-07T23:09:41.646Z",
       "verbatim_source_text": "Bitters Social House: Discover Greensboro’s favorite screen-free cocktail lounge, home bar supplies, rotating local art, & community events in the heart of NC",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
+      "text": "Bitters Social House: Discover Greensboro",
+      "fetched_at": "2026-08-07T23:09:41.646Z"
+    },
+    {
+      "text": "s favorite screen-free cocktail lounge",
+      "fetched_at": "2026-08-07T23:09:41.646Z"
+    },
+    {
       "text": "home bar supplies",
-      "fetched_at": "2026-08-07T16:11:51.522Z"
+      "fetched_at": "2026-08-07T23:09:41.646Z"
     },
     {
       "text": "rotating local art",
-      "fetched_at": "2026-08-07T16:11:51.522Z"
+      "fetched_at": "2026-08-07T23:09:41.646Z"
     },
     {
       "text": "& community events in the heart of NC",
-      "fetched_at": "2026-08-07T16:11:51.522Z"
-    },
-    {
-      "text": "Bitters Social House: Discover Greensboro’s favorite screen-free cocktail lounge, home bar supplies, rotating local art, & community events in the heart of NC",
-      "source": "https://bitterssocial.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:11:51.522Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:bitters,social,house,discover"
-      ]
+      "fetched_at": "2026-08-07T23:09:41.646Z"
     }
   ],
   "unresolved": [
@@ -293,15 +343,85 @@
     "renders_large_card_600x315": false,
     "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "reason_no_image": "every image is smaller than 200x200, which Facebook refuses"
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 2,
+    "rejected": 15,
+    "photographs": 2,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "b12534bbe356e9f0509482b263bbcbe8dd7158938f82f243e540e54635916e34",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7f5f688f1d81d2c71626c99e1814b4d55bd85eeb37ce490b61da560a3bb45230",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a197cb2fc0f0eb19a3786155d06d764e0d83f38ba67eaab0826b69edf0ca20a3",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "6891a4f7350c3d9a9fc15952ef4f2bb34283df004aea943d824ed5713fd35862",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ea4da7537973bc0b7423992473e30c237d918c852c979c70e5b7a7b8a227d525",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "2d37db739c806492dc2f1b19840e1b56865a0c406a8b1efbd9777542b4194a4f",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "490f7c559fa8425da7b93432c0a36213201bc0cc3e819673147fb2d606f620eb",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "eadfd06e81c1ea6dfdad701a551a4d0fa3360d0e8b0d3f50f8f342d75a69a3f1",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "b09bccb50c99dd4d7950bb933e46433c350ea817b81602a654d74db9b8b4281f",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "2e5da9d57059b017b06f294d9ba42edd62f8fb4f6f4ac4fd5ab951c5bad798b6",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "5c766d8976c66cf7e163d21e88a940385f29cd2607adad88ed27678d4adbbd72",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0d05f2256cd7b2a86656241f2ae9bf0011006679f132df6fff7d4d30710d938f",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0d315cf2e03f3c2dd3bc7aaccb5d5338a71e255183fbd469f49f520202acb419",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "45e46820182b50bbd52978e2e02335f2ae6bf0a1c6aed15896ff91cc60d2c0b8",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -312,9 +432,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "bar"
   },
-  "fill_tokens": 4
+  "fill_tokens": 8
 }

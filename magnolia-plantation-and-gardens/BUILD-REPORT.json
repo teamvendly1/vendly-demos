@@ -1,38 +1,51 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "Magnolia Plantation and Gardens",
   "facebook": null,
   "slug": "magnolia-plantation-and-gardens",
-  "built_at": "2026-08-07T16:12:23.671Z",
-  "elapsed_ms": 210,
+  "built_at": "2026-08-07T23:11:32.708Z",
+  "elapsed_ms": 2237,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 124
+      "at_ms": 232
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 232
     },
     {
       "step": "assets",
-      "at_ms": 125
+      "at_ms": 1441
+    },
+    {
+      "step": "template",
+      "at_ms": 1552
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1789
     },
     {
       "step": "brand_palette",
-      "at_ms": 127
+      "at_ms": 2115
     },
     {
       "step": "layout",
-      "at_ms": 127
+      "at_ms": 2115
     },
     {
       "step": "render",
-      "at_ms": 127
+      "at_ms": 2116
     },
     {
       "step": "audit",
-      "at_ms": 129
+      "at_ms": 2117
     },
     {
       "step": "beacon_probe",
-      "at_ms": 210
+      "at_ms": 2237
     }
   ],
   "audit": {
@@ -41,26 +54,33 @@
   },
   "design": {
     "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 0,
+      "photo_count": 3,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (trade), 3 photographs",
       "deterministic": true
     },
     "section_order": [
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call (843) 571-1266",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
       "a": "#2B3A47",
       "b": "#18232C",
@@ -170,7 +190,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/6329bbc5347392135b0512ee/89130552-0cac-40d1-9fe6-21f56e95c648/Magnolia-Logo-inv%404x.png"
     }
   },
   "accessibility": {
@@ -229,88 +250,83 @@
   "claims": [
     {
       "text": "Magnolia Plantation and Gardens",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "(843) 571-1266",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "info@magnoliaplantation.com",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "3550 Ashley River Road\nCharleston, SC, 29414\nUnited States",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "At Magnolia Plantation and Gardens in Charleston, stroll through the romantic garden, Audubon Swamp, Ashley Riverwalk, historic Magnolia house, and learn about the history, horticulture and nature of the low country.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "At Magnolia Plantation and Gardens in Charleston",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "stroll through the romantic garden",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "Audubon Swamp",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "Ashley Riverwalk",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "historic Magnolia house",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "and learn about the history",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     },
     {
       "text": "horticulture and nature of the low country",
-      "fetched_at": "2026-08-07T16:12:23.584Z"
-    },
-    {
-      "text": "At Magnolia Plantation and Gardens in Charleston, stroll through the romantic garden, Audubon Swamp, Ashley Riverwalk, historic Magnolia house, and learn about the history, horticulture and nature of the low country.",
-      "source": "https://www.magnoliaplantation.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:12:23.584Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:magnolia,plantation,gardens,charleston"
-      ]
+      "fetched_at": "2026-08-07T23:11:30.702Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Magnolia Plantation and Gardens | SC",
     "og_url": "https://vendly-demos.vercel.app/magnolia-plantation-and-gardens/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/magnolia-plantation-and-gardens/assets/site-1.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "3366e08577eab67fef8a05326e3c3ab07442f0276df72cf38c21a1113352754f",
+    "image_px": "2500x1667",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 3,
+    "rejected": 2,
+    "photographs": 3,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "509c1eaa29101800b3b9d89adbd84cc28f125270c19a909ced6e548f96fc6049",
+      "media_id": "site-3"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -321,9 +337,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "unknown"
   },
-  "fill_tokens": 7
+  "fill_tokens": 13
 }

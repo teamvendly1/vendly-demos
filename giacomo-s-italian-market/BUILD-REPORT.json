@@ -1,42 +1,47 @@
 {
+  "niche": "deli",
   "schema": "vendly.autodemo.build/1",
   "business": "Giacomo's Italian Market",
   "facebook": null,
   "slug": "giacomo-s-italian-market",
-  "built_at": "2026-08-07T15:51:33.394Z",
-  "elapsed_ms": 1988,
+  "built_at": "2026-08-07T22:54:02.184Z",
+  "elapsed_ms": 17021,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 190
+      "at_ms": 406
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 190
+      "at_ms": 407
     },
     {
       "step": "assets",
-      "at_ms": 1504
+      "at_ms": 16423
+    },
+    {
+      "step": "template",
+      "at_ms": 16510
     },
     {
       "step": "brand_palette",
-      "at_ms": 1902
+      "at_ms": 16897
     },
     {
       "step": "layout",
-      "at_ms": 1902
+      "at_ms": 16897
     },
     {
       "step": "render",
-      "at_ms": 1903
+      "at_ms": 16898
     },
     {
       "step": "audit",
-      "at_ms": 1904
+      "at_ms": 16900
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1988
+      "at_ms": 17021
     }
   ],
   "audit": {
@@ -44,34 +49,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 10,
+      "trade_key": "restaurant",
+      "photo_count": 21,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "visual trade (restaurant) with 21 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "family",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
       "a": "#AF2228",
       "b": "#551114",
       "c": "#AF2228",
       "brand": "#AF2228",
       "mist": "#F9F3F4",
-      "ink": "#12181D"
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -161,9 +212,9 @@
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
+            "value": "#1A1310",
             "bg_mist": "#F9F3F4",
-            "ratio": 16.31,
+            "ratio": 16.74,
             "pass": true
           },
           {
@@ -174,7 +225,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -233,46 +285,34 @@
   "claims": [
     {
       "text": "Giacomo's Italian Market",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     },
     {
       "text": "(336) 282-2855",
-      "source": "https://www.facebook.com/GiacomosItalianMarketOnline/",
-      "fb_field": "INTRO_CARD_PROFILE_PHONE",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     },
     {
       "text": "filler@godaddy.com",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     },
     {
       "text": "2109 New Garden Rd, Greensboro, NC, 27410",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     },
     {
       "text": "Explore a wonderful selection of authentic Italian meats and groceries at Giacomo's Italian Market.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     },
     {
       "text": "98% recommend (431 Reviews)",
       "source": "https://www.facebook.com/GiacomosItalianMarketOnline/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T15:51:31.595Z"
-    },
-    {
-      "text": "Explore a wonderful selection of authentic Italian meats and groceries at Giacomo's Italian Market.",
-      "source": "https://giacomositalianmarket.godaddysites.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:51:31.595Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:explore,wonderful,selection,authentic"
-      ]
+      "fetched_at": "2026-08-07T22:53:45.568Z"
     }
   ],
   "unresolved": [
@@ -281,13 +321,13 @@
   "link_preview": {
     "og_title": "Giacomo&#39;s Italian Market | NC",
     "og_url": "https://vendly-demos.vercel.app/giacomo-s-italian-market/",
-    "og_image": "https://vendly-demos.vercel.app/giacomo-s-italian-market/assets/302213212_525116532867835.jpg",
+    "og_image": "https://vendly-demos.vercel.app/giacomo-s-italian-market/assets/site-0.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
-    "image_source_kind": "graphic",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": true,
-    "image_sha256": "d52508d1b87f141ce5b23418c3f5b810931f037b956b061b1c172e2319bd96ad",
-    "image_px": "2048x2048",
+    "image_sha256": "2d4bf3f0ccc0f05913214a29d15158a31bb668b5bd7b08b1d400000f8d0fffc5",
+    "image_px": "2048x1365",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": true,
@@ -295,16 +335,36 @@
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
-    "rejected": 2,
-    "photographs": 10,
+    "accepted": 22,
+    "rejected": 6,
+    "photographs": 21,
     "logo_found": true
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "2d4bf3f0ccc0f05913214a29d15158a31bb668b5bd7b08b1d400000f8d0fffc5",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8e6d7c2d9fc9ef703c1aaf5437541afc7710d34a27b078a6a7354860d49856a0",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8e6d7c2d9fc9ef703c1aaf5437541afc7710d34a27b078a6a7354860d49856a0",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8e6d7c2d9fc9ef703c1aaf5437541afc7710d34a27b078a6a7354860d49856a0",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8e6d7c2d9fc9ef703c1aaf5437541afc7710d34a27b078a6a7354860d49856a0",
+      "media_id": "site-15"
     },
     {
       "reason": "download_failed",
@@ -316,9 +376,10 @@
     "hero": true,
     "trust_strip": true,
     "services": false,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "deli"
   },
   "fill_tokens": 22
 }

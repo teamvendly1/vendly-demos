@@ -1,42 +1,47 @@
 {
+  "niche": "association",
   "schema": "vendly.autodemo.build/1",
   "business": "Unity in Greensboro",
   "facebook": null,
   "slug": "unity-in-greensboro",
-  "built_at": "2026-08-07T15:49:47.755Z",
-  "elapsed_ms": 2498,
+  "built_at": "2026-08-07T22:52:17.012Z",
+  "elapsed_ms": 5777,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 685
+      "at_ms": 355
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 686
+      "at_ms": 355
     },
     {
       "step": "assets",
-      "at_ms": 2030
+      "at_ms": 5195
+    },
+    {
+      "step": "template",
+      "at_ms": 5319
     },
     {
       "step": "brand_palette",
-      "at_ms": 2396
+      "at_ms": 5680
     },
     {
       "step": "layout",
-      "at_ms": 2396
+      "at_ms": 5680
     },
     {
       "step": "render",
-      "at_ms": 2396
+      "at_ms": 5681
     },
     {
       "step": "audit",
-      "at_ms": 2398
+      "at_ms": 5682
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2498
+      "at_ms": 5777
     }
   ],
   "audit": {
@@ -44,34 +49,78 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "callfirst",
-    "layout_label": "Call first",
-    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
+    "trade_palette": "events-venue",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 10,
+      "trade_key": "events-venue",
+      "photo_count": 23,
       "has_reviews": false,
-      "branch": "urgent/transactional trade (trade), 10 photographs",
+      "branch": "visual trade (events-venue) with 23 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
+      "hero",
       "services",
+      "contact",
       "gallery",
       "words",
-      "contact"
+      "concierge"
     ],
-    "hero_treatment": "overlay",
-    "header_treatment": "split",
-    "gallery_shape": "grid",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Check Available Dates",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "events-venue",
+      "file": "events-venue.js",
+      "resolved_by": "family",
+      "resolved_from": "events-venue",
+      "sources": [
+        "https://mountainhouseestate.com/",
+        "https://www.tinroofbarn.com/",
+        "https://www.castlefarms.com/",
+        "https://pippinhillfarm.com/",
+        "https://www.wychmere.com/"
+      ],
+      "rationale": "The conversion is an enquiry gated on two facts only, is my date free and is this in my budget, so Mountain House Estate ships availability as a labelled button rather than a sentence and four of the five winners give price its own named destination without publishing a number, which is why the single CTA is an availability anchor pointing at a short enquiry block carrying a date field and why the price route lives in services beside Castle Farms named spaces with their capacities; the gallery is pushed BELOW the enquiry and the testimonials below that, inverting the generic template the research says gets it exactly backwards by leading with a photo carousel and ending with a bare Contact link, since social proof supports the decision while date and price create it.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
       "a": "#08819D",
       "b": "#084F5E",
       "c": "#08819D",
       "brand": "#098BA8",
       "mist": "#F3F8F9",
-      "ink": "#12181D"
+      "ink": "#15141F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -161,9 +210,9 @@
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
+            "value": "#15141F",
             "bg_mist": "#F3F8F9",
-            "ratio": 16.7,
+            "ratio": 17.02,
             "pass": true
           },
           {
@@ -174,7 +223,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -220,7 +270,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 7,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,58 +290,48 @@
   "claims": [
     {
       "text": "Unity in Greensboro",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "(336) 273-0944",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "info@unityingreensboro.org",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "2315 Scalesville Road, Greensboro, NC",
       "source": "https://www.facebook.com/UnityinGreensboro/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "Unity is a positive, practical, progressive approach to Christianity with great youth programs, inspiring activities, and an inclusive environment.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "Page · Religious organization",
       "source": "https://www.facebook.com/UnityinGreensboro/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "Unity is a positive",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "practical",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "inspiring activities",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     },
     {
       "text": "and an inclusive environment",
-      "fetched_at": "2026-08-07T15:49:45.942Z"
-    },
-    {
-      "text": "Unity is a positive, practical, progressive approach to Christianity with great youth programs, inspiring activities, and an inclusive environment.",
-      "source": "https://unityingreensboro.org/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:49:45.942Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:unity,positive,practical,progressive"
-      ]
+      "fetched_at": "2026-08-07T22:52:11.589Z"
     }
   ],
   "unresolved": [
@@ -300,33 +340,40 @@
   "link_preview": {
     "og_title": "Unity in Greensboro | Greensboro",
     "og_url": "https://vendly-demos.vercel.app/unity-in-greensboro/",
-    "og_image": "https://vendly-demos.vercel.app/unity-in-greensboro/assets/615099632_1324909516345746.jpg",
+    "og_image": "https://vendly-demos.vercel.app/unity-in-greensboro/assets/site-1.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
     "image_is_page_lead_image": true,
-    "image_sha256": "223c10734a8974390d5c7e0b2714461082d8478b0f92bdc2eef7cb590a9cd746",
-    "image_px": "1170x655",
+    "image_sha256": "a6e1160391e5864eb63f4eb5e93fb1793597da40146aedc85faedb571587ab47",
+    "image_px": "2307x1730",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
-    "meets_facebook_recommended_1200x630": false,
+    "meets_facebook_recommended_1200x630": true,
     "card_rendered_as": "large",
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
-    "rejected": 0,
-    "photographs": 10,
+    "accepted": 24,
+    "rejected": 1,
+    "photographs": 23,
     "logo_found": true
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "84dd5523f7b708d991f26d1fc8ec444fdb31d329d4616f36a071da80de1526dd",
+      "media_id": "site-0"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "association"
   },
   "fill_tokens": 20
 }

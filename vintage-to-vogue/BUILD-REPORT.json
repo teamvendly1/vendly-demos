@@ -1,38 +1,47 @@
 {
+  "niche": "clothes",
   "schema": "vendly.autodemo.build/1",
   "business": "Vintage to Vogue",
   "facebook": null,
   "slug": "vintage-to-vogue",
-  "built_at": "2026-08-07T15:41:33.630Z",
-  "elapsed_ms": 352,
+  "built_at": "2026-08-07T22:48:36.347Z",
+  "elapsed_ms": 1654,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 252
+      "at_ms": 173
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 174
     },
     {
       "step": "assets",
-      "at_ms": 253
+      "at_ms": 1114
+    },
+    {
+      "step": "template",
+      "at_ms": 1229
     },
     {
       "step": "brand_palette",
-      "at_ms": 255
+      "at_ms": 1561
     },
     {
       "step": "layout",
-      "at_ms": 255
+      "at_ms": 1561
     },
     {
       "step": "render",
-      "at_ms": 255
+      "at_ms": 1562
     },
     {
       "step": "audit",
-      "at_ms": 257
+      "at_ms": 1564
     },
     {
       "step": "beacon_probe",
-      "at_ms": 352
+      "at_ms": 1654
     }
   ],
   "audit": {
@@ -40,34 +49,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "clothes",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "clothes",
+      "photo_count": 1,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (1): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "split",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Book a Styling Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "clothes",
+      "file": "clothes.js",
+      "resolved_by": "niche",
+      "resolved_from": "clothes",
+      "sources": [
+        "https://www.percivalclo.com/",
+        "https://www.peregrineclothing.co.uk/",
+        "https://shopfigandwillow.com/",
+        "https://shopannastore.com/",
+        "https://rixolondon.com/"
+      ],
+      "rationale": "This niche has TWO conversions and the research says a demo that builds only the cart half is half a demo, so the fork is resolved rather than split into two equal buttons: Anna gives Stores and Hours its own destination plus a phone number specifically for booking a styling appointment and RIXO gives find-your-store a real nav slot, which makes the shop visit the higher-value conversion for a local boutique and the one our demos collect nothing from, so contact is promoted high and the single CTA is that appointment; Fig & Willow supplies the strip above the fold (shipping threshold and free returns, the two objections that kill an apparel cart) and Percival the gallery mechanic of three photo shapes per product, worn in a real place, flat-lay and close-up detail.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#88409E",
+      "b": "#452753",
+      "c": "#A03CBE",
+      "brand": "#A03CBE",
+      "mist": "#F8F4FB",
+      "ink": "#181320"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +138,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A03CBE",
+            "after": "#A03CBE",
+            "ratio": 5.41,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +148,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#88409E",
+            "after": "#88409E",
+            "ratio": 6.41,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +158,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#452753",
+            "after": "#452753",
+            "ratio": 12.59,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +168,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#452753",
+            "after": "#452753",
+            "ratio": 9.78,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +180,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A03CBE",
+            "ratio": 5.41,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#88409E",
+            "ratio": 6.41,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#452753",
+            "ratio": 12.59,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#452753",
+            "ratio": 9.78,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#181320",
+            "bg_mist": "#F8F4FB",
+            "ratio": 16.76,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#452753",
+            "bg_mist": "#F8F4FB",
+            "ratio": 11.58,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -181,32 +237,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A03CBE",
+        "ratio": 5.41,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#88409E",
+        "ratio": 6.41,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#452753",
+        "ratio": 12.59,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#452753",
+        "ratio": 9.78,
         "pass": true
       }
     ]
@@ -229,76 +285,131 @@
   "claims": [
     {
       "text": "Vintage to Vogue",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "(336) 709-6181",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "vintagetovogueboutique@gmail.com",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "530 South Elm Street, Greensboro, NC, 27406",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "Vintage to Vogue Boutique located in Downtown Greensboro, NC specializes in designer, vintage and local clothing & accessories for men and women on consignment.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "Vintage to Vogue Boutique located in Downtown Greensboro",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     },
     {
       "text": "NC specializes in designer",
-      "fetched_at": "2026-08-07T15:41:33.529Z"
-    },
-    {
-      "text": "Vintage to Vogue Boutique located in Downtown Greensboro, NC specializes in designer, vintage and local clothing & accessories for men and women on consignment.",
-      "source": "https://www.vintagetovogue.net/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:41:33.529Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:vintage,vogue,boutique,located"
-      ]
+      "fetched_at": "2026-08-07T22:48:34.866Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Vintage to Vogue | NC",
     "og_url": "https://vendly-demos.vercel.app/vintage-to-vogue/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/vintage-to-vogue/assets/site-1.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "799aa8105e09ad1e04b321b33fbfd746a8516e040a87f19f2276a83f842fb6c6",
+    "image_px": "1773x1330",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 2,
+    "rejected": 15,
+    "photographs": 1,
+    "logo_found": true
   },
   "rejected_assets": [
     {
+      "reason": "too_small",
+      "sha256": "f9884fa9eb6c62c9c68d190856cc3b759ff56a070b18f6f1c6233f95a1154001",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "203a3800b9e0b81a3cd6b49945e881c81e575bbc835f82d621b0e4b651e58007",
+      "media_id": "site-3"
+    },
+    {
       "reason": "download_failed",
       "sha256": null,
-      "media_id": null
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e2cee29f93f70eb9319868910a8fd6131c09f8b2aaa9aa853412219d6cc26cdf",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e1e2b1b5f82542f89d91113e23297f3a18745ef2fe6ef80e3cb2f3211ddea7ea",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7517ab225fcebd44f542f01fb9214d70e54e11ddd4a9b558bbc0af3ecae5741d",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "82c7139cf7c53f4869fe317736628693aa45304424c53eafc387b9d61046a4b9",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "212f2b87516815b0b6d319239fbef366ba21d51ef8fe35dbd493c45cc88857da",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "df9e1c11b621b71908aecec9d8884e469f6df00e37af60410758bc62b818d8fd",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0f85c4de796a21d36acf4eb3c87d4b50aa25e1aa1bf6c10abdb88d6652da49d1",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "33988257857109cd160d1e7908bd435ee1416c08acc842893c93b3400ed59f77",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "c7b688f0b34c3ab284771194d6da214f47a634a982afe4854d2ca9de034278c8",
+      "media_id": "site-15"
     },
     {
       "reason": "download_failed",
@@ -310,9 +421,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": false,
-    "contact": true
+    "contact": true,
+    "niche": "clothes"
   },
-  "fill_tokens": 7
+  "fill_tokens": 9
 }

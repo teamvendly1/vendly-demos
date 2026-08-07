@@ -1,42 +1,47 @@
 {
+  "niche": "art",
   "schema": "vendly.autodemo.build/1",
   "business": "Helena Fox Fine Art",
   "facebook": null,
   "slug": "helena-fox-fine-art",
-  "built_at": "2026-08-07T15:49:54.281Z",
-  "elapsed_ms": 2396,
+  "built_at": "2026-08-07T22:52:25.643Z",
+  "elapsed_ms": 2595,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 389
+      "at_ms": 365
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 390
+      "at_ms": 366
     },
     {
       "step": "assets",
-      "at_ms": 1919
+      "at_ms": 1985
+    },
+    {
+      "step": "template",
+      "at_ms": 2102
     },
     {
       "step": "brand_palette",
-      "at_ms": 2296
+      "at_ms": 2493
     },
     {
       "step": "layout",
-      "at_ms": 2296
+      "at_ms": 2493
     },
     {
       "step": "render",
-      "at_ms": 2297
+      "at_ms": 2494
     },
     {
       "step": "audit",
-      "at_ms": 2298
+      "at_ms": 2495
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2396
+      "at_ms": 2595
     }
   ],
   "audit": {
@@ -44,34 +49,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "retail-shop",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 10,
+      "trade_key": "retail-shop",
+      "photo_count": 11,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "visual trade (retail-shop) with 11 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Reserve or Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "retail-shop",
+      "file": "retail-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "retail-shop",
+      "sources": [
+        "https://www.scottsflowersnyc.com/",
+        "https://www.nativepoppy.com/",
+        "https://www.greenapplebooks.com/",
+        "https://www.catbirdnyc.com/",
+        "https://ballardblossom.com/"
+      ],
+      "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
       "a": "#95711C",
       "b": "#564110",
       "c": "#95711C",
       "brand": "#CA9A26",
       "mist": "#F9F7F3",
-      "ink": "#12181D"
+      "ink": "#1A1810"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -161,9 +212,9 @@
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
+            "value": "#1A1810",
             "bg_mist": "#F9F7F3",
-            "ratio": 16.72,
+            "ratio": 16.6,
             "pass": true
           },
           {
@@ -174,7 +225,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -220,7 +272,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 9,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,56 +292,46 @@
   "claims": [
     {
       "text": "Helena Fox Fine Art",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "(843) 723-0073",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "gallery@helenafoxfineart.com",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "106 Church St Ste A, Charleston, SC",
       "source": "https://www.facebook.com/helenafoxfineartchs/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "Helena Fox Fine Art in Charleston, S.C. represents nationally known artists from across the United States. Focusing on traditional paintings, sculpture, as well as nationally known silversmith and goldsmith. Celebrating it's 20th year as an Charleston art gallery.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "Page · Art Gallery",
       "source": "https://www.facebook.com/helenafoxfineartchs/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "Helena Fox Fine Art in Charleston",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "sculpture",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     },
     {
       "text": "100% recommend (9 Reviews)",
       "source": "https://www.facebook.com/helenafoxfineartchs/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T15:49:52.274Z"
-    },
-    {
-      "text": "Helena Fox Fine Art in Charleston, S.C. represents nationally known artists from across the United States. Focusing on traditional paintings, sculpture, as well as nationally known silversmith and goldsmith. Celebrating it's 20th year as an Charleston art gallery.",
-      "source": "https://helenafoxfineart.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:49:52.274Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:gallery,helena,fine,charleston"
-      ]
+      "fetched_at": "2026-08-07T22:52:23.413Z"
     }
   ],
   "unresolved": [
@@ -312,9 +354,9 @@
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
+    "accepted": 12,
     "rejected": 1,
-    "photographs": 10,
+    "photographs": 11,
     "logo_found": true
   },
   "rejected_assets": [
@@ -328,9 +370,10 @@
     "hero": true,
     "trust_strip": true,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "art"
   },
   "fill_tokens": 22
 }

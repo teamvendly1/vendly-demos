@@ -1,38 +1,47 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Recess",
   "facebook": null,
   "slug": "recess",
-  "built_at": "2026-08-07T17:56:18.372Z",
-  "elapsed_ms": 413,
+  "built_at": "2026-08-07T22:44:56.133Z",
+  "elapsed_ms": 1758,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 301
+      "at_ms": 105
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 105
     },
     {
       "step": "assets",
-      "at_ms": 303
+      "at_ms": 1522
+    },
+    {
+      "step": "template",
+      "at_ms": 1654
     },
     {
       "step": "brand_palette",
-      "at_ms": 305
+      "at_ms": 1654
     },
     {
       "step": "layout",
-      "at_ms": 305
+      "at_ms": 1654
     },
     {
       "step": "render",
-      "at_ms": 305
+      "at_ms": 1655
     },
     {
       "step": "audit",
-      "at_ms": 307
+      "at_ms": 1657
     },
     {
       "step": "beacon_probe",
-      "at_ms": 413
+      "at_ms": 1758
     }
   ],
   "audit": {
@@ -40,34 +49,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 5,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 5 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#7A2E1E",
+      "b": "#4A1B11",
+      "c": "#A65A17",
+      "brand": "#A65A17",
+      "mist": "#FBF6F0",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +138,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A65A17",
+            "after": "#A65A17",
+            "ratio": 5.13,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +148,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#7A2E1E",
+            "after": "#7A2E1E",
+            "ratio": 9.39,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +158,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 14.42,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +168,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 11.21,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +180,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A65A17",
+            "ratio": 5.13,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#7A2E1E",
+            "ratio": 9.39,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4A1B11",
+            "ratio": 14.42,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4A1B11",
+            "ratio": 11.21,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#FBF6F0",
+            "ratio": 17.07,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4A1B11",
+            "bg_mist": "#FBF6F0",
+            "ratio": 13.42,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": null
     }
   },
   "accessibility": {
@@ -181,32 +237,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A65A17",
+        "ratio": 5.13,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#7A2E1E",
+        "ratio": 9.39,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4A1B11",
+        "ratio": 14.42,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4A1B11",
+        "ratio": 11.21,
         "pass": true
       }
     ]
@@ -229,45 +285,36 @@
   "claims": [
     {
       "text": "Recess",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "(678) 235-5380",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "hello@eatrecess.com",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "Healthy grain bowls, salads, and juices inside Krog Street Market. Order pickup or delivery, or book Atlanta office catering and group meals.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "Healthy grain bowls",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "salads",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     },
     {
       "text": "or book Atlanta office catering and group meals",
-      "fetched_at": "2026-08-07T17:56:18.259Z"
-    },
-    {
-      "text": "Healthy grain bowls, salads, and juices inside Krog Street Market. Order pickup or delivery, or book Atlanta office catering and group meals.",
-      "source": "https://www.eatrecess.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T17:56:18.259Z",
-      "relevance": [
-        "service_vocab:healthy,grain,bowls,salads"
-      ]
+      "fetched_at": "2026-08-07T22:44:54.479Z"
     }
   ],
   "unresolved": [
@@ -276,35 +323,60 @@
   "link_preview": {
     "og_title": "Recess",
     "og_url": "https://vendly-demos.vercel.app/recess/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/recess/assets/site-1.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "11c822e3bd678aaafe43df0d03a4bdffbdde0228d5a278fd0a1bd58382077a02",
+    "image_px": "2500x547",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 3,
-    "photographs": 0,
+    "accepted": 5,
+    "rejected": 8,
+    "photographs": 5,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "too_small",
+      "sha256": "0f3b6d836ee577d6c72e655dd2350a543d0792a595e7edb006143c617efad352",
+      "media_id": "site-0"
     },
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "too_small",
+      "sha256": "754640993d0159d669d69885f962b556afea2972d345cef28bbf5438d725dc20",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "754640993d0159d669d69885f962b556afea2972d345cef28bbf5438d725dc20",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "70c303b17254061b89916810466507e641667b8d01baeb0ef6cb416d74932bdb",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "3b4596f40a3645a42eee8b805fbbc771a581bd06aadf3f5937b2ae503e75db90",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8bac54c6783d0bf752514eaebf1b5259c351cdc3f5762eff7ba115c91d933a7e",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "5792ef15c6cecb5ba354179676be2a636da960db15f2e6219d6eeeea79acad53",
+      "media_id": "site-11"
     },
     {
       "reason": "download_failed",
@@ -316,9 +388,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 4
+  "fill_tokens": 14
 }

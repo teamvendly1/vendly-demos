@@ -2,8 +2,61 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Reto's Kitchen",
-  "built_at": "2026-08-07T15:51:31.221Z",
+  "built_at": "2026-08-07T22:53:44.848Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
-  "rejected": []
+  "accepted": [
+    {
+      "file": "site-3.jpg",
+      "rel": "assets/site-3.jpg",
+      "sha256": "e96860404eeea5ff9a8c34fbe6b331aa4b6344ef4ddeb160cc68183b0db012af",
+      "media_id": "site-3",
+      "format": "jpg",
+      "bytes": 815701,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/654d0b6bd396f615eb1685e5/5cca4008-14c9-4c07-b459-0e613436babb/Job%23050336_Retos5553.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/654d0b6bd396f615eb1685e5/5cca4008-14c9-4c07-b459-0e613436babb/Job%23050336_Retos5553.jpg",
+      "source_url": "https://www.retoskitchen.com/",
+      "fetched_at": "2026-08-07T22:53:44.316Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 3746,
+        "distinct_colors": 58,
+        "pct_near_white": 0.4,
+        "pct_border_white": 0.2
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/654d0b6bd396f615eb1685e5/f65cdbd9-9c6d-4769-8646-bbe86a889dad/small+transparent+background+%281%29.png?format=1500w",
+      "media_id": "site-0",
+      "source_url": "https://www.retoskitchen.com/",
+      "sha256": "84361cbb3b372c82b80c24ad202b45b68ae02323f2a5d8420d74d79f45a51d9e",
+      "reason": "too_small",
+      "bytes": 8308
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/654d0b6bd396f615eb1685e5/808c9961-3c62-4141-ae05-49921ec1e280/retos_final_web+%281%29.jpg",
+      "media_id": "site-1",
+      "source_url": "https://www.retoskitchen.com/",
+      "sha256": "f0a654f80e0d5429193bb19e93c861f879b662b031266f6e45c5f46552c81d26",
+      "reason": "too_small",
+      "bytes": 10102
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/654d0b6bd396f615eb1685e5/808c9961-3c62-4141-ae05-49921ec1e280/retos_final_web+%281%29.jpg?format=2500w",
+      "media_id": "site-2",
+      "source_url": "https://www.retoskitchen.com/",
+      "sha256": "f0a654f80e0d5429193bb19e93c861f879b662b031266f6e45c5f46552c81d26",
+      "reason": "too_small",
+      "bytes": 10102
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/654d0b6bd396f615eb1685e5/5cca4008-14c9-4c07-b459-0e613436babb/Job%23050336_Retos5553.jpg?format=2500w",
+      "media_id": "site-4",
+      "source_url": "https://www.retoskitchen.com/",
+      "sha256": "e96860404eeea5ff9a8c34fbe6b331aa4b6344ef4ddeb160cc68183b0db012af",
+      "reason": "duplicate_content"
+    }
+  ]
 }

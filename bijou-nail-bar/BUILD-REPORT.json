@@ -1,38 +1,51 @@
 {
+  "niche": "beauty",
   "schema": "vendly.autodemo.build/1",
   "business": "Bijou Nail bar",
   "facebook": null,
   "slug": "bijou-nail-bar",
-  "built_at": "2026-08-07T16:11:27.656Z",
-  "elapsed_ms": 366,
+  "built_at": "2026-08-07T23:08:37.229Z",
+  "elapsed_ms": 2305,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 273
+      "at_ms": 269
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 270
     },
     {
       "step": "assets",
-      "at_ms": 275
+      "at_ms": 1709
+    },
+    {
+      "step": "template",
+      "at_ms": 1828
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1852
     },
     {
       "step": "brand_palette",
-      "at_ms": 276
+      "at_ms": 2216
     },
     {
       "step": "layout",
-      "at_ms": 276
+      "at_ms": 2216
     },
     {
       "step": "render",
-      "at_ms": 277
+      "at_ms": 2217
     },
     {
       "step": "audit",
-      "at_ms": 278
+      "at_ms": 2218
     },
     {
       "step": "beacon_probe",
-      "at_ms": 366
+      "at_ms": 2305
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "beauty",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "beauty",
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (beauty) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
+      "concierge",
+      "gallery",
       "services",
       "words",
-      "gallery"
+      "trust",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book Now",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "beauty",
+      "file": "beauty.js",
+      "resolved_by": "niche",
+      "resolved_from": "beauty",
+      "sources": [
+        "https://www.saltct.com/",
+        "https://www.verdesalon.ca/",
+        "https://www.theclipjointsalon.com/",
+        "https://mechesalonla.com/",
+        "https://thphair.com/"
+      ],
+      "rationale": "Five of five winners pin one identical booking button to the header and repeat it down the page - thp hair makes it the first nav item, The Clip Joint repeats it three or more times - and SALT and Verde add the mechanic our demos lacked entirely, a SMALLER FIRST YES in the form of a free consultation, because nobody books a $200 colour service from a stranger cold, so this template repeats one booking action and gives the concierge slot directly under the hero to that free consult. A demo carries no price, offer, gift, before-and-after, client photograph, or result claim the business does not publish itself, and no stock photography at all.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "concierge",
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#E72229",
+      "b": "#5C0A0D",
+      "c": "#E72229",
+      "brand": "#E9353B",
+      "mist": "#F9F3F4",
+      "ink": "#1F131A"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#E9353B",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#E9353B",
+            "after": "#E72229",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#E9353B",
+            "after": "#E72229",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5C0A0D",
+            "after": "#5C0A0D",
+            "ratio": 13.96,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5C0A0D",
+            "after": "#5C0A0D",
+            "ratio": 10.85,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#E72229",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#E72229",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5C0A0D",
+            "ratio": 13.96,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5C0A0D",
+            "ratio": 10.85,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1F131A",
+            "bg_mist": "#F9F3F4",
+            "ratio": 16.42,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5C0A0D",
+            "bg_mist": "#F9F3F4",
+            "ratio": 12.73,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://nz-website-media-r2-pub.gocheckin.net/13697-10993/page/setting-1663335568_logo_bijou-nail-bar-in-richmond-va-23221-w576-37719.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#E72229",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#E72229",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5C0A0D",
+        "ratio": 13.96,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5C0A0D",
+        "ratio": 10.85,
         "pass": true
       }
     ]
@@ -229,34 +289,24 @@
   "claims": [
     {
       "text": "Bijou Nail bar",
-      "fetched_at": "2026-08-07T16:11:27.563Z"
+      "fetched_at": "2026-08-07T23:08:35.193Z"
     },
     {
       "text": "(804) 354-8888",
-      "fetched_at": "2026-08-07T16:11:27.563Z"
+      "fetched_at": "2026-08-07T23:08:35.193Z"
     },
     {
       "text": "bijounailbarrichmond@yahoo.com",
-      "fetched_at": "2026-08-07T16:11:27.563Z"
+      "fetched_at": "2026-08-07T23:08:35.193Z"
     },
     {
       "text": "Bijou Nail Bar was founded to bring the latest nail trends and the best beauty services to our valued customers in Richmond, VA 23221",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:11:27.563Z"
+      "fetched_at": "2026-08-07T23:08:35.193Z"
     },
     {
       "text": "VA 23221",
-      "fetched_at": "2026-08-07T16:11:27.563Z"
-    },
-    {
-      "text": "Bijou Nail Bar was founded to bring the latest nail trends and the best beauty services to our valued customers in Richmond, VA 23221",
-      "source": "https://bijounailbarrichmond.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:11:27.563Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:bijou,nail,founded,bring"
-      ]
+      "fetched_at": "2026-08-07T23:08:35.193Z"
     }
   ],
   "unresolved": [
@@ -265,26 +315,41 @@
   "link_preview": {
     "og_title": "Bijou Nail bar",
     "og_url": "https://vendly-demos.vercel.app/bijou-nail-bar/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/bijou-nail-bar/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "30789d7a8c9c7c1418e2a5478d8a03d5e58cd7cd347691471b2e3a678295162a",
+    "image_px": "661x377",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 13,
+    "rejected": 4,
+    "photographs": 13,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "9fda2c888c64645a47f5e291a8002584e15a34e6230149d2b20f7f054f154049",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "40eab664ce11cf1a96f7f85d884f33c21d46ddcf32bd3b184d46fb5892cd40a3",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "ac4b5671ab7d1f4a82b859d6646c54cb9c8242913e4e8246411d0f886e3ee25e",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -295,9 +360,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "beauty"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

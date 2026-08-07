@@ -1,0 +1,393 @@
+{
+  "niche": "bar",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Denim on 7th",
+  "facebook": null,
+  "slug": "denim-on-7th",
+  "built_at": "2026-08-07T22:49:02.203Z",
+  "elapsed_ms": 2712,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 185
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 186
+    },
+    {
+      "step": "assets",
+      "at_ms": 2556
+    },
+    {
+      "step": "template",
+      "at_ms": 2594
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 2595
+    },
+    {
+      "step": "layout",
+      "at_ms": 2595
+    },
+    {
+      "step": "render",
+      "at_ms": 2595
+    },
+    {
+      "step": "audit",
+      "at_ms": 2597
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 2712
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "bar",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "bar",
+      "photo_count": 22,
+      "has_reviews": true,
+      "branch": "visual trade (bar) with 22 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "gallery",
+      "services",
+      "words",
+      "concierge",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "See Tonight",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "bar",
+      "file": "bar.js",
+      "resolved_by": "niche",
+      "resolved_from": "bar",
+      "sources": [
+        "https://thedeadrabbit.com/",
+        "https://www.tspdallas.com/",
+        "https://www.smugglerscovesf.com/",
+        "https://www.bisouschicago.com/"
+      ],
+      "rationale": "Smuggler's Cove converts with no booking path at all by stating the door policy in plain words at the top, so the single CTA anchors to hours and policy rather than a reservation widget, and Bisous plus Smuggler's Cove both put press and award proof above the fold, which is why trust sits second and gallery outranks the drinks list.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#0F5C58",
+      "b": "#0B2E2C",
+      "c": "#7A5A0E",
+      "brand": "#7A5A0E",
+      "mist": "#F2F6F5",
+      "ink": "#12201F"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#7A5A0E",
+            "after": "#7A5A0E",
+            "ratio": 6.37,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#0F5C58",
+            "after": "#0F5C58",
+            "ratio": 7.8,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#0B2E2C",
+            "after": "#0B2E2C",
+            "ratio": 14.57,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#0B2E2C",
+            "after": "#0B2E2C",
+            "ratio": 11.32,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#7A5A0E",
+            "ratio": 6.37,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#0F5C58",
+            "ratio": 7.8,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#0B2E2C",
+            "ratio": 14.57,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#0B2E2C",
+            "ratio": 11.32,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12201F",
+            "bg_mist": "#F2F6F5",
+            "ratio": 15.4,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#0B2E2C",
+            "bg_mist": "#F2F6F5",
+            "ratio": 13.37,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": null
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#7A5A0E",
+        "ratio": 6.37,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#0F5C58",
+        "ratio": 7.8,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#0B2E2C",
+        "ratio": 14.57,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#0B2E2C",
+        "ratio": 11.32,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 10,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "denim-on-7th",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Denim on 7th",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    },
+    {
+      "text": "(205) 203-2409",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    },
+    {
+      "text": "contact@denimon7th.com",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    },
+    {
+      "text": "2808 7th Avenue south, Birmingham, AL, Alabama",
+      "source": "https://www.facebook.com/people/Denim-on-7th/100095723075469/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    },
+    {
+      "text": "",
+      "source": "https://www.denimon7th.com/home",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    },
+    {
+      "text": "Page · Bar",
+      "source": "https://www.facebook.com/people/Denim-on-7th/100095723075469/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    },
+    {
+      "text": "Not yet rated (1 Review)",
+      "source": "https://www.facebook.com/people/Denim-on-7th/100095723075469/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T22:48:59.676Z"
+    }
+  ],
+  "unresolved": [
+    "about",
+    "post_text",
+    "hours(live_status_only:Closed now)"
+  ],
+  "link_preview": {
+    "og_title": "Denim on 7th | AL",
+    "og_url": "https://vendly-demos.vercel.app/denim-on-7th/",
+    "og_image": "https://vendly-demos.vercel.app/denim-on-7th/assets/496149675_10101564822271010.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "efd2265407520fb2a068520d372b4f7312ed723c868832864ecb6e0202b98564",
+    "image_px": "1536x2048",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 22,
+    "rejected": 5,
+    "photographs": 22,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "a6c3a1d0eed81e0484a15fba73f27a527e1194825f3e458742b3d4310f88cb12",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "359ac7a7ccdb430a4e8459bc9ab0af0098c3b39bcb1170a06079e53911463836",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "52ee4ee09c2a80883aeb3de20884f4e37d4ee05b9ca47c2006d23a7e83bde235",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "62a62f424de9b7f37ed368960eb7cb44881d0e760d4fba4701b8009f3664cb03",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "95d20be1644982bc24cc69f6174294ad99ecbbe1cfad24cd79a5c59e848fba84",
+      "media_id": "site-4"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "bar"
+  },
+  "fill_tokens": 19
+}

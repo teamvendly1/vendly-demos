@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Taj India",
   "facebook": null,
   "slug": "taj-india",
-  "built_at": "2026-08-07T16:03:03.280Z",
-  "elapsed_ms": 1451,
+  "built_at": "2026-08-07T23:00:22.647Z",
+  "elapsed_ms": 2911,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 1353
+      "at_ms": 582
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 582
     },
     {
       "step": "assets",
-      "at_ms": 1355
+      "at_ms": 2260
+    },
+    {
+      "step": "template",
+      "at_ms": 2290
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2336
     },
     {
       "step": "brand_palette",
-      "at_ms": 1355
+      "at_ms": 2818
     },
     {
       "step": "layout",
-      "at_ms": 1355
+      "at_ms": 2818
     },
     {
       "step": "render",
-      "at_ms": 1356
+      "at_ms": 2819
     },
     {
       "step": "audit",
-      "at_ms": 1357
+      "at_ms": 2821
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1451
+      "at_ms": 2911
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 7,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 7 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#782226",
+      "b": "#4F1719",
+      "c": "#782226",
+      "brand": "#782226",
+      "mist": "#F9F3F4",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#782226",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#782226",
+            "after": "#782226",
+            "ratio": 10.22,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#782226",
+            "after": "#782226",
+            "ratio": 10.22,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4F1719",
+            "after": "#4F1719",
+            "ratio": 14.29,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4F1719",
+            "after": "#4F1719",
+            "ratio": 11.11,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#782226",
+            "ratio": 10.22,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#782226",
+            "ratio": 10.22,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4F1719",
+            "ratio": 14.29,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4F1719",
+            "ratio": 11.11,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F9F3F4",
+            "ratio": 16.74,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4F1719",
+            "bg_mist": "#F9F3F4",
+            "ratio": 13.04,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://tajindia.net/wp-content/uploads/2025/11/cropped-Taj-India-180x180.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#782226",
+        "ratio": 10.22,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#782226",
+        "ratio": 10.22,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4F1719",
+        "ratio": 14.29,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4F1719",
+        "ratio": 11.11,
         "pass": true
       }
     ]
@@ -229,17 +289,17 @@
   "claims": [
     {
       "text": "Taj India",
-      "fetched_at": "2026-08-07T16:03:03.181Z"
+      "fetched_at": "2026-08-07T23:00:20.317Z"
     },
     {
       "text": "(205) 939-3805",
-      "fetched_at": "2026-08-07T16:03:03.181Z"
+      "fetched_at": "2026-08-07T23:00:20.317Z"
     },
     {
       "text": "",
       "source": "https://tajindia.net/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:03:03.181Z"
+      "fetched_at": "2026-08-07T23:00:20.317Z"
     }
   ],
   "unresolved": [
@@ -250,33 +310,80 @@
   "link_preview": {
     "og_title": "Taj India",
     "og_url": "https://vendly-demos.vercel.app/taj-india/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/taj-india/assets/site-8.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "image_sha256": "1c818d88abd669827ca6250668502e18929c55d3c4a947089f9d5ba5c577e368",
+    "image_px": "1200x450",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 7,
+    "rejected": 9,
+    "photographs": 7,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "b3f284a4294163c988b7ecf397c82ae626decdacc7721ad9e90eaad3b2d08dad",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "cb3f5789a7671620cf941e47e06e4d831d5513816908dd988722550f6b77abf6",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "111adc1685510936fcbd1c3ee89e314e2fd07fcf4b48ef850126a2a881415436",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7f135e038ab9b4fb1f3df60e504bdda019b11bb043a1a16211d2fc9cf55a0687",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "62b6a7eb6f5ea3f4152e8fb704e3163076eaf4ae667e6b186ff75c511bdb307a",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "f2ba896ae9048f219577d77d5f713983c32d4dc92511e4fa108640ca4227d574",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "94098e27fea18e2f7fcfb1637bc6348fa1b375618f00fea462943877443ad581",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9c62908644fa5818db91d62280a5eb58877bafff7cfdfef7c13f21592dbf0d73",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "3df6d63cc995988dbe543dc2d429186f552b4836c065ac643c3a2cb709f18dbf",
+      "media_id": "site-13"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 2
+  "fill_tokens": 14
 }

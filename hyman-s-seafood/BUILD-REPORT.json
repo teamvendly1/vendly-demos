@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Hyman's Seafood",
   "facebook": null,
   "slug": "hyman-s-seafood",
-  "built_at": "2026-08-07T16:05:31.166Z",
-  "elapsed_ms": 2576,
+  "built_at": "2026-08-07T23:01:56.280Z",
+  "elapsed_ms": 1874,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2485
+      "at_ms": 94
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 94
     },
     {
       "step": "assets",
-      "at_ms": 2487
+      "at_ms": 1383
+    },
+    {
+      "step": "template",
+      "at_ms": 1413
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1426
     },
     {
       "step": "brand_palette",
-      "at_ms": 2488
+      "at_ms": 1765
     },
     {
       "step": "layout",
-      "at_ms": 2488
+      "at_ms": 1765
     },
     {
       "step": "render",
-      "at_ms": 2488
+      "at_ms": 1766
     },
     {
       "step": "audit",
-      "at_ms": 2490
+      "at_ms": 1768
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2575
+      "at_ms": 1874
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 7,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 7 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#AF6060",
+      "b": "#442222",
+      "c": "#AF6060",
+      "brand": "#CC9999",
+      "mist": "#F9F3F3",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#CC9999",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#CC9999",
+            "after": "#AF6060",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#CC9999",
+            "after": "#AF6060",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#442222",
+            "after": "#442222",
+            "ratio": 14.02,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#442222",
+            "after": "#442222",
+            "ratio": 10.9,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#AF6060",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#AF6060",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#442222",
+            "ratio": 14.02,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#442222",
+            "ratio": 10.9,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F9F3F3",
+            "ratio": 16.72,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#442222",
+            "bg_mist": "#F9F3F3",
+            "ratio": 12.78,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/5fb00a0e022ab378fead1a44/87ecc404-7f16-45c7-8a6d-808879ca83c8/640px-TasteAtlas_logo_title.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#AF6060",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#AF6060",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#442222",
+        "ratio": 14.02,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#442222",
+        "ratio": 10.9,
         "pass": true
       }
     ]
@@ -229,25 +289,25 @@
   "claims": [
     {
       "text": "Hyman's Seafood",
-      "fetched_at": "2026-08-07T16:05:31.076Z"
+      "fetched_at": "2026-08-07T23:01:54.499Z"
     },
     {
       "text": "(843) 723-6000",
-      "fetched_at": "2026-08-07T16:05:31.076Z"
+      "fetched_at": "2026-08-07T23:01:54.499Z"
     },
     {
       "text": "hymansseafood@aol.com",
-      "fetched_at": "2026-08-07T16:05:31.076Z"
+      "fetched_at": "2026-08-07T23:01:54.499Z"
     },
     {
       "text": "215 Meeting Street\nCharleston, SC, 29401\nUnited States",
-      "fetched_at": "2026-08-07T16:05:31.076Z"
+      "fetched_at": "2026-08-07T23:01:54.499Z"
     },
     {
       "text": "",
       "source": "https://www.hymanseafood.com",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:05:31.076Z"
+      "fetched_at": "2026-08-07T23:01:54.499Z"
     }
   ],
   "unresolved": [
@@ -257,35 +317,70 @@
   "link_preview": {
     "og_title": "Hyman&#39;s Seafood | SC",
     "og_url": "https://vendly-demos.vercel.app/hyman-s-seafood/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/hyman-s-seafood/assets/site-6.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "66253eaefa6f77d834d0f677cc9dcc363ad8360b1c837ade466b809045f85d52",
+    "image_px": "2500x3125",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 3,
-    "photographs": 0,
+    "accepted": 7,
+    "rejected": 10,
+    "photographs": 7,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "0e8266e469e8309fba0fcd5ea6ebf8d72b8ced823471e93f4e6597506ef94586",
+      "media_id": "site-1"
     },
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "0e8266e469e8309fba0fcd5ea6ebf8d72b8ced823471e93f4e6597506ef94586",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "0e8266e469e8309fba0fcd5ea6ebf8d72b8ced823471e93f4e6597506ef94586",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "0a47a427d4c708a88758b38a918ad5f4c0dec06f8225f8b206b5e039afbfad99",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "66253eaefa6f77d834d0f677cc9dcc363ad8360b1c837ade466b809045f85d52",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "edf57e72596d482e292cea43ae305915f7268f8e74f7d96703458b244387fb1c",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "a9c2f04372e969f0f8ce89325183b9b3f5199993787e639e5aee30dc9ce81ff2",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "554a84736994ed47163fff44e5eca15cacba45002b3c97dd0ac80bb658cf936e",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "1c217a0d1b64e0a9899a78bb47b4b946d1d895798d9c023da513f544a00804e6",
+      "media_id": "site-15"
     },
     {
       "reason": "download_failed",
@@ -298,8 +393,9 @@
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 6
+  "fill_tokens": 18
 }

@@ -17,12 +17,23 @@
 <meta name="twitter:description" content="Bitters Social House: Discover Greensboro&#39;s favorite screen-free cocktail lounge, home bar supplies, rotating local art, &amp; community events in the heart of NC">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#324E7C;--b:#1D2E49;--c:#324E7C;--mist:#F3F5F9;--ink:#12201F;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#324E7C;--scrim:10,16,26;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -164,7 +175,7 @@ footer.site a{color:#fff}
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,18 +184,57 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-5.jpg" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
     
     <h1>Bitters Social House</h1>
     <p class="lede">Bitters Social House: Discover Greensboro&#39;s favorite screen-free cocktail lounge, home bar supplies, rotating local art, &amp; community events in the heart of NC</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+13365420038">Call (336) 542-0038</a>
-      <a class="btn btn-ghost" href="mailto:bitters@bitterssocial.com">Email us</a>
+      <a class="btn btn-c" href="#contact">See Tonight</a>
+      <a class="hero-alt" href="mailto:bitters@bitterssocial.com">or email us</a>
     </div>
+    <p class="hero-facts">(336) 542-0038</p>
   </div>
 </div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Bitters Social House Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-wide">
+      <figure><img src="assets/site-9.jpg" alt="s favorite screen-free cocktail lounge" loading="lazy" width="800" height="600"><figcaption>s favorite screen-free cocktail lounge</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Bitters Social House Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Bitters Social House: Discover Greensboro</h3></div>
+      <div class="card"><h3>s favorite screen-free cocktail lounge</h3></div>
+      <div class="card"><h3>home bar supplies</h3></div>
+      <div class="card"><h3>rotating local art</h3></div>
+      <div class="card"><h3>&amp; community events in the heart of NC</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Bitters Social House page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+13365420038">(336) 542-0038</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -198,27 +248,6 @@ footer.site a{color:#fff}
         <div><dt>Facebook</dt><dd><a href="https://bitterssocial.com/">bitterssocial.com/</a></dd></div>
       </dl>
     </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Bitters Social House Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>home bar supplies</h3></div>
-      <div class="card"><h3>rotating local art</h3></div>
-      <div class="card"><h3>&amp; community events in the heart of NC</h3></div>
-    </div>
-  </div>
-</section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Bitters Social House: Discover Greensboro’s favorite screen-free cocktail lounge, home bar supplies, rotating local art, &amp; community events in the heart of NC
-      <cite>Posted by Bitters Social House on Facebook. Read on <a href="https://bitterssocial.com/">their page</a>.</cite>
-    </blockquote>
   </div>
 </section>
 

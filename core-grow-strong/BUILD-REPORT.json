@@ -1,38 +1,51 @@
 {
+  "niche": "fitness",
   "schema": "vendly.autodemo.build/1",
   "business": "CORE. grow strong.",
   "facebook": null,
   "slug": "core-grow-strong",
-  "built_at": "2026-08-07T16:09:39.169Z",
-  "elapsed_ms": 656,
+  "built_at": "2026-08-07T23:06:37.527Z",
+  "elapsed_ms": 2762,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 547
+      "at_ms": 489
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 490
     },
     {
       "step": "assets",
-      "at_ms": 548
+      "at_ms": 2121
+    },
+    {
+      "step": "template",
+      "at_ms": 2231
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2252
     },
     {
       "step": "brand_palette",
-      "at_ms": 550
+      "at_ms": 2661
     },
     {
       "step": "layout",
-      "at_ms": 550
+      "at_ms": 2661
     },
     {
       "step": "render",
-      "at_ms": 550
+      "at_ms": 2662
     },
     {
       "step": "audit",
-      "at_ms": 552
+      "at_ms": 2664
     },
     {
       "step": "beacon_probe",
-      "at_ms": 656
+      "at_ms": 2762
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "fitness",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "fitness",
+      "photo_count": 7,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (fitness) with 7 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
       "words",
-      "gallery"
+      "gallery",
+      "trust",
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Free First Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "fitness",
+      "file": "fitness.js",
+      "resolved_by": "niche",
+      "resolved_from": "fitness",
+      "sources": [
+        "https://www.ovcrossfit.com",
+        "https://www.lumberjack-athletics.com",
+        "https://www.theschoolofpilates.com",
+        "https://www.primeboxingusa.com",
+        "https://www.gracieelkgrove.com"
+      ],
+      "rationale": "Five of five winners lead with a FREE FIRST VISIT and not one leads with Join, Sign Up, or a price - Lumberjack repeats the identical Book a Free Intro at least four times down one page with beginner testimonials beside it, and OV CrossFit publishes three numbered onboarding steps so the visitor knows exactly what happens after the click - so this template makes the free first visit the only primary action, gives the services slot to those numbered steps, and lifts beginner-named social proof to third. A demo carries no transformation grid, no client image, no trial offer or price the business does not already publish, no result or health claim, and no hours it did not read on their live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "words",
+            "gallery",
+            "trust",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#6B7E22",
+      "b": "#445016",
+      "c": "#6B7E22",
+      "brand": "#AAC937",
+      "mist": "#F8F9F3",
+      "ink": "#15161F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#AAC937",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#AAC937",
+            "after": "#6B7E22",
+            "ratio": 4.53,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#AAC937",
+            "after": "#6B7E22",
+            "ratio": 4.53,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#445016",
+            "after": "#445016",
+            "ratio": 8.73,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#445016",
+            "after": "#445016",
+            "ratio": 6.79,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#6B7E22",
+            "ratio": 4.53,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#6B7E22",
+            "ratio": 4.53,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#445016",
+            "ratio": 8.73,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#445016",
+            "ratio": 6.79,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#15161F",
+            "bg_mist": "#F8F9F3",
+            "ratio": 17.01,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#445016",
+            "bg_mist": "#F8F9F3",
+            "ratio": 8.25,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.coregrowstrong.com/cdn/shop/files/C.O.R.E._Logo_1643x.png?v=1613525230"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#6B7E22",
+        "ratio": 4.53,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#6B7E22",
+        "ratio": 4.53,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#445016",
+        "ratio": 8.73,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#445016",
+        "ratio": 6.79,
         "pass": true
       }
     ]
@@ -229,38 +289,28 @@
   "claims": [
     {
       "text": "CORE. grow strong.",
-      "fetched_at": "2026-08-07T16:09:39.059Z"
+      "fetched_at": "2026-08-07T23:06:35.254Z"
     },
     {
       "text": "(864) 923-5974",
-      "fetched_at": "2026-08-07T16:09:39.059Z"
+      "fetched_at": "2026-08-07T23:06:35.254Z"
     },
     {
       "text": "info@coregrowstrong.com",
-      "fetched_at": "2026-08-07T16:09:39.059Z"
+      "fetched_at": "2026-08-07T23:06:35.254Z"
     },
     {
       "text": "Greenville Pilates Pilates Studio Greenville SC Core grow strong CORE Greenville, SC Greenville Yoga Athletic Apparel Greenville, SC Greenville Fitness Studio Weight Loss Greenville SC Greenville Meditation Lower Blood Pressure Greenville, SC Reformer Pilates Greenville Yoga Studio Greenville, SC",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:09:39.059Z"
+      "fetched_at": "2026-08-07T23:06:35.254Z"
     },
     {
       "text": "SC Greenville Yoga Athletic Apparel Greenville",
-      "fetched_at": "2026-08-07T16:09:39.059Z"
+      "fetched_at": "2026-08-07T23:06:35.254Z"
     },
     {
       "text": "SC Reformer Pilates Greenville Yoga Studio Greenville",
-      "fetched_at": "2026-08-07T16:09:39.059Z"
-    },
-    {
-      "text": "Greenville Pilates Pilates Studio Greenville SC Core grow strong CORE Greenville, SC Greenville Yoga Athletic Apparel Greenville, SC Greenville Fitness Studio Weight Loss Greenville SC Greenville Meditation Lower Blood Pressure Greenville, SC Reformer Pilates Greenville Yoga Studio Greenville, SC",
-      "source": "https://www.coregrowstrong.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:09:39.059Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:greenville,pilates,studio,core"
-      ]
+      "fetched_at": "2026-08-07T23:06:35.254Z"
     }
   ],
   "unresolved": [
@@ -269,33 +319,80 @@
   "link_preview": {
     "og_title": "CORE. grow strong.",
     "og_url": "https://vendly-demos.vercel.app/core-grow-strong/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
+    "og_image": "https://vendly-demos.vercel.app/core-grow-strong/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "ed9718f223975d919bc8d5d62682b8b4c62ef27717525f02a8b914cce8fa17e1",
+    "image_px": "222x300",
+    "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": false,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "small_thumbnail",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 7,
+    "rejected": 9,
+    "photographs": 7,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-1"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-3"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-5"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-7"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-9"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "890caa1aa985e3079006e9d09f3b3db8d17caa2ed00110e5516211434f0a047b",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-13"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-15"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "fitness"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

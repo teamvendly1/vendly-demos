@@ -1,38 +1,47 @@
 {
+  "niche": "tobacco",
   "schema": "vendly.autodemo.build/1",
   "business": "Seven Sense International",
   "facebook": null,
   "slug": "seven-sense-international",
-  "built_at": "2026-08-07T16:05:21.211Z",
-  "elapsed_ms": 238,
+  "built_at": "2026-08-07T23:01:33.789Z",
+  "elapsed_ms": 1881,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 137
+      "at_ms": 160
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 160
     },
     {
       "step": "assets",
-      "at_ms": 139
+      "at_ms": 1313
+    },
+    {
+      "step": "template",
+      "at_ms": 1422
     },
     {
       "step": "brand_palette",
-      "at_ms": 140
+      "at_ms": 1773
     },
     {
       "step": "layout",
-      "at_ms": 140
+      "at_ms": 1773
     },
     {
       "step": "render",
-      "at_ms": 141
+      "at_ms": 1774
     },
     {
       "step": "audit",
-      "at_ms": 142
+      "at_ms": 1775
     },
     {
       "step": "beacon_probe",
-      "at_ms": 238
+      "at_ms": 1881
     }
   ],
   "audit": {
@@ -40,41 +49,86 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "bar",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "bar",
+      "photo_count": 5,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (bar) with 5 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
+      "gallery",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "See Tonight",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "bar",
+      "file": "bar.js",
+      "resolved_by": "family",
+      "resolved_from": "bar",
+      "sources": [
+        "https://thedeadrabbit.com/",
+        "https://www.tspdallas.com/",
+        "https://www.smugglerscovesf.com/",
+        "https://www.bisouschicago.com/"
+      ],
+      "rationale": "Smuggler's Cove converts with no booking path at all by stating the door policy in plain words at the top, so the single CTA anchors to hours and policy rather than a reservation widget, and Bisous plus Smuggler's Cove both put press and award proof above the fold, which is why trust sits second and gallery outranks the drinks list.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#752718",
+      "b": "#551C11",
+      "c": "#752718",
+      "brand": "#752718",
+      "mist": "#F9F4F3",
+      "ink": "#12201F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#752718",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +137,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#752718",
+            "after": "#752718",
+            "ratio": 10.2,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +147,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#752718",
+            "after": "#752718",
+            "ratio": 10.2,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +157,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#551C11",
+            "after": "#551C11",
+            "ratio": 13.46,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +167,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#551C11",
+            "after": "#551C11",
+            "ratio": 10.46,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +179,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#752718",
+            "ratio": 10.2,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#752718",
+            "ratio": 10.2,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#551C11",
+            "ratio": 13.46,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#551C11",
+            "ratio": 10.46,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#12201F",
+            "bg_mist": "#F9F4F3",
+            "ratio": 15.38,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#551C11",
+            "bg_mist": "#F9F4F3",
+            "ratio": 12.34,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -181,32 +236,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#752718",
+        "ratio": 10.2,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#752718",
+        "ratio": 10.2,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#551C11",
+        "ratio": 13.46,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#551C11",
+        "ratio": 10.46,
         "pass": true
       }
     ]
@@ -229,42 +284,32 @@
   "claims": [
     {
       "text": "Seven Sense International",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     },
     {
       "text": "(803) 402-2131",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     },
     {
       "text": "ask@sevensenseintl.com",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     },
     {
       "text": "At Seven Sense International, we pride ourselves on our service and selection, with some of the best trained and most knowledgeable staff",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     },
     {
       "text": "At Seven Sense International",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     },
     {
       "text": "we pride ourselves on our service and selection",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     },
     {
       "text": "with some of the best trained and most knowledgeable staff",
-      "fetched_at": "2026-08-07T16:05:21.110Z"
-    },
-    {
-      "text": "At Seven Sense International, we pride ourselves on our service and selection, with some of the best trained and most knowledgeable staff",
-      "source": "https://sevensense.org",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:05:21.110Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:seven,sense,international,pride"
-      ]
+      "fetched_at": "2026-08-07T23:01:32.067Z"
     }
   ],
   "unresolved": [
@@ -273,26 +318,56 @@
   "link_preview": {
     "og_title": "Seven Sense International",
     "og_url": "https://vendly-demos.vercel.app/seven-sense-international/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/seven-sense-international/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "aa3c0c5d23972dc0f1d6f88c0cc539fb5d84aa5eab13d4175731e269e168afa2",
+    "image_px": "1024x807",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 10,
+    "rejected": 7,
+    "photographs": 5,
+    "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "6aa978b84d72615b739d2c23a4c6b671a745c1ee02f05a5a1a24e4e5bf023b94",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d42c6cba9df4f1185a6610d147a7d3397821073a3e546112290c32737d280744",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "c0ddf62a9e20acb6a5fc3c7d3768e0aa671f414524a5c3f8d6bfacb87831bbe0",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d0789e23415982da2e6624d2d699fbad15b9b4b91fd127318b94433c0c3cc9a4",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a752136da5751b064e07dcf8c60c21f4c84bdee4626e146d9bee0b1bb0de76e3",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "6d95e3ba31a1d36996ce37e492bfb4ef84d4ee2e94fb5d64a9f9a5761c9bcf1f",
+      "media_id": "site-10"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -303,9 +378,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "tobacco"
   },
-  "fill_tokens": 4
+  "fill_tokens": 14
 }

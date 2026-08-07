@@ -1,0 +1,394 @@
+{
+  "niche": "veterinary",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Mauldin Station Vet",
+  "facebook": null,
+  "slug": "mauldin-station-vet",
+  "built_at": "2026-08-07T22:49:07.210Z",
+  "elapsed_ms": 2952,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 197
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 198
+    },
+    {
+      "step": "assets",
+      "at_ms": 2402
+    },
+    {
+      "step": "template",
+      "at_ms": 2518
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 2867
+    },
+    {
+      "step": "layout",
+      "at_ms": 2867
+    },
+    {
+      "step": "render",
+      "at_ms": 2868
+    },
+    {
+      "step": "audit",
+      "at_ms": 2870
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 2952
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "veterinary",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "veterinary",
+      "photo_count": 20,
+      "has_reviews": true,
+      "branch": "trust-bought trade (veterinary) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "services",
+      "concierge",
+      "gallery",
+      "words",
+      "contact"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Call the Clinic",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "veterinary",
+      "file": "veterinary.js",
+      "resolved_by": "niche",
+      "resolved_from": "veterinary",
+      "sources": [
+        "https://sactownvet.com/",
+        "https://ahsandysprings.com/",
+        "https://oceansidevets.com/",
+        "https://aztecanimalclinic.com/"
+      ],
+      "rationale": "Sactown Vet answers the panicked visitor with today's hours and the phone in the hero while Animal Hospital of Sandy Springs treats new-client onboarding as a product with a records-release form, so this template puts hours and click-to-call above everything, promotes verifiable Fear Free and Cat Friendly certifications to second, and gives the concierge slot to the records-transfer path that removes the real switching cost for an owner leaving another vet. A demo never states emergency or after-hours capability the practice has not posted, never alters posted hours, and carries no price, offer, certification, health claim, or animal photograph the practice does not publish itself.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "concierge",
+            "gallery",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#9A3A16",
+      "b": "#4A1C0B",
+      "c": "#A8471C",
+      "brand": "#A8471C",
+      "mist": "#FDF7F1",
+      "ink": "#231710"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A8471C",
+            "after": "#A8471C",
+            "ratio": 5.86,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#9A3A16",
+            "after": "#9A3A16",
+            "ratio": 7.02,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#4A1C0B",
+            "after": "#4A1C0B",
+            "ratio": 14.36,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#4A1C0B",
+            "after": "#4A1C0B",
+            "ratio": 11.16,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A8471C",
+            "ratio": 5.86,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#9A3A16",
+            "ratio": 7.02,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#4A1C0B",
+            "ratio": 14.36,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#4A1C0B",
+            "ratio": 11.16,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#231710",
+            "bg_mist": "#FDF7F1",
+            "ratio": 16.44,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#4A1C0B",
+            "bg_mist": "#FDF7F1",
+            "ratio": 13.51,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "gallery_asset_classified_graphic"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A8471C",
+        "ratio": 5.86,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#9A3A16",
+        "ratio": 7.02,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#4A1C0B",
+        "ratio": 14.36,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#4A1C0B",
+        "ratio": 11.16,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "mauldin-station-vet",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Mauldin Station Vet",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "(864) 372-2393",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "heyfriend@mauldinstationvet.com",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "110 N Main St Suite B, Mauldin, SC, 29662",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "Monday,Tuesday,Wednesday,Thursday,Friday 08:00-17:30",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "At Mauldin Station Vet, our team of friendly, caring professionals are ready to deliver high-quality veterinary care for your furry family members.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "Local Business",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "At Mauldin Station Vet",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "our team of friendly",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    },
+    {
+      "text": "100% recommend (10 Reviews)",
+      "source": "https://www.facebook.com/MauldinStationVet/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T22:49:04.455Z"
+    }
+  ],
+  "unresolved": [],
+  "link_preview": {
+    "og_title": "Mauldin Station Vet | SC",
+    "og_url": "https://vendly-demos.vercel.app/mauldin-station-vet/",
+    "og_image": "https://vendly-demos.vercel.app/mauldin-station-vet/assets/358087394_10161212055131052.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "graphic",
+    "image_is_page_lead_image": true,
+    "image_sha256": "76311696a9253762149f0f209e8287b380be2fd136f74647899caf10780c278f",
+    "image_px": "1500x1500",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 21,
+    "rejected": 6,
+    "photographs": 20,
+    "logo_found": true
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "454bc581a4df0de58bd3505eb59dc145964e1d1eef41e374f56ecd073822b8f9",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "aebec5e3a60b67fc2730d73329f37e810ebd8d32e90b879905564f2522b7a9ce",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "b708b331d311906c0eaff244f149d8b4241818df3cce936ed5c0b7f6836ecea3",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "978f44273f037d7d99f4abc67e53989e9d269b6be1c67bf45c5ee1f8ba674ada",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "8f7d8813da3c6b76cd4d86a3e0819a93ebc974fc344c610fe58e0532ed128b37",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "1e32ae7084a5132c1f8fcdbfa0edf76d6430d1bbb5fe7b4e28b18717c9afede0",
+      "media_id": "site-14"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "veterinary"
+  },
+  "fill_tokens": 23
+}

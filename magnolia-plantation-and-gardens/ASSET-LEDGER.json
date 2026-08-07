@@ -2,10 +2,78 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Magnolia Plantation and Gardens",
-  "built_at": "2026-08-07T16:12:23.586Z",
+  "built_at": "2026-08-07T23:11:31.911Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.png",
+      "rel": "assets/site-0.png",
+      "sha256": "2e8a55172c989b3169476ae1ae6c06d67c5df66a9ca5ce399eb214875c217ed0",
+      "media_id": "site-0",
+      "format": "png",
+      "bytes": 17753,
+      "remote_url": "https://static1.squarespace.com/static/6329bbc5347392135b0512ee/t/6329c87adbca335a51a6e719/1785782698672/",
+      "remote_url_as_found": "https://static1.squarespace.com/static/6329bbc5347392135b0512ee/t/6329c87adbca335a51a6e719/1785782698672/",
+      "source_url": "https://www.magnoliaplantation.com/",
+      "fetched_at": "2026-08-07T23:11:30.812Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 356,
+        "height": 488,
+        "distinct_colors": 2,
+        "pct_near_white": 52.8,
+        "pct_border_white": 47.8
+      }
+    },
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "3366e08577eab67fef8a05326e3c3ab07442f0276df72cf38c21a1113352754f",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 1107380,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/6329bbc5347392135b0512ee/a2554eac-5deb-4fbe-9e9c-a2c4ac17fe3a/01-Details-023.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/6329bbc5347392135b0512ee/a2554eac-5deb-4fbe-9e9c-a2c4ac17fe3a/01-Details-023.jpg",
+      "source_url": "https://www.magnoliaplantation.com/",
+      "fetched_at": "2026-08-07T23:11:30.852Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 1667,
+        "distinct_colors": 94,
+        "pct_near_white": 0.1,
+        "pct_border_white": 0.2
+      }
+    },
+    {
+      "file": "site-2.jpg",
+      "rel": "assets/site-2.jpg",
+      "sha256": "509c1eaa29101800b3b9d89adbd84cc28f125270c19a909ced6e548f96fc6049",
+      "media_id": "site-2",
+      "format": "jpg",
+      "bytes": 931875,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/6329bbc5347392135b0512ee/8512e462-2153-4968-833b-32fca2e9317a/01-Details-023.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/6329bbc5347392135b0512ee/8512e462-2153-4968-833b-32fca2e9317a/01-Details-023.jpg",
+      "source_url": "https://www.magnoliaplantation.com/",
+      "fetched_at": "2026-08-07T23:11:31.159Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 1667,
+        "distinct_colors": 16,
+        "pct_near_white": 0.1,
+        "pct_border_white": 0.2
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/6329bbc5347392135b0512ee/8512e462-2153-4968-833b-32fca2e9317a/01-Details-023.jpg?format=2500w",
+      "media_id": "site-3",
+      "source_url": "https://www.magnoliaplantation.com/",
+      "sha256": "509c1eaa29101800b3b9d89adbd84cc28f125270c19a909ced6e548f96fc6049",
+      "reason": "duplicate_content"
+    },
     {
       "0": "h",
       "1": "t",

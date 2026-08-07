@@ -1,0 +1,373 @@
+{
+  "niche": "clothes",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Earthbound Trading",
+  "facebook": null,
+  "slug": "earthbound-trading",
+  "built_at": "2026-08-07T23:11:58.802Z",
+  "elapsed_ms": 3477,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 1001
+    },
+    {
+      "step": "assets",
+      "at_ms": 2915
+    },
+    {
+      "step": "template",
+      "at_ms": 3035
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 3051
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3373
+    },
+    {
+      "step": "layout",
+      "at_ms": 3373
+    },
+    {
+      "step": "render",
+      "at_ms": 3374
+    },
+    {
+      "step": "audit",
+      "at_ms": 3376
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3477
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "clothes",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "clothes",
+      "photo_count": 10,
+      "has_reviews": false,
+      "branch": "visual trade (clothes) with 10 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "contact",
+      "services",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book a Styling Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "clothes",
+      "file": "clothes.js",
+      "resolved_by": "niche",
+      "resolved_from": "clothes",
+      "sources": [
+        "https://www.percivalclo.com/",
+        "https://www.peregrineclothing.co.uk/",
+        "https://shopfigandwillow.com/",
+        "https://shopannastore.com/",
+        "https://rixolondon.com/"
+      ],
+      "rationale": "This niche has TWO conversions and the research says a demo that builds only the cart half is half a demo, so the fork is resolved rather than split into two equal buttons: Anna gives Stores and Hours its own destination plus a phone number specifically for booking a styling appointment and RIXO gives find-your-store a real nav slot, which makes the shop visit the higher-value conversion for a local boutique and the one our demos collect nothing from, so contact is promoted high and the single CTA is that appointment; Fig & Willow supplies the strip above the fold (shipping threshold and free returns, the two objections that kill an apparel cart) and Percival the gallery mechanic of three photo shapes per product, worn in a real place, flat-lay and close-up detail.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#88409E",
+      "b": "#452753",
+      "c": "#A03CBE",
+      "brand": "#A03CBE",
+      "mist": "#F8F4FB",
+      "ink": "#181320"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A03CBE",
+            "after": "#A03CBE",
+            "ratio": 5.41,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#88409E",
+            "after": "#88409E",
+            "ratio": 6.41,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#452753",
+            "after": "#452753",
+            "ratio": 12.59,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#452753",
+            "after": "#452753",
+            "ratio": 9.78,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A03CBE",
+            "ratio": 5.41,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#88409E",
+            "ratio": 6.41,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#452753",
+            "ratio": 12.59,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#452753",
+            "ratio": 9.78,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#181320",
+            "bg_mist": "#F8F4FB",
+            "ratio": 16.76,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#452753",
+            "bg_mist": "#F8F4FB",
+            "ratio": 11.58,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://www.earthboundtrading.com/media/logo/stores/1/logo.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A03CBE",
+        "ratio": 5.41,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#88409E",
+        "ratio": 6.41,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#452753",
+        "ratio": 12.59,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#452753",
+        "ratio": 9.78,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "earthbound-trading",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Earthbound Trading",
+      "fetched_at": "2026-08-07T23:11:56.325Z"
+    },
+    {
+      "text": "(844) 211-4437",
+      "fetched_at": "2026-08-07T23:11:56.325Z"
+    },
+    {
+      "text": "4051 Freeport Parkway, Grapevine, TX, 76051",
+      "fetched_at": "2026-08-07T23:11:56.325Z"
+    },
+    {
+      "text": "Earthbound Trading Co. is an online retailer specializing in bohemian, hippie, and artisanal lifestyle products. Their curated collection includes a w...",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T23:11:56.325Z"
+    },
+    {
+      "text": "hippie",
+      "fetched_at": "2026-08-07T23:11:56.325Z"
+    }
+  ],
+  "unresolved": [],
+  "link_preview": {
+    "og_title": "Earthbound Trading | TX",
+    "og_url": "https://vendly-demos.vercel.app/earthbound-trading/",
+    "og_image": "https://vendly-demos.vercel.app/earthbound-trading/assets/site-8.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "bfe4219563cbb26429f989d6ca34441884a6abdca07a7312fe12455b923d6ebb",
+    "image_px": "2000x1190",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 10,
+    "rejected": 6,
+    "photographs": 10,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "c28f818ed8cacc5225f091c75fa203c8d31f2b7f6a4b0e4fd39c0ef6726abd87",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "747a20f0dc9014f89ad301314e2d3ba67bc1c1f2b552e33cf295937b4b2d5b7b",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ecdfce8551cd3718909238cd44acd2a6d30bd5fc419fca19fb01e3f801e378a8",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "509598a61e133a6b037b0ba415abb8c7662117dd05bdc33b77d4205f7453a752",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "dfa52aa6d59c332b988aa3281ffa2fa3fafc68e3157aeb6c8531ab90cca72486",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "221b3cd2eb3aa41e7a8564263890040975a53eedd3dba93d7bbb365e8ab538a1",
+      "media_id": "site-15"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "clothes"
+  },
+  "fill_tokens": 18
+}

@@ -12,17 +12,35 @@
 <meta property="og:description" content="Peak Experiences &amp; Passages Adventure Camp are Richmond, VA&#39;s premier Indoor Rock Climbing Facility &amp; Day Camp with Climbing, Kayaking, Mountain Biking, &amp; more!">
 <meta property="og:url" content="https://vendly-demos.vercel.app/peak-experiences-richmond/">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://vendly-demos.vercel.app/peak-experiences-richmond/assets/site-1.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/peak-experiences-richmond/assets/site-1.jpg">
+<meta property="og:image:width" content="1350">
+<meta property="og:image:height" content="759">
+<meta property="og:image:alt" content="Peak Experiences Richmond">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/peak-experiences-richmond/assets/site-1.jpg">
+<meta name="twitter:image:alt" content="Peak Experiences Richmond">
 <meta name="twitter:title" content="Peak Experiences Richmond | VA">
 <meta name="twitter:description" content="Peak Experiences &amp; Passages Adventure Camp are Richmond, VA&#39;s premier Indoor Rock Climbing Facility &amp; Day Camp with Climbing, Kayaking, Mountain Biking, &amp; more!">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#3A3F97;--b:#1E2154;--c:#4249A8;--mist:#F6F6FB;--ink:#15161F;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#4249A8;--scrim:9,10,26;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -158,13 +176,13 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+18048976800">Call (804) 897-6800</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main">Peak Experiences Richmond</a>
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,18 +191,61 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
-  <div class="wrap hero-in">
-    
-    
-    <h1>Peak Experiences Richmond</h1>
-    <p class="lede">Peak Experiences &amp; Passages Adventure Camp are Richmond, VA&#39;s premier Indoor Rock Climbing Facility &amp; Day Camp with Climbing, Kayaking, Mountain Biking, &amp; more!</p>
-    <div class="cta-row">
-      <a class="btn btn-c" href="tel:+18048976800">Call (804) 897-6800</a>
-      <a class="btn btn-ghost" href="mailto:info@peakexperiences.com">Email us</a>
+<div class="hero hero-split">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      
+      <h1>Peak Experiences Richmond</h1>
+      <p class="lede">Peak Experiences &amp; Passages Adventure Camp are Richmond, VA&#39;s premier Indoor Rock Climbing Facility &amp; Day Camp with Climbing, Kayaking, Mountain Biking, &amp; more!</p>
+      <div class="cta-row">
+      <a class="btn btn-c" href="tel:+18048976800">Free First Visit</a>
+      <a class="hero-alt" href="mailto:info@peakexperiences.com">or email us</a>
     </div>
+    <p class="hero-facts">(804) 897-6800 &middot; 11421 Polo Circle, Midlothian</p>
+    </div>
+    <div class="hero-shot"><img src="assets/site-1.jpg" alt="Peak Experiences &amp; Passages Adventure Camp are Richmond" width="800" height="600"></div>
   </div>
 </div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Peak Experiences Richmond Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Peak Experiences &amp; Passages Adventure Camp are Richmond</h3></div>
+      <div class="card"><h3>Kayaking</h3></div>
+      <div class="card"><h3>Mountain Biking</h3></div>
+      <div class="card"><h3>&amp; more!</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Peak Experiences Richmond Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-2.png" alt="Kayaking" loading="lazy" width="800" height="600"><figcaption>Kayaking</figcaption></figure>
+      <figure><img src="assets/site-4.jpg" alt="Mountain Biking" loading="lazy" width="800" height="600"><figcaption>Mountain Biking</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Peak Experiences Richmond page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+18048976800">(804) 897-6800</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 11421 Polo Circle
+Midlothian, VA, 23113
+United States. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -200,28 +261,6 @@ United States</dd></div>
         <div><dt>Facebook</dt><dd><a href="https://www.peakexperiences.com/">www.peakexperiences.com/</a></dd></div>
       </dl>
     </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Peak Experiences Richmond Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>Peak Experiences &amp; Passages Adventure Camp are Richmond</h3></div>
-      <div class="card"><h3>Kayaking</h3></div>
-      <div class="card"><h3>Mountain Biking</h3></div>
-      <div class="card"><h3>&amp; more!</h3></div>
-    </div>
-  </div>
-</section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Peak Experiences &amp; Passages Adventure Camp are Richmond, VA’s premier Indoor Rock Climbing Facility &amp; Day Camp with Climbing, Kayaking, Mountain Biking, &amp; more!
-      <cite>Posted by Peak Experiences Richmond on Facebook. Read on <a href="https://www.peakexperiences.com/">their page</a>.</cite>
-    </blockquote>
   </div>
 </section>
 

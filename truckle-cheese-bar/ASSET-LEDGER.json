@@ -2,10 +2,112 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Truckle Cheese Bar",
-  "built_at": "2026-08-07T15:59:46.899Z",
+  "built_at": "2026-08-07T22:57:24.737Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.png",
+      "rel": "assets/site-0.png",
+      "sha256": "04aaeb12688378e1ac2aa5dc3767bc741266541361fe438343b5ebba5affe459",
+      "media_id": "site-0",
+      "format": "png",
+      "bytes": 28964,
+      "remote_url": "https://static1.squarespace.com/static/60239ff71adbf544ddbdbe46/t/647e51f4b790816d9cb5f098/1785025701757/",
+      "remote_url_as_found": "https://static1.squarespace.com/static/60239ff71adbf544ddbdbe46/t/647e51f4b790816d9cb5f098/1785025701757/",
+      "source_url": "https://www.trucklerva.com/",
+      "fetched_at": "2026-08-07T22:57:22.687Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1000,
+        "height": 510,
+        "distinct_colors": 23,
+        "pct_near_white": 0.1,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-1.png",
+      "rel": "assets/site-1.png",
+      "sha256": "efb0ef039067ca0303b0e57fff808adefdf3cb04325aff17712757f6f49acbe3",
+      "media_id": "site-1",
+      "format": "png",
+      "bytes": 5705285,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/1bb0d149-5b0a-489c-945e-eca084a59644/website+try6.5.png",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/1bb0d149-5b0a-489c-945e-eca084a59644/website+try6.5.png",
+      "source_url": "https://www.trucklerva.com/",
+      "fetched_at": "2026-08-07T22:57:22.856Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 1875,
+        "distinct_colors": 89,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-3.png",
+      "rel": "assets/site-3.png",
+      "sha256": "f85dd761e4bad759d7ee0f97712db8dfa2c5d098899717002fbe08b8e60e6a00",
+      "media_id": "site-3",
+      "format": "png",
+      "bytes": 9683452,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/1701815753659-0JNAJLT02OISR40A26E1/grilled+cheese+website.png",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/1701815753659-0JNAJLT02OISR40A26E1/grilled+cheese+website.png",
+      "source_url": "https://www.trucklerva.com/",
+      "fetched_at": "2026-08-07T22:57:23.147Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 3333,
+        "distinct_colors": 105,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-5.png",
+      "rel": "assets/site-5.png",
+      "sha256": "1765d66fa6a4a02607e713a16c3ef8353780c35f32bd07eae5fc210f60aab212",
+      "media_id": "site-5",
+      "format": "png",
+      "bytes": 7926086,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/d8e3b069-af4b-41e2-a74d-252f5a67fc4d/in+house+board+for+website.png",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/d8e3b069-af4b-41e2-a74d-252f5a67fc4d/in+house+board+for+website.png",
+      "source_url": "https://www.trucklerva.com/",
+      "fetched_at": "2026-08-07T22:57:23.472Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 3333,
+        "distinct_colors": 95,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/1bb0d149-5b0a-489c-945e-eca084a59644/website+try6.5.png?format=2500w",
+      "media_id": "site-2",
+      "source_url": "https://www.trucklerva.com/",
+      "sha256": "efb0ef039067ca0303b0e57fff808adefdf3cb04325aff17712757f6f49acbe3",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/1701815753659-0JNAJLT02OISR40A26E1/grilled+cheese+website.png?format=2500w",
+      "media_id": "site-4",
+      "source_url": "https://www.trucklerva.com/",
+      "sha256": "f85dd761e4bad759d7ee0f97712db8dfa2c5d098899717002fbe08b8e60e6a00",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60239ff71adbf544ddbdbe46/d8e3b069-af4b-41e2-a74d-252f5a67fc4d/in+house+board+for+website.png?format=2500w",
+      "media_id": "site-6",
+      "source_url": "https://www.trucklerva.com/",
+      "sha256": "1765d66fa6a4a02607e713a16c3ef8353780c35f32bd07eae5fc210f60aab212",
+      "reason": "duplicate_content"
+    },
     {
       "0": "h",
       "1": "t",

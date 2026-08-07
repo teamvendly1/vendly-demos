@@ -1,38 +1,47 @@
 {
+  "niche": "pet grooming",
   "schema": "vendly.autodemo.build/1",
   "business": "Happy Tails Resort And Spa",
   "facebook": null,
   "slug": "happy-tails-resort-and-spa",
-  "built_at": "2026-08-07T16:04:54.816Z",
-  "elapsed_ms": 49724,
+  "built_at": "2026-08-07T23:00:34.508Z",
+  "elapsed_ms": 1680,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 49535
+      "at_ms": 202
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 203
     },
     {
       "step": "assets",
-      "at_ms": 49537
+      "at_ms": 1537
+    },
+    {
+      "step": "template",
+      "at_ms": 1568
     },
     {
       "step": "brand_palette",
-      "at_ms": 49538
+      "at_ms": 1569
     },
     {
       "step": "layout",
-      "at_ms": 49538
+      "at_ms": 1569
     },
     {
       "step": "render",
-      "at_ms": 49538
+      "at_ms": 1570
     },
     {
       "step": "audit",
-      "at_ms": 49540
+      "at_ms": 1571
     },
     {
       "step": "beacon_probe",
-      "at_ms": 49724
+      "at_ms": 1680
     }
   ],
   "audit": {
@@ -40,34 +49,77 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "salon-wigs",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "salon-wigs",
+      "photo_count": 5,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (salon-wigs) with 5 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "contact",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book a Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "salon-wigs",
+      "file": "salon-wigs.js",
+      "resolved_by": "family",
+      "resolved_from": "salon-wigs",
+      "sources": [
+        "https://www.hairclub.com/",
+        "https://www.divinewigs.com/",
+        "https://www.styleseat.com/",
+        "https://www.glamoroushair.com/"
+      ],
+      "rationale": "Hair Club leads with a consultation CTA and plain book-a-consult language rather than asking for the large service cold, and Glamorous Hair runs the same consult path under its package language, so the single CTA here is the SMALLER FIRST YES - a consult a salon closes in person - which is the conversion the current one-button page collects none of; StyleSeat supplies the second mechanic, services listed as distinct named cards (custom fitting, ready-to-wear, maintenance, consult) so a visitor can self-select, and the research puts phone and street address high because this is a business the customer travels to and sits in for hours.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#983A83",
+      "b": "#4F234B",
+      "c": "#B43398",
+      "brand": "#B43398",
+      "mist": "#FBF4FA",
+      "ink": "#1C1119"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +135,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#B43398",
+            "after": "#B43398",
+            "ratio": 5.43,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +145,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#983A83",
+            "after": "#983A83",
+            "ratio": 6.43,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +155,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4F234B",
+            "after": "#4F234B",
+            "ratio": 12.54,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +165,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4F234B",
+            "after": "#4F234B",
+            "ratio": 9.75,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +177,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#B43398",
+            "ratio": 5.43,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#983A83",
+            "ratio": 6.43,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4F234B",
+            "ratio": 12.54,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4F234B",
+            "ratio": 9.75,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1C1119",
+            "bg_mist": "#FBF4FA",
+            "ratio": 16.98,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4F234B",
+            "bg_mist": "#FBF4FA",
+            "ratio": 11.6,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": null
     }
   },
   "accessibility": {
@@ -181,32 +234,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#B43398",
+        "ratio": 5.43,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#983A83",
+        "ratio": 6.43,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4F234B",
+        "ratio": 12.54,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4F234B",
+        "ratio": 9.75,
         "pass": true
       }
     ]
@@ -229,21 +282,21 @@
   "claims": [
     {
       "text": "Happy Tails Resort And Spa",
-      "fetched_at": "2026-08-07T16:04:54.626Z"
+      "fetched_at": "2026-08-07T23:00:33.030Z"
     },
     {
       "text": "(803) 638-4222",
-      "fetched_at": "2026-08-07T16:04:54.626Z"
+      "fetched_at": "2026-08-07T23:00:33.030Z"
     },
     {
       "text": "happytailsresortandspa@gmail.com",
-      "fetched_at": "2026-08-07T16:04:54.626Z"
+      "fetched_at": "2026-08-07T23:00:33.030Z"
     },
     {
       "text": "",
       "source": "https://www.happytailsresortandspa.com/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:04:54.626Z"
+      "fetched_at": "2026-08-07T23:00:33.030Z"
     }
   ],
   "unresolved": [
@@ -254,33 +307,90 @@
   "link_preview": {
     "og_title": "Happy Tails Resort And Spa",
     "og_url": "https://vendly-demos.vercel.app/happy-tails-resort-and-spa/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
+    "og_image": "https://vendly-demos.vercel.app/happy-tails-resort-and-spa/assets/site-5.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "31c839d3aa3780ebb9b1d927316c953506d9490708e6845d865846a943bd591a",
+    "image_px": "460x300",
+    "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": false,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "small_thumbnail",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 5,
+    "rejected": 11,
+    "photographs": 5,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "ff3f2c6e87096e780065cbfebc298ef26571a207640c210fa824100c88947ada",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a787e2756ff1f50f457193dcd08f3fa5229f9266ae50c9b529cbf62e7d9e3650",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "26708b2849ffba62250113aeb4ed9f27dadcd70d35cfd587158bf493f33213ad",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-6"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-8"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-10"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-12"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "91b0a93fce2db8c83769c6c8982c89f9bc70e4fc3e386bd34ed2af8bc24af2d0",
+      "media_id": "site-15"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "pet grooming"
   },
-  "fill_tokens": 3
+  "fill_tokens": 13
 }

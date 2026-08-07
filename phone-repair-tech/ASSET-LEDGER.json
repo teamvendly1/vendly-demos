@@ -2,10 +2,59 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Phone Repair Tech",
-  "built_at": "2026-08-07T16:11:56.216Z",
+  "built_at": "2026-08-07T23:10:08.309Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.png",
+      "rel": "assets/site-0.png",
+      "sha256": "a664ea99013897368a482ea881ea24272b6cfea90e4e84db121f3fad6d1e1f87",
+      "media_id": "site-0",
+      "format": "png",
+      "bytes": 122829,
+      "remote_url": "https://img1.wsimg.com/isteam/ip/3aba62e2-8c4b-47f0-a2af-0fd236738f05/11111.png",
+      "remote_url_as_found": "https://img1.wsimg.com/isteam/ip/3aba62e2-8c4b-47f0-a2af-0fd236738f05/11111.png",
+      "source_url": "https://phonerepairtech.us",
+      "fetched_at": "2026-08-07T23:10:06.721Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1920,
+        "height": 400,
+        "distinct_colors": 15,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-2.jpg",
+      "rel": "assets/site-2.jpg",
+      "sha256": "adca6daa5c732d128b755665e65209f111ee98eefaed8852bea0b6d815b7e63a",
+      "media_id": "site-2",
+      "format": "jpg",
+      "bytes": 23003,
+      "remote_url": "https://img1.wsimg.com/isteam/ip/3aba62e2-8c4b-47f0-a2af-0fd236738f05/1.png/:/cr=t:5.63%25,l:0%25,w:100%25,h:88.74%25/rs=w:388,h:194,cg:true",
+      "remote_url_as_found": "https://img1.wsimg.com/isteam/ip/3aba62e2-8c4b-47f0-a2af-0fd236738f05/1.png/:/cr=t:5.63%25,l:0%25,w:100%25,h:88.74%25/rs=w:388,h:194,cg:true",
+      "source_url": "https://phonerepairtech.us",
+      "fetched_at": "2026-08-07T23:10:07.841Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 388,
+        "height": 194,
+        "distinct_colors": 111,
+        "pct_near_white": 2.6,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://img1.wsimg.com/isteam/ip/3aba62e2-8c4b-47f0-a2af-0fd236738f05/11111.png/:/rs=h:52,cg:true,m/qt=q:95",
+      "media_id": "site-1",
+      "source_url": "https://phonerepairtech.us",
+      "sha256": "cd56e09d12278b261145c53db94d1923bd915c81aa427d7d254106d6c94a6558",
+      "reason": "too_small",
+      "bytes": 4740
+    },
     {
       "0": "h",
       "1": "t",

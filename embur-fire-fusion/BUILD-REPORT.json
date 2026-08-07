@@ -1,38 +1,47 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Embur Fire Fusion",
   "facebook": null,
   "slug": "embur-fire-fusion",
-  "built_at": "2026-08-07T16:09:12.550Z",
-  "elapsed_ms": 242,
+  "built_at": "2026-08-07T23:05:46.643Z",
+  "elapsed_ms": 4948,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 132
+      "at_ms": 115
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 115
     },
     {
       "step": "assets",
-      "at_ms": 134
+      "at_ms": 4364
+    },
+    {
+      "step": "template",
+      "at_ms": 4496
     },
     {
       "step": "brand_palette",
-      "at_ms": 135
+      "at_ms": 4837
     },
     {
       "step": "layout",
-      "at_ms": 135
+      "at_ms": 4837
     },
     {
       "step": "render",
-      "at_ms": 136
+      "at_ms": 4838
     },
     {
       "step": "audit",
-      "at_ms": 137
+      "at_ms": 4839
     },
     {
       "step": "beacon_probe",
-      "at_ms": 242
+      "at_ms": 4948
     }
   ],
   "audit": {
@@ -40,41 +49,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 9,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 9 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#E42B14",
+      "b": "#5E1208",
+      "c": "#E42B14",
+      "brand": "#F38577",
+      "mist": "#F9F4F3",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#F38577",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +138,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#F38577",
+            "after": "#E42B14",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#F38577",
+            "after": "#E42B14",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5E1208",
+            "after": "#5E1208",
+            "ratio": 13.41,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +168,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5E1208",
+            "after": "#5E1208",
+            "ratio": 10.42,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +180,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#E42B14",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#E42B14",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5E1208",
+            "ratio": 13.41,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5E1208",
+            "ratio": 10.42,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F9F4F3",
+            "ratio": 16.83,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5E1208",
+            "bg_mist": "#F9F4F3",
+            "ratio": 12.3,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -181,32 +237,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#E42B14",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#E42B14",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5E1208",
+        "ratio": 13.41,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5E1208",
+        "ratio": 10.42,
         "pass": true
       }
     ]
@@ -229,73 +285,73 @@
   "claims": [
     {
       "text": "Embur Fire Fusion",
-      "fetched_at": "2026-08-07T16:09:12.439Z"
+      "fetched_at": "2026-08-07T23:05:41.809Z"
     },
     {
       "text": "(336) 541-8442",
-      "fetched_at": "2026-08-07T16:09:12.439Z"
+      "fetched_at": "2026-08-07T23:05:41.809Z"
     },
     {
       "text": "embur.fire.fusion1@gmail.com",
-      "fetched_at": "2026-08-07T16:09:12.439Z"
+      "fetched_at": "2026-08-07T23:05:41.809Z"
     },
     {
       "text": "107 Smyres Place\nGreensboro, NC, 27403\nUnited States",
-      "fetched_at": "2026-08-07T16:09:12.439Z"
+      "fetched_at": "2026-08-07T23:05:41.809Z"
     },
     {
       "text": "Embur Fire Fusion offers authentic Peruvian and Italian cuisine in the heart of Greensboro, North Carolina.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:09:12.439Z"
+      "fetched_at": "2026-08-07T23:05:41.809Z"
     },
     {
       "text": "North Carolina",
-      "fetched_at": "2026-08-07T16:09:12.439Z"
-    },
-    {
-      "text": "Embur Fire Fusion offers authentic Peruvian and Italian cuisine in the heart of Greensboro, North Carolina.",
-      "source": "https://emburfirefusion.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:09:12.439Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:embur,fire,fusion,offers"
-      ]
+      "fetched_at": "2026-08-07T23:05:41.809Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Embur Fire Fusion | NC",
     "og_url": "https://vendly-demos.vercel.app/embur-fire-fusion/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/embur-fire-fusion/assets/site-4.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "ae82a24fb0dd0738739a62c6b8ac7048ed29be541b4c788207ed1d77edcf9a94",
+    "image_px": "2500x1669",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 3,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 12,
+    "rejected": 5,
+    "photographs": 9,
+    "logo_found": true
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "6d1aba6919d7ae213a18b89b1ed0caa298cec1a45c1b9c46c923bbcfaf977dc8",
+      "media_id": "site-1"
     },
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "6d1aba6919d7ae213a18b89b1ed0caa298cec1a45c1b9c46c923bbcfaf977dc8",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "6d1aba6919d7ae213a18b89b1ed0caa298cec1a45c1b9c46c923bbcfaf977dc8",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "fbce001ea902b509206d96ff65815e844ff8232af16c8977fae1c1fcfdd09e7a",
+      "media_id": "site-14"
     },
     {
       "reason": "download_failed",
@@ -307,9 +363,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

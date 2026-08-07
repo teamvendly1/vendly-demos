@@ -23,6 +23,17 @@
   --brand:#A4552A;--scrim:13,18,23;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -164,7 +175,7 @@ footer.site a{color:#fff}
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,9 +184,9 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-0.webp" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
     
     <h1>UCB (US Headquarters)</h1>
     <p class="lede">UCB is a global biopharma company focused on creating value for people living with severe diseases. Learn more about how UCB delivers value for patients through its patient assistance program, treatment tracker and more.</p>
@@ -185,6 +196,44 @@ footer.site a{color:#fff}
     </div>
   </div>
 </div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the UCB (US Headquarters) Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>treatment tracker and more</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the UCB (US Headquarters) Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal">
+      <figure><img src="assets/site-1.webp" alt="UCB (US Headquarters)" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-2.webp" alt="UCB (US Headquarters)" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-3.webp" alt="UCB (US Headquarters)" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-4.webp" alt="UCB (US Headquarters)" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-5.webp" alt="UCB (US Headquarters)" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every UCB (US Headquarters) page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+17709707500">(770) 970-7500</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -198,25 +247,6 @@ footer.site a{color:#fff}
         <div><dt>Facebook</dt><dd><a href="https://www.ucb-usa.com">www.ucb-usa.com</a></dd></div>
       </dl>
     </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the UCB (US Headquarters) Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>treatment tracker and more</h3></div>
-    </div>
-  </div>
-</section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">UCB is a global biopharma company focused on creating value for people living with severe diseases. Learn more about how UCB delivers value for patients through its patient assistance program, treatment tracker and more.
-      <cite>Posted by UCB (US Headquarters) on Facebook. Read on <a href="https://www.ucb-usa.com">their page</a>.</cite>
-    </blockquote>
   </div>
 </section>
 

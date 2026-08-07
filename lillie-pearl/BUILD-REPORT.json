@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Lillie Pearl",
   "facebook": null,
   "slug": "lillie-pearl",
-  "built_at": "2026-08-07T16:06:31.079Z",
-  "elapsed_ms": 26584,
+  "built_at": "2026-08-07T23:02:00.998Z",
+  "elapsed_ms": 1999,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 26454
+      "at_ms": 179
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 179
     },
     {
       "step": "assets",
-      "at_ms": 26456
+      "at_ms": 1441
+    },
+    {
+      "step": "template",
+      "at_ms": 1552
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1559
     },
     {
       "step": "brand_palette",
-      "at_ms": 26458
+      "at_ms": 1902
     },
     {
       "step": "layout",
-      "at_ms": 26458
+      "at_ms": 1902
     },
     {
       "step": "render",
-      "at_ms": 26459
+      "at_ms": 1903
     },
     {
       "step": "audit",
-      "at_ms": 26460
+      "at_ms": 1904
     },
     {
       "step": "beacon_probe",
-      "at_ms": 26584
+      "at_ms": 1999
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 5,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 5 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#8A750E",
+      "b": "#5C4F0A",
+      "c": "#8A750E",
+      "brand": "#F6E9A8",
+      "mist": "#F9F8F3",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#F6E9A8",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#F6E9A8",
+            "after": "#8A750E",
+            "ratio": 4.53,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#F6E9A8",
+            "after": "#8A750E",
+            "ratio": 4.53,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5C4F0A",
+            "after": "#5C4F0A",
+            "ratio": 8.15,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5C4F0A",
+            "after": "#5C4F0A",
+            "ratio": 6.33,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#8A750E",
+            "ratio": 4.53,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#8A750E",
+            "ratio": 4.53,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5C4F0A",
+            "ratio": 8.15,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5C4F0A",
+            "ratio": 6.33,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F9F8F3",
+            "ratio": 17.25,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5C4F0A",
+            "bg_mist": "#F9F8F3",
+            "ratio": 7.66,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.wixstatic.com/media/02a199_c77feb7779d74a74b62be3c35b7726ed%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/02a199_c77feb7779d74a74b62be3c35b7726ed%7Emv2.jpg"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#8A750E",
+        "ratio": 4.53,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#8A750E",
+        "ratio": 4.53,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5C4F0A",
+        "ratio": 8.15,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5C4F0A",
+        "ratio": 6.33,
         "pass": true
       }
     ]
@@ -229,42 +289,32 @@
   "claims": [
     {
       "text": "Lillie Pearl",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     },
     {
       "text": "(804) 857-3335",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     },
     {
       "text": "Lillie Pearl is a place for celebration of food, spirits, friends and family. We pride ourselves on impeccable service, gracious hospitality and delicious southern-inspired food.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     },
     {
       "text": "Lillie Pearl is a place for celebration of food",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     },
     {
       "text": "spirits",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     },
     {
       "text": "friends and family. We pride ourselves on impeccable service",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     },
     {
       "text": "gracious hospitality and delicious southern-inspired food",
-      "fetched_at": "2026-08-07T16:06:30.948Z"
-    },
-    {
-      "text": "Lillie Pearl is a place for celebration of food, spirits, friends and family. We pride ourselves on impeccable service, gracious hospitality and delicious southern-inspired food.",
-      "source": "https://www.lilliepearlrva.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:06:30.948Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:lillie,pearl,place,celebration"
-      ]
+      "fetched_at": "2026-08-07T23:01:59.177Z"
     }
   ],
   "unresolved": [
@@ -273,33 +323,90 @@
   "link_preview": {
     "og_title": "Lillie Pearl",
     "og_url": "https://vendly-demos.vercel.app/lillie-pearl/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
+    "og_image": "https://vendly-demos.vercel.app/lillie-pearl/assets/site-5.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "ed3a955e193d3953b73ed3c996104157e50a0acd3629e3b622613ae45b4ebccc",
+    "image_px": "768x227",
+    "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": false,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "small_thumbnail",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 5,
+    "rejected": 11,
+    "photographs": 5,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "5bde5e21cffa62847bfcfc5e1058c07157bb3763036e2b0deedb1309f58a1c36",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d2322873d0c40f4c413d1b48a6cbd62f6f33f956b9b511ce0f788fefa6e7a4a5",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "b87a027986b1c78cfdf466695e38f30fc9253fd12eeeaca5dd1b7cecdad251bf",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "8cb8c8b037f16c3d40489855f14a9ae657121b32cdded5a50f9cc2778e54d606",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-9"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-11"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "400ad7594d4b8448a6c14c5d32d9a02585fc2ff37472a97c939f81803803278c",
+      "media_id": "site-14"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 3
+  "fill_tokens": 13
 }

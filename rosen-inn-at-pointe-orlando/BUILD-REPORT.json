@@ -1,42 +1,47 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "Rosen Inn at Pointe Orlando",
   "facebook": null,
   "slug": "rosen-inn-at-pointe-orlando",
-  "built_at": "2026-08-07T18:11:40.215Z",
-  "elapsed_ms": 6694,
+  "built_at": "2026-08-07T23:08:47.675Z",
+  "elapsed_ms": 6195,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 4760
+      "at_ms": 3070
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 4761
+      "at_ms": 3070
     },
     {
       "step": "assets",
-      "at_ms": 6180
+      "at_ms": 5598
+    },
+    {
+      "step": "template",
+      "at_ms": 5731
     },
     {
       "step": "brand_palette",
-      "at_ms": 6543
+      "at_ms": 6091
     },
     {
       "step": "layout",
-      "at_ms": 6543
+      "at_ms": 6091
     },
     {
       "step": "render",
-      "at_ms": 6544
+      "at_ms": 6092
     },
     {
       "step": "audit",
-      "at_ms": 6546
+      "at_ms": 6094
     },
     {
       "step": "beacon_probe",
-      "at_ms": 6694
+      "at_ms": 6195
     }
   ],
   "audit": {
@@ -50,7 +55,7 @@
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 10,
+      "photo_count": 23,
       "has_reviews": true,
       "branch": "trust-bought trade (trade) with published reviews: credentials lead",
       "deterministic": true
@@ -60,11 +65,18 @@
       "contact",
       "services",
       "words",
-      "gallery"
+      "gallery",
+      "concierge"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Call (800) 999-8585",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
       "a": "#537E7C",
       "b": "#283E3C",
@@ -174,7 +186,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -220,7 +233,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 8,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,70 +253,60 @@
   "claims": [
     {
       "text": "Rosen Inn at Pointe Orlando",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "(800) 999-8585",
       "source": "https://www.facebook.com/RosenInnPointeOrlando/",
       "fb_field": "INTRO_CARD_PROFILE_PHONE",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "info9000@roseninns.com",
       "source": "https://www.facebook.com/RosenInnPointeOrlando/",
       "fb_field": "INTRO_CARD_PROFILE_EMAIL",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "9000 International Dr, Orlando, FL",
       "source": "https://www.facebook.com/RosenInnPointeOrlando/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "Open 24 hours",
       "source": "https://www.facebook.com/RosenInnPointeOrlando/",
       "fb_field": "INTRO_CARD_BUSINESS_HOURS",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "Welcome to Rosen Inn at Pointe Orlando, a family-friendly hotel located on Orlando's International Drive. Our guests enjoy convenient access to nearby Walt Disney World, Universal Orlando, and Epic Universe.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "Page · Hotel",
       "source": "https://www.facebook.com/RosenInnPointeOrlando/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "Welcome to Rosen Inn at Pointe Orlando",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "Universal Orlando",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "and Epic Universe",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     },
     {
       "text": "92% recommend (8,959 Reviews)",
       "source": "https://www.facebook.com/RosenInnPointeOrlando/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T18:11:38.281Z"
-    },
-    {
-      "text": "Welcome to Rosen Inn at Pointe Orlando, a family-friendly hotel located on Orlando's International Drive. Our guests enjoy convenient access to nearby Walt Disney World, Universal Orlando, and Epic Universe.",
-      "source": "https://www.roseninn9000.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T18:11:38.281Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:hotel,welcome,rosen,pointe"
-      ]
+      "fetched_at": "2026-08-07T23:08:44.549Z"
     }
   ],
   "unresolved": [],
@@ -324,12 +327,17 @@
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
-    "rejected": 1,
-    "photographs": 10,
+    "accepted": 24,
+    "rejected": 2,
+    "photographs": 23,
     "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "3dc447a30b4746944dea408caf693acf2daa51d35692b768e91b744786abc4fd",
+      "media_id": "site-4"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -340,9 +348,10 @@
     "hero": true,
     "trust_strip": true,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "unknown"
   },
   "fill_tokens": 22
 }

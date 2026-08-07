@@ -1,42 +1,47 @@
 {
+  "niche": "bakery",
   "schema": "vendly.autodemo.build/1",
   "business": "Ashleigh Bakes Daily",
   "facebook": null,
   "slug": "ashleigh-bakes-daily",
-  "built_at": "2026-08-07T18:07:59.919Z",
-  "elapsed_ms": 5375,
+  "built_at": "2026-08-07T22:57:16.301Z",
+  "elapsed_ms": 3575,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 3244
+      "at_ms": 1274
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 3245
+      "at_ms": 1274
     },
     {
       "step": "assets",
-      "at_ms": 4890
+      "at_ms": 2943
+    },
+    {
+      "step": "template",
+      "at_ms": 3029
     },
     {
       "step": "brand_palette",
-      "at_ms": 5281
+      "at_ms": 3415
     },
     {
       "step": "layout",
-      "at_ms": 5281
+      "at_ms": 3415
     },
     {
       "step": "render",
-      "at_ms": 5282
+      "at_ms": 3416
     },
     {
       "step": "audit",
-      "at_ms": 5283
+      "at_ms": 3417
     },
     {
       "step": "beacon_probe",
-      "at_ms": 5375
+      "at_ms": 3575
     }
   ],
   "audit": {
@@ -44,34 +49,78 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "bakery",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
+      "trade_key": "bakery",
       "photo_count": 10,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "visual trade (bakery) with 10 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "contact",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Order a Custom Cake",
+      "kind": "mailto"
+    },
+    "niche_template": {
+      "family": "bakery",
+      "file": "bakery.js",
+      "resolved_by": "niche",
+      "resolved_from": "bakery",
+      "sources": [
+        "https://www.honeybearbakeshop.com/",
+        "https://www.littletartatl.com/",
+        "https://www.flourbakery.com/",
+        "https://www.pophamsbakery.com/",
+        "https://sourdoughsophia.co.uk/"
+      ],
+      "rationale": "The Little Tart Bakeshop forks \"Place an Order\" into same-day pickup versus cakes and catering and Flour gives custom cakes their own homepage door, so services sits at position two carrying both named paths with a stated lead time while the single CTA resolves the fork toward the custom enquiry Honeybear routes to a named human at a named address, which is the one buyer the current one-button template collects nothing from.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
       "a": "#E40189",
       "b": "#5E083B",
       "c": "#E40189",
       "brand": "#E7018A",
       "mist": "#F9F3F7",
-      "ink": "#12181D"
+      "ink": "#1B2230"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -161,9 +210,9 @@
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
+            "value": "#1B2230",
             "bg_mist": "#F9F3F7",
-            "ratio": 16.35,
+            "ratio": 14.56,
             "pass": true
           },
           {
@@ -174,7 +223,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -220,7 +270,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 3,
+        "count": 30,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,49 +290,49 @@
   "claims": [
     {
       "text": "Ashleigh Bakes Daily",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "(919) 907-1096",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "INTRO_CARD_PROFILE_PHONE",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "ar@ashleighbakesdaily.com",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "INTRO_CARD_PROFILE_EMAIL",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "111 W Main St  Ste. 201, Durham, NC",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "Fresh Baked Goods.",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "Page · Bakery · Restaurant · Dessert Shop",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "Fresh Baked Goods",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     },
     {
       "text": "Not yet rated (1 Review)",
       "source": "https://www.facebook.com/ashleighbakesdaily/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T18:07:57.788Z"
+      "fetched_at": "2026-08-07T22:57:13.999Z"
     }
   ],
   "unresolved": [
@@ -292,13 +342,13 @@
   "link_preview": {
     "og_title": "Ashleigh Bakes Daily | Durham",
     "og_url": "https://vendly-demos.vercel.app/ashleigh-bakes-daily/",
-    "og_image": "https://vendly-demos.vercel.app/ashleigh-bakes-daily/assets/468820196_888792536768944.jpg",
+    "og_image": "https://vendly-demos.vercel.app/ashleigh-bakes-daily/assets/484437203_963650355949828.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
-    "image_source_kind": "graphic",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": true,
-    "image_sha256": "d9259660067f46f39c25bf7d4e6e2ba039b0ebcb54e0f21b53857155b35293c6",
-    "image_px": "2048x1896",
+    "image_sha256": "85b8c7d3528743c95aa00b6a198aa33756aab5e61053a9efca1b161c68edf496",
+    "image_px": "2048x1366",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": true,
@@ -318,7 +368,8 @@
     "services": true,
     "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "bakery"
   },
   "fill_tokens": 21
 }

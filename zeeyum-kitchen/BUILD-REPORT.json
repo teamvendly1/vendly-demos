@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "ZeeYum Kitchen",
   "facebook": null,
   "slug": "zeeyum-kitchen",
-  "built_at": "2026-08-07T16:02:50.194Z",
-  "elapsed_ms": 1429,
+  "built_at": "2026-08-07T22:59:45.588Z",
+  "elapsed_ms": 3328,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 1324
+      "at_ms": 1267
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 1267
     },
     {
       "step": "assets",
-      "at_ms": 1325
+      "at_ms": 2757
+    },
+    {
+      "step": "template",
+      "at_ms": 2873
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2887
     },
     {
       "step": "brand_palette",
-      "at_ms": 1327
+      "at_ms": 3231
     },
     {
       "step": "layout",
-      "at_ms": 1327
+      "at_ms": 3231
     },
     {
       "step": "render",
-      "at_ms": 1328
+      "at_ms": 3232
     },
     {
       "step": "audit",
-      "at_ms": 1329
+      "at_ms": 3233
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1429
+      "at_ms": 3328
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 7,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 7 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#071588",
+      "b": "#08115E",
+      "c": "#071588",
+      "brand": "#071588",
+      "mist": "#F3F4F9",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#071588",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#071588",
+            "after": "#071588",
+            "ratio": 14.27,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#071588",
+            "after": "#071588",
+            "ratio": 14.27,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#08115E",
+            "after": "#08115E",
+            "ratio": 16.77,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#08115E",
+            "after": "#08115E",
+            "ratio": 13.03,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#071588",
+            "ratio": 14.27,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#071588",
+            "ratio": 14.27,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#08115E",
+            "ratio": 16.77,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#08115E",
+            "ratio": 13.03,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F3F4F9",
+            "ratio": 16.7,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#08115E",
+            "bg_mist": "#F3F4F9",
+            "ratio": 15.27,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.wixstatic.com/media/6bd473_48eabc8e4a5949a09f3e87f1c62f20cb%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/6bd473_48eabc8e4a5949a09f3e87f1c62f20cb%7Emv2.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#071588",
+        "ratio": 14.27,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#071588",
+        "ratio": 14.27,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#08115E",
+        "ratio": 16.77,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#08115E",
+        "ratio": 13.03,
         "pass": true
       }
     ]
@@ -229,68 +289,108 @@
   "claims": [
     {
       "text": "ZeeYum Kitchen",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     },
     {
       "text": "(336) 370-6599",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     },
     {
       "text": "reserve@zeeyum.com",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     },
     {
       "text": "4612 West Market Street, Greensboro, NC, 27407",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     },
     {
       "text": "ZeeYum Kitchen is an Authentic Turkish-Mediterranean Food made with love. We have Dine in Restaurant as well as Food Truck services . All our food prepared fresh with high quality ingredients. We also serve full Turkish Breakfast . Discover the undiscovered, authentic Mediterranean food made fresh . Our Restaurant located at 4612 W. Market St. Suite A, Greensboro, NC 27407",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:02:50.088Z",
+      "fetched_at": "2026-08-07T22:59:43.527Z",
       "verbatim_source_text": "ZeeYum Kitchen is an Authentic Turkish-Mediterranean Food made with love. We have Dine in Restaurant as well as Food Truck services . All our food prepared fresh with high quality ingredients. We also serve full Turkish Breakfast . Discover the undiscovered , authentic Mediterranean food made fresh . Our Restaurant located at 4612 W. Market St. Suite A, Greensboro, NC 27407",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     },
     {
       "text": "Greensboro",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     },
     {
       "text": "NC 27407",
-      "fetched_at": "2026-08-07T16:02:50.088Z"
+      "fetched_at": "2026-08-07T22:59:43.527Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "ZeeYum Kitchen | NC",
     "og_url": "https://vendly-demos.vercel.app/zeeyum-kitchen/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/zeeyum-kitchen/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "a112a670b52bfbd6c45a472205208210c3ea8175665ddea752b1ebe5e57ab85b",
+    "image_px": "2000x1500",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
+    "accepted": 7,
+    "rejected": 10,
+    "photographs": 7,
     "logo_found": false
   },
   "rejected_assets": [
     {
+      "reason": "too_small",
+      "sha256": "dbb15db89cd68ba103961be70256922bf852e1e8e049cfa15b076f8122c5081a",
+      "media_id": "site-2"
+    },
+    {
       "reason": "download_failed",
       "sha256": null,
-      "media_id": null
+      "media_id": "site-4"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a9eef72f604dab762664d677aee29234b05d993c58c7e99690517503dc0a956c",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "b7085e020f994185020872d9d018893dcf0e2f870446f5dfaa36a46b77a56de5",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-10"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-12"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-14"
     },
     {
       "reason": "download_failed",
@@ -303,8 +403,9 @@
     "trust_strip": false,
     "services": true,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

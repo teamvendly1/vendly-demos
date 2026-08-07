@@ -2,10 +2,67 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "T&R Truck and Auto Repair",
-  "built_at": "2026-08-07T15:41:34.116Z",
+  "built_at": "2026-08-07T22:48:39.408Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "2cc7b64588087f6b597d80bbf7b23c3e12dc63a0dc27d0c9cd3c9f71042323d5",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 221444,
+      "remote_url": "https://lh3.googleusercontent.com/sitesv/AG8ngQVUus2L3gABi8is-em-SrOlOUdm7Em_dHdH9BLZb5R23clThALrccRGdhl_Zs0ul7B9xXgVSOGafNYCpEsvRbcuvNh8dwnRnP6uv7yxQr9di0to00ufsREZxt12Ji2KLvX_lFGHZ18knT0x0rtoLBjCw0zliYwYDfzXaaUKBM0fiA2n-Dc7N2e7m3-2UmdXHYbYauwS6o2ZsNfLiwEyb7NBU8zGunDdzSQttbFEhhY=w1280",
+      "remote_url_as_found": "https://lh3.googleusercontent.com/sitesv/AG8ngQVUus2L3gABi8is-em-SrOlOUdm7Em_dHdH9BLZb5R23clThALrccRGdhl_Zs0ul7B9xXgVSOGafNYCpEsvRbcuvNh8dwnRnP6uv7yxQr9di0to00ufsREZxt12Ji2KLvX_lFGHZ18knT0x0rtoLBjCw0zliYwYDfzXaaUKBM0fiA2n-Dc7N2e7m3-2UmdXHYbYauwS6o2ZsNfLiwEyb7NBU8zGunDdzSQttbFEhhY=w1280",
+      "source_url": "https://sites.google.com/view/dieselandgasrepairshop/home",
+      "fetched_at": "2026-08-07T22:48:38.829Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1280,
+        "height": 1050,
+        "distinct_colors": 164,
+        "pct_near_white": 23.2,
+        "pct_border_white": 38.4
+      }
+    },
+    {
+      "file": "site-3.png",
+      "rel": "assets/site-3.png",
+      "sha256": "630cc964d03e283699d55d2c1e10aeb9738bad380bde7ca321822e2db51c1317",
+      "media_id": "site-3",
+      "format": "png",
+      "bytes": 297036,
+      "remote_url": "https://ssl.gstatic.com/atari/images/simple-header-blended-small.png",
+      "remote_url_as_found": "https://ssl.gstatic.com/atari/images/simple-header-blended-small.png",
+      "source_url": "https://sites.google.com/view/dieselandgasrepairshop/home",
+      "fetched_at": "2026-08-07T22:48:38.901Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 725,
+        "height": 544,
+        "distinct_colors": 4,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://ssl.gstatic.com/atari/images/sociallinks/facebook_white_28dp.png",
+      "media_id": "site-1",
+      "source_url": "https://sites.google.com/view/dieselandgasrepairshop/home",
+      "sha256": "ddcc6aaa7c4204f5a05fa1c87cb198d97d464bbbd1178e963413439d213f7021",
+      "reason": "too_small",
+      "bytes": 425
+    },
+    {
+      "url": "https://ssl.gstatic.com/atari/images/sociallinks/tiktok_white_28dp.png",
+      "media_id": "site-2",
+      "source_url": "https://sites.google.com/view/dieselandgasrepairshop/home",
+      "sha256": "cf14dcafcb0be20929295e85d45ac228f0e3db8019199740179886e7ea80b1dd",
+      "reason": "too_small",
+      "bytes": 361
+    },
     {
       "0": "h",
       "1": "t",

@@ -1,0 +1,385 @@
+{
+  "niche": "restaurant",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Small Giant Bar & Restaurant",
+  "facebook": null,
+  "slug": "small-giant-bar-restaurant",
+  "built_at": "2026-08-07T23:11:09.187Z",
+  "elapsed_ms": 5645,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 294
+    },
+    {
+      "step": "assets",
+      "at_ms": 5142
+    },
+    {
+      "step": "template",
+      "at_ms": 5174
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 5196
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 5518
+    },
+    {
+      "step": "layout",
+      "at_ms": 5518
+    },
+    {
+      "step": "render",
+      "at_ms": 5519
+    },
+    {
+      "step": "audit",
+      "at_ms": 5520
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 5645
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "restaurant",
+      "photo_count": 7,
+      "has_reviews": false,
+      "branch": "visual trade (restaurant) with 7 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "gallery",
+      "trust",
+      "services",
+      "concierge",
+      "words",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#7A2E1E",
+      "b": "#4A1B11",
+      "c": "#A65A17",
+      "brand": "#A65A17",
+      "mist": "#FBF6F0",
+      "ink": "#1A1310"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A65A17",
+            "after": "#A65A17",
+            "ratio": 5.13,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#7A2E1E",
+            "after": "#7A2E1E",
+            "ratio": 9.39,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 14.42,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 11.21,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A65A17",
+            "ratio": 5.13,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#7A2E1E",
+            "ratio": 9.39,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#4A1B11",
+            "ratio": 14.42,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#4A1B11",
+            "ratio": 11.21,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#1A1310",
+            "bg_mist": "#FBF6F0",
+            "ratio": 17.07,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#4A1B11",
+            "bg_mist": "#FBF6F0",
+            "ratio": 13.42,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/616da9f804a5b60b6b07117c/6f0c67a3-70bd-4680-a961-0214c9fccf63/CRU-006D_SmallGiant_Logo_Horizontal_Black.jpg?format=1500w"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A65A17",
+        "ratio": 5.13,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#7A2E1E",
+        "ratio": 9.39,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#4A1B11",
+        "ratio": 14.42,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#4A1B11",
+        "ratio": 11.21,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "small-giant-bar-restaurant",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Small Giant Bar & Restaurant",
+      "fetched_at": "2026-08-07T23:11:03.835Z"
+    },
+    {
+      "text": "(813) 921-0571",
+      "fetched_at": "2026-08-07T23:11:03.835Z"
+    },
+    {
+      "text": "",
+      "source": "https://www.smallgiantbar.com/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T23:11:03.835Z"
+    }
+  ],
+  "unresolved": [
+    "address",
+    "about",
+    "post_text"
+  ],
+  "link_preview": {
+    "og_title": "Small Giant Bar &amp; Restaurant",
+    "og_url": "https://vendly-demos.vercel.app/small-giant-bar-restaurant/",
+    "og_image": "https://vendly-demos.vercel.app/small-giant-bar-restaurant/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "9065f563aae4adeb83f5695b13b6316dd95211b21878e069b8493e7803e62f96",
+    "image_px": "2500x3673",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 7,
+    "rejected": 9,
+    "photographs": 7,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "9065f563aae4adeb83f5695b13b6316dd95211b21878e069b8493e7803e62f96",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8a07b99b427c8a550a2736cc7046e9492bc8d055058616d61a8d9ec0f6771334",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "7a32c290adbdcdbe87d943e0c5cb84897e8b013a593f18bfb9f6533e3f02db86",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "22173bfd584ea6087fc7087660fd76afbaa2f142bd747e9b738652a579e374c2",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "d7db56cef4940ae93098c4cb63b83a38bf4e103cbf75db4ee5a6d04a425d06a9",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "985148c7d6d2bf91118d76562808425b8f9d67365dcdbc991cb2e17be03154fe",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "f78e1cade0b87026d6ec3897727e92bd62fad0253a5826d8cfcb5df851bdc21a",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "media_id": "site-15"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": false,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
+  },
+  "fill_tokens": 14
+}

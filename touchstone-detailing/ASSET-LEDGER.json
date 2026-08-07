@@ -2,10 +2,78 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Touchstone Detailing",
-  "built_at": "2026-08-07T15:23:36.521Z",
+  "built_at": "2026-08-07T22:40:27.554Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.png",
+      "rel": "assets/site-0.png",
+      "sha256": "56fe7b4bc018c02dc76a18b0118c6669338f64ac07cd5ca90f1eb7a48984a294",
+      "media_id": "site-0",
+      "format": "png",
+      "bytes": 15541,
+      "remote_url": "https://touchstonedetailing.com/wp-content/uploads/2024/09/300x70.png",
+      "remote_url_as_found": "https://touchstonedetailing.com/wp-content/uploads/2024/09/300x70.png",
+      "source_url": "https://touchstonedetailing.com",
+      "fetched_at": "2026-08-07T22:40:26.888Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 300,
+        "height": 70,
+        "distinct_colors": 29,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "46f6668a89c795e7a3260a16b4e66c88abc349e3b553a8c6da23624477a4a2d3",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 540718,
+      "remote_url": "https://touchstonedetailing.com/wp-content/uploads/2024/09/18.jpg",
+      "remote_url_as_found": "https://touchstonedetailing.com/wp-content/uploads/2024/09/18.jpg",
+      "source_url": "https://touchstonedetailing.com",
+      "fetched_at": "2026-08-07T22:40:26.954Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1500,
+        "height": 1000,
+        "distinct_colors": 150,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-2.jpg",
+      "rel": "assets/site-2.jpg",
+      "sha256": "279019df16582d72c4b36fbb653a45f5fd8e5ee3980a5eb9806ef7572cf370ec",
+      "media_id": "site-2",
+      "format": "jpg",
+      "bytes": 91243,
+      "remote_url": "https://touchstonedetailing.com/wp-content/uploads/2024/09/18-600x400.jpg",
+      "remote_url_as_found": "https://touchstonedetailing.com/wp-content/uploads/2024/09/18-600x400.jpg",
+      "source_url": "https://touchstonedetailing.com",
+      "fetched_at": "2026-08-07T22:40:26.971Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 600,
+        "height": 400,
+        "distinct_colors": 146,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://touchstonedetailing.com/wp-content/uploads/2024/09/18-600x400.jpg",
+      "media_id": "site-3",
+      "source_url": "https://touchstonedetailing.com",
+      "sha256": "279019df16582d72c4b36fbb653a45f5fd8e5ee3980a5eb9806ef7572cf370ec",
+      "reason": "duplicate_content"
+    },
     {
       "0": "h",
       "1": "t",

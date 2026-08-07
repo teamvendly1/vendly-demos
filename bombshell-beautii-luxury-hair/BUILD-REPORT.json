@@ -1,38 +1,47 @@
 {
+  "niche": "salon",
   "schema": "vendly.autodemo.build/1",
   "business": "Bombshell Beautii Luxury Hair",
   "facebook": null,
   "slug": "bombshell-beautii-luxury-hair",
-  "built_at": "2026-08-07T15:53:37.453Z",
-  "elapsed_ms": 362,
+  "built_at": "2026-08-07T22:55:07.540Z",
+  "elapsed_ms": 2410,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 262
+      "at_ms": 123
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 123
     },
     {
       "step": "assets",
-      "at_ms": 263
+      "at_ms": 1841
+    },
+    {
+      "step": "template",
+      "at_ms": 1951
     },
     {
       "step": "brand_palette",
-      "at_ms": 265
+      "at_ms": 2294
     },
     {
       "step": "layout",
-      "at_ms": 265
+      "at_ms": 2295
     },
     {
       "step": "render",
-      "at_ms": 266
+      "at_ms": 2296
     },
     {
       "step": "audit",
-      "at_ms": 267
+      "at_ms": 2297
     },
     {
       "step": "beacon_probe",
-      "at_ms": 362
+      "at_ms": 2410
     }
   ],
   "audit": {
@@ -40,41 +49,84 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "salon-wigs",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "salon-wigs",
+      "photo_count": 6,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (salon-wigs) with 6 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "contact",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book a Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "salon-wigs",
+      "file": "salon-wigs.js",
+      "resolved_by": "family",
+      "resolved_from": "salon-wigs",
+      "sources": [
+        "https://www.hairclub.com/",
+        "https://www.divinewigs.com/",
+        "https://www.styleseat.com/",
+        "https://www.glamoroushair.com/"
+      ],
+      "rationale": "Hair Club leads with a consultation CTA and plain book-a-consult language rather than asking for the large service cold, and Glamorous Hair runs the same consult path under its package language, so the single CTA here is the SMALLER FIRST YES - a consult a salon closes in person - which is the conversion the current one-button page collects none of; StyleSeat supplies the second mechanic, services listed as distinct named cards (custom fitting, ready-to-wear, maintenance, consult) so a visitor can self-select, and the research puts phone and street address high because this is a business the customer travels to and sits in for hours.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#D40EC3",
+      "b": "#5E0857",
+      "c": "#D40EC3",
+      "brand": "#F785ED",
+      "mist": "#F9F3F8",
+      "ink": "#1C1119"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#F785ED",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +135,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#F785ED",
+            "after": "#D40EC3",
+            "ratio": 4.52,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#F785ED",
+            "after": "#D40EC3",
+            "ratio": 4.52,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5E0857",
+            "after": "#5E0857",
+            "ratio": 12.74,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +165,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5E0857",
+            "after": "#5E0857",
+            "ratio": 9.9,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +177,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#D40EC3",
+            "ratio": 4.52,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#D40EC3",
+            "ratio": 4.52,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5E0857",
+            "ratio": 12.74,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5E0857",
+            "ratio": 9.9,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1C1119",
+            "bg_mist": "#F9F3F8",
+            "ratio": 16.79,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5E0857",
+            "bg_mist": "#F9F3F8",
+            "ratio": 11.65,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -181,32 +234,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#D40EC3",
+        "ratio": 4.52,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#D40EC3",
+        "ratio": 4.52,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5E0857",
+        "ratio": 12.74,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5E0857",
+        "ratio": 9.9,
         "pass": true
       }
     ]
@@ -216,7 +269,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00AE",
-        "count": 5,
+        "count": 4,
         "in_sourced_claim": true,
         "char": "®"
       }
@@ -236,64 +289,79 @@
   "claims": [
     {
       "text": "Bombshell Beautii Luxury Hair",
-      "fetched_at": "2026-08-07T15:53:37.352Z"
+      "fetched_at": "2026-08-07T22:55:05.252Z"
     },
     {
       "text": "(804) 605-9452",
-      "fetched_at": "2026-08-07T15:53:37.352Z"
+      "fetched_at": "2026-08-07T22:55:05.252Z"
     },
     {
       "text": "help@bombshellbeautii.com",
-      "fetched_at": "2026-08-07T15:53:37.352Z"
+      "fetched_at": "2026-08-07T22:55:05.252Z"
     },
     {
       "text": "Petersburg\nVA",
-      "fetched_at": "2026-08-07T15:53:37.352Z"
+      "fetched_at": "2026-08-07T22:55:05.252Z"
     },
     {
       "text": "Luxury wigs, bundles & extensions from Bombshell Beautii®. 48hr U.S. shipping, worldwide delivery & Pay-in-4 options. Slay in premium hair today!",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:53:37.352Z"
+      "fetched_at": "2026-08-07T22:55:05.252Z"
     },
     {
       "text": "Luxury wigs",
-      "fetched_at": "2026-08-07T15:53:37.352Z"
-    },
-    {
-      "text": "Luxury wigs, bundles & extensions from Bombshell Beautii®. 48hr U.S. shipping, worldwide delivery & Pay-in-4 options. Slay in premium hair today!",
-      "source": "https://www.bombshellbeautii.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:53:37.352Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:luxury,wigs,bundles,extensions"
-      ]
+      "fetched_at": "2026-08-07T22:55:05.252Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Bombshell Beautii Luxury Hair | Petersburg\nVA",
     "og_url": "https://vendly-demos.vercel.app/bombshell-beautii-luxury-hair/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/bombshell-beautii-luxury-hair/assets/site-1.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "5ab9e7e9a956f6d598946db30a53730382ab8cdca67daa80ebc5f4274cffaefe",
+    "image_px": "2159x1785",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 7,
+    "rejected": 6,
+    "photographs": 6,
+    "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "5ab9e7e9a956f6d598946db30a53730382ab8cdca67daa80ebc5f4274cffaefe",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0c45e214c1b91e1763b45a8b1d46e100c213b4213dfe0a4722a343dfee980d95",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "ea9e329291311b31bd475547ce92289132ae2da6390c3a41bc55c03381507504",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "b8a1f1ce8112960c6aa1ec1c4709ff537bd2445bc5dbede9dae4fa6dea2040e9",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "3c5dfe4f67e633f87f1b87e8c3dde3c0e2b711665d7a21a973894cca57df1c93",
+      "media_id": "site-11"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -304,9 +372,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "salon"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

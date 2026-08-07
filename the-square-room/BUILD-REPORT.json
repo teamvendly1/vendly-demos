@@ -1,42 +1,47 @@
 {
+  "niche": "events_venue",
   "schema": "vendly.autodemo.build/1",
   "business": "The Square Room",
   "facebook": null,
   "slug": "the-square-room",
-  "built_at": "2026-08-07T15:55:52.593Z",
-  "elapsed_ms": 4396,
+  "built_at": "2026-08-07T22:56:20.611Z",
+  "elapsed_ms": 2591,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2452
+      "at_ms": 91
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 2453
+      "at_ms": 92
     },
     {
       "step": "assets",
-      "at_ms": 3892
+      "at_ms": 2010
+    },
+    {
+      "step": "template",
+      "at_ms": 2094
     },
     {
       "step": "brand_palette",
-      "at_ms": 4270
+      "at_ms": 2458
     },
     {
       "step": "layout",
-      "at_ms": 4270
+      "at_ms": 2458
     },
     {
       "step": "render",
-      "at_ms": 4271
+      "at_ms": 2459
     },
     {
       "step": "audit",
-      "at_ms": 4273
+      "at_ms": 2460
     },
     {
       "step": "beacon_probe",
-      "at_ms": 4396
+      "at_ms": 2591
     }
   ],
   "audit": {
@@ -44,34 +49,78 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "callfirst",
-    "layout_label": "Call first",
-    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
+    "trade_palette": "events-venue",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 10,
+      "trade_key": "events-venue",
+      "photo_count": 14,
       "has_reviews": false,
-      "branch": "urgent/transactional trade (trade), 10 photographs",
+      "branch": "visual trade (events-venue) with 14 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
+      "hero",
       "services",
+      "contact",
       "gallery",
       "words",
-      "contact"
+      "concierge"
     ],
-    "hero_treatment": "overlay",
-    "header_treatment": "split",
-    "gallery_shape": "grid",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Check Available Dates",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "events-venue",
+      "file": "events-venue.js",
+      "resolved_by": "niche",
+      "resolved_from": "events-venue",
+      "sources": [
+        "https://mountainhouseestate.com/",
+        "https://www.tinroofbarn.com/",
+        "https://www.castlefarms.com/",
+        "https://pippinhillfarm.com/",
+        "https://www.wychmere.com/"
+      ],
+      "rationale": "The conversion is an enquiry gated on two facts only, is my date free and is this in my budget, so Mountain House Estate ships availability as a labelled button rather than a sentence and four of the five winners give price its own named destination without publishing a number, which is why the single CTA is an availability anchor pointing at a short enquiry block carrying a date field and why the price route lives in services beside Castle Farms named spaces with their capacities; the gallery is pushed BELOW the enquiry and the testimonials below that, inverting the generic template the research says gets it exactly backwards by leading with a photo carousel and ending with a bare Contact link, since social proof supports the decision while date and price create it.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
       "a": "#011DFA",
       "b": "#08115E",
       "c": "#011DFA",
       "brand": "#011DFA",
       "mist": "#F3F4F9",
-      "ink": "#12181D"
+      "ink": "#15141F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -161,9 +210,9 @@
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
+            "value": "#15141F",
             "bg_mist": "#F3F4F9",
-            "ratio": 16.28,
+            "ratio": 16.6,
             "pass": true
           },
           {
@@ -174,7 +223,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -233,45 +283,45 @@
   "claims": [
     {
       "text": "The Square Room",
-      "fetched_at": "2026-08-07T15:55:50.649Z"
+      "fetched_at": "2026-08-07T22:56:18.111Z"
     },
     {
       "text": "(865) 544-4199",
-      "fetched_at": "2026-08-07T15:55:50.649Z"
+      "fetched_at": "2026-08-07T22:56:18.111Z"
     },
     {
       "text": "info@spacesinthecity.com",
-      "fetched_at": "2026-08-07T15:55:50.649Z"
+      "fetched_at": "2026-08-07T22:56:18.111Z"
     },
     {
       "text": "4 Market Sq, Knoxville, TN, Tennessee",
       "source": "https://www.facebook.com/thesquareroom/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:55:50.649Z"
+      "fetched_at": "2026-08-07T22:56:18.111Z"
     },
     {
       "text": "Knoxville's Listening Room. www.thesquareroom.com",
       "source": "https://www.facebook.com/thesquareroom/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:55:50.649Z",
+      "fetched_at": "2026-08-07T22:56:18.111Z",
       "verbatim_source_text": "Knoxville's Listening Room.   www.thesquareroom.com",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:55:50.649Z"
+      "fetched_at": "2026-08-07T22:56:18.111Z"
     },
     {
       "text": "Knoxville's Listening Room.   www.thesquareroom.com",
       "source": "https://www.facebook.com/thesquareroom/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:55:50.649Z"
+      "fetched_at": "2026-08-07T22:56:18.111Z"
     },
     {
       "text": "Spend your next event with us. Photos: Amanda May Photos #TheSquareRoom #MarketSquare #Knoxvillevenues #Knoxvilleweddings #MarketSquareKnoxville #DowntownKnoxville",
       "source": "https://www.thesquareroomknoxville.com/",
       "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:55:50.649Z",
+      "fetched_at": "2026-08-07T22:56:18.111Z",
       "relevance": [
         "contains_own_name",
         "service_vocab:knoxville,room,thesquareroom"
@@ -284,26 +334,51 @@
   "link_preview": {
     "og_title": "The Square Room | TN",
     "og_url": "https://vendly-demos.vercel.app/the-square-room/",
-    "og_image": "https://vendly-demos.vercel.app/the-square-room/assets/492399988_1233209468813925.jpg",
+    "og_image": "https://vendly-demos.vercel.app/the-square-room/assets/site-0.png",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
     "image_is_page_lead_image": true,
-    "image_sha256": "41200d97d379edefcbc8f640c7c41e27f9b8d8c39a69611d352ca620054c8fec",
-    "image_px": "2048x1154",
+    "image_sha256": "516ae233c2eb861c5e78915fd9f88d91dd5d6f42251e18625e01ae4ea832f94f",
+    "image_px": "1000x778",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
-    "meets_facebook_recommended_1200x630": true,
+    "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "large",
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
-    "rejected": 1,
-    "photographs": 10,
+    "accepted": 15,
+    "rejected": 6,
+    "photographs": 14,
     "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "c6b3dffbf825fe13dffd5dc487654eef7068a5f005533eed3ed2475479fcf47e",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ff7cdd313194d8f9c48dd7a426309527c198d4f96a3be815f55514d334e3bb36",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ff7cdd313194d8f9c48dd7a426309527c198d4f96a3be815f55514d334e3bb36",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "8e26c57a08afb52ad5f96f7aaaee3a125ad89e62352f6ae0ecaca0dcab9bf947",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "bca83db0740902c54cf40699884b995fbcec71331571d813a92c08ac8cdfda45",
+      "media_id": "site-8"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -316,7 +391,8 @@
     "services": true,
     "their_words": true,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "events_venue"
   },
   "fill_tokens": 20
 }

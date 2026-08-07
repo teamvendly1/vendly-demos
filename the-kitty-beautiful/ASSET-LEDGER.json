@@ -2,8 +2,182 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "The Kitty Beautiful",
-  "built_at": "2026-08-07T15:41:38.923Z",
+  "built_at": "2026-08-07T22:48:55.456Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
-  "rejected": []
+  "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "b488b10f02448a30953b7554772eaa666f454e16cf62363550d466d077e661ac",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 24809,
+      "remote_url": "https://thekittybeautiful.com/cats/current/bongo.jpg",
+      "remote_url_as_found": "https://thekittybeautiful.com/cats/current/bongo.jpg",
+      "source_url": "https://thekittybeautiful.com/",
+      "fetched_at": "2026-08-07T22:48:54.287Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 315,
+        "height": 315,
+        "distinct_colors": 77,
+        "pct_near_white": 0.1,
+        "pct_border_white": 0.4
+      }
+    },
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "4b82e7622bbef4c40a9b8ca8f423bb9588273998fa22309d34ae5ad352a12716",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 17669,
+      "remote_url": "https://thekittybeautiful.com/cats/current/maserati.jpg",
+      "remote_url_as_found": "https://thekittybeautiful.com/cats/current/maserati.jpg",
+      "source_url": "https://thekittybeautiful.com/",
+      "fetched_at": "2026-08-07T22:48:54.331Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 315,
+        "height": 315,
+        "distinct_colors": 56,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-3.png",
+      "rel": "assets/site-3.png",
+      "sha256": "c589c9d433c3136ca78696e7a3a6bca7c0a32f6a95db630c34e88094c71a9351",
+      "media_id": "site-3",
+      "format": "png",
+      "bytes": 22808,
+      "remote_url": "https://thekittybeautiful.com/images/news/bungalower.png",
+      "remote_url_as_found": "https://thekittybeautiful.com/images/news/bungalower.png",
+      "source_url": "https://thekittybeautiful.com/",
+      "fetched_at": "2026-08-07T22:48:54.426Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 350,
+        "height": 100,
+        "distinct_colors": 8,
+        "pct_near_white": 0.6,
+        "pct_border_white": 0.3
+      }
+    },
+    {
+      "file": "site-4.png",
+      "rel": "assets/site-4.png",
+      "sha256": "830027007726a3526ccdc7c9b1ee07e035ac5ad64f0dc50ebaf11033a952a5f7",
+      "media_id": "site-4",
+      "format": "png",
+      "bytes": 13791,
+      "remote_url": "https://thekittybeautiful.com/images/news/attractions.png",
+      "remote_url_as_found": "https://thekittybeautiful.com/images/news/attractions.png",
+      "source_url": "https://thekittybeautiful.com/",
+      "fetched_at": "2026-08-07T22:48:54.469Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 350,
+        "height": 100,
+        "distinct_colors": 129,
+        "pct_near_white": 3.7,
+        "pct_border_white": 1.8
+      }
+    },
+    {
+      "file": "site-13.png",
+      "rel": "assets/site-13.png",
+      "sha256": "3ebfc60d94c31a5597a5611dd3f76dc22305775e9291c9bcdd280c163a3c872f",
+      "media_id": "site-13",
+      "format": "png",
+      "bytes": 17268,
+      "remote_url": "https://thekittybeautiful.com/images/news/citynews.png",
+      "remote_url_as_found": "https://thekittybeautiful.com/images/news/citynews.png",
+      "source_url": "https://thekittybeautiful.com/",
+      "fetched_at": "2026-08-07T22:48:54.853Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 350,
+        "height": 100,
+        "distinct_colors": 27,
+        "pct_near_white": 4.9,
+        "pct_border_white": 2.6
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://thekittybeautiful.com/images/news/orlandosentinel.png",
+      "media_id": "site-2",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "67e15c57df13e60e0965fb3876655f55638cad67ccfedbebf8a15122993f8792",
+      "reason": "too_small",
+      "bytes": 9910
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/orlandoweekly.png",
+      "media_id": "site-5",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "cb679fd61e78acb9a667fac776a8f923cca609e78ef3e3436a28d9a493055b6a",
+      "reason": "too_small",
+      "bytes": 3304
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/fox35.png",
+      "media_id": "site-6",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "c8f2bd33d6577e0a39f8eac86b3a0fcbfef657483bc4b63b1d816de30b1aa835",
+      "reason": "too_small",
+      "bytes": 6658
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/catster.png",
+      "media_id": "site-7",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "08fd2ea7e80c6ac152d3b4339b7eebc3e266bd62b01066119cd1bdd9e84ece40",
+      "reason": "too_small",
+      "bytes": 5622
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/wdbo.png",
+      "media_id": "site-8",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "c0541514f308eff543dbcb4aa5c3220d160197fac3ed00856fa335d7965f5925",
+      "reason": "too_small",
+      "bytes": 3795
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/news13.png",
+      "media_id": "site-9",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "bbd774f2e66ba93de924359a5162b21a09a300302d7c0564ca252bf90ce486e0",
+      "reason": "too_small",
+      "bytes": 8129
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/orlandomagazine.png",
+      "media_id": "site-10",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "5ed39379c2801d8b9b80dbee5b90762046f7480b8658def354d7b1c27089fd81",
+      "reason": "too_small",
+      "bytes": 6044
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/wesh.png",
+      "media_id": "site-11",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "c14e9fa254b079ce46d781b3d1f05575f5ee3a1c5ff77047c1aab6d43dce4123",
+      "reason": "too_small",
+      "bytes": 7243
+    },
+    {
+      "url": "https://thekittybeautiful.com/images/news/cflifestyle.png",
+      "media_id": "site-12",
+      "source_url": "https://thekittybeautiful.com/",
+      "sha256": "0bf64eee3140ad3d0b88cb177484b8a93779a7e92e7bd455a947606409327f76",
+      "reason": "too_small",
+      "bytes": 5996
+    }
+  ]
 }

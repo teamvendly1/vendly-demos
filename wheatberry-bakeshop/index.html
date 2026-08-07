@@ -12,24 +12,35 @@
 <meta property="og:description" content="A small wholesale bakery in the Queen city. Check out our website for where you can find us!">
 <meta property="og:url" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/assets/684149358_18029629241804838.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/assets/684149358_18029629241804838.jpg">
-<meta property="og:image:width" content="4032">
-<meta property="og:image:height" content="4032">
+<meta property="og:image" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/assets/448103321_434878816102672.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/assets/448103321_434878816102672.jpg">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
 <meta property="og:image:alt" content="Wheatberry Bakeshop">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/assets/684149358_18029629241804838.jpg">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/wheatberry-bakeshop/assets/448103321_434878816102672.jpg">
 <meta name="twitter:image:alt" content="Wheatberry Bakeshop">
 <meta name="twitter:title" content="Wheatberry Bakeshop">
 <meta name="twitter:description" content="A small wholesale bakery in the Queen city. Check out our website for where you can find us!">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#3B5A86;--b:#1E2F47;--c:#A31A57;--mist:#F7F5FA;--ink:#1B2230;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#A31A57;--scrim:11,17,25;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -165,7 +176,7 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+17049103848">Call (704) 910-3848</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main">Wheatberry Bakeshop</a>
     <nav class="main" aria-label="Main">
@@ -180,25 +191,19 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/448103321_434878816102672.jpg" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
     <p class="eyebrow">Page · Bakery</p>
     <h1>Wheatberry Bakeshop</h1>
     <p class="lede">A small wholesale bakery in the Queen city. Check out our website for where you can find us!</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+17049103848">Call (704) 910-3848</a>
-      <a class="btn btn-ghost" href="mailto:hello@wheatberrybake.shop">Email us</a>
+      <a class="btn btn-c" href="mailto:hello@wheatberrybake.shop">Order a Custom Cake</a>
+      <a class="hero-alt" href="mailto:hello@wheatberrybake.shop">or email us</a>
     </div>
+    <p class="hero-facts">(704) 910-3848</p>
   </div>
 </div>
-
-<div class="strip"><div class="wrap"><ul>
-  
-  
-  
-  
-</ul></div></div>
 
 <section id="contact">
   <div class="wrap">
@@ -215,21 +220,11 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Follow me along on a very early morning bake! #charlottebakery #ditl #businessowner #entrepreneurlife #smallbusiness #smallbusinessowners #bakery #bakerlife
-      <cite>Posted by Wheatberry Bakeshop on Facebook. Read on <a href="https://www.wheatberrybake.shop/">their page</a>.</cite>
-    </blockquote>
-  </div>
-</section>
-
 <section id="work">
   <div class="wrap">
     <h2>Photos</h2>
     <p class="lead">These photos are published on the Wheatberry Bakeshop Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/448103321_434878816102672.jpg" alt="Wheatberry Bakeshop - Page · Bakery" loading="lazy" width="800" height="600"></figure>
+    <div class="gal gal-masonry">
       <figure><img src="assets/750904013_1014034878187060.jpg" alt="Wheatberry Bakeshop - Page · Bakery" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/684149358_18029629241804838.jpg" alt="Wheatberry Bakeshop - Page · Bakery" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/684239491_18029629226804838.jpg" alt="Wheatberry Bakeshop - Page · Bakery" loading="lazy" width="800" height="600"></figure>
@@ -240,6 +235,29 @@ footer.site a{color:#fff}
       <figure><img src="assets/682665331_18029286557804838.jpg" alt="Wheatberry Bakeshop - Page · Bakery" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/670980409_18028634882804838.jpg" alt="Wheatberry Bakeshop - Page · Bakery" loading="lazy" width="800" height="600"></figure>
     </div>
+  </div>
+</section>
+
+<section class="words">
+  <div class="wrap">
+    <h2>In their words</h2>
+    <blockquote class="quote">Follow me along on a very early morning bake! #charlottebakery #ditl #businessowner #entrepreneurlife #smallbusiness #smallbusinessowners #bakery #bakerlife
+      <cite>Posted by Wheatberry Bakeshop on Facebook. Read on <a href="https://www.wheatberrybake.shop/">their page</a>.</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Wheatberry Bakeshop page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+17049103848">(704) 910-3848</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 

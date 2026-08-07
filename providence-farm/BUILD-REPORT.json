@@ -1,42 +1,51 @@
 {
+  "niche": "farm",
   "schema": "vendly.autodemo.build/1",
   "business": "Providence Farm",
   "facebook": null,
   "slug": "providence-farm",
-  "built_at": "2026-08-07T15:51:17.448Z",
-  "elapsed_ms": 75467,
+  "built_at": "2026-08-07T22:52:49.813Z",
+  "elapsed_ms": 5121,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 72880
+      "at_ms": 176
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 72881
+      "at_ms": 177
     },
     {
       "step": "assets",
-      "at_ms": 75339
+      "at_ms": 4500
+    },
+    {
+      "step": "template",
+      "at_ms": 4647
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 4665
     },
     {
       "step": "brand_palette",
-      "at_ms": 75343
+      "at_ms": 5022
     },
     {
       "step": "layout",
-      "at_ms": 75343
+      "at_ms": 5022
     },
     {
       "step": "render",
-      "at_ms": 75343
+      "at_ms": 5023
     },
     {
       "step": "audit",
-      "at_ms": 75345
+      "at_ms": 5025
     },
     {
       "step": "beacon_probe",
-      "at_ms": 75467
+      "at_ms": 5121
     }
   ],
   "audit": {
@@ -44,41 +53,85 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "bakery",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 11,
+      "trade_key": "bakery",
+      "photo_count": 18,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "visual trade (bakery) with 18 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "contact",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Order a Custom Cake",
+      "kind": "mailto"
+    },
+    "niche_template": {
+      "family": "bakery",
+      "file": "bakery.js",
+      "resolved_by": "family",
+      "resolved_from": "bakery",
+      "sources": [
+        "https://www.honeybearbakeshop.com/",
+        "https://www.littletartatl.com/",
+        "https://www.flourbakery.com/",
+        "https://www.pophamsbakery.com/",
+        "https://sourdoughsophia.co.uk/"
+      ],
+      "rationale": "The Little Tart Bakeshop forks \"Place an Order\" into same-day pickup versus cakes and catering and Flour gives custom cakes their own homepage door, so services sits at position two carrying both named paths with a stated lead time while the single CTA resolves the fork toward the custom enquiry Honeybear routes to a named human at a named address, which is the one buyer the current one-button template collects nothing from.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#9D4759",
+      "b": "#462028",
+      "c": "#9D4759",
+      "brand": "#9D4759",
+      "mist": "#F9F3F5",
+      "ink": "#1B2230"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#9D4759",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -87,9 +140,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#9D4759",
+            "after": "#9D4759",
+            "ratio": 6.04,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -97,9 +150,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#9D4759",
+            "after": "#9D4759",
+            "ratio": 6.04,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -107,9 +160,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#462028",
+            "after": "#462028",
+            "ratio": 14.02,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -117,9 +170,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#462028",
+            "after": "#462028",
+            "ratio": 10.9,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -129,52 +182,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#9D4759",
+            "ratio": 6.04,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#9D4759",
+            "ratio": 6.04,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#462028",
+            "ratio": 14.02,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#462028",
+            "ratio": 10.9,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1B2230",
+            "bg_mist": "#F9F3F5",
+            "ratio": 14.54,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#462028",
+            "bg_mist": "#F9F3F5",
+            "ratio": 12.8,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.wixstatic.com/media/4e613b_9126413001f24dd08f5979a2eb50e4c9~mv2.jpg/v1/fill/w_79,h_78,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/NCBicentennialLogo.jpg"
     }
   },
   "accessibility": {
@@ -185,32 +239,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#9D4759",
+        "ratio": 6.04,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#9D4759",
+        "ratio": 6.04,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#462028",
+        "ratio": 14.02,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#462028",
+        "ratio": 10.9,
         "pass": true
       }
     ]
@@ -220,7 +274,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 10,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,45 +294,45 @@
   "claims": [
     {
       "text": "Providence Farm",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "(336) 707-2507",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "info@providencefarmnc.com",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "2569 Huffine Mill Road, McLeansville, NC",
       "source": "https://www.facebook.com/providencefarmnc/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "Responsible, sustainable stewardship in a pasture based regenerative agricultural system. From well raised food...",
       "source": "https://www.facebook.com/providencefarmnc/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "Page · Farm",
       "source": "https://www.facebook.com/providencefarmnc/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "Responsible",
       "source": "https://www.facebook.com/providencefarmnc/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     },
     {
       "text": "100% recommend (28 Reviews)",
       "source": "https://www.facebook.com/providencefarmnc/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T15:51:14.861Z"
+      "fetched_at": "2026-08-07T22:52:44.868Z"
     }
   ],
   "unresolved": [
@@ -301,19 +355,66 @@
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
-    "rejected": 0,
-    "photographs": 11,
+    "accepted": 18,
+    "rejected": 9,
+    "photographs": 18,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "e9fc60c9724fbcba4735cad1e877e60e1e55f29061fa252f1637d428e789cd28",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "46aa3dd5b4ce2895f5285ed074129fac7bbfb14691d6937c3c0351319603cb0b",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-5"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-7"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-9"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-11"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-13"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-15"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": true,
     "services": true,
     "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "farm"
   },
   "fill_tokens": 22
 }

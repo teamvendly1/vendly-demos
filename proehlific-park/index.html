@@ -12,24 +12,35 @@
 <meta property="og:description" content="Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!">
 <meta property="og:url" content="https://vendly-demos.vercel.app/proehlific-park/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/proehlific-park/assets/586836184_1688370282464820.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/proehlific-park/assets/586836184_1688370282464820.jpg">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1536">
+<meta property="og:image" content="https://vendly-demos.vercel.app/proehlific-park/assets/site-0.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/proehlific-park/assets/site-0.jpg">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="667">
 <meta property="og:image:alt" content="Proehlific Park">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/proehlific-park/assets/586836184_1688370282464820.jpg">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/proehlific-park/assets/site-0.jpg">
 <meta name="twitter:image:alt" content="Proehlific Park">
 <meta name="twitter:title" content="Proehlific Park | Greensboro">
 <meta name="twitter:description" content="Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!">
 <style>
 :root{
-  --a:#2379C9;--b:#0F3457;--c:#2379C9;--mist:#F3F6F9;--ink:#12181D;
+  --a:#2379C9;--b:#0F3457;--c:#2379C9;--mist:#F3F6F9;--ink:#15161F;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
   --brand:#6CABE5;--scrim:5,18,30;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -165,7 +176,7 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+13366655233">Call (336) 665-5233</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main"><img class="brandmark" src="assets/305759599_769241704377687.png" alt="Proehlific Park" width="150" height="150"></a>
     <nav class="main" aria-label="Main">
@@ -180,18 +191,49 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
-  <div class="wrap hero-in">
-    <span class="panelplate"><img class="panelmark" src="assets/305759599_769241704377687.png" alt="Proehlific Park" width="300" height="120"></span>
-    <p class="eyebrow">Page · Sports &amp; Recreation Venue in Greensboro</p>
-    <h1>Proehlific Park</h1>
-    <p class="lede">Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!</p>
-    <div class="cta-row">
-      <a class="btn btn-c" href="tel:+13366655233">Call (336) 665-5233</a>
-      <a class="btn btn-ghost" href="mailto:info@proehlificpark.com">Email us</a>
+<div class="hero hero-split">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Page · Sports &amp; Recreation Venue in Greensboro</p>
+      <h1>Proehlific Park</h1>
+      <p class="lede">Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!</p>
+      <div class="cta-row">
+      <a class="btn btn-c" href="tel:+13366655233">Free First Visit</a>
+      <a class="hero-alt" href="mailto:info@proehlificpark.com">or email us</a>
     </div>
+    <p class="hero-facts">(336) 665-5233 &middot; 4517 Jessup Grove Rd, Greensboro</p>
+    </div>
+    <div class="hero-shot"><img src="assets/site-0.jpg" alt="Our Fitness Training" width="800" height="600"></div>
   </div>
 </div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Proehlific Park Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Our Fitness Training</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Proehlific Park Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-2.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-4.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-14.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/586836184_1688370282464820.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/638355190_1764630394838808.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/639059490_1764630371505477.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/660312814_1800557334579447.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/658847808_1800557327912781.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/635398029_1764630351505479.jpg" alt="Proehlific Park - Page · Sports &amp; Recreation Venue" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
 
 <div class="strip"><div class="wrap"><ul>
   
@@ -199,6 +241,20 @@ footer.site a{color:#fff}
   
   
 </ul></div></div>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Proehlific Park page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+13366655233">(336) 665-5233</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 4517 Jessup Grove Rd, Greensboro, NC. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -211,43 +267,6 @@ footer.site a{color:#fff}
         
         <div><dt>Facebook</dt><dd><a href="https://proehlificpark.com/">proehlificpark.com/</a></dd></div>
       </dl>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Proehlific Park Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>Our Fitness Training</h3></div>
-    </div>
-  </div>
-</section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!
-      <cite>Posted by Proehlific Park on Facebook. Read on <a href="https://proehlificpark.com/">their page</a>.</cite>
-    </blockquote>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the Proehlific Park Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/586836184_1688370282464820.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/638355190_1764630394838808.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/639059490_1764630371505477.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/660312814_1800557334579447.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/658847808_1800557327912781.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/635398029_1764630351505479.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/654279231_1789955105639670.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/668912936_1809058763729304.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
-      <figure><img src="assets/668332625_1809058760395971.jpg" alt="Our Fitness Training" loading="lazy" width="800" height="600"><figcaption>Our Fitness Training</figcaption></figure>
     </div>
   </div>
 </section>

@@ -2,8 +2,80 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Bouzy",
-  "built_at": "2026-08-07T18:11:22.967Z",
+  "built_at": "2026-08-07T23:08:11.758Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
-  "rejected": []
+  "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "e4c86fcb0cc3a54ac61f37c1f6fc8d2cec28f571fc0a7a681d9d26390c0059d7",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 566141,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/b111ae42-16d3-44a3-a1bf-20e212c3cd68/Bouzy12700.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/b111ae42-16d3-44a3-a1bf-20e212c3cd68/Bouzy12700.jpg",
+      "source_url": "https://www.bouzytampa.com/",
+      "fetched_at": "2026-08-07T23:08:11.076Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 1667,
+        "distinct_colors": 43,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-2.jpg",
+      "rel": "assets/site-2.jpg",
+      "sha256": "d70b84358e259eb4c4c4e3ad80bfb2566393fc6365b511dfd7eceece97603b97",
+      "media_id": "site-2",
+      "format": "jpg",
+      "bytes": 754593,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/f7a80ea6-35bd-4868-a639-7743a15d9176/B152.jpg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/f7a80ea6-35bd-4868-a639-7743a15d9176/B152.jpg",
+      "source_url": "https://www.bouzytampa.com/",
+      "fetched_at": "2026-08-07T23:08:11.142Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 1668,
+        "distinct_colors": 75,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/b111ae42-16d3-44a3-a1bf-20e212c3cd68/Bouzy12700.jpg?format=2500w",
+      "media_id": "site-1",
+      "source_url": "https://www.bouzytampa.com/",
+      "sha256": "e4c86fcb0cc3a54ac61f37c1f6fc8d2cec28f571fc0a7a681d9d26390c0059d7",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/f7a80ea6-35bd-4868-a639-7743a15d9176/B152.jpg?format=2500w",
+      "media_id": "site-3",
+      "source_url": "https://www.bouzytampa.com/",
+      "sha256": "d70b84358e259eb4c4c4e3ad80bfb2566393fc6365b511dfd7eceece97603b97",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/98b0c0a7-f2b3-4943-ba1a-ec48bbbe281b/Recurso%2B3%2B.png",
+      "media_id": "site-4",
+      "source_url": "https://www.bouzytampa.com/",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "reason": "too_small",
+      "bytes": 2086
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/98b0c0a7-f2b3-4943-ba1a-ec48bbbe281b/Recurso%2B3%2B.png?format=2500w",
+      "media_id": "site-5",
+      "source_url": "https://www.bouzytampa.com/",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "reason": "too_small",
+      "bytes": 2086
+    }
+  ]
 }

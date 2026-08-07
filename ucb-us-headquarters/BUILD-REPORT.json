@@ -1,38 +1,47 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "UCB (US Headquarters)",
   "facebook": null,
   "slug": "ucb-us-headquarters",
-  "built_at": "2026-08-07T18:06:57.311Z",
-  "elapsed_ms": 1271,
+  "built_at": "2026-08-07T22:54:12.861Z",
+  "elapsed_ms": 3215,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 1148
+      "at_ms": 1474
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 1474
     },
     {
       "step": "assets",
-      "at_ms": 1149
+      "at_ms": 2975
+    },
+    {
+      "step": "template",
+      "at_ms": 3087
     },
     {
       "step": "brand_palette",
-      "at_ms": 1151
+      "at_ms": 3087
     },
     {
       "step": "layout",
-      "at_ms": 1151
+      "at_ms": 3087
     },
     {
       "step": "render",
-      "at_ms": 1151
+      "at_ms": 3088
     },
     {
       "step": "audit",
-      "at_ms": 1153
+      "at_ms": 3089
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1271
+      "at_ms": 3215
     }
   ],
   "audit": {
@@ -41,26 +50,33 @@
   },
   "design": {
     "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 0,
+      "photo_count": 6,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (trade), 6 photographs",
       "deterministic": true
     },
     "section_order": [
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call (770) 970-7500",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
       "a": "#2B3A47",
       "b": "#18232C",
@@ -170,7 +186,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": null
     }
   },
   "accessibility": {
@@ -229,29 +246,20 @@
   "claims": [
     {
       "text": "UCB (US Headquarters)",
-      "fetched_at": "2026-08-07T18:06:57.187Z"
+      "fetched_at": "2026-08-07T22:54:11.119Z"
     },
     {
       "text": "(770) 970-7500",
-      "fetched_at": "2026-08-07T18:06:57.187Z"
+      "fetched_at": "2026-08-07T22:54:11.119Z"
     },
     {
       "text": "UCB is a global biopharma company focused on creating value for people living with severe diseases. Learn more about how UCB delivers value for patients through its patient assistance program, treatment tracker and more.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T18:06:57.187Z"
+      "fetched_at": "2026-08-07T22:54:11.119Z"
     },
     {
       "text": "treatment tracker and more",
-      "fetched_at": "2026-08-07T18:06:57.187Z"
-    },
-    {
-      "text": "UCB is a global biopharma company focused on creating value for people living with severe diseases. Learn more about how UCB delivers value for patients through its patient assistance program, treatment tracker and more.",
-      "source": "https://www.ucb-usa.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T18:06:57.187Z",
-      "relevance": [
-        "service_vocab:global,biopharma,focused,creating"
-      ]
+      "fetched_at": "2026-08-07T22:54:11.119Z"
     }
   ],
   "unresolved": [
@@ -271,22 +279,39 @@
     "renders_large_card_600x315": false,
     "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "reason_no_image": "no image on this demo has measured dimensions"
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 6,
+    "rejected": 3,
+    "photographs": 6,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "1aa833255494ac3db545c09de8d868ed30835af972483a58926a3ed3b01e5872",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "61bf3a16fc856c3e0ac3ac3cbbde58bafeb6c80233e12e34ba8007768cb26b4c",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "2812e41b12f353cac9e10542c28c744f21cd64db1c35f02b3575b7de3b9dab40",
+      "media_id": "site-8"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "unknown"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

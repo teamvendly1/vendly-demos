@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Holy Land Market",
   "facebook": null,
   "slug": "holy-land-market",
-  "built_at": "2026-08-07T15:55:53.329Z",
-  "elapsed_ms": 313,
+  "built_at": "2026-08-07T22:56:26.125Z",
+  "elapsed_ms": 3803,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 221
+      "at_ms": 181
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 181
     },
     {
       "step": "assets",
-      "at_ms": 223
+      "at_ms": 3077
+    },
+    {
+      "step": "template",
+      "at_ms": 3199
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 3264
     },
     {
       "step": "brand_palette",
-      "at_ms": 224
+      "at_ms": 3694
     },
     {
       "step": "layout",
-      "at_ms": 224
+      "at_ms": 3694
     },
     {
       "step": "render",
-      "at_ms": 225
+      "at_ms": 3695
     },
     {
       "step": "audit",
-      "at_ms": 226
+      "at_ms": 3697
     },
     {
       "step": "beacon_probe",
-      "at_ms": 313
+      "at_ms": 3803
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 16,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 16 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#116DFE",
+      "b": "#08295E",
+      "c": "#116DFE",
+      "brand": "#1C74FE",
+      "mist": "#F3F5F9",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#1C74FE",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#1C74FE",
+            "after": "#116DFE",
+            "ratio": 4.52,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#1C74FE",
+            "after": "#116DFE",
+            "ratio": 4.52,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#08295E",
+            "after": "#08295E",
+            "ratio": 14.1,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#08295E",
+            "after": "#08295E",
+            "ratio": 10.96,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#116DFE",
+            "ratio": 4.52,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#116DFE",
+            "ratio": 4.52,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#08295E",
+            "ratio": 14.1,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#08295E",
+            "ratio": 10.96,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F3F5F9",
+            "ratio": 16.81,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#08295E",
+            "bg_mist": "#F3F5F9",
+            "ratio": 12.92,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.spotapps.co/website_images/ab_websites/120417_website/logo.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#116DFE",
+        "ratio": 4.52,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#116DFE",
+        "ratio": 4.52,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#08295E",
+        "ratio": 14.1,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#08295E",
+        "ratio": 10.96,
         "pass": true
       }
     ]
@@ -229,33 +289,34 @@
   "claims": [
     {
       "text": "Holy Land Market",
-      "fetched_at": "2026-08-07T15:55:53.237Z"
+      "fetched_at": "2026-08-07T22:56:22.502Z"
     },
     {
       "text": "(865) 525-4659",
-      "fetched_at": "2026-08-07T15:55:53.237Z"
+      "fetched_at": "2026-08-07T22:56:22.502Z"
     },
     {
       "text": "holylandstore1@gmail.com",
-      "fetched_at": "2026-08-07T15:55:53.237Z"
+      "fetched_at": "2026-08-07T22:56:22.502Z"
     },
     {
-      "text": "null\" property=\"og:site_name\"/> <meta content=",
+      "text": "Opened in Knoxville in 2006, and we're proud to be a part of this community. We train our staff to provide excellent customer service in order to make your visit a pleasant one. You'll b...",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:55:53.237Z"
+      "fetched_at": "2026-08-07T22:56:22.502Z",
+      "verbatim_source_text": "Opened in Knoxville in 2006, and we’re proud to be a part of this community. We train our staff to provide excellent customer service in order to make your visit a pleasant one. You’ll b...",
+      "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
-      "text": "null\" property=\"og:site_name\"/> <meta content=",
-      "fetched_at": "2026-08-07T15:55:53.237Z"
+      "text": "Opened in Knoxville in 2006",
+      "fetched_at": "2026-08-07T22:56:22.502Z"
     },
     {
-      "text": "null\" property=\"og:site_name\"/> <meta content=",
-      "source": "https://holylandknoxville.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:55:53.237Z",
-      "relevance": [
-        "service_vocab:null,property,site,name"
-      ]
+      "text": "and we",
+      "fetched_at": "2026-08-07T22:56:22.502Z"
+    },
+    {
+      "text": "ll b",
+      "fetched_at": "2026-08-07T22:56:22.502Z"
     }
   ],
   "unresolved": [
@@ -264,23 +325,23 @@
   "link_preview": {
     "og_title": "Holy Land Market",
     "og_url": "https://vendly-demos.vercel.app/holy-land-market/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/holy-land-market/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "8f0e9ebbe9747244ecf84cf1da13f5bf82a45f3147792972e0c49d116bb14d14",
+    "image_px": "1200x866",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 16,
     "rejected": 0,
-    "photographs": 0,
+    "photographs": 16,
     "logo_found": false
   },
   "rejected_assets": [],
@@ -288,9 +349,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

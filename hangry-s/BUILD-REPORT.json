@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Hangry's",
   "facebook": null,
   "slug": "hangry-s",
-  "built_at": "2026-08-07T16:08:59.945Z",
-  "elapsed_ms": 864,
+  "built_at": "2026-08-07T23:04:59.968Z",
+  "elapsed_ms": 3217,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 775
+      "at_ms": 653
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 654
     },
     {
       "step": "assets",
-      "at_ms": 776
+      "at_ms": 2551
+    },
+    {
+      "step": "template",
+      "at_ms": 2672
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2741
     },
     {
       "step": "brand_palette",
-      "at_ms": 778
+      "at_ms": 3095
     },
     {
       "step": "layout",
-      "at_ms": 778
+      "at_ms": 3095
     },
     {
       "step": "render",
-      "at_ms": 778
+      "at_ms": 3096
     },
     {
       "step": "audit",
-      "at_ms": 780
+      "at_ms": 3098
     },
     {
       "step": "beacon_probe",
-      "at_ms": 864
+      "at_ms": 3217
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 10,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 10 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#3D808C",
+      "b": "#1F4147",
+      "c": "#3D808C",
+      "brand": "#418996",
+      "mist": "#F3F8F9",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#418996",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#418996",
+            "after": "#3D808C",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#418996",
+            "after": "#3D808C",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#1F4147",
+            "after": "#1F4147",
+            "ratio": 11.02,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#1F4147",
+            "after": "#1F4147",
+            "ratio": 8.57,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#3D808C",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#3D808C",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#1F4147",
+            "ratio": 11.02,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#1F4147",
+            "ratio": 8.57,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F3F8F9",
+            "ratio": 17.13,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#1F4147",
+            "bg_mist": "#F3F8F9",
+            "ratio": 10.29,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://hangrysvb.com/wp-content/uploads/2020/09/logo-small-1.png"
     }
   },
   "accessibility": {
@@ -181,46 +241,39 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#3D808C",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#3D808C",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#1F4147",
+        "ratio": 11.02,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#1F4147",
+        "ratio": 8.57,
         "pass": true
       }
     ]
   },
   "output_charset": {
-    "pure_ascii": false,
-    "non_ascii_from_their_own_text": [
-      {
-        "codepoint": "U+00B7",
-        "count": 1,
-        "in_sourced_claim": true,
-        "char": "·"
-      }
-    ],
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
     "non_ascii_unsourced_blocking": []
   },
   "beacon": {
@@ -236,39 +289,30 @@
   "claims": [
     {
       "text": "Hangry's",
-      "fetched_at": "2026-08-07T16:08:59.855Z"
+      "fetched_at": "2026-08-07T23:04:57.404Z"
     },
     {
       "text": "(757) 619-7277",
-      "fetched_at": "2026-08-07T16:08:59.855Z"
+      "fetched_at": "2026-08-07T23:04:57.404Z"
     },
     {
-      "text": "&#104;&#97;n&#103;ry&#115;v&#98;&#64;gm&#97;&#105;&#108;&#46;&#99;o&#109;",
-      "fetched_at": "2026-08-07T16:08:59.855Z"
+      "text": "&#104;&#97;&#110;&#103;r&#121;sv&#98;&#64;g&#109;ail.com",
+      "fetched_at": "2026-08-07T23:04:57.404Z"
     },
     {
       "text": "Are You Feeling Hangry? han, gry adj. A state of irrational anger as a result",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:08:59.855Z",
+      "fetched_at": "2026-08-07T23:04:57.404Z",
       "verbatim_source_text": "Are You Feeling Hangry? han·gry adj. A state of irrational anger as a result",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
       "text": "Are You Feeling Hangry? han",
-      "fetched_at": "2026-08-07T16:08:59.855Z"
+      "fetched_at": "2026-08-07T23:04:57.404Z"
     },
     {
       "text": "gry adj. A state of irrational anger as a result",
-      "fetched_at": "2026-08-07T16:08:59.855Z"
-    },
-    {
-      "text": "Are You Feeling Hangry? han·gry adj. A state of irrational anger as a result",
-      "source": "https://hangrysvb.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:08:59.855Z",
-      "relevance": [
-        "service_vocab:feeling,hangry,state,irrational"
-      ]
+      "fetched_at": "2026-08-07T23:04:57.404Z"
     }
   ],
   "unresolved": [
@@ -277,23 +321,23 @@
   "link_preview": {
     "og_title": "Hangry&#39;s",
     "og_url": "https://vendly-demos.vercel.app/hangry-s/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/hangry-s/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "14496aefaa5b2b6ebb0622edc60ee080d36078e771dc18a89b7b2b17f5c295eb",
+    "image_px": "756x756",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 10,
     "rejected": 0,
-    "photographs": 0,
+    "photographs": 10,
     "logo_found": false
   },
   "rejected_assets": [],
@@ -301,9 +345,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

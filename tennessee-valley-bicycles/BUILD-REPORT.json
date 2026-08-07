@@ -1,0 +1,399 @@
+{
+  "niche": "bicycle",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Tennessee Valley Bicycles",
+  "facebook": null,
+  "slug": "tennessee-valley-bicycles",
+  "built_at": "2026-08-07T22:46:37.639Z",
+  "elapsed_ms": 4339,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 444
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 445
+    },
+    {
+      "step": "assets",
+      "at_ms": 3754
+    },
+    {
+      "step": "template",
+      "at_ms": 3889
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 4243
+    },
+    {
+      "step": "layout",
+      "at_ms": 4243
+    },
+    {
+      "step": "render",
+      "at_ms": 4244
+    },
+    {
+      "step": "audit",
+      "at_ms": 4246
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 4339
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 19,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "services",
+      "trust",
+      "contact",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Call to Book a Fit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "bike-shop",
+      "file": "bike-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "bike-shop",
+      "sources": [
+        "https://www.contenderbicycles.com/",
+        "https://www.bicyclehabitat.com/",
+        "https://www.velofix.com/",
+        "https://www.broadwaybicycleschool.com/",
+        "https://www.velovalets.com/"
+      ],
+      "rationale": "The research names reusing an auto trades template with bike words swapped in as a hard fail, and the reason is structural: Contender Bicycles carries sales, service and fit as peers because this visitor arrives with one of five different jobs rather than one broken thing, so services sits at position two as distinct named cards with Bicycle Habitat specific tune levels and builds rather than one vague we-fix-bikes line, and the single CTA picks the FIT, the appointment with the highest value and the one no trades shell offers; Velo Valets supplies the countable trust block (brands carried, fitting rate, rentals, street address) and steal one gives the hero a real full-bleed bicycle photograph because a grid of sub-25KB thumbnails is the named failure mode.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "trust",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#EB1319",
+      "b": "#5E080A",
+      "c": "#EB1319",
+      "brand": "#ED1F25",
+      "mist": "#F9F3F4",
+      "ink": "#161A11"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#ED1F25",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#ED1F25",
+            "after": "#EB1319",
+            "ratio": 4.53,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#ED1F25",
+            "after": "#EB1319",
+            "ratio": 4.53,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#5E080A",
+            "after": "#5E080A",
+            "ratio": 13.86,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#5E080A",
+            "after": "#5E080A",
+            "ratio": 10.77,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#EB1319",
+            "ratio": 4.53,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#EB1319",
+            "ratio": 4.53,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#5E080A",
+            "ratio": 13.86,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#5E080A",
+            "ratio": 10.77,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#161A11",
+            "bg_mist": "#F9F3F4",
+            "ratio": 16.1,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#5E080A",
+            "bg_mist": "#F9F3F4",
+            "ratio": 12.64,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "gallery_asset_classified_graphic"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#EB1319",
+        "ratio": 4.53,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#EB1319",
+        "ratio": 4.53,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#5E080A",
+        "ratio": 13.86,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#5E080A",
+        "ratio": 10.77,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 7,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "tennessee-valley-bicycles",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Tennessee Valley Bicycles",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "(865) 540-9979",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "info@tnvalleybikes.com",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "210 W Magnolia Ave, Knoxville, TN, Tennessee",
+      "source": "https://www.facebook.com/TNValleyBicycles/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "TVB is Knoxville's go-to bike shop, here to help you get the most out of cycling. Shop our selection online, schedule a service appointment, or visit us!",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:46:33.744Z",
+      "verbatim_source_text": "TVB is Knoxville’s go-to bike shop, here to help you get the most out of cycling. Shop our selection online, schedule a service appointment, or visit us!",
+      "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
+    },
+    {
+      "text": "Page · Outdoor & Sporting Goods Company",
+      "source": "https://www.facebook.com/TNValleyBicycles/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "TVB is Knoxville",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "s go-to bike shop",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "schedule a service appointment",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "or visit us!",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    },
+    {
+      "text": "94% recommend (56 Reviews)",
+      "source": "https://www.facebook.com/TNValleyBicycles/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T22:46:33.744Z"
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Closed now)"
+  ],
+  "link_preview": {
+    "og_title": "Tennessee Valley Bicycles | TN",
+    "og_url": "https://vendly-demos.vercel.app/tennessee-valley-bicycles/",
+    "og_image": "https://vendly-demos.vercel.app/tennessee-valley-bicycles/assets/site-9.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "41279ca14b3c0015c4ea475132fcb835ebe3b8fa15bffa00d46e4e569ea2e150",
+    "image_px": "1920x1000",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 20,
+    "rejected": 3,
+    "photographs": 19,
+    "logo_found": true
+  },
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-7"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-8"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-11"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "bicycle"
+  },
+  "fill_tokens": 22
+}

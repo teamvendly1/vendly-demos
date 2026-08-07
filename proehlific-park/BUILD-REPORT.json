@@ -1,42 +1,47 @@
 {
+  "niche": "sports_centre",
   "schema": "vendly.autodemo.build/1",
   "business": "Proehlific Park",
   "facebook": null,
   "slug": "proehlific-park",
-  "built_at": "2026-08-07T15:51:38.742Z",
-  "elapsed_ms": 2175,
+  "built_at": "2026-08-07T22:54:22.444Z",
+  "elapsed_ms": 2874,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 355
+      "at_ms": 287
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 355
+      "at_ms": 288
     },
     {
       "step": "assets",
-      "at_ms": 1708
+      "at_ms": 2287
+    },
+    {
+      "step": "template",
+      "at_ms": 2403
     },
     {
       "step": "brand_palette",
-      "at_ms": 2060
+      "at_ms": 2772
     },
     {
       "step": "layout",
-      "at_ms": 2060
+      "at_ms": 2772
     },
     {
       "step": "render",
-      "at_ms": 2061
+      "at_ms": 2773
     },
     {
       "step": "audit",
-      "at_ms": 2062
+      "at_ms": 2775
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2175
+      "at_ms": 2874
     }
   ],
   "audit": {
@@ -44,34 +49,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "fitness",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 9,
+      "trade_key": "fitness",
+      "photo_count": 13,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "visual trade (fitness) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
       "words",
-      "gallery"
+      "gallery",
+      "trust",
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Free First Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "fitness",
+      "file": "fitness.js",
+      "resolved_by": "family",
+      "resolved_from": "fitness",
+      "sources": [
+        "https://www.ovcrossfit.com",
+        "https://www.lumberjack-athletics.com",
+        "https://www.theschoolofpilates.com",
+        "https://www.primeboxingusa.com",
+        "https://www.gracieelkgrove.com"
+      ],
+      "rationale": "Five of five winners lead with a FREE FIRST VISIT and not one leads with Join, Sign Up, or a price - Lumberjack repeats the identical Book a Free Intro at least four times down one page with beginner testimonials beside it, and OV CrossFit publishes three numbered onboarding steps so the visitor knows exactly what happens after the click - so this template makes the free first visit the only primary action, gives the services slot to those numbered steps, and lifts beginner-named social proof to third. A demo carries no transformation grid, no client image, no trial offer or price the business does not already publish, no result or health claim, and no hours it did not read on their live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "words",
+            "gallery",
+            "trust",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
       "a": "#2379C9",
       "b": "#0F3457",
       "c": "#2379C9",
       "brand": "#6CABE5",
       "mist": "#F3F6F9",
-      "ink": "#12181D"
+      "ink": "#15161F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -161,9 +212,9 @@
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
+            "value": "#15161F",
             "bg_mist": "#F3F6F9",
-            "ratio": 16.49,
+            "ratio": 16.6,
             "pass": true
           },
           {
@@ -174,7 +225,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -220,7 +272,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 10,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,51 +292,42 @@
   "claims": [
     {
       "text": "Proehlific Park",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "(336) 665-5233",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "info@proehlificpark.com",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "4517 Jessup Grove Rd, Greensboro, NC",
       "source": "https://www.facebook.com/ProehlificPark/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "Page · Sports & Recreation Venue",
       "source": "https://www.facebook.com/ProehlificPark/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "Our Fitness Training",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     },
     {
       "text": "90% recommend (893 Reviews)",
       "source": "https://www.facebook.com/ProehlificPark/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T15:51:36.921Z"
-    },
-    {
-      "text": "Our Fitness Training, Sports Teams and Camps and Youth Fitness Training are excellent choices for good health, weight loss and a great workout. Learn more about our fitness programs in Greensboro now!",
-      "source": "https://proehlificpark.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:51:36.921Z",
-      "relevance": [
-        "service_vocab:sports,fitness,training,teams"
-      ]
+      "fetched_at": "2026-08-07T22:54:19.857Z"
     }
   ],
   "unresolved": [
@@ -293,33 +336,95 @@
   "link_preview": {
     "og_title": "Proehlific Park | Greensboro",
     "og_url": "https://vendly-demos.vercel.app/proehlific-park/",
-    "og_image": "https://vendly-demos.vercel.app/proehlific-park/assets/586836184_1688370282464820.jpg",
+    "og_image": "https://vendly-demos.vercel.app/proehlific-park/assets/site-0.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
-    "image_is_page_lead_image": false,
-    "image_sha256": "a35942cb5bc02dd5e19b021a07ef7b7eaa0f578391b58ec38ad4aa41b06ee586",
-    "image_px": "2048x1536",
+    "image_is_page_lead_image": true,
+    "image_sha256": "919e41b070751297b11937bd5b243416b3adf310dea5f9459ff8954c9080ac69",
+    "image_px": "1000x667",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
-    "meets_facebook_recommended_1200x630": true,
+    "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "large",
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 10,
-    "rejected": 0,
-    "photographs": 9,
+    "accepted": 14,
+    "rejected": 12,
+    "photographs": 13,
     "logo_found": true
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "1df5776e98c22ec47df972459b0baf9f4f1cf4cdc28f095e33fc31a46f9a2ecc",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "1df5776e98c22ec47df972459b0baf9f4f1cf4cdc28f095e33fc31a46f9a2ecc",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "1df5776e98c22ec47df972459b0baf9f4f1cf4cdc28f095e33fc31a46f9a2ecc",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0350b4fedc764bbcaca6b7d70285e3c10f17db719f957f975fa9dbefaec5bfcf",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "29c424114b034cb06bfb5d564a41a9a9060fb90fe5f9bdc28946c27126f164a8",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "656ecaa014ac300a357e0bb4e6e590491b17d0a614fde2a87091e7003feb586a",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "dd0a0e5a75e42bf4c0c43a9157fa56e69f00f8f4f205f4202f19118effe96bc5",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "8609b67ed6e3714df1775438cfe408b755fbc852604e057301256cb2b7cb294a",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "f9636e0cd634495e2235715c1b14fdfb263ba4ef3258d4a76cb8d4764661befa",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "367b91dfcb2d73e39d0c55f613129cf44e0c50c456e854c7e30c9abd95b6649b",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7913c50d7413fc2fb61b09883a603b019f8b91dc9b7744d7fe82d56cb551ddcc",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "48892f1fcb7778b999d59c022bac84aed7506c0da9d5745b422c635312fbc090",
+      "media_id": "site-15"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": true,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "sports_centre"
   },
   "fill_tokens": 22
 }

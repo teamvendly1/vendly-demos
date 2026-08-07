@@ -2,8 +2,126 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Key West Hat Co.",
-  "built_at": "2026-08-07T18:10:15.362Z",
+  "built_at": "2026-08-07T23:03:32.576Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
-  "rejected": []
+  "accepted": [
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "e8efc8c9af9f826e2511e834b2dea3d4faf1793d400841275f8cc2ce0a8917ea",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 353311,
+      "remote_url": "https://www.keywesthatcompany.com/image/data/banner/banner-001-key-west-hat-co.jpg",
+      "remote_url_as_found": "https://www.keywesthatcompany.com/image/data/banner/banner-001-key-west-hat-co.jpg",
+      "source_url": "https://www.keywesthatcompany.com",
+      "fetched_at": "2026-08-07T23:03:31.501Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1140,
+        "height": 420,
+        "distinct_colors": 114,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-2.jpg",
+      "rel": "assets/site-2.jpg",
+      "sha256": "885ec76b287b7c3dd940577d3e8969a4d469c4b705589e363aa51a6d241287a5",
+      "media_id": "site-2",
+      "format": "jpg",
+      "bytes": 213348,
+      "remote_url": "https://www.keywesthatcompany.com/image/data/banner/banner-005-scala-p219.jpg",
+      "remote_url_as_found": "https://www.keywesthatcompany.com/image/data/banner/banner-005-scala-p219.jpg",
+      "source_url": "https://www.keywesthatcompany.com",
+      "fetched_at": "2026-08-07T23:03:31.727Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1140,
+        "height": 420,
+        "distinct_colors": 80,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-3.png",
+      "rel": "assets/site-3.png",
+      "sha256": "409c0b5d3746d330e1ff6cabbde1967317bf3a7d046e03f69edf9f9d25ef12b4",
+      "media_id": "site-3",
+      "format": "png",
+      "bytes": 1026036,
+      "remote_url": "https://www.keywesthatcompany.com/image/data/banner/lr752banner.png",
+      "remote_url_as_found": "https://www.keywesthatcompany.com/image/data/banner/lr752banner.png",
+      "source_url": "https://www.keywesthatcompany.com",
+      "fetched_at": "2026-08-07T23:03:31.817Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1200,
+        "height": 800,
+        "distinct_colors": 84,
+        "pct_near_white": 13.9,
+        "pct_border_white": 57.9
+      }
+    },
+    {
+      "file": "site-4.png",
+      "rel": "assets/site-4.png",
+      "sha256": "76736ad900954dab0a89c6207fd9fda4c65c6a350c52a37e9e2ae814ca27feb1",
+      "media_id": "site-4",
+      "format": "png",
+      "bytes": 558631,
+      "remote_url": "https://www.keywesthatcompany.com/image/data/banner/wf569lif2.png",
+      "remote_url_as_found": "https://www.keywesthatcompany.com/image/data/banner/wf569lif2.png",
+      "source_url": "https://www.keywesthatcompany.com",
+      "fetched_at": "2026-08-07T23:03:31.872Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1140,
+        "height": 420,
+        "distinct_colors": 138,
+        "pct_near_white": 24.1,
+        "pct_border_white": 60.3
+      }
+    },
+    {
+      "file": "site-5.jpg",
+      "rel": "assets/site-5.jpg",
+      "sha256": "0e4dbb3ca49e0234f993811c1f4d1a6dd6ac7e95612b47260a3734151ba31a23",
+      "media_id": "site-5",
+      "format": "jpg",
+      "bytes": 320528,
+      "remote_url": "https://www.keywesthatcompany.com/image/data/banner/banner-003-tilley.jpg",
+      "remote_url_as_found": "https://www.keywesthatcompany.com/image/data/banner/banner-003-tilley.jpg",
+      "source_url": "https://www.keywesthatcompany.com",
+      "fetched_at": "2026-08-07T23:03:31.907Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1140,
+        "height": 420,
+        "distinct_colors": 81,
+        "pct_near_white": 0.3,
+        "pct_border_white": 1.7
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://www.keywesthatcompany.com/image/cache/data/brand/stacy%20adams-80x80.jpg",
+      "media_id": "site-0",
+      "source_url": "https://www.keywesthatcompany.com",
+      "sha256": "87b3b5899fe7aed5050b62292025fb4337aca6814771a24993e8ccd1b7066598",
+      "reason": "too_small",
+      "bytes": 2877
+    },
+    {
+      "url": "https://www.keywesthatcompany.com/image/cache/data/brand/stacy%20adams-160x160.jpg",
+      "media_id": "site-6",
+      "source_url": "https://www.keywesthatcompany.com",
+      "sha256": "cc972359bf712ba364580226832e840e6c7211b28876fcb5db2005cddb374172",
+      "reason": "too_small",
+      "bytes": 6493
+    }
+  ]
 }

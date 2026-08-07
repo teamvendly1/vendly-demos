@@ -1,0 +1,351 @@
+{
+  "niche": "theatre",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Synchronicity Theatre",
+  "facebook": null,
+  "slug": "synchronicity-theatre",
+  "built_at": "2026-08-07T22:41:55.791Z",
+  "elapsed_ms": 3561,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 786
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 787
+    },
+    {
+      "step": "assets",
+      "at_ms": 2838
+    },
+    {
+      "step": "template",
+      "at_ms": 2869
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2899
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3461
+    },
+    {
+      "step": "layout",
+      "at_ms": 3461
+    },
+    {
+      "step": "render",
+      "at_ms": 3462
+    },
+    {
+      "step": "audit",
+      "at_ms": 3464
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3561
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "events-venue",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "events-venue",
+      "photo_count": 15,
+      "has_reviews": false,
+      "branch": "visual trade (events-venue) with 15 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "services",
+      "contact",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Check Available Dates",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "events-venue",
+      "file": "events-venue.js",
+      "resolved_by": "family",
+      "resolved_from": "events-venue",
+      "sources": [
+        "https://mountainhouseestate.com/",
+        "https://www.tinroofbarn.com/",
+        "https://www.castlefarms.com/",
+        "https://pippinhillfarm.com/",
+        "https://www.wychmere.com/"
+      ],
+      "rationale": "The conversion is an enquiry gated on two facts only, is my date free and is this in my budget, so Mountain House Estate ships availability as a labelled button rather than a sentence and four of the five winners give price its own named destination without publishing a number, which is why the single CTA is an availability anchor pointing at a short enquiry block carrying a date field and why the price route lives in services beside Castle Farms named spaces with their capacities; the gallery is pushed BELOW the enquiry and the testimonials below that, inverting the generic template the research says gets it exactly backwards by leading with a photo carousel and ending with a bare Contact link, since social proof supports the decision while date and price create it.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#E82012",
+      "b": "#5E0D08",
+      "c": "#E82012",
+      "brand": "#EE3124",
+      "mist": "#F9F4F3",
+      "ink": "#15141F"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#EE3124",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EE3124",
+            "after": "#E82012",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EE3124",
+            "after": "#E82012",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#5E0D08",
+            "after": "#5E0D08",
+            "ratio": 13.66,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#5E0D08",
+            "after": "#5E0D08",
+            "ratio": 10.62,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#E82012",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#E82012",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#5E0D08",
+            "ratio": 13.66,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#5E0D08",
+            "ratio": 10.62,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#15141F",
+            "bg_mist": "#F9F4F3",
+            "ratio": 16.72,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#5E0D08",
+            "bg_mist": "#F9F4F3",
+            "ratio": 12.53,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://synchrotheatre.com/static/images/logo-SYN-nav.69de31d80959.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#E82012",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#E82012",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#5E0D08",
+        "ratio": 13.66,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#5E0D08",
+        "ratio": 10.62,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "synchronicity-theatre",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Synchronicity Theatre",
+      "fetched_at": "2026-08-07T22:41:53.016Z"
+    },
+    {
+      "text": "(404) 484-8636",
+      "fetched_at": "2026-08-07T22:41:53.016Z"
+    },
+    {
+      "text": "info@synchrotheatre.com",
+      "fetched_at": "2026-08-07T22:41:53.016Z"
+    },
+    {
+      "text": "",
+      "source": "https://synchrotheatre.com/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:41:53.016Z"
+    }
+  ],
+  "unresolved": [
+    "address",
+    "about",
+    "post_text"
+  ],
+  "link_preview": {
+    "og_title": "Synchronicity Theatre",
+    "og_url": "https://vendly-demos.vercel.app/synchronicity-theatre/",
+    "og_image": "https://vendly-demos.vercel.app/synchronicity-theatre/assets/site-1.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "75f9100e5f4b0e61dba872b7c35a254f8c6e58cb73ddb976da2fd83560e148af",
+    "image_px": "600x400",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 15,
+    "rejected": 1,
+    "photographs": 15,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "a8d970bb6c7e7a07071ef3c59a8b9d1ec8c45a9bc972cbbce3c644eb4e245e1a",
+      "media_id": "site-0"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": false,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "theatre"
+  },
+  "fill_tokens": 15
+}

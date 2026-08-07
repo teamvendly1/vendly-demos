@@ -1,42 +1,47 @@
 {
+  "niche": "private_investigator",
   "schema": "vendly.autodemo.build/1",
   "business": "Crossroads Investigations",
   "facebook": null,
   "slug": "crossroads-investigations",
-  "built_at": "2026-08-07T15:23:28.530Z",
-  "elapsed_ms": 245,
+  "built_at": "2026-08-07T22:39:45.648Z",
+  "elapsed_ms": 1824,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 150
+      "at_ms": 98
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 150
+      "at_ms": 98
     },
     {
       "step": "assets",
-      "at_ms": 151
+      "at_ms": 1283
+    },
+    {
+      "step": "template",
+      "at_ms": 1365
     },
     {
       "step": "brand_palette",
-      "at_ms": 153
+      "at_ms": 1733
     },
     {
       "step": "layout",
-      "at_ms": 153
+      "at_ms": 1733
     },
     {
       "step": "render",
-      "at_ms": 154
+      "at_ms": 1734
     },
     {
       "step": "audit",
-      "at_ms": 155
+      "at_ms": 1735
     },
     {
       "step": "beacon_probe",
-      "at_ms": 245
+      "at_ms": 1824
     }
   ],
   "audit": {
@@ -44,41 +49,84 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "lawyer",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "lawyer",
+      "photo_count": 2,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (2): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "family",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#92722A",
+      "b": "#4F3E17",
+      "c": "#92722A",
+      "brand": "#EADAB6",
+      "mist": "#F9F7F3",
+      "ink": "#141E19"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#EADAB6",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -87,29 +135,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#EADAB6",
+            "after": "#92722A",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#EADAB6",
+            "after": "#92722A",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4F3E17",
+            "after": "#4F3E17",
+            "ratio": 10.33,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -117,9 +165,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4F3E17",
+            "after": "#4F3E17",
+            "ratio": 8.02,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -129,52 +177,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#92722A",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#92722A",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4F3E17",
+            "ratio": 10.33,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4F3E17",
+            "ratio": 8.02,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#141E19",
+            "bg_mist": "#F9F7F3",
+            "ratio": 15.96,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4F3E17",
+            "bg_mist": "#F9F7F3",
+            "ratio": 9.65,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -185,32 +234,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#92722A",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#92722A",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4F3E17",
+        "ratio": 10.33,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4F3E17",
+        "ratio": 8.02,
         "pass": true
       }
     ]
@@ -233,30 +282,20 @@
   "claims": [
     {
       "text": "Crossroads Investigations",
-      "fetched_at": "2026-08-07T15:23:28.435Z"
+      "fetched_at": "2026-08-07T22:39:43.921Z"
     },
     {
       "text": "(866) 976-2371",
-      "fetched_at": "2026-08-07T15:23:28.435Z"
+      "fetched_at": "2026-08-07T22:39:43.921Z"
     },
     {
       "text": "info@xinvestigations.com",
-      "fetched_at": "2026-08-07T15:23:28.435Z"
+      "fetched_at": "2026-08-07T22:39:43.921Z"
     },
     {
       "text": "Crossroads Investigations is a full-service national private investigation agency with global capabilities operated by a former Central Intelligence Agency (CIA) officer. Named Top Firm by South Florida by the Daily Business Review.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:23:28.435Z"
-    },
-    {
-      "text": "Crossroads Investigations is a full-service national private investigation agency with global capabilities operated by a former Central Intelligence Agency (CIA) officer. Named Top Firm by South Florida by the Daily Business Review.",
-      "source": "https://Xinvestigations.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:23:28.435Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:crossroads,investigations,full,national"
-      ]
+      "fetched_at": "2026-08-07T22:39:43.921Z"
     }
   ],
   "unresolved": [
@@ -265,26 +304,81 @@
   "link_preview": {
     "og_title": "Crossroads Investigations",
     "og_url": "https://vendly-demos.vercel.app/crossroads-investigations/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/crossroads-investigations/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "813438e005725dedd6ec729af14a1f7863d0632c32220357640aa04973fe1023",
+    "image_px": "1366x768",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 5,
+    "rejected": 12,
+    "photographs": 2,
+    "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "019f6389a7e4a79fa30e70174dc8ca5b54517d9a74affd24d046021ea34df4fa",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "875645732a8499a1d9cde2d9a674d26334c662a2a6c3d8b606e3ab6b8785b123",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ef0a34804ed14ccee11bba9e65c43d87efe0e77fda18c2d5d13eeef75762e9b3",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "52f7cca0ac4d58a3b67ed2df1abfcaa457e373a2dc2110cddb89ed42326a2902",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0fae5faf86aba718f37d0482b6f67d2b155f982681fb51c302fc060e527e1bfc",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "df704f7efae5bd5adcf1a9e49dd5abd866b6e8bd772cf3d2cf8ffee3ff4b25dc",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "69e7fefbeb0d716c95cbe17ba8cf614e110a393136d1d1ba26c66cb50a0ae351",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "f741aa97c47ca462dcbcf848b6ca735840a446be30a95bcf2d436d8b8d47eb79",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e800c647fb538f09743dc7810fade2889a006a49344b4780cbff60857d25e2f9",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "561d72b75111ccaeb70ae0e21268ede7040a58bbf2d8e182026cf802748cb2e2",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "36ed80c3a5ab7bc6c4be8f601b3c3cb0e60517d6a86b061e8aacde052c359c60",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -295,9 +389,10 @@
     "hero": true,
     "trust_strip": false,
     "services": false,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "private_investigator"
   },
-  "fill_tokens": 4
+  "fill_tokens": 8
 }

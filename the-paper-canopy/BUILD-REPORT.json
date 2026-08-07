@@ -1,38 +1,51 @@
 {
+  "niche": "stationery",
   "schema": "vendly.autodemo.build/1",
   "business": "The Paper Canopy",
   "facebook": null,
   "slug": "the-paper-canopy",
-  "built_at": "2026-08-07T16:09:07.113Z",
-  "elapsed_ms": 950,
+  "built_at": "2026-08-07T23:05:18.819Z",
+  "elapsed_ms": 4008,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 860
+      "at_ms": 389
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 389
     },
     {
       "step": "assets",
-      "at_ms": 862
+      "at_ms": 3313
+    },
+    {
+      "step": "template",
+      "at_ms": 3489
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 3533
     },
     {
       "step": "brand_palette",
-      "at_ms": 863
+      "at_ms": 3890
     },
     {
       "step": "layout",
-      "at_ms": 863
+      "at_ms": 3891
     },
     {
       "step": "render",
-      "at_ms": 863
+      "at_ms": 3892
     },
     {
       "step": "audit",
-      "at_ms": 865
+      "at_ms": 3893
     },
     {
       "step": "beacon_probe",
-      "at_ms": 950
+      "at_ms": 4008
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "retail-shop",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "retail-shop",
+      "photo_count": 15,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (retail-shop) with 15 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Reserve or Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "retail-shop",
+      "file": "retail-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "retail-shop",
+      "sources": [
+        "https://www.scottsflowersnyc.com/",
+        "https://www.nativepoppy.com/",
+        "https://www.greenapplebooks.com/",
+        "https://www.catbirdnyc.com/",
+        "https://ballardblossom.com/"
+      ],
+      "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#DC00AE",
+      "b": "#5E084C",
+      "c": "#DC00AE",
+      "brand": "#EB00B9",
+      "mist": "#F9F3F8",
+      "ink": "#1A1810"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#EB00B9",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#EB00B9",
+            "after": "#DC00AE",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#EB00B9",
+            "after": "#DC00AE",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5E084C",
+            "after": "#5E084C",
+            "ratio": 13,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5E084C",
+            "after": "#5E084C",
+            "ratio": 10.11,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#DC00AE",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#DC00AE",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5E084C",
+            "ratio": 13,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5E084C",
+            "ratio": 10.11,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1810",
+            "bg_mist": "#F9F3F8",
+            "ratio": 16.25,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5E084C",
+            "bg_mist": "#F9F3F8",
+            "ratio": 11.89,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.thepapercanopy.com/cdn/shop/files/Logo_Sticker_a5b4505d-9a06-4b42-a65a-2d000a477751_1050x.jpg?v=1677794105"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#DC00AE",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#DC00AE",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5E084C",
+        "ratio": 13,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5E084C",
+        "ratio": 10.11,
         "pass": true
       }
     ]
@@ -229,38 +289,28 @@
   "claims": [
     {
       "text": "The Paper Canopy",
-      "fetched_at": "2026-08-07T16:09:07.023Z"
+      "fetched_at": "2026-08-07T23:05:15.200Z"
     },
     {
       "text": "(843) 974-5252",
-      "fetched_at": "2026-08-07T16:09:07.023Z"
+      "fetched_at": "2026-08-07T23:05:15.200Z"
     },
     {
       "text": "Carefully curated greeting cards, art supplies, and stationery are all under one roof at The Paper Canopy.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:09:07.023Z"
+      "fetched_at": "2026-08-07T23:05:15.200Z"
     },
     {
       "text": "Carefully curated greeting cards",
-      "fetched_at": "2026-08-07T16:09:07.023Z"
+      "fetched_at": "2026-08-07T23:05:15.200Z"
     },
     {
       "text": "art supplies",
-      "fetched_at": "2026-08-07T16:09:07.023Z"
+      "fetched_at": "2026-08-07T23:05:15.200Z"
     },
     {
       "text": "and stationery are all under one roof at The Paper Canopy",
-      "fetched_at": "2026-08-07T16:09:07.023Z"
-    },
-    {
-      "text": "Carefully curated greeting cards, art supplies, and stationery are all under one roof at The Paper Canopy.",
-      "source": "https://www.thepapercanopy.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:09:07.023Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:carefully,curated,greeting,cards"
-      ]
+      "fetched_at": "2026-08-07T23:05:15.200Z"
     }
   ],
   "unresolved": [
@@ -269,33 +319,40 @@
   "link_preview": {
     "og_title": "The Paper Canopy",
     "og_url": "https://vendly-demos.vercel.app/the-paper-canopy/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/the-paper-canopy/assets/site-4.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "d2afd8778b94e02f4c57fb96b0da59bf855ec738f69846cef2460254f6a2d757",
+    "image_px": "3024x4032",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 15,
+    "rejected": 1,
+    "photographs": 15,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "dcb6d9e5cd9c8ad79f661943a2dda1d69e56702a0593745e97aff804d61cbb29",
+      "media_id": "site-2"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "stationery"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

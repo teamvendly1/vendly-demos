@@ -1,38 +1,51 @@
 {
+  "niche": "plumbing",
   "schema": "vendly.autodemo.build/1",
   "business": "Tennessee Standard Plumbing and Drain",
   "facebook": null,
   "slug": "tennessee-standard-plumbing-and-drain",
-  "built_at": "2026-08-07T16:11:54.165Z",
-  "elapsed_ms": 756,
+  "built_at": "2026-08-07T23:09:56.654Z",
+  "elapsed_ms": 1920,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 650
+      "at_ms": 271
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 271
     },
     {
       "step": "assets",
-      "at_ms": 652
+      "at_ms": 1306
+    },
+    {
+      "step": "template",
+      "at_ms": 1421
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1475
     },
     {
       "step": "brand_palette",
-      "at_ms": 654
+      "at_ms": 1827
     },
     {
       "step": "layout",
-      "at_ms": 654
+      "at_ms": 1827
     },
     {
       "step": "render",
-      "at_ms": 654
+      "at_ms": 1828
     },
     {
       "step": "audit",
-      "at_ms": 656
+      "at_ms": 1830
     },
     {
       "step": "beacon_probe",
-      "at_ms": 756
+      "at_ms": 1920
     }
   ],
   "audit": {
@@ -46,35 +59,81 @@
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
       "trade_key": "hvac",
-      "photo_count": 0,
+      "photo_count": 2,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (2): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Request a Roof Inspection",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "roofing",
+      "file": "roofing.js",
+      "resolved_by": "family",
+      "resolved_from": "roofing",
+      "sources": [
+        "https://burginroofing.com",
+        "https://www.lindholmroofing.com",
+        "https://texastraditionsroofing.com",
+        "https://clevelandroofs.com",
+        "https://janneyroofing.com"
+      ],
+      "rationale": "Burgin and Lindholm both put one quote ask directly under the hero headline and a tappable phone number in the top nav, because a roof buyer is triaging a failure on a phone, so the page leads with a readable panel and one repeated inspection CTA rather than two equal buttons; Janney supplies the gallery mechanic (filtered by the roof material the visitor actually has) and Burgin the countable trust block (real numbers and printed licence numbers, never the adjective). MAPPING SEAM, flagged not silent: this family also absorbs concrete, remodeling and custom_porch_builder, and for a decorative patio or driveway contractor this urgent phone-first shape is wrong - that buyer is unhurried and visual, so use the landscaping template (discovery-call CTA, portfolio-led order) when the lead sells patios and driveways, per the note in landscaping.md. HVAC and plumbing pull the other way and lean on the phone even harder than roofing does.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#1B56A9",
-      "b": "#12315C",
-      "c": "#C8202E",
-      "brand": "#C8202E",
-      "mist": "#F4F7FB",
-      "ink": "#101724"
+      "a": "#BC2934",
+      "b": "#541217",
+      "c": "#BC2934",
+      "brand": "#BC2934",
+      "mist": "#F9F3F4",
+      "ink": "#161C24"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#BC2934",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#C8202E",
-            "after": "#C8202E",
-            "ratio": 5.67,
+            "before": "#BC2934",
+            "after": "#BC2934",
+            "ratio": 5.99,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#1B56A9",
-            "after": "#1B56A9",
-            "ratio": 7.12,
+            "before": "#BC2934",
+            "after": "#BC2934",
+            "ratio": 5.99,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#12315C",
-            "after": "#12315C",
-            "ratio": 12.97,
+            "before": "#541217",
+            "after": "#541217",
+            "ratio": 14.23,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#12315C",
-            "after": "#12315C",
-            "ratio": 10.08,
+            "before": "#541217",
+            "after": "#541217",
+            "ratio": 11.06,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#C8202E",
-            "ratio": 5.67,
+            "final": "#BC2934",
+            "ratio": 5.99,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#1B56A9",
-            "ratio": 7.12,
+            "final": "#BC2934",
+            "ratio": 5.99,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#12315C",
-            "ratio": 12.97,
+            "final": "#541217",
+            "ratio": 14.23,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#12315C",
-            "ratio": 10.08,
+            "final": "#541217",
+            "ratio": 11.06,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#101724",
-            "bg_mist": "#F4F7FB",
-            "ratio": 16.7,
+            "value": "#161C24",
+            "bg_mist": "#F9F3F4",
+            "ratio": 15.63,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#12315C",
-            "bg_mist": "#F4F7FB",
-            "ratio": 12.07,
+            "value": "#541217",
+            "bg_mist": "#F9F3F4",
+            "ratio": 12.98,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.tnstandard.com/wp-content/uploads/tennessee-standard-web-transparent_logo-color.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#C8202E",
-        "ratio": 5.67,
+        "final": "#BC2934",
+        "ratio": 5.99,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#1B56A9",
-        "ratio": 7.12,
+        "final": "#BC2934",
+        "ratio": 5.99,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#12315C",
-        "ratio": 12.97,
+        "final": "#541217",
+        "ratio": 14.23,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#12315C",
-        "ratio": 10.08,
+        "final": "#541217",
+        "ratio": 11.06,
         "pass": true
       }
     ]
@@ -229,38 +289,28 @@
   "claims": [
     {
       "text": "Tennessee Standard Plumbing and Drain",
-      "fetched_at": "2026-08-07T16:11:54.059Z"
+      "fetched_at": "2026-08-07T23:09:55.004Z"
     },
     {
       "text": "(865) 352-9003",
-      "fetched_at": "2026-08-07T16:11:54.059Z"
+      "fetched_at": "2026-08-07T23:09:55.004Z"
     },
     {
       "text": "service@tnstandard.com",
-      "fetched_at": "2026-08-07T16:11:54.059Z"
+      "fetched_at": "2026-08-07T23:09:55.004Z"
     },
     {
       "text": "Tennessee Standard Plumbing is the premier plumbing company in the Greater Knoxville Area. We specialize in residential and commercial plumbing services with a 5.0 rating and over 2,000 Google reviews.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:11:54.059Z"
+      "fetched_at": "2026-08-07T23:09:55.004Z"
     },
     {
       "text": "Plumber",
-      "fetched_at": "2026-08-07T16:11:54.059Z"
+      "fetched_at": "2026-08-07T23:09:55.004Z"
     },
     {
       "text": "000 Google reviews",
-      "fetched_at": "2026-08-07T16:11:54.059Z"
-    },
-    {
-      "text": "Tennessee Standard Plumbing is the premier plumbing company in the Greater Knoxville Area. We specialize in residential and commercial plumbing services with a 5.0 rating and over 2,000 Google reviews.",
-      "source": "https://www.tnstandard.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:11:54.059Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:tennessee,standard,plumbing,premier"
-      ]
+      "fetched_at": "2026-08-07T23:09:55.004Z"
     }
   ],
   "unresolved": [
@@ -269,33 +319,105 @@
   "link_preview": {
     "og_title": "Tennessee Standard Plumbing and Drain",
     "og_url": "https://vendly-demos.vercel.app/tennessee-standard-plumbing-and-drain/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/tennessee-standard-plumbing-and-drain/assets/site-11.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "image_sha256": "b689b8b686980b24a7d779ee253a7549425870cc30f87a906718eca8f827d44f",
+    "image_px": "738x720",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 2,
+    "rejected": 14,
+    "photographs": 2,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "9bd9f1a1f6019dae6f6bbfc34ae0963f230a9a105ff6e10c50bd18ee7b025f42",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "28399c2da10a3d894c3bd06732d5ceadab12db890436c8e2bfb74f5b7f0ad5e4",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "1a738e0f4a8de89a9b4e0df596fdcebbee32587051aeef95146785751d11a1a3",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "86d30695a52a5e4b2b99f456d3996e20f91a385144aa1bad8a95cd5d37447ba1",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "bc55c017b498d36beb237f602740d526eee4142f8ed99993261ea08784e68fa2",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "cc0c9458c78105b8c581503884308000428cf18bf4cc9ac11e3d7dec130dac2d",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "204eb865326fe8f345079d47133266ec1da4f2d7fa217da8475d7f2487baaf37",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9b1598905736cf4dc5ced2dbd5ad8f550e7876acbb865fc7fe8c11cac5641fcb",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e76654c39b9044062b5a1dce0ce8abb039e28efc4cac732aa4f088b1f55c2ec7",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "bd3b687887a94464e55d93c752cc66f3d428c5f850ec79e8075ad5be39834c0b",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9eb481c37c2bbe5c89bb6294df0645bf063e85460edd899ff35072ac745483b1",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d55c510a257ede84fccdb754006837d3cfb7f17984c9e63856b84788692f7c12",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "6b533225aa1ed2191f80441152ed88bf4246ed5e6ba75e141a07f952cfd5d2b6",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "8a09744391a45cab1629347a0d5271553fa7b381554a32e111423c6fbec021ab",
+      "media_id": "site-15"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "plumbing"
   },
-  "fill_tokens": 4
+  "fill_tokens": 8
 }

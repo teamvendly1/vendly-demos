@@ -2,7 +2,7 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "The Pour House Music Hall & Record Shop",
-  "built_at": "2026-08-07T18:08:55.067Z",
+  "built_at": "2026-08-07T23:00:47.368Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
   "accepted": [
     {
@@ -226,5 +226,30 @@
       }
     }
   ],
-  "rejected": []
+  "rejected": [
+    {
+      "url": "https://cdn.prod.website-files.com/68f7b7271d0ad608b3ca0ff0/6924b72aad93e22a0350087f_music-hall-1.avif",
+      "media_id": "site-0",
+      "source_url": "https://www.pourhouseraleigh.com/",
+      "sha256": "a70d2a8768b312a2e5deae3e02229a39d132c03335c3dabb2646cab638c203b5",
+      "reason": "not_an_image_by_magic_bytes",
+      "bytes": 15476
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/68f7b7271d0ad608b3ca0ff0/6924b769d61c44ae52670ba2_record-shop-1.avif",
+      "media_id": "site-1",
+      "source_url": "https://www.pourhouseraleigh.com/",
+      "sha256": "7f8fdb149c7ad09c0bb278977f5cba5f379f377af250cd64ff7918caa3ef9294",
+      "reason": "not_an_image_by_magic_bytes",
+      "bytes": 7661
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/68f7b7271d0ad608b3ca0ff0/6924b7b61b993009c3adcf0a_pressing-plant-1.avif",
+      "media_id": "site-2",
+      "source_url": "https://www.pourhouseraleigh.com/",
+      "sha256": "fa0e180645fc6eb913588cae9e7b92e7112e89d2d7fba42c905576b2a4eaf4e9",
+      "reason": "not_an_image_by_magic_bytes",
+      "bytes": 10452
+    }
+  ]
 }

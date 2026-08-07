@@ -1,38 +1,51 @@
 {
+  "niche": "auto repair",
   "schema": "vendly.autodemo.build/1",
   "business": "Touchstone Detailing",
   "facebook": null,
   "slug": "touchstone-detailing",
-  "built_at": "2026-08-07T15:23:36.653Z",
-  "elapsed_ms": 2334,
+  "built_at": "2026-08-07T22:40:28.286Z",
+  "elapsed_ms": 1861,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2201
+      "at_ms": 445
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 445
     },
     {
       "step": "assets",
-      "at_ms": 2202
+      "at_ms": 1129
+    },
+    {
+      "step": "template",
+      "at_ms": 1247
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1263
     },
     {
       "step": "brand_palette",
-      "at_ms": 2204
+      "at_ms": 1751
     },
     {
       "step": "layout",
-      "at_ms": 2204
+      "at_ms": 1751
     },
     {
       "step": "render",
-      "at_ms": 2204
+      "at_ms": 1752
     },
     {
       "step": "audit",
-      "at_ms": 2206
+      "at_ms": 1754
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2334
+      "at_ms": 1861
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "auto",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "auto-repair",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
-      "trade_key": "auto",
-      "photo_count": 0,
+      "trade_key": "auto-repair",
+      "photo_count": 3,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (auto-repair), 3 photographs",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "trust",
       "words",
-      "gallery"
+      "gallery",
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "split",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Book an Appointment",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "auto-repair",
+      "file": "auto-repair.js",
+      "resolved_by": "niche",
+      "resolved_from": "auto-repair",
+      "sources": [
+        "https://www.christianbrothersauto.com/",
+        "https://www.yourmechanic.com/",
+        "https://www.firestonecompleteautocare.com/",
+        "https://www.facebook.com/HeltonAutomotive",
+        "https://repairpal.com/"
+      ],
+      "rationale": "Christian Brothers Automotive leads trust-first with a clear service menu and the phone plus scheduling above the fold, and Firestone gives each service category its own short plain line, so this page splits the hero between a real bay photograph and the shop name with a tappable number, then puts specifically named services second because the research HARD FAIL list is exactly the opposite of that (one About line, one service card, a flat trades shell); RepairPal supplies the reason reviews and specific repair types outrank a general we-fix-cars claim, and the concierge is scoped to hours, what they work on and booking because that is what a shop actually gets asked. No guarantee, warranty or certification is ever rendered unless the business published it itself.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "trust",
+            "words",
+            "gallery",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#123A5E",
-      "b": "#0B2740",
-      "c": "#B3311F",
-      "brand": "#B3311F",
-      "mist": "#F1F5F9",
-      "ink": "#111820"
+      "a": "#900095",
+      "b": "#5B085E",
+      "c": "#900095",
+      "brand": "#900095",
+      "mist": "#F9F3F9",
+      "ink": "#15171A"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#900095",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#B3311F",
-            "after": "#B3311F",
-            "ratio": 6.22,
+            "before": "#900095",
+            "after": "#900095",
+            "ratio": 8.02,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#123A5E",
-            "after": "#123A5E",
-            "ratio": 11.72,
+            "before": "#900095",
+            "after": "#900095",
+            "ratio": 8.02,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#0B2740",
-            "after": "#0B2740",
-            "ratio": 15.23,
+            "before": "#5B085E",
+            "after": "#5B085E",
+            "ratio": 12.8,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#0B2740",
-            "after": "#0B2740",
-            "ratio": 11.84,
+            "before": "#5B085E",
+            "after": "#5B085E",
+            "ratio": 9.94,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#B3311F",
-            "ratio": 6.22,
+            "final": "#900095",
+            "ratio": 8.02,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#123A5E",
-            "ratio": 11.72,
+            "final": "#900095",
+            "ratio": 8.02,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#0B2740",
-            "ratio": 15.23,
+            "final": "#5B085E",
+            "ratio": 12.8,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#0B2740",
-            "ratio": 11.84,
+            "final": "#5B085E",
+            "ratio": 9.94,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#111820",
-            "bg_mist": "#F1F5F9",
-            "ratio": 16.31,
+            "value": "#15171A",
+            "bg_mist": "#F9F3F9",
+            "ratio": 16.43,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#0B2740",
-            "bg_mist": "#F1F5F9",
-            "ratio": 13.91,
+            "value": "#5B085E",
+            "bg_mist": "#F9F3F9",
+            "ratio": 11.71,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://touchstonedetailing.com/wp-content/uploads/2024/09/300x70.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#B3311F",
-        "ratio": 6.22,
+        "final": "#900095",
+        "ratio": 8.02,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#123A5E",
-        "ratio": 11.72,
+        "final": "#900095",
+        "ratio": 8.02,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#0B2740",
-        "ratio": 15.23,
+        "final": "#5B085E",
+        "ratio": 12.8,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#0B2740",
-        "ratio": 11.84,
+        "final": "#5B085E",
+        "ratio": 9.94,
         "pass": true
       }
     ]
@@ -229,98 +289,103 @@
   "claims": [
     {
       "text": "Touchstone Detailing",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "(615) 240-6240",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "mrtouchstone615@gmail.com",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "6124 Deal Ave, Nashville, Tennessee, 37209",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 7:00 AM - 5:00 PM",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "Touchstone Detailing is a professional car detailing company in Nashville, Tennessee, offering mobile and in-shop detailing services. Since 2008, we have provided interior detailing, exterior detailing, ceramic coatings, paint correction, odor removal, fleet detailing, boat detailing, and RV detailing for customers throughout Nashville and surrounding areas.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "Auto Wash",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "Tennessee",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "offering mobile and in-shop detailing services. Since 2008",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "we have provided interior detailing",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "exterior detailing",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "ceramic coatings",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "paint correction",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "odor removal",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "fleet detailing",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "boat detailing",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
       "text": "since 2008",
-      "fetched_at": "2026-08-07T15:23:36.519Z"
+      "fetched_at": "2026-08-07T22:40:26.869Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Touchstone Detailing | Tennessee",
     "og_url": "https://vendly-demos.vercel.app/touchstone-detailing/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/touchstone-detailing/assets/site-1.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "46f6668a89c795e7a3260a16b4e66c88abc349e3b553a8c6da23624477a4a2d3",
+    "image_px": "1500x1000",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 3,
+    "rejected": 2,
+    "photographs": 3,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "279019df16582d72c4b36fbb653a45f5fd8e5ee3980a5eb9806ef7572cf370ec",
+      "media_id": "site-3"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -332,8 +397,9 @@
     "trust_strip": true,
     "services": true,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "auto repair"
   },
-  "fill_tokens": 9
+  "fill_tokens": 15
 }

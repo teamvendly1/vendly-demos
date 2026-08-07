@@ -1,38 +1,47 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "French Quarter Inn",
   "facebook": null,
   "slug": "french-quarter-inn",
-  "built_at": "2026-08-07T16:09:48.972Z",
-  "elapsed_ms": 392,
+  "built_at": "2026-08-07T23:07:10.251Z",
+  "elapsed_ms": 3429,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 277
+      "at_ms": 153
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 153
     },
     {
       "step": "assets",
-      "at_ms": 279
+      "at_ms": 3172
+    },
+    {
+      "step": "template",
+      "at_ms": 3288
     },
     {
       "step": "brand_palette",
-      "at_ms": 280
+      "at_ms": 3288
     },
     {
       "step": "layout",
-      "at_ms": 280
+      "at_ms": 3288
     },
     {
       "step": "render",
-      "at_ms": 281
+      "at_ms": 3289
     },
     {
       "step": "audit",
-      "at_ms": 282
+      "at_ms": 3291
     },
     {
       "step": "beacon_probe",
-      "at_ms": 392
+      "at_ms": 3429
     }
   ],
   "audit": {
@@ -41,26 +50,33 @@
   },
   "design": {
     "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 0,
+      "photo_count": 12,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (trade), 12 photographs",
       "deterministic": true
     },
     "section_order": [
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call (843) 722-1900",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
       "a": "#2B3A47",
       "b": "#18232C",
@@ -170,7 +186,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": null
     }
   },
   "accessibility": {
@@ -229,42 +246,32 @@
   "claims": [
     {
       "text": "French Quarter Inn",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     },
     {
       "text": "(843) 722-1900",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     },
     {
       "text": "frontdesk@fqicharleston.com",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     },
     {
       "text": "Welcome to the French Quarter Inn's official site! Discover our luxurious Charleston, SC hotel with elegant accommodations, top amenities, and Southern charm.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     },
     {
       "text": "SC hotel with elegant accommodations",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     },
     {
       "text": "top amenities",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     },
     {
       "text": "and Southern charm",
-      "fetched_at": "2026-08-07T16:09:48.857Z"
-    },
-    {
-      "text": "Welcome to the French Quarter Inn's official site! Discover our luxurious Charleston, SC hotel with elegant accommodations, top amenities, and Southern charm.",
-      "source": "https://www.fqicharleston.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:09:48.857Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:welcome,french,quarter,official"
-      ]
+      "fetched_at": "2026-08-07T23:07:06.974Z"
     }
   ],
   "unresolved": [
@@ -273,23 +280,23 @@
   "link_preview": {
     "og_title": "French Quarter Inn",
     "og_url": "https://vendly-demos.vercel.app/french-quarter-inn/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/french-quarter-inn/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "d2381629440d97dfe6d4471fbd1e6586e37a134f9ab35408def0cdd88c94ec43",
+    "image_px": "1920x1080",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 12,
     "rejected": 1,
-    "photographs": 0,
+    "photographs": 12,
     "logo_found": false
   },
   "rejected_assets": [
@@ -303,9 +310,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "unknown"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

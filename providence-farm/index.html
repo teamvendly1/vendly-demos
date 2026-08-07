@@ -24,12 +24,23 @@
 <meta name="twitter:description" content="Responsible, sustainable stewardship in a pasture based regenerative agricultural system. From well raised food...">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#9D4759;--b:#462028;--c:#9D4759;--mist:#F9F3F5;--ink:#1B2230;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#9D4759;--scrim:25,11,14;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -165,7 +176,7 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+13367072507">Call (336) 707-2507</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main">Providence Farm</a>
     <nav class="main" aria-label="Main">
@@ -180,25 +191,29 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-1.jpg" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
     <p class="eyebrow">Page · Farm in McLeansville</p>
     <h1>Providence Farm</h1>
     <p class="lede">Responsible, sustainable stewardship in a pasture based regenerative agricultural system. From well raised food...</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+13367072507">Call (336) 707-2507</a>
-      <a class="btn btn-ghost" href="mailto:info@providencefarmnc.com">Email us</a>
+      <a class="btn btn-c" href="mailto:info@providencefarmnc.com">Order a Custom Cake</a>
+      <a class="hero-alt" href="mailto:info@providencefarmnc.com">or email us</a>
     </div>
+    <p class="hero-facts">(336) 707-2507 &middot; 2569 Huffine Mill Road, McLeansville</p>
   </div>
 </div>
 
-<div class="strip"><div class="wrap"><ul>
-  
-  <li>100% recommend on Facebook, from 28 reviews</li>
-  
-  
-</ul></div></div>
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Providence Farm Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Responsible</h3></div>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -215,32 +230,35 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Providence Farm Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>Responsible</h3></div>
-    </div>
-  </div>
-</section>
-
 <section id="work">
   <div class="wrap">
     <h2>Photos</h2>
     <p class="lead">These photos are published on the Providence Farm Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/327116040_527453536146004.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/480596314_1038036178350136.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/763779050_1362832118756430.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/762584839_818325164700902.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/762466515_1915924632422276.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/762475479_1162990280240769.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/761559458_2117974068750428.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/763103812_1283283123718255.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/758793469_1749162752794015.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
-      <figure><img src="assets/761653459_1696755868252595.jpg" alt="Responsible" loading="lazy" width="800" height="600"><figcaption>Responsible</figcaption></figure>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-4.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-6.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-8.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-10.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-12.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-14.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/327116040_527453536146004.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/480596314_1038036178350136.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/763779050_1362832118756430.jpg" alt="Providence Farm - Page · Farm" loading="lazy" width="800" height="600"></figure>
     </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Providence Farm page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+13367072507">(336) 707-2507</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 2569 Huffine Mill Road, McLeansville, NC. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 

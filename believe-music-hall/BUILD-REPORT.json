@@ -1,0 +1,396 @@
+{
+  "niche": "events_venue",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Believe Music Hall",
+  "facebook": null,
+  "slug": "believe-music-hall",
+  "built_at": "2026-08-07T22:46:00.038Z",
+  "elapsed_ms": 5575,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 1327
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 1328
+    },
+    {
+      "step": "assets",
+      "at_ms": 4917
+    },
+    {
+      "step": "template",
+      "at_ms": 5035
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 5129
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 5482
+    },
+    {
+      "step": "layout",
+      "at_ms": 5482
+    },
+    {
+      "step": "render",
+      "at_ms": 5483
+    },
+    {
+      "step": "audit",
+      "at_ms": 5485
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 5575
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "events-venue",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "events-venue",
+      "photo_count": 22,
+      "has_reviews": false,
+      "branch": "visual trade (events-venue) with 22 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "services",
+      "contact",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Check Available Dates",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "events-venue",
+      "file": "events-venue.js",
+      "resolved_by": "niche",
+      "resolved_from": "events-venue",
+      "sources": [
+        "https://mountainhouseestate.com/",
+        "https://www.tinroofbarn.com/",
+        "https://www.castlefarms.com/",
+        "https://pippinhillfarm.com/",
+        "https://www.wychmere.com/"
+      ],
+      "rationale": "The conversion is an enquiry gated on two facts only, is my date free and is this in my budget, so Mountain House Estate ships availability as a labelled button rather than a sentence and four of the five winners give price its own named destination without publishing a number, which is why the single CTA is an availability anchor pointing at a short enquiry block carrying a date field and why the price route lives in services beside Castle Farms named spaces with their capacities; the gallery is pushed BELOW the enquiry and the testimonials below that, inverting the generic template the research says gets it exactly backwards by leading with a photo carousel and ending with a bare Contact link, since social proof supports the decision while date and price create it.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#92498C",
+      "b": "#442241",
+      "c": "#92498C",
+      "brand": "#92498C",
+      "mist": "#F9F3F8",
+      "ink": "#15141F"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#92498C",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#92498C",
+            "after": "#92498C",
+            "ratio": 5.91,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#92498C",
+            "after": "#92498C",
+            "ratio": 5.91,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#442241",
+            "after": "#442241",
+            "ratio": 13.54,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#442241",
+            "after": "#442241",
+            "ratio": 10.52,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#92498C",
+            "ratio": 5.91,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#92498C",
+            "ratio": 5.91,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#442241",
+            "ratio": 13.54,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#442241",
+            "ratio": 10.52,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#15141F",
+            "bg_mist": "#F9F3F8",
+            "ratio": 16.67,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#442241",
+            "bg_mist": "#F9F3F8",
+            "ratio": 12.38,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://believeatl.com/wp-content/uploads/2023/07/Believe-Logo.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#92498C",
+        "ratio": 5.91,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#92498C",
+        "ratio": 5.91,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#442241",
+        "ratio": 13.54,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#442241",
+        "ratio": 10.52,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 8,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "believe-music-hall",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Believe Music Hall",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "(404) 600-4498",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "vip@irispresents.com",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "181 RALPH DAVID ABERNATHY BLVD, Atlanta, GA",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "Open weekly kitchen & cocktails See event listings for hours of special events Please park in the Red & Yellow...",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:45:55.790Z",
+      "verbatim_source_text": "Open weekly kitchen & cocktails\n\nSee event listings for hours of special events\n\nPlease park in the Red & Yellow...",
+      "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
+    },
+    {
+      "text": "Page · Live Music Venue",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "Open weekly kitchen & cocktails",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "See event listings for hours of special events",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    },
+    {
+      "text": "Please park in the Red & Yellow",
+      "source": "https://www.facebook.com/believeatl/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:45:55.790Z"
+    }
+  ],
+  "unresolved": [
+    "post_text",
+    "hours(live_status_only:Closing Soon)"
+  ],
+  "link_preview": {
+    "og_title": "Believe Music Hall | Atlanta",
+    "og_url": "https://vendly-demos.vercel.app/believe-music-hall/",
+    "og_image": "https://vendly-demos.vercel.app/believe-music-hall/assets/765228952_18238328161312230.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "7e9d350a0e2658c0ad32d6eec78d388fa719659f756c34cc441c29c002e08301",
+    "image_px": "1500x1500",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 22,
+    "rejected": 2,
+    "photographs": 22,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-11"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-12"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "events_venue"
+  },
+  "fill_tokens": 20
+}

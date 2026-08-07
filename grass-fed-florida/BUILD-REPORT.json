@@ -1,0 +1,377 @@
+{
+  "niche": "butcher",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Grass-Fed Florida",
+  "facebook": null,
+  "slug": "grass-fed-florida",
+  "built_at": "2026-08-07T22:47:23.472Z",
+  "elapsed_ms": 3143,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 283
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 283
+    },
+    {
+      "step": "assets",
+      "at_ms": 2600
+    },
+    {
+      "step": "template",
+      "at_ms": 2685
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2694
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3054
+    },
+    {
+      "step": "layout",
+      "at_ms": 3054
+    },
+    {
+      "step": "render",
+      "at_ms": 3055
+    },
+    {
+      "step": "audit",
+      "at_ms": 3056
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3143
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "bakery",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "bakery",
+      "photo_count": 16,
+      "has_reviews": true,
+      "branch": "visual trade (bakery) with 16 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "services",
+      "contact",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Order a Custom Cake",
+      "kind": "mailto"
+    },
+    "niche_template": {
+      "family": "bakery",
+      "file": "bakery.js",
+      "resolved_by": "family",
+      "resolved_from": "bakery",
+      "sources": [
+        "https://www.honeybearbakeshop.com/",
+        "https://www.littletartatl.com/",
+        "https://www.flourbakery.com/",
+        "https://www.pophamsbakery.com/",
+        "https://sourdoughsophia.co.uk/"
+      ],
+      "rationale": "The Little Tart Bakeshop forks \"Place an Order\" into same-day pickup versus cakes and catering and Flour gives custom cakes their own homepage door, so services sits at position two carrying both named paths with a stated lead time while the single CTA resolves the fork toward the custom enquiry Honeybear routes to a named human at a named address, which is the one buyer the current one-button template collects nothing from.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#000055",
+      "b": "#08085E",
+      "c": "#000055",
+      "brand": "#000055",
+      "mist": "#F3F3F9",
+      "ink": "#1B2230"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#000055",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#000055",
+            "after": "#000055",
+            "ratio": 18.56,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#000055",
+            "after": "#000055",
+            "ratio": 18.56,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#08085E",
+            "after": "#08085E",
+            "ratio": 17.4,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#08085E",
+            "after": "#08085E",
+            "ratio": 13.53,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#000055",
+            "ratio": 18.56,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#000055",
+            "ratio": 18.56,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#08085E",
+            "ratio": 17.4,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#08085E",
+            "ratio": 13.53,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#1B2230",
+            "bg_mist": "#F3F3F9",
+            "ratio": 14.41,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#08085E",
+            "bg_mist": "#F3F3F9",
+            "ratio": 15.74,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/63213f5e3a776f4e8ad1bbc2/688f8436-2b8c-42ab-9474-af822e111a68/Grass+fed_Logo+2.png?format=1500w"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#000055",
+        "ratio": 18.56,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#000055",
+        "ratio": 18.56,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#08085E",
+        "ratio": 17.4,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#08085E",
+        "ratio": 13.53,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "grass-fed-florida",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Grass-Fed Florida",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "(407) 286-1216",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "shop@grassfedfl.com",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "605 Waltham Avenue, Orlando, FL",
+      "source": "https://www.facebook.com/grassfedfl/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "Health Food Store",
+      "source": "https://www.facebook.com/grassfedfl/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "Local Business",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "Health Food Store",
+      "source": "https://www.facebook.com/grassfedfl/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    },
+    {
+      "text": "Not yet rated (1 Review)",
+      "source": "https://www.facebook.com/grassfedfl/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T22:47:20.611Z"
+    }
+  ],
+  "unresolved": [
+    "post_text",
+    "hours(live_status_only:Closed now)"
+  ],
+  "link_preview": {
+    "og_title": "Grass-Fed Florida | Orlando",
+    "og_url": "https://vendly-demos.vercel.app/grass-fed-florida/",
+    "og_image": "https://vendly-demos.vercel.app/grass-fed-florida/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "76dca9e2f711a5d05f4813e576172ce09398dec5783b332e90b88e43dfde8c83",
+    "image_px": "1000x1000",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 16,
+    "rejected": 2,
+    "photographs": 16,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "b732ef29c09cc5cbc30b5ac9aaaff4df6088e2cc604cf063290d724661c99410",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "867b7d5640dcd2031fec0a5bf79b7839fb2e628a725a5e2878bf842bdfb31a3a",
+      "media_id": "site-7"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "butcher"
+  },
+  "fill_tokens": 21
+}

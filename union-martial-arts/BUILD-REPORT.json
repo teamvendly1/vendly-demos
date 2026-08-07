@@ -1,38 +1,51 @@
 {
+  "niche": "fitness",
   "schema": "vendly.autodemo.build/1",
   "business": "Union Martial Arts",
   "facebook": null,
   "slug": "union-martial-arts",
-  "built_at": "2026-08-07T16:12:24.008Z",
-  "elapsed_ms": 267,
+  "built_at": "2026-08-07T23:11:49.077Z",
+  "elapsed_ms": 16202,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 173
+      "at_ms": 241
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 241
     },
     {
       "step": "assets",
-      "at_ms": 174
+      "at_ms": 15417
+    },
+    {
+      "step": "template",
+      "at_ms": 15541
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 15694
     },
     {
       "step": "brand_palette",
-      "at_ms": 176
+      "at_ms": 16101
     },
     {
       "step": "layout",
-      "at_ms": 176
+      "at_ms": 16101
     },
     {
       "step": "render",
-      "at_ms": 176
+      "at_ms": 16102
     },
     {
       "step": "audit",
-      "at_ms": 178
+      "at_ms": 16104
     },
     {
       "step": "beacon_probe",
-      "at_ms": 267
+      "at_ms": 16202
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "fitness",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "fitness",
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (fitness) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
       "words",
-      "gallery"
+      "gallery",
+      "trust",
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Free First Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "fitness",
+      "file": "fitness.js",
+      "resolved_by": "niche",
+      "resolved_from": "fitness",
+      "sources": [
+        "https://www.ovcrossfit.com",
+        "https://www.lumberjack-athletics.com",
+        "https://www.theschoolofpilates.com",
+        "https://www.primeboxingusa.com",
+        "https://www.gracieelkgrove.com"
+      ],
+      "rationale": "Five of five winners lead with a FREE FIRST VISIT and not one leads with Join, Sign Up, or a price - Lumberjack repeats the identical Book a Free Intro at least four times down one page with beginner testimonials beside it, and OV CrossFit publishes three numbered onboarding steps so the visitor knows exactly what happens after the click - so this template makes the free first visit the only primary action, gives the services slot to those numbered steps, and lifts beginner-named social proof to third. A demo carries no transformation grid, no client image, no trial offer or price the business does not already publish, no result or health claim, and no hours it did not read on their live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "words",
+            "gallery",
+            "trust",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#377BB5",
+      "b": "#18354E",
+      "c": "#377BB5",
+      "brand": "#5F9BCE",
+      "mist": "#F3F6F9",
+      "ink": "#15161F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#5F9BCE",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#5F9BCE",
+            "after": "#377BB5",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#5F9BCE",
+            "after": "#377BB5",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#18354E",
+            "after": "#18354E",
+            "ratio": 12.67,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#18354E",
+            "after": "#18354E",
+            "ratio": 9.84,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#377BB5",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#377BB5",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#18354E",
+            "ratio": 12.67,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#18354E",
+            "ratio": 9.84,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#15161F",
+            "bg_mist": "#F3F6F9",
+            "ratio": 16.6,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#18354E",
+            "bg_mist": "#F3F6F9",
+            "ratio": 11.68,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://framerusercontent.com/images/qQ7IwBQs8Og0g4LX1Bj3M3TAc.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#377BB5",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#377BB5",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#18354E",
+        "ratio": 12.67,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#18354E",
+        "ratio": 9.84,
         "pass": true
       }
     ]
@@ -229,46 +289,36 @@
   "claims": [
     {
       "text": "Union Martial Arts",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "(704) 839-0101",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "info@unionmartialarts.com",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "1501-B Waxhaw Indian Trail Rd, Indian Trail, NC, 28079",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "Premier martial arts academy in Union County NC offering kickboxing, jiu-jitsu, and MMA for all ages. Great Classes. By Design.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "jiu-jitsu",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     },
     {
       "text": "and MMA for all ages. Great Classes. By Design",
-      "fetched_at": "2026-08-07T16:12:23.913Z"
-    },
-    {
-      "text": "Premier martial arts academy in Union County NC offering kickboxing, jiu-jitsu, and MMA for all ages. Great Classes. By Design.",
-      "source": "https://unionmartialarts.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:12:23.913Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:premier,martial,arts,academy"
-      ]
+      "fetched_at": "2026-08-07T23:11:33.115Z"
     }
   ],
   "unresolved": [
@@ -277,26 +327,41 @@
   "link_preview": {
     "og_title": "Union Martial Arts | NC",
     "og_url": "https://vendly-demos.vercel.app/union-martial-arts/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/union-martial-arts/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "9779f49315b021f14a33518b40c36253ae7fbf5c539273393c0c18bdfa27cac5",
+    "image_px": "1200x630",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 13,
+    "rejected": 4,
+    "photographs": 13,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "d1b2fa0d98163acc4a186ff055996068a48bc9c85a6a259d0c2d40e62285d37f",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "f89565b05600aed3058bdfbe383fa0a454e61960cab48bcdb9e2d6afd720022e",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ea884abce651cb149aa8a6206ee3221c74a06823c44d60bf8041fe61c0741e3c",
+      "media_id": "site-3"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -307,9 +372,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "fitness"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

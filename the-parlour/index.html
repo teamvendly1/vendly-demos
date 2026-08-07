@@ -12,17 +12,35 @@
 <meta property="og:description" content="We make the best ice cream around, with the best ingredients. Our flavors are inspired by the seasons, our favorite well-worn cookbooks, and our childhood ice cream memories.">
 <meta property="og:url" content="https://vendly-demos.vercel.app/the-parlour/">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://vendly-demos.vercel.app/the-parlour/assets/site-0.png">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/the-parlour/assets/site-0.png">
+<meta property="og:image:width" content="1800">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="The Parlour">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/the-parlour/assets/site-0.png">
+<meta name="twitter:image:alt" content="The Parlour">
 <meta name="twitter:title" content="The Parlour">
 <meta name="twitter:description" content="We make the best ice cream around, with the best ingredients. Our flavors are inspired by the seasons, our favorite well-worn cookbooks, and our childhood ice cream memories.">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#DA3B32;--b:#561410;--c:#DA3B32;--mist:#F9F4F3;--ink:#1B2230;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#EB9691;--scrim:30,7,6;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -158,13 +176,13 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+19195647999">Call (919) 564-7999</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main">The Parlour</a>
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,18 +191,31 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-0.png" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
     <p class="eyebrow">Place, Ice Cream Shop</p>
     <h1>The Parlour</h1>
     <p class="lede">We make the best ice cream around, with the best ingredients. Our flavors are inspired by the seasons, our favorite well-worn cookbooks, and our childhood ice cream memories.</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+19195647999">Call (919) 564-7999</a>
-      <a class="btn btn-ghost" href="mailto:icecream@theparlour.co">Email us</a>
+      <a class="btn btn-c" href="mailto:icecream@theparlour.co">Order a Custom Cake</a>
+      <a class="hero-alt" href="mailto:icecream@theparlour.co">or email us</a>
     </div>
+    <p class="hero-facts">(919) 564-7999</p>
   </div>
 </div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the The Parlour Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>We make the best ice cream around</h3></div>
+      <div class="card"><h3>our favorite well-worn cookbooks</h3></div>
+      <div class="card"><h3>and our childhood ice cream memories</h3></div>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -201,24 +232,32 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section id="services">
+<section id="work">
   <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the The Parlour Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>We make the best ice cream around</h3></div>
-      <div class="card"><h3>our favorite well-worn cookbooks</h3></div>
-      <div class="card"><h3>and our childhood ice cream memories</h3></div>
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the The Parlour Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-1.png" alt="our favorite well-worn cookbooks" loading="lazy" width="800" height="600"><figcaption>our favorite well-worn cookbooks</figcaption></figure>
+      <figure><img src="assets/site-2.jpg" alt="and our childhood ice cream memories" loading="lazy" width="800" height="600"><figcaption>and our childhood ice cream memories</figcaption></figure>
+      <figure><img src="assets/site-3.jpg" alt="The Parlour - Place, Ice Cream Shop" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-4.jpg" alt="The Parlour - Place, Ice Cream Shop" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-5.jpg" alt="The Parlour - Place, Ice Cream Shop" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-6.jpg" alt="The Parlour - Place, Ice Cream Shop" loading="lazy" width="800" height="600"></figure>
     </div>
   </div>
 </section>
 
-<section class="words">
+<section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">We make the best ice cream around, with the best ingredients. Our flavors are inspired by the seasons, our favorite well-worn cookbooks, and our childhood ice cream memories.
-      <cite>Posted by The Parlour on Facebook. Read on <a href="https://theparlour.co/">their page</a>.</cite>
-    </blockquote>
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every The Parlour page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+19195647999">(919) 564-7999</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 

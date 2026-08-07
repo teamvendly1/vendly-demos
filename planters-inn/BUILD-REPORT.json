@@ -1,38 +1,51 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "Planters Inn",
   "facebook": null,
   "slug": "planters-inn",
-  "built_at": "2026-08-07T16:02:58.869Z",
-  "elapsed_ms": 377,
+  "built_at": "2026-08-07T23:00:11.577Z",
+  "elapsed_ms": 2897,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 278
+      "at_ms": 320
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 321
     },
     {
       "step": "assets",
-      "at_ms": 280
+      "at_ms": 2334
+    },
+    {
+      "step": "template",
+      "at_ms": 2443
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2475
     },
     {
       "step": "brand_palette",
-      "at_ms": 281
+      "at_ms": 2791
     },
     {
       "step": "layout",
-      "at_ms": 281
+      "at_ms": 2791
     },
     {
       "step": "render",
-      "at_ms": 282
+      "at_ms": 2792
     },
     {
       "step": "audit",
-      "at_ms": 284
+      "at_ms": 2793
     },
     {
       "step": "beacon_probe",
-      "at_ms": 377
+      "at_ms": 2897
     }
   ],
   "audit": {
@@ -41,26 +54,33 @@
   },
   "design": {
     "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 0,
+      "photo_count": 10,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (trade), 10 photographs",
       "deterministic": true
     },
     "section_order": [
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call (843) 722-2345",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
       "a": "#2B3A47",
       "b": "#18232C",
@@ -170,7 +190,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.plantersinn.com/files/3328/planters-inn-charleston-luxury-hotel-logo.png"
     }
   },
   "accessibility": {
@@ -229,26 +250,16 @@
   "claims": [
     {
       "text": "Planters Inn",
-      "fetched_at": "2026-08-07T16:02:58.770Z"
+      "fetched_at": "2026-08-07T23:00:09.000Z"
     },
     {
       "text": "(843) 722-2345",
-      "fetched_at": "2026-08-07T16:02:58.770Z"
+      "fetched_at": "2026-08-07T23:00:09.000Z"
     },
     {
       "text": "Located in downtown Charleston near the Charleston City Market, Planters Inn is the Grande Dame of all historic hotels in Charleston South Carolina and the only Relais and Chateaux luxury Charleston SC hotel.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:02:58.770Z"
-    },
-    {
-      "text": "Located in downtown Charleston near the Charleston City Market, Planters Inn is the Grande Dame of all historic hotels in Charleston South Carolina and the only Relais and Chateaux luxury Charleston SC hotel.",
-      "source": "https://www.plantersinn.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:02:58.770Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:located,downtown,charleston,near"
-      ]
+      "fetched_at": "2026-08-07T23:00:09.000Z"
     }
   ],
   "unresolved": [
@@ -257,26 +268,56 @@
   "link_preview": {
     "og_title": "Planters Inn",
     "og_url": "https://vendly-demos.vercel.app/planters-inn/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/planters-inn/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "8baa1e2609d57833b91f247349e9eb9cf43eb274c9ec8802a59b29323985ce35",
+    "image_px": "750x1127",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 10,
+    "rejected": 7,
+    "photographs": 10,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "64c10388cd289a67ddab54683e83f9dcdd9d9a3cfcf26ca6fb56b8051a692e78",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "abe7a9e1fcb55cacbded1a81540b3ee3de8b638b386038b856dfea46d70e8528",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "cc2ab809f2166605eb227ed28eca042c1d3f70c7ba23163bcea4dcdc37c63f07",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "f59dbe87af34bf32da4d7173a133361c0ca5ef9aa4e0ae89eb95ed22cb006cd7",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "f45722ba5fdc282681073ef5d8b9b17e2e53f4c5606cb80e661a537cc4ed1fdc",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "7b752d92dc48fe2c374988b78bdd3df873eca75d0319a3db55e94c16b1387141",
+      "media_id": "site-11"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -287,9 +328,10 @@
     "hero": true,
     "trust_strip": false,
     "services": false,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "unknown"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

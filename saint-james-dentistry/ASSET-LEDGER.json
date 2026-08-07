@@ -2,10 +2,187 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Saint James Dentistry",
-  "built_at": "2026-08-07T15:41:12.428Z",
+  "built_at": "2026-08-07T22:46:50.375Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "c45b1101f43592bf862ba2ac2270a3c8ee86d5766ac3985f94c48cac2b04ced6",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 170279,
+      "remote_url": "https://saintjamesdentistry.com/wp-content/uploads/Gallery-1-2.jpg",
+      "remote_url_as_found": "https://saintjamesdentistry.com/wp-content/uploads/Gallery-1-2.jpg",
+      "source_url": "https://saintjamesdentistry.com/",
+      "fetched_at": "2026-08-07T22:46:49.491Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1000,
+        "height": 600,
+        "distinct_colors": 86,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-2.jpg",
+      "rel": "assets/site-2.jpg",
+      "sha256": "c36402e0f432a5e2ae4173f2d110fea8e727e932ef98dc90fdc3c66a802560be",
+      "media_id": "site-2",
+      "format": "jpg",
+      "bytes": 42275,
+      "remote_url": "https://saintjamesdentistry.com/wp-content/uploads/elementor/thumbs/Gallery5-1-r9222zvac0z05lhq4xamgbdywuf3blpa41niail6c8.jpg",
+      "remote_url_as_found": "https://saintjamesdentistry.com/wp-content/uploads/elementor/thumbs/Gallery5-1-r9222zvac0z05lhq4xamgbdywuf3blpa41niail6c8.jpg",
+      "source_url": "https://saintjamesdentistry.com/",
+      "fetched_at": "2026-08-07T22:46:49.538Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 520,
+        "height": 700,
+        "distinct_colors": 67,
+        "pct_near_white": 3.3,
+        "pct_border_white": 0.3
+      }
+    },
+    {
+      "file": "site-7.jpg",
+      "rel": "assets/site-7.jpg",
+      "sha256": "8e0ee6a1f7cd42884e6ca8b25db48311f0196d1bf65a1b48e6afd77c8785962e",
+      "media_id": "site-7",
+      "format": "jpg",
+      "bytes": 83470,
+      "remote_url": "https://saintjamesdentistry.com/wp-content/uploads/StJames-Group-2023.jpg",
+      "remote_url_as_found": "https://saintjamesdentistry.com/wp-content/uploads/StJames-Group-2023.jpg",
+      "source_url": "https://saintjamesdentistry.com/",
+      "fetched_at": "2026-08-07T22:46:49.641Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 600,
+        "height": 410,
+        "distinct_colors": 61,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-8.jpg",
+      "rel": "assets/site-8.jpg",
+      "sha256": "7a373656169cd18840f361add81ab741b55da2f41644540f7cb29f4e969d1514",
+      "media_id": "site-8",
+      "format": "jpg",
+      "bytes": 18226,
+      "remote_url": "https://saintjamesdentistry.com/wp-content/uploads/StJames-Group-2023-410x280.jpg",
+      "remote_url_as_found": "https://saintjamesdentistry.com/wp-content/uploads/StJames-Group-2023-410x280.jpg",
+      "source_url": "https://saintjamesdentistry.com/",
+      "fetched_at": "2026-08-07T22:46:49.658Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 410,
+        "height": 280,
+        "distinct_colors": 62,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png",
+      "media_id": "site-1",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "69539b5b3777cffda28a66d7f2aa9b17c91ee1ec8fd50c00c442af91753a60f7",
+      "reason": "too_small",
+      "bytes": 68
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/StJames-Rotating.png",
+      "media_id": "site-3",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "92dd446ea2bf06a18d1c2f5b090ef4fbc2fbd2a6d8138ef038a5757f306c05ea",
+      "reason": "too_small",
+      "bytes": 4261
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/StJames-Rotating-120x120.png",
+      "media_id": "site-4",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "cf4115c6c50c1c5a792c3ed4f0a3a539f31875e97447d94fac82d2465c25589f",
+      "reason": "too_small",
+      "bytes": 2939
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/spinning-text.png",
+      "media_id": "site-5",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "7754211ba1942beaaaf7f89dd406a4998973c0cb87c9f7602882b0b7d0668117",
+      "reason": "too_small",
+      "bytes": 1521
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/spinning-text-120x120.png",
+      "media_id": "site-6",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "9a37938d0a29066f383a09b79ce0767ee814523c924515cbd7954a7834a8044f",
+      "reason": "too_small",
+      "bytes": 2869
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/partner-01-copyright.png",
+      "media_id": "site-9",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "a102c8ff0e69de7b36b4612cc89f0671df3bb8666f2744721b5cb12bd012a657",
+      "reason": "too_small",
+      "bytes": 1749
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/partner-02-copyright.png",
+      "media_id": "site-10",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "4c6a13f3c563e379b9333f3a3b2ce7ebcbf9deabe70eac9b94d0e345d76bc440",
+      "reason": "too_small",
+      "bytes": 1963
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/partner-03-copyright.png",
+      "media_id": "site-11",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "ae1b726cde534eff94b6ce5c3c53567d099fe24ced0a37cbfa935d27a7400648",
+      "reason": "too_small",
+      "bytes": 1738
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/partner-04-copyright.png",
+      "media_id": "site-12",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "646d43f9201f11802d6832b168046f1ace29b9c880807b03d8d0c049266720c4",
+      "reason": "too_small",
+      "bytes": 944
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/partner-05-copyright.png",
+      "media_id": "site-13",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "6a2599932e24aca4c1881cd501d2124131cbfc1bc08f5e89a998effb34d4f801",
+      "reason": "too_small",
+      "bytes": 1365
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/2024/10/partner-06-copyright.png",
+      "media_id": "site-14",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "94d9e75b8a1b5ed504c4f341c2a9d1bc3351f3935ff37b3698154637c341f40d",
+      "reason": "too_small",
+      "bytes": 1368
+    },
+    {
+      "url": "https://saintjamesdentistry.com/wp-content/uploads/TestimonialLady1-1.jpg",
+      "media_id": "site-15",
+      "source_url": "https://saintjamesdentistry.com/",
+      "sha256": "e41040592f9d6c1c075029e3a3735dcb066fbb3f465bb272a18f9d09048a0d16",
+      "reason": "too_small",
+      "bytes": 7680
+    },
     {
       "0": "h",
       "1": "t",

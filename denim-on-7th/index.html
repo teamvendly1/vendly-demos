@@ -24,12 +24,23 @@
 <meta name="twitter:description" content="Denim on 7th in AL">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#0F5C58;--b:#0B2E2C;--c:#7A5A0E;--mist:#F2F6F5;--ink:#12201F;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#7A5A0E;--scrim:7,29,28;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -165,7 +176,7 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+12052032409">Call (205) 203-2409</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main">Denim on 7th</a>
     <nav class="main" aria-label="Main">
@@ -180,16 +191,17 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-5.jpg" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
-    <p class="eyebrow">Bar in AL</p>
+    <p class="eyebrow">Page · Bar in AL</p>
     <h1>Denim on 7th</h1>
     
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+12052032409">Call (205) 203-2409</a>
-      <a class="btn btn-ghost" href="mailto:Contact@denimon7th.com">Email us</a>
+      <a class="btn btn-c" href="#contact">See Tonight</a>
+      <a class="hero-alt" href="mailto:contact@denimon7th.com">or email us</a>
     </div>
+    <p class="hero-facts">(205) 203-2409 &middot; 2808 7th Avenue south, Birmingham</p>
   </div>
 </div>
 
@@ -200,36 +212,49 @@ footer.site a{color:#fff}
   
 </ul></div></div>
 
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Denim on 7th Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-6.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-7.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-8.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-9.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-10.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-11.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-12.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-13.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-14.jpg" alt="Denim on 7th - Page · Bar" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Denim on 7th page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+12052032409">(205) 203-2409</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 2808 7th Avenue south, Birmingham, AL, Alabama. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
     <h2>Contact</h2>
     <div class="factbox">
       <dl>
         <div><dt>Phone</dt><dd><a href="tel:+12052032409">(205) 203-2409</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:Contact@denimon7th.com">Contact@denimon7th.com</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:contact@denimon7th.com">contact@denimon7th.com</a></dd></div>
         <div><dt>Address</dt><dd>2808 7th Avenue south, Birmingham, AL, Alabama</dd></div>
         
-        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/people/Denim-on-7th/100095723075469/">www.facebook.com/people/Denim-on-7th/100095723075469/</a></dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.denimon7th.com/home">www.denimon7th.com/home</a></dd></div>
       </dl>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the Denim on 7th Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/367468519_10101208515143350.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/496149675_10101564822271010.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/764116599_815618921638870.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/758543403_808591992341563.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/749377912_801703113030451.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/749629366_801703119697117.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/737191347_789978474202915.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/733395871_784160481451381.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/739187799_790890870778342.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/703035792_755293684338061.jpg" alt="Denim on 7th - Bar" loading="lazy" width="800" height="600"></figure>
     </div>
   </div>
 </section>

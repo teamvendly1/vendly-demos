@@ -1,38 +1,51 @@
 {
+  "niche": "cafe",
   "schema": "vendly.autodemo.build/1",
   "business": "Taproom Coffee",
   "facebook": null,
   "slug": "taproom-coffee",
-  "built_at": "2026-08-07T15:23:59.720Z",
-  "elapsed_ms": 222,
+  "built_at": "2026-08-07T22:41:51.472Z",
+  "elapsed_ms": 2800,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 123
+      "at_ms": 93
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 93
     },
     {
       "step": "assets",
-      "at_ms": 125
+      "at_ms": 2049
+    },
+    {
+      "step": "template",
+      "at_ms": 2161
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2378
     },
     {
       "step": "brand_palette",
-      "at_ms": 127
+      "at_ms": 2710
     },
     {
       "step": "layout",
-      "at_ms": 127
+      "at_ms": 2710
     },
     {
       "step": "render",
-      "at_ms": 127
+      "at_ms": 2711
     },
     {
       "step": "audit",
-      "at_ms": 129
+      "at_ms": 2713
     },
     {
       "step": "beacon_probe",
-      "at_ms": 222
+      "at_ms": 2800
     }
   ],
   "audit": {
@@ -40,34 +53,78 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "cafe",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "cafe",
+      "photo_count": 7,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (cafe) with 7 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
+      "hero",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "cafe",
+      "file": "cafe.js",
+      "resolved_by": "niche",
+      "resolved_from": "cafe",
+      "sources": [
+        "https://www.cultureespresso.com/",
+        "https://www.cafecitosantafe.com/",
+        "https://www.lulacafe.com/",
+        "https://www.parakeetcafe.com/",
+        "https://gracenotecoffee.com/"
+      ],
+      "rationale": "Culture Espresso and Lula Cafe both put per-location hours, address and phone at the very top and Lula makes the address a live map link, so this is the only template that promotes the whole contact block to position two under a facts-first panel hero, with one Order Online button pointed at the real ordering platform the way Cafecito and Parakeet do.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#8A4A1F",
+      "b": "#3A2317",
+      "c": "#A0421A",
+      "brand": "#A0421A",
+      "mist": "#FBF6EF",
+      "ink": "#241A12"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +140,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A0421A",
+            "after": "#A0421A",
+            "ratio": 6.39,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +150,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#8A4A1F",
+            "after": "#8A4A1F",
+            "ratio": 6.82,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +160,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#3A2317",
+            "after": "#3A2317",
+            "ratio": 14.66,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +170,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#3A2317",
+            "after": "#3A2317",
+            "ratio": 11.39,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +182,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A0421A",
+            "ratio": 6.39,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#8A4A1F",
+            "ratio": 6.82,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#3A2317",
+            "ratio": 14.66,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#3A2317",
+            "ratio": 11.39,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#241A12",
+            "bg_mist": "#FBF6EF",
+            "ratio": 15.86,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#3A2317",
+            "bg_mist": "#FBF6EF",
+            "ratio": 13.63,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/53ff5f59e4b0e51709fb53b8/ad2d8d58-a361-43e5-bc98-d2f1269c2aa7/Homepage+Icons.png"
     }
   },
   "accessibility": {
@@ -181,32 +239,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A0421A",
+        "ratio": 6.39,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#8A4A1F",
+        "ratio": 6.82,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#3A2317",
+        "ratio": 14.66,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#3A2317",
+        "ratio": 11.39,
         "pass": true
       }
     ]
@@ -229,81 +287,101 @@
   "claims": [
     {
       "text": "Taproom Coffee",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "(404) 464-5435",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "info@taproomcoffee.com",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "1963 Hosea L Williams Drive SE, Suite R106\nAtlanta, GA, 30317",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "Specialty coffee, locally sourced pastries, and community events in Kirkwood, Atlanta. Visit us at 1963 Hosea L Williams Dr or catch the Taproam Truck.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "Specialty coffee",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "locally sourced pastries",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
       "text": "and community events in Kirkwood",
-      "fetched_at": "2026-08-07T15:23:59.621Z"
-    },
-    {
-      "text": "Specialty coffee, locally sourced pastries, and community events in Kirkwood, Atlanta. Visit us at 1963 Hosea L Williams Dr or catch the Taproam Truck.",
-      "source": "https://www.taproomcoffee.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:23:59.621Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:specialty,coffee,locally,sourced"
-      ]
+      "fetched_at": "2026-08-07T22:41:48.764Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Taproom Coffee | GA",
     "og_url": "https://vendly-demos.vercel.app/taproom-coffee/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/taproom-coffee/assets/site-10.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "51e4dd9c7c511be8f50ca9b599e55f683bfcb53220c66168f9ac1de9f840faba",
+    "image_px": "2500x1838",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 3,
-    "photographs": 0,
+    "accepted": 7,
+    "rejected": 9,
+    "photographs": 7,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "6dffb3082f8c74b5a0c990187f0f5ce1ad9a85bf91529fadb557d3c6b49192d5",
+      "media_id": "site-1"
     },
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "6dffb3082f8c74b5a0c990187f0f5ce1ad9a85bf91529fadb557d3c6b49192d5",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "6dffb3082f8c74b5a0c990187f0f5ce1ad9a85bf91529fadb557d3c6b49192d5",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "029e2c44643c6714e1523a09f25d82dcc2851d59d8d05731a71cb2459dc56598",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "df8c8a582900f8f2bfb55115bf2ddffc3d4d197c166c9eae3e7090e0475c4cf1",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "ed0d8c2406375049af9f7167c854c220aa7ec680dca633691802ce42518ab5de",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "51e4dd9c7c511be8f50ca9b599e55f683bfcb53220c66168f9ac1de9f840faba",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "156cd90d357ef9e5b318c9106c94683aa31d39b7d560fb496160543bb5328ac1",
+      "media_id": "site-14"
     },
     {
       "reason": "download_failed",
@@ -315,9 +393,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "cafe"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

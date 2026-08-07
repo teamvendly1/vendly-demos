@@ -12,17 +12,35 @@
 <meta property="og:description" content="We offer top quality human hair extentions. Wigs being the top seller for Wigphenalia. Look at your Wigphenalia hair as your beautiful canvas. The styles and colors are endless. Here at Wigphenalia...">
 <meta property="og:url" content="https://vendly-demos.vercel.app/wigphenalia/">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://vendly-demos.vercel.app/wigphenalia/assets/site-0.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/wigphenalia/assets/site-0.jpg">
+<meta property="og:image:width" content="987">
+<meta property="og:image:height" content="1500">
+<meta property="og:image:alt" content="Wigphenalia">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/wigphenalia/assets/site-0.jpg">
+<meta name="twitter:image:alt" content="Wigphenalia">
 <meta name="twitter:title" content="Wigphenalia | GA">
 <meta name="twitter:description" content="We offer top quality human hair extentions. Wigs being the top seller for Wigphenalia. Look at your Wigphenalia hair as your beautiful canvas. The styles and colors are endless. Here at Wigphenalia...">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#61688C;--b:#2A2D3C;--c:#61688C;--mist:#F4F5F8;--ink:#1C1119;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#61688C;--scrim:15,16,21;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -158,13 +176,13 @@ footer.site a{color:#fff}
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+14049071008">Call (404) 907-1008</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
     <a class="brand" href="#main">Wigphenalia</a>
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,18 +191,35 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
-  <div class="wrap hero-in">
-    
-    <p class="eyebrow">Local Business in GA</p>
-    <h1>Wigphenalia</h1>
-    <p class="lede">We offer top quality human hair extentions. Wigs being the top seller for Wigphenalia. Look at your Wigphenalia hair as your beautiful canvas. The styles and colors are endless. Here at Wigphenalia, we offer install services, and custom hair coloring services.</p>
-    <div class="cta-row">
-      <a class="btn btn-c" href="tel:+14049071008">Call (404) 907-1008</a>
-      <a class="btn btn-ghost" href="mailto:iiamaaliyahdavid@gmail.com">Email us</a>
+<div class="hero hero-split">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Local Business in GA</p>
+      <h1>Wigphenalia</h1>
+      <p class="lede">We offer top quality human hair extentions. Wigs being the top seller for Wigphenalia. Look at your Wigphenalia hair as your beautiful canvas. The styles and colors are endless. Here at Wigphenalia, we offer install services, and custom hair coloring services.</p>
+      <div class="cta-row">
+      <a class="btn btn-c" href="tel:+14049071008">Book a Free Consultation</a>
+      <a class="hero-alt" href="mailto:iiamaaliyahdavid@gmail.com">or email us</a>
     </div>
+    <p class="hero-facts">(404) 907-1008 &middot; 3439 Dogwood Drive, Hapeville</p>
+    </div>
+    <div class="hero-shot"><img src="assets/site-0.jpg" alt="hair" width="800" height="600"></div>
   </div>
 </div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Wigphenalia Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>hair</h3></div>
+      <div class="card"><h3>as your beautiful canvas. The styles</h3></div>
+      <div class="card"><h3>and colors are endless</h3></div>
+      <div class="card"><h3>Here at Wigphenalia</h3></div>
+      <div class="card"><h3>and custom hair coloring services</h3></div>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -201,22 +236,29 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section id="services">
+<section id="work">
   <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Wigphenalia Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>and custom hair coloring services</h3></div>
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Wigphenalia Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-1.png" alt="as your beautiful canvas. The styles" loading="lazy" width="800" height="600"><figcaption>as your beautiful canvas. The styles</figcaption></figure>
+      <figure><img src="assets/site-10.jpg" alt="and colors are endless" loading="lazy" width="800" height="600"><figcaption>and colors are endless</figcaption></figure>
+      <figure><img src="assets/site-13.jpg" alt="Here at Wigphenalia" loading="lazy" width="800" height="600"><figcaption>Here at Wigphenalia</figcaption></figure>
     </div>
   </div>
 </section>
 
-<section class="words">
+<section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">We offer top quality human hair extentions. Wigs being the top seller for Wigphenalia. Look at your Wigphenalia hair as your beautiful canvas. The styles and colors are endless. Here at Wigphenalia, we offer install services, and custom hair coloring services.
-      <cite>Posted by Wigphenalia on Facebook. Read on <a href="https://www.wigphenaliaco.com/">their page</a>.</cite>
-    </blockquote>
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Wigphenalia page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+14049071008">(404) 907-1008</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 3439 Dogwood Drive, Hapeville, GA, 30354. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 

@@ -1,38 +1,51 @@
 {
+  "niche": "bar",
   "schema": "vendly.autodemo.build/1",
   "business": "Bouzy",
   "facebook": null,
   "slug": "bouzy",
-  "built_at": "2026-08-07T18:11:23.059Z",
-  "elapsed_ms": 2052,
+  "built_at": "2026-08-07T23:08:12.538Z",
+  "elapsed_ms": 1791,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 1959
+      "at_ms": 276
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 277
     },
     {
       "step": "assets",
-      "at_ms": 1960
+      "at_ms": 1012
+    },
+    {
+      "step": "template",
+      "at_ms": 1042
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1056
     },
     {
       "step": "brand_palette",
-      "at_ms": 1961
+      "at_ms": 1424
     },
     {
       "step": "layout",
-      "at_ms": 1961
+      "at_ms": 1424
     },
     {
       "step": "render",
-      "at_ms": 1961
+      "at_ms": 1425
     },
     {
       "step": "audit",
-      "at_ms": 1963
+      "at_ms": 1426
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2052
+      "at_ms": 1791
     }
   ],
   "audit": {
@@ -40,41 +53,86 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "bar",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "bar",
+      "photo_count": 2,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (2): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
+      "gallery",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "See Tonight",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "bar",
+      "file": "bar.js",
+      "resolved_by": "niche",
+      "resolved_from": "bar",
+      "sources": [
+        "https://thedeadrabbit.com/",
+        "https://www.tspdallas.com/",
+        "https://www.smugglerscovesf.com/",
+        "https://www.bisouschicago.com/"
+      ],
+      "rationale": "Smuggler's Cove converts with no booking path at all by stating the door policy in plain words at the top, so the single CTA anchors to hours and policy rather than a reservation widget, and Bisous plus Smuggler's Cove both put press and award proof above the fold, which is why trust sits second and gallery outranks the drinks list.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#5A482A",
+      "b": "#463820",
+      "c": "#5A482A",
+      "brand": "#5A482A",
+      "mist": "#F9F7F3",
+      "ink": "#12201F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#5A482A",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +141,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#5A482A",
+            "after": "#5A482A",
+            "ratio": 8.77,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +151,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#5A482A",
+            "after": "#5A482A",
+            "ratio": 8.77,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +161,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#463820",
+            "after": "#463820",
+            "ratio": 11.37,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +171,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#463820",
+            "after": "#463820",
+            "ratio": 8.84,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +183,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#5A482A",
+            "ratio": 8.77,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#5A482A",
+            "ratio": 8.77,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#463820",
+            "ratio": 11.37,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#463820",
+            "ratio": 8.84,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#12201F",
+            "bg_mist": "#F9F7F3",
+            "ratio": 15.67,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#463820",
+            "bg_mist": "#F9F7F3",
+            "ratio": 10.63,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/5ffcb53b5d03a5318f3f3a66/1610403214043-JJTOPDU89RQ3STMESPDX/Bouzy_Logo_Dark.png?format=1500w"
     }
   },
   "accessibility": {
@@ -181,32 +240,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#5A482A",
+        "ratio": 8.77,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#5A482A",
+        "ratio": 8.77,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#463820",
+        "ratio": 11.37,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#463820",
+        "ratio": 8.84,
         "pass": true
       }
     ]
@@ -229,17 +288,17 @@
   "claims": [
     {
       "text": "Bouzy",
-      "fetched_at": "2026-08-07T18:11:22.965Z"
+      "fetched_at": "2026-08-07T23:08:11.023Z"
     },
     {
       "text": "(813) 550-2560",
-      "fetched_at": "2026-08-07T18:11:22.965Z"
+      "fetched_at": "2026-08-07T23:08:11.023Z"
     },
     {
       "text": "",
       "source": "https://www.bouzytampa.com/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T18:11:22.965Z"
+      "fetched_at": "2026-08-07T23:08:11.023Z"
     }
   ],
   "unresolved": [
@@ -250,33 +309,55 @@
   "link_preview": {
     "og_title": "Bouzy",
     "og_url": "https://vendly-demos.vercel.app/bouzy/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/bouzy/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "e4c86fcb0cc3a54ac61f37c1f6fc8d2cec28f571fc0a7a681d9d26390c0059d7",
+    "image_px": "2500x1667",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 2,
+    "rejected": 4,
+    "photographs": 2,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "e4c86fcb0cc3a54ac61f37c1f6fc8d2cec28f571fc0a7a681d9d26390c0059d7",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "d70b84358e259eb4c4c4e3ad80bfb2566393fc6365b511dfd7eceece97603b97",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "media_id": "site-5"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "bar"
   },
-  "fill_tokens": 2
+  "fill_tokens": 6
 }

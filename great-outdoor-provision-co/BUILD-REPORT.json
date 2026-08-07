@@ -1,42 +1,51 @@
 {
+  "niche": "outdoor",
   "schema": "vendly.autodemo.build/1",
   "business": "Great Outdoor Provision Co.",
   "facebook": null,
   "slug": "great-outdoor-provision-co",
-  "built_at": "2026-08-07T15:51:28.765Z",
-  "elapsed_ms": 1885,
+  "built_at": "2026-08-07T22:53:43.834Z",
+  "elapsed_ms": 3401,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 402
+      "at_ms": 282
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 402
+      "at_ms": 283
     },
     {
       "step": "assets",
-      "at_ms": 1791
+      "at_ms": 2415
+    },
+    {
+      "step": "template",
+      "at_ms": 2539
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2758
     },
     {
       "step": "brand_palette",
-      "at_ms": 1793
+      "at_ms": 3281
     },
     {
       "step": "layout",
-      "at_ms": 1793
+      "at_ms": 3281
     },
     {
       "step": "render",
-      "at_ms": 1793
+      "at_ms": 3282
     },
     {
       "step": "audit",
-      "at_ms": 1795
+      "at_ms": 3284
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1885
+      "at_ms": 3401
     }
   ],
   "audit": {
@@ -44,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "landscaping",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 10,
+      "trade_key": "landscaping",
+      "photo_count": 17,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "visual trade (landscaping) with 17 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Request a Consultation",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "landscaping",
+      "file": "landscaping.js",
+      "resolved_by": "family",
+      "resolved_from": "landscaping",
+      "sources": [
+        "https://www.keanelandscaping.com",
+        "https://www.tomlinsonbomberger.com",
+        "https://mymasterplan.com",
+        "https://deleonlandscapes.com",
+        "https://mulkernlandscaping.com"
+      ],
+      "rationale": "Keane Landscaping makes the hero ask a qualifier (home value range and project type before email) and MasterPLAN Outdoor Living asks for a discovery call rather than a quote, because a design-build job cannot be priced from a form, so the primary action here scrolls to a qualifying form instead of dialling; the single large photograph of the crew own finished work owns the hero across all five winners, the captioned portfolio moves to second position because MasterPLAN and the research both put the decision in the gallery, and the service area is stated as named towns after Mulkern twelve neighbourhoods and Tomlinson Bomberger community-by-community checker. MAPPING SEAM, flagged not silent: this family also absorbs cleaning and carpet_cleaner, and their real proof mechanic is not a portfolio at all, it is the pressure-washing before-and-after pair - pressure-washing.md says so explicitly, so for those two take the hero and gallery treatment from the pressure-washing template and keep only this file qualifying-form CTA. Moving_company sits in the same family and needs the qualifier hardest of all, since a mover cannot price without bedrooms and distance.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#00592B",
+      "b": "#085E32",
+      "c": "#00592B",
+      "brand": "#00592B",
+      "mist": "#F3F9F6",
+      "ink": "#131A14"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#00592B",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -87,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#00592B",
+            "after": "#00592B",
+            "ratio": 8.52,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -97,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#00592B",
+            "after": "#00592B",
+            "ratio": 8.52,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -107,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#085E32",
+            "after": "#085E32",
+            "ratio": 7.9,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -117,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#085E32",
+            "after": "#085E32",
+            "ratio": 6.14,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -129,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#00592B",
+            "ratio": 8.52,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#00592B",
+            "ratio": 8.52,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#085E32",
+            "ratio": 7.9,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#085E32",
+            "ratio": 6.14,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#131A14",
+            "bg_mist": "#F3F9F6",
+            "ratio": 16.61,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#085E32",
+            "bg_mist": "#F3F9F6",
+            "ratio": 7.41,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.greatoutdoorprovision.com/cdn/shop/files/GOPC16-main-logo-green-1200x300-web.png?v=1681848766&width=1200"
     }
   },
   "accessibility": {
@@ -185,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#00592B",
+        "ratio": 8.52,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#00592B",
+        "ratio": 8.52,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#085E32",
+        "ratio": 7.9,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#085E32",
+        "ratio": 6.14,
         "pass": true
       }
     ]
@@ -220,7 +276,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 10,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -240,52 +296,42 @@
   "claims": [
     {
       "text": "Great Outdoor Provision Co.",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "(336) 851-1331",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "gopc801@greatoutdoorprovision.com",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "Westover Gallery of Shops, 1410 Westover Terrace, Greensboro, NC",
       "source": "https://www.facebook.com/GreatOutdoorProvisionCoGSO/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "Visit our Greensboro store at 1410 Westover Terrace for outdoor gear, expert advice, and dog-friendly shopping! Join us for events and community activities.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "Page · Outdoor Equipment Store",
       "source": "https://www.facebook.com/GreatOutdoorProvisionCoGSO/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "expert advice",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     },
     {
       "text": "100% recommend (16 Reviews)",
       "source": "https://www.facebook.com/GreatOutdoorProvisionCoGSO/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T15:51:27.282Z"
-    },
-    {
-      "text": "Visit our Greensboro store at 1410 Westover Terrace for outdoor gear, expert advice, and dog-friendly shopping! Join us for events and community activities.",
-      "source": "https://www.greatoutdoorprovision.com/pages/greensboro-store",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:51:27.282Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:outdoor,store,visit,greensboro"
-      ]
+      "fetched_at": "2026-08-07T22:53:40.715Z"
     }
   ],
   "unresolved": [
@@ -294,26 +340,71 @@
   "link_preview": {
     "og_title": "Great Outdoor Provision Co. | Greensboro",
     "og_url": "https://vendly-demos.vercel.app/great-outdoor-provision-co/",
-    "og_image": "https://vendly-demos.vercel.app/great-outdoor-provision-co/assets/504490395_18397832032119576.jpg",
+    "og_image": "https://vendly-demos.vercel.app/great-outdoor-provision-co/assets/site-1.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
-    "image_is_page_lead_image": false,
-    "image_sha256": "5278f5743bdab0a492ae04c69311997fd4c2ac98fcd66097c3986b647c2269f5",
-    "image_px": "1440x1440",
+    "image_is_page_lead_image": true,
+    "image_sha256": "010cc4d494dc247a5fa7c73bd96a87a379ffd10e3a358979f12c2e971de19297",
+    "image_px": "670x893",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
-    "meets_facebook_recommended_1200x630": true,
+    "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "large",
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 10,
-    "rejected": 1,
-    "photographs": 10,
+    "accepted": 17,
+    "rejected": 10,
+    "photographs": 17,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "660974389fc8118e3a5328a848b90298a94f51c7d4951f0eecf107b6d48ff041",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "10f3e0249ee122684cfc3c7b549dd8a9c17c40b95f53c2c579f8612b159b8e46",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "8990a8ebbfb461d3081ed1f237b069dc8aa37dde2649775b998d064aaca0dd73",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "083f124b488004d375a537d0cc981195f194a5dde67e3d873ed23bc5d3223860",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a114915d7b77f9b7e43c7dc3547fcc26fd25e08a9c9646cd082e01b59b239c46",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "31901d4dc7a07a7816086ac81d5e31f9ad5fb3fa5a8010d9c290d4a059b6ac0d",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ea2854d5f010776c105d15860ff4e9ede3c1d8f3d69645351b6d033b5d63c906",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7e6483be410e0065a0aedc00115e2e9caa6d73a26be4a27e40491c27ad4b6be5",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "378eb8dc1835d2e9b1f523d83535a453cdcce5f25a5f267ead303b715b60e21a",
+      "media_id": "site-14"
+    },
     {
       "reason": "duplicate_content",
       "sha256": "815409dac48301fd9da80669fd4f864d3efdc76aa1c1e374ed0decd16aa5bab1",
@@ -324,9 +415,10 @@
     "hero": true,
     "trust_strip": true,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "outdoor"
   },
   "fill_tokens": 22
 }

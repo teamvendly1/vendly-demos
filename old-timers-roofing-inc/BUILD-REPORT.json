@@ -1,38 +1,47 @@
 {
+  "niche": "roofing",
   "schema": "vendly.autodemo.build/1",
-  "business": "Old Timers Roofing, Inc",
+  "business": "Old Timers Roofing, Inc.",
   "facebook": null,
   "slug": "old-timers-roofing-inc",
-  "built_at": "2026-08-07T15:24:15.194Z",
-  "elapsed_ms": 400,
+  "built_at": "2026-08-07T22:43:17.673Z",
+  "elapsed_ms": 1609,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 313
+      "at_ms": 235
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 235
     },
     {
       "step": "assets",
-      "at_ms": 315
+      "at_ms": 1029
+    },
+    {
+      "step": "template",
+      "at_ms": 1141
     },
     {
       "step": "brand_palette",
-      "at_ms": 316
+      "at_ms": 1504
     },
     {
       "step": "layout",
-      "at_ms": 316
+      "at_ms": 1504
     },
     {
       "step": "render",
-      "at_ms": 317
+      "at_ms": 1506
     },
     {
       "step": "audit",
-      "at_ms": 318
+      "at_ms": 1507
     },
     {
       "step": "beacon_probe",
-      "at_ms": 400
+      "at_ms": 1609
     }
   ],
   "audit": {
@@ -40,41 +49,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "roofing",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "roofing",
+      "photo_count": 4,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (roofing) with 4 photographs",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Request a Roof Inspection",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "roofing",
+      "file": "roofing.js",
+      "resolved_by": "niche",
+      "resolved_from": "roofing",
+      "sources": [
+        "https://burginroofing.com",
+        "https://www.lindholmroofing.com",
+        "https://texastraditionsroofing.com",
+        "https://clevelandroofs.com",
+        "https://janneyroofing.com"
+      ],
+      "rationale": "Burgin and Lindholm both put one quote ask directly under the hero headline and a tappable phone number in the top nav, because a roof buyer is triaging a failure on a phone, so the page leads with a readable panel and one repeated inspection CTA rather than two equal buttons; Janney supplies the gallery mechanic (filtered by the roof material the visitor actually has) and Burgin the countable trust block (real numbers and printed licence numbers, never the adjective). MAPPING SEAM, flagged not silent: this family also absorbs concrete, remodeling and custom_porch_builder, and for a decorative patio or driveway contractor this urgent phone-first shape is wrong - that buyer is unhurried and visual, so use the landscaping template (discovery-call CTA, portfolio-led order) when the lead sells patios and driveways, per the note in landscaping.md. HVAC and plumbing pull the other way and lean on the phone even harder than roofing does.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#025DB9",
+      "b": "#08335E",
+      "c": "#025DB9",
+      "brand": "#025DB9",
+      "mist": "#F3F6F9",
+      "ink": "#161C24"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#025DB9",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +138,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#025DB9",
+            "after": "#025DB9",
+            "ratio": 6.42,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +148,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#025DB9",
+            "after": "#025DB9",
+            "ratio": 6.42,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +158,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#08335E",
+            "after": "#08335E",
+            "ratio": 12.76,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +168,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#08335E",
+            "after": "#08335E",
+            "ratio": 9.92,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +180,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#025DB9",
+            "ratio": 6.42,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#025DB9",
+            "ratio": 6.42,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#08335E",
+            "ratio": 12.76,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#08335E",
+            "ratio": 9.92,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#161C24",
+            "bg_mist": "#F3F6F9",
+            "ratio": 15.8,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#08335E",
+            "bg_mist": "#F3F6F9",
+            "ratio": 11.77,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -181,32 +237,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#025DB9",
+        "ratio": 6.42,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#025DB9",
+        "ratio": 6.42,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#08335E",
+        "ratio": 12.76,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#08335E",
+        "ratio": 9.92,
         "pass": true
       }
     ]
@@ -228,76 +284,92 @@
   },
   "claims": [
     {
-      "text": "Old Timers Roofing, Inc",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "text": "Old Timers Roofing, Inc.",
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "(336) 444-6191",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "contact@oldtimersroofing.com",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "3127 Battleground Avenue, Greensboro, North Carolina, 27408",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "Local Greensboro roofing company providing roof inspections, storm damage evaluations, repairs, replacements, and instant roof estimates. Serving Greensboro and the Piedmont Triad.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "Local Greensboro roofing company providing roof inspections",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "storm damage evaluations",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "repairs",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
       "text": "replacements",
-      "fetched_at": "2026-08-07T15:24:15.106Z"
-    },
-    {
-      "text": "Local Greensboro roofing company providing roof inspections, storm damage evaluations, repairs, replacements, and instant roof estimates. Serving Greensboro and the Piedmont Triad.",
-      "source": "https://oldtimersroofing.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:24:15.106Z",
-      "relevance": [
-        "service_vocab:greensboro,roofing,providing,roof"
-      ]
+      "fetched_at": "2026-08-07T22:43:16.298Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
-    "og_title": "Old Timers Roofing, Inc | North Carolina",
+    "og_title": "Old Timers Roofing, Inc. | North Carolina",
     "og_url": "https://vendly-demos.vercel.app/old-timers-roofing-inc/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/old-timers-roofing-inc/assets/site-8.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "77fa4e3e4d5f071f4e70bfda8a63f5bcc539ad299b0ca3e1d6277940cdf5e781",
+    "image_px": "2048x1152",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 5,
+    "rejected": 6,
+    "photographs": 4,
+    "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "b83d78444eea18a5883118181ccf491ea1929a3ee45b8051913627ab781a9202",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "c0a32df69e2289ca96eec70e8824c4842038b32041548aae0c2b60b83bc4d297",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "4b0680c9e575c77c99f6bd2fc750d4fa33c8d3df31eb69e0915d253701b3ef2f",
+      "media_id": "site-7"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -308,9 +380,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "roofing"
   },
-  "fill_tokens": 6
+  "fill_tokens": 14
 }

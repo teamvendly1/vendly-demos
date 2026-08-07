@@ -1,38 +1,51 @@
 {
+  "niche": "bakery",
   "schema": "vendly.autodemo.build/1",
   "business": "Chewy's Bagels",
   "facebook": null,
   "slug": "chewy-s-bagels",
-  "built_at": "2026-08-07T15:55:48.125Z",
-  "elapsed_ms": 300,
+  "built_at": "2026-08-07T22:56:17.843Z",
+  "elapsed_ms": 2621,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 205
+      "at_ms": 109
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 109
     },
     {
       "step": "assets",
-      "at_ms": 206
+      "at_ms": 1955
+    },
+    {
+      "step": "template",
+      "at_ms": 2070
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2087
     },
     {
       "step": "brand_palette",
-      "at_ms": 208
+      "at_ms": 2473
     },
     {
       "step": "layout",
-      "at_ms": 208
+      "at_ms": 2473
     },
     {
       "step": "render",
-      "at_ms": 208
+      "at_ms": 2474
     },
     {
       "step": "audit",
-      "at_ms": 209
+      "at_ms": 2476
     },
     {
       "step": "beacon_probe",
-      "at_ms": 300
+      "at_ms": 2621
     }
   ],
   "audit": {
@@ -40,41 +53,85 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "bakery",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "bakery",
+      "photo_count": 10,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (bakery) with 10 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "contact",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Order a Custom Cake",
+      "kind": "mailto"
+    },
+    "niche_template": {
+      "family": "bakery",
+      "file": "bakery.js",
+      "resolved_by": "niche",
+      "resolved_from": "bakery",
+      "sources": [
+        "https://www.honeybearbakeshop.com/",
+        "https://www.littletartatl.com/",
+        "https://www.flourbakery.com/",
+        "https://www.pophamsbakery.com/",
+        "https://sourdoughsophia.co.uk/"
+      ],
+      "rationale": "The Little Tart Bakeshop forks \"Place an Order\" into same-day pickup versus cakes and catering and Flour gives custom cakes their own homepage door, so services sits at position two carrying both named paths with a stated lead time while the single CTA resolves the fork toward the custom enquiry Honeybear routes to a named human at a named address, which is the one buyer the current one-button template collects nothing from.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#3B7BB0",
+      "b": "#1A364C",
+      "c": "#3B7BB0",
+      "brand": "#649DCB",
+      "mist": "#F3F6F9",
+      "ink": "#1B2230"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#649DCB",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +140,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#649DCB",
+            "after": "#3B7BB0",
+            "ratio": 4.52,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#649DCB",
+            "after": "#3B7BB0",
+            "ratio": 4.52,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#1A364C",
+            "after": "#1A364C",
+            "ratio": 12.53,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +170,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#1A364C",
+            "after": "#1A364C",
+            "ratio": 9.74,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +182,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#3B7BB0",
+            "ratio": 4.52,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#3B7BB0",
+            "ratio": 4.52,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#1A364C",
+            "ratio": 12.53,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#1A364C",
+            "ratio": 9.74,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1B2230",
+            "bg_mist": "#F3F6F9",
+            "ratio": 14.69,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#1A364C",
+            "bg_mist": "#F3F6F9",
+            "ratio": 11.55,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/67b7a69118c0603a83ba555f/40f82062-b288-4146-b721-9af0077ad638/ChewysBagels_Logo-FullColor.png?format=1500w"
     }
   },
   "accessibility": {
@@ -181,32 +239,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#3B7BB0",
+        "ratio": 4.52,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#3B7BB0",
+        "ratio": 4.52,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#1A364C",
+        "ratio": 12.53,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#1A364C",
+        "ratio": 9.74,
         "pass": true
       }
     ]
@@ -229,50 +287,40 @@
   "claims": [
     {
       "text": "Chewy's Bagels",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "(804) 918-3351",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "info@chewysbagelsrva.com",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "Discover handcrafted, slow-fermented sourdough bagels at Chewy's Bagels in Richmond, VA. Enjoy fresh, homemade bagels with no preservatives, available for online orders and catering.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "Discover handcrafted",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "VA. Enjoy fresh",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "homemade bagels with no preservatives",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     },
     {
       "text": "available for online orders and catering",
-      "fetched_at": "2026-08-07T15:55:48.029Z"
-    },
-    {
-      "text": "Discover handcrafted, slow-fermented sourdough bagels at Chewy's Bagels in Richmond, VA. Enjoy fresh, homemade bagels with no preservatives, available for online orders and catering.",
-      "source": "https://www.chewysbagelsrva.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:55:48.029Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:discover,handcrafted,slow,fermented"
-      ]
+      "fetched_at": "2026-08-07T22:56:15.330Z"
     }
   ],
   "unresolved": [
@@ -281,26 +329,56 @@
   "link_preview": {
     "og_title": "Chewy&#39;s Bagels",
     "og_url": "https://vendly-demos.vercel.app/chewy-s-bagels/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/chewy-s-bagels/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "d7cfc2c3081c67b8001a65f2f7fa57a0ea0103e85e848c27689e2235b8a33d2a",
+    "image_px": "657x620",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 10,
+    "rejected": 7,
+    "photographs": 10,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "837a941ac1f0d8b2b65b5bd0054d1022390591016fca3ea28f81cd19bc0b2824",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "09f943dd2cee51b2866b65043b8f00efe52de6c5c5ecd6b956796fbb2303705a",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "12078eecef2a499fc91c1496569b44434320acf14eac7b6c6f9c0924eca0ecf4",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "69b9b808229711d972472247e592d35a611a2f6105623740965bafe2c742a20e",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "7d7d0181a99cd69ea689288365e9d3b5f2292563f99bbeb80fc09ab53a0d3530",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "1545e5bd02b851f3ba936a1b5710c7da8a56d9d36c693ada505b1366df444025",
+      "media_id": "site-12"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -311,9 +389,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "bakery"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

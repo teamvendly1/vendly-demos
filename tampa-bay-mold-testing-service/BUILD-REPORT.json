@@ -1,38 +1,51 @@
 {
+  "niche": "mold_testing",
   "schema": "vendly.autodemo.build/1",
   "business": "Tampa Bay Mold Testing Service",
   "facebook": null,
   "slug": "tampa-bay-mold-testing-service",
-  "built_at": "2026-08-07T16:11:40.066Z",
-  "elapsed_ms": 2353,
+  "built_at": "2026-08-07T23:09:02.196Z",
+  "elapsed_ms": 3926,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2249
+      "at_ms": 2005
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 2005
     },
     {
       "step": "assets",
-      "at_ms": 2251
+      "at_ms": 3397
+    },
+    {
+      "step": "template",
+      "at_ms": 3526
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 3541
     },
     {
       "step": "brand_palette",
-      "at_ms": 2252
+      "at_ms": 3824
     },
     {
       "step": "layout",
-      "at_ms": 2252
+      "at_ms": 3824
     },
     {
       "step": "render",
-      "at_ms": 2253
+      "at_ms": 3825
     },
     {
       "step": "audit",
-      "at_ms": 2254
+      "at_ms": 3826
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2353
+      "at_ms": 3926
     }
   ],
   "audit": {
@@ -40,34 +53,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "roofing",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "roofing",
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (roofing) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Request a Roof Inspection",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "roofing",
+      "file": "roofing.js",
+      "resolved_by": "family",
+      "resolved_from": "roofing",
+      "sources": [
+        "https://burginroofing.com",
+        "https://www.lindholmroofing.com",
+        "https://texastraditionsroofing.com",
+        "https://clevelandroofs.com",
+        "https://janneyroofing.com"
+      ],
+      "rationale": "Burgin and Lindholm both put one quote ask directly under the hero headline and a tappable phone number in the top nav, because a roof buyer is triaging a failure on a phone, so the page leads with a readable panel and one repeated inspection CTA rather than two equal buttons; Janney supplies the gallery mechanic (filtered by the roof material the visitor actually has) and Burgin the countable trust block (real numbers and printed licence numbers, never the adjective). MAPPING SEAM, flagged not silent: this family also absorbs concrete, remodeling and custom_porch_builder, and for a decorative patio or driveway contractor this urgent phone-first shape is wrong - that buyer is unhurried and visual, so use the landscaping template (discovery-call CTA, portfolio-led order) when the lead sells patios and driveways, per the note in landscaping.md. HVAC and plumbing pull the other way and lean on the phone even harder than roofing does.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#1F3A5F",
+      "b": "#12253D",
+      "c": "#A32A20",
+      "brand": "#A32A20",
+      "mist": "#F5F7FA",
+      "ink": "#161C24"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A32A20",
+            "after": "#A32A20",
+            "ratio": 7.22,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#1F3A5F",
+            "after": "#1F3A5F",
+            "ratio": 11.48,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#12253D",
+            "after": "#12253D",
+            "ratio": 15.47,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#12253D",
+            "after": "#12253D",
+            "ratio": 12.02,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A32A20",
+            "ratio": 7.22,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#1F3A5F",
+            "ratio": 11.48,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#12253D",
+            "ratio": 15.47,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#12253D",
+            "ratio": 12.02,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#161C24",
+            "bg_mist": "#F5F7FA",
+            "ratio": 15.96,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#12253D",
+            "bg_mist": "#F5F7FA",
+            "ratio": 14.41,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://tampabaymoldtesting.com/wp-content/uploads/2026/05/1770313604800013_374555371-1771018615462-ozv2sw.webp"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A32A20",
+        "ratio": 7.22,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#1F3A5F",
+        "ratio": 11.48,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#12253D",
+        "ratio": 15.47,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#12253D",
+        "ratio": 12.02,
         "pass": true
       }
     ]
@@ -229,34 +289,24 @@
   "claims": [
     {
       "text": "Tampa Bay Mold Testing Service",
-      "fetched_at": "2026-08-07T16:11:39.962Z"
+      "fetched_at": "2026-08-07T23:09:00.274Z"
     },
     {
       "text": "813203651994",
-      "fetched_at": "2026-08-07T16:11:39.962Z"
+      "fetched_at": "2026-08-07T23:09:00.274Z"
     },
     {
       "text": "info@tampabaymoldtesting.com",
-      "fetched_at": "2026-08-07T16:11:39.962Z"
+      "fetched_at": "2026-08-07T23:09:00.274Z"
     },
     {
       "text": "Tampa Bay Mold Testing provides Mold Inspection and Testing Services in Tampa Bay, FL with accurate assessments and detailed reporting. Call Now!",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:11:39.962Z"
+      "fetched_at": "2026-08-07T23:09:00.274Z"
     },
     {
       "text": "Place",
-      "fetched_at": "2026-08-07T16:11:39.962Z"
-    },
-    {
-      "text": "Tampa Bay Mold Testing provides Mold Inspection and Testing Services in Tampa Bay, FL with accurate assessments and detailed reporting. Call Now!",
-      "source": "https://tampabaymoldtesting.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:11:39.962Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:tampa,mold,testing,provides"
-      ]
+      "fetched_at": "2026-08-07T23:09:00.274Z"
     }
   ],
   "unresolved": [
@@ -265,26 +315,41 @@
   "link_preview": {
     "og_title": "Tampa Bay Mold Testing Service",
     "og_url": "https://vendly-demos.vercel.app/tampa-bay-mold-testing-service/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/tampa-bay-mold-testing-service/assets/site-12.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "76b4c38a5a2ff84133fbf1cc4dc97137ab7c78c60a0d6dc13ad413189cd2a475",
+    "image_px": "1920x1440",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 13,
+    "rejected": 4,
+    "photographs": 13,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "562a1ea3ae5247639dd4362c8e9765e65c27a343d914f18aa359818b067e7d77",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "465db0d95811aadc7e7a8645170465e9c3d42c3b66f32377825772c896299c1c",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "545a75b3c25f70811e67fd49f582c64a257c6cd6e65010152303631614832e0f",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -295,9 +360,10 @@
     "hero": true,
     "trust_strip": false,
     "services": false,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "mold_testing"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

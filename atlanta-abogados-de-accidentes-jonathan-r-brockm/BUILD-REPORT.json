@@ -1,0 +1,418 @@
+{
+  "niche": "lawyer",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Atlanta Abogados de Accidentes - Jonathan R. Brockman, P.C.",
+  "facebook": null,
+  "slug": "atlanta-abogados-de-accidentes-jonathan-r-brockm",
+  "built_at": "2026-08-07T22:45:10.558Z",
+  "elapsed_ms": 2388,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 147
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 147
+    },
+    {
+      "step": "assets",
+      "at_ms": 1811
+    },
+    {
+      "step": "template",
+      "at_ms": 1931
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 2290
+    },
+    {
+      "step": "layout",
+      "at_ms": 2290
+    },
+    {
+      "step": "render",
+      "at_ms": 2292
+    },
+    {
+      "step": "audit",
+      "at_ms": 2293
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 2388
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "lawyer",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
+    "layout_selected_by": {
+      "trade_key": "lawyer",
+      "photo_count": 9,
+      "has_reviews": false,
+      "branch": "urgent/transactional trade (lawyer), 9 photographs",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "services",
+      "words",
+      "concierge",
+      "contact"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "niche",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "panel"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#E6260B",
+      "b": "#5E1208",
+      "c": "#E6260B",
+      "brand": "#F7705D",
+      "mist": "#F9F4F3",
+      "ink": "#141E19"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#F7705D",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#F7705D",
+            "after": "#E6260B",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#F7705D",
+            "after": "#E6260B",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#5E1208",
+            "after": "#5E1208",
+            "ratio": 13.41,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#5E1208",
+            "after": "#5E1208",
+            "ratio": 10.42,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#E6260B",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#E6260B",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#5E1208",
+            "ratio": 13.41,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#5E1208",
+            "ratio": 10.42,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#141E19",
+            "bg_mist": "#F9F4F3",
+            "ratio": 15.67,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#5E1208",
+            "bg_mist": "#F9F4F3",
+            "ratio": 12.3,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "gallery_asset_classified_graphic"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#E6260B",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#E6260B",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#5E1208",
+        "ratio": 13.41,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#5E1208",
+        "ratio": 10.42,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "atlanta-abogados-de-accidentes-jonathan-r-brockm",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Atlanta Abogados de Accidentes - Jonathan R. Brockman, P.C.",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "(770) 205-8887",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "881 Ponce De Leon Ave NE Suite 1, Atlanta, GA, 30306",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 00:00-24:00",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "At Jonathan R. Brockman, P.C., we are dedicated Atlanta personal injury attorneys committed to securing justice and compensation for accident victims across Georgia. With decades of experience, we specialize in cases involving car accidents, truck accidents, wrongful death, medical malpractice, and more. Our compassionate legal team works tirelessly to protect your rights and hold negligent parties accountable. We understand the physical, emotional, and financial toll of an injury and strive to provide personalized, results-driven representation. Let us help you navigate your legal challenges with confidence. We have offices in Atlanta, Cumming, Fayetteville, Alpharetta, and Carrollton. Contact us today for a free consultation.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "Legal Service",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "At Jonathan R. Brockman",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "P.C",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "we specialize in cases involving car accidents",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "truck accidents",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "wrongful death",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "medical malpractice",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "emotional",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "Cumming",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "Fayetteville",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "Alpharetta",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    },
+    {
+      "text": "and Carrollton. Contact us today for a free consultation",
+      "fetched_at": "2026-08-07T22:45:08.316Z"
+    }
+  ],
+  "unresolved": [],
+  "link_preview": {
+    "og_title": "Atlanta Abogados de Accidentes - Jonathan R. Brockman, P.C. | GA",
+    "og_url": "https://vendly-demos.vercel.app/atlanta-abogados-de-accidentes-jonathan-r-brockm/",
+    "og_image": "https://vendly-demos.vercel.app/atlanta-abogados-de-accidentes-jonathan-r-brockm/assets/site-15.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "9d10014e12a98d7d6b33e839825b35740555a57b25a84bc66882c07d6f14d41d",
+    "image_px": "2560x1439",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 10,
+    "rejected": 6,
+    "photographs": 9,
+    "logo_found": true
+  },
+  "rejected_assets": [
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "7d543acf30379d48c372ed2f1e88023b00699ef80c62194a03a759a56e7672d9",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "69471b70185bb9b3cb175d63d336bd186385ea1289c5cd5511d5a01ec5c817f4",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "f01ad592f745ab5e96697a6f37adb9b308892870dcd944b9da3c9b78f1730e64",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "not_an_image_by_magic_bytes",
+      "sha256": "f65e03ca314edffb6fad0f1e747437a82ee6c0af9b4676d339ad3c17d3351a47",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "570b97435c900cf3f02f89821fd659b5af75b8dc00a0081265060120e1f1ada9",
+      "media_id": "site-14"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "lawyer"
+  },
+  "fill_tokens": 19
+}

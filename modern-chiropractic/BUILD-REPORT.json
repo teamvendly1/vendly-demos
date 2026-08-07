@@ -1,38 +1,51 @@
 {
+  "niche": "alternative",
   "schema": "vendly.autodemo.build/1",
   "business": "Modern Chiropractic",
   "facebook": null,
   "slug": "modern-chiropractic",
-  "built_at": "2026-08-07T16:10:50.541Z",
-  "elapsed_ms": 52998,
+  "built_at": "2026-08-07T23:07:35.464Z",
+  "elapsed_ms": 1769,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 52890
+      "at_ms": 179
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 179
     },
     {
       "step": "assets",
-      "at_ms": 52892
+      "at_ms": 1312
+    },
+    {
+      "step": "template",
+      "at_ms": 1346
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1363
     },
     {
       "step": "brand_palette",
-      "at_ms": 52893
+      "at_ms": 1680
     },
     {
       "step": "layout",
-      "at_ms": 52893
+      "at_ms": 1680
     },
     {
       "step": "render",
-      "at_ms": 52893
+      "at_ms": 1681
     },
     {
       "step": "audit",
-      "at_ms": 52895
+      "at_ms": 1682
     },
     {
       "step": "beacon_probe",
-      "at_ms": 52998
+      "at_ms": 1769
     }
   ],
   "audit": {
@@ -40,34 +53,79 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "dentist",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "dentist",
+      "photo_count": 5,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (dentist), 5 photographs",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
+      "concierge",
       "services",
+      "gallery",
+      "trust",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "split",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call to Book",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "dentist",
+      "file": "dentist.js",
+      "resolved_by": "family",
+      "resolved_from": "dentist",
+      "sources": [
+        "https://www.hellotend.com/",
+        "https://thegleamery.com/",
+        "https://www.grandstreetdental.com/",
+        "https://www.zen.dentist/"
+      ],
+      "rationale": "Tend runs an insurance checker as a homepage feature and turns the number one stall - am I covered - from a bounce into a lead capture, so this template promotes the concierge slot to second position to carry that one question, with Grand Street's single repeated booking button as the only primary action. A demo publishes no price, carrier, membership fee, health outcome claim, specialist title, before-and-after image, or emergency capability the practice does not publish itself, and collects a name and a phone number or nothing at all.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "concierge",
+            "services",
+            "gallery",
+            "trust",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#0F6070",
+      "b": "#0B3239",
+      "c": "#127287",
+      "brand": "#127287",
+      "mist": "#F3F9FB",
+      "ink": "#101F23"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +141,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#127287",
+            "after": "#127287",
+            "ratio": 5.55,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +151,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#0F6070",
+            "after": "#0F6070",
+            "ratio": 7.17,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +161,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#0B3239",
+            "after": "#0B3239",
+            "ratio": 13.73,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +171,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#0B3239",
+            "after": "#0B3239",
+            "ratio": 10.67,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +183,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#127287",
+            "ratio": 5.55,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#0F6070",
+            "ratio": 7.17,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#0B3239",
+            "ratio": 13.73,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#0B3239",
+            "ratio": 10.67,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#101F23",
+            "bg_mist": "#F3F9FB",
+            "ratio": 15.9,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#0B3239",
+            "bg_mist": "#F3F9FB",
+            "ratio": 12.92,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.wixstatic.com/media/68194d_f5d68bddb9e24de886186d4086db6ac7~mv2.jpg/v1/fill/w_647,h_121,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Straight%20logo.jpg"
     }
   },
   "accessibility": {
@@ -181,32 +240,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#127287",
+        "ratio": 5.55,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#0F6070",
+        "ratio": 7.17,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#0B3239",
+        "ratio": 13.73,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#0B3239",
+        "ratio": 10.67,
         "pass": true
       }
     ]
@@ -229,25 +288,25 @@
   "claims": [
     {
       "text": "Modern Chiropractic",
-      "fetched_at": "2026-08-07T16:10:50.432Z"
+      "fetched_at": "2026-08-07T23:07:33.873Z"
     },
     {
       "text": "(864) 777-0773",
-      "fetched_at": "2026-08-07T16:10:50.432Z"
+      "fetched_at": "2026-08-07T23:07:33.873Z"
     },
     {
       "text": "862 South Pleasantburg Drive, Greenville, 29607",
-      "fetched_at": "2026-08-07T16:10:50.432Z"
+      "fetched_at": "2026-08-07T23:07:33.873Z"
     },
     {
       "text": "",
       "source": "https://www.modernchirogvl.com/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:10:50.432Z"
+      "fetched_at": "2026-08-07T23:07:33.873Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T16:10:50.432Z"
+      "fetched_at": "2026-08-07T23:07:33.873Z"
     }
   ],
   "unresolved": [
@@ -257,26 +316,81 @@
   "link_preview": {
     "og_title": "Modern Chiropractic | Greenville",
     "og_url": "https://vendly-demos.vercel.app/modern-chiropractic/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/modern-chiropractic/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "6492acf92c597f031b55ccdad1f17dfb8ae1d447d490f638e6fef1db46151a65",
+    "image_px": "2384x686",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 5,
+    "rejected": 12,
+    "photographs": 5,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "a5f37bc7dc68c48b08919ae479b3e251fa7d70bdf3191b9d4ee011c43ae086a6",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a787e2756ff1f50f457193dcd08f3fa5229f9266ae50c9b529cbf62e7d9e3650",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "51abe335e92e6a448c943fe40814c5c5253a86434a1510e3ed8ddf9f7e297b8c",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "711aa9c4f6a25467fcbe8c60595ac061ab116e1680c99bbb9d09be5ebfbe9418",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "b4922c60f6f4523990f1ca5bdd716e5e75c98fec46efe5cea5d88df71bdfa641",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "89fab49963a98bcbf780bd6b2811ce8d0b2ce9d1201c55cffaefce2c308817f9",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "f7f789fc306805393a3e73ea4543481158ab3cccaaa11298e24400785db5f13e",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "3d40e76148a70f1932cd724e363453cf2aa42ffc5785f548b97125ea00352e91",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a77d8456fea48dd90db5d0f6597fc61f78961e16444d3ea80614a81cebae7d63",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -288,8 +402,9 @@
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "alternative"
   },
-  "fill_tokens": 4
+  "fill_tokens": 14
 }

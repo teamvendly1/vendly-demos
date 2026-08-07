@@ -1,38 +1,51 @@
 {
+  "niche": "mobile_phone",
   "schema": "vendly.autodemo.build/1",
   "business": "Phone Repair Tech",
   "facebook": null,
   "slug": "phone-repair-tech",
-  "built_at": "2026-08-07T16:11:56.311Z",
-  "elapsed_ms": 279,
+  "built_at": "2026-08-07T23:10:09.480Z",
+  "elapsed_ms": 3127,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 183
+      "at_ms": 219
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 219
     },
     {
       "step": "assets",
-      "at_ms": 184
+      "at_ms": 1957
+    },
+    {
+      "step": "template",
+      "at_ms": 2072
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2621
     },
     {
       "step": "brand_palette",
-      "at_ms": 185
+      "at_ms": 3009
     },
     {
       "step": "layout",
-      "at_ms": 186
+      "at_ms": 3009
     },
     {
       "step": "render",
-      "at_ms": 186
+      "at_ms": 3010
     },
     {
       "step": "audit",
-      "at_ms": 188
+      "at_ms": 3013
     },
     {
       "step": "beacon_probe",
-      "at_ms": 279
+      "at_ms": 3127
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "retail-shop",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "retail-shop",
+      "photo_count": 2,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (2): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Call to Reserve or Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "retail-shop",
+      "file": "retail-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "retail-shop",
+      "sources": [
+        "https://www.scottsflowersnyc.com/",
+        "https://www.nativepoppy.com/",
+        "https://www.greenapplebooks.com/",
+        "https://www.catbirdnyc.com/",
+        "https://ballardblossom.com/"
+      ],
+      "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#0E16D9",
+      "b": "#080B5E",
+      "c": "#0E16D9",
+      "brand": "#0E16D9",
+      "mist": "#F3F4F9",
+      "ink": "#1A1810"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#0E16D9",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#0E16D9",
+            "after": "#0E16D9",
+            "ratio": 9.83,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#0E16D9",
+            "after": "#0E16D9",
+            "ratio": 9.83,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#080B5E",
+            "after": "#080B5E",
+            "ratio": 17.22,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#080B5E",
+            "after": "#080B5E",
+            "ratio": 13.38,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#0E16D9",
+            "ratio": 9.83,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#0E16D9",
+            "ratio": 9.83,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#080B5E",
+            "ratio": 17.22,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#080B5E",
+            "ratio": 13.38,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1810",
+            "bg_mist": "#F3F4F9",
+            "ratio": 16.17,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#080B5E",
+            "bg_mist": "#F3F4F9",
+            "ratio": 15.67,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://img1.wsimg.com/isteam/ip/3aba62e2-8c4b-47f0-a2af-0fd236738f05/11111.png/:/rs=w:57,h:57,m"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#0E16D9",
+        "ratio": 9.83,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#0E16D9",
+        "ratio": 9.83,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#080B5E",
+        "ratio": 17.22,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#080B5E",
+        "ratio": 13.38,
         "pass": true
       }
     ]
@@ -229,26 +289,16 @@
   "claims": [
     {
       "text": "Phone Repair Tech",
-      "fetched_at": "2026-08-07T16:11:56.214Z"
+      "fetched_at": "2026-08-07T23:10:06.571Z"
     },
     {
       "text": "(919) 616-9230",
-      "fetched_at": "2026-08-07T16:11:56.214Z"
+      "fetched_at": "2026-08-07T23:10:06.571Z"
     },
     {
       "text": "Get your phone screen repaired in 30 minutes or less at our authorized cell phone repair shop in Raleigh, NC.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:11:56.214Z"
-    },
-    {
-      "text": "Get your phone screen repaired in 30 minutes or less at our authorized cell phone repair shop in Raleigh, NC.",
-      "source": "https://phonerepairtech.us",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:11:56.214Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:your,phone,screen,repaired"
-      ]
+      "fetched_at": "2026-08-07T23:10:06.571Z"
     }
   ],
   "unresolved": [
@@ -257,26 +307,31 @@
   "link_preview": {
     "og_title": "Phone Repair Tech",
     "og_url": "https://vendly-demos.vercel.app/phone-repair-tech/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/phone-repair-tech/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "image_sha256": "a664ea99013897368a482ea881ea24272b6cfea90e4e84db121f3fad6d1e1f87",
+    "image_px": "1920x400",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 2,
+    "rejected": 2,
+    "photographs": 2,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "cd56e09d12278b261145c53db94d1923bd915c81aa427d7d254106d6c94a6558",
+      "media_id": "site-1"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -287,9 +342,10 @@
     "hero": true,
     "trust_strip": false,
     "services": false,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "mobile_phone"
   },
-  "fill_tokens": 3
+  "fill_tokens": 7
 }

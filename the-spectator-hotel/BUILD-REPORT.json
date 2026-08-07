@@ -1,38 +1,51 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "The Spectator Hotel",
   "facebook": null,
   "slug": "the-spectator-hotel",
-  "built_at": "2026-08-07T16:06:34.055Z",
-  "elapsed_ms": 252,
+  "built_at": "2026-08-07T23:02:17.208Z",
+  "elapsed_ms": 3181,
   "steps": [
     {
       "step": "harvest_site",
       "at_ms": 158
     },
     {
+      "step": "harvest_merge_prior",
+      "at_ms": 158
+    },
+    {
       "step": "assets",
-      "at_ms": 159
+      "at_ms": 2492
+    },
+    {
+      "step": "template",
+      "at_ms": 2602
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2863
     },
     {
       "step": "brand_palette",
-      "at_ms": 160
+      "at_ms": 2864
     },
     {
       "step": "layout",
-      "at_ms": 160
+      "at_ms": 2864
     },
     {
       "step": "render",
-      "at_ms": 161
+      "at_ms": 2865
     },
     {
       "step": "audit",
-      "at_ms": 163
+      "at_ms": 2866
     },
     {
       "step": "beacon_probe",
-      "at_ms": 252
+      "at_ms": 3181
     }
   ],
   "audit": {
@@ -41,26 +54,33 @@
   },
   "design": {
     "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 0,
+      "photo_count": 16,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (trade), 16 photographs",
       "deterministic": true
     },
     "section_order": [
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call (843) 724-4326",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
       "a": "#2B3A47",
       "b": "#18232C",
@@ -170,7 +190,8 @@
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": null
     }
   },
   "accessibility": {
@@ -229,26 +250,16 @@
   "claims": [
     {
       "text": "The Spectator Hotel",
-      "fetched_at": "2026-08-07T16:06:33.960Z"
+      "fetched_at": "2026-08-07T23:02:14.184Z"
     },
     {
       "text": "(843) 724-4326",
-      "fetched_at": "2026-08-07T16:06:33.960Z"
+      "fetched_at": "2026-08-07T23:02:14.184Z"
     },
     {
       "text": "Welcome to the Spectator Hotel! Learn more about our hotel and amenities we have for you to enjoy for your next visit to downtown Charleston, SC.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:06:33.960Z"
-    },
-    {
-      "text": "Welcome to the Spectator Hotel! Learn more about our hotel and amenities we have for you to enjoy for your next visit to downtown Charleston, SC.",
-      "source": "https://www.thespectatorhotel.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:06:33.960Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:welcome,spectator,hotel,learn"
-      ]
+      "fetched_at": "2026-08-07T23:02:14.184Z"
     }
   ],
   "unresolved": [
@@ -257,31 +268,26 @@
   "link_preview": {
     "og_title": "The Spectator Hotel",
     "og_url": "https://vendly-demos.vercel.app/the-spectator-hotel/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/the-spectator-hotel/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "d59ff6d8450dde9a44b593dafb5c4ebe2e3e631343422667c355e7dc24f53c7d",
+    "image_px": "2160x1452",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
+    "accepted": 16,
+    "rejected": 1,
+    "photographs": 16,
     "logo_found": false
   },
   "rejected_assets": [
-    {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
-    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -292,9 +298,10 @@
     "hero": true,
     "trust_strip": false,
     "services": false,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "unknown"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

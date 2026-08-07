@@ -1,38 +1,51 @@
 {
+  "niche": "bar",
   "schema": "vendly.autodemo.build/1",
   "business": "Bearden Hill Fieldhouse",
   "facebook": null,
   "slug": "bearden-hill-fieldhouse",
-  "built_at": "2026-08-07T15:53:53.369Z",
-  "elapsed_ms": 531,
+  "built_at": "2026-08-07T22:55:31.516Z",
+  "elapsed_ms": 3016,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 375
+      "at_ms": 337
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 337
     },
     {
       "step": "assets",
-      "at_ms": 377
+      "at_ms": 2350
+    },
+    {
+      "step": "template",
+      "at_ms": 2467
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2550
     },
     {
       "step": "brand_palette",
-      "at_ms": 379
+      "at_ms": 2920
     },
     {
       "step": "layout",
-      "at_ms": 379
+      "at_ms": 2920
     },
     {
       "step": "render",
-      "at_ms": 379
+      "at_ms": 2921
     },
     {
       "step": "audit",
-      "at_ms": 381
+      "at_ms": 2923
     },
     {
       "step": "beacon_probe",
-      "at_ms": 531
+      "at_ms": 3016
     }
   ],
   "audit": {
@@ -40,41 +53,86 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "bar",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "bar",
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (bar) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
+      "gallery",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "See Tonight",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "bar",
+      "file": "bar.js",
+      "resolved_by": "niche",
+      "resolved_from": "bar",
+      "sources": [
+        "https://thedeadrabbit.com/",
+        "https://www.tspdallas.com/",
+        "https://www.smugglerscovesf.com/",
+        "https://www.bisouschicago.com/"
+      ],
+      "rationale": "Smuggler's Cove converts with no booking path at all by stating the door policy in plain words at the top, so the single CTA anchors to hours and policy rather than a reservation widget, and Bisous plus Smuggler's Cove both put press and award proof above the fold, which is why trust sits second and gallery outranks the drinks list.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#7D463C",
+      "b": "#452721",
+      "c": "#7D463C",
+      "brand": "#7D463C",
+      "mist": "#F9F4F3",
+      "ink": "#12201F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#7D463C",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +141,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#7D463C",
+            "after": "#7D463C",
+            "ratio": 7.46,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +151,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#7D463C",
+            "after": "#7D463C",
+            "ratio": 7.46,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +161,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#452721",
+            "after": "#452721",
+            "ratio": 13.42,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +171,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#452721",
+            "after": "#452721",
+            "ratio": 10.43,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +183,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#7D463C",
+            "ratio": 7.46,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#7D463C",
+            "ratio": 7.46,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#452721",
+            "ratio": 13.42,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#452721",
+            "ratio": 10.43,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#12201F",
+            "bg_mist": "#F9F4F3",
+            "ratio": 15.38,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#452721",
+            "bg_mist": "#F9F4F3",
+            "ratio": 12.31,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:http://bhfh.smithbars.com/wp-content/uploads/sites/3/2022/05/fhfavicon.png"
     }
   },
   "accessibility": {
@@ -181,32 +240,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#7D463C",
+        "ratio": 7.46,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#7D463C",
+        "ratio": 7.46,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#452721",
+        "ratio": 13.42,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#452721",
+        "ratio": 10.43,
         "pass": true
       }
     ]
@@ -229,50 +288,40 @@
   "claims": [
     {
       "text": "Bearden Hill Fieldhouse",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "(865) 851-4750",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "info@smithbars.com",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "Located in Bearden Tennessee near Knoxville, Bearden Hill Fieldhouse offers over 100 bottles and 20 beers on tap. Craft Beer, Wine and Full Liquor, a Diverse Menu, Wing Specials. Poker Nights, and Trivia.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "Located in Bearden Tennessee near Knoxville",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "Wine and Full Liquor",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "a Diverse Menu",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "Wing Specials. Poker Nights",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     },
     {
       "text": "and Trivia",
-      "fetched_at": "2026-08-07T15:53:53.213Z"
-    },
-    {
-      "text": "Located in Bearden Tennessee near Knoxville, Bearden Hill Fieldhouse offers over 100 bottles and 20 beers on tap. Craft Beer, Wine and Full Liquor, a Diverse Menu, Wing Specials. Poker Nights, and Trivia.",
-      "source": "https://bhfh.smithbars.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:53:53.213Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:located,bearden,tennessee,near"
-      ]
+      "fetched_at": "2026-08-07T22:55:28.836Z"
     }
   ],
   "unresolved": [
@@ -281,26 +330,36 @@
   "link_preview": {
     "og_title": "Bearden Hill Fieldhouse",
     "og_url": "https://vendly-demos.vercel.app/bearden-hill-fieldhouse/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/bearden-hill-fieldhouse/assets/site-14.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "bd5b31dfb62327186e66a67d8bf9dc15818664c0b9ae9d69641690923da1e59f",
+    "image_px": "2560x1707",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 13,
+    "rejected": 3,
+    "photographs": 13,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "3a4e4c81705941cd44115f855917dbea321ed0c8d7294367958e8a5ea720309d",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "3a4e4c81705941cd44115f855917dbea321ed0c8d7294367958e8a5ea720309d",
+      "media_id": "site-12"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -311,9 +370,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "bar"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

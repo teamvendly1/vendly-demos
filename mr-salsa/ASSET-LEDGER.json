@@ -2,10 +2,58 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Mr. Salsa",
-  "built_at": "2026-08-07T15:51:20.373Z",
+  "built_at": "2026-08-07T22:52:58.537Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.png",
+      "rel": "assets/site-0.png",
+      "sha256": "2f993c1e6611fc23c00ba9e582206506c4efc2445e20f4fcb7d52036a6a661f3",
+      "media_id": "site-0",
+      "format": "png",
+      "bytes": 25629,
+      "remote_url": "https://static1.squarespace.com/static/5e34c39a61083b2de0c8bf49/t/5e34c58526acc86be0a8996f/1756764738719/",
+      "remote_url_as_found": "https://static1.squarespace.com/static/5e34c39a61083b2de0c8bf49/t/5e34c58526acc86be0a8996f/1756764738719/",
+      "source_url": "https://www.mrsalsamr.com/",
+      "fetched_at": "2026-08-07T22:52:57.935Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 1000,
+        "height": 118,
+        "distinct_colors": 29,
+        "pct_near_white": 0.5,
+        "pct_border_white": 1.2
+      }
+    },
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "3f9d8137726b3f2762010ea2b128cc7938aecc830d1a5ade1bb8a77d0c83c051",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 1164631,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/5e34c39a61083b2de0c8bf49/1585026395799-I26TU7ZKBLH8KG0U6W8W/AdobeStock_63761459.jpeg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/5e34c39a61083b2de0c8bf49/1585026395799-I26TU7ZKBLH8KG0U6W8W/AdobeStock_63761459.jpeg",
+      "source_url": "https://www.mrsalsamr.com/",
+      "fetched_at": "2026-08-07T22:52:57.984Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 1667,
+        "distinct_colors": 147,
+        "pct_near_white": 0.5,
+        "pct_border_white": 1.7
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/5e34c39a61083b2de0c8bf49/1585026395799-I26TU7ZKBLH8KG0U6W8W/AdobeStock_63761459.jpeg?format=2500w",
+      "media_id": "site-2",
+      "source_url": "https://www.mrsalsamr.com/",
+      "sha256": "3f9d8137726b3f2762010ea2b128cc7938aecc830d1a5ade1bb8a77d0c83c051",
+      "reason": "duplicate_content"
+    },
     {
       "0": "h",
       "1": "t",

@@ -1,0 +1,348 @@
+{
+  "niche": "massage",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Posh Bodyworks",
+  "facebook": null,
+  "slug": "posh-bodyworks",
+  "built_at": "2026-08-07T22:42:22.250Z",
+  "elapsed_ms": 4195,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 2060
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 2061
+    },
+    {
+      "step": "assets",
+      "at_ms": 3584
+    },
+    {
+      "step": "template",
+      "at_ms": 3668
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 3699
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 4088
+    },
+    {
+      "step": "layout",
+      "at_ms": 4088
+    },
+    {
+      "step": "render",
+      "at_ms": 4089
+    },
+    {
+      "step": "audit",
+      "at_ms": 4091
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 4195
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "beauty",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "beauty",
+      "photo_count": 8,
+      "has_reviews": false,
+      "branch": "visual trade (beauty) with 8 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "concierge",
+      "gallery",
+      "services",
+      "words",
+      "trust",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book Now",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "beauty",
+      "file": "beauty.js",
+      "resolved_by": "family",
+      "resolved_from": "beauty",
+      "sources": [
+        "https://www.saltct.com/",
+        "https://www.verdesalon.ca/",
+        "https://www.theclipjointsalon.com/",
+        "https://mechesalonla.com/",
+        "https://thphair.com/"
+      ],
+      "rationale": "Five of five winners pin one identical booking button to the header and repeat it down the page - thp hair makes it the first nav item, The Clip Joint repeats it three or more times - and SALT and Verde add the mechanic our demos lacked entirely, a SMALLER FIRST YES in the form of a free consultation, because nobody books a $200 colour service from a stranger cold, so this template repeats one booking action and gives the concierge slot directly under the hero to that free consult. A demo carries no price, offer, gift, before-and-after, client photograph, or result claim the business does not publish itself, and no stock photography at all.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "concierge",
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#093E6A",
+      "b": "#08375E",
+      "c": "#093E6A",
+      "brand": "#093E6A",
+      "mist": "#F3F6F9",
+      "ink": "#1F131A"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#093E6A",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#093E6A",
+            "after": "#093E6A",
+            "ratio": 11,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#093E6A",
+            "after": "#093E6A",
+            "ratio": 11,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#08375E",
+            "after": "#08375E",
+            "ratio": 12.22,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#08375E",
+            "after": "#08375E",
+            "ratio": 9.5,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#093E6A",
+            "ratio": 11,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#093E6A",
+            "ratio": 11,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#08375E",
+            "ratio": 12.22,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#08375E",
+            "ratio": 9.5,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#1F131A",
+            "bg_mist": "#F3F6F9",
+            "ratio": 16.6,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#08375E",
+            "bg_mist": "#F3F6F9",
+            "ratio": 11.27,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://integralhealthstudio.com/wp-content/uploads/2018/07/IHS_LOGO-final-e1531423775606.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#093E6A",
+        "ratio": 11,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#093E6A",
+        "ratio": 11,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#08375E",
+        "ratio": 12.22,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#08375E",
+        "ratio": 9.5,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "posh-bodyworks",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Posh Bodyworks",
+      "fetched_at": "2026-08-07T22:42:20.115Z"
+    },
+    {
+      "text": "(404) 233-3386",
+      "fetched_at": "2026-08-07T22:42:20.115Z"
+    },
+    {
+      "text": "info@integralhealthstudio.com",
+      "fetched_at": "2026-08-07T22:42:20.115Z"
+    },
+    {
+      "text": "Serving The Atlanta Area for Over 20 Years",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:42:20.115Z"
+    },
+    {
+      "text": "Serving The Atlanta Area for Over 20 Years",
+      "fetched_at": "2026-08-07T22:42:20.115Z"
+    }
+  ],
+  "unresolved": [
+    "address"
+  ],
+  "link_preview": {
+    "og_title": "Posh Bodyworks",
+    "og_url": "https://vendly-demos.vercel.app/posh-bodyworks/",
+    "og_image": "https://vendly-demos.vercel.app/posh-bodyworks/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "e6fdb573e513ebb12a7a13088b5e6003d9dd091e1009ca60b74aac2f75640ff1",
+    "image_px": "640x480",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 8,
+    "rejected": 0,
+    "photographs": 8,
+    "logo_found": false
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "massage"
+  },
+  "fill_tokens": 16
+}

@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Oliver Royale",
   "facebook": null,
   "slug": "oliver-royale",
-  "built_at": "2026-08-07T15:41:36.638Z",
-  "elapsed_ms": 236,
+  "built_at": "2026-08-07T22:48:49.594Z",
+  "elapsed_ms": 2024,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 136
+      "at_ms": 88
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 88
     },
     {
       "step": "assets",
-      "at_ms": 138
+      "at_ms": 1462
+    },
+    {
+      "step": "template",
+      "at_ms": 1583
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1598
     },
     {
       "step": "brand_palette",
-      "at_ms": 139
+      "at_ms": 1931
     },
     {
       "step": "layout",
-      "at_ms": 139
+      "at_ms": 1931
     },
     {
       "step": "render",
-      "at_ms": 140
+      "at_ms": 1931
     },
     {
       "step": "audit",
-      "at_ms": 141
+      "at_ms": 1933
     },
     {
       "step": "beacon_probe",
-      "at_ms": 236
+      "at_ms": 2024
     }
   ],
   "audit": {
@@ -40,34 +53,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 8,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (restaurant) with 8 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#7A2E1E",
+      "b": "#4A1B11",
+      "c": "#A65A17",
+      "brand": "#A65A17",
+      "mist": "#FBF6F0",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A65A17",
+            "after": "#A65A17",
+            "ratio": 5.13,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#7A2E1E",
+            "after": "#7A2E1E",
+            "ratio": 9.39,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 14.42,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 11.21,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A65A17",
+            "ratio": 5.13,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#7A2E1E",
+            "ratio": 9.39,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4A1B11",
+            "ratio": 14.42,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4A1B11",
+            "ratio": 11.21,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#FBF6F0",
+            "ratio": 17.07,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4A1B11",
+            "bg_mist": "#FBF6F0",
+            "ratio": 13.42,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/59cab6bf914e6b38342484c7/d8a7edcb-29f7-43e4-a6e4-74f84814b066/ROY+Logo+Website+Header+800px.png?format=1500w"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A65A17",
+        "ratio": 5.13,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#7A2E1E",
+        "ratio": 9.39,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4A1B11",
+        "ratio": 14.42,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4A1B11",
+        "ratio": 11.21,
         "pass": true
       }
     ]
@@ -229,37 +289,28 @@
   "claims": [
     {
       "text": "Oliver Royale",
-      "fetched_at": "2026-08-07T15:41:36.538Z"
+      "fetched_at": "2026-08-07T22:48:47.657Z"
     },
     {
       "text": "(865) 622-6434",
-      "fetched_at": "2026-08-07T15:41:36.538Z"
+      "fetched_at": "2026-08-07T22:48:47.657Z"
     },
     {
       "text": "knoxville@theoliverhotel.com",
-      "fetched_at": "2026-08-07T15:41:36.538Z"
+      "fetched_at": "2026-08-07T22:48:47.657Z"
     },
     {
       "text": "Experience locally sourced, chef-driven cuisine and a historic dining setting in downtown Knoxville. Reserve now for a memorable meal and excellent service.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:41:36.538Z"
+      "fetched_at": "2026-08-07T22:48:47.657Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:41:36.538Z"
+      "fetched_at": "2026-08-07T22:48:47.657Z"
     },
     {
       "text": "Experience locally sourced",
-      "fetched_at": "2026-08-07T15:41:36.538Z"
-    },
-    {
-      "text": "Experience locally sourced, chef-driven cuisine and a historic dining setting in downtown Knoxville. Reserve now for a memorable meal and excellent service.",
-      "source": "https://www.oliverroyale.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:41:36.538Z",
-      "relevance": [
-        "service_vocab:experience,locally,sourced,chef"
-      ]
+      "fetched_at": "2026-08-07T22:48:47.657Z"
     }
   ],
   "unresolved": [
@@ -268,30 +319,55 @@
   "link_preview": {
     "og_title": "Oliver Royale",
     "og_url": "https://vendly-demos.vercel.app/oliver-royale/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/oliver-royale/assets/site-6.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "79c59308f97c360457d13dc4d157dbd401d55f21a859058cf9c47cf49ac64a68",
+    "image_px": "2500x1985",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
+    "accepted": 8,
+    "rejected": 7,
+    "photographs": 8,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "duplicate_content",
+      "sha256": "531c51b4fdecf04862b878123c53d856f37b7b317595a4a6fb7fff6d2c9e7772",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "83a606e2b6a7406ccdde50e9862bc97ecc36ec919b8f36ff52fe0733fd16036a",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "79c59308f97c360457d13dc4d157dbd401d55f21a859058cf9c47cf49ac64a68",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "2f862add8e709c98a4bce5b3f16777db3628b9ee27f67c90770f10fae8aba310",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "b7cfd57b155d5fd0c6a1a926665089ea667e3f4e9a9eb39142ae36bbd3e25939",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "d53df706d9c6b6523022cabc61260fd53f81b4d6808cdf3d896f77629223c69e",
+      "media_id": "site-13"
     },
     {
       "reason": "download_failed",
@@ -303,9 +379,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

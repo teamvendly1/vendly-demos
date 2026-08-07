@@ -1,38 +1,51 @@
 {
+  "niche": "theatre",
   "schema": "vendly.autodemo.build/1",
   "business": "PURE Theatre",
   "facebook": null,
   "slug": "pure-theatre",
-  "built_at": "2026-08-07T15:51:36.495Z",
-  "elapsed_ms": 701,
+  "built_at": "2026-08-07T22:54:19.398Z",
+  "elapsed_ms": 2190,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 604
+      "at_ms": 393
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 393
     },
     {
       "step": "assets",
-      "at_ms": 605
+      "at_ms": 1388
+    },
+    {
+      "step": "template",
+      "at_ms": 1418
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1444
     },
     {
       "step": "brand_palette",
-      "at_ms": 606
+      "at_ms": 2089
     },
     {
       "step": "layout",
-      "at_ms": 606
+      "at_ms": 2089
     },
     {
       "step": "render",
-      "at_ms": 607
+      "at_ms": 2090
     },
     {
       "step": "audit",
-      "at_ms": 608
+      "at_ms": 2091
     },
     {
       "step": "beacon_probe",
-      "at_ms": 701
+      "at_ms": 2190
     }
   ],
   "audit": {
@@ -40,41 +53,85 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "events-venue",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "events-venue",
+      "photo_count": 6,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (events-venue) with 6 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
+      "contact",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Check Available Dates",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "events-venue",
+      "file": "events-venue.js",
+      "resolved_by": "family",
+      "resolved_from": "events-venue",
+      "sources": [
+        "https://mountainhouseestate.com/",
+        "https://www.tinroofbarn.com/",
+        "https://www.castlefarms.com/",
+        "https://pippinhillfarm.com/",
+        "https://www.wychmere.com/"
+      ],
+      "rationale": "The conversion is an enquiry gated on two facts only, is my date free and is this in my budget, so Mountain House Estate ships availability as a labelled button rather than a sentence and four of the five winners give price its own named destination without publishing a number, which is why the single CTA is an availability anchor pointing at a short enquiry block carrying a date field and why the price route lives in services beside Castle Farms named spaces with their capacities; the gallery is pushed BELOW the enquiry and the testimonials below that, inverting the generic template the research says gets it exactly backwards by leading with a photo carousel and ending with a bare Contact link, since social proof supports the decision while date and price create it.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "contact",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#8F181B",
+      "b": "#570F10",
+      "c": "#8F181B",
+      "brand": "#8F181B",
+      "mist": "#F9F3F4",
+      "ink": "#15141F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#8F181B",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +140,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#8F181B",
+            "after": "#8F181B",
+            "ratio": 9.07,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +150,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#8F181B",
+            "after": "#8F181B",
+            "ratio": 9.07,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +160,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#570F10",
+            "after": "#570F10",
+            "ratio": 14.18,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +170,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#570F10",
+            "after": "#570F10",
+            "ratio": 11.02,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +182,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#8F181B",
+            "ratio": 9.07,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#8F181B",
+            "ratio": 9.07,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#570F10",
+            "ratio": 14.18,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#570F10",
+            "ratio": 11.02,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#15141F",
+            "bg_mist": "#F9F3F4",
+            "ratio": 16.63,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#570F10",
+            "bg_mist": "#F9F3F4",
+            "ratio": 12.93,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://puretheatre.org/wp-content/uploads/2023/07/PURE-Theatre-Logo-2022-NoSeason.png"
     }
   },
   "accessibility": {
@@ -181,32 +239,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#8F181B",
+        "ratio": 9.07,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#8F181B",
+        "ratio": 9.07,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#570F10",
+        "ratio": 14.18,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#570F10",
+        "ratio": 11.02,
         "pass": true
       }
     ]
@@ -229,21 +287,21 @@
   "claims": [
     {
       "text": "PURE Theatre",
-      "fetched_at": "2026-08-07T15:51:36.398Z"
+      "fetched_at": "2026-08-07T22:54:17.600Z"
     },
     {
       "text": "(843) 723-4444",
-      "fetched_at": "2026-08-07T15:51:36.398Z"
+      "fetched_at": "2026-08-07T22:54:17.600Z"
     },
     {
       "text": "info@puretheatre.org",
-      "fetched_at": "2026-08-07T15:51:36.398Z"
+      "fetched_at": "2026-08-07T22:54:17.600Z"
     },
     {
       "text": "",
       "source": "https://puretheatre.org",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:36.398Z"
+      "fetched_at": "2026-08-07T22:54:17.600Z"
     }
   ],
   "unresolved": [
@@ -254,23 +312,23 @@
   "link_preview": {
     "og_title": "PURE Theatre",
     "og_url": "https://vendly-demos.vercel.app/pure-theatre/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/pure-theatre/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "fe4a87c8018ba0d76d959434d82a359fa809f2aca3b88823015f3e97528a4aee",
+    "image_px": "1000x1500",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 6,
     "rejected": 0,
-    "photographs": 0,
+    "photographs": 6,
     "logo_found": false
   },
   "rejected_assets": [],
@@ -279,8 +337,9 @@
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "theatre"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

@@ -1,38 +1,51 @@
 {
+  "niche": "unknown",
   "schema": "vendly.autodemo.build/1",
   "business": "Visiting Angels Senior Home Care",
   "facebook": null,
   "slug": "visiting-angels-senior-home-care",
-  "built_at": "2026-08-07T16:07:18.943Z",
-  "elapsed_ms": 673,
+  "built_at": "2026-08-07T23:02:39.968Z",
+  "elapsed_ms": 2843,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 575
+      "at_ms": 646
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 646
     },
     {
       "step": "assets",
-      "at_ms": 576
+      "at_ms": 2069
+    },
+    {
+      "step": "template",
+      "at_ms": 2185
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2261
     },
     {
       "step": "brand_palette",
-      "at_ms": 578
+      "at_ms": 2734
     },
     {
       "step": "layout",
-      "at_ms": 578
+      "at_ms": 2734
     },
     {
       "step": "render",
-      "at_ms": 578
+      "at_ms": 2735
     },
     {
       "step": "audit",
-      "at_ms": 580
+      "at_ms": 2736
     },
     {
       "step": "beacon_probe",
-      "at_ms": 673
+      "at_ms": 2842
     }
   ],
   "audit": {
@@ -41,40 +54,47 @@
   },
   "design": {
     "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 0,
+      "photo_count": 10,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (trade), 10 photographs",
       "deterministic": true
     },
     "section_order": [
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Call 217045494010",
+      "kind": "tel",
+      "from": "built_in_default"
+    },
+    "niche_template": null,
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
+      "a": "#55075B",
+      "b": "#58085E",
+      "c": "#55075B",
+      "brand": "#55075B",
+      "mist": "#F8F3F9",
       "ink": "#12181D"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#55075B",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +103,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#55075B",
+            "after": "#55075B",
+            "ratio": 13.4,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +113,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#55075B",
+            "after": "#55075B",
+            "ratio": 13.4,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +123,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#58085E",
+            "after": "#58085E",
+            "ratio": 13.03,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +133,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#58085E",
+            "after": "#58085E",
+            "ratio": 10.13,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,32 +145,32 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#55075B",
+            "ratio": 13.4,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#55075B",
+            "ratio": 13.4,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#58085E",
+            "ratio": 13.03,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#58085E",
+            "ratio": 10.13,
             "pass": true
           }
         ],
@@ -158,19 +178,20 @@
           {
             "fg": "ink",
             "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "bg_mist": "#F8F3F9",
+            "ratio": 16.34,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#58085E",
+            "bg_mist": "#F8F3F9",
+            "ratio": 11.9,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://cdn.visitingangels.com/images/charlotte-Social%20Workers%20Inspire%20Logo.jpg"
     }
   },
   "accessibility": {
@@ -181,32 +202,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#55075B",
+        "ratio": 13.4,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#55075B",
+        "ratio": 13.4,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#58085E",
+        "ratio": 13.03,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#58085E",
+        "ratio": 10.13,
         "pass": true
       }
     ]
@@ -229,30 +250,20 @@
   "claims": [
     {
       "text": "Visiting Angels Senior Home Care",
-      "fetched_at": "2026-08-07T16:07:18.844Z"
+      "fetched_at": "2026-08-07T23:02:37.770Z"
     },
     {
       "text": "217045494010",
-      "fetched_at": "2026-08-07T16:07:18.844Z"
+      "fetched_at": "2026-08-07T23:02:37.770Z"
     },
     {
       "text": "Visiting Angels Charlotte, North Carolina is available for elderly family members and loved ones who prefer to remain in the comfort of their own homes.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:07:18.844Z"
+      "fetched_at": "2026-08-07T23:02:37.770Z"
     },
     {
       "text": "Visiting Angels Charlotte",
-      "fetched_at": "2026-08-07T16:07:18.844Z"
-    },
-    {
-      "text": "Visiting Angels Charlotte, North Carolina is available for elderly family members and loved ones who prefer to remain in the comfort of their own homes.",
-      "source": "https://www.visitingangels.com/charlotte/home",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:07:18.844Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:visiting,angels,charlotte,north"
-      ]
+      "fetched_at": "2026-08-07T23:02:37.770Z"
     }
   ],
   "unresolved": [
@@ -261,26 +272,56 @@
   "link_preview": {
     "og_title": "Visiting Angels Senior Home Care",
     "og_url": "https://vendly-demos.vercel.app/visiting-angels-senior-home-care/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/visiting-angels-senior-home-care/assets/site-2.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "image_sha256": "93e3de83968bb3ffe7bd4ef07c11526d9119cc9b050d63609c23461ee479ebd6",
+    "image_px": "1140x494",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 10,
+    "rejected": 7,
+    "photographs": 10,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "65c9e67815749a845cc433470a6725f7eb909e4423f96a29fa1e9dd5361125a0",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "3404d48ef69246e8146e8c49cab92815250dad649b4a5c93480d1318df7dce93",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a77083701ed8f131b9dfe4eec1897482a335fa15becdf8f1a0b94d73f6b59834",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "f6ee04e40599f60a02d40f78157beeceb4325e265164b8a3ff92e8712cff9b24",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "b7ef93dc518ec4e49f4cdbd19d893b0533f265248cc647abbcf7bfa941be7a10",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -291,9 +332,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "unknown"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

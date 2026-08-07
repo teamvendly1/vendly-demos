@@ -2,8 +2,54 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Maple Hall",
-  "built_at": "2026-08-07T15:55:56.490Z",
+  "built_at": "2026-08-07T22:56:35.461Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
-  "rejected": []
+  "accepted": [
+    {
+      "file": "site-2.png",
+      "rel": "assets/site-2.png",
+      "sha256": "efab19bd772d3f78548c7ed8d1c13d0f697226b1fffccd699c8abdcf6bce0c13",
+      "media_id": "site-2",
+      "format": "png",
+      "bytes": 13360,
+      "remote_url": "https://maplehallknox.com/wp-content/uploads/2024/11/MapleHall-seal-RGB-blue.png",
+      "remote_url_as_found": "https://maplehallknox.com/wp-content/uploads/2024/11/MapleHall-seal-RGB-blue.png",
+      "source_url": "https://maplehallknox.com/",
+      "fetched_at": "2026-08-07T22:56:35.050Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 750,
+        "height": 750,
+        "distinct_colors": 10,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "url": "https://maplehallknox.com/wp-content/uploads/2022/04/MapleHall-RGB-white2.png",
+      "media_id": "site-0",
+      "source_url": "https://maplehallknox.com/",
+      "sha256": "6e28029471bec1cb5b5a8bcddd4e823602936dceb642cde6517bbe553d2087cb",
+      "reason": "too_small",
+      "bytes": 1948
+    },
+    {
+      "url": "https://maplehallknox.com/wp-content/uploads/2022/04/MapleHall-RGB-white-retna.png",
+      "media_id": "site-1",
+      "source_url": "https://maplehallknox.com/",
+      "sha256": "7ade2a0fec8f243c367c185d85be0f6aee6a20d350a689467e5e5d9f54a0a4f6",
+      "reason": "too_small",
+      "bytes": 3030
+    },
+    {
+      "url": "https://maplehallknox.com/wp-content/uploads/2024/11/MapleHall-seal-RGB-blue-150x150.png",
+      "media_id": "site-3",
+      "source_url": "https://maplehallknox.com/",
+      "sha256": "bbae158cea690621b98414ef60fb482d7f685cba8fc299ca444228fc608ea176",
+      "reason": "too_small",
+      "bytes": 3258
+    }
+  ]
 }

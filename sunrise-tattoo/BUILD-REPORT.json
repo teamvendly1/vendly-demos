@@ -1,38 +1,51 @@
 {
+  "niche": "tattoo",
   "schema": "vendly.autodemo.build/1",
   "business": "Sunrise Tattoo",
   "facebook": null,
   "slug": "sunrise-tattoo",
-  "built_at": "2026-08-07T15:23:36.968Z",
-  "elapsed_ms": 241,
+  "built_at": "2026-08-07T22:40:30.888Z",
+  "elapsed_ms": 2407,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 137
+      "at_ms": 84
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 84
     },
     {
       "step": "assets",
-      "at_ms": 139
+      "at_ms": 1790
+    },
+    {
+      "step": "template",
+      "at_ms": 1904
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1910
     },
     {
       "step": "brand_palette",
-      "at_ms": 140
+      "at_ms": 2310
     },
     {
       "step": "layout",
-      "at_ms": 140
+      "at_ms": 2310
     },
     {
       "step": "render",
-      "at_ms": 141
+      "at_ms": 2312
     },
     {
       "step": "audit",
-      "at_ms": 142
+      "at_ms": 2313
     },
     {
       "step": "beacon_probe",
-      "at_ms": 241
+      "at_ms": 2407
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "beauty",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "beauty",
+      "photo_count": 8,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (beauty) with 8 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
+      "concierge",
+      "gallery",
       "services",
       "words",
-      "gallery"
+      "trust",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book Now",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "beauty",
+      "file": "beauty.js",
+      "resolved_by": "family",
+      "resolved_from": "beauty",
+      "sources": [
+        "https://www.saltct.com/",
+        "https://www.verdesalon.ca/",
+        "https://www.theclipjointsalon.com/",
+        "https://mechesalonla.com/",
+        "https://thphair.com/"
+      ],
+      "rationale": "Five of five winners pin one identical booking button to the header and repeat it down the page - thp hair makes it the first nav item, The Clip Joint repeats it three or more times - and SALT and Verde add the mechanic our demos lacked entirely, a SMALLER FIRST YES in the form of a free consultation, because nobody books a $200 colour service from a stranger cold, so this template repeats one booking action and gives the concierge slot directly under the hero to that free consult. A demo carries no price, offer, gift, before-and-after, client photograph, or result claim the business does not publish itself, and no stock photography at all.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "concierge",
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#3C180D",
+      "b": "#542212",
+      "c": "#3C180D",
+      "brand": "#3C180D",
+      "mist": "#F9F5F3",
+      "ink": "#1F131A"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#3C180D",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#3C180D",
+            "after": "#3C180D",
+            "ratio": 15.81,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#3C180D",
+            "after": "#3C180D",
+            "ratio": 15.81,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#542212",
+            "after": "#542212",
+            "ratio": 13.01,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#542212",
+            "after": "#542212",
+            "ratio": 10.11,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#3C180D",
+            "ratio": 15.81,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#3C180D",
+            "ratio": 15.81,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#542212",
+            "ratio": 13.01,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#542212",
+            "ratio": 10.11,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1F131A",
+            "bg_mist": "#F9F5F3",
+            "ratio": 16.62,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#542212",
+            "bg_mist": "#F9F5F3",
+            "ratio": 12.01,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/5c460cad9f87700f98869cee/1612055101530-9838J83KH6S4U59UPJLW/sunrise-tattoo-logo%402x.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#3C180D",
+        "ratio": 15.81,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#3C180D",
+        "ratio": 15.81,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#542212",
+        "ratio": 13.01,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#542212",
+        "ratio": 10.11,
         "pass": true
       }
     ]
@@ -229,96 +289,116 @@
   "claims": [
     {
       "text": "Sunrise Tattoo",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "(615) 664-7724",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "Sunrisetattoo100@gmail.com",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "100 Taylor St\nNashville, TN, 37208\nUnited States",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "Sunrise Tattoo is a custom tattoo studio located in downtown Nashville, Tennessee. We specialize in traditional, fine line, floral, modern, folk, Japanese, and European tattoos, by appointment or walk-in.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "Tennessee. We specialize in traditional",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "fine line",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "floral",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "modern",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "folk",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "Japanese",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "and European tattoos",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     },
     {
       "text": "by appointment or walk-in",
-      "fetched_at": "2026-08-07T15:23:36.863Z"
-    },
-    {
-      "text": "Sunrise Tattoo is a custom tattoo studio located in downtown Nashville, Tennessee. We specialize in traditional, fine line, floral, modern, folk, Japanese, and European tattoos, by appointment or walk-in.",
-      "source": "https://www.tattoosunrise.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:23:36.863Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:sunrise,tattoo,custom,studio"
-      ]
+      "fetched_at": "2026-08-07T22:40:28.564Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Sunrise Tattoo | TN",
     "og_url": "https://vendly-demos.vercel.app/sunrise-tattoo/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/sunrise-tattoo/assets/site-1.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "03e546d730b415e4c9ebccfea907bc2edf72c6b00d02b44128678469254a349c",
+    "image_px": "1500x1178",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
+    "accepted": 8,
+    "rejected": 8,
+    "photographs": 8,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "too_small",
+      "sha256": "8ae133d98b2985b63af488af11654c93330e039daa3f9f9bb1a0519358c03baf",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "d266a0b4849defed7bae26a2e76ff4a1596135b5f4280167615cefc34c62b703",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "3a9d824e108e35aa9c14eac1b931c1ae18d7ab135602727d8e10d36f8ec5accb",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "07de47cfcc8a96a83daf3199c192db6b7b9febd925e40e7255a09cd72c5b9600",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "6f4901384c1b0049b457d8b710509946bb92068166daab2f49ba8d838619ebf5",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "14efee0953b9618c3676b4a9f6948ec008cba37a2984e98e98bef3c3c701965f",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "d1565b7247066b83c2481582eb541b8db90acee9034833369d65345bcccaf753",
+      "media_id": "site-14"
     },
     {
       "reason": "download_failed",
@@ -330,9 +410,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "tattoo"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

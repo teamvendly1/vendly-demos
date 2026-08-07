@@ -2,10 +2,101 @@
   "schema": "vendly.autodemo.assets/1",
   "classifier_error": null,
   "business": "Wine on Water",
-  "built_at": "2026-08-07T16:09:09.208Z",
+  "built_at": "2026-08-07T23:05:31.800Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.jpg",
+      "rel": "assets/site-0.jpg",
+      "sha256": "f88cc97e4836ced4a144d4db3490e3c3a59c356949f433b810c7cdc593fe2c03",
+      "media_id": "site-0",
+      "format": "jpg",
+      "bytes": 39234,
+      "remote_url": "https://static1.squarespace.com/static/61393192acc59146c0e5c366/t/616da33153d9a7450ef73cd5/1786058721877/",
+      "remote_url_as_found": "https://static1.squarespace.com/static/61393192acc59146c0e5c366/t/616da33153d9a7450ef73cd5/1786058721877/",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "fetched_at": "2026-08-07T23:05:29.931Z",
+      "kind": "graphic",
+      "image_metrics": {
+        "width": 1000,
+        "height": 220,
+        "distinct_colors": 16,
+        "pct_near_white": 85.6,
+        "pct_border_white": 99.1
+      }
+    },
+    {
+      "file": "site-1.jpg",
+      "rel": "assets/site-1.jpg",
+      "sha256": "85be5797c1e83e020c8f1ce3da2409734f66e69c91c9a203bfb76ffc5974adba",
+      "media_id": "site-1",
+      "format": "jpg",
+      "bytes": 1687475,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/15bcb553-184b-4c0b-8fbf-c80b56a9de21/IMG_4901+%282%29.jpeg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/15bcb553-184b-4c0b-8fbf-c80b56a9de21/IMG_4901+%282%29.jpeg",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "fetched_at": "2026-08-07T23:05:30.128Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 3333,
+        "distinct_colors": 79,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    },
+    {
+      "file": "site-3.jpg",
+      "rel": "assets/site-3.jpg",
+      "sha256": "a5529d98bd7d8bc44f5828348587764ced2411fdb4db56276e4198506ddbd1ba",
+      "media_id": "site-3",
+      "format": "jpg",
+      "bytes": 1363020,
+      "remote_url": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/adf309cd-edfb-4a21-9372-27ae1bef8d8d/IMG_6229.jpeg",
+      "remote_url_as_found": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/adf309cd-edfb-4a21-9372-27ae1bef8d8d/IMG_6229.jpeg",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "fetched_at": "2026-08-07T23:05:30.429Z",
+      "kind": "photograph",
+      "image_metrics": {
+        "width": 2500,
+        "height": 3333,
+        "distinct_colors": 85,
+        "pct_near_white": 0,
+        "pct_border_white": 0
+      }
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/15bcb553-184b-4c0b-8fbf-c80b56a9de21/IMG_4901+%282%29.jpeg?format=2500w",
+      "media_id": "site-2",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "sha256": "85be5797c1e83e020c8f1ce3da2409734f66e69c91c9a203bfb76ffc5974adba",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/adf309cd-edfb-4a21-9372-27ae1bef8d8d/IMG_6229.jpeg?format=2500w",
+      "media_id": "site-4",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "sha256": "a5529d98bd7d8bc44f5828348587764ced2411fdb4db56276e4198506ddbd1ba",
+      "reason": "duplicate_content"
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/4737bfcb-8e44-4dbd-b476-6bfdd0eef27d/Recurso%2B3%2B.png",
+      "media_id": "site-5",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "reason": "too_small",
+      "bytes": 2086
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/61393192acc59146c0e5c366/4737bfcb-8e44-4dbd-b476-6bfdd0eef27d/Recurso%2B3%2B.png?format=2500w",
+      "media_id": "site-6",
+      "source_url": "https://www.wineonwatertpa.com/",
+      "sha256": "e7047ce81e467c66b357122cb1bdc3d7f7e6455e6e837e8f43d51ba724590d6a",
+      "reason": "too_small",
+      "bytes": 2086
+    },
     {
       "0": "h",
       "1": "t",

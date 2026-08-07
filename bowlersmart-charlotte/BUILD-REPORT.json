@@ -1,38 +1,51 @@
 {
+  "niche": "sports",
   "schema": "vendly.autodemo.build/1",
   "business": "BowlersMart Charlotte",
   "facebook": null,
   "slug": "bowlersmart-charlotte",
-  "built_at": "2026-08-07T15:55:55.783Z",
-  "elapsed_ms": 892,
+  "built_at": "2026-08-07T22:56:34.601Z",
+  "elapsed_ms": 2754,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 776
+      "at_ms": 298
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 299
     },
     {
       "step": "assets",
-      "at_ms": 777
+      "at_ms": 2093
+    },
+    {
+      "step": "template",
+      "at_ms": 2204
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2258
     },
     {
       "step": "brand_palette",
-      "at_ms": 778
+      "at_ms": 2645
     },
     {
       "step": "layout",
-      "at_ms": 779
+      "at_ms": 2645
     },
     {
       "step": "render",
-      "at_ms": 779
+      "at_ms": 2646
     },
     {
       "step": "audit",
-      "at_ms": 781
+      "at_ms": 2647
     },
     {
       "step": "beacon_probe",
-      "at_ms": 892
+      "at_ms": 2754
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "fitness",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "fitness",
+      "photo_count": 11,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (fitness) with 11 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
       "words",
-      "gallery"
+      "gallery",
+      "trust",
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Free First Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "fitness",
+      "file": "fitness.js",
+      "resolved_by": "family",
+      "resolved_from": "fitness",
+      "sources": [
+        "https://www.ovcrossfit.com",
+        "https://www.lumberjack-athletics.com",
+        "https://www.theschoolofpilates.com",
+        "https://www.primeboxingusa.com",
+        "https://www.gracieelkgrove.com"
+      ],
+      "rationale": "Five of five winners lead with a FREE FIRST VISIT and not one leads with Join, Sign Up, or a price - Lumberjack repeats the identical Book a Free Intro at least four times down one page with beginner testimonials beside it, and OV CrossFit publishes three numbered onboarding steps so the visitor knows exactly what happens after the click - so this template makes the free first visit the only primary action, gives the services slot to those numbered steps, and lifts beginner-named social proof to third. A demo carries no transformation grid, no client image, no trial offer or price the business does not already publish, no result or health claim, and no hours it did not read on their live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "words",
+            "gallery",
+            "trust",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#92712F",
+      "b": "#4D3C19",
+      "c": "#92712F",
+      "brand": "#E8D8B7",
+      "mist": "#F9F7F3",
+      "ink": "#15161F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#E8D8B7",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#E8D8B7",
+            "after": "#92712F",
+            "ratio": 4.54,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#E8D8B7",
+            "after": "#92712F",
+            "ratio": 4.54,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4D3C19",
+            "after": "#4D3C19",
+            "ratio": 10.63,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4D3C19",
+            "after": "#4D3C19",
+            "ratio": 8.26,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#92712F",
+            "ratio": 4.54,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#92712F",
+            "ratio": 4.54,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4D3C19",
+            "ratio": 10.63,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4D3C19",
+            "ratio": 8.26,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#15161F",
+            "bg_mist": "#F9F7F3",
+            "ratio": 16.83,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4D3C19",
+            "bg_mist": "#F9F7F3",
+            "ratio": 9.93,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.bowlersmart.com/wp-content/uploads/2019/07/bowlersmart.jpg"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#92712F",
+        "ratio": 4.54,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#92712F",
+        "ratio": 4.54,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4D3C19",
+        "ratio": 10.63,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4D3C19",
+        "ratio": 8.26,
         "pass": true
       }
     ]
@@ -229,46 +289,36 @@
   "claims": [
     {
       "text": "BowlersMart Charlotte",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "(704) 682-8720",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "charlotte@bowlersmart.com",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "Our full-service bowling pro shop in Charlotte, NC inside Lucky Strike South Charlotte offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "Our full-service bowling pro shop in Charlotte",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "bowling bags",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "bowling shoes",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     },
     {
       "text": "and expert ball drilling",
-      "fetched_at": "2026-08-07T15:55:55.666Z"
-    },
-    {
-      "text": "Our full-service bowling pro shop in Charlotte, NC inside Lucky Strike South Charlotte offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.",
-      "source": "https://www.bowlersmart.com/locations/north-carolina/bowlersmart-charlotte-pro-shop-inside-10-park-lanes/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:55:55.666Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:full,bowling,shop,charlotte"
-      ]
+      "fetched_at": "2026-08-07T22:56:32.145Z"
     }
   ],
   "unresolved": [
@@ -277,26 +327,51 @@
   "link_preview": {
     "og_title": "BowlersMart Charlotte",
     "og_url": "https://vendly-demos.vercel.app/bowlersmart-charlotte/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "og_image": "https://vendly-demos.vercel.app/bowlersmart-charlotte/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "2ca3c2b700cec270e80835cdd53954c474a1a966cb7a11515130c9b3f0ed16a8",
+    "image_px": "1200x630",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 11,
+    "rejected": 6,
+    "photographs": 11,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "e5ebbfe834f82a85d80f0e7a0dfef080148c549dedc9203a030ff9adb8ce63b0",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "0e3e52c2ac7222685b93aaeed27967a6655676147272bc42b8a33d5a36468e36",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "6b550a5a7e4b85b7e48d008cbb6d4a68b3beecb6df31a428ec881016d0eedb11",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "74f975500ffa336ade61a8b456dbe75746e60a358caaa3a0bdacaee8eb569c4e",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7e1f2c8383fe8e3d711910555e9f29a019a0eb04632cf82b80630014b3120961",
+      "media_id": "site-10"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -307,9 +382,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "sports"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

@@ -1,38 +1,51 @@
 {
+  "niche": "leather",
   "schema": "vendly.autodemo.build/1",
   "business": "Jack Foster Leather Goods",
   "facebook": null,
   "slug": "jack-foster-leather-goods",
-  "built_at": "2026-08-07T16:10:56.620Z",
-  "elapsed_ms": 459,
+  "built_at": "2026-08-07T23:08:01.656Z",
+  "elapsed_ms": 3579,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 345
+      "at_ms": 454
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 455
     },
     {
       "step": "assets",
-      "at_ms": 347
+      "at_ms": 2931
+    },
+    {
+      "step": "template",
+      "at_ms": 3049
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 3071
     },
     {
       "step": "brand_palette",
-      "at_ms": 349
+      "at_ms": 3473
     },
     {
       "step": "layout",
-      "at_ms": 349
+      "at_ms": 3473
     },
     {
       "step": "render",
-      "at_ms": 349
+      "at_ms": 3474
     },
     {
       "step": "audit",
-      "at_ms": 351
+      "at_ms": 3476
     },
     {
       "step": "beacon_probe",
-      "at_ms": 459
+      "at_ms": 3579
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "clothes",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "clothes",
+      "photo_count": 10,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (clothes) with 10 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book a Styling Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "clothes",
+      "file": "clothes.js",
+      "resolved_by": "family",
+      "resolved_from": "clothes",
+      "sources": [
+        "https://www.percivalclo.com/",
+        "https://www.peregrineclothing.co.uk/",
+        "https://shopfigandwillow.com/",
+        "https://shopannastore.com/",
+        "https://rixolondon.com/"
+      ],
+      "rationale": "This niche has TWO conversions and the research says a demo that builds only the cart half is half a demo, so the fork is resolved rather than split into two equal buttons: Anna gives Stores and Hours its own destination plus a phone number specifically for booking a styling appointment and RIXO gives find-your-store a real nav slot, which makes the shop visit the higher-value conversion for a local boutique and the one our demos collect nothing from, so contact is promoted high and the single CTA is that appointment; Fig & Willow supplies the strip above the fold (shipping threshold and free returns, the two objections that kill an apparel cart) and Percival the gallery mechanic of three photo shapes per product, worn in a real place, flat-lay and close-up detail.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#7A7A00",
+      "b": "#5E5E08",
+      "c": "#7A7A00",
+      "brand": "#FFFFAA",
+      "mist": "#F9F9F3",
+      "ink": "#181320"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#FFFFAA",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#FFFFAA",
+            "after": "#7A7A00",
+            "ratio": 4.55,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#FFFFAA",
+            "after": "#7A7A00",
+            "ratio": 4.55,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5E5E08",
+            "after": "#5E5E08",
+            "ratio": 6.82,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5E5E08",
+            "after": "#5E5E08",
+            "ratio": 5.3,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#7A7A00",
+            "ratio": 4.55,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#7A7A00",
+            "ratio": 4.55,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5E5E08",
+            "ratio": 6.82,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5E5E08",
+            "ratio": 5.3,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#181320",
+            "bg_mist": "#F9F9F3",
+            "ratio": 17.24,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5E5E08",
+            "bg_mist": "#F9F9F3",
+            "ratio": 6.45,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.jack-foster.com/cdn/shop/files/Jack-Foster-Leather-Icon-Logo_6378acd9-b3b9-4142-be4a-9dbdc627c235_32x32.png?v=1744678126"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#7A7A00",
+        "ratio": 4.55,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#7A7A00",
+        "ratio": 4.55,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5E5E08",
+        "ratio": 6.82,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5E5E08",
+        "ratio": 5.3,
         "pass": true
       }
     ]
@@ -229,50 +289,40 @@
   "claims": [
     {
       "text": "Jack Foster Leather Goods",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "(844) 384-2425",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "support@jackfosterusa.com",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "At Jack Foster, we specialize in premium handmade leather watch straps, wallets, card cases, duffel bags and other fine leather goods.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "At Jack Foster",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "we specialize in premium handmade leather watch straps",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "wallets",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "card cases",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     },
     {
       "text": "duffel bags and other fine leather goods",
-      "fetched_at": "2026-08-07T16:10:56.505Z"
-    },
-    {
-      "text": "At Jack Foster, we specialize in premium handmade leather watch straps, wallets, card cases, duffel bags and other fine leather goods.",
-      "source": "https://www.jack-foster.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:10:56.505Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:jack,foster,specialize,premium"
-      ]
+      "fetched_at": "2026-08-07T23:07:58.530Z"
     }
   ],
   "unresolved": [
@@ -281,26 +331,51 @@
   "link_preview": {
     "og_title": "Jack Foster Leather Goods",
     "og_url": "https://vendly-demos.vercel.app/jack-foster-leather-goods/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/jack-foster-leather-goods/assets/site-8.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "20c3cbd35b06e05379c1ae64384c3f771e4f98aa59b7f5a82eb176b2638d2129",
+    "image_px": "1800x1200",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 10,
+    "rejected": 6,
+    "photographs": 10,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "b1c507c716d1afa1b1a7af5daaa3375c48b9a0946bd8fbc31f9b347a1d4c1f39",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "fa6e49606fcef63ce72ecd854c7f7086403837801ca61d66ce1914ce4e84bdec",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-3"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-5"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-7"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -311,9 +386,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "leather"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

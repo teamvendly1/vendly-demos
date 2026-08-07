@@ -1,38 +1,51 @@
 {
+  "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Can Can Brasserie",
   "facebook": null,
   "slug": "can-can-brasserie",
-  "built_at": "2026-08-07T15:51:18.577Z",
-  "elapsed_ms": 1057,
+  "built_at": "2026-08-07T22:52:51.356Z",
+  "elapsed_ms": 1354,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 969
+      "at_ms": 217
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 217
     },
     {
       "step": "assets",
-      "at_ms": 971
+      "at_ms": 831
+    },
+    {
+      "step": "template",
+      "at_ms": 863
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 883
     },
     {
       "step": "brand_palette",
-      "at_ms": 971
+      "at_ms": 1268
     },
     {
       "step": "layout",
-      "at_ms": 971
+      "at_ms": 1268
     },
     {
       "step": "render",
-      "at_ms": 972
+      "at_ms": 1268
     },
     {
       "step": "audit",
-      "at_ms": 974
+      "at_ms": 1270
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1057
+      "at_ms": 1354
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "restaurant",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "restaurant",
+      "photo_count": 2,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "photoCount<=2 (2): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
+      "gallery",
       "trust",
-      "contact",
       "services",
+      "concierge",
       "words",
-      "gallery"
+      "contact"
     ],
-    "hero_treatment": "panel",
+    "hero_treatment": "overlay",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "overlay"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#A63835",
+      "b": "#4D1A19",
+      "c": "#A63835",
+      "brand": "#A63835",
+      "mist": "#F9F4F3",
+      "ink": "#1A1310"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#A63835",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A63835",
+            "after": "#A63835",
+            "ratio": 6.48,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#A63835",
+            "after": "#A63835",
+            "ratio": 6.48,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4D1A19",
+            "after": "#4D1A19",
+            "ratio": 14.21,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4D1A19",
+            "after": "#4D1A19",
+            "ratio": 11.05,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A63835",
+            "ratio": 6.48,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#A63835",
+            "ratio": 6.48,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4D1A19",
+            "ratio": 14.21,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4D1A19",
+            "ratio": 11.05,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1310",
+            "bg_mist": "#F9F4F3",
+            "ratio": 16.83,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4D1A19",
+            "bg_mist": "#F9F4F3",
+            "ratio": 13.04,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/61bfa03dda6b0336a40a06e9/ad3219c7-ce27-4103-9e1e-2db599624242/Can+Can+logo+2.png?format=1500w"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A63835",
+        "ratio": 6.48,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#A63835",
+        "ratio": 6.48,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4D1A19",
+        "ratio": 14.21,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4D1A19",
+        "ratio": 11.05,
         "pass": true
       }
     ]
@@ -229,25 +289,25 @@
   "claims": [
     {
       "text": "Can Can Brasserie",
-      "fetched_at": "2026-08-07T15:51:18.489Z"
+      "fetched_at": "2026-08-07T22:52:50.218Z"
     },
     {
       "text": "(804) 358-7274",
-      "fetched_at": "2026-08-07T15:51:18.489Z"
+      "fetched_at": "2026-08-07T22:52:50.218Z"
     },
     {
       "text": "cancanrva@gmail.com",
-      "fetched_at": "2026-08-07T15:51:18.489Z"
+      "fetched_at": "2026-08-07T22:52:50.218Z"
     },
     {
       "text": "3120 West Cary Street\nRichmond, VA, 23221\nUnited States",
-      "fetched_at": "2026-08-07T15:51:18.489Z"
+      "fetched_at": "2026-08-07T22:52:50.218Z"
     },
     {
       "text": "",
       "source": "https://cancanrva.com/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:51:18.489Z"
+      "fetched_at": "2026-08-07T22:52:50.218Z"
     }
   ],
   "unresolved": [
@@ -257,26 +317,31 @@
   "link_preview": {
     "og_title": "Can Can Brasserie | VA",
     "og_url": "https://vendly-demos.vercel.app/can-can-brasserie/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
-    "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "og_image": "https://vendly-demos.vercel.app/can-can-brasserie/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "71cbddda521560d111a153e6f61b5d8b89bd1d6975f9b8ba5d023f0858106dab",
+    "image_px": "1000x423",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 2,
+    "rejected": 2,
+    "photographs": 2,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "3dbc30d271fffb8310e4df619b7007bdaad4e0707a50728618f4dc5cdf6c4b75",
+      "media_id": "site-2"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -288,8 +353,9 @@
     "trust_strip": false,
     "services": false,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
   },
-  "fill_tokens": 6
+  "fill_tokens": 10
 }

@@ -1,38 +1,51 @@
 {
+  "niche": "stationery",
   "schema": "vendly.autodemo.build/1",
   "business": "Paper Source",
   "facebook": null,
   "slug": "paper-source",
-  "built_at": "2026-08-07T15:56:01.058Z",
-  "elapsed_ms": 2331,
+  "built_at": "2026-08-07T22:56:48.309Z",
+  "elapsed_ms": 2702,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2239
+      "at_ms": 937
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 937
     },
     {
       "step": "assets",
-      "at_ms": 2241
+      "at_ms": 2127
+    },
+    {
+      "step": "template",
+      "at_ms": 2237
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2258
     },
     {
       "step": "brand_palette",
-      "at_ms": 2242
+      "at_ms": 2601
     },
     {
       "step": "layout",
-      "at_ms": 2242
+      "at_ms": 2601
     },
     {
       "step": "render",
-      "at_ms": 2243
+      "at_ms": 2602
     },
     {
       "step": "audit",
-      "at_ms": 2244
+      "at_ms": 2604
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2331
+      "at_ms": 2702
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "retail-shop",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "retail-shop",
+      "photo_count": 9,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (retail-shop) with 9 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Reserve or Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "retail-shop",
+      "file": "retail-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "retail-shop",
+      "sources": [
+        "https://www.scottsflowersnyc.com/",
+        "https://www.nativepoppy.com/",
+        "https://www.greenapplebooks.com/",
+        "https://www.catbirdnyc.com/",
+        "https://ballardblossom.com/"
+      ],
+      "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#00838C",
+      "b": "#08595E",
+      "c": "#00838C",
+      "brand": "#00838C",
+      "mist": "#F3F8F9",
+      "ink": "#1A1810"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#00838C",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#00838C",
+            "after": "#00838C",
+            "ratio": 4.54,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#00838C",
+            "after": "#00838C",
+            "ratio": 4.54,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#08595E",
+            "after": "#08595E",
+            "ratio": 8.07,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#08595E",
+            "after": "#08595E",
+            "ratio": 6.27,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#00838C",
+            "ratio": 4.54,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#00838C",
+            "ratio": 4.54,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#08595E",
+            "ratio": 8.07,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#08595E",
+            "ratio": 6.27,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1810",
+            "bg_mist": "#F3F8F9",
+            "ratio": 16.59,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#08595E",
+            "bg_mist": "#F3F8F9",
+            "ratio": 7.54,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.papersource.com/cdn/shop/files/2022-12-paper-source-logo-slate-peacock.png?v=1722910203&amp;width=1291"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#00838C",
+        "ratio": 4.54,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#00838C",
+        "ratio": 4.54,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#08595E",
+        "ratio": 8.07,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#08595E",
+        "ratio": 6.27,
         "pass": true
       }
     ]
@@ -229,38 +289,28 @@
   "claims": [
     {
       "text": "Paper Source",
-      "fetched_at": "2026-08-07T15:56:00.966Z"
+      "fetched_at": "2026-08-07T22:56:46.543Z"
     },
     {
       "text": "(804) 359-1580",
-      "fetched_at": "2026-08-07T15:56:00.966Z"
+      "fetched_at": "2026-08-07T22:56:46.543Z"
     },
     {
       "text": "richmondva@papersource.com",
-      "fetched_at": "2026-08-07T15:56:00.966Z"
+      "fetched_at": "2026-08-07T22:56:46.543Z"
     },
     {
       "text": "Visit our Paper Source Richmond VA store for stationery, greeting cards, gifts and more. Browse upcoming events & find directions to your local store.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:56:00.966Z"
+      "fetched_at": "2026-08-07T22:56:46.543Z"
     },
     {
       "text": "Visit our Paper Source Richmond VA store for stationery",
-      "fetched_at": "2026-08-07T15:56:00.966Z"
+      "fetched_at": "2026-08-07T22:56:46.543Z"
     },
     {
       "text": "greeting cards",
-      "fetched_at": "2026-08-07T15:56:00.966Z"
-    },
-    {
-      "text": "Visit our Paper Source Richmond VA store for stationery, greeting cards, gifts and more. Browse upcoming events & find directions to your local store.",
-      "source": "https://www.papersource.com/a/stores/store/4650",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:56:00.966Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:visit,paper,source,richmond"
-      ]
+      "fetched_at": "2026-08-07T22:56:46.543Z"
     }
   ],
   "unresolved": [
@@ -269,33 +319,40 @@
   "link_preview": {
     "og_title": "Paper Source",
     "og_url": "https://vendly-demos.vercel.app/paper-source/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/paper-source/assets/site-2.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "image_sha256": "06472b45074937ee7fc750a0220ded27783d8baf7d561baa7a712638618ab667",
+    "image_px": "800x800",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 0,
-    "photographs": 0,
+    "accepted": 9,
+    "rejected": 1,
+    "photographs": 9,
     "logo_found": false
   },
-  "rejected_assets": [],
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "49c1acbf41462863b0640b6b66a7d9289ae9c883a3bc7edc2b55e9fe3beb2b80",
+      "media_id": "site-9"
+    }
+  ],
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "stationery"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

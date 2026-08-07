@@ -1,38 +1,47 @@
 {
+  "niche": "scuba_diving",
   "schema": "vendly.autodemo.build/1",
   "business": "Carolina Dive Locker",
   "facebook": null,
   "slug": "carolina-dive-locker",
-  "built_at": "2026-08-07T16:11:55.590Z",
-  "elapsed_ms": 1355,
+  "built_at": "2026-08-07T23:10:02.499Z",
+  "elapsed_ms": 5669,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 1246
+      "at_ms": 1458
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 1458
     },
     {
       "step": "assets",
-      "at_ms": 1248
+      "at_ms": 5083
+    },
+    {
+      "step": "template",
+      "at_ms": 5169
     },
     {
       "step": "brand_palette",
-      "at_ms": 1249
+      "at_ms": 5540
     },
     {
       "step": "layout",
-      "at_ms": 1249
+      "at_ms": 5540
     },
     {
       "step": "render",
-      "at_ms": 1250
+      "at_ms": 5541
     },
     {
       "step": "audit",
-      "at_ms": 1252
+      "at_ms": 5543
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1355
+      "at_ms": 5669
     }
   ],
   "audit": {
@@ -40,41 +49,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "fitness",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "fitness",
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (fitness) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
-      "trust",
-      "contact",
+      "hero",
       "services",
       "words",
-      "gallery"
+      "gallery",
+      "trust",
+      "concierge",
+      "contact"
     ],
-    "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Free First Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "fitness",
+      "file": "fitness.js",
+      "resolved_by": "family",
+      "resolved_from": "fitness",
+      "sources": [
+        "https://www.ovcrossfit.com",
+        "https://www.lumberjack-athletics.com",
+        "https://www.theschoolofpilates.com",
+        "https://www.primeboxingusa.com",
+        "https://www.gracieelkgrove.com"
+      ],
+      "rationale": "Five of five winners lead with a FREE FIRST VISIT and not one leads with Join, Sign Up, or a price - Lumberjack repeats the identical Book a Free Intro at least four times down one page with beginner testimonials beside it, and OV CrossFit publishes three numbered onboarding steps so the visitor knows exactly what happens after the click - so this template makes the free first visit the only primary action, gives the services slot to those numbered steps, and lifts beginner-named social proof to third. A demo carries no transformation grid, no client image, no trial offer or price the business does not already publish, no result or health claim, and no hours it did not read on their live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "services",
+            "words",
+            "gallery",
+            "trust",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#C1141B",
+      "b": "#5C0A0D",
+      "c": "#C1141B",
+      "brand": "#C1141B",
+      "mist": "#F9F3F4",
+      "ink": "#15161F"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#C1141B",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +138,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#C1141B",
+            "after": "#C1141B",
+            "ratio": 6.21,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +148,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#C1141B",
+            "after": "#C1141B",
+            "ratio": 6.21,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +158,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5C0A0D",
+            "after": "#5C0A0D",
+            "ratio": 13.96,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +168,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5C0A0D",
+            "after": "#5C0A0D",
+            "ratio": 10.85,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +180,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#C1141B",
+            "ratio": 6.21,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#C1141B",
+            "ratio": 6.21,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5C0A0D",
+            "ratio": 13.96,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5C0A0D",
+            "ratio": 10.85,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#15161F",
+            "bg_mist": "#F9F3F4",
+            "ratio": 16.42,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5C0A0D",
+            "bg_mist": "#F9F3F4",
+            "ratio": 12.73,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "gallery_asset_classified_graphic"
     }
   },
   "accessibility": {
@@ -181,32 +237,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#C1141B",
+        "ratio": 6.21,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#C1141B",
+        "ratio": 6.21,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5C0A0D",
+        "ratio": 13.96,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5C0A0D",
+        "ratio": 10.85,
         "pass": true
       }
     ]
@@ -229,24 +285,24 @@
   "claims": [
     {
       "text": "Carolina Dive Locker",
-      "fetched_at": "2026-08-07T16:11:55.481Z"
+      "fetched_at": "2026-08-07T23:09:58.287Z"
     },
     {
       "text": "(843) 884-1500",
-      "fetched_at": "2026-08-07T16:11:55.481Z"
+      "fetched_at": "2026-08-07T23:09:58.287Z"
     },
     {
       "text": "carolinadivelocker@gmail.com",
-      "fetched_at": "2026-08-07T16:11:55.481Z"
+      "fetched_at": "2026-08-07T23:09:58.287Z"
     },
     {
       "text": "Carolina Dive Locker",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:11:55.481Z"
+      "fetched_at": "2026-08-07T23:09:58.287Z"
     },
     {
       "text": "Carolina Dive Locker",
-      "fetched_at": "2026-08-07T16:11:55.481Z"
+      "fetched_at": "2026-08-07T23:09:58.287Z"
     }
   ],
   "unresolved": [
@@ -255,26 +311,36 @@
   "link_preview": {
     "og_title": "Carolina Dive Locker",
     "og_url": "https://vendly-demos.vercel.app/carolina-dive-locker/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/carolina-dive-locker/assets/site-8.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
+    "image_sha256": "188ba9698e993aa6b1001375c31770bd49c42e1c7472b1aca264409940a4f769",
+    "image_px": "1085x686",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
-    "logo_found": false
+    "accepted": 14,
+    "rejected": 3,
+    "photographs": 13,
+    "logo_found": true
   },
   "rejected_assets": [
+    {
+      "reason": "duplicate_content",
+      "sha256": "c56527ee0ce8f4cf36ebf95f76faa9e33305c7b7aec1db4d8245bda625c1764c",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "duplicate_content",
+      "sha256": "2e17f4b0e1724c4c283cba81a7b11e923ef235138ade648c32096383d12290c5",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -286,8 +352,9 @@
     "trust_strip": false,
     "services": true,
     "their_words": false,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "scuba_diving"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

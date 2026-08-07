@@ -1,38 +1,51 @@
 {
+  "niche": "books",
   "schema": "vendly.autodemo.build/1",
   "business": "McKay's Knoxville",
   "facebook": null,
   "slug": "mckay-s-knoxville",
-  "built_at": "2026-08-07T16:02:57.776Z",
-  "elapsed_ms": 332,
+  "built_at": "2026-08-07T23:00:05.277Z",
+  "elapsed_ms": 3157,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 230
+      "at_ms": 160
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 161
     },
     {
       "step": "assets",
-      "at_ms": 231
+      "at_ms": 2555
+    },
+    {
+      "step": "template",
+      "at_ms": 2675
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2682
     },
     {
       "step": "brand_palette",
-      "at_ms": 233
+      "at_ms": 3051
     },
     {
       "step": "layout",
-      "at_ms": 233
+      "at_ms": 3052
     },
     {
       "step": "render",
-      "at_ms": 233
+      "at_ms": 3053
     },
     {
       "step": "audit",
-      "at_ms": 235
+      "at_ms": 3056
     },
     {
       "step": "beacon_probe",
-      "at_ms": 332
+      "at_ms": 3157
     }
   ],
   "audit": {
@@ -40,41 +53,87 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "retail-shop",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "retail-shop",
+      "photo_count": 6,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (retail-shop) with 6 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
       "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Reserve or Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "retail-shop",
+      "file": "retail-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "retail-shop",
+      "sources": [
+        "https://www.scottsflowersnyc.com/",
+        "https://www.nativepoppy.com/",
+        "https://www.greenapplebooks.com/",
+        "https://www.catbirdnyc.com/",
+        "https://ballardblossom.com/"
+      ],
+      "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#EA1A1A",
+      "b": "#5E0808",
+      "c": "#EA1A1A",
+      "brand": "#ED3636",
+      "mist": "#F9F3F3",
+      "ink": "#1A1810"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#ED3636",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +142,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#ED3636",
+            "after": "#EA1A1A",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#ED3636",
+            "after": "#EA1A1A",
+            "ratio": 4.51,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#5E0808",
+            "after": "#5E0808",
+            "ratio": 13.87,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#5E0808",
+            "after": "#5E0808",
+            "ratio": 10.78,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#EA1A1A",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#EA1A1A",
+            "ratio": 4.51,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#5E0808",
+            "ratio": 13.87,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#5E0808",
+            "ratio": 10.78,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#1A1810",
+            "bg_mist": "#F9F3F3",
+            "ratio": 16.19,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#5E0808",
+            "bg_mist": "#F9F3F3",
+            "ratio": 12.64,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.wixstatic.com/media/114bae_43614fa51cca4a969c1052af6dd7cc64%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/114bae_43614fa51cca4a969c1052af6dd7cc64%7Emv2.png"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#EA1A1A",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#EA1A1A",
+        "ratio": 4.51,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#5E0808",
+        "ratio": 13.87,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#5E0808",
+        "ratio": 10.78,
         "pass": true
       }
     ]
@@ -229,92 +289,127 @@
   "claims": [
     {
       "text": "McKay's Knoxville",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "(615) 353-2595",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "support@mckaybooks.com",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "636 Old Hickory Boulevard, Nashville, TN, 37209-5125",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "McKAY's is a used bookstore and record store. Visit us to buy, sell, & trade books, music, movies, games, & more!",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "sell",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "& trade books",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "music",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "movies",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "games",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     },
     {
       "text": "& more!",
-      "fetched_at": "2026-08-07T16:02:57.673Z"
-    },
-    {
-      "text": "McKAY's is a used bookstore and record store. Visit us to buy, sell, & trade books, music, movies, games, & more!",
-      "source": "https://www.mckaybooks.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:02:57.673Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:mckay,used,bookstore,record"
-      ]
+      "fetched_at": "2026-08-07T23:00:02.280Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "McKay&#39;s Knoxville | TN",
     "og_url": "https://vendly-demos.vercel.app/mckay-s-knoxville/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/mckay-s-knoxville/assets/site-0.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "38dc8351b514d8cb8ae1f8c0df89a1be75ac371dc75b45647b6ae0603f63663c",
+    "image_px": "4500x4500",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 2,
-    "photographs": 0,
+    "accepted": 6,
+    "rejected": 11,
+    "photographs": 6,
     "logo_found": false
   },
   "rejected_assets": [
     {
       "reason": "download_failed",
       "sha256": null,
-      "media_id": null
+      "media_id": "site-3"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "c1964aefab8d015fea09180fb893aba6a257821fa88388cead6c5188f715baab",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "93c898fc3b7d5346ea17335972f05c6da224a50ae4792a33ef93d51380bfe0b9",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ca3630c70a28ca56ba08a61d1e5e92bbd4c93a074f960ef40a8746ae66becaf2",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-11"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-13"
+    },
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-15"
     },
     {
       "reason": "download_failed",
@@ -326,9 +421,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "books"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }
