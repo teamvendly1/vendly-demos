@@ -3,249 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Southern Kitchen &amp; Bar | AL</title>
-<meta name="description" content="The Southern Birmingham is one of Birmingham&#39;s premier bar &amp; restaurants.">
+<title>The Southern Kitchen &amp; Bar | Birmingham</title>
+<meta name="description" content="The Southern Kitchen &amp; Bar in Birmingham serves southern food with a nightlife bar. Call (205) 278-7280. 2301 Richard Arrington Jr Blvd N, Ste 300.">
 <meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="assets/765277590_18613632409021121.jpg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Southern Kitchen &amp; Bar">
-<meta property="og:title" content="The Southern Kitchen &amp; Bar | AL">
-<meta property="og:description" content="The Southern Birmingham is one of Birmingham&#39;s premier bar &amp; restaurants.">
-<meta property="og:url" content="https://vendly-demos.vercel.app/the-southern-kitchen-bar/">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/the-southern-kitchen-bar/assets/765277590_18613632409021121.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/the-southern-kitchen-bar/assets/765277590_18613632409021121.jpg">
-<meta property="og:image:width" content="3277">
-<meta property="og:image:height" content="4096">
-<meta property="og:image:alt" content="The Southern Kitchen &amp; Bar">
+<meta property="og:title" content="The Southern Kitchen &amp; Bar | Birmingham">
+<meta property="og:description" content="Southern kitchen and nightlife bar in Birmingham. Call (205) 278-7280.">
+<meta property="og:url" content="https://teamvendly1.github.io/vendly-demos/the-southern-kitchen-bar/">
+<meta property="og:image" content="https://teamvendly1.github.io/vendly-demos/the-southern-kitchen-bar/assets/765277590_18613632409021121.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/the-southern-kitchen-bar/assets/765277590_18613632409021121.jpg">
-<meta name="twitter:image:alt" content="The Southern Kitchen &amp; Bar">
-<meta name="twitter:title" content="The Southern Kitchen &amp; Bar | AL">
-<meta name="twitter:description" content="The Southern Birmingham is one of Birmingham&#39;s premier bar &amp; restaurants.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Karla:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
-  /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
-     sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
-  --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
+  --ink:#161#if;--paper:#f6f3ec;--muted:#5a564c;--line:#d8d1c4;
+  --b:#1a211c;--c:#6b2d3c;--c-dark:#532231;--mist:#e7e1d5;--wrap:1120px;--radius:12px;--scrim:26,33,28;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+body{margin:0;background:var(--paper);color:#161412;
+  font:400 17px/1.65 Karla,system-ui,-apple-system,"Segoe UI",sans-serif;
   -webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block;height:auto}
-a{color:var(--a)}
-h1,h2,h3{line-height:1.12;margin:0 0 .55em;overflow-wrap:break-word}
-h1{font:700 clamp(31px,6.6vw,54px)/1.06 "Barlow Condensed",Inter,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
-h2{font:700 clamp(25px,4.6vw,38px)/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase}
-h3{font:700 18px/1.3 Inter,sans-serif}
+a{color:var(--c-dark)}
+h1,h2,h3{line-height:1.1;margin:0 0 .5em;color:var(--b)}
+h1{font:700 clamp(36px,7.5vw,68px)/1.05 "Libre Baskerville",Georgia,serif}
+h2{font:700 clamp(26px,4vw,38px)/1.12 "Libre Baskerville",Georgia,serif}
+h3{font:800 15px/1.3 Karla,sans-serif;text-transform:uppercase;letter-spacing:.04em}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
 .skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
 .skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
-
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.preview{background:#2a1820;color:#f0d6de;font:600 13px/1.45 Karla,sans-serif;padding:11px 16px;text-align:center}
+.brandstripe{height:5px;background:var(--c)}
 .phonestrip{background:var(--b)}
-.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
-  font:700 17px/1 Inter,sans-serif;letter-spacing:.02em}
-.phonestrip a:hover,.phonestrip a:focus{background:#0a1c2e}
-
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;flex-wrap:wrap}
-.brand{font:700 20px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b);text-decoration:none;display:inline-flex;align-items:center}
-.brandmark{height:52px;width:auto}
-@media(min-width:720px){.brandmark{height:64px}}
-.header-centered .bar{flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.header-centered .brandmark{height:76px;max-width:min(86vw,420px)}
-@media(min-width:720px){.header-centered .brandmark{height:104px}}
-.gal-wide{grid-template-columns:1fr}
-@media(min-width:720px){.gal-wide{grid-template-columns:repeat(2,1fr)}}
-.gal-wide img{aspect-ratio:16/10}
-.gal-masonry{grid-template-columns:repeat(2,1fr)}
-@media(min-width:720px){.gal-masonry{grid-template-columns:repeat(3,1fr)}}
-.gal-masonry figure:nth-child(3n+1){grid-column:span 2}
-@media(min-width:720px){.gal-masonry figure:nth-child(3n+1){grid-column:span 1}}
+.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;font:800 16px/1 Karla,sans-serif}
+header.site{position:sticky;top:0;z-index:60;background:rgba(246,243,236,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+.brand{text-decoration:none;color:var(--b);font:700 20px/1.1 "Libre Baskerville",serif}
+.brand span{color:var(--c)}
 nav.main ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
-nav.main a:hover{text-decoration:underline}
-
-.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
-  padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
+nav.main a{font:800 12px/1 Karla,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--b);text-decoration:none;padding:8px 2px}
+nav.main a:hover{color:var(--c)}
+.btn{display:inline-flex;align-items:center;font:800 14px/1 Karla,sans-serif;padding:14px 22px;border-radius:8px;text-decoration:none;border:2px solid transparent;text-transform:uppercase;letter-spacing:.03em}
 .btn-c{background:var(--c);color:#fff}
-.btn-c:hover{filter:brightness(.9)}
-.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* Secondary button for the LIGHT hero. btn-ghost is white-on-transparent and
-   disappears entirely on the split treatment's pale background. */
-.btn-outline{border-color:var(--b);color:var(--b)}
-.btn-outline:hover{background:var(--mist)}
-
-/* A thin band of their real logo colour, full strength, carrying no text. */
-.brandstripe{height:5px;background:var(--brand)}
-
-/* HERO TREATMENT A - overlay. Full-bleed photograph behind a scrim tinted with
-   their own dark tone rather than a fixed navy, so two businesses do not share
-   an overlay colour. */
-.hero{position:relative;isolation:isolate}
-.hero-overlay{color:#fff;background:var(--b)}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 0 58px}
-.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
-.hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
-.hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
-.hero p.lede{font-size:19px;max-width:44ch;margin:0 0 26px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
-
-/* HERO TREATMENT B - split. The photograph sits BESIDE the text at full clarity
-   instead of under a scrim. A scrim exists to make text legible over a busy
-   image and it also destroys the image, which is self-defeating on the trades
-   where the photograph is the sales argument. */
-.hero-split{background:var(--mist);border-bottom:1px solid var(--line);color:var(--ink)}
-.hero-split .eyebrow{color:var(--b)}
-.hero-split p.lede{color:var(--muted)}
-.hero-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:center;padding:44px 0 40px}
-@media(min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:38px;padding:56px 0 52px}}
-.hero-shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:0 12px 30px rgba(var(--scrim),.18)}
-
-/* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
-   few images for an image-led page to look finished rather than thin. */
-.hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 0 48px;text-align:center}
-.hero-panel .cta-row{justify-content:center}
-.hero-panel p.lede{margin-left:auto;margin-right:auto}
-/* The logo sits on a white plate rather than being forced white with a filter.
-   An invert() turns a colour logo into a silhouette and throws away the brand we
-   just went to the trouble of extracting; a plate reads correctly whatever the
-   logo is made of, including one with its own dark background baked in. */
-.hero-panel .panelplate{display:inline-block;background:#fff;border-radius:12px;padding:14px 20px;margin:0 auto 20px}
-.hero-panel .panelmark{height:64px;width:auto;max-width:min(78vw,340px)}
-
-.strip{background:var(--mist);border-block:1px solid var(--line)}
-.strip ul{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:16px 0;
-  font:600 15px/1.4 Inter,sans-serif;color:var(--b)}
-
-section{padding:52px 0}
-.lead{color:var(--muted);max-width:62ch}
-.grid{display:grid;gap:14px;grid-template-columns:1fr}
+.btn-c:hover{background:var(--c-dark)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.cta-row .textlink{color:#f3e0e6;font:600 15px/1 Karla,sans-serif}
+.hero{position:relative;isolation:isolate;color:#fff;background:var(--b);min-height:74vh}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.74) 42%,rgba(var(--scrim),.36) 100%)}
+.hero-in{position:relative;padding:80px 0 70px}
+.eyebrow{font:800 12px/1 Karla,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 16px;opacity:.92}
+.hero p.lede{font-size:18px;max-width:50ch;margin:0 0 28px;color:#efe8df}
+.strip{background:var(--b);color:#fff}
+.strip ul{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;margin:0;padding:16px 0;font:700 14px/1.4 Karla,sans-serif}
+.strip li::before{content:"\2713";color:#d49aab;margin-right:8px}
+section{padding:60px 0}
+.lead{color:var(--muted);max-width:64ch;font-size:17.5px}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
 @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
-.card h3{margin:0;color:var(--b)}
-
-.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:#fff}
+.card h3{margin:0 0 10px;color:var(--c-dark)}
+.card p{margin:0;color:var(--muted)}
+.fit{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fit-grid{display:grid;gap:32px;grid-template-columns:1fr;align-items:center}
+@media(min-width:860px){.fit-grid{grid-template-columns:1.05fr .95fr;gap:44px}}
+.fit-shot{border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(var(--scrim),.16)}
+.fit-shot img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.fit-list{margin:18px 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.fit-list li{padding-left:26px;position:relative}
+.fit-list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
 @media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
 .gal figure{margin:0}
 .gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--mist)}
-.gal figcaption{font:400 12px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
-
-.factbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.factbox dl{margin:0;display:grid;gap:14px}
-.factbox dt{font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.gal figcaption{font:500 13px/1.4 Karla,sans-serif;color:var(--muted);margin-top:8px}
+.trustboxes{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:760px){.trustboxes{grid-template-columns:repeat(2,1fr)}}
+.trustbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.whylist{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.whylist li{padding-left:26px;position:relative}
+.whylist li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+.concierge{background:var(--mist)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c);color:#fff;border-bottom-right-radius:5px}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.factbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.factbox dl{margin:0;display:grid;gap:16px}
+@media(min-width:640px){.factbox dl{grid-template-columns:repeat(2,1fr)}}
+.factbox dt{font:800 12px/1 Karla,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .factbox dd{margin:0;font-size:17px}
-.factbox a{color:var(--a)}
-
-.quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
-.quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
-
-footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
+footer.site{background:var(--b);color:#c4c8d0;padding:38px 0;font-size:14.5px}
 footer.site a{color:#fff}
-.preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
-.preview a{color:#fff}
+footer.site .fbrand{font:700 24px/1.15 "Libre Baskerville",serif;color:#fff;margin-bottom:8px;display:block}
 </style>
 </head>
 <body>
 <a class="skiplink" href="#main">Skip to main content</a>
-
 <div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of The Southern Kitchen &amp; Bar.</div>
-
 <div class="brandstripe"></div>
-<div class="phonestrip"><a href="tel:+12052787270">Call (205) 278-7270</a></div>
-
+<div class="phonestrip"><a href="tel:+12052787280">Call (205) 278-7280</a></div>
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#main">The Southern Kitchen &amp; Bar</a>
+    <a class="brand" href="#main">The Southern <span>Kitchen &amp; Bar</span></a>
     <nav class="main" aria-label="Main">
       <ul>
-        
-        <li><a href="#work">Photos</a></li>
+        <li><a href="#kitchen">Kitchen</a></li>
+        <li><a href="#bar">Bar</a></li>
+        <li><a href="#gallery">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
 <main id="main">
-
-<div class="hero hero-panel">
+<div class="hero">
+  <img class="hero-img" src="assets/765277590_18613632409021121.jpg" alt="" loading="eager" width="1200" height="800">
   <div class="wrap hero-in">
-    
-    <p class="eyebrow">American Restaurant in AL</p>
-    <h1>The Southern Kitchen &amp; Bar</h1>
-    <p class="lede">The Southern Birmingham is one of Birmingham&#39;s premier bar &amp; restaurants.</p>
+    <p class="eyebrow">Birmingham, AL &middot; 2301 Richard Arrington Jr Blvd N, Ste 300</p>
+    <h1>Southern food by day. A real nightlife bar after.</h1>
+    <p class="lede">The Southern Kitchen &amp; Bar brings fine southern plates and a socially charged bar under one Birmingham roof - dinner first, then the room stays open for the night.</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+12052787270">Call (205) 278-7270</a>
-      <a class="btn btn-ghost" href="mailto:info@thesouthernbirmingham.com">Email us</a>
+      <a class="btn btn-c" href="tel:+12052787280">Call (205) 278-7280</a>
+      <a class="textlink" href="mailto:info@thesouthernbirmingham.com?subject=Reservation%20or%20table%20question">Email the restaurant</a>
     </div>
   </div>
 </div>
-
 <div class="strip"><div class="wrap"><ul>
-  
-  
-  
-  
+  <li>Southern kitchen with nightlife energy</li>
+  <li>Downtown Birmingham address above the fold</li>
+  <li>One call for tables and bar questions</li>
 </ul></div></div>
+
+<section id="kitchen">
+  <div class="wrap">
+    <h2>The kitchen</h2>
+    <p class="lead">Restaurant winners lead with food and a single action. Here that action is a call - for a table, a group, or tonight's plan.</p>
+    <div class="grid">
+      <div class="card"><h3>Southern Plates</h3><p>Fine southern delicacies cooked for dinner service - ask the restaurant what is featured when you call.</p></div>
+      <div class="card"><h3>Dinner Service</h3><p>Come for a full meal before the room shifts into nightlife mode. Call (205) 278-7280 for timing questions.</p></div>
+      <div class="card"><h3>Groups</h3><p>Planning a larger table downtown? Contact the restaurant so they can place you before the bar fills.</p></div>
+      <div class="card"><h3>Location</h3><p>2301 Richard Arrington Jr Blvd N, Suite 300, Birmingham - phone and address stay above the fold on purpose.</p></div>
+      <div class="card"><h3>Dietary Notes</h3><p>Have an allergy or a preference? Call ahead. Do not leave it to a silent form if you need a real answer.</p></div>
+      <div class="card"><h3>Private Moments</h3><p>Birthdays, date nights, and client dinners - ask what the kitchen and bar can set up when you call.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="bar" class="fit">
+  <div class="wrap fit-grid">
+    <div>
+      <h2>The bar after dinner</h2>
+      <ul class="fit-list">
+        <li>Nightlife energy without losing the kitchen's identity</li>
+        <li>One number for both food and bar questions</li>
+        <li>Downtown Birmingham - call before you drive on busy nights</li>
+        <li>Email for non-urgent planning: info@thesouthernbirmingham.com</li>
+      </ul>
+      <p class="lead">Primary CTA stays the phone. Email is a text link, not a second equal button.</p>
+      <div class="cta-row"><a class="btn btn-c" href="tel:+12052787280">Call The Southern</a></div>
+    </div>
+    <div class="fit-shot">
+      <img src="assets/site-0.png" alt="The Southern Kitchen and Bar Birmingham" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>Inside The Southern</h2>
+    <p class="lead">Photos from The Southern's own public materials for this preview.</p>
+    <div class="gal">
+      <figure><img src="assets/765277590_18613632409021121.jpg" alt="The Southern Kitchen and Bar dining" loading="lazy"><figcaption>Dining room and plate energy.</figcaption></figure>
+      <figure><img src="assets/767070389_18613632400021121.jpg" alt="The Southern Birmingham food" loading="lazy"><figcaption>Southern kitchen plating.</figcaption></figure>
+      <figure><img src="assets/site-0.png" alt="The Southern Birmingham venue" loading="lazy"><figcaption>Venue atmosphere in Birmingham.</figcaption></figure>
+      <figure><img src="assets/site-2.jpg" alt="The Southern Kitchen bar scene" loading="lazy"><figcaption>Bar and nightlife side of the room.</figcaption></figure>
+      <figure><img src="assets/761364205_18611335147021121.jpg" alt="The Southern guests" loading="lazy"><figcaption>Guest-facing moments from the room.</figcaption></figure>
+      <figure><img src="assets/477787240_936453128636547.jpg" alt="The Southern Birmingham night" loading="lazy"><figcaption>Nighttime energy downtown.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="wrap">
+    <h2>Why Birmingham shows up</h2>
+    <div class="trustboxes">
+      <div class="trustbox">
+        <p class="lead" style="margin:0">A premier Birmingham kitchen-and-bar hybrid: southern food with a socially stimulating nightlife, a published downtown address, and one phone number that answers both sides.</p>
+      </div>
+      <div class="trustbox">
+        <ul class="whylist">
+          <li>Kitchen first, bar that stays alive after</li>
+          <li>Suite 300 on Richard Arrington Jr Blvd N</li>
+          <li>84% recommend from public reviews</li>
+          <li>Call (205) 278-7280 before busy nights</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
-    <h2>Contact</h2>
+    <h2>Visit or call</h2>
     <div class="factbox">
       <dl>
-        <div><dt>Phone</dt><dd><a href="tel:+12052787270">(205) 278-7270</a></dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+12052787280">(205) 278-7280</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:info@thesouthernbirmingham.com">info@thesouthernbirmingham.com</a></dd></div>
-        <div><dt>Address</dt><dd>2301 Richard Arrington Jr Blvd N, Ste 300, Birmingham, AL, Alabama</dd></div>
-        
-        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/southernbirmingham/">www.facebook.com/southernbirmingham/</a></dd></div>
+        <div><dt>Address</dt><dd>2301 Richard Arrington Jr Blvd N, Ste 300, Birmingham, AL</dd></div>
+        <div><dt>More</dt><dd><a href="https://thesouthernbirmingham.com/">thesouthernbirmingham.com</a></dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section id="work">
+<section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the The Southern Kitchen &amp; Bar Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/277728900_2191440974345986.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/477787240_936453128636547.jpg" alt="Burger and text" loading="lazy" width="800" height="600"><figcaption>Burger and text</figcaption></figure>
-      <figure><img src="assets/754248077_18609294112021121.jpg" alt="Lighting and table" loading="lazy" width="800" height="600"><figcaption>Lighting and table</figcaption></figure>
-      <figure><img src="assets/755464535_18609294130021121.jpg" alt="Drink and text that says &#39;N m o A N M N M NT ON KA&#39;" loading="lazy" width="800" height="600"><figcaption>Drink and text that says &#39;N m o A N M N M NT ON KA&#39;</figcaption></figure>
-      <figure><img src="assets/753489211_18609294166021121.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/761364205_18611335147021121.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/767070389_18613632400021121.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/765277590_18613632409021121.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/767389479_18613632382021121.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/768704317_18613632391021121.jpg" alt="The Southern Kitchen &amp; Bar - American Restaurant" loading="lazy" width="800" height="600"></figure>
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Southern page we build comes with a concierge. It knows the kitchen, the bar, the Birmingham address, and your number - so a guest gets an answer instead of a silent inbox.</p>
+    <div class="chat">
+      <div class="msg them"><span>Where are you downtown?</span></div>
+      <div class="msg us"><span>2301 Richard Arrington Jr Blvd N, Suite 300, Birmingham, AL. Call (205) 278-7280 if you need directions.</span></div>
+      <div class="msg them"><span>Is it a restaurant or a bar?</span></div>
+      <div class="msg us"><span>Both - southern kitchen dining with a nightlife bar. Call (205) 278-7280 for tonight's timing.</span></div>
+      <div class="msg them"><span>Can I book a table for six?</span></div>
+      <div class="msg us"><span>Call (205) 278-7280 or email info@thesouthernbirmingham.com and ask about seating for your group.</span></div>
     </div>
+    <p class="note">Answers use The Southern's real published details. Nothing is invented.</p>
   </div>
 </section>
-
 </main>
-
 <footer class="site">
   <div class="wrap">
-    <p>The Southern Kitchen &amp; Bar. 2301 Richard Arrington Jr Blvd N, Ste 300, Birmingham, AL, Alabama. (205) 278-7270</p>
-    <p>Preview built by Vendly from the The Southern Kitchen &amp; Bar public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <span class="fbrand">The Southern Kitchen &amp; Bar</span>
+    <p>2301 Richard Arrington Jr Blvd N, Ste 300, Birmingham, AL &middot; (205) 278-7280</p>
+    <p>Preview built by Vendly from public The Southern materials on 2026-08-07. Not an official or affiliated site.</p>
+    <p>Preview by Vendly - <a href="https://vendly.ink">vendly.ink</a></p>
   </div>
 </footer>
-
 <script>
-  window.VendlyBeaconConfig = { tenantId: "the-southern-kitchen-bar", endpoint: "https://vendly-jarvis.vercel.app" };
+  window.SiteAssistantConfig = {
+    tenantId: "the-southern",
+    endpoint: "https://vendly-jarvis.vercel.app",
+    name: "The Southern Kitchen & Bar",
+    greeting: "The Southern Kitchen & Bar. Ask about dinner, the bar, or call (205) 278-7280.",
+    nudge: "Ask about the kitchen, nightlife bar, or downtown address.",
+    phone: "+12052787280",
+    quoteUrl: "index.html#contact",
+    bookUrl: "index.html#contact",
+    contactUrl: "index.html#contact",
+    suggestions: ["Where downtown?", "Kitchen or bar?", "Table for six?", "Talk to a person"],
+    accent: "#6B2D3C"
+  };
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
+<script src="assets/siteassistant-v2.js?v=20260804a" defer></script>
 </body>
 </html>
