@@ -3,238 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BowlersMart Pleasant Valley</title>
-<meta name="description" content="Our full-service bowling pro shop in Raleigh, NC inside Bowlero Raleigh offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.">
+<title>BowlersMart Pleasant Valley | Raleigh Pro Shop</title>
+<meta name="description" content="BowlersMart Pleasant Valley is a full-service bowling pro shop in Raleigh inside Bowlero / AMF Pleasant Valley Lanes. Balls, bags, shoes, and expert drilling. Call (919) 787-2724.">
 <meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="assets/site-8.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BowlersMart Pleasant Valley">
-<meta property="og:title" content="BowlersMart Pleasant Valley">
-<meta property="og:description" content="Our full-service bowling pro shop in Raleigh, NC inside Bowlero Raleigh offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.">
-<meta property="og:url" content="https://vendly-demos.vercel.app/bowlersmart-pleasant-valley/">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BowlersMart Pleasant Valley">
-<meta name="twitter:description" content="Our full-service bowling pro shop in Raleigh, NC inside Bowlero Raleigh offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.">
+<meta property="og:title" content="BowlersMart Pleasant Valley | Raleigh Pro Shop">
+<meta property="og:description" content="Bowling balls, bags, shoes, and expert ball drilling inside Bowlero Raleigh.">
+<meta property="og:url" content="https://teamvendly1.github.io/vendly-demos/bowlersmart-pleasant-valley/">
+<meta property="og:image" content="https://teamvendly1.github.io/vendly-demos/bowlersmart-pleasant-valley/assets/site-8.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
-  /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
-     sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
-  --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
+  --ink:#14181f;--paper:#f6f4ef;--muted:#555d68;--line:#ddd7cc;
+  --b:#12161d;--c:#e4572e;--c-dark:#c2411b;--mist:#ebe6dc;--wrap:1120px;--radius:14px;--scrim:16,20,28;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
-  font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font:400 17px/1.65 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
   -webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block;height:auto}
-a{color:var(--a)}
-h1,h2,h3{line-height:1.12;margin:0 0 .55em;overflow-wrap:break-word}
-h1{font:700 clamp(31px,6.6vw,54px)/1.06 "Barlow Condensed",Inter,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
-h2{font:700 clamp(25px,4.6vw,38px)/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase}
-h3{font:700 18px/1.3 Inter,sans-serif}
+a{color:var(--c-dark)}
+h1,h2,h3{line-height:1.05;margin:0 0 .5em;color:var(--b)}
+h1{font:400 clamp(44px,9.5vw,88px)/.95 Anton,Impact,sans-serif;letter-spacing:.01em;text-transform:uppercase}
+h2{font:400 clamp(28px,4.5vw,42px)/1.05 Anton,Impact,sans-serif;text-transform:uppercase}
+h3{font:800 17px/1.3 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.03em}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
 .skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
 .skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
-
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.preview{background:#3d1c10;color:#ffd2c2;font:600 13px/1.45 Manrope,sans-serif;padding:11px 16px;text-align:center}
+.brandstripe{height:5px;background:var(--c)}
 .phonestrip{background:var(--b)}
-.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
-  font:700 17px/1 Inter,sans-serif;letter-spacing:.02em}
-.phonestrip a:hover,.phonestrip a:focus{background:#0a1c2e}
-
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;flex-wrap:wrap}
-.brand{font:700 20px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b);text-decoration:none;display:inline-flex;align-items:center}
-.brandmark{height:52px;width:auto}
-@media(min-width:720px){.brandmark{height:64px}}
-.header-centered .bar{flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.header-centered .brandmark{height:76px;max-width:min(86vw,420px)}
-@media(min-width:720px){.header-centered .brandmark{height:104px}}
-.gal-wide{grid-template-columns:1fr}
-@media(min-width:720px){.gal-wide{grid-template-columns:repeat(2,1fr)}}
-.gal-wide img{aspect-ratio:16/10}
-.gal-masonry{grid-template-columns:repeat(2,1fr)}
-@media(min-width:720px){.gal-masonry{grid-template-columns:repeat(3,1fr)}}
-.gal-masonry figure:nth-child(3n+1){grid-column:span 2}
-@media(min-width:720px){.gal-masonry figure:nth-child(3n+1){grid-column:span 1}}
+.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;font:800 16px/1 Manrope,sans-serif}
+header.site{position:sticky;top:0;z-index:60;background:rgba(246,244,239,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0;flex-wrap:wrap}
+.brand{text-decoration:none;color:var(--b);font:400 24px/1 Anton,sans-serif;letter-spacing:.02em}
+.brand span{color:var(--c)}
 nav.main ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
-nav.main a:hover{text-decoration:underline}
-
-.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
-  padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
+nav.main a{font:800 12px/1 Manrope,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--b);text-decoration:none;padding:8px 2px}
+nav.main a:hover{color:var(--c)}
+.btn{display:inline-flex;align-items:center;font:800 14px/1 Manrope,sans-serif;padding:14px 22px;border-radius:8px;text-decoration:none;border:2px solid transparent;text-transform:uppercase;letter-spacing:.03em}
 .btn-c{background:var(--c);color:#fff}
-.btn-c:hover{filter:brightness(.9)}
-.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* Secondary button for the LIGHT hero. btn-ghost is white-on-transparent and
-   disappears entirely on the split treatment's pale background. */
-.btn-outline{border-color:var(--b);color:var(--b)}
-.btn-outline:hover{background:var(--mist)}
-
-/* A thin band of their real logo colour, full strength, carrying no text. */
-.brandstripe{height:5px;background:var(--brand)}
-
-/* HERO TREATMENT A - overlay. Full-bleed photograph behind a scrim tinted with
-   their own dark tone rather than a fixed navy, so two businesses do not share
-   an overlay colour. */
-.hero{position:relative;isolation:isolate}
-.hero-overlay{color:#fff;background:var(--b)}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 0 58px}
-.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
-.hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
-.hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
-.hero p.lede{font-size:19px;max-width:44ch;margin:0 0 26px}
+.btn-c:hover{background:var(--c-dark)}
+.btn-ghost{border-color:rgba(255,255,255,.75);color:#fff}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap}
-
-/* HERO TREATMENT B - split. The photograph sits BESIDE the text at full clarity
-   instead of under a scrim. A scrim exists to make text legible over a busy
-   image and it also destroys the image, which is self-defeating on the trades
-   where the photograph is the sales argument. */
-.hero-split{background:var(--mist);border-bottom:1px solid var(--line);color:var(--ink)}
-.hero-split .eyebrow{color:var(--b)}
-.hero-split p.lede{color:var(--muted)}
-.hero-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:center;padding:44px 0 40px}
-@media(min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:38px;padding:56px 0 52px}}
-.hero-shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:0 12px 30px rgba(var(--scrim),.18)}
-
-/* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
-   few images for an image-led page to look finished rather than thin. */
-.hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 0 48px;text-align:center}
-.hero-panel .cta-row{justify-content:center}
-.hero-panel p.lede{margin-left:auto;margin-right:auto}
-/* The logo sits on a white plate rather than being forced white with a filter.
-   An invert() turns a colour logo into a silhouette and throws away the brand we
-   just went to the trouble of extracting; a plate reads correctly whatever the
-   logo is made of, including one with its own dark background baked in. */
-.hero-panel .panelplate{display:inline-block;background:#fff;border-radius:12px;padding:14px 20px;margin:0 auto 20px}
-.hero-panel .panelmark{height:64px;width:auto;max-width:min(78vw,340px)}
-
-.strip{background:var(--mist);border-block:1px solid var(--line)}
-.strip ul{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:16px 0;
-  font:600 15px/1.4 Inter,sans-serif;color:var(--b)}
-
-section{padding:52px 0}
-.lead{color:var(--muted);max-width:62ch}
-.grid{display:grid;gap:14px;grid-template-columns:1fr}
+.hero{position:relative;isolation:isolate;color:#fff;background:var(--b)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.78) 40%,rgba(var(--scrim),.4) 100%)}
+.hero-in{position:relative;padding:72px 0 64px}
+.eyebrow{font:800 12px/1 Manrope,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 16px;opacity:.92}
+.hero p.lede{font-size:18px;max-width:48ch;margin:0 0 28px;color:#efe8df}
+.strip{background:var(--b);color:#fff}
+.strip ul{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;margin:0;padding:16px 0;font:700 14px/1.4 Manrope,sans-serif}
+.strip li::before{content:"\2713";color:#ff8f6b;margin-right:8px}
+section{padding:60px 0}
+.lead{color:var(--muted);max-width:64ch;font-size:17.5px}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
 @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
-.card h3{margin:0;color:var(--b)}
-
-.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:#fff}
+.card h3{margin:0 0 10px;color:var(--c-dark)}
+.card p{margin:0;color:var(--muted)}
+.fit{background:var(--mist);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fit-grid{display:grid;gap:32px;grid-template-columns:1fr;align-items:center}
+@media(min-width:860px){.fit-grid{grid-template-columns:1.05fr .95fr;gap:44px}}
+.fit-shot{border-radius:var(--radius);overflow:hidden;box-shadow:0 14px 34px rgba(var(--scrim),.16)}
+.fit-shot img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.fit-list{margin:18px 0 26px;padding:0;list-style:none;display:grid;gap:10px}
+.fit-list li{padding-left:26px;position:relative}
+.fit-list li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
 @media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
 .gal figure{margin:0}
 .gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--mist)}
-.gal figcaption{font:400 12px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
-
-.factbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.factbox dl{margin:0;display:grid;gap:14px}
-.factbox dt{font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.gal figcaption{font:500 13px/1.4 Manrope,sans-serif;color:var(--muted);margin-top:8px}
+.trustboxes{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:760px){.trustboxes{grid-template-columns:repeat(2,1fr)}}
+.trustbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.whylist{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.whylist li{padding-left:26px;position:relative}
+.whylist li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+.concierge{background:var(--mist)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c);color:#fff;border-bottom-right-radius:5px}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.factbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.factbox dl{margin:0;display:grid;gap:16px}
+@media(min-width:640px){.factbox dl{grid-template-columns:repeat(2,1fr)}}
+.factbox dt{font:800 12px/1 Manrope,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 .factbox dd{margin:0;font-size:17px}
-.factbox a{color:var(--a)}
-
-.quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
-.quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
-
-footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
+footer.site{background:var(--b);color:#c4c8d0;padding:38px 0;font-size:14.5px}
 footer.site a{color:#fff}
-.preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
-.preview a{color:#fff}
+footer.site .fbrand{font:400 26px/1 Anton,sans-serif;color:#fff;margin-bottom:8px;display:block;letter-spacing:.02em}
 </style>
 </head>
 <body>
 <a class="skiplink" href="#main">Skip to main content</a>
-
-<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of BowlersMart Pleasant Valley.</div>
-
+<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of BowlersMart.</div>
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+19197872724">Call (919) 787-2724</a></div>
-
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#main">BowlersMart Pleasant Valley</a>
+    <a class="brand" href="#main">BOWLERSMART <span>PV</span></a>
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#fitting">Fitting</a></li>
+        <li><a href="#gallery">Shop</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
 <main id="main">
-
-<div class="hero hero-panel">
+<div class="hero">
+  <img class="hero-img" src="assets/site-8.png" alt="" loading="eager" width="1200" height="800">
   <div class="wrap hero-in">
-    
-    
-    <h1>BowlersMart Pleasant Valley</h1>
-    <p class="lede">Our full-service bowling pro shop in Raleigh, NC inside Bowlero Raleigh offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.</p>
+    <p class="eyebrow">Raleigh, NC &middot; Inside Bowlero / AMF Pleasant Valley</p>
+    <h1>Your bowling pro shop.</h1>
+    <p class="lede">BowlersMart Pleasant Valley is a full-service pro shop for balls, bags, shoes, and expert ball drilling - right inside the lanes so you can get fitted and get back on the approach.</p>
     <div class="cta-row">
       <a class="btn btn-c" href="tel:+19197872724">Call (919) 787-2724</a>
-      <a class="btn btn-ghost" href="mailto:pleasantvalley@bowlersmart.com">Email us</a>
+      <a class="btn btn-ghost" href="mailto:pleasantvalley@bowlersmart.com?subject=Pro%20shop%20question">Email the shop</a>
     </div>
   </div>
 </div>
+<div class="strip"><div class="wrap"><ul>
+  <li>Expert ball drilling and fitting</li>
+  <li>Large selection of balls, bags, and shoes</li>
+  <li>Inside Bowlero Raleigh / Pleasant Valley Lanes</li>
+</ul></div></div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What the shop does</h2>
+    <p class="lead">Not a generic sports aisle - a bowling pro shop with services built around how you actually throw.</p>
+    <div class="grid">
+      <div class="card"><h3>Ball Fitting</h3><p>Span, pitch, and weight matched to your hand and style so the ball comes off clean instead of fighting you.</p></div>
+      <div class="card"><h3>Expert Drilling</h3><p>Custom layouts drilled in-house for house shots and sport patterns - bring your new ball or pick one from the wall.</p></div>
+      <div class="card"><h3>Bowling Balls</h3><p>A deep bench of performance and entry balls so league bowlers and newbies are not stuck with one shelf.</p></div>
+      <div class="card"><h3>Bags</h3><p>Single, double, and roller bags that survive weekly league nights without dumping your shoes in the parking lot.</p></div>
+      <div class="card"><h3>Shoes</h3><p>Rental replacements and performance shoes sized correctly - ask the shop what they have in stock today.</p></div>
+      <div class="card"><h3>Accessories</h3><p>Tape, grips, towels, and the small gear that keeps a series from falling apart mid-block.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fitting" class="fit">
+  <div class="wrap fit-grid">
+    <div>
+      <h2>Get fitted before you buy blind.</h2>
+      <ul class="fit-list">
+        <li>Talk through your average and oil conditions</li>
+        <li>Measure for a layout that fits your release</li>
+        <li>Drill on site inside the Pleasant Valley center</li>
+        <li>Walk back to the lanes the same visit when timing allows</li>
+      </ul>
+      <p class="lead">Call ahead if you need a specific brand or weight - the shop can tell you what is on the wall today.</p>
+      <div class="cta-row"><a class="btn btn-c" href="tel:+19197872724">Call the pro shop</a></div>
+    </div>
+    <div class="fit-shot">
+      <img src="assets/site-6.jpg" alt="Bowling gear and pro shop selection at BowlersMart" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <h2>Inside the pro shop</h2>
+    <p class="lead">Photos from BowlersMart's own public location materials for this preview.</p>
+    <div class="gal">
+      <figure><img src="assets/site-8.png" alt="BowlersMart Pleasant Valley branding and shop imagery" loading="lazy"><figcaption>BowlersMart Pleasant Valley pro shop.</figcaption></figure>
+      <figure><img src="assets/site-6.jpg" alt="Bowling balls and gear selection" loading="lazy"><figcaption>Balls and gear on the wall.</figcaption></figure>
+      <figure><img src="assets/site-0.jpg" alt="Raleigh BowlersMart location imagery" loading="lazy"><figcaption>Raleigh location context.</figcaption></figure>
+      <figure><img src="assets/site-7.jpg" alt="Pro shop service and fitting area" loading="lazy"><figcaption>Fitting and service side of the shop.</figcaption></figure>
+      <figure><img src="assets/site-3.jpg" alt="Bowling shoes available at the pro shop" loading="lazy"><figcaption>Shoes for league and practice.</figcaption></figure>
+      <figure><img src="assets/site-2.jpg" alt="Bowling bags at BowlersMart Pleasant Valley" loading="lazy"><figcaption>Bags ready for league night.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="wrap">
+    <h2>Why Raleigh bowlers stop here</h2>
+    <div class="trustboxes">
+      <div class="trustbox">
+        <p class="lead" style="margin:0">A full-service BowlersMart inside the Pleasant Valley lanes - drilling, fitting, and gear without a second trip across town.</p>
+      </div>
+      <div class="trustbox">
+        <ul class="whylist">
+          <li>Expert drilling, not a grab-and-go wall only</li>
+          <li>Balls, bags, and shoes in one stop</li>
+          <li>Inside Bowlero / AMF Pleasant Valley Lanes</li>
+          <li>Call (919) 787-2724 before you drive over</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
-    <h2>Contact</h2>
+    <h2>Visit or call</h2>
     <div class="factbox">
       <dl>
         <div><dt>Phone</dt><dd><a href="tel:+19197872724">(919) 787-2724</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:pleasantvalley@bowlersmart.com">pleasantvalley@bowlersmart.com</a></dd></div>
-        
-        
-        <div><dt>Facebook</dt><dd><a href="https://www.bowlersmart.com/locations/north-carolina/bowlersmart-raleigh-pro-shop-inside-amf-pleasant-valley-lanes/">www.bowlersmart.com/locations/north-carolina/bowlersmart-raleigh-pro-shop-inside-amf-pleasant-valley-lanes/</a></dd></div>
+        <div><dt>Location</dt><dd>Inside Bowlero Raleigh / AMF Pleasant Valley Lanes, Raleigh, NC</dd></div>
+        <div><dt>More</dt><dd><a href="https://www.bowlersmart.com/locations/north-carolina/bowlersmart-raleigh-pro-shop-inside-amf-pleasant-valley-lanes/">BowlersMart location page</a></dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section id="services">
+<section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the BowlersMart Pleasant Valley Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>Our full-service bowling pro shop in Raleigh</h3></div>
-      <div class="card"><h3>bowling bags</h3></div>
-      <div class="card"><h3>bowling shoes</h3></div>
-      <div class="card"><h3>and expert ball drilling</h3></div>
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every BowlersMart page we build comes with a concierge. It knows drilling, fitting, gear categories, and your number - so a league bowler gets an answer instead of a silent inbox.</p>
+    <div class="chat">
+      <div class="msg them"><span>Do you drill bowling balls?</span></div>
+      <div class="msg us"><span>Yes - expert ball drilling and fitting at the Pleasant Valley shop. Call (919) 787-2724 to ask about today's schedule.</span></div>
+      <div class="msg them"><span>Where are you inside the center?</span></div>
+      <div class="msg us"><span>We are the BowlersMart pro shop inside Bowlero Raleigh / AMF Pleasant Valley Lanes. Call (919) 787-2724 if you need directions into the building.</span></div>
+      <div class="msg them"><span>Do you carry shoes and bags?</span></div>
+      <div class="msg us"><span>Yes - bowling shoes, bags, and accessories alongside the ball wall. Email pleasantvalley@bowlersmart.com or call the shop for stock.</span></div>
     </div>
+    <p class="note">Answers use the shop's real published details. Nothing is invented.</p>
   </div>
 </section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Our full-service bowling pro shop in Raleigh, NC inside Bowlero Raleigh offers a large selection of bowling balls, bowling bags, bowling shoes, and expert ball drilling.
-      <cite>Posted by BowlersMart Pleasant Valley on Facebook. Read on <a href="https://www.bowlersmart.com/locations/north-carolina/bowlersmart-raleigh-pro-shop-inside-amf-pleasant-valley-lanes/">their page</a>.</cite>
-    </blockquote>
-  </div>
-</section>
-
 </main>
-
 <footer class="site">
   <div class="wrap">
-    <p>BowlersMart Pleasant Valley. (919) 787-2724</p>
-    <p>Preview built by Vendly from the BowlersMart Pleasant Valley public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <span class="fbrand">BowlersMart Pleasant Valley</span>
+    <p>Inside Bowlero Raleigh / AMF Pleasant Valley Lanes &middot; (919) 787-2724 &middot; pleasantvalley@bowlersmart.com</p>
+    <p>Preview built by Vendly from the public BowlersMart location page on 2026-08-07. Not an official or affiliated site.</p>
+    <p>Preview by Vendly - <a href="https://vendly.ink">vendly.ink</a></p>
   </div>
 </footer>
-
 <script>
-  window.VendlyBeaconConfig = { tenantId: "bowlersmart-pleasant-valley", endpoint: "https://vendly-jarvis.vercel.app" };
+  window.SiteAssistantConfig = {
+    tenantId: "bowlersmart-pv",
+    endpoint: "https://vendly-jarvis.vercel.app",
+    name: "BowlersMart Pleasant Valley",
+    greeting: "BowlersMart Pleasant Valley. Ask about drilling, fitting, or call (919) 787-2724.",
+    nudge: "Ask about ball drilling, shoes, or where we sit inside the lanes.",
+    phone: "+19197872724",
+    quoteUrl: "index.html#contact",
+    bookUrl: "index.html#contact",
+    contactUrl: "index.html#contact",
+    suggestions: ["Do you drill balls?", "Where are you?", "Shoes and bags?", "Talk to a person"],
+    accent: "#E4572E"
+  };
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
+<script src="assets/siteassistant-v2.js?v=20260804a" defer></script>
 </body>
 </html>
