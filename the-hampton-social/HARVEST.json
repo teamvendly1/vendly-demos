@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "The Hampton Social",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(630) 219-0009",
+      "source": "jsonld"
+    },
+    "address": {
+      "value": "705 Village Center Dr., Burr Ridge, IL, 60527",
+      "source": "jsonld"
+    },
+    "about": {
+      "value": "Looking for the best Nashville restaurants downtown? Found it! From brunch to dinner, our coastal cuisine will have you begging for more. Click to learn more!",
+      "source": "meta"
+    },
+    "categories": {
+      "value": "Restaurant",
+      "source": "jsonld"
+    },
+    "hours": {
+      "value": "Su 10:00-21:00; Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "hours(live_status_only:Su 10:00-21:00; Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)"
+  ],
+  "photos": [
+    "https://popmenucloud.com/cdn-cgi/image/width=300,height=300,format=auto,fit=scale-down/vwzyjpmb/a2584202-6d07-4869-9273-033f0025f590.png",
+    "https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=cover/vwzyjpmb/ebb3768a-b5f1-44ec-ae47-8983ffc8e143.jpg"
+  ],
+  "voice": {
+    "post_text": [
+      "Looking for the best Nashville restaurants downtown? Found it! From brunch to dinner, our coastal cuisine will have you begging for more. Click to learn more!"
+    ],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T16:59:41.125Z",
+  "resolved_url": "https://www.thehamptonsocial.com/nashville",
+  "sourceUrl": "https://www.thehamptonsocial.com/nashville"
+}
