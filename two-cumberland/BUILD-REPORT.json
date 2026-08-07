@@ -1,0 +1,330 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Two Cumberland",
+  "facebook": null,
+  "slug": "two-cumberland",
+  "built_at": "2026-08-07T15:49:38.574Z",
+  "elapsed_ms": 3427,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 388
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 389
+    },
+    {
+      "step": "assets",
+      "at_ms": 2958
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3339
+    },
+    {
+      "step": "layout",
+      "at_ms": 3339
+    },
+    {
+      "step": "render",
+      "at_ms": 3340
+    },
+    {
+      "step": "audit",
+      "at_ms": 3342
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3427
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 9,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#8D7427",
+      "b": "#504116",
+      "c": "#8D7427",
+      "brand": "#EBDEB7",
+      "mist": "#F9F7F3",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#EBDEB7",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EBDEB7",
+            "after": "#8D7427",
+            "ratio": 4.51,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EBDEB7",
+            "after": "#8D7427",
+            "ratio": 4.51,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#504116",
+            "after": "#504116",
+            "ratio": 9.96,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#504116",
+            "after": "#504116",
+            "ratio": 7.74,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#8D7427",
+            "ratio": 4.51,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#8D7427",
+            "ratio": 4.51,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#504116",
+            "ratio": 9.96,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#504116",
+            "ratio": 7.74,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F9F7F3",
+            "ratio": 16.72,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#504116",
+            "bg_mist": "#F9F7F3",
+            "ratio": 9.31,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#8D7427",
+        "ratio": 4.51,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#8D7427",
+        "ratio": 4.51,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#504116",
+        "ratio": 9.96,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#504116",
+        "ratio": 7.74,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "two-cumberland",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Two Cumberland",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "(843) 800-5353",
+      "source": "https://www.facebook.com/twocumberland/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "shoptwocumberland@gmail.com",
+      "source": "https://www.facebook.com/twocumberland/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "TWO CUMBERLAND LLC",
+      "source": "https://www.facebook.com/twocumberland/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "Looking for a curated selection of both trendy and timeless clothing? We have something for everyone. Come and visit us at Two Cumberland! With our mix of on-trend clothing and occasion wear, we have something for everyone online and in stores.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "Page · Boutique Store",
+      "source": "https://www.facebook.com/twocumberland/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "we have something for everyone online and in stores",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "92% recommend (292 Reviews)",
+      "source": "https://www.facebook.com/twocumberland/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T15:49:35.535Z"
+    },
+    {
+      "text": "Looking for a curated selection of both trendy and timeless clothing? We have something for everyone. Come and visit us at Two Cumberland! With our mix of on-trend clothing and occasion wear, we have something for everyone online and in stores.",
+      "source": "https://www.twocumberland.com",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T15:49:35.535Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:store,looking,curated,selection"
+      ]
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Opening Soon)"
+  ],
+  "link_preview": {
+    "og_title": "Two Cumberland | TWO CUMBERLAND LLC",
+    "og_url": "https://vendly-demos.vercel.app/two-cumberland/",
+    "og_image": "https://vendly-demos.vercel.app/two-cumberland/assets/486381624_669673675404619.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "graphic",
+    "image_is_page_lead_image": true,
+    "image_sha256": "a1be74660d124d53b65901a865e10b85864e43681c83003cb9cef327761dc0d3",
+    "image_px": "1638x2048",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 10,
+    "rejected": 0,
+    "photographs": 9,
+    "logo_found": true
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 21
+}

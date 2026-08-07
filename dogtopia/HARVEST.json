@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "Dogtopia",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(205) 440-3888",
+      "source": "jsonld"
+    },
+    "address": {
+      "value": "1722 27th Court South, Homewood, Alabama, 35209",
+      "source": "jsonld"
+    },
+    "about": {
+      "value": "Dogtopia is the leading destination for dog daycare, boarding and spa services. Our mission is to enrich your dog’s life.",
+      "source": "meta"
+    },
+    "categories": {
+      "value": "Local Business",
+      "source": "jsonld"
+    },
+    "hours": {
+      "value": "Mo 6:30-19:00; Tu 6:30-19:00; We 6:30-19:00; Th 6:30-19:00; Fr 6:30-19:00; Sa 9:00-17:00; Su 16:00-18:00",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "hours(live_status_only:Mo 6:30-19:00; Tu 6:30-19:00; We 6:30-19:00; Th 6:30-19:00; Fr 6:30-19:00; Sa 9:00-17:00; Su 16:00-18:00)"
+  ],
+  "photos": [
+    "https://s3-prod.dogtopia.com/wp-content/uploads/sites/371/2022/08/Dogtopia_Lobby-Welcome-Wall-690x489.jpg"
+  ],
+  "voice": {
+    "post_text": [
+      "Dogtopia is the leading destination for dog daycare, boarding and spa services. Our mission is to enrich your dog’s life."
+    ],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T16:00:30.310Z",
+  "resolved_url": "https://www.dogtopia.com/alabama-birmingham-homewood/",
+  "sourceUrl": "https://www.dogtopia.com/alabama-birmingham-homewood/"
+}

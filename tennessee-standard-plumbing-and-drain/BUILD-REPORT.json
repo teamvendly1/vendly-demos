@@ -1,0 +1,301 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Tennessee Standard Plumbing and Drain",
+  "facebook": null,
+  "slug": "tennessee-standard-plumbing-and-drain",
+  "built_at": "2026-08-07T16:11:54.165Z",
+  "elapsed_ms": 756,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 650
+    },
+    {
+      "step": "assets",
+      "at_ms": 652
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 654
+    },
+    {
+      "step": "layout",
+      "at_ms": 654
+    },
+    {
+      "step": "render",
+      "at_ms": 654
+    },
+    {
+      "step": "audit",
+      "at_ms": 656
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 756
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "hvac",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "hvac",
+      "photo_count": 0,
+      "has_reviews": false,
+      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#1B56A9",
+      "b": "#12315C",
+      "c": "#C8202E",
+      "brand": "#C8202E",
+      "mist": "#F4F7FB",
+      "ink": "#101724"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#C8202E",
+            "after": "#C8202E",
+            "ratio": 5.67,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#1B56A9",
+            "after": "#1B56A9",
+            "ratio": 7.12,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#12315C",
+            "after": "#12315C",
+            "ratio": 12.97,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#12315C",
+            "after": "#12315C",
+            "ratio": 10.08,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#C8202E",
+            "ratio": 5.67,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#1B56A9",
+            "ratio": 7.12,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#12315C",
+            "ratio": 12.97,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#12315C",
+            "ratio": 10.08,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#101724",
+            "bg_mist": "#F4F7FB",
+            "ratio": 16.7,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#12315C",
+            "bg_mist": "#F4F7FB",
+            "ratio": 12.07,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#C8202E",
+        "ratio": 5.67,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#1B56A9",
+        "ratio": 7.12,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#12315C",
+        "ratio": 12.97,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#12315C",
+        "ratio": 10.08,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "tennessee-standard-plumbing-and-drain",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Tennessee Standard Plumbing and Drain",
+      "fetched_at": "2026-08-07T16:11:54.059Z"
+    },
+    {
+      "text": "(865) 352-9003",
+      "fetched_at": "2026-08-07T16:11:54.059Z"
+    },
+    {
+      "text": "service@tnstandard.com",
+      "fetched_at": "2026-08-07T16:11:54.059Z"
+    },
+    {
+      "text": "Tennessee Standard Plumbing is the premier plumbing company in the Greater Knoxville Area. We specialize in residential and commercial plumbing services with a 5.0 rating and over 2,000 Google reviews.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T16:11:54.059Z"
+    },
+    {
+      "text": "Plumber",
+      "fetched_at": "2026-08-07T16:11:54.059Z"
+    },
+    {
+      "text": "000 Google reviews",
+      "fetched_at": "2026-08-07T16:11:54.059Z"
+    },
+    {
+      "text": "Tennessee Standard Plumbing is the premier plumbing company in the Greater Knoxville Area. We specialize in residential and commercial plumbing services with a 5.0 rating and over 2,000 Google reviews.",
+      "source": "https://www.tnstandard.com/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T16:11:54.059Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:tennessee,standard,plumbing,premier"
+      ]
+    }
+  ],
+  "unresolved": [
+    "address"
+  ],
+  "link_preview": {
+    "og_title": "Tennessee Standard Plumbing and Drain",
+    "og_url": "https://vendly-demos.vercel.app/tennessee-standard-plumbing-and-drain/",
+    "og_image": null,
+    "og_image_is_absolute": false,
+    "twitter_card": "summary",
+    "image_source_kind": null,
+    "image_is_page_lead_image": false,
+    "image_sha256": null,
+    "image_px": null,
+    "meets_facebook_minimum_200x200": false,
+    "renders_large_card_600x315": false,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "no_image",
+    "reason_no_image": "no images survived the asset fetch"
+  },
+  "assets": {
+    "accepted": 0,
+    "rejected": 0,
+    "photographs": 0,
+    "logo_found": false
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": true,
+    "gallery": false,
+    "contact": true
+  },
+  "fill_tokens": 4
+}

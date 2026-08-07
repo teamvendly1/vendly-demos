@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "Reto's Kitchen",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(336) 274-0499",
+      "source": "page-text-unambiguous"
+    },
+    "email": {
+      "value": "chef@retoskitchen.com",
+      "source": "site"
+    },
+    "categories": {
+      "value": "Local Business",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "address",
+    "about",
+    "post_text"
+  ],
+  "photos": [],
+  "voice": {
+    "post_text": [],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T15:51:31.219Z",
+  "resolved_url": "https://www.retoskitchen.com/",
+  "sourceUrl": "https://www.retoskitchen.com/"
+}

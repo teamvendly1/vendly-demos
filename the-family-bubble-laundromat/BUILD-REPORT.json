@@ -1,0 +1,335 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "The Family Bubble Laundromat",
+  "facebook": null,
+  "slug": "the-family-bubble-laundromat",
+  "built_at": "2026-08-07T16:02:07.523Z",
+  "elapsed_ms": 1571,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 1476
+    },
+    {
+      "step": "assets",
+      "at_ms": 1478
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 1480
+    },
+    {
+      "step": "layout",
+      "at_ms": 1480
+    },
+    {
+      "step": "render",
+      "at_ms": 1481
+    },
+    {
+      "step": "audit",
+      "at_ms": 1482
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 1571
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 0,
+      "has_reviews": false,
+      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#2B3A47",
+      "b": "#18232C",
+      "c": "#A4552A",
+      "brand": "#A4552A",
+      "mist": "#F4F5F6",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A4552A",
+            "after": "#A4552A",
+            "ratio": 5.37,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#2B3A47",
+            "after": "#2B3A47",
+            "ratio": 11.67,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#18232C",
+            "after": "#18232C",
+            "ratio": 15.96,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#18232C",
+            "after": "#18232C",
+            "ratio": 12.41,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A4552A",
+            "ratio": 5.37,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#2B3A47",
+            "ratio": 11.67,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#18232C",
+            "ratio": 15.96,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#18232C",
+            "ratio": 12.41,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F4F5F6",
+            "ratio": 16.39,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#18232C",
+            "bg_mist": "#F4F5F6",
+            "ratio": 14.62,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A4552A",
+        "ratio": 5.37,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#2B3A47",
+        "ratio": 11.67,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#18232C",
+        "ratio": 15.96,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#18232C",
+        "ratio": 12.41,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "the-family-bubble-laundromat",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "The Family Bubble Laundromat",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "(865) 909-7627",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "soapnwaterlaundry@gmail.com",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "3313 Sutherland Ave, Knoxville, TN, 37919",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "The Family Bubble, in Knoxville, TN, is the area's leading laundromat serving Knoxville and surrounding areas since 2017. We are a coin operated laundromat offering high efficiency washers and dryers with small, medium and large capacity machines, free Wi-Fi, big screen TVs, vending machines, a children's lending library and much more. For your next laundry day, visit The Family Bubble in Knoxville. Soap and Water Laundry and its affiliates, The Family Bubble and The Laundry Room, respect your privacy and will not send unsolicited text messages. If you text us, we will answer you via text or call you to respond to your inquiry. We are never going to send you an unsolicited text, we will only text you in the event you texted us and are asking for a response. However, if you wish to opt-out of text, please let us know!",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "Local Business",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "The Family Bubble",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "in Knoxville",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "medium and large capacity machines",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "free Wi-Fi",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "big screen TVs",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "vending machines",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "The Family Bubble and The Laundry Room",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "if you wish to opt-out of text",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "please let us know!",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    },
+    {
+      "text": "since 2017",
+      "fetched_at": "2026-08-07T16:02:07.428Z"
+    }
+  ],
+  "unresolved": [],
+  "link_preview": {
+    "og_title": "The Family Bubble Laundromat | TN",
+    "og_url": "https://vendly-demos.vercel.app/the-family-bubble-laundromat/",
+    "og_image": null,
+    "og_image_is_absolute": false,
+    "twitter_card": "summary",
+    "image_source_kind": null,
+    "image_is_page_lead_image": false,
+    "image_sha256": null,
+    "image_px": null,
+    "meets_facebook_minimum_200x200": false,
+    "renders_large_card_600x315": false,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "no_image",
+    "reason_no_image": "no images survived the asset fetch"
+  },
+  "assets": {
+    "accepted": 0,
+    "rejected": 1,
+    "photographs": 0,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": null
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": false,
+    "gallery": false,
+    "contact": true
+  },
+  "fill_tokens": 9
+}

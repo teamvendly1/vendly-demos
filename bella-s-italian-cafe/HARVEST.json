@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "Bella's Italian Cafe",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(813) 254-3355",
+      "source": "jsonld"
+    },
+    "address": {
+      "value": "1413 S Howard Ave, Ste 100, Tampa, FL, 33606-3176",
+      "source": "jsonld"
+    },
+    "about": {
+      "value": "Bella's Italian Café in Tampa, FL. Call us at (813) 254-3355. Check out our location and hours, and latest menu with photos and reviews.",
+      "source": "meta"
+    },
+    "email": {
+      "value": "info@bellasitaliancafe.com",
+      "source": "site"
+    },
+    "categories": {
+      "value": "Restaurant",
+      "source": "jsonld"
+    },
+    "hours": {
+      "value": "Su 15:00-22:30; Mo 11:30-22:30; Tu 11:30-22:30; We 11:30-22:30; Th 11:30-22:30; Fr 11:30-00:00; Sa 15:00-00:00",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "hours(live_status_only:Su 15:00-22:30; Mo 11:30-22:30; Tu 11:30-22:30; We 11:30-22:30; Th 11:30-22:30; Fr 11:30-00:00; Sa 15:00-00:00)"
+  ],
+  "photos": [
+    "https://popmenucloud.com/cdn-cgi/image/width=300,height=300,format=auto,fit=scale-down/dspwbtuo/37f81ce2-bf47-42ac-a917-38c66647ffd3.png",
+    "https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=pad,background=transparent/dspwbtuo/37f81ce2-bf47-42ac-a917-38c66647ffd3.png"
+  ],
+  "voice": {
+    "post_text": [
+      "Bella's Italian Café in Tampa, FL. Call us at (813) 254-3355. Check out our location and hours, and latest menu with photos and reviews."
+    ],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T15:59:46.536Z",
+  "resolved_url": "https://www.bellasitaliancafe.com/",
+  "sourceUrl": "https://www.bellasitaliancafe.com/"
+}

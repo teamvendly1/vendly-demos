@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "The Fish Market",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(205) 322-3330",
+      "source": "page-text-unambiguous"
+    },
+    "address": {
+      "value": "612 22nd St S\nBirmingham, AL, 35233",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "about",
+    "post_text"
+  ],
+  "photos": [
+    "https://static1.squarespace.com/static/558c4037e4b08aeb0473d96e/t/58b0f466725e252ebd621653/1764087294118/"
+  ],
+  "voice": {
+    "post_text": [],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T16:00:27.807Z",
+  "resolved_url": "https://www.thefishmarket.net/",
+  "sourceUrl": "https://www.thefishmarket.net/"
+}

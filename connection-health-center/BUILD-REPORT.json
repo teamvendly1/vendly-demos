@@ -1,0 +1,352 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Connection Health Center",
+  "facebook": null,
+  "slug": "connection-health-center",
+  "built_at": "2026-08-07T15:49:26.050Z",
+  "elapsed_ms": 2738,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 774
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 774
+    },
+    {
+      "step": "assets",
+      "at_ms": 2128
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 2621
+    },
+    {
+      "step": "layout",
+      "at_ms": 2621
+    },
+    {
+      "step": "render",
+      "at_ms": 2622
+    },
+    {
+      "step": "audit",
+      "at_ms": 2623
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 2738
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 5,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#3C74D6",
+      "b": "#122A54",
+      "c": "#3C74D6",
+      "brand": "#9CB8EA",
+      "mist": "#F3F5F9",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#9CB8EA",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#9CB8EA",
+            "after": "#3C74D6",
+            "ratio": 4.51,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#9CB8EA",
+            "after": "#3C74D6",
+            "ratio": 4.51,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#122A54",
+            "after": "#122A54",
+            "ratio": 14.14,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#122A54",
+            "after": "#122A54",
+            "ratio": 10.99,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#3C74D6",
+            "ratio": 4.51,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#3C74D6",
+            "ratio": 4.51,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#122A54",
+            "ratio": 14.14,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#122A54",
+            "ratio": 10.99,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F3F5F9",
+            "ratio": 16.39,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#122A54",
+            "bg_mist": "#F3F5F9",
+            "ratio": 12.96,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#3C74D6",
+        "ratio": 4.51,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#3C74D6",
+        "ratio": 4.51,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#122A54",
+        "ratio": 14.14,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#122A54",
+        "ratio": 10.99,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "connection-health-center",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Connection Health Center",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "(843) 410-9242",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "hello@connectionhealthcenter.com",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "658 Rutledge Ave, A, Charleston, SC",
+      "source": "https://www.facebook.com/connectionhealthcenter/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "Discover holistic care in Charleston, SC for back/neck pain, headaches, pregnancy & postpartum discomfort, hormones, gut issues & fatigue at Connection Health Center.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "Page · Chiropractor",
+      "source": "https://www.facebook.com/connectionhealthcenter/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "Discover holistic care in Charleston",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "SC for back/neck pain",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "headaches",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "pregnancy & postpartum discomfort",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "hormones",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "gut issues & fatigue at Connection Health Center",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "100% recommend (8 Reviews)",
+      "source": "https://www.facebook.com/connectionhealthcenter/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T15:49:24.085Z"
+    },
+    {
+      "text": "Discover holistic care in Charleston, SC for back/neck pain, headaches, pregnancy & postpartum discomfort, hormones, gut issues & fatigue at Connection Health Center.",
+      "source": "https://connectionhealthcenter.com",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T15:49:24.085Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:discover,holistic,care,charleston"
+      ]
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Closed now)"
+  ],
+  "link_preview": {
+    "og_title": "Connection Health Center | Charleston",
+    "og_url": "https://vendly-demos.vercel.app/connection-health-center/",
+    "og_image": "https://vendly-demos.vercel.app/connection-health-center/assets/480489002_1155733953222559.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "graphic",
+    "image_is_page_lead_image": true,
+    "image_sha256": "9cb9cb2f7bd3acb54638f681192f7e7b654426fee917ae4a8fd6938421854f39",
+    "image_px": "2048x1152",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 11,
+    "rejected": 1,
+    "photographs": 5,
+    "logo_found": true
+  },
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": null
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 20
+}

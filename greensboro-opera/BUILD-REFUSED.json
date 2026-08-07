@@ -1,0 +1,332 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Greensboro Opera",
+  "facebook": "https://www.facebook.com/GreensboroOpera/",
+  "slug": "greensboro-opera",
+  "built_at": "2026-08-07T13:47:11.721Z",
+  "elapsed_ms": 8699,
+  "steps": [
+    {
+      "step": "harvest",
+      "at_ms": 3056
+    },
+    {
+      "step": "assets",
+      "at_ms": 8261
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 8592
+    },
+    {
+      "step": "layout",
+      "at_ms": 8592
+    },
+    {
+      "step": "render",
+      "at_ms": 8592
+    },
+    {
+      "step": "audit",
+      "at_ms": 8594
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 8699
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "emoji",
+        "detail": "\"🎭\""
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 20,
+      "has_reviews": false,
+      "branch": "urgent/transactional trade (trade), 20 photographs",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "services",
+      "gallery",
+      "words",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "split",
+    "gallery_shape": "grid",
+    "palette_final": {
+      "a": "#E60E63",
+      "b": "#5E082A",
+      "c": "#E60E63",
+      "brand": "#E60E63",
+      "mist": "#F9F3F6",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#E60E63",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#E60E63",
+            "after": "#E60E63",
+            "ratio": 4.56,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#E60E63",
+            "after": "#E60E63",
+            "ratio": 4.56,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#5E082A",
+            "after": "#5E082A",
+            "ratio": 13.6,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#5E082A",
+            "after": "#5E082A",
+            "ratio": 10.57,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#E60E63",
+            "ratio": 4.56,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#E60E63",
+            "ratio": 4.56,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#5E082A",
+            "ratio": 13.6,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#5E082A",
+            "ratio": 10.57,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F9F3F6",
+            "ratio": 16.33,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#5E082A",
+            "bg_mist": "#F9F3F6",
+            "ratio": 12.42,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#E60E63",
+        "ratio": 4.56,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#E60E63",
+        "ratio": 4.56,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#5E082A",
+        "ratio": 13.6,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#5E082A",
+        "ratio": 10.57,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+2019",
+        "count": 3,
+        "in_sourced_claim": true,
+        "char": "’"
+      },
+      {
+        "codepoint": "U+1F3AD",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "🎭"
+      },
+      {
+        "codepoint": "U+2728",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "✨"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "greensboro-opera",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Greensboro Opera",
+      "source": "https://www.facebook.com/GreensboroOpera/",
+      "fb_field": "og:title",
+      "fetched_at": "2026-08-07T13:47:03.023Z"
+    },
+    {
+      "text": "(336) 273-9472",
+      "source": "https://www.facebook.com/GreensboroOpera/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T13:47:03.023Z"
+    },
+    {
+      "text": "info@greensboroopera.org",
+      "source": "https://www.facebook.com/GreensboroOpera/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T13:47:03.023Z"
+    },
+    {
+      "text": "Greensboro Opera is a community-based company dedicated to fostering the growth of opera and to prese",
+      "source": "https://www.facebook.com/GreensboroOpera/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T13:47:03.023Z"
+    },
+    {
+      "text": "Performance Art Theatre",
+      "source": "https://www.facebook.com/GreensboroOpera/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T13:47:03.023Z"
+    },
+    {
+      "text": "Excitement is in the air! There’s still a little time and a few tickets left. Hurry and grab your seats for tonight’s opening performance of The Pirates of Penzance at The Carolina Theatre. www.greensboroopera.org/tickets Don’t miss the chance to be part of the opening night fun! 🎭✨",
+      "source": "https://www.facebook.com/GreensboroOpera/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T13:47:03.023Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:performance,theatre,greensboro,opera"
+      ]
+    }
+  ],
+  "unresolved": [
+    "address",
+    "hours"
+  ],
+  "link_preview": {
+    "og_title": "Greensboro Opera",
+    "og_url": "https://vendly-demos.vercel.app/greensboro-opera/",
+    "og_image": "https://vendly-demos.vercel.app/greensboro-opera/assets/653017281_1794717701672120.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "e1fd4615814953227c96ad297e5f5565ce06d4dccda2b9a4d0957cb9c2e4257e",
+    "image_px": "2048x1365",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 21,
+    "rejected": 0,
+    "photographs": 20,
+    "logo_found": true
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": false,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 17
+}

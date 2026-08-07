@@ -1,0 +1,331 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Palmetto Pro Tint",
+  "facebook": null,
+  "slug": "palmetto-pro-tint",
+  "built_at": "2026-08-07T15:49:59.655Z",
+  "elapsed_ms": 4856,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 3401
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 3401
+    },
+    {
+      "step": "assets",
+      "at_ms": 4752
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 4754
+    },
+    {
+      "step": "layout",
+      "at_ms": 4754
+    },
+    {
+      "step": "render",
+      "at_ms": 4754
+    },
+    {
+      "step": "audit",
+      "at_ms": 4756
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 4856
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "auto",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
+    "layout_selected_by": {
+      "trade_key": "auto",
+      "photo_count": 10,
+      "has_reviews": true,
+      "branch": "urgent/transactional trade (auto), 10 photographs",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "services",
+      "gallery",
+      "words",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "split",
+    "gallery_shape": "grid",
+    "palette_final": {
+      "a": "#123A5E",
+      "b": "#0B2740",
+      "c": "#B3311F",
+      "brand": "#B3311F",
+      "mist": "#F1F5F9",
+      "ink": "#111820"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#B3311F",
+            "after": "#B3311F",
+            "ratio": 6.22,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#123A5E",
+            "after": "#123A5E",
+            "ratio": 11.72,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#0B2740",
+            "after": "#0B2740",
+            "ratio": 15.23,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#0B2740",
+            "after": "#0B2740",
+            "ratio": 11.84,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#B3311F",
+            "ratio": 6.22,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#123A5E",
+            "ratio": 11.72,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#0B2740",
+            "ratio": 15.23,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#0B2740",
+            "ratio": 11.84,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#111820",
+            "bg_mist": "#F1F5F9",
+            "ratio": 16.31,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#0B2740",
+            "bg_mist": "#F1F5F9",
+            "ratio": 13.91,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#B3311F",
+        "ratio": 6.22,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#123A5E",
+        "ratio": 11.72,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#0B2740",
+        "ratio": 15.23,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#0B2740",
+        "ratio": 11.84,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 10,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "palmetto-pro-tint",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Palmetto Pro Tint",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "(803) 359-7731",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "palmettoprotint@gmail.com",
+      "source": "https://www.facebook.com/people/Palmetto-Pro-Tint/100064567874537/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "4319  Augusta Rd, Lexington, SC",
+      "source": "https://www.facebook.com/people/Palmetto-Pro-Tint/100064567874537/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "Palmetto Pro Tint provides professional auto services from oil change to air filters, our professional team of technicians will make sure your car is running in excellent condition for the years to come. - Call us at 803-359-7731",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "Page · Automotive Window Tinting Service",
+      "source": "https://www.facebook.com/people/Palmetto-Pro-Tint/100064567874537/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "94% recommend (71 Reviews)",
+      "source": "https://www.facebook.com/people/Palmetto-Pro-Tint/100064567874537/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T15:49:58.199Z"
+    },
+    {
+      "text": "Palmetto Pro Tint provides professional auto services from oil change to air filters, our professional team of technicians will make sure your car is running in excellent condition for the years to come. - Call us at 803-359-7731",
+      "source": "https://palmettoprotint.com",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T15:49:58.199Z",
+      "relevance": [
+        "contains_own_phone",
+        "contains_own_name",
+        "service_vocab:palmetto,tint,provides,professional"
+      ]
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "Palmetto Pro Tint | Lexington",
+    "og_url": "https://vendly-demos.vercel.app/palmetto-pro-tint/",
+    "og_image": "https://vendly-demos.vercel.app/palmetto-pro-tint/assets/735317457_1434192062076376.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "535afe72225cf06153a0d033fac41c3ee42e6f4c8cd0a2e1f84e398a1e54e342",
+    "image_px": "704x960",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 10,
+    "rejected": 1,
+    "photographs": 10,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": null
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 22
+}

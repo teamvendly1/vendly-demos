@@ -1,0 +1,361 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "Lugano Ristorante",
+  "facebook": "https://www.facebook.com/luganocary/",
+  "slug": "lugano-ristorante",
+  "built_at": "2026-08-07T13:46:23.565Z",
+  "elapsed_ms": 3699,
+  "steps": [
+    {
+      "step": "harvest",
+      "at_ms": 493
+    },
+    {
+      "step": "assets",
+      "at_ms": 3276
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3608
+    },
+    {
+      "step": "layout",
+      "at_ms": 3608
+    },
+    {
+      "step": "render",
+      "at_ms": 3609
+    },
+    {
+      "step": "audit",
+      "at_ms": 3611
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3699
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "emoji",
+        "detail": "\"🥂\""
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "trade",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "trade",
+      "photo_count": 10,
+      "has_reviews": true,
+      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#208193",
+      "b": "#124A54",
+      "c": "#208193",
+      "brand": "#88D7E5",
+      "mist": "#F3F8F9",
+      "ink": "#12181D"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#88D7E5",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#88D7E5",
+            "after": "#208193",
+            "ratio": 4.54,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#88D7E5",
+            "after": "#208193",
+            "ratio": 4.54,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#124A54",
+            "after": "#124A54",
+            "ratio": 9.84,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#124A54",
+            "after": "#124A54",
+            "ratio": 7.65,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#208193",
+            "ratio": 4.54,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#208193",
+            "ratio": 4.54,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#124A54",
+            "ratio": 9.84,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#124A54",
+            "ratio": 7.65,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12181D",
+            "bg_mist": "#F3F8F9",
+            "ratio": 16.7,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#124A54",
+            "bg_mist": "#F3F8F9",
+            "ratio": 9.19,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#208193",
+        "ratio": 4.54,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#208193",
+        "ratio": 4.54,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#124A54",
+        "ratio": 9.84,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#124A54",
+        "ratio": 7.65,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+1F942",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "🥂"
+      },
+      {
+        "codepoint": "U+1F377",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "🍷"
+      },
+      {
+        "codepoint": "U+1F37E",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "🍾"
+      },
+      {
+        "codepoint": "U+1F35D",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "🍝"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "lugano-ristorante",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Lugano Ristorante",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "og:title",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "(919) 468-7229",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "info@luganocary.com",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "1060 Darrington Dr, Cary, NC",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "Comfortable, casual Italian dining.",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "Italian Restaurant",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "Comfortable",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "casual Italian dining",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "92% recommend (859 Reviews)",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T13:46:19.867Z"
+    },
+    {
+      "text": "RESCHEDULED! Come out and see us for this wonderful experience 🥂🍷🍾🍝 Call us @ 919-468-7229 or email events@luganocary.com for more information",
+      "source": "https://www.facebook.com/luganocary/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T13:46:19.867Z",
+      "relevance": [
+        "contains_own_phone",
+        "contains_own_name"
+      ]
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Closed now)"
+  ],
+  "link_preview": {
+    "og_title": "Lugano Ristorante | Cary",
+    "og_url": "https://vendly-demos.vercel.app/lugano-ristorante/",
+    "og_image": "https://vendly-demos.vercel.app/lugano-ristorante/assets/589616570_1683505326336098.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "graphic",
+    "image_is_page_lead_image": true,
+    "image_sha256": "2ddd46e20dcd4d5f825c09ec0d0465ac7fd6d3855b1e456cbe179945c37cb9cd",
+    "image_px": "929x929",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 11,
+    "rejected": 0,
+    "photographs": 10,
+    "logo_found": true
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": true,
+    "gallery": true,
+    "contact": true
+  },
+  "fill_tokens": 22
+}

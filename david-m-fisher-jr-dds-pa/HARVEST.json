@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "David M. Fisher, Jr. DDS, PA",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(336) 288-1242",
+      "source": "jsonld"
+    },
+    "address": {
+      "value": "3131 Battleground Avenue, Greensboro, NC, 27408",
+      "source": "jsonld"
+    },
+    "about": {
+      "value": "Dentist in Greensboro, NC.",
+      "source": "jsonld"
+    },
+    "email": {
+      "value": "smiles@fisherdds.com",
+      "source": "site"
+    },
+    "categories": {
+      "value": "Dentist",
+      "source": "jsonld"
+    },
+    "hours": {
+      "value": "Mo,Tu,We,Th 08:00-17:00",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "hours(live_status_only:Mo,Tu,We,Th 08:00-17:00)"
+  ],
+  "photos": [
+    "https://www.fisherdds.com/assets/images/office-tour-1.jpg"
+  ],
+  "voice": {
+    "post_text": [
+      "Dentist in Greensboro, NC."
+    ],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T15:41:29.653Z",
+  "resolved_url": "https://www.fisherdds.com/",
+  "sourceUrl": "https://www.fisherdds.com/"
+}

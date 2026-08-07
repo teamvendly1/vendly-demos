@@ -1,0 +1,321 @@
+{
+  "schema": "vendly.autodemo.build/1",
+  "business": "EuroMotion Automotive",
+  "facebook": null,
+  "slug": "euromotion-automotive",
+  "built_at": "2026-08-07T16:02:09.038Z",
+  "elapsed_ms": 662,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 567
+    },
+    {
+      "step": "assets",
+      "at_ms": 569
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 570
+    },
+    {
+      "step": "layout",
+      "at_ms": 570
+    },
+    {
+      "step": "render",
+      "at_ms": 571
+    },
+    {
+      "step": "audit",
+      "at_ms": 572
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 662
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "auto",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "auto",
+      "photo_count": 0,
+      "has_reviews": false,
+      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "deterministic": true
+    },
+    "section_order": [
+      "trust",
+      "contact",
+      "services",
+      "words",
+      "gallery"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "palette_final": {
+      "a": "#123A5E",
+      "b": "#0B2740",
+      "c": "#B3311F",
+      "brand": "#B3311F",
+      "mist": "#F1F5F9",
+      "ink": "#111820"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#B3311F",
+            "after": "#B3311F",
+            "ratio": 6.22,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#123A5E",
+            "after": "#123A5E",
+            "ratio": 11.72,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#0B2740",
+            "after": "#0B2740",
+            "ratio": 15.23,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#0B2740",
+            "after": "#0B2740",
+            "ratio": 11.84,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#B3311F",
+            "ratio": 6.22,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#123A5E",
+            "ratio": 11.72,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#0B2740",
+            "ratio": 15.23,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#0B2740",
+            "ratio": 11.84,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#111820",
+            "bg_mist": "#F1F5F9",
+            "ratio": 16.31,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#0B2740",
+            "bg_mist": "#F1F5F9",
+            "ratio": 13.91,
+            "pass": true
+          }
+        ]
+      }
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#B3311F",
+        "ratio": 6.22,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#123A5E",
+        "ratio": 11.72,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#0B2740",
+        "ratio": 15.23,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#0B2740",
+        "ratio": 11.84,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "euromotion-automotive",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "EuroMotion Automotive",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "(984) 242-2144",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "info@euro-motion.com",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "981 Trinity Rd Ste A, Raleigh, North Carolina, 27607-5603",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "Euromotion in Raleigh, NC, is the top Euro mechanic Raleigh has to offer. We offer expert European auto repair for Audi, BMW, Mercedes, VW, and more!",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "Automotive Business",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "Euromotion in Raleigh",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "BMW",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "Mercedes",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "and more!",
+      "fetched_at": "2026-08-07T16:02:08.942Z"
+    },
+    {
+      "text": "Euromotion in Raleigh, NC, is the top Euro mechanic Raleigh has to offer. We offer expert European auto repair for Audi, BMW, Mercedes, VW, and more!",
+      "source": "https://euro-motion.com/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T16:02:08.942Z",
+      "relevance": [
+        "contains_own_name",
+        "service_vocab:euromotion,raleigh,euro,mechanic"
+      ]
+    }
+  ],
+  "unresolved": [],
+  "link_preview": {
+    "og_title": "EuroMotion Automotive | North Carolina",
+    "og_url": "https://vendly-demos.vercel.app/euromotion-automotive/",
+    "og_image": null,
+    "og_image_is_absolute": false,
+    "twitter_card": "summary",
+    "image_source_kind": null,
+    "image_is_page_lead_image": false,
+    "image_sha256": null,
+    "image_px": null,
+    "meets_facebook_minimum_200x200": false,
+    "renders_large_card_600x315": false,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "no_image",
+    "reason_no_image": "no images survived the asset fetch"
+  },
+  "assets": {
+    "accepted": 0,
+    "rejected": 1,
+    "photographs": 0,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": null
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": true,
+    "gallery": false,
+    "contact": true
+  },
+  "fill_tokens": 6
+}

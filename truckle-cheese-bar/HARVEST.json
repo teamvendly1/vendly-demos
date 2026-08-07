@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "facts": {
+    "name": {
+      "value": "Truckle Cheese Bar",
+      "source": "lead-row"
+    },
+    "phone": {
+      "value": "(804) 390-3182",
+      "source": "page-text-unambiguous"
+    },
+    "about": {
+      "value": "WE ARE A CUT TO ORDER COUNTER, WITH A FOCUS ON CUSTOMER SERVICE AND EDUCATION. WE OFFER GRILLED CHEESES AND CHEESE AND CHARCUTERIE BOARDS, AS WELL AS HOUSEMADE PIMIENTO CHEESE AND BEER CHEESE.",
+      "source": "meta"
+    },
+    "email": {
+      "value": "cheese@trucklerva.com",
+      "source": "site"
+    },
+    "categories": {
+      "value": "Local Business",
+      "source": "jsonld"
+    },
+    "hours": {
+      "value": ", , We 15:00-18:30, Th 15:00-19:00, Fr 13:00-19:00, Sa 12:00-19:00, Su 12:00-18:00",
+      "source": "jsonld"
+    }
+  },
+  "unresolved": [
+    "address",
+    "hours(live_status_only:, , We 15:00-18:30, Th 15:00-19:00, Fr 13:00-19:00, Sa 12:00-19:00, Su 12:00-18:00)"
+  ],
+  "photos": [
+    "https://static1.squarespace.com/static/60239ff71adbf544ddbdbe46/t/647e51f4b790816d9cb5f098/1785025701757/"
+  ],
+  "voice": {
+    "post_text": [
+      "WE ARE A CUT TO ORDER COUNTER, WITH A FOCUS ON CUSTOMER SERVICE AND EDUCATION. WE OFFER GRILLED CHEESES AND CHEESE AND CHARCUTERIE BOARDS, AS WELL AS HOUSEMADE PIMIENTO CHEESE AND BEER CHEESE."
+    ],
+    "image_alts": []
+  },
+  "fetched_at": "2026-08-07T15:59:46.897Z",
+  "resolved_url": "https://www.trucklerva.com/",
+  "sourceUrl": "https://www.trucklerva.com/"
+}
