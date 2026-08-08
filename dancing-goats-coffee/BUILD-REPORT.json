@@ -2,50 +2,50 @@
   "niche": "cafe",
   "schema": "vendly.autodemo.build/1",
   "business": "Dancing Goats Coffee",
-  "facebook": null,
+  "facebook": "https://www.dancinggoats.com/",
   "slug": "dancing-goats-coffee",
-  "built_at": "2026-08-07T22:44:30.568Z",
-  "elapsed_ms": 4925,
+  "built_at": "2026-08-08T20:19:35.866Z",
+  "elapsed_ms": 467,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 455
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 456
-    },
-    {
-      "step": "assets",
-      "at_ms": 4339
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 4463
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 4480
+      "at_ms": 75
     },
     {
       "step": "brand_palette",
-      "at_ms": 4825
+      "at_ms": 420
     },
     {
       "step": "layout",
-      "at_ms": 4825
+      "at_ms": 420
     },
     {
       "step": "render",
-      "at_ms": 4826
+      "at_ms": 421
     },
     {
       "step": "audit",
-      "at_ms": 4828
+      "at_ms": 421
     },
     {
       "step": "beacon_probe",
-      "at_ms": 4925
+      "at_ms": 467
     }
   ],
   "audit": {
@@ -283,13 +283,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "dancing-goats-coffee",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -314,6 +314,7 @@
       "fetched_at": "2026-08-07T22:44:26.098Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -349,5 +350,6 @@
     "contact": true,
     "niche": "cafe"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

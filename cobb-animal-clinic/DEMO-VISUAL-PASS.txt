@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : cobb-animal-clinic
 folder      : C:\VendlyVault\_tmp\autodemo\demos\cobb-animal-clinic
-audited_at  : 2026-08-08T19:16:45Z
+audited_at  : 2026-08-08T20:23:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\cobb-animal-clinic.png
-shot_sha256 : 5A0A07EF9D39C5E392B7B05144CD34AE6ED62A4AC5AE2E1367099E76C5A3A727
+shot_sha256 : 9D43812AD4E25E0170463F629C4A4B638200C72A6247FF0714A64AB2FF3239D5
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16054 bytes
+      measured : present, 18186 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 10 image tag(s)
+      measured : 11 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 10 resolvable src(s) exist on disk
+      measured : all 11 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Cobb Animal Clinic" is a plausible business name and is visible on the page (H1 reads "Cobb Animal Clinic")
@@ -31,10 +31,10 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1747 bytes of visible text
+      measured : none in 1960 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 16 sentence(s) checked, all distinct
+      measured : 18 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 12 distinct text node(s), none repeated 3+ times
@@ -49,19 +49,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16054 bytes of HTML
+      measured : none in 18186 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #000099 on #FFFFFF = 14.38:1 (needs 4.5); --a #000099 on #FFFFFF = 14.38:1 (needs 4.5); --b #08085E on #FFFFFF = 17.4:1 (needs 4.5); --b #08085E on #DBE4EC = 13.53:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1747 bytes visible (floor 900)
+      measured : 1960 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 169 chars: "Looking for a trusted veterinary and animal hospital in Gree"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 588749 bytes, 215 distinct colours, modal colour covers 31.6% of sampled pixels
+      measured : 1280x2000px, 1368027 bytes, 232 distinct colours, modal colour covers 40.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

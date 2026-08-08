@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : oliver-royale
 folder      : C:\VendlyVault\_tmp\autodemo\demos\oliver-royale
-audited_at  : 2026-08-08T19:16:45Z
+audited_at  : 2026-08-08T20:23:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\oliver-royale.png
-shot_sha256 : AB811D212DEEF1C168354394A858C4F51448FA69965F67AA08967550DE79D246
+shot_sha256 : F887F316EA7570B33DD78D7E4D8C30D57E20F96A353764ECAE403BAC39858372
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15369 bytes
+      measured : present, 16954 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 8 image tag(s)
+      measured : 7 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 8 resolvable src(s) exist on disk
+      measured : all 7 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Oliver Royale" is a plausible business name and is visible on the page (H1 reads "Oliver Royale")
@@ -31,10 +31,10 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1523 bytes of visible text
+      measured : none in 1651 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 16 sentence(s) checked, all distinct
+      measured : 17 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 11 distinct text node(s), none repeated 3+ times
@@ -49,19 +49,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15369 bytes of HTML
+      measured : none in 16954 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1523 bytes visible (floor 900)
+      measured : 1651 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 156 chars: "Experience locally sourced, chef-driven cuisine and a histor"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1156691 bytes, 241 distinct colours, modal colour covers 46.3% of sampled pixels
+      measured : 1280x2000px, 1225853 bytes, 235 distinct colours, modal colour covers 36.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

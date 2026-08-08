@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Oliver Royale",
-  "facebook": null,
+  "facebook": "https://www.oliverroyale.com",
   "slug": "oliver-royale",
-  "built_at": "2026-08-07T22:48:49.594Z",
-  "elapsed_ms": 2024,
+  "built_at": "2026-08-08T20:19:57.202Z",
+  "elapsed_ms": 1365,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 88
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 88
-    },
-    {
-      "step": "assets",
-      "at_ms": 1462
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1583
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 987
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1598
+      "at_ms": 994
     },
     {
       "step": "brand_palette",
-      "at_ms": 1931
+      "at_ms": 1324
     },
     {
       "step": "layout",
-      "at_ms": 1931
+      "at_ms": 1324
     },
     {
       "step": "render",
-      "at_ms": 1931
+      "at_ms": 1324
     },
     {
       "step": "audit",
-      "at_ms": 1933
+      "at_ms": 1324
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2024
+      "at_ms": 1365
     }
   ],
   "audit": {
@@ -59,9 +59,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 8,
+      "photo_count": 6,
       "has_reviews": false,
-      "branch": "visual trade (restaurant) with 8 photographs: the work is the argument",
+      "branch": "visual trade (restaurant) with 6 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "oliver-royale",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -307,35 +307,32 @@
     {
       "text": "Local Business",
       "fetched_at": "2026-08-07T22:48:47.657Z"
-    },
-    {
-      "text": "Experience locally sourced",
-      "fetched_at": "2026-08-07T22:48:47.657Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
   "link_preview": {
     "og_title": "Oliver Royale",
     "og_url": "https://vendly-demos.vercel.app/oliver-royale/",
-    "og_image": "https://vendly-demos.vercel.app/oliver-royale/assets/site-6.jpg",
+    "og_image": "https://vendly-demos.vercel.app/oliver-royale/assets/site-1.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
-    "image_is_page_lead_image": false,
-    "image_sha256": "79c59308f97c360457d13dc4d157dbd401d55f21a859058cf9c47cf49ac64a68",
-    "image_px": "2500x1985",
+    "image_is_page_lead_image": true,
+    "image_sha256": "8cda4b9ee96c481b7c2153d387408dca715b81d48086ac1a8e3ce607c0fc6e50",
+    "image_px": "940x470",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
-    "meets_facebook_recommended_1200x630": true,
+    "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "large",
     "reason_no_image": null
   },
   "assets": {
     "accepted": 8,
     "rejected": 7,
-    "photographs": 8,
+    "photographs": 6,
     "logo_found": false
   },
   "rejected_assets": [
@@ -378,11 +375,12 @@
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
-    "services": true,
+    "services": false,
     "their_words": false,
     "gallery": true,
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

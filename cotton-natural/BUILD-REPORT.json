@@ -2,50 +2,50 @@
   "niche": "clothes",
   "schema": "vendly.autodemo.build/1",
   "business": "Cotton Natural",
-  "facebook": null,
+  "facebook": "https://www.cottonnatural.com",
   "slug": "cotton-natural",
-  "built_at": "2026-08-07T22:49:31.396Z",
-  "elapsed_ms": 3565,
+  "built_at": "2026-08-08T20:20:00.312Z",
+  "elapsed_ms": 471,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 1561
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 1562
-    },
-    {
-      "step": "assets",
-      "at_ms": 2976
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 3091
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 3124
+      "at_ms": 70
     },
     {
       "step": "brand_palette",
-      "at_ms": 3467
+      "at_ms": 419
     },
     {
       "step": "layout",
-      "at_ms": 3467
+      "at_ms": 419
     },
     {
       "step": "render",
-      "at_ms": 3468
+      "at_ms": 420
     },
     {
       "step": "audit",
-      "at_ms": 3470
+      "at_ms": 421
     },
     {
       "step": "beacon_probe",
-      "at_ms": 3565
+      "at_ms": 471
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "cotton-natural",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -305,10 +305,6 @@
       "fetched_at": "2026-08-07T22:49:29.392Z"
     },
     {
-      "text": "Since 1990",
-      "fetched_at": "2026-08-07T22:49:29.392Z"
-    },
-    {
       "text": "Cotton Natural has been delivering airy",
       "fetched_at": "2026-08-07T22:49:29.392Z"
     },
@@ -317,6 +313,7 @@
       "fetched_at": "2026-08-07T22:49:29.392Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -368,5 +365,6 @@
     "contact": true,
     "niche": "clothes"
   },
-  "fill_tokens": 18
+  "fill_tokens": 18,
+  "founder_face": "vendly-founder.jpg"
 }

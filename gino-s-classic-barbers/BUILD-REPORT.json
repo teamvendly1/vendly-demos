@@ -2,50 +2,50 @@
   "niche": "salon",
   "schema": "vendly.autodemo.build/1",
   "business": "Gino's Classic Barbers",
-  "facebook": null,
+  "facebook": "https://www.ginosclassicbarbers.com/",
   "slug": "gino-s-classic-barbers",
-  "built_at": "2026-08-07T22:44:38.955Z",
-  "elapsed_ms": 2241,
+  "built_at": "2026-08-08T20:19:37.810Z",
+  "elapsed_ms": 1864,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 143
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 143
-    },
-    {
-      "step": "assets",
-      "at_ms": 1613
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1724
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1487
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1739
+      "at_ms": 1530
     },
     {
       "step": "brand_palette",
-      "at_ms": 2155
+      "at_ms": 1810
     },
     {
       "step": "layout",
-      "at_ms": 2155
+      "at_ms": 1810
     },
     {
       "step": "render",
-      "at_ms": 2156
+      "at_ms": 1810
     },
     {
       "step": "audit",
-      "at_ms": 2157
+      "at_ms": 1810
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2241
+      "at_ms": 1864
     }
   ],
   "audit": {
@@ -118,19 +118,19 @@
       }
     },
     "palette_final": {
-      "a": "#193764",
-      "b": "#142D52",
-      "c": "#193764",
-      "brand": "#193764",
-      "mist": "#F3F6F9",
+      "a": "#983A83",
+      "b": "#4F234B",
+      "c": "#B43398",
+      "brand": "#B43398",
+      "mist": "#FBF4FA",
       "ink": "#1C1119"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": true,
-      "brand_applied": true,
-      "raw_accent": "#193764",
-      "fallback_reason": null,
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -139,9 +139,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#193764",
-            "after": "#193764",
-            "ratio": 11.85,
+            "before": "#B43398",
+            "after": "#B43398",
+            "ratio": 5.43,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -149,9 +149,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#193764",
-            "after": "#193764",
-            "ratio": 11.85,
+            "before": "#983A83",
+            "after": "#983A83",
+            "ratio": 6.43,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -159,9 +159,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#142D52",
-            "after": "#142D52",
-            "ratio": 13.75,
+            "before": "#4F234B",
+            "after": "#4F234B",
+            "ratio": 12.54,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -169,9 +169,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#142D52",
-            "after": "#142D52",
-            "ratio": 10.69,
+            "before": "#4F234B",
+            "after": "#4F234B",
+            "ratio": 9.75,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -181,32 +181,32 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#193764",
-            "ratio": 11.85,
+            "final": "#B43398",
+            "ratio": 5.43,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#193764",
-            "ratio": 11.85,
+            "final": "#983A83",
+            "ratio": 6.43,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#142D52",
-            "ratio": 13.75,
+            "final": "#4F234B",
+            "ratio": 12.54,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#142D52",
-            "ratio": 10.69,
+            "final": "#4F234B",
+            "ratio": 9.75,
             "pass": true
           }
         ],
@@ -214,15 +214,15 @@
           {
             "fg": "ink",
             "value": "#1C1119",
-            "bg_mist": "#F3F6F9",
-            "ratio": 16.93,
+            "bg_mist": "#FBF4FA",
+            "ratio": 16.98,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#142D52",
-            "bg_mist": "#F3F6F9",
-            "ratio": 12.68,
+            "value": "#4F234B",
+            "bg_mist": "#FBF4FA",
+            "ratio": 11.6,
             "pass": true
           }
         ]
@@ -238,32 +238,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#193764",
-        "ratio": 11.85,
+        "final": "#B43398",
+        "ratio": 5.43,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#193764",
-        "ratio": 11.85,
+        "final": "#983A83",
+        "ratio": 6.43,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#142D52",
-        "ratio": 13.75,
+        "final": "#4F234B",
+        "ratio": 12.54,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#142D52",
-        "ratio": 10.69,
+        "final": "#4F234B",
+        "ratio": 9.75,
         "pass": true
       }
     ]
@@ -275,13 +275,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "gino-s-classic-barbers",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -326,9 +326,10 @@
       "fetched_at": "2026-08-07T22:44:36.856Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [],
   "link_preview": {
-    "og_title": "Gino&#39;s Classic Barbers | GA",
+    "og_title": "Gino&#39;s Classic Barbers | Atlanta",
     "og_url": "https://vendly-demos.vercel.app/gino-s-classic-barbers/",
     "og_image": "https://vendly-demos.vercel.app/gino-s-classic-barbers/assets/site-0.png",
     "og_image_is_absolute": true,
@@ -390,5 +391,6 @@
     "contact": true,
     "niche": "salon"
   },
-  "fill_tokens": 19
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }

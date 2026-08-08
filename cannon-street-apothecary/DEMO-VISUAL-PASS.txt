@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : cannon-street-apothecary
 folder      : C:\VendlyVault\_tmp\autodemo\demos\cannon-street-apothecary
-audited_at  : 2026-08-08T19:16:45Z
+audited_at  : 2026-08-08T20:23:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\cannon-street-apothecary.png
-shot_sha256 : ADCE6F11F6DE7AC8405ACB1D79FCC32CEA8C549E296995AD9560E51B3BDD938D
+shot_sha256 : 2FBE1AAC7AE4E97487D8F819BCA6AC94FACE655EF446580BAA6059E40018BB21
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16145 bytes
+      measured : present, 18303 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 7 image tag(s)
+      measured : 9 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 7 resolvable src(s) exist on disk
+      measured : all 9 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Cannon Street Apothecary" is a plausible business name and is visible on the page (H1 reads "Cannon Street Apothecary")
@@ -31,13 +31,13 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1874 bytes of visible text
+      measured : none in 2024 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 15 sentence(s) checked, all distinct
+      measured : 18 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 15 distinct text node(s), none repeated 3+ times
+      measured : 14 distinct text node(s), none repeated 3+ times
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
       measured : reads as a real description (171 chars)
@@ -49,19 +49,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16145 bytes of HTML
+      measured : none in 18303 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #3B8185 on #FFFFFF = 4.5:1 (needs 4.5); --a #3B8185 on #FFFFFF = 4.5:1 (needs 4.5); --b #1F4447 on #FFFFFF = 10.63:1 (needs 4.5); --b #1F4447 on #DBE4EC = 8.26:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1874 bytes visible (floor 900)
+      measured : 2024 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 171 chars: "Shop Cannon Street Apothecary, a Charleston hemp brand offer"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 488373 bytes, 169 distinct colours, modal colour covers 61.9% of sampled pixels
+      measured : 1280x2000px, 834768 bytes, 188 distinct colours, modal colour covers 47.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

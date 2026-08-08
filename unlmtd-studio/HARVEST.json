@@ -9,10 +9,6 @@
       "value": "(404) 369-7368",
       "source": "jsonld"
     },
-    "address": {
-      "value": "684 John Wesley Dobbs Ave NE Unit H, Atlanta, Georgia, 30312",
-      "source": "jsonld"
-    },
     "about": {
       "value": "Full service content production studio located on the Beltline Eastside Trail in Atlanta.",
       "source": "jsonld"
@@ -24,13 +20,12 @@
     "categories": {
       "value": "Local Business",
       "source": "jsonld"
-    },
-    "hours": {
-      "value": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-9:00",
-      "source": "jsonld"
     }
   },
-  "unresolved": [],
+  "unresolved": [
+    "address",
+    "hours"
+  ],
   "photos": [
     {
       "url": "https://unlmtdstudio.com/wp-content/uploads/2025/07/UNLMTD-2-3-3-360x91.png",

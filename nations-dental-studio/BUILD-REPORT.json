@@ -2,50 +2,50 @@
   "niche": "dentist",
   "schema": "vendly.autodemo.build/1",
   "business": "Nations Dental Studio",
-  "facebook": null,
+  "facebook": "https://nationsdentalstudio.com",
   "slug": "nations-dental-studio",
-  "built_at": "2026-08-07T22:39:41.023Z",
-  "elapsed_ms": 1390,
+  "built_at": "2026-08-08T20:19:16.807Z",
+  "elapsed_ms": 528,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 129
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 129
-    },
-    {
-      "step": "assets",
-      "at_ms": 791
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 909
+      "at_ms": 5
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 6
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 933
+      "at_ms": 140
     },
     {
       "step": "brand_palette",
-      "at_ms": 1284
+      "at_ms": 460
     },
     {
       "step": "layout",
-      "at_ms": 1284
+      "at_ms": 460
     },
     {
       "step": "render",
-      "at_ms": 1286
+      "at_ms": 460
     },
     {
       "step": "audit",
-      "at_ms": 1287
+      "at_ms": 461
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1390
+      "at_ms": 528
     }
   ],
   "audit": {
@@ -277,13 +277,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "nations-dental-studio",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -328,9 +328,10 @@
       "fetched_at": "2026-08-07T22:39:39.761Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [],
   "link_preview": {
-    "og_title": "Nations Dental Studio | TN",
+    "og_title": "Nations Dental Studio | Nashville",
     "og_url": "https://vendly-demos.vercel.app/nations-dental-studio/",
     "og_image": "https://vendly-demos.vercel.app/nations-dental-studio/assets/site-1.jpg",
     "og_image_is_absolute": true,
@@ -372,5 +373,6 @@
     "contact": true,
     "niche": "dentist"
   },
-  "fill_tokens": 19
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }

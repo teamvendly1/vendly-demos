@@ -2,50 +2,50 @@
   "niche": "gift",
   "schema": "vendly.autodemo.build/1",
   "business": "The Sacred Chakra",
-  "facebook": null,
+  "facebook": "https://thesacredchakra.com/",
   "slug": "the-sacred-chakra",
-  "built_at": "2026-08-07T22:47:43.418Z",
-  "elapsed_ms": 3159,
+  "built_at": "2026-08-08T20:19:51.376Z",
+  "elapsed_ms": 402,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 133
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 133
-    },
-    {
-      "step": "assets",
-      "at_ms": 2575
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 2698
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2709
+      "at_ms": 38
     },
     {
       "step": "brand_palette",
-      "at_ms": 3034
+      "at_ms": 364
     },
     {
       "step": "layout",
-      "at_ms": 3034
+      "at_ms": 364
     },
     {
       "step": "render",
-      "at_ms": 3036
+      "at_ms": 365
     },
     {
       "step": "audit",
-      "at_ms": 3038
+      "at_ms": 365
     },
     {
       "step": "beacon_probe",
-      "at_ms": 3159
+      "at_ms": 402
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "the-sacred-chakra",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -310,10 +310,6 @@
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T22:47:40.391Z"
-    },
-    {
-      "text": "Explore The Sacred Chakra",
       "fetched_at": "2026-08-07T22:47:40.391Z"
     },
     {
@@ -343,7 +339,11 @@
       "fetched_at": "2026-08-07T22:47:40.391Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
     "hours(live_status_only:Closed now)"
   ],
   "link_preview": {
@@ -404,5 +404,6 @@
     "contact": true,
     "niche": "gift"
   },
-  "fill_tokens": 21
+  "fill_tokens": 21,
+  "founder_face": "vendly-founder.jpg"
 }

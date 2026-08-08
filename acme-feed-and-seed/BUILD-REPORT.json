@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Acme Feed and Seed",
-  "facebook": null,
+  "facebook": "https://www.acmefeedandseed.com/",
   "slug": "acme-feed-and-seed",
-  "built_at": "2026-08-07T22:39:27.256Z",
-  "elapsed_ms": 2804,
+  "built_at": "2026-08-08T20:19:16.161Z",
+  "elapsed_ms": 988,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 109
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 109
-    },
-    {
-      "step": "assets",
-      "at_ms": 1885
+      "step": "assets_reused_offline",
+      "at_ms": 1
     },
     {
       "step": "template",
-      "at_ms": 2017
+      "at_ms": 118
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 125
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2027
+      "at_ms": 185
     },
     {
       "step": "brand_palette",
-      "at_ms": 2582
+      "at_ms": 730
     },
     {
       "step": "layout",
-      "at_ms": 2582
+      "at_ms": 730
     },
     {
       "step": "render",
-      "at_ms": 2583
+      "at_ms": 817
     },
     {
       "step": "audit",
-      "at_ms": 2585
+      "at_ms": 819
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2804
+      "at_ms": 988
     }
   ],
   "audit": {
@@ -59,9 +59,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 14,
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "visual trade (restaurant) with 14 photographs: the work is the argument",
+      "branch": "visual trade (restaurant) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "acme-feed-and-seed",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -311,10 +311,6 @@
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
-      "text": "Serving elevated food and cocktails on lower Broadway",
-      "fetched_at": "2026-08-07T22:39:24.560Z"
-    },
-    {
       "text": "ACME",
       "fetched_at": "2026-08-07T22:39:24.560Z"
     },
@@ -335,27 +331,28 @@
       "fetched_at": "2026-08-07T22:39:24.560Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [],
   "link_preview": {
-    "og_title": "Acme Feed and Seed | 101 Broadway\nNashville",
+    "og_title": "Acme Feed and Seed | Nashville",
     "og_url": "https://vendly-demos.vercel.app/acme-feed-and-seed/",
-    "og_image": "https://vendly-demos.vercel.app/acme-feed-and-seed/assets/site-0.png",
+    "og_image": "https://vendly-demos.vercel.app/acme-feed-and-seed/assets/site-1.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
     "image_is_page_lead_image": true,
-    "image_sha256": "314455256c0ef8f4a49b02a293fefe80e69a1198cb250bc735b4f28cbc81b616",
-    "image_px": "1000x443",
+    "image_sha256": "5b0e616fce46920eb137bc7ab13042509b6326fcb123d89bafeac17626450369",
+    "image_px": "2500x1666",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
-    "meets_facebook_recommended_1200x630": false,
+    "meets_facebook_recommended_1200x630": true,
     "card_rendered_as": "large",
     "reason_no_image": null
   },
   "assets": {
     "accepted": 14,
     "rejected": 3,
-    "photographs": 14,
+    "photographs": 13,
     "logo_found": false
   },
   "rejected_assets": [
@@ -384,5 +381,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 19
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }

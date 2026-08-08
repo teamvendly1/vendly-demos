@@ -2,50 +2,50 @@
   "niche": "roofing",
   "schema": "vendly.autodemo.build/1",
   "business": "Tidds Roofing Group, Inc.",
-  "facebook": null,
+  "facebook": "https://tiddsroofing.com/",
   "slug": "tidds-roofing-group-inc",
-  "built_at": "2026-08-07T22:43:24.448Z",
-  "elapsed_ms": 4297,
+  "built_at": "2026-08-08T20:19:31.846Z",
+  "elapsed_ms": 1146,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 599
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 600
-    },
-    {
-      "step": "assets",
-      "at_ms": 3288
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 3412
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 3486
+      "at_ms": 392
     },
     {
       "step": "brand_palette",
-      "at_ms": 4200
+      "at_ms": 1115
     },
     {
       "step": "layout",
-      "at_ms": 4200
+      "at_ms": 1115
     },
     {
       "step": "render",
-      "at_ms": 4201
+      "at_ms": 1115
     },
     {
       "step": "audit",
-      "at_ms": 4203
+      "at_ms": 1115
     },
     {
       "step": "beacon_probe",
-      "at_ms": 4297
+      "at_ms": 1146
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "tidds-roofing-group-inc",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -309,6 +309,7 @@
       "fetched_at": "2026-08-07T22:43:20.750Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -410,5 +411,6 @@
     "contact": true,
     "niche": "roofing"
   },
-  "fill_tokens": 12
+  "fill_tokens": 12,
+  "founder_face": "vendly-founder.jpg"
 }

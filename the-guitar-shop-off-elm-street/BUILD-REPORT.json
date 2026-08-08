@@ -2,46 +2,46 @@
   "niche": "musical_instrument",
   "schema": "vendly.autodemo.build/1",
   "business": "The Guitar Shop Off Elm Street",
-  "facebook": null,
+  "facebook": "https://www.theguitarshopoffelmstreet.com/",
   "slug": "the-guitar-shop-off-elm-street",
-  "built_at": "2026-08-07T22:43:19.936Z",
-  "elapsed_ms": 2094,
+  "built_at": "2026-08-08T20:19:30.619Z",
+  "elapsed_ms": 385,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 268
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 268
-    },
-    {
-      "step": "assets",
-      "at_ms": 1473
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1596
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_palette",
-      "at_ms": 1992
+      "at_ms": 348
     },
     {
       "step": "layout",
-      "at_ms": 1992
+      "at_ms": 348
     },
     {
       "step": "render",
-      "at_ms": 1993
+      "at_ms": 348
     },
     {
       "step": "audit",
-      "at_ms": 1995
+      "at_ms": 348
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2094
+      "at_ms": 385
     }
   ],
   "audit": {
@@ -274,13 +274,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "the-guitar-shop-off-elm-street",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -293,10 +293,6 @@
     },
     {
       "text": "guitars@theguitarshopoffelmstreet.com",
-      "fetched_at": "2026-08-07T22:43:18.109Z"
-    },
-    {
-      "text": "108 bain street, Greensboro, NC, 27406",
       "fetched_at": "2026-08-07T22:43:18.109Z"
     },
     {
@@ -317,9 +313,12 @@
       "fetched_at": "2026-08-07T22:43:18.109Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address"
+  ],
   "link_preview": {
-    "og_title": "The Guitar Shop Off Elm Street | NC",
+    "og_title": "The Guitar Shop Off Elm Street",
     "og_url": "https://vendly-demos.vercel.app/the-guitar-shop-off-elm-street/",
     "og_image": "https://vendly-demos.vercel.app/the-guitar-shop-off-elm-street/assets/site-0.jpg",
     "og_image_is_absolute": true,
@@ -406,5 +405,6 @@
     "contact": true,
     "niche": "musical_instrument"
   },
-  "fill_tokens": 17
+  "fill_tokens": 14,
+  "founder_face": "vendly-founder.jpg"
 }

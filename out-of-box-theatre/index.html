@@ -234,20 +234,6 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section id="concierge" class="concierge">
-  <div class="wrap">
-    <h2>The part that answers customers for you</h2>
-    <p class="lead">Every Out of Box Theatre page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
-    <div class="chat">
-      <div class="msg them"><span>Hi, are you open right now?</span></div>
-      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+16786534605">(678) 653-4605</a> and we will get you sorted.</span></div>
-      <div class="msg them"><span>Whereabouts are you?</span></div>
-      <div class="msg us"><span>We are at Cobb Parkway South, Marietta, GA, 30060. Want me to pass you to the owner?</span></div>
-    </div>
-    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
-  </div>
-</section>
-
 </main>
 
 <footer class="site">
@@ -261,5 +247,13 @@ footer.site a{color:#fff}
   window.VendlyBeaconConfig = { tenantId: "out-of-box-theatre", endpoint: "https://vendly-jarvis.vercel.app" };
 </script>
 <script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
+
+<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
+     in this demo's own harvested facts; it refuses anything it was not given.
+     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
+<script>
+window.VendlyDemoAssistant={slug:"out-of-box-theatre",name:"Out of Box Theatre",phone:"(678) 653-4605",accent:"#668018"};
+</script>
+<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
 </body>
 </html>

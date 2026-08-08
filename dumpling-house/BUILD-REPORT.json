@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Dumpling House",
-  "facebook": null,
+  "facebook": "https://dumplinghousenashville.net/",
   "slug": "dumpling-house",
-  "built_at": "2026-08-07T22:41:18.450Z",
-  "elapsed_ms": 2277,
+  "built_at": "2026-08-08T20:19:21.727Z",
+  "elapsed_ms": 455,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 149
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 149
-    },
-    {
-      "step": "assets",
-      "at_ms": 1663
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1794
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1806
+      "at_ms": 39
     },
     {
       "step": "brand_palette",
-      "at_ms": 2180
+      "at_ms": 403
     },
     {
       "step": "layout",
-      "at_ms": 2180
+      "at_ms": 403
     },
     {
       "step": "render",
-      "at_ms": 2181
+      "at_ms": 403
     },
     {
       "step": "audit",
-      "at_ms": 2183
+      "at_ms": 404
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2277
+      "at_ms": 455
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "dumpling-house",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -300,19 +300,16 @@
       "fetched_at": "2026-08-07T22:41:16.321Z"
     },
     {
-      "text": "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity. Our mission is to provide a warm, inviting atmosphere where you c...",
+      "text": "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity.",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:41:16.321Z"
     },
     {
-      "text": "Welcome to Dumpling House",
-      "fetched_at": "2026-08-07T22:41:16.321Z"
-    },
-    {
-      "text": "inviting atmosphere where you c",
+      "text": "blending tradition and creativity",
       "fetched_at": "2026-08-07T22:41:16.321Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -348,5 +345,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

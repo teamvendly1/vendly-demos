@@ -2,50 +2,50 @@
   "niche": "clinic",
   "schema": "vendly.autodemo.build/1",
   "business": "Imago MRI",
-  "facebook": null,
+  "facebook": "https://www.imagomri.com/",
   "slug": "imago-mri",
-  "built_at": "2026-08-07T22:49:20.813Z",
-  "elapsed_ms": 1992,
+  "built_at": "2026-08-08T20:19:58.977Z",
+  "elapsed_ms": 349,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 198
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 198
-    },
-    {
-      "step": "assets",
-      "at_ms": 1500
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1616
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1626
+      "at_ms": 32
     },
     {
       "step": "brand_palette",
-      "at_ms": 1900
+      "at_ms": 308
     },
     {
       "step": "layout",
-      "at_ms": 1900
+      "at_ms": 308
     },
     {
       "step": "render",
-      "at_ms": 1901
+      "at_ms": 309
     },
     {
       "step": "audit",
-      "at_ms": 1903
+      "at_ms": 309
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1992
+      "at_ms": 349
     }
   ],
   "audit": {
@@ -275,7 +275,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 7,
+        "count": 6,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -284,13 +284,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "imago-mri",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -303,12 +303,6 @@
     },
     {
       "text": "hello@imagomri.com",
-      "fetched_at": "2026-08-07T22:49:19.018Z"
-    },
-    {
-      "text": "19 Milestone Plz, Greenville, SC",
-      "source": "https://www.facebook.com/imagomri/",
-      "fb_field": "INTRO_CARD_ADDRESS",
       "fetched_at": "2026-08-07T22:49:19.018Z"
     },
     {
@@ -354,11 +348,16 @@
       ]
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Closed now)",
+    "address",
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
     "hours(live_status_only:Closed now)"
   ],
   "link_preview": {
-    "og_title": "Imago MRI | Greenville",
+    "og_title": "Imago MRI",
     "og_url": "https://vendly-demos.vercel.app/imago-mri/",
     "og_image": "https://vendly-demos.vercel.app/imago-mri/assets/428650590_122123242556188868.jpg",
     "og_image_is_absolute": true,
@@ -395,5 +394,6 @@
     "contact": true,
     "niche": "clinic"
   },
-  "fill_tokens": 21
+  "fill_tokens": 18,
+  "founder_face": "vendly-founder.jpg"
 }

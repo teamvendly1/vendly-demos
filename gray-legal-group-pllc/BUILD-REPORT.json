@@ -2,50 +2,50 @@
   "niche": "lawyer",
   "schema": "vendly.autodemo.build/1",
   "business": "Gray Legal Group, PLLC",
-  "facebook": null,
+  "facebook": "https://www.graylegalgroupnc.com/",
   "slug": "gray-legal-group-pllc",
-  "built_at": "2026-08-07T22:46:53.670Z",
-  "elapsed_ms": 2458,
+  "built_at": "2026-08-08T20:19:46.718Z",
+  "elapsed_ms": 452,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 285
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 285
-    },
-    {
-      "step": "assets",
-      "at_ms": 1869
+      "step": "assets_reused_offline",
+      "at_ms": 1
     },
     {
       "step": "template",
-      "at_ms": 1988
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 2
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2004
+      "at_ms": 44
     },
     {
       "step": "brand_palette",
-      "at_ms": 2368
+      "at_ms": 417
     },
     {
       "step": "layout",
-      "at_ms": 2368
+      "at_ms": 417
     },
     {
       "step": "render",
-      "at_ms": 2369
+      "at_ms": 418
     },
     {
       "step": "audit",
-      "at_ms": 2371
+      "at_ms": 418
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2458
+      "at_ms": 452
     }
   ],
   "audit": {
@@ -273,7 +273,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 1,
+        "count": 10,
         "in_sourced_claim": true,
         "char": "·"
       }
@@ -282,13 +282,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "gray-legal-group-pllc",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -336,7 +336,11 @@
       ]
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
     "hours(live_status_only:Closed now)"
   ],
   "link_preview": {
@@ -422,5 +426,6 @@
     "contact": true,
     "niche": "lawyer"
   },
-  "fill_tokens": 22
+  "fill_tokens": 22,
+  "founder_face": "vendly-founder.jpg"
 }

@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Bell Street Burritos",
-  "facebook": null,
+  "facebook": "https://www.bellstreetburritos.com/",
   "slug": "bell-street-burritos",
-  "built_at": "2026-08-07T22:44:23.513Z",
-  "elapsed_ms": 2465,
+  "built_at": "2026-08-08T20:19:35.324Z",
+  "elapsed_ms": 595,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 155
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 155
-    },
-    {
-      "step": "assets",
-      "at_ms": 1652
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1772
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1790
+      "at_ms": 15
     },
     {
       "step": "brand_palette",
-      "at_ms": 2362
+      "at_ms": 551
     },
     {
       "step": "layout",
-      "at_ms": 2362
+      "at_ms": 551
     },
     {
       "step": "render",
-      "at_ms": 2363
+      "at_ms": 551
     },
     {
       "step": "audit",
-      "at_ms": 2364
+      "at_ms": 551
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2465
+      "at_ms": 595
     }
   ],
   "audit": {
@@ -59,9 +59,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 11,
+      "photo_count": 9,
       "has_reviews": false,
-      "branch": "visual trade (restaurant) with 11 photographs: the work is the argument",
+      "branch": "visual trade (restaurant) with 9 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "bell-street-burritos",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -300,10 +300,6 @@
       "fetched_at": "2026-08-07T22:44:21.202Z"
     },
     {
-      "text": "112 Krog Street #1A, Atlanta, GA, 30307",
-      "fetched_at": "2026-08-07T22:44:21.202Z"
-    },
-    {
       "text": "Bell Street Burritos in Atlanta, GA. Call us at (678) 732-9122. Check out our location and hours, and latest menu with photos and reviews.",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:44:21.202Z"
@@ -313,19 +309,20 @@
       "fetched_at": "2026-08-07T22:44:21.202Z"
     },
     {
-      "text": "Bell Street Burritos in Atlanta",
-      "fetched_at": "2026-08-07T22:44:21.202Z"
-    },
-    {
       "text": "and latest menu with photos and reviews",
       "fetched_at": "2026-08-07T22:44:21.202Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)",
+    "address",
+    "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)",
+    "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)",
     "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)"
   ],
   "link_preview": {
-    "og_title": "Bell Street Burritos | GA",
+    "og_title": "Bell Street Burritos",
     "og_url": "https://vendly-demos.vercel.app/bell-street-burritos/",
     "og_image": "https://vendly-demos.vercel.app/bell-street-burritos/assets/site-1.jpg",
     "og_image_is_absolute": true,
@@ -343,7 +340,7 @@
   "assets": {
     "accepted": 11,
     "rejected": 6,
-    "photographs": 11,
+    "photographs": 9,
     "logo_found": false
   },
   "rejected_assets": [
@@ -387,5 +384,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 19
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

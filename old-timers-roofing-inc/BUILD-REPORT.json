@@ -2,46 +2,46 @@
   "niche": "roofing",
   "schema": "vendly.autodemo.build/1",
   "business": "Old Timers Roofing, Inc.",
-  "facebook": null,
+  "facebook": "https://oldtimersroofing.com/",
   "slug": "old-timers-roofing-inc",
-  "built_at": "2026-08-07T22:43:17.673Z",
-  "elapsed_ms": 1609,
+  "built_at": "2026-08-08T20:19:30.148Z",
+  "elapsed_ms": 393,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 235
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 235
-    },
-    {
-      "step": "assets",
-      "at_ms": 1029
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1141
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 0
     },
     {
       "step": "brand_palette",
-      "at_ms": 1504
+      "at_ms": 358
     },
     {
       "step": "layout",
-      "at_ms": 1504
+      "at_ms": 358
     },
     {
       "step": "render",
-      "at_ms": 1506
+      "at_ms": 359
     },
     {
       "step": "audit",
-      "at_ms": 1507
+      "at_ms": 359
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1609
+      "at_ms": 393
     }
   ],
   "audit": {
@@ -274,13 +274,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "old-timers-roofing-inc",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -296,16 +296,8 @@
       "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
-      "text": "3127 Battleground Avenue, Greensboro, North Carolina, 27408",
-      "fetched_at": "2026-08-07T22:43:16.298Z"
-    },
-    {
       "text": "Local Greensboro roofing company providing roof inspections, storm damage evaluations, repairs, replacements, and instant roof estimates. Serving Greensboro and the Piedmont Triad.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:43:16.298Z"
-    },
-    {
-      "text": "Local Greensboro roofing company providing roof inspections",
       "fetched_at": "2026-08-07T22:43:16.298Z"
     },
     {
@@ -321,9 +313,12 @@
       "fetched_at": "2026-08-07T22:43:16.298Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address"
+  ],
   "link_preview": {
-    "og_title": "Old Timers Roofing, Inc. | North Carolina",
+    "og_title": "Old Timers Roofing, Inc.",
     "og_url": "https://vendly-demos.vercel.app/old-timers-roofing-inc/",
     "og_image": "https://vendly-demos.vercel.app/old-timers-roofing-inc/assets/site-8.jpg",
     "og_image_is_absolute": true,
@@ -385,5 +380,6 @@
     "contact": true,
     "niche": "roofing"
   },
-  "fill_tokens": 14
+  "fill_tokens": 12,
+  "founder_face": "vendly-founder.jpg"
 }

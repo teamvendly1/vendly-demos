@@ -9,13 +9,13 @@
       "value": "(615) 712-6428",
       "source": "jsonld"
     },
-    "address": {
-      "value": "114 28th Ave N,, Nashville, TN, 37203",
-      "source": "jsonld"
-    },
     "about": {
-      "value": "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only! Vibes Bar & Lounge is the perfect place for...",
-      "source": "meta"
+      "value": "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only!",
+      "source": "meta",
+      "verbatim_source_text": "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only! Vibes Bar & Lounge is the perfect place for...",
+      "harvest_cleaned": [
+        "truncated source text repaired: cut back to the last complete sentence, discarding \"Vibes Bar & Lounge is the perfect place for\""
+      ]
     },
     "email": {
       "value": "contact@vibesbarlounge.com",
@@ -26,7 +26,9 @@
       "source": "jsonld"
     }
   },
-  "unresolved": [],
+  "unresolved": [
+    "address"
+  ],
   "photos": [
     {
       "url": "https://static.spotapps.co/website_images/ab_websites/120819_website_v1/social_share_new.jpg",
@@ -134,7 +136,7 @@
   ],
   "voice": {
     "post_text": [
-      "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only! Vibes Bar & Lounge is the perfect place for...",
+      "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only!",
       "null\" property=\"og:site_name\"/> <meta content="
     ],
     "image_alts": []

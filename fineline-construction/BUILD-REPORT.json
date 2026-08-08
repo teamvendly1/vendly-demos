@@ -2,50 +2,50 @@
   "niche": "roofing",
   "schema": "vendly.autodemo.build/1",
   "business": "Fineline Construction",
-  "facebook": null,
+  "facebook": "https://finelineconstruction.net/",
   "slug": "fineline-construction",
-  "built_at": "2026-08-07T22:43:37.024Z",
-  "elapsed_ms": 4281,
+  "built_at": "2026-08-08T20:19:32.362Z",
+  "elapsed_ms": 432,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 2583
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 2583
-    },
-    {
-      "step": "assets",
-      "at_ms": 3753
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 3874
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 3893
+      "at_ms": 75
     },
     {
       "step": "brand_palette",
-      "at_ms": 4185
+      "at_ms": 372
     },
     {
       "step": "layout",
-      "at_ms": 4185
+      "at_ms": 372
     },
     {
       "step": "render",
-      "at_ms": 4186
+      "at_ms": 372
     },
     {
       "step": "audit",
-      "at_ms": 4188
+      "at_ms": 373
     },
     {
       "step": "beacon_probe",
-      "at_ms": 4281
+      "at_ms": 432
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "fineline-construction",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -305,10 +305,6 @@
       "fetched_at": "2026-08-07T22:43:35.325Z"
     },
     {
-      "text": "Charlotte general contractor specializing in home additions",
-      "fetched_at": "2026-08-07T22:43:35.325Z"
-    },
-    {
       "text": "basement finishing",
       "fetched_at": "2026-08-07T22:43:35.325Z"
     },
@@ -321,6 +317,7 @@
       "fetched_at": "2026-08-07T22:43:35.325Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -377,5 +374,6 @@
     "contact": true,
     "niche": "roofing"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

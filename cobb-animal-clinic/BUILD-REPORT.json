@@ -2,50 +2,50 @@
   "niche": "veterinary",
   "schema": "vendly.autodemo.build/1",
   "business": "Cobb Animal Clinic",
-  "facebook": null,
+  "facebook": "https://cobbanimalclinic.com/",
   "slug": "cobb-animal-clinic",
-  "built_at": "2026-08-07T22:50:22.676Z",
-  "elapsed_ms": 49010,
+  "built_at": "2026-08-08T20:20:21.518Z",
+  "elapsed_ms": 21128,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 4189
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 4190
-    },
-    {
-      "step": "assets",
-      "at_ms": 27764
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 27877
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 48247
+      "at_ms": 20418
     },
     {
       "step": "brand_palette",
-      "at_ms": 48898
+      "at_ms": 21044
     },
     {
       "step": "layout",
-      "at_ms": 48898
+      "at_ms": 21044
     },
     {
       "step": "render",
-      "at_ms": 48899
+      "at_ms": 21044
     },
     {
       "step": "audit",
-      "at_ms": 48901
+      "at_ms": 21046
     },
     {
       "step": "beacon_probe",
-      "at_ms": 49010
+      "at_ms": 21128
     }
   ],
   "audit": {
@@ -277,13 +277,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "cobb-animal-clinic",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -316,6 +316,7 @@
       "fetched_at": "2026-08-07T22:49:37.855Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -367,5 +368,6 @@
     "contact": true,
     "niche": "veterinary"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

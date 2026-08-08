@@ -2,50 +2,50 @@
   "niche": "tattoo",
   "schema": "vendly.autodemo.build/1",
   "business": "Sunrise Tattoo",
-  "facebook": null,
+  "facebook": "https://www.tattoosunrise.com",
   "slug": "sunrise-tattoo",
-  "built_at": "2026-08-07T22:40:30.888Z",
-  "elapsed_ms": 2407,
+  "built_at": "2026-08-08T20:19:19.587Z",
+  "elapsed_ms": 476,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 84
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 84
-    },
-    {
-      "step": "assets",
-      "at_ms": 1790
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1904
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1910
+      "at_ms": 10
     },
     {
       "step": "brand_palette",
-      "at_ms": 2310
+      "at_ms": 420
     },
     {
       "step": "layout",
-      "at_ms": 2310
+      "at_ms": 420
     },
     {
       "step": "render",
-      "at_ms": 2312
+      "at_ms": 421
     },
     {
       "step": "audit",
-      "at_ms": 2313
+      "at_ms": 421
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2407
+      "at_ms": 476
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "sunrise-tattoo",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -341,9 +341,10 @@
       "fetched_at": "2026-08-07T22:40:28.564Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [],
   "link_preview": {
-    "og_title": "Sunrise Tattoo | TN",
+    "og_title": "Sunrise Tattoo | Nashville",
     "og_url": "https://vendly-demos.vercel.app/sunrise-tattoo/",
     "og_image": "https://vendly-demos.vercel.app/sunrise-tattoo/assets/site-1.jpg",
     "og_image_is_absolute": true,
@@ -415,5 +416,6 @@
     "contact": true,
     "niche": "tattoo"
   },
-  "fill_tokens": 19
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }

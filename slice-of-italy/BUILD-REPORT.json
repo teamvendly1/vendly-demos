@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Slice of Italy",
-  "facebook": null,
+  "facebook": "https://sliceofitalytn.com",
   "slug": "slice-of-italy",
-  "built_at": "2026-08-07T22:41:21.186Z",
-  "elapsed_ms": 2559,
+  "built_at": "2026-08-08T20:19:22.232Z",
+  "elapsed_ms": 408,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 226
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 227
-    },
-    {
-      "step": "assets",
-      "at_ms": 2024
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 2137
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2144
+      "at_ms": 8
     },
     {
       "step": "brand_palette",
-      "at_ms": 2470
+      "at_ms": 363
     },
     {
       "step": "layout",
-      "at_ms": 2470
+      "at_ms": 363
     },
     {
       "step": "render",
-      "at_ms": 2471
+      "at_ms": 363
     },
     {
       "step": "audit",
-      "at_ms": 2473
+      "at_ms": 364
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2559
+      "at_ms": 408
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "slice-of-italy",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -300,10 +300,10 @@
       "fetched_at": "2026-08-07T22:41:18.853Z"
     },
     {
-      "text": "Best New York-Style Pizza in Nashville Experience the true taste of New York with Slice of Italy, Nashville's top destination for New York-style pizza. Our thin, crisp crusts are expertl...",
+      "text": "Best New York-Style Pizza in Nashville Experience the true taste of New York with Slice of Italy, Nashville's top destination for New York-style pizza.",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:41:18.853Z",
-      "verbatim_source_text": "Best New York-Style Pizza in Nashville Experience the true taste of New York with Slice of Italy, Nashville’s top destination for New York-style pizza. Our thin, crisp crusts are expertl...",
+      "verbatim_source_text": "Best New York-Style Pizza in Nashville Experience the true taste of New York with Slice of Italy, Nashville’s top destination for New York-style pizza.",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
@@ -311,14 +311,11 @@
       "fetched_at": "2026-08-07T22:41:18.853Z"
     },
     {
-      "text": "s top destination for New York-style pizza. Our thin",
-      "fetched_at": "2026-08-07T22:41:18.853Z"
-    },
-    {
-      "text": "crisp crusts are expertl",
+      "text": "s top destination for New York-style pizza",
       "fetched_at": "2026-08-07T22:41:18.853Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -354,5 +351,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

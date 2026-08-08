@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Le Petit Marche",
-  "facebook": null,
+  "facebook": "https://www.lepetit-marche.com/",
   "slug": "le-petit-marche",
-  "built_at": "2026-08-07T22:41:48.495Z",
-  "elapsed_ms": 2674,
+  "built_at": "2026-08-08T20:19:24.459Z",
+  "elapsed_ms": 466,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 191
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 192
-    },
-    {
-      "step": "assets",
-      "at_ms": 2035
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 2156
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2184
+      "at_ms": 69
     },
     {
       "step": "brand_palette",
-      "at_ms": 2567
+      "at_ms": 433
     },
     {
       "step": "layout",
-      "at_ms": 2567
+      "at_ms": 433
     },
     {
       "step": "render",
-      "at_ms": 2568
+      "at_ms": 433
     },
     {
       "step": "audit",
-      "at_ms": 2570
+      "at_ms": 434
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2674
+      "at_ms": 466
     }
   ],
   "audit": {
@@ -59,9 +59,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 16,
+      "photo_count": 13,
       "has_reviews": false,
-      "branch": "visual trade (restaurant) with 16 photographs: the work is the argument",
+      "branch": "visual trade (restaurant) with 13 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "le-petit-marche",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -311,25 +311,25 @@
     {
       "text": "Restaurant",
       "fetched_at": "2026-08-07T22:41:46.012Z"
-    },
-    {
-      "text": "Le Petit Marche in Atlanta",
-      "fetched_at": "2026-08-07T22:41:46.012Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Su 08:00-16:00; Mo 10:00-16:00; Tu 10:00-16:00; We 10:00-16:00; Th 10:00-16:00; Fr 10:00-16:00; Sa 08:00-16:00)",
+    "hours(live_status_only:Su 08:00-16:00; Mo 10:00-16:00; Tu 10:00-16:00; We 10:00-16:00; Th 10:00-16:00; Fr 10:00-16:00; Sa 08:00-16:00)",
+    "hours(live_status_only:Su 08:00-16:00; Mo 10:00-16:00; Tu 10:00-16:00; We 10:00-16:00; Th 10:00-16:00; Fr 10:00-16:00; Sa 08:00-16:00)",
     "hours(live_status_only:Su 08:00-16:00; Mo 10:00-16:00; Tu 10:00-16:00; We 10:00-16:00; Th 10:00-16:00; Fr 10:00-16:00; Sa 08:00-16:00)"
   ],
   "link_preview": {
-    "og_title": "Le Petit Marche | GA",
+    "og_title": "Le Petit Marche | Atlanta",
     "og_url": "https://vendly-demos.vercel.app/le-petit-marche/",
-    "og_image": "https://vendly-demos.vercel.app/le-petit-marche/assets/site-7.jpg",
+    "og_image": "https://vendly-demos.vercel.app/le-petit-marche/assets/site-1.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
-    "image_is_page_lead_image": false,
-    "image_sha256": "c6361bde66d13493dffb440098405c8d970ccf450fa2e27459b2911c02757dff",
-    "image_px": "5760x3840",
+    "image_is_page_lead_image": true,
+    "image_sha256": "eeb894915d04cc83df881ec070f28bf247cc298e6727477f67cc3e126c6d5a6b",
+    "image_px": "1200x630",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": true,
@@ -339,7 +339,7 @@
   "assets": {
     "accepted": 16,
     "rejected": 1,
-    "photographs": 16,
+    "photographs": 13,
     "logo_found": false
   },
   "rejected_assets": [
@@ -352,11 +352,12 @@
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
-    "services": true,
+    "services": false,
     "their_words": false,
     "gallery": true,
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 19
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }

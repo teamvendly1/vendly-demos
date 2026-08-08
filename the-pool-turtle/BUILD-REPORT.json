@@ -2,50 +2,50 @@
   "niche": "bar",
   "schema": "vendly.autodemo.build/1",
   "business": "The Pool Turtle",
-  "facebook": null,
+  "facebook": "https://www.thepoolturtle.com/",
   "slug": "the-pool-turtle",
-  "built_at": "2026-08-07T22:45:06.522Z",
-  "elapsed_ms": 1931,
+  "built_at": "2026-08-08T20:19:40.586Z",
+  "elapsed_ms": 454,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 253
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 254
-    },
-    {
-      "step": "assets",
-      "at_ms": 1288
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1403
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 0
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1419
+      "at_ms": 7
     },
     {
       "step": "brand_palette",
-      "at_ms": 1835
+      "at_ms": 415
     },
     {
       "step": "layout",
-      "at_ms": 1835
+      "at_ms": 415
     },
     {
       "step": "render",
-      "at_ms": 1836
+      "at_ms": 415
     },
     {
       "step": "audit",
-      "at_ms": 1838
+      "at_ms": 416
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1931
+      "at_ms": 454
     }
   ],
   "audit": {
@@ -277,13 +277,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "the-pool-turtle",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -296,10 +296,6 @@
     },
     {
       "text": "info@thepoolturtle.com",
-      "fetched_at": "2026-08-07T22:45:04.844Z"
-    },
-    {
-      "text": "3409 Covington Highway, Decatur, GA, 30032",
       "fetched_at": "2026-08-07T22:45:04.844Z"
     },
     {
@@ -328,9 +324,12 @@
       "fetched_at": "2026-08-07T22:45:04.844Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address"
+  ],
   "link_preview": {
-    "og_title": "The Pool Turtle | GA",
+    "og_title": "The Pool Turtle",
     "og_url": "https://vendly-demos.vercel.app/the-pool-turtle/",
     "og_image": "https://vendly-demos.vercel.app/the-pool-turtle/assets/site-0.png",
     "og_image_is_absolute": true,
@@ -432,5 +431,6 @@
     "contact": true,
     "niche": "bar"
   },
-  "fill_tokens": 13
+  "fill_tokens": 10,
+  "founder_face": "vendly-founder.jpg"
 }

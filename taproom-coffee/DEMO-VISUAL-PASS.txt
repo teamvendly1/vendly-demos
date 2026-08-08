@@ -2,66 +2,66 @@ DEMO VISUAL AUDIT
 =================
 slug        : taproom-coffee
 folder      : C:\VendlyVault\_tmp\autodemo\demos\taproom-coffee
-audited_at  : 2026-08-08T19:16:45Z
+audited_at  : 2026-08-08T20:23:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\taproom-coffee.png
-shot_sha256 : 4807312A98F8B7524BA170250EE8AFD89D898CD2FFF4BB1E3AD8F8E4C876632F
+shot_sha256 : E3A3119B3869CC4C51FA51BBB847E4CB8F55C2E05C6FE6D36BF5F6DCEAF28B73
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 8335 bytes
+      measured : present, 17524 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 6 image tag(s)
+      measured : 8 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 6 resolvable src(s) exist on disk
+      measured : all 8 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
-      measured : name "Taproom Coffee" is a plausible business name and is visible on the page (H1 reads "Specialty coffee, locally sourced pastries, and co")
+      measured : name "Taproom Coffee" is a plausible business name and is visible on the page (H1 reads "Taproom Coffee")
 [PASS] PHONE_OWNERSHIP
       how      : every tel: href and formatted number in visible text normalised to 10 digits and matched against FILL.json phone plus our line 7744269684
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1498 bytes of visible text
+      measured : none in 1828 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 13 sentence(s) checked, all distinct
+      measured : 18 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 12 distinct text node(s), none repeated 3+ times
+      measured : 11 distinct text node(s), none repeated 3+ times
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
-      measured : reads as a real description (120 chars)
+      measured : reads as a real description (151 chars)
 [PASS] EYEBROW_IS_REAL
       how      : the eyebrow must be a real category and place, not a Facebook object type or a bare state code
-      measured : reads as a category: "The food"
+      measured : no eyebrow on this page (not a fault - many demos have none)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 8335 bytes of HTML
+      measured : none in 17524 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
-      measured : --c #8c2f1f on #FFFFFF = 8.26:1 (needs 4.5); --a #8c2f1f on #FFFFFF = 8.26:1 (needs 4.5); --b #1a1512 on #FFFFFF = 18.1:1 (needs 4.5); --b #1a1512 on #DBE4EC = 14.07:1 (needs 4.5)
+      measured : --c #A0421A on #FFFFFF = 6.39:1 (needs 4.5); --a #8A4A1F on #FFFFFF = 6.82:1 (needs 4.5); --b #3A2317 on #FFFFFF = 14.66:1 (needs 4.5); --b #3A2317 on #DBE4EC = 11.39:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1498 bytes visible (floor 900)
+      measured : 1828 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
-      measured : 120 chars: "Sip coffee on the Taproom patio, and meet adoptable dogs fro"
+      measured : 151 chars: "Specialty coffee, locally sourced pastries, and community ev"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1837004 bytes, 158 distinct colours, modal colour covers 13.8% of sampled pixels
+      measured : 1280x2000px, 756116 bytes, 221 distinct colours, modal colour covers 50.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

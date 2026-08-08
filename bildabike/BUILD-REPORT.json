@@ -2,46 +2,46 @@
   "niche": "bicycle",
   "schema": "vendly.autodemo.build/1",
   "business": "BildaBike",
-  "facebook": null,
+  "facebook": "https://www.bildabike.com",
   "slug": "bildabike",
-  "built_at": "2026-08-07T22:48:43.581Z",
-  "elapsed_ms": 3772,
+  "built_at": "2026-08-08T20:19:53.978Z",
+  "elapsed_ms": 406,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 735
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 736
-    },
-    {
-      "step": "assets",
-      "at_ms": 3211
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 3323
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_palette",
-      "at_ms": 3677
+      "at_ms": 353
     },
     {
       "step": "layout",
-      "at_ms": 3677
+      "at_ms": 353
     },
     {
       "step": "render",
-      "at_ms": 3678
+      "at_ms": 354
     },
     {
       "step": "audit",
-      "at_ms": 3679
+      "at_ms": 354
     },
     {
       "step": "beacon_probe",
-      "at_ms": 3772
+      "at_ms": 406
     }
   ],
   "audit": {
@@ -274,13 +274,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "bildabike",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -305,6 +305,7 @@
       "fetched_at": "2026-08-07T22:48:40.544Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -356,5 +357,6 @@
     "contact": true,
     "niche": "bicycle"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

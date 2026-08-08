@@ -9,10 +9,6 @@
       "value": "(678) 732-9122",
       "source": "jsonld"
     },
-    "address": {
-      "value": "112 Krog Street #1A, Atlanta, GA, 30307",
-      "source": "jsonld"
-    },
     "about": {
       "value": "Bell Street Burritos in Atlanta, GA. Call us at (678) 732-9122. Check out our location and hours, and latest menu with photos and reviews.",
       "source": "meta"
@@ -31,6 +27,10 @@
     }
   },
   "unresolved": [
+    "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)",
+    "address",
+    "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)",
+    "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)",
     "hours(live_status_only:Mo 11:00-21:00; Tu 11:00-21:00; We 11:00-21:00; Th 11:00-21:00; Fr 11:00-22:00; Sa 10:00-22:00)"
   ],
   "photos": [

@@ -2,50 +2,50 @@
   "niche": "auto repair",
   "schema": "vendly.autodemo.build/1",
   "business": "Touchstone Detailing",
-  "facebook": null,
+  "facebook": "https://touchstonedetailing.com",
   "slug": "touchstone-detailing",
-  "built_at": "2026-08-07T22:40:28.286Z",
-  "elapsed_ms": 1861,
+  "built_at": "2026-08-08T20:19:19.010Z",
+  "elapsed_ms": 579,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 445
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 445
-    },
-    {
-      "step": "assets",
-      "at_ms": 1129
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1247
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 2
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1263
+      "at_ms": 55
     },
     {
       "step": "brand_palette",
-      "at_ms": 1751
+      "at_ms": 544
     },
     {
       "step": "layout",
-      "at_ms": 1751
+      "at_ms": 544
     },
     {
       "step": "render",
-      "at_ms": 1752
+      "at_ms": 544
     },
     {
       "step": "audit",
-      "at_ms": 1754
+      "at_ms": 545
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1861
+      "at_ms": 579
     }
   ],
   "audit": {
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "touchstone-detailing",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -297,14 +297,6 @@
     },
     {
       "text": "mrtouchstone615@gmail.com",
-      "fetched_at": "2026-08-07T22:40:26.869Z"
-    },
-    {
-      "text": "6124 Deal Ave, Nashville, Tennessee, 37209",
-      "fetched_at": "2026-08-07T22:40:26.869Z"
-    },
-    {
-      "text": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 7:00 AM - 5:00 PM",
       "fetched_at": "2026-08-07T22:40:26.869Z"
     },
     {
@@ -357,9 +349,13 @@
       "fetched_at": "2026-08-07T22:40:26.869Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address",
+    "hours"
+  ],
   "link_preview": {
-    "og_title": "Touchstone Detailing | Tennessee",
+    "og_title": "Touchstone Detailing",
     "og_url": "https://vendly-demos.vercel.app/touchstone-detailing/",
     "og_image": "https://vendly-demos.vercel.app/touchstone-detailing/assets/site-1.jpg",
     "og_image_is_absolute": true,
@@ -401,5 +397,6 @@
     "contact": true,
     "niche": "auto repair"
   },
-  "fill_tokens": 15
+  "fill_tokens": 12,
+  "founder_face": "vendly-founder.jpg"
 }

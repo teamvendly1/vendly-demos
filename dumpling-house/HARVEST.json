@@ -10,8 +10,12 @@
       "source": "tel-href"
     },
     "about": {
-      "value": "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity. Our mission is to provide a warm, inviting atmosphere where you c...",
-      "source": "meta"
+      "value": "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity.",
+      "source": "meta",
+      "verbatim_source_text": "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity. Our mission is to provide a warm, inviting atmosphere where you c...",
+      "harvest_cleaned": [
+        "truncated source text repaired: cut back to the last complete sentence, discarding \"Our mission is to provide a warm, inviting atmosphere where \""
+      ]
     },
     "email": {
       "value": "dumplinghousenashville@gmail.com",
@@ -127,7 +131,7 @@
   ],
   "voice": {
     "post_text": [
-      "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity. Our mission is to provide a warm, inviting atmosphere where you c...",
+      "Welcome to Dumpling House, where we craft delicious dishes with the freshest ingredients, blending tradition and creativity.",
       "null\" property=\"og:site_name\"/> <meta content="
     ],
     "image_alts": []

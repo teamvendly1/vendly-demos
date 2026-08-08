@@ -2,50 +2,50 @@
   "niche": "tax_advisor",
   "schema": "vendly.autodemo.build/1",
   "business": "Swanson Reed",
-  "facebook": null,
+  "facebook": "https://www.swansonreed.com/research-tax-credit/florida/",
   "slug": "swanson-reed",
-  "built_at": "2026-08-07T22:47:40.077Z",
-  "elapsed_ms": 5718,
+  "built_at": "2026-08-08T20:19:50.900Z",
+  "elapsed_ms": 731,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 1251
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 1251
-    },
-    {
-      "step": "assets",
-      "at_ms": 4980
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 5134
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 5219
+      "at_ms": 305
     },
     {
       "step": "brand_palette",
-      "at_ms": 5619
+      "at_ms": 688
     },
     {
       "step": "layout",
-      "at_ms": 5619
+      "at_ms": 688
     },
     {
       "step": "render",
-      "at_ms": 5621
+      "at_ms": 689
     },
     {
       "step": "audit",
-      "at_ms": 5623
+      "at_ms": 689
     },
     {
       "step": "beacon_probe",
-      "at_ms": 5718
+      "at_ms": 731
     }
   ],
   "audit": {
@@ -275,13 +275,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "swanson-reed",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -302,10 +302,6 @@
       "fetched_at": "2026-08-07T22:47:35.609Z"
     },
     {
-      "text": "Explore the Florida R&D Tax Credit: eligibility",
-      "fetched_at": "2026-08-07T22:47:35.609Z"
-    },
-    {
       "text": "benefits",
       "fetched_at": "2026-08-07T22:47:35.609Z"
     },
@@ -314,6 +310,7 @@
       "fetched_at": "2026-08-07T22:47:35.609Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -385,5 +382,6 @@
     "contact": true,
     "niche": "tax_advisor"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

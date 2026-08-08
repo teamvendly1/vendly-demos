@@ -2,50 +2,50 @@
   "niche": "cafe",
   "schema": "vendly.autodemo.build/1",
   "business": "Taproom Coffee",
-  "facebook": null,
+  "facebook": "https://www.taproomcoffee.com/",
   "slug": "taproom-coffee",
-  "built_at": "2026-08-07T22:41:51.472Z",
-  "elapsed_ms": 2800,
+  "built_at": "2026-08-08T20:19:24.959Z",
+  "elapsed_ms": 401,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 93
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 93
-    },
-    {
-      "step": "assets",
-      "at_ms": 2049
+      "step": "assets_reused_offline",
+      "at_ms": 1
     },
     {
       "step": "template",
-      "at_ms": 2161
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 2
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2378
+      "at_ms": 35
     },
     {
       "step": "brand_palette",
-      "at_ms": 2710
+      "at_ms": 372
     },
     {
       "step": "layout",
-      "at_ms": 2710
+      "at_ms": 372
     },
     {
       "step": "render",
-      "at_ms": 2711
+      "at_ms": 372
     },
     {
       "step": "audit",
-      "at_ms": 2713
+      "at_ms": 373
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2800
+      "at_ms": 401
     }
   ],
   "audit": {
@@ -276,13 +276,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "taproom-coffee",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -298,16 +298,8 @@
       "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
-      "text": "1963 Hosea L Williams Drive SE, Suite R106\nAtlanta, GA, 30317",
-      "fetched_at": "2026-08-07T22:41:48.764Z"
-    },
-    {
       "text": "Specialty coffee, locally sourced pastries, and community events in Kirkwood, Atlanta. Visit us at 1963 Hosea L Williams Dr or catch the Taproam Truck.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:41:48.764Z"
-    },
-    {
-      "text": "Specialty coffee",
       "fetched_at": "2026-08-07T22:41:48.764Z"
     },
     {
@@ -319,9 +311,12 @@
       "fetched_at": "2026-08-07T22:41:48.764Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address"
+  ],
   "link_preview": {
-    "og_title": "Taproom Coffee | GA",
+    "og_title": "Taproom Coffee",
     "og_url": "https://vendly-demos.vercel.app/taproom-coffee/",
     "og_image": "https://vendly-demos.vercel.app/taproom-coffee/assets/site-10.jpg",
     "og_image_is_absolute": true,
@@ -398,5 +393,6 @@
     "contact": true,
     "niche": "cafe"
   },
-  "fill_tokens": 19
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

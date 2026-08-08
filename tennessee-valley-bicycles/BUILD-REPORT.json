@@ -2,46 +2,46 @@
   "niche": "bicycle",
   "schema": "vendly.autodemo.build/1",
   "business": "Tennessee Valley Bicycles",
-  "facebook": null,
+  "facebook": "https://www.tnvalleybikes.com/",
   "slug": "tennessee-valley-bicycles",
-  "built_at": "2026-08-07T22:46:37.639Z",
-  "elapsed_ms": 4339,
+  "built_at": "2026-08-08T20:19:45.215Z",
+  "elapsed_ms": 386,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 444
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 445
-    },
-    {
-      "step": "assets",
-      "at_ms": 3754
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 3889
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 2
     },
     {
       "step": "brand_palette",
-      "at_ms": 4243
+      "at_ms": 352
     },
     {
       "step": "layout",
-      "at_ms": 4243
+      "at_ms": 352
     },
     {
       "step": "render",
-      "at_ms": 4244
+      "at_ms": 353
     },
     {
       "step": "audit",
-      "at_ms": 4246
+      "at_ms": 353
     },
     {
       "step": "beacon_probe",
-      "at_ms": 4339
+      "at_ms": 386
     }
   ],
   "audit": {
@@ -55,7 +55,7 @@
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
       "trade_key": "trade",
-      "photo_count": 19,
+      "photo_count": 18,
       "has_reviews": true,
       "branch": "trust-bought trade (trade) with published reviews: credentials lead",
       "deterministic": true
@@ -281,13 +281,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "tennessee-valley-bicycles",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -303,12 +303,6 @@
       "fetched_at": "2026-08-07T22:46:33.744Z"
     },
     {
-      "text": "210 W Magnolia Ave, Knoxville, TN, Tennessee",
-      "source": "https://www.facebook.com/TNValleyBicycles/",
-      "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T22:46:33.744Z"
-    },
-    {
       "text": "TVB is Knoxville's go-to bike shop, here to help you get the most out of cycling. Shop our selection online, schedule a service appointment, or visit us!",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:46:33.744Z",
@@ -319,10 +313,6 @@
       "text": "Page · Outdoor & Sporting Goods Company",
       "source": "https://www.facebook.com/TNValleyBicycles/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T22:46:33.744Z"
-    },
-    {
-      "text": "TVB is Knoxville",
       "fetched_at": "2026-08-07T22:46:33.744Z"
     },
     {
@@ -344,11 +334,16 @@
       "fetched_at": "2026-08-07T22:46:33.744Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Closed now)",
+    "address",
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
     "hours(live_status_only:Closed now)"
   ],
   "link_preview": {
-    "og_title": "Tennessee Valley Bicycles | TN",
+    "og_title": "Tennessee Valley Bicycles",
     "og_url": "https://vendly-demos.vercel.app/tennessee-valley-bicycles/",
     "og_image": "https://vendly-demos.vercel.app/tennessee-valley-bicycles/assets/site-9.jpg",
     "og_image_is_absolute": true,
@@ -366,7 +361,7 @@
   "assets": {
     "accepted": 20,
     "rejected": 3,
-    "photographs": 19,
+    "photographs": 18,
     "logo_found": true
   },
   "rejected_assets": [
@@ -395,5 +390,6 @@
     "contact": true,
     "niche": "bicycle"
   },
-  "fill_tokens": 22
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }

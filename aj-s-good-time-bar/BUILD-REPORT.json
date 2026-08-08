@@ -2,50 +2,50 @@
   "niche": "bar",
   "schema": "vendly.autodemo.build/1",
   "business": "AJ's Good Time Bar",
-  "facebook": null,
+  "facebook": "https://www.ajsgoodtimebar.com/",
   "slug": "aj-s-good-time-bar",
-  "built_at": "2026-08-07T22:40:52.735Z",
-  "elapsed_ms": 5326,
+  "built_at": "2026-08-08T20:19:20.336Z",
+  "elapsed_ms": 497,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 2286
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 2287
-    },
-    {
-      "step": "assets",
-      "at_ms": 4679
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 4820
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 4835
+      "at_ms": 45
     },
     {
       "step": "brand_palette",
-      "at_ms": 5228
+      "at_ms": 440
     },
     {
       "step": "layout",
-      "at_ms": 5228
+      "at_ms": 440
     },
     {
       "step": "render",
-      "at_ms": 5229
+      "at_ms": 440
     },
     {
       "step": "audit",
-      "at_ms": 5230
+      "at_ms": 441
     },
     {
       "step": "beacon_probe",
-      "at_ms": 5326
+      "at_ms": 497
     }
   ],
   "audit": {
@@ -277,13 +277,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "aj-s-good-time-bar",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -300,10 +300,6 @@
       "fetched_at": "2026-08-07T22:40:49.695Z"
     },
     {
-      "text": "Live music 7 days a week",
-      "fetched_at": "2026-08-07T22:40:49.695Z"
-    },
-    {
       "text": "sports bar",
       "fetched_at": "2026-08-07T22:40:49.695Z"
     },
@@ -312,6 +308,7 @@
       "fetched_at": "2026-08-07T22:40:49.695Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -347,5 +344,6 @@
     "contact": true,
     "niche": "bar"
   },
-  "fill_tokens": 15
+  "fill_tokens": 15,
+  "founder_face": "vendly-founder.jpg"
 }

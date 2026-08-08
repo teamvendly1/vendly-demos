@@ -2,46 +2,46 @@
   "niche": "bar",
   "schema": "vendly.autodemo.build/1",
   "business": "Vibes Bar & Lounge",
-  "facebook": null,
+  "facebook": "https://vibesbarlounge.com/",
   "slug": "vibes-bar-lounge",
-  "built_at": "2026-08-07T22:39:43.638Z",
-  "elapsed_ms": 2423,
+  "built_at": "2026-08-08T20:19:17.315Z",
+  "elapsed_ms": 425,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 277
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 278
-    },
-    {
-      "step": "assets",
-      "at_ms": 1752
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1879
+      "at_ms": 2
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 3
     },
     {
       "step": "brand_palette",
-      "at_ms": 2277
+      "at_ms": 372
     },
     {
       "step": "layout",
-      "at_ms": 2278
+      "at_ms": 372
     },
     {
       "step": "render",
-      "at_ms": 2279
+      "at_ms": 373
     },
     {
       "step": "audit",
-      "at_ms": 2281
+      "at_ms": 374
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2423
+      "at_ms": 425
     }
   ],
   "audit": {
@@ -273,13 +273,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "vibes-bar-lounge",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -295,11 +295,7 @@
       "fetched_at": "2026-08-07T22:39:41.492Z"
     },
     {
-      "text": "114 28th Ave N, Nashville, TN, 37203",
-      "fetched_at": "2026-08-07T22:39:41.492Z"
-    },
-    {
-      "text": "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only! Vibes Bar & Lounge is the perfect place for...",
+      "text": "While adding an urban & vibrant flair to this historical Nashville street, we specialize in good food, good drinks, & good vibes only!",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:39:41.492Z"
     },
@@ -314,11 +310,18 @@
     {
       "text": "good drinks",
       "fetched_at": "2026-08-07T22:39:41.492Z"
+    },
+    {
+      "text": "& good vibes only!",
+      "fetched_at": "2026-08-07T22:39:41.492Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address"
+  ],
   "link_preview": {
-    "og_title": "Vibes Bar &amp; Lounge | TN",
+    "og_title": "Vibes Bar &amp; Lounge",
     "og_url": "https://vendly-demos.vercel.app/vibes-bar-lounge/",
     "og_image": "https://vendly-demos.vercel.app/vibes-bar-lounge/assets/site-1.jpg",
     "og_image_is_absolute": true,
@@ -355,5 +358,6 @@
     "contact": true,
     "niche": "bar"
   },
-  "fill_tokens": 19
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

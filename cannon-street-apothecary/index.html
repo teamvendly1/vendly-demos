@@ -40,6 +40,10 @@
 .concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
 .concierge .msg.us span a{color:#fff;text-decoration:underline}
 .concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.builtby{max-width:620px;margin:26px auto 0;display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line,#e3e0d8)}
+.builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
+.builtby p{margin:0;font-size:.9rem;line-height:1.5;opacity:.85}
+@media (max-width:560px){.builtby{flex-direction:column;text-align:center}}
 .hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -193,6 +197,8 @@ footer.site a{color:#fff}
 
 <div class="hero hero-panel">
   <div class="wrap hero-in">
+    <span class="panelplate"><img class="panelmark" src="assets/site-6.jpg" alt="Cannon Street Apothecary" width="300" height="120"></span>
+    
     <h1>Cannon Street Apothecary</h1>
     <p class="lede">Shop Cannon Street Apothecary, a Charleston hemp brand offering lab-tested gummies, seltzers, pens, pre-rolls, CBD skincare, pet products, and wholesale options. 21+ only.</p>
     <div class="cta-row">
@@ -203,27 +209,11 @@ footer.site a{color:#fff}
   </div>
 </div>
 
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <div class="factbox">
-      <dl>
-        <div><dt>Phone</dt><dd><a href="tel:+18432707786">(843) 270-7786</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:cannonstreetapothecary@gmail.com">cannonstreetapothecary@gmail.com</a></dd></div>
-        
-        
-        <div><dt>Facebook</dt><dd><a href="https://cannonstapothecary.com">cannonstapothecary.com</a></dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
-
 <section id="services">
   <div class="wrap">
-    <h2>What we do</h2>
+    <h2>What we carry</h2>
     <p class="lead">Taken from the Cannon Street Apothecary Facebook page.</p>
     <div class="grid">
-      <div class="card"><h3>Shop Cannon Street Apothecary</h3></div>
       <div class="card"><h3>a Charleston hemp brand offering lab-tested gummies</h3></div>
       <div class="card"><h3>seltzers</h3></div>
       <div class="card"><h3>pens</h3></div>
@@ -237,23 +227,41 @@ footer.site a{color:#fff}
 
 <section id="work">
   <div class="wrap">
-    <h2>Photos</h2>
+    <h2>What we have in right now</h2>
     <p class="lead">These photos are published on the Cannon Street Apothecary Facebook page. Pulled 2026-08-07.</p>
     <div class="gal gal-masonry">
-      <figure><img src="assets/site-0.png" alt="Shop Cannon Street Apothecary" loading="lazy" width="800" height="600"><figcaption>Shop Cannon Street Apothecary</figcaption></figure>
-      <figure><img src="assets/site-1.png" alt="a Charleston hemp brand offering lab-tested gummies" loading="lazy" width="800" height="600"><figcaption>a Charleston hemp brand offering lab-tested gummies</figcaption></figure>
-      <figure><img src="assets/site-2.png" alt="seltzers" loading="lazy" width="800" height="600"><figcaption>seltzers</figcaption></figure>
-      <figure><img src="assets/site-3.png" alt="pens" loading="lazy" width="800" height="600"><figcaption>pens</figcaption></figure>
-      <figure><img src="assets/site-4.png" alt="pre-rolls" loading="lazy" width="800" height="600"><figcaption>pre-rolls</figcaption></figure>
-      <figure><img src="assets/site-5.png" alt="CBD skincare" loading="lazy" width="800" height="600"><figcaption>CBD skincare</figcaption></figure>
+      <figure><img src="assets/site-0.png" alt="a Charleston hemp brand offering lab-tested gummies" loading="lazy" width="800" height="600"><figcaption>a Charleston hemp brand offering lab-tested gummies</figcaption></figure>
+      <figure><img src="assets/site-1.png" alt="seltzers" loading="lazy" width="800" height="600"><figcaption>seltzers</figcaption></figure>
+      <figure><img src="assets/site-2.png" alt="pens" loading="lazy" width="800" height="600"><figcaption>pens</figcaption></figure>
+      <figure><img src="assets/site-3.png" alt="pre-rolls" loading="lazy" width="800" height="600"><figcaption>pre-rolls</figcaption></figure>
+      <figure><img src="assets/site-4.png" alt="CBD skincare" loading="lazy" width="800" height="600"><figcaption>CBD skincare</figcaption></figure>
+      <figure><img src="assets/site-5.png" alt="pet products" loading="lazy" width="800" height="600"><figcaption>pet products</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Where to find us</h2>
+    <div class="factbox">
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+18432707786">(843) 270-7786</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:cannonstreetapothecary@gmail.com">cannonstreetapothecary@gmail.com</a></dd></div>
+        
+        
+        <div><dt>Website</dt><dd><a href="https://cannonstapothecary.com">cannonstapothecary.com</a></dd></div>
+      </dl>
     </div>
   </div>
 </section>
 
 <section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>The part that answers customers for you</h2>
-    <p class="lead">Every Cannon Street Apothecary page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="builtby">
+      <img src="vendly-founder.jpg" alt="Jacob Bailey, Vendly" width="56" height="56" loading="lazy">
+      <p>Built by Jacob Bailey at Vendly. I put this together from your public page so you could see it rather than read a pitch about it. If anything on here is wrong, tell me and I will fix it.</p>
+    </div>
+    <p class="lead">One more thing this page comes with. A concierge sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight. Here is how that reads to one of your customers.</p>
     <div class="chat">
       <div class="msg them"><span>Hi, are you open right now?</span></div>
       <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+18432707786">(843) 270-7786</a> and we will get you sorted.</span></div>
@@ -269,13 +277,53 @@ footer.site a{color:#fff}
 <footer class="site">
   <div class="wrap">
     <p>Cannon Street Apothecary. (843) 270-7786</p>
-    <p>Preview built by Vendly from the Cannon Street Apothecary public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <p>Preview built by Vendly from the Cannon Street Apothecary public website on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
   </div>
 </footer>
 
+<!-- VENDLY-DEMO-OPEN-BEACON. Counts one page open, per demo, per day. Aggregate only:
+     no identity, no referrer, no query string, no cookie, no storage.
+     Contract: _remote/state/ANALYTICS-BEACON-CONTRACT.md -->
 <script>
-  window.VendlyBeaconConfig = { tenantId: "cannon-street-apothecary", endpoint: "https://vendly-jarvis.vercel.app" };
+(function(){
+  try{
+    var u="https://vendly-jarvis.vercel.app/api/track";
+    var b=JSON.stringify({tenantId:"demos",event:"view",path:"/vendly-demos/cannon-street-apothecary/"});
+    var fire=function(){
+      try{
+        // FETCH FIRST, AND THAT ORDER IS MEASURED, NOT PREFERRED.
+        // keepalive gives the same survive-the-unload guarantee sendBeacon is
+        // usually reached for, and it is the only one of the two that actually
+        // delivers here. See the note below.
+        if(typeof fetch==="function"){
+          fetch(u,{method:"POST",headers:{"Content-Type":"application/json"},body:b,keepalive:true,cache:"no-store"}).catch(function(){});
+          return;
+        }
+        // No fetch (very old browser). text/plain is CORS-safelisted, so this
+        // sends without a preflight; the server parses the body as JSON either
+        // way. Never use an application/json Blob here.
+        if(navigator&&typeof navigator.sendBeacon==="function"){
+          navigator.sendBeacon(u,new Blob([b],{type:"text/plain"}));
+        }
+      }catch(e){}
+    };
+    // Never on the critical path. The page is fully usable whether this runs,
+    // fails, or is blocked outright.
+    if(document.readyState==="loading"){
+      document.addEventListener("DOMContentLoaded",function(){setTimeout(fire,0);});
+    }else{
+      setTimeout(fire,0);
+    }
+  }catch(e){}
+})();
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
+
+<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
+     in this demo's own harvested facts; it refuses anything it was not given.
+     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
+<script>
+window.VendlyDemoAssistant={slug:"cannon-street-apothecary",name:"Cannon Street Apothecary",phone:"(843) 270-7786",accent:"#3B8185"};
+</script>
+<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
 </body>
 </html>

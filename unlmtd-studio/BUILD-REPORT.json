@@ -2,50 +2,50 @@
   "niche": "photography",
   "schema": "vendly.autodemo.build/1",
   "business": "Unlmtd Studio",
-  "facebook": null,
+  "facebook": "https://unlmtdstudio.com",
   "slug": "unlmtd-studio",
-  "built_at": "2026-08-07T22:45:23.244Z",
-  "elapsed_ms": 4883,
+  "built_at": "2026-08-08T20:19:42.089Z",
+  "elapsed_ms": 871,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 2254
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 2255
-    },
-    {
-      "step": "assets",
-      "at_ms": 3988
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 4078
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 4224
+      "at_ms": 290
     },
     {
       "step": "brand_palette",
-      "at_ms": 4784
+      "at_ms": 828
     },
     {
       "step": "layout",
-      "at_ms": 4784
+      "at_ms": 828
     },
     {
       "step": "render",
-      "at_ms": 4785
+      "at_ms": 828
     },
     {
       "step": "audit",
-      "at_ms": 4787
+      "at_ms": 828
     },
     {
       "step": "beacon_probe",
-      "at_ms": 4883
+      "at_ms": 871
     }
   ],
   "audit": {
@@ -275,13 +275,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "unlmtd-studio",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -297,14 +297,6 @@
       "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
-      "text": "684 John Wesley Dobbs Ave NE Unit H, Atlanta, 30312",
-      "fetched_at": "2026-08-07T22:45:20.614Z"
-    },
-    {
-      "text": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-9:00",
-      "fetched_at": "2026-08-07T22:45:20.614Z"
-    },
-    {
       "text": "Full service content production studio located on the Beltline Eastside Trail in Atlanta.",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:45:20.614Z"
@@ -314,9 +306,13 @@
       "fetched_at": "2026-08-07T22:45:20.614Z"
     }
   ],
-  "unresolved": [],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address",
+    "hours"
+  ],
   "link_preview": {
-    "og_title": "Unlmtd Studio | Atlanta",
+    "og_title": "Unlmtd Studio",
     "og_url": "https://vendly-demos.vercel.app/unlmtd-studio/",
     "og_image": null,
     "og_image_is_absolute": false,
@@ -406,12 +402,13 @@
   ],
   "sections_rendered": {
     "hero": true,
-    "trust_strip": true,
+    "trust_strip": false,
     "services": false,
     "their_words": false,
     "gallery": true,
     "contact": true,
     "niche": "photography"
   },
-  "fill_tokens": 16
+  "fill_tokens": 12,
+  "founder_face": "vendly-founder.jpg"
 }
