@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : saveurs-du-monde-caf
 folder      : C:\VendlyVault\_tmp\autodemo\demos\saveurs-du-monde-caf
-audited_at  : 2026-08-08T18:49:27Z
+audited_at  : 2026-08-08T19:16:45Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\saveurs-du-monde-caf.png
-shot_sha256 : 2BE6C6B670D097D512327709104278654B972D02051BB0B5CC21371A0E1C93CF
+shot_sha256 : E37228D8AB4975DB6E3D9541A744BA78FBB5BBEF2D3EAFAB0A182F5C7899A588
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 254 chars: "Their knowledge of good and healthy food combined with their"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1576046 bytes, 157 distinct colours, modal colour covers 14.0% of sampled pixels
+      measured : 1280x2000px, 1576042 bytes, 157 distinct colours, modal colour covers 14.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

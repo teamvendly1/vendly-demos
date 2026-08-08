@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : recess
 folder      : C:\VendlyVault\_tmp\autodemo\demos\recess
-audited_at  : 2026-08-08T18:49:27Z
+audited_at  : 2026-08-08T19:16:45Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\recess.png
-shot_sha256 : 6DF7A4B3DD09F6D41C45F6187E4417E492F343AE890C6C8A26E8B8D5C61AC7A0
+shot_sha256 : 36F2480B86F63F138F070B9FD03E5965BEBC410322A4B3191E924CED78C5BFAB
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 141 chars: "Healthy grain bowls, salads, and juices inside Krog Street M"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1032547 bytes, 228 distinct colours, modal colour covers 45.8% of sampled pixels
+      measured : 1280x2000px, 1032556 bytes, 228 distinct colours, modal colour covers 45.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

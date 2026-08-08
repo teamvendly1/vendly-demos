@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : rudd-farm
 folder      : C:\VendlyVault\_tmp\autodemo\demos\rudd-farm
-audited_at  : 2026-08-08T18:49:27Z
+audited_at  : 2026-08-08T19:16:45Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\rudd-farm.png
-shot_sha256 : B99D20C122218E97979A9A67327BADD0BB4AB880100B4B980EB4C5677E5CC096
+shot_sha256 : 1774ED64338E4C2D95E0876817624DF9B55605978EA250BB67399B82C234E0E3
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 190 chars: "The family stopped growing tobacco in 2004 so they could con"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2293607 bytes, 246 distinct colours, modal colour covers 33.3% of sampled pixels
+      measured : 1280x2000px, 2293598 bytes, 246 distinct colours, modal colour covers 33.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

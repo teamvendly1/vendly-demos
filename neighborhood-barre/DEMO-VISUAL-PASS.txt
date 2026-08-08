@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : neighborhood-barre
 folder      : C:\VendlyVault\_tmp\autodemo\demos\neighborhood-barre
-audited_at  : 2026-08-08T18:49:27Z
+audited_at  : 2026-08-08T19:16:45Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\neighborhood-barre.png
-shot_sha256 : 8D7232697CFEC62BAE93D07093174F4E74D1287EE04DBBF94CA4D957BB5FE129
+shot_sha256 : 864230CA3F8685A70B5FC316F176E8E5A8783A899F578FA46B7204DED5FE5DA6
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 191 chars: "Find a Barre studio in Knoxville (Bearden), Tennessee. Join "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1082966 bytes, 243 distinct colours, modal colour covers 35.8% of sampled pixels
+      measured : 1280x2000px, 1082970 bytes, 243 distinct colours, modal colour covers 35.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

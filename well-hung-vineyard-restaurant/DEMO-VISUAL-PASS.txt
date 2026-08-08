@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : well-hung-vineyard-restaurant
 folder      : C:\VendlyVault\_tmp\autodemo\demos\well-hung-vineyard-restaurant
-audited_at  : 2026-08-08T18:49:27Z
+audited_at  : 2026-08-08T19:16:45Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\well-hung-vineyard-restaurant.png
-shot_sha256 : 9CC6689645078CD52BC981C0EADD2672B06CA96FFE4AF30E516452626FC9DD0F
+shot_sha256 : 46F97F3775092514E29A504538094C4FF460CE45167A391A9F7FFDF058EDFA15
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 60 chars: "Well Hung Vineyard has a proud heritage and a bright future."
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1926933 bytes, 174 distinct colours, modal colour covers 14.0% of sampled pixels
+      measured : 1280x2000px, 1926932 bytes, 174 distinct colours, modal colour covers 14.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

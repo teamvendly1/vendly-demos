@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : john-rutledge-house-inn
 folder      : C:\VendlyVault\_tmp\autodemo\demos\john-rutledge-house-inn
-audited_at  : 2026-08-08T18:49:27Z
+audited_at  : 2026-08-08T19:16:45Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\john-rutledge-house-inn.png
-shot_sha256 : 5516E8BF3D693A7ADA62767C4E0839DCF44D6F6B8D3C79AC3B4978B766EF88CB
+shot_sha256 : 337E9C996B2578714E6C9E1977CBD3AFE4ADEDB33736E1FB06B3CB4E1E4DF32C
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 155 chars: "Experience the John Rutledge House Inn, a living historic la"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2060136 bytes, 242 distinct colours, modal colour covers 39.4% of sampled pixels
+      measured : 1280x2000px, 2060137 bytes, 242 distinct colours, modal colour covers 39.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
