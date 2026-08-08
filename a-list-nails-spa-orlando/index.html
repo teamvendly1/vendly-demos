@@ -79,6 +79,22 @@ h2{font-size:clamp(28px,4vw,44px);line-height:1.12;margin:0 0 18px;letter-spacin
 footer{padding:52px 0 70px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
 .src{font-size:12.5px;color:#8b7d82;max-width:64ch}
+section,#top,#gallery,#services,#story,#visit{scroll-margin-top:78px}
+@media(max-width:760px){
+  header .wrap{padding:11px 18px;gap:10px}
+  .brand{font-size:16.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:56%}
+  header .btn{padding:10px 16px;font-size:13px}
+  .preview{font-size:12px;padding:8px 16px}
+  .hero{min-height:84vh}
+  .hero .wrap{padding:48px 22px 52px}
+  .hero h1{max-width:none}
+  section{padding:52px 0}
+  .bar .wrap{padding:26px 22px;gap:20px}
+  .lead{margin-bottom:26px}
+  .svc li{padding:19px 0}
+  .builtby{margin-top:30px;padding-top:24px;gap:16px}
+  section,#top,#gallery,#services,#story,#visit{scroll-margin-top:60px}
+}
 </style>
 </head>
 <body>
@@ -112,7 +128,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
 </div></div>
 <section id="gallery"><div class="wrap">
   <p class="eyebrow">The work</p>
-  <h2>Their own photographs, not stock</h2>
+  <h2>Nails they have done in Orlando</h2>
   <p class="lead">Every picture below was published by A-List Nails &amp; Spa Orlando.</p>
   <div class="gal gal-grid">
     <figure><img src="assets/site-4.jpg" alt="Photograph published by A-List Nails &amp; Spa Orlando" loading="lazy" decoding="async"></figure>
@@ -126,7 +142,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
 </div></section>
 <section id="services"><div class="wrap">
   <p class="eyebrow">On the menu</p>
-  <h2>What they named as theirs</h2>
+  <h2>Gel manicures, and the rest of what they list</h2>
   <p class="lead">Taken from A-List Nails &amp; Spa Orlando’s own published description of their work. Prices are not shown here because they change, and a number that is out of date is worse than none.</p>
   <ul class="svc">
     <li><h3>Gel manicures</h3><p>A manicure finished in gel and cured under lamp, so it stays put longer than lacquer.</p></li>
