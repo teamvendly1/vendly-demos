@@ -70,6 +70,7 @@ h2{font-size:clamp(25px,3.4vw,36px);line-height:1.18;margin:0 0 14px;letter-spac
 @media(max-width:820px){.cards{grid-template-columns:1fr}}
 .pcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
 .builtby{max-width:640px;margin:30px auto 0;display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}
+.builtby.first{margin:0 0 22px;padding-top:0;border-top:0;max-width:70ch}
 .builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
 .builtby p{margin:0;font-size:.92rem;line-height:1.55;color:#cbbdb0}
 @media (max-width:560px){.builtby{flex-direction:column;text-align:center}}
@@ -188,16 +189,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div></section>
 <section class="pitch"><div class="wrap">
   <p class="eyebrow" style="color:#f0c9a0">From Vendly</p>
-  <h2>What this page would do running live</h2>
-  <p class="lead">Built from your own photographs and wording. Here is what it adds once it is live rather than a preview.</p>
+  <div class="builtby first">
+    <img src="vendly-founder.jpg" alt="Jacob Bailey, Vendly" width="56" height="56" loading="lazy">
+    <p>Built by Jacob Bailey at Vendly, from Henry's on the Market's own published photographs and wording, so you could look at it rather than read a pitch about it. If anything here is wrong, tell me and I will fix it.</p>
+  </div>
+  <p class="lead">Here is what it adds once it is live rather than a preview.</p>
   <div class="cards">
     <div class="pcard"><h3>Answers while you are busy</h3><p>An assistant on the page handles hours, directions and catering questions, so the phone rings for orders instead of directions.</p></div>
     <div class="pcard"><h3>Built for a phone</h3><p>Most people will find you on a phone first. This is laid out for that screen, not shrunk down to it.</p></div>
     <div class="pcard"><h3>Ordering first</h3><p>Calling to order is the first thing on the page and the last, because that is the action worth making easy.</p></div>
-  </div>
-  <div class="builtby">
-    <img src="vendly-founder.jpg" alt="Jacob Bailey, Vendly" width="56" height="56" loading="lazy">
-    <p>Built by Jacob Bailey at Vendly. I put this together from your own published photographs and wording so you could look at it rather than read a pitch about it. If anything here is wrong, tell me and I will fix it.</p>
   </div>
 </div></section>
 </main>
