@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : unity-in-greensboro
 folder      : C:\VendlyVault\_tmp\autodemo\demos\unity-in-greensboro
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\unity-in-greensboro.png
-shot_sha256 : BDC5F0314D54958AE85CF31866D9A0F069580041AE8F16B0F550C8A76E1D54B8
+shot_sha256 : F111E5040A43CD0DE76F28445EF11FDC2D162CD4BE72B8E8078B71D9543F063A
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 147 chars: "Unity is a positive, practical, progressive approach to Chri"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 792443 bytes, 231 distinct colours, modal colour covers 74.6% of sampled pixels
+      measured : 1280x2000px, 792446 bytes, 231 distinct colours, modal colour covers 74.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

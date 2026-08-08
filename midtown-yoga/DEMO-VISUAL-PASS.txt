@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : midtown-yoga
 folder      : C:\VendlyVault\_tmp\autodemo\demos\midtown-yoga
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\midtown-yoga.png
-shot_sha256 : D5421ECF7A56841095428924C1C8DCC8B1CD73904B4159F1F03E94DA02171F68
+shot_sha256 : F7A0F1436DF01C2D4B012E0DC0108E4B42AA2BC33C3F291224291706466C29E1
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 196 chars: "Midtown Yoga Richmond offers hot and warm yoga classes, incl"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 941619 bytes, 231 distinct colours, modal colour covers 42.5% of sampled pixels
+      measured : 1280x2000px, 941597 bytes, 231 distinct colours, modal colour covers 42.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-row
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-row
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-row.png
-shot_sha256 : 2A2CEF841C84CEC0FF8C267DBADDB5AC512126CF1E6AE111CACFD1A9C4A01A8D
+shot_sha256 : 19FE877895974FAAF6A6AF090D6775385F4ADF0404EB3A6622BD9F936D19A677
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16113 bytes
+      measured : present, 16120 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1785 bytes of visible text
+      measured : none in 1792 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 17 sentence(s) checked, all distinct
@@ -43,19 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16113 bytes of HTML
+      measured : none in 16120 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #E22F1C on #FFFFFF = 4.51:1 (needs 4.5); --a #E22F1C on #FFFFFF = 4.51:1 (needs 4.5); --b #5B130B on #FFFFFF = 13.61:1 (needs 4.5); --b #5B130B on #DBE4EC = 10.58:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1785 bytes visible (floor 900)
+      measured : 1792 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 287 chars: "The Row Kitchen Pub in Nashville, TN. For over 30 years, The"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1622339 bytes, 211 distinct colours, modal colour covers 36.7% of sampled pixels
+      measured : 1280x2000px, 1623068 bytes, 211 distinct colours, modal colour covers 36.7% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

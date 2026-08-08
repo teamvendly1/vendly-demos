@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : shoney-s
 folder      : C:\VendlyVault\_tmp\autodemo\demos\shoney-s
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\shoney-s.png
-shot_sha256 : DAD956511CCB7EC26406D472E5CEAFD462CD3FDC677444E136C8E8F3C2322626
+shot_sha256 : 46EC44EA264ABA3059B64ACD45E05EB6552AB58D8774AD29D6D2551E426E337D
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15600 bytes
+      measured : present, 15603 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1615 bytes of visible text
+      measured : none in 1618 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 15 sentence(s) checked, all distinct
@@ -43,19 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15600 bytes of HTML
+      measured : none in 15603 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #C22A32 on #FFFFFF = 5.72:1 (needs 4.5); --a #C22A32 on #FFFFFF = 5.72:1 (needs 4.5); --b #541216 on #FFFFFF = 14.24:1 (needs 4.5); --b #541216 on #DBE4EC = 11.06:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1615 bytes visible (floor 900)
+      measured : 1618 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 138 chars: "Enjoy family-friendly American dining at Shoney s located on"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1344857 bytes, 236 distinct colours, modal colour covers 40.9% of sampled pixels
+      measured : 1280x2000px, 1345418 bytes, 236 distinct colours, modal colour covers 40.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

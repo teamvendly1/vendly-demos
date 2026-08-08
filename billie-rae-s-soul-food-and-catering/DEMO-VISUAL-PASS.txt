@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : billie-rae-s-soul-food-and-catering
 folder      : C:\VendlyVault\_tmp\autodemo\demos\billie-rae-s-soul-food-and-catering
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\billie-rae-s-soul-food-and-catering.png
-shot_sha256 : D9E62B95EFE8550205552BCEB126041C711D8553703FAE4963321D1FE4204D32
+shot_sha256 : 68904172756830C873A879FB31DF2030E6DE369DA82EB99183D9C2CA227D6702
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15058 bytes
+      measured : present, 15065 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 4 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1846 bytes of visible text
+      measured : none in 1853 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
@@ -43,19 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15058 bytes of HTML
+      measured : none in 15065 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #E42A0C on #FFFFFF = 4.53:1 (needs 4.5); --a #E42A0C on #FFFFFF = 4.53:1 (needs 4.5); --b #5E1408 on #FFFFFF = 13.3:1 (needs 4.5); --b #5E1408 on #DBE4EC = 10.33:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1846 bytes visible (floor 900)
+      measured : 1853 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 211 chars: "Founded in 2023, Billie Rae's BBQ Soul Food and Catering is "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 866590 bytes, 193 distinct colours, modal colour covers 30.7% of sampled pixels
+      measured : 1280x2000px, 867392 bytes, 193 distinct colours, modal colour covers 30.7% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

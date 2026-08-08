@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : pure-electrolysis
 folder      : C:\VendlyVault\_tmp\autodemo\demos\pure-electrolysis
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\pure-electrolysis.png
-shot_sha256 : 6025281D5F164736F6D81D601050EACEBD5E0F50A16DB5AA9B6289D8336C3D3D
+shot_sha256 : 43290628467B765CB924C0CE981603D3F6961301D048128CC61E0C11E24AE03A
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 92 chars: "Charleston s most trusted and experienced Electrologist for "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 975454 bytes, 221 distinct colours, modal colour covers 27.3% of sampled pixels
+      measured : 1280x2000px, 975487 bytes, 221 distinct colours, modal colour covers 27.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

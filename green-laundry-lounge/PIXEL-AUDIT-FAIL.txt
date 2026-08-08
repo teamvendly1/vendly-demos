@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+green-laundry-lounge
+verdict=
+FAIL
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T05:06:25
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+green-laundry-lounge-0.png, green-laundry-lounge-1.png, green-laundry-lounge-2.png, green-laundry-lounge-3.png
+
+WHAT WAS SEEN
+Copy is genuinely good - "Green Laundry Lounge in Greer and Greenville, SC offers eco-friendly laundromat services, wash and fold, organic dry cleaning, and a cafe" - correct (864) number and Moorlyn Ln address. It FAILS on presentation: the identical logo renders TWICE inside one phone screen, small in the header and large again in the hero, because there is no hero photograph to fall back on. Same family as the 171 duplicate elements cleared tonight - it reads as though nobody looked at it.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.

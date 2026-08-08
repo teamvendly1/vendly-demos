@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : stefano-s-trattoria
 folder      : C:\VendlyVault\_tmp\autodemo\demos\stefano-s-trattoria
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\stefano-s-trattoria.png
-shot_sha256 : 1A9116FE8B7180AF5F27113C34ED97D0FA803846B2E4B4B300EA6583740B38F7
+shot_sha256 : 6A21C56CBB752379A88E943FED35B112713D681FD7566A9B16914ECA323A4988
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14708 bytes
+      measured : present, 14720 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 1 image tag(s)
@@ -31,31 +31,31 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1715 bytes of visible text
+      measured : none in 1727 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 13 distinct text node(s), none repeated 3+ times
+      measured : 14 distinct text node(s), none repeated 3+ times
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14708 bytes of HTML
+      measured : none in 14720 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #967031 on #FFFFFF = 4.51:1 (needs 4.5); --a #967031 on #FFFFFF = 4.51:1 (needs 4.5); --b #4D3A19 on #FFFFFF = 10.85:1 (needs 4.5); --b #4D3A19 on #DBE4EC = 8.44:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1715 bytes visible (floor 900)
+      measured : 1727 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 146 chars: "Authentic Sicilian cuisine in Winter Springs, FL. Order onli"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 642367 bytes, 123 distinct colours, modal colour covers 37.9% of sampled pixels
+      measured : 1280x2000px, 643271 bytes, 123 distinct colours, modal colour covers 37.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

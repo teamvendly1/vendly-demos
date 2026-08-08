@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : wheatberry-bakeshop
 folder      : C:\VendlyVault\_tmp\autodemo\demos\wheatberry-bakeshop
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\wheatberry-bakeshop.png
-shot_sha256 : 137782A29B54BA11043BCFE1EF5CEBBE86494A47FF1558ED816126099E52DED2
+shot_sha256 : 09AB1214F0D5AA11FD3BB276191CD253D9ABC52169CF1408426EBBC9BD84F983
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 92 chars: "A small wholesale bakery in the Queen city. Check out our we"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1796316 bytes, 251 distinct colours, modal colour covers 35.5% of sampled pixels
+      measured : 1280x2000px, 1796321 bytes, 251 distinct colours, modal colour covers 35.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

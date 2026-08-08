@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : collier-hall
 folder      : C:\VendlyVault\_tmp\autodemo\demos\collier-hall
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\collier-hall.png
-shot_sha256 : 1C2485985833236AD16FC04ECF97CE400B4A0220EEC5E7DCE3151AC0313041CA
+shot_sha256 : D30DD3D9DAAAFBEA97FEE871A93308CC2DCCF6D399EF0E0440B3BEDD8F6CAE39
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 154 chars: "Collier Hall is a restored 1907 ballroom with an outdoor dec"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 664383 bytes, 209 distinct colours, modal colour covers 46.4% of sampled pixels
+      measured : 1280x2000px, 664386 bytes, 209 distinct colours, modal colour covers 46.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

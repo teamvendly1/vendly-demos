@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-parlour
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-parlour
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-parlour.png
-shot_sha256 : F5C992796D1B9BA01EB01A7543046A86846F2A4A3F79EF5B7D17F67424525FBE
+shot_sha256 : 7EE3A309C20311D332F02559B9720A8B3EF81EA41E990EB15444B1992C6C588C
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 174 chars: "We make the best ice cream around, with the best ingredients"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1093575 bytes, 215 distinct colours, modal colour covers 45.0% of sampled pixels
+      measured : 1280x2000px, 1093572 bytes, 215 distinct colours, modal colour covers 45.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

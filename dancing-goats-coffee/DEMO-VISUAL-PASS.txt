@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : dancing-goats-coffee
 folder      : C:\VendlyVault\_tmp\autodemo\demos\dancing-goats-coffee
-audited_at  : 2026-08-08T08:41:02Z
+audited_at  : 2026-08-08T09:12:53Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\dancing-goats-coffee.png
-shot_sha256 : 7FC82A8AD1E22605213C8B6406D15627ECA4E7D48228F10CEAE7627D6DF7377E
+shot_sha256 : 0BA8B009A4A6DEF39832FD951C72F3212E8B972B8DF79137D5538E30DBB9A338
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 235 chars: "Home to specialty single origin coffee and blended coffees a"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 978123 bytes, 240 distinct colours, modal colour covers 45.1% of sampled pixels
+      measured : 1280x2000px, 978076 bytes, 240 distinct colours, modal colour covers 45.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
