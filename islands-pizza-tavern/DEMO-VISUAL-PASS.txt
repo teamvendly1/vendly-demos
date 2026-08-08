@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : islands-pizza-tavern
 folder      : C:\VendlyVault\_tmp\autodemo\demos\islands-pizza-tavern
-audited_at  : 2026-08-08T09:25:18Z
+audited_at  : 2026-08-08T09:37:07Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\islands-pizza-tavern.png
-shot_sha256 : 27D4E3D252470174D90C31D1CB9829BC9D8673F6C6BF16F3A113CC023BC69D71
+shot_sha256 : 2EC2E07EFBCDE54B32591AA82513136F2E133FD7F84713DB0C8984C1F8BCB707
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 158 chars: "Welcome to Island Pizza Tavern! Proudly serving the Davis Is"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1673135 bytes, 248 distinct colours, modal colour covers 42.5% of sampled pixels
+      measured : 1280x2000px, 1673138 bytes, 248 distinct colours, modal colour covers 42.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

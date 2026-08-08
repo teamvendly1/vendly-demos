@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : sunrise-tattoo
 folder      : C:\VendlyVault\_tmp\autodemo\demos\sunrise-tattoo
-audited_at  : 2026-08-08T09:25:18Z
+audited_at  : 2026-08-08T09:37:07Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\sunrise-tattoo.png
-shot_sha256 : A059D0931E760423E4B4AFD49F529F0DB4446CA6FD35FB863CA87CAA7E709E7E
+shot_sha256 : 51D4390FFB65DD8E34A073B69D72C9B6C48FB988FE7DD39D7B1F38BDD8911570
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 204 chars: "Sunrise Tattoo is a custom tattoo studio located in downtown"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1521984 bytes, 237 distinct colours, modal colour covers 28.5% of sampled pixels
+      measured : 1280x2000px, 1521911 bytes, 237 distinct colours, modal colour covers 28.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

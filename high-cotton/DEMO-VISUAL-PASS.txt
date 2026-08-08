@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : high-cotton
 folder      : C:\VendlyVault\_tmp\autodemo\demos\high-cotton
-audited_at  : 2026-08-08T09:25:18Z
+audited_at  : 2026-08-08T09:37:07Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\high-cotton.png
-shot_sha256 : 674739D101AA9F909F7661D0537F31F06882B4DCC53114D93ABE3E66AA823054
+shot_sha256 : 7CF62EE7089C7F7019FEE024F315D0A90561DD8F08E25DBFA51DE8F7C291ECB8
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 189 chars: "From conversation and laughter in our bar to our stylish din"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1795054 bytes, 241 distinct colours, modal colour covers 42.3% of sampled pixels
+      measured : 1280x2000px, 1795065 bytes, 241 distinct colours, modal colour covers 42.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

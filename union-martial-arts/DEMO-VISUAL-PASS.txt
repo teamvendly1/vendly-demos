@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : union-martial-arts
 folder      : C:\VendlyVault\_tmp\autodemo\demos\union-martial-arts
-audited_at  : 2026-08-08T09:25:18Z
+audited_at  : 2026-08-08T09:37:07Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\union-martial-arts.png
-shot_sha256 : 4B2C1D96FDAB40161EF4225CF82D6B1E021F6784FFB7A4247A1559B573FAA5AB
+shot_sha256 : 2BA7BCAB446CCDB108E0362B94435F63303909BEF751E1408ADDB31F0E3C90C0
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 127 chars: "Premier martial arts academy in Union County NC offering kic"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1393255 bytes, 229 distinct colours, modal colour covers 44.5% of sampled pixels
+      measured : 1280x2000px, 1393254 bytes, 229 distinct colours, modal colour covers 44.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
