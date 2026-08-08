@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : car-wash-2go
 folder      : C:\VendlyVault\_tmp\autodemo\demos\car-wash-2go
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : FAIL
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\car-wash-2go.png
-shot_sha256 : 5F66E68D6BE87B3C5AD504F13790200E0F9B489273BD7F6AFF5A069E85590A1F
+shot_sha256 : 764C7C3092C9D6B6A4BA5452D5C767C937CA2E30296452797389E52720EADB2E
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14310 bytes
+      measured : present, 14176 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 2 image tag(s)
+      measured : 1 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 2 resolvable src(s) exist on disk
+      measured : all 1 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Car Wash 2go" is a plausible business name and is visible on the page (H1 reads "Car Wash 2go")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14310 bytes of HTML
+      measured : none in 14176 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #2A6A54 on #FFFFFF = 6.39:1 (needs 4.5); --a #1E5140 on #FFFFFF = 9.11:1 (needs 4.5); --b #122B22 on #FFFFFF = 15.06:1 (needs 4.5); --b #122B22 on #DBE4EC = 11.7:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 121 chars: "Car Wash 2go offers premium car detailing in Birmingham, AL."
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 111909 bytes, 80 distinct colours, modal colour covers 29.4% of sampled pixels
+      measured : 1280x2000px, 115207 bytes, 86 distinct colours, modal colour covers 29.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-flower-shop
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-flower-shop
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : FAIL
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-flower-shop.png
-shot_sha256 : 4EA6E8D30CB02A580EA4B6D2CB2AA4F480B0944C154D5021CF13DA94683721B6
+shot_sha256 : 7FB95283046FD65FF442C26CC3343CA1E68D6C675B92AFCEB0328560B8A5D54D
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15977 bytes
+      measured : present, 15841 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 12 image tag(s)
+      measured : 11 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 12 resolvable src(s) exist on disk
+      measured : all 11 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "The Flower Shop" is a plausible business name and is visible on the page (H1 reads "The Flower Shop")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15977 bytes of HTML
+      measured : none in 15841 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #86191B on #FFFFFF = 9.68:1 (needs 4.5); --a #86191B on #FFFFFF = 9.68:1 (needs 4.5); --b #561011 on #FFFFFF = 14.21:1 (needs 4.5); --b #561011 on #DBE4EC = 11.04:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 148 chars: "The Flower Shop is your local florist serving ORLANDO, FL. W"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 709710 bytes, 229 distinct colours, modal colour covers 50.0% of sampled pixels
+      measured : 1280x2000px, 899386 bytes, 237 distinct colours, modal colour covers 51.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

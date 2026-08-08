@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : matador
 folder      : C:\VendlyVault\_tmp\autodemo\demos\matador
-audited_at  : 2026-08-08T09:25:18Z
+audited_at  : 2026-08-08T09:33:19Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\matador.png
-shot_sha256 : 0C1148BEFFCB7282F76D11450B20DAA99175815929CE035D70CBF9B904A0CB8E
+shot_sha256 : DFB77E7FACA4DDD6DC49AF399C66ED6FAFCEB3EA1C539D635F108C98A7364B1D
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15664 bytes
+      measured : present, 15503 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 6 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1783 bytes of visible text
+      measured : none in 1622 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
@@ -43,19 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15664 bytes of HTML
+      measured : none in 15503 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A06C13 on #FFFFFF = 4.52:1 (needs 4.5); --a #A06C13 on #FFFFFF = 4.52:1 (needs 4.5); --b #5B3E0B on #FFFFFF = 9.82:1 (needs 4.5); --b #5B3E0B on #DBE4EC = 7.63:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1783 bytes visible (floor 900)
+      measured : 1622 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
-      measured : 300 chars: "The Matador is located in the heart of downtown Charleston. "
+      measured : 139 chars: "The Matador is located in the heart of downtown Charleston. "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1605842 bytes, 229 distinct colours, modal colour covers 42.3% of sampled pixels
+      measured : 1280x2000px, 1471955 bytes, 225 distinct colours, modal colour covers 42.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

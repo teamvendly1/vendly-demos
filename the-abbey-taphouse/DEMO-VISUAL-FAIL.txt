@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-abbey-taphouse
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-abbey-taphouse
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : FAIL
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-abbey-taphouse.png
-shot_sha256 : EE4020BEA00994F90101E08F46AED583F7EE8818DC37068EA6058BFD295C128B
+shot_sha256 : 860B1BA54CE346CEB8E79F66C550EFA874C31D757B25008DD369A4699319F38F
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : NO DESCRIPTION AT ALL - the page never says what this business does
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 976043 bytes, 227 distinct colours, modal colour covers 25.3% of sampled pixels
+      measured : 1280x2000px, 976053 bytes, 227 distinct colours, modal colour covers 25.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

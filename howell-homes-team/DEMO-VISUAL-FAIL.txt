@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : howell-homes-team
 folder      : C:\VendlyVault\_tmp\autodemo\demos\howell-homes-team
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : FAIL
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\howell-homes-team.png
-shot_sha256 : 5936B95620C371F6EDCD4A9BDD2428B346C1AB5B353CA6F2F6C6AE5E6EC566EE
+shot_sha256 : 1D6346B34F222B423F8A859A562BBABB4CCC62216F8E2AFE0889DE420468C2B3
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 13534 bytes
+      measured : present, 13395 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 2 image tag(s)
+      measured : 1 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 2 resolvable src(s) exist on disk
+      measured : all 1 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Howell Homes Team" is a plausible business name and is visible on the page (H1 reads "Howell Homes Team")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 13534 bytes of HTML
+      measured : none in 13395 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #907300 on #FFFFFF = 4.53:1 (needs 4.5); --a #907300 on #FFFFFF = 4.53:1 (needs 4.5); --b #5E4D08 on #FFFFFF = 8.26:1 (needs 4.5); --b #5E4D08 on #DBE4EC = 6.42:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : NO DESCRIPTION AT ALL - the page never says what this business does
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 99657 bytes, 89 distinct colours, modal colour covers 31.4% of sampled pixels
+      measured : 1280x2000px, 95556 bytes, 83 distinct colours, modal colour covers 32.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
