@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : t-s-brunch-bar
 folder      : C:\VendlyVault\_tmp\autodemo\demos\t-s-brunch-bar
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\t-s-brunch-bar.png
-shot_sha256 : 87D4E6642813A145A8B231D6C1C79151E7AA3C5CA3B7A31241331434222417B8
+shot_sha256 : 8D774998C6149C5ED1BE78583B18DCEA23A2EE0A1A722D41FC5DA9EC0FB77CE9
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15740 bytes
+      measured : present, 15755 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 2 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15740 bytes of HTML
+      measured : none in 15755 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #CF3546 on #FFFFFF = 4.94:1 (needs 4.5); --a #CF3546 on #FFFFFF = 4.94:1 (needs 4.5); --b #52141B on #FFFFFF = 14.24:1 (needs 4.5); --b #52141B on #DBE4EC = 11.07:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 2069 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 541 chars: "T s Brunch Bar in Atlanta, GA. T s Brunch Bar introduces Bru"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 560182 bytes, 118 distinct colours, modal colour covers 38.0% of sampled pixels
+      measured : 1280x2000px, 558949 bytes, 118 distinct colours, modal colour covers 37.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : bijou-theatre
 folder      : C:\VendlyVault\_tmp\autodemo\demos\bijou-theatre
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\bijou-theatre.png
-shot_sha256 : 41D1142AC0A335FFA45761A7FB6FED400EB760C0B2F4FD1299D9F37D87A397DF
+shot_sha256 : 2E7291596E2E8F31AFD14FE636654859E5375E87728EAC5353B488983953FB62
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15565 bytes
+      measured : present, 15580 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 9 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15565 bytes of HTML
+      measured : none in 15580 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #EE020B on #FFFFFF = 4.52:1 (needs 4.5); --a #EE020B on #FFFFFF = 4.52:1 (needs 4.5); --b #5E080B on #FFFFFF = 13.86:1 (needs 4.5); --b #5E080B on #DBE4EC = 10.77:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1597 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 153 chars: "The Bijou Theatre provides events that enrich the lives of E"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 911583 bytes, 218 distinct colours, modal colour covers 48.7% of sampled pixels
+      measured : 1280x2000px, 930373 bytes, 231 distinct colours, modal colour covers 48.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

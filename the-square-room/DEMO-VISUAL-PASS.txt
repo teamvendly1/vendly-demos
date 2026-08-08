@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-square-room
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-square-room
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-square-room.png
-shot_sha256 : 14602E3E532B32E6CCD1EB677890B0B77C0CC8D222354AB298EE0997E4BBFCA5
+shot_sha256 : 930CF7E6735F6F8CB8ACBE55FEA102D05422AC3852048A1DA15FEA253D1AB71B
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16295 bytes
+      measured : present, 16179 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 11 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1844 bytes of visible text
+      measured : none in 1773 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16295 bytes of HTML
+      measured : none in 16179 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #011DFA on #FFFFFF = 8.21:1 (needs 4.5); --a #011DFA on #FFFFFF = 8.21:1 (needs 4.5); --b #08115E on #FFFFFF = 16.77:1 (needs 4.5); --b #08115E on #DBE4EC = 13.03:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1844 bytes visible (floor 900)
+      measured : 1773 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 49 chars: "Knoxville s Listening Room. www.thesquareroom.com"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 567730 bytes, 199 distinct colours, modal colour covers 47.0% of sampled pixels
+      measured : 1280x2000px, 742413 bytes, 221 distinct colours, modal colour covers 44.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

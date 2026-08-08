@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : holy-land-market
 folder      : C:\VendlyVault\_tmp\autodemo\demos\holy-land-market
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\holy-land-market.png
-shot_sha256 : 19E02450ED84C34055009EA8C0E893B21900D5BD62271A3DD6AEAAC0A0EB7B7B
+shot_sha256 : B2045FD36F113B2BA7B68E1D0448CCE23F6DA237EADFD5FF5DE95EBAAF082825
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15836 bytes
+      measured : present, 15851 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15836 bytes of HTML
+      measured : none in 15851 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #116DFE on #FFFFFF = 4.52:1 (needs 4.5); --a #116DFE on #FFFFFF = 4.52:1 (needs 4.5); --b #08295E on #FFFFFF = 14.1:1 (needs 4.5); --b #08295E on #DBE4EC = 10.96:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1603 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 189 chars: "Opened in Knoxville in 2006, and we re proud to be a part of"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2162626 bytes, 243 distinct colours, modal colour covers 39.7% of sampled pixels
+      measured : 1280x2000px, 2162602 bytes, 243 distinct colours, modal colour covers 39.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

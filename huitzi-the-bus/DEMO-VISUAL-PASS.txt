@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : huitzi-the-bus
 folder      : C:\VendlyVault\_tmp\autodemo\demos\huitzi-the-bus
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\huitzi-the-bus.png
-shot_sha256 : B5BD31F0F759F0B2D4C6159FCFECEF657C38D32446A0DED3588F629A9BDF4B23
+shot_sha256 : 9DF4C436C72F46F9EB77B31616B55D9B276AD8D96F3CD9C129F38E54AC3A0AA7
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15368 bytes
+      measured : present, 15383 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15368 bytes of HTML
+      measured : none in 15383 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1546 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 78 chars: "The best Coffee in Columbia, South Carolina. Our shop is a b"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1653927 bytes, 233 distinct colours, modal colour covers 41.6% of sampled pixels
+      measured : 1280x2000px, 1654027 bytes, 233 distinct colours, modal colour covers 41.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

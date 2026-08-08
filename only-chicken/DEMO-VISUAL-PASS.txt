@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : only-chicken
 folder      : C:\VendlyVault\_tmp\autodemo\demos\only-chicken
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\only-chicken.png
-shot_sha256 : 06F3CB50981694D3CA159BE8D49A5EA1D38776D453F588DBA173E5969FA0DECA
+shot_sha256 : B3F64BD95AF04E7CCA3A7F2E8E5AFC2ACD8B51A44CB9C004BDDFDF9E648814DE
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 13933 bytes
+      measured : present, 14259 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,28 +31,31 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1219 bytes of visible text
+      measured : none in 1510 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 13 sentence(s) checked, all distinct
+      measured : 15 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 8 distinct text node(s), none repeated 3+ times
+      measured : 9 distinct text node(s), none repeated 3+ times
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 13933 bytes of HTML
+      measured : none in 14259 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1219 bytes visible (floor 900)
+      measured : 1510 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 288 chars: "Instagram DoorDash Yelp Maps At 2127 Belcourt Ave., our chic"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1598792 bytes, 244 distinct colours, modal colour covers 27.0% of sampled pixels
+      measured : 1280x2000px, 1827293 bytes, 240 distinct colours, modal colour covers 26.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

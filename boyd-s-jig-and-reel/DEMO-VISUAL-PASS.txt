@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : boyd-s-jig-and-reel
 folder      : C:\VendlyVault\_tmp\autodemo\demos\boyd-s-jig-and-reel
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\boyd-s-jig-and-reel.png
-shot_sha256 : A95D5DC130FA4A7827677D084BC14CF278ECA5BEAC327960D9B98554A36309B6
+shot_sha256 : E7276CD99CDAD99D6E8DBAB3CB6166FC386F69A28F6D44BB223EF02CCD8EB678
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15450 bytes
+      measured : present, 15465 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15450 bytes of HTML
+      measured : none in 15465 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #AD1904 on #FFFFFF = 7.2:1 (needs 4.5); --a #AD1904 on #FFFFFF = 7.2:1 (needs 4.5); --b #5E1208 on #FFFFFF = 13.41:1 (needs 4.5); --b #5E1208 on #DBE4EC = 10.42:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1426 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 161 chars: "Boyd s Jig and Reel is at the heart of Scottish culture in E"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1488136 bytes, 224 distinct colours, modal colour covers 41.5% of sampled pixels
+      measured : 1280x2000px, 1461851 bytes, 225 distinct colours, modal colour covers 41.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

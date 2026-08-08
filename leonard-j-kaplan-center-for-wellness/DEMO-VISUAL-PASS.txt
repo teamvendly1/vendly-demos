@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : leonard-j-kaplan-center-for-wellness
 folder      : C:\VendlyVault\_tmp\autodemo\demos\leonard-j-kaplan-center-for-wellness
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\leonard-j-kaplan-center-for-wellness.png
-shot_sha256 : 6967F6CF95FA2845128459555962B4D803064072F2DA6F034456D36DAF0C152B
+shot_sha256 : D5B274F655FE610B4F96E01C1E22F7A1A78D22AE0A30001375711B8D14842342
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15047 bytes
+      measured : present, 15062 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 5 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15047 bytes of HTML
+      measured : none in 15062 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #4249A8 on #FFFFFF = 7.64:1 (needs 4.5); --a #3A3F97 on #FFFFFF = 8.98:1 (needs 4.5); --b #1E2154 on #FFFFFF = 14.99:1 (needs 4.5); --b #1E2154 on #DBE4EC = 11.65:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1533 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 99 chars: "Welcome to the Department of Recreation Wellness at the Univ"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1132079 bytes, 252 distinct colours, modal colour covers 30.3% of sampled pixels
+      measured : 1280x2000px, 1113563 bytes, 251 distinct colours, modal colour covers 30.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

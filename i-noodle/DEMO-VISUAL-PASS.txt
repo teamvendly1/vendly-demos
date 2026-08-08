@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : i-noodle
 folder      : C:\VendlyVault\_tmp\autodemo\demos\i-noodle
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\i-noodle.png
-shot_sha256 : BC7CECB5CF91E31B8A0360C915DAAA908CE65D37A1918680088EC56A9C66E73A
+shot_sha256 : 7F1AD4C4AA1BEE121AB091744E43222CDFCF12D9D9E80E5881753E3CEC365955
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14774 bytes
+      measured : present, 14789 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 4 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14774 bytes of HTML
+      measured : none in 14789 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1604 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 126 chars: "Enjoy orders from I Noodle, Best Chinese cuisine in Midlothi"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1113241 bytes, 202 distinct colours, modal colour covers 35.5% of sampled pixels
+      measured : 1280x2000px, 1113207 bytes, 203 distinct colours, modal colour covers 35.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

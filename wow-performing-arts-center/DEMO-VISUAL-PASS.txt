@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : wow-performing-arts-center
 folder      : C:\VendlyVault\_tmp\autodemo\demos\wow-performing-arts-center
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\wow-performing-arts-center.png
-shot_sha256 : C85BDF28DEB540FFE7A92A2B30AB1BED675EDFFAFE1C541C4F2DFF5ECF6146A6
+shot_sha256 : FCB8F5B3E8AED8AB86DA5C5384F128F793919E0749F9E8521500BCAB0426AA5B
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 13698 bytes
+      measured : present, 13713 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 1 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 13698 bytes of HTML
+      measured : none in 13713 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #2C8191 on #FFFFFF = 4.51:1 (needs 4.5); --a #2C8191 on #FFFFFF = 4.51:1 (needs 4.5); --b #18464E on #FFFFFF = 10.37:1 (needs 4.5); --b #18464E on #DBE4EC = 8.06:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1288 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 67 chars: "Performing Arts Programs | Acting Classes | Workshops | Live"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 112852 bytes, 74 distinct colours, modal colour covers 52.8% of sampled pixels
+      measured : 1280x2000px, 112845 bytes, 74 distinct colours, modal colour covers 52.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

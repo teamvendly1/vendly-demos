@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : mint-hill-dentistry
 folder      : C:\VendlyVault\_tmp\autodemo\demos\mint-hill-dentistry
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\mint-hill-dentistry.png
-shot_sha256 : A58E66AB2684B023E4F7576C8A9C6AB20B59C2AC6E976E0751651675BB183F4C
+shot_sha256 : FC78FAB48E58BA54F5D884928BD0AAA1626EE4EC3A7BDBD2B3ABD833AEFD8B63
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15209 bytes
+      measured : present, 15224 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 7 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15209 bytes of HTML
+      measured : none in 15224 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #007F00 on #FFFFFF = 5.2:1 (needs 4.5); --a #007F00 on #FFFFFF = 5.2:1 (needs 4.5); --b #085E08 on #FFFFFF = 8.03:1 (needs 4.5); --b #085E08 on #DBE4EC = 6.24:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1534 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 151 chars: "Get the smile you deserve! Mint Hill Dentistry offers a vari"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 693275 bytes, 221 distinct colours, modal colour covers 29.5% of sampled pixels
+      measured : 1280x2000px, 678822 bytes, 224 distinct colours, modal colour covers 29.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

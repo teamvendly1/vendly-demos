@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : let-s-ride-atlanta
 folder      : C:\VendlyVault\_tmp\autodemo\demos\let-s-ride-atlanta
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\let-s-ride-atlanta.png
-shot_sha256 : DA60E9E7B3279797DEE3A01F2D9DD3756F8E58701C15A01BB39FE4BF8C46EA28
+shot_sha256 : D1B20B7F2A4B9C41D33D962F977F14B7DAA2173A54DEB070717F4CDB1453B45E
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14828 bytes
+      measured : present, 14843 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 6 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14828 bytes of HTML
+      measured : none in 14843 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #046B4E on #FFFFFF = 6.53:1 (needs 4.5); --a #046B4E on #FFFFFF = 6.53:1 (needs 4.5); --b #085E46 on #FFFFFF = 7.78:1 (needs 4.5); --b #085E46 on #DBE4EC = 6.05:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1469 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 42 chars: "Lets Ride Atlanta - Ride Clean, Ride Green"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1077202 bytes, 242 distinct colours, modal colour covers 38.3% of sampled pixels
+      measured : 1280x2000px, 1054570 bytes, 244 distinct colours, modal colour covers 38.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-citadel
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-citadel
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-citadel.png
-shot_sha256 : 4DEBBD26E03817C1205DECBAD4DB549B32D10D51A6E40FEE480F8758DF9DAC7A
+shot_sha256 : 0DA5CFA6350445F30E30289345F002D442567C3D180CD313D1DAD8F782EB60D3
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15674 bytes
+      measured : present, 15689 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15674 bytes of HTML
+      measured : none in 15689 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #1F3A60 on #FFFFFF = 11.46:1 (needs 4.5); --a #1F3A60 on #FFFFFF = 11.46:1 (needs 4.5); --b #192F4D on #FFFFFF = 13.5:1 (needs 4.5); --b #192F4D on #DBE4EC = 10.49:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1582 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 219 chars: "The Citadel is a landmark in Charleston and South Carolina t"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 868175 bytes, 217 distinct colours, modal colour covers 45.7% of sampled pixels
+      measured : 1280x2000px, 856918 bytes, 219 distinct colours, modal colour covers 45.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

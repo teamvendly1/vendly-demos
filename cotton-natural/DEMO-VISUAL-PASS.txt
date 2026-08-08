@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : cotton-natural
 folder      : C:\VendlyVault\_tmp\autodemo\demos\cotton-natural
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\cotton-natural.png
-shot_sha256 : 33C9886A83D257D28F8DC5B90FABC0543CFDCA548BB4A941F12321BEFAA68AFE
+shot_sha256 : 387ECB0EE01F69CE901CF0E2EB709AFA192A9755F2587D2640E7EDDA75F6BBA1
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15990 bytes
+      measured : present, 16005 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15990 bytes of HTML
+      measured : none in 16005 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #AA00FF on #FFFFFF = 5.06:1 (needs 4.5); --a #AA00FF on #FFFFFF = 5.06:1 (needs 4.5); --b #41085E on #FFFFFF = 14.78:1 (needs 4.5); --b #41085E on #DBE4EC = 11.48:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1669 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 189 chars: "Since 1990, Cotton Natural has been delivering airy, fashion"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 832046 bytes, 234 distinct colours, modal colour covers 44.6% of sampled pixels
+      measured : 1280x2000px, 842338 bytes, 234 distinct colours, modal colour covers 44.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

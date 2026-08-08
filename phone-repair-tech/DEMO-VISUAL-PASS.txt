@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : phone-repair-tech
 folder      : C:\VendlyVault\_tmp\autodemo\demos\phone-repair-tech
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\phone-repair-tech.png
-shot_sha256 : 4A6ECA22F6EF46B697E66E4DECDEBE511BBE5DEE5F8EE7D5597EE328E5C12F14
+shot_sha256 : 6C8FF2FB7D640C2AD49E2139ACB5C87342434BBF1C17341EE21F5DF445A8D731
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14018 bytes
+      measured : present, 14033 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 2 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14018 bytes of HTML
+      measured : none in 14033 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #0E16D9 on #FFFFFF = 9.83:1 (needs 4.5); --a #0E16D9 on #FFFFFF = 9.83:1 (needs 4.5); --b #080B5E on #FFFFFF = 17.22:1 (needs 4.5); --b #080B5E on #DBE4EC = 13.38:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1375 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 109 chars: "Get your phone screen repaired in 30 minutes or less at our "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 257295 bytes, 156 distinct colours, modal colour covers 32.0% of sampled pixels
+      measured : 1280x2000px, 257298 bytes, 156 distinct colours, modal colour covers 32.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : home-bar
 folder      : C:\VendlyVault\_tmp\autodemo\demos\home-bar
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\home-bar.png
-shot_sha256 : 9A4E4BF8DF799064520A5DEB1208DB751F03C34A42C60F3DFDA476732BD29381
+shot_sha256 : 9BC2F03695B42EA3ABE77AFA8A9B9C34C0D3C548E6C9CA5C93969B98986121BF
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16277 bytes
+      measured : present, 16292 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16277 bytes of HTML
+      measured : none in 16292 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #3B2B70 on #FFFFFF = 11.89:1 (needs 4.5); --a #3B2B70 on #FFFFFF = 11.89:1 (needs 4.5); --b #271C4A on #FFFFFF = 15.54:1 (needs 4.5); --b #271C4A on #DBE4EC = 12.08:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1703 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 258 chars: "Bob Harriet s Home bar is a neighborhood pub- serving season"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1618975 bytes, 237 distinct colours, modal colour covers 46.5% of sampled pixels
+      measured : 1280x2000px, 1618346 bytes, 237 distinct colours, modal colour covers 46.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

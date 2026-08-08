@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : beer-city-bicycles
 folder      : C:\VendlyVault\_tmp\autodemo\demos\beer-city-bicycles
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\beer-city-bicycles.png
-shot_sha256 : A6099E4B3DD9D157DAAB653000D1C0CB5DFFC7D18EC6A140DD02B6F4482965A1
+shot_sha256 : C71C1FDE0A4A03FC4CE4384FD9909047C5F6024F480511DE94AB1CA27E5E3703
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14978 bytes
+      measured : present, 14858 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 2 image tag(s)
@@ -31,28 +31,31 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1834 bytes of visible text
+      measured : none in 1753 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 19 sentence(s) checked, all distinct
+      measured : 18 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 15 distinct text node(s), none repeated 3+ times
+      measured : 14 distinct text node(s), none repeated 3+ times
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14978 bytes of HTML
+      measured : none in 14858 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #0C7EB0 on #FFFFFF = 4.54:1 (needs 4.5); --a #0C7EB0 on #FFFFFF = 4.54:1 (needs 4.5); --b #08445E on #FFFFFF = 10.51:1 (needs 4.5); --b #08445E on #DBE4EC = 8.17:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1834 bytes visible (floor 900)
+      measured : 1753 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 153 chars: "Beer City Bicycles is a full service bike shop in Asheville,"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 629789 bytes, 162 distinct colours, modal colour covers 54.8% of sampled pixels
+      measured : 1280x2000px, 619858 bytes, 175 distinct colours, modal colour covers 49.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

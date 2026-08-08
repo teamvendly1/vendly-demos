@@ -2,7 +2,7 @@ DEMO VISUAL AUDIT
 =================
 slug        : cannon-street-apothecary
 folder      : C:\VendlyVault\_tmp\autodemo\demos\cannon-street-apothecary
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
@@ -16,7 +16,7 @@ A status word with no evidence is worthless, so every line below carries its mea
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16275 bytes
+      measured : present, 16290 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 8 image tag(s)
@@ -43,13 +43,16 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16275 bytes of HTML
+      measured : none in 16290 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #3B8185 on #FFFFFF = 4.5:1 (needs 4.5); --a #3B8185 on #FFFFFF = 4.5:1 (needs 4.5); --b #1F4447 on #FFFFFF = 10.63:1 (needs 4.5); --b #1F4447 on #DBE4EC = 8.26:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1874 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 171 chars: "Shop Cannon Street Apothecary, a Charleston hemp brand offer"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
       measured : 1280x2000px, 302623 bytes, 128 distinct colours, modal colour covers 60.5% of sampled pixels

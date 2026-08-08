@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : fiori-bar-and-lounge
 folder      : C:\VendlyVault\_tmp\autodemo\demos\fiori-bar-and-lounge
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\fiori-bar-and-lounge.png
-shot_sha256 : 5E8731CF57BACCB24B348B305C6DB22BDB6CBD1079AA742E608B56F7F561C08F
+shot_sha256 : 0D37CD1FD362C58DF4416F48BF5BC30F938AB8B9C1634A7ED09461C3EDE35072
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15749 bytes
+      measured : present, 15764 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15749 bytes of HTML
+      measured : none in 15764 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #917230 on #FFFFFF = 4.51:1 (needs 4.5); --a #917230 on #FFFFFF = 4.51:1 (needs 4.5); --b #4D3C19 on #FFFFFF = 10.63:1 (needs 4.5); --b #4D3C19 on #DBE4EC = 8.26:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1568 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 130 chars: "Fiori Bar Lounge in Knoxville is an upscale restaurant and l"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1436447 bytes, 239 distinct colours, modal colour covers 41.9% of sampled pixels
+      measured : 1280x2000px, 1436162 bytes, 238 distinct colours, modal colour covers 42.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

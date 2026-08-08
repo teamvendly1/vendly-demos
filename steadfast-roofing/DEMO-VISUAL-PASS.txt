@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : steadfast-roofing
 folder      : C:\VendlyVault\_tmp\autodemo\demos\steadfast-roofing
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\steadfast-roofing.png
-shot_sha256 : 4AD1669520C742760E7D46C920DC133E26B05D0CFB319021FF8D4006C1B75924
+shot_sha256 : 3168ED0E7CDBACF180BA0B86C389E637B8F7D61D0D29F4748562DAADF44892FB
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 17500 bytes
+      measured : present, 17347 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,28 +31,31 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 2381 bytes of visible text
+      measured : none in 2269 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 16 distinct text node(s), none repeated 3+ times
+      measured : 15 distinct text node(s), none repeated 3+ times
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 17500 bytes of HTML
+      measured : none in 17347 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A32A20 on #FFFFFF = 7.22:1 (needs 4.5); --a #1F3A5F on #FFFFFF = 11.48:1 (needs 4.5); --b #12253D on #FFFFFF = 15.47:1 (needs 4.5); --b #12253D on #DBE4EC = 12.02:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 2381 bytes visible (floor 900)
+      measured : 2269 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 333 chars: "Steadfast Roofing is a roofing contractor serving Tampa, FL,"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 992676 bytes, 229 distinct colours, modal colour covers 47.4% of sampled pixels
+      measured : 1280x2000px, 1031345 bytes, 240 distinct colours, modal colour covers 46.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

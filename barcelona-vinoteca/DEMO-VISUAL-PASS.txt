@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : barcelona-vinoteca
 folder      : C:\VendlyVault\_tmp\autodemo\demos\barcelona-vinoteca
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\barcelona-vinoteca.png
-shot_sha256 : B88D1F0F4A87AFF1CFB32CD1C755ACCE329F0AF333DBE1C04BA1608B9FAC10D7
+shot_sha256 : 61175AC5661CCCDA5564125EBE75236F503E6A3041DA34E5EF57B2772A3A713F
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16582 bytes
+      measured : present, 16597 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16582 bytes of HTML
+      measured : none in 16597 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #92193B on #FFFFFF = 8.66:1 (needs 4.5); --a #92193B on #FFFFFF = 8.66:1 (needs 4.5); --b #570F23 on #FFFFFF = 14.02:1 (needs 4.5); --b #570F23 on #DBE4EC = 10.9:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 2040 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 255 chars: "Vinoteca s (Wine shop) collection is sourced from private la"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1643425 bytes, 241 distinct colours, modal colour covers 40.0% of sampled pixels
+      measured : 1280x2000px, 1643115 bytes, 241 distinct colours, modal colour covers 40.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

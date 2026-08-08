@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : o2-fitness-signature
 folder      : C:\VendlyVault\_tmp\autodemo\demos\o2-fitness-signature
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\o2-fitness-signature.png
-shot_sha256 : 1AE0FF37977FAE689A1D35BBA39DBB9BD81387FB01A5962D6D4BFBC993C16782
+shot_sha256 : 62661819CF70CC2F4D3DA247C860801896DB714708BFB983CA4E1CBDC67B0F0D
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 17193 bytes
+      measured : present, 17099 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,28 +31,31 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 2283 bytes of visible text
+      measured : none in 2228 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 19 distinct text node(s), none repeated 3+ times
+      measured : 18 distinct text node(s), none repeated 3+ times
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 17193 bytes of HTML
+      measured : none in 17099 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #00003F on #FFFFFF = 19.59:1 (needs 4.5); --a #00003F on #FFFFFF = 19.59:1 (needs 4.5); --b #08085E on #FFFFFF = 17.4:1 (needs 4.5); --b #08085E on #DBE4EC = 13.53:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 2283 bytes visible (floor 900)
+      measured : 2228 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 217 chars: "The O2 Fitness Club in Greensboro s Friendly Center features"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1200837 bytes, 246 distinct colours, modal colour covers 42.5% of sampled pixels
+      measured : 1280x2000px, 1436263 bytes, 244 distinct colours, modal colour covers 38.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

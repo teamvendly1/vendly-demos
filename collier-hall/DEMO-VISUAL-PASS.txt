@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : collier-hall
 folder      : C:\VendlyVault\_tmp\autodemo\demos\collier-hall
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\collier-hall.png
-shot_sha256 : 5B5E27BAE3A867513D76A1489418368815B7535AA32A9085A0BEDABAC458B26D
+shot_sha256 : 1C2485985833236AD16FC04ECF97CE400B4A0220EEC5E7DCE3151AC0313041CA
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15789 bytes
+      measured : present, 15804 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15789 bytes of HTML
+      measured : none in 15804 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #6339C6 on #FFFFFF = 7.16:1 (needs 4.5); --a #6947B8 on #FFFFFF = 6.57:1 (needs 4.5); --b #362B61 on #FFFFFF = 12.54:1 (needs 4.5); --b #362B61 on #DBE4EC = 9.74:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1618 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 154 chars: "Collier Hall is a restored 1907 ballroom with an outdoor dec"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 641194 bytes, 211 distinct colours, modal colour covers 46.2% of sampled pixels
+      measured : 1280x2000px, 664383 bytes, 209 distinct colours, modal colour covers 46.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

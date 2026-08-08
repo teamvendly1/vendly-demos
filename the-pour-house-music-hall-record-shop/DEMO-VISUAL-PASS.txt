@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-pour-house-music-hall-record-shop
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-pour-house-music-hall-record-shop
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-pour-house-music-hall-record-shop.png
-shot_sha256 : 5C74DECC51BB5C9DC4F9C497E8085114FD5A6EB6002E086B3BC00822BC1600FF
+shot_sha256 : 10627A8EF7C01549B3C42A2234AC6703C01F744C691DA6B6A5B4CECDC6E52666
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16429 bytes
+      measured : present, 16436 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1680 bytes of visible text
+      measured : none in 1672 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 13 sentence(s) checked, all distinct
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16429 bytes of HTML
+      measured : none in 16436 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #6B6E0E on #FFFFFF = 5.44:1 (needs 4.5); --a #61621A on #FFFFFF = 6.42:1 (needs 4.5); --b #373413 on #FFFFFF = 12.63:1 (needs 4.5); --b #373413 on #DBE4EC = 9.81:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1680 bytes visible (floor 900)
+      measured : 1672 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 83 chars: "Record shop by day. Live music venue by night. Raleigh s hom"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1092572 bytes, 228 distinct colours, modal colour covers 35.0% of sampled pixels
+      measured : 1280x2000px, 1092377 bytes, 228 distinct colours, modal colour covers 35.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

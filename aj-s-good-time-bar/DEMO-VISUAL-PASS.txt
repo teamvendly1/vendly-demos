@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : aj-s-good-time-bar
 folder      : C:\VendlyVault\_tmp\autodemo\demos\aj-s-good-time-bar
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\aj-s-good-time-bar.png
-shot_sha256 : BCFFC6C030995D52915692449814C15880387746AAF66044F8003C32C0DBDE01
+shot_sha256 : 0B76666D49B962453585A22D11ED23C60FFFBDBDB7216CCC1A4E63423886A8BA
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15340 bytes
+      measured : present, 15355 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 9 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15340 bytes of HTML
+      measured : none in 15355 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #00558E on #FFFFFF = 7.81:1 (needs 4.5); --a #00558E on #FFFFFF = 7.81:1 (needs 4.5); --b #083C5E on #FFFFFF = 11.55:1 (needs 4.5); --b #083C5E on #DBE4EC = 8.98:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1556 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 83 chars: "Live music 7 days a week, sports bar, karaoke and rooftop ba"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1674737 bytes, 242 distinct colours, modal colour covers 45.0% of sampled pixels
+      measured : 1280x2000px, 1674727 bytes, 245 distinct colours, modal colour covers 44.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

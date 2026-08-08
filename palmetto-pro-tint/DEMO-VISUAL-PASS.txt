@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : palmetto-pro-tint
 folder      : C:\VendlyVault\_tmp\autodemo\demos\palmetto-pro-tint
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\palmetto-pro-tint.png
-shot_sha256 : 1EE2DBCA93CAB38EC1CCFA460DC27FA33515D09BFCF4248908B3D1DE9978D14F
+shot_sha256 : 09A0F8456BA62365876798719D71E5A4227030DC69B6B9DFDA7B906034A28AC8
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16446 bytes
+      measured : present, 16453 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 11 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1716 bytes of visible text
+      measured : none in 1708 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 14 sentence(s) checked, all distinct
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16446 bytes of HTML
+      measured : none in 16453 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #3F7D9D on #FFFFFF = 4.53:1 (needs 4.5); --a #3F7D9D on #FFFFFF = 4.53:1 (needs 4.5); --b #1D3A49 on #FFFFFF = 11.97:1 (needs 4.5); --b #1D3A49 on #DBE4EC = 9.31:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1716 bytes visible (floor 900)
+      measured : 1708 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 229 chars: "Palmetto Pro Tint provides professional auto services from o"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1182795 bytes, 242 distinct colours, modal colour covers 28.0% of sampled pixels
+      measured : 1280x2000px, 1181992 bytes, 242 distinct colours, modal colour covers 28.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

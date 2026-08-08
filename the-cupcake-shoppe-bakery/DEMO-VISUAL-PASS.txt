@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-cupcake-shoppe-bakery
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-cupcake-shoppe-bakery
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-cupcake-shoppe-bakery.png
-shot_sha256 : CF5D29E3B33E4E337B064E5B524EF95E9F1E8F66CE3A01F9C6C89D088DD24443
+shot_sha256 : FEAA263A9CFF1E628950519E1AE423AB65372D343F477B068F28A451EA8D41A7
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15536 bytes
+      measured : present, 15551 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 6 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15536 bytes of HTML
+      measured : none in 15551 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #E71D44 on #FFFFFF = 4.51:1 (needs 4.5); --a #E71D44 on #FFFFFF = 4.51:1 (needs 4.5); --b #5C0A19 on #FFFFFF = 13.88:1 (needs 4.5); --b #5C0A19 on #DBE4EC = 10.79:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1783 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 134 chars: "Here at The Cupcake Shoppe we bake from scratch each and eve"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 758030 bytes, 174 distinct colours, modal colour covers 47.2% of sampled pixels
+      measured : 1280x2000px, 757673 bytes, 181 distinct colours, modal colour covers 47.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

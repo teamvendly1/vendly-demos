@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : isaac-s-bagels
 folder      : C:\VendlyVault\_tmp\autodemo\demos\isaac-s-bagels
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\isaac-s-bagels.png
-shot_sha256 : 93E2ED793EEAE71C2DD86462EDC8D37C088090F40390885EECA4986D406AD662
+shot_sha256 : 53B05287A0C45FE488C8E4A3BB97D84B914E2FFAF355D1F5F4BB323FEEADA102
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14506 bytes
+      measured : present, 14521 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 5 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14506 bytes of HTML
+      measured : none in 14521 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #B52D26 on #FFFFFF = 6.23:1 (needs 4.5); --a #B52D26 on #FFFFFF = 6.23:1 (needs 4.5); --b #541512 on #FFFFFF = 14.07:1 (needs 4.5); --b #541512 on #DBE4EC = 10.93:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1602 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 95 chars: "See our latest menu, find our hours, and order online direct"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1515495 bytes, 229 distinct colours, modal colour covers 53.1% of sampled pixels
+      measured : 1280x2000px, 1515337 bytes, 230 distinct colours, modal colour covers 53.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

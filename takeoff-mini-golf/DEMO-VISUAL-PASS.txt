@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : takeoff-mini-golf
 folder      : C:\VendlyVault\_tmp\autodemo\demos\takeoff-mini-golf
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\takeoff-mini-golf.png
-shot_sha256 : 7D6DAC97F31C2A0DF18B3258585D3ACAFF54D099665EA35CAF029DB5975AA422
+shot_sha256 : 9369E877C24386FD683B6A231C657D8630A063678C3E666371E9763F94B867ED
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16405 bytes
+      measured : present, 16420 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16405 bytes of HTML
+      measured : none in 16420 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #608043 on #FFFFFF = 4.5:1 (needs 4.5); --a #608043 on #FFFFFF = 4.5:1 (needs 4.5); --b #324323 on #FFFFFF = 10.7:1 (needs 4.5); --b #324323 on #DBE4EC = 8.32:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1804 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 146 chars: "Come play an 18 hole aviation themed miniature golf course. "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 626313 bytes, 101 distinct colours, modal colour covers 61.6% of sampled pixels
+      measured : 1280x2000px, 620543 bytes, 86 distinct colours, modal colour covers 58.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

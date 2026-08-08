@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : it-s-poppin-kettle-korn
 folder      : C:\VendlyVault\_tmp\autodemo\demos\it-s-poppin-kettle-korn
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\it-s-poppin-kettle-korn.png
-shot_sha256 : 618D9138484C8D8404EFAF7ECF9A47CBEBAE239DF681BA924E9B8BF9A0A0AFCE
+shot_sha256 : 30C4F4BFF5C195D42C7479E0F7B1053DE71EF07261B989FF01A2C10724290D0F
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14687 bytes
+      measured : present, 14659 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 4 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1605 bytes of visible text
+      measured : none in 1584 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 15 sentence(s) checked, all distinct
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14687 bytes of HTML
+      measured : none in 14659 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #8B0A0C on #FFFFFF = 9.78:1 (needs 4.5); --a #8B0A0C on #FFFFFF = 9.78:1 (needs 4.5); --b #5E0809 on #FFFFFF = 13.86:1 (needs 4.5); --b #5E0809 on #DBE4EC = 10.78:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1605 bytes visible (floor 900)
+      measured : 1584 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 43 chars: "Gourmet Kettle Korn with specialty flavors."
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 575635 bytes, 204 distinct colours, modal colour covers 42.5% of sampled pixels
+      measured : 1280x2000px, 559164 bytes, 200 distinct colours, modal colour covers 42.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

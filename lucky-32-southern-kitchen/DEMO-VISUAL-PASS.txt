@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : lucky-32-southern-kitchen
 folder      : C:\VendlyVault\_tmp\autodemo\demos\lucky-32-southern-kitchen
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\lucky-32-southern-kitchen.png
-shot_sha256 : 44EF04498B5CBC6CF0AB8EA8E5006D955AE001D097B86337998137789AA8853A
+shot_sha256 : CB9990C38F742A2B435E59DB24996F65C4639F1D5A22A3EAAE1742F5CFBD8BA1
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15917 bytes
+      measured : present, 15932 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15917 bytes of HTML
+      measured : none in 15932 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1687 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 161 chars: "Local favorite spot featuring American Southern Cuisine; men"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1987114 bytes, 240 distinct colours, modal colour covers 40.5% of sampled pixels
+      measured : 1280x2000px, 1986596 bytes, 240 distinct colours, modal colour covers 40.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

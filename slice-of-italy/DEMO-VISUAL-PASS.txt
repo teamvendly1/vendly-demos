@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : slice-of-italy
 folder      : C:\VendlyVault\_tmp\autodemo\demos\slice-of-italy
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\slice-of-italy.png
-shot_sha256 : 7133EBAF15E98B8E3EEA44C96668FFC18C415BACF05EC8B1C40CEC37F081C2DA
+shot_sha256 : C011F96B5193E8887BAA96ADF2B51ADAC081E1225840D096F69571169CF640F9
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15945 bytes
+      measured : present, 15960 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15945 bytes of HTML
+      measured : none in 15960 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1699 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 189 chars: "Best New York-Style Pizza in Nashville Experience the true t"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1875011 bytes, 247 distinct colours, modal colour covers 41.1% of sampled pixels
+      measured : 1280x2000px, 1874991 bytes, 248 distinct colours, modal colour covers 41.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-one-nine
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-one-nine
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-one-nine.png
-shot_sha256 : A3D77F34BAB1BDF1F86EC068547F2EAE2988A5CAA6F8B3C38C9DE02C0845274B
+shot_sha256 : 8C2DA2360BA9A9402DC4DDB0B6135D1CDC7AF9D324D4CAD57D34B4A6C10B6F5E
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15438 bytes
+      measured : present, 15445 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 9 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1511 bytes of visible text
+      measured : none in 1503 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 13 sentence(s) checked, all distinct
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15438 bytes of HTML
+      measured : none in 15445 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #1F5734 on #FFFFFF = 8.5:1 (needs 4.5); --a #7A2233 on #FFFFFF = 9.98:1 (needs 4.5); --b #33121B on #FFFFFF = 16.89:1 (needs 4.5); --b #33121B on #DBE4EC = 13.13:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1511 bytes visible (floor 900)
+      measured : 1503 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 132 chars: "The One Nine is a new neighborhood bar serving Cary and Morr"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1079299 bytes, 235 distinct colours, modal colour covers 32.4% of sampled pixels
+      measured : 1280x2000px, 1064748 bytes, 240 distinct colours, modal colour covers 32.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

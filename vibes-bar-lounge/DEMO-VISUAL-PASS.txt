@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : vibes-bar-lounge
 folder      : C:\VendlyVault\_tmp\autodemo\demos\vibes-bar-lounge
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\vibes-bar-lounge.png
-shot_sha256 : CE40BC461CD611D4302D2005A30319CF79D3CD864C16B91F8C59FC9F68DFEBC6
+shot_sha256 : 5F9AF299C3D02008CE71B1BF417065473EC3FCAAB9B5838387A39DC2087D5371
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16290 bytes
+      measured : present, 16305 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 11 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16290 bytes of HTML
+      measured : none in 16305 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #89744B on #FFFFFF = 4.5:1 (needs 4.5); --a #89744B on #FFFFFF = 4.5:1 (needs 4.5); --b #423824 on #FFFFFF = 11.52:1 (needs 4.5); --b #423824 on #DBE4EC = 8.95:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1735 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 175 chars: "While adding an urban vibrant flair to this historical Nashv"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2025881 bytes, 232 distinct colours, modal colour covers 41.0% of sampled pixels
+      measured : 1280x2000px, 2025803 bytes, 230 distinct colours, modal colour covers 41.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

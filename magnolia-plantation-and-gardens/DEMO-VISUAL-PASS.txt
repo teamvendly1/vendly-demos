@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : magnolia-plantation-and-gardens
 folder      : C:\VendlyVault\_tmp\autodemo\demos\magnolia-plantation-and-gardens
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\magnolia-plantation-and-gardens.png
-shot_sha256 : 1576C09EB8FC1DAE7C814BA1CB54676D76701DDA53235D6B72A2D3D7E6737FAA
+shot_sha256 : B207CB483E551D975EDA5D4EF7F49B811D69FCB3A26E7B742978B517D25E9E57
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15979 bytes
+      measured : present, 15913 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 3 image tag(s)
@@ -31,28 +31,31 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 2152 bytes of visible text
+      measured : none in 2103 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
-      measured : 18 distinct text node(s), none repeated 3+ times
+      measured : 17 distinct text node(s), none repeated 3+ times
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15979 bytes of HTML
+      measured : none in 15913 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A4552A on #FFFFFF = 5.37:1 (needs 4.5); --a #2B3A47 on #FFFFFF = 11.67:1 (needs 4.5); --b #18232C on #FFFFFF = 15.96:1 (needs 4.5); --b #18232C on #DBE4EC = 12.41:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 2152 bytes visible (floor 900)
+      measured : 2103 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 216 chars: "At Magnolia Plantation and Gardens in Charleston, stroll thr"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 725595 bytes, 181 distinct colours, modal colour covers 45.2% of sampled pixels
+      measured : 1280x2000px, 760539 bytes, 190 distinct colours, modal colour covers 40.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

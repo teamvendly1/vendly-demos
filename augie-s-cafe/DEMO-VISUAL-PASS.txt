@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : augie-s-cafe
 folder      : C:\VendlyVault\_tmp\autodemo\demos\augie-s-cafe
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\augie-s-cafe.png
-shot_sha256 : A0D6E3B358D127B88AB9D2861AC7FB889830ED6C7CCB121C7B1034A23EA49A5C
+shot_sha256 : 295F4F884B00239127B74D4794A0373D875373A8700A5F1BFF1937E5B7696363
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16725 bytes
+      measured : present, 16740 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 8 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16725 bytes of HTML
+      measured : none in 16740 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 2331 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 474 chars: "Augie s CafÃ© is a soulful neighborhood cafÃ© serving comfort "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1880324 bytes, 229 distinct colours, modal colour covers 38.9% of sampled pixels
+      measured : 1280x2000px, 1880529 bytes, 229 distinct colours, modal colour covers 38.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

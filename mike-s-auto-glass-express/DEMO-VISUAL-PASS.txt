@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : mike-s-auto-glass-express
 folder      : C:\VendlyVault\_tmp\autodemo\demos\mike-s-auto-glass-express
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\mike-s-auto-glass-express.png
-shot_sha256 : 6354093A9AA6446F1E5E845CD485F517A4086E38A1BF5A10169739F7000315B6
+shot_sha256 : 2E24E1D6C839FC0B15BB2EFF736D8EA8730722222810854C1AACA83E1822FB91
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15428 bytes
+      measured : present, 15443 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15428 bytes of HTML
+      measured : none in 15443 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #8F4A06 on #FFFFFF = 6.67:1 (needs 4.5); --a #3A3F45 on #FFFFFF = 10.62:1 (needs 4.5); --b #1A1D21 on #FFFFFF = 16.91:1 (needs 4.5); --b #1A1D21 on #DBE4EC = 13.14:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1669 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 161 chars: "Need windshield replacement? Nations Auto Glass is a growing"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1390622 bytes, 245 distinct colours, modal colour covers 40.8% of sampled pixels
+      measured : 1280x2000px, 1374310 bytes, 243 distinct colours, modal colour covers 40.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

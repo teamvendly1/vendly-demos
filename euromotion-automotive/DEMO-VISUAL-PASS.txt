@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : euromotion-automotive
 folder      : C:\VendlyVault\_tmp\autodemo\demos\euromotion-automotive
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\euromotion-automotive.png
-shot_sha256 : AB513FEDBBA22677D9A9DF2C655952CBAAF8B812F5E1BEF32ACBE0CF1CC27C31
+shot_sha256 : 74DBA2544918E9164E48A9A9E116FA6F633B18A94444A68DDF1E0E2DB6A9CC00
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16283 bytes
+      measured : present, 16298 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16283 bytes of HTML
+      measured : none in 16298 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #DF351F on #FFFFFF = 4.5:1 (needs 4.5); --a #DF351F on #FFFFFF = 4.5:1 (needs 4.5); --b #59150D on #FFFFFF = 13.66:1 (needs 4.5); --b #59150D on #DBE4EC = 10.61:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1838 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 149 chars: "Euromotion in Raleigh, NC, is the top Euro mechanic Raleigh "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1095747 bytes, 159 distinct colours, modal colour covers 39.9% of sampled pixels
+      measured : 1280x2000px, 1061756 bytes, 165 distinct colours, modal colour covers 39.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

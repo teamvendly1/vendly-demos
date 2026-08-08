@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+wright-square-bistro
+verdict=
+FAIL
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T02:24:54
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+wright-square-bistro-0.png
+
+WHAT WAS SEEN
+THE HERO SENTENCE IS CUT MID-WORD: "...gourmet sandwiches, freshly-made si..." An ellipsis has been appended to a truncated Facebook About field, which is worse than a bare cut because it reads as a deliberate teaser while saying nothing. Everything else is sound - correct (912) number, Call to Order CTA, contact block. Needs the copy shortened to a clean sentence by a human; not auto-trimmed, because every trimming rule tried tonight deleted real words from other businesses.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.

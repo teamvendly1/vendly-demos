@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : ashley-bakery
 folder      : C:\VendlyVault\_tmp\autodemo\demos\ashley-bakery
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\ashley-bakery.png
-shot_sha256 : 3480BDD17576CF895A74729FD36D01F886793530E25C5E7A3E79D411A630E2BD
+shot_sha256 : EC89A6B11692D9C9C12F12F1A367253EB9F2B9416A87E4519C217FEE73363750
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15109 bytes
+      measured : present, 15124 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15109 bytes of HTML
+      measured : none in 15124 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A31A57 on #FFFFFF = 7.39:1 (needs 4.5); --a #3B5A86 on #FFFFFF = 7.02:1 (needs 4.5); --b #1E2F47 on #FFFFFF = 13.52:1 (needs 4.5); --b #1E2F47 on #DBE4EC = 10.51:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1592 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 150 chars: "Charleston Wedding Cakes | Charleston Bakery - Family Owned "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1324451 bytes, 235 distinct colours, modal colour covers 46.1% of sampled pixels
+      measured : 1280x2000px, 1324265 bytes, 234 distinct colours, modal colour covers 46.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

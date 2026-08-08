@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : city-bowls
 folder      : C:\VendlyVault\_tmp\autodemo\demos\city-bowls
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\city-bowls.png
-shot_sha256 : 988AB1A2372B9050DEED43BA8F7E46A002C52C8E5187B0FB4CEAB18CB79399C5
+shot_sha256 : 1D0E70F4BC8FD55DFBBAC542CEAB3FDE4F82A8CBEB2B167FD5ECAD5973602369
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14630 bytes
+      measured : present, 14645 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 9 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14630 bytes of HTML
+      measured : none in 14645 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1465 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 122 chars: "Grab a nutritious smoothie bowl in the heart of Downtown Bir"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1622955 bytes, 247 distinct colours, modal colour covers 44.1% of sampled pixels
+      measured : 1280x2000px, 1622677 bytes, 247 distinct colours, modal colour covers 44.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

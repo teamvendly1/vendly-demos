@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : mariscos-el-navegante
 folder      : C:\VendlyVault\_tmp\autodemo\demos\mariscos-el-navegante
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\mariscos-el-navegante.png
-shot_sha256 : 691957A4BAF985FDDACAABE4D2C83EE510D59267F78A015C997B04C027C136E8
+shot_sha256 : F9380301A48856AE7C147483A67860C68E0C640989DCFAC7C5870590CFA14D08
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16397 bytes
+      measured : present, 16412 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16397 bytes of HTML
+      measured : none in 16412 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #287CB8 on #FFFFFF = 4.5:1 (needs 4.5); --a #287CB8 on #FFFFFF = 4.5:1 (needs 4.5); --b #123954 on #FFFFFF = 12.08:1 (needs 4.5); --b #123954 on #DBE4EC = 9.39:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1917 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 193 chars: "An exquisite culinary destination where flavors of the sea c"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2225159 bytes, 243 distinct colours, modal colour covers 39.8% of sampled pixels
+      measured : 1280x2000px, 2225176 bytes, 243 distinct colours, modal colour covers 40.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

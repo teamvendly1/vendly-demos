@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+booze-pops
+verdict=
+FAIL
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T01:39:40
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+booze-pops-0.png
+
+WHAT WAS SEEN
+HERO DESCRIPTION IS CUT MID-WORD: "...non-alcoholic products Event & Delive". Harvested from their Facebook About field, which caps near 100 characters. Deliberately NOT auto-repaired - three separate trimming rules were tried tonight and every one deleted real words from other businesses. Needs a human to shorten it to a clean sentence in their own words. Everything else on the fold is sound: logo, eyebrow, headline, CTA, address line.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.

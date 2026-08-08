@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : henry-s-on-the-market
 folder      : C:\VendlyVault\_tmp\autodemo\demos\henry-s-on-the-market
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\henry-s-on-the-market.png
-shot_sha256 : 7FF13B42B117BD32A0C4D63984F55CB9480E4ADA0103BB074B61E8AB2D69063B
+shot_sha256 : 5EFD5637572B723608FA94A0A3D306400F55FB90DE4FF09531E0816AD7FF754B
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16689 bytes
+      measured : present, 16704 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16689 bytes of HTML
+      measured : none in 16704 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1941 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 189 chars: "Henry s is centrally located in historic downtown Charleston"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2080000 bytes, 241 distinct colours, modal colour covers 41.4% of sampled pixels
+      measured : 1280x2000px, 2080035 bytes, 240 distinct colours, modal colour covers 41.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-works
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-works
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-works.png
-shot_sha256 : 9A4C74D8D4F2EDF2A13939D7081AE27EC3A340333EA68144A8037FDDAEA7CE46
+shot_sha256 : F5CCC91372F79CF3938733804A1A26C0D1DC49910F939891F2B785928C0224E3
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14636 bytes
+      measured : present, 14651 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 6 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14636 bytes of HTML
+      measured : none in 14651 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #4D79A9 on #FFFFFF = 4.54:1 (needs 4.5); --a #4D79A9 on #FFFFFF = 4.54:1 (needs 4.5); --b #203246 on #FFFFFF = 13.08:1 (needs 4.5); --b #203246 on #DBE4EC = 10.16:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1390 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 41 chars: "The Works - A Sweat Studio by Sarah Frick"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 311519 bytes, 131 distinct colours, modal colour covers 49.8% of sampled pixels
+      measured : 1280x2000px, 309728 bytes, 119 distinct colours, modal colour covers 50.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

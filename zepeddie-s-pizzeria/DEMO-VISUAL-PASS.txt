@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : zepeddie-s-pizzeria
 folder      : C:\VendlyVault\_tmp\autodemo\demos\zepeddie-s-pizzeria
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\zepeddie-s-pizzeria.png
-shot_sha256 : EFB895EBA1AF5B117D239CA847113EC12894376EB871DDAB57004FB7A99E8041
+shot_sha256 : BD616F71074E9FE62EE306C4797FB6E85C2103A14C9427B22E2DCE570801C653
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16601 bytes
+      measured : present, 16616 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 11 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16601 bytes of HTML
+      measured : none in 16616 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #33827D on #FFFFFF = 4.54:1 (needs 4.5); --a #33827D on #FFFFFF = 4.54:1 (needs 4.5); --b #1C4A46 on #FFFFFF = 9.92:1 (needs 4.5); --b #1C4A46 on #DBE4EC = 7.71:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1892 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 191 chars: "At Zepeddie s Pizzeria, every pie is made with care, using f"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2416765 bytes, 241 distinct colours, modal colour covers 41.8% of sampled pixels
+      measured : 1280x2000px, 2416253 bytes, 246 distinct colours, modal colour covers 41.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

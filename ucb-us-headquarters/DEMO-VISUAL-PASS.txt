@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : ucb-us-headquarters
 folder      : C:\VendlyVault\_tmp\autodemo\demos\ucb-us-headquarters
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\ucb-us-headquarters.png
-shot_sha256 : 92599A8DD22F480A6C9C13A526F8F29C4F060D8F7274BAB2E9D605992AD7DEFE
+shot_sha256 : B00E30D2939D924C101B2F7A8217756B4DA7BB6EEA66933D7B89FE1BB8DD9EDB
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14573 bytes
+      measured : present, 14588 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 6 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14573 bytes of HTML
+      measured : none in 14588 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A4552A on #FFFFFF = 5.37:1 (needs 4.5); --a #2B3A47 on #FFFFFF = 11.67:1 (needs 4.5); --b #18232C on #FFFFFF = 15.96:1 (needs 4.5); --b #18232C on #DBE4EC = 12.41:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1590 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 220 chars: "UCB is a global biopharma company focused on creating value "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1114205 bytes, 228 distinct colours, modal colour covers 40.9% of sampled pixels
+      measured : 1280x2000px, 1114188 bytes, 229 distinct colours, modal colour covers 40.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

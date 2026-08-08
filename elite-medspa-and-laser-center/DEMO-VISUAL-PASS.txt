@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : elite-medspa-and-laser-center
 folder      : C:\VendlyVault\_tmp\autodemo\demos\elite-medspa-and-laser-center
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\elite-medspa-and-laser-center.png
-shot_sha256 : 5A13F0B7F5B0D643D96567563F329577FCE2E92301833C5D1387BF904D2522CE
+shot_sha256 : 51341D50C81B9F78F3F3A912FE4D5F3CFC09BF31E2916772FEF47F23D43FA7ED
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15380 bytes
+      measured : present, 15395 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 5 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15380 bytes of HTML
+      measured : none in 15395 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #96305F on #FFFFFF = 7.28:1 (needs 4.5); --a #8A2B5E on #FFFFFF = 8.11:1 (needs 4.5); --b #4A1732 on #FFFFFF = 14.39:1 (needs 4.5); --b #4A1732 on #DBE4EC = 11.18:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1714 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 143 chars: "Elite Medspa and Laser Center provides non-invasive skin and"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 579623 bytes, 190 distinct colours, modal colour covers 28.8% of sampled pixels
+      measured : 1280x2000px, 579451 bytes, 186 distinct colours, modal colour covers 28.7% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

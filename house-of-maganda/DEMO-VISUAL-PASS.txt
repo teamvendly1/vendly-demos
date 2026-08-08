@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : house-of-maganda
 folder      : C:\VendlyVault\_tmp\autodemo\demos\house-of-maganda
-audited_at  : 2026-08-07T23:22:43Z
+audited_at  : 2026-08-08T08:41:02Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\house-of-maganda.png
-shot_sha256 : 23F22E1A3BB052EF568DC909B74E882C65162B89E89667E95860A7BA8E8355CD
+shot_sha256 : 0E64D476F76CF1605F628D6EFD64DC8998A0F8612377FB5BC5CC204E91E8FC47
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16274 bytes
+      measured : present, 16289 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -43,16 +43,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16274 bytes of HTML
+      measured : none in 16289 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #7A7A00 on #FFFFFF = 4.55:1 (needs 4.5); --a #7A7A00 on #FFFFFF = 4.55:1 (needs 4.5); --b #5E5E08 on #FFFFFF = 6.82:1 (needs 4.5); --b #5E5E08 on #DBE4EC = 5.3:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
       measured : 1892 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 278 chars: "We exist to spread beauty love by creating custom designed w"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 569977 bytes, 201 distinct colours, modal colour covers 43.2% of sampled pixels
+      measured : 1280x2000px, 568040 bytes, 197 distinct colours, modal colour covers 43.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
