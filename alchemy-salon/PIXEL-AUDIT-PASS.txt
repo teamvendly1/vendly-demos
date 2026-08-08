@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+alchemy-salon
+verdict=
+PASS
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T06:00:04
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+alchemy-salon-0.png, alchemy-salon-1.png, alchemy-salon-2.png, alchemy-salon-3.png
+
+WHAT WAS SEEN
+Clean on the device. Their own monogram as a subtle hero background, complete sentence in their words: "At Alchemy Salon, we offer a full range of hair and spa services including haircuts, dimensional color, hair styling, smoothing treatments, extensions, facials, waxing and more." Correct (865) number in bar and hero, real Papermill Drive Knoxville address, "Book Now" is right for a salon, gutters correct, nothing repeated or cut. The concierge section renders directly under the hero as "The part that answers customers for you", which is the pitch Jacob asked to be in every demo.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.

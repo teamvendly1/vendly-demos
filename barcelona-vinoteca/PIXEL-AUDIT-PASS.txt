@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+barcelona-vinoteca
+verdict=
+PASS
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T06:03:09
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+barcelona-vinoteca-0.png, barcelona-vinoteca-1.png, barcelona-vinoteca-2.png, barcelona-vinoteca-3.png
+
+WHAT WAS SEEN
+Clean on the device. Complete description in their words: "Vinoteca's (Wine shop) collection is sourced from private labels, small and large vineyards in Spain and South America, and around the world. You can find all of your favorites from the Barcelona wine program as well as specialty blends and custom orders." Correct (470) number in bar and hero, real N Highland Ave Atlanta address, "See Tonight" fits a wine bar, their wordmark sits behind the copy as texture without hurting legibility. Gutters correct, nothing repeated or cut.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.

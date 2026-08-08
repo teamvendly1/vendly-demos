@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+all-creatures-veterinary-hospital
+verdict=
+FAIL
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T06:05:24
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+all-creatures-veterinary-hospital-0.png, all-creatures-veterinary-hospital-1.png, all-creatures-veterinary-hospital-2.png, all-creatures-veterinary-hospital-3.png
+
+WHAT WAS SEEN
+Description cut mid-list: "All Creatures Veterinary Hospital is a medical and surgical facility treating dogs, cats, and..." - the reader is left mid-sentence on the only line that says what they do. Everything else is strong: their own logo renders sharply, correct (336) number in bar and hero, real Brassfield Road Greensboro address, "Call the Clinic" is the right CTA for a vet, and the trust line "96% recommend on Facebook, from 52 reviews" sits right under the hero. Same harvest-time truncation class as Booze Pops and Wright Square.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.
