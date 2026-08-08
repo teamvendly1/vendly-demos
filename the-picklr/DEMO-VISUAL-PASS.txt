@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-picklr
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-picklr
-audited_at  : 2026-08-08T15:45:38Z
+audited_at  : 2026-08-08T16:27:11Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-picklr.png
-shot_sha256 : 38BD9B57E7FE76BBCC51B16BB0ED01F017FA3BF3C687B57FDC809C50B58BEB46
+shot_sha256 : A2F221E420FA45591F4BAEFE6A62F338FE8BC8E71DF50DDF9450A5F8EEFE8116
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 142 chars: "Our indoor pickleball courts in Greenville, SC are ideal for"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1635713 bytes, 243 distinct colours, modal colour covers 36.6% of sampled pixels
+      measured : 1280x2000px, 1635719 bytes, 243 distinct colours, modal colour covers 36.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

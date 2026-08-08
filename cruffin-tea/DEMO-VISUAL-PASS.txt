@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : cruffin-tea
 folder      : C:\VendlyVault\_tmp\autodemo\demos\cruffin-tea
-audited_at  : 2026-08-08T15:45:38Z
+audited_at  : 2026-08-08T16:27:11Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\cruffin-tea.png
-shot_sha256 : D1C0082958A4FBAA7DE5FAD47DAB579179FEB05E0CA878CEB6D950F639F5E9EF
+shot_sha256 : 95E23C5B5F025DB8105CB38D3112017561F9B0056145B316DDB22B758EFA77A1
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 160 chars: "Discover delicious fresh baked desserts and premium matcha t"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1442099 bytes, 227 distinct colours, modal colour covers 40.5% of sampled pixels
+      measured : 1280x2000px, 1442112 bytes, 227 distinct colours, modal colour covers 40.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

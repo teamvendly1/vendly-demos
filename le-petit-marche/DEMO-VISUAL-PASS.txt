@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : le-petit-marche
 folder      : C:\VendlyVault\_tmp\autodemo\demos\le-petit-marche
-audited_at  : 2026-08-08T15:45:38Z
+audited_at  : 2026-08-08T16:27:11Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\le-petit-marche.png
-shot_sha256 : 16FECA0BE2C99E93C83CD0248D6DE408EC422AD06601CA9E16AC9CA873727117
+shot_sha256 : FAEEC72DDA9750606B2FA54AE2B6C7A8FF0E68B70D5EB9E7946B73B31810D0C3
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 113 chars: "Le Petit Marche in Atlanta, GA. Family-owned little gem in K"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1368502 bytes, 236 distinct colours, modal colour covers 40.2% of sampled pixels
+      measured : 1280x2000px, 1368251 bytes, 236 distinct colours, modal colour covers 40.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

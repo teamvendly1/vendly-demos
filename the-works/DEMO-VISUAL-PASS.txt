@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-works
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-works
-audited_at  : 2026-08-08T15:45:38Z
+audited_at  : 2026-08-08T16:27:11Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-works.png
-shot_sha256 : 3415B0053EAD765969DDB573CF21C7369356D3EB86FC7978420FBC64E67138D0
+shot_sha256 : 092E484B296F35361AD77B68B3FAB5C2744BA6FF784952CD6978D0827E3B7A13
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 88 chars: "The Works Sweat - Mt. Pleasant | 1421 Shucker Circle, Suite "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 311694 bytes, 126 distinct colours, modal colour covers 50.3% of sampled pixels
+      measured : 1280x2000px, 311552 bytes, 126 distinct colours, modal colour covers 50.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

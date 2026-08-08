@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : vibes-bar-lounge
 folder      : C:\VendlyVault\_tmp\autodemo\demos\vibes-bar-lounge
-audited_at  : 2026-08-08T15:45:38Z
+audited_at  : 2026-08-08T16:27:11Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\vibes-bar-lounge.png
-shot_sha256 : 85CC5CC544A40A670FF9E00C3B933740DF7B70B5097BB0B84C7F2558060F188F
+shot_sha256 : F2791281809460FF46DD6EA1E5519E69B36066B4E0E72E3059F8D16D17CDE3C0
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -25,7 +25,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : all 6 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
-      measured : name "Vibes Bar & Lounge" is a plausible business name and is visible on the page (H1 reads "Come catch a vibe enjoy some music with our live D")
+      measured : name "Vibes Bar & Lounge" is a plausible business name and is visible on the page (H1 reads "While adding an urban vibrant flair to this histor")
 [PASS] PHONE_OWNERSHIP
       how      : every tel: href and formatted number in visible text normalised to 10 digits and matched against FILL.json phone plus our line 7744269684
       measured : 1 number(s) on the page, all allowed
@@ -34,7 +34,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none in 1496 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 13 sentence(s) checked, all distinct
+      measured : 12 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 12 distinct text node(s), none repeated 3+ times
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 130 chars: "While adding an urban vibrant flair to this historical Nashv"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1433639 bytes, 92 distinct colours, modal colour covers 13.8% of sampled pixels
+      measured : 1280x2000px, 1431707 bytes, 95 distinct colours, modal colour covers 13.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
