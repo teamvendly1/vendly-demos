@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-guitar-shop-off-elm-street
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-guitar-shop-off-elm-street
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-guitar-shop-off-elm-street.png
-shot_sha256 : 834AA61F18E65E815567C914048B8B3D69301C1BA32F6DDF2C4A2260A9A112E9
+shot_sha256 : 1A34D312B64ABEDE6FDA3957D678DB5E5587DB9971D371E967EF62B046BDE6F6
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16366 bytes
+      measured : present, 16214 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 7 image tag(s)
+      measured : 6 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 7 resolvable src(s) exist on disk
+      measured : all 6 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "The Guitar Shop Off Elm Street" is a plausible business name and is visible on the page (H1 reads "The Guitar Shop Off Elm Street")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16366 bytes of HTML
+      measured : none in 16214 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #8E3835 on #FFFFFF = 7.59:1 (needs 4.5); --a #8E3835 on #FFFFFF = 7.59:1 (needs 4.5); --b #4A1D1C on #FFFFFF = 14.15:1 (needs 4.5); --b #4A1D1C on #DBE4EC = 11:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 241 chars: "The Guitar Shop Off Elm Street is an independent guitar shop"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 419024 bytes, 198 distinct colours, modal colour covers 46.3% of sampled pixels
+      measured : 1280x2000px, 519317 bytes, 196 distinct colours, modal colour covers 48.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

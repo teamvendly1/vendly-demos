@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : tall-man-toys-comics
 folder      : C:\VendlyVault\_tmp\autodemo\demos\tall-man-toys-comics
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\tall-man-toys-comics.png
-shot_sha256 : B372A0F2C1179EB116F1D1CA8A251C879BE8EAC3A24BAFE8E07033BB286F3006
+shot_sha256 : 51D480BC2924483EE80CDAC7B3DF59C4CB5A9131842466213EB19A25E7A5E941
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 17716 bytes
+      measured : present, 17574 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 12 image tag(s)
+      measured : 11 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 12 resolvable src(s) exist on disk
+      measured : all 11 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Tall Man Toys & Comics" is a plausible business name and is visible on the page (H1 reads "Tall Man Toys & Comics")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 17716 bytes of HTML
+      measured : none in 17574 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #9E6C3B on #FFFFFF = 4.5:1 (needs 4.5); --a #9E6C3B on #FFFFFF = 4.5:1 (needs 4.5); --b #4A331C on #FFFFFF = 11.79:1 (needs 4.5); --b #4A331C on #DBE4EC = 9.16:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 313 chars: "Tall Man Toys is the largest brick-and-mortar Funko shop in "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 149026 bytes, 122 distinct colours, modal colour covers 47.2% of sampled pixels
+      measured : 1280x2000px, 240192 bytes, 168 distinct colours, modal colour covers 48.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : helena-fox-fine-art
 folder      : C:\VendlyVault\_tmp\autodemo\demos\helena-fox-fine-art
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\helena-fox-fine-art.png
-shot_sha256 : C495DF8D2232E6537C16D263D50779E49B52B1518DCBA0BCFA25CF5A4F416F71
+shot_sha256 : C59B14763876BACFE05045CC09B737D5A59BF6AE87C8664C441EBCF38062624C
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 17148 bytes
+      measured : present, 16994 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 12 image tag(s)
+      measured : 11 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 12 resolvable src(s) exist on disk
+      measured : all 11 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Helena Fox Fine Art" is a plausible business name and is visible on the page (H1 reads "Helena Fox Fine Art")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 17148 bytes of HTML
+      measured : none in 16994 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #95711C on #FFFFFF = 4.51:1 (needs 4.5); --a #95711C on #FFFFFF = 4.51:1 (needs 4.5); --b #564110 on #FFFFFF = 9.73:1 (needs 4.5); --b #564110 on #DBE4EC = 7.56:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 264 chars: "Helena Fox Fine Art in Charleston, S.C. represents nationall"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 347678 bytes, 203 distinct colours, modal colour covers 44.3% of sampled pixels
+      measured : 1280x2000px, 502208 bytes, 223 distinct colours, modal colour covers 45.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

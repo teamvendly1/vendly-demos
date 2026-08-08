@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : indigo-art-studio
 folder      : C:\VendlyVault\_tmp\autodemo\demos\indigo-art-studio
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\indigo-art-studio.png
-shot_sha256 : 3455E59E74C2AAFE2FDB1423D3D6F0F4C32DF8F6AF1C0E7F165F4BF03EB363CD
+shot_sha256 : 351D71B7A0AC132B86DBE0FBB86BF209332026BFD545BD7E17ADF1E4F327DD38
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15769 bytes
+      measured : present, 15631 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 7 image tag(s)
+      measured : 6 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 7 resolvable src(s) exist on disk
+      measured : all 6 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Indigo Art Studio" is a plausible business name and is visible on the page (H1 reads "Indigo Art Studio")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15769 bytes of HTML
+      measured : none in 15631 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #473675 on #FFFFFF = 10.23:1 (needs 4.5); --a #473675 on #FFFFFF = 10.23:1 (needs 4.5); --b #2A2046 on #FFFFFF = 15.07:1 (needs 4.5); --b #2A2046 on #DBE4EC = 11.71:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 139 chars: "Indigo Art Studio offers sip paint events, classes, courses,"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 340561 bytes, 183 distinct colours, modal colour covers 52.2% of sampled pixels
+      measured : 1280x2000px, 448256 bytes, 209 distinct colours, modal colour covers 55.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

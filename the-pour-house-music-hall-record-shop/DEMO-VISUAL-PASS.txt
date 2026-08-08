@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-pour-house-music-hall-record-shop
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-pour-house-music-hall-record-shop
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-pour-house-music-hall-record-shop.png
-shot_sha256 : 10627A8EF7C01549B3C42A2234AC6703C01F744C691DA6B6A5B4CECDC6E52666
+shot_sha256 : 335E419CAD509EC9FF3973C35CAC55E2AE66B164246C755148D673DF6422E511
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 83 chars: "Record shop by day. Live music venue by night. Raleigh s hom"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1092377 bytes, 228 distinct colours, modal colour covers 35.0% of sampled pixels
+      measured : 1280x2000px, 1092376 bytes, 228 distinct colours, modal colour covers 35.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

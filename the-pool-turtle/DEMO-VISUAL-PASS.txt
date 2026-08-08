@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-pool-turtle
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-pool-turtle
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-pool-turtle.png
-shot_sha256 : BB42DCF8F19AFE9ECBC64A164CE2FCFE26304970F91ED1AFA0768748DD745C7E
+shot_sha256 : 930C7ED753D91268775ED2B3057B34A6BF734927149BE3297F7DA211E244D304
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 338 chars: "The Pool Turtle Bar Game Cove is a woman-owned and community"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 594056 bytes, 178 distinct colours, modal colour covers 41.5% of sampled pixels
+      measured : 1280x2000px, 594035 bytes, 177 distinct colours, modal colour covers 41.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

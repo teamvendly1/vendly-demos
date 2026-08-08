@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-row
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-row
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-row.png
-shot_sha256 : 19FE877895974FAAF6A6AF090D6775385F4ADF0404EB3A6622BD9F936D19A677
+shot_sha256 : 88530ECD13618324399C8A6EC278629C9E9960C7FC22DE69DE9F52E1996A93A7
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 287 chars: "The Row Kitchen Pub in Nashville, TN. For over 30 years, The"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1623068 bytes, 211 distinct colours, modal colour covers 36.7% of sampled pixels
+      measured : 1280x2000px, 1623393 bytes, 211 distinct colours, modal colour covers 36.7% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

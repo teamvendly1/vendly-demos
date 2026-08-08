@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : all-creatures-veterinary-hospital
 folder      : C:\VendlyVault\_tmp\autodemo\demos\all-creatures-veterinary-hospital
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\all-creatures-veterinary-hospital.png
-shot_sha256 : 9AEF0AE93F2CCDCFDFBA376D2A2A7B66CA58F152A6CD7990EFF4C44A9515FDCD
+shot_sha256 : 9FFDC2D650BC46026D2BCF36BF7304236F082DE70D8EB887B95B0B873929E398
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16799 bytes
+      measured : present, 16645 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 12 image tag(s)
+      measured : 11 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 12 resolvable src(s) exist on disk
+      measured : all 11 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "All Creatures Veterinary Hospital" is a plausible business name and is visible on the page (H1 reads "All Creatures Veterinary Hospital")
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16799 bytes of HTML
+      measured : none in 16645 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #427AB3 on #FFFFFF = 4.5:1 (needs 4.5); --a #427AB3 on #FFFFFF = 4.5:1 (needs 4.5); --b #1B334B on #FFFFFF = 12.95:1 (needs 4.5); --b #1B334B on #DBE4EC = 10.06:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 96 chars: "All Creatures Veterinary Hospital is a medical and surgical "
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 187496 bytes, 127 distinct colours, modal colour covers 30.6% of sampled pixels
+      measured : 1280x2000px, 254929 bytes, 164 distinct colours, modal colour covers 31.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : callahan-s-auto-service-center
 folder      : C:\VendlyVault\_tmp\autodemo\demos\callahan-s-auto-service-center
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:25:18Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\callahan-s-auto-service-center.png
-shot_sha256 : CCE023881BB3D97164A01D3410098575A9B78249C0FD55AF06FD0D7525604679
+shot_sha256 : 59A543925A7BD05E105055B612FA93027FED8B5EB118F9B7B1E5C216A864A4FE
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 197 chars: ""High Integrity, Great Service Provide services your vehicle"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1330719 bytes, 223 distinct colours, modal colour covers 31.4% of sampled pixels
+      measured : 1280x2000px, 1330727 bytes, 223 distinct colours, modal colour covers 31.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
