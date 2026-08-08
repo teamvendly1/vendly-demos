@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : makerfx
 folder      : C:\VendlyVault\_tmp\autodemo\demos\makerfx
-audited_at  : 2026-08-08T09:54:30Z
+audited_at  : 2026-08-08T11:13:21Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\makerfx.png
-shot_sha256 : 2E840D340E89EB9582730704ED5E0E3D97E3649B9483535AAA9382F181E75BEC
+shot_sha256 : 6473862D3BE6D29622A1E28440B407BAD61C941830E8060937B5C432A5239524
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -38,6 +38,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 9 distinct text node(s), none repeated 3+ times
+[PASS] DESCRIPTION_IS_REAL
+      how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
+      measured : reads as a real description (66 chars)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
@@ -55,7 +58,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 66 chars: "MakerFX Makerspace is a community makerspace in South Orland"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1323836 bytes, 248 distinct colours, modal colour covers 37.1% of sampled pixels
+      measured : 1280x2000px, 1323828 bytes, 248 distinct colours, modal colour covers 37.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

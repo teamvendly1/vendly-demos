@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : high-cotton
 folder      : C:\VendlyVault\_tmp\autodemo\demos\high-cotton
-audited_at  : 2026-08-08T09:54:30Z
+audited_at  : 2026-08-08T11:13:21Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\high-cotton.png
-shot_sha256 : 674739D101AA9F909F7661D0537F31F06882B4DCC53114D93ABE3E66AA823054
+shot_sha256 : 0F9B9DC67B170E5CB0E835648A7C759C32A7D7B121BC20EC02E912FEC019FE4E
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15962 bytes
+      measured : present, 15954 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -34,16 +34,19 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none in 1671 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
-      measured : 17 sentence(s) checked, all distinct
+      measured : 19 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 12 distinct text node(s), none repeated 3+ times
+[PASS] DESCRIPTION_IS_REAL
+      how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
+      measured : reads as a real description (189 chars)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15962 bytes of HTML
+      measured : none in 15954 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #01234B on #FFFFFF = 15.63:1 (needs 4.5); --a #01234B on #FFFFFF = 15.63:1 (needs 4.5); --b #082F5E on #FFFFFF = 13.3:1 (needs 4.5); --b #082F5E on #DBE4EC = 10.34:1 (needs 4.5)
@@ -52,10 +55,10 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1671 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
-      measured : 189 chars: "From conversation and laughter in our bar to our stylish din"
+      measured : 189 chars: "We loved Brunch at High Cotton. It is a Halls restaurant wit"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1795054 bytes, 241 distinct colours, modal colour covers 42.3% of sampled pixels
+      measured : 1280x2000px, 1795864 bytes, 241 distinct colours, modal colour covers 42.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

@@ -2,7 +2,7 @@ DEMO VISUAL AUDIT
 =================
 slug        : guilford-green-foundation-lgbtq-center
 folder      : C:\VendlyVault\_tmp\autodemo\demos\guilford-green-foundation-lgbtq-center
-audited_at  : 2026-08-08T09:54:30Z
+audited_at  : 2026-08-08T11:13:21Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
@@ -38,6 +38,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 12 distinct text node(s), none repeated 3+ times
+[PASS] DESCRIPTION_IS_REAL
+      how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
+      measured : reads as a real description (167 chars)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none

@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : dumpling-house
 folder      : C:\VendlyVault\_tmp\autodemo\demos\dumpling-house
-audited_at  : 2026-08-08T09:54:30Z
+audited_at  : 2026-08-08T11:13:21Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\dumpling-house.png
-shot_sha256 : E213004F59FC11BE751E36D0B8635BFE286B6C094B999F84ECC1799828EBE9F6
+shot_sha256 : 2D5908A26573DBF4ADFE900428BDFC4D291F28602A46726BEAD91406B3D23A8A
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15828 bytes
+      measured : present, 15818 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 10 image tag(s)
@@ -31,31 +31,34 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1642 bytes of visible text
+      measured : none in 1632 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 13 distinct text node(s), none repeated 3+ times
+[PASS] DESCRIPTION_IS_REAL
+      how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
+      measured : reads as a real description (183 chars)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15828 bytes of HTML
+      measured : none in 15818 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #947044 on #FFFFFF = 4.51:1 (needs 4.5); --a #947044 on #FFFFFF = 4.51:1 (needs 4.5); --b #463520 on #FFFFFF = 11.73:1 (needs 4.5); --b #463520 on #DBE4EC = 9.12:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1642 bytes visible (floor 900)
+      measured : 1632 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
-      measured : 193 chars: "Welcome to Dumpling House, where we craft delicious dishes w"
+      measured : 183 chars: "I looooove this place!! I ve been searching for a good dumpl"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1816016 bytes, 237 distinct colours, modal colour covers 40.0% of sampled pixels
+      measured : 1280x2000px, 1813647 bytes, 239 distinct colours, modal colour covers 40.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

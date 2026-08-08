@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-picklr
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-picklr
-audited_at  : 2026-08-08T09:54:30Z
+audited_at  : 2026-08-08T11:13:21Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-picklr.png
-shot_sha256 : 0C21A336AB0F990B27D0ECC54CC16D1AD15D1AA3B7ABF3342D9C570FF1D6F82B
+shot_sha256 : A2F221E420FA45591F4BAEFE6A62F338FE8BC8E71DF50DDF9450A5F8EEFE8116
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -38,6 +38,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 12 distinct text node(s), none repeated 3+ times
+[PASS] DESCRIPTION_IS_REAL
+      how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
+      measured : reads as a real description (142 chars)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
@@ -55,7 +58,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 142 chars: "Our indoor pickleball courts in Greenville, SC are ideal for"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1635710 bytes, 243 distinct colours, modal colour covers 36.6% of sampled pixels
+      measured : 1280x2000px, 1635719 bytes, 243 distinct colours, modal colour covers 36.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

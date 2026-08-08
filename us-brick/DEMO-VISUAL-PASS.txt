@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : us-brick
 folder      : C:\VendlyVault\_tmp\autodemo\demos\us-brick
-audited_at  : 2026-08-08T09:54:30Z
+audited_at  : 2026-08-08T11:13:21Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\us-brick.png
-shot_sha256 : 8531910902A8D0E9D98867A2B2C84A31CFB5A9614469CCFA2C87F0A51A3D34B8
+shot_sha256 : A048F9ABBA37B3AA75B8B27ADE8622EA4B7AFDB5EA9B1425157216B8C68122C5
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -38,6 +38,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] NO_REPEATED_PHRASE
       how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
       measured : 13 distinct text node(s), none repeated 3+ times
+[PASS] DESCRIPTION_IS_REAL
+      how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
+      measured : reads as a real description (135 chars)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
@@ -55,7 +58,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 135 chars: "Welcome to US Brick, the leading manufacturer of residential"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1577731 bytes, 229 distinct colours, modal colour covers 43.4% of sampled pixels
+      measured : 1280x2000px, 1577760 bytes, 229 distinct colours, modal colour covers 43.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
