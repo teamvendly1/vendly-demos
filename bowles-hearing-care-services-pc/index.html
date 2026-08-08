@@ -12,7 +12,14 @@
 <meta property="og:description" content="Trusted Charlotte, NC audiologists: rechargeable hearing aids, expert fittings, repairs, hearing exams, and earwax removal. Schedule today for your best hearing!">
 <meta property="og:url" content="https://vendly-demos.vercel.app/bowles-hearing-care-services-pc/">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://vendly-demos.vercel.app/bowles-hearing-care-services-pc/assets/site-8.png">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/bowles-hearing-care-services-pc/assets/site-8.png">
+<meta property="og:image:width" content="1707">
+<meta property="og:image:height" content="1924">
+<meta property="og:image:alt" content="Bowles Hearing Care Services, PC">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/bowles-hearing-care-services-pc/assets/site-8.png">
+<meta name="twitter:image:alt" content="Bowles Hearing Care Services, PC">
 <meta name="twitter:title" content="Bowles Hearing Care Services, PC">
 <meta name="twitter:description" content="Trusted Charlotte, NC audiologists: rechargeable hearing aids, expert fittings, repairs, hearing exams, and earwax removal. Schedule today for your best hearing!">
 <style>
@@ -23,6 +30,17 @@
   --brand:#A4552A;--scrim:13,18,23;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -86,7 +104,7 @@ nav.main a:hover{text-decoration:underline}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 0 58px}
+.hero-in{position:relative;padding:62px 20px 58px}
 .eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
 .hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
 .hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
@@ -107,7 +125,7 @@ nav.main a:hover{text-decoration:underline}
 /* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
    few images for an image-led page to look finished rather than thin. */
 .hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 0 48px;text-align:center}
+.hero-panel .hero-in{padding:52px 20px 48px;text-align:center}
 .hero-panel .cta-row{justify-content:center}
 .hero-panel p.lede{margin-left:auto;margin-right:auto}
 /* The logo sits on a white plate rather than being forced white with a filter.
@@ -164,7 +182,7 @@ footer.site a{color:#fff}
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#services">Services</a></li>
-        
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,33 +191,18 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-0.webp" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    
     <p class="eyebrow">Person</p>
     <h1>Bowles Hearing Care Services, PC</h1>
     <p class="lede">Trusted Charlotte, NC audiologists: rechargeable hearing aids, expert fittings, repairs, hearing exams, and earwax removal. Schedule today for your best hearing!</p>
     <div class="cta-row">
       <a class="btn btn-c" href="tel:+17043344428">Call (704) 334-4428</a>
-      <a class="btn btn-ghost" href="mailto:bowleshearing@gmail.com">Email us</a>
+      <a class="hero-alt" href="mailto:bowleshearing@gmail.com">or email us</a>
     </div>
   </div>
 </div>
-
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <div class="factbox">
-      <dl>
-        <div><dt>Phone</dt><dd><a href="tel:+17043344428">(704) 334-4428</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:bowleshearing@gmail.com">bowleshearing@gmail.com</a></dd></div>
-        
-        
-        <div><dt>Facebook</dt><dd><a href="https://bowleshearing.com/location-contact/charlotte-nc/">bowleshearing.com/location-contact/charlotte-nc/</a></dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
 
 <section id="services">
   <div class="wrap">
@@ -216,12 +219,50 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section class="words">
+<section id="work">
   <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Trusted Charlotte, NC audiologists: rechargeable hearing aids, expert fittings, repairs, hearing exams, and earwax removal. Schedule today for your best hearing!
-      <cite>Posted by Bowles Hearing Care Services, PC on Facebook. Read on <a href="https://bowleshearing.com/location-contact/charlotte-nc/">their page</a>.</cite>
-    </blockquote>
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Bowles Hearing Care Services, PC Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal">
+      <figure><img src="assets/site-1.webp" alt="NC audiologists: rechargeable hearing aids" loading="lazy" width="800" height="600"><figcaption>NC audiologists: rechargeable hearing aids</figcaption></figure>
+      <figure><img src="assets/site-2.png" alt="expert fittings" loading="lazy" width="800" height="600"><figcaption>expert fittings</figcaption></figure>
+      <figure><img src="assets/site-3.png" alt="repairs" loading="lazy" width="800" height="600"><figcaption>repairs</figcaption></figure>
+      <figure><img src="assets/site-4.png" alt="hearing exams" loading="lazy" width="800" height="600"><figcaption>hearing exams</figcaption></figure>
+      <figure><img src="assets/site-5.png" alt="and earwax removal. Schedule today for your best hearing!" loading="lazy" width="800" height="600"><figcaption>and earwax removal. Schedule today for your best hearing!</figcaption></figure>
+      <figure><img src="assets/site-6.webp" alt="Bowles Hearing Care Services, PC - Person" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-7.webp" alt="Bowles Hearing Care Services, PC - Person" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-8.png" alt="Bowles Hearing Care Services, PC - Person" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-9.png" alt="Bowles Hearing Care Services, PC - Person" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Bowles Hearing Care Services, PC page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+17043344428">(704) 334-4428</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="factbox">
+      <dl>
+        <div><dt>Phone</dt><dd><a href="tel:+17043344428">(704) 334-4428</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:bowleshearing@gmail.com">bowleshearing@gmail.com</a></dd></div>
+        
+        
+        <div><dt>Facebook</dt><dd><a href="https://bowleshearing.com/location-contact/charlotte-nc/">bowleshearing.com/location-contact/charlotte-nc/</a></dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 

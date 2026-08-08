@@ -3,33 +3,44 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Three Girls On Spring | Charleston</title>
-<meta name="description" content="Organic Plant-Based Meats Free Meats and Dairy Free Cheeses, Pizzas, and Prepared Foods.">
+<title>Three Girls on Spring | Charleston</title>
+<meta name="description" content="A plant-based Italian delicatessen serving classics with a twist.">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Three Girls On Spring">
-<meta property="og:title" content="Three Girls On Spring | Charleston">
-<meta property="og:description" content="Organic Plant-Based Meats Free Meats and Dairy Free Cheeses, Pizzas, and Prepared Foods.">
+<meta property="og:site_name" content="Three Girls on Spring">
+<meta property="og:title" content="Three Girls on Spring | Charleston">
+<meta property="og:description" content="A plant-based Italian delicatessen serving classics with a twist.">
 <meta property="og:url" content="https://vendly-demos.vercel.app/three-girls-on-spring/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/three-girls-on-spring/assets/365282888_307547938460231.png">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/three-girls-on-spring/assets/365282888_307547938460231.png">
-<meta property="og:image:width" content="1178">
-<meta property="og:image:height" content="322">
-<meta property="og:image:alt" content="Three Girls On Spring">
+<meta property="og:image" content="https://vendly-demos.vercel.app/three-girls-on-spring/assets/site-0.png">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/three-girls-on-spring/assets/site-0.png">
+<meta property="og:image:width" content="1380">
+<meta property="og:image:height" content="1298">
+<meta property="og:image:alt" content="Three Girls on Spring">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/three-girls-on-spring/assets/365282888_307547938460231.png">
-<meta name="twitter:image:alt" content="Three Girls On Spring">
-<meta name="twitter:title" content="Three Girls On Spring | Charleston">
-<meta name="twitter:description" content="Organic Plant-Based Meats Free Meats and Dairy Free Cheeses, Pizzas, and Prepared Foods.">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/three-girls-on-spring/assets/site-0.png">
+<meta name="twitter:image:alt" content="Three Girls on Spring">
+<meta name="twitter:title" content="Three Girls on Spring | Charleston">
+<meta name="twitter:description" content="A plant-based Italian delicatessen serving classics with a twist.">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#7A2E1E;--b:#4A1B11;--c:#A65A17;--mist:#FBF6F0;--ink:#1A1310;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#A65A17;--scrim:29,11,7;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -93,7 +104,7 @@ nav.main a:hover{text-decoration:underline}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 0 58px}
+.hero-in{position:relative;padding:62px 20px 58px}
 .eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
 .hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
 .hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
@@ -114,7 +125,7 @@ nav.main a:hover{text-decoration:underline}
 /* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
    few images for an image-led page to look finished rather than thin. */
 .hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 0 48px;text-align:center}
+.hero-panel .hero-in{padding:52px 20px 48px;text-align:center}
 .hero-panel .cta-row{justify-content:center}
 .hero-panel p.lede{margin-left:auto;margin-right:auto}
 /* The logo sits on a white plate rather than being forced white with a filter.
@@ -160,17 +171,17 @@ footer.site a{color:#fff}
 <body>
 <a class="skiplink" href="#main">Skip to main content</a>
 
-<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Three Girls On Spring.</div>
+<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Three Girls on Spring.</div>
 
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+18439282535">Call (843) 928-2535</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
-    <a class="brand" href="#main"><img class="brandmark" src="assets/365282888_307547938460231.png" alt="Three Girls On Spring" width="150" height="150"></a>
+    <a class="brand" href="#main"><img class="brandmark" src="assets/365282888_307547938460231.png" alt="Three Girls on Spring" width="150" height="150"></a>
     <nav class="main" aria-label="Main">
       <ul>
-        <li><a href="#services">Services</a></li>
+        
         <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -180,18 +191,37 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-0.png" alt="" aria-hidden="true">
   <div class="wrap hero-in">
-    <span class="panelplate"><img class="panelmark" src="assets/365282888_307547938460231.png" alt="Three Girls On Spring" width="300" height="120"></span>
-    <p class="eyebrow">Vegetarian/Vegan Restaurant in Charleston</p>
-    <h1>Three Girls On Spring</h1>
-    <p class="lede">Organic Plant-Based Meats Free Meats and Dairy Free Cheeses, Pizzas, and Prepared Foods.</p>
+    <p class="eyebrow">Page · Vegetarian/Vegan Restaurant in Charleston</p>
+    <h1>Three Girls on Spring</h1>
+    <p class="lede">A plant-based Italian delicatessen serving classics with a twist.</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+18439282535">Call (843) 928-2535</a>
-      <a class="btn btn-ghost" href="mailto:Threegirlsonspring@gmail.com">Email us</a>
+      <a class="btn btn-c" href="tel:+18439282535">Call to Order</a>
+      <a class="hero-alt" href="mailto:Threegirlsonspring@gmail.com">or email us</a>
     </div>
+    <p class="hero-facts">(843) 928-2535 &middot; 121 Spring Street, Charleston</p>
   </div>
 </div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Photos</h2>
+    <p class="lead">These photos are published on the Three Girls on Spring Facebook page. Pulled 2026-08-07.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/481219818_673522268529461.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/758915167_1054443313618702.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/758964342_2146048112696762.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/754536160_2298559797622890.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/760172577_1794191921756843.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/761280295_1738884717120479.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/759127324_847329374978171.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/759746095_2923340614687121.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/758730985_1538823460848916.jpg" alt="Three Girls on Spring - Page · Vegetarian/Vegan Restaurant" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
 
 <div class="strip"><div class="wrap"><ul>
   
@@ -199,6 +229,20 @@ footer.site a{color:#fff}
   
   
 </ul></div></div>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Three Girls on Spring page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+18439282535">(843) 928-2535</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at 121 Spring Street, Charleston, SC. Want me to pass you to the owner?</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -209,38 +253,8 @@ footer.site a{color:#fff}
         <div><dt>Email</dt><dd><a href="mailto:Threegirlsonspring@gmail.com">Threegirlsonspring@gmail.com</a></dd></div>
         <div><dt>Address</dt><dd>121 Spring Street, Charleston, SC</dd></div>
         
-        <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/threegirlsonspring/">www.facebook.com/threegirlsonspring/</a></dd></div>
+        <div><dt>Facebook</dt><dd><a href="https://www.threegirlsonspring.com">www.threegirlsonspring.com</a></dd></div>
       </dl>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Three Girls On Spring Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>Organic Plant-Based Meats Free Meats and Dairy Free Cheeses</h3></div>
-      <div class="card"><h3>Pizzas</h3></div>
-      <div class="card"><h3>and Prepared Foods</h3></div>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the Three Girls On Spring Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-wide">
-      <figure><img src="assets/481219818_673522268529461.jpg" alt="May be a graphic of text that says &#39;HREE GIRLS O SPRING&#39;" loading="lazy" width="800" height="600"><figcaption>May be a graphic of text that says &#39;HREE GIRLS O SPRING&#39;</figcaption></figure>
-      <figure><img src="assets/758915167_1054443313618702.jpg" alt="Pizzas" loading="lazy" width="800" height="600"><figcaption>Pizzas</figcaption></figure>
-      <figure><img src="assets/758964342_2146048112696762.jpg" alt="and Prepared Foods" loading="lazy" width="800" height="600"><figcaption>and Prepared Foods</figcaption></figure>
-      <figure><img src="assets/754536160_2298559797622890.jpg" alt="Organic Plant-Based Meats Free Meats and Dairy Free Cheeses" loading="lazy" width="800" height="600"><figcaption>Organic Plant-Based Meats Free Meats and Dairy Free Cheeses</figcaption></figure>
-      <figure><img src="assets/760172577_1794191921756843.jpg" alt="Pizzas" loading="lazy" width="800" height="600"><figcaption>Pizzas</figcaption></figure>
-      <figure><img src="assets/761280295_1738884717120479.jpg" alt="and Prepared Foods" loading="lazy" width="800" height="600"><figcaption>and Prepared Foods</figcaption></figure>
-      <figure><img src="assets/759127324_847329374978171.jpg" alt="Organic Plant-Based Meats Free Meats and Dairy Free Cheeses" loading="lazy" width="800" height="600"><figcaption>Organic Plant-Based Meats Free Meats and Dairy Free Cheeses</figcaption></figure>
-      <figure><img src="assets/759746095_2923340614687121.jpg" alt="Pizzas" loading="lazy" width="800" height="600"><figcaption>Pizzas</figcaption></figure>
-      <figure><img src="assets/758730985_1538823460848916.jpg" alt="and Prepared Foods" loading="lazy" width="800" height="600"><figcaption>and Prepared Foods</figcaption></figure>
     </div>
   </div>
 </section>
@@ -249,8 +263,8 @@ footer.site a{color:#fff}
 
 <footer class="site">
   <div class="wrap">
-    <p>Three Girls On Spring. 121 Spring Street, Charleston, SC. (843) 928-2535</p>
-    <p>Preview built by Vendly from the Three Girls On Spring public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <p>Three Girls on Spring. 121 Spring Street, Charleston, SC. (843) 928-2535</p>
+    <p>Preview built by Vendly from the Three Girls on Spring public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
   </div>
 </footer>
 

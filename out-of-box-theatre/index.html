@@ -13,17 +13,35 @@
 <meta property="og:description" content="The Out of Box Experience - Intimate. Thought-Provoking. Unexpected. - Out of Box Theatre - outofboxtheatre">
 <meta property="og:url" content="https://vendly-demos.vercel.app/out-of-box-theatre/">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://vendly-demos.vercel.app/out-of-box-theatre/assets/site-0.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/out-of-box-theatre/assets/site-0.jpg">
+<meta property="og:image:width" content="2311">
+<meta property="og:image:height" content="1140">
+<meta property="og:image:alt" content="Out of Box Theatre">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/out-of-box-theatre/assets/site-0.jpg">
+<meta name="twitter:image:alt" content="Out of Box Theatre">
 <meta name="twitter:title" content="Out of Box Theatre | GA">
 <meta name="twitter:description" content="The Out of Box Experience - Intimate. Thought-Provoking. Unexpected. - Out of Box Theatre - outofboxtheatre">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#668018;--b:#445610;--c:#668018;--mist:#F7F9F3;--ink:#15141F;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#9BC225;--scrim:24,30,6;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -87,7 +105,7 @@ nav.main a:hover{text-decoration:underline}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 0 58px}
+.hero-in{position:relative;padding:62px 20px 58px}
 .eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
 .hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
 .hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
@@ -108,7 +126,7 @@ nav.main a:hover{text-decoration:underline}
 /* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
    few images for an image-led page to look finished rather than thin. */
 .hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 0 48px;text-align:center}
+.hero-panel .hero-in{padding:52px 20px 48px;text-align:center}
 .hero-panel .cta-row{justify-content:center}
 .hero-panel p.lede{margin-left:auto;margin-right:auto}
 /* The logo sits on a white plate rather than being forced white with a filter.
@@ -174,19 +192,32 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
-  <div class="wrap hero-in">
-    
-    <p class="eyebrow">Local Business in GA</p>
-    <h1>Out of Box Theatre</h1>
-    <p class="lede">The Out of Box Experience - Intimate. Thought-Provoking. Unexpected. - Out of Box Theatre
+<div class="hero hero-split">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Local Business in GA</p>
+      <h1>Out of Box Theatre</h1>
+      <p class="lede">The Out of Box Experience - Intimate. Thought-Provoking. Unexpected. - Out of Box Theatre
 - outofboxtheatre</p>
-    <div class="cta-row">
-      <a class="btn btn-c" href="tel:+16786534605">Call (678) 653-4605</a>
-      <a class="btn btn-ghost" href="mailto:info@outofboxtheatre.com">Email us</a>
+      <div class="cta-row">
+      <a class="btn btn-c" href="#contact">Check Available Dates</a>
+      
     </div>
+    <p class="hero-facts">(678) 653-4605 &middot; Cobb Parkway South, Marietta</p>
+    </div>
+    <div class="hero-shot"><img src="assets/site-0.jpg" alt="outofboxtheatre" width="800" height="600"></div>
   </div>
 </div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Taken from the Out of Box Theatre Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>outofboxtheatre</h3></div>
+    </div>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -203,22 +234,17 @@ footer.site a{color:#fff}
   </div>
 </section>
 
-<section id="services">
+<section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Out of Box Theatre Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>outofboxtheatre</h3></div>
+    <h2>The part that answers customers for you</h2>
+    <p class="lead">Every Out of Box Theatre page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+16786534605">(678) 653-4605</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>Whereabouts are you?</span></div>
+      <div class="msg us"><span>We are at Cobb Parkway South, Marietta, GA, 30060. Want me to pass you to the owner?</span></div>
     </div>
-  </div>
-</section>
-
-<section class="words">
-  <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">The Out of Box Experience - Intimate. Thought-Provoking. Unexpected. - Out of Box Theatre - outofboxtheatre
-      <cite>Posted by Out of Box Theatre on Facebook. Read on <a href="https://www.outofboxtheatre.com/">their page</a>.</cite>
-    </blockquote>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 
