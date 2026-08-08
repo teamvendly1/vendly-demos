@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-wyvern-s-tale
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-wyvern-s-tale
-audited_at  : 2026-08-08T09:37:07Z
+audited_at  : 2026-08-08T09:54:30Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-wyvern-s-tale.png
-shot_sha256 : 525D39B1339E7F4F92FDE47C39AAE22361DBA3E46367CBF399D6622C6F7D151A
+shot_sha256 : F2DE1462A97DCBCE05E1F9F85A0C83A53DBDB20621C52A8B03D0BBB7C31E5D4D
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 136 chars: "Create a free link in bio with Bio Sites by Squarespace. Sho"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 951871 bytes, 240 distinct colours, modal colour covers 48.9% of sampled pixels
+      measured : 1280x2000px, 951864 bytes, 240 distinct colours, modal colour covers 48.9% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

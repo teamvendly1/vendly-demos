@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : the-paper-canopy
 folder      : C:\VendlyVault\_tmp\autodemo\demos\the-paper-canopy
-audited_at  : 2026-08-08T09:37:07Z
+audited_at  : 2026-08-08T09:54:30Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\the-paper-canopy.png
-shot_sha256 : 35BBE87A200819EE2BCB77014130D201E41A2BBA3FD0856937C4D818030BA43D
+shot_sha256 : 070E2BDE05FDE34F9B53F26F535DEE9A4EE93D861D024FB7552CA78EDD547BB8
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 106 chars: "Carefully curated greeting cards, art supplies, and statione"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 877317 bytes, 237 distinct colours, modal colour covers 46.6% of sampled pixels
+      measured : 1280x2000px, 877315 bytes, 237 distinct colours, modal colour covers 46.6% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

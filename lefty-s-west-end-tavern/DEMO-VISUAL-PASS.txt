@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : lefty-s-west-end-tavern
 folder      : C:\VendlyVault\_tmp\autodemo\demos\lefty-s-west-end-tavern
-audited_at  : 2026-08-08T09:37:07Z
+audited_at  : 2026-08-08T09:54:30Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\lefty-s-west-end-tavern.png
-shot_sha256 : 0958BBE1219D6FF0BCF8C2FBE29C26ECE570278176DA6153494A736B38B9484C
+shot_sha256 : F86DA7F688E7C3A6A091DBDBBE36448283C9E3B4D466EBDE4568A77C3F6F3424
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 242 chars: "This is a tavern, but itâ€™s really a place. My place. Your pl"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1814019 bytes, 252 distinct colours, modal colour covers 28.3% of sampled pixels
+      measured : 1280x2000px, 1814000 bytes, 252 distinct colours, modal colour covers 28.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
