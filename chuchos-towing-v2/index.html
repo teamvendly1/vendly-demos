@@ -120,6 +120,21 @@ footer .wrap{display:grid;gap:18px}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--c);padding:11px 16px calc(11px + env(safe-area-inset-bottom));box-shadow:0 -8px 26px rgba(0,0,0,.24)}
 .callbar a{display:flex;align-items:center;justify-content:center;gap:11px;color:#fff;text-decoration:none;font-weight:850;font-size:20px;padding:6px}
 @media(min-width:760px){.callbar{display:none}}
+.rv{padding:64px 0;background:var(--paper2,#f6f4ef)}
+.rv .lead{max-width:64ch;margin:0 0 28px}
+.rvGrid{display:grid;gap:18px}
+.rv.one .rvGrid{grid-template-columns:1fr;max-width:70ch}
+.rv.two .rvGrid{grid-template-columns:repeat(2,1fr)}
+.rv.few .rvGrid{grid-template-columns:repeat(2,1fr)}
+.rv.many .rvGrid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.rv.many .rvGrid,.rv.few .rvGrid,.rv.two .rvGrid{grid-template-columns:1fr}}
+.rvCard{margin:0;background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:12px}
+.rvCard blockquote{margin:0;font-size:1.02rem;line-height:1.62;color:var(--b,#1a1a17)}
+.rvCard figcaption{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.95rem}
+.rvCard figcaption b{font-weight:650}
+.rvWho{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--c,#20402f);color:#fff;font-size:.78rem;letter-spacing:.04em;font-weight:650;flex:none}
+.rvStars{display:inline-flex;gap:2px}
+.rvStars svg{fill:var(--c,#20402f)}
 </style>
 </head>
 <body>
@@ -138,7 +153,7 @@ footer .wrap{display:grid;gap:18px}
 <p class="lede">Local and long distance towing out of Vineland, NJ, with the phone answered around the clock. Call (856) 238-0308 and tell them where the vehicle is.</p>
 <div class="cta">
 <a class="btn big" href="tel:+18562380308">Call (856) 238-0308</a>
-<a class="btn ghost" href="#work">See recent jobs</a>
+<a class="btn ghost" href="#services">Ask for local and long distance towing</a>
 </div>
 </div>
 </div>
