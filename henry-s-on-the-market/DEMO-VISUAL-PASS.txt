@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : henry-s-on-the-market
 folder      : C:\VendlyVault\_tmp\autodemo\demos\henry-s-on-the-market
-audited_at  : 2026-08-08T22:56:57Z
+audited_at  : 2026-08-08T23:32:37Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\henry-s-on-the-market.png
-shot_sha256 : D0B0EC11C3C76EC2DB4B45997B6F0DCED72D7C1B4D1E410A1848E990C12BC36A
+shot_sha256 : A1458061B893DDF014A56D256602FF1C89371749EDBD10166C4AA938DECA4D09
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 14089 bytes
+      measured : present, 18984 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 7 image tag(s)
+      measured : 14 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 7 resolvable src(s) exist on disk
+      measured : all 14 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Henry's on the Market" is a plausible business name and is visible on the page (H1 reads "Established in 1932, Henryâ€™s is the oldest continu")
@@ -49,7 +49,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 14089 bytes of HTML
+      measured : none in 18984 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #8c2f1f on #FFFFFF = 8.26:1 (needs 4.5); --a #8c2f1f on #FFFFFF = 8.26:1 (needs 4.5); --b #1a1512 on #FFFFFF = 18.1:1 (needs 4.5); --b #1a1512 on #DBE4EC = 14.07:1 (needs 4.5)
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 127 chars: "Henryâ€™s is centrally located in historic downtown Charleston"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2310961 bytes, 162 distinct colours, modal colour covers 15.1% of sampled pixels
+      measured : 1280x2000px, 1632578 bytes, 103 distinct colours, modal colour covers 15.7% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
