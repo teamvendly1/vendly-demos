@@ -1,11 +1,11 @@
 {
-  "niche": "roofing",
+  "niche": "remodeling",
   "schema": "vendly.autodemo.build/1",
   "business": "Fineline Construction",
   "facebook": "https://finelineconstruction.net/",
   "slug": "fineline-construction",
-  "built_at": "2026-08-08T20:19:32.362Z",
-  "elapsed_ms": 432,
+  "built_at": "2026-08-08T21:17:33.038Z",
+  "elapsed_ms": 665,
   "steps": [
     {
       "step": "harvest_reused_offline",
@@ -13,39 +13,39 @@
     },
     {
       "step": "assets_reused_offline",
-      "at_ms": 0
-    },
-    {
-      "step": "template",
-      "at_ms": 0
-    },
-    {
-      "step": "photos_flyer_filtered",
       "at_ms": 1
     },
     {
+      "step": "template",
+      "at_ms": 120
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 127
+    },
+    {
       "step": "brand_mark_fetch",
-      "at_ms": 75
+      "at_ms": 182
     },
     {
       "step": "brand_palette",
-      "at_ms": 372
+      "at_ms": 479
     },
     {
       "step": "layout",
-      "at_ms": 372
+      "at_ms": 479
     },
     {
       "step": "render",
-      "at_ms": 372
+      "at_ms": 569
     },
     {
       "step": "audit",
-      "at_ms": 373
+      "at_ms": 571
     },
     {
       "step": "beacon_probe",
-      "at_ms": 432
+      "at_ms": 665
     }
   ],
   "audit": {
@@ -77,13 +77,13 @@
     "header_treatment": "centered",
     "gallery_shape": "masonry",
     "primary_cta": {
-      "label": "Request a Roof Inspection",
+      "label": "Call About Your Remodel",
       "kind": "tel"
     },
     "niche_template": {
       "family": "roofing",
       "file": "roofing.js",
-      "resolved_by": "niche",
+      "resolved_by": "family",
       "resolved_from": "roofing",
       "sources": [
         "https://burginroofing.com",
@@ -94,6 +94,23 @@
       ],
       "rationale": "Burgin and Lindholm both put one quote ask directly under the hero headline and a tappable phone number in the top nav, because a roof buyer is triaging a failure on a phone, so the page leads with a readable panel and one repeated inspection CTA rather than two equal buttons; Janney supplies the gallery mechanic (filtered by the roof material the visitor actually has) and Burgin the countable trust block (real numbers and printed licence numbers, never the adjective). MAPPING SEAM, flagged not silent: this family also absorbs concrete, remodeling and custom_porch_builder, and for a decorative patio or driveway contractor this urgent phone-first shape is wrong - that buyer is unhurried and visual, so use the landscaping template (discovery-call CTA, portfolio-led order) when the lead sells patios and driveways, per the note in landscaping.md. HVAC and plumbing pull the other way and lean on the phone even harder than roofing does.",
       "contrast_corrected": [],
+      "cta_corrected": {
+        "label": "Call About Your Remodel",
+        "kind": "tel",
+        "from": "niche",
+        "corrected": true,
+        "reason": "label \"Request a Roof Inspection\" names \"Roof\" which is licensed only for [roofing] and this lead is niche \"remodeling\"",
+        "offending": [
+          {
+            "id": "roof",
+            "matched": "Roof",
+            "licensed": [
+              "roofing"
+            ],
+            "note": "A roof word is true of roofers only. Every other niche in the roofing FAMILY is a different trade that happens to share the research, not the vocabulary."
+          }
+        ]
+      },
       "overrode": {
         "order": {
           "from": [
@@ -372,7 +389,7 @@
     "their_words": false,
     "gallery": true,
     "contact": true,
-    "niche": "roofing"
+    "niche": "remodeling"
   },
   "fill_tokens": 16,
   "founder_face": "vendly-founder.jpg"
