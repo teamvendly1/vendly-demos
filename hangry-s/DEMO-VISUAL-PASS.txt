@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : hangry-s
 folder      : C:\VendlyVault\_tmp\autodemo\demos\hangry-s
-audited_at  : 2026-08-08T16:27:11Z
+audited_at  : 2026-08-08T18:49:27Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\hangry-s.png
-shot_sha256 : 0CC1A44673754CB3ABA96ADC417DC040A5111BAC58AFAFA5A91FC547A5D312F7
+shot_sha256 : B93C480B70486B0F67BB46F3A3F348559EB2B72462565BC6D77B74FDA1D85A68
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 212 chars: "When the hanger strikes, don t settle for anything less than"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1911325 bytes, 250 distinct colours, modal colour covers 40.0% of sampled pixels
+      measured : 1280x2000px, 1911316 bytes, 250 distinct colours, modal colour covers 40.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

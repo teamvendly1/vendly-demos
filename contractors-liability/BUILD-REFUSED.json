@@ -1,0 +1,386 @@
+{
+  "niche": "insurance",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Contractors Liability",
+  "facebook": null,
+  "slug": "contractors-liability",
+  "built_at": "2026-08-08T18:12:42.461Z",
+  "elapsed_ms": 2214,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 108
+    },
+    {
+      "step": "harvest_clean",
+      "at_ms": 108
+    },
+    {
+      "step": "assets",
+      "at_ms": 1605
+    },
+    {
+      "step": "template",
+      "at_ms": 1697
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 2079
+    },
+    {
+      "step": "layout",
+      "at_ms": 2079
+    },
+    {
+      "step": "render",
+      "at_ms": 2080
+    },
+    {
+      "step": "audit",
+      "at_ms": 2082
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 2214
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "uncited_regulated_claim",
+        "detail": "guarantee | on page: \"...\" + \"EASURED, NOT PREFERRED. // keepalive gives the same survive-the-unload guarantee sendBeacon is // usually reached for, and it is the only one of the\""
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "lawyer",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
+    "layout_selected_by": {
+      "trade_key": "lawyer",
+      "photo_count": 12,
+      "has_reviews": false,
+      "branch": "urgent/transactional trade (lawyer), 12 photographs",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "services",
+      "words",
+      "concierge",
+      "contact"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "family",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "panel"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#B85E16",
+      "b": "#5B2F0B",
+      "c": "#B85E16",
+      "brand": "#EB9957",
+      "mist": "#F9F6F3",
+      "ink": "#141E19"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#EB9957",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EB9957",
+            "after": "#B85E16",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#EB9957",
+            "after": "#B85E16",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#5B2F0B",
+            "after": "#5B2F0B",
+            "ratio": 11.31,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#5B2F0B",
+            "after": "#5B2F0B",
+            "ratio": 8.79,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#B85E16",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#B85E16",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#5B2F0B",
+            "ratio": 11.31,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#5B2F0B",
+            "ratio": 8.79,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#141E19",
+            "bg_mist": "#F9F6F3",
+            "ratio": 15.86,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#5B2F0B",
+            "bg_mist": "#F9F6F3",
+            "ratio": 10.51,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "gallery_asset_classified_graphic"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#B85E16",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#B85E16",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#5B2F0B",
+        "ratio": 11.31,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#5B2F0B",
+        "ratio": 8.79,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "demos",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
+  },
+  "claims": [
+    {
+      "text": "Contractors Liability",
+      "fetched_at": "2026-08-08T18:12:40.247Z"
+    },
+    {
+      "text": "(888) 766-4991",
+      "source": "https://contractorsliability.com/",
+      "fb_field": "tel-href",
+      "fetched_at": "2026-08-08T18:12:40.247Z"
+    },
+    {
+      "text": "info@contractorsliability.com",
+      "source": "https://contractorsliability.com/",
+      "fb_field": "site",
+      "fetched_at": "2026-08-08T18:12:40.247Z"
+    },
+    {
+      "text": "Buy professional & general liability insurance today.",
+      "source": "https://contractorsliability.com/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-08T18:12:40.247Z"
+    },
+    {
+      "text": "Buy professional & general liability insurance today",
+      "source": "https://contractorsliability.com/",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-08T18:12:40.247Z"
+    }
+  ],
+  "harvest_cleaned": [
+    {
+      "field": "facts.about",
+      "notes": [
+        "sentence containing \"cheap\" dropped, not reworded; wording of what remains unchanged"
+      ],
+      "cleared": false
+    },
+    {
+      "field": "voice.post_text[0]",
+      "notes": [
+        "sentence containing \"cheap\" dropped, not reworded; wording of what remains unchanged"
+      ],
+      "cleared": false
+    }
+  ],
+  "unresolved": [
+    "address"
+  ],
+  "link_preview": {
+    "og_title": "Contractors Liability",
+    "og_url": "https://vendly-demos.vercel.app/contractors-liability/",
+    "og_image": "https://vendly-demos.vercel.app/contractors-liability/assets/site-4.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "graphic",
+    "image_is_page_lead_image": true,
+    "image_sha256": "022a566f4de299116bbdcc8423b00509065fc31cc17975719c99457c8b9697c3",
+    "image_px": "768x724",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 13,
+    "rejected": 3,
+    "photographs": 12,
+    "logo_found": true
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "f5e1e594b0de7c91565d2002a6857bed621f6fca9f0dade665030f40adb125f3",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "557bb1d4378d7e106fe9ef56eb04c805ce8bfe41c304279db56c575d992fe923",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d3be944608282c62a3288c36a50d934c2adee22ed9189123674a99c93c88dad4",
+      "media_id": "site-14"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "insurance"
+  },
+  "fill_tokens": 16
+}

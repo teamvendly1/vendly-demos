@@ -1,0 +1,135 @@
+<!-- Vendly food-service demo. Built by generate-food-demo.js from this business's own
+     published photographs and wording. No prices, no invented dishes, no fabricated
+     reviews or awards. Sections with no source data are omitted, never filled. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taqueria Tsunami</title>
+<style>
+:root{--a:#8c2f1f;--b:#1a1512;--c:#8c2f1f;--ink:var(--b);--muted:#6b625c;--line:#e6ded6;--paper:#fbf8f4;--card:#fff;--accent:var(--a);--accent-dark:#6d2318;--shell:#f3ece3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.preview{background:#2a2320;color:#f0e6d8;font-size:13px;padding:9px 20px;text-align:center;line-height:1.45}
+.util{background:var(--accent-dark);color:#fff}
+.util .wrap{display:flex;gap:16px;align-items:center;justify-content:center;padding:9px 20px;font-size:14px;flex-wrap:wrap}
+.util a{color:#fff;text-decoration:none;font-weight:600}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,244,.96);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px}
+.brand{font-weight:800;font-size:18px;text-decoration:none;letter-spacing:.01em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+nav a{text-decoration:none;color:var(--muted);font-weight:600}
+.btn{display:inline-block;background:var(--c);color:#fff;text-decoration:none;padding:12px 20px;border-radius:999px;font-weight:700;font-size:15px;white-space:nowrap}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn.lg{padding:15px 26px;font-size:16px}
+@media(max-width:820px){nav{display:none}}
+.hero{position:relative;min-height:74vh;display:flex;align-items:flex-end;background:#241c18;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero .wrap{position:relative;padding:56px 20px 60px;width:100%}
+.kicker{color:#f0c9a0;font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:12px;margin:0 0 14px}
+.hero h1{color:#fff;font-size:clamp(32px,5.8vw,56px);line-height:1.08;margin:0 0 16px;font-weight:800;letter-spacing:-.02em;max-width:16ch}
+.hero p{color:#efe6dc;font-size:clamp(16px,2vw,19px);margin:0 0 26px;max-width:50ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.findus{background:var(--shell);border-bottom:1px solid var(--line)}
+.findus .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;padding:28px 20px}
+.fu b{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.fu p{margin:0 0 8px;font-size:15px;line-height:1.55}
+.fu a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:1px}
+@media(max-width:820px){.findus .wrap{grid-template-columns:1fr;gap:22px}}
+section{padding:66px 0}
+.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:12px;margin:0 0 12px}
+h2{font-size:clamp(25px,3.4vw,36px);line-height:1.18;margin:0 0 14px;letter-spacing:-.01em}
+.lead{color:var(--muted);font-size:17px;max-width:60ch;margin:0 0 30px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal figure{margin:0;border-radius:14px;overflow:hidden;background:#eee;aspect-ratio:1/1}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figure:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+@media(max-width:720px){.gal{grid-template-columns:repeat(2,1fr)}.gal figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}}
+.story{background:var(--shell)}
+.story blockquote{margin:0;font-size:clamp(18px,2.2vw,21px);line-height:1.55;max-width:62ch}
+.pitch{background:#241c18;color:#f3ece3}.pitch h2{color:#fff}.pitch .lead{color:#cbbdb0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.cards{grid-template-columns:1fr}}
+.pcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
+.builtby{max-width:640px;margin:30px auto 0;display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}
+.builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
+.builtby p{margin:0;font-size:.92rem;line-height:1.55;color:#cbbdb0}
+@media (max-width:560px){.builtby{flex-direction:column;text-align:center}}
+.pcard h3{margin:0 0 8px;font-size:17px;color:#fff}.pcard p{margin:0;color:#c9bbae;font-size:15px}
+footer{padding:44px 0 60px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.src{font-size:12.5px;color:#8b8078;max-width:66ch}
+</style>
+</head>
+<body>
+<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Taqueria Tsunami.</div>
+<div class="util"><div class="wrap"><a href="tel:+16783101084">Call (678) 310-1084</a></div></div>
+<header><div class="wrap">
+  <a class="brand" href="#top">Taqueria Tsunami</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul></nav>
+  <a class="btn" href="tel:+16783101084">Call to Order</a>
+</div></header>
+<main id="top">
+<div class="hero">
+  <img src="assets/588633366_1410375937764269.jpg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <p class="kicker">Atlanta</p>
+    <h1>Latin-Asian fusion with bold flavors.</h1>
+    <p class="lede">Join us for tacos, bowls &amp; margs at 8 locations across Georgia.</p>
+    <div class="cta">
+      <a class="btn lg" href="tel:+16783101084">Call to Order</a>
+      <a class="btn lg ghost" href="#photos">See the Food</a>
+    </div>
+  </div>
+</div>
+<div class="findus"><div class="wrap">
+  <div class="fu"><b>Find us</b>
+    <p>915 Memorial Drive, suite 212, Atlanta, GA, United States, Georgia</p>
+    <a href="tel:+16783101084">(678) 310-1084</a>
+  </div>
+</div></div>
+<section id="photos"><div class="wrap">
+  <p class="eyebrow">The food</p>
+  <h2>Their own photographs, not stock</h2>
+  <p class="lead">Every picture below was published by Taqueria Tsunami.</p>
+  <div class="gal">
+    <figure><img src="assets/589253272_1410368764431653.jpg" alt="Photograph published by Taqueria Tsunami" loading="lazy"></figure>
+    <figure><img src="assets/629272870_1470830411718821.jpg" alt="Photograph published by Taqueria Tsunami" loading="lazy"></figure>
+    <figure><img src="assets/705821583_1568040661997795.jpg" alt="Photograph published by Taqueria Tsunami" loading="lazy"></figure>
+    <figure><img src="assets/575123555_1387416103393586.jpg" alt="Photograph published by Taqueria Tsunami" loading="lazy"></figure>
+    <figure><img src="assets/574040100_1387416133393583.jpg" alt="Photograph published by Taqueria Tsunami" loading="lazy"></figure>
+  </div>
+</div></section>
+<section id="visit"><div class="wrap">
+  <p class="eyebrow">Come in</p>
+  <h2>Visit Taqueria Tsunami</h2>
+  <p class="lead">915 Memorial Drive, suite 212, Atlanta, GA, United States, Georgia</p>
+  <a class="btn lg" href="tel:+16783101084">Call (678) 310-1084</a>
+</div></section>
+<section class="pitch"><div class="wrap">
+  <p class="eyebrow" style="color:#f0c9a0">From Vendly</p>
+  <h2>What this page would do running live</h2>
+  <p class="lead">Built from your own photographs and wording. Here is what it adds once it is live rather than a preview.</p>
+  <div class="cards">
+    <div class="pcard"><h3>Answers while you are busy</h3><p>An assistant on the page handles hours, directions and catering questions, so the phone rings for orders instead of directions.</p></div>
+    <div class="pcard"><h3>Built for a phone</h3><p>Most people will find you on a phone first. This is laid out for that screen, not shrunk down to it.</p></div>
+    <div class="pcard"><h3>Ordering first</h3><p>Calling to order is the first thing on the page and the last, because that is the action worth making easy.</p></div>
+  </div>
+  <div class="builtby">
+    <img src="vendly-founder.jpg" alt="Jacob Bailey, Vendly" width="56" height="56" loading="lazy">
+    <p>Built by Jacob Bailey at Vendly. I put this together from your own published photographs and wording so you could look at it rather than read a pitch about it. If anything here is wrong, tell me and I will fix it.</p>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div><strong>Taqueria Tsunami</strong><br>(678) 310-1084</div>
+  <div class="src">Preview built by Vendly from www.facebook.com/TaqueriaTsunamiMadisonYards/ and their published photographs. Not affiliated with or endorsed by Taqueria Tsunami. No pricing is shown because we did not want to publish a number that might be out of date.</div>
+</div></footer>
+</body>
+</html>

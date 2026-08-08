@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : passion-for-pizza
 folder      : C:\VendlyVault\_tmp\autodemo\demos\passion-for-pizza
-audited_at  : 2026-08-08T16:27:11Z
+audited_at  : 2026-08-08T18:49:27Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\passion-for-pizza.png
-shot_sha256 : 7241323A7BC491D0AD8C6CE10068F317324592837C44795AF1BF32AEE7A37C55
+shot_sha256 : 7583C822DE757A9092291AFF92FD08EDF32FCB3AF0BA3CCAB86BF8AA773E3C35
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 43 chars: "Discover why we are the best pizza in town!"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 2826596 bytes, 160 distinct colours, modal colour covers 14.1% of sampled pixels
+      measured : 1280x2000px, 2826598 bytes, 160 distinct colours, modal colour covers 14.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

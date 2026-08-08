@@ -1,0 +1,366 @@
+{
+  "niche": "candles",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Element Tree Essentials",
+  "facebook": null,
+  "slug": "element-tree-essentials",
+  "built_at": "2026-08-08T18:21:27.331Z",
+  "elapsed_ms": 4896,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 1074
+    },
+    {
+      "step": "assets",
+      "at_ms": 4267
+    },
+    {
+      "step": "template",
+      "at_ms": 4389
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 4407
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 4790
+    },
+    {
+      "step": "layout",
+      "at_ms": 4790
+    },
+    {
+      "step": "render",
+      "at_ms": 4791
+    },
+    {
+      "step": "audit",
+      "at_ms": 4793
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 4896
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "retail-shop",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "retail-shop",
+      "photo_count": 16,
+      "has_reviews": false,
+      "branch": "visual trade (retail-shop) with 16 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "contact",
+      "services",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Reserve or Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "retail-shop",
+      "file": "retail-shop.js",
+      "resolved_by": "family",
+      "resolved_from": "retail-shop",
+      "sources": [
+        "https://www.scottsflowersnyc.com/",
+        "https://www.nativepoppy.com/",
+        "https://www.greenapplebooks.com/",
+        "https://www.catbirdnyc.com/",
+        "https://ballardblossom.com/"
+      ],
+      "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#61621A",
+      "b": "#373413",
+      "c": "#6B6E0E",
+      "brand": "#6B6E0E",
+      "mist": "#FBF8EF",
+      "ink": "#1A1810"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#6B6E0E",
+            "after": "#6B6E0E",
+            "ratio": 5.44,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#61621A",
+            "after": "#61621A",
+            "ratio": 6.42,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#373413",
+            "after": "#373413",
+            "ratio": 12.63,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#373413",
+            "after": "#373413",
+            "ratio": 9.81,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#6B6E0E",
+            "ratio": 5.44,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#61621A",
+            "ratio": 6.42,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#373413",
+            "ratio": 12.63,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#373413",
+            "ratio": 9.81,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#1A1810",
+            "bg_mist": "#FBF8EF",
+            "ratio": 16.73,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#373413",
+            "bg_mist": "#FBF8EF",
+            "ratio": 11.89,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://elementtreeessentials.com/cdn/shop/files/Element-Tree-Favicon.png?crop=center&height=32&v=1703873911&width=32"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#6B6E0E",
+        "ratio": 5.44,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#61621A",
+        "ratio": 6.42,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#373413",
+        "ratio": 12.63,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#373413",
+        "ratio": 9.81,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "demos",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
+  },
+  "claims": [
+    {
+      "text": "Element Tree Essentials",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    },
+    {
+      "text": "production@shopelementtree.com",
+      "source": "https://elementtreeessentials.com",
+      "fb_field": "site",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    },
+    {
+      "text": "Shop our range of luxurious products, including Lotion Candles, Essential Oils, Solid Perfume, Room Sprays and Car Diffusers at Element Tree Essentials.",
+      "source": "https://elementtreeessentials.com",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    },
+    {
+      "text": "including Lotion Candles",
+      "source": "https://elementtreeessentials.com",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    },
+    {
+      "text": "Essential Oils",
+      "source": "https://elementtreeessentials.com",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    },
+    {
+      "text": "Solid Perfume",
+      "source": "https://elementtreeessentials.com",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    },
+    {
+      "text": "Room Sprays and Car Diffusers at Element Tree Essentials",
+      "source": "https://elementtreeessentials.com",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-08T18:21:22.436Z"
+    }
+  ],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "phone",
+    "address"
+  ],
+  "link_preview": {
+    "og_title": "Element Tree Essentials",
+    "og_url": "https://vendly-demos.vercel.app/element-tree-essentials/",
+    "og_image": "https://vendly-demos.vercel.app/element-tree-essentials/assets/site-11.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "086e017f80ca5805fa8fa325f1ae71e8eebc77c787a8e6e33f8c3acd57e23bbe",
+    "image_px": "3840x2560",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 16,
+    "rejected": 0,
+    "photographs": 16,
+    "logo_found": false
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "candles"
+  },
+  "fill_tokens": 15,
+  "founder_face": "vendly-founder.jpg"
+}

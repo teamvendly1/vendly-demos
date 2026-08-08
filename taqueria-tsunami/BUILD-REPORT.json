@@ -1,0 +1,400 @@
+{
+  "niche": "restaurant",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Taqueria Tsunami",
+  "facebook": "https://www.facebook.com/taqueriatsunamimadisonyards/",
+  "slug": "taqueria-tsunami",
+  "built_at": "2026-08-08T18:16:49.117Z",
+  "elapsed_ms": 3927,
+  "steps": [
+    {
+      "step": "harvest",
+      "at_ms": 1018
+    },
+    {
+      "step": "harvest_clean",
+      "at_ms": 1019
+    },
+    {
+      "step": "assets",
+      "at_ms": 3640
+    },
+    {
+      "step": "template",
+      "at_ms": 3810
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3810
+    },
+    {
+      "step": "layout",
+      "at_ms": 3810
+    },
+    {
+      "step": "render",
+      "at_ms": 3812
+    },
+    {
+      "step": "audit",
+      "at_ms": 3814
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3926
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "restaurant",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "restaurant",
+      "photo_count": 10,
+      "has_reviews": true,
+      "branch": "visual trade (restaurant) with 10 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "gallery",
+      "trust",
+      "services",
+      "concierge",
+      "words",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Call to Order",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "restaurant",
+      "file": "restaurant.js",
+      "resolved_by": "niche",
+      "resolved_from": "restaurant",
+      "sources": [
+        "https://maonoseattle.com",
+        "https://kingrestaurant.nyc",
+        "https://thebullandlast.co.uk",
+        "https://mealsbygenetla.com",
+        "https://thebutchersdaughter.com"
+      ],
+      "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "gallery",
+            "trust",
+            "services",
+            "concierge",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#7A2E1E",
+      "b": "#4A1B11",
+      "c": "#A65A17",
+      "brand": "#A65A17",
+      "mist": "#FBF6F0",
+      "ink": "#1A1310"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": false,
+      "brand_applied": false,
+      "raw_accent": null,
+      "fallback_reason": "no_logo_or_extraction_failed",
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A65A17",
+            "after": "#A65A17",
+            "ratio": 5.13,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#7A2E1E",
+            "after": "#7A2E1E",
+            "ratio": 9.39,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 14.42,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#4A1B11",
+            "after": "#4A1B11",
+            "ratio": 11.21,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A65A17",
+            "ratio": 5.13,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#7A2E1E",
+            "ratio": 9.39,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#4A1B11",
+            "ratio": 14.42,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#4A1B11",
+            "ratio": 11.21,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#1A1310",
+            "bg_mist": "#FBF6F0",
+            "ratio": 17.07,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#4A1B11",
+            "bg_mist": "#FBF6F0",
+            "ratio": 13.42,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": null
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A65A17",
+        "ratio": 5.13,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#7A2E1E",
+        "ratio": 9.39,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#4A1B11",
+        "ratio": 14.42,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#4A1B11",
+        "ratio": 11.21,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00B7",
+        "count": 10,
+        "in_sourced_claim": true,
+        "char": "·"
+      },
+      {
+        "codepoint": "U+2019",
+        "count": 2,
+        "in_sourced_claim": true,
+        "char": "’"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "demos",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
+  },
+  "claims": [
+    {
+      "text": "Taqueria Tsunami",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "(678) 310-1084",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "INTRO_CARD_PROFILE_PHONE",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "info@taqueriatsunami.com",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "915 Memorial Drive, suite 212, Atlanta, GA",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "Latin-Asian fusion with bold flavors. Join us for tacos, bowls & margs at 8 locations across Georgia.",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "Page · Mexican Restaurant",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "bowls & margs at 8 locations across Georgia",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "100% recommend (19 Reviews)",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-08T18:16:45.191Z"
+    },
+    {
+      "text": "Sippin’ pretty, dippin’ messy. Short Rob Birria Tacos and Watermelon Rose Sangria.",
+      "source": "https://www.facebook.com/TaqueriaTsunamiMadisonYards/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-08T18:16:45.191Z",
+      "relevance": [
+        "service_vocab:tacos"
+      ]
+    }
+  ],
+  "harvest_cleaned": [
+    {
+      "field": "facts.about",
+      "notes": [
+        "emoji removed (2): 🌊🌮"
+      ],
+      "cleared": false
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "Taqueria Tsunami | Atlanta",
+    "og_url": "https://vendly-demos.vercel.app/taqueria-tsunami/",
+    "og_image": "https://vendly-demos.vercel.app/taqueria-tsunami/assets/588633366_1410375937764269.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "db2fa7b82043674e8a435ccfbefe91726eae6d01cefa0b6b9ced0fba5413b0e5",
+    "image_px": "1871x1871",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 10,
+    "rejected": 0,
+    "photographs": 10,
+    "logo_found": false
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": true,
+    "gallery": true,
+    "contact": true,
+    "niche": "restaurant"
+  },
+  "fill_tokens": 22
+}

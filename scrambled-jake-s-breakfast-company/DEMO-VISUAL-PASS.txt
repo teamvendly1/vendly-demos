@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : scrambled-jake-s-breakfast-company
 folder      : C:\VendlyVault\_tmp\autodemo\demos\scrambled-jake-s-breakfast-company
-audited_at  : 2026-08-08T16:27:11Z
+audited_at  : 2026-08-08T18:49:27Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\scrambled-jake-s-breakfast-company.png
-shot_sha256 : 14D8FB9E42554596358ACFBE65D5A20F167A88EB88B8A7C58F7E6324C222EC60
+shot_sha256 : 0023B1C7A91740BFE6D2E12C63F27C3D638EA3ADB145E6650F408CB9407ECAAB
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 49 chars: "offers breakfast favorites and brunch essentials."
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1764138 bytes, 142 distinct colours, modal colour covers 15.2% of sampled pixels
+      measured : 1280x2000px, 1764134 bytes, 142 distinct colours, modal colour covers 15.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

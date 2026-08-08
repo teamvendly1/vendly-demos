@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : halls-chophouse
 folder      : C:\VendlyVault\_tmp\autodemo\demos\halls-chophouse
-audited_at  : 2026-08-08T16:27:11Z
+audited_at  : 2026-08-08T18:49:27Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\halls-chophouse.png
-shot_sha256 : B6DF4C404D56EA170324F4C67A863CB1D39E25FC1295F279311D914BDF40AB17
+shot_sha256 : 5D7C6716FAE9765AB6BA9A307855E680F26B8C4D9092BD5F42067C23A878F01A
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 157 chars: "Halls Chophouse is a refined, old school steakhouse featurin"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1956878 bytes, 238 distinct colours, modal colour covers 41.2% of sampled pixels
+      measured : 1280x2000px, 1956887 bytes, 238 distinct colours, modal colour covers 41.2% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

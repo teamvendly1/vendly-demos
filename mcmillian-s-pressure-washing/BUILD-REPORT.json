@@ -1,0 +1,354 @@
+{
+  "niche": "pressure washing",
+  "schema": "vendly.autodemo.build/1",
+  "business": "McMillian's Pressure Washing",
+  "facebook": null,
+  "slug": "mcmillian-s-pressure-washing",
+  "built_at": "2026-08-08T18:22:59.135Z",
+  "elapsed_ms": 6938,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 3698
+    },
+    {
+      "step": "assets",
+      "at_ms": 6312
+    },
+    {
+      "step": "template",
+      "at_ms": 6352
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 6443
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 6838
+    },
+    {
+      "step": "layout",
+      "at_ms": 6838
+    },
+    {
+      "step": "render",
+      "at_ms": 6840
+    },
+    {
+      "step": "audit",
+      "at_ms": 6842
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 6938
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "pressure-washing",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "pressure-washing",
+      "photo_count": 15,
+      "has_reviews": false,
+      "branch": "visual trade (pressure-washing) with 15 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "gallery",
+      "services",
+      "words",
+      "concierge",
+      "contact"
+    ],
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Get a Free Quote",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "pressure-washing",
+      "file": "pressure-washing.js",
+      "resolved_by": "niche",
+      "resolved_from": "pressure-washing",
+      "sources": [
+        "https://cleanfellasinc.com",
+        "https://lcspressurewashing.com",
+        "https://callrinseprince.com",
+        "https://firehousepowerwash.com"
+      ],
+      "rationale": "LCS Pressure Washing puts a before-and-after comparison directly under the headline and Firehouse Pressure Washing puts two above the fold, so the image pair IS the hero here rather than a gallery section, and the hero is split because the pair is two halves by definition; Clean Fellas stacks its proof (review count as a hard number, licensed and insured in plain text) in one block and repeats one free-quote ask at every scroll depth, which is why trust sits second and the CTA verb is free-quote rather than contact-us. Only images and claims the business published itself are ever rendered, because this niche carries the sharpest provenance risk in the vault - generic dirty-to-clean concrete is unattributable. This same before-and-after mechanic is the one to borrow for cleaning and carpet_cleaner, which are mapped to the landscaping family but whose proof is a pair, not a portfolio.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#BA41C5",
+      "b": "#49184E",
+      "c": "#BA41C5",
+      "brand": "#BD4BC8",
+      "mist": "#F8F3F9",
+      "ink": "#10191C"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#BD4BC8",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#BD4BC8",
+            "after": "#BA41C5",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#BD4BC8",
+            "after": "#BA41C5",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#49184E",
+            "after": "#49184E",
+            "ratio": 13.78,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#49184E",
+            "after": "#49184E",
+            "ratio": 10.71,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#BA41C5",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#BA41C5",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#49184E",
+            "ratio": 13.78,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#49184E",
+            "ratio": 10.71,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#10191C",
+            "bg_mist": "#F8F3F9",
+            "ratio": 16.28,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#49184E",
+            "bg_mist": "#F8F3F9",
+            "ratio": 12.59,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://www.mcmillianspressurewashing.com/wp-content/uploads/2024/08/Mcmillians-Pressure-Washing-Logo.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#BA41C5",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#BA41C5",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#49184E",
+        "ratio": 13.78,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#49184E",
+        "ratio": 10.71,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "demos",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
+  },
+  "claims": [
+    {
+      "text": "McMillian's Pressure Washing",
+      "fetched_at": "2026-08-08T18:22:52.198Z"
+    },
+    {
+      "text": "(336) 301-9748",
+      "source": "https://www.mcmillianspressurewashing.com/",
+      "fb_field": "tel-href",
+      "fetched_at": "2026-08-08T18:22:52.198Z"
+    },
+    {
+      "text": "mcmpressurewashingservices@gmail.com",
+      "source": "https://www.mcmillianspressurewashing.com/",
+      "fb_field": "site",
+      "fetched_at": "2026-08-08T18:22:52.198Z"
+    },
+    {
+      "text": "",
+      "source": "https://www.mcmillianspressurewashing.com/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-08T18:22:52.198Z"
+    }
+  ],
+  "harvest_cleaned": [],
+  "unresolved": [
+    "address",
+    "about",
+    "post_text"
+  ],
+  "link_preview": {
+    "og_title": "McMillian&#39;s Pressure Washing",
+    "og_url": "https://vendly-demos.vercel.app/mcmillian-s-pressure-washing/",
+    "og_image": "https://vendly-demos.vercel.app/mcmillian-s-pressure-washing/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "e2a13c91cb7f8f90c0661e8f54a7ee5fdb170e67fa782a5b8e5ba152d9261096",
+    "image_px": "600x700",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 15,
+    "rejected": 1,
+    "photographs": 15,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "75810d5693a0731a550f81b36a25e000562550d0bf0e87ca6b93e25f6f36e335",
+      "media_id": "site-10"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": false,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "pressure washing"
+  },
+  "fill_tokens": 15,
+  "founder_face": "vendly-founder.jpg"
+}

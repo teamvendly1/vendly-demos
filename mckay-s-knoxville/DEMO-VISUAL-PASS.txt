@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : mckay-s-knoxville
 folder      : C:\VendlyVault\_tmp\autodemo\demos\mckay-s-knoxville
-audited_at  : 2026-08-08T16:27:11Z
+audited_at  : 2026-08-08T18:49:27Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\mckay-s-knoxville.png
-shot_sha256 : 715FEEE6FBA099919AA3AFEEFB4B1DFD9D4190075E77117A9783D48663547EFD
+shot_sha256 : 3E629498C034FCA6FBBDF96DA27759965E0EF47A184186EEE0B0BB739A7AA32E
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 109 chars: "McKAY s is a used bookstore and record store. Visit us to bu"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 369114 bytes, 190 distinct colours, modal colour covers 48.1% of sampled pixels
+      measured : 1280x2000px, 369113 bytes, 190 distinct colours, modal colour covers 48.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

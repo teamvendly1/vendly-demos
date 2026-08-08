@@ -1,0 +1,391 @@
+{
+  "niche": "nightclub",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Red Light Cafe",
+  "facebook": null,
+  "slug": "red-light-cafe",
+  "built_at": "2026-08-08T15:29:21.173Z",
+  "elapsed_ms": 3217,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 259
+    },
+    {
+      "step": "assets",
+      "at_ms": 2540
+    },
+    {
+      "step": "template",
+      "at_ms": 2652
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2666
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3090
+    },
+    {
+      "step": "layout",
+      "at_ms": 3090
+    },
+    {
+      "step": "render",
+      "at_ms": 3092
+    },
+    {
+      "step": "audit",
+      "at_ms": 3094
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3217
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "em_or_en_dash",
+        "detail": "\"—\""
+      },
+      {
+        "severity": "BLOCK",
+        "rule": "uncited_regulated_claim",
+        "detail": "guarantee"
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "bar",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "bar",
+      "photo_count": 16,
+      "has_reviews": false,
+      "branch": "visual trade (bar) with 16 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "gallery",
+      "services",
+      "words",
+      "concierge",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "See Tonight",
+      "kind": "anchor"
+    },
+    "niche_template": {
+      "family": "bar",
+      "file": "bar.js",
+      "resolved_by": "family",
+      "resolved_from": "bar",
+      "sources": [
+        "https://thedeadrabbit.com/",
+        "https://www.tspdallas.com/",
+        "https://www.smugglerscovesf.com/",
+        "https://www.bisouschicago.com/"
+      ],
+      "rationale": "Smuggler's Cove converts with no booking path at all by stating the door policy in plain words at the top, so the single CTA anchors to hours and policy rather than a reservation widget, and Bisous plus Smuggler's Cove both put press and award proof above the fold, which is why trust sits second and gallery outranks the drinks list.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "gallery",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#A92524",
+      "b": "#541212",
+      "c": "#A92524",
+      "brand": "#A92524",
+      "mist": "#F9F3F3",
+      "ink": "#12201F"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#A92524",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A92524",
+            "after": "#A92524",
+            "ratio": 7.05,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#A92524",
+            "after": "#A92524",
+            "ratio": 7.05,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#541212",
+            "after": "#541212",
+            "ratio": 14.26,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#541212",
+            "after": "#541212",
+            "ratio": 11.09,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A92524",
+            "ratio": 7.05,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#A92524",
+            "ratio": 7.05,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#541212",
+            "ratio": 14.26,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#541212",
+            "ratio": 11.09,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#12201F",
+            "bg_mist": "#F9F3F3",
+            "ratio": 15.29,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#541212",
+            "bg_mist": "#F9F3F3",
+            "ratio": 13,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://images.squarespace-cdn.com/content/v1/504b7be484ae70bad1e27b82/f583b93e-634e-456d-9dae-e46e0fd3cbaa/red-light-cafe-circle-logo-white-on-red-v7-320x320.png?format=750w"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A92524",
+        "ratio": 7.05,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#A92524",
+        "ratio": 7.05,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#541212",
+        "ratio": 14.26,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#541212",
+        "ratio": 11.09,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+00E9",
+        "count": 4,
+        "in_sourced_claim": true,
+        "char": "é"
+      },
+      {
+        "codepoint": "U+2014",
+        "count": 4,
+        "in_sourced_claim": true,
+        "char": "—"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "demos",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Red Light Cafe",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "(404) 874-7828",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "contact@redlightcafe.com",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "553-1 Amsterdam Avenue Northeast\nAtlanta, GA, 30306\nUnited States",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "Red Light Café is Atlanta's premiere listening room for Americana, Bluegrass, Country & Western, Folk, Blues, Jazz, Roots Rock, and everything in between — including some of the best Burlesque in the Southeast! Located on the east side of Piedmont Park in Midtown Atlanta's Amsterdam Walk, Red Li",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-08T15:29:18.215Z",
+      "verbatim_source_text": "Red Light Café is Atlanta's premiere listening room for Americana, Bluegrass, Country & Western, Folk, Blues, Jazz, Roots Rock, and everything in between — including some of the best Burlesque in the Southeast! Located on the east side of Piedmont Park in Midtown Atlanta's Amsterdam Walk, Red Li",
+      "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
+    },
+    {
+      "text": "Bluegrass",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "Country & Western",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "Folk",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "Blues",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "Jazz",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    },
+    {
+      "text": "Roots Rock",
+      "fetched_at": "2026-08-08T15:29:18.215Z"
+    }
+  ],
+  "unresolved": [],
+  "link_preview": {
+    "og_title": "Red Light Cafe | GA",
+    "og_url": "https://vendly-demos.vercel.app/red-light-cafe/",
+    "og_image": "https://vendly-demos.vercel.app/red-light-cafe/assets/site-4.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "d2a40f2ee49ce8115ffd543d9744cfb7dee75146d704c27422febc4baf02eaca",
+    "image_px": "1600x1600",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 16,
+    "rejected": 0,
+    "photographs": 16,
+    "logo_found": false
+  },
+  "rejected_assets": [],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": false,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "nightclub"
+  },
+  "fill_tokens": 19
+}

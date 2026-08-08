@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : makerfx
 folder      : C:\VendlyVault\_tmp\autodemo\demos\makerfx
-audited_at  : 2026-08-08T16:27:11Z
+audited_at  : 2026-08-08T18:49:27Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\makerfx.png
-shot_sha256 : B9D38D2494452F3BAAB4C4A8A9725F70EF972CACC140DFBF36AEF2D85AA9F831
+shot_sha256 : 6473862D3BE6D29622A1E28440B407BAD61C941830E8060937B5C432A5239524
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 66 chars: "MakerFX Makerspace is a community makerspace in South Orland"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1323850 bytes, 248 distinct colours, modal colour covers 37.1% of sampled pixels
+      measured : 1280x2000px, 1323828 bytes, 248 distinct colours, modal colour covers 37.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
