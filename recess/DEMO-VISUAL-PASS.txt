@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : recess
 folder      : C:\VendlyVault\_tmp\autodemo\demos\recess
-audited_at  : 2026-08-08T11:13:21Z
+audited_at  : 2026-08-08T15:45:38Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\recess.png
-shot_sha256 : 774282F4CE3465C12D009275C97B97AD47C349E02DF7A9B72674C7C615AE76D8
+shot_sha256 : 6DF7A4B3DD09F6D41C45F6187E4417E492F343AE890C6C8A26E8B8D5C61AC7A0
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 15007 bytes
+      measured : present, 14961 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 5 image tag(s)
@@ -31,7 +31,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 1 number(s) on the page, all allowed
 [PASS] NO_MOJIBAKE
       how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
-      measured : none in 1559 bytes of visible text
+      measured : none in 1544 bytes of visible text
 [PASS] NO_DUPLICATE_COPY
       how      : normalise every visible sentence of 40+ characters and look for an exact repeat
       measured : 16 sentence(s) checked, all distinct
@@ -41,24 +41,27 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
       measured : reads as a real description (141 chars)
+[PASS] EYEBROW_IS_REAL
+      how      : the eyebrow must be a real category and place, not a Facebook object type or a bare state code
+      measured : no eyebrow on this page (not a fault - many demos have none)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 15007 bytes of HTML
+      measured : none in 14961 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #A65A17 on #FFFFFF = 5.13:1 (needs 4.5); --a #7A2E1E on #FFFFFF = 9.39:1 (needs 4.5); --b #4A1B11 on #FFFFFF = 14.42:1 (needs 4.5); --b #4A1B11 on #DBE4EC = 11.21:1 (needs 4.5)
 [PASS] NOT_A_STUB
       how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
-      measured : 1559 bytes visible (floor 900)
+      measured : 1544 bytes visible (floor 900)
 [PASS] HAS_DESCRIPTION
       how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
       measured : 141 chars: "Healthy grain bowls, salads, and juices inside Krog Street M"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1042675 bytes, 231 distinct colours, modal colour covers 44.7% of sampled pixels
+      measured : 1280x2000px, 1032547 bytes, 228 distinct colours, modal colour covers 45.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

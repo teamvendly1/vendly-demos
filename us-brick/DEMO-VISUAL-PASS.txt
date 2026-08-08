@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : us-brick
 folder      : C:\VendlyVault\_tmp\autodemo\demos\us-brick
-audited_at  : 2026-08-08T12:56:19Z
+audited_at  : 2026-08-08T15:45:38Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\us-brick.png
-shot_sha256 : E8283FDBB8055BD2EED413A3783B4B74305927208C6999B0E28576C4DA1353C6
+shot_sha256 : 92E9CBDBE476906D71F24B82108C600EC219BB190DFC006CFF1FBDB4FB34D7DC
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 135 chars: "Welcome to US Brick, the leading manufacturer of residential"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1577703 bytes, 229 distinct colours, modal colour covers 43.4% of sampled pixels
+      measured : 1280x2000px, 1577739 bytes, 229 distinct colours, modal colour covers 43.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

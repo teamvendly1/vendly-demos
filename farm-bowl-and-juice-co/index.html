@@ -1,281 +1,124 @@
+<!-- Vendly food-service demo. Built by generate-food-demo.js from this business's own
+     published photographs and wording. No prices, no invented dishes, no fabricated
+     reviews or awards. Sections with no source data are omitted, never filled. -->
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Farm Bowl and Juice Co.</title>
-<meta name="description" content="Farm Bowl + Juice Company located in Homewood, AL offers açaí bowls, oatmeal bowls, cold pressed juice, smoothies and more. Drive-thru available.">
-<meta name="robots" content="noindex,nofollow">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Farm Bowl and Juice Co.">
-<meta property="og:title" content="Farm Bowl and Juice Co.">
-<meta property="og:description" content="Farm Bowl + Juice Company located in Homewood, AL offers açaí bowls, oatmeal bowls, cold pressed juice, smoothies and more. Drive-thru available.">
-<meta property="og:url" content="https://vendly-demos.vercel.app/farm-bowl-and-juice-co/">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/farm-bowl-and-juice-co/assets/site-14.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/farm-bowl-and-juice-co/assets/site-14.jpg">
-<meta property="og:image:width" content="3024">
-<meta property="og:image:height" content="4032">
-<meta property="og:image:alt" content="Farm Bowl and Juice Co.">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/farm-bowl-and-juice-co/assets/site-14.jpg">
-<meta name="twitter:image:alt" content="Farm Bowl and Juice Co.">
-<meta name="twitter:title" content="Farm Bowl and Juice Co.">
-<meta name="twitter:description" content="Farm Bowl + Juice Company located in Homewood, AL offers açaí bowls, oatmeal bowls, cold pressed juice, smoothies and more. Drive-thru available.">
 <style>
-:root{
-  --a:#488172;--b:#24423A;--c:#488172;--mist:#F4F9F7;--ink:#1A1310;
-  /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
-     sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#74B2A1;--scrim:13,23,20;
-  --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
-}
-.concierge{background:var(--soft,#f7f5f0)}
-.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
-.concierge .msg{display:flex}
-.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
-.concierge .msg.them{justify-content:flex-start}
-.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
-.concierge .msg.us{justify-content:flex-end}
-.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
-.concierge .msg.us span a{color:#fff;text-decoration:underline}
-.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
-.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
+:root{--a:#8c2f1f;--b:#1a1512;--c:#8c2f1f;--ink:var(--b);--muted:#6b625c;--line:#e6ded6;--paper:#fbf8f4;--card:#fff;--accent:var(--a);--accent-dark:#6d2318;--shell:#f3ece3}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block;height:auto}
-a{color:var(--a)}
-h1,h2,h3{line-height:1.12;margin:0 0 .55em;overflow-wrap:break-word}
-h1{font:700 clamp(31px,6.6vw,54px)/1.06 "Barlow Condensed",Inter,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
-h2{font:700 clamp(25px,4.6vw,38px)/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase}
-h3{font:700 18px/1.3 Inter,sans-serif}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-.skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
-.skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
-
-.phonestrip{background:var(--b)}
-.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
-  font:700 17px/1 Inter,sans-serif;letter-spacing:.02em}
-.phonestrip a:hover,.phonestrip a:focus{background:#0a1c2e}
-
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;flex-wrap:wrap}
-.brand{font:700 20px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b);text-decoration:none;display:inline-flex;align-items:center}
-.brandmark{height:52px;width:auto}
-@media(min-width:720px){.brandmark{height:64px}}
-.header-centered .bar{flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.header-centered .brandmark{height:76px;max-width:min(86vw,420px)}
-@media(min-width:720px){.header-centered .brandmark{height:104px}}
-.gal-wide{grid-template-columns:1fr}
-@media(min-width:720px){.gal-wide{grid-template-columns:repeat(2,1fr)}}
-.gal-wide img{aspect-ratio:16/10}
-.gal-masonry{grid-template-columns:repeat(2,1fr)}
-@media(min-width:720px){.gal-masonry{grid-template-columns:repeat(3,1fr)}}
-.gal-masonry figure:nth-child(3n+1){grid-column:span 2}
-@media(min-width:720px){.gal-masonry figure:nth-child(3n+1){grid-column:span 1}}
-nav.main ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
-nav.main a:hover{text-decoration:underline}
-
-.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
-  padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
-.btn-c{background:var(--c);color:#fff}
-.btn-c:hover{filter:brightness(.9)}
-.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* Secondary button for the LIGHT hero. btn-ghost is white-on-transparent and
-   disappears entirely on the split treatment's pale background. */
-.btn-outline{border-color:var(--b);color:var(--b)}
-.btn-outline:hover{background:var(--mist)}
-
-/* A thin band of their real logo colour, full strength, carrying no text. */
-.brandstripe{height:5px;background:var(--brand)}
-
-/* HERO TREATMENT A - overlay. Full-bleed photograph behind a scrim tinted with
-   their own dark tone rather than a fixed navy, so two businesses do not share
-   an overlay colour. */
-.hero{position:relative;isolation:isolate}
-.hero-overlay{color:#fff;background:var(--b)}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 20px 58px}
-.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
-.hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
-.hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
-.hero p.lede{font-size:19px;max-width:44ch;margin:0 0 26px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
-
-/* HERO TREATMENT B - split. The photograph sits BESIDE the text at full clarity
-   instead of under a scrim. A scrim exists to make text legible over a busy
-   image and it also destroys the image, which is self-defeating on the trades
-   where the photograph is the sales argument. */
-.hero-split{background:var(--mist);border-bottom:1px solid var(--line);color:var(--ink)}
-.hero-split .eyebrow{color:var(--b)}
-.hero-split p.lede{color:var(--muted)}
-.hero-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:center;padding:44px 20px 40px}
-@media(min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:38px;padding:56px 20px 52px}}
-.hero-shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:0 12px 30px rgba(var(--scrim),.18)}
-
-/* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
-   few images for an image-led page to look finished rather than thin. */
-.hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 20px 48px;text-align:center}
-.hero-panel .cta-row{justify-content:center}
-.hero-panel p.lede{margin-left:auto;margin-right:auto}
-/* The logo sits on a white plate rather than being forced white with a filter.
-   An invert() turns a colour logo into a silhouette and throws away the brand we
-   just went to the trouble of extracting; a plate reads correctly whatever the
-   logo is made of, including one with its own dark background baked in. */
-.hero-panel .panelplate{display:inline-block;background:#fff;border-radius:12px;padding:14px 20px;margin:0 auto 20px}
-.hero-panel .panelmark{height:64px;width:auto;max-width:min(78vw,340px)}
-
-.strip{background:var(--mist);border-block:1px solid var(--line)}
-.strip ul{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:16px 0;
-  font:600 15px/1.4 Inter,sans-serif;color:var(--b)}
-
-section{padding:52px 0}
-.lead{color:var(--muted);max-width:62ch}
-.grid{display:grid;gap:14px;grid-template-columns:1fr}
-@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
-.card h3{margin:0;color:var(--b)}
-
-.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
-.gal figure{margin:0}
-.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--mist)}
-.gal figcaption{font:400 12px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
-
-.factbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.factbox dl{margin:0;display:grid;gap:14px}
-.factbox dt{font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.factbox dd{margin:0;font-size:17px}
-.factbox a{color:var(--a)}
-
-.quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
-.quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
-
-footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
-footer.site a{color:#fff}
-.preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
-.preview a{color:#fff}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.preview{background:#2a2320;color:#f0e6d8;font-size:13px;padding:9px 20px;text-align:center;line-height:1.45}
+.util{background:var(--accent-dark);color:#fff}
+.util .wrap{display:flex;gap:16px;align-items:center;justify-content:center;padding:9px 20px;font-size:14px;flex-wrap:wrap}
+.util a{color:#fff;text-decoration:none;font-weight:600}
+header{position:sticky;top:0;z-index:20;background:rgba(251,248,244,.96);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px}
+.brand{font-weight:800;font-size:18px;text-decoration:none;letter-spacing:.01em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+nav a{text-decoration:none;color:var(--muted);font-weight:600}
+.btn{display:inline-block;background:var(--c);color:#fff;text-decoration:none;padding:12px 20px;border-radius:999px;font-weight:700;font-size:15px;white-space:nowrap}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.75);color:#fff}
+.btn.lg{padding:15px 26px;font-size:16px}
+@media(max-width:820px){nav{display:none}}
+.hero{position:relative;min-height:74vh;display:flex;align-items:flex-end;background:#241c18;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero .wrap{position:relative;padding:56px 20px 60px;width:100%}
+.kicker{color:#f0c9a0;font-weight:700;letter-spacing:.13em;text-transform:uppercase;font-size:12px;margin:0 0 14px}
+.hero h1{color:#fff;font-size:clamp(32px,5.8vw,56px);line-height:1.08;margin:0 0 16px;font-weight:800;letter-spacing:-.02em;max-width:16ch}
+.hero p{color:#efe6dc;font-size:clamp(16px,2vw,19px);margin:0 0 26px;max-width:50ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.findus{background:var(--shell);border-bottom:1px solid var(--line)}
+.findus .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;padding:28px 20px}
+.fu b{display:block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+.fu p{margin:0 0 8px;font-size:15px;line-height:1.55}
+.fu a{font-weight:700;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:1px}
+@media(max-width:820px){.findus .wrap{grid-template-columns:1fr;gap:22px}}
+section{padding:66px 0}
+.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:12px;margin:0 0 12px}
+h2{font-size:clamp(25px,3.4vw,36px);line-height:1.18;margin:0 0 14px;letter-spacing:-.01em}
+.lead{color:var(--muted);font-size:17px;max-width:60ch;margin:0 0 30px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal figure{margin:0;border-radius:14px;overflow:hidden;background:#eee;aspect-ratio:1/1}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figure:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+@media(max-width:720px){.gal{grid-template-columns:repeat(2,1fr)}.gal figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}}
+.story{background:var(--shell)}
+.story blockquote{margin:0;font-size:clamp(18px,2.2vw,21px);line-height:1.55;max-width:62ch}
+.pitch{background:#241c18;color:#f3ece3}.pitch h2{color:#fff}.pitch .lead{color:#cbbdb0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.cards{grid-template-columns:1fr}}
+.pcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px}
+.pcard h3{margin:0 0 8px;font-size:17px;color:#fff}.pcard p{margin:0;color:#c9bbae;font-size:15px}
+footer{padding:44px 0 60px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.src{font-size:12.5px;color:#8b8078;max-width:66ch}
 </style>
 </head>
 <body>
-<a class="skiplink" href="#main">Skip to main content</a>
-
 <div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Farm Bowl and Juice Co..</div>
-
-<div class="brandstripe"></div>
-<div class="phonestrip"><a href="tel:+12058482929">Call (205) 848-2929</a></div>
-
-<header class="site header-centered">
-  <div class="wrap bar">
-    <a class="brand" href="#main">Farm Bowl and Juice Co.</a>
-    <nav class="main" aria-label="Main">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Photos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-
-<div class="hero hero-overlay">
-  <img class="hero-img" src="assets/site-4.jpg" alt="" aria-hidden="true">
-  <div class="wrap hero-in">
-    
-    <h1>Farm Bowl and Juice Co.</h1>
-    <p class="lede">Farm Bowl + Juice Company located in Homewood, AL offers açaí bowls, oatmeal bowls, cold pressed juice, smoothies and more. Drive-thru available.</p>
-    <div class="cta-row">
-      <a class="btn btn-c" href="tel:+12058482929">Call to Order</a>
-      <a class="hero-alt" href="mailto:info@farmbowlandjuiceco.com">or email us</a>
+<div class="util"><div class="wrap"><a href="tel:+12058482929">Call (205) 848-2929</a></div></div>
+<header><div class="wrap">
+  <a class="brand" href="#top">Farm Bowl and Juice Co.</a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul></nav>
+  <a class="btn" href="tel:+12058482929">Call to Order</a>
+</div></header>
+<main id="top">
+<div class="hero">
+  <img src="assets/site-14.jpg" alt="" aria-hidden="true">
+  <div class="wrap">
+    <h1>A kitchen worth the trip.</h1>
+    <p class="lede">Farm Bowl + Juice Company located in Homewood, AL offers açaí bowls, oatmeal bowls, cold pressed juice, smoothies and more.</p>
+    <div class="cta">
+      <a class="btn lg" href="tel:+12058482929">Call to Order</a>
+      <a class="btn lg ghost" href="#photos">See the Food</a>
     </div>
-    <p class="hero-facts">(205) 848-2929</p>
   </div>
 </div>
-
-<section id="work">
-  <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the Farm Bowl and Juice Co. Facebook page. Pulled 2026-08-07.</p>
-    <div class="gal gal-masonry">
-      <figure><img src="assets/site-6.jpg" alt="AL offers açaí bowls" loading="lazy" width="800" height="600"><figcaption>AL offers açaí bowls</figcaption></figure>
-      <figure><img src="assets/site-7.jpg" alt="oatmeal bowls" loading="lazy" width="800" height="600"><figcaption>oatmeal bowls</figcaption></figure>
-      <figure><img src="assets/site-11.jpg" alt="cold pressed juice" loading="lazy" width="800" height="600"><figcaption>cold pressed juice</figcaption></figure>
-      <figure><img src="assets/site-12.jpg" alt="smoothies and more. Drive-thru available" loading="lazy" width="800" height="600"><figcaption>smoothies and more. Drive-thru available</figcaption></figure>
-      <figure><img src="assets/site-13.jpg" alt="Farm Bowl and Juice Co." loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/site-14.jpg" alt="Farm Bowl and Juice Co." loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/site-15.jpg" alt="Farm Bowl and Juice Co." loading="lazy" width="800" height="600"></figure>
-    </div>
+<div class="findus"><div class="wrap">
+  <div class="fu"><b>Find us</b>
+    <a href="tel:+12058482929">(205) 848-2929</a>
   </div>
-</section>
-
-<section id="services">
-  <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Farm Bowl and Juice Co. Facebook page.</p>
-    <div class="grid">
-      
-      <div class="card"><h3>AL offers açaí bowls</h3></div>
-      <div class="card"><h3>oatmeal bowls</h3></div>
-      <div class="card"><h3>cold pressed juice</h3></div>
-      <div class="card"><h3>smoothies and more. Drive-thru available</h3></div>
-    </div>
+</div></div>
+<section id="photos"><div class="wrap">
+  <p class="eyebrow">The food</p>
+  <h2>Their own photographs, not stock</h2>
+  <p class="lead">Every picture below was published by Farm Bowl and Juice Co..</p>
+  <div class="gal">
+    <figure><img src="assets/site-11.jpg" alt="Photograph published by Farm Bowl and Juice Co." loading="lazy"></figure>
+    <figure><img src="assets/site-15.jpg" alt="Photograph published by Farm Bowl and Juice Co." loading="lazy"></figure>
+    <figure><img src="assets/site-13.jpg" alt="Photograph published by Farm Bowl and Juice Co." loading="lazy"></figure>
+    <figure><img src="assets/site-12.jpg" alt="Photograph published by Farm Bowl and Juice Co." loading="lazy"></figure>
+    <figure><img src="assets/site-4.jpg" alt="Photograph published by Farm Bowl and Juice Co." loading="lazy"></figure>
   </div>
-</section>
-
-<section id="concierge" class="concierge">
-  <div class="wrap">
-    <h2>The part that answers customers for you</h2>
-    <p class="lead">Every Farm Bowl and Juice Co. page we build comes with a concierge. It sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight.</p>
-    <div class="chat">
-      <div class="msg them"><span>Hi, are you open right now?</span></div>
-      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+12058482929">(205) 848-2929</a> and we will get you sorted.</span></div>
-      <div class="msg them"><span>How do I get in touch?</span></div>
-      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
-    </div>
-    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
+</div></section>
+<section id="visit"><div class="wrap">
+  <p class="eyebrow">Come in</p>
+  <h2>Visit Farm Bowl and Juice Co.</h2>
+  <a class="btn lg" href="tel:+12058482929">Call (205) 848-2929</a>
+</div></section>
+<section class="pitch"><div class="wrap">
+  <p class="eyebrow" style="color:#f0c9a0">From Vendly</p>
+  <h2>What this page would do running live</h2>
+  <p class="lead">Built from your own photographs and wording. Here is what it adds once it is live rather than a preview.</p>
+  <div class="cards">
+    <div class="pcard"><h3>Answers while you are busy</h3><p>An assistant on the page handles hours, directions and catering questions, so the phone rings for orders instead of directions.</p></div>
+    <div class="pcard"><h3>Built for a phone</h3><p>Most people will find you on a phone first. This is laid out for that screen, not shrunk down to it.</p></div>
+    <div class="pcard"><h3>Ordering first</h3><p>Calling to order is the first thing on the page and the last, because that is the action worth making easy.</p></div>
   </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <div class="factbox">
-      <dl>
-        <div><dt>Phone</dt><dd><a href="tel:+12058482929">(205) 848-2929</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:info@farmbowlandjuiceco.com">info@farmbowlandjuiceco.com</a></dd></div>
-        
-        
-        <div><dt>Facebook</dt><dd><a href="https://www.farmbowlandjuiceco.com/">www.farmbowlandjuiceco.com/</a></dd></div>
-      </dl>
-    </div>
-  </div>
-</section>
-
+</div></section>
 </main>
-
-<footer class="site">
-  <div class="wrap">
-    <p>Farm Bowl and Juice Co.. (205) 848-2929</p>
-    <p>Preview built by Vendly from the Farm Bowl and Juice Co. public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
-  </div>
-</footer>
-
-<script>
-  window.VendlyBeaconConfig = { tenantId: "farm-bowl-and-juice-co", endpoint: "https://vendly-jarvis.vercel.app" };
-</script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
+<footer><div class="wrap">
+  <div><strong>Farm Bowl and Juice Co.</strong><br>(205) 848-2929</div>
+  <div class="src">Preview built by Vendly from www.farmbowlandjuiceco.com/ and their published photographs. Not affiliated with or endorsed by Farm Bowl and Juice Co.. No pricing is shown because we did not want to publish a number that might be out of date.</div>
+</div></footer>
 </body>
 </html>
