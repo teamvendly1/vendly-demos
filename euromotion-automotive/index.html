@@ -223,5 +223,42 @@ footer b{display:block;color:var(--ink);font-size:13px;letter-spacing:.11em;text
   <div><b>Hours</b>Monday to Friday: 8:00 am to 5:00 pm<br>Saturday: Closed<br>Sunday: Closed</div>
   <div class="srcline">This is a preview page built by Vendly from euro-motion.com and their own published photographs, on 2026-08-08. It is not affiliated with or endorsed by EuroMotion Automotive. No prices are shown, and no warranty, certification or review appears here that EuroMotion Automotive has not published itself.</div>
 </div></footer>
+
+<!-- VENDLY-DEMO-OPEN-BEACON. Counts one page open, per demo, per day. Aggregate only:
+     no identity, no referrer, no query string, no cookie, no storage.
+     Contract: _remote/state/ANALYTICS-BEACON-CONTRACT.md -->
+<script>
+(function(){
+  try{
+    var u="https://vendly-jarvis.vercel.app/api/track";
+    var b=JSON.stringify({tenantId:"demos",event:"view",path:"/vendly-demos/euromotion-automotive/"});
+    var fire=function(){
+      try{
+        // FETCH FIRST, AND THAT ORDER IS MEASURED, NOT PREFERRED.
+        // keepalive gives the same survive-the-unload guarantee sendBeacon is
+        // usually reached for, and it is the only one of the two that actually
+        // delivers here. See the note below.
+        if(typeof fetch==="function"){
+          fetch(u,{method:"POST",headers:{"Content-Type":"application/json"},body:b,keepalive:true,cache:"no-store"}).catch(function(){});
+          return;
+        }
+        // No fetch (very old browser). text/plain is CORS-safelisted, so this
+        // sends without a preflight; the server parses the body as JSON either
+        // way. Never use an application/json Blob here.
+        if(navigator&&typeof navigator.sendBeacon==="function"){
+          navigator.sendBeacon(u,new Blob([b],{type:"text/plain"}));
+        }
+      }catch(e){}
+    };
+    // Never on the critical path. The page is fully usable whether this runs,
+    // fails, or is blocked outright.
+    if(document.readyState==="loading"){
+      document.addEventListener("DOMContentLoaded",function(){setTimeout(fire,0);});
+    }else{
+      setTimeout(fire,0);
+    }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
