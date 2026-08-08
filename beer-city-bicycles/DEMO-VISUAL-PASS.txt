@@ -2,7 +2,7 @@ DEMO VISUAL AUDIT
 =================
 slug        : beer-city-bicycles
 folder      : C:\VendlyVault\_tmp\autodemo\demos\beer-city-bicycles
-audited_at  : 2026-08-08T11:13:21Z
+audited_at  : 2026-08-08T12:56:19Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
@@ -41,6 +41,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
       measured : reads as a real description (153 chars)
+[PASS] EYEBROW_IS_REAL
+      how      : the eyebrow must be a real category and place, not a Facebook object type or a bare state code
+      measured : no eyebrow on this page (not a fault - many demos have none)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none

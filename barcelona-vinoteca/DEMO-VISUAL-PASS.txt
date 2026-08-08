@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : barcelona-vinoteca
 folder      : C:\VendlyVault\_tmp\autodemo\demos\barcelona-vinoteca
-audited_at  : 2026-08-08T11:13:21Z
+audited_at  : 2026-08-08T12:56:19Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\barcelona-vinoteca.png
-shot_sha256 : 9142A84EC169E17CC42559F2899814E443BF25E8897708D5D53FB6D907C82DC1
+shot_sha256 : 61175AC5661CCCDA5564125EBE75236F503E6A3041DA34E5EF57B2772A3A713F
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -41,6 +41,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
       measured : reads as a real description (255 chars)
+[PASS] EYEBROW_IS_REAL
+      how      : the eyebrow must be a real category and place, not a Facebook object type or a bare state code
+      measured : no eyebrow on this page (not a fault - many demos have none)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
@@ -58,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 255 chars: "Vinoteca s (Wine shop) collection is sourced from private la"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1643118 bytes, 241 distinct colours, modal colour covers 40.0% of sampled pixels
+      measured : 1280x2000px, 1643115 bytes, 241 distinct colours, modal colour covers 40.0% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

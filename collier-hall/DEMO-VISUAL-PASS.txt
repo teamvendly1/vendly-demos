@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : collier-hall
 folder      : C:\VendlyVault\_tmp\autodemo\demos\collier-hall
-audited_at  : 2026-08-08T11:13:21Z
+audited_at  : 2026-08-08T12:56:19Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\collier-hall.png
-shot_sha256 : 1C2485985833236AD16FC04ECF97CE400B4A0220EEC5E7DCE3151AC0313041CA
+shot_sha256 : D30DD3D9DAAAFBEA97FEE871A93308CC2DCCF6D399EF0E0440B3BEDD8F6CAE39
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -41,6 +41,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
       measured : reads as a real description (154 chars)
+[PASS] EYEBROW_IS_REAL
+      how      : the eyebrow must be a real category and place, not a Facebook object type or a bare state code
+      measured : no eyebrow on this page (not a fault - many demos have none)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
@@ -58,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 154 chars: "Collier Hall is a restored 1907 ballroom with an outdoor dec"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 664383 bytes, 209 distinct colours, modal colour covers 46.4% of sampled pixels
+      measured : 1280x2000px, 664386 bytes, 209 distinct colours, modal colour covers 46.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

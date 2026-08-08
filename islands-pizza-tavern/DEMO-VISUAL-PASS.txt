@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : islands-pizza-tavern
 folder      : C:\VendlyVault\_tmp\autodemo\demos\islands-pizza-tavern
-audited_at  : 2026-08-08T11:13:21Z
+audited_at  : 2026-08-08T12:56:19Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\islands-pizza-tavern.png
-shot_sha256 : 2EC2E07EFBCDE54B32591AA82513136F2E133FD7F84713DB0C8984C1F8BCB707
+shot_sha256 : 27D4E3D252470174D90C31D1CB9829BC9D8673F6C6BF16F3A113CC023BC69D71
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -41,6 +41,9 @@ A status word with no evidence is worthless, so every line below carries its mea
 [PASS] DESCRIPTION_IS_REAL
       how      : the hero description must be a real sentence: not cut mid-word, not legal fine print, not a nav menu, not a draft note, not markup
       measured : reads as a real description (158 chars)
+[PASS] EYEBROW_IS_REAL
+      how      : the eyebrow must be a real category and place, not a Facebook object type or a bare state code
+      measured : no eyebrow on this page (not a fault - many demos have none)
 [PASS] NO_RETIRED_PRICE
       how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
       measured : none
@@ -58,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 158 chars: "Welcome to Island Pizza Tavern! Proudly serving the Davis Is"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1673138 bytes, 248 distinct colours, modal colour covers 42.5% of sampled pixels
+      measured : 1280x2000px, 1673135 bytes, 248 distinct colours, modal colour covers 42.5% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
