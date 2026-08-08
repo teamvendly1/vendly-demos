@@ -2,21 +2,21 @@ DEMO VISUAL AUDIT
 =================
 slug        : green-laundry-lounge
 folder      : C:\VendlyVault\_tmp\autodemo\demos\green-laundry-lounge
-audited_at  : 2026-08-08T09:12:53Z
+audited_at  : 2026-08-08T09:17:52Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\green-laundry-lounge.png
-shot_sha256 : 296254C9473A8D944EB16556FAE2164A7A21EEF2A25A2860787B3CF4CE40CD9D
+shot_sha256 : 31CF3F1F5BA2A2A136723A493290CD59F7F8D753F14BCE5D7981A7C9BAA258F4
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 16615 bytes
+      measured : present, 16578 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
       measured : 11 image tag(s)
@@ -43,7 +43,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 16615 bytes of HTML
+      measured : none in 16578 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #517A01 on #FFFFFF = 5.08:1 (needs 4.5); --a #517A01 on #FFFFFF = 5.08:1 (needs 4.5); --b #415E08 on #FFFFFF = 7.42:1 (needs 4.5); --b #415E08 on #DBE4EC = 5.77:1 (needs 4.5)
@@ -55,7 +55,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 134 chars: "Green Laundry Lounge in Greer Greenville, SC offers eco-frie"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 275187 bytes, 179 distinct colours, modal colour covers 51.5% of sampled pixels
+      measured : 1280x2000px, 292055 bytes, 185 distinct colours, modal colour covers 52.8% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

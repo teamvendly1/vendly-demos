@@ -1,0 +1,64 @@
+DEMO VISUAL AUDIT
+=================
+slug        : wildewood-aesthetic-dentistry
+folder      : C:\VendlyVault\_tmp\autodemo\demos\wildewood-aesthetic-dentistry
+audited_at  : 2026-08-08T09:12:53Z
+audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
+engine      : chrome 151.0.7922.76 headless=new
+verdict     : FAIL
+
+PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
+screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\wildewood-aesthetic-dentistry.png
+shot_sha256 : 00AEE532AA0895D3BFB15DD5965F27FF613897EEBAAECE564CB3073532FDDA15
+
+CHECKS - what was checked, how, and what was measured.
+A status word with no evidence is worthless, so every line below carries its measurement.
+
+[PASS] BUILD_PRESENT
+      how      : Test-Path index.html in the demo folder
+      measured : present, 16767 bytes
+[PASS] IMAGES_PRESENT
+      how      : count <img src="..."> in index.html
+      measured : 4 image tag(s)
+[PASS] IMAGES_ON_DISK
+      how      : resolve every relative <img src> against the demo folder and stat it
+      measured : all 4 resolvable src(s) exist on disk
+[PASS] BUSINESS_NAME_SANE
+      how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
+      measured : name "WildeWood Aesthetic Dentistry" is a plausible business name and is visible on the page (H1 reads "WildeWood Aesthetic Dentistry")
+[PASS] PHONE_OWNERSHIP
+      how      : every tel: href and formatted number in visible text normalised to 10 digits and matched against FILL.json phone plus our line 7744269684
+      measured : 1 number(s) on the page, all allowed
+[FAIL] NO_MOJIBAKE
+      how      : scan visible text for U+00C3 or U+00E2 followed by punctuation (double-encoded UTF-8)
+      measured : 2 occurrence(s), first near: "me time. Dr. GriffinÃ¢â‚¬â„¢s family-oriented dental ph"
+[PASS] NO_DUPLICATE_COPY
+      how      : normalise every visible sentence of 40+ characters and look for an exact repeat
+      measured : 22 sentence(s) checked, all distinct
+[PASS] NO_REPEATED_PHRASE
+      how      : count every rendered text node of 25+ characters and flag any rendered 3 or more times
+      measured : 15 distinct text node(s), none repeated 3+ times
+[PASS] NO_RETIRED_PRICE
+      how      : search visible text for price-shaped 179 / 249 / 319 / 529 (retired; live prices are 100 and 150)
+      measured : none
+[PASS] NO_EMOJI
+      how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
+      measured : none in 16767 bytes of HTML
+[PASS] CONTRAST_AA
+      how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
+      measured : --c #127287 on #FFFFFF = 5.55:1 (needs 4.5); --a #0F6070 on #FFFFFF = 7.17:1 (needs 4.5); --b #0B3239 on #FFFFFF = 13.73:1 (needs 4.5); --b #0B3239 on #DBE4EC = 10.67:1 (needs 4.5)
+[PASS] NOT_A_STUB
+      how      : strip script/style/head/tags, decode entities, measure UTF-8 bytes of what a reader actually sees
+      measured : 2438 bytes visible (floor 900)
+[PASS] HAS_DESCRIPTION
+      how      : the hero <p class="lede"> must carry a real sentence about the business, not merely exist
+      measured : 658 chars: "At WildeWood Aesthetic Dentistry, Dr. Justin Griffin is a pr"
+[PASS] PIXEL_RENDER
+      how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
+      measured : 1280x2000px, 375314 bytes, 170 distinct colours, modal colour covers 51.8% of sampled pixels
+
+THRESHOLDS USED
+  visible text floor : 900 bytes
+  contrast standard  : WCAG 2.1 AA 4.5:1, pairings from lib/contrast.js
+  flat-render limit  : modal colour over 98.5 percent of sampled pixels, or under 12 distinct colours
+  allowed phone      : the business number in FILL.json, plus our line 774-426-9684. Nothing else.

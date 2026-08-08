@@ -1,11 +1,67 @@
 {
   "schema": "vendly.autodemo.assets/1",
-  "classifier_error": null,
+  "classifier_error": "classified 0/3",
   "business": "Bedzzz Express",
-  "built_at": "2026-08-07T16:05:28.415Z",
+  "built_at": "2026-08-07T23:01:53.692Z",
   "provenance_statement": "Each image below was published on the business's own public Facebook page and downloaded from Facebook's CDN on the date recorded. This records WHERE the image was published. It is NOT a claim about who photographed it, and no generated page may describe these as the business's own work.",
-  "accepted": [],
+  "accepted": [
+    {
+      "file": "site-0.webp",
+      "rel": "assets/site-0.webp",
+      "sha256": "f9b6eeba8ce99d2fdaec3ae1e873ef857693a3d1149fb9bbfe147b2127ef6085",
+      "media_id": "site-0",
+      "format": "webp",
+      "bytes": 41958,
+      "remote_url": "https://cdn.nmg-platform.com/bedzzzexpress/locations/stores-info/homewood/homewood.webp",
+      "remote_url_as_found": "https://cdn.nmg-platform.com/bedzzzexpress/locations/stores-info/homewood/homewood.webp",
+      "source_url": "https://bedzzzexpress.com/locations/homewood-al",
+      "fetched_at": "2026-08-07T23:01:53.333Z",
+      "kind": "photograph"
+    },
+    {
+      "file": "site-1.webp",
+      "rel": "assets/site-1.webp",
+      "sha256": "0063c02f04c0d61139bab012035442a958b0c9b4fc1ae1118af90a8727694453",
+      "media_id": "site-1",
+      "format": "webp",
+      "bytes": 121654,
+      "remote_url": "https://cdn.nmg-platform.com/bedzzzexpress/locations/stores-info/homewood/Burkhardt_Dan.webp",
+      "remote_url_as_found": "https://cdn.nmg-platform.com/bedzzzexpress/locations/stores-info/homewood/Burkhardt_Dan.webp",
+      "source_url": "https://bedzzzexpress.com/locations/homewood-al",
+      "fetched_at": "2026-08-07T23:01:53.373Z",
+      "kind": "photograph"
+    },
+    {
+      "file": "site-2.webp",
+      "rel": "assets/site-2.webp",
+      "sha256": "50ef2a5491a0e210e7167bd1d0f5e59e59b732b0e9720686d5b3124bc1e69d0a",
+      "media_id": "site-2",
+      "format": "webp",
+      "bytes": 32656,
+      "remote_url": "https://cdn.nmg-platform.com/bedzzzexpress/locations/Google-Reviews.webp",
+      "remote_url_as_found": "https://cdn.nmg-platform.com/bedzzzexpress/locations/Google-Reviews.webp",
+      "source_url": "https://bedzzzexpress.com/locations/homewood-al",
+      "fetched_at": "2026-08-07T23:01:53.389Z",
+      "kind": "photograph"
+    }
+  ],
   "rejected": [
+    {
+      "url": "https://cdn.nmg-platform.com/bedzzzexpress/locations/m-easy-123-text.webp",
+      "media_id": "site-3",
+      "source_url": "https://bedzzzexpress.com/locations/homewood-al",
+      "sha256": "3dcac7438505781dd5010473084a55f0e7dbd8c2028100a0c1cdbfe5a2907555",
+      "reason": "too_small",
+      "bytes": 5182
+    },
+    {
+      "url": "https://cdn.nmg-platform.com/bedzzzexpress/locations/easy-123.webp",
+      "media_id": "site-4",
+      "source_url": "https://bedzzzexpress.com/locations/homewood-al",
+      "sha256": "4dcfd8a7959e38f61a035c92bdc18f00ae5e9bd6dfd1a928c45b14cc04022980",
+      "reason": "too_small",
+      "bytes": 9006
+    },
     {
       "0": "h",
       "1": "t",

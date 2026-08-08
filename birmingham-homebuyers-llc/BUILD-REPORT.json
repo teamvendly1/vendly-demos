@@ -1,38 +1,51 @@
 {
+  "niche": "estate_agent",
   "schema": "vendly.autodemo.build/1",
   "business": "Birmingham Homebuyers, LLC",
   "facebook": null,
   "slug": "birmingham-homebuyers-llc",
-  "built_at": "2026-08-07T16:05:18.959Z",
-  "elapsed_ms": 1502,
+  "built_at": "2026-08-07T23:01:17.041Z",
+  "elapsed_ms": 3037,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 1410
+      "at_ms": 1262
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 1262
     },
     {
       "step": "assets",
-      "at_ms": 1412
+      "at_ms": 2478
+    },
+    {
+      "step": "template",
+      "at_ms": 2588
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2602
     },
     {
       "step": "brand_palette",
-      "at_ms": 1414
+      "at_ms": 2940
     },
     {
       "step": "layout",
-      "at_ms": 1414
+      "at_ms": 2940
     },
     {
       "step": "render",
-      "at_ms": 1414
+      "at_ms": 2941
     },
     {
       "step": "audit",
-      "at_ms": 1415
+      "at_ms": 2942
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1502
+      "at_ms": 3037
     }
   ],
   "audit": {
@@ -40,41 +53,84 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "lawyer",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "lawyer",
+      "photo_count": 11,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (lawyer), 11 photographs",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "family",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#3B7AB4",
+      "b": "#19344D",
+      "c": "#3B7AB4",
+      "brand": "#91B8DB",
+      "mist": "#F3F6F9",
+      "ink": "#141E19"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#91B8DB",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +139,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#91B8DB",
+            "after": "#3B7AB4",
+            "ratio": 4.54,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#91B8DB",
+            "after": "#3B7AB4",
+            "ratio": 4.54,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#19344D",
+            "after": "#19344D",
+            "ratio": 12.81,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +169,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#19344D",
+            "after": "#19344D",
+            "ratio": 9.95,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +181,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#3B7AB4",
+            "ratio": 4.54,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#3B7AB4",
+            "ratio": 4.54,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#19344D",
+            "ratio": 12.81,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#19344D",
+            "ratio": 9.95,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#141E19",
+            "bg_mist": "#F3F6F9",
+            "ratio": 15.75,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#19344D",
+            "bg_mist": "#F3F6F9",
+            "ratio": 11.81,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://cdn.carrot.com/uploads/sites/85049/2026/07/Birmingham_Homebuyers_Logo_500px-2.png"
     }
   },
   "accessibility": {
@@ -181,32 +238,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#3B7AB4",
+        "ratio": 4.54,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#3B7AB4",
+        "ratio": 4.54,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#19344D",
+        "ratio": 12.81,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#19344D",
+        "ratio": 9.95,
         "pass": true
       }
     ]
@@ -229,38 +286,28 @@
   "claims": [
     {
       "text": "Birmingham Homebuyers, LLC",
-      "fetched_at": "2026-08-07T16:05:18.867Z"
+      "fetched_at": "2026-08-07T23:01:15.265Z"
     },
     {
       "text": "(205) 502-2161",
-      "fetched_at": "2026-08-07T16:05:18.867Z"
+      "fetched_at": "2026-08-07T23:01:15.265Z"
     },
     {
       "text": "Birmingham Homebuyers pays cash for houses in any condition across metro Birmingham, AL. No fees, no repairs, no showings. Get a fair cash offer in 24 hours.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:05:18.867Z"
+      "fetched_at": "2026-08-07T23:01:15.265Z"
     },
     {
       "text": "AL. No fees",
-      "fetched_at": "2026-08-07T16:05:18.867Z"
+      "fetched_at": "2026-08-07T23:01:15.265Z"
     },
     {
       "text": "no repairs",
-      "fetched_at": "2026-08-07T16:05:18.867Z"
+      "fetched_at": "2026-08-07T23:01:15.265Z"
     },
     {
       "text": "no showings. Get a fair cash offer in 24 hours",
-      "fetched_at": "2026-08-07T16:05:18.867Z"
-    },
-    {
-      "text": "Birmingham Homebuyers pays cash for houses in any condition across metro Birmingham, AL. No fees, no repairs, no showings. Get a fair cash offer in 24 hours.",
-      "source": "https://cashforhousesbham.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:05:18.867Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:birmingham,homebuyers,pays,cash"
-      ]
+      "fetched_at": "2026-08-07T23:01:15.265Z"
     }
   ],
   "unresolved": [
@@ -269,23 +316,23 @@
   "link_preview": {
     "og_title": "Birmingham Homebuyers, LLC",
     "og_url": "https://vendly-demos.vercel.app/birmingham-homebuyers-llc/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/birmingham-homebuyers-llc/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "08c5092c402aab0225d0a4853b10e4d8731a4b7cf6613a05128b9646fcc287fb",
+    "image_px": "1920x832",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 11,
     "rejected": 1,
-    "photographs": 0,
+    "photographs": 11,
     "logo_found": false
   },
   "rejected_assets": [
@@ -299,9 +346,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "estate_agent"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

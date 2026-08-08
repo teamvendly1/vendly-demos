@@ -1,0 +1,24 @@
+PIXEL VERDICT
+=============
+slug=
+big-bad-breakfast
+verdict=
+FAIL
+judged_by=
+claude-MYPC (looked at the rendered frames, not the source)
+judged_at=
+2026-08-08T01:47:19
+ ET
+device=Pixel 8 (39081FDJH0057A) 1080x2400, Chrome, live URL, cache-busted
+method=rendered on the physical phone and looked at. NOT an emulated viewport and NOT a
+       read of the source file. Chrome headless floors its viewport near 485 CSS px and
+       crops the image, which looks exactly like broken layout - that is why the real
+       device is the only honest check.
+frames=
+big-bad-breakfast-0.png
+
+WHAT WAS SEEN
+NO DESCRIPTION ANYWHERE. The fold shows a call bar, the wordmark, a full-bleed photo with the headline over it, a Call to Order button and a phone number - and not one word about the business. A prospect opening this sees their own name and nothing that argues for anything. It cleared the desktop audit because byte-counting was satisfied by the photo-provenance line and captions, which is the gap this exposed.
+
+HONEST LIMIT: this is one reader on one device at one moment. It does not prove the copy is
+true, that the business wants to hear from us, or that the photographs are theirs to use.

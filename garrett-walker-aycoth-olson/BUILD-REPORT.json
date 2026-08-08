@@ -1,38 +1,51 @@
 {
+  "niche": "lawyer",
   "schema": "vendly.autodemo.build/1",
   "business": "Garrett Walker Aycoth & Olson",
   "facebook": null,
   "slug": "garrett-walker-aycoth-olson",
-  "built_at": "2026-08-07T16:09:35.780Z",
-  "elapsed_ms": 230,
+  "built_at": "2026-08-07T23:06:27.905Z",
+  "elapsed_ms": 2237,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 114
+      "at_ms": 132
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 132
     },
     {
       "step": "assets",
-      "at_ms": 116
+      "at_ms": 1579
+    },
+    {
+      "step": "template",
+      "at_ms": 1699
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 1713
     },
     {
       "step": "brand_palette",
-      "at_ms": 118
+      "at_ms": 2097
     },
     {
       "step": "layout",
-      "at_ms": 118
+      "at_ms": 2097
     },
     {
       "step": "render",
-      "at_ms": 119
+      "at_ms": 2098
     },
     {
       "step": "audit",
-      "at_ms": 120
+      "at_ms": 2100
     },
     {
       "step": "beacon_probe",
-      "at_ms": 230
+      "at_ms": 2237
     }
   ],
   "audit": {
@@ -40,41 +53,84 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "lawyer",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "lawyer",
+      "photo_count": 15,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (lawyer), 15 photographs",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "niche",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#7A3125",
+      "b": "#4E1F18",
+      "c": "#7A3125",
+      "brand": "#7A3125",
+      "mist": "#F9F4F3",
+      "ink": "#141E19"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#7A3125",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +139,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#7A3125",
+            "after": "#7A3125",
+            "ratio": 9.16,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +149,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#7A3125",
+            "after": "#7A3125",
+            "ratio": 9.16,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +159,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#4E1F18",
+            "after": "#4E1F18",
+            "ratio": 13.7,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +169,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#4E1F18",
+            "after": "#4E1F18",
+            "ratio": 10.65,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +181,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#7A3125",
+            "ratio": 9.16,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#7A3125",
+            "ratio": 9.16,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#4E1F18",
+            "ratio": 13.7,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#4E1F18",
+            "ratio": 10.65,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#141E19",
+            "bg_mist": "#F9F4F3",
+            "ratio": 15.67,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#4E1F18",
+            "bg_mist": "#F9F4F3",
+            "ratio": 12.56,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://www.garrettandwalker.com/wp-content/uploads/2019/06/Greensboro-Lawyer-Greensboro-Car-Accident-Lawyer-Greensboro-Criminal-Lawyer.jpg"
     }
   },
   "accessibility": {
@@ -181,32 +238,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#7A3125",
+        "ratio": 9.16,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#7A3125",
+        "ratio": 9.16,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#4E1F18",
+        "ratio": 13.7,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#4E1F18",
+        "ratio": 10.65,
         "pass": true
       }
     ]
@@ -229,85 +286,70 @@
   "claims": [
     {
       "text": "Garrett Walker Aycoth & Olson",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "(336) 379-0539",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "jason@gwa-law.com",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "317 S. Greene St, Greensboro, NC, 27401",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "Garrett, Walker, Aycoth & Olson is a criminal defense, family law & car accident law firm. Our Greensboro lawyers will do everything they can to help you",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "Legal Service",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "Garrett",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "Walker",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     },
     {
       "text": "Aycoth & Olson is a criminal defense",
-      "fetched_at": "2026-08-07T16:09:35.664Z"
-    },
-    {
-      "text": "Garrett, Walker, Aycoth & Olson is a criminal defense, family law & car accident law firm. Our Greensboro lawyers will do everything they can to help you",
-      "source": "https://www.garrettandwalker.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:09:35.664Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:garrett,walker,aycoth,olson"
-      ]
+      "fetched_at": "2026-08-07T23:06:25.800Z"
     }
   ],
   "unresolved": [],
   "link_preview": {
     "og_title": "Garrett Walker Aycoth &amp; Olson | NC",
     "og_url": "https://vendly-demos.vercel.app/garrett-walker-aycoth-olson/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/garrett-walker-aycoth-olson/assets/site-8.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "b122ff370dee1f482bf940f1d10493287b713b3f1f1f8979c160a8b8c11ad9d2",
+    "image_px": "2000x1558",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 3,
-    "photographs": 0,
+    "accepted": 15,
+    "rejected": 2,
+    "photographs": 15,
     "logo_found": false
   },
   "rejected_assets": [
     {
       "reason": "download_failed",
       "sha256": null,
-      "media_id": null
-    },
-    {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "media_id": "site-15"
     },
     {
       "reason": "download_failed",
@@ -319,9 +361,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "lawyer"
   },
-  "fill_tokens": 7
+  "fill_tokens": 19
 }

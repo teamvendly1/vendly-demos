@@ -1,38 +1,51 @@
 {
+  "niche": "photography",
   "schema": "vendly.autodemo.build/1",
   "business": "Unlmtd Studio",
   "facebook": null,
   "slug": "unlmtd-studio",
-  "built_at": "2026-08-07T15:25:40.338Z",
-  "elapsed_ms": 2946,
+  "built_at": "2026-08-07T22:45:23.244Z",
+  "elapsed_ms": 4883,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 2849
+      "at_ms": 2254
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 2255
     },
     {
       "step": "assets",
-      "at_ms": 2851
+      "at_ms": 3988
+    },
+    {
+      "step": "template",
+      "at_ms": 4078
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 4224
     },
     {
       "step": "brand_palette",
-      "at_ms": 2853
+      "at_ms": 4784
     },
     {
       "step": "layout",
-      "at_ms": 2853
+      "at_ms": 4784
     },
     {
       "step": "render",
-      "at_ms": 2853
+      "at_ms": 4785
     },
     {
       "step": "audit",
-      "at_ms": 2855
+      "at_ms": 4787
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2946
+      "at_ms": 4883
     }
   ],
   "audit": {
@@ -40,41 +53,84 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "lawyer",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "lawyer",
+      "photo_count": 4,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (lawyer), 4 photographs",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "family",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#0200FF",
+      "b": "#08085E",
+      "c": "#0200FF",
+      "brand": "#0200FF",
+      "mist": "#F3F3F9",
+      "ink": "#141E19"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#0200FF",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,9 +139,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#0200FF",
+            "after": "#0200FF",
+            "ratio": 8.58,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +149,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#0200FF",
+            "after": "#0200FF",
+            "ratio": 8.58,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +159,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#08085E",
+            "after": "#08085E",
+            "ratio": 17.4,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +169,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#08085E",
+            "after": "#08085E",
+            "ratio": 13.53,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +181,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#0200FF",
+            "ratio": 8.58,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#0200FF",
+            "ratio": 8.58,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#08085E",
+            "ratio": 17.4,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#08085E",
+            "ratio": 13.53,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#141E19",
+            "bg_mist": "#F3F3F9",
+            "ratio": 15.45,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#08085E",
+            "bg_mist": "#F3F3F9",
+            "ratio": 15.74,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://unlmtdstudio.com/wp-content/uploads/2025/07/UNLMTD-2-3-3-360x91.png"
     }
   },
   "accessibility": {
@@ -181,32 +238,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#0200FF",
+        "ratio": 8.58,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#0200FF",
+        "ratio": 8.58,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#08085E",
+        "ratio": 17.4,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#08085E",
+        "ratio": 13.53,
         "pass": true
       }
     ]
@@ -229,42 +286,32 @@
   "claims": [
     {
       "text": "Unlmtd Studio",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
       "text": "(404) 369-7368",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
       "text": "hello@unlmtdstudio.com",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
       "text": "684 John Wesley Dobbs Ave NE Unit H, Atlanta, 30312",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
       "text": "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday 09:00-9:00",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
       "text": "Full service content production studio located on the Beltline Eastside Trail in Atlanta.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     },
     {
       "text": "Local Business",
-      "fetched_at": "2026-08-07T15:25:40.240Z"
-    },
-    {
-      "text": "Full service content production studio located on the Beltline Eastside Trail in Atlanta.",
-      "source": "https://unlmtdstudio.com",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:25:40.240Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:full,content,production,studio"
-      ]
+      "fetched_at": "2026-08-07T22:45:20.614Z"
     }
   ],
   "unresolved": [],
@@ -282,15 +329,75 @@
     "renders_large_card_600x315": false,
     "meets_facebook_recommended_1200x630": false,
     "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "reason_no_image": "every image is smaller than 200x200, which Facebook refuses"
   },
   "assets": {
-    "accepted": 0,
-    "rejected": 1,
-    "photographs": 0,
+    "accepted": 4,
+    "rejected": 13,
+    "photographs": 4,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "faf786a2424e68fca1f60ff526a5f80c4dd1ec9ba6f172146f4f5be8b6b53e68",
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "6d13e8717df8c7cc52a20194110d8aac3e5a5c4e456109555d63401c2d9f2e70",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "63450a374ce3ad6b24daef2e997891f051c12a275b27741218a8212ebc95a062",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "fbdf08d78c66f6559c9cf549a5e301fcf3ed468945dbd11f8762f2e9cbcfc677",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "dab69723fda15da3f57bb7ea84199d2e14d737f7215fe4f5baee647119bfe5d9",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9efc724a39e4ef880a50fd8764737c380e55a66374c322b9b1721788ee1a56ef",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "05fe6eb941db764beaeb2acd89ff4d1b8f64ddd3c17919be9c9f8fd4d955a7b4",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d2e77fc1cb8cae44d2eb48fa539aba2ef8b112a58d6e71d982bb452bb37b24a0",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "5a5f1948034cbc7fde91af2ef5a1e5b63000586a8cf4f888a785e8efa1a265bf",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "72ea6b244a4c0221c731428033af48744c4dadf1bf61551f369c9afcc95ce73f",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9b767804f75cda79c3e8f18e6057375abd18818c826e62886461626a3f6aa000",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d226ee0f4d6f9e6f2b140efcb86960e728afbb143cbebb85cdf7c26bed78bd75",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -301,9 +408,10 @@
     "hero": true,
     "trust_strip": true,
     "services": false,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "photography"
   },
-  "fill_tokens": 8
+  "fill_tokens": 16
 }

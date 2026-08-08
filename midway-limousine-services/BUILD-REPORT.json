@@ -1,38 +1,51 @@
 {
+  "niche": "company",
   "schema": "vendly.autodemo.build/1",
   "business": "Midway Limousine Services",
   "facebook": null,
   "slug": "midway-limousine-services",
-  "built_at": "2026-08-07T17:56:23.398Z",
-  "elapsed_ms": 315,
+  "built_at": "2026-08-07T22:45:29.680Z",
+  "elapsed_ms": 2676,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 208
+      "at_ms": 136
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 137
     },
     {
       "step": "assets",
-      "at_ms": 210
+      "at_ms": 2111
+    },
+    {
+      "step": "template",
+      "at_ms": 2227
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2234
     },
     {
       "step": "brand_palette",
-      "at_ms": 212
+      "at_ms": 2572
     },
     {
       "step": "layout",
-      "at_ms": 212
+      "at_ms": 2572
     },
     {
       "step": "render",
-      "at_ms": 212
+      "at_ms": 2573
     },
     {
       "step": "audit",
-      "at_ms": 214
+      "at_ms": 2574
     },
     {
       "step": "beacon_probe",
-      "at_ms": 315
+      "at_ms": 2676
     }
   ],
   "audit": {
@@ -40,34 +53,77 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "lawyer",
+    "layout_archetype": "callfirst",
+    "layout_label": "Call first",
+    "layout_rationale": "urgent trade: phone repeated high, services confirm fit, photos are reassurance not pitch",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "lawyer",
+      "photo_count": 9,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "urgent/transactional trade (lawyer), 9 photographs",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
-    "gallery_shape": "wide",
+    "gallery_shape": "grid",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "family",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "overlay",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#1E5140",
+      "b": "#122B22",
+      "c": "#2A6A54",
+      "brand": "#2A6A54",
+      "mist": "#F6F8F5",
+      "ink": "#141E19"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +139,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#2A6A54",
+            "after": "#2A6A54",
+            "ratio": 6.39,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +149,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#1E5140",
+            "after": "#1E5140",
+            "ratio": 9.11,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +159,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#122B22",
+            "after": "#122B22",
+            "ratio": 15.06,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +169,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#122B22",
+            "after": "#122B22",
+            "ratio": 11.7,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +181,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#2A6A54",
+            "ratio": 6.39,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#1E5140",
+            "ratio": 9.11,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#122B22",
+            "ratio": 15.06,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#122B22",
+            "ratio": 11.7,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#141E19",
+            "bg_mist": "#F6F8F5",
+            "ratio": 15.99,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#122B22",
+            "bg_mist": "#F6F8F5",
+            "ratio": 14.1,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://i0.wp.com/midwaylimousines.com/wp-content/uploads/2026/05/logo.png?fit=300%2C87&amp;quality=80&amp;ssl=1"
     }
   },
   "accessibility": {
@@ -181,32 +238,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#2A6A54",
+        "ratio": 6.39,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#1E5140",
+        "ratio": 9.11,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#122B22",
+        "ratio": 15.06,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#122B22",
+        "ratio": 11.7,
         "pass": true
       }
     ]
@@ -229,37 +286,28 @@
   "claims": [
     {
       "text": "Midway Limousine Services",
-      "fetched_at": "2026-08-07T17:56:23.291Z"
+      "fetched_at": "2026-08-07T22:45:27.140Z"
     },
     {
       "text": "(770) 980-9161",
-      "fetched_at": "2026-08-07T17:56:23.291Z"
+      "fetched_at": "2026-08-07T22:45:27.140Z"
     },
     {
       "text": "Luxury Black Car Service Private Black Car\nBlacklane\nBlack Car Service Atlanta Airport Limo Service Limousin",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T17:56:23.291Z"
+      "fetched_at": "2026-08-07T22:45:27.140Z"
     },
     {
       "text": "Luxury Black Car Service Private Black Car",
-      "fetched_at": "2026-08-07T17:56:23.291Z"
+      "fetched_at": "2026-08-07T22:45:27.140Z"
     },
     {
       "text": "Blacklane",
-      "fetched_at": "2026-08-07T17:56:23.291Z"
+      "fetched_at": "2026-08-07T22:45:27.140Z"
     },
     {
       "text": "Black Car Service Atlanta Airport Limo Service Limousin",
-      "fetched_at": "2026-08-07T17:56:23.291Z"
-    },
-    {
-      "text": "Luxury Black Car Service Private Black Car Blacklane Black Car Service Atlanta Airport Limo Service Limousin",
-      "source": "https://midwaylimousines.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T17:56:23.291Z",
-      "relevance": [
-        "service_vocab:luxury,black,private,blacklane"
-      ]
+      "fetched_at": "2026-08-07T22:45:27.140Z"
     }
   ],
   "unresolved": [
@@ -268,23 +316,23 @@
   "link_preview": {
     "og_title": "Midway Limousine Services",
     "og_url": "https://vendly-demos.vercel.app/midway-limousine-services/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/midway-limousine-services/assets/site-3.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "1fda2241be1f434af3547b5746847ca1a89222c6964dba92a9c9831a48f707a3",
+    "image_px": "4307x2422",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 9,
     "rejected": 1,
-    "photographs": 0,
+    "photographs": 9,
     "logo_found": false
   },
   "rejected_assets": [
@@ -298,9 +346,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
-    "gallery": false,
-    "contact": true
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "company"
   },
-  "fill_tokens": 3
+  "fill_tokens": 15
 }

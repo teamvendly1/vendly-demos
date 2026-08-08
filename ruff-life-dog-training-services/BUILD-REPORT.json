@@ -1,38 +1,51 @@
 {
+  "niche": "animal_boarding",
   "schema": "vendly.autodemo.build/1",
   "business": "Ruff Life Dog Training Services",
   "facebook": null,
   "slug": "ruff-life-dog-training-services",
-  "built_at": "2026-08-07T16:08:23.730Z",
-  "elapsed_ms": 17281,
+  "built_at": "2026-08-07T23:03:22.633Z",
+  "elapsed_ms": 1188,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 17174
+      "at_ms": 208
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 209
     },
     {
       "step": "assets",
-      "at_ms": 17176
+      "at_ms": 473
+    },
+    {
+      "step": "template",
+      "at_ms": 589
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 605
     },
     {
       "step": "brand_palette",
-      "at_ms": 17177
+      "at_ms": 1086
     },
     {
       "step": "layout",
-      "at_ms": 17177
+      "at_ms": 1086
     },
     {
       "step": "render",
-      "at_ms": 17178
+      "at_ms": 1087
     },
     {
       "step": "audit",
-      "at_ms": 17179
+      "at_ms": 1088
     },
     {
       "step": "beacon_probe",
-      "at_ms": 17281
+      "at_ms": 1188
     }
   ],
   "audit": {
@@ -40,41 +53,86 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "veterinary",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
+      "trade_key": "veterinary",
       "photo_count": 0,
       "has_reviews": false,
       "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
+      "concierge",
+      "gallery",
       "words",
-      "gallery"
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Call the Clinic",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "veterinary",
+      "file": "veterinary.js",
+      "resolved_by": "family",
+      "resolved_from": "veterinary",
+      "sources": [
+        "https://sactownvet.com/",
+        "https://ahsandysprings.com/",
+        "https://oceansidevets.com/",
+        "https://aztecanimalclinic.com/"
+      ],
+      "rationale": "Sactown Vet answers the panicked visitor with today's hours and the phone in the hero while Animal Hospital of Sandy Springs treats new-client onboarding as a product with a records-release form, so this template puts hours and click-to-call above everything, promotes verifiable Fear Free and Cat Friendly certifications to second, and gives the concierge slot to the records-transfer path that removes the real switching cost for an owner leaving another vet. A demo never states emergency or after-hours capability the practice has not posted, never alters posted hours, and carries no price, offer, certification, health claim, or animal photograph the practice does not publish itself.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "concierge",
+            "gallery",
+            "words",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#3C7E9D",
+      "b": "#1C3B4A",
+      "c": "#3C7E9D",
+      "brand": "#519BBD",
+      "mist": "#F3F7F9",
+      "ink": "#231710"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#519BBD",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -83,29 +141,29 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
-            "moved": false,
+            "before": "#519BBD",
+            "after": "#3C7E9D",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
-            "moved": false,
+            "before": "#519BBD",
+            "after": "#3C7E9D",
+            "ratio": 4.5,
+            "moved": true,
             "used_for": "link text on the paper background"
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#1C3B4A",
+            "after": "#1C3B4A",
+            "ratio": 11.84,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +171,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#1C3B4A",
+            "after": "#1C3B4A",
+            "ratio": 9.2,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +183,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#3C7E9D",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#3C7E9D",
+            "ratio": 4.5,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#1C3B4A",
+            "ratio": 11.84,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#1C3B4A",
+            "ratio": 9.2,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#231710",
+            "bg_mist": "#F3F7F9",
+            "ratio": 16.22,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#1C3B4A",
+            "bg_mist": "#F3F7F9",
+            "ratio": 10.98,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://static.wixstatic.com/media/4024ea_c57cebe14a6348278c4d7f2614eb0cf8~mv2.png/v1/fill/w_83,h_67,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/Ruff%20Life%20logo%20(1)%20(1)%20(1).png"
     }
   },
   "accessibility": {
@@ -181,32 +240,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#3C7E9D",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#3C7E9D",
+        "ratio": 4.5,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#1C3B4A",
+        "ratio": 11.84,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#1C3B4A",
+        "ratio": 9.2,
         "pass": true
       }
     ]
@@ -229,54 +288,44 @@
   "claims": [
     {
       "text": "Ruff Life Dog Training Services",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "(828) 365-8244",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "info@rufflifeavl.com",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "803 Fairview Street, Asheville, NC, 28803",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "Professional dog trainer in Asheville, NC offering basic and advanced group classes, drop-off training, board and train, and private lessons to help you and your dog live your happiest lives together.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "Local Business, Dog Trainer",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "Professional dog trainer in Asheville",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "NC offering basic and advanced group classes",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "drop-off training",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     },
     {
       "text": "board and train",
-      "fetched_at": "2026-08-07T16:08:23.622Z"
-    },
-    {
-      "text": "Professional dog trainer in Asheville, NC offering basic and advanced group classes, drop-off training, board and train, and private lessons to help you and your dog live your happiest lives together.",
-      "source": "https://www.rufflifeavl.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T16:08:23.622Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:trainer,professional,asheville,offering"
-      ]
+      "fetched_at": "2026-08-07T23:03:21.653Z"
     }
   ],
   "unresolved": [],
@@ -298,11 +347,91 @@
   },
   "assets": {
     "accepted": 0,
-    "rejected": 1,
+    "rejected": 17,
     "photographs": 0,
     "logo_found": false
   },
   "rejected_assets": [
+    {
+      "reason": "download_failed",
+      "sha256": null,
+      "media_id": "site-0"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "dfab2b83c21e16f2acac22e761330d3c3015255a747b5e1b153e6e763d9c2c8e",
+      "media_id": "site-1"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "8c1eda6acff6afe30ef5fe5e78facf05555c01e431de4cc1d3ddde97116a8b84",
+      "media_id": "site-2"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a5d28e198b3c213bc69aafa2275289f6207f279e8f5f2115b23113c8de9f919e",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "05f9858881c80b13d2d3425b26ac126de1be858e8d54c0eb567153347e526c89",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "786e631df104958e91e779012ad5c1cf61abf8b52cb85e180c25892f7ed19324",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "eed47c68960ca8ceca2efd119c9c86b5e716f2d1864d4dc5152353a7013a323a",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "21a4f7923987f1ad8fcb4b42dbc89d8d810a3fcd0b04154f5a1d97c6a54f32f5",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "348bec87d45ac231cac746af6449b55edfde44b61e483ed5a74a9d7c2fa26190",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a0624736db2b7472a12da8de69c40be2154012ad3a3fd6c4b8c36ff52be66c81",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9640b0a0bc07518a3f2a5cb9e282310a725ef1f18eae4566ae5dd68f5c3dcc14",
+      "media_id": "site-10"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "77fb633fb83e0ba3828a05680ff5ec0d109fb96e8141b51b4826174dd3206bc0",
+      "media_id": "site-11"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d26b0abb11cc5dd166c1e430094ac68f56512ba4393956aa6c99ede82cd77214",
+      "media_id": "site-12"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "9ef5b312b963ced330815bd71f2e54992ceb402c0c00882f84fc7045aebecefd",
+      "media_id": "site-13"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "fa1794ffc77dd830ae906a55fd668e8af4852ac1c13b0a102101a14d3e3f0945",
+      "media_id": "site-14"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "762ca0c96c76effb231ad512eb7a089c0bb3e47de38be981337e48fefc12eae6",
+      "media_id": "site-15"
+    },
     {
       "reason": "download_failed",
       "sha256": null,
@@ -313,9 +442,10 @@
     "hero": true,
     "trust_strip": false,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": false,
-    "contact": true
+    "contact": true,
+    "niche": "animal_boarding"
   },
   "fill_tokens": 7
 }

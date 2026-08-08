@@ -1,42 +1,51 @@
 {
+  "niche": "lawyer",
   "schema": "vendly.autodemo.build/1",
   "business": "Collier Law Workers' Compensation Attorney",
   "facebook": null,
   "slug": "collier-law-workers-compensation-attorney",
-  "built_at": "2026-08-07T15:52:02.920Z",
-  "elapsed_ms": 1744,
+  "built_at": "2026-08-07T22:54:43.134Z",
+  "elapsed_ms": 2493,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 284
+      "at_ms": 320
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 285
+      "at_ms": 320
     },
     {
       "step": "assets",
-      "at_ms": 1647
+      "at_ms": 1917
+    },
+    {
+      "step": "template",
+      "at_ms": 2033
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2047
     },
     {
       "step": "brand_palette",
-      "at_ms": 1649
+      "at_ms": 2385
     },
     {
       "step": "layout",
-      "at_ms": 1649
+      "at_ms": 2385
     },
     {
       "step": "render",
-      "at_ms": 1650
+      "at_ms": 2386
     },
     {
       "step": "audit",
-      "at_ms": 1651
+      "at_ms": 2387
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1744
+      "at_ms": 2493
     }
   ],
   "audit": {
@@ -44,41 +53,84 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
+    "trade_palette": "lawyer",
     "layout_archetype": "credential",
     "layout_label": "Credential",
     "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 11,
+      "trade_key": "lawyer",
+      "photo_count": 15,
       "has_reviews": true,
-      "branch": "trust-bought trade (trade) with published reviews: credentials lead",
+      "branch": "trust-bought trade (lawyer) with published reviews: credentials lead",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
     "header_treatment": "split",
     "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "niche",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#00007F",
+      "b": "#08085E",
+      "c": "#00007F",
+      "brand": "#00007F",
+      "mist": "#F3F3F9",
+      "ink": "#141E19"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
-      "brand_extracted": false,
-      "brand_applied": false,
-      "raw_accent": null,
-      "fallback_reason": "no_logo_or_extraction_failed",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#00007F",
+      "fallback_reason": null,
       "contrast": {
         "standard": "WCAG 2.1 AA",
         "all_pass": true,
@@ -87,9 +139,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#00007F",
+            "after": "#00007F",
+            "ratio": 16.07,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -97,9 +149,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#00007F",
+            "after": "#00007F",
+            "ratio": 16.07,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -107,9 +159,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#08085E",
+            "after": "#08085E",
+            "ratio": 17.4,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -117,9 +169,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#08085E",
+            "after": "#08085E",
+            "ratio": 13.53,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -129,52 +181,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#00007F",
+            "ratio": 16.07,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#00007F",
+            "ratio": 16.07,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#08085E",
+            "ratio": 17.4,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#08085E",
+            "ratio": 13.53,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#141E19",
+            "bg_mist": "#F3F3F9",
+            "ratio": 15.45,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#08085E",
+            "bg_mist": "#F3F3F9",
+            "ratio": 15.74,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://cdn-enhin.nitrocdn.com/siuObLeCabUzBEnvWGufAMIAmNVXRdFK/assets/images/optimized/rev-ea90dc3/collierlawpllc.com/wp-content/uploads/2021/12/cropped-collier_law-workers_compensation-attorney-180x180.png"
     }
   },
   "accessibility": {
@@ -185,32 +238,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#00007F",
+        "ratio": 16.07,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#00007F",
+        "ratio": 16.07,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#08085E",
+        "ratio": 17.4,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#08085E",
+        "ratio": 13.53,
         "pass": true
       }
     ]
@@ -223,12 +276,6 @@
         "count": 1,
         "in_sourced_claim": true,
         "char": "·"
-      },
-      {
-        "codepoint": "U+2019",
-        "count": 1,
-        "in_sourced_claim": true,
-        "char": "’"
       }
     ],
     "non_ascii_unsourced_blocking": []
@@ -246,26 +293,26 @@
   "claims": [
     {
       "text": "Collier Law Workers' Compensation Attorney",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     },
     {
       "text": "(704) 246-5749",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     },
     {
       "text": "trey@collierlawpllc.com",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     },
     {
       "text": "601 East Blvd., Charlotte, NC",
       "source": "https://www.facebook.com/people/Collier-Law-Workers-Compensation-Attorney/100064083903551/",
       "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     },
     {
       "text": "If you have been injured on the job, you may be eligible to receive compensation under the North Carolina Workers' Compensation Act.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:52:01.460Z",
+      "fetched_at": "2026-08-07T22:54:40.960Z",
       "verbatim_source_text": "If you have been injured on the job, you may be eligible to receive compensation under the North Carolina Workers’ Compensation Act.",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
@@ -273,27 +320,21 @@
       "text": "Page · Local business",
       "source": "https://www.facebook.com/people/Collier-Law-Workers-Compensation-Attorney/100064083903551/",
       "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     },
     {
       "text": "If you have been injured on the job",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
+      "fetched_at": "2026-08-07T22:54:40.960Z"
+    },
+    {
+      "text": "Compensation Act",
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     },
     {
       "text": "100% recommend (5 Reviews)",
       "source": "https://www.facebook.com/people/Collier-Law-Workers-Compensation-Attorney/100064083903551/",
       "fb_field": "INTRO_CARD_RATING",
-      "fetched_at": "2026-08-07T15:52:01.460Z"
-    },
-    {
-      "text": "If you have been injured on the job, you may be eligible to receive compensation under the North Carolina Workers’ Compensation Act.",
-      "source": "https://collierlawpllc.com/",
-      "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:52:01.460Z",
-      "relevance": [
-        "contains_own_name",
-        "service_vocab:have,been,injured,eligible"
-      ]
+      "fetched_at": "2026-08-07T22:54:40.960Z"
     }
   ],
   "unresolved": [
@@ -302,13 +343,13 @@
   "link_preview": {
     "og_title": "Collier Law Workers&#39; Compensation Attorney | Charlotte",
     "og_url": "https://vendly-demos.vercel.app/collier-law-workers-compensation-attorney/",
-    "og_image": "https://vendly-demos.vercel.app/collier-law-workers-compensation-attorney/assets/745595557_1488630319949751.jpg",
+    "og_image": "https://vendly-demos.vercel.app/collier-law-workers-compensation-attorney/assets/site-3.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": "22116ecea5ee1adc76da16afaa77f9e919bcfe1c72f4b1c1bd727ca0b167bd32",
-    "image_px": "1485x1856",
+    "image_sha256": "0b14ebf7682627c8edb974e597893003352f740899681df778490f79f45a376a",
+    "image_px": "2560x1707",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": true,
@@ -316,9 +357,9 @@
     "reason_no_image": null
   },
   "assets": {
-    "accepted": 11,
+    "accepted": 15,
     "rejected": 1,
-    "photographs": 11,
+    "photographs": 15,
     "logo_found": false
   },
   "rejected_assets": [
@@ -332,9 +373,10 @@
     "hero": true,
     "trust_strip": true,
     "services": true,
-    "their_words": true,
+    "their_words": false,
     "gallery": true,
-    "contact": true
+    "contact": true,
+    "niche": "lawyer"
   },
   "fill_tokens": 22
 }
