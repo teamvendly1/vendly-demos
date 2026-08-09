@@ -1,0 +1,110 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "parkers-pressure-washing",
+  "logo": null,
+  "palette": {
+    "a": "#12554A",
+    "b": "#10171A",
+    "c": "#12554A",
+    "mist": "#F2F0EA",
+    "brass": "#C2871A",
+    "brand": "#12554A",
+    "scrim": "14,20,22"
+  },
+  "report": {
+    "standard": "WCAG 2.1 AA",
+    "brand_extracted": false,
+    "brand_applied": false,
+    "raw_accent": null,
+    "fallback_reason": "no_logo_or_extraction_failed",
+    "contrast": {
+      "standard": "WCAG 2.1 AA",
+      "all_pass": true,
+      "checks": [
+        {
+          "token": "c",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "before": "#12554A",
+          "after": "#12554A",
+          "ratio": 8.66,
+          "moved": false,
+          "used_for": "button background under white label text, focus ring, quote rule"
+        },
+        {
+          "token": "a",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "before": "#12554A",
+          "after": "#12554A",
+          "ratio": 8.66,
+          "moved": false,
+          "used_for": "link text on the paper background"
+        },
+        {
+          "token": "b",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "before": "#10171A",
+          "after": "#10171A",
+          "ratio": 18.11,
+          "moved": false,
+          "used_for": "heading text on paper, and the dark bar under white text"
+        },
+        {
+          "token": "b",
+          "against": "#DBE4EC",
+          "min": 4.5,
+          "before": "#10171A",
+          "after": "#10171A",
+          "ratio": 14.08,
+          "moved": false,
+          "used_for": "footer background under its muted text"
+        }
+      ],
+      "final_verify": [
+        {
+          "token": "c",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "final": "#12554A",
+          "ratio": 8.66,
+          "pass": true
+        },
+        {
+          "token": "a",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "final": "#12554A",
+          "ratio": 8.66,
+          "pass": true
+        },
+        {
+          "token": "b",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "final": "#10171A",
+          "ratio": 18.11,
+          "pass": true
+        },
+        {
+          "token": "b",
+          "against": "#DBE4EC",
+          "min": 4.5,
+          "final": "#10171A",
+          "ratio": 14.08,
+          "pass": true
+        }
+      ],
+      "mist_checks": [
+        {
+          "fg": "b",
+          "value": "#10171A",
+          "bg_mist": "#F2F0EA",
+          "ratio": 15.89,
+          "pass": true
+        }
+      ]
+    }
+  }
+}

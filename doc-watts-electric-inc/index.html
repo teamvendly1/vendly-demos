@@ -12,13 +12,13 @@
 <meta property="og:description" content="Doc Watts Electric delivers expert residential &amp; commercial electrical services in Orlando, FL. From panels to EV chargers, we&#39;ve got you covered. Book online today!">
 <meta property="og:url" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/assets/site-11.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/assets/site-11.jpg">
-<meta property="og:image:width" content="2560">
-<meta property="og:image:height" content="1942">
+<meta property="og:image" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/assets/769222499_1658321002869831.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/assets/769222499_1658321002869831.jpg">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="1440">
 <meta property="og:image:alt" content="Doc Watts Electric, Inc">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/assets/site-11.jpg">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/doc-watts-electric-inc/assets/769222499_1658321002869831.jpg">
 <meta name="twitter:image:alt" content="Doc Watts Electric, Inc">
 <meta name="twitter:title" content="Doc Watts Electric, Inc">
 <meta name="twitter:description" content="Doc Watts Electric delivers expert residential &amp; commercial electrical services in Orlando, FL. From panels to EV chargers, we&#39;ve got you covered. Book online today!">
@@ -27,10 +27,15 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
 :root{
-  --a:#007AC8;--b:#083D5E;--c:#007AC8;--mist:#F3F7F9;--ink:#12181D;
+  --a:#007AC8;--b:#083D5E;--c:#009CFF;--mist:#F3F7F9;--ink:#12181D;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
-     sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#009BFD;--scrim:3,21,33;
+     sits on it. --c is the accent GROUND, and --on-c is the label colour that
+     sits on it. Those two are resolved together in lib/brand-colors.js: a dark
+     brand keeps white labels, a bright brand keeps ITS OWN COLOUR and takes ink
+     labels instead of being darkened into a different colour. See the block
+     above accent_ground there - maven-roofing's yellow was rendering olive. */
+  --on-c:#12181D;
+  --brand:#009CFF;--scrim:3,21,33;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
 .concierge{background:var(--soft,#f7f5f0)}
@@ -40,8 +45,8 @@
 .concierge .msg.them{justify-content:flex-start}
 .concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
 .concierge .msg.us{justify-content:flex-end}
-.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
-.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:var(--on-c,#fff);border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:var(--on-c,#fff);text-decoration:underline}
 .concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
 .builtby{max-width:620px;margin:26px auto 0;display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line,#e3e0d8)}
 .builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
@@ -99,7 +104,7 @@ nav.main a:hover{text-decoration:underline}
 
 .btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
   padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
-.btn-c{background:var(--c);color:#fff}
+.btn-c{background:var(--c);color:var(--on-c,#fff)}
 .btn-c:hover{filter:brightness(.9)}
 .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.12)}
@@ -160,7 +165,29 @@ section{padding:52px 0}
 @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
 .card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
-.card h3{margin:0;color:var(--b)}
+.card h3,.card h4{margin:0;color:var(--b)}
+/*
+  THE DETAIL LINE AND THE GROUP LEVEL. Added 2026-08-09 with the two-level services section above.
+
+  The card paragraph is the business's own sentence about that service. It is set at the muted body
+  colour rather than the ink so the service NAME still leads the card - the name is what a customer
+  scans for, the sentence is what they read once they have found it. 1.5 line height because these
+  run to two or three lines on a 393px phone, which is where nearly every prospect opens this.
+
+  A svcgroup is only ever emitted when the business published a labelled sub-menu. The label sits
+  ABOVE its own grid at the same weight as a section subhead, which is what makes the band read as
+  built rather than as a wall of equal chips - and it is their heading, not one we made up. The rule
+  degrades to nothing on a flat menu because no .svcgroup is written at all.
+*/
+.card p{margin:8px 0 0;color:var(--muted);font:400 15px/1.5 Inter,sans-serif}
+.card h4{font:700 17px/1.3 Inter,sans-serif}
+/* See the services section for why a detail-free band of six or more is laid out two-up. */
+.grid--bare{grid-template-columns:repeat(2,1fr);gap:10px}
+.grid--bare .card{padding:14px 12px;display:flex;align-items:center;justify-content:center;min-height:64px}
+.grid--bare .card h3,.grid--bare .card h4{font:700 15px/1.3 Inter,sans-serif;text-align:center}
+.svcgroup+.svcgroup{margin-top:34px}
+.svcgroup>h3{margin:0 0 14px;color:var(--b);font-size:21px}
+.svcgroup+.grid{margin-top:34px}
 
 .gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
 @media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
@@ -345,8 +372,49 @@ body.vd-has-dock footer{padding-bottom:150px}
 .vd-band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .vd-band>figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 16px;color:#f4ece3;font-size:13px;background:linear-gradient(to top,rgba(10,8,6,.72),rgba(10,8,6,0))}
 
+.rv{padding:60px 0 64px;background:var(--lc-pale,var(--paper2,#f6f4ef));border-top:3px solid var(--a,#20402f)}
+.rv .lead{max-width:64ch;margin:0 0 28px}
+.rvGrid{display:grid;gap:18px}
+.rv.one .rvGrid{grid-template-columns:1fr;max-width:70ch}
+.rv.two .rvGrid{grid-template-columns:repeat(2,1fr)}
+.rv.few .rvGrid{grid-template-columns:repeat(2,1fr)}
+.rv.many .rvGrid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){
+.rv.many .rvGrid,.rv.few .rvGrid,.rv.two .rvGrid{
+grid-template-columns:none;display:flex;gap:14px;overflow-x:auto;overflow-y:hidden;
+scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+padding-bottom:14px;margin-inline:-16px;padding-inline:16px;scrollbar-width:none}
+.rv .rvGrid::-webkit-scrollbar{display:none}
+.rv.one .rvGrid{display:grid;grid-template-columns:1fr}
+.rvGrid>.rvCard{scroll-snap-align:start;flex:0 0 86%;min-width:86%}
+.rv.one .rvGrid>.rvCard{flex:none;min-width:0}
+}
+.rvCard{margin:0;background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:12px}
+.rvCard blockquote{margin:0;font-size:1.02rem;line-height:1.62;color:var(--ink,var(--b,#1a1a17))}
+.rvCard figcaption{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.95rem}
+.rvCard figcaption b{font-weight:650}
+.rvWho{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--c,#20402f);color:#fff;font-size:.78rem;letter-spacing:.04em;font-weight:650;flex:none}
+.rvStars{position:relative;display:inline-block;line-height:0;white-space:nowrap;flex:none}
+.rvStarsBase,.rvStarsFill{display:block;line-height:0;white-space:nowrap}
+.rvStarsFill{position:absolute;top:0;left:0;overflow:hidden}
+.rvStarsBase svg{fill:#DADCE0}
+.rvStarsFill svg{fill:#FBBC04}
+.rvMark{flex:none;vertical-align:middle}
+.rvSrc{margin-left:2px;display:inline-flex;align-items:center;opacity:.95}
+.rvWhen{margin-left:auto;font-size:.85rem;opacity:.72}
+.rvAgg{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0 0 26px;font-size:1.02rem}
+.rvAgg b{font-weight:700}
+.rvAgg span{opacity:.78}
+.rvAgg a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.rvAggFb b{color:#1877F2}
+.rvFb{border-top-color:#1877F2}
+.rv.none .rvAgg{margin-bottom:0}
+.rv.none{padding:52px 0}
+.rvSwipe{display:none}
+@media(max-width:900px){.rvSwipe{display:block;margin:12px 0 0;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6}}
+.rv{border-top:1px solid rgba(0,0,0,.07)}
 /* ---- vendly lowcountry trade chrome (lib/lowcountry.js) - appended after craft ---- */
-:root{--lc-blue:#0076C2;--lc-blue-dark:#005992;--lc-navy:#05283D;--lc-navy-deep:#041C2B;--lc-navy-lift:#1E3E50;--lc-pale:#EBF4FA;--lc-shell:#F3F4F5;--lc-blue-on-navy:#3D97D1;--lc-burger:#3894CF;--radius:2px}
+:root{--lc-blue:#009CFF;--lc-blue-dark:#0089E0;--lc-on-blue:#12181D;--lc-on-blue-dark:#12181D;--lc-navy:#05283D;--lc-navy-deep:#041C2B;--lc-navy-lift:#1E3E50;--lc-pale:#EBF7FF;--lc-shell:#F3F4F5;--lc-blue-on-navy:#2EAEFF;--lc-burger:#38B2FF;--radius:2px}
 body{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17.5px;line-height:1.55}
 h1,h2{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:700;letter-spacing:.005em}
 h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:600;letter-spacing:.01em}
@@ -358,9 +426,10 @@ main>section>.wrap>.lead{max-width:60ch}
 main>section>.wrap>.srcnote{text-align:center}
 section{padding:clamp(46px,9vw,74px) 0}
 .phonestrip{background:var(--lc-blue);border-bottom:3px solid #fff}
-.phonestrip a{padding:8px 16px;font:600 21px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.01em}
+.phonestrip a{padding:8px 16px;font:600 21px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.01em;color:var(--lc-on-blue)}
 .phonestrip a:hover,.phonestrip a:focus{background:var(--lc-blue-dark)}
-.socialbar{background:var(--lc-blue);border-top:0;padding:7px 0;gap:18px}
+.socialbar{background:var(--lc-blue);border-top:0;padding:7px 0;gap:18px;color:var(--lc-on-blue)}
+.socialbar a{color:var(--lc-on-blue)}
 .socialbar a{width:32px;height:32px;background:transparent;border-radius:0}
 .socialbar a:hover,.socialbar a:focus{background:rgba(255,255,255,.20)}
 .socialbar svg{width:22px;height:22px;stroke-width:1.9}
@@ -395,14 +464,14 @@ nav.main a:hover{color:#fff;text-decoration:underline}
 .hero:has(>img){background:var(--lc-navy)}
 .btn{border-radius:2px;font:600 17px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.03em;padding:21px 32px;border-width:0;justify-content:center}
 .btn.lg,.heroShot .btn.lg{border-radius:2px}
-.btn-c{background:var(--lc-blue);color:#fff}
+.btn-c{background:var(--lc-blue);color:var(--lc-on-blue)}
 .btn-c:hover,.btn-c:focus{background:var(--lc-blue-dark);filter:none}
-.btn.onDark{background:var(--lc-blue);color:#fff;border-radius:2px}
+.btn.onDark{background:var(--lc-blue);color:var(--lc-on-blue);border-radius:2px}
 .hero .btn{min-width:min(232px,80vw)}
 .btn:active{background:var(--lc-blue-dark)}
 .hero-alt{display:none}
-.strip{background:var(--lc-blue);border-block:0;color:#fff}
-.strip ul{color:#fff;justify-content:center;text-align:center;padding:26px 0;gap:10px 30px;font:500 17px/1.45 "DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.strip{background:var(--lc-blue);border-block:0;color:var(--lc-on-blue)}
+.strip ul{color:var(--lc-on-blue);justify-content:center;text-align:center;padding:26px 0;gap:10px 30px;font:500 17px/1.45 "DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main>section:nth-of-type(4n+1):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--lc-pale)}
 main>section:nth-of-type(4n+3):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--lc-shell)}
 main>section:nth-of-type(4n+2):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink),main>section:nth-of-type(4n+4):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--paper,#fff)}
@@ -418,7 +487,7 @@ main>section.vd-ink h2,main>section.vd-ink h3{color:#fff}
 .faqs{border:0;border-radius:2px;box-shadow:0 1px 2px rgba(5,40,61,.08),0 8px 22px rgba(5,40,61,.07)}
 .faqs summary{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--lc-navy)}
 .faqs summary::after{color:var(--lc-blue)}
-.places li{border-radius:2px;background:var(--lc-pale);border-color:rgba(0,118,194,.28);color:var(--lc-navy)}
+.places li{border-radius:2px;background:var(--lc-pale);border-color:rgba(0,156,255,.28);color:var(--lc-navy)}
 .quote{border-left-color:var(--lc-blue)}
 .eyebrow{letter-spacing:.16em;font-size:14px}
 main>section .eyebrow{color:var(--lc-blue);text-align:center}
@@ -428,23 +497,25 @@ footer.site h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","
 .fzone-contact dl{justify-items:center}
 .fzone-contact dt{color:rgba(255,255,255,.72)}
 .fsocial .socialbar{justify-content:center;padding:18px 0 0}
-.fsocial .socialbar a{width:46px;height:46px;border-radius:50%;background:var(--lc-blue)}
+.fsocial .socialbar a{width:46px;height:46px;border-radius:50%;background:var(--lc-blue);color:var(--lc-on-blue)}
 .fsocial .socialbar a:hover,.fsocial .socialbar a:focus{background:var(--lc-blue-dark)}
 .fplaces{justify-content:center;gap:0}
 .fplaces li{background:transparent;border-radius:0;padding:0;font-size:16.5px;line-height:1.55}
 .fplaces li:not(:last-child)::after{content:", "}
 .fzone-links{background:var(--lc-navy-lift)}
 .flinks a{text-align:center;font-weight:500;color:rgba(255,255,255,.86)}
-.legalbar{background:var(--lc-blue);color:#fff}
-.legalbar a{color:#fff}
+.legalbar{background:var(--lc-blue);color:var(--lc-on-blue)}
+.legalbar a{color:var(--lc-on-blue)}
 body.vd-has-dock footer{padding-bottom:0}
 body.vd-has-dock .legalbar{padding-bottom:150px}
 @media(min-width:760px){body.vd-has-dock .legalbar{padding-bottom:16px}}
+body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
+@media(min-width:760px){body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:34px}}
 .lcdock{position:fixed;left:0;right:0;bottom:0;z-index:2147482000;border-top:2px solid rgba(255,255,255,.92)}
-.lcdock-cta{display:block;background:var(--lc-blue);color:#fff;text-decoration:none;text-align:center;padding:12px 14px;font:600 18px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.02em}
+.lcdock-cta{display:block;background:var(--lc-blue);color:var(--lc-on-blue);text-decoration:none;text-align:center;padding:12px 14px;font:600 18px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.02em}
 .lcdock-cta:hover,.lcdock-cta:focus{background:var(--lc-blue-dark)}
 .lcdock-split{display:flex;background:var(--lc-blue-dark);border-top:2px solid rgba(255,255,255,.92)}
-.lcdock-split a{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font:600 15.5px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;padding:12px 8px calc(12px + env(safe-area-inset-bottom,0px))}
+.lcdock-split a{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;color:var(--lc-on-blue-dark);text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font:600 15.5px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;padding:12px 8px calc(12px + env(safe-area-inset-bottom,0px))}
 .lcdock-split a+a{border-left:2px solid rgba(255,255,255,.55)}
 .lcdock svg{width:18px;height:18px;flex:0 0 18px;fill:none;stroke:currentColor;stroke-width:2}
 @media(min-width:760px){.lcdock{display:none}}
@@ -470,10 +541,13 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 </div>
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#main">Doc Watts Electric, Inc</a>
+    <a class="brand" href="#main"><img class="brandmark" src="assets/brandmark-b07dcb614af0.webp" alt="Doc Watts Electric, Inc" width="150" height="150"></a>
     <nav class="main" aria-label="Main">
       <ul>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#work">Photos</a></li>
+        <li><a href="#faq">Questions</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -481,7 +555,10 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
   <summary aria-label="Open menu"><span class="burger"></span></summary>
   <nav class="drawernav" aria-label="Sections">
     <ul>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#work">Photos</a></li>
+      <li><a href="#faq">Questions</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -492,11 +569,11 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 <main id="main">
 
 <div class="hero hero-overlay">
-  <img class="hero-img" src="assets/site-0.webp" alt="" aria-hidden="true">
+  <img class="hero-img" src="assets/769222499_1658321002869831.jpg" alt="" aria-hidden="true">
   <div class="wrap hero-in">
     
     <h1>Doc Watts Electric, Inc</h1>
-    <p class="lede">Doc Watts Electric delivers expert residential &amp; commercial electrical services in Orlando, FL. From panels to EV chargers, we&#39;ve got you covered. Book online today!</p>
+    <p class="lede">Doc Watts Electric delivers expert residential &amp; commercial electrical services in Orlando, FL.</p>
     <div class="cta-row">
       <a class="btn btn-c" href="tel:+14072432278">Call (407) 243-2278</a>
       <a class="hero-alt" href="mailto:dispatch@docwattselectric.com">or email us</a>
@@ -506,31 +583,82 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 </div>
 
 <div class="strip"><div class="wrap"><ul>
-  
-  <li>100% recommend on Facebook, from 10 reviews</li>
+  <li>Serving the area since 2005</li>
   <li>Open 24 hours</li>
-  
 </ul></div></div>
+
+<section class="rv none rvFb" id="reviews"><div class="wrap">
+<p class="eyebrow">Straight from Facebook</p>
+<h2>Their record with customers</h2>
+<p class="lead">Of the 10 people who left a review for Doc Watts Electric, Inc on Facebook, 100 percent recommend them. That is Facebook&#39;s own figure, taken from their page.</p>
+<p class="rvAgg rvAggFb"><b>100% recommend</b><span>on Facebook, from 10 reviews</span><a href="https://www.facebook.com/docwattselectric/" rel="nofollow noopener" target="_blank">See them on Facebook</a></p>
+</div></section>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we get called for</h2>
+    <p class="lead">Taken from what Doc Watts Electric, Inc publishes on their website.</p>
+      <div class="grid">
+        <div class="card"><h3>Electrical Service</h3><p>From panel upgrades and EV chargers to lighting and generators, we handle every electrical need in your home.</p></div>
+        <div class="card"><h3>Electrical Installations</h3><p>We keep Orlando businesses powered and protected with full-service commercial electrical solutions.</p></div>
+        <div class="card"><h3>Generators Service</h3><p>Flickering lights, tripped breakers, faulty outlets? We have seen it all and fixed it all.</p></div>
+        <div class="card"><h3>Electrical Repair &amp; Replacement</h3></div>
+      </div>
+  </div>
+</section>
+
+<figure class="vd-band"><img src="assets/site-11.jpg" alt="Photograph published by Doc Watts Electric, Inc" loading="lazy"></figure>
 
 <section id="work">
   <div class="wrap">
     <h2>Pictures they put up themselves</h2>
-    <p class="lead">These photos are published on the Doc Watts Electric, Inc Facebook page. Pulled 2026-08-07.</p>
+    <p class="lead">These photos are published by Doc Watts Electric, Inc on their website. Pulled 2026-08-07.</p>
     <div class="gal gal-wide">
-      <figure><img src="assets/site-1.webp" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/site-3.webp" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-0.webp" alt="Electrical Installations" loading="lazy" width="800" height="600"><figcaption>Electrical Installations</figcaption></figure>
+      <figure><img src="assets/site-1.webp" alt="Generators Service" loading="lazy" width="800" height="600"><figcaption>Generators Service</figcaption></figure>
+      <figure><img src="assets/site-3.webp" alt="Electrical Repair &amp; Replacement" loading="lazy" width="800" height="600"><figcaption>Electrical Repair &amp; Replacement</figcaption></figure>
       <figure><img src="assets/site-4.webp" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-5.webp" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-6.jpg" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-7.jpg" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-8.jpg" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-10.jpg" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/site-11.jpg" alt="Doc Watts Electric, Inc - Person" loading="lazy" width="800" height="600"></figure>
     </div>
   </div>
 </section>
 
-<figure class="vd-band"><img src="assets/site-13.webp" alt="Photograph published by Doc Watts Electric, Inc" loading="lazy"></figure>
+<section id="faq">
+  <div class="wrap">
+    <h2>What people ask before they call</h2>
+    <div class="faqs">
+      <details open>
+        <summary>How do I know if I need an electrician right away?</summary>
+        <p class="ans">Warm outlets, burning smells, flickering lights, or breakers that trip often mean it s time to call for help.</p>
+      </details>
+      <details>
+        <summary>Do you work on both homes and businesses?</summary>
+        <p class="ans">Yes, our team handles residential and commercial electrical work throughout Orlando.</p>
+      </details>
+      <details>
+        <summary>Is my older Orlando home safe to rewire?</summary>
+        <p class="ans">Most older homes can be safely updated. We ll inspect your wiring and recommend the right path forward.</p>
+      </details>
+      <details>
+        <summary>Do you offer financing for electrical work?</summary>
+        <p class="ans">Yes, we offer financing options to help make necessary electrical work more manageable.</p>
+      </details>
+      <details>
+        <summary>How often should Orlando homeowners get an electrical inspection?</summary>
+        <p class="ans">We recommend an inspection every few years, or sooner if your home is older or you ve noticed warning signs.</p>
+      </details>
+      <details>
+        <summary>Can you install a ceiling fan where there wasn&#39;t one before?</summary>
+        <p class="ans">Yes, our team can add the necessary wiring and support for a new ceiling fan installation.</p>
+      </details>
+    </div>
+    <p class="srcnote">Answered by Doc Watts Electric, Inc on their own website. Pulled 2026-08-07.</p>
+  </div>
+</section>
 
 <section id="contact">
   <div class="wrap">
@@ -587,7 +715,10 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
     <div class="wrap">
       <h3>On this page</h3>
       <ul class="flinks">
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#work">Photos</a></li>
+        <li><a href="#faq">Questions</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -638,13 +769,5 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
   }catch(e){}
 })();
 </script>
-
-<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
-     in this demo's own harvested facts; it refuses anything it was not given.
-     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
-<script>
-window.VendlyDemoAssistant={slug:"doc-watts-electric-inc",name:"Doc Watts Electric, Inc",phone:"(407) 243-2278",accent:"#007AC8"};
-</script>
-<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
 </body>
 </html>

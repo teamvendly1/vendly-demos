@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>East Atlantic Plumbing LLC</title>
+<title>East Atlantic Plumbing LLC | East</title>
 <meta name="description" content="We are an unlimited licensed plumbing company that is well equipped to handle all your residential, commercial and industrial plumbing needs. Give us a call.">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="East Atlantic Plumbing LLC">
-<meta property="og:title" content="East Atlantic Plumbing LLC">
+<meta property="og:title" content="East Atlantic Plumbing LLC | East">
 <meta property="og:description" content="We are an unlimited licensed plumbing company that is well equipped to handle all your residential, commercial and industrial plumbing needs. Give us a call.">
 <meta property="og:url" content="https://vendly-demos.vercel.app/east-atlantic-plumbing-llc/">
 <meta property="og:locale" content="en_US">
@@ -20,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://vendly-demos.vercel.app/east-atlantic-plumbing-llc/assets/site-0.jpg">
 <meta name="twitter:image:alt" content="East Atlantic Plumbing LLC">
-<meta name="twitter:title" content="East Atlantic Plumbing LLC">
+<meta name="twitter:title" content="East Atlantic Plumbing LLC | East">
 <meta name="twitter:description" content="We are an unlimited licensed plumbing company that is well equipped to handle all your residential, commercial and industrial plumbing needs. Give us a call.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -372,7 +372,7 @@ body.vd-has-dock footer{padding-bottom:150px}
 .vd-band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .vd-band>figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 16px;color:#f4ece3;font-size:13px;background:linear-gradient(to top,rgba(10,8,6,.72),rgba(10,8,6,0))}
 
-.rv{padding:64px 0;background:var(--paper2,#f6f4ef)}
+.rv{padding:60px 0 64px;background:var(--lc-pale,var(--paper2,#f6f4ef));border-top:3px solid var(--a,#20402f)}
 .rv .lead{max-width:64ch;margin:0 0 28px}
 .rvGrid{display:grid;gap:18px}
 .rv.one .rvGrid{grid-template-columns:1fr;max-width:70ch}
@@ -394,13 +394,24 @@ padding-bottom:14px;margin-inline:-16px;padding-inline:16px;scrollbar-width:none
 .rvCard figcaption{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.95rem}
 .rvCard figcaption b{font-weight:650}
 .rvWho{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--c,#20402f);color:#fff;font-size:.78rem;letter-spacing:.04em;font-weight:650;flex:none}
-.rvStars{display:inline-flex;gap:2px}
-.rvStars svg{fill:var(--c,#20402f)}
+.rvStars{position:relative;display:inline-block;line-height:0;white-space:nowrap;flex:none}
+.rvStarsBase,.rvStarsFill{display:block;line-height:0;white-space:nowrap}
+.rvStarsFill{position:absolute;top:0;left:0;overflow:hidden}
+.rvStarsBase svg{fill:#DADCE0}
+.rvStarsFill svg{fill:#FBBC04}
+.rvMark{flex:none;vertical-align:middle}
+.rvSrc{margin-left:2px;display:inline-flex;align-items:center;opacity:.95}
 .rvWhen{margin-left:auto;font-size:.85rem;opacity:.72}
 .rvAgg{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:0 0 26px;font-size:1.02rem}
 .rvAgg b{font-weight:700}
 .rvAgg span{opacity:.78}
 .rvAgg a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.rvAggFb b{color:#1877F2}
+.rvFb{border-top-color:#1877F2}
+.rv.none .rvAgg{margin-bottom:0}
+.rv.none{padding:52px 0}
+.rvSwipe{display:none}
+@media(max-width:900px){.rvSwipe{display:block;margin:12px 0 0;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6}}
 .rv{border-top:1px solid rgba(0,0,0,.07)}
 /* ---- vendly lowcountry trade chrome (lib/lowcountry.js) - appended after craft ---- */
 :root{--lc-blue:#0A41B8;--lc-blue-dark:#08318A;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#05173D;--lc-navy-deep:#04102B;--lc-navy-lift:#1E2E50;--lc-pale:#EBF0F9;--lc-shell:#F3F3F5;--lc-blue-on-navy:#7D9ADA;--lc-burger:#406BC8;--radius:2px}
@@ -498,6 +509,8 @@ footer.site h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","
 body.vd-has-dock footer{padding-bottom:0}
 body.vd-has-dock .legalbar{padding-bottom:150px}
 @media(min-width:760px){body.vd-has-dock .legalbar{padding-bottom:16px}}
+body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
+@media(min-width:760px){body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:34px}}
 .lcdock{position:fixed;left:0;right:0;bottom:0;z-index:2147482000;border-top:2px solid rgba(255,255,255,.92)}
 .lcdock-cta{display:block;background:var(--lc-blue);color:var(--lc-on-blue);text-decoration:none;text-align:center;padding:12px 14px;font:600 18px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.02em}
 .lcdock-cta:hover,.lcdock-cta:focus{background:var(--lc-blue-dark)}
@@ -524,7 +537,7 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 <div class="phonestrip"><a href="tel:+19106163238">Call (910) 616-3238</a></div>
 <div class="socialbar">
   <a href="https://eastatlanticplumbing.net" rel="nofollow noopener" target="_blank" aria-label="East Atlantic Plumbing LLC on the web"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3z"/></svg></a>
-  
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=East%20Atlantic%20Plumbing%20LLC%20East" rel="nofollow noopener" target="_blank" aria-label="East Atlantic Plumbing LLC on the map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg></a>
 </div>
 <header class="site">
   <div class="wrap bar">
@@ -571,36 +584,37 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 </div>
 
 <div class="strip"><div class="wrap"><ul>
-  <li>Serving the area since 1985</li>
+  <li>Serving East since 1985</li>
 </ul></div></div>
 
 <section class="rv few" id="reviews"><div class="wrap">
 <p class="eyebrow">In their own words</p>
-<h2>What customers said after the job</h2>
+<h2>In the words of customers around East</h2>
 <p class="lead">These 3 reviews were written by East Atlantic Plumbing LLC customers and published on their Google listing. Google shows 4.9 out of 5 from 541 reviews in total. Shown word for word.</p>
-<p class="rvAgg"><span class="rvStars" role="img" aria-label="5 out of 5"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><b>4.9 out of 5</b><span>from 541 Google reviews</span><a href="https://www.google.com/maps/search/East%20Atlantic%20Plumbing%20LLC?hl=en&amp;gl=us" rel="nofollow noopener" target="_blank">See them on Google</a></p>
+<p class="rvAgg"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg><span class="rvStars" role="img" aria-label="4.9 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:98.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><b>4.9 out of 5</b><span>from 541 Google reviews</span><a href="https://www.google.com/maps/search/East%20Atlantic%20Plumbing%20LLC?hl=en&amp;gl=us" rel="nofollow noopener" target="_blank">See them on Google</a></p>
 <div class="rvGrid">
 <figure class="rvCard">
-<span class="rvStars" role="img" aria-label="5 out of 5"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span>
+<span class="rvStars" role="img" aria-label="5 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:100.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span>
 <blockquote>Davis was friendly, knowledgeable, and an absolute joy to work with! This plumbing company was amazing from start to finish. They responded quickly and got to our job the very same day. Davis efficiently took care of two plumbing issues in one visit, and his work was excellent. We truly appreciate the prompt, professional service and will definitely be using them again. Highly recommend!</blockquote>
-<figcaption><span class="rvWho">GG</span><b>Gail Gatewood</b><span class="rvWhen">2 weeks ago</span></figcaption>
+<figcaption><span class="rvWho">GG</span><b>Gail Gatewood</b><span class="rvWhen">2 weeks ago</span><span class="rvSrc" title="Published on Google"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg></span></figcaption>
 </figure>
 <figure class="rvCard">
-<span class="rvStars" role="img" aria-label="5 out of 5"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span>
+<span class="rvStars" role="img" aria-label="5 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:100.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span>
 <blockquote>I’ve used a plumbing company since I moved into my home in 2021. They seemed reliable and professional; however, they couldn’t fix a disgusting odor randomly coming from beneath the kitchen sink with the attitude that I was exaggerating. The plumber came out repeatedly to find and make the necessary repairs while the charges kept mounting up without resolution. I finally had another plumbing company take a look - and $700 later with redoing plumbing that didn’t need to be redone with another $900 to thread a camera to go throughout my plumbing to “try” to find the issue (which I declined because they had no clear idea what was causing the odor), I decided to make an appointment with East Atlantic. WHAT A DIFFERENCE! Jesse came out with another technician. They listened to the history, took appropriate measures to rule out possibilities, and decided to do a test. Within 45 minutes of arrival, the issue was confirmed and repaired. All this for less cost than any one visit from the other companies. Issue resolved! East Atlantic is now my company of choice. They will take care of all my plumbing needs including descaling my tankless water heater. Thanks to their five-star reviews, I located them on Google. Best company! Prompt appointments. They actually know what they’re doing - a rare find.</blockquote>
-<figcaption><span class="rvWho">TH</span><b>Teresa Hodge</b><span class="rvWhen">a month ago</span></figcaption>
+<figcaption><span class="rvWho">TH</span><b>Teresa Hodge</b><span class="rvWhen">a month ago</span><span class="rvSrc" title="Published on Google"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg></span></figcaption>
 </figure>
 <figure class="rvCard">
-<span class="rvStars" role="img" aria-label="5 out of 5"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span>
+<span class="rvStars" role="img" aria-label="5 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:100.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span>
 <blockquote>I cannot say enough great things about this East Atlantic Plumbing Company LLC and especially and Techs Jesse and David. From the moment they arrived, they were professional, knowledgeable, and incredibly thorough. Not only did they fix the issue I originally called about quickly and efficiently, but they also went well above and beyond by identifying and repairing another problem I didn’t even know existed. Because of their attention to detail and honesty, they were able to fix an issue that will significantly extend the life of my grinder pump and likely save me a lot of money and headaches down the road. That kind of care and integrity is hard to find these days. Jesse and David clearly take pride in their work, and it shows. They treated my home with respect, explained everything clearly, and made sure the job was done right the first time. If you’re looking for a plumbing company that truly cares about their customers, this is the one to call. Highly recommend!</blockquote>
-<figcaption><span class="rvWho">SN</span><b>Stephanie Nicolaro</b><span class="rvWhen">2 months ago</span></figcaption>
+<figcaption><span class="rvWho">SN</span><b>Stephanie Nicolaro</b><span class="rvWhen">2 months ago</span><span class="rvSrc" title="Published on Google"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg></span></figcaption>
 </figure>
 </div>
+<p class="rvSwipe" aria-hidden="true">Swipe for more</p>
 </div></section>
 
 <section id="services">
   <div class="wrap">
-    <h2>What comes our way</h2>
+    <h2>What we take on around East</h2>
     <p class="lead">Taken from what East Atlantic Plumbing LLC publishes on their website.</p>
       <div class="svcgroup">
         <h3>Plumbing Services We Offer</h3>
@@ -686,7 +700,7 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 
 <section id="contact">
   <div class="wrap">
-    <h2>Getting hold of us</h2>
+    <h2>Where to find us in East</h2>
     <div class="factbox">
       <dl>
         <div><dt>Phone</dt><dd><a href="tel:+19106163238">(910) 616-3238</a></dd></div>
@@ -730,7 +744,7 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
       </dl>
       <div class="fsocial"><div class="socialbar">
   <a href="https://eastatlanticplumbing.net" rel="nofollow noopener" target="_blank" aria-label="East Atlantic Plumbing LLC on the web"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3z"/></svg></a>
-  
+  <a href="https://www.google.com/maps/search/?api=1&amp;query=East%20Atlantic%20Plumbing%20LLC%20East" rel="nofollow noopener" target="_blank" aria-label="East Atlantic Plumbing LLC on the map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg></a>
 </div></div>
     </div>
   </section>
@@ -762,7 +776,7 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
   </div>
 </footer>
 <a class="totop" href="#main" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7" stroke-linejoin="round"/></svg></a>
-<div class="lcdock"><a class="lcdock-cta" href="#contact">Request a quote</a><div class="lcdock-split"><a href="tel:+19106163238" aria-label="Call (910) 616-3238"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" stroke-linejoin="round"/></svg><span>Call</span></a></div></div><script>document.body.classList.add("vd-has-dock");</script>
+<div class="lcdock"><a class="lcdock-cta" href="#contact">Request a quote</a><div class="lcdock-split"><a href="tel:+19106163238" aria-label="Call (910) 616-3238"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" stroke-linejoin="round"/></svg><span>Call</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=East%20Atlantic%20Plumbing%20LLC%20East" rel="nofollow noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg><span>Map</span></a></div></div><script>document.body.classList.add("vd-has-dock");</script>
 
 <!-- VENDLY-DEMO-OPEN-BEACON. Counts one page open, per demo, per day. Aggregate only:
      no identity, no referrer, no query string, no cookie, no storage.
@@ -800,13 +814,5 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
   }catch(e){}
 })();
 </script>
-
-<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
-     in this demo's own harvested facts; it refuses anything it was not given.
-     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
-<script>
-window.VendlyDemoAssistant={slug:"east-atlantic-plumbing-llc",name:"East Atlantic Plumbing LLC",phone:"(910) 616-3238",accent:"#041A4A"};
-</script>
-<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
 </body>
 </html>
