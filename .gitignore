@@ -1,8 +1,28 @@
-# Local backups and provenance notes never ship. A .bak copy of a scrubbed
-# page still contains the markup that was scrubbed, and GitHub Pages serves it.
-*.bak
-*.bak-*
-*.orig
+# INTERNAL BUILD ARTEFACTS - NEVER PUBLISH. Added 2026-08-09.
+#
+# Measured today: 533 published demos exposed HARVEST.json and BUILD-REPORT.json at their own
+# public demo URL. Anyone we emailed a link to could fetch our internal notes about their own
+# business. On mike-s-auto-glass-express the harvest read "Nations Auto Glass is a growing
+# multi-state company" - our evidence that we had scraped a competitor - readable at the URL we
+# were about to send them. 105 of the first 120 demos carried an internal note or another
+# client name in a publicly fetchable file.
+#
+# DEMO-VISUAL-FAIL.txt was the worst of them: our own note saying the demo failed, served from
+# the prospect-facing URL.
+#
+# Every one of these lives in the build tree at _tmp/autodemo/demos/<slug>/, which is where
+# tooling should read them. Nothing is lost by keeping them out of the public repo.
+HARVEST.json
+BUILD-REPORT.json
+BUILD-REFUSED.json
+FILL.json
+ASSET-LEDGER.json
+STOCK-PROVENANCE.json
+PHOTO-TEXT-SCORE.json
+FOOD-BREADTH.json
+DEMO-VISUAL-PASS.txt
+DEMO-VISUAL-FAIL.txt
+PIXEL-AUDIT-PASS.txt
+PIXEL-AUDIT-FAIL.txt
+DEMO-RESEARCH.md
 SOURCE.txt
-
-.vercel
