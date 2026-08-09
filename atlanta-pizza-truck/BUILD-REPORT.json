@@ -2,50 +2,50 @@
   "niche": "caterer",
   "schema": "vendly.autodemo.build/1",
   "business": "Atlanta Pizza Truck",
-  "facebook": null,
+  "facebook": "https://www.theatlantapizzatruck.com/menu",
   "slug": "atlanta-pizza-truck",
-  "built_at": "2026-08-07T22:44:48.736Z",
-  "elapsed_ms": 1373,
+  "built_at": "2026-08-08T20:19:38.975Z",
+  "elapsed_ms": 429,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 95
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 95
-    },
-    {
-      "step": "assets",
-      "at_ms": 774
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 886
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 0
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 897
+      "at_ms": 17
     },
     {
       "step": "brand_palette",
-      "at_ms": 1279
+      "at_ms": 391
     },
     {
       "step": "layout",
-      "at_ms": 1279
+      "at_ms": 391
     },
     {
       "step": "render",
-      "at_ms": 1280
+      "at_ms": 391
     },
     {
       "step": "audit",
-      "at_ms": 1281
+      "at_ms": 391
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1373
+      "at_ms": 429
     }
   ],
   "audit": {
@@ -54,14 +54,14 @@
   },
   "design": {
     "trade_palette": "restaurant",
-    "layout_archetype": "showcase",
-    "layout_label": "Showcase",
-    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 3,
+      "photo_count": 1,
       "has_reviews": false,
-      "branch": "visual trade (restaurant) with 3 photographs",
+      "branch": "photoCount<=2 (1): a gallery-led page with this few images reads as unfinished",
       "deterministic": true
     },
     "section_order": [
@@ -74,8 +74,8 @@
       "contact"
     ],
     "hero_treatment": "overlay",
-    "header_treatment": "centered",
-    "gallery_shape": "masonry",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
     "primary_cta": {
       "label": "Call to Order",
       "kind": "tel"
@@ -97,12 +97,12 @@
       "overrode": {
         "order": {
           "from": [
-            "gallery",
+            "trust",
+            "contact",
             "services",
             "words",
-            "trust",
-            "concierge",
-            "contact"
+            "gallery",
+            "concierge"
           ],
           "to": [
             "hero",
@@ -115,7 +115,7 @@
           ]
         },
         "hero": {
-          "from": "split",
+          "from": "panel",
           "to": "overlay"
         }
       }
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "atlanta-pizza-truck",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -321,17 +321,18 @@
       "fetched_at": "2026-08-07T22:44:47.457Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [],
   "link_preview": {
-    "og_title": "Atlanta Pizza Truck | GA",
+    "og_title": "Atlanta Pizza Truck | Atlanta",
     "og_url": "https://vendly-demos.vercel.app/atlanta-pizza-truck/",
-    "og_image": "https://vendly-demos.vercel.app/atlanta-pizza-truck/assets/site-0.png",
+    "og_image": "https://vendly-demos.vercel.app/atlanta-pizza-truck/assets/site-3.jpg",
     "og_image_is_absolute": true,
     "twitter_card": "summary_large_image",
     "image_source_kind": "photograph",
     "image_is_page_lead_image": true,
-    "image_sha256": "dc82f9d390febca5b361d1c7e5dbf846fcb1397d9e89a53f681f124270830850",
-    "image_px": "1080x1080",
+    "image_sha256": "f2a5f01f64a97e0c6ac7d53e4c15d455236ecc7aecdbe835479984e31492d67f",
+    "image_px": "1125x762",
     "meets_facebook_minimum_200x200": true,
     "renders_large_card_600x315": true,
     "meets_facebook_recommended_1200x630": false,
@@ -341,7 +342,7 @@
   "assets": {
     "accepted": 3,
     "rejected": 2,
-    "photographs": 3,
+    "photographs": 1,
     "logo_found": false
   },
   "rejected_assets": [
@@ -361,9 +362,10 @@
     "trust_strip": false,
     "services": true,
     "their_words": false,
-    "gallery": true,
+    "gallery": false,
     "contact": true,
     "niche": "caterer"
   },
-  "fill_tokens": 13
+  "fill_tokens": 9,
+  "founder_face": "vendly-founder.jpg"
 }

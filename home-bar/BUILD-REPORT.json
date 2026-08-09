@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Home Bar",
-  "facebook": null,
+  "facebook": "https://www.homebaratl.com/",
   "slug": "home-bar",
-  "built_at": "2026-08-07T22:41:33.402Z",
-  "elapsed_ms": 3502,
+  "built_at": "2026-08-08T20:19:22.962Z",
+  "elapsed_ms": 464,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 167
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 167
-    },
-    {
-      "step": "assets",
-      "at_ms": 2240
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 2375
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 2385
+      "at_ms": 9
     },
     {
       "step": "brand_palette",
-      "at_ms": 2888
+      "at_ms": 413
     },
     {
       "step": "layout",
-      "at_ms": 2888
+      "at_ms": 413
     },
     {
       "step": "render",
-      "at_ms": 2890
+      "at_ms": 413
     },
     {
       "step": "audit",
-      "at_ms": 2892
+      "at_ms": 414
     },
     {
       "step": "beacon_probe",
-      "at_ms": 3502
+      "at_ms": 464
     }
   ],
   "audit": {
@@ -59,9 +59,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 11,
+      "photo_count": 10,
       "has_reviews": false,
-      "branch": "visual trade (restaurant) with 11 photographs: the work is the argument",
+      "branch": "visual trade (restaurant) with 10 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -278,13 +278,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "home-bar",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -341,6 +341,7 @@
       "fetched_at": "2026-08-07T22:41:30.066Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -363,7 +364,7 @@
   "assets": {
     "accepted": 11,
     "rejected": 6,
-    "photographs": 11,
+    "photographs": 10,
     "logo_found": false
   },
   "rejected_assets": [
@@ -407,5 +408,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

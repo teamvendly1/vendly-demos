@@ -2,50 +2,46 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "T's Brunch Bar",
-  "facebook": null,
+  "facebook": "https://www.tsbrunchbaratl.com/",
   "slug": "t-s-brunch-bar",
-  "built_at": "2026-08-07T22:44:44.538Z",
-  "elapsed_ms": 1494,
+  "built_at": "2026-08-08T20:19:38.343Z",
+  "elapsed_ms": 450,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 130
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 130
-    },
-    {
-      "step": "assets",
-      "at_ms": 897
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 1020
+      "at_ms": 0
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1036
+      "at_ms": 19
     },
     {
       "step": "brand_palette",
-      "at_ms": 1412
+      "at_ms": 409
     },
     {
       "step": "layout",
-      "at_ms": 1412
+      "at_ms": 409
     },
     {
       "step": "render",
-      "at_ms": 1413
+      "at_ms": 410
     },
     {
       "step": "audit",
-      "at_ms": 1415
+      "at_ms": 411
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1494
+      "at_ms": 450
     }
   ],
   "audit": {
@@ -278,13 +274,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "t-s-brunch-bar",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -300,10 +296,6 @@
       "fetched_at": "2026-08-07T22:44:43.173Z"
     },
     {
-      "text": "921 Peachtree St NE, Atlanta, GA, 30309",
-      "fetched_at": "2026-08-07T22:44:43.173Z"
-    },
-    {
       "text": "T's Brunch Bar in Atlanta, GA. T's Brunch Bar introduces Brunch with a twist! Owner Teneshia Murray is a serial entrepreneur that loves brunch foods and she wants a twist of mimosas, breakfast and brunch foods added to her list of business! Our menu will have all types of different brunch foods with a little touch of southern! Chef Jamarious Gilmere created all of Teneshia's favorite brunch foods and added a twist to each entree! Our food is cooked fresh to order and have great flavor with amazing taste! We look forward to serving you!",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:44:43.173Z"
@@ -311,17 +303,18 @@
     {
       "text": "Restaurant",
       "fetched_at": "2026-08-07T22:44:43.173Z"
-    },
-    {
-      "text": "T's Brunch Bar in Atlanta",
-      "fetched_at": "2026-08-07T22:44:43.173Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
+    "hours(live_status_only:Su 09:00-17:00; Mo 09:00-15:00; Tu 09:00-15:00; We 09:00-15:00; Th 09:00-15:00; Fr 09:00-15:00; Sa 09:00-17:00)",
+    "address",
+    "hours(live_status_only:Su 09:00-17:00; Mo 09:00-15:00; Tu 09:00-15:00; We 09:00-15:00; Th 09:00-15:00; Fr 09:00-15:00; Sa 09:00-17:00)",
+    "hours(live_status_only:Su 09:00-17:00; Mo 09:00-15:00; Tu 09:00-15:00; We 09:00-15:00; Th 09:00-15:00; Fr 09:00-15:00; Sa 09:00-17:00)",
     "hours(live_status_only:Su 09:00-17:00; Mo 09:00-15:00; Tu 09:00-15:00; We 09:00-15:00; Th 09:00-15:00; Fr 09:00-15:00; Sa 09:00-17:00)"
   ],
   "link_preview": {
-    "og_title": "T&#39;s Brunch Bar | GA",
+    "og_title": "T&#39;s Brunch Bar",
     "og_url": "https://vendly-demos.vercel.app/t-s-brunch-bar/",
     "og_image": "https://vendly-demos.vercel.app/t-s-brunch-bar/assets/site-1.png",
     "og_image_is_absolute": true,
@@ -402,11 +395,12 @@
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
-    "services": true,
+    "services": false,
     "their_words": false,
     "gallery": true,
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 11
+  "fill_tokens": 8,
+  "founder_face": "vendly-founder.jpg"
 }

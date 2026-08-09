@@ -4,48 +4,52 @@
   "business": "HandleBar",
   "facebook": null,
   "slug": "handlebar",
-  "built_at": "2026-08-07T22:44:17.656Z",
-  "elapsed_ms": 2325,
+  "built_at": "2026-08-09T00:37:20.434Z",
+  "elapsed_ms": 2986,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 214
+      "at_ms": 118
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 214
+      "at_ms": 119
     },
     {
       "step": "assets",
-      "at_ms": 1628
+      "at_ms": 1642
     },
     {
       "step": "template",
-      "at_ms": 1722
+      "at_ms": 1752
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1759
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1817
+      "at_ms": 1891
     },
     {
       "step": "brand_palette",
-      "at_ms": 2215
+      "at_ms": 2332
     },
     {
       "step": "layout",
-      "at_ms": 2215
+      "at_ms": 2332
     },
     {
       "step": "render",
-      "at_ms": 2216
+      "at_ms": 2886
     },
     {
       "step": "audit",
-      "at_ms": 2218
+      "at_ms": 2887
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2325
+      "at_ms": 2985
     }
   ],
   "audit": {
@@ -94,6 +98,7 @@
       ],
       "rationale": "Ma'ono and Bull & Last each lead with one enormous food photograph and a single repeated ordering CTA, and King Restaurant marks hours and location high on the page rather than in the footer. So: photo-led overlay hero, gallery directly beneath it, hours and rating next, menu as a first-class section, and exactly one primary action.",
       "contrast_corrected": [],
+      "cta_corrected": null,
       "overrode": {
         "order": {
           "from": [
@@ -278,37 +283,39 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "handlebar",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
       "text": "HandleBar",
-      "fetched_at": "2026-08-07T22:44:15.544Z"
+      "fetched_at": "2026-08-09T00:37:17.448Z"
     },
     {
       "text": "(404) 600-2639",
-      "fetched_at": "2026-08-07T22:44:15.544Z"
+      "source": "https://handlebar-atl.com/#",
+      "fb_field": "tel-href",
+      "fetched_at": "2026-08-09T00:37:17.448Z"
     },
     {
       "text": "thehandlebaratl@gmail.com",
-      "fetched_at": "2026-08-07T22:44:15.544Z"
+      "source": "https://handlebar-atl.com/#",
+      "fb_field": "site",
+      "fetched_at": "2026-08-09T00:37:17.448Z"
     },
     {
       "text": "null",
+      "source": "https://handlebar-atl.com/#",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:44:15.544Z"
-    },
-    {
-      "text": "null",
-      "fetched_at": "2026-08-07T22:44:15.544Z"
+      "fetched_at": "2026-08-09T00:37:17.448Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -338,11 +345,12 @@
   "sections_rendered": {
     "hero": true,
     "trust_strip": false,
-    "services": true,
+    "services": false,
     "their_words": false,
     "gallery": true,
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 16
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

@@ -86,7 +86,7 @@ header .btn{transition:opacity .18s ease,transform .18s ease}
 .vd-top header .btn{opacity:0;pointer-events:none;transform:translateY(-3px)}
 .hero>img{opacity:1}
 .hero:has(>img){background:#100c0a}
-.hero:has(>img)::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(12,9,7,.28)}
+.hero:has(>img)::before{content:"";position:absolute;inset:0;z-index:1;background:rgba(12,9,7,var(--vd-veil,.28))}
 .hero:has(>img)::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,rgba(10,8,6,.88) 0%,rgba(10,8,6,.86) 46%,rgba(10,8,6,.74) 66%,rgba(10,8,6,.48) 84%,rgba(10,8,6,.08) 100%)}
 .hero .wrap{position:relative;z-index:2}
 .hero p,.hero .lede{color:#f2ece5;text-shadow:0 1px 2px rgba(0,0,0,.35)}
@@ -97,7 +97,8 @@ header .btn{transition:opacity .18s ease,transform .18s ease}
 .heroShot h1{margin-left:auto;margin-right:auto}
 .heroShot .lede,.heroShot p{margin-left:auto;margin-right:auto}
 .heroShot .heroActs,.heroShot .cta{justify-content:center}
-.heroShot .kicker{justify-content:center}
+.heroShot .kicker{display:block;text-align:center}
+.heroShot .kicker b{display:none}
 .heroShot .promises{max-width:34ch;margin-left:auto;margin-right:auto;text-align:left}
 .btn.onDark{background:var(--accent,var(--a,var(--brand,#8c2f1f)));color:#fff}
 .heroShot .btn.lg{border-radius:999px;padding-left:30px;padding-right:30px;text-align:center}
@@ -154,7 +155,7 @@ body.vd-has-dock footer{padding-bottom:150px}
   <a class="btn" href="tel:+18437234363">Call us</a>
 </div></header>
 <main id="top">
-<div class="hero">
+<div class="hero" style="--vd-veil:0.191">
   <img src="assets/site-2.jpg" alt="" aria-hidden="true">
   <div class="wrap">
     <h1 class="h1-long">Established in 1932, Henry’s is the oldest continuous restaurant in Charleston and the state of South Carolina.</h1>
@@ -225,7 +226,7 @@ body.vd-has-dock footer{padding-bottom:150px}
 </div></section>
 <section id="photos"><div class="wrap">
   <p class="eyebrow">The food</p>
-  <h2>Their own photographs, not stock</h2>
+  <h2>From their own kitchen</h2>
   <p class="lead">Every picture below was published by Henry's on the Market.</p>
   <div class="gal">
     <figure><img src="assets/site-1.jpg" alt="Photograph published by Henry's on the Market" loading="lazy"></figure>
@@ -250,7 +251,7 @@ body.vd-has-dock footer{padding-bottom:150px}
     <a href="https://henrysonthemarket.com/Charleston-Henry-s-on-the-Market-party-inquiry" target="_blank" rel="noopener">Book now a private party</a>
   </p>
 </div></section>
-<section id="visit"><div class="wrap">
+<section id="visit" class="vd-ink"><div class="wrap">
   <p class="eyebrow">Come in</p>
   <h2>Visit Henry's on the Market</h2>
   <div class="cta">
@@ -275,5 +276,6 @@ body.vd-has-dock footer{padding-bottom:150px}
   <div><strong>Henry's on the Market</strong><br>(843) 723-4363</div>
   <div class="src">Preview built by Vendly from henrysonthemarket.com and their published photographs. Not affiliated with or endorsed by Henry's on the Market. No pricing is shown because we did not want to publish a number that might be out of date.</div>
 </div></footer>
+<nav class="vd-dock" aria-label="Contact"><a class="vd-dock-call" href="tel:+18437234363"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" stroke-linejoin="round"/></svg><span>Call (843) 723-4363</span></a></nav><script>document.body.classList.add("vd-has-dock");</script>
 </body>
 </html>

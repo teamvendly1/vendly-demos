@@ -2,50 +2,50 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Augie's Cafe",
-  "facebook": null,
+  "facebook": "https://augiescafe.com/",
   "slug": "augie-s-cafe",
-  "built_at": "2026-08-07T22:44:08.118Z",
-  "elapsed_ms": 1297,
+  "built_at": "2026-08-08T20:19:34.537Z",
+  "elapsed_ms": 347,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 227
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 227
-    },
-    {
-      "step": "assets",
-      "at_ms": 781
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 897
+      "at_ms": 0
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 0
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 913
+      "at_ms": 32
     },
     {
       "step": "brand_palette",
-      "at_ms": 1193
+      "at_ms": 305
     },
     {
       "step": "layout",
-      "at_ms": 1194
+      "at_ms": 305
     },
     {
       "step": "render",
-      "at_ms": 1195
+      "at_ms": 306
     },
     {
       "step": "audit",
-      "at_ms": 1196
+      "at_ms": 307
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1297
+      "at_ms": 347
     }
   ],
   "audit": {
@@ -276,7 +276,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00E9",
-        "count": 20,
+        "count": 16,
         "in_sourced_claim": true,
         "char": "é"
       }
@@ -285,13 +285,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "augie-s-cafe",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -308,10 +308,6 @@
       "fetched_at": "2026-08-07T22:44:07.047Z",
       "verbatim_source_text": "Augie’s Café is a soulful neighborhood café serving comfort food, handcrafted coffee, and signature drinks in a warm, culture-driven space. Perfect for breakfast, brunch, lunch, meetings, and community gatherings. If you want it a little more food-forward, here’s an alternate option: Augie’s Café offers comfort food that hits, handcrafted coffee, and signature drinks in a laid-back, culture-inspired café. A welcoming spot for great food, coffee, meetings, and community.",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
-    },
-    {
-      "text": "Augie",
-      "fetched_at": "2026-08-07T22:44:07.047Z"
     },
     {
       "text": "s Café is a soulful neighborhood café serving comfort food",
@@ -378,6 +374,7 @@
       "fetched_at": "2026-08-07T22:44:07.047Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -459,5 +456,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 15
+  "fill_tokens": 15,
+  "founder_face": "vendly-founder.jpg"
 }

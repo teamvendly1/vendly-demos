@@ -2,46 +2,46 @@
   "niche": "restaurant",
   "schema": "vendly.autodemo.build/1",
   "business": "Bosco's Baby's Restaurant & Catering",
-  "facebook": null,
+  "facebook": "https://boscosbabys.com/",
   "slug": "bosco-s-baby-s-restaurant-catering",
-  "built_at": "2026-08-07T22:48:15.850Z",
-  "elapsed_ms": 5255,
+  "built_at": "2026-08-08T20:19:52.324Z",
+  "elapsed_ms": 403,
   "steps": [
     {
-      "step": "harvest_site",
-      "at_ms": 1456
+      "step": "harvest_reused_offline",
+      "at_ms": 0
     },
     {
-      "step": "harvest_merge_prior",
-      "at_ms": 1456
-    },
-    {
-      "step": "assets",
-      "at_ms": 4665
+      "step": "assets_reused_offline",
+      "at_ms": 0
     },
     {
       "step": "template",
-      "at_ms": 4790
+      "at_ms": 1
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1
     },
     {
       "step": "brand_palette",
-      "at_ms": 5148
+      "at_ms": 358
     },
     {
       "step": "layout",
-      "at_ms": 5149
+      "at_ms": 358
     },
     {
       "step": "render",
-      "at_ms": 5150
+      "at_ms": 358
     },
     {
       "step": "audit",
-      "at_ms": 5152
+      "at_ms": 359
     },
     {
       "step": "beacon_probe",
-      "at_ms": 5255
+      "at_ms": 403
     }
   ],
   "audit": {
@@ -55,9 +55,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "restaurant",
-      "photo_count": 23,
+      "photo_count": 22,
       "has_reviews": true,
-      "branch": "visual trade (restaurant) with 23 photographs: the work is the argument",
+      "branch": "visual trade (restaurant) with 22 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -272,7 +272,7 @@
     "non_ascii_from_their_own_text": [
       {
         "codepoint": "U+00B7",
-        "count": 6,
+        "count": 9,
         "in_sourced_claim": true,
         "char": "·"
       },
@@ -287,13 +287,13 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "bosco-s-baby-s-restaurant-catering",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
@@ -311,17 +311,11 @@
       "fetched_at": "2026-08-07T22:48:12.050Z"
     },
     {
-      "text": "202 Conestee Road, Greenville, SC",
-      "source": "https://www.facebook.com/boscosbabys/",
-      "fb_field": "INTRO_CARD_ADDRESS",
-      "fetched_at": "2026-08-07T22:48:12.050Z"
-    },
-    {
-      "text": "Come Let Our Food Dance On Your Taste Buds Meat & 3!\nDinners to Go\nSpecial orders\nFairs &...",
+      "text": "Come Let Our Food Dance On Your Taste Buds Meat & 3!",
       "source": "https://www.facebook.com/boscosbabys/",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:48:12.050Z",
-      "verbatim_source_text": "Come Let Our Food Dance On Your Taste Buds \nMeat & 3!\nDinners to Go\nSpecial orders\nFairs &...",
+      "verbatim_source_text": "Come Let Our Food Dance On Your Taste Buds \nMeat & 3!",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
@@ -331,31 +325,7 @@
       "fetched_at": "2026-08-07T22:48:12.050Z"
     },
     {
-      "text": "Come Let Our Food Dance On Your Taste Buds",
-      "source": "https://www.facebook.com/boscosbabys/",
-      "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:48:12.050Z"
-    },
-    {
       "text": "Meat & 3!",
-      "source": "https://www.facebook.com/boscosbabys/",
-      "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:48:12.050Z"
-    },
-    {
-      "text": "Dinners to Go",
-      "source": "https://www.facebook.com/boscosbabys/",
-      "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:48:12.050Z"
-    },
-    {
-      "text": "Special orders",
-      "source": "https://www.facebook.com/boscosbabys/",
-      "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:48:12.050Z"
-    },
-    {
-      "text": "Fairs &",
       "source": "https://www.facebook.com/boscosbabys/",
       "fb_field": "og:description",
       "fetched_at": "2026-08-07T22:48:12.050Z"
@@ -376,12 +346,17 @@
       ]
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "post_text",
+    "hours(live_status_only:Closed now)",
+    "address",
+    "hours(live_status_only:Closed now)",
+    "hours(live_status_only:Closed now)",
     "hours(live_status_only:Closed now)"
   ],
   "link_preview": {
-    "og_title": "Bosco&#39;s Baby&#39;s Restaurant &amp; Catering | Greenville",
+    "og_title": "Bosco&#39;s Baby&#39;s Restaurant &amp; Catering",
     "og_url": "https://vendly-demos.vercel.app/bosco-s-baby-s-restaurant-catering/",
     "og_image": "https://vendly-demos.vercel.app/bosco-s-baby-s-restaurant-catering/assets/488183973_1220466226745972.jpg",
     "og_image_is_absolute": true,
@@ -399,7 +374,7 @@
   "assets": {
     "accepted": 24,
     "rejected": 0,
-    "photographs": 23,
+    "photographs": 22,
     "logo_found": true
   },
   "rejected_assets": [],
@@ -412,5 +387,6 @@
     "contact": true,
     "niche": "restaurant"
   },
-  "fill_tokens": 22
+  "fill_tokens": 19,
+  "founder_face": "vendly-founder.jpg"
 }
