@@ -4,48 +4,52 @@
   "business": "Fiddler's Roofing",
   "facebook": null,
   "slug": "fiddler-s-roofing",
-  "built_at": "2026-08-07T22:58:43.363Z",
-  "elapsed_ms": 1555,
+  "built_at": "2026-08-09T17:43:02.232Z",
+  "elapsed_ms": 2055,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 177
+      "at_ms": 90
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 177
+      "at_ms": 90
     },
     {
       "step": "assets",
-      "at_ms": 865
+      "at_ms": 726
     },
     {
       "step": "template",
-      "at_ms": 982
+      "at_ms": 987
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 998
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1001
+      "at_ms": 1015
     },
     {
       "step": "brand_palette",
-      "at_ms": 1446
+      "at_ms": 1758
     },
     {
       "step": "layout",
-      "at_ms": 1446
+      "at_ms": 1758
     },
     {
       "step": "render",
-      "at_ms": 1447
+      "at_ms": 1909
     },
     {
       "step": "audit",
-      "at_ms": 1448
+      "at_ms": 1912
     },
     {
       "step": "beacon_probe",
-      "at_ms": 1555
+      "at_ms": 2055
     }
   ],
   "audit": {
@@ -59,9 +63,9 @@
     "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
       "trade_key": "roofing",
-      "photo_count": 13,
+      "photo_count": 15,
       "has_reviews": false,
-      "branch": "visual trade (roofing) with 13 photographs: the work is the argument",
+      "branch": "visual trade (roofing) with 15 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
@@ -94,6 +98,7 @@
       ],
       "rationale": "Burgin and Lindholm both put one quote ask directly under the hero headline and a tappable phone number in the top nav, because a roof buyer is triaging a failure on a phone, so the page leads with a readable panel and one repeated inspection CTA rather than two equal buttons; Janney supplies the gallery mechanic (filtered by the roof material the visitor actually has) and Burgin the countable trust block (real numbers and printed licence numbers, never the adjective). MAPPING SEAM, flagged not silent: this family also absorbs concrete, remodeling and custom_porch_builder, and for a decorative patio or driveway contractor this urgent phone-first shape is wrong - that buyer is unhurried and visual, so use the landscaping template (discovery-call CTA, portfolio-led order) when the lead sells patios and driveways, per the note in landscaping.md. HVAC and plumbing pull the other way and lean on the phone even harder than roofing does.",
       "contrast_corrected": [],
+      "cta_corrected": null,
       "overrode": {
         "order": {
           "from": [
@@ -272,53 +277,252 @@
     ]
   },
   "output_charset": {
-    "pure_ascii": true,
-    "non_ascii_from_their_own_text": [],
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+2019",
+        "count": 2,
+        "in_sourced_claim": true,
+        "char": "’"
+      },
+      {
+        "codepoint": "U+00AE",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "®"
+      },
+      {
+        "codepoint": "U+201C",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "“"
+      },
+      {
+        "codepoint": "U+201D",
+        "count": 1,
+        "in_sourced_claim": true,
+        "char": "”"
+      }
+    ],
     "non_ascii_unsourced_blocking": []
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "fiddler-s-roofing",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
       "text": "Fiddler's Roofing",
-      "fetched_at": "2026-08-07T22:58:41.984Z"
+      "fetched_at": "2026-08-09T17:43:00.178Z"
     },
     {
       "text": "(407) 366-2300",
-      "fetched_at": "2026-08-07T22:58:41.984Z"
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "tel-href",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
     },
     {
       "text": "orlando@fiddlersroofing.com",
-      "fetched_at": "2026-08-07T22:58:41.984Z"
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
     },
     {
       "text": "Fiddler's Roofing installs QueenTile stone-coated steel and Metal Alliance standing seam roofs in Orlando. Residential, commercial, and free estimates.",
+      "source": "https://fiddlersroofing.com/",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:58:41.984Z",
+      "fetched_at": "2026-08-09T17:43:00.178Z",
       "verbatim_source_text": "Fiddler’s Roofing installs QueenTile stone-coated steel and Metal Alliance standing seam roofs in Orlando. Residential, commercial, and free estimates.",
       "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
     },
     {
-      "text": "Fiddler",
-      "fetched_at": "2026-08-07T22:58:41.984Z"
+      "text": "QueenTile Stone-Coated Steel Roofing",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
     },
     {
-      "text": "commercial",
-      "fetched_at": "2026-08-07T22:58:41.984Z"
+      "text": "Metal Alliance Standing Seam Roofing",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
     },
     {
-      "text": "and free estimates",
-      "fetched_at": "2026-08-07T22:58:41.984Z"
+      "text": "Commercial Metal Roofing",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "since 2003",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Why Choose Fiddler’s Roofing?",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_question",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Fiddler’s Roofing is a Florida Certified Roofing Contractor, License CCC1333004, and has served Central Florida since 2003. We are also a GAF Master Elite® contractor for qualifying asphalt shingle roofs. Customers receive product-specific recommendations, available financing options, and a free estimate for the proposed work.",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_answer",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "How long does a metal roof last in Orlando?",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_question",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Metal roofs are commonly chosen for long-term service, but a universal “40 to 80 years” promise is too broad for every system. Expected service life depends on the metal substrate, coating, profile, installation, exposure, maintenance, and repairs. We explain the product warranty and workmanship coverage for the specific roof being proposed.",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_answer",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Can every metal roof withstand winds over 150 mph?",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_question",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "No. A blanket wind rating does not apply to every metal roof. Wind performance belongs to a tested roof assembly installed over a defined deck with specified fasteners and spacing. The correct question is whether the proposed assembly and installation meet the applicable requirements for the property.",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_answer",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Will metal roofing lower my cooling costs?",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_question",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "A reflective metal finish may reduce roof-surface heat gain and cooling demand, especially in a warm climate. It does not guarantee a fixed percentage of savings. Color, solar reflectance, insulation, ventilation, HVAC efficiency, and building use all influence the result.",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_answer",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Can a new metal roof reduce home insurance premiums?",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_question",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "It may help a home qualify for wind-mitigation credits when the roof covering and other documented features meet applicable requirements, but metal alone does not guarantee a discount. Ask your insurance carrier what documentation and inspection it requires before selecting a system.",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_answer",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "How much does metal roofing cost in Orlando?",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_question",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "The price depends on measured roof area, tear-off, deck repairs, roof complexity, access, selected system, steel gauge, finish, flashing, permits, and project details. A generic online range cannot accurately price a specific roof. For Orlando property owners, the reliable way to price the work is to schedule an inspection and receive a written estimate.",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_faq_answer",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Orlando, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Kissimmee, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Orange County, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Celebration, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Lake County, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Horizon West, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Tampa, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Polk County, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Hillsborough County, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Lakeland, FL",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_service_area",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "QueenTile Stone-Coated Steel Roofing",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_named_service",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Metal Alliance Standing Seam Roofing",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_named_service",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "Commercial Metal Roofing",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_named_service",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
+    },
+    {
+      "text": "since 2003",
+      "source": "https://fiddlersroofing.com/",
+      "fb_field": "site_established",
+      "fetched_at": "2026-08-09T17:43:00.178Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -339,9 +543,9 @@
     "reason_no_image": "no image on this demo has measured dimensions"
   },
   "assets": {
-    "accepted": 13,
-    "rejected": 4,
-    "photographs": 13,
+    "accepted": 15,
+    "rejected": 2,
+    "photographs": 15,
     "logo_found": false
   },
   "rejected_assets": [
@@ -351,16 +555,6 @@
       "media_id": "site-1"
     },
     {
-      "reason": "too_small",
-      "sha256": "3682b7ccd8025abb15881168004b3f9e3c639c16ce964678fc5d80d8b1e84006",
-      "media_id": "site-2"
-    },
-    {
-      "reason": "too_small",
-      "sha256": "e8ac0ef02c08700bdb56470e86b96ebf54f4f9fc9ce57561d52a19849a1915cf",
-      "media_id": "site-15"
-    },
-    {
       "reason": "download_failed",
       "sha256": null,
       "media_id": null
@@ -368,12 +562,79 @@
   ],
   "sections_rendered": {
     "hero": true,
-    "trust_strip": false,
+    "trust_strip": true,
     "services": true,
     "their_words": false,
     "gallery": true,
+    "faq": true,
+    "faq_pairs": 6,
+    "service_area": true,
+    "service_area_places": 10,
+    "services_named_by_them": true,
     "contact": true,
     "niche": "roofing"
   },
-  "fill_tokens": 16
+  "site_depth": {
+    "schema": "vendly.site-depth/1",
+    "read_at": "2026-08-09T17:43:00.267Z",
+    "source_url": "https://fiddlersroofing.com/",
+    "faq": [
+      {
+        "q": "Why Choose Fiddler’s Roofing?",
+        "a": "Fiddler’s Roofing is a Florida Certified Roofing Contractor, License CCC1333004, and has served Central Florida since 2003. We are also a GAF Master Elite® contractor for qualifying asphalt shingle roofs. Customers receive product-specific recommendations, available financing options, and a free estimate for the proposed work.",
+        "source_url": "https://fiddlersroofing.com/"
+      },
+      {
+        "q": "How long does a metal roof last in Orlando?",
+        "a": "Metal roofs are commonly chosen for long-term service, but a universal “40 to 80 years” promise is too broad for every system. Expected service life depends on the metal substrate, coating, profile, installation, exposure, maintenance, and repairs. We explain the product warranty and workmanship coverage for the specific roof being proposed.",
+        "source_url": "https://fiddlersroofing.com/"
+      },
+      {
+        "q": "Can every metal roof withstand winds over 150 mph?",
+        "a": "No. A blanket wind rating does not apply to every metal roof. Wind performance belongs to a tested roof assembly installed over a defined deck with specified fasteners and spacing. The correct question is whether the proposed assembly and installation meet the applicable requirements for the property.",
+        "source_url": "https://fiddlersroofing.com/"
+      },
+      {
+        "q": "Will metal roofing lower my cooling costs?",
+        "a": "A reflective metal finish may reduce roof-surface heat gain and cooling demand, especially in a warm climate. It does not guarantee a fixed percentage of savings. Color, solar reflectance, insulation, ventilation, HVAC efficiency, and building use all influence the result.",
+        "source_url": "https://fiddlersroofing.com/"
+      },
+      {
+        "q": "Can a new metal roof reduce home insurance premiums?",
+        "a": "It may help a home qualify for wind-mitigation credits when the roof covering and other documented features meet applicable requirements, but metal alone does not guarantee a discount. Ask your insurance carrier what documentation and inspection it requires before selecting a system.",
+        "source_url": "https://fiddlersroofing.com/"
+      },
+      {
+        "q": "How much does metal roofing cost in Orlando?",
+        "a": "The price depends on measured roof area, tear-off, deck repairs, roof complexity, access, selected system, steel gauge, finish, flashing, permits, and project details. A generic online range cannot accurately price a specific roof. For Orlando property owners, the reliable way to price the work is to schedule an inspection and receive a written estimate.",
+        "source_url": "https://fiddlersroofing.com/"
+      }
+    ],
+    "service_area": {
+      "places": [
+        "Orlando, FL",
+        "Kissimmee, FL",
+        "Orange County, FL",
+        "Celebration, FL",
+        "Lake County, FL",
+        "Horizon West, FL",
+        "Tampa, FL",
+        "Polk County, FL",
+        "Hillsborough County, FL",
+        "Lakeland, FL"
+      ],
+      "source_url": "https://fiddlersroofing.com/"
+    },
+    "named_services": {
+      "list": [
+        "QueenTile Stone-Coated Steel Roofing",
+        "Metal Alliance Standing Seam Roofing",
+        "Commercial Metal Roofing"
+      ],
+      "source_url": "https://fiddlersroofing.com/"
+    },
+    "established": "2003"
+  },
+  "fill_tokens": 18,
+  "founder_face": "vendly-founder.jpg"
 }

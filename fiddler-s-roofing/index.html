@@ -33,6 +33,10 @@
 .concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
 .concierge .msg.us span a{color:#fff;text-decoration:underline}
 .concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.builtby{max-width:620px;margin:26px auto 0;display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line,#e3e0d8)}
+.builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
+.builtby p{margin:0;font-size:.9rem;line-height:1.5;opacity:.85}
+@media (max-width:560px){.builtby{flex-direction:column;text-align:center}}
 .hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -155,6 +159,32 @@ section{padding:52px 0}
 .quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
 .quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
 
+/* THE FAQ. Their published questions and their published answers, nothing else.
+   <details> rather than a stack of open paragraphs: on a phone six open answers is a wall, and
+   <details>/<summary> is native disclosure - keyboard reachable, screen-reader announced and
+   working with no JavaScript at all, which matters because a progressive enhancement must never
+   be able to hide a business's own words. The first one ships open so the section is never a row
+   of closed boxes a reader has to guess at. */
+.faqs{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.faqs details{border-top:1px solid var(--line)}
+.faqs details:first-child{border-top:0}
+.faqs summary{cursor:pointer;list-style:none;padding:18px 20px;font:600 17px/1.4 Inter,sans-serif;color:var(--b);
+  display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.faqs summary::-webkit-details-marker{display:none}
+.faqs summary::after{content:"+";font:400 22px/1 Inter,sans-serif;color:var(--c);flex:0 0 auto}
+.faqs details[open] summary::after{content:"-"}
+.faqs summary:focus-visible{outline:3px solid var(--c);outline-offset:-3px}
+.faqs .ans{margin:0;padding:0 20px 20px;font-size:16.5px;color:var(--ink);max-width:64ch}
+
+/* WHERE THEY WORK. Named places off their own locations list, set as plain text chips.
+   Deliberately NOT links and NOT a map: we hold the place names, not pages for them, and a chip
+   that looks clickable and is not is the same broken promise as an empty frame. */
+.places{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.places li{background:var(--mist);border:1px solid var(--line);border-radius:999px;
+  padding:9px 16px;font:600 15px/1 Inter,sans-serif;color:var(--b)}
+.srcnote{margin:16px 0 0;font:400 14px/1.5 Inter,sans-serif;color:var(--muted)}
+.srcnote a{color:var(--a)}
+
 footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
 footer.site a{color:#fff}
 .preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
@@ -198,49 +228,125 @@ footer.site a{color:#fff}
   </div>
 </div>
 
+<div class="strip"><div class="wrap"><ul>
+  <li>Serving the area since 2003</li>
+  
+  
+  
+</ul></div></div>
+
 <section id="services">
   <div class="wrap">
-    <h2>What we do</h2>
+    <h2>What we get up on the roof for</h2>
     <p class="lead">Taken from the Fiddler&#39;s Roofing Facebook page.</p>
     <div class="grid">
-      <div class="card"><h3>Fiddler</h3></div>
-      <div class="card"><h3>commercial</h3></div>
-      <div class="card"><h3>and free estimates</h3></div>
+      <div class="card"><h3>QueenTile Stone-Coated Steel Roofing</h3></div>
+      <div class="card"><h3>Metal Alliance Standing Seam Roofing</h3></div>
+      <div class="card"><h3>Commercial Metal Roofing</h3></div>
     </div>
   </div>
 </section>
 
 <section id="work">
   <div class="wrap">
-    <h2>Photos</h2>
-    <p class="lead">These photos are published on the Fiddler&#39;s Roofing Facebook page. Pulled 2026-08-07.</p>
+    <h2>Work off our own ladders</h2>
+    <p class="lead">These photos are published on the Fiddler&#39;s Roofing Facebook page. Pulled 2026-08-09.</p>
     <div class="gal gal-masonry">
-      <figure><img src="assets/site-0.webp" alt="Fiddler" loading="lazy" width="800" height="600"><figcaption>Fiddler</figcaption></figure>
-      <figure><img src="assets/site-3.webp" alt="commercial" loading="lazy" width="800" height="600"><figcaption>commercial</figcaption></figure>
-      <figure><img src="assets/site-4.webp" alt="and free estimates" loading="lazy" width="800" height="600"><figcaption>and free estimates</figcaption></figure>
+      <figure><img src="assets/site-0.webp" alt="QueenTile Stone-Coated Steel Roofing" loading="lazy" width="800" height="600"><figcaption>QueenTile Stone-Coated Steel Roofing</figcaption></figure>
+      <figure><img src="assets/site-2.webp" alt="Metal Alliance Standing Seam Roofing" loading="lazy" width="800" height="600"><figcaption>Metal Alliance Standing Seam Roofing</figcaption></figure>
+      <figure><img src="assets/site-3.webp" alt="Commercial Metal Roofing" loading="lazy" width="800" height="600"><figcaption>Commercial Metal Roofing</figcaption></figure>
+      <figure><img src="assets/site-4.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-5.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-6.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-7.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-8.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-9.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-10.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
-      <figure><img src="assets/site-11.webp" alt="Fiddler&#39;s Roofing" loading="lazy" width="800" height="600"></figure>
     </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <h2>The towns we get out to</h2>
+    <ul class="places">
+      <li>Orlando, FL</li>
+      <li>Kissimmee, FL</li>
+      <li>Orange County, FL</li>
+      <li>Celebration, FL</li>
+      <li>Lake County, FL</li>
+      <li>Horizon West, FL</li>
+      <li>Tampa, FL</li>
+      <li>Polk County, FL</li>
+      <li>Hillsborough County, FL</li>
+      <li>Lakeland, FL</li>
+    </ul>
+    <p class="srcnote">Listed on the Fiddler&#39;s Roofing website. Pulled 2026-08-09.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>The questions that come up on every roof</h2>
+    <div class="faqs">
+      <details open>
+        <summary>Why Choose Fiddler’s Roofing?</summary>
+        <p class="ans">Fiddler’s Roofing is a Florida Certified Roofing Contractor, License CCC1333004, and has served Central Florida since 2003. We are also a GAF Master Elite® contractor for qualifying asphalt shingle roofs. Customers receive product-specific recommendations, available financing options, and a free estimate for the proposed work.</p>
+      </details>
+      <details>
+        <summary>How long does a metal roof last in Orlando?</summary>
+        <p class="ans">Metal roofs are commonly chosen for long-term service, but a universal “40 to 80 years” promise is too broad for every system. Expected service life depends on the metal substrate, coating, profile, installation, exposure, maintenance, and repairs. We explain the product warranty and workmanship coverage for the specific roof being proposed.</p>
+      </details>
+      <details>
+        <summary>Can every metal roof withstand winds over 150 mph?</summary>
+        <p class="ans">No. A blanket wind rating does not apply to every metal roof. Wind performance belongs to a tested roof assembly installed over a defined deck with specified fasteners and spacing. The correct question is whether the proposed assembly and installation meet the applicable requirements for the property.</p>
+      </details>
+      <details>
+        <summary>Will metal roofing lower my cooling costs?</summary>
+        <p class="ans">A reflective metal finish may reduce roof-surface heat gain and cooling demand, especially in a warm climate. It does not guarantee a fixed percentage of savings. Color, solar reflectance, insulation, ventilation, HVAC efficiency, and building use all influence the result.</p>
+      </details>
+      <details>
+        <summary>Can a new metal roof reduce home insurance premiums?</summary>
+        <p class="ans">It may help a home qualify for wind-mitigation credits when the roof covering and other documented features meet applicable requirements, but metal alone does not guarantee a discount. Ask your insurance carrier what documentation and inspection it requires before selecting a system.</p>
+      </details>
+      <details>
+        <summary>How much does metal roofing cost in Orlando?</summary>
+        <p class="ans">The price depends on measured roof area, tear-off, deck repairs, roof complexity, access, selected system, steel gauge, finish, flashing, permits, and project details. A generic online range cannot accurately price a specific roof. For Orlando property owners, the reliable way to price the work is to schedule an inspection and receive a written estimate.</p>
+      </details>
+    </div>
+    <p class="srcnote">Answered by Fiddler&#39;s Roofing on their own website. Pulled 2026-08-09.</p>
   </div>
 </section>
 
 <section id="contact">
   <div class="wrap">
-    <h2>Contact</h2>
+    <h2>How to reach the office</h2>
     <div class="factbox">
       <dl>
         <div><dt>Phone</dt><dd><a href="tel:+14073662300">(407) 366-2300</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:orlando@fiddlersroofing.com">orlando@fiddlersroofing.com</a></dd></div>
         
         
-        <div><dt>Facebook</dt><dd><a href="https://fiddlersroofing.com/">fiddlersroofing.com/</a></dd></div>
+        <div><dt>Website</dt><dd><a href="https://fiddlersroofing.com/">fiddlersroofing.com/</a></dd></div>
       </dl>
     </div>
+  </div>
+</section>
+
+<section id="concierge" class="concierge">
+  <div class="wrap">
+    <div class="builtby">
+      <img src="vendly-founder.jpg" alt="Jacob Bailey, Vendly" width="56" height="56" loading="lazy">
+      <p>Built by Jacob Bailey at Vendly. I put this together from your public page so you could see it rather than read a pitch about it. If anything on here is wrong, tell me and I will fix it.</p>
+    </div>
+    <p class="lead">One more thing this page comes with. A concierge sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight. Here is how that reads to one of your customers.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+14073662300">(407) 366-2300</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 
@@ -249,21 +355,45 @@ footer.site a{color:#fff}
 <footer class="site">
   <div class="wrap">
     <p>Fiddler&#39;s Roofing. (407) 366-2300</p>
-    <p>Preview built by Vendly from the Fiddler&#39;s Roofing public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <p>Preview built by Vendly from the Fiddler&#39;s Roofing public website on 2026-08-09. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
   </div>
 </footer>
 
+<!-- VENDLY-DEMO-OPEN-BEACON. Counts one page open, per demo, per day. Aggregate only:
+     no identity, no referrer, no query string, no cookie, no storage.
+     Contract: _remote/state/ANALYTICS-BEACON-CONTRACT.md -->
 <script>
-  window.VendlyBeaconConfig = { tenantId: "fiddler-s-roofing", endpoint: "https://vendly-jarvis.vercel.app" };
+(function(){
+  try{
+    var u="https://vendly-jarvis.vercel.app/api/track";
+    var b=JSON.stringify({tenantId:"demos",event:"view",path:"/vendly-demos/fiddler-s-roofing/"});
+    var fire=function(){
+      try{
+        // FETCH FIRST, AND THAT ORDER IS MEASURED, NOT PREFERRED.
+        // keepalive gives the same survive-the-unload guarantee sendBeacon is
+        // usually reached for, and it is the only one of the two that actually
+        // delivers here. See the note below.
+        if(typeof fetch==="function"){
+          fetch(u,{method:"POST",headers:{"Content-Type":"application/json"},body:b,keepalive:true,cache:"no-store"}).catch(function(){});
+          return;
+        }
+        // No fetch (very old browser). text/plain is CORS-safelisted, so this
+        // sends without a preflight; the server parses the body as JSON either
+        // way. Never use an application/json Blob here.
+        if(navigator&&typeof navigator.sendBeacon==="function"){
+          navigator.sendBeacon(u,new Blob([b],{type:"text/plain"}));
+        }
+      }catch(e){}
+    };
+    // Never on the critical path. The page is fully usable whether this runs,
+    // fails, or is blocked outright.
+    if(document.readyState==="loading"){
+      document.addEventListener("DOMContentLoaded",function(){setTimeout(fire,0);});
+    }else{
+      setTimeout(fire,0);
+    }
+  }catch(e){}
+})();
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
-
-<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
-     in this demo's own harvested facts; it refuses anything it was not given.
-     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
-<script>
-window.VendlyDemoAssistant={slug:"fiddler-s-roofing",name:"Fiddler's Roofing",phone:"(407) 366-2300",accent:"#096836"};
-</script>
-<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
 </body>
 </html>

@@ -2,34 +2,150 @@
   "ok": true,
   "facts": {
     "name": {
-      "value": "Colorwise Painting",
+      "value": "ColorWise Painting",
       "source": "lead-row"
     },
     "phone": {
       "value": "(904) 385-2078",
-      "source": "jsonld"
-    },
-    "address": {
-      "value": "4314 Saint Augustine Road Suite, Jacksonville, FL, 32207",
-      "source": "jsonld"
+      "source": "jsonld",
+      "source_url": "https://colorwisepaintco.com/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T17:37:40.527Z"
     },
     "about": {
       "value": "Colorwise Painting is Jacksonville's Top Rated Painting Services Company - 100% Satisfaction Guaranteed - Get a Fast Quote Here",
-      "source": "meta"
+      "source": "meta",
+      "source_url": "https://colorwisepaintco.com/",
+      "fb_field": "meta",
+      "fetched_at": "2026-08-09T17:37:40.527Z"
     },
     "email": {
       "value": "matt@colorwisepaintco.com",
-      "source": "site"
+      "source": "site",
+      "source_url": "https://colorwisepaintco.com/",
+      "fb_field": "site",
+      "fetched_at": "2026-08-09T17:37:40.527Z"
     },
     "categories": {
       "value": "Local Business",
-      "source": "jsonld"
+      "source": "jsonld",
+      "source_url": "https://colorwisepaintco.com/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T17:37:40.527Z"
     }
   },
-  "unresolved": [],
+  "unresolved": [
+    "address"
+  ],
   "photos": [
-    "https://secure.gravatar.com/avatar/dd902642310f403932462715895383d0df3f3b300add0be1ae50a4734bc2edf7?s=96&amp;d=mm&amp;r=g",
-    "https://colorwisepaintco.com/wp-content/uploads/2025/07/Colorwise-Painting.jpg"
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Colorwise-Painting.jpg",
+      "media_id": "site-0",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Colorwise-Painting-Services.png",
+      "media_id": "site-1",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Interior-Painting-new-color.png",
+      "media_id": "site-2",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Exterior-Painting-new-color.png",
+      "media_id": "site-3",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Drywall-Repair-new-color.png",
+      "media_id": "site-4",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/stucco-repair-500-new-color.png",
+      "media_id": "site-5",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Commercial-Painting-new-color-.png",
+      "media_id": "site-6",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/06/Painting-Services-Company-Near-Me-in-Jacksonville-FL-01-2.jpg",
+      "media_id": "site-7",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/06/Painting-Services-Company-Near-Me-in-Jacksonville-FL-01-1.jpg",
+      "media_id": "site-8",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/06/Painting-Services-Company-Near-Me-in-Jacksonville-FL-house.png",
+      "media_id": "site-9",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/06/Painting-Services-Company-Near-Me-in-Jacksonville-FL-09.png",
+      "media_id": "site-10",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Painting-Services-Company-Near-Me-in-Jacksonville-FL-review-2-150x150.jpg",
+      "media_id": "site-11",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Painting-Services-Company-Near-Me-in-Jacksonville-FL-review-2.jpg",
+      "media_id": "site-12",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Painting-Services-Company-Near-Me-in-Jacksonville-FL-review-3.jpg",
+      "media_id": "site-13",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Painting-Services-Company-Near-Me-in-Jacksonville-FL-review-1.jpg",
+      "media_id": "site-14",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Painting-Services-Company-Near-Me-in-Jacksonville-FL-gallery-09.webp",
+      "media_id": "site-15",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    "https://secure.gravatar.com/avatar/dd902642310f403932462715895383d0df3f3b300add0be1ae50a4734bc2edf7?s=96&amp;d=mm&amp;r=g"
+  ],
+  "brand_marks": [
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Colorwise-Painting-Services.png",
+      "media_id": "brandmark-0",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2025/07/Painting-Services-company-near-me-in-Jacksonville-FL-van-2.png",
+      "media_id": "brandmark-1",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2022/05/180-Sites-New-Logo-3-9.png",
+      "media_id": "brandmark-2",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2023/09/Colorwise-Painting-3-300x300.png",
+      "media_id": "brandmark-3",
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    {
+      "url": "https://colorwisepaintco.com/wp-content/uploads/2023/09/Colorwise-Painting-3-150x150.png",
+      "media_id": "brandmark-4",
+      "source_url": "https://colorwisepaintco.com/"
+    }
   ],
   "voice": {
     "post_text": [
@@ -37,7 +153,55 @@
     ],
     "image_alts": []
   },
-  "fetched_at": "2026-08-07T16:09:11.173Z",
+  "fetched_at": "2026-08-09T17:37:40.527Z",
   "resolved_url": "https://colorwisepaintco.com/",
-  "sourceUrl": "https://colorwisepaintco.com/"
+  "sourceUrl": "https://colorwisepaintco.com/",
+  "site_depth": {
+    "schema": "vendly.site-depth/1",
+    "read_at": "2026-08-09T17:37:40.813Z",
+    "source_url": "https://colorwisepaintco.com/",
+    "faq": [
+      {
+        "q": "How quickly can you start once I approve the quote?",
+        "a": "We’re usually ready to roll within a week, depending on the project size and season. If you re on a tight schedule, just let us know, we’ll do our best to make it work.",
+        "source_url": "https://colorwisepaintco.com/",
+        "cleaned": [
+          "em or en dash normalised; number ranges read \"to\", other dashes read as commas"
+        ]
+      },
+      {
+        "q": "Do I need to be home while the work is being done?",
+        "a": "Not necessarily. Many of our clients are at work or out during the day, as long as we have access and clear instructions, we’ll handle the rest. We always keep communication open and send updates if anything changes.",
+        "source_url": "https://colorwisepaintco.com/",
+        "cleaned": [
+          "em or en dash normalised; number ranges read \"to\", other dashes read as commas"
+        ]
+      },
+      {
+        "q": "What kind of prep do you handle before painting?",
+        "a": "We take prep seriously. That includes sanding, caulking, patching small holes or cracks, protecting furniture and floors, and priming where needed. Good prep = a better, longer-lasting finish.",
+        "source_url": "https://colorwisepaintco.com/"
+      },
+      {
+        "q": "What type of paint do you use?",
+        "a": "We primarily use Sherwin-Williams products for their durability, color depth, and local availability, but we’re happy to use specific brands if you’ve got a preference.",
+        "source_url": "https://colorwisepaintco.com/",
+        "cleaned": [
+          "em or en dash normalised; number ranges read \"to\", other dashes read as commas"
+        ]
+      }
+    ],
+    "service_area": null,
+    "named_services": {
+      "list": [
+        "Interior Painting",
+        "Exterior Painting",
+        "Drywall Textures",
+        "Siding Repair",
+        "Commercial Painting"
+      ],
+      "source_url": "https://colorwisepaintco.com/"
+    },
+    "established": null
+  }
 }

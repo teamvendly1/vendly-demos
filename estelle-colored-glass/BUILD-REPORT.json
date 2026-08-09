@@ -4,48 +4,52 @@
   "business": "Estelle Colored Glass",
   "facebook": null,
   "slug": "estelle-colored-glass",
-  "built_at": "2026-08-07T22:58:51.951Z",
-  "elapsed_ms": 2313,
+  "built_at": "2026-08-09T17:38:25.150Z",
+  "elapsed_ms": 2975,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 340
+      "at_ms": 379
     },
     {
       "step": "harvest_merge_prior",
-      "at_ms": 340
+      "at_ms": 380
     },
     {
       "step": "assets",
-      "at_ms": 1571
+      "at_ms": 1865
     },
     {
       "step": "template",
-      "at_ms": 1650
+      "at_ms": 1957
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 1965
     },
     {
       "step": "brand_mark_fetch",
-      "at_ms": 1695
+      "at_ms": 2009
     },
     {
       "step": "brand_palette",
-      "at_ms": 2206
+      "at_ms": 2650
     },
     {
       "step": "layout",
-      "at_ms": 2206
+      "at_ms": 2650
     },
     {
       "step": "render",
-      "at_ms": 2207
+      "at_ms": 2759
     },
     {
       "step": "audit",
-      "at_ms": 2209
+      "at_ms": 2761
     },
     {
       "step": "beacon_probe",
-      "at_ms": 2313
+      "at_ms": 2975
     }
   ],
   "audit": {
@@ -94,6 +98,7 @@
       ],
       "rationale": "Scott's Flowers runs the same-day cutoff as a real clock time in a site-wide banner and Ballard Blossom lists its delivery area as an explicit named-town list rather than a radius, and the research calls that local fulfilment rule stated in words the highest-value mechanic in the niche because it converts urgency into an order and kills the out-of-area enquiry, so it is carried as the factual strip at the top and the address and hours sit above the fold beneath it, per Native Poppy; the conversion is come to the shop, local delivery, or reserve and collect, never a cart checkout, so the single CTA is the phone call that performs all three, with Catbird supplying the in-shop appointment path for the high-consideration item where the appointment is the sale.",
       "contrast_corrected": [],
+      "cta_corrected": null,
       "overrode": {
         "order": {
           "from": [
@@ -278,33 +283,39 @@
   },
   "beacon": {
     "installed": true,
-    "tenant_id": "estelle-colored-glass",
+    "tenant_id": "demos",
     "endpoint": "https://vendly-jarvis.vercel.app",
     "probed": true,
     "http_status": 200,
-    "tenant_known": false,
-    "reason": "unknown_tenant",
-    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
   },
   "claims": [
     {
       "text": "Estelle Colored Glass",
-      "fetched_at": "2026-08-07T22:58:49.977Z"
+      "fetched_at": "2026-08-09T17:38:22.175Z"
     },
     {
       "text": "(843) 718-0726",
-      "fetched_at": "2026-08-07T22:58:49.977Z"
+      "source": "https://estellecoloredglass.com/pages/estelle-store",
+      "fb_field": "tel-href",
+      "fetched_at": "2026-08-09T17:38:22.175Z"
     },
     {
       "text": "support@estellecoloredglass.com",
-      "fetched_at": "2026-08-07T22:58:49.977Z"
+      "source": "https://estellecoloredglass.com/pages/estelle-store",
+      "fb_field": "site",
+      "fetched_at": "2026-08-09T17:38:22.175Z"
     },
     {
       "text": "Estelle Colored Glass is a luxury brand of hand-blown colored glass cake plates and stemware. The Estelle Colored Glass collection is comprised of original commissioned pieces made by glass artisans in Poland at a glass making company with a rich 100-plus-year-old history.",
+      "source": "https://estellecoloredglass.com/pages/estelle-store",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T22:58:49.977Z"
+      "fetched_at": "2026-08-09T17:38:22.175Z"
     }
   ],
+  "harvest_cleaned": [],
   "unresolved": [
     "address"
   ],
@@ -343,8 +354,23 @@
     "services": false,
     "their_words": false,
     "gallery": true,
+    "faq": false,
+    "faq_pairs": 0,
+    "service_area": false,
+    "service_area_places": 0,
+    "services_named_by_them": false,
     "contact": true,
     "niche": "craft"
   },
-  "fill_tokens": 16
+  "site_depth": {
+    "schema": "vendly.site-depth/1",
+    "read_at": "2026-08-09T17:38:22.554Z",
+    "source_url": "https://estellecoloredglass.com/pages/estelle-store",
+    "faq": [],
+    "service_area": null,
+    "named_services": null,
+    "established": null
+  },
+  "fill_tokens": 16,
+  "founder_face": "vendly-founder.jpg"
 }

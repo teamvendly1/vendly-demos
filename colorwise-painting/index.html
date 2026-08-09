@@ -3,26 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Colorwise Painting | FL</title>
+<title>ColorWise Painting</title>
 <meta name="description" content="Colorwise Painting is Jacksonville&#39;s Top Rated Painting Services Company - 100% Satisfaction Guaranteed - Get a Fast Quote Here">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Colorwise Painting">
-<meta property="og:title" content="Colorwise Painting | FL">
+<meta property="og:site_name" content="ColorWise Painting">
+<meta property="og:title" content="ColorWise Painting">
 <meta property="og:description" content="Colorwise Painting is Jacksonville&#39;s Top Rated Painting Services Company - 100% Satisfaction Guaranteed - Get a Fast Quote Here">
 <meta property="og:url" content="https://vendly-demos.vercel.app/colorwise-painting/">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Colorwise Painting | FL">
+<meta property="og:image" content="https://vendly-demos.vercel.app/colorwise-painting/assets/site-0.jpg">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/colorwise-painting/assets/site-0.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+<meta property="og:image:alt" content="ColorWise Painting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/colorwise-painting/assets/site-0.jpg">
+<meta name="twitter:image:alt" content="ColorWise Painting">
+<meta name="twitter:title" content="ColorWise Painting">
 <meta name="twitter:description" content="Colorwise Painting is Jacksonville&#39;s Top Rated Painting Services Company - 100% Satisfaction Guaranteed - Get a Fast Quote Here">
 <style>
 :root{
-  --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
+  --a:#614719;--b:#513B15;--c:#614719;--mist:#F9F7F3;--ink:#131A14;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#A4552A;--scrim:13,18,23;
+  --brand:#614719;--scrim:28,21,7;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
+.concierge{background:var(--soft,#f7f5f0)}
+.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
+.concierge .msg{display:flex}
+.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
+.concierge .msg.them{justify-content:flex-start}
+.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
+.concierge .msg.us{justify-content:flex-end}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
+.builtby{max-width:620px;margin:26px auto 0;display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line,#e3e0d8)}
+.builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
+.builtby p{margin:0;font-size:.9rem;line-height:1.5;opacity:.85}
+@media (max-width:560px){.builtby{flex-direction:column;text-align:center}}
+.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);
@@ -46,7 +68,7 @@ h3{font:700 18px/1.3 Inter,sans-serif}
 
 header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 0;flex-wrap:wrap}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;flex-wrap:wrap}
 .brand{font:700 20px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b);text-decoration:none;display:inline-flex;align-items:center}
 .brandmark{height:52px;width:auto}
 @media(min-width:720px){.brandmark{height:64px}}
@@ -86,7 +108,7 @@ nav.main a:hover{text-decoration:underline}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
   background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 0 58px}
+.hero-in{position:relative;padding:62px 20px 58px}
 .eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
 .hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
 .hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
@@ -100,14 +122,14 @@ nav.main a:hover{text-decoration:underline}
 .hero-split{background:var(--mist);border-bottom:1px solid var(--line);color:var(--ink)}
 .hero-split .eyebrow{color:var(--b)}
 .hero-split p.lede{color:var(--muted)}
-.hero-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:center;padding:44px 0 40px}
-@media(min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:38px;padding:56px 0 52px}}
+.hero-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:center;padding:44px 20px 40px}
+@media(min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:38px;padding:56px 20px 52px}}
 .hero-shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:0 12px 30px rgba(var(--scrim),.18)}
 
 /* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
    few images for an image-led page to look finished rather than thin. */
 .hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 0 48px;text-align:center}
+.hero-panel .hero-in{padding:52px 20px 48px;text-align:center}
 .hero-panel .cta-row{justify-content:center}
 .hero-panel p.lede{margin-left:auto;margin-right:auto}
 /* The logo sits on a white plate rather than being forced white with a filter.
@@ -144,6 +166,32 @@ section{padding:52px 0}
 .quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
 .quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
 
+/* THE FAQ. Their published questions and their published answers, nothing else.
+   <details> rather than a stack of open paragraphs: on a phone six open answers is a wall, and
+   <details>/<summary> is native disclosure - keyboard reachable, screen-reader announced and
+   working with no JavaScript at all, which matters because a progressive enhancement must never
+   be able to hide a business's own words. The first one ships open so the section is never a row
+   of closed boxes a reader has to guess at. */
+.faqs{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.faqs details{border-top:1px solid var(--line)}
+.faqs details:first-child{border-top:0}
+.faqs summary{cursor:pointer;list-style:none;padding:18px 20px;font:600 17px/1.4 Inter,sans-serif;color:var(--b);
+  display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.faqs summary::-webkit-details-marker{display:none}
+.faqs summary::after{content:"+";font:400 22px/1 Inter,sans-serif;color:var(--c);flex:0 0 auto}
+.faqs details[open] summary::after{content:"-"}
+.faqs summary:focus-visible{outline:3px solid var(--c);outline-offset:-3px}
+.faqs .ans{margin:0;padding:0 20px 20px;font-size:16.5px;color:var(--ink);max-width:64ch}
+
+/* WHERE THEY WORK. Named places off their own locations list, set as plain text chips.
+   Deliberately NOT links and NOT a map: we hold the place names, not pages for them, and a chip
+   that looks clickable and is not is the same broken promise as an empty frame. */
+.places{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.places li{background:var(--mist);border:1px solid var(--line);border-radius:999px;
+  padding:9px 16px;font:600 15px/1 Inter,sans-serif;color:var(--b)}
+.srcnote{margin:16px 0 0;font:400 14px/1.5 Inter,sans-serif;color:var(--muted)}
+.srcnote a{color:var(--a)}
+
 footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
 footer.site a{color:#fff}
 .preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
@@ -153,18 +201,18 @@ footer.site a{color:#fff}
 <body>
 <a class="skiplink" href="#main">Skip to main content</a>
 
-<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Colorwise Painting.</div>
+<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of ColorWise Painting.</div>
 
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+19043852078">Call (904) 385-2078</a></div>
 
-<header class="site">
+<header class="site header-centered">
   <div class="wrap bar">
-    <a class="brand" href="#main">Colorwise Painting</a>
+    <a class="brand" href="#main">ColorWise Painting</a>
     <nav class="main" aria-label="Main">
       <ul>
-        
-        
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Photos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -173,40 +221,106 @@ footer.site a{color:#fff}
 
 <main id="main">
 
-<div class="hero hero-panel">
+<div class="hero hero-overlay">
+  <img class="hero-img" src="assets/site-0.jpg" alt="" aria-hidden="true">
   <div class="wrap hero-in">
     
-    <p class="eyebrow">Local Business in FL</p>
-    <h1>Colorwise Painting</h1>
+    <h1>ColorWise Painting</h1>
     <p class="lede">Colorwise Painting is Jacksonville&#39;s Top Rated Painting Services Company - 100% Satisfaction Guaranteed - Get a Fast Quote Here</p>
     <div class="cta-row">
-      <a class="btn btn-c" href="tel:+19043852078">Call (904) 385-2078</a>
-      <a class="btn btn-ghost" href="mailto:matt@colorwisepaintco.com">Email us</a>
+      <a class="btn btn-c" href="#contact">Request a Consultation</a>
+      <a class="hero-alt" href="mailto:matt@colorwisepaintco.com">or email us</a>
     </div>
+    <p class="hero-facts">(904) 385-2078</p>
   </div>
 </div>
 
+<section id="services">
+  <div class="wrap">
+    <h2>What we put right</h2>
+    <p class="lead">Taken from the ColorWise Painting Facebook page.</p>
+    <div class="grid">
+      <div class="card"><h3>Interior Painting</h3></div>
+      <div class="card"><h3>Exterior Painting</h3></div>
+      <div class="card"><h3>Drywall Textures</h3></div>
+      <div class="card"><h3>Siding Repair</h3></div>
+      <div class="card"><h3>Commercial Painting</h3></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Work off our own vans</h2>
+    <p class="lead">These photos are published on the ColorWise Painting Facebook page. Pulled 2026-08-09.</p>
+    <div class="gal gal-masonry">
+      <figure><img src="assets/site-2.png" alt="Exterior Painting" loading="lazy" width="800" height="600"><figcaption>Exterior Painting</figcaption></figure>
+      <figure><img src="assets/site-3.png" alt="Drywall Textures" loading="lazy" width="800" height="600"><figcaption>Drywall Textures</figcaption></figure>
+      <figure><img src="assets/site-4.png" alt="Siding Repair" loading="lazy" width="800" height="600"><figcaption>Siding Repair</figcaption></figure>
+      <figure><img src="assets/site-5.png" alt="Commercial Painting" loading="lazy" width="800" height="600"><figcaption>Commercial Painting</figcaption></figure>
+      <figure><img src="assets/site-7.jpg" alt="ColorWise Painting - Local Business" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-8.jpg" alt="ColorWise Painting - Local Business" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-9.png" alt="ColorWise Painting - Local Business" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-10.png" alt="ColorWise Painting - Local Business" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-12.jpg" alt="ColorWise Painting - Local Business" loading="lazy" width="800" height="600"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Asked and answered</h2>
+    <div class="faqs">
+      <details open>
+        <summary>How quickly can you start once I approve the quote?</summary>
+        <p class="ans">We’re usually ready to roll within a week, depending on the project size and season. If you re on a tight schedule, just let us know, we’ll do our best to make it work.</p>
+      </details>
+      <details>
+        <summary>Do I need to be home while the work is being done?</summary>
+        <p class="ans">Not necessarily. Many of our clients are at work or out during the day, as long as we have access and clear instructions, we’ll handle the rest. We always keep communication open and send updates if anything changes.</p>
+      </details>
+      <details>
+        <summary>What kind of prep do you handle before painting?</summary>
+        <p class="ans">We take prep seriously. That includes sanding, caulking, patching small holes or cracks, protecting furniture and floors, and priming where needed. Good prep = a better, longer-lasting finish.</p>
+      </details>
+      <details>
+        <summary>What type of paint do you use?</summary>
+        <p class="ans">We primarily use Sherwin-Williams products for their durability, color depth, and local availability, but we’re happy to use specific brands if you’ve got a preference.</p>
+      </details>
+    </div>
+    <p class="srcnote">Answered by ColorWise Painting on their own website. Pulled 2026-08-09.</p>
+  </div>
+</section>
+
 <section id="contact">
   <div class="wrap">
-    <h2>Contact</h2>
+    <h2>Getting us booked in</h2>
     <div class="factbox">
       <dl>
         <div><dt>Phone</dt><dd><a href="tel:+19043852078">(904) 385-2078</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:matt@colorwisepaintco.com">matt@colorwisepaintco.com</a></dd></div>
-        <div><dt>Address</dt><dd>4314 Saint Augustine Road Suite, Jacksonville, FL, 32207</dd></div>
         
-        <div><dt>Facebook</dt><dd><a href="https://colorwisepaintco.com/">colorwisepaintco.com/</a></dd></div>
+        
+        <div><dt>Website</dt><dd><a href="https://colorwisepaintco.com/">colorwisepaintco.com/</a></dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section class="words">
+<section id="concierge" class="concierge">
   <div class="wrap">
-    <h2>In their words</h2>
-    <blockquote class="quote">Colorwise Painting is Jacksonville&#39;s Top Rated Painting Services Company - 100% Satisfaction Guaranteed - Get a Fast Quote Here
-      <cite>Posted by Colorwise Painting on Facebook. Read on <a href="https://colorwisepaintco.com/">their page</a>.</cite>
-    </blockquote>
+    <div class="builtby">
+      <img src="vendly-founder.jpg" alt="Jacob Bailey, Vendly" width="56" height="56" loading="lazy">
+      <p>Built by Jacob Bailey at Vendly. I put this together from your public page so you could see it rather than read a pitch about it. If anything on here is wrong, tell me and I will fix it.</p>
+    </div>
+    <p class="lead">One more thing this page comes with. A concierge sits in the corner of the site, knows your services, your hours and your phone number, and answers people the moment they ask. It never sleeps and it never leaves a question sitting overnight. Here is how that reads to one of your customers.</p>
+    <div class="chat">
+      <div class="msg them"><span>Hi, are you open right now?</span></div>
+      <div class="msg us"><span>Happy to check that for you. You can reach us on <a href="tel:+19043852078">(904) 385-2078</a> and we will get you sorted.</span></div>
+      <div class="msg them"><span>How do I get in touch?</span></div>
+      <div class="msg us"><span>Let me grab that for you and put you straight through to the owner.</span></div>
+    </div>
+    <p class="note">Those answers come from your real details. Nothing is invented, and it hands anyone serious straight to you rather than trying to close them itself.</p>
   </div>
 </section>
 
@@ -214,22 +328,46 @@ footer.site a{color:#fff}
 
 <footer class="site">
   <div class="wrap">
-    <p>Colorwise Painting. 4314 Saint Augustine Road Suite, Jacksonville, FL, 32207. (904) 385-2078</p>
-    <p>Preview built by Vendly from the Colorwise Painting public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <p>ColorWise Painting. (904) 385-2078</p>
+    <p>Preview built by Vendly from the ColorWise Painting public website on 2026-08-09. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
   </div>
 </footer>
 
+<!-- VENDLY-DEMO-OPEN-BEACON. Counts one page open, per demo, per day. Aggregate only:
+     no identity, no referrer, no query string, no cookie, no storage.
+     Contract: _remote/state/ANALYTICS-BEACON-CONTRACT.md -->
 <script>
-  window.VendlyBeaconConfig = { tenantId: "colorwise-painting", endpoint: "https://vendly-jarvis.vercel.app" };
+(function(){
+  try{
+    var u="https://vendly-jarvis.vercel.app/api/track";
+    var b=JSON.stringify({tenantId:"demos",event:"view",path:"/vendly-demos/colorwise-painting/"});
+    var fire=function(){
+      try{
+        // FETCH FIRST, AND THAT ORDER IS MEASURED, NOT PREFERRED.
+        // keepalive gives the same survive-the-unload guarantee sendBeacon is
+        // usually reached for, and it is the only one of the two that actually
+        // delivers here. See the note below.
+        if(typeof fetch==="function"){
+          fetch(u,{method:"POST",headers:{"Content-Type":"application/json"},body:b,keepalive:true,cache:"no-store"}).catch(function(){});
+          return;
+        }
+        // No fetch (very old browser). text/plain is CORS-safelisted, so this
+        // sends without a preflight; the server parses the body as JSON either
+        // way. Never use an application/json Blob here.
+        if(navigator&&typeof navigator.sendBeacon==="function"){
+          navigator.sendBeacon(u,new Blob([b],{type:"text/plain"}));
+        }
+      }catch(e){}
+    };
+    // Never on the critical path. The page is fully usable whether this runs,
+    // fails, or is blocked outright.
+    if(document.readyState==="loading"){
+      document.addEventListener("DOMContentLoaded",function(){setTimeout(fire,0);});
+    }else{
+      setTimeout(fire,0);
+    }
+  }catch(e){}
+})();
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
-
-<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
-     in this demo's own harvested facts; it refuses anything it was not given.
-     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
-<script>
-window.VendlyDemoAssistant={slug:"colorwise-painting",name:"Colorwise Painting",phone:"(904) 385-2078",accent:"#2B3A47"};
-</script>
-<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
 </body>
 </html>
