@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : canvas-coffee-art-house
 folder      : C:\VendlyVault\_tmp\autodemo\demos\canvas-coffee-art-house
-audited_at  : 2026-08-09T16:25:23Z
+audited_at  : 2026-08-09T16:44:13Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\canvas-coffee-art-house.png
-shot_sha256 : 6DAF80203C0CF5B5EC344A084807849F9183D9F699D0CE783037A110DC4B3F3B
+shot_sha256 : 5F035F2CFB9A8BCD414E56961386504523117D0D0B24440FEFA782BCEF150373
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 143 chars: "Explore art, coffee, and community events at Canvas. Shop, p"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 620094 bytes, 179 distinct colours, modal colour covers 45.4% of sampled pixels
+      measured : 1280x2000px, 620089 bytes, 179 distinct colours, modal colour covers 45.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

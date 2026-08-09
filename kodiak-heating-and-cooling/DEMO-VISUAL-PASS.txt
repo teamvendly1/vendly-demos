@@ -2,27 +2,27 @@ DEMO VISUAL AUDIT
 =================
 slug        : kodiak-heating-and-cooling
 folder      : C:\VendlyVault\_tmp\autodemo\demos\kodiak-heating-and-cooling
-audited_at  : 2026-08-09T16:25:23Z
+audited_at  : 2026-08-09T16:44:13Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\kodiak-heating-and-cooling.png
-shot_sha256 : 9DCF8390A179F01543D8D2D757D7D0BB060F97C07E69420CF5FD41A8DD55E72E
+shot_sha256 : 61CDCF6024EB389C11646BAB93BDAB1ADC83329F567A37A68C8A65766654955D
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
 
 [PASS] BUILD_PRESENT
       how      : Test-Path index.html in the demo folder
-      measured : present, 24777 bytes
+      measured : present, 24643 bytes
 [PASS] IMAGES_PRESENT
       how      : count <img src="..."> in index.html
-      measured : 8 image tag(s)
+      measured : 7 image tag(s)
 [PASS] IMAGES_ON_DISK
       how      : resolve every relative <img src> against the demo folder and stat it
-      measured : all 8 resolvable src(s) exist on disk
+      measured : all 7 resolvable src(s) exist on disk
 [PASS] BUSINESS_NAME_SANE
       how      : judge the resolved business name (FILL.json business_name, else BUILD-REPORT.business, else H1) for theme/template patterns, single letters, tagline shape and mojibake, then confirm it appears in the rendered visible text
       measured : name "Kodiak Heating and Cooling" is a plausible business name and is visible on the page (H1 reads "Heating and cooling work, done properly.")
@@ -49,7 +49,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : none
 [PASS] NO_EMOJI
       how      : scan the whole index.html (copy, alt text, meta, CSS content) for pictographic emoji code points
-      measured : none in 24777 bytes of HTML
+      measured : none in 24643 bytes of HTML
 [PASS] CONTRAST_AA
       how      : lib/contrast.js contrastRatio() on every PAIRINGS row against the shipped :root palette
       measured : --c #043149 on #FFFFFF = 13.63:1 (needs 4.5); --a #043149 on #FFFFFF = 13.63:1 (needs 4.5); --b #08405E on #FFFFFF = 11.02:1 (needs 4.5); --b #08405E on #DBE4EC = 8.57:1 (needs 4.5)
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 102 chars: "Family-owned HVAC company serving Charlotte since 2008. Same"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1754358 bytes, 217 distinct colours, modal colour covers 27.5% of sampled pixels
+      measured : 1280x2000px, 1786597 bytes, 211 distinct colours, modal colour covers 32.4% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

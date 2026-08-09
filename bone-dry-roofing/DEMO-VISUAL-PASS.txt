@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : bone-dry-roofing
 folder      : C:\VendlyVault\_tmp\autodemo\demos\bone-dry-roofing
-audited_at  : 2026-08-09T16:25:23Z
+audited_at  : 2026-08-09T16:44:13Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\bone-dry-roofing.png
-shot_sha256 : 9281C4FB416F5325FFE878F9CB4993ABBF7073DE712836AF4ABCA327AAFDFE76
+shot_sha256 : 119534E3EB89F8008F8E46AABF39A68CC3213263F2447D2D9A6AE30D652EBF1A
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 101 chars: "Bone Dry Roofing proudly serves Nashville, TN, offering expe"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 1024254 bytes, 200 distinct colours, modal colour covers 18.3% of sampled pixels
+      measured : 1280x2000px, 1024249 bytes, 200 distinct colours, modal colour covers 18.3% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes

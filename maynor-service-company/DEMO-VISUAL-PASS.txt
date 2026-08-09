@@ -2,14 +2,14 @@ DEMO VISUAL AUDIT
 =================
 slug        : maynor-service-company
 folder      : C:\VendlyVault\_tmp\autodemo\demos\maynor-service-company
-audited_at  : 2026-08-09T16:25:23Z
+audited_at  : 2026-08-09T16:44:13Z
 audited_by  : _remote/allowed/autodemo/demo-visual-audit.ps1
 engine      : chrome 151.0.7922.76 headless=new
 verdict     : PASS
 
 PIXEL RENDER PERFORMED with chrome 151.0.7922.76 headless=new at 1280x2000.
 screenshot  : C:\Users\jacob\AppData\Local\Temp\vendly-demo-shots\maynor-service-company.png
-shot_sha256 : 2912601180B237C9BE1880F06A3E8D3BB2FE1D5B0DCB8B5A5EB334B54FA11543
+shot_sha256 : 1DBF0864CD5ACAFD3A6138B178C1630CF5A4996A5B48507C145443766469869C
 
 CHECKS - what was checked, how, and what was measured.
 A status word with no evidence is worthless, so every line below carries its measurement.
@@ -61,7 +61,7 @@ A status word with no evidence is worthless, so every line below carries its mea
       measured : 70 chars: "Trusted HVAC, plumbing electrical services in the Triangle s"
 [PASS] PIXEL_RENDER
       how      : headless chrome --screenshot --window-size=1280,2000; 1 in 16 pixel grid quantised to 5 bits/channel
-      measured : 1280x2000px, 892784 bytes, 107 distinct colours, modal colour covers 26.1% of sampled pixels
+      measured : 1280x2000px, 907623 bytes, 108 distinct colours, modal colour covers 26.1% of sampled pixels
 
 THRESHOLDS USED
   visible text floor : 900 bytes
