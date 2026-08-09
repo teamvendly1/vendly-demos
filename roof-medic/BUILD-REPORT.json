@@ -1,38 +1,51 @@
 {
+  "niche": "roofing",
   "schema": "vendly.autodemo.build/1",
   "business": "Roof Medic",
   "facebook": null,
   "slug": "roof-medic",
-  "built_at": "2026-08-07T15:24:19.781Z",
-  "elapsed_ms": 226,
+  "built_at": "2026-08-07T21:57:43.079Z",
+  "elapsed_ms": 1326,
   "steps": [
     {
       "step": "harvest_site",
-      "at_ms": 130
+      "at_ms": 108
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 108
     },
     {
       "step": "assets",
-      "at_ms": 132
+      "at_ms": 810
+    },
+    {
+      "step": "template",
+      "at_ms": 937
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 954
     },
     {
       "step": "brand_palette",
-      "at_ms": 133
+      "at_ms": 1233
     },
     {
       "step": "layout",
-      "at_ms": 133
+      "at_ms": 1233
     },
     {
       "step": "render",
-      "at_ms": 134
+      "at_ms": 1234
     },
     {
       "step": "audit",
-      "at_ms": 136
+      "at_ms": 1235
     },
     {
       "step": "beacon_probe",
-      "at_ms": 226
+      "at_ms": 1326
     }
   ],
   "audit": {
@@ -40,34 +53,80 @@
     "findings": []
   },
   "design": {
-    "trade_palette": "trade",
-    "layout_archetype": "credential",
-    "layout_label": "Credential",
-    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "trade_palette": "roofing",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
     "layout_selected_by": {
-      "trade_key": "trade",
-      "photo_count": 0,
+      "trade_key": "roofing",
+      "photo_count": 15,
       "has_reviews": false,
-      "branch": "photoCount<=2 (0): a gallery-led page with this few images reads as unfinished",
+      "branch": "visual trade (roofing) with 15 photographs: the work is the argument",
       "deterministic": true
     },
     "section_order": [
+      "hero",
       "trust",
-      "contact",
       "services",
+      "gallery",
       "words",
-      "gallery"
+      "concierge",
+      "contact"
     ],
     "hero_treatment": "panel",
-    "header_treatment": "split",
-    "gallery_shape": "wide",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Request a Roof Inspection",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "roofing",
+      "file": "roofing.js",
+      "resolved_by": "niche",
+      "resolved_from": "roofing",
+      "sources": [
+        "https://burginroofing.com",
+        "https://www.lindholmroofing.com",
+        "https://texastraditionsroofing.com",
+        "https://clevelandroofs.com",
+        "https://janneyroofing.com"
+      ],
+      "rationale": "Burgin and Lindholm both put one quote ask directly under the hero headline and a tappable phone number in the top nav, because a roof buyer is triaging a failure on a phone, so the page leads with a readable panel and one repeated inspection CTA rather than two equal buttons; Janney supplies the gallery mechanic (filtered by the roof material the visitor actually has) and Burgin the countable trust block (real numbers and printed licence numbers, never the adjective). MAPPING SEAM, flagged not silent: this family also absorbs concrete, remodeling and custom_porch_builder, and for a decorative patio or driveway contractor this urgent phone-first shape is wrong - that buyer is unhurried and visual, so use the landscaping template (discovery-call CTA, portfolio-led order) when the lead sells patios and driveways, per the note in landscaping.md. HVAC and plumbing pull the other way and lean on the phone even harder than roofing does.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "gallery",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "panel"
+        }
+      }
+    },
     "palette_final": {
-      "a": "#2B3A47",
-      "b": "#18232C",
-      "c": "#A4552A",
-      "brand": "#A4552A",
-      "mist": "#F4F5F6",
-      "ink": "#12181D"
+      "a": "#1F3A5F",
+      "b": "#12253D",
+      "c": "#A32A20",
+      "brand": "#A32A20",
+      "mist": "#F5F7FA",
+      "ink": "#161C24"
     },
     "brand_colour": {
       "standard": "WCAG 2.1 AA",
@@ -83,9 +142,9 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#A4552A",
-            "after": "#A4552A",
-            "ratio": 5.37,
+            "before": "#A32A20",
+            "after": "#A32A20",
+            "ratio": 7.22,
             "moved": false,
             "used_for": "button background under white label text, focus ring, quote rule"
           },
@@ -93,9 +152,9 @@
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#2B3A47",
-            "after": "#2B3A47",
-            "ratio": 11.67,
+            "before": "#1F3A5F",
+            "after": "#1F3A5F",
+            "ratio": 11.48,
             "moved": false,
             "used_for": "link text on the paper background"
           },
@@ -103,9 +162,9 @@
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 15.96,
+            "before": "#12253D",
+            "after": "#12253D",
+            "ratio": 15.47,
             "moved": false,
             "used_for": "heading text on paper, and the dark bar under white text"
           },
@@ -113,9 +172,9 @@
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "before": "#18232C",
-            "after": "#18232C",
-            "ratio": 12.41,
+            "before": "#12253D",
+            "after": "#12253D",
+            "ratio": 12.02,
             "moved": false,
             "used_for": "footer background under its muted text"
           }
@@ -125,52 +184,53 @@
             "token": "c",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#A4552A",
-            "ratio": 5.37,
+            "final": "#A32A20",
+            "ratio": 7.22,
             "pass": true
           },
           {
             "token": "a",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#2B3A47",
-            "ratio": 11.67,
+            "final": "#1F3A5F",
+            "ratio": 11.48,
             "pass": true
           },
           {
             "token": "b",
             "against": "#FFFFFF",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 15.96,
+            "final": "#12253D",
+            "ratio": 15.47,
             "pass": true
           },
           {
             "token": "b",
             "against": "#DBE4EC",
             "min": 4.5,
-            "final": "#18232C",
-            "ratio": 12.41,
+            "final": "#12253D",
+            "ratio": 12.02,
             "pass": true
           }
         ],
         "mist_checks": [
           {
             "fg": "ink",
-            "value": "#12181D",
-            "bg_mist": "#F4F5F6",
-            "ratio": 16.39,
+            "value": "#161C24",
+            "bg_mist": "#F5F7FA",
+            "ratio": 15.96,
             "pass": true
           },
           {
             "fg": "b",
-            "value": "#18232C",
-            "bg_mist": "#F4F5F6",
-            "ratio": 14.62,
+            "value": "#12253D",
+            "bg_mist": "#F5F7FA",
+            "ratio": 14.41,
             "pass": true
           }
         ]
-      }
+      },
+      "brand_source": "site_brand_mark:https://roofmedic.com/wp-content/uploads/2023/06/minthillchamberofcommerce_roofer.webp"
     }
   },
   "accessibility": {
@@ -181,32 +241,32 @@
         "token": "c",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#A4552A",
-        "ratio": 5.37,
+        "final": "#A32A20",
+        "ratio": 7.22,
         "pass": true
       },
       {
         "token": "a",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#2B3A47",
-        "ratio": 11.67,
+        "final": "#1F3A5F",
+        "ratio": 11.48,
         "pass": true
       },
       {
         "token": "b",
         "against": "#FFFFFF",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 15.96,
+        "final": "#12253D",
+        "ratio": 15.47,
         "pass": true
       },
       {
         "token": "b",
         "against": "#DBE4EC",
         "min": 4.5,
-        "final": "#18232C",
-        "ratio": 12.41,
+        "final": "#12253D",
+        "ratio": 12.02,
         "pass": true
       }
     ]
@@ -229,34 +289,34 @@
   "claims": [
     {
       "text": "Roof Medic",
-      "fetched_at": "2026-08-07T15:24:19.685Z"
+      "fetched_at": "2026-08-07T21:57:41.860Z"
     },
     {
       "text": "(704) 228-7788",
-      "fetched_at": "2026-08-07T15:24:19.685Z"
+      "fetched_at": "2026-08-07T21:57:41.860Z"
     },
     {
       "text": "contact@roofmedic.com",
-      "fetched_at": "2026-08-07T15:24:19.685Z"
+      "fetched_at": "2026-08-07T21:57:41.860Z"
     },
     {
       "text": "Roof Medic is a local, veteran-owned roofing company with offices in Charlotte and Raleigh, NC. GAF Master Elite and CertainTeed Premier certified.",
       "fb_field": "og:description",
-      "fetched_at": "2026-08-07T15:24:19.685Z"
+      "fetched_at": "2026-08-07T21:57:41.860Z"
     },
     {
       "text": "Roof Medic is a local",
-      "fetched_at": "2026-08-07T15:24:19.685Z"
+      "fetched_at": "2026-08-07T21:57:41.860Z"
     },
     {
       "text": "NC. GAF Master Elite and CertainTeed Premier certified",
-      "fetched_at": "2026-08-07T15:24:19.685Z"
+      "fetched_at": "2026-08-07T21:57:41.860Z"
     },
     {
       "text": "Roof Medic is a local, veteran-owned roofing company with offices in Charlotte and Raleigh, NC. GAF Master Elite and CertainTeed Premier certified.",
       "source": "https://roofmedic.com/",
       "fb_field": "page_post",
-      "fetched_at": "2026-08-07T15:24:19.685Z",
+      "fetched_at": "2026-08-07T21:57:41.860Z",
       "relevance": [
         "contains_own_name",
         "service_vocab:roof,medic,veteran,owned"
@@ -269,30 +329,30 @@
   "link_preview": {
     "og_title": "Roof Medic",
     "og_url": "https://vendly-demos.vercel.app/roof-medic/",
-    "og_image": null,
-    "og_image_is_absolute": false,
-    "twitter_card": "summary",
-    "image_source_kind": null,
+    "og_image": "https://vendly-demos.vercel.app/roof-medic/assets/site-1.png",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
     "image_is_page_lead_image": false,
-    "image_sha256": null,
-    "image_px": null,
-    "meets_facebook_minimum_200x200": false,
-    "renders_large_card_600x315": false,
-    "meets_facebook_recommended_1200x630": false,
-    "card_rendered_as": "no_image",
-    "reason_no_image": "no images survived the asset fetch"
+    "image_sha256": "b08ae2fc7f2dd3f71a3fcb2bc0483f85e5aee6625f38ba68c091f657748c7e07",
+    "image_px": "1200x630",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
   },
   "assets": {
-    "accepted": 0,
+    "accepted": 15,
     "rejected": 2,
-    "photographs": 0,
+    "photographs": 15,
     "logo_found": false
   },
   "rejected_assets": [
     {
-      "reason": "download_failed",
-      "sha256": null,
-      "media_id": null
+      "reason": "too_small",
+      "sha256": "3d9413bf1f4e1869c964d756dae03da1e97128e150893f1e9858d0436419c5e8",
+      "media_id": "site-8"
     },
     {
       "reason": "download_failed",
@@ -305,8 +365,9 @@
     "trust_strip": true,
     "services": true,
     "their_words": true,
-    "gallery": false,
-    "contact": true
+    "gallery": true,
+    "contact": true,
+    "niche": "roofing"
   },
-  "fill_tokens": 4
+  "fill_tokens": 16
 }

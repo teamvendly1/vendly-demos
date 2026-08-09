@@ -1,0 +1,416 @@
+{
+  "niche": "clothes",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Kid to Kid Huntersville",
+  "facebook": null,
+  "slug": "kid-to-kid-huntersville",
+  "built_at": "2026-08-07T23:01:20.608Z",
+  "elapsed_ms": 3391,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 172
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 173
+    },
+    {
+      "step": "assets",
+      "at_ms": 2768
+    },
+    {
+      "step": "template",
+      "at_ms": 2887
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2909
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3294
+    },
+    {
+      "step": "layout",
+      "at_ms": 3294
+    },
+    {
+      "step": "render",
+      "at_ms": 3296
+    },
+    {
+      "step": "audit",
+      "at_ms": 3298
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 3391
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "em_or_en_dash",
+        "detail": "\"—\""
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "clothes",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "clothes",
+      "photo_count": 24,
+      "has_reviews": true,
+      "branch": "visual trade (clothes) with 24 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "contact",
+      "services",
+      "gallery",
+      "words",
+      "concierge"
+    ],
+    "hero_treatment": "split",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book a Styling Visit",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "clothes",
+      "file": "clothes.js",
+      "resolved_by": "niche",
+      "resolved_from": "clothes",
+      "sources": [
+        "https://www.percivalclo.com/",
+        "https://www.peregrineclothing.co.uk/",
+        "https://shopfigandwillow.com/",
+        "https://shopannastore.com/",
+        "https://rixolondon.com/"
+      ],
+      "rationale": "This niche has TWO conversions and the research says a demo that builds only the cart half is half a demo, so the fork is resolved rather than split into two equal buttons: Anna gives Stores and Hours its own destination plus a phone number specifically for booking a styling appointment and RIXO gives find-your-store a real nav slot, which makes the shop visit the higher-value conversion for a local boutique and the one our demos collect nothing from, so contact is promoted high and the single CTA is that appointment; Fig & Willow supplies the strip above the fold (shipping threshold and free returns, the two objections that kill an apparel cart) and Percival the gallery mechanic of three photo shapes per product, worn in a real place, flat-lay and close-up detail.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "contact",
+            "services",
+            "gallery",
+            "words",
+            "concierge"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "split"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#313393",
+      "b": "#191B4D",
+      "c": "#313393",
+      "brand": "#313393",
+      "mist": "#F3F4F9",
+      "ink": "#181320"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#313393",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#313393",
+            "after": "#313393",
+            "ratio": 10.37,
+            "moved": false,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#313393",
+            "after": "#313393",
+            "ratio": 10.37,
+            "moved": false,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#191B4D",
+            "after": "#191B4D",
+            "ratio": 16.09,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#191B4D",
+            "after": "#191B4D",
+            "ratio": 12.5,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#313393",
+            "ratio": 10.37,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#313393",
+            "ratio": 10.37,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#191B4D",
+            "ratio": 16.09,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#191B4D",
+            "ratio": 12.5,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#181320",
+            "bg_mist": "#F3F4F9",
+            "ratio": 16.58,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#191B4D",
+            "bg_mist": "#F3F4F9",
+            "ratio": 14.65,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://kidtokid.com/wp-content/uploads/cropped-K2K_Icon-180x180.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#313393",
+        "ratio": 10.37,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#313393",
+        "ratio": 10.37,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#191B4D",
+        "ratio": 16.09,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#191B4D",
+        "ratio": 12.5,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+2014",
+        "count": 7,
+        "in_sourced_claim": true,
+        "char": "—"
+      },
+      {
+        "codepoint": "U+00B7",
+        "count": 7,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "kid-to-kid-huntersville",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Kid to Kid Huntersville",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "(704) 947-5251",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "huntersville@kidtokid.com",
+      "source": "https://www.facebook.com/KidtoKidHuntersville/",
+      "fb_field": "INTRO_CARD_PROFILE_EMAIL",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "9931 Rose Commons Dr A, Huntersville, NC",
+      "source": "https://www.facebook.com/KidtoKidHuntersville/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "Shop Kid to Kid Huntersville for affordable kids' thrift and resale clothing, toys, and gear—or sell clothes for cash or store credit.",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T23:01:17.389Z",
+      "verbatim_source_text": "Shop Kid to Kid Huntersville for affordable kids’ thrift and resale clothing, toys, and gear—or sell clothes for cash or store credit.",
+      "separator_normalised": "list bullets replaced with commas for display; wording unchanged; services split from the original"
+    },
+    {
+      "text": "Page · Baby & children's clothing store",
+      "source": "https://www.facebook.com/KidtoKidHuntersville/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "Shop Kid to Kid Huntersville for affordable kids",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "thrift and resale clothing",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "toys",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "and gear—or sell clothes for cash or store credit",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "92% recommend (420 Reviews)",
+      "source": "https://www.facebook.com/KidtoKidHuntersville/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T23:01:17.389Z"
+    },
+    {
+      "text": "Toys, toys and more toys! From puzzles and infant toys to ride-ons, bicycles, scooters, books, Barbies and much more! We've got something for every age and stage! Don't forget to look up and down every aisle. You never know what treasures you'll discover waiting to be taken home!",
+      "source": "https://kidtokid.com/location/huntersville/",
+      "fb_field": "page_post",
+      "fetched_at": "2026-08-07T23:01:17.389Z",
+      "relevance": [
+        "service_vocab:toys"
+      ]
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "Kid to Kid Huntersville | Huntersville",
+    "og_url": "https://vendly-demos.vercel.app/kid-to-kid-huntersville/",
+    "og_image": "https://vendly-demos.vercel.app/kid-to-kid-huntersville/assets/491209731_1257114209750973.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "8f3a2286a2f8ff9004952fc399daf38b55dcd081de600e261fde75c2833d33ae",
+    "image_px": "3525x1188",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 24,
+    "rejected": 1,
+    "photographs": 24,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "8f9d64ec15f7074275a898b2ffa2fc5313aa673761c1ec6f05febe2a21ec91b4",
+      "media_id": "site-9"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": true,
+    "gallery": true,
+    "contact": true,
+    "niche": "clothes"
+  },
+  "fill_tokens": 22
+}

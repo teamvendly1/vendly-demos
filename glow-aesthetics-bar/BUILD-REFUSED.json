@@ -1,0 +1,408 @@
+{
+  "niche": "beauty",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Glow Aesthetics Bar",
+  "facebook": null,
+  "slug": "glow-aesthetics-bar",
+  "built_at": "2026-08-07T22:58:36.917Z",
+  "elapsed_ms": 4244,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 1840
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 1840
+    },
+    {
+      "step": "assets",
+      "at_ms": 3645
+    },
+    {
+      "step": "template",
+      "at_ms": 3777
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 4130
+    },
+    {
+      "step": "layout",
+      "at_ms": 4130
+    },
+    {
+      "step": "render",
+      "at_ms": 4131
+    },
+    {
+      "step": "audit",
+      "at_ms": 4133
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 4244
+    }
+  ],
+  "audit": {
+    "ok": false,
+    "findings": [
+      {
+        "severity": "BLOCK",
+        "rule": "em_or_en_dash",
+        "detail": "\"–\""
+      }
+    ]
+  },
+  "design": {
+    "trade_palette": "beauty",
+    "layout_archetype": "showcase",
+    "layout_label": "Showcase",
+    "layout_rationale": "visible product with enough photographs: work sits directly under the hero, unscrimmed",
+    "layout_selected_by": {
+      "trade_key": "beauty",
+      "photo_count": 12,
+      "has_reviews": true,
+      "branch": "visual trade (beauty) with 12 photographs: the work is the argument",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "concierge",
+      "gallery",
+      "services",
+      "words",
+      "trust",
+      "contact"
+    ],
+    "hero_treatment": "overlay",
+    "header_treatment": "centered",
+    "gallery_shape": "masonry",
+    "primary_cta": {
+      "label": "Book Now",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "beauty",
+      "file": "beauty.js",
+      "resolved_by": "niche",
+      "resolved_from": "beauty",
+      "sources": [
+        "https://www.saltct.com/",
+        "https://www.verdesalon.ca/",
+        "https://www.theclipjointsalon.com/",
+        "https://mechesalonla.com/",
+        "https://thphair.com/"
+      ],
+      "rationale": "Five of five winners pin one identical booking button to the header and repeat it down the page - thp hair makes it the first nav item, The Clip Joint repeats it three or more times - and SALT and Verde add the mechanic our demos lacked entirely, a SMALLER FIRST YES in the form of a free consultation, because nobody books a $200 colour service from a stranger cold, so this template repeats one booking action and gives the concierge slot directly under the hero to that free consult. A demo carries no price, offer, gift, before-and-after, client photograph, or result claim the business does not publish itself, and no stock photography at all.",
+      "contrast_corrected": [],
+      "overrode": {
+        "order": {
+          "from": [
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "concierge",
+            "contact"
+          ],
+          "to": [
+            "hero",
+            "concierge",
+            "gallery",
+            "services",
+            "words",
+            "trust",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "split",
+          "to": "overlay"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#877541",
+      "b": "#453C21",
+      "c": "#877541",
+      "brand": "#D3C7A4",
+      "mist": "#F9F7F3",
+      "ink": "#1F131A"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#D3C7A4",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#D3C7A4",
+            "after": "#877541",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#D3C7A4",
+            "after": "#877541",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#453C21",
+            "after": "#453C21",
+            "ratio": 10.93,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#453C21",
+            "after": "#453C21",
+            "ratio": 8.49,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#877541",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#877541",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#453C21",
+            "ratio": 10.93,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#453C21",
+            "ratio": 8.49,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#1F131A",
+            "bg_mist": "#F9F7F3",
+            "ratio": 16.83,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#453C21",
+            "bg_mist": "#F9F7F3",
+            "ratio": 10.21,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "gallery_asset_classified_graphic"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#877541",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#877541",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#453C21",
+        "ratio": 10.93,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#453C21",
+        "ratio": 8.49,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": false,
+    "non_ascii_from_their_own_text": [
+      {
+        "codepoint": "U+2013",
+        "count": 4,
+        "in_sourced_claim": true,
+        "char": "–"
+      },
+      {
+        "codepoint": "U+00B7",
+        "count": 30,
+        "in_sourced_claim": true,
+        "char": "·"
+      }
+    ],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "glow-aesthetics-bar",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": false,
+    "reason": "unknown_tenant",
+    "note": "TENANT DOES NOT EXIST - the beacon is on the page and its events will be dropped. Needs a tenants/<id>.json in vendly-jarvis and a deploy."
+  },
+  "claims": [
+    {
+      "text": "Glow Aesthetics Bar",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    },
+    {
+      "text": "(813) 609-2782",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    },
+    {
+      "text": "info@glowaestheticsbar.com",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    },
+    {
+      "text": "13149 N Dale Mabry Hwy, Ste D, Tampa, FL",
+      "source": "https://www.facebook.com/glowaestheticsbar/",
+      "fb_field": "INTRO_CARD_ADDRESS",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    },
+    {
+      "text": "Achieve radiant skin & confidence at Glow Aesthetics Bar - a leading med spa in Tampa, FL – Carrollwood. Book your appointment today & elevate your glow with us!",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    },
+    {
+      "text": "Page · Medical Spa · Skin Care Service · Laser Hair Removal Service",
+      "source": "https://www.facebook.com/glowaestheticsbar/",
+      "fb_field": "INTRO_CARD_INFLUENCER_CATEGORY",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    },
+    {
+      "text": "Not yet rated (1 Review)",
+      "source": "https://www.facebook.com/glowaestheticsbar/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-07T22:58:34.512Z"
+    }
+  ],
+  "unresolved": [
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "Glow Aesthetics Bar | Tampa",
+    "og_url": "https://vendly-demos.vercel.app/glow-aesthetics-bar/",
+    "og_image": "https://vendly-demos.vercel.app/glow-aesthetics-bar/assets/site-0.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": true,
+    "image_sha256": "198a9bfa26c72e344c326e953c0f13ce03e78d48ee77318227f722c8c8ebb18c",
+    "image_px": "1200x628",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": false,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 14,
+    "rejected": 6,
+    "photographs": 12,
+    "logo_found": true
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "66d28169c765afe53835d8066994ec9f2601570a935a5da4568578124b9e8a8f",
+      "media_id": "site-4"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "a80a0266d4800980adc3a1d7625f38c37b3d8696f11f2e0e45edd2038e2c0d87",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "781860a16419a262cf1ad7c2af08bea0c6ef54a7d960e1ba29f7d2582ec2e121",
+      "media_id": "site-6"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "caf38de4f247d469b0b91fb5bc53817a770426b0f08944af42708d639a3d96ee",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "02a7168b657ca4cb3e439f03fffacb3edaf29bb137926dc404cde7602f6c1f55",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "7b611b60766b0a8686d53c53afe1ee0b3d2e3f8bb5ed498032de50d6cd262d66",
+      "media_id": "470203915_1310484117056650"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": false,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "beauty"
+  },
+  "fill_tokens": 21
+}

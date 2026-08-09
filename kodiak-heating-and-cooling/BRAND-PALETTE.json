@@ -1,0 +1,110 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "kodiak-heating-and-cooling",
+  "logo": "brandmark-b0b4f2f16f93.png",
+  "palette": {
+    "a": "#043149",
+    "b": "#08405E",
+    "c": "#043149",
+    "mist": "#F3F7F9",
+    "brass": "#C2871A",
+    "brand": "#043149",
+    "scrim": "3,22,33"
+  },
+  "report": {
+    "standard": "WCAG 2.1 AA",
+    "brand_extracted": true,
+    "brand_applied": true,
+    "raw_accent": "#043149",
+    "fallback_reason": null,
+    "contrast": {
+      "standard": "WCAG 2.1 AA",
+      "all_pass": true,
+      "checks": [
+        {
+          "token": "c",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "before": "#043149",
+          "after": "#043149",
+          "ratio": 13.63,
+          "moved": false,
+          "used_for": "button background under white label text, focus ring, quote rule"
+        },
+        {
+          "token": "a",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "before": "#043149",
+          "after": "#043149",
+          "ratio": 13.63,
+          "moved": false,
+          "used_for": "link text on the paper background"
+        },
+        {
+          "token": "b",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "before": "#08405E",
+          "after": "#08405E",
+          "ratio": 11.02,
+          "moved": false,
+          "used_for": "heading text on paper, and the dark bar under white text"
+        },
+        {
+          "token": "b",
+          "against": "#DBE4EC",
+          "min": 4.5,
+          "before": "#08405E",
+          "after": "#08405E",
+          "ratio": 8.57,
+          "moved": false,
+          "used_for": "footer background under its muted text"
+        }
+      ],
+      "final_verify": [
+        {
+          "token": "c",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "final": "#043149",
+          "ratio": 13.63,
+          "pass": true
+        },
+        {
+          "token": "a",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "final": "#043149",
+          "ratio": 13.63,
+          "pass": true
+        },
+        {
+          "token": "b",
+          "against": "#FFFFFF",
+          "min": 4.5,
+          "final": "#08405E",
+          "ratio": 11.02,
+          "pass": true
+        },
+        {
+          "token": "b",
+          "against": "#DBE4EC",
+          "min": 4.5,
+          "final": "#08405E",
+          "ratio": 8.57,
+          "pass": true
+        }
+      ],
+      "mist_checks": [
+        {
+          "fg": "b",
+          "value": "#08405E",
+          "bg_mist": "#F3F7F9",
+          "ratio": 10.23,
+          "pass": true
+        }
+      ]
+    }
+  }
+}

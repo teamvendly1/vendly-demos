@@ -1,0 +1,445 @@
+{
+  "niche": "insurance",
+  "schema": "vendly.autodemo.build/1",
+  "business": "Cafegency Insurance",
+  "facebook": null,
+  "slug": "cafegency-insurance",
+  "built_at": "2026-08-09T00:38:04.983Z",
+  "elapsed_ms": 4494,
+  "steps": [
+    {
+      "step": "harvest_site",
+      "at_ms": 83
+    },
+    {
+      "step": "harvest_merge_prior",
+      "at_ms": 83
+    },
+    {
+      "step": "harvest_clean",
+      "at_ms": 84
+    },
+    {
+      "step": "assets",
+      "at_ms": 2309
+    },
+    {
+      "step": "template",
+      "at_ms": 2475
+    },
+    {
+      "step": "photos_flyer_filtered",
+      "at_ms": 2485
+    },
+    {
+      "step": "brand_mark_fetch",
+      "at_ms": 2521
+    },
+    {
+      "step": "brand_palette",
+      "at_ms": 3082
+    },
+    {
+      "step": "layout",
+      "at_ms": 3082
+    },
+    {
+      "step": "render",
+      "at_ms": 4392
+    },
+    {
+      "step": "audit",
+      "at_ms": 4393
+    },
+    {
+      "step": "beacon_probe",
+      "at_ms": 4494
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "findings": []
+  },
+  "design": {
+    "trade_palette": "lawyer",
+    "layout_archetype": "credential",
+    "layout_label": "Credential",
+    "layout_rationale": "thin photo set or trust-bought trade: no image-led hero, contact raised above the fold-and-a-bit",
+    "layout_selected_by": {
+      "trade_key": "lawyer",
+      "photo_count": 12,
+      "has_reviews": true,
+      "branch": "trust-bought trade (lawyer) with published reviews: credentials lead",
+      "deterministic": true
+    },
+    "section_order": [
+      "hero",
+      "trust",
+      "services",
+      "words",
+      "concierge",
+      "contact"
+    ],
+    "hero_treatment": "panel",
+    "header_treatment": "split",
+    "gallery_shape": "wide",
+    "primary_cta": {
+      "label": "Free Consultation",
+      "kind": "tel"
+    },
+    "niche_template": {
+      "family": "lawyer",
+      "file": "lawyer.js",
+      "resolved_by": "family",
+      "resolved_from": "lawyer",
+      "sources": [
+        "https://www.hw-lawfirm.com/",
+        "https://www.conductlaw.com/",
+        "https://www.dolmanlaw.com/",
+        "https://www.bicklawllp.com/"
+      ],
+      "rationale": "Hildebrand and Wilson put the phone number itself in the hero and state the fee arrangement in plain words on the homepage, and ConductLaw and Bick Law run verifiable licensing-body badges as the trust block, so this template leads with click-to-call plus a plain-language cost line and promotes trust to second position in place of the settlement-total banner four of the five winners actually use. A demo carries no settlement figure, win rate, client count, years of experience, guarantee, or photograph that the firm does not publish itself on its own live site.",
+      "contrast_corrected": [],
+      "cta_corrected": null,
+      "overrode": {
+        "order": {
+          "from": [
+            "trust",
+            "contact",
+            "services",
+            "words",
+            "gallery",
+            "concierge"
+          ],
+          "to": [
+            "hero",
+            "trust",
+            "services",
+            "words",
+            "concierge",
+            "contact"
+          ]
+        },
+        "hero": {
+          "from": "panel",
+          "to": "panel"
+        }
+      }
+    },
+    "palette_final": {
+      "a": "#9E6D03",
+      "b": "#5E4308",
+      "c": "#9E6D03",
+      "brand": "#FAB319",
+      "mist": "#F9F7F3",
+      "ink": "#141E19"
+    },
+    "brand_colour": {
+      "standard": "WCAG 2.1 AA",
+      "brand_extracted": true,
+      "brand_applied": true,
+      "raw_accent": "#FAB319",
+      "fallback_reason": null,
+      "contrast": {
+        "standard": "WCAG 2.1 AA",
+        "all_pass": true,
+        "checks": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#FAB319",
+            "after": "#9E6D03",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "button background under white label text, focus ring, quote rule"
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#FAB319",
+            "after": "#9E6D03",
+            "ratio": 4.52,
+            "moved": true,
+            "used_for": "link text on the paper background"
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "before": "#5E4308",
+            "after": "#5E4308",
+            "ratio": 9.2,
+            "moved": false,
+            "used_for": "heading text on paper, and the dark bar under white text"
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "before": "#5E4308",
+            "after": "#5E4308",
+            "ratio": 7.15,
+            "moved": false,
+            "used_for": "footer background under its muted text"
+          }
+        ],
+        "final_verify": [
+          {
+            "token": "c",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#9E6D03",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "a",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#9E6D03",
+            "ratio": 4.52,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#FFFFFF",
+            "min": 4.5,
+            "final": "#5E4308",
+            "ratio": 9.2,
+            "pass": true
+          },
+          {
+            "token": "b",
+            "against": "#DBE4EC",
+            "min": 4.5,
+            "final": "#5E4308",
+            "ratio": 7.15,
+            "pass": true
+          }
+        ],
+        "mist_checks": [
+          {
+            "fg": "ink",
+            "value": "#141E19",
+            "bg_mist": "#F9F7F3",
+            "ratio": 15.96,
+            "pass": true
+          },
+          {
+            "fg": "b",
+            "value": "#5E4308",
+            "bg_mist": "#F9F7F3",
+            "ratio": 8.6,
+            "pass": true
+          }
+        ]
+      },
+      "brand_source": "site_brand_mark:https://www.cafegency.net/img/cafegency-insurance.png"
+    }
+  },
+  "accessibility": {
+    "standard": "WCAG 2.1 AA",
+    "contrast_all_pass": true,
+    "contrast_checks": [
+      {
+        "token": "c",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#9E6D03",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "a",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#9E6D03",
+        "ratio": 4.52,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#FFFFFF",
+        "min": 4.5,
+        "final": "#5E4308",
+        "ratio": 9.2,
+        "pass": true
+      },
+      {
+        "token": "b",
+        "against": "#DBE4EC",
+        "min": 4.5,
+        "final": "#5E4308",
+        "ratio": 7.15,
+        "pass": true
+      }
+    ]
+  },
+  "output_charset": {
+    "pure_ascii": true,
+    "non_ascii_from_their_own_text": [],
+    "non_ascii_unsourced_blocking": []
+  },
+  "beacon": {
+    "installed": true,
+    "tenant_id": "demos",
+    "endpoint": "https://vendly-jarvis.vercel.app",
+    "probed": true,
+    "http_status": 200,
+    "tenant_known": true,
+    "reason": "internal_excluded",
+    "note": "tenant exists, beacon will record real visits"
+  },
+  "claims": [
+    {
+      "text": "Cafegency Insurance",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "(336) 299-7447",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "ryan@cafegency.net",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "site",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "Cafegency Insurance has been a trusted insurance agency in Greensboro, NC since 1995. We offer personal and commercial coverage including auto, home, renters, life, and business insurance for residents across North Carolina, South Carolina, and Virginia. Get a free quote today and find the right coverage for your needs.",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "og:description",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "Local Business",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "home",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "renters",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "life",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "South Carolina",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "and business insurance for residents across North Carolina",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "88% recommend (57 Reviews)",
+      "source": "https://www.facebook.com/Cafegency/",
+      "fb_field": "INTRO_CARD_RATING",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    },
+    {
+      "text": "since 1995",
+      "source": "https://www.cafegency.net/",
+      "fb_field": "jsonld",
+      "fetched_at": "2026-08-09T00:38:00.489Z"
+    }
+  ],
+  "harvest_cleaned": [
+    {
+      "field": "facts.address",
+      "notes": [
+        "field cleared: this is a comma-separated keyword list, not a sentence about the business"
+      ],
+      "cleared": true
+    }
+  ],
+  "unresolved": [
+    "address",
+    "hours(live_status_only:Open now)"
+  ],
+  "link_preview": {
+    "og_title": "Cafegency Insurance",
+    "og_url": "https://vendly-demos.vercel.app/cafegency-insurance/",
+    "og_image": "https://vendly-demos.vercel.app/cafegency-insurance/assets/186233800_4398371850175302.jpg",
+    "og_image_is_absolute": true,
+    "twitter_card": "summary_large_image",
+    "image_source_kind": "photograph",
+    "image_is_page_lead_image": false,
+    "image_sha256": "7050b9df37d099442b1ebdd4a8611797aeae4071f9d982ba08861f73838f432f",
+    "image_px": "1440x1440",
+    "meets_facebook_minimum_200x200": true,
+    "renders_large_card_600x315": true,
+    "meets_facebook_recommended_1200x630": true,
+    "card_rendered_as": "large",
+    "reason_no_image": null
+  },
+  "assets": {
+    "accepted": 14,
+    "rejected": 6,
+    "photographs": 12,
+    "logo_found": false
+  },
+  "rejected_assets": [
+    {
+      "reason": "too_small",
+      "sha256": "19b0a7cfa107339216df00d4e613c39fdb4bc28dd59a83bd5422041634f7f07b",
+      "media_id": "site-3"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "ad70034499badd4ba279664803c0cc07e5585a2847d780558bc871956bad1f50",
+      "media_id": "site-5"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "16c352695b1322a60f91b487164f4788cbb7910b8e9abf55f4ff51fb314122b1",
+      "media_id": "site-7"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "d300bcba69f498fba0ca2aa087faa6000b2a79aa2b84aa9911cd4bc22c681755",
+      "media_id": "site-8"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "6317ac220bb5fddaf03e0ca41dacca38600be18ff2ea695e827e52dec0173876",
+      "media_id": "site-9"
+    },
+    {
+      "reason": "too_small",
+      "sha256": "db0a9e50c5a128360bdad767e09201d7ac5aaa1d1cd48d5738673a99aee5f5e3",
+      "media_id": "site-10"
+    }
+  ],
+  "sections_rendered": {
+    "hero": true,
+    "trust_strip": true,
+    "services": true,
+    "their_words": false,
+    "gallery": true,
+    "contact": true,
+    "niche": "insurance"
+  },
+  "fill_tokens": 21,
+  "founder_face": "vendly-founder.jpg"
+}
