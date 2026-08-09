@@ -29,7 +29,12 @@
 :root{
   --a:#2B3A47;--b:#18232C;--c:#A4552A;--mist:#F4F5F6;--ink:#12181D;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
-     sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
+     sits on it. --c is the accent GROUND, and --on-c is the label colour that
+     sits on it. Those two are resolved together in lib/brand-colors.js: a dark
+     brand keeps white labels, a bright brand keeps ITS OWN COLOUR and takes ink
+     labels instead of being darkened into a different colour. See the block
+     above accent_ground there - maven-roofing's yellow was rendering olive. */
+  --on-c:#FFFFFF;
   --brand:#A4552A;--scrim:13,18,23;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
@@ -40,8 +45,8 @@
 .concierge .msg.them{justify-content:flex-start}
 .concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
 .concierge .msg.us{justify-content:flex-end}
-.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
-.concierge .msg.us span a{color:#fff;text-decoration:underline}
+.concierge .msg.us span{background:var(--c,#6A5A1E);color:var(--on-c,#fff);border-bottom-right-radius:5px}
+.concierge .msg.us span a{color:var(--on-c,#fff);text-decoration:underline}
 .concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
 .builtby{max-width:620px;margin:26px auto 0;display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line,#e3e0d8)}
 .builtby img{width:56px;height:56px;border-radius:50%;flex:0 0 56px;object-fit:cover}
@@ -99,7 +104,7 @@ nav.main a:hover{text-decoration:underline}
 
 .btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
   padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
-.btn-c{background:var(--c);color:#fff}
+.btn-c{background:var(--c);color:var(--on-c,#fff)}
 .btn-c:hover{filter:brightness(.9)}
 .btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.12)}
@@ -345,8 +350,9 @@ body.vd-has-dock footer{padding-bottom:150px}
 .vd-band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .vd-band>figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 16px;color:#f4ece3;font-size:13px;background:linear-gradient(to top,rgba(10,8,6,.72),rgba(10,8,6,0))}
 
+
 /* ---- vendly lowcountry trade chrome (lib/lowcountry.js) - appended after craft ---- */
-:root{--lc-blue:#9A5028;--lc-blue-dark:#743C1E;--lc-navy:#17222B;--lc-navy-deep:#10181E;--lc-navy-lift:#2E3840;--lc-pale:#F7F1EE;--lc-shell:#F3F4F4;--lc-blue-on-navy:#B78366;--lc-burger:#B07757;--radius:2px}
+:root{--lc-blue:#9A5028;--lc-blue-dark:#743C1E;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#17222B;--lc-navy-deep:#10181E;--lc-navy-lift:#2E3840;--lc-pale:#F7F1EE;--lc-shell:#F3F4F4;--lc-blue-on-navy:#C59B84;--lc-burger:#B07757;--radius:2px}
 body{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17.5px;line-height:1.55}
 h1,h2{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:700;letter-spacing:.005em}
 h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:600;letter-spacing:.01em}
@@ -358,9 +364,10 @@ main>section>.wrap>.lead{max-width:60ch}
 main>section>.wrap>.srcnote{text-align:center}
 section{padding:clamp(46px,9vw,74px) 0}
 .phonestrip{background:var(--lc-blue);border-bottom:3px solid #fff}
-.phonestrip a{padding:8px 16px;font:600 21px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.01em}
+.phonestrip a{padding:8px 16px;font:600 21px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.01em;color:var(--lc-on-blue)}
 .phonestrip a:hover,.phonestrip a:focus{background:var(--lc-blue-dark)}
-.socialbar{background:var(--lc-blue);border-top:0;padding:7px 0;gap:18px}
+.socialbar{background:var(--lc-blue);border-top:0;padding:7px 0;gap:18px;color:var(--lc-on-blue)}
+.socialbar a{color:var(--lc-on-blue)}
 .socialbar a{width:32px;height:32px;background:transparent;border-radius:0}
 .socialbar a:hover,.socialbar a:focus{background:rgba(255,255,255,.20)}
 .socialbar svg{width:22px;height:22px;stroke-width:1.9}
@@ -395,14 +402,14 @@ nav.main a:hover{color:#fff;text-decoration:underline}
 .hero:has(>img){background:var(--lc-navy)}
 .btn{border-radius:2px;font:600 17px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.03em;padding:21px 32px;border-width:0;justify-content:center}
 .btn.lg,.heroShot .btn.lg{border-radius:2px}
-.btn-c{background:var(--lc-blue);color:#fff}
+.btn-c{background:var(--lc-blue);color:var(--lc-on-blue)}
 .btn-c:hover,.btn-c:focus{background:var(--lc-blue-dark);filter:none}
-.btn.onDark{background:var(--lc-blue);color:#fff;border-radius:2px}
+.btn.onDark{background:var(--lc-blue);color:var(--lc-on-blue);border-radius:2px}
 .hero .btn{min-width:min(232px,80vw)}
 .btn:active{background:var(--lc-blue-dark)}
 .hero-alt{display:none}
-.strip{background:var(--lc-blue);border-block:0;color:#fff}
-.strip ul{color:#fff;justify-content:center;text-align:center;padding:26px 0;gap:10px 30px;font:500 17px/1.45 "DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.strip{background:var(--lc-blue);border-block:0;color:var(--lc-on-blue)}
+.strip ul{color:var(--lc-on-blue);justify-content:center;text-align:center;padding:26px 0;gap:10px 30px;font:500 17px/1.45 "DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main>section:nth-of-type(4n+1):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--lc-pale)}
 main>section:nth-of-type(4n+3):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--lc-shell)}
 main>section:nth-of-type(4n+2):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink),main>section:nth-of-type(4n+4):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--paper,#fff)}
@@ -428,23 +435,23 @@ footer.site h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","
 .fzone-contact dl{justify-items:center}
 .fzone-contact dt{color:rgba(255,255,255,.72)}
 .fsocial .socialbar{justify-content:center;padding:18px 0 0}
-.fsocial .socialbar a{width:46px;height:46px;border-radius:50%;background:var(--lc-blue)}
+.fsocial .socialbar a{width:46px;height:46px;border-radius:50%;background:var(--lc-blue);color:var(--lc-on-blue)}
 .fsocial .socialbar a:hover,.fsocial .socialbar a:focus{background:var(--lc-blue-dark)}
 .fplaces{justify-content:center;gap:0}
 .fplaces li{background:transparent;border-radius:0;padding:0;font-size:16.5px;line-height:1.55}
 .fplaces li:not(:last-child)::after{content:", "}
 .fzone-links{background:var(--lc-navy-lift)}
 .flinks a{text-align:center;font-weight:500;color:rgba(255,255,255,.86)}
-.legalbar{background:var(--lc-blue);color:#fff}
-.legalbar a{color:#fff}
+.legalbar{background:var(--lc-blue);color:var(--lc-on-blue)}
+.legalbar a{color:var(--lc-on-blue)}
 body.vd-has-dock footer{padding-bottom:0}
 body.vd-has-dock .legalbar{padding-bottom:150px}
 @media(min-width:760px){body.vd-has-dock .legalbar{padding-bottom:16px}}
 .lcdock{position:fixed;left:0;right:0;bottom:0;z-index:2147482000;border-top:2px solid rgba(255,255,255,.92)}
-.lcdock-cta{display:block;background:var(--lc-blue);color:#fff;text-decoration:none;text-align:center;padding:12px 14px;font:600 18px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.02em}
+.lcdock-cta{display:block;background:var(--lc-blue);color:var(--lc-on-blue);text-decoration:none;text-align:center;padding:12px 14px;font:600 18px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.02em}
 .lcdock-cta:hover,.lcdock-cta:focus{background:var(--lc-blue-dark)}
 .lcdock-split{display:flex;background:var(--lc-blue-dark);border-top:2px solid rgba(255,255,255,.92)}
-.lcdock-split a{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font:600 15.5px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;padding:12px 8px calc(12px + env(safe-area-inset-bottom,0px))}
+.lcdock-split a{flex:1;display:flex;align-items:center;justify-content:center;gap:9px;color:var(--lc-on-blue-dark);text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font:600 15.5px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;padding:12px 8px calc(12px + env(safe-area-inset-bottom,0px))}
 .lcdock-split a+a{border-left:2px solid rgba(255,255,255,.55)}
 .lcdock svg{width:18px;height:18px;flex:0 0 18px;fill:none;stroke:currentColor;stroke-width:2}
 @media(min-width:760px){.lcdock{display:none}}
@@ -470,7 +477,7 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 </div>
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#main">Roof Medic</a>
+    <a class="brand" href="#main"><img class="brandmark" src="assets/brandmark-f1082229d385.webp" alt="Roof Medic" width="150" height="150"></a>
     <nav class="main" aria-label="Main">
       <ul>
         <li><a href="#work">Photos</a></li>
@@ -492,11 +499,11 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
 <main id="main">
 
 <div class="hero hero-overlay">
-  <img class="hero-img" src="assets/site-0.webp" alt="" aria-hidden="true">
+  <img class="hero-img" src="assets/site-1.png" alt="" aria-hidden="true">
   <div class="wrap hero-in">
     
     <h1>Roof Medic</h1>
-    <p class="lede">Roof Medic is a local, veteran-owned roofing company with offices in Charlotte and Raleigh, NC. GAF Master Elite and CertainTeed Premier certified.</p>
+    <p class="lede">Roof Medic is a local, veteran-owned roofing company with offices in Charlotte and Raleigh, NC.</p>
     <div class="cta-row">
       <a class="btn btn-c" href="tel:+17042287788">Call (704) 228-7788</a>
       <a class="hero-alt" href="mailto:contact@roofmedic.com">or email us</a>
@@ -509,7 +516,7 @@ body.vd-has-dock .legalbar{padding-bottom:150px}
     <h2>Photographs they have published</h2>
     <p class="lead">These photos are published on the Roof Medic Facebook page. Pulled 2026-08-09.</p>
     <div class="gal">
-      <figure><img src="assets/site-1.png" alt="Roof Medic on Facebook" loading="lazy" width="800" height="600"></figure>
+      <figure><img src="assets/site-0.webp" alt="Roof Medic on Facebook" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-2.webp" alt="Roof Medic on Facebook" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-3.webp" alt="Roof Medic on Facebook" loading="lazy" width="800" height="600"></figure>
       <figure><img src="assets/site-4.webp" alt="Roof Medic on Facebook" loading="lazy" width="800" height="600"></figure>
