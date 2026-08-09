@@ -138,6 +138,16 @@ header .btn{transition:opacity .18s ease,transform .18s ease}
 .hero .wrap{position:relative;z-index:2}
 .hero p,.hero .lede{color:#f2ece5;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 .hero h1{text-shadow:0 2px 10px rgba(0,0,0,.28)}
+.heroShot{min-height:clamp(560px,86vh,780px);display:flex;align-items:center;position:relative;overflow:hidden}
+.heroShot>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.heroShot .wrap{width:100%;text-align:center}
+.heroShot h1{margin-left:auto;margin-right:auto}
+.heroShot .lede,.heroShot p{margin-left:auto;margin-right:auto}
+.heroShot .heroActs,.heroShot .cta{justify-content:center}
+.heroShot .kicker{justify-content:center}
+.heroShot .promises{max-width:34ch;margin-left:auto;margin-right:auto;text-align:left}
+.btn.onDark{background:var(--accent,var(--a,var(--brand,#8c2f1f)));color:#fff}
+.heroShot .btn.lg{border-radius:999px;padding-left:30px;padding-right:30px;text-align:center}
 .hero .wrap{padding-bottom:92px}
 @media(min-width:900px){.hero .wrap{padding-bottom:88px}}
 footer{padding-bottom:128px}
@@ -162,6 +172,12 @@ main>section:first-of-type{padding-top:clamp(50px,7vw,84px)}
 body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:96px}
 body.vd-has-dock footer{padding-bottom:150px}
 @media(min-width:760px){.vd-dock{display:none}body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:34px}body.vd-has-dock footer{padding-bottom:128px}}
+@media(max-width:900px){
+.rvGrid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:6px;margin-right:-20px}
+.rvGrid::-webkit-scrollbar{display:none}
+.rvGrid>*{flex:0 0 82%;scroll-snap-align:start;margin:0}
+.rvGrid>*:last-child{margin-right:20px}
+}
 .vd-band{margin:0;position:relative;height:clamp(230px,44vw,430px);overflow:hidden;background:#1b1613}
 .vd-band>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .vd-band>figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 16px;color:#f4ece3;font-size:13px;background:linear-gradient(to top,rgba(10,8,6,.72),rgba(10,8,6,0))}
@@ -178,7 +194,9 @@ body.vd-has-dock footer{padding-bottom:150px}
 <a class="btn" href="tel:+13368303186">(336) 830-3186</a>
 </div></header>
 <main id="top">
-<div class="hero"><div class="wrap">
+<div class="hero heroShot">
+<img src="assets/site-3.png" alt="Parkers Pressure Washing on a job" fetchpriority="high">
+<div class="wrap">
 <div>
 <p class="kicker"><b></b>Exterior cleaning contractor in Winston-Salem, NC</p>
 <h1>Exterior cleaning work in Winston-Salem, NC, done properly.</h1>
@@ -187,7 +205,6 @@ body.vd-has-dock footer{padding-bottom:150px}
 <a class="btn lg onDark" href="#contact">Request pressure washing</a>
 </div>
 </div>
-<figure class="heroPhoto"><img src="assets/site-3.png" alt="Parkers Pressure Washing on a job" fetchpriority="high" width="900" height="675"></figure>
 </div></div>
 <div class="trust"><div class="wrap">
 <div class="tr"><b>Licensed and insured</b><p><q>Parkers Pressure Washing is fully licensed and insured.</q></p></div>
@@ -281,7 +298,7 @@ body.vd-has-dock footer{padding-bottom:150px}
 </main>
 <footer><div class="wrap">
 <div><strong>Parkers Pressure Washing</strong><br>Winston-Salem, NC<br><a href="tel:+13368303186" style="text-decoration:none">(336) 830-3186</a></div>
-<div class="src">Preview built by Vendly from parkerspressurewashing.com and their own published photographs, 2026-08-08. Not affiliated with or endorsed by Parkers Pressure Washing. Nothing here was invented: every statement about licensing, availability or experience is quoted from material this business published itself, and anything we could not verify was left off rather than filled in.</div>
+<div class="src">Preview built by Vendly from parkerspressurewashing.com and their own published photographs, 2026-08-09. Not affiliated with or endorsed by Parkers Pressure Washing. Nothing here was invented: every statement about licensing, availability or experience is quoted from material this business published itself, and anything we could not verify was left off rather than filled in.</div>
 </div></footer>
 <nav class="vd-dock" aria-label="Contact"><a class="vd-dock-call" href="tel:+13368303186"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" stroke-linejoin="round"/></svg><span>Call (336) 830-3186</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Parkers%20Pressure%20Washing%20Winston-Salem%2C%20NC" rel="nofollow noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg><span>Map</span></a></nav><script>document.body.classList.add("vd-has-dock");</script>
 </body></html>
