@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /
+
+# Every page in this repository is a DEMO built for a prospect. It carries that business's own
+# name, their photographs and sometimes their logo, on a URL we host. Indexed, such a page can
+# outrank the real business's own site and it republishes their material at a public address.
+# Neither is acceptable, so nothing here is for search engines.
+#
+# READ THIS BEFORE TRUSTING THIS FILE: it only takes effect on hosts that serve this directory at
+# their DOMAIN root. That is true of the Vercel deployment (vendly-demos.vercel.app/robots.txt).
+# It is NOT true of GitHub Pages, which serves this repo as a PROJECT site at
+# teamvendly1.github.io/vendly-demos/ - crawlers read only teamvendly1.github.io/robots.txt, a
+# tree this repo does not control, so this file is ignored there.
+#
+# On GitHub Pages the load-bearing control is the per-page
+# <meta name="robots" content="noindex,nofollow"> emitted by every generator in
+# _remote/allowed/autodemo/. This file is a second layer, not the layer.
