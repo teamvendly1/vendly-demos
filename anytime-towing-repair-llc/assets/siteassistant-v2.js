@@ -1029,7 +1029,12 @@
     fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ tenantId: cfg.tenantId, message: msg, history: recent })
+      body: JSON.stringify({
+      tenantId: cfg.tenantId,
+      message: msg,
+      history: recent,
+      demoSlug: cfg.demoSlug || ""
+    })
     })
       .then(function (r) { return r.json().catch(function () { return {}; }); })
       .then(function (data) {
