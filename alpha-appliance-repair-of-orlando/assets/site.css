@@ -1,13 +1,13 @@
 html{scroll-padding-bottom:140px}
 :root{
   /* Logo-derived palette from brandmark extractBrandColors 2026-08-11:
-     accent=#FCA90A primary=#583B04 link=#FFBD1E. Do not invent niche greens. */
-  --blue:#FFBD1E;
-  --blue-dk:#583B04;
+     accent=#FCA90A primary=#0B0B0B link=#FCA90A. Do not invent niche greens. */
+  --blue:#FCA90A;
+  --blue-dk:#0B0B0B;
   --blue-lt:#3A8BC4;
   --red:#FCA90A;
   --paper:#FFFFFF;
-  --mist:#F4F5F6;
+  --mist:#F1F5F9;
   --ink:#101724;
   --muted:#54637A;
   --line:#D5E2EE;
@@ -67,7 +67,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#BFD6F2;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:16ch;color:#fff}
-.hero h1 em{font-style:normal;color:#8FC0FF}
+.hero h1 em{font-style:normal;color:#FCA90A}
 .lede{font-size:19px;color:#CFDDF0;max-width:56ch;margin:0 0 28px}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:34px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
@@ -213,7 +213,7 @@ footer li a{display:inline-block;padding:4px 0}
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#583B04;color:#DCE7F6;
+  background:#0B0B0B;color:#DCE7F6;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
@@ -357,3 +357,14 @@ footer{padding-bottom:30px}
 .card.card-photo .card-shot img{width:100%;height:100%;object-fit:cover;display:block}
 .svc .card.card-photo{padding-top:14px}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
+
+
+header.site{background:#0B0B0B!important;border-bottom-color:rgba(255,255,255,.12)}
+header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance,header.site a{color:#FFFFFF}
+header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
+header.site .logo-chip{background:transparent;padding:0}
+header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance{color:#FFFFFF}
+header.site .logo{background:transparent;box-shadow:none;padding:0}
+
+header.site{background:#0B0B0B!important}
+.btn-primary,a.btn-primary{background:#FCA90A!important;border-color:#FCA90A!important}
