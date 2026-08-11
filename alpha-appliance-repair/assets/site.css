@@ -1,15 +1,17 @@
 :root{
-  --blue:#1B56A9;
+  /* logo-derived 2026-08-11 extract-brand-colors on logo-alpha-mark.png — not RiverTown copy */
+  --blue:#264570;
   --blue-dk:#12315C;
-  --blue-lt:#3E7FD4;
-  --red:#C8202E;
+  --blue-lt:#3A5F8C;
+  --action:#1A4A82;
+  --action-dk:#0E2A52;
   --paper:#FFFFFF;
-  --mist:#F4F7FB;
-  --ink:#101724;
-  --muted:#54637A;
-  --line:#DDE5EF;
+  --mist:#F2F5F9;
+  --ink:#061120;
+  --muted:#4A5A6E;
+  --line:#D5DEEA;
   --radius:16px;
-  --shadow:0 12px 30px -16px rgba(16,23,36,.32);
+  --shadow:0 12px 30px -16px rgba(6,17,32,.32);
   --shadow-lg:0 30px 60px -28px rgba(18,49,92,.45);
   --wrap:1120px;
 }
@@ -25,7 +27,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
 .skiplink{position:absolute;left:-9999px;top:0;background:var(--blue-dk);color:#fff;padding:12px 18px;z-index:200}
 .skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:3px solid var(--action);outline-offset:3px;border-radius:4px}
 
 /* preview bar, internal only */
 .previewbar{background:var(--blue-dk);color:#DCE7F6;font:600 13px/1 Inter,sans-serif;text-align:center;padding:9px 14px;letter-spacing:.03em}
@@ -49,8 +51,8 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(200,32,46,.7)}
-.btn-red:hover{background:#a91a26}
+.btn-red{background:var(--action);color:#fff;box-shadow:0 10px 24px -12px rgba(26,74,130,.7)}
+.btn-red:hover{background:var(--action-dk)}
 .btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(27,86,169,.7)}
 .btn-blue:hover{background:#164a92}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
@@ -71,7 +73,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .tchip svg{flex:0 0 auto}
 
 /* urgency strip */
-.strip{background:var(--red);color:#fff;padding:15px 0}
+.strip{background:var(--action);color:#fff;padding:15px 0}
 .strip .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;text-align:center;font:600 16px/1.4 Inter,sans-serif}
 .strip a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 
@@ -105,13 +107,13 @@ section.mist{background:var(--mist)}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);align-items:center}
 .shot{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);background:var(--blue-dk)}
 .shot img{width:100%;height:100%;object-fit:contain;background:var(--blue-dk);aspect-ratio:4/3}
-.corner{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font:700 12px/1 Inter,sans-serif;letter-spacing:.13em;text-transform:uppercase;padding:11px 16px;border-radius:0 12px 0 0}
+.corner{position:absolute;left:0;bottom:0;background:var(--action);color:#fff;font:700 12px/1 Inter,sans-serif;letter-spacing:.13em;text-transform:uppercase;padding:11px 16px;border-radius:0 12px 0 0}
 .sig{margin-top:26px;padding-top:22px;border-top:2px solid var(--line)}
 .sig .nm{font:700 19px/1.2 Inter,sans-serif;color:var(--blue-dk)}
 .sig .rl{font-size:14.5px;color:var(--muted)}
 .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
 .badge{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dk);background:#fff;border:2px solid var(--line);padding:11px 15px;border-radius:10px}
-.badge svg{stroke:var(--red)}
+.badge svg{stroke:var(--action)}
 .stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
 .stat{background:var(--mist);border:1px solid var(--line);border-radius:12px;padding:16px 22px;min-width:150px}
 .statnum{display:block;font:700 40px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
@@ -148,7 +150,7 @@ input,textarea,select{width:100%;font:400 16px/1.4 Inter,sans-serif;color:var(--
    Colour alone is not a sufficient focus indicator, so keyboard users lost
    their place in the form. Restored a real focus ring that meets the 3:1
    non-text contrast requirement. Internal build standard. Never stated as a claim client-facing. */
-input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var(--blue);outline:3px solid var(--red);outline-offset:2px}
+input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var(--blue);outline:3px solid var(--action);outline-offset:2px}
 input:focus,textarea:focus,select:focus{border-color:var(--blue)}
 textarea{min-height:112px;resize:vertical}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -186,7 +188,7 @@ footer li a{display:inline-block;padding:4px 0}
 .sitemenu a:hover{background:var(--mist);color:var(--blue)}
 
 /* mobile call bar */
-.mobile-callbar{display:none}.mobile-callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif}.mobile-callbar .mcb-est{background:#0E2A52}.mobile-callbar .mcb-call{background:var(--red)}
+.mobile-callbar{display:none}.mobile-callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif}.mobile-callbar .mcb-est{background:#0E2A52}.mobile-callbar .mcb-call{background:var(--action)}.mobile-callbar .mcb-map{background:var(--blue-lt)}
 
 @media(max-width:860px){
   .about,.leadwrap{grid-template-columns:1fr}
@@ -255,3 +257,23 @@ footer li a{display:inline-block;padding:4px 0}
 .ctaband h2{color:#fff}
 .ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 26px}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:24px}
+
+/* mobile-center-law 2026-08-11 */
+@media(max-width:760px){
+  .wrap{padding-left:18px;padding-right:18px}
+  .hero-inner,.center,.about,.quote-grid,.fgrid{text-align:center}
+  .hero h1,.lede{margin-left:auto;margin-right:auto}
+  .cta,.trust,.badges{justify-content:center}
+  .about{display:flex;flex-direction:column;align-items:center;gap:22px}
+  .about > div{width:100%;max-width:34rem}
+  .svc{justify-content:center}
+  .gallery{justify-content:center}
+  body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+  /* chat panel must not shove page — assistant is position:fixed; reserve dock only */
+  #vda-root, .sa-launch, .sa-panel, .sa-scrim{position:fixed}
+}
+.footer-wordmark{font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;color:#fff;letter-spacing:.02em;text-transform:uppercase;margin:0 0 12px}
+.band-photo{width:100%;min-height:220px;object-fit:cover;border-radius:12px;display:block}
+.band-fill{position:relative;overflow:hidden;min-height:240px}
+.band-fill img.band-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.28}
+.band-fill .wrap{position:relative;z-index:2}

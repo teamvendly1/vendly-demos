@@ -1,44 +1,56 @@
-[
-    {
-        "file":  "photo-washer.jpg",
-        "sha256":  "645E8D813B5E1F32394447D3C2A8A8676A9AB3649EFF3DEDB90040DD949220A2",
-        "alt":  "Washing machine in a laundry room",
-        "license":  "Pexels free stock (copyright-free for commercial use)",
-        "source_file":  "stock-01-washer.jpg"
-    },
-    {
-        "file":  "photo-fridge.jpg",
-        "sha256":  "E3118293E9E165B55492274EB12CCE046A6674E08A7D1BCF7AC239E5A3000911",
-        "alt":  "Kitchen refrigerator",
-        "license":  "Pexels free stock (copyright-free for commercial use)",
-        "source_file":  "stock-02-fridge.jpg"
-    },
-    {
-        "file":  "photo-oven.jpg",
-        "sha256":  "A0ACCCB23376E0671677D0D97675D1ECAAC3E9E133FED195D3CC8371A6388076",
-        "alt":  "Home oven and range",
-        "license":  "Pexels free stock (copyright-free for commercial use)",
-        "source_file":  "stock-03-oven.jpg"
-    },
-    {
-        "file":  "photo-tools.jpg",
-        "sha256":  "39DB53A9DF9DD74E5811A28053451EDBF0EF921E7E2F399DDF7B942BB2B9E937",
-        "alt":  "Mechanic tools on a workbench",
-        "license":  "Pexels free stock (copyright-free for commercial use)",
-        "source_file":  "stock-04-tools.jpg"
-    },
-    {
-        "file":  "photo-kitchen.jpg",
-        "sha256":  "A97693DABEA6B55A2614243FFDED6595DAADAC4BDDDA9C8E7739628544606B97",
-        "alt":  "Kitchen appliances in a home",
-        "license":  "Pexels free stock (copyright-free for commercial use)",
-        "source_file":  "stock-05-kitchen.jpg"
-    },
-    {
-        "file":  "photo-repair.jpg",
-        "sha256":  "C2E57530D9C9CFD5B6AC0AB8F70F0EF161360C24BB86A48D3AC763D4B6FA0246",
-        "alt":  "Appliance repair work in progress",
-        "license":  "Pexels free stock (copyright-free for commercial use)",
-        "source_file":  "stock-06-repair.jpg"
-    }
-]
+{
+    "rule":  "DEMO-NO-DUPLICATE-PHOTOS-FOREVER",
+    "files":  [
+                  {
+                      "sha256":  "C2F41D7B7AA1D49AB6B6B081E6EA276F11070FCC8269BB83C80E0CE2759DE8DA",
+                      "file":  "photo-band-1.jpg",
+                      "bytes":  170970
+                  },
+                  {
+                      "sha256":  "5119767D4A3C6E61486C8FF873E133257CBAA746715213C8EAF3D0D99557C0FC",
+                      "file":  "photo-band-2.jpg",
+                      "bytes":  169118
+                  },
+                  {
+                      "sha256":  "962C2FCE2990EB486A7F2ABDC7FED9760177FB6A6B655F31909C5912A8D421D5",
+                      "file":  "photo-band-3.jpg",
+                      "bytes":  335565
+                  },
+                  {
+                      "sha256":  "FDA6C92B5B581520AD723685270EFBCE76B4D6FA35D72D2D7C71911BE91E092B",
+                      "file":  "photo-band-4.jpg",
+                      "bytes":  285713
+                  },
+                  {
+                      "sha256":  "E3118293E9E165B55492274EB12CCE046A6674E08A7D1BCF7AC239E5A3000911",
+                      "file":  "photo-fridge.jpg",
+                      "bytes":  351677
+                  },
+                  {
+                      "sha256":  "A97693DABEA6B55A2614243FFDED6595DAADAC4BDDDA9C8E7739628544606B97",
+                      "file":  "photo-kitchen.jpg",
+                      "bytes":  180206
+                  },
+                  {
+                      "sha256":  "A0ACCCB23376E0671677D0D97675D1ECAAC3E9E133FED195D3CC8371A6388076",
+                      "file":  "photo-oven.jpg",
+                      "bytes":  286411
+                  },
+                  {
+                      "sha256":  "C2E57530D9C9CFD5B6AC0AB8F70F0EF161360C24BB86A48D3AC763D4B6FA0246",
+                      "file":  "photo-repair.jpg",
+                      "bytes":  123922
+                  },
+                  {
+                      "sha256":  "39DB53A9DF9DD74E5811A28053451EDBF0EF921E7E2F399DDF7B942BB2B9E937",
+                      "file":  "photo-tools.jpg",
+                      "bytes":  441164
+                  },
+                  {
+                      "sha256":  "645E8D813B5E1F32394447D3C2A8A8676A9AB3649EFF3DEDB90040DD949220A2",
+                      "file":  "photo-washer.jpg",
+                      "bytes":  195923
+                  }
+              ],
+    "updated":  "2026-08-11T09:15:00-04:00"
+}
