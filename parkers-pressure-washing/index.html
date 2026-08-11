@@ -374,7 +374,7 @@ body.vd-has-dock footer{padding-bottom:150px}
 
 
 /* ---- vendly lowcountry trade chrome (lib/lowcountry.js) - appended after craft ---- */
-:root{--lc-blue:#0D6DB4;--lc-blue-dark:#0A5287;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#05253D;--lc-navy-deep:#041A2B;--lc-navy-lift:#1E3B50;--lc-pale:#ECF3F9;--lc-shell:#F3F4F5;--lc-blue-on-navy:#75ABD4;--lc-burger:#428DC5;--radius:2px}
+:root{--lc-blue:#12554A;--lc-blue-dark:#0E3F37;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#10171A;--lc-navy-deep:#0A1012;--lc-navy-lift:#1A2E2A;--lc-pale:#F2F0EA;--lc-shell:#F3F4F5;--lc-blue-on-navy:#7BC4B0;--lc-burger:#2A8F7A;--radius:2px}
 body{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17.5px;line-height:1.55}
 h1,h2{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:700;letter-spacing:.005em}
 h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:600;letter-spacing:.01em}
@@ -485,6 +485,12 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
 .preview a{color:#fff}
 .brandstripe{display:none}
 
+/* mobile-center-law 2026-08-11 */
+@media(max-width:760px){
+  .wrap,.hero-inner,main>section .center{text-align:center}
+  .hero h1,.lede{margin-left:auto;margin-right:auto}
+  .cta,.trust{justify-content:center}
+}
 </style>
 <script>(function(){var d=document.documentElement;if(!("IntersectionObserver" in window))return;d.classList.add("vd-top");addEventListener("DOMContentLoaded",function(){var h=document.querySelector(".hero");if(!h){d.classList.remove("vd-top");return}new IntersectionObserver(function(e){d.classList.toggle("vd-top",e[0].isIntersecting)},{threshold:0}).observe(h)})})();</script>
 </head>
@@ -528,7 +534,7 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
   <img class="hero-img" src="assets/site-4.png" alt="" aria-hidden="true">
   <div class="wrap hero-in">
     <p class="eyebrow">Pressure washing, gutter cleaning, window washing, roof cleaning in Parkers</p>
-    <h1>Parkers Pressure Washing</h1>
+    <h1>Driveway black with grime? Call the crew that shows up.</h1>
     <p class="lede">When pressure washing the exterior of your home we use a warm gentle spray and mild biodegradable detergents to deep clean and protect your home&#39;s paint and surfaces.</p>
     <div class="cta-row">
       <a class="btn btn-c" href="tel:+13368303186">Call (336) 830-3186</a>
@@ -602,6 +608,16 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
   </div>
 </section>
 
+<section class="reveal" aria-labelledby="h-stock-work" style="padding:clamp(40px,6vw,72px) 0">
+  <div class="wrap" style="text-align:center">
+    <h2 id="h-stock-work">The kind of work we show up for</h2>
+    <p class="lede" style="margin:0 auto 22px;max-width:52ch">Copyright-free niche photos on this preview. Your own before-and-afters replace these when you go live.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:720px;margin:0 auto">
+      <img src="assets/stock-pw-1.jpg" alt="Pressure washing exterior" loading="lazy" style="width:100%;border-radius:8px;object-fit:cover;min-height:180px">
+      <img src="assets/stock-pw-2.jpg" alt="Clean driveway after wash" loading="lazy" style="width:100%;border-radius:8px;object-fit:cover;min-height:180px">
+    </div>
+  </div>
+</section>
 </main>
 
 <footer class="site">
