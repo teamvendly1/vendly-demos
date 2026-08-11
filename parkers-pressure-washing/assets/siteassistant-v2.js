@@ -438,11 +438,15 @@
       // single greeting, which is the 'takes up the whole screen' half of the
       // report. The plain vh/px values come first as the fallback for browsers
       // that do not know dvh or min(); the dvh line wins where it is supported.
-      ".sa-panel{left:0;right:0;bottom:0;top:auto;width:100%;max-width:100%;height:auto;" +
-      "min-height:300px;min-height:min(300px,58dvh);" +
-      "max-height:76vh;max-height:min(76dvh,660px);border-radius:18px 18px 0 0}" +
+      /* Roll up ABOVE the sticky Ask/estimate/CALL bar. Cap height so it never owns the screen. */
+      ".sa-panel{left:0;right:0;bottom:calc(90px + env(safe-area-inset-bottom,0px));top:auto;width:100%;max-width:100%;height:auto;" +
+      "min-height:240px;min-height:min(240px,42dvh);" +
+      "max-height:58vh;max-height:min(58dvh,520px);border-radius:18px 18px 0 0;" +
+      "overscroll-behavior:contain;touch-action:pan-y}" +
       ".sa-scrim.sa-open{display:block;opacity:1}" +
       ".sa-panel.sa-right,.sa-panel.sa-left{left:0;right:0}" +
+      ".sa-root{isolation:isolate;position:relative;z-index:2147483000;pointer-events:none}" +
+      ".sa-root .sa-scrim,.sa-root .sa-panel,.sa-root .sa-launch,.sa-root .sa-peek{pointer-events:auto}" +
       ".sa-form{gap:6px;padding:10px}" +
       ".sa-input{flex:1 1 0%;min-width:0;padding:10px}" +
       ".sa-mic{width:44px}" +
@@ -1390,22 +1394,33 @@
   // the fixed-position body scroll lock below and could carry the whole
   // panel (including the close button) out of the visible area on input
   // focus, leaving the visitor needing to swipe to find it again.
+  // ZERO LAYOUT SHIFT (Jacob 2026-08-11). Do NOT position:fixed the body — that
+  // removes the scrollbar and jumps the page when Ask is tapped by accident.
+  // Freeze overflow only; keep scrollY; restore on close. Panel is position:fixed
+  // in its own stacking context and never enters document flow.
   SiteAssistant.prototype.bindViewport = function () {
     if (window.innerWidth <= 480) {
-      // Lock the page behind the sheet so it cannot scroll or jump when the
-      // keyboard opens or closes.
       this._scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+      var html = document.documentElement;
       var b = document.body;
-      this._bodyPrev = { position: b.style.position, top: b.style.top, width: b.style.width, overflow: b.style.overflow };
-      b.style.position = "fixed"; b.style.top = (-this._scrollY) + "px"; b.style.width = "100%"; b.style.overflow = "hidden";
+      this._bodyPrev = {
+        htmlOverflow: html.style.overflow,
+        bodyOverflow: b.style.overflow,
+        bodyOverscroll: b.style.overscrollBehavior
+      };
+      html.style.overflow = "hidden";
+      b.style.overflow = "hidden";
+      b.style.overscrollBehavior = "none";
     }
   };
 
   SiteAssistant.prototype.unbindViewport = function () {
     if (this._bodyPrev) {
+      var html = document.documentElement;
       var b = document.body;
-      b.style.position = this._bodyPrev.position; b.style.top = this._bodyPrev.top;
-      b.style.width = this._bodyPrev.width; b.style.overflow = this._bodyPrev.overflow;
+      html.style.overflow = this._bodyPrev.htmlOverflow || "";
+      b.style.overflow = this._bodyPrev.bodyOverflow || "";
+      b.style.overscrollBehavior = this._bodyPrev.bodyOverscroll || "";
       this._bodyPrev = null;
       window.scrollTo(0, this._scrollY || 0);
     }

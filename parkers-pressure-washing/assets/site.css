@@ -29,8 +29,8 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .skiplink:focus{left:8px;top:8px}
 :focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
 
-/* preview bar, internal only */
-.previewbar{background:var(--blue-dk);color:#DCE7F6;font:600 13px/1 Inter,sans-serif;text-align:center;padding:9px 14px;letter-spacing:.03em}
+/* Preview banner MUST NOT ship to prospects (Jacob 2026-08-11). Keep class inert if leftover markup. */
+.previewbar{display:none!important;height:0!important;padding:0!important;margin:0!important;overflow:hidden!important;border:0!important}
 
 
 /* phone-first strip (Hydro steal: number alone above chrome) */
@@ -60,8 +60,9 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 
 /* hero */
 .hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk)}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.42}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(4,31,51,.96) 0%,rgba(4,31,51,.80) 46%,rgba(4,31,51,.42) 100%)}
+/* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;opacity:.78}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(4,31,51,.78) 0%,rgba(4,31,51,.55) 48%,rgba(4,31,51,.28) 100%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#BFD6F2;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:16ch;color:#fff}
@@ -89,6 +90,10 @@ section.mist{background:var(--mist)}
 .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#C6D8EE}
 .icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(27,86,169,.8)}
 .icn svg{stroke:#fff}
+/* Explore cards use real photographs, never person/asterisk/camera glyphs. */
+.card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
+.card-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.card.card-photo{padding-top:0}
 .card p{color:var(--muted);margin:0;font-size:15.5px}
 
 /* gallery */
@@ -187,14 +192,15 @@ footer li a{display:inline-block;padding:4px 0}
 .sitemenu li:last-child a{border-bottom:0}
 .sitemenu a:hover{background:var(--mist);color:var(--blue)}
 
-/* Sticky footer chrome: estimate + CALL, hairline, then Ask (owns concierge entry).
-   Floating .sa-launch / .sa-peek are hidden — ask lives here. Mobile-first height reserved. */
+/* Sticky footer chrome: Ask FIRST, then estimate + CALL (Jacob 2026-08-11 — order only, no restyle).
+   Ask IS the chatbot button. Floating .sa-launch / .sa-peek stay hidden. */
 .mobile-callbar{
   display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;
   position:fixed;left:0;right:0;bottom:0;z-index:110;
   background:var(--blue-dk);color:#fff;padding:0;
   box-shadow:0 -8px 24px -12px rgba(16,23,36,.45);
-  min-height:90px
+  min-height:90px;
+  isolation:isolate
 }
 .mobile-callbar .mcb-row{display:flex;align-items:stretch;width:100%;min-height:48px}
 .mobile-callbar .mcb-row a{
@@ -212,8 +218,16 @@ footer li a{display:inline-block;padding:4px 0}
 }
 .mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#0A2F4A;color:#fff;outline:none}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
+/* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
+html{scrollbar-gutter:stable}
 body{padding-bottom:98px}
 footer{padding-bottom:30px}
+/* Verbatim review cards (own site / Google / Facebook — never invented). */
+.rv-list{display:grid;gap:16px;max-width:720px;margin:0 auto}
+.rv-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;box-shadow:var(--shadow);text-align:left}
+.rv-card blockquote{margin:0;padding:0;border:0;font:400 16px/1.55 Inter,sans-serif;color:var(--ink)}
+.rv-card cite{display:block;margin-top:14px;font:700 14px/1.3 Inter,sans-serif;color:var(--blue-dk);font-style:normal}
+.rv-card .rv-src{display:block;margin-top:6px;font:500 12.5px/1.4 Inter,sans-serif;color:var(--muted)}
 
 @media(max-width:860px){
   .about,.leadwrap{grid-template-columns:1fr}
@@ -272,13 +286,14 @@ footer{padding-bottom:30px}
 /* ref-learn 0037: closing CTA band over licensed atmosphere photography.
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
-.ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.38;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(4,31,51,.90) 0%,rgba(4,31,51,.80) 100%)}
-.ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
-.ctaband h2{color:#fff}
-.ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 26px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:24px}
+/* Compact CTA band — kill the ~450px near-black empty slab under the buttons. */
+.ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(4,31,51,.72) 0%,rgba(4,31,51,.58) 100%)}
+.ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
+.ctaband h2{color:#fff;margin-bottom:.35em}
+.ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 18px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:14px;margin-bottom:0}
 /* Inner-page photo lead (services / reviews) — real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
