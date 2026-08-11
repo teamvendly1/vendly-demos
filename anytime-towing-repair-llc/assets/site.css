@@ -366,10 +366,19 @@ header.site .logo-chip{background:transparent;padding:0}
 header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance{color:#FFFFFF}
 header.site .logo{background:transparent;box-shadow:none;padding:0}
 
-/* FORCE Anytime brand family 2026-08-11 ts0811wb — door mark + black header; SEND=NO */
+/* FORCE Anytime brand family 2026-08-11 ts0811we — red/black family; SEND=NO */
+:root{
+  --red:#C41E3A;
+  --blue:#1A1A1A;
+  --ink:#14140F;
+  --paper:#FBFAF6;
+  --gold:#C41E3A;
+}
 header.site{background:#0B0B0B!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance,header.site a{color:#FFFFFF}
 header.site .logo,header.site .logo-chip,.logo{background:transparent!important;box-shadow:none!important;padding:0!important;border-radius:0!important}
-.sticky-cta .btn-estimate,.btn-estimate{background:#1A1A1A!important;color:#FFF!important;border-color:#C41E3A!important}
-.sticky-cta .btn-call,.btn-call{background:#C41E3A!important;color:#FFF!important}
-.ask-bar{background:#3A0A12!important;color:#FFF!important}
+.mobile-callbar .mcb-ask{background:#3A0A12!important;color:#FFF!important}
+.mobile-callbar .mcb-est{background:#1A1A1A!important;color:#FFF!important}
+.mobile-callbar .mcb-call{background:#C41E3A!important;color:#FFF!important}
+.btn-blue{background:#1A1A1A!important;color:#FFF!important;box-shadow:none!important}
+.btn-red{background:#C41E3A!important;color:#FFF!important}
