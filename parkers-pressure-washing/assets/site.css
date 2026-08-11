@@ -259,7 +259,8 @@ footer li a{display:inline-block;padding:4px 0}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:24px}
 
 /* Parkers RT-clone 2026-08-11: one phone surface at a time.
-   Desktop = header call button. Mobile = bottom call bar. No third phone strip. */
+   Desktop = header call button + in-page Call CTAs.
+   Mobile = sticky CALL bar ONLY (no hero/ctaband/strip number stacking). */
 .phone-strip{display:none!important}
 .logo{background:transparent;padding:0;border-radius:0;object-fit:contain}
 .hero{isolation:isolate}
@@ -270,3 +271,8 @@ footer li a{display:inline-block;padding:4px 0}
 /* Chat launcher: reserve space, no layout shift on paint */
 .sa-launch{transform:translateZ(0)}
 body{padding-bottom:0}
+/* Audit FAIL 2026-08-11: mobile fold/quote stacked phone 3x. Sticky CALL is the one. */
+@media(max-width:640px){
+  .phone-cta-desktop{display:none!important}
+  .ctaband .cta{justify-content:center}
+}
