@@ -1,4 +1,4 @@
-html{scroll-padding-bottom:120px}
+html{scroll-padding-bottom:140px}
 :root{
   /* Logo-derived palette from brandmark extractBrandColors 2026-08-11:
      accent=#0B5993 primary=#041F33 link=#1F6DA7. Do not invent niche greens. */
@@ -62,8 +62,8 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 /* hero */
 .hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk)}
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%;opacity:.78}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(4,31,51,.78) 0%,rgba(4,31,51,.55) 48%,rgba(4,31,51,.28) 100%)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;opacity:.88}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(4,31,51,.70) 0%,rgba(4,31,51,.42) 48%,rgba(4,31,51,.22) 100%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#BFD6F2;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:16ch;color:#fff}
@@ -221,7 +221,7 @@ footer li a{display:inline-block;padding:4px 0}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
-body{padding-bottom:120px}
+body{padding-bottom:140px}
 footer{padding-bottom:30px}
 /* Verbatim review cards (own site / Google / Facebook — never invented). */
 .rv-list{display:grid;gap:16px;max-width:720px;margin:0 auto}
