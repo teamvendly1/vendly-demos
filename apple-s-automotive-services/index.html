@@ -4,30 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Apple&#39;s Automotive Services | Orlando</title>
-<meta name="description" content="Automotive body shop, towing and auto service in Orlando, Florida. Collision repair and electric vehicle work.">
+<meta name="description" content="Just another WordPress site">
 <meta name="robots" content="noindex,nofollow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Apple&#39;s Automotive Services">
 <meta property="og:title" content="Apple&#39;s Automotive Services | Orlando">
-<meta property="og:description" content="Automotive body shop, towing and auto service in Orlando, Florida. Collision repair and electric vehicle work.">
+<meta property="og:description" content="Just another WordPress site">
 <meta property="og:url" content="https://vendly-demos.vercel.app/apple-s-automotive-services/">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/apple-s-automotive-services/assets/site-0.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/apple-s-automotive-services/assets/site-0.jpg">
+<meta property="og:image" content="https://vendly-demos.vercel.app/apple-s-automotive-services/assets/site-0.png">
+<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/apple-s-automotive-services/assets/site-0.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
 <meta property="og:image:alt" content="Apple&#39;s Automotive Services">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/apple-s-automotive-services/assets/site-0.jpg">
+<meta name="twitter:image" content="https://vendly-demos.vercel.app/apple-s-automotive-services/assets/site-0.png">
 <meta name="twitter:image:alt" content="Apple&#39;s Automotive Services">
 <meta name="twitter:title" content="Apple&#39;s Automotive Services | Orlando">
-<meta name="twitter:description" content="Automotive body shop, towing and auto service in Orlando, Florida. Collision repair and electric vehicle work.">
+<meta name="twitter:description" content="Just another WordPress site">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap">
 <style>
 :root{
-  --a:#9C241B;--b:#57140F;--c:#9C241B;--mist:#F9F4F3;--ink:#111820;
+  --a:#123A5E;--b:#0B2740;--c:#9C241B;--mist:#F1F5F9;--ink:#111820;
   /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
      sits on it. --c is the accent GROUND, and --on-c is the label colour that
      sits on it. Those two are resolved together in lib/brand-colors.js: a dark
@@ -35,7 +35,14 @@
      labels instead of being darkened into a different colour. See the block
      above accent_ground there - maven-roofing's yellow was rendering olive. */
   --on-c:#FFFFFF;
-  --brand:#9C241B;--scrim:30,7,5;
+  /* --c-ink is THE SAME ACCENT, moved on lightness alone until it can be READ on the paper.
+     --c is a GROUND and gets to choose its label; --c-ink is INK and has no such choice, because
+     the paper is white and light type on white is simply unreadable. Everything that puts the
+     accent ON the page rather than UNDER a label uses this: the eyebrow, the FAQ "+" glyph, the
+     focus ring (painted at +3px offset, so it lands on paper, not on the button) and the quote
+     rule. For every dark brand it is byte-identical to --c and nothing moves. */
+  --c-ink:#9C241B;
+  --brand:#9C241B;--scrim:5,19,30;
   --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
 }
 .concierge{background:var(--soft,#f7f5f0)}
@@ -75,7 +82,12 @@ h3{font:700 18px/1.3 Inter,sans-serif}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
 .skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
 .skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
+/* The ring is painted at a POSITIVE offset, so it sits on the page paper and not on the element
+   it surrounds - measured, not assumed. It therefore takes --c-ink, never the raw accent: a
+   bright brand ring measured 1.94:1 on paper against the 3:1 that SC 1.4.11 requires of a focus
+   indicator, i.e. the keyboard affordance was effectively invisible on exactly the demos whose
+   brand colour we were most pleased to have preserved. */
+:focus-visible{outline:3px solid var(--c-ink,var(--c));outline-offset:3px;border-radius:4px}
 
 .phonestrip{background:var(--b)}
 .phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
@@ -201,7 +213,10 @@ section{padding:52px 0}
 .factbox dd{margin:0;font-size:17px}
 .factbox a{color:var(--a)}
 
-.quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
+/* A pure border carries no text, so WCAG does not govern it. It takes --c-ink anyway: at 1.94:1 a
+   bright accent rule on paper is not a design decision, it is an invisible element pretending to
+   be one. Stated as the design call it is, not as an accessibility requirement it is not. */
+.quote{border-left:4px solid var(--c-ink,var(--c));padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
 .quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
 
 /* THE QUOTE ON THE DARK BAND, AND THIS ONE NEARLY SHIPPED UNREADABLE.
@@ -226,9 +241,11 @@ section.vd-ink .quote cite a{color:#fff}
 .faqs summary{cursor:pointer;list-style:none;padding:18px 20px;font:600 17px/1.4 Inter,sans-serif;color:var(--b);
   display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
 .faqs summary::-webkit-details-marker{display:none}
-.faqs summary::after{content:"+";font:400 22px/1 Inter,sans-serif;color:var(--c);flex:0 0 auto}
+/* The "+" is TEXT, at 22px regular - under the 24px where the large-text exemption starts - so it
+   owes the full 4.5:1 on the summary's own background, which a render measured as white. */
+.faqs summary::after{content:"+";font:400 22px/1 Inter,sans-serif;color:var(--c-ink,var(--c));flex:0 0 auto}
 .faqs details[open] summary::after{content:"-"}
-.faqs summary:focus-visible{outline:3px solid var(--c);outline-offset:-3px}
+.faqs summary:focus-visible{outline:3px solid var(--c-ink,var(--c));outline-offset:-3px}
 .faqs .ans{margin:0;padding:0 20px 20px;font-size:16.5px;color:var(--ink);max-width:64ch}
 
 /* WHERE THEY WORK. Named places off their own locations list, set as plain text chips.
@@ -359,9 +376,12 @@ main>section:first-of-type{padding-top:clamp(50px,7vw,84px)}
 .vd-dock a+a{border-left:1px solid rgba(255,255,255,.16)}
 .vd-dock a.vd-dock-call{background:var(--accent,var(--a,var(--brand,#8c2f1f)))}
 .vd-dock svg{width:17px;height:17px;flex:0 0 17px;fill:none;stroke:currentColor;stroke-width:1.9}
-body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:96px}
-body.vd-has-dock footer{padding-bottom:150px}
-@media(min-width:760px){.vd-dock{display:none}body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:34px}body.vd-has-dock footer{padding-bottom:128px}}
+body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{left:0;right:0;width:auto;bottom:var(--vd-dock-h,96px);display:flex;flex-direction:column;align-items:center}
+body.vd-has-dock #vda-root .vda-launch{width:100%;justify-content:center;border-radius:0;padding:13px 14px;box-shadow:0 -5px 16px rgba(0,0,0,.20)}
+body.vd-has-dock #vda-root .vda-panel{margin-bottom:8px;max-height:calc(100vh - var(--vd-dock-h,96px) - 104px)}
+@supports (height:100dvh){body.vd-has-dock #vda-root .vda-panel{max-height:calc(100dvh - var(--vd-dock-h,96px) - 104px)}}
+body.vd-has-dock footer{padding-bottom:calc(var(--vd-dock-h,96px) + 76px)}
+@media(min-width:760px){.vd-dock{display:none}body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{left:auto;right:16px;width:auto;bottom:34px;align-items:flex-end}body.vd-has-dock #vda-root .vda-launch{width:auto;border-radius:999px;padding:13px 19px;box-shadow:0 6px 22px rgba(0,0,0,.26)}body.vd-has-dock footer{padding-bottom:128px}}
 @media(max-width:900px){
 .rvGrid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:6px;margin-right:-20px}
 .rvGrid::-webkit-scrollbar{display:none}
@@ -373,7 +393,8 @@ body.vd-has-dock footer{padding-bottom:150px}
 .vd-band>figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 16px;color:#f4ece3;font-size:13px;background:linear-gradient(to top,rgba(10,8,6,.72),rgba(10,8,6,0))}
 
 .rv{padding:60px 0 64px;background:var(--lc-pale,var(--paper2,#f6f4ef));border-top:3px solid var(--a,#20402f)}
-.rv .lead{max-width:64ch;margin:0 0 28px}
+.rv .lead{max-width:64ch;margin:0 0 12px}
+.rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
 .rvGrid{display:grid;gap:18px}
 .rv.one .rvGrid{grid-template-columns:1fr;max-width:70ch}
 .rv.two .rvGrid{grid-template-columns:repeat(2,1fr)}
@@ -389,17 +410,24 @@ padding-bottom:14px;margin-inline:-16px;padding-inline:16px;scrollbar-width:none
 .rvGrid>.rvCard{scroll-snap-align:start;flex:0 0 86%;min-width:86%}
 .rv.one .rvGrid>.rvCard{flex:none;min-width:0}
 }
-.rvCard{margin:0;background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;padding:20px 20px 16px;display:flex;flex-direction:column;gap:12px;
+.rvCard{margin:0;background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;padding:22px 20px 16px;display:flex;flex-direction:column;gap:12px;position:relative;
 box-shadow:0 1px 2px rgba(0,0,0,.04),0 14px 26px -20px rgba(0,0,0,.38)}
-.rvCard blockquote{margin:0;font-size:1.02rem;line-height:1.62;color:var(--ink,var(--b,#1a1a17))}
+.rvCardAlt{background:color-mix(in srgb, var(--a,#20402f) 7%, #fff)}
+.rvQuote{position:absolute;top:8px;left:14px;font:700 42px/1 Georgia,Times,serif;color:var(--rv-gold,#C9A227);opacity:.92;pointer-events:none}
+.rvCard blockquote{margin:0;padding-top:18px;font-size:1.02rem;line-height:1.62;color:var(--ink,var(--b,#1a1a17))}
+.rvRule{display:block;height:1px;width:100%;background:var(--rv-gold,#C9A227);opacity:.55;margin:2px 0 0;border:0}
 .rvCard figcaption{display:flex;align-items:center;gap:10px;margin-top:auto;font-size:.95rem}
 .rvCard figcaption b{font-weight:650}
-.rvWho{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--c,#20402f);color:#fff;font-size:.78rem;letter-spacing:.04em;font-weight:650;flex:none}
-.rvStars{position:relative;display:inline-block;line-height:0;white-space:nowrap;flex:none}
+.rvPublished{margin:0;font-size:.78rem;line-height:1.4;opacity:.72}
+.rvWho{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--rv-gold,#C9A227);color:#1a1408;font-size:.78rem;letter-spacing:.04em;font-weight:650;flex:none}
+.rvStars{position:relative;display:inline-block;line-height:0;white-space:nowrap;flex:none;margin-top:6px}
 .rvStarsBase,.rvStarsFill{display:block;line-height:0;white-space:nowrap}
 .rvStarsFill{position:absolute;top:0;left:0;overflow:hidden}
 .rvStarsBase svg{fill:#DADCE0}
-.rvStarsFill svg{fill:#FBBC04}
+.rvStarsFill svg{fill:var(--rv-gold,#C9A227)}
+.rvG .rvStarsFill svg,.rvAggG .rvStarsFill svg{fill:#FBBC04}
+.rvG .rvWho{background:var(--c,#20402f);color:var(--on-c,#fff)}
+.rvAggSite .rvStarsFill svg{fill:var(--rv-gold,#C9A227)}
 .rvMark{flex:none;vertical-align:middle}
 .rvSrc{margin-left:2px;display:inline-flex;align-items:center;opacity:.95}
 .rvWhen{margin-left:auto;font-size:.85rem;opacity:.72}
@@ -423,8 +451,22 @@ background:var(--a,#20402f)}
 .rv.none{padding:52px 0}
 .rvSwipe{display:none}
 @media(max-width:900px){.rvSwipe{display:block;margin:12px 0 0;font-size:.86rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6}}
+.rtb{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit;max-width:100%}
+.rtb-body{display:flex;flex-direction:column;gap:1px;min-width:0;line-height:1.25}
+.rtb-top{display:inline-flex;align-items:center;gap:6px}
+.rtb-mark{flex:none}
+.rtb-stars{position:relative;display:inline-block;line-height:0;white-space:nowrap}
+.rtb-stars-base,.rtb-stars-fill{display:block;line-height:0;white-space:nowrap}
+.rtb-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
+.rtb-stars-base svg{fill:#DADCE0}
+.rtb-stars-fill svg{fill:var(--rv-gold,#C9A227)}
+.rtb-rated{font-weight:700;font-size:.95rem}
+.rtb-count{font-size:.88rem;opacity:.88}
+.rtb-src{font-size:.72rem;opacity:.72;letter-spacing:.02em}
+.hero .rtb,.hero-inner .rtb{color:#fff}
+.hero .rtb-src,.hero .rtb-count{opacity:.85}
 /* ---- vendly lowcountry trade chrome (lib/lowcountry.js) - appended after craft ---- */
-:root{--lc-blue:#A5261D;--lc-blue-dark:#7C1D16;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#390D0A;--lc-navy-deep:#280907;--lc-navy-lift:#4D2523;--lc-pale:#F8EEED;--lc-shell:#F5F3F3;--lc-blue-on-navy:#CF8C87;--lc-burger:#B9564F;--radius:2px}
+:root{--lc-blue:#1F64A3;--lc-blue-dark:#174B7A;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#0A2239;--lc-navy-deep:#071828;--lc-navy-lift:#23384D;--lc-pale:#EDF3F8;--lc-shell:#F3F4F5;--lc-blue-on-navy:#7FA7CB;--lc-burger:#5086B7;--lc-blue-ink:#1F64A3;--radius:2px}
 body{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17.5px;line-height:1.55}
 h1,h2{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:700;letter-spacing:.005em}
 h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:600;letter-spacing:.01em}
@@ -469,8 +511,8 @@ nav.main a:hover{color:#fff;text-decoration:underline}
 .hero.hero-overlay .hero-facts{margin-top:18px;font-size:14.5px;opacity:.9}
 .hero .wrap{padding-bottom:34px}
 @media(min-width:900px){.hero .wrap{padding-bottom:34px}}
-.hero:has(>img)::before{background:rgba(57,13,10,.40)}
-.hero:has(>img)::after{background:linear-gradient(to top,rgba(57,13,10,.50) 0%,rgba(57,13,10,.40) 30%,rgba(57,13,10,.36) 55%,rgba(57,13,10,.10) 100%)}
+.hero:has(>img)::before{background:rgba(10,34,57,.40)}
+.hero:has(>img)::after{background:linear-gradient(to top,rgba(10,34,57,.50) 0%,rgba(10,34,57,.40) 30%,rgba(10,34,57,.36) 55%,rgba(10,34,57,.10) 100%)}
 .hero:has(>img){background:var(--lc-navy)}
 .btn{border-radius:2px;font:600 17px/1 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.03em;padding:21px 32px;border-width:0;justify-content:center}
 .btn.lg,.heroShot .btn.lg{border-radius:2px}
@@ -487,20 +529,20 @@ main>section:nth-of-type(4n+3):not(.story):not(.pitch):not(.work):not(.rv):not(.
 main>section:nth-of-type(4n+2):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink),main>section:nth-of-type(4n+4):not(.story):not(.pitch):not(.work):not(.rv):not(.vd-ink){background:var(--paper,#fff)}
 main>section.vd-ink{background:var(--lc-navy-deep)}
 main>section.vd-ink h2,main>section.vd-ink h3{color:#fff}
-.card{border:0;border-radius:2px;background:#fff;padding:26px 22px;text-align:center;box-shadow:0 1px 2px rgba(57,13,10,.08),0 8px 22px rgba(57,13,10,.07)}
+.card{border:0;border-radius:2px;background:#fff;padding:26px 22px;text-align:center;box-shadow:0 1px 2px rgba(10,34,57,.08),0 8px 22px rgba(10,34,57,.07)}
 .card h3{color:var(--lc-navy);margin:0}
 .grid{gap:16px}
 .gal img{border-radius:2px}
 @media(max-width:719px){.gal,.gal-wide,.gal-masonry{grid-template-columns:1fr}.gal-masonry figure:nth-child(3n+1){grid-column:auto}}
 .gal{gap:14px}
-.factbox{background:#fff;border:0;border-radius:2px;padding:26px 22px;box-shadow:0 1px 2px rgba(57,13,10,.08),0 8px 22px rgba(57,13,10,.07)}
-.faqs{border:0;border-radius:2px;box-shadow:0 1px 2px rgba(57,13,10,.08),0 8px 22px rgba(57,13,10,.07)}
+.factbox{background:#fff;border:0;border-radius:2px;padding:26px 22px;box-shadow:0 1px 2px rgba(10,34,57,.08),0 8px 22px rgba(10,34,57,.07)}
+.faqs{border:0;border-radius:2px;box-shadow:0 1px 2px rgba(10,34,57,.08),0 8px 22px rgba(10,34,57,.07)}
 .faqs summary{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--lc-navy)}
-.faqs summary::after{color:var(--lc-blue)}
-.places li{border-radius:2px;background:var(--lc-pale);border-color:rgba(165,38,29,.28);color:var(--lc-navy)}
-.quote{border-left-color:var(--lc-blue)}
+.faqs summary::after{color:var(--lc-blue-ink)}
+.places li{border-radius:2px;background:var(--lc-pale);border-color:rgba(31,100,163,.28);color:var(--lc-navy)}
+.quote{border-left-color:var(--lc-blue-ink)}
 .eyebrow{letter-spacing:.16em;font-size:14px}
-main>section .eyebrow{color:var(--lc-blue);text-align:center}
+main>section .eyebrow{color:var(--lc-blue-ink);text-align:center}
 footer.site{background:var(--lc-navy);text-align:center;padding-top:0}
 footer.site section{padding:30px 0;border-top:1px solid rgba(255,255,255,.12)}
 footer.site h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;font-size:24px;text-transform:none;color:var(--lc-blue-on-navy);letter-spacing:.01em}
@@ -517,10 +559,8 @@ footer.site h3{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","
 .legalbar{background:var(--lc-blue);color:var(--lc-on-blue)}
 .legalbar a{color:var(--lc-on-blue)}
 body.vd-has-dock footer{padding-bottom:0}
-body.vd-has-dock .legalbar{padding-bottom:150px}
+body.vd-has-dock .legalbar{padding-bottom:calc(var(--vd-dock-h,96px) + 76px)}
 @media(min-width:760px){body.vd-has-dock .legalbar{padding-bottom:16px}}
-body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
-@media(min-width:760px){body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:34px}}
 .lcdock{position:fixed;left:0;right:0;bottom:0;z-index:2147482000;border-top:2px solid rgba(255,255,255,.92)}
 .lcdock-cta{display:block;background:var(--lc-blue);color:var(--lc-on-blue);text-decoration:none;text-align:center;padding:12px 14px;font:600 18px/1.3 Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;letter-spacing:.02em}
 .lcdock-cta:hover,.lcdock-cta:focus{background:var(--lc-blue-dark)}
@@ -529,12 +569,14 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
 .lcdock-split a+a{border-left:2px solid rgba(255,255,255,.55)}
 .lcdock svg{width:18px;height:18px;flex:0 0 18px;fill:none;stroke:currentColor;stroke-width:2}
 @media(min-width:760px){.lcdock{display:none}}
-.totop{right:0;bottom:96px;width:40px;height:40px;border-radius:0;background:rgba(90,90,90,.62)}
+.totop{right:0;bottom:calc(var(--vd-stack-h,140px) + 8px);width:40px;height:40px;border-radius:0;background:rgba(90,90,90,.62)}
 @media(min-width:760px){.totop{bottom:34px;right:14px}}
 .preview{background:#1c1c1e;color:#e8e6e3;font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:11px;line-height:1.4;padding:6px 18px}
 .preview a{color:#fff}
 .brandstripe{display:none}
 
+
+.brand-wordmark{font:700 20px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em}
 </style>
 <script>(function(){var d=document.documentElement;if(!("IntersectionObserver" in window))return;d.classList.add("vd-top");addEventListener("DOMContentLoaded",function(){var h=document.querySelector(".hero");if(!h){d.classList.remove("vd-top");return}new IntersectionObserver(function(e){d.classList.toggle("vd-top",e[0].isIntersecting)},{threshold:0}).observe(h)})})();</script>
 </head>
@@ -577,11 +619,19 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
 <main id="main">
 
 <div class="hero hero-overlay">
-  <img class="hero-img" src="assets/site-0.jpg" alt="" aria-hidden="true">
+  <img class="hero-img" src="assets/site-0.png" alt="" aria-hidden="true">
   <div class="wrap hero-in">
     <p class="eyebrow">Automotive Body Shop in Orlando</p>
-    <h1>Apple&#39;s Automotive Services</h1>
-    <p class="lede">Automotive body shop, towing and auto service in Orlando, Florida. Collision repair and electric vehicle work.</p>
+    <h1>Need a tow now? Call the truck that shows up.</h1>
+    <p class="lede">Just another WordPress site</p>
+    <div class="hero-rtb" style="margin:18px 0 6px"><a class="rtb" href="https://www.google.com/maps/search/Apple&#39;s%20Automotive%20Services%206944%20Venture%20Cir%20Unit%202H%2C%20Orlando%2C%20FL?hl=en&amp;gl=us" rel="nofollow noopener" target="_blank" aria-label="Rated 4.8 out of 5 from 98 reviews (Google reviews)">
+  <span class="rtb-body">
+    <span class="rtb-top"><svg class="rtb-mark" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg><span class="rtb-stars" role="img" aria-label="4.8 out of 5"><span class="rtb-stars-base"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rtb-stars-fill" style="width:96.0%"><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="14" height="14" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span></span>
+    <span class="rtb-rated">Rated 4.8/5</span>
+    <span class="rtb-count">98 Reviews</span>
+    <span class="rtb-src">Google reviews</span>
+  </span>
+</a></div>
     <div class="cta-row">
       <a class="btn btn-c" href="tel:+14072230679">Call (407) 223-0679</a>
       <a class="hero-alt" href="mailto:matt@applesautomotive.com">or email us</a>
@@ -594,25 +644,32 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
   <li>Open 24 hours</li>
 </ul></div></div>
 
-<section class="rv few" id="reviews"><div class="wrap">
-<p class="eyebrow">In their own words</p>
+<section class="rv few rvG" id="reviews"><div class="wrap">
+<p class="eyebrow">In our own words</p>
 <h2>In the words of customers around Orlando</h2>
 <p class="lead">These 3 reviews were written by Apple&#39;s Automotive Services customers and published on their Google listing. Google shows 4.8 out of 5 from 98 reviews in total. Shown word for word.</p>
+<p class="rvHonesty">No invented quotes. Stars shown only where their page published a rating (3 of 3).</p>
 <p class="rvAgg rvAggG"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg><span class="rvStars" role="img" aria-label="4.8 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:96.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><b>4.8 out of 5</b><span>from 98 Google reviews</span><a href="https://www.google.com/maps/search/Apple&#39;s%20Automotive%20Services%206944%20Venture%20Cir%20Unit%202H%2C%20Orlando%2C%20FL?hl=en&amp;gl=us" rel="nofollow noopener" target="_blank">See them on Google</a></p>
 <div class="rvGrid">
 <figure class="rvCard">
+<span class="rvQuote" aria-hidden="true">"</span>
 <span class="rvStars" role="img" aria-label="5 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:100.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span>
 <blockquote>With 3 older cars in our family, we have Matt and his team on speed dial at this point. I cannot tell you how many times we have called him last minute and he has helped us no matter the time of day or sent a tow truck for us. He treats us like family. He is honest and kind with an exceptional work ethic. Not only has he fixed our broken down vehicles but our daughter was in an accident recently and his shop did the body work...her car looks better now then when we bought it! He and his crew are truly amazing and they are part of our family!</blockquote>
+<span class="rvRule" aria-hidden="true"></span>
 <figcaption><span class="rvWho">MC</span><b>Melinda Cunningham</b><span class="rvWhen">6 months ago</span><span class="rvSrc" title="Published on Google"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg></span></figcaption>
 </figure>
-<figure class="rvCard">
+<figure class="rvCard rvCardAlt">
+<span class="rvQuote" aria-hidden="true">"</span>
 <span class="rvStars" role="img" aria-label="5 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:100.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span>
 <blockquote>honest, good work. Fair prices, great family owned business. They easily could have taken advantage of my situation but instead treated me fairly and have gained a loyal customer. They fixed my car in under 24 hours and got me on the road when my car wouldn’t even shift out of park. Can’t thank them enough! Wonderful customer service from getting towed to checking out. Can’t recommend highly enough.</blockquote>
+<span class="rvRule" aria-hidden="true"></span>
 <figcaption><span class="rvWho">CH</span><b>Cara Horsfield</b><span class="rvWhen">4 weeks ago</span><span class="rvSrc" title="Published on Google"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg></span></figcaption>
 </figure>
 <figure class="rvCard">
+<span class="rvQuote" aria-hidden="true">"</span>
 <span class="rvStars" role="img" aria-label="5 out of 5"><span class="rvStarsBase"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rvStarsFill" style="width:100.0%"><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span>
 <blockquote>I had The Pleasure to meet Ruben today he worked on my vehicle. He installed a new Window washer resolver for my 2017 Subaru Forester , Very professional and respectful. I read the other reviews and yes everything that people wrote is true. I recommend this Place.</blockquote>
+<span class="rvRule" aria-hidden="true"></span>
 <figcaption><span class="rvWho">AP</span><b>Antonino Pirrone</b><span class="rvWhen">4 months ago</span><span class="rvSrc" title="Published on Google"><svg class="rvMark" viewBox="0 0 48 48" width="16" height="16" aria-hidden="true" focusable="false"><g fill="none" stroke-width="10"><path stroke="#34A853" d="M42.71 27.30A19 19 0 0 1 19.08 42.35"/><path stroke="#FBBC04" d="M19.08 42.35A19 19 0 0 1 5.65 19.08"/><path stroke="#EA4335" d="M5.65 19.08A19 19 0 0 1 28.92 5.65"/><path stroke="#4285F4" d="M28.92 5.65A19 19 0 0 1 42.71 20.70"/></g><path fill="#4285F4" d="M24 19h24v10H24z"/></svg></span></figcaption>
 </figure>
 </div>
@@ -634,9 +691,8 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
   <div class="wrap">
     <h2>Work in progress</h2>
     <p class="lead">These photos are published by Apple&#39;s Automotive Services on their website. Pulled 2026-08-07.</p>
-    <div class="gal">
-      <figure><img src="assets/site-1.jpg" alt="Specialized EV Maintenance" loading="lazy" width="800" height="600"><figcaption>Specialized EV Maintenance</figcaption></figure>
-      <figure><img src="assets/504054815_122102231048897004.jpg" alt="Apple&#39;s Automotive Services - Automotive Body Shop" loading="lazy" width="800" height="600"></figure>
+    <div class="gal gal-wide">
+      <figure><img src="assets/site-1.png" alt="Specialized EV Maintenance" loading="lazy" width="800" height="600"><figcaption>Specialized EV Maintenance</figcaption></figure>
     </div>
   </div>
 </section>
@@ -711,7 +767,7 @@ body .vd-has-dock #vda-root,body.vd-has-dock #vda-root{bottom:168px}
   </div>
 </footer>
 <a class="totop" href="#main" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7" stroke-linejoin="round"/></svg></a>
-<div class="lcdock"><a class="lcdock-cta" href="#contact">Request a quote</a><div class="lcdock-split"><a href="tel:+14072230679" aria-label="Call (407) 223-0679"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" stroke-linejoin="round"/></svg><span>Call</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Apple's%20Automotive%20Services%206944%20Venture%20Cir%20Unit%202H%2C%20Orlando%2C%20FL" rel="nofollow noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg><span>Map</span></a></div></div><script>document.body.classList.add("vd-has-dock");</script>
+<div class="lcdock"><a class="lcdock-cta" href="#contact">Request a quote</a><div class="lcdock-split"><a href="tel:+14072230679" aria-label="Call (407) 223-0679"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .57 3.6 1 1 0 0 1-.25 1z" stroke-linejoin="round"/></svg><span>Call</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Apple's%20Automotive%20Services%206944%20Venture%20Cir%20Unit%202H%2C%20Orlando%2C%20FL" rel="nofollow noopener" target="_blank"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></svg><span>Map</span></a></div></div><script>(function(){var d=document.documentElement;document.body.classList.add("vd-has-dock");function m(){var h=0,e=document.querySelectorAll(".vd-dock,.lcdock"),i,r;for(i=0;i<e.length;i++){r=e[i].getBoundingClientRect();if(r.height>h)h=r.height}d.style.setProperty("--vd-dock-h",Math.round(h)+"px");var v=document.getElementById("vda-root"),s=h;if(v){r=v.getBoundingClientRect();if(r.height>0)s=h+r.height}d.style.setProperty("--vd-stack-h",Math.round(s)+"px")}m();addEventListener("load",m);addEventListener("resize",m);addEventListener("orientationchange",m);if(window.MutationObserver){var o=new MutationObserver(function(){if(document.getElementById("vda-root")){m();o.disconnect()}});o.observe(document.body,{childList:true});setTimeout(function(){o.disconnect();m()},9000)}if(window.ResizeObserver){var t=document.querySelector(".vd-dock,.lcdock");if(t){new ResizeObserver(m).observe(t)}}})();</script>
 
 <!-- VENDLY-DEMO-OPEN-BEACON. Counts one page open, per demo, per day. Aggregate only:
      no identity, no referrer, no query string, no cookie, no storage.
