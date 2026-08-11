@@ -520,6 +520,9 @@
     };
     // No backend to ask: keep the old behaviour and just render (fail open).
     if (!cfg.endpoint || !cfg.tenantId) { render(); return; }
+    // Demo sites must always build the panel so the sticky Ask button can open it.
+    // A definitive active:false on a real client still hides the widget below.
+    if (cfg.forceRender === true || cfg.demoMode === true) { render(); return; }
     var url = cfg.endpoint.replace(/\/+$/, "") + "/api/status?tenantId=" + encodeURIComponent(cfg.tenantId);
     try {
       fetch(url, { method: "GET", headers: { "Accept": "application/json" } })
