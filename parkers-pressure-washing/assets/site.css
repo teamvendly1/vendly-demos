@@ -106,7 +106,7 @@ section.mist{background:var(--mist)}
 /* about */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);align-items:center}
 .shot{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);background:var(--blue-dk)}
-.shot img{width:100%;height:100%;object-fit:contain;background:var(--blue-dk);aspect-ratio:4/3}
+.shot img{width:100%;height:100%;object-fit:cover;background:var(--blue-dk);aspect-ratio:4/3;display:block}
 .corner{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font:700 12px/1 Inter,sans-serif;letter-spacing:.13em;text-transform:uppercase;padding:11px 16px;border-radius:0 12px 0 0}
 .sig{margin-top:26px;padding-top:22px;border-top:2px solid var(--line)}
 .sig .nm{font:700 19px/1.2 Inter,sans-serif;color:var(--blue-dk)}
@@ -187,8 +187,33 @@ footer li a{display:inline-block;padding:4px 0}
 .sitemenu li:last-child a{border-bottom:0}
 .sitemenu a:hover{background:var(--mist);color:var(--blue)}
 
-/* mobile call bar */
-.mobile-callbar{display:none}.mobile-callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif}.mobile-callbar .mcb-est{background:#0E2A52}.mobile-callbar .mcb-call{background:var(--red)}
+/* Sticky footer chrome: estimate + CALL, hairline, then Ask (owns concierge entry).
+   Floating .sa-launch / .sa-peek are hidden — ask lives here. Mobile-first height reserved. */
+.mobile-callbar{
+  display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;
+  position:fixed;left:0;right:0;bottom:0;z-index:110;
+  background:var(--blue-dk);color:#fff;padding:0;
+  box-shadow:0 -8px 24px -12px rgba(16,23,36,.45);
+  min-height:90px
+}
+.mobile-callbar .mcb-row{display:flex;align-items:stretch;width:100%;min-height:48px}
+.mobile-callbar .mcb-row a{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
+}
+.mobile-callbar .mcb-est{background:#0E2A52}
+.mobile-callbar .mcb-call{background:var(--red)}
+.mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
+.mobile-callbar .mcb-ask{
+  display:block;width:100%;border:0;margin:0;cursor:pointer;
+  background:#041F33;color:#DCE7F6;
+  font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
+  padding:12px 10px;text-align:center
+}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#0A2F4A;color:#fff;outline:none}
+.sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
+body{padding-bottom:98px}
+footer{padding-bottom:30px}
 
 @media(max-width:860px){
   .about,.leadwrap{grid-template-columns:1fr}
@@ -196,7 +221,6 @@ footer li a{display:inline-block;padding:4px 0}
   .bar{gap:12px}
 }
 @media(max-width:640px){
-  .mobile-callbar{display:flex;align-items:stretch;justify-content:stretch;gap:0;position:fixed;left:0;right:0;bottom:0;z-index:110;background:var(--blue-dk);color:#fff;min-height:52px;padding:0;box-shadow:0 -8px 24px -12px rgba(16,23,36,.45)}
   /* Logo TRUE viewport center with hamburger (Jacob Pixel ~17:10 FAIL, ~17:15
      absolute still +58px right on measure). Mirror the Menu button width with an
      invisible .navbalance so flex space-between centers the logo for real. */
@@ -206,7 +230,6 @@ footer li a{display:inline-block;padding:4px 0}
   .navbalance{flex:0 0 auto;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
   .navbalance svg{visibility:hidden}
   .logo{position:static;left:auto;transform:none;height:64px;margin:0;grid-column:unset;justify-self:unset;flex:0 1 auto}
-  footer{padding-bottom:96px}
   /* Jacob phone audit 2026-08-02 (em2154): the service cards, their icons,
      the badge rows and the stat tiles read left-stuck on a narrow screen.
      Center only these named attention blocks, not body copy. .reviewband
@@ -219,8 +242,6 @@ footer li a{display:inline-block;padding:4px 0}
   .badges{justify-content:center}
   .stats{justify-content:center}
   .stat{text-align:center}
-  /* FAB above sticky CALL bar (law 2026-08-01) - never cover Call/Quote */
-  .sa-launch,.sa-peek{bottom:72px!important}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
@@ -252,11 +273,15 @@ footer li a{display:inline-block;padding:4px 0}
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center}
-.ctaband::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,31,51,.90) 0%,rgba(4,31,51,.80) 100%)}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.38;z-index:0}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(4,31,51,.90) 0%,rgba(4,31,51,.80) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(56px,7.5vw,92px) 0}
 .ctaband h2{color:#fff}
 .ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 26px}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:24px}
+/* Inner-page photo lead (services / reviews) — real photo, not a color slab */
+.page-photo{margin:0 0 28px}
+.page-photo .shot{max-width:920px;margin:0 auto}
 
 /* Parkers RT-clone 2026-08-11: one phone surface at a time.
    Desktop = header call button + in-page Call CTAs.
@@ -268,9 +293,6 @@ footer li a{display:inline-block;padding:4px 0}
 .hero::after{z-index:1}
 .hero-inner{z-index:2}
 .hero h1,.hero .lede,.hero .eyebrow,.hero .cta,.hero .trust{position:relative;z-index:3}
-/* Chat launcher: reserve space, no layout shift on paint */
-.sa-launch{transform:translateZ(0)}
-body{padding-bottom:0}
 /* Audit FAIL 2026-08-11: mobile fold/quote stacked phone 3x. Sticky CALL is the one. */
 @media(max-width:640px){
   .phone-cta-desktop{display:none!important}
