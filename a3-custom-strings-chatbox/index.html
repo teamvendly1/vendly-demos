@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>A3 Custom Strings | Chat box preview (Vendly)</title>
+<meta name="description" content="Standalone chat box preview for A3 Custom Strings. Demo only. Not installed on the live site.">
+<style>
+  :root {
+    --ink: #14140F;
+    --paper: #FBFAF6;
+    --gold: #6A5A1E;
+    --gold-deep: #4F4316;
+    --line: #E4E0D4;
+    --muted: #5C5A52;
+    --panel: #FFFFFF;
+    --shadow: 0 18px 50px rgba(20, 20, 15, 0.18);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #efe8d4 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #e7efe8 0%, transparent 50%),
+      var(--paper);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 120px; }
+  .mark {
+    display: inline-block;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    border: 1px solid var(--gold);
+    padding: 6px 10px;
+    margin-bottom: 18px;
+    background: rgba(106, 90, 30, 0.06);
+  }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    line-height: 1.15;
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+  .lede {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.55;
+    color: var(--muted);
+    margin: 0 0 22px;
+    max-width: 38em;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 18px 18px 16px;
+    box-shadow: 0 1px 0 rgba(20,20,15,0.04);
+  }
+  .card h2 {
+    font-size: 1.05rem;
+    margin: 0 0 8px;
+  }
+  .card p, .card li {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0;
+  }
+  .card ul { margin: 10px 0 0; padding-left: 1.15em; }
+  .card li { margin: 0.35em 0; }
+  .hint {
+    margin-top: 18px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .hint a { color: var(--gold-deep); }
+
+  /* Floating chat */
+  #sa-root { position: fixed; right: 18px; bottom: 18px; z-index: 9999; font-family: "Segoe UI", system-ui, sans-serif; }
+  #sa-launcher {
+    width: 58px; height: 58px; border-radius: 999px; border: 0;
+    background: var(--gold); color: #fff; cursor: pointer;
+    box-shadow: var(--shadow);
+    display: grid; place-items: center;
+  }
+  #sa-launcher:focus-visible { outline: 3px solid #c9b56a; outline-offset: 2px; }
+  #sa-launcher svg { width: 26px; height: 26px; }
+  #sa-panel {
+    display: none;
+    width: min(360px, calc(100vw - 28px));
+    height: min(520px, calc(100vh - 110px));
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  #sa-panel.open { display: flex; }
+  .sa-head {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 14px 14px 12px;
+  }
+  .sa-head strong { display: block; font-size: 0.98rem; }
+  .sa-head span { display: block; font-size: 0.78rem; opacity: 0.78; margin-top: 3px; }
+  .sa-body {
+    flex: 1;
+    overflow: auto;
+    padding: 14px;
+    background: #f7f5ef;
+  }
+  .bubble {
+    max-width: 88%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    margin: 0 0 10px;
+    font-size: 0.92rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+  }
+  .bubble.bot { background: #fff; border: 1px solid var(--line); color: var(--ink); }
+  .bubble.user { background: var(--gold); color: #fff; margin-left: auto; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+  .chip {
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 7px 11px;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  .chip:hover { border-color: var(--gold); }
+  .sa-foot {
+    border-top: 1px solid var(--line);
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    background: #fff;
+  }
+  .sa-foot input {
+    flex: 1;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 11px 12px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  .sa-foot button {
+    border: 0;
+    border-radius: 10px;
+    background: var(--gold-deep);
+    color: #fff;
+    padding: 0 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .watermark {
+    position: fixed;
+    left: 12px;
+    bottom: 12px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-size: 11px;
+    color: var(--muted);
+    background: rgba(251,250,246,0.92);
+    border: 1px solid var(--line);
+    padding: 6px 8px;
+    max-width: 220px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="mark">Preview for A3 Custom Strings</div>
+    <h1>Chat box demo</h1>
+    <p class="lede">This page shows how a Vendly-style chat box can sit on your site. It is a standalone preview. Nothing here is installed on a3customstrings.com until you say go.</p>
+    <div class="card">
+      <h2>Try the button on the bottom right</h2>
+      <p>Ask about hours, custom orders, materials, or talking to the owner. Replies here are preview answers only. On a live install they can use your real business facts and hand off to you.</p>
+      <ul>
+        <li>No install on your live site from this link</li>
+        <li>Questions welcome before anything goes live</li>
+        <li>Vendly line for this preview: <a href="tel:+17744269684">+1 774-426-9684</a></li>
+      </ul>
+    </div>
+    <p class="hint">Live site stays untouched: <a href="https://a3customstrings.com/" rel="noopener" target="_blank">https://a3customstrings.com/</a></p>
+  </div>
+
+  <div class="watermark">Vendly preview. Not the live A3 site.</div>
+
+  <div id="sa-root" aria-live="polite">
+    <div id="sa-panel" role="dialog" aria-label="Chat box preview">
+      <div class="sa-head">
+        <strong>A3 Custom Strings</strong>
+        <span>Chat preview. Demo answers only.</span>
+      </div>
+      <div class="sa-body" id="sa-body"></div>
+      <div class="sa-foot">
+        <input id="sa-input" type="text" maxlength="400" placeholder="Ask a question" aria-label="Ask a question" autocomplete="off">
+        <button type="button" id="sa-send">Send</button>
+      </div>
+    </div>
+    <button type="button" id="sa-launcher" aria-label="Open chat preview" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M21 12a8.5 8.5 0 0 1-8.5 8.5H7l-4 3V12A8.5 8.5 0 1 1 21 12z"/>
+      </svg>
+    </button>
+  </div>
+
+<script>
+(function () {
+  var body = document.getElementById('sa-body');
+  var panel = document.getElementById('sa-panel');
+  var launcher = document.getElementById('sa-launcher');
+  var input = document.getElementById('sa-input');
+  var sendBtn = document.getElementById('sa-send');
+  var started = false;
+
+  function addBubble(text, who) {
+    var el = document.createElement('div');
+    el.className = 'bubble ' + who;
+    el.textContent = text;
+    body.appendChild(el);
+    body.scrollTop = body.scrollHeight;
+  }
+
+  function addChips(items) {
+    var row = document.createElement('div');
+    row.className = 'chips';
+    items.forEach(function (label) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'chip';
+      b.textContent = label;
+      b.addEventListener('click', function () {
+        input.value = label;
+        sendMsg();
+      });
+      row.appendChild(b);
+    });
+    body.appendChild(row);
+  }
+
+  function replyFor(q) {
+    var s = (q || '').toLowerCase();
+    if (/hour|open|when/.test(s)) {
+      return 'This is a preview of the chat box. On your live site it would answer with your real hours. For now, tell visitors the hours you want shown, or have the chat hand the question to you.';
+    }
+    if (/order|custom|string|bow/.test(s)) {
+      return 'Custom order questions are a great fit for this chat. Live version can collect name, draw weight, material preference, and send that straight to you. This preview does not place a real order.';
+    }
+    if (/material|fiber|serving/.test(s)) {
+      return 'Materials questions can be answered from a short facts list you approve. Preview mode will not invent product claims. On your live site we only use what you confirm.';
+    }
+    if (/owner|talk|call|human|phone/.test(s)) {
+      return 'Want to talk to the owner? On a live install the chat can collect a callback number or point people to +1 774-426-9684 while we wire your own number in. This page is still a preview only.';
+    }
+    return 'This is a preview of the chat box. On your live site it would answer real questions about A3 Custom Strings and hand off to you when needed. Nothing here is installed on a3customstrings.com yet.';
+  }
+
+  function sendMsg() {
+    var q = (input.value || '').trim();
+    if (!q) return;
+    addBubble(q, 'user');
+    input.value = '';
+    setTimeout(function () { addBubble(replyFor(q), 'bot'); }, 280);
+  }
+
+  function openPanel() {
+    panel.classList.add('open');
+    launcher.setAttribute('aria-expanded', 'true');
+    if (!started) {
+      started = true;
+      addBubble('Hey. This is a preview of the chat box for A3 Custom Strings. Tap a suggestion or type a question. Demo answers only.', 'bot');
+      addChips(['What are your hours?', 'Custom order help', 'Materials question', 'Talk to the owner']);
+    }
+    setTimeout(function () { input.focus(); }, 50);
+  }
+
+  function closePanel() {
+    panel.classList.remove('open');
+    launcher.setAttribute('aria-expanded', 'false');
+  }
+
+  launcher.addEventListener('click', function () {
+    if (panel.classList.contains('open')) closePanel();
+    else openPanel();
+  });
+  sendBtn.addEventListener('click', sendMsg);
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      sendMsg();
+    }
+  });
+})();
+</script>
+</body>
+</html>
