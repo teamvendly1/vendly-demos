@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>A3 Custom Strings | Chat box preview (Vendly)</title>
-<meta name="description" content="Standalone chat box preview for A3 Custom Strings. Demo only. Not installed on the live site.">
+<title>A3 Custom Strings | Expert chatbox demo (Vendly)</title>
+<meta name="description" content="Standalone expert chatbox demo for A3 Custom Bowstrings. Shop knowledge loaded. Demo host only. Not installed on the live site.">
 <style>
   :root {
     --ink: #14140F;
@@ -60,10 +60,7 @@
     padding: 18px 18px 16px;
     box-shadow: 0 1px 0 rgba(20,20,15,0.04);
   }
-  .card h2 {
-    font-size: 1.05rem;
-    margin: 0 0 8px;
-  }
+  .card h2 { font-size: 1.05rem; margin: 0 0 8px; }
   .card p, .card li {
     font-family: "Segoe UI", system-ui, sans-serif;
     font-size: 0.95rem;
@@ -80,8 +77,6 @@
     color: var(--muted);
   }
   .hint a { color: var(--gold-deep); }
-
-  /* Floating chat */
   #sa-root { position: fixed; right: 18px; bottom: 18px; z-index: 9999; font-family: "Segoe UI", system-ui, sans-serif; }
   #sa-launcher {
     width: 58px; height: 58px; border-radius: 999px; border: 0;
@@ -93,8 +88,8 @@
   #sa-launcher svg { width: 26px; height: 26px; }
   #sa-panel {
     display: none;
-    width: min(360px, calc(100vw - 28px));
-    height: min(520px, calc(100vh - 110px));
+    width: min(380px, calc(100vw - 28px));
+    height: min(560px, calc(100vh - 110px));
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 16px;
@@ -118,12 +113,12 @@
     background: #f7f5ef;
   }
   .bubble {
-    max-width: 88%;
+    max-width: 92%;
     padding: 10px 12px;
     border-radius: 14px;
     margin: 0 0 10px;
-    font-size: 0.92rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    line-height: 1.45;
     white-space: pre-wrap;
   }
   .bubble.bot { background: #fff; border: 1px solid var(--line); color: var(--ink); }
@@ -135,7 +130,7 @@
     color: var(--ink);
     border-radius: 999px;
     padding: 7px 11px;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     cursor: pointer;
   }
   .chip:hover { border-color: var(--gold); }
@@ -173,50 +168,89 @@
     background: rgba(251,250,246,0.92);
     border: 1px solid var(--line);
     padding: 6px 8px;
-    max-width: 220px;
+    max-width: 240px;
   }
 </style>
 </head>
 <body>
   <div class="wrap">
     <div class="mark">Preview for A3 Custom Strings</div>
-    <h1>Chat box demo</h1>
-    <p class="lede">This page shows how a Vendly-style chat box can sit on your site. It is a standalone preview. Nothing here is installed on a3customstrings.com until you say go.</p>
+    <h1>Custom bowstring shop expert</h1>
+    <p class="lede">This demo answers from a harvested knowledge pack for A3 Custom Bowstrings: products, colors, serving options, Pre-Cycle claims, and how to order a full set. It is a standalone preview. Nothing here is installed on a3customstrings.com until you say go.</p>
     <div class="card">
       <h2>Try the button on the bottom right</h2>
-      <p>Ask about hours, custom orders, materials, or talking to the owner. Replies here are preview answers only. On a live install they can use your real business facts and hand off to you.</p>
+      <p>Ask about Platinum vs 452Xtra, color and serving choices, peep stability, or how to place a custom order. Answers stay honest. If the site does not publish a fact, the chat says so.</p>
       <ul>
+        <li>Knowledge loaded from the live store harvest (2026-08-11)</li>
         <li>No install on your live site from this link</li>
-        <li>Questions welcome before anything goes live</li>
-        <li>Vendly line for this preview: <a href="tel:+17744269684">+1 774-426-9684</a></li>
+        <li>Shop contact on live site: sales@a3customstrings.com · (608) 570-9097</li>
       </ul>
     </div>
     <p class="hint">Live site stays untouched: <a href="https://a3customstrings.com/" rel="noopener" target="_blank">https://a3customstrings.com/</a></p>
   </div>
 
-  <div class="watermark">Vendly preview. Not the live A3 site.</div>
+  <div class="watermark">Vendly preview. Expert chat demo. Not the live A3 site.</div>
 
   <div id="sa-root" aria-live="polite">
-    <div id="sa-panel" role="dialog" aria-label="Chat box preview">
+    <div id="sa-panel" role="dialog" aria-label="A3 shop expert chat">
       <div class="sa-head">
-        <strong>A3 Custom Strings</strong>
-        <span>Chat preview. Demo answers only.</span>
+        <strong>A3 Custom Bowstrings</strong>
+        <span>Shop expert. Answers from store knowledge.</span>
       </div>
       <div class="sa-body" id="sa-body"></div>
       <div class="sa-foot">
-        <input id="sa-input" type="text" maxlength="400" placeholder="Ask a question" aria-label="Ask a question" autocomplete="off">
+        <input id="sa-input" type="text" maxlength="500" placeholder="Ask about strings, materials, ordering" aria-label="Ask about strings, materials, ordering" autocomplete="off">
         <button type="button" id="sa-send">Send</button>
       </div>
     </div>
-    <button type="button" id="sa-launcher" aria-label="Open chat preview" aria-expanded="false">
+    <button type="button" id="sa-launcher" aria-label="Open A3 shop expert chat" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <path d="M21 12a8.5 8.5 0 0 1-8.5 8.5H7l-4 3V12A8.5 8.5 0 1 1 21 12z"/>
       </svg>
     </button>
   </div>
 
+<script id="a3-knowledge" type="application/json">
+{
+  "business": {
+    "name": "A3 Custom Bowstrings",
+    "tagline": "Putting Custom Back In Custom Bowstrings",
+    "site": "https://a3customstrings.com/",
+    "shop": "https://a3customstrings.com/a3-archery-custom-bow-strings/",
+    "email": "sales@a3customstrings.com",
+    "phone_display": "(608) 570-9097",
+    "contact_page": "https://a3customstrings.com/contact-us/"
+  },
+  "products": [
+    {
+      "key": "platinum",
+      "name": "Platinum Series Full Set",
+      "price": 160,
+      "url": "https://a3customstrings.com/product/platinum-series-full-set-custom-bowstrings/",
+      "material": null,
+      "material_note": "Fiber brand is not named beyond Platinum Series on the live site.",
+      "colors": ["FLO PINK","SUNSET RED","CANDY PURPLE","VIOLET","DEEP PURPLE","FLO ORANGE","ARCTIC WHITE","DESERT SAND","BROWN SUGAR","CHOCOLATE","ROBIN EGG BLUE","UNICORN BLOOD","ROYAL BLUE","FLO GREEN","EMERALD GREEN","PINE GREEN","STONE GREY","GUN POWDER","VADOR BLACK","FLO YELLOW","VIPER GREEN"],
+      "serving": ["FLO PINK","SUNSET RED","CANDY PURPLE","DEEP PURPLE","FLO ORANGE","WHITE/CLEAR","BROWN SUGAR","CHOCOLATE","ROBIN EGG BLUE","TEAL","ROYAL BLUE","FLO GREEN","EMERALD GREEN","PINE GREEN","GUN POWDER","VADOR BLACK","FLO YELLOW"]
+    },
+    {
+      "key": "452xtra",
+      "name": "Premium 452Xtra Series Full Set",
+      "price": 150,
+      "url": "https://a3customstrings.com/product/premium-452xtra-series-full-set-custom-bowstrings/",
+      "material": "452Xtra",
+      "material_note": "Named 452Xtra on the product title and listing.",
+      "colors": ["BLACK","MOUNTAIN BERRY","BLACK CHERRY","RED","LAVENDER","PURPLE","FLO PURPLE","RED AND BLACK","RED AND WHITE","ROOT BEER","LIGHT PINK","FLO PINK","PINK AND BLACK","GOLD","CEDAR","ORANGE AND BLACK","BROWN","YELLOW","FLO YELLOW","WINTER CAMO","SEAFOAM","FLO GREEN AND ELECTRIC BLUE","ELECTRIC BLUE","TEAL","AUTUMN CAMO","GREEN","OD GREEN","BUCKSKIN","SAND","SILVER","FLO GREEN"],
+      "serving": ["FLO PINK","SUNSET RED","CANDY PURPLE","DEEP PURPLE","FLO ORANGE","WHITE/CLEAR","BROWN SUGAR","CHOCOLATE","ROBIN EGG BLUE","TEAL","ROYAL BLUE","FLO GREEN","EMERALD GREEN","PINE GREEN","GUN POWDER","VADOR BLACK","FLO YELLOW"]
+    }
+  ]
+}
+</script>
+
 <script>
 (function () {
+  var K = JSON.parse(document.getElementById('a3-knowledge').textContent);
+  var platinum = K.products[0];
+  var xtra = K.products[1];
   var body = document.getElementById('sa-body');
   var panel = document.getElementById('sa-panel');
   var launcher = document.getElementById('sa-launcher');
@@ -249,21 +283,78 @@
     body.appendChild(row);
   }
 
+  function contactLine() {
+    return 'Email ' + K.business.email + ' or call ' + K.business.phone_display + '.';
+  }
+
+  function listSample(arr, n) {
+    n = n || 6;
+    var sample = arr.slice(0, n).join(', ');
+    if (arr.length > n) sample += ', and more';
+    return sample;
+  }
+
+  function wants(s, re) { return re.test(s); }
+
   function replyFor(q) {
     var s = (q || '').toLowerCase();
-    if (/hour|open|when/.test(s)) {
-      return 'This is a preview of the chat box. On your live site it would answer with your real hours. For now, tell visitors the hours you want shown, or have the chat hand the question to you.';
+
+    if (wants(s, /hour|open|when are you|business hour/)) {
+      return 'Store hours are not published on a3customstrings.com yet. For timing questions, ' + contactLine();
     }
-    if (/order|custom|string|bow/.test(s)) {
-      return 'Custom order questions are a great fit for this chat. Live version can collect name, draw weight, material preference, and send that straight to you. This preview does not place a real order.';
+    if (wants(s, /ship|lead time|how long|turnaround|delivery|tracking/)) {
+      return 'Shipping carrier and published lead times are not listed on the site yet. The shop can give you the current turnaround when you order. ' + contactLine();
     }
-    if (/material|fiber|serving/.test(s)) {
-      return 'Materials questions can be answered from a short facts list you approve. Preview mode will not invent product claims. On your live site we only use what you confirm.';
+    if (wants(s, /strand|strand count|how many strand|serving size|twist/)) {
+      return 'Strand counts are not published on the product pages. I will not invent a number. Ask the shop for the build they recommend for your bow. ' + contactLine();
     }
-    if (/owner|talk|call|human|phone/.test(s)) {
-      return 'Want to talk to the owner? On a live install the chat can collect a callback number or point people to +1 774-426-9684 while we wire your own number in. This page is still a preview only.';
+    if (wants(s, /stock|in stock|inventory|how many left|quantity available/)) {
+      return 'I do not track live inventory counts here. Both full-set products are listed for order on the shop page. For availability on a specific color combo, ' + contactLine();
     }
-    return 'This is a preview of the chat box. On your live site it would answer real questions about A3 Custom Strings and hand off to you when needed. Nothing here is installed on a3customstrings.com yet.';
+    if (wants(s, /warranty|return|refund/)) {
+      return 'A warranty or return policy page was not found on the harvest. Best to confirm with the shop before you order. ' + contactLine();
+    }
+    if (wants(s, /contact|phone|email|call|talk|owner|human/)) {
+      return 'You can reach A3 Custom Bowstrings at ' + K.business.email + ' or ' + K.business.phone_display + '. Contact page: ' + K.business.contact_page;
+    }
+    if (wants(s, /platinum/) && wants(s, /452|xtra|vs|versus|difference|compare|which/)) {
+      return 'Two full sets are live right now.\n\nPlatinum Series Full Set: $' + platinum.price + '. Fiber brand is not named beyond Platinum on the site.\n\nPremium 452Xtra Series Full Set: $' + xtra.price + '. Material named 452Xtra.\n\nBoth use A3 exclusive Pre-Cycle technology and take Color One, Color Two, optional pinstripe, serving color, bow make, bow model, and cam number if applicable.\n\nPlatinum: ' + platinum.url + '\n452Xtra: ' + xtra.url;
+    }
+    if (wants(s, /platinum/)) {
+      return 'Platinum Series Full Set is $' + platinum.price + '. Built with A3 exclusive Pre-Cycle technology. Color One, Color Two, optional pinstripe, serving, bow make, bow model, and cam # if applicable. The site does not name a fiber brand beyond Platinum Series, so I will not invent one. Order: ' + platinum.url;
+    }
+    if (wants(s, /452|xtra|452x/)) {
+      return 'Premium 452Xtra Series Full Set is $' + xtra.price + '. The listing names 452Xtra as the series material. Same Pre-Cycle process claim, with Color One, Color Two, optional pinstripe, serving color, bow make, bow model, and cam # if applicable. Order: ' + xtra.url;
+    }
+    if (wants(s, /price|cost|how much|\$/)) {
+      return 'Current published prices:\n• Platinum Series Full Set: $' + platinum.price + '\n• Premium 452Xtra Series Full Set: $' + xtra.price + '\nShop: ' + K.business.shop;
+    }
+    if (wants(s, /product|what do you (sell|offer)|catalog|series/)) {
+      return 'A3 currently lists two custom full-set products:\n1) Platinum Series Full Set - $' + platinum.price + '\n2) Premium 452Xtra Series Full Set - $' + xtra.price + '\nBoth are built to your colors and bow info. Shop: ' + K.business.shop;
+    }
+    if (wants(s, /serv(ing|e)/)) {
+      return 'Serving is the wrapped section that takes wear around the nocking area and related served zones. On both series you pick a serving color from the product list (examples: ' + listSample(platinum.serving, 5) + '). Choose it on the product page when you build your set.';
+    }
+    if (wants(s, /pinstripe|stripe/)) {
+      return 'Pinstripe is optional on both series. If you do not want one, select NONE on the product options. Otherwise pick a pinstripe color from that series list.';
+    }
+    if (wants(s, /color|colour|palette|camo|unicorn|vador/)) {
+      return 'Each series has its own color list for Color One, Color Two, and optional pinstripe.\n\nPlatinum examples: ' + listSample(platinum.colors, 8) + '.\n\n452Xtra examples: ' + listSample(xtra.colors, 8) + '.\n\nFull lists are on each product page.';
+    }
+    if (wants(s, /material|fiber|bcy|string material|what.*(made|material)/)) {
+      return 'Premium 452Xtra Series is named 452Xtra on the listing. Platinum Series does not publish a fiber brand name beyond Platinum on the site, so I will not invent one. Both product pages say: best materials, best processes, and A3 exclusive Pre-Cycle technology.';
+    }
+    if (wants(s, /pre-?cycle|precycle|process|pre.?stretch|creep|peep|rotation|hand.?made|hand built|custom/)) {
+      return 'From the A3 homepage and product copy:\n• Truly custom colors and specifications\n• Pre-stretched and precision-served with a zero peep rotation focus (site claim: holds true from the first shot; no creep, no stretch)\n• Hand-built one set at a time by archers who shoot what they make\n• A3 exclusive Pre-Cycle technology on both live series';
+    }
+    if (wants(s, /order|buy|purchase|how (do|to) order|custom order|place an order|bow make|bow model|cam/)) {
+      return 'To order a custom full set on the site:\n1) Open Platinum ($' + platinum.price + ') or Premium 452Xtra ($' + xtra.price + ')\n2) Choose Color One, Color Two, optional pinstripe (or NONE), and serving color\n3) Enter bow make, bow model, and cam # if applicable\n4) Add to cart and check out\n\nIf you are unsure of the cam, email a clear photo to ' + K.business.email + ' instead of guessing.\nShop: ' + K.business.shop;
+    }
+    if (wants(s, /faq|about|shipping policy/)) {
+      return 'The site harvest did not find a dedicated FAQ, about, or shipping-policy page. I can answer from the homepage, shop, product options, and contact info. For anything else, ' + contactLine();
+    }
+
+    return 'I am the A3 Custom Bowstrings shop expert for this preview. I can help with Platinum vs 452Xtra, prices, colors, serving, pinstripe, Pre-Cycle / peep stability claims, and how to fill a custom order.\n\nIf you need something the site does not publish yet (hours, lead time, strand count, stock count), say so and I will tell you honestly, then point you to ' + K.business.email + ' or ' + K.business.phone_display + '.';
   }
 
   function sendMsg() {
@@ -271,7 +362,7 @@
     if (!q) return;
     addBubble(q, 'user');
     input.value = '';
-    setTimeout(function () { addBubble(replyFor(q), 'bot'); }, 280);
+    setTimeout(function () { addBubble(replyFor(q), 'bot'); }, 220);
   }
 
   function openPanel() {
@@ -279,8 +370,13 @@
     launcher.setAttribute('aria-expanded', 'true');
     if (!started) {
       started = true;
-      addBubble('Hey. This is a preview of the chat box for A3 Custom Strings. Tap a suggestion or type a question. Demo answers only.', 'bot');
-      addChips(['What are your hours?', 'Custom order help', 'Materials question', 'Talk to the owner']);
+      addBubble('Hey. I am the A3 Custom Bowstrings shop expert for this preview. Ask about Platinum or 452Xtra, colors, serving, Pre-Cycle, or how to order a custom full set. If something is not on the site, I will say so.', 'bot');
+      addChips([
+        'Platinum vs 452Xtra',
+        'How do I order a custom set?',
+        'What colors can I pick?',
+        'Talk to the shop'
+      ]);
     }
     setTimeout(function () { input.focus(); }, 50);
   }
@@ -301,6 +397,10 @@
       sendMsg();
     }
   });
+
+  // Quality-gate helper for automated checks
+  window.__A3_EXPERT_REPLY = replyFor;
+  window.__A3_KNOWLEDGE_LOADED = !!(K && K.products && K.products.length === 2);
 })();
 </script>
 </body>
