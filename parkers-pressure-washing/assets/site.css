@@ -1,3 +1,4 @@
+html{scroll-padding-bottom:120px}
 :root{
   /* Logo-derived palette from brandmark extractBrandColors 2026-08-11:
      accent=#0B5993 primary=#041F33 link=#1F6DA7. Do not invent niche greens. */
@@ -220,7 +221,7 @@ footer li a{display:inline-block;padding:4px 0}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
-body{padding-bottom:98px}
+body{padding-bottom:120px}
 footer{padding-bottom:30px}
 /* Verbatim review cards (own site / Google / Facebook — never invented). */
 .rv-list{display:grid;gap:16px;max-width:720px;margin:0 auto}
@@ -328,3 +329,33 @@ footer{padding-bottom:30px}
   .phone-cta-desktop{display:none!important}
   .ctaband .cta{justify-content:center}
 }
+@media(max-width:900px){.hero .cta a[href="#quote"].btn-ghost,.hero .cta a.hero-est-dupe{display:none!important}}
+
+.rtb{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:inherit;max-width:100%}
+.rtb-faces{display:flex;align-items:center;flex:none}
+.rtb-disc{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;
+background:var(--rv-gold,#C9A227);color:#1a1408;font:650 .78rem/1 Inter,system-ui,sans-serif;
+border:2px solid #fff;margin-left:-10px;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.rtb-faces .rtb-disc:first-child{margin-left:0}
+.rtb-body{display:flex;flex-direction:column;gap:1px;min-width:0;line-height:1.25}
+.rtb-top{display:inline-flex;align-items:center;gap:6px}
+.rtb-mark{flex:none}
+.rtb-stars{position:relative;display:inline-block;line-height:0;white-space:nowrap}
+.rtb-stars-base,.rtb-stars-fill{display:block;line-height:0;white-space:nowrap}
+.rtb-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
+.rtb-stars-base svg{fill:#DADCE0}
+.rtb-stars-fill svg{fill:var(--rv-gold,#C9A227)}
+.rtb-rated{font-weight:700;font-size:.95rem}
+.rtb-count{font-size:.88rem;opacity:.88}
+.rtb-src{font-size:.72rem;opacity:.72;letter-spacing:.02em}
+.hero .rtb,.hero-inner .rtb{color:#fff}
+.hero .rtb-disc{border-color:rgba(255,255,255,.92)}
+.hero .rtb-src,.hero .rtb-count{opacity:.85}
+.header-rtb{max-width:280px}
+.header-rtb .rtb{color:var(--ink,#14140F)}
+.header-rtb .rtb-rated{font-size:.88rem}
+@media(max-width:900px){.header-rtb{display:none}}
+.card.card-photo .card-shot{aspect-ratio:16/10;overflow:hidden;border-radius:10px;margin:0 0 12px;background:#0a1622}
+.card.card-photo .card-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.svc .card.card-photo{padding-top:14px}
+.rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
