@@ -409,6 +409,11 @@
       "ALT_CONTACT": {
         "from": "facts.alts.contact",
         "missing": "empty alt"
+      },
+      "CONTACT_PHOTO": {
+        "from": "facts.contact_photo_slot",
+        "missing": "defaults to photo-contact.jpg",
+        "note": "Owner family photo (e.g. photo-family.jpg corrected/un-mirrored) is allowed on contact. Stock no-faces rule does NOT apply to the owner's own published family photo."
       }
     },
     "palette": {
@@ -464,7 +469,8 @@
     "photo-gallery-8.jpg": "photos grid 8",
     "photo-gallery-9.jpg": "photos grid 9",
     "photo-photos-cta.jpg": "photos page CTA band background",
-    "photo-contact.jpg": "contact page shot"
+    "photo-contact.jpg": "contact page shot (default house/job). Prefer facts.contact_photo_slot=photo-family.jpg when an owner family photo exists",
+    "photo-family.jpg": "optional owner family photo for contact (corrected/un-mirrored when source was flipped). Skipper: him, wife, grandson"
   },
   "refusals": [
     "any phone number that is not the business's own, including the Vendly line +1 774-426-9684",
