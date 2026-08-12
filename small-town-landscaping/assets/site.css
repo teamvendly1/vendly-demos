@@ -80,7 +80,7 @@ background:
   fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
 */
 @media(max-width:900px){
-  .hero-inner{padding-top:12px;padding-bottom:12px}
+  .hero-inner{padding-top:10px;padding-bottom:10px}
   .hero .eyebrow{margin-bottom:6px}
   .hero h1{margin:0 0 6px;font-size:clamp(26px,7.6vw,38px);line-height:1.06;max-width:18ch}
   .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
@@ -505,3 +505,10 @@ footer{position:relative;z-index:1}
 .rtb-stars-fill svg{fill:#FBBC04!important}
 .rv-stars-fill svg{fill:#FBBC04!important}
 .rv-card{border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 4px 14px rgba(0,0,0,.06)}
+
+/* fix5 contact: family faces above sticky callbar */
+@media(max-width:900px){
+  .leadwrap{padding-bottom:160px}
+  .leadwrap .shot{margin-bottom:24px}
+  .leadwrap .shot img{object-position:center top;aspect-ratio:4/5;max-height:min(62vh,480px);width:100%}
+}
