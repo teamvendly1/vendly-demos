@@ -348,6 +348,18 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .reveal,.reveal-d1,.reveal-d2,.reveal-d3{opacity:1;transform:none;transition:none}
 .hero .eyebrow,.hero .lede,.hero .cta{animation:none}
 }
+/* CTA-BELOW-GAP FIX 2026-08-12: first section after urgency strip must paint on fold.
+   Root cause of ~180px empty white: .reveal{opacity:0} + IO rootMargin -8% so explore
+   sat invisible between strip and sticky. Not sticky clearance, not hero pad. */
+.strip + .reveal,.strip + .reveal.in{opacity:1;transform:none}
+@media(max-width:900px){
+  .strip + section.reveal{
+    padding-top:22px;
+    padding-bottom:32px;
+  }
+  .strip + section.reveal .center{margin-bottom:14px}
+  .strip + section.reveal .svc{margin-top:14px!important}
+}
 
 /* ref-learn 0037: source line under a counter, so every number on the page
    carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */

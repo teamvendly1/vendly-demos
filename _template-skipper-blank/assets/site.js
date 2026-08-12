@@ -42,9 +42,11 @@
       });
       return;
     }
+    /* CTA-BELOW-GAP: explore after strip is on-fold; never wait on IO (sticky -8% hid it). */
+    document.querySelectorAll('.strip + .reveal').forEach(function(el){el.classList.add('in');});
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-    },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+    },{threshold:0.08,rootMargin:'0px 0px -72px 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 
     /* Jacob phone audit 2026-08-02 (em2154): counters did not count up on
