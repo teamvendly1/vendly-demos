@@ -1,9 +1,181 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-12T13:25:55.382Z",
+  "at": "2026-08-12T19:42:41.119Z",
+  "trade": "landscaping",
+  "slotHints": {
+    "photo-service-1.jpg": "Irrigation",
+    "photo-service-2.jpg": "Grading and sloping",
+    "photo-service-3.jpg": "Drainage",
+    "photo-service-4.jpg": "Garden installations and hardscaping",
+    "photo-service-5.jpg": "Land clearing",
+    "photo-service-6.jpg": "Tree removal"
+  },
   "ok": true,
-  "stock_used": 0,
-  "note": "No stock photography on this demo. Every image is the client's own, harvested from his published gallery.",
-  "distinct": 28,
-  "slots": 28
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "cdc88212a1d8ba9ad9cfb3573c1fbb7c470c09d24da75b58a85ec38b74fc6c29",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-beds.jpg",
+      "sha256": "60178e78a94e84716d85296f5da6b6245d1657339a663270ca54ed0c4cb787f9",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "394180afd045d1bb0ca2460286236132e0914bd92c66f44230a880f50b790266",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "22b89ea75f1af6f01581718f6e2e7a1edd8de65b0561619bd541e8f275620580",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "7bb417570ea33fb8300e226d1702a813b8f50c2656ef0492e14b3422d4b13f95",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "46b7b11537d6349197925f8527aaface2cfaddd49ef2fb5b60e0c775ec5bfb1a",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-clearing.jpg",
+      "sha256": "e7333a9628e5f6f52c97a8e0adfdead0cb05a740b2f58670dfa56306864d4efb",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "9d392ca0c69eaf01d738c53d9247eaf9dac64455de0b91cf0709bff7f2cacd64",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-crew.jpg",
+      "sha256": "b32b84c52b6722b8095101aa50d4e03189d293a0064ed3f6b0afa6906d1e6356",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "53d3c85a573b447558a559df30e0e37c48c1991ddc033b65827beb176264b2f4",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-drainage.jpg",
+      "sha256": "f0e7f5847eac09a085423f987fd6e9789a9b1176ce7eab0eb9e84aab90f77ed8",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-grading2.jpg",
+      "sha256": "e3288801360a73baf5ee7a4b0ff1179385d2ed67433b95f60976bf3914c99073",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-gravel-drive.jpg",
+      "sha256": "f6247f302ee59a387b0f149d9ca6f7885bb0cf692a6df13082a3958c764c126d",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "c94f4a113df87121be36d7af129d46022da7ddfd9b8446bbf4440e9104b8c1bd",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-house-drive.jpg",
+      "sha256": "7b9d5edfec753186355ee95ceb49f414a1770085c5349e93d54c8a6db117f43b",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-hydrangea.jpg",
+      "sha256": "747189593009898f03f3fe32abecfe1994cb04b4738d74d460c9251b1511e16c",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-lawn-pines.jpg",
+      "sha256": "b1db7ad5ad0ce12fe7a68fb116ae21eb1038be8e00f4a6a0b28180c311ffb857",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-lawn-wide.jpg",
+      "sha256": "ae0b26b272ba3e9eae21973246011e1358530910af4f562e7ecf07951e603069",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-owner.jpg",
+      "sha256": "4066e9736de252c1bc96a37d0b4d2a7f740e02e970468f24ff8bbf6d5e127a87",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-palm-house.jpg",
+      "sha256": "6c0aef7f8ce9fe73a0ced6b0c790ae63893bf046ef79881865d71bece796a79c",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-palms.jpg",
+      "sha256": "b83f2bdbb77ad1a6c6f7d2518ebfb632c425b887eb204529fb2437e51c9de06b",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "ec4cda21bdc32f2efc27751067ff8f62b4693f31231e9b0f81fde6f2dfde3d54",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-pond.jpg",
+      "sha256": "52da28951f7629211d1e17ac265d8d5bedbc4e98bb516d68a072d6b07233e7fc",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "6bf21b0b8b89302cc61482a9ed40501a4f71b8b6aea0492f0d6c23d9d926b78c",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "a9f4e252dcf997c19c59c3f25562b3c22d6c9c58edb31616e69ef97034cc0e2f",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "7c01d2bc9eff1c1deab0805fd2159be06e5d6737669672073fb6bfb5257a3ea0",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "307e2adc7f4c9c375dc24d5b6df9ce18047b7b24e380043d8165085223d4a392",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "ba26225964a488a650c8883b4f89ce09849439e5ca82e7ba3434bd446b892321",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "20a572e6301e773d4cceaf469606e513762ad2e3bbcadfa9b47f5981278dc1c8",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "029be8a831e19e16e5dc271e75fd95788b8ba1026370b63d75e831b4b5b9f0b0",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-sod-crew.jpg",
+      "sha256": "dd089834861f226f6756dc2dcdae7d133fa05e2e6e71a790f3e3ad5774be1e4b",
+      "source": "harvest_or_prior"
+    },
+    {
+      "file": "photo-sod-fence.jpg",
+      "sha256": "9e06c929f6862ec1e5b9f0c7cdd15dd3508639d4ec3fc72f814893cdf9693591",
+      "source": "harvest_or_prior"
+    }
+  ],
+  "filled": [],
+  "gaps": [],
+  "distinct": 32,
+  "slots": 32,
+  "stock_provenance_rows": 0
 }
