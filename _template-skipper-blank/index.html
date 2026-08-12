@@ -84,7 +84,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <main id="main">
 
 <section class="hero" aria-labelledby="h-hero">
-  <img class="bg" src="assets/photo-hero.jpg?v={{ASSET_VER}}" alt="{{ALT_HERO}}" loading="eager">
+  {{HERO_BG_HTML}}
   <div class="wrap hero-inner">
     <span class="eyebrow">{{EYEBROW}}</span>
     <h1 id="h-hero">{{H1_LEAD}} <em>{{H1_EMPH}}</em></h1>
@@ -153,6 +153,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <h2 id="h-ba">{{BA_H2}}</h2>
       <p class="lede">{{BA_LEDE}}</p>
     </div>
+    <!-- #ba-sod CONTRACT: beforeafter.js target must stay "#ba-sod"; empty mount is CSS-hidden -->
     <div id="ba-sod" style="max-width:900px;margin:30px auto 0"></div>
 <noscript id="ba-sod-fallback"><div class="ba" style="max-width:900px;margin:30px auto 0"><img src="assets/photo-ba-before.jpg?v={{ASSET_VER}}" alt="{{ALT_BA_BEFORE}}"><img src="assets/photo-ba-after.jpg?v={{ASSET_VER}}" alt="{{ALT_BA_AFTER}}"></div></noscript>
   </div>
@@ -315,6 +316,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   };
 </script>
 <script src="assets/beforeafter.js?v={{ASSET_VER}}" defer></script>
+<script src="assets/hero-rotator.js?v={{ASSET_VER}}" defer></script>
 <script src="assets/site.js?v={{ASSET_VER}}" defer></script>
 <script id="v-lb-js">
 (function(){

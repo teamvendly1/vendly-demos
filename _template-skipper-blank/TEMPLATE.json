@@ -8,6 +8,17 @@
   "built_at": "2026-08-12",
   "built_by": "claude-skipper-blank",
   "send": "NO",
+  "jared_layout_law": "C:/VendlyVault/_tmp/JARED-DEMO-LAYOUT-LAW-FOREVER.txt",
+  "jared_layout_rules": [
+    "Fold does the whole job at 375px",
+    "H1 = problem then promise; never business name or category",
+    "Hero review badge under CTA above fold ONLY when rating+count both harvested; gold #FBBC04; no invent; panel 3 != count",
+    "One action repeated; button words match the action",
+    "Photos prove not decorate; six good beats sixty; keep real before/after; cut atmosphere",
+    "CLEAN ROOM vs competitor sites: structure notes only, never their copy/images/wording",
+    "Plain first person; short then stop; cut unfilled sections whole",
+    "Rotator if any: same H1+CTA, different job photo only; prefers-reduced-motion; never delay CTA tap"
+  ],
   "pages": [
     "index.html",
     "about.html",
@@ -25,121 +36,380 @@
   },
   "tokens": {
     "identity": {
-      "BUSINESS_NAME": { "from": "facts.business_name", "missing": "REFUSE - required" },
-      "SLUG": { "from": "facts.slug", "missing": "REFUSE - required" },
-      "TENANT_ID": { "from": "facts.tenant_id", "missing": "derived as demo-<slug>" },
-      "PHONE": { "from": "facts.phone", "missing": "REFUSE - required. Display form, e.g. (336) 555-0142" },
-      "TEL": { "from": "facts.tel", "missing": "REFUSE - required. E.164, e.g. +13365550142" },
-      "SITE_HOST": { "from": "facts.site_host", "missing": "empty string; review attribution line drops with it" },
-      "CITY": { "from": "facts.city", "missing": "empty string" },
-      "OWNER_FIRST": { "from": "facts.owner_first", "missing": "empty string - never guessed from a page byline" },
-      "TRADE_LABEL": { "from": "facts.trade_label", "missing": "empty corner chip" },
-      "YEAR": { "from": "system clock", "missing": "n/a" },
-      "ASSET_VER": { "from": "facts.asset_version", "missing": "derived vYYYYMMDD" },
-      "BUILD_STAMP": { "from": "generator", "missing": "n/a" }
+      "BUSINESS_NAME": {
+        "from": "facts.business_name",
+        "missing": "REFUSE - required"
+      },
+      "SLUG": {
+        "from": "facts.slug",
+        "missing": "REFUSE - required"
+      },
+      "TENANT_ID": {
+        "from": "facts.tenant_id",
+        "missing": "derived as demo-<slug>"
+      },
+      "PHONE": {
+        "from": "facts.phone",
+        "missing": "REFUSE - required. Display form, e.g. (336) 555-0142"
+      },
+      "TEL": {
+        "from": "facts.tel",
+        "missing": "REFUSE - required. E.164, e.g. +13365550142"
+      },
+      "SITE_HOST": {
+        "from": "facts.site_host",
+        "missing": "empty string; review attribution line drops with it"
+      },
+      "CITY": {
+        "from": "facts.city",
+        "missing": "empty string"
+      },
+      "OWNER_FIRST": {
+        "from": "facts.owner_first",
+        "missing": "empty string - never guessed from a page byline"
+      },
+      "TRADE_LABEL": {
+        "from": "facts.trade_label",
+        "missing": "empty corner chip"
+      },
+      "YEAR": {
+        "from": "system clock",
+        "missing": "n/a"
+      },
+      "ASSET_VER": {
+        "from": "facts.asset_version",
+        "missing": "derived vYYYYMMDD"
+      },
+      "BUILD_STAMP": {
+        "from": "generator",
+        "missing": "n/a"
+      }
     },
     "head": {
-      "PAGE_TITLE": { "from": "business_name + facts.title_suffix", "missing": "name alone" },
-      "META_DESC": { "from": "facts.meta_description", "missing": "empty - never auto-written from service names" },
-      "JSONLD": { "from": "facts.schema_type + name + tel + site_host + service_areas + city", "missing": "emits only the fields present; LocalBusiness is the default type" }
+      "PAGE_TITLE": {
+        "from": "business_name + facts.title_suffix",
+        "missing": "name alone"
+      },
+      "META_DESC": {
+        "from": "facts.meta_description",
+        "missing": "empty - never auto-written from service names"
+      },
+      "JSONLD": {
+        "from": "facts.schema_type + name + tel + site_host + service_areas + city",
+        "missing": "emits only the fields present; LocalBusiness is the default type"
+      }
     },
     "hero": {
-      "EYEBROW": { "from": "facts.eyebrow", "missing": "empty" },
-      "H1_LEAD": { "from": "facts.h1_lead", "missing": "empty" },
-      "H1_EMPH": { "from": "facts.h1_emph", "missing": "empty - the em is the coloured half of the H1" },
-      "HERO_LEDE": { "from": "facts.hero_lede", "missing": "empty" },
-      "ALT_HERO": { "from": "facts.alts.hero", "missing": "falls back to '<name> work photo'" },
-      "HERO_BADGE_BLOCK": { "from": "facts.rating {value,count,source,url,source_is_google}", "missing": "RENDERS NOTHING. No rating, no badge, no empty wrapper. Requires value>0 AND count>0 AND source." },
-      "TRUST_CHIPS_HTML": { "from": "free_estimates, hours_short, area_short, owner_operated, claims.licensed_insured.source_url, years_in_business", "missing": "whole chip row removed. 'Licensed and insured' renders ONLY with a source_url." }
+      "EYEBROW": {
+        "from": "facts.eyebrow",
+        "missing": "empty"
+      },
+      "H1_LEAD": {
+        "from": "facts.h1_lead",
+        "missing": "empty"
+      },
+      "H1_EMPH": {
+        "from": "facts.h1_emph",
+        "missing": "empty - the em is the coloured half of the H1"
+      },
+      "HERO_LEDE": {
+        "from": "facts.hero_lede",
+        "missing": "empty"
+      },
+      "ALT_HERO": {
+        "from": "facts.alts.hero",
+        "missing": "falls back to '<name> work photo'"
+      },
+      "HERO_BADGE_BLOCK": {
+        "from": "facts.rating OR facts.ratings[] {value,count,source,url,source_is_google|source_is_facebook}",
+        "missing": "RENDERS NOTHING. Requires value>0 AND count>0 AND source. No invent. No default 4.9. Both sources if both held; ties prefer Google."
+      },
+      "TRUST_CHIPS_HTML": {
+        "from": "free_estimates, hours_short, area_short, owner_operated, claims.licensed_insured.source_url, years_in_business",
+        "missing": "whole chip row removed. 'Licensed and insured' renders ONLY with a source_url."
+      },
+      "HERO_BG_HTML": {
+        "from": "auto-pick from outDir photo-hero + gallery/service slots (3-5) OR static photo-hero",
+        "missing": "static <img class=bg photo-hero.jpg>; if <3 qualify -> STATIC"
+      }
     },
     "strip": {
-      "STRIP_LEAD": { "from": "facts.strip_lead", "missing": "section cut if strip_body also absent" },
-      "STRIP_BODY": { "from": "facts.strip_body", "missing": "section cut if strip_lead also absent" }
+      "STRIP_LEAD": {
+        "from": "facts.strip_lead",
+        "missing": "section cut if strip_body also absent"
+      },
+      "STRIP_BODY": {
+        "from": "facts.strip_body",
+        "missing": "section cut if strip_lead also absent"
+      }
     },
     "explore_deck": {
-      "EXPLORE_KICKER": { "from": "'Explore ' + business_name", "missing": "n/a" },
-      "EXPLORE_H2": { "from": "facts.explore_h2", "missing": "default 'Everything you need before you call'" },
-      "EXPLORE_LEDE": { "from": "facts.explore_lede", "missing": "empty" },
-      "ABOUT_CARD": { "from": "facts.card_about", "missing": "empty paragraph" },
-      "SERVICES_CARD": { "from": "facts.card_services", "missing": "empty paragraph" },
-      "REVIEWS_CARD": { "from": "facts.card_reviews", "missing": "empty paragraph" },
-      "PHOTOS_CARD": { "from": "facts.card_photos", "missing": "empty paragraph" },
-      "ALT_CARD_ABOUT": { "from": "facts.alts.card_about", "missing": "empty alt" },
-      "ALT_CARD_SERVICES": { "from": "facts.alts.card_services", "missing": "empty alt" },
-      "ALT_CARD_REVIEWS": { "from": "facts.alts.card_reviews", "missing": "empty alt" },
-      "ALT_CARD_PHOTOS": { "from": "facts.alts.card_photos", "missing": "empty alt" }
+      "EXPLORE_KICKER": {
+        "from": "'Explore ' + business_name",
+        "missing": "n/a"
+      },
+      "EXPLORE_H2": {
+        "from": "facts.explore_h2",
+        "missing": "default 'Everything you need before you call'"
+      },
+      "EXPLORE_LEDE": {
+        "from": "facts.explore_lede",
+        "missing": "empty"
+      },
+      "ABOUT_CARD": {
+        "from": "facts.card_about",
+        "missing": "empty paragraph"
+      },
+      "SERVICES_CARD": {
+        "from": "facts.card_services",
+        "missing": "empty paragraph"
+      },
+      "REVIEWS_CARD": {
+        "from": "facts.card_reviews",
+        "missing": "empty paragraph"
+      },
+      "PHOTOS_CARD": {
+        "from": "facts.card_photos",
+        "missing": "empty paragraph"
+      },
+      "ALT_CARD_ABOUT": {
+        "from": "facts.alts.card_about",
+        "missing": "empty alt"
+      },
+      "ALT_CARD_SERVICES": {
+        "from": "facts.alts.card_services",
+        "missing": "empty alt"
+      },
+      "ALT_CARD_REVIEWS": {
+        "from": "facts.alts.card_reviews",
+        "missing": "empty alt"
+      },
+      "ALT_CARD_PHOTOS": {
+        "from": "facts.alts.card_photos",
+        "missing": "empty alt"
+      }
     },
     "before_after": {
-      "BA_KICKER": { "from": "fixed", "missing": "n/a" },
-      "BA_H2": { "from": "fixed", "missing": "n/a" },
-      "BA_LEDE": { "from": "facts.before_after.lede", "missing": "empty" },
-      "BA_CAPTION": { "from": "facts.before_after.caption", "missing": "empty" },
-      "ALT_BA_BEFORE": { "from": "facts.before_after.before_alt", "missing": "empty alt" },
-      "ALT_BA_AFTER": { "from": "facts.before_after.after_alt", "missing": "empty alt" }
+      "BA_KICKER": {
+        "from": "fixed",
+        "missing": "n/a"
+      },
+      "BA_H2": {
+        "from": "fixed",
+        "missing": "n/a"
+      },
+      "BA_LEDE": {
+        "from": "facts.before_after.lede",
+        "missing": "empty"
+      },
+      "BA_CAPTION": {
+        "from": "facts.before_after.caption",
+        "missing": "empty"
+      },
+      "ALT_BA_BEFORE": {
+        "from": "facts.before_after.before_alt",
+        "missing": "empty alt"
+      },
+      "ALT_BA_AFTER": {
+        "from": "facts.before_after.after_alt",
+        "missing": "empty alt"
+      }
     },
     "coverage": {
-      "COVERAGE_H2": { "from": "facts.coverage_h2", "missing": "empty" },
-      "HOURS_LINE": { "from": "facts.hours_line", "missing": "empty" },
-      "AREAS_HTML": { "from": "facts.service_areas[]", "missing": "SECTION CUT on index and about" },
-      "COVERAGE_BTN": { "from": "fixed", "missing": "n/a" }
+      "COVERAGE_H2": {
+        "from": "facts.coverage_h2",
+        "missing": "empty"
+      },
+      "HOURS_LINE": {
+        "from": "facts.hours_line",
+        "missing": "empty"
+      },
+      "AREAS_HTML": {
+        "from": "facts.service_areas[]",
+        "missing": "SECTION CUT on index and about"
+      },
+      "COVERAGE_BTN": {
+        "from": "fixed",
+        "missing": "n/a"
+      }
     },
     "cta_band": {
-      "CTA_H2": { "from": "facts.cta_h2", "missing": "empty" },
-      "CTA_BODY": { "from": "facts.cta_body", "missing": "empty" },
-      "ALT_CTABAND": { "from": "facts.alts.ctaband", "missing": "empty alt" }
+      "CTA_H2": {
+        "from": "facts.cta_h2",
+        "missing": "empty"
+      },
+      "CTA_BODY": {
+        "from": "facts.cta_body",
+        "missing": "empty"
+      },
+      "ALT_CTABAND": {
+        "from": "facts.alts.ctaband",
+        "missing": "empty alt"
+      }
     },
     "quote_form": {
-      "QUOTE_H2": { "from": "facts.quote_h2", "missing": "default 'Tell us what you need'" },
-      "QUOTE_LEDE": { "from": "facts.quote_lede", "missing": "empty" },
-      "FORM_MSG_LABEL": { "from": "facts.form_msg_label", "missing": "default 'What do you need'" },
-      "FORM_PLACEHOLDER": { "from": "facts.form_placeholder", "missing": "empty placeholder" },
-      "SERVICE_OPTIONS_HTML": { "from": "facts.services[].title", "missing": "always emits 'Not sure, call and ask'" },
-      "FORM_NOTE": { "from": "generated from business_name", "missing": "n/a" },
-      "FORM_ALERT": { "from": "generated from business_name", "missing": "n/a" }
+      "QUOTE_H2": {
+        "from": "facts.quote_h2",
+        "missing": "default 'Tell us what you need'"
+      },
+      "QUOTE_LEDE": {
+        "from": "facts.quote_lede",
+        "missing": "empty"
+      },
+      "FORM_MSG_LABEL": {
+        "from": "facts.form_msg_label",
+        "missing": "default 'What do you need'"
+      },
+      "FORM_PLACEHOLDER": {
+        "from": "facts.form_placeholder",
+        "missing": "empty placeholder"
+      },
+      "SERVICE_OPTIONS_HTML": {
+        "from": "facts.services[].title",
+        "missing": "always emits 'Not sure, call and ask'"
+      },
+      "FORM_NOTE": {
+        "from": "generated from business_name",
+        "missing": "n/a"
+      },
+      "FORM_ALERT": {
+        "from": "generated from business_name",
+        "missing": "n/a"
+      }
     },
     "footer": {
-      "FOOTER_BLURB": { "from": "facts.footer_blurb", "missing": "empty" },
-      "FOOTER_SERVICES_HTML": { "from": "first 4 of facts.services[].title", "missing": "the whole Services column is removed" }
+      "FOOTER_BLURB": {
+        "from": "facts.footer_blurb",
+        "missing": "empty"
+      },
+      "FOOTER_SERVICES_HTML": {
+        "from": "first 4 of facts.services[].title",
+        "missing": "the whole Services column is removed"
+      }
     },
     "concierge": {
-      "CONCIERGE_GREETING": { "from": "facts.concierge_greeting", "missing": "empty string; widget uses its own default" },
-      "CONCIERGE_NUDGE": { "from": "facts.concierge_nudge", "missing": "empty string" },
-      "CONCIERGE_SUGGESTIONS_JSON": { "from": "facts.concierge_suggestions[]", "missing": "empty array" }
+      "CONCIERGE_GREETING": {
+        "from": "facts.concierge_greeting",
+        "missing": "empty string; widget uses its own default"
+      },
+      "CONCIERGE_NUDGE": {
+        "from": "facts.concierge_nudge",
+        "missing": "empty string"
+      },
+      "CONCIERGE_SUGGESTIONS_JSON": {
+        "from": "facts.concierge_suggestions[]",
+        "missing": "empty array"
+      }
     },
     "about_page": {
-      "ABOUT_KICKER": { "from": "fixed", "missing": "n/a" },
-      "ABOUT_H2": { "from": "facts.about_h2", "missing": "empty" },
-      "ABOUT_P1": { "from": "facts.about_p1", "missing": "empty" },
-      "ABOUT_P2": { "from": "facts.about_p2", "missing": "empty" },
-      "ABOUT_BADGES_HTML": { "from": "facts.area_region and facts.services[0].title", "missing": "badge row removed" },
-      "ALT_ABOUT": { "from": "facts.alts.about", "missing": "empty alt" },
-      "AREA_KICKER": { "from": "fixed", "missing": "n/a" },
-      "AREA_H2": { "from": "facts.area_h2", "missing": "empty" },
-      "AREA_LEDE": { "from": "facts.area_lede", "missing": "empty" }
+      "ABOUT_KICKER": {
+        "from": "fixed",
+        "missing": "n/a"
+      },
+      "ABOUT_H2": {
+        "from": "facts.about_h2",
+        "missing": "empty"
+      },
+      "ABOUT_P1": {
+        "from": "facts.about_p1",
+        "missing": "empty"
+      },
+      "ABOUT_P2": {
+        "from": "facts.about_p2",
+        "missing": "empty"
+      },
+      "ABOUT_BADGES_HTML": {
+        "from": "facts.area_region and facts.services[0].title",
+        "missing": "badge row removed"
+      },
+      "ALT_ABOUT": {
+        "from": "facts.alts.about",
+        "missing": "empty alt"
+      },
+      "AREA_KICKER": {
+        "from": "fixed",
+        "missing": "n/a"
+      },
+      "AREA_H2": {
+        "from": "facts.area_h2",
+        "missing": "empty"
+      },
+      "AREA_LEDE": {
+        "from": "facts.area_lede",
+        "missing": "empty"
+      }
     },
     "services_page": {
-      "SVC_HERO_H1": { "from": "facts.svc_hero_h1", "missing": "empty" },
-      "SVC_HERO_LEDE": { "from": "facts.svc_hero_lede", "missing": "empty" },
-      "ALT_SVC_HERO": { "from": "facts.alts.services_hero", "missing": "empty alt" },
-      "SVC_LIST_H2": { "from": "facts.svc_list_h2", "missing": "empty" },
-      "SERVICES_CARDS_HTML": { "from": "facts.services[] {title,body,slot,alt}", "missing": "GENERATION REFUSES - a services page with no services is not a demo. A card with no slot renders text only, never a borrowed photo." }
+      "SVC_HERO_H1": {
+        "from": "facts.svc_hero_h1",
+        "missing": "empty"
+      },
+      "SVC_HERO_LEDE": {
+        "from": "facts.svc_hero_lede",
+        "missing": "empty"
+      },
+      "ALT_SVC_HERO": {
+        "from": "facts.alts.services_hero",
+        "missing": "empty alt"
+      },
+      "SVC_LIST_H2": {
+        "from": "facts.svc_list_h2",
+        "missing": "empty"
+      },
+      "SERVICES_CARDS_HTML": {
+        "from": "facts.services[] {title,body,slot,alt}",
+        "missing": "GENERATION REFUSES - a services page with no services is not a demo. A card with no slot renders text only, never a borrowed photo."
+      }
     },
     "photos_page": {
-      "PHOTOS_H2": { "from": "facts.photos_h2", "missing": "empty" },
-      "PHOTOS_LEDE": { "from": "facts.photos_lede", "missing": "empty" },
-      "GALLERY_HTML": { "from": "facts.gallery[] {slot,alt}", "missing": "PAGE NOT WRITTEN; nav link removed. Every image is wrapped as a lightbox button." },
-      "PHOTOS_CTA_H2": { "from": "facts.photos_cta_h2", "missing": "empty" }
+      "PHOTOS_H2": {
+        "from": "facts.photos_h2",
+        "missing": "empty"
+      },
+      "PHOTOS_LEDE": {
+        "from": "facts.photos_lede",
+        "missing": "empty"
+      },
+      "GALLERY_HTML": {
+        "from": "facts.gallery[] {slot,alt}",
+        "missing": "PAGE NOT WRITTEN; nav link removed. Every image is wrapped as a lightbox button."
+      },
+      "PHOTOS_CTA_H2": {
+        "from": "facts.photos_cta_h2",
+        "missing": "empty"
+      }
     },
     "reviews_page": {
-      "REVIEWS_H2": { "from": "facts.reviews_h2", "missing": "empty" },
-      "REVIEWS_LEDE": { "from": "facts.reviews_lede", "missing": "empty" },
-      "REVIEWS_HONESTY": { "from": "facts.reviews_honesty", "missing": "empty - the attribution line, never invented" },
-      "REVIEWS_CARDS_HTML": { "from": "facts.reviews[] {name,text,source}", "missing": "PAGE NOT WRITTEN; nav link removed" }
+      "REVIEWS_H2": {
+        "from": "facts.reviews_h2",
+        "missing": "empty"
+      },
+      "REVIEWS_LEDE": {
+        "from": "facts.reviews_lede",
+        "missing": "empty"
+      },
+      "REVIEWS_HONESTY": {
+        "from": "facts.reviews_honesty",
+        "missing": "empty - the attribution line, never invented"
+      },
+      "REVIEWS_CARDS_HTML": {
+        "from": "facts.reviews[] {name,text,source}",
+        "missing": "PAGE NOT WRITTEN; nav link removed"
+      }
     },
     "contact_page": {
-      "CONTACT_H2": { "from": "facts.contact_h2", "missing": "empty" },
-      "CONTACT_LEDE": { "from": "facts.contact_lede", "missing": "empty" },
-      "ALT_CONTACT": { "from": "facts.alts.contact", "missing": "empty alt" }
+      "CONTACT_H2": {
+        "from": "facts.contact_h2",
+        "missing": "empty"
+      },
+      "CONTACT_LEDE": {
+        "from": "facts.contact_lede",
+        "missing": "empty"
+      },
+      "ALT_CONTACT": {
+        "from": "facts.alts.contact",
+        "missing": "empty alt"
+      }
     },
     "palette": {
       "_note": "The filler supplies ONE colour, facts.brand_color. Every token below is derived from it by lightness, so hue and saturation stay the business's own and no human hand-picks sixteen hexes. Contrast is enforced with _remote/allowed/autodemo/lib/contrast.js and repaired by moving lightness only.",
@@ -205,5 +475,13 @@
     "an unfilled {{TOKEN}} anywhere in the output",
     "internal voice: harvested, we do not invent, stock photo, generated by, our generator",
     "a services page with no services"
-  ]
+  ],
+  "rotator": {
+    "max_slides": 5,
+    "min_slides": 3,
+    "interval_ms": 6000,
+    "same_copy": true,
+    "prefers_reduced_motion": "static first image",
+    "cta_immediate": true
+  }
 }
