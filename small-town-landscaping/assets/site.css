@@ -1,18 +1,18 @@
 html{scroll-padding-bottom:140px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-  --blue:#2B6E38;
-  --blue-dk:#1C4524;
-  --blue-lt:#3D994F;
-  --red:#2B6E38;
+  --blue:#507326;
+  --blue-dk:#334918;
+  --blue-lt:#70A135;
+  --red:#507326;
   --paper:#FFFFFF;
-  --mist:#F2FAF4;
+  --mist:#F7FBF2;
   --ink:#101724;
   --muted:#54637A;
-  --line:#CCEBD2;
+  --line:#DDEDC9;
   --radius:16px;
-  --shadow:0 12px 30px -16px rgba(28,69,36,.32);
-  --shadow-lg:0 30px 60px -28px rgba(28,69,36,.45);
+  --shadow:0 12px 30px -16px rgba(51,73,24,.32);
+  --shadow-lg:0 30px 60px -28px rgba(51,73,24,.45);
   --wrap:1120px;
 }
 *{box-sizing:border-box}
@@ -36,7 +36,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 /* phone-first strip (Hydro steal: number alone above chrome) */
 .phone-strip{background:var(--blue-dk);color:#fff;text-align:center;font:700 16px/1 Inter,sans-serif}
 .phone-strip a{display:block;padding:12px 16px;color:#fff;text-decoration:none;letter-spacing:.02em}
-.phone-strip a:hover{background:#14331A}
+.phone-strip a:hover{background:#253612}
 @media(min-width:900px){.phone-strip a{padding:11px 16px;font-size:15px}}
 /* real logo mark, cropped from the logo Luke sent over SMS */
 /* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
@@ -51,10 +51,10 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(43,110,56,.7)}
-.btn-red:hover{background:#14331A}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(43,110,56,.7)}
-.btn-blue:hover{background:#1E4D27}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(80,115,38,.7)}
+.btn-red:hover{background:#253612}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(80,115,38,.7)}
+.btn-blue:hover{background:#38511A}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
 .btn-ghost:hover{border-color:var(--blue)}
 
@@ -63,15 +63,15 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.96}
 /* Text-panel scrim only (2026-08-12 final): keep skid-steer visible on the right. */
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(33,84,43,.92) 0%,rgba(33,84,43,.82) 28%,rgba(33,84,43,.55) 42%,rgba(33,84,43,.18) 58%,rgba(33,84,43,0) 72%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(62,88,29,.92) 0%,rgba(62,88,29,.82) 28%,rgba(62,88,29,.55) 42%,rgba(62,88,29,.18) 58%,rgba(62,88,29,0) 72%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C5E8CB;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#D8EBC2;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:16ch;color:#fff}
-.hero h1 em{font-style:normal;color:#C5E8CB}
-.lede{font-size:19px;color:#D3EED8;max-width:56ch;margin:0 0 28px}
+.hero h1 em{font-style:normal;color:#D8EBC2}
+.lede{font-size:19px;color:#E2F0D1;max-width:56ch;margin:0 0 28px}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:34px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
-.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#DAF1DF;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.19);padding:10px 14px;border-radius:999px}
+.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#E7F2D9;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.19);padding:10px 14px;border-radius:999px}
 .tchip svg{flex:0 0 auto}
 
 /* urgency strip */
@@ -89,7 +89,7 @@ section.mist{background:var(--mist)}
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#C6D8EE}
-.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(43,110,56,.8)}
+.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(80,115,38,.8)}
 .icn svg{stroke:#fff}
 /* Explore cards use real photographs, never person/asterisk/camera glyphs. */
 .card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
@@ -137,9 +137,9 @@ section.mist{background:var(--mist)}
 .hrow:last-child{border-bottom:0}
 .hrow b{color:var(--blue-dk)}
 .hrow span{color:var(--muted)}
-.afterhours{background:var(--blue-dk);color:#DAF1DF;border-radius:var(--radius);padding:29px 26px}
+.afterhours{background:var(--blue-dk);color:#E7F2D9;border-radius:var(--radius);padding:29px 26px}
 .afterhours h3{color:#fff}
-.afterhours p{margin:0 0 20px;font-size:15.5px;color:#B6E2BF}
+.afterhours p{margin:0 0 20px;font-size:15.5px;color:#CFE6B2}
 
 /* area */
 .areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
@@ -164,14 +164,14 @@ textarea{min-height:112px;resize:vertical}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
 
-footer{background:var(--blue-dk);color:#B6E2BF;padding:56px 0 30px;font-size:15px}
+footer{background:var(--blue-dk);color:#CFE6B2;padding:56px 0 30px;font-size:15px}
 footer a{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8FB4E4;margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
 footer li a{display:inline-block;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#6DC57E}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#9ECD65}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -208,16 +208,16 @@ footer li a{display:inline-block;padding:4px 0}
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
 }
-.mobile-callbar .mcb-est{background:#14331A}
+.mobile-callbar .mcb-est{background:#253612}
 .mobile-callbar .mcb-call{background:var(--red)}
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#1C4524;color:#DAF1DF;
+  background:#334918;color:#E7F2D9;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
-.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#21542B;color:#fff;outline:none}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#3E581D;color:#fff;outline:none}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
@@ -329,11 +329,11 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 /* Compact CTA band — kill the ~450px near-black empty slab under the buttons. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
 .ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(28,69,36,.72) 0%,rgba(28,69,36,.58) 100%)}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(51,73,24,.72) 0%,rgba(51,73,24,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#D3EED8;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#6DC57E;margin-top:14px;margin-bottom:0}
+.ctaband p{color:#E2F0D1;max-width:54ch;margin:0 auto 18px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#9ECD65;margin-top:14px;margin-bottom:0}
 /* Inner-page photo lead (services / reviews) — real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -384,34 +384,41 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-header.site{background:#1C4524!important;border-bottom-color:rgba(255,255,255,.12)}
+header.site{background:#334918!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .logo,header.site .logo-chip{background:transparent;box-shadow:none;padding:0;border-radius:0}
 header.site .bizmeta .btn,header.site .bizmeta a.btn{color:#fff}
-header.site .navtoggle{background:#fff!important;color:#1C4524!important;border-color:rgba(255,255,255,.45)}
-header.site .navtoggle svg{stroke:#1C4524!important}
-header.site .navtoggle .navtoggle-text{color:#1C4524!important}
-.hero h1 em{color:#C5E8CB!important}
-.btn-red:hover{background:#14331A}
-.btn-blue:hover{background:#1E4D27}
+header.site .navtoggle{background:#fff!important;color:#334918!important;border-color:rgba(255,255,255,.45)}
+header.site .navtoggle svg{stroke:#334918!important}
+header.site .navtoggle .navtoggle-text{color:#334918!important}
+.hero h1 em{color:#D8EBC2!important}
+.btn-red:hover{background:#253612}
+.btn-blue:hover{background:#38511A}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-header.site .navtoggle{background:#FFFFFF !important;color:#0D2111 !important;border:1px solid #D7EFDC !important}
-header.site .navtoggle svg{stroke:#0D2111 !important}
-header.site .navtoggle .navtoggle-text{color:#0D2111 !important;opacity:1 !important}
-header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(13,33,17,.18)}
-header.site .sitemenu a{color:#0D2111 !important;background:#FFFFFF !important;opacity:1 !important}
-header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E5F5E8 !important;color:#1C4524 !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#18230B !important;border:1px solid #E4F1D5 !important}
+header.site .navtoggle svg{stroke:#18230B !important}
+header.site .navtoggle .navtoggle-text{color:#18230B !important;opacity:1 !important}
+header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(24,35,11,.18)}
+header.site .sitemenu a{color:#18230B !important;background:#FFFFFF !important;opacity:1 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#EEF6E4 !important;color:#334918 !important}
 /* Hero text plate — copy only, right side stays open for skid-steer (2026-08-12). */
 .hero-inner{isolation:isolate}
 .hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
 .hero-inner > .trust,.hero-inner > .hero-rtb{position:relative;z-index:3}
 .hero-inner::before{content:"";position:absolute;z-index:2;pointer-events:none;
 left:0;top:12%;bottom:10%;width:min(540px,92%);border-radius:18px;
-background:linear-gradient(90deg,rgba(20,51,26,.78),rgba(20,51,26,.45) 70%,rgba(20,51,26,0));
+background:linear-gradient(90deg,rgba(37,54,18,.78),rgba(37,54,18,.45) 70%,rgba(37,54,18,0));
 filter:blur(0.2px)}
 @media(max-width:700px){.hero-inner::before{width:100%;top:8%;bottom:8%;
-background:rgba(20,51,26,.72)}}
-/* BA mount: never leave a collapsed empty white slab before Coverage. */
+background:rgba(37,54,18,.72)}}
+/*
+  #ba-sod CONTRACT (mold assert — do not rename without updating beforeafter.js target):
+  - Mount id for the before/after slider (`target: "#ba-sod"` in index.html).
+  - When JS mounts a .ba child, keep aspect-ratio so Coverage never jumps under a white slab.
+  - When empty (no BA facts / cutSection removed the block), :empty hides the mount entirely.
+  - Generator cutSection('beforeafter') removes the whole section when facts lack a pair;
+    this CSS is the last line of defense if an empty mount survives a partial fill.
+*/
 #ba-sod{min-height:0}
 #ba-sod:empty{display:none;margin:0!important;min-height:0!important}
 #ba-sod .ba{aspect-ratio:16/10;background:#1a1a16}
@@ -437,7 +444,11 @@ color:#fff;font:600 22px/1 Inter,system-ui,sans-serif;cursor:pointer}
 color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gradient(transparent,rgba(0,0,0,.55))}
 @media(prefers-reduced-motion:reduce){.v-lb-img{transition:none}}
 
-/* mold-harden-20260812 sticky ask */
+/*
+  Sticky Ask vs footer z-order (mold-harden-20260812):
+  .mobile-callbar must paint ABOVE footer so Ask/estimate/CALL stay tappable.
+  footer stays in normal flow at z-index 1; bar is fixed at 120.
+*/
 .mobile-callbar{z-index:120}
 footer{position:relative;z-index:1}
 /* logo plate contrast gate helper class (generator fills colors) */
