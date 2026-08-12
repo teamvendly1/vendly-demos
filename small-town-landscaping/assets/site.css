@@ -72,17 +72,27 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 background:
   linear-gradient(90deg,rgba(62,88,29,.78) 0%,rgba(62,88,29,.62) 34%,rgba(62,88,29,.38) 58%,rgba(62,88,29,.14) 78%,rgba(62,88,29,0) 100%),
   linear-gradient(180deg,rgba(62,88,29,.45) 0%,rgba(62,88,29,.18) 42%,rgba(62,88,29,.42) 100%)}
-.hero-inner{position:relative;z-index:2;padding:clamp(32px,5.5vw,72px) 0 clamp(28px,4vw,52px);background:transparent}
-/* Trust chips clear sticky Ask/estimate/CALL — pad = bar height only, not dead slab. */
+.hero-inner{position:relative;z-index:2;padding:clamp(28px,4.5vw,56px) 0 clamp(18px,3vw,36px);background:transparent}
+/*
+  HERO GAP FIX2 (2026-08-12): prior 104px sticky clearance WAS the ~275px empty driveway slab.
+  Sticky is position:fixed overlay — do NOT pad the hero by bar height. Hero ends at chips + normal pad.
+  fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
+*/
 @media(max-width:900px){
-  .hero-inner{padding-top:18px;padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
-  .hero .eyebrow{margin-bottom:8px}
-  .hero h1{margin:0 0 8px;font-size:clamp(28px,8.2vw,40px);line-height:1.08;max-width:18ch}
-  .hero .lede{margin:0 0 12px;font-size:15.5px;line-height:1.45;max-width:36ch}
-  .hero .cta{margin-bottom:10px;gap:10px}
-  .hero-rtb{margin:4px 0 8px}
-  .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:6px 10px;padding-bottom:2px;margin:0}
-  .hero .tchip{font-size:12.5px;padding:2px 0}
+  .hero-inner{padding-top:14px;padding-bottom:16px}
+  .hero .eyebrow{margin-bottom:6px}
+  .hero h1{margin:0 0 6px;font-size:clamp(26px,7.6vw,38px);line-height:1.06;max-width:18ch}
+  .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
+  .hero .cta{margin-bottom:8px;gap:8px}
+  .hero-rtb{margin:2px 0 6px}
+  .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:5px 10px;padding-bottom:0;margin:0}
+  .hero .tchip{font-size:12px;padding:1px 0}
+}
+/* Contact/about shots: keep faces in frame; sticky must not own the only visible strip. */
+@media(max-width:900px){
+  .leadwrap .shot{margin-bottom:12px}
+  .leadwrap .shot img{object-position:center 18%;aspect-ratio:4/3}
+  .mist.reveal{padding-bottom:24px}
 }
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#D8EBC2;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
 .hero .eyebrow{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
