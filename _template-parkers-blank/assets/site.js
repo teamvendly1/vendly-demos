@@ -1,7 +1,7 @@
 /* RiverTown Cooling shared site behavior: nav toggle, scroll reveal,
    counters, scroll restoration. Extracted from the per-page inline script
    (data-grind-motion 2357, ref-learn 0037) so every page shares one file. */
-(function(){
+(function(){/* demo-motion-20260812 CATTAILS-NOT-GLOBAL PERSONALIZE-PER-BUSINESS */
   try{
     /* Jacob phone audit 2026-08-02 (em2154): opening the demo on a phone
        landed partway down instead of the hero. Two causes stack: browsers
@@ -83,4 +83,29 @@
       else{ cio.observe(el); }
     });
   }catch(e){}
+})();
+
+/* Review carousel chevrons (Google-look 2026-08-12). */
+(function () {
+  function bind(root) {
+    var track = root.querySelector('.rv-track, .rvTrack');
+    if (!track) return;
+    var prev = root.querySelector('[data-rv-prev]');
+    var next = root.querySelector('[data-rv-next]');
+    function step() {
+      var card = track.querySelector('.rv-card, .rvCard');
+      return card ? (card.getBoundingClientRect().width + 14) : 300;
+    }
+    function go(dir) {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+      track.scrollBy({ left: dir * step(), behavior: reduce ? 'auto' : 'smooth' });
+    }
+    if (prev) prev.addEventListener('click', function () { go(-1); });
+    if (next) next.addEventListener('click', function () { go(1); });
+    track.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+      else if (e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+    });
+  }
+  document.querySelectorAll('.rv-carousel, .rvCarousel').forEach(bind);
 })();

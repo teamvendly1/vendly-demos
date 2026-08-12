@@ -1,7 +1,7 @@
 /* RiverTown Cooling shared site behavior: nav toggle, scroll reveal,
    counters, scroll restoration. Extracted from the per-page inline script
    (data-grind-motion 2357, ref-learn 0037) so every page shares one file. */
-(function(){
+(function(){/* demo-motion-20260812 CATTAILS-NOT-GLOBAL PERSONALIZE-PER-BUSINESS */
   try{
     /* Jacob phone audit 2026-08-02 (em2154): opening the demo on a phone
        landed partway down instead of the hero. Two causes stack: browsers
