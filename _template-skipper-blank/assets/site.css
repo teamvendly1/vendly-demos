@@ -534,3 +534,8 @@ footer{position:relative;z-index:1}
 .hero.hero-darken-band::after{background:
   linear-gradient(90deg,rgba({{SCRIM_RGB}},.90) 0%,rgba({{SCRIM_RGB}},.78) 36%,rgba({{SCRIM_RGB}},.48) 58%,rgba({{SCRIM_RGB}},.18) 78%,rgba({{SCRIM_RGB}},0) 100%),
   linear-gradient(180deg,rgba({{SCRIM_RGB}},.58) 0%,rgba({{SCRIM_RGB}},.28) 42%,rgba({{SCRIM_RGB}},.52) 100%)}
+
+/* Contact address maps link (pattern A) — visible focus, full address is the link text */
+a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
+a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
+.contact-map iframe{pointer-events:auto}

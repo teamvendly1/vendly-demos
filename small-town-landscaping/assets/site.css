@@ -1,4 +1,4 @@
-/* NO-CAPTIONS + trade hero nocap1 2026-08-12 */
+/* NO-CAPTIONS mold 2026-08-12 */
 html{scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
@@ -526,13 +526,16 @@ footer{position:relative;z-index:1}
   .leadwrap .shot{margin-bottom:24px}
   .leadwrap .shot img{object-position:center top;aspect-ratio:4/5;max-height:min(62vh,480px);width:100%}
 }
-/* familyfix contact faces: top bias, no 160px slab pad */
-@media(max-width:900px){
-  .leadwrap .shot img{object-position:center 8%;aspect-ratio:4/5}
-}
+
+/* Family / owner contact photo: full frame, NEVER lightbox (Jacob CLEAR 2026-08-12) */
 .shot .family-photo,.shot img.family-photo{cursor:default;pointer-events:none;width:100%;height:auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:#1a1f16}
 .shot.shot-contain{background:#1a1f16}
-
+/* Trade-visible hero that needs a darker type band (not a darker photo) */
 .hero.hero-darken-band::after{background:
-  linear-gradient(90deg,rgba(51,73,24,.90) 0%,rgba(51,73,24,.78) 36%,rgba(51,73,24,.48) 58%,rgba(51,73,24,.18) 78%,rgba(51,73,24,0) 100%),
-  linear-gradient(180deg,rgba(51,73,24,.58) 0%,rgba(51,73,24,.28) 42%,rgba(51,73,24,.52) 100%)}
+  linear-gradient(90deg,rgba(62,88,29,.90) 0%,rgba(62,88,29,.78) 36%,rgba(62,88,29,.48) 58%,rgba(62,88,29,.18) 78%,rgba(62,88,29,0) 100%),
+  linear-gradient(180deg,rgba(62,88,29,.58) 0%,rgba(62,88,29,.28) 42%,rgba(62,88,29,.52) 100%)}
+
+/* Contact address maps link (pattern A) — visible focus, full address is the link text */
+a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
+a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
+.contact-map iframe{pointer-events:auto}
