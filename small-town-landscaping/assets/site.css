@@ -1,19 +1,19 @@
 html{scroll-padding-bottom:140px}
 :root{
-  /* Logo-derived palette from brandmark extractBrandColors 2026-08-11:
-     accent=#0B5993 primary=#041F33 link=#0B5993. Do not invent niche greens. */
-  --blue:#0B5993;
-  --blue-dk:#041F33;
-  --blue-lt:#3A8BC4;
-  --red:#0B5993;
+  /* Skipper Small Town Landscaping — blank Rivertown mold + his greens.
+     primary=#1B4423 accent=#2F6B3A onDark=#D4E8C0. */
+  --blue:#2F6B3A;
+  --blue-dk:#1B4423;
+  --blue-lt:#4A8C55;
+  --red:#2F6B3A;
   --paper:#FFFFFF;
-  --mist:#F1F5F9;
+  --mist:#F2F6F1;
   --ink:#101724;
   --muted:#54637A;
-  --line:#D5E2EE;
+  --line:#D4E0D2;
   --radius:16px;
-  --shadow:0 12px 30px -16px rgba(4,31,51,.32);
-  --shadow-lg:0 30px 60px -28px rgba(4,31,51,.45);
+  --shadow:0 12px 30px -16px rgba(27,68,35,.32);
+  --shadow-lg:0 30px 60px -28px rgba(27,68,35,.45);
   --wrap:1120px;
 }
 *{box-sizing:border-box}
@@ -37,7 +37,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 /* phone-first strip (Hydro steal: number alone above chrome) */
 .phone-strip{background:var(--blue-dk);color:#fff;text-align:center;font:700 16px/1 Inter,sans-serif}
 .phone-strip a{display:block;padding:12px 16px;color:#fff;text-decoration:none;letter-spacing:.02em}
-.phone-strip a:hover{background:#0E2A52}
+.phone-strip a:hover{background:#16351C}
 @media(min-width:900px){.phone-strip a{padding:11px 16px;font-size:15px}}
 /* real logo mark, cropped from the logo Luke sent over SMS */
 /* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
@@ -52,10 +52,10 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(200,32,46,.7)}
-.btn-red:hover{background:#a91a26}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(27,86,169,.7)}
-.btn-blue:hover{background:#164a92}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(47,107,58,.7)}
+.btn-red:hover{background:#16351C}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(47,107,58,.7)}
+.btn-blue:hover{background:#1F4A28}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
 .btn-ghost:hover{border-color:var(--blue)}
 
@@ -63,15 +63,15 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk)}
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;opacity:.88}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(4,31,51,.70) 0%,rgba(4,31,51,.42) 48%,rgba(4,31,51,.22) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(27,68,35,.70) 0%,rgba(27,68,35,.42) 48%,rgba(27,68,35,.22) 100%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#BFD6F2;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#D4E8C0;border:1px solid rgba(212,232,192,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:16ch;color:#fff}
-.hero h1 em{font-style:normal;color:#0B5993}
-.lede{font-size:19px;color:#CFDDF0;max-width:56ch;margin:0 0 28px}
+.hero h1 em{font-style:normal;color:#D4E8C0}
+.lede{font-size:19px;color:#DCE8D4;max-width:56ch;margin:0 0 28px}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:34px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
-.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#DCE7F6;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.19);padding:10px 14px;border-radius:999px}
+.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#E6F0DC;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.19);padding:10px 14px;border-radius:999px}
 .tchip svg{flex:0 0 auto}
 
 /* urgency strip */
@@ -89,7 +89,7 @@ section.mist{background:var(--mist)}
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#C6D8EE}
-.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(27,86,169,.8)}
+.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(47,107,58,.8)}
 .icn svg{stroke:#fff}
 /* Explore cards use real photographs, never person/asterisk/camera glyphs. */
 .card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
@@ -137,9 +137,9 @@ section.mist{background:var(--mist)}
 .hrow:last-child{border-bottom:0}
 .hrow b{color:var(--blue-dk)}
 .hrow span{color:var(--muted)}
-.afterhours{background:var(--blue-dk);color:#DCE7F6;border-radius:var(--radius);padding:29px 26px}
+.afterhours{background:var(--blue-dk);color:#E6F0DC;border-radius:var(--radius);padding:29px 26px}
 .afterhours h3{color:#fff}
-.afterhours p{margin:0 0 20px;font-size:15.5px;color:#BFD0E6}
+.afterhours p{margin:0 0 20px;font-size:15.5px;color:#C5D4BC}
 
 /* area */
 .areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
@@ -164,14 +164,14 @@ textarea{min-height:112px;resize:vertical}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
 
-footer{background:var(--blue-dk);color:#BFD0E6;padding:56px 0 30px;font-size:15px}
+footer{background:var(--blue-dk);color:#C5D4BC;padding:56px 0 30px;font-size:15px}
 footer a{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8FB4E4;margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
 footer li a{display:inline-block;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8FA8C6}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8FA88A}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -208,16 +208,16 @@ footer li a{display:inline-block;padding:4px 0}
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
 }
-.mobile-callbar .mcb-est{background:#0E2A52}
+.mobile-callbar .mcb-est{background:#16351C}
 .mobile-callbar .mcb-call{background:var(--red)}
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#041F33;color:#DCE7F6;
+  background:#1B4423;color:#E6F0DC;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
-.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#0A2F4A;color:#fff;outline:none}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#245230;color:#fff;outline:none}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
@@ -305,11 +305,11 @@ footer{padding-bottom:30px}
 /* Compact CTA band — kill the ~450px near-black empty slab under the buttons. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
 .ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(4,31,51,.72) 0%,rgba(4,31,51,.58) 100%)}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(27,68,35,.72) 0%,rgba(27,68,35,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#CFDDF0;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA8C6;margin-top:14px;margin-bottom:0}
+.ctaband p{color:#DCE8D4;max-width:54ch;margin:0 auto 18px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8FA88A;margin-top:14px;margin-bottom:0}
 /* Inner-page photo lead (services / reviews) — real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -359,9 +359,11 @@ footer{padding-bottom:30px}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
 
 
+/* Skipper header: logo sits on his green, not Parkers white/navy */
 header.site{background:#1B4423!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance,header.site a{color:#FFFFFF}
 header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
 header.site .logo-chip{background:transparent;padding:0}
-header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance{color:#FFFFFF}
-header.site .logo{background:transparent;box-shadow:none;padding:0}
+.hero h1 em{color:#D4E8C0!important}
+.btn-red:hover{background:#16351C}
+.btn-blue:hover{background:#1F4A28}
