@@ -1,29 +1,217 @@
 {
-  "schema": "vendly.demo.facts/1",
+  "business_name": "Small Town Landscaping and Irrigation",
   "slug": "small-town-landscaping",
-  "niche": "landscaping",
-  "name": "Small Town Landscaping and Irrigation",
+  "tenant_id": "smalltown",
   "phone": "(843) 241-2988",
-  "area": "Galivants Ferry and the Grand Strand, SC",
-  "category": "Landscaping and irrigation",
-  "about": "Small Town Landscaping and Irrigation is Skipper's crew. Irrigation, grading, drainage, hardscaping, land clearing and tree removal around Galivants Ferry and the Grand Strand.",
-  "services": [
-    "Irrigation",
-    "Grading and sloping",
-    "Drainage",
-    "Garden installations and hardscaping",
-    "Land clearing",
-    "Tree removal"
-  ],
-  "voice_notes": [],
-  "source": "blank-mold clone; public facts for demo-live chatbox",
-  "theme": "#1B4423",
-  "accent": "#2F6B3A",
-  "street_off": true,
+  "tel": "+18432412988",
+  "brand_color": "#1B4423",
+  "site_host": "smalltownlandscapingandirrigation.com",
+  "city": "Galivants Ferry",
   "region": "SC",
+  "owner_first": "Skipper",
+  "trade_label": "Landscaping and irrigation",
+  "schema_type": "LandscapingBusiness",
+  "title_suffix": "Free Estimates | Galivants Ferry & Grand Strand",
+  "meta_description": "Irrigation, grading, drainage, hardscaping, land clearing and tree removal for Galivants Ferry and the Grand Strand. Call Skipper at (843) 241-2988.",
+  "eyebrow": "Galivants Ferry · Grand Strand",
+  "h1_lead": "Yard problems?",
+  "h1_emph": "Landscaping and irrigation that shows up.",
+  "hero_lede": "Local landscaping and irrigation for Galivants Ferry and the Grand Strand. Skipper's crew. Free no-cost, no-commitment estimates.",
+  "free_estimates": true,
+  "hours_short": "Monday to Saturday, 7 to 5",
+  "area_short": "Grand Strand local",
+  "owner_operated": true,
+  "strip_lead": "Free no-commitment estimates.",
+  "strip_body": "Tell us what the yard needs and we will give you a straight number.",
+  "explore_h2": "Everything you need before you call",
+  "explore_lede": "Straightforward service info, Skipper's own job photos, and the testimonials published on his site.",
+  "card_about": "Skipper's crew. Irrigation, grading, drainage and outdoor work across the Grand Strand.",
+  "card_services": "Irrigation, grading and sloping, drainage, hardscaping, land clearing, tree removal.",
+  "card_reviews": "Three testimonials Skipper publishes himself, word for word, plus a dedicated reviews page.",
+  "card_photos": "Job photos from Skipper's own published site. Not stock.",
+  "before_after": {
+    "before_slot": "photo-ba-before.jpg",
+    "after_slot": "photo-ba-after.jpg",
+    "lede": "Same sandy lot. Drag the handle.",
+    "caption": "Before and after sod and driveway work on one of Skipper's jobs.",
+    "before_alt": "Bare dirt and a rutted drive before sod and driveway work",
+    "after_alt": "New sod and a finished driveway after the same job"
+  },
+  "coverage_h2": "Galivants Ferry, the Grand Strand, and the towns between",
+  "hours_line": "Monday to Saturday, 7:00 to 5:00. Closed Sunday.",
+  "service_areas": [
+    "Galivants Ferry",
+    "Conway",
+    "Myrtle Beach",
+    "North Myrtle Beach",
+    "Surfside Beach",
+    "Murrells Inlet",
+    "Aynor",
+    "Loris",
+    "Little River",
+    "Garden City",
+    "Socastee",
+    "Carolina Forest"
+  ],
+  "cta_h2": "Ready to get the yard right?",
+  "cta_body": "Call Skipper for a free estimate. Irrigation, grading, drainage, hardscaping. One number. No runaround.",
+  "quote_h2": "Tell us what the yard needs",
+  "quote_lede": "Fill this in and the crew gets it directly. If you want a number today, calling is faster than typing.",
+  "form_msg_label": "What does the yard need",
+  "form_placeholder": "Drainage issue near Galivants Ferry, grading quote, irrigation check",
+  "footer_blurb": "Landscaping and irrigation serving Galivants Ferry, Myrtle Beach, Conway and nearby Grand Strand towns.",
+  "concierge_greeting": "Hey, Small Town Landscaping and Irrigation. Ask about irrigation, grading, drainage, or a free estimate. Prefer to talk? Call (843) 241-2988.",
+  "concierge_nudge": "Ask about irrigation or a free estimate. Or call (843) 241-2988.",
+  "concierge_suggestions": [
+    "Free estimates?",
+    "Irrigation",
+    "Drainage",
+    "Grand Strand?",
+    "Call now"
+  ],
+  "about_h2": "Skipper's crew, Grand Strand yards",
+  "about_p1": "Small Town Landscaping and Irrigation is Skipper's crew. Irrigation, grading, drainage, hardscaping, land clearing and tree removal around Galivants Ferry and the Grand Strand.",
+  "about_p2": "We show up, tell you what the yard actually needs, and give a straight number. Street address stays off this page on purpose.",
+  "area_h2": "Galivants Ferry, the Grand Strand, and the towns between",
+  "area_lede": "Galivants Ferry and Grand Strand coverage for irrigation, drainage, grading and outdoor work.",
+  "area_region": "South Carolina",
+  "svc_hero_h1": "Services offered",
+  "svc_hero_lede": "Irrigation, grading and sloping, drainage, hardscaping, land clearing, tree removal. If we cannot help on the first call, we say so.",
+  "svc_list_h2": "Yard work done carefully the first time",
+  "services": [
+    {
+      "title": "Irrigation",
+      "body": "Irrigation install and repair so the yard stays watered without guesswork.",
+      "slot": "photo-service-1.jpg",
+      "alt": "Irrigation work on a Grand Strand property"
+    },
+    {
+      "title": "Grading and sloping",
+      "body": "Grading and sloping so water runs where it should, not into the house or low spots.",
+      "slot": "photo-service-2.jpg",
+      "alt": "Skid-steer grading fill on a residential lot"
+    },
+    {
+      "title": "Drainage",
+      "body": "Drainage work for standing water and washouts around Galivants Ferry and the Strand.",
+      "slot": "photo-service-3.jpg",
+      "alt": "Drainage swale cut through sandy soil"
+    },
+    {
+      "title": "Garden installations and hardscaping",
+      "body": "Garden installs and hardscaping when the yard needs more than mowing.",
+      "slot": "photo-service-4.jpg",
+      "alt": "Hardscape edge and compacted base ready for stone"
+    },
+    {
+      "title": "Land clearing",
+      "body": "Land clearing and tree removal when the lot needs to be opened up.",
+      "slot": "photo-service-5.jpg",
+      "alt": "Land clearing pile and open sandy pad"
+    },
+    {
+      "title": "Tree removal",
+      "body": "Tree removal when a tree has to come down carefully.",
+      "slot": "photo-service-6.jpg",
+      "alt": "Compact excavator working under the limbs of a live oak"
+    }
+  ],
+  "photos_h2": "Jobs like the ones Skipper runs around the Strand",
+  "photos_lede": "Photos from Skipper's own published site. Not stock under crew headings.",
+  "photos_cta_h2": "Need work that looks like this?",
+  "gallery": [
+    {
+      "slot": "photo-gallery-1.jpg",
+      "alt": "Young tree and stone bed finished at a commercial entrance"
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "alt": "Fresh gravel driveway laid in beside a house and a mown lawn"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Thick cut lawn running back to a pine treeline"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "New gravel drive and staged sod at the front of a house in the pines"
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "alt": "Raised coastal home with new lawn and a mulched bed along the walk"
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "alt": "Fresh sod meeting a wood fence line"
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "alt": "Finished lawn and fresh paving at a commercial building"
+    },
+    {
+      "slot": "photo-gallery-8.jpg",
+      "alt": "Hydrangeas and mulch finished on a corner island at a shopping centre"
+    },
+    {
+      "slot": "photo-gallery-9.jpg",
+      "alt": "Dump trailer tipping a load of soil on a job"
+    }
+  ],
+  "reviews_h2": "What customers said after the job",
+  "reviews_lede": "Three customers, in their own words, exactly as Skipper publishes them on his own site.",
+  "reviews_honesty": "Published on smalltownlandscapingandirrigation.com/review-us, word for word.",
+  "reviews": [
+    {
+      "name": "Cheryl F.",
+      "text": "Trust worthy, honest, and very hard worker. Made sure the job was done correctly.",
+      "source": "smalltownlandscapingandirrigation.com/review-us"
+    },
+    {
+      "name": "Leslie M.",
+      "text": "Really impressed by the honesty, integrity and professionalism, not to mention efficiency. A1 recommended",
+      "source": "smalltownlandscapingandirrigation.com/review-us"
+    },
+    {
+      "name": "Laura J.",
+      "text": "Great! Very professional and hard-working.",
+      "source": "smalltownlandscapingandirrigation.com/review-us"
+    }
+  ],
+  "rating": null,
+  "contact_h2": "Call Skipper",
+  "contact_lede": "Irrigation, grading, drainage, hardscaping, land clearing, tree removal. Galivants Ferry and the Grand Strand.",
+  "alts": {
+    "hero": "Track loader grading a sandy yard down to level along a dirt drive",
+    "card_about": "Crew laying fresh sod on a prepared sandy yard beside a skid-steer",
+    "card_services": "Skid-steer grading fill on a residential lot",
+    "card_reviews": "Fresh planting bed of shrubs and dark mulch running along the side of a house",
+    "card_photos": "Palms mulched into a cut bed with clean lawn edges around them",
+    "ctaband": "Wide open lawn stretching across the front of a low country home",
+    "about": "Skipper on the excavator at a job site",
+    "contact": "Palms and lawn finished at a coastal house",
+    "services_hero": "Excavator shaping a retention pond holding water in a stand of pines"
+  },
+  "asset_version": "skmold0812",
   "send": "NO",
-  "nav_dupe_fix": "2026-08-11-2300",
-  "updated": "2026-08-12T13:25:55.382Z",
-  "hours": "Mon to Sat 7:00am-5:00pm, closed Sunday",
-  "client_site": "https://www.smalltownlandscapingandirrigation.com"
+  "google_harvest": {
+    "identity_status": "VERIFIED",
+    "identity_basis": "phone number on the Google listing matches the phone this business publishes + website host on the Google listing matches this business's own site (name also matches, which is corroboration and was not counted as proof)",
+    "rating": 4.9,
+    "review_count": null,
+    "reviews_kept": 0,
+    "method": "puppeteer-core + Chrome headless + desktop UA + place URL from their site",
+    "source_url": "https://www.google.com/maps/place/Small+Town+Landscaping+and+Irrigation/@33.7197455,-78.8788075,17z/data=!4m6!3m5!1s0x6941a51dc747c949:0x83c04f550853753e!8m2!3d33.7197455!4d-78.8788075!16s%2Fg%2F11k3qdn52_?hl=en&gl=us&entry=ttu",
+    "listing": {
+      "name": "Small Town Landscaping and Irrigation",
+      "phone": "+18432412988",
+      "website": "https://www.smalltownlandscapingandirrigation.com/",
+      "address": "",
+      "category": "Landscaper",
+      "place_id": "",
+      "cid_hex": "0x6941a51dc747c949:0x83c04f550853753e",
+      "maps_url": ""
+    },
+    "harvested_at": "2026-08-12T15:43:34.752Z",
+    "badge_emitted": false
+  }
 }
