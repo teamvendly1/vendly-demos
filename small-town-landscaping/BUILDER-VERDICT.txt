@@ -1,14 +1,18 @@
 builder_verdict=pass_local
 skipper_green=Y
-dupes_fixed=Y
-menu_readable=Y
+menu_readable=Y  dropdown_contrast=17.35:1 on #FFFFFF
 nc_leak=N
-wash_photos_on_home=N
-content_photo_hash_dupes=N
+content_photo_hash_dupes=N  assets=18 distinct_sha256=18
+within_page_photo_dupes=N
+all_photos_client_own=Y  stock_used=0
+harvest_identity=match  HARVEST.json=present
+internal_voice=PASS all 6 pages
+contrast_worst_pair=6.39:1 (WCAG 2.1 AA needs 4.5)
+unverifiable_claims_removed=Y  (licensed-and-insured: his own site never states it)
+phone_numbers_on_site=(843) 241-2988 only, his own
+PIXEL=NOT_RUN  reason=Pixel 8 is tethered to VICTOR and VICTOR is offline. No phone receipt exists. Desktop measurement only.
 human_verdict=NONE
 dual_PASS=N
 SEND=NO
-commit=9a86b91d
-url=https://teamvendly1.github.io/vendly-demos/small-town-landscaping/?v=skmorn090309
-time=2026-08-12 09:03:29 host=MYPC
-notes=logo may repeat header/footer. CTA uses atmosphere-hero distinct from photo-hero. Wash/house svc assets removed. Schema SC.
+time=2026-08-12 09:20:45 host=MYPC
+by=claude-skipper-polish
