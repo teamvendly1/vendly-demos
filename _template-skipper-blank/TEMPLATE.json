@@ -120,8 +120,20 @@
         "from": "facts.alts.hero",
         "missing": "falls back to '<name> work photo'"
       },
+      "GOOGLE_RATING": {
+        "from": "facts.rating.value OR facts.google_harvest.rating (harvest wire)",
+        "missing": "empty string; badge absent"
+      },
+      "GOOGLE_REVIEW_COUNT": {
+        "from": "facts.rating.count OR facts.google_harvest.review_count (harvest wire)",
+        "missing": "empty string; badge absent when count missing"
+      },
+      "REVIEW_SOURCE": {
+        "from": "facts.rating.source OR google_harvest / Facebook when held",
+        "missing": "empty string"
+      },
       "HERO_BADGE_BLOCK": {
-        "from": "facts.rating OR facts.ratings[] {value,count,source,url,source_is_google|source_is_facebook}",
+        "from": "facts.rating OR facts.ratings[] {value,count,source,url,source_is_google|source_is_facebook} OR google_harvest.rating+review_count",
         "missing": "RENDERS NOTHING. Requires value>0 AND count>0 AND source. No invent. No default 4.9. Both sources if both held; ties prefer Google."
       },
       "TRUST_CHIPS_HTML": {
