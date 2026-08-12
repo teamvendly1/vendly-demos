@@ -538,6 +538,52 @@ footer{position:relative;z-index:1}
 /* Contact address maps link (pattern A) — visible focus, full address is the link text */
 a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
 a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
-.contact-map iframe{pointer-events:auto}
+.contact-map{margin-top:4px;max-width:560px;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#1a1f16}
+.contact-map iframe{border:0;width:100%;height:100%;display:block;pointer-events:auto}
 .demo-preview{background:#1c1c1e;color:#e8e6e3;font-size:11px;line-height:1.4;padding:6px 18px;text-align:center}
 .demo-preview a{color:#fff}
+
+/* Contact page structure (Jacob CLEAR 2026-08-12 ~15:2x) — labelled blocks, not a pile */
+.contact-page{padding-top:clamp(56px,8vw,102px);padding-bottom:clamp(48px,7vw,88px)}
+.contact-lede{color:var(--muted);margin:0 0 28px}
+.contact-facts{display:grid;gap:28px;margin:0 0 32px;max-width:34rem}
+.contact-block{margin:0;padding:0}
+.contact-label{
+  margin:0 0 8px;padding:0;
+  font-family:"Barlow Condensed",system-ui,sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);line-height:1.2
+}
+.contact-value{margin:0;font-size:17px;line-height:1.45;color:var(--ink)}
+.contact-street,.contact-cityline{display:block}
+.contact-tel{
+  display:inline-flex;align-items:center;min-height:44px;padding:8px 0;
+  font-size:20px;font-weight:600;color:var(--ink);text-decoration:none
+}
+.contact-tel:hover{text-decoration:underline;text-underline-offset:3px}
+.contact-tel:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
+.contact-hours{
+  list-style:none;margin:0;padding:0;
+  display:grid;gap:8px;max-width:22rem
+}
+.contact-hours li{
+  display:grid;grid-template-columns:7.5rem 1fr;gap:12px 16px;
+  align-items:baseline;font-size:16px;line-height:1.35
+}
+.contact-hours .hours-day{font-weight:600;color:var(--ink)}
+.contact-hours .hours-time{color:var(--muted)}
+.contact-towns{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+.contact-services{margin:0;padding-left:1.15rem;color:var(--ink);font-size:16px;line-height:1.5}
+.contact-services li{margin:0 0 6px}
+.contact-cta{margin:8px 0 0}
+.contact-addr-stack{display:inline-block;line-height:1.45}
+@media(max-width:375px){
+  .contact-hours li{grid-template-columns:1fr;gap:2px}
+  .contact-hours .hours-day{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .contact-hours .hours-time{font-size:16px;color:var(--ink)}
+}
+@media(max-width:900px){
+  .contact-lead{display:flex;flex-direction:column}
+  .contact-shot{order:-1;margin-bottom:28px}
+  .contact-facts{gap:24px;margin-bottom:28px}
+}
