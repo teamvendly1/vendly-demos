@@ -1,3 +1,4 @@
+/* NO-CAPTIONS mold 2026-08-12 */
 html{scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
@@ -146,6 +147,8 @@ section.mist{background:var(--mist)}
 .about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);align-items:center}
 .shot{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);background:var(--blue-dk)}
 .shot img{width:100%;height:100%;object-fit:cover;background:var(--blue-dk);aspect-ratio:4/3;display:block}
+.shot.shot-contain img{object-fit:contain;object-position:center center;background:#1a1f16}
+.corner:empty,.corner[hidden]{display:none!important}
 .corner{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font:700 12px/1 Inter,sans-serif;letter-spacing:.13em;text-transform:uppercase;padding:11px 16px;border-radius:0 12px 0 0}
 .sig{margin-top:26px;padding-top:22px;border-top:2px solid var(--line)}
 .sig .nm{font:700 19px/1.2 Inter,sans-serif;color:var(--blue-dk)}
@@ -523,3 +526,11 @@ footer{position:relative;z-index:1}
   .leadwrap .shot{margin-bottom:24px}
   .leadwrap .shot img{object-position:center top;aspect-ratio:4/5;max-height:min(62vh,480px);width:100%}
 }
+
+/* Family / owner contact photo: full frame, NEVER lightbox (Jacob CLEAR 2026-08-12) */
+.shot .family-photo,.shot img.family-photo{cursor:default;pointer-events:none;width:100%;height:auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:#1a1f16}
+.shot.shot-contain{background:#1a1f16}
+/* Trade-visible hero that needs a darker type band (not a darker photo) */
+.hero.hero-darken-band::after{background:
+  linear-gradient(90deg,rgba({{SCRIM_RGB}},.90) 0%,rgba({{SCRIM_RGB}},.78) 36%,rgba({{SCRIM_RGB}},.48) 58%,rgba({{SCRIM_RGB}},.18) 78%,rgba({{SCRIM_RGB}},0) 100%),
+  linear-gradient(180deg,rgba({{SCRIM_RGB}},.58) 0%,rgba({{SCRIM_RGB}},.28) 42%,rgba({{SCRIM_RGB}},.52) 100%)}
