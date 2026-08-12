@@ -511,3 +511,7 @@ footer{position:relative;z-index:1}
   .leadwrap .shot{margin-bottom:24px}
   .leadwrap .shot img{object-position:center top;aspect-ratio:4/5;max-height:min(62vh,480px);width:100%}
 }
+/* familyfix contact faces: top bias, no 160px slab pad */
+@media(max-width:900px){
+  .leadwrap .shot img{object-position:center 8%;aspect-ratio:4/5}
+}
