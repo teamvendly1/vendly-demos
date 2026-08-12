@@ -60,7 +60,8 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 
 /* hero */
 /* HERO GAP FIX (a) Jared CLEAR 2026-08-12: shrink hero to CONTENT height — no 100svh / min-height fill. */
-.hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk);min-height:0;height:auto}
+/* HERO GAP FIX2b: section{padding:clamp(56px..)} was the real empty slab (~56-102px top+bottom on .hero). */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk);min-height:0;height:auto;padding:0}
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.96}
 /*
