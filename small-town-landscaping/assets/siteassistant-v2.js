@@ -329,12 +329,15 @@
       ".sa-launch:hover{filter:brightness(.94)}" +
       ".sa-launch:focus-visible{outline:3px solid var(--sa-ink);outline-offset:2px}" +
       ".sa-panel{position:fixed;bottom:20px;z-index:2147483001;width:360px;max-width:calc(100vw - 32px);" +
-      "height:520px;max-height:calc(100vh - 40px);background:var(--sa-bg);color:var(--sa-ink);" +
+      "height:520px;max-height:calc(100svh - 40px);max-height:calc(100dvh - 40px);background:var(--sa-bg);color:var(--sa-ink);" +
       "border:1px solid var(--sa-line);border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.28);" +
       "display:none;flex-direction:column;overflow:hidden}" +
       ".sa-panel.sa-right{right:20px}.sa-panel.sa-left{left:20px}" +
       ".sa-panel.sa-open{display:flex}" +
-      ".sa-head{display:flex;align-items:center;gap:10px;padding:14px 14px 14px 16px;background:var(--sa-accent);color:#fff}" +
+      // Close lives in panel flow at the top (never viewport-fixed alone) so a
+      // keyboard shrink cannot push the X under the keys. flex-shrink:0 keeps
+      // the header from collapsing when the message list eats remaining height.
+      ".sa-head{display:flex;align-items:center;gap:10px;padding:14px 14px 14px 16px;background:var(--sa-accent);color:#fff;flex:0 0 auto}" +
       ".sa-head-txt{flex:1 1 auto;min-width:0}" +
       ".sa-head-title{font-weight:700;font-size:15px;line-height:1.2}" +
       ".sa-head-sub{font-size:12px;opacity:.9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
@@ -365,7 +368,7 @@
       "padding:7px 13px;font-size:13px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}" +
       ".sa-chip:hover{background:var(--sa-accent);color:#fff}" +
       ".sa-chip:focus-visible{outline:3px solid var(--sa-ink);outline-offset:2px}" +
-      ".sa-form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--sa-line);background:var(--sa-surface)}" +
+      ".sa-form{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--sa-line);background:var(--sa-surface);flex:0 0 auto}" +
       ".sa-input{flex:1 1 auto;min-width:0;border:1px solid var(--sa-input-border);border-radius:10px;padding:10px 12px;" +
       // 16px minimum: iOS Safari auto-zooms the page on focus for any input
       // under 16px, which is its own source of a jumped/zoomed layout.
@@ -429,20 +432,15 @@
       // Mobile: make the panel a true full-width bottom sheet so nothing (close
       // X, Send, message bubbles) can be clipped off the right edge.
       "@media (max-width: 480px){" +
-      // bottom:0/top:auto keeps the sheet pinned to the visible viewport's
-      // bottom edge on its own; dvh (where supported) already shrinks with
-      // the keyboard, so the header/close button never needs to be shoved
-      // around by JS on input focus.
-      // Size the sheet to its CONTENT with a cap, never a fixed 88vh. A fixed
-      // height meant the sheet was 85 per cent of the Pixel even when it held a
-      // single greeting, which is the 'takes up the whole screen' half of the
-      // report. The plain vh/px values come first as the fallback for browsers
-      // that do not know dvh or min(); the dvh line wins where it is supported.
-      /* Roll up ABOVE the sticky Ask/estimate/CALL bar. Cap height so it never owns the screen. */
+      // KEYBOARD TRAP FIX (Jacob CLEAR 2026-08-12): never size with bare 100vh.
+      // dvh/svh first; when the soft keyboard is up, syncViewport() overrides
+      // height + bottom from visualViewport so the panel (and its in-flow X)
+      // stays inside what the user can actually see.
       ".sa-panel{left:0;right:0;bottom:calc(90px + env(safe-area-inset-bottom,0px));top:auto;width:100%;max-width:100%;height:auto;" +
-      "min-height:240px;min-height:min(240px,42dvh);" +
-      "max-height:58vh;max-height:min(58dvh,520px);border-radius:18px 18px 0 0;" +
+      "min-height:200px;min-height:min(200px,36svh);" +
+      "max-height:58svh;max-height:min(58dvh,520px);border-radius:18px 18px 0 0;" +
       "overscroll-behavior:contain;touch-action:pan-y}" +
+      ".sa-panel.sa-kb{max-height:none;min-height:0;border-radius:14px 14px 0 0}" +
       ".sa-scrim.sa-open{display:block;opacity:1}" +
       ".sa-panel.sa-right,.sa-panel.sa-left{left:0;right:0}" +
       ".sa-root{isolation:isolate;position:relative;z-index:2147483000;pointer-events:none}" +
@@ -668,6 +666,10 @@
       var v = self.input.value;
       self.input.value = "";
       self.handleUserMessage(v);
+      // Keep focus without yanking the document (never scrollIntoView on input).
+      try { self.input.focus({ preventScroll: true }); } catch (err) { try { self.input.focus(); } catch (e2) {} }
+      if (typeof self.syncViewport === "function") self.syncViewport();
+      try { window.scrollTo(0, self._scrollY || 0); } catch (e3) {}
     });
 
     panel.addEventListener("keydown", function (e) {
@@ -1391,17 +1393,46 @@
     }
   };
 
-  // The mobile bottom sheet stays pinned via CSS (bottom:0/top:auto, height in
-  // dvh). We deliberately do not write an inline "top" from
-  // visualViewport.offsetTop any more: on iOS that repositioning fought with
-  // the fixed-position body scroll lock below and could carry the whole
-  // panel (including the close button) out of the visible area on input
-  // focus, leaving the visitor needing to swipe to find it again.
-  // ZERO LAYOUT SHIFT (Jacob 2026-08-11). Do NOT position:fixed the body — that
-  // removes the scrollbar and jumps the page when Ask is tapped by accident.
-  // Freeze overflow only; keep scrollY; restore on close. Panel is position:fixed
-  // in its own stacking context and never enters document flow.
+  // Keep the mobile bottom sheet inside the VISUAL viewport when the soft
+  // keyboard is up (Jacob CLEAR 2026-08-12). Chrome Android shrinks visualViewport
+  // but not layout viewport; bare vh/dvh alone still leaves the X under the keys.
+  // Pin with bottom + height from vv.height / offsetTop. Close stays in .sa-head
+  // normal flow (flex-shrink:0). Do NOT position:fixed the body - that jumps the
+  // page; overflow lock is enough.
+  SiteAssistant.prototype.syncViewport = function () {
+    var vv = window.visualViewport;
+    var p = this.panel;
+    if (!p) return;
+    if (!vv || window.innerWidth > 480 || !this.open) {
+      p.classList.remove("sa-kb");
+      p.style.top = "";
+      p.style.height = "";
+      p.style.bottom = "";
+      p.style.maxHeight = "";
+      return;
+    }
+    var kbUp = (window.innerHeight - vv.height) > 80;
+    if (!kbUp) {
+      p.classList.remove("sa-kb");
+      p.style.top = "";
+      p.style.height = "";
+      p.style.bottom = "";
+      p.style.maxHeight = "";
+      return;
+    }
+    // Keyboard open: fill the visible viewport. Header (with X) is the first
+    // flex child so it stays on screen; message list scrolls inside.
+    var h = Math.max(220, Math.floor(vv.height));
+    var bottomGap = Math.max(0, Math.floor(window.innerHeight - vv.offsetTop - vv.height));
+    p.classList.add("sa-kb");
+    p.style.top = "auto";
+    p.style.bottom = bottomGap + "px";
+    p.style.height = h + "px";
+    p.style.maxHeight = h + "px";
+  };
+
   SiteAssistant.prototype.bindViewport = function () {
+    var self = this;
     if (window.innerWidth <= 480) {
       this._scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
       var html = document.documentElement;
@@ -1415,9 +1446,36 @@
       b.style.overflow = "hidden";
       b.style.overscrollBehavior = "none";
     }
+    var vv = window.visualViewport;
+    if (vv) {
+      this._vvHandler = function () { if (self.open) self.syncViewport(); };
+      vv.addEventListener("resize", this._vvHandler);
+      vv.addEventListener("scroll", this._vvHandler);
+      this._focusHandler = function () {
+        [0, 50, 150, 350, 600, 1000].forEach(function (t) {
+          setTimeout(function () {
+            if (!self.open) return;
+            self.syncViewport();
+            try { window.scrollTo(0, self._scrollY || 0); } catch (e) {}
+          }, t);
+        });
+      };
+      this.input.addEventListener("focus", this._focusHandler);
+    }
+    this.syncViewport();
   };
 
   SiteAssistant.prototype.unbindViewport = function () {
+    var vv = window.visualViewport;
+    if (vv && this._vvHandler) {
+      vv.removeEventListener("resize", this._vvHandler);
+      vv.removeEventListener("scroll", this._vvHandler);
+    }
+    if (this._focusHandler) {
+      try { this.input.removeEventListener("focus", this._focusHandler); } catch (e) {}
+    }
+    this._vvHandler = null;
+    this._focusHandler = null;
     if (this._bodyPrev) {
       var html = document.documentElement;
       var b = document.body;
@@ -1426,6 +1484,13 @@
       b.style.overscrollBehavior = this._bodyPrev.bodyOverscroll || "";
       this._bodyPrev = null;
       window.scrollTo(0, this._scrollY || 0);
+    }
+    if (this.panel) {
+      this.panel.classList.remove("sa-kb");
+      this.panel.style.top = "";
+      this.panel.style.height = "";
+      this.panel.style.bottom = "";
+      this.panel.style.maxHeight = "";
     }
   };
 
@@ -1440,8 +1505,11 @@
     this.panel.classList.remove("sa-open");
     if (this.scrim) this.scrim.classList.remove("sa-open");
     this.launch.setAttribute("aria-expanded", "false");
-    if (this.lastFocus && typeof this.lastFocus.focus === "function") this.lastFocus.focus();
-    else this.launch.focus();
+    if (this.lastFocus && typeof this.lastFocus.focus === "function") {
+      try { this.lastFocus.focus({ preventScroll: true }); } catch (e) { this.lastFocus.focus(); }
+    } else {
+      try { this.launch.focus({ preventScroll: true }); } catch (e2) { this.launch.focus(); }
+    }
   };
 
   // ---- boot -----------------------------------------------------------------
