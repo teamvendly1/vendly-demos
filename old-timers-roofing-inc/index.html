@@ -220,7 +220,7 @@ section{padding:52px 0}
 .quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
 
 /* THE QUOTE ON THE DARK BAND, AND THIS ONE NEARLY SHIPPED UNREADABLE.
-   craft.js inverts p, .lead and li inside .vd-ink but NOT blockquote, and .quote
+   layout-engine inverts p, .lead and li inside .vd-ink but NOT blockquote, and .quote
    above sets color:var(--ink) - dark ink on a dark ground. Caught by reading the
    two rule sets against each other before building, which is the only way to see
    it: on a light palette the page still renders, it just renders the business's
@@ -292,7 +292,7 @@ section.vd-ink .quote cite a{color:#fff}
 .drawernav a:hover,.drawernav a:focus{background:rgba(255,255,255,.16)}
 @media(max-width:719px){.drawer{display:block}nav.main{display:none}}
 
-/* BACK TO TOP. It reuses the vd-top class lib/craft.js already toggles from an
+/* BACK TO TOP. It reuses the vd-top class lib/layout-engine already toggles from an
    IntersectionObserver on the hero, so it appears after a scroll for free rather
    than shipping a second scroll listener to do the same job. No observer support
    means the class is never added and the chip simply stays visible, which is the
@@ -330,11 +330,11 @@ footer.site h3{font:700 20px/1.2 "Barlow Condensed",Inter,sans-serif;
 
 footer.site{background:var(--b);color:#dbe4ec;padding:36px 0 0;font-size:15px}
 footer.site a{color:#fff}
-.preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
-.preview a{color:#fff}
-/* ---- vendly craft layer (lib/craft.js) - appended last, wins by cascade order ---- */
+.demo-preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
+.demo-preview a{color:#fff}
+/* ---- vendly craft layer (lib/layout-engine) - appended last, wins by cascade order ---- */
 .util{display:none}
-.preview{font-size:11.5px;line-height:1.4;padding:6px 20px;letter-spacing:.01em}
+.demo-preview{font-size:11.5px;line-height:1.4;padding:6px 20px;letter-spacing:.01em}
 header .btn{transition:opacity .18s ease,transform .18s ease}
 .vd-top header .btn{opacity:0;pointer-events:none;transform:translateY(-3px)}
 .hero>img{opacity:1}
@@ -394,7 +394,7 @@ body.vd-has-dock footer{padding-bottom:calc(var(--vd-dock-h,96px) + 76px)}
 
 
 
-/* ---- vendly lowcountry trade chrome (lib/lowcountry.js) - appended after craft ---- */
+/* ---- vendly lowcountry trade chrome (lib/theme-engine) - appended after craft ---- */
 :root{--lc-blue:#496379;--lc-blue-dark:#374A5B;--lc-on-blue:#ffffff;--lc-on-blue-dark:#ffffff;--lc-navy:#17222B;--lc-navy-deep:#10181E;--lc-navy-lift:#2E3840;--lc-pale:#F0F3F4;--lc-shell:#F3F4F4;--lc-blue-on-navy:#97A6B3;--lc-burger:#718596;--lc-blue-ink:#496379;--radius:2px}
 body{font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17.5px;line-height:1.55}
 h1,h2{font-family:Oswald,"Barlow Condensed",Impact,"Haettenschweiler","Arial Narrow",sans-serif;text-transform:none;font-weight:700;letter-spacing:.005em}
@@ -500,8 +500,8 @@ body.vd-has-dock .legalbar{padding-bottom:calc(var(--vd-dock-h,96px) + 76px)}
 @media(min-width:760px){.lcdock{display:none}}
 .totop{right:0;bottom:calc(var(--vd-stack-h,140px) + 8px);width:40px;height:40px;border-radius:0;background:rgba(90,90,90,.62)}
 @media(min-width:760px){.totop{bottom:34px;right:14px}}
-.preview{background:#1c1c1e;color:#e8e6e3;font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:11px;line-height:1.4;padding:6px 18px}
-.preview a{color:#fff}
+.demo-preview{background:#1c1c1e;color:#e8e6e3;font-family:"DM Sans",Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:11px;line-height:1.4;padding:6px 18px}
+.demo-preview a{color:#fff}
 .brandstripe{display:none}
 
 
@@ -544,7 +544,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 </div>
 <a class="skiplink" href="#main">Skip to main content</a>
 
-<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Old Timers Roofing, Inc..</div>
+<div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Old Timers Roofing, Inc..</div>
 
 <div class="brandstripe"></div>
 <div class="phonestrip"><a href="tel:+13364446191">Call (336) 444-6191</a></div>
