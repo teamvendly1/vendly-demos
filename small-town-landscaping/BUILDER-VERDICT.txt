@@ -1,19 +1,34 @@
-builder_verdict=pass_local
-skipper_green=Y
-menu_readable=Y  dropdown_contrast=17.35:1 on #FFFFFF
-nc_leak=N
-content_photo_hash_dupes=N  assets=28 distinct_sha256=28
-within_page_photo_dupes=N
-cross_page_photo_dupes=N  27 slots, 27 distinct photos
-all_photos_client_own=Y  stock_used=0
-harvest_identity=match  HARVEST.json=present
-internal_voice=PASS all 6 pages
-contrast_worst_pair=6.39:1 (WCAG 2.1 AA needs 4.5)
-unverifiable_claims_removed=Y  (licensed-and-insured: his own site never states it)
-phone_numbers_on_site=(843) 241-2988 only, his own
-PIXEL=NOT_RUN  reason=Pixel 8 is tethered to VICTOR and VICTOR is offline. No phone receipt exists. Desktop measurement only.
-human_verdict=NONE
-dual_PASS=N
-SEND=NO
-time=2026-08-12 09:20:45 host=MYPC
-by=claude-skipper-polish
+{
+  "slug": "small-town-landscaping",
+  "logo": {
+    "changed": 19190,
+    "contrast_tagline_on_header": 8.49,
+    "target": "#D4E8C0",
+    "bg": "#1B4423",
+    "aa_pass": true
+  },
+  "contrast": {
+    "tagline_D4E8C0_on_1B4423": 8.49,
+    "h1_FFFFFF_on_scrim_approx_1B4423": 11.07,
+    "lede_FFFFFF_on_scrim_approx_1B4423": 11.07,
+    "emph_D4E8C0_on_1B4423": 8.49,
+    "name_1a73e8_on_FFFFFF": 4.51,
+    "body_202124_on_FFFFFF": 16.1,
+    "aa_min": 4.5
+  },
+  "reviews": {
+    "cardCount": 3,
+    "stars": false,
+    "source": "site",
+    "badge": "ABSENT"
+  },
+  "hero_badge": "ABSENT (no harvested rating or recommend count - honesty floor)",
+  "about_photo": "index explore card -> photo-sod-crew.jpg (work); about page keeps photo-owner.jpg (Skipper face usable)",
+  "hero_scrim": "left text-panel gradient only; right open for skid-steer",
+  "builder_verdict": "pass",
+  "builder_verdict_by": "cursor",
+  "notes": [
+    "No invented stars or Google/Facebook marks on site-only testimonials.",
+    "Header and hero \"3 testimonials\" stacks removed."
+  ]
+}
