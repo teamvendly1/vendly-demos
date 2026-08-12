@@ -227,7 +227,7 @@
   "contact_lede": "1175 Outlook Rd, Galivants Ferry, SC 29544. Monday to Saturday, 7:00 to 5:00. Irrigation, grading, drainage, hardscaping, land clearing, tree removal.",
   "contact_photo_slot": "photo-family-ltr.jpg",
   "alts": {
-    "hero": "Track loader grading a sandy yard down to level along a dirt drive",
+    "hero": "Palm install with river rock bed under a coastal home",
     "card_about": "Crew laying fresh sod on a prepared sandy yard beside a skid-steer",
     "card_services": "Skid-steer grading fill on a residential lot",
     "card_reviews": "Fresh planting bed of shrubs and dark mulch running along the side of a house",
@@ -286,40 +286,28 @@
   "_mold_lane": {
     "facts_path": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\small-town-landscaping\\DEMO-FACTS.json",
     "harvest_merged": true,
-    "at": "2026-08-12T18:11:28.228Z"
+    "at": "2026-08-12T18:23:26.957Z"
   },
   "mold_stamp": "blank-mold-20260812-herogap",
   "hero_mode": "shrink",
-  "asset_version": "quietzone1",
+  "asset_version": "quietzone2",
   "contact_photo_locked_sha256": "597AA79361DB26D8E33854D25DA16FDD5C0FA758792DAB4ABCF0A5E46B6589C6",
   "contact_photo_canonical": "C:/VendlyVault/_tmp/smalltown-liquid-theme/assets/skipper-family.jpg",
   "hero_slides": [
     {
-      "slot": "photo-clearing.jpg",
-      "alt": "Land clearing through a wooded lot"
-    },
-    {
       "slot": "photo-hardscape.jpg",
-      "alt": "Hardscape and grading on a residential lot"
-    },
-    {
-      "slot": "photo-hero.jpg",
-      "alt": "Track loader grading a sandy yard down to level along a dirt drive"
-    },
-    {
-      "slot": "photo-service-2.jpg",
-      "alt": "Skid-steer grading fill on a residential lot"
-    },
-    {
-      "slot": "photo-oak-ex.jpg",
-      "alt": "Compact excavator working under the limbs of a live oak"
+      "alt": "Palm install with river rock bed under a coastal home"
     }
   ],
   "_quiet_zone": {
-    "at": "2026-08-12T18:11:13.335Z",
-    "disqualified_lead": "photo-gallery-8.jpg",
-    "reason": "bright sky / pale house in H1 type band; type-band contrast fail after tighten",
-    "lead": "photo-clearing.jpg",
+    "at": "2026-08-12T18:23:26.885Z",
+    "disqualified": [
+      "photo-gallery-8.jpg",
+      "photo-clearing.jpg"
+    ],
+    "reason": "H1-band bright_frac>0.05 (sky/glare). Pixel proved clearing still put type on washed sky.",
+    "lead": "photo-hardscape.jpg",
+    "rotator": "static",
     "family_lock": "597AA79361DB26D8E33854D25DA16FDD5C0FA758792DAB4ABCF0A5E46B6589C6"
   }
 }
