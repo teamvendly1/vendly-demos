@@ -64,7 +64,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.96}
 /* Text-panel scrim only (2026-08-12 final): keep skid-steer visible on the right. */
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(27,68,35,.88) 0%,rgba(27,68,35,.72) 34%,rgba(27,68,35,.28) 52%,rgba(27,68,35,.06) 68%,rgba(27,68,35,0) 82%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(20,48,28,.92) 0%,rgba(20,48,28,.82) 28%,rgba(20,48,28,.55) 42%,rgba(20,48,28,.18) 58%,rgba(20,48,28,0) 72%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(58px,9vw,116px) 0 clamp(50px,7vw,92px)}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#D4E8C0;border:1px solid rgba(191,214,242,.42);padding:9px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{max-width:16ch;color:#fff}
@@ -403,3 +403,38 @@ header.site .navtoggle .navtoggle-text{color:#161C14 !important;opacity:1 !impor
 header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(22,28,20,.18)}
 header.site .sitemenu a{color:#161C14 !important;background:#FFFFFF !important;opacity:1 !important}
 header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E8F2E6 !important;color:#1B4423 !important}
+/* Hero text plate — copy only, right side stays open for skid-steer (2026-08-12). */
+.hero-inner{isolation:isolate}
+.hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
+.hero-inner > .trust,.hero-inner > .hero-rtb{position:relative;z-index:3}
+.hero-inner::before{content:"";position:absolute;z-index:2;pointer-events:none;
+left:0;top:12%;bottom:10%;width:min(540px,92%);border-radius:18px;
+background:linear-gradient(90deg,rgba(16,40,22,.78),rgba(16,40,22,.45) 70%,rgba(16,40,22,0));
+filter:blur(0.2px)}
+@media(max-width:700px){.hero-inner::before{width:100%;top:8%;bottom:8%;
+background:rgba(16,40,22,.72)}}
+/* BA mount: never leave a collapsed empty white slab before Coverage. */
+#ba-sod{min-height:0}
+#ba-sod:empty{display:none;margin:0!important;min-height:0!important}
+#ba-sod .ba{aspect-ratio:16/10;background:#1a1a16}
+
+.v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
+width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
+.v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
+.v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+.v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
+background:rgba(10,10,8,.92);touch-action:none}
+.v-lb-root.is-open{display:flex}
+.v-lb-stage{position:relative;max-width:min(96vw,1200px);max-height:92vh;overflow:hidden;
+display:flex;align-items:center;justify-content:center}
+.v-lb-img{max-width:96vw;max-height:92vh;width:auto;height:auto;object-fit:contain;
+transform-origin:center center;transition:transform .18s ease;user-select:none;
+-webkit-user-drag:none;cursor:grab}
+.v-lb-img.is-zoomed{cursor:grabbing;transition:none}
+.v-lb-close{position:fixed;top:12px;right:12px;z-index:100000;width:44px;height:44px;
+border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.45);
+color:#fff;font:600 22px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.v-lb-close:focus-visible{outline:2px solid #FBBC04;outline-offset:2px}
+.v-lb-cap{position:fixed;left:0;right:0;bottom:0;padding:14px 18px;text-align:center;
+color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+@media(prefers-reduced-motion:reduce){.v-lb-img{transition:none}}
