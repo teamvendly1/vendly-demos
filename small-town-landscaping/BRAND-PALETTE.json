@@ -3,21 +3,27 @@
   "slug": "small-town-landscaping",
   "logo": "assets/logo.png",
   "palette": {
-    "brand": "#2F6B3A",
+    "brand": "#97C93D",
     "extract": {
       "ok": true,
-      "note": "forced Skipper greens; Parkers extract ignored",
-      "accent": "#2F6B3A",
-      "primary": "#1B4423",
-      "link": "#2F6B3A",
-      "onDark": "#D4E8C0"
+      "path": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\small-town-landscaping\\assets\\logo.png",
+      "sat_share": 8.32,
+      "coverage": 40.94,
+      "ink_share": 3.43,
+      "ink_pixels": 9154,
+      "sampled": 9216,
+      "accent": "#97C93D",
+      "primary": "#354615",
+      "link": "#ABDD51"
     },
     "blend": {
       "mode": "forced",
       "headerBg": "#1B4423",
-      "fg": "#FFFFFF"
+      "fg": "#FFFFFF",
+      "css": "header.site{background:#1B4423!important;border-bottom-color:rgba(255,255,255,.12)}\nheader.site .navtoggle,header.site .navtoggle-text,header.site .navbalance,header.site a{color:#FFFFFF}\nheader.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}\nheader.site .logo-chip{background:transparent;padding:0}",
+      "flagHuman": false
     }
   },
   "clone_of": "_template-rivertown-blank",
-  "method": "blank-mold-css+skipper-green"
+  "method": "blank-mold+token-fill"
 }
