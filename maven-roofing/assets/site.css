@@ -42,7 +42,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 /* real logo mark, cropped from the logo Luke sent over SMS */
 /* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
 .logo{height:88px;width:auto;display:block}
-.logo-chip{display:inline-flex;background:transparent;padding:0;border-radius:0}
+.logo-chip{display:inline-flex;align-items:center;background:transparent;padding:0;border-radius:0;box-shadow:none}
 .logo-footer{height:44px;width:auto;display:block}
 
 header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -433,7 +433,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 header.site{background:#25313C!important;border-bottom-color:rgba(255,255,255,.12)}
-header.site .logo,header.site .logo-chip{background:transparent;box-shadow:none;padding:0;border-radius:0}
+header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
 header.site .bizmeta .btn,header.site .bizmeta a.btn{color:#fff}
 header.site .navtoggle{background:#fff!important;color:#25313C!important;border-color:rgba(255,255,255,.45)}
 header.site .navtoggle svg{stroke:#25313C!important}
@@ -494,10 +494,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 */
 .mobile-callbar{z-index:120}
 footer{position:relative;z-index:1}
-/* logo plate contrast gate helper class (generator fills colors) */
-.logo-chip{background:var(--primary,#1B4423);border-radius:12px;padding:8px 10px;display:inline-flex}
-
-/* mold-hero-rotator-20260812 */
+ /* mold-hero-rotator-20260812 */
 .hero-rotator{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
 .hero-rotator [data-hero-slide]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;
   opacity:0;transition:opacity .9s ease}
@@ -529,7 +526,10 @@ footer{position:relative;z-index:1}
 
 /* Family / owner contact photo: full frame, NEVER lightbox (Jacob CLEAR 2026-08-12) */
 .shot .family-photo,.shot img.family-photo{cursor:default;pointer-events:none;width:100%;height:auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:#1a1f16}
+/* Contact face tier 2: their logo contained + centred, never stretched, never on a chip. */
+.shot .contact-logo,.shot img.contact-logo{cursor:default;pointer-events:none;width:100%;max-width:280px;height:auto;margin:0 auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:transparent}
 .shot.shot-contain{background:#1a1f16}
+.contact-shot:empty{display:none}
 /* Trade-visible hero that needs a darker type band (not a darker photo) */
 .hero.hero-darken-band::after{background:
   linear-gradient(90deg,rgba(44,60,73,.90) 0%,rgba(44,60,73,.78) 36%,rgba(44,60,73,.48) 58%,rgba(44,60,73,.18) 78%,rgba(44,60,73,0) 100%),
