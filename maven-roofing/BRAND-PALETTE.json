@@ -1,121 +1,53 @@
 {
   "schema": "vendly.autodemo.palette/1",
   "slug": "maven-roofing",
-  "logo": null,
+  "mold": "_template-skipper-blank",
+  "brand_input": "#2B3A47",
   "palette": {
-    "a": "#12554A",
-    "b": "#10171A",
-    "c": "#12554A",
-    "mist": "#F2F0EA",
-    "brass": "#C2871A",
-    "brand": "#12554A",
-    "onC": "#FFFFFF",
-    "scrim": "14,20,22"
+    "BRAND": "#2B3A47",
+    "PRIMARY": "#25313C",
+    "PRIMARY_DK": "#1B242C",
+    "PRIMARY_MID": "#2C3C49",
+    "ACCENT": "#3A4E5F",
+    "ACCENT_DK": "#283643",
+    "ACCENT_LT": "#516D85",
+    "ON_DARK": "#CCD7E0",
+    "MENU_INK": "#11171D",
+    "TINT_1": "#DFE6EC",
+    "TINT_2": "#E9EDF2",
+    "TINT_3": "#D9E1E8",
+    "TINT_4": "#DCE3EA",
+    "LINE_2": "#BFCDD9",
+    "MUTED_BRAND": "#809BB2",
+    "MIST": "#F4F6F8",
+    "LINE": "#D3DCE4",
+    "PRIMARY_RGB": "37,49,60",
+    "ACCENT_RGB": "58,78,95",
+    "SCRIM_RGB": "44,60,73",
+    "SCRIM2_RGB": "27,36,44",
+    "MENU_INK_RGB": "17,23,29"
   },
-  "report": {
-    "standard": "WCAG 2.1 AA",
-    "brand_extracted": false,
-    "brand_applied": false,
-    "raw_accent": null,
-    "fallback_reason": "no_logo_or_extraction_failed",
-    "contrast": {
-      "standard": "WCAG 2.1 AA",
-      "all_pass": true,
-      "checks": [
-        {
-          "token": "c",
-          "against": "#FFFFFF",
-          "min": 4.5,
-          "before": "#12554A",
-          "after": "#12554A",
-          "ratio": 8.66,
-          "moved": false,
-          "used_for": "button background under white label text, focus ring, quote rule"
-        },
-        {
-          "token": "a",
-          "against": "#FFFFFF",
-          "min": 4.5,
-          "before": "#12554A",
-          "after": "#12554A",
-          "ratio": 8.66,
-          "moved": false,
-          "used_for": "link text on the paper background"
-        },
-        {
-          "token": "b",
-          "against": "#FFFFFF",
-          "min": 4.5,
-          "before": "#10171A",
-          "after": "#10171A",
-          "ratio": 18.11,
-          "moved": false,
-          "used_for": "heading text on paper, and the dark bar under white text"
-        },
-        {
-          "token": "b",
-          "against": "#DBE4EC",
-          "min": 4.5,
-          "before": "#10171A",
-          "after": "#10171A",
-          "ratio": 14.08,
-          "moved": false,
-          "used_for": "footer background under its muted text"
-        }
-      ],
-      "final_verify": [
-        {
-          "token": "c",
-          "against": "#FFFFFF",
-          "min": 4.5,
-          "final": "#12554A",
-          "ratio": 8.66,
-          "pass": true
-        },
-        {
-          "token": "a",
-          "against": "#FFFFFF",
-          "min": 4.5,
-          "final": "#12554A",
-          "ratio": 8.66,
-          "pass": true
-        },
-        {
-          "token": "b",
-          "against": "#FFFFFF",
-          "min": 4.5,
-          "final": "#10171A",
-          "ratio": 18.11,
-          "pass": true
-        },
-        {
-          "token": "b",
-          "against": "#DBE4EC",
-          "min": 4.5,
-          "final": "#10171A",
-          "ratio": 14.08,
-          "pass": true
-        }
-      ],
-      "mist_checks": [
-        {
-          "fg": "b",
-          "value": "#10171A",
-          "bg_mist": "#F2F0EA",
-          "ratio": 15.89,
-          "pass": true
-        }
-      ]
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.26,
+      "pass": true
     },
-    "accent_ground": {
-      "raw": "#12554A",
-      "kept_bright": false,
-      "label_colour": "#FFFFFF",
-      "white_on_raw": 8.66,
-      "ink_on_raw": 2.06,
-      "label_on_accent": 8.66,
-      "label_on_accent_pass": true,
-      "why": "white type sits on this colour, so it is used exactly as the pairing table resolved it"
+    {
+      "pair": "white on accent",
+      "ratio": 8.62,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.07,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.04,
+      "pass": true
     }
-  }
+  ],
+  "notes": []
 }
