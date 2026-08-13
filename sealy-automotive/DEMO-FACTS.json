@@ -5,6 +5,7 @@
   "phone": "(865) 227-9000",
   "tel": "+18652279000",
   "brand_color": "#123A5E",
+  "palette_source": "fallback-trade-or-neutral",
   "site_host": "sealyauto.com",
   "city": "",
   "region": "37920",
@@ -15,11 +16,11 @@
   "trade_label": "Auto repair",
   "schema_type": "LocalBusiness",
   "title_suffix": "",
-  "meta_description": "Sealy Automotive — auto repair that shows up when you call.",
+  "meta_description": "Sealy Automotive - auto repair that shows up when you call.",
   "eyebrow": "",
   "h1_lead": "Car pulling to one side?",
   "h1_emph": "Let us take a look.",
-  "hero_lede": "Brakes, alignment, diagnostics and the everyday repairs, done properly the first time.",
+  "hero_lede": "Auto repair done right - call and we will take a look.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "",
@@ -53,12 +54,30 @@
     {
       "title": "Auto repair",
       "body": "",
+      "slot": "photo-service-1.jpg",
       "alt": "Auto repair work photo"
     }
   ],
   "photos_h2": "Recent work",
   "photos_lede": "",
-  "gallery": [],
+  "gallery": [
+    {
+      "slot": "photo-gallery-1.jpg",
+      "alt": "Auto repair job photo 1"
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "alt": "Auto repair job photo 2"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Auto repair job photo 3"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "Auto repair job photo 4"
+    }
+  ],
   "reviews_h2": "What customers say",
   "reviews_lede": "",
   "reviews": [],
@@ -84,9 +103,11 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\sealy-automotive\\HARVEST.json",
-    "at": "2026-08-13T13:29:03.427Z",
+    "at": "2026-08-13T13:32:45.062Z",
     "zero_human_input": true,
-    "facts_path": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\sealy-automotive\\DEMO-FACTS.json",
+    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\sealy-automotive\\DEMO-FACTS.json",
+    "wrote_facts_from_harvest": true,
+    "rebuilt": true,
     "harvest_merged": true
   },
   "address": {

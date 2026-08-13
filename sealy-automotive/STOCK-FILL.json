@@ -1,8 +1,10 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-13T13:29:03.640Z",
+  "at": "2026-08-13T13:32:45.465Z",
   "trade": "auto-repair",
-  "slotHints": {},
+  "slotHints": {
+    "photo-service-1.jpg": "Auto repair"
+  },
   "ok": true,
   "kept": [
     {
@@ -12,7 +14,7 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "7ae6e66076701c40b642154df8533a6d5dc9bb6ddbaf552736f1f8d432d6de54",
+      "sha256": "6b6d42c4f9543f090eace250c6b8c4bd800dca44b38b1608fa949d9096931a51",
       "source": "harvest_or_prior"
     },
     {
@@ -43,11 +45,6 @@
     {
       "file": "photo-hero.jpg",
       "sha256": "6bb2e31dd19bc80a0710be247216b7210e6f41b1f2e8ee4fa7c477c671c0874a",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "6b6d42c4f9543f090eace250c6b8c4bd800dca44b38b1608fa949d9096931a51",
       "source": "harvest_or_prior"
     },
     {
@@ -86,9 +83,30 @@
       "source": "harvest_or_prior"
     }
   ],
-  "filled": [],
+  "filled": [
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "706ef604a53cd9dffefbac1e2c0c27408abcdfd41724bd1fc4680c22c836939d",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/wrenches-hanging-on-wall-16243260/",
+        "subject_alt": "mechanic workshop tools garage",
+        "found_by_query": "mechanic workshop tools garage",
+        "family": "auto-repair",
+        "library_file": "auto-repair-collection-wrenches-hanging-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:38.991Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim."
+      },
+      "service": null
+    }
+  ],
   "gaps": [],
   "distinct": 16,
   "slots": 16,
-  "stock_provenance_rows": 0
+  "stock_provenance_rows": 1
 }
