@@ -1,4 +1,28 @@
-DO-NOT-SHIP — updated 2026-08-13 by ready-unblock seat
-CDN_STALE: CLEARED — live index carries blank-mold-20260813-cleareyes, no phonestrip, reviews.html 200
-REMAINING HOLD: LOGO_MISSING (assets/logo.png absent locally; header empty home link; build-refusal NO_LOGO)
-Do not Enter-ReadyDemo / send until logo transparent + header img + structure + Pixel device pass.
+DO-NOT-SHIP - updated 2026-08-13 by agent-c-wave1-money
+
+PREVIOUS HOLD (LOGO_MISSING): CLEARED. assets/logo.png is present, transparent corners PASS,
+header renders the mark. That hold is stale and should not be re-raised.
+
+CURRENT HOLD - BUILD REFUSES, and the refusal is correct:
+  HARVEST_FLOOR_PHOTOS 7 of 8 required
+  ALT_FROM_SLOT gallery alt "Auto repair job photo 3"
+  ALT_FROM_SLOT service alt "Automotive Repair Shop work photo"
+
+WHY THE COUNT DROPPED TO SEVEN. photo-gallery-8.jpg was LIVE on this page and its own vision review
+describes it as "a technician in a shop shirt kneeling on cardboard reaching into the front wheel
+well of a grey SUV while a small child sits beside him watching". DEMO-SHIP-STANDARD F allows only
+the owner's own published photo of himself. The image is now in assets-rejected and the gallery
+entry is gone. NEVER restore it and never widen the floor to keep the count.
+
+TO CLEAR THE HOLD, in this order:
+  1. Look at the harvested images this business has that the vision review never covered. HARVEST
+     holds 12; PHOTO-VISION-REVIEW covers 11. photo-gallery-3.jpg is one of the uncovered ones.
+     One genuine work photograph restores the floor.
+  2. Write a real per-image description for photo-gallery-3.jpg into PHOTO-VISION-REVIEW.kept and
+     re-run _tmp/wave1-agentc/apply-vision-alts.js --write. Six of the nine alts were replaced this
+     way already.
+  3. The hero fell back to a stock-library image after the previous hero was refused
+     road_no_landscape. Every wide shot this business posted is a road or parking-lot frame, so a
+     hero from their own work needs a fresh harvest, not a re-pick.
+
+NEVER SENT TO THIS RECIPIENT. Not in any outbound journal. Keep it that way until the build passes.
