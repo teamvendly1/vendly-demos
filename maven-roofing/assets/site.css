@@ -529,6 +529,8 @@ footer{position:relative;z-index:1}
 /* Contact face tier 2: their logo contained + centred, never stretched, never on a chip. */
 .shot .contact-logo,.shot img.contact-logo{cursor:default;pointer-events:none;width:100%;max-width:280px;height:auto;margin:0 auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:transparent}
 .shot.shot-contain{background:#1a1f16}
+/* Logo-tier contact: no dark plate behind the mark (that read as a chip). */
+.shot.shot-contain:has(.contact-logo),.contact-shot:has(.contact-logo){background:transparent;border:0;box-shadow:none;padding:0}
 .contact-shot:empty{display:none}
 /* Trade-visible hero that needs a darker type band (not a darker photo) */
 .hero.hero-darken-band::after{background:
