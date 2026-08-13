@@ -3,259 +3,412 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sealy Automotive | TN</title>
-<meta name="description" content="A good mechanic.">
 <meta name="robots" content="noindex,nofollow">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Sealy Automotive">
-<meta property="og:title" content="Sealy Automotive | TN">
-<meta property="og:description" content="A good mechanic.">
-<meta property="og:url" content="https://vendly-demos.vercel.app/sealy-automotive/">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://vendly-demos.vercel.app/sealy-automotive/assets/site-0.jpg">
-<meta property="og:image:secure_url" content="https://vendly-demos.vercel.app/sealy-automotive/assets/site-0.jpg">
-<meta property="og:image:width" content="1052">
-<meta property="og:image:height" content="450">
-<meta property="og:image:alt" content="Sealy Automotive">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://vendly-demos.vercel.app/sealy-automotive/assets/site-0.jpg">
-<meta name="twitter:image:alt" content="Sealy Automotive">
-<meta name="twitter:title" content="Sealy Automotive | TN">
-<meta name="twitter:description" content="A good mechanic.">
-<style>
-:root{
-  --a:#3A3F45;--b:#1A1D21;--c:#8F4A06;--mist:#F6F5F3;--ink:#15171A;
-  /* --brand is the logo colour AT FULL STRENGTH. It is used only where no text
-     sits on it. --c is the same hue corrected to 4.5:1 for anything that does. */
-  --brand:#8F4A06;--scrim:16,18,20;
-  --paper:#fff;--muted:#4a5763;--line:#dde3ea;--wrap:1080px;--radius:14px;
+<meta name="vendly-demo-build" content="blank-mold-20260813-cleareyes">
+<meta name="vendly-google-rating" content="">
+<meta name="vendly-google-review-count" content="">
+<meta name="vendly-review-source" content="">
+<title>Sealy Automotive</title>
+<meta name="description" content="A good mechanic.">
+<meta name="theme-color" content="#334918">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Sealy Automotive",
+  "telephone": "+18652279000",
+  "url": "https://sealyauto.com"
 }
-.concierge{background:var(--soft,#f7f5f0)}
-.concierge .chat{max-width:620px;margin:26px auto 0;display:flex;flex-direction:column;gap:12px}
-.concierge .msg{display:flex}
-.concierge .msg span{padding:13px 17px;border-radius:18px;line-height:1.5;max-width:82%;font-size:.98rem}
-.concierge .msg.them{justify-content:flex-start}
-.concierge .msg.them span{background:#fff;border:1px solid var(--line,#e3e0d8);border-bottom-left-radius:5px}
-.concierge .msg.us{justify-content:flex-end}
-.concierge .msg.us span{background:var(--c,#6A5A1E);color:#fff;border-bottom-right-radius:5px}
-.concierge .msg.us span a{color:#fff;text-decoration:underline}
-.concierge .note{max-width:620px;margin:20px auto 0;text-align:center;opacity:.75;font-size:.9rem}
-.hero-alt{display:inline-block;margin-left:14px;color:inherit;opacity:.85;text-decoration:underline;font-size:.95rem}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font:400 17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  -webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block;height:auto}
-a{color:var(--a)}
-h1,h2,h3{line-height:1.12;margin:0 0 .55em;overflow-wrap:break-word}
-h1{font:700 clamp(31px,6.6vw,54px)/1.06 "Barlow Condensed",Inter,sans-serif;letter-spacing:-.005em;text-transform:uppercase}
-h2{font:700 clamp(25px,4.6vw,38px)/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase}
-h3{font:700 18px/1.3 Inter,sans-serif}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
-.skiplink{position:absolute;left:-9999px;top:0;background:var(--b);color:#fff;padding:12px 18px;z-index:200}
-.skiplink:focus{left:8px;top:8px}
-:focus-visible{outline:3px solid var(--c);outline-offset:3px;border-radius:4px}
-
-.phonestrip{background:var(--b)}
-.phonestrip a{display:block;padding:13px 16px;color:#fff;text-align:center;text-decoration:none;
-  font:700 17px/1 Inter,sans-serif;letter-spacing:.02em}
-.phonestrip a:hover,.phonestrip a:focus{background:#0a1c2e}
-
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.95);
-  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;flex-wrap:wrap}
-.brand{font:700 20px/1.1 "Barlow Condensed",Inter,sans-serif;text-transform:uppercase;letter-spacing:.02em;color:var(--b);text-decoration:none;display:inline-flex;align-items:center}
-.brandmark{height:52px;width:auto}
-@media(min-width:720px){.brandmark{height:64px}}
-.header-centered .bar{flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.header-centered .brandmark{height:76px;max-width:min(86vw,420px)}
-@media(min-width:720px){.header-centered .brandmark{height:104px}}
-.gal-wide{grid-template-columns:1fr}
-@media(min-width:720px){.gal-wide{grid-template-columns:repeat(2,1fr)}}
-.gal-wide img{aspect-ratio:16/10}
-.gal-masonry{grid-template-columns:repeat(2,1fr)}
-@media(min-width:720px){.gal-masonry{grid-template-columns:repeat(3,1fr)}}
-.gal-masonry figure:nth-child(3n+1){grid-column:span 2}
-@media(min-width:720px){.gal-masonry figure:nth-child(3n+1){grid-column:span 1}}
-nav.main ul{display:flex;gap:16px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
-nav.main a{font:600 15px/1 Inter,sans-serif;color:var(--b);text-decoration:none;padding:8px 2px;display:inline-block}
-nav.main a:hover{text-decoration:underline}
-
-.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px/1 Inter,sans-serif;
-  padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent}
-.btn-c{background:var(--c);color:#fff}
-.btn-c:hover{filter:brightness(.9)}
-.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
-.btn-ghost:hover{background:rgba(255,255,255,.12)}
-/* Secondary button for the LIGHT hero. btn-ghost is white-on-transparent and
-   disappears entirely on the split treatment's pale background. */
-.btn-outline{border-color:var(--b);color:var(--b)}
-.btn-outline:hover{background:var(--mist)}
-
-/* A thin band of their real logo colour, full strength, carrying no text. */
-.brandstripe{height:5px;background:var(--brand)}
-
-/* HERO TREATMENT A - overlay. Full-bleed photograph behind a scrim tinted with
-   their own dark tone rather than a fixed navy, so two businesses do not share
-   an overlay colour. */
-.hero{position:relative;isolation:isolate}
-.hero-overlay{color:#fff;background:var(--b)}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-overlay::after{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(var(--scrim),.93) 0%,rgba(var(--scrim),.86) 42%,rgba(var(--scrim),.55) 100%)}
-.hero-in{position:relative;padding:62px 20px 58px}
-.eyebrow{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
-.hero-overlay .eyebrow,.hero-panel .eyebrow{color:#fff;opacity:.9}
-.hero-overlay p.lede,.hero-panel p.lede{color:#eef3f8}
-.hero p.lede{font-size:19px;max-width:44ch;margin:0 0 26px}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
-
-/* HERO TREATMENT B - split. The photograph sits BESIDE the text at full clarity
-   instead of under a scrim. A scrim exists to make text legible over a busy
-   image and it also destroys the image, which is self-defeating on the trades
-   where the photograph is the sales argument. */
-.hero-split{background:var(--mist);border-bottom:1px solid var(--line);color:var(--ink)}
-.hero-split .eyebrow{color:var(--b)}
-.hero-split p.lede{color:var(--muted)}
-.hero-grid{display:grid;gap:26px;grid-template-columns:1fr;align-items:center;padding:44px 20px 40px}
-@media(min-width:860px){.hero-grid{grid-template-columns:1.05fr .95fr;gap:38px;padding:56px 20px 52px}}
-.hero-shot img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:0 12px 30px rgba(var(--scrim),.18)}
-
-/* HERO TREATMENT C - panel. No photograph. Chosen when the harvest produced too
-   few images for an image-led page to look finished rather than thin. */
-.hero-panel{background:var(--b);color:#fff;border-bottom:5px solid var(--brand)}
-.hero-panel .hero-in{padding:52px 20px 48px;text-align:center}
-.hero-panel .cta-row{justify-content:center}
-.hero-panel p.lede{margin-left:auto;margin-right:auto}
-/* The logo sits on a white plate rather than being forced white with a filter.
-   An invert() turns a colour logo into a silhouette and throws away the brand we
-   just went to the trouble of extracting; a plate reads correctly whatever the
-   logo is made of, including one with its own dark background baked in. */
-.hero-panel .panelplate{display:inline-block;background:#fff;border-radius:12px;padding:14px 20px;margin:0 auto 20px}
-.hero-panel .panelmark{height:64px;width:auto;max-width:min(78vw,340px)}
-
-.strip{background:var(--mist);border-block:1px solid var(--line)}
-.strip ul{display:flex;flex-wrap:wrap;gap:10px 26px;list-style:none;margin:0;padding:16px 0;
-  font:600 15px/1.4 Inter,sans-serif;color:var(--b)}
-
-section{padding:52px 0}
-.lead{color:var(--muted);max-width:62ch}
-.grid{display:grid;gap:14px;grid-template-columns:1fr}
-@media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:920px){.grid{grid-template-columns:repeat(3,1fr)}}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
-.card h3{margin:0;color:var(--b)}
-
-.gal{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:720px){.gal{grid-template-columns:repeat(3,1fr)}}
-.gal figure{margin:0}
-.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;background:var(--mist)}
-.gal figcaption{font:400 12px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
-
-.factbox{background:var(--mist);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.factbox dl{margin:0;display:grid;gap:14px}
-.factbox dt{font:700 13px/1 Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.factbox dd{margin:0;font-size:17px}
-.factbox a{color:var(--a)}
-
-.quote{border-left:4px solid var(--c);padding:6px 0 6px 18px;margin:0;font-size:18px;color:var(--ink)}
-.quote cite{display:block;margin-top:10px;font:400 14px/1.5 Inter,sans-serif;color:var(--muted);font-style:normal}
-
-footer.site{background:var(--b);color:#dbe4ec;padding:36px 0;font-size:15px}
-footer.site a{color:#fff}
-.preview{background:#3a2f00;color:#ffe9a8;font:600 13px/1.45 Inter,sans-serif;padding:11px 16px;text-align:center}
-.preview a{color:#fff}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=harv20260813">
+<style id="v-lb-css">
+.v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
+width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
+.v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
+.v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+.v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
+background:rgba(10,10,8,.92);touch-action:none}
+.v-lb-root.is-open{display:flex}
+.v-lb-stage{position:relative;max-width:min(96vw,1200px);max-height:92vh;overflow:hidden;
+display:flex;align-items:center;justify-content:center}
+.v-lb-img{max-width:96vw;max-height:92vh;width:auto;height:auto;object-fit:contain;
+transform-origin:center center;transition:transform .18s ease;user-select:none;
+-webkit-user-drag:none;cursor:grab}
+.v-lb-img.is-zoomed{cursor:grabbing;transition:none}
+.v-lb-close{position:fixed;top:12px;right:12px;z-index:100000;width:44px;height:44px;
+border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.45);
+color:#fff;font:600 22px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.v-lb-close:focus-visible{outline:2px solid #FBBC04;outline-offset:2px}
+.v-lb-cap{position:fixed;left:0;right:0;bottom:0;padding:14px 18px;text-align:center;
+color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+@media(prefers-reduced-motion:reduce){.v-lb-img{transition:none}}
 </style>
 </head>
 <body>
-<a class="skiplink" href="#main">Skip to main content</a>
+<div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Sealy Automotive.</div>
+<a class="skiplink" href="#main">Skip to content</a>
 
-<div class="preview">This is a preview built by Vendly. It is not an official or affiliated site of Sealy Automotive.</div>
-
-<div class="brandstripe"></div>
-<div class="phonestrip"><a href="tel:+18652279000">Call (865) 227-9000</a></div>
-
+<div class="mobile-callbar" role="navigation" aria-label="Quick actions">
+  <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
+  <div class="mcb-rule" aria-hidden="true"></div>
+  <div class="mcb-row">
+    <a class="mcb-est" href="#quote">Get estimate</a>
+    <a class="mcb-call" href="tel:+18652279000" aria-label="Call Sealy Automotive at (865) 227-9000">CALL</a>
+  </div>
+</div>
 <header class="site">
   <div class="wrap bar">
-    <a class="brand" href="#main"><img class="brandmark" src="assets/site-0.jpg" alt="Sealy Automotive" width="150" height="150"></a>
-    <nav class="main" aria-label="Main">
-      <ul>
-        <li><a href="#services">Services</a></li>
-        
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="sitemenu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="navtoggle-text">Menu</span>
+    </button>
+    <a href="index.html" aria-label="Sealy Automotive home" style="grid-column:2;justify-self:center">
+      <img class="logo" src="assets/logo.png?v=harv20260813" alt="Sealy Automotive">
+    </a>
+    <span class="navbalance" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <span class="navtoggle-text">Menu</span>
+    </span>
+    <div class="bizmeta">
+      <a class="btn btn-red" href="tel:+18652279000">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        (865) 227-9000
+      </a>
+    </div>
   </div>
+  <nav class="sitemenu" id="sitemenu" aria-label="Site sections" hidden>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="services.html">Services offered</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main id="main">
 
-<div class="hero hero-split">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      
-      <h1>Sealy Automotive</h1>
-      <p class="lede">A good mechanic.</p>
-      <div class="cta-row">
-      <a class="btn btn-c" href="tel:+18652279000">Book an Appointment</a>
-      
+<section class="hero hero-darken-band" aria-labelledby="h-hero">
+  <img class="bg" src="assets/photo-hero.jpg?v=harv20260813" alt="Auto repair work in the area" loading="eager">
+  <div class="wrap hero-inner">
+    <span class="eyebrow"></span>
+    <h1 id="h-hero">Car pulling to one side? <em>Let us take a look.</em></h1>
+    <p class="lede">A good mechanic.</p>
+
+    <div class="cta">
+      <a class="btn btn-red phone-cta-desktop" href="tel:+18652279000">Call (865) 227-9000</a>
+      <a class="btn btn-ghost" href="index.html">See our work</a>
     </div>
-    <p class="hero-facts">(865) 227-9000 &middot; 6001 Chapman Highway, Knoxville</p>
-    </div>
+
     
   </div>
-</div>
+</section>
 
-<section id="services">
+
+
+<section class="reveal mist in" aria-labelledby="h-explore">
   <div class="wrap">
-    <h2>What we do</h2>
-    <p class="lead">Taken from the Sealy Automotive Facebook page.</p>
-    <div class="grid">
-      <div class="card"><h3>A good mechanic</h3></div>
+    <div class="center">
+      <p class="kicker">Explore Sealy Automotive</p>
+      <h2 id="h-explore">Everything you need before you call</h2>
+      <p class="lede"></p>
+    </div>
+    
+    
+        <div class="svc" style="margin-top:34px">
+      <a class="card card-photo" href="about.html" style="color:inherit;text-decoration:none;display:block">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-about.jpg?v=harv20260813" data-v-lb-alt="Sealy Automotive crew and job photo" aria-label="Sealy Automotive crew and job photo - Open photo"><img src="assets/photo-card-about.jpg?v=harv20260813" alt="Sealy Automotive crew and job photo" loading="lazy"></button></div>
+        <h3>About us</h3>
+        <p>A good mechanic.</p>
+      </a>
+      <a class="card card-photo" href="services.html" style="color:inherit;text-decoration:none;display:block">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-services.jpg?v=harv20260813" data-v-lb-alt="Auto repair photo" aria-label="Auto repair photo - Open photo"><img src="assets/photo-card-services.jpg?v=harv20260813" alt="Auto repair photo" loading="lazy"></button></div>
+        <h3>Services offered</h3>
+        <p>Auto repair</p>
+      </a>
+      
+      
     </div>
   </div>
 </section>
 
-<section id="contact">
+
+
+
+
+
+<section class="ctaband reveal" aria-labelledby="h-ctaband">
+  <img class="bg" src="assets/photo-ctaband.jpg?v=harv20260813" alt="Auto repair job photo" aria-hidden="true" loading="lazy">
+  <div class="wrap inner">
+    <h2 id="h-ctaband">Ready when you are</h2>
+    <p>Call (865) 227-9000 or send a note.</p>
+    <div class="cta" style="justify-content:center;margin-bottom:0">
+      <a class="btn btn-red phone-cta-desktop" href="tel:+18652279000">Call (865) 227-9000</a>
+      <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Tell us what you need</a>
+    </div>
+    <p class="photonote">See sample work on our <a href="index.html" style="color:#fff">photos page</a>.</p>
+  </div>
+</section>
+
+<section class="reveal mist" id="quote" aria-labelledby="h-quote">
   <div class="wrap">
-    <h2>Contact</h2>
-    <div class="factbox">
-      <dl>
-        <div><dt>Phone</dt><dd><a href="tel:+18652279000">(865) 227-9000</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:sealyauto@gmail.com">sealyauto@gmail.com</a></dd></div>
-        <div><dt>Address</dt><dd>6001 Chapman Highway
-Knoxville, TN, 37920
-United States</dd></div>
-        
-        <div><dt>Facebook</dt><dd><a href="https://www.sealyauto.com/">www.sealyauto.com/</a></dd></div>
-      </dl>
+    <div class="leadwrap">
+      <div>
+        <p class="kicker">Get a quote</p>
+        <h2 id="h-quote">Tell us what you need</h2>
+        <p class="lede" style="color:var(--muted)"></p>
+        <div class="badges" style="margin-top:26px">
+          <span class="badge" style="text-transform:none"><a href="tel:+18652279000" style="color:inherit;text-decoration:none">(865) 227-9000</a></span>
+        </div>
+      </div>
+      <form id="leadform" novalidate>
+        <div class="field">
+          <label for="f-name">Your name <span class="req">(required)</span></label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone <span class="req">(required)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-type">What do you need</label>
+          <select id="f-type" name="type">
+            <option>Auto repair</option>
+            <option>Not sure, call and ask</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">What do you need</label>
+          <textarea id="f-msg" name="message" placeholder=""></textarea>
+        </div>
+        <button class="btn btn-blue" type="submit" style="width:100%;justify-content:center;border:0;cursor:pointer">Send estimate request</button>
+        <p class="formnote">Your details go to Sealy Automotive only. We do not sell or share them.</p>
+      </form>
     </div>
   </div>
 </section>
 
 </main>
 
-<footer class="site">
+<footer>
   <div class="wrap">
-    <p>Sealy Automotive. 6001 Chapman Highway
-Knoxville, TN, 37920
-United States. (865) 227-9000</p>
-    <p>Preview built by Vendly from the Sealy Automotive public Facebook page on 2026-08-07. Not an official or affiliated site. Every detail here came from that page and can be corrected on request.</p>
+    <div class="fgrid">
+      <div>
+        <div class="logo-chip" style="margin-bottom:16px">
+          <img class="logo-footer" src="assets/logo.png?v=harv20260813" alt="Sealy Automotive">
+        </div>
+        <p style="margin:0;max-width:34ch">Sealy Automotive.</p>
+      </div>
+      <div>
+        <h3 class="fh">Contact</h3>
+        <ul>
+          <li><a href="tel:+18652279000">(865) 227-9000</a></li>
+                  </ul>
+      </div>
+      <div>
+        <h3 class="fh">Menu</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services offered</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+      </div>
+      <div>
+        <h3 class="fh">Services</h3>
+        <ul>
+          <li>Auto repair</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 Sealy Automotive.</span>
+      <span>Site by Vendly</span>
+    </div>
   </div>
 </footer>
 
 <script>
-  window.VendlyBeaconConfig = { tenantId: "sealy-automotive", endpoint: "https://vendly-jarvis.vercel.app" };
+(function(){
+  var lf=document.getElementById('leadform');
+  if(lf){
+    lf.addEventListener('submit',function(e){
+      e.preventDefault();
+      alert("Preview only. On the live site this goes straight to Sealy Automotive and is captured as a lead.");
+    });
+  }
+})();
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-beacon.js" defer></script>
 
-<!-- VENDLY-DEMO-LIVE-ASSISTANT. The real assistant, not a screenshot. Grounded server-side
-     in this demo's own harvested facts; it refuses anything it was not given.
-     Contract: _tmp/DEMO-LIVE-ASSISTANT-2026-08-08.md -->
 <script>
-window.VendlyDemoAssistant={slug:"sealy-automotive",name:"Sealy Automotive",phone:"(865) 227-9000",accent:"#3A3F45"};
+  window.SiteAssistantConfig = {
+    tenantId: "demo-sealy-automotive",
+    demoSlug: "sealy-automotive",
+    endpoint: "https://vendly-jarvis.vercel.app",
+    name: "Sealy Automotive",
+    greeting: "",
+    nudge: "",
+    disablePeek: true,
+    forceRender: true,
+    phone: "",
+    sms: "",
+    quoteUrl: "",
+    bookUrl: "",
+    contactUrl: "index.html#quote",
+    suggestions: [],
+    accent: "#507326"
+  };
 </script>
-<script src="https://vendly-jarvis.vercel.app/vendly-demo-assistant.js" defer></script>
+<script src="assets/siteassistant-v2.js?v=harv20260813" defer></script>
+<script src="assets/hero-rotator.js?v=harv20260813" defer></script>
+<script src="assets/site.js?v=harv20260813" defer></script>
+<script id="v-lb-js">
+(function(){
+  if (window.__vendlyLightbox) return;
+  window.__vendlyLightbox = true;
+  var reduce = false;
+  try { reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+
+  var root = document.createElement('div');
+  root.className = 'v-lb-root';
+  root.setAttribute('role', 'dialog');
+  root.setAttribute('aria-modal', 'true');
+  root.setAttribute('aria-label', 'Photo viewer');
+  root.innerHTML = '<button type="button" class="v-lb-close" aria-label="Close photo">\u00d7</button>'
+    + '<div class="v-lb-stage"><img class="v-lb-img" alt=""></div>'
+    + '<p class="v-lb-cap" hidden></p>';
+  document.body.appendChild(root);
+
+  var img = root.querySelector('.v-lb-img');
+  var cap = root.querySelector('.v-lb-cap');
+  var closeBtn = root.querySelector('.v-lb-close');
+  var lastFocus = null;
+  var scale = 1, tx = 0, ty = 0;
+  var pointers = new Map();
+  var pinchStart = null;
+  var swipeX0 = null;
+
+  function applyTransform() {
+    img.style.transform = 'translate(' + tx + 'px,' + ty + 'px) scale(' + scale + ')';
+    img.classList.toggle('is-zoomed', scale > 1.05);
+  }
+  function resetZoom() { scale = 1; tx = 0; ty = 0; applyTransform(); }
+
+  function trapTab(e) {
+    if (e.key !== 'Tab' || !root.classList.contains('is-open')) return;
+    var focusables = [closeBtn];
+    var first = focusables[0], last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+
+  function openFrom(el) {
+    var src = el.getAttribute('data-v-lb-src') || '';
+    var alt = el.getAttribute('data-v-lb-alt') || '';
+    if (!src) {
+      var nested = el.querySelector('img');
+      if (nested) { src = nested.currentSrc || nested.src; alt = nested.alt || ''; }
+    }
+    if (!src) return;
+    lastFocus = document.activeElement;
+    img.src = src;
+    img.alt = alt || 'Enlarged photo';
+    cap.hidden = true; cap.textContent = ''; /* no visible photo captions */
+    resetZoom();
+    root.classList.add('is-open');
+    document.documentElement.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function close() {
+    if (!root.classList.contains('is-open')) return;
+    root.classList.remove('is-open');
+    document.documentElement.style.overflow = '';
+    img.removeAttribute('src');
+    resetZoom();
+    if (lastFocus && typeof lastFocus.focus === 'function') {
+      try { lastFocus.focus(); } catch (e) {}
+    }
+    lastFocus = null;
+  }
+
+  function onKey(e) {
+    if (!root.classList.contains('is-open')) return;
+    if (e.key === 'Escape') { e.preventDefault(); close(); }
+    trapTab(e);
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target;
+    if (!t || !t.closest) return;
+    var btn = t.closest('[data-v-lb]');
+    if (btn) {
+      e.preventDefault();
+      openFrom(btn);
+      return;
+    }
+    if (t === root || t.classList.contains('v-lb-stage')) close();
+  });
+  closeBtn.addEventListener('click', function (e) { e.stopPropagation(); close(); });
+  document.addEventListener('keydown', onKey);
+
+  img.addEventListener('dblclick', function (e) {
+    e.preventDefault();
+    if (reduce) return;
+    if (scale > 1.05) resetZoom();
+    else { scale = 2.4; applyTransform(); }
+  });
+
+  root.addEventListener('pointerdown', function (e) {
+    if (!root.classList.contains('is-open')) return;
+    if (e.target === closeBtn) return;
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    try { root.setPointerCapture(e.pointerId); } catch (err) {}
+    if (pointers.size === 1) swipeX0 = e.clientX;
+    if (pointers.size === 2 && !reduce) {
+      var pts = Array.from(pointers.values());
+      var dx = pts[0].x - pts[1].x, dy = pts[0].y - pts[1].y;
+      pinchStart = { dist: Math.hypot(dx, dy) || 1, scale: scale };
+    }
+  });
+  root.addEventListener('pointermove', function (e) {
+    if (!pointers.has(e.pointerId)) return;
+    var prev = pointers.get(e.pointerId);
+    pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (pointers.size === 2 && pinchStart && !reduce) {
+      var pts = Array.from(pointers.values());
+      var dx = pts[0].x - pts[1].x, dy = pts[0].y - pts[1].y;
+      var dist = Math.hypot(dx, dy) || 1;
+      scale = Math.max(1, Math.min(4, pinchStart.scale * (dist / pinchStart.dist)));
+      applyTransform();
+      return;
+    }
+    if (pointers.size === 1 && scale > 1.05 && !reduce) {
+      tx += e.clientX - prev.x;
+      ty += e.clientY - prev.y;
+      applyTransform();
+    }
+  });
+  function endPointer(e) {
+    if (!pointers.has(e.pointerId)) return;
+    if (pointers.size === 1 && scale <= 1.05 && swipeX0 != null) {
+      var dx = e.clientX - swipeX0;
+      if (Math.abs(dx) > 70) close();
+    }
+    pointers.delete(e.pointerId);
+    if (pointers.size < 2) pinchStart = null;
+    if (pointers.size === 0) swipeX0 = null;
+  }
+  root.addEventListener('pointerup', endPointer);
+  root.addEventListener('pointercancel', endPointer);
+})();
+</script>
 </body>
 </html>
