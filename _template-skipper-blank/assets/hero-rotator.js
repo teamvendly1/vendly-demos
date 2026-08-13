@@ -1,5 +1,5 @@
 'use strict';
-/* Hero photo rotator — same H1/lede/CTA; photo only. Jared 2026-08-12.
+/* Hero photo rotator - same H1/lede/CTA; photo only. Jared 2026-08-12.
    Cross-fade 6s. Pause on interaction. prefers-reduced-motion -> static first.
    CTA stays tappable (pointer-events none on slides). Preload slide 1 only. */
 (function () {

@@ -1,96 +1,368 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-13T16:55:37.390Z",
-  "trade": "landscaping",
+  "at": "2026-08-13T23:49:24.418Z",
+  "trade": "tree-service",
   "slotHints": {
-    "photo-service-1.jpg": "Landscape Company"
+    "photo-service-1.jpg": "Tree removal and stump grinding"
   },
   "ok": true,
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "bb574667bcbd27c12b421c6f9b79a88f278c2843505629842bb22ffad957aaf0",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "32f1756f8f2eb30d731d22e5945190e85bf6e7ca17eb3ddbdace2e319d0bcb5b",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "bfd61628a1d9dfb7f906b88a0a20483ef1c143a733c00c236c7b099261407d01",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "b16e02d7bba8e2c539fd818700b9635bca20ce8d4b9fda29a5b0207c04a6c095",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "3fcf375e7eb950bb89277a28e1676105dc6fd3f893ee5440f4687480ac783d42",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "ae1d1dd8561a45180cae32fe532182e627b11d65d8a8f5eae1d210407e011fa0",
-      "source": "harvest_or_prior"
-    },
-    {
       "file": "photo-ctaband.jpg",
       "sha256": "4ea77ba116f0270b3c041634b1a8851a6c39d7c29ad91270d2816e0ddb167446",
-      "source": "harvest_or_prior"
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "9588f22a52276f4518aa55ddc525af22c1039298efc7f667bc74f89fdc19b49b",
-      "source": "harvest_or_prior"
+      "sha256": "a8d60a39318f71bd61cdb50b2db9e8d9aead1595ac7a5670c70f6a87a1116a71",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    }
+  ],
+  "filled": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "80f52eabe4d175c682f08120416f8c70a472aa14cee83aa7492ec1d77ae74c29",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/lush-greenery-in-a-residential-suburb-34726329/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-dense-ivy-shrubs-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:49.809Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 40
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "163c4fbbceca570c5914fc49a1cfea302a7b6061571de6e5513d8dbeae0feff0",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tree-stump-and-hydrangeas-in-a-lush-garden-setting-38440030/",
+        "subject_alt": "stump grinding machine dirt",
+        "found_by_query": "stump grinding machine dirt",
+        "family": "tree-service",
+        "library_file": "tree-service-weathered-tree-stump-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:51.809Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 39
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "105458e038a9a93dee9f2cf726380c726780c79eb81e9885e6df37fb44e3d764",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/man-trimming-the-leaves-5027602/",
+        "subject_alt": "pruning saw canopy limb",
+        "found_by_query": "pruning saw canopy limb",
+        "family": "tree-service",
+        "library_file": "tree-service-gardener-using-large-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:26:04.837Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 38
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "6e75b6bec34ab56d2d423dbecc7344b9eb6b5885eab2e8c38780f78348b3bba1",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/elderly-couple-walking-together-7728987/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-elderly-couple-happily-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:38.483Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 37
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "54d959761510246f6a4a182250cc67ad6a651beaf8f103730123d614f2543956",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/wood-chips-lying-on-ground-4167967/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-close-up-wood-chips-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:27.660Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 36
+      }
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "9818fe80787326c5ecfdea17d93c4dae520bdc25a2e5ad0f33fd7e28f9f27a24",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/charming-red-cottage-amidst-lush-garden-setting-38776789/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-idyllic-red-cottage-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:28.358Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 35
+      }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "e606842ac28cfce1fa35ac0d213d8092a30edf0f0939d32395c57338dfdae84f",
-      "source": "harvest_or_prior"
+      "sha256": "745a2ca7d0aa4ae90293cc11ffb116528e79cdaa0df33f49b419c573b30adf3a",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/save-our-soil-13350163/",
+        "subject_alt": "stump grinding machine dirt",
+        "found_by_query": "stump grinding machine dirt",
+        "family": "tree-service",
+        "library_file": "tree-service-large-excavator-operates-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:53.550Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 34
+      }
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "095025bf834953710c339c4d5ff40c2c882a7e013d330978719b840918b15043",
-      "source": "harvest_or_prior"
+      "sha256": "e018318db53ef33fe07958d5aff691b0332382a0bc527ea6d0b793334a954a6b",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tree-stump-in-sunlit-garden-with-houses-37038506/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-large-tree-stump-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:39.734Z",
+        "service_title": "Tree removal and stump grinding",
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": "Tree removal and stump grinding",
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 33
+      }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "cda918eaa56ce7de4254a08e6d4274ef8c88524515665f81d6b5b298bf000b6d",
-      "source": "harvest_or_prior"
+      "sha256": "d443db322adb7ca344fe4d2193e8f4ff909809c05ae83799b9e2a1867c9f2513",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/gardener-trimming-hedge-with-shears-outdoors-38936351/",
+        "subject_alt": "pruning saw canopy limb",
+        "found_by_query": "pruning saw canopy limb",
+        "family": "tree-service",
+        "library_file": "tree-service-gardener-trims-hedge-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:33:24.869Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 33
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "07ab263a7ebb4979e0b9c7936cd65e0354c22b19060c59c241380116c04c2c04",
-      "source": "harvest_or_prior"
+      "sha256": "14b844b5ddf214e3464b3df78dbaacbeefec9290f2f44860cc57624036aea003",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/rustic-wheelbarrow-in-lush-garden-setting-37397097/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-rustic-wheelbarrow-stands-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:30.542Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 32
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "3430a063f96dd342ccb7dda154e9e180c95e13360e53dabeabdfdfc18cab6b83",
-      "source": "harvest_or_prior"
+      "sha256": "d5570579f505a9ce24447b4a6cc6725f7d5dc6649e834403ac2728ffbcf11758",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/winter-garden-with-frost-10733253/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-serene-snow-covered-garden-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:40.339Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 31
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "41f0adca82d4bcda6bc22c7ecc4187641b24b19c012c19ca1225ccb97e592d0b",
-      "source": "harvest_or_prior"
+      "sha256": "a5827e1ac76e62f6ea1f3990dff21f068773d7ed497e9475ee3ab8940a6cc419",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/shovel-on-pile-of-soil-11573789/",
+        "subject_alt": "stump grinding machine dirt",
+        "found_by_query": "stump grinding machine dirt",
+        "family": "tree-service",
+        "library_file": "tree-service-shovel-embedded-dark-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:55.051Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 30
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "ce9027b742e023296108a1c7291b922038ef09a1a367360b317f64ddf3a4500c",
-      "source": "harvest_or_prior"
+      "sha256": "c6318a9a9798c174b983f56565e916ed73f5c04acb9326c665d550e37e704cf8",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/orange-lawn-mower-in-green-backyard-37554739/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-lawn-mower-sits-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:31.632Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 29
+      }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "6f4c0f3bd117f004fe0740a710e1150882bb35802bb2ff20eb16d6fb3099a857",
-      "source": "harvest_or_prior"
+      "sha256": "1e08241201b6bfba6737485ee9b516fa6a1154b7e4406458f714022c57c9f8ed",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/brown-tree-trunk-1481451/",
+        "subject_alt": "wood chipper branches yard",
+        "found_by_query": "wood chipper branches yard",
+        "family": "tree-service",
+        "library_file": "tree-service-detailed-close-up-tree-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:25:32.447Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     }
   ],
-  "filled": [],
   "gaps": [],
   "distinct": 16,
   "slots": 16,
-  "stock_provenance_rows": 0
+  "stock_provenance_rows": 14,
+  "family": "tree-service",
+  "refuse_borrow": false,
+  "provenance_ok": true
 }

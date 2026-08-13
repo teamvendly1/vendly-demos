@@ -89,7 +89,7 @@
     // panel surfaces to near-black with light text for stores with a dark
     // storefront; the accent (branded buttons/header) is unchanged either way.
     theme: "light",
-    launcherLabel: "Chat with us",
+    launcherLabel: "Ask us",
     // Presence (Jarvis agent-actions, 2026-07-12). assistantName gives the
     // assistant a named human presence: a monogram avatar (first letter) on the
     // launcher and header, and a name in the greeting bubble. nudge is the text
@@ -114,7 +114,8 @@
       mic: "Speak your question",
       listening: "Listening... speak now",
       speak: "Read replies aloud",
-      poweredBy: "Assistant by Vendly",
+      /* DEMO pages: never "Assistant by Vendly" (Jacob CLEAR 2026-08-13). Empty = no foot. */
+      poweredBy: "",
       // Jarvis agent-actions (2026-07-12): action buttons + peek bubble.
       addToCart: "Add {label} to cart",
       checkout: "Go to checkout",
@@ -594,7 +595,9 @@
           '<svg class="sa-send-ic" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 11h11.2l-3.6-3.6L13 6l6 6-6 6-1.4-1.4 3.6-3.6H4z"/></svg>' +
           '<span class="sa-send-txt">' + escapeHtml(cfg.labels.send) + "</span></button>" +
       "</form>" +
-      '<div class="sa-foot">' + escapeHtml(cfg.labels.poweredBy) + "</div>";
+      (cfg.labels.poweredBy && String(cfg.labels.poweredBy).trim()
+        ? '<div class="sa-foot">' + escapeHtml(cfg.labels.poweredBy) + "</div>"
+        : "");
 
     root.appendChild(launch);
 

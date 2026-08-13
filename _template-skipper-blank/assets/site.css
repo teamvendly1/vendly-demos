@@ -42,7 +42,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 /* real logo mark, cropped from the logo Luke sent over SMS */
 /* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
 .logo{height:88px;width:auto;display:block}
-/* ONE .logo-chip rule forever (Jacob 2026-08-13). Transparent — never a painted plate. */
+/* ONE .logo-chip rule forever (Jacob 2026-08-13). Transparent - never a painted plate. */
 .logo-chip{display:inline-flex;align-items:center;background:transparent;padding:0;border-radius:0;box-shadow:none}
 .logo-footer{height:44px;width:auto;display:block}
 
@@ -61,7 +61,7 @@ header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);ba
 .btn-ghost:hover{border-color:var(--blue)}
 
 /* hero */
-/* HERO GAP FIX (a) Jared CLEAR 2026-08-12: shrink hero to CONTENT height — no 100svh / min-height fill. */
+/* HERO GAP FIX (a) Jared CLEAR 2026-08-12: shrink hero to CONTENT height - no 100svh / min-height fill. */
 /* HERO GAP FIX2b: section{padding:clamp(56px..)} was the real empty slab (~56-102px top+bottom on .hero). */
 .hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk);min-height:0;height:auto;padding:0}
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
@@ -78,7 +78,7 @@ background:
 .hero-inner{position:relative;z-index:2;padding:clamp(28px,4.5vw,56px) 0 clamp(18px,3vw,36px);background:transparent}
 /*
   HERO GAP FIX2 (2026-08-12): prior 104px sticky clearance WAS the ~275px empty driveway slab.
-  Sticky is position:fixed overlay — do NOT pad the hero by bar height. Hero ends at chips + normal pad.
+  Sticky is position:fixed overlay - do NOT pad the hero by bar height. Hero ends at chips + normal pad.
   fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
 */
 @media(max-width:900px){
@@ -230,7 +230,7 @@ footer li a{display:inline-block;padding:4px 0}
 .sitemenu li:last-child a{border-bottom:0}
 .sitemenu a:hover{background:var(--mist);color:var(--blue)}
 
-/* Sticky footer chrome: Ask FIRST, then estimate + CALL (Jacob 2026-08-11 — order only, no restyle).
+/* Sticky footer chrome: Ask FIRST, then estimate + CALL (Jacob 2026-08-11 - order only, no restyle).
    Ask IS the chatbot button. Floating .sa-launch / .sa-peek stay hidden. */
 .mobile-callbar{
   display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;
@@ -375,7 +375,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 /* ref-learn 0037: closing CTA band over licensed atmosphere photography.
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
-/* Compact CTA band — kill the ~450px near-black empty slab under the buttons. */
+/* Compact CTA band - kill the ~450px near-black empty slab under the buttons. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
 .ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
 .ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba({{PRIMARY_RGB}},.72) 0%,rgba({{PRIMARY_RGB}},.58) 100%)}
@@ -383,7 +383,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband h2{color:#fff;margin-bottom:.35em}
 .ctaband p{color:{{TINT_3}};max-width:54ch;margin:0 auto 18px}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:{{MUTED_BRAND}};margin-top:14px;margin-bottom:0}
-/* Inner-page photo lead (services / reviews) — real photo, not a color slab */
+/* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
 
@@ -456,7 +456,7 @@ header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:{{TINT_2}
 .hero-inner > .trust,.hero-inner > .hero-rtb{position:relative;z-index:3;background:transparent}
 .hero-inner::before{content:none;display:none}
 /*
-  #ba-sod CONTRACT (mold assert — do not rename without updating beforeafter.js target):
+  #ba-sod CONTRACT (mold assert - do not rename without updating beforeafter.js target):
   - Mount id for the before/after slider (`target: "#ba-sod"` in index.html).
   - When JS mounts a .ba child, keep aspect-ratio so Coverage never jumps under a white slab.
   - When empty (no BA facts / cutSection removed the block), :empty hides the mount entirely.
@@ -507,7 +507,7 @@ footer{position:relative;z-index:1}
   .hero-rotator [data-hero-slide]:not(:first-child){display:none!important}
   .hero-rotator [data-hero-slide]:first-child{opacity:1!important}
 }
-/* Compact hero badge — must not push CTA below 375 fold (Jared 2026-08-12) */
+/* Compact hero badge - must not push CTA below 375 fold (Jared 2026-08-12) */
 .hero-rtb{margin:8px 0 0;max-width:100%}
 .hero-rtb .rtb{display:inline-flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 14px;max-width:100%}
 .hero-rtb .rtb-block{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#fff}
@@ -539,7 +539,7 @@ footer{position:relative;z-index:1}
   linear-gradient(90deg,rgba({{SCRIM_RGB}},.90) 0%,rgba({{SCRIM_RGB}},.78) 36%,rgba({{SCRIM_RGB}},.48) 58%,rgba({{SCRIM_RGB}},.18) 78%,rgba({{SCRIM_RGB}},0) 100%),
   linear-gradient(180deg,rgba({{SCRIM_RGB}},.58) 0%,rgba({{SCRIM_RGB}},.28) 42%,rgba({{SCRIM_RGB}},.52) 100%)}
 
-/* Contact address maps link (pattern A) — visible focus, full address is the link text */
+/* Contact address maps link (pattern A) - visible focus, full address is the link text */
 a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
 a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
 .contact-map{margin-top:4px;max-width:560px;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#1a1f16}
@@ -549,7 +549,7 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
 .demo-preview{background:#1c1c1e;color:#e8e6e3;font-size:11px;line-height:1.4;padding:6px 18px;text-align:center}
 .demo-preview a{color:#fff}
 
-/* Contact page structure (Jacob CLEAR 2026-08-12 ~15:2x) — labelled blocks, not a pile */
+/* Contact page structure (Jacob CLEAR 2026-08-12 ~15:2x) - labelled blocks, not a pile */
 .contact-page{padding-top:clamp(56px,8vw,102px);padding-bottom:clamp(48px,7vw,88px)}
 .contact-lede{color:var(--muted);margin:0 0 28px}
 .contact-facts{display:grid;gap:28px;margin:0 0 32px;max-width:34rem}
