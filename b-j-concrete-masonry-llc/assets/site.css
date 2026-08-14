@@ -598,3 +598,7 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
 @media(max-width:900px){
   .ctaband .inner{padding-top:calc(72px + clamp(28px,4vw,48px));padding-bottom:clamp(36px,5vw,56px)}
 }
+/* CTABAND_STICKY_CLEAR_20260814 */
+@media(max-width:900px){
+  .ctaband .inner{padding-top:calc(72px + clamp(36px,5vw,56px));padding-bottom:clamp(36px,5vw,56px)}
+}
