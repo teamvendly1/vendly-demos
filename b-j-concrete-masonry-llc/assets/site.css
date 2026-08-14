@@ -1,5 +1,5 @@
 /* NO-CAPTIONS mold 2026-08-12 */
-html{scroll-padding-bottom:112px}
+html{scroll-padding-top:72px;scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
   --blue:#3D4C5C;
@@ -592,4 +592,9 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
   .contact-lead{display:flex;flex-direction:column}
   .contact-shot{order:-1;margin-bottom:28px}
   .contact-facts{gap:24px;margin-bottom:28px}
+}
+
+/* CTABAND STICKY CLEAR (2026-08-14): Pixel FAIL — sticky header clipped CTA h2 ("attention" stubs). */
+@media(max-width:900px){
+  .ctaband .inner{padding-top:calc(72px + clamp(28px,4vw,48px));padding-bottom:clamp(36px,5vw,56px)}
 }
