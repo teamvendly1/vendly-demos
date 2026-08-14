@@ -1,23 +1,21 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-14T18:37:41.076Z",
+  "at": "2026-08-14T19:59:34.235Z",
   "trade": "auto-repair",
   "slotHints": {
-    "photo-service-1.jpg": "Automotive Service",
-    "photo-service-2.jpg": "Automotive Repair Shop",
-    "photo-service-3.jpg": "Emergency Roadside Service"
+    "photo-service-2.jpg": "Automotive Repair Shop"
   },
   "ok": true,
   "kept": [
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "da84d045995b90354ecdc2d6c850b7c6ac1de3868aa4642f6ad8a0f233b496c2",
+      "file": "photo-hero.jpg",
+      "sha256": "a286a87c233b98f931ec0c52d540bce9c2da9281e8fe4bca42fe7220489efde1",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "a286a87c233b98f931ec0c52d540bce9c2da9281e8fe4bca42fe7220489efde1",
+      "file": "photo-service-2.jpg",
+      "sha256": "e88f1195e6f3714b6dd2eabd687618d97651d2a70f6a49fd6d167575e2b11e05",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -168,6 +166,30 @@
       }
     },
     {
+      "file": "photo-ctaband.jpg",
+      "sha256": "a906b652372722a0bb5833443600c8e0b9e4de4698d9ba1dd439eb7797ad1a6f",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/green-and-white-press-drill-on-table-115558/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-view-cluttered-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:47.581Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 3
+      }
+    },
+    {
       "file": "photo-photos-cta.jpg",
       "sha256": "9f2771167db3ce43b9ab4be12783ddb92061f0e25fe8647f6fb41d3751b3e628",
       "source": "stock-library",
@@ -206,34 +228,10 @@
         "library_file": "auto-repair-top-down-view-car-01.jpg",
         "served_from": "_assets/stock (offline)",
         "downloaded_at": "2026-08-13T15:58:21.843Z",
-        "service_title": "Automotive Service",
+        "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
-      "service": "Automotive Service",
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
-      }
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "87a743a827e24e507cbce3fdf55be9d397434e7d960c324282e47fc0d61c2226",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/photograph-of-wrenches-near-a-yellow-screwdriver-7019599/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-detailed-shot-various-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:27.809Z",
-        "service_title": "Automotive Repair Shop",
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": "Automotive Repair Shop",
+      "service": null,
       "claims": {
         "claimed": true,
         "unclaimed_remaining_family_estimate": 3
@@ -254,10 +252,10 @@
         "library_file": "auto-repair-mechanic-hand-repairing-01.jpg",
         "served_from": "_assets/stock (offline)",
         "downloaded_at": "2026-08-13T15:58:28.777Z",
-        "service_title": "Emergency Roadside Service",
+        "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
-      "service": "Emergency Roadside Service",
+      "service": null,
       "claims": {
         "claimed": true,
         "unclaimed_remaining_family_estimate": 3
@@ -337,19 +335,19 @@
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "7e44fb131878cc16148bb91eadec0a2a95e8dd374628467e541ac7cd0c9eb9e8",
+      "sha256": "87a743a827e24e507cbce3fdf55be9d397434e7d960c324282e47fc0d61c2226",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/industrial-workshop-interior-5506047/",
+        "source_url": "https://www.pexels.com/photo/photograph-of-wrenches-near-a-yellow-screwdriver-7019599/",
         "subject_alt": "engine bay diagnostic tools",
         "found_by_query": "engine bay diagnostic tools",
         "family": "auto-repair",
-        "library_file": "auto-repair-interior-modern-workshop-01.jpg",
+        "library_file": "auto-repair-detailed-shot-various-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:33.474Z",
+        "downloaded_at": "2026-08-13T15:58:27.809Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
