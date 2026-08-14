@@ -1,0 +1,36 @@
+{
+  "at": "2026-08-14T20:33:57.276Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "trade": "landscaping",
+  "replaced": [
+    {
+      "file": "photo-about.jpg",
+      "source": "stock-library",
+      "sha256": "6d18c179bc119a9430a9af4ecda8ea98b7ff84bd75fcdd1d387bda65d7c9ed0a",
+      "reasons": [
+        "cross_demo_dupe:mold-wire-asheville-landscaping-llc/photo-card-about.jpg"
+      ],
+      "service": "crew shop jobsite"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "bb22b0cc699cb0fa873cdf33e6d48d696d2a5d965d68ce0a47015190cd08ebf3",
+      "bytes": 287602
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "46029833a2c52242f920aca93617a233a49ce3824bb525cc6fbc20e392d20fdb",
+      "bytes": 263194
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "f389aadc96525862e7101c45e4d8d756f79fddb87f11476a505491c022ede471",
+      "bytes": 354486
+    }
+  ],
+  "failed": [],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}
