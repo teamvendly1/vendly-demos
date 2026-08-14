@@ -593,3 +593,8 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
   .contact-shot{order:-1;margin-bottom:28px}
   .contact-facts{gap:24px;margin-bottom:28px}
 }
+
+/* Hernandez wordmark fix 2026-08-14e — full name, centered, not FB-truncated PNG */
+header.site .logo{height:52px;width:auto;max-width:min(72vw,340px);object-fit:contain}
+.logo-footer{height:40px;width:auto;max-width:280px;object-fit:contain}
+
