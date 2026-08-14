@@ -18,8 +18,8 @@
   "title_suffix": "",
   "meta_description": "Your honest auto mechanic.",
   "eyebrow": "Gastonia",
-  "h1_lead": "Failed inspection and not sure why?",
-  "h1_emph": "We will go through it.",
+  "h1_lead": "Something rattling that was not there before?",
+  "h1_emph": "Bring it by.",
   "hero_lede": "Your honest auto mechanic.",
   "free_estimates": false,
   "hours_short": "",
@@ -27,9 +27,9 @@
   "owner_operated": false,
   "strip_lead": "",
   "strip_body": "",
-  "explore_h2": "Details worth knowing before the Auto repair visit",
+  "explore_h2": "Details worth knowing before the auto repair visit",
   "explore_lede": "",
-  "card_about": "Your honest auto mechanic.",
+  "card_about": "Auto repair",
   "card_services": "Automotive Repair Shop",
   "card_reviews": "",
   "card_photos": "",
@@ -55,8 +55,8 @@
     {
       "title": "Automotive Repair Shop",
       "body": "",
-      "slot": "photo-service-1.jpg",
-      "alt": "Car raised on a two post lift inside the Helton Automotive service bay"
+      "slot": "",
+      "alt": ""
     }
   ],
   "photos_h2": "Recent work",
@@ -64,48 +64,38 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Finished green Challenger parked outside the shop after the work",
+      "alt": "Green Challenger raised on a lift with the hood standing open in the service bay",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Green Challenger raised on a lift with the hood standing open in the service bay",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
       "alt": "Open hood on a green Dodge Challenger with a supercharger fitted over the engine",
       "subject_class": "trade_work"
     },
     {
-      "slot": "photo-gallery-4.jpg",
+      "slot": "photo-gallery-3.jpg",
       "alt": "Inside the shop with two vehicle lifts, a forklift and cars in the bays",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "Cadillac raised on a two post lift while a technician works the lift controls",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-5.jpg",
-      "alt": "Cadillac raised on a two post lift while a technician works the lift controls",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
       "alt": "The Helton Automotive shop building and gravel lot on a clear morning",
       "subject_class": "trade_work"
     },
     {
-      "slot": "photo-gallery-7.jpg",
+      "slot": "photo-gallery-6.jpg",
       "alt": "Classic blue Ford pickup on the shop floor with its bench seat pulled out",
-      "subject_class": "finished_result"
-    },
-    {
-      "slot": "photo-gallery-8.jpg",
-      "alt": "Front wheel removed showing the brake rotor and caliper under the fender",
       "subject_class": "trade_work"
     },
     {
-      "slot": "photo-gallery-9.jpg",
+      "slot": "photo-gallery-7.jpg",
       "alt": "Wheel and tire off the car on the lift, resting on the shop floor",
-      "subject_class": "trade_work"
+      "subject_class": "finished_result"
     }
   ],
   "reviews_h2": "What customers say",
@@ -141,24 +131,26 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Inside the shop with vehicle lifts and cars in the bays",
-    "card_about": "Classic pickup on the shop floor mid restoration",
-    "card_services": "Car raised on a two post lift inside the service bay",
-    "card_reviews": "Finished green Challenger parked outside the shop",
-    "card_photos": "Front wheel off showing the brake rotor and caliper",
-    "ctaband": "The shop building and gravel lot on a clear morning",
-    "about": "Classic pickup on the shop floor mid restoration",
+    "hero": "Finished green Challenger parked outside the shop after the work",
+    "card_about": "Helton Automotive crew and job photo",
+    "card_services": "Automotive Repair Shop photo",
+    "card_reviews": "Customer review context photo",
+    "card_photos": "Recent job photo",
+    "ctaband": "Auto repair job photo",
+    "about": "Helton Automotive at work",
     "contact": "Helton Automotive",
-    "services_hero": "Inside the shop with vehicle lifts and cars in the bays"
+    "services_hero": "Auto repair services"
   },
   "send": "NO",
-  "asset_version": "harv20260813",
+  "asset_version": "harv20260814",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\helton-automotive\\HARVEST.json",
-    "at": "2026-08-14T04:48:32.683Z",
+    "at": "2026-08-14T23:10:12.039Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\helton-automotive\\DEMO-FACTS.json",
+    "wrote_facts_from_harvest": true,
+    "rebuilt": true,
     "harvest_merged": true
   },
   "address": {
