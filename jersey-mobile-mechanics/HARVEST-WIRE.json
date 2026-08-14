@@ -1,0 +1,105 @@
+{
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-14T04:47:42.081Z",
+  "slug": "jersey-mobile-mechanics",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "google-a286a87c233b98f9.jpg",
+      "bytes": 218773,
+      "trade_score": 3.5,
+      "reason": "hero_work_rank"
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "553188757_122148965114744001.jpg",
+      "bytes": 854553
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "544843980_122146834226744001.jpg",
+      "bytes": 546448
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "from": "google-820c47f27df94362.jpg",
+      "bytes": 438481
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "from": "555876716_122148965186744001.jpg",
+      "bytes": 398534
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "from": "571249358_122151984476744001.jpg",
+      "bytes": 309850
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "from": "google-1def345f3f258c6e.jpg",
+      "bytes": 283758
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "from": "google-e88f1195e6f3714b.jpg",
+      "bytes": 273629
+    },
+    {
+      "slot": "photo-gallery-8.jpg",
+      "from": "554095552_122148965102744001.jpg",
+      "bytes": 240243
+    },
+    {
+      "slot": "photo-gallery-9.jpg",
+      "from": "google-bc9de2166d0fab56.jpg",
+      "bytes": 211160
+    },
+    {
+      "slot": "photo-ctaband.jpg",
+      "from": "554096822_122148965174744001.jpg",
+      "bytes": 164187
+    }
+  ],
+  "skipped": [
+    "classification read: 49 verdicts",
+    "staged 6 harvest photos",
+    "refused_by_class:545570095_122146834244744001.jpg:DUPLICATE",
+    "refused_by_class:545621229_122146834214744001.jpg:PRIVATE_PERSON - legible New Jersey plate P64 KUH on a customer Ford F-150, bottom right. CHANGED by claude-photo-class-google2 from trade_work: this is the same vehicle and the same defect as the Google photo rejected at index 17, and shipping a readable customer plate on a public page is the defect the standard exists to stop.",
+    "refused_by_class:585500059_122154945170744001.jpg:THIRD_PARTY_BRAND",
+    "refused_by_class:613184429_122160541532744001.jpg:BURNED_IN_TEXT",
+    "refused_by_class:google-070c9a558e40bb62.jpg:STOCK - studio-style black and white photograph of a vintage VW Beetle with a novelty DINOCAR plate in a well stocked home garage. Every other photo in this set is a colour phone snapshot; this is library imagery.",
+    "refused_by_class:google-206487ee8f14a167.jpg:DUPLICATE - same white service van, same open-door configuration, same driveway and same background house as the already-accepted 544843980_122146834226744001, shot the same session from a mirrored angle.",
+    "refused_by_class:google-37d150e8577855cf.jpg:PRIVATE_PERSON - legible New Jersey plate Y78 UNM on a customer Mercedes E-class in a private driveway.",
+    "refused_by_class:google-3a93531f0c9aa8c7.jpg:ICON - the Jersey Mobile Mechanic logo artwork on white with the \"We Come To You\" tagline. Vector brand mark, not a photograph.",
+    "refused_by_class:google-688678ef3ebb98de.jpg:PRIVATE_PERSON - legible New Jersey plate NVRSLOW on a customer Dodge Charger, plus the house number 709 on an identifiable private residence. No work is shown in the frame.",
+    "refused_by_class:google-dff910dfd047fbeb.jpg:LOW_QUALITY - mundane rear bench interior with a consumer disinfecting-wipes canister left in the cupholder as the focal object. Sharp and large, but it communicates nothing about the trade.",
+    "refused_by_class:google-e74d09f710cadc43.jpg:BURNED_IN_TEXT - a browser or app overlay is baked into the top-left pixels reading \"ffice - TaskBoard / ffice.madwire.net/taskBoard/.../index\". Third-party marketing-dashboard chrome inside the photograph.",
+    "refused_by_class:google-ea21ddd98d7449e1.jpg:PRIVATE_PERSON - legible New Jersey plate P64 KUH on a customer Ford F-150. Genuine trade work otherwise; only the plate disqualifies it.",
+    "refused_by_class:site-0.jpg:BURNED_IN_TEXT",
+    "hero_cand_refuse:544843980_122146834226744001.jpg:road_no_landscape",
+    "hero_cand_refuse:google-820c47f27df94362.jpg:road_no_landscape",
+    "hero_cand_refuse:google-1def345f3f258c6e.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-e88f1195e6f3714b.jpg:road_no_landscape",
+    "hero_cand_refuse:google-bc9de2166d0fab56.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:554096822_122148965174744001.jpg:low_res_lt_1200",
+    "photo-card-services.jpg",
+    "photo-card-reviews.jpg",
+    "photo-card-photos.jpg",
+    "photo-about.jpg",
+    "photo-services-hero.jpg",
+    "photo-contact.jpg",
+    "photo-photos-cta.jpg",
+    "photo-service-2.jpg"
+  ],
+  "candidates": 12,
+  "refused_by_class": 13,
+  "purged": [
+    "553188757_122148965114744001.jpg",
+    "544843980_122146834226744001.jpg",
+    "555876716_122148965186744001.jpg",
+    "571249358_122151984476744001.jpg",
+    "554095552_122148965102744001.jpg",
+    "554096822_122148965174744001.jpg"
+  ]
+}
