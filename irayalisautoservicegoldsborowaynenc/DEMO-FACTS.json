@@ -29,8 +29,8 @@
   "strip_body": "",
   "explore_h2": "What comes into our shop",
   "explore_lede": "",
-  "card_about": "Auto repair",
-  "card_services": "Auto repair",
+  "card_about": "",
+  "card_services": "Diagnostics and engine work",
   "card_reviews": "",
   "card_photos": "",
   "coverage_h2": "Goldsboro, and the towns around it",
@@ -47,18 +47,40 @@
   "footer_blurb": "Irayalis Auto Service serving Goldsboro.",
   "about_h2": "About Irayalis Auto Service",
   "about_p1": "We handle auto repair for drivers who need it done right.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers diagnostics and engine work, brakes, steering and suspension, tyres and wheels. 101 customers have left us a review, averaging 4.7 out of 5. We work out of Goldsboro and the towns around it.",
   "area_h2": "Where we work",
   "area_lede": "",
-  "svc_hero_h1": "Services",
+  "svc_hero_h1": "The auto repair work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "What we do",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "",
+      "title": "Diagnostics and engine work",
+      "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "Car up on the two-post lift with a mechanic working underneath and an engine block on a pa"
+    },
+    {
+      "title": "Brakes, steering and suspension",
+      "body": "Worn parts come off and the replacement goes on beside them, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": "New strut assembly laid beside the rusted one it replaced on the workshop floor"
+    },
+    {
+      "title": "Tyres and wheels",
+      "body": "Fitting and balancing on the machine, with the weights set where they belong.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Car raised on the lift with a wheel off and the bonnet up, sunlight coming through the ope"
+    },
+    {
+      "title": "Exhaust and underbody",
+      "body": "Up on the lift, where the rust and the leaks actually are.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Car up on the two-post lift with a mechanic working underneath and an engine block on a pa"
     }
   ],
   "photos_h2": "Recent work",
@@ -128,7 +150,7 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\HARVEST.json",
-    "at": "2026-08-15T15:28:55.530Z",
+    "at": "2026-08-15T17:09:43.148Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -155,6 +177,7 @@
     "url": "https://www.google.com/maps/search/Irayalis%20Auto%20Service%20Goldsboro%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-photographs",
   "photo_count": 8,
   "contact_photo_tier_why": "business logo logo.png",
   "contact_photo_omit": false,

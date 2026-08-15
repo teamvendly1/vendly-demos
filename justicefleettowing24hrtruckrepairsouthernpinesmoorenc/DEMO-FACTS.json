@@ -4,8 +4,8 @@
   "tenant_id": "demo-justicefleettowing24hrtruckrepairsout-453f3b",
   "phone": "(910) 865-3030",
   "tel": "+19108653030",
-  "brand_color": "#26303A",
-  "palette_source": "fallback-trade-or-neutral",
+  "brand_color": "#24364C",
+  "palette_source": "their-photography:google-e97eb36936b5338a.jpg",
   "site_host": "",
   "city": "St Pauls",
   "region": "NC",
@@ -29,8 +29,8 @@
   "strip_body": "",
   "explore_h2": "Stuck, stranded, or off the road",
   "explore_lede": "",
-  "card_about": "Towing",
-  "card_services": "Towing",
+  "card_about": "",
+  "card_services": "Car and light truck transport",
   "card_reviews": "",
   "card_photos": "",
   "coverage_h2": "St Pauls, and the towns around it",
@@ -47,18 +47,33 @@
   "footer_blurb": "Justice Fleet towing & 24 hr truck repair serving St Pauls.",
   "about_h2": "About Justice Fleet towing & 24 hr truck repair",
   "about_p1": "We handle towing for drivers who need it done right.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers car and light truck transport, heavy and oversize loads, night and out of hours calls. 138 customers have left us a review, averaging 4.7 out of 5. We work out of St Pauls and the towns around it.",
   "area_h2": "Where we work",
   "area_lede": "",
-  "svc_hero_h1": "Services",
+  "svc_hero_h1": "The towing work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "What we do",
   "services": [
     {
-      "title": "Towing",
-      "body": "",
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "Service truck lettered for 24 hour tyre work parked at a diesel stop while a trailer wheel"
+    },
+    {
+      "title": "Heavy and oversize loads",
+      "body": "Anything that will sit on a deck can move on one, from plant and trailers to whole buildings.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Service truck lettered for 24 hour tyre work parked at a diesel stop while a trailer wheel"
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Heavy rotator wrecker standing under the station lights at night with its marker lamps lit"
     }
   ],
   "photos_h2": "Recent work",
@@ -66,32 +81,17 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Service truck lettered for 24 hour tyre work parked at a diesel stop while a trailer wheel is changed",
+      "alt": "Tanker trailer jacked up in a yard with a portable welder run out beside it",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Heavy wrecker parked on the yard outside the workshop with the bay doors open behind it",
+      "alt": "Heavy wrecker hooked to a semi tractor on the roadside with the boom set and the rig ready to move",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-3.jpg",
-      "alt": "Service truck on the hard shoulder with the tool doors open, working on a stopped semi and trailer",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "alt": "Close in on the injection pump and lines of a heavy diesel engine part way through a repair",
-      "subject_class": "premises"
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
-      "alt": "Tanker trailer jacked up in a yard with a portable welder run out beside it",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
-      "alt": "Heavy wrecker hooked to a semi tractor on the roadside with the boom set and the rig ready to move",
+      "alt": "Heavy rotator wrecker standing under the station lights at night with its marker lamps lit",
       "subject_class": "trade_work"
     }
   ],
@@ -130,10 +130,10 @@
   "alts": {
     "hero": "Service truck with the crane stowed and the tool body open, pulled up behind a dump truck on the roadside",
     "card_about": "Justice Fleet towing & 24 hr truck repair crew and job photo",
-    "card_services": "Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
+    "card_services": "Service truck lettered for 24 hour tyre work parked at a diesel stop while a trailer wheel is changed",
+    "card_reviews": "Heavy wrecker parked on the yard outside the workshop with the bay doors open behind it",
+    "card_photos": "Service truck on the hard shoulder with the tool doors open, working on a stopped semi and trailer",
+    "ctaband": "Close in on the injection pump and lines of a heavy diesel engine part way through a repair",
     "about": "Justice Fleet towing & 24 hr truck repair at work",
     "contact": "Justice Fleet towing & 24 hr truck repair",
     "services_hero": "Towing services"
@@ -143,7 +143,7 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\justicefleettowing24hrtruckrepairsouthernpinesmoorenc\\HARVEST.json",
-    "at": "2026-08-15T11:56:13.309Z",
+    "at": "2026-08-15T17:10:33.072Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\justicefleettowing24hrtruckrepairsouthernpinesmoorenc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -170,6 +170,7 @@
     "url": "https://www.google.com/maps/search/Justice%20Fleet%20Towing%20%26%2024%20hr%20Truck%20Repair%20Southern%20Pines%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-photographs",
   "photo_count": 8,
   "contact_photo_tier_why": "business logo logo.png",
   "contact_photo_omit": false,

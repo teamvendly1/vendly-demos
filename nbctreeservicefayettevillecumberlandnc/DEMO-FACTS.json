@@ -4,8 +4,8 @@
   "tenant_id": "demo-nbctreeservicefayettevillecumberlandnc",
   "phone": "(910) 705-5781",
   "tel": "+19107055781",
-  "brand_color": "#26303A",
-  "palette_source": "fallback-trade-or-neutral",
+  "brand_color": "#0B1401",
+  "palette_source": "their-photography:google-499146393dc79605.jpg",
   "site_host": "",
   "city": "Fayetteville",
   "region": "NC",
@@ -29,8 +29,8 @@
   "strip_body": "",
   "explore_h2": "What to check before you call about tree service",
   "explore_lede": "",
-  "card_about": "Tree service",
-  "card_services": "Tree service",
+  "card_about": "",
+  "card_services": "Climbing and sectional dismantling",
   "card_reviews": "",
   "card_photos": "",
   "coverage_h2": "Fayetteville, and the towns around it",
@@ -47,18 +47,33 @@
   "footer_blurb": "NBC Tree Service serving Fayetteville.",
   "about_h2": "About NBC Tree Service",
   "about_p1": "We handle tree service for homes and businesses around Fayetteville.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers climbing and sectional dismantling, crane and bucket work, stump and debris clearance. 195 customers have left us a review, averaging 5 out of 5. We work out of Fayetteville and the towns around it.",
   "area_h2": "Where we work",
   "area_lede": "",
-  "svc_hero_h1": "Services",
+  "svc_hero_h1": "The tree service work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "What we do",
   "services": [
     {
-      "title": "Tree service",
-      "body": "",
+      "title": "Climbing and sectional dismantling",
+      "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "Bucket boom raised into the crown of a tall pine standing hard against the side of a house"
+    },
+    {
+      "title": "Crane and bucket work",
+      "body": "The boom does the lifting over roofs and fences so nothing swings where it should not.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Bucket boom raised into the crown of a tall pine standing hard against the side of a house"
+    },
+    {
+      "title": "Stump and debris clearance",
+      "body": "The wood is cut down, cleared out and the ground left usable again.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Tracked excavator working beside a topped trunk with cut limbs stacked across the lawn"
     }
   ],
   "photos_h2": "Recent work",
@@ -66,33 +81,18 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Crane boom lifting a heavy trunk section up and away from the roof of a house",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "alt": "Freshly cut limb laid on the lawn of a well kept property with the crown work under way behind",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "alt": "Operator in a hi-vis shirt running a tracked excavator down the narrow gap between a fence and a house",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "alt": "Hardwood beside a house left clean after pruning, the cut ends visible along the limbs",
-      "subject_class": "finished_result"
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
       "alt": "Bucket boom raised into the crown of a tall pine standing hard against the side of a house",
       "subject_class": "trade_work"
     },
     {
-      "slot": "photo-gallery-6.jpg",
+      "slot": "photo-gallery-2.jpg",
       "alt": "Heavy dump trailer hitched and ready to haul brush away from a job",
-      "subject_class": "team"
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Crew working a tree in a commercial car park with cones set out and the chip truck alongside",
+      "subject_class": "trade_work"
     }
   ],
   "reviews_h2": "What customers say",
@@ -130,10 +130,10 @@
   "alts": {
     "hero": "Tracked excavator working beside a topped trunk with cut limbs stacked across the lawn",
     "card_about": "NBC Tree Service crew and job photo",
-    "card_services": "Tree service photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Tree service job photo",
+    "card_services": "Crane boom lifting a heavy trunk section up and away from the roof of a house",
+    "card_reviews": "Freshly cut limb laid on the lawn of a well kept property with the crown work under way behind",
+    "card_photos": "Operator in a hi-vis shirt running a tracked excavator down the narrow gap between a fence and a house",
+    "ctaband": "Hardwood beside a house left clean after pruning, the cut ends visible along the limbs",
     "about": "NBC Tree Service at work",
     "contact": "NBC Tree Service",
     "services_hero": "Tree service services"
@@ -143,7 +143,7 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nbctreeservicefayettevillecumberlandnc\\HARVEST.json",
-    "at": "2026-08-15T13:55:59.596Z",
+    "at": "2026-08-15T17:12:29.837Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nbctreeservicefayettevillecumberlandnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -170,6 +170,7 @@
     "url": "https://www.google.com/maps/search/NBC%20Tree%20Service%20Fayetteville%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-photographs",
   "photo_count": 8,
   "contact_photo_tier_why": "business logo logo.png",
   "contact_photo_omit": false,

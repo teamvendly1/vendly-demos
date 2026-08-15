@@ -4,8 +4,8 @@
   "tenant_id": "demo-sandstreeserviceashebororandolphnc",
   "phone": "(336) 626-0366",
   "tel": "+13366260366",
-  "brand_color": "#26303A",
-  "palette_source": "fallback-trade-or-neutral",
+  "brand_color": "#1E2A14",
+  "palette_source": "their-photography:google-0af78f3ad89986ad.jpg",
   "site_host": "",
   "city": "Asheboro",
   "region": "NC",
@@ -29,8 +29,8 @@
   "strip_body": "",
   "explore_h2": "What to check before you call about tree service",
   "explore_lede": "",
-  "card_about": "Tree service",
-  "card_services": "Tree service",
+  "card_about": "",
+  "card_services": "Storm damage and emergency removal",
   "card_reviews": "",
   "card_photos": "",
   "coverage_h2": "Asheboro, and the towns around it",
@@ -47,18 +47,40 @@
   "footer_blurb": "Sands Tree Service serving Asheboro.",
   "about_h2": "About Sands Tree Service",
   "about_p1": "We handle tree service for homes and businesses around Asheboro.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers storm damage and emergency removal, climbing and sectional dismantling, crane and bucket work. 32 customers have left us a review, averaging 4.7 out of 5. We work out of Asheboro and the towns around it.",
   "area_h2": "Where we work",
   "area_lede": "",
-  "svc_hero_h1": "Services",
+  "svc_hero_h1": "The tree service work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "What we do",
   "services": [
     {
-      "title": "Tree service",
-      "body": "",
+      "title": "Storm damage and emergency removal",
+      "body": "When a tree has come down on a roof or a deck, the first job is getting the weight off safely.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown"
+    },
+    {
+      "title": "Climbing and sectional dismantling",
+      "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown"
+    },
+    {
+      "title": "Crane and bucket work",
+      "body": "The boom does the lifting over roofs and fences so nothing swings where it should not.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown"
+    },
+    {
+      "title": "Stump and debris clearance",
+      "body": "The wood is cut down, cleared out and the ground left usable again.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Crew member walking past cut oak rounds with a pickup crushed under a trunk behind him"
     }
   ],
   "photos_h2": "Recent work",
@@ -66,32 +88,17 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown",
+      "alt": "Heavy trunk leaning across the porch roof of a shingled house after a storm",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Oak come down against the balcony of a brick house with the crown across the deck",
+      "alt": "Storm-felled oak lying the length of a timber deck with a chainsaw set down beside it",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-3.jpg",
-      "alt": "Crew member walking past cut oak rounds with a pickup crushed under a trunk behind him",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "alt": "Climber standing on the roof ridge while the grapple lifts a cut limb clear of the house",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
-      "alt": "Heavy trunk leaning across the porch roof of a shingled house after a storm",
-      "subject_class": "team"
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
-      "alt": "Storm-felled oak lying the length of a timber deck with a chainsaw set down beside it",
+      "alt": "Rack of ground protection mats loaded on the trailer, used to keep heavy machines off a lawn",
       "subject_class": "trade_work"
     }
   ],
@@ -130,10 +137,10 @@
   "alts": {
     "hero": "Grapple lifting a cut limb clear over the roof of a garden shed",
     "card_about": "Sands Tree Service crew and job photo",
-    "card_services": "Tree service photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Tree service job photo",
+    "card_services": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown",
+    "card_reviews": "Oak come down against the balcony of a brick house with the crown across the deck",
+    "card_photos": "Crew member walking past cut oak rounds with a pickup crushed under a trunk behind him",
+    "ctaband": "Climber standing on the roof ridge while the grapple lifts a cut limb clear of the house",
     "about": "Sands Tree Service at work",
     "contact": "Sands Tree Service",
     "services_hero": "Tree service services"
@@ -143,7 +150,7 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\sandstreeserviceashebororandolphnc\\HARVEST.json",
-    "at": "2026-08-15T11:11:31.208Z",
+    "at": "2026-08-15T17:09:06.971Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\sandstreeserviceashebororandolphnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -170,6 +177,7 @@
     "url": "https://www.google.com/maps/search/Sands%20Tree%20Service%20Asheboro%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-photographs",
   "photo_count": 8,
   "contact_photo_tier_why": "business logo logo.png",
   "contact_photo_omit": false,

@@ -4,8 +4,8 @@
   "tenant_id": "demo-1stoptowingautolexingtondavidsonnc",
   "phone": "(336) 242-9300",
   "tel": "+13362429300",
-  "brand_color": "#26303A",
-  "palette_source": "fallback-trade-or-neutral",
+  "brand_color": "#372F24",
+  "palette_source": "their-photography:google-85816626d6c8254d.jpg",
   "site_host": "",
   "city": "Lexington",
   "region": "NC",
@@ -29,8 +29,8 @@
   "strip_body": "",
   "explore_h2": "The calls we take at 3am",
   "explore_lede": "",
-  "card_about": "Towing",
-  "card_services": "Towing",
+  "card_about": "",
+  "card_services": "Car and light truck transport",
   "card_reviews": "",
   "card_photos": "",
   "coverage_h2": "Lexington, and the towns around it",
@@ -47,18 +47,33 @@
   "footer_blurb": "1 Stop Towing & Auto serving Lexington.",
   "about_h2": "About 1 Stop Towing & Auto",
   "about_p1": "We handle towing for drivers who need it done right.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers car and light truck transport, heavy and oversize loads, night and out of hours calls. 48 customers have left us a review, averaging 4.9 out of 5. We work out of Lexington and the towns around it.",
   "area_h2": "Where we work",
   "area_lede": "",
-  "svc_hero_h1": "Services",
+  "svc_hero_h1": "The towing work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "What we do",
   "services": [
     {
-      "title": "Towing",
-      "body": "",
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "Flatbed carrier loaded with a Jeep on a gravel lot with autumn woods behind"
+    },
+    {
+      "title": "Heavy and oversize loads",
+      "body": "Anything that will sit on a deck can move on one, from plant and trailers to whole buildings.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Telehandler chained down on the flatbed deck on a clear autumn afternoon"
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Flatbed loaded with a telehandler at dusk, deck tilted and marker lights burning"
     }
   ],
   "photos_h2": "Recent work",
@@ -66,32 +81,17 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Telehandler chained down on the flatbed deck on a clear autumn afternoon",
-      "subject_class": "vehicles"
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "alt": "Flatbed backed into the yard carrying a heavy ramp assembly, the company number lettered along the bed",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "alt": "Flatbed loaded with a telehandler at dusk, deck tilted and marker lights burning",
-      "subject_class": "vehicles"
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "alt": "Classic pickup winched up onto the flatbed deck against a clear winter sky",
-      "subject_class": "premises"
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
       "alt": "Red wrecker lettered 1 Stop Towing and Auto hauling a walk-in cooler strapped to the deck",
       "subject_class": "vehicles"
     },
     {
-      "slot": "photo-gallery-6.jpg",
+      "slot": "photo-gallery-2.jpg",
       "alt": "Boat and trailer loaded whole onto the flatbed and strapped down for the road",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Large SUV carried on the flatbed across a city car park with the skyline behind",
       "subject_class": "vehicles"
     }
   ],
@@ -123,10 +123,10 @@
   "alts": {
     "hero": "Flatbed carrier loaded with a Jeep on a gravel lot with autumn woods behind",
     "card_about": "1 Stop Towing & Auto crew and job photo",
-    "card_services": "Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
+    "card_services": "Telehandler chained down on the flatbed deck on a clear autumn afternoon",
+    "card_reviews": "Flatbed backed into the yard carrying a heavy ramp assembly, the company number lettered along the bed",
+    "card_photos": "Flatbed loaded with a telehandler at dusk, deck tilted and marker lights burning",
+    "ctaband": "Classic pickup winched up onto the flatbed deck against a clear winter sky",
     "about": "1 Stop Towing & Auto at work",
     "contact": "1 Stop Towing & Auto",
     "services_hero": "Towing services"
@@ -136,7 +136,7 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\1stoptowingautolexingtondavidsonnc\\HARVEST.json",
-    "at": "2026-08-15T13:11:05.529Z",
+    "at": "2026-08-15T17:11:53.137Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\1stoptowingautolexingtondavidsonnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -163,6 +163,7 @@
     "url": "https://www.google.com/maps/search/1%20Stop%20Towing%20%26%20Auto%20Lexington%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-photographs",
   "photo_count": 8,
   "contact_photo_tier_why": "business logo logo.png",
   "contact_photo_omit": false,
