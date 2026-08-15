@@ -593,3 +593,67 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
   .contact-shot{order:-1;margin-bottom:28px}
   .contact-facts{gap:24px;margin-bottom:28px}
 }
+
+/* ==========================================================================
+   MOBILE IS THE PRIORITY, AND MOBILE IS CENTRED.
+   Added 2026-08-15 after Jacob: "on mobile everything centered all the way down
+   through the site, the header centered, the buttons are centered."
+
+   Measured against lowcountryhydroclean.com on a 412x915 viewport, and measured
+   against our own output on the same viewport. Two concrete faults:
+
+     1. .hero-inner carried `padding: clamp(...) 0` - ZERO horizontal padding - so
+        the eyebrow and the h1 started at x=0, hard against the left edge of the
+        phone with no margin at all. On Rex Towing the headline was literally
+        touching the screen edge.
+     2. Nothing was centred. Every heading, lede and button ran left while the
+        reference build centres all of it down the whole page.
+
+   Desktop is untouched. This is a max-width block only.
+   ========================================================================== */
+@media (max-width: 700px) {
+  .hero-inner,
+  .hero-inner .eyebrow,
+  .hero-inner h1,
+  .hero-inner .lede {
+    text-align: center;
+  }
+  .hero-inner {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  /* buttons sit centred and wrap instead of running off the edge */
+  .hero-inner .cta,
+  .hero-inner .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  /* the rating badge and trust chips line up under the buttons, centred */
+  .hero-rtb,
+  .hero-inner .chips,
+  .hero-inner .trust {
+    justify-content: center;
+    text-align: center;
+  }
+  /* section headings and their eyebrows, all the way down the page */
+  section .wrap > .eyebrow,
+  section .wrap > h2,
+  section .wrap > h3,
+  section .wrap > .lede,
+  .band .wrap > h2,
+  .band .wrap > .lede {
+    text-align: center;
+  }
+  /* cards read better centred at phone width */
+  .card h3,
+  .card p {
+    text-align: center;
+  }
+  /* nothing may sit flush against the edge of the screen */
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

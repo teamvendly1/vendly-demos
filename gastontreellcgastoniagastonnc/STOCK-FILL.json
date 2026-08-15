@@ -1,10 +1,18 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-15T17:38:09.560Z",
+  "at": "2026-08-15T17:58:03.513Z",
   "trade": "tree-service",
-  "slotHints": {},
+  "slotHints": {
+    "photo-service-2.jpg": "Climbing and sectional dismantling"
+  },
   "ok": false,
   "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "20041d3ab50fa16c084cb297a9d8ce189e3a14c6774ff75290351917c1e2a6d5",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
     {
       "file": "photo-card-photos.jpg",
       "sha256": "9127e8a7f9367db28143cdb429d6ca918fffeb2fbf0aafc142328dbb37db6680",
@@ -24,28 +32,43 @@
       "niche_folder": null
     },
     {
+      "file": "photo-contact.jpg",
+      "sha256": "5d8f5ade674e5bcc2e1785a3cf7f410b6341dc0fdb58f570157c68a80ace283d",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-ctaband.jpg",
-      "sha256": "d701cc27bef624357cb1047467a6b8c330715a74e46abadb041e533f99db40ea",
+      "sha256": "0d3404ee4e85760be074ca1e722d385279fd494f72d1fb1d5ac04f16141da575",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "191a9d2bbfae2cd07bf2a7cd96ed1600a919df5d206fa5bd1cfdf2b4c1a954b9",
+      "sha256": "b85b98ce417cf24920faaa2986b258a9bb9f4b8ba3d15b57ebca2632f079ba55",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "aac0bccc8fafc92f77737e10ae5b8f466fa26ca97db415ff23d46099f2b8b6bf",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "a6e7a4ee5d29444c0b9e085e90587134105689e8619deb76534c9229ba8bb311",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "d6158a646220beaa6a3b5e7f90b44a36e674d2ec785b1ed039627f550c571070",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
   ],
   "filled": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
     {
       "file": "photo-card-about.jpg",
       "sha256": null,
@@ -56,34 +79,7 @@
       "refuse_borrow": false
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
       "file": "photo-service-1.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-2.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -126,29 +122,9 @@
       "reason": "stock_gap_all_claimed",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
     }
   ],
   "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-about.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
     {
       "ok": false,
       "gap": true,
@@ -166,40 +142,7 @@
       "reason": "stock_gap_all_claimed",
       "family": "tree-service",
       "service": "",
-      "fileName": "photo-contact.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-photos-cta.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-service-2.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
@@ -247,20 +190,9 @@
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-services-hero.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 5,
+  "distinct": 10,
   "slots": 16,
   "stock_provenance_rows": 0,
   "family": "tree-service",
