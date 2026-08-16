@@ -322,15 +322,17 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   .bar{gap:12px}
 }
 @media(max-width:640px){
-  /* Logo TRUE viewport center with hamburger (Jacob Pixel ~17:10 FAIL, ~17:15
-     absolute still +58px right on measure). Mirror the Menu button width with an
-     invisible .navbalance so flex space-between centers the logo for real. */
+  /* Keep the 3-column GRID on the phone (Jacob 2026-08-16 17:38). Flex + space-between
+     centers a CIRCLE (Clayton / Rodney) and leaves a tall portrait mark (Total Tree)
+     looking shoved left because the img box shrinks to ~48px while Menu stays wide.
+     Column 2 is always true center. Cropped knockout marks can use the height now. */
   .bizmeta{display:none}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:0;min-height:72px}
-  .navtoggle{flex:0 0 auto;grid-column:unset;justify-self:unset;position:relative;z-index:2}
-  .navbalance{flex:0 0 auto;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
+  .bar{display:grid;grid-template-columns:min-content 1fr min-content;align-items:center;gap:0;min-height:80px}
+  .navtoggle{grid-column:1;justify-self:start;position:relative;z-index:2}
+  .bar > a{grid-column:2;justify-self:center;display:flex;align-items:center;justify-content:center;max-width:100%}
+  .navbalance{grid-column:3;justify-self:end;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
   .navbalance svg{visibility:hidden}
-  .logo{position:static;left:auto;transform:none;height:64px;margin:0;grid-column:unset;justify-self:unset;flex:0 1 auto}
+  .logo{position:static;left:auto;transform:none;height:80px;max-width:min(240px,62vw);width:auto;margin:0;flex:none}
   /* Jacob phone audit 2026-08-02 (em2154): the service cards, their icons,
      the badge rows and the stat tiles read left-stuck on a narrow screen.
      Center only these named attention blocks, not body copy. .reviewband
