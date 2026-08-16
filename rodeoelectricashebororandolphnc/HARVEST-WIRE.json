@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-16T16:39:03.742Z",
+ "at": "2026-08-16T18:50:34.965Z",
  "slug": "rodeoelectricashebororandolphnc",
  "wired": [
   {
@@ -12,43 +12,98 @@
   },
   {
    "slot": "photo-about.jpg",
-   "from": "google-86e4be10a1075494.jpg",
-   "bytes": 354592
+   "from": "google-524177e5e00d85ba.jpg",
+   "bytes": 82611
   },
   {
-   "slot": "photo-card-services.jpg",
+   "slot": "photo-card-about.jpg",
    "from": "google-ec6822ea75c7879f.jpg",
    "bytes": 339498
   },
   {
-   "slot": "photo-card-reviews.jpg",
+   "slot": "photo-card-services.jpg",
    "from": "google-a19e4940aa64b544.jpg",
    "bytes": 316730
   },
   {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-306fb72ee3640bed.jpg",
-   "bytes": 283723
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-6931dc7abf66175b.jpg",
+   "bytes": 312385
   },
   {
-   "slot": "photo-ctaband.jpg",
+   "slot": "photo-card-photos.jpg",
    "from": "google-230760922a0c5df1.jpg",
    "bytes": 257237
   },
   {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-86e4be10a1075494.jpg",
+   "bytes": 354592
+  },
+  {
    "slot": "photo-quoteband.jpg",
+   "from": "google-bc05f60c104626cf.jpg",
+   "bytes": 321553
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-239214e20da6c531.jpg",
+   "bytes": 300029
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-306fb72ee3640bed.jpg",
+   "bytes": 283723
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-cc4cdd1282a55e33.jpg",
+   "bytes": 282786
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-1e71b3e2c183068d.jpg",
+   "bytes": 228443
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-e202c8f64ec4a2c3.jpg",
+   "bytes": 208711
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-88ca50c928b78a4f.jpg",
+   "bytes": 203761
+  },
+  {
+   "slot": "photo-service-1.jpg",
    "from": "google-151f7a6480b6a87d.jpg",
    "bytes": 177130
   },
   {
-   "slot": "photo-gallery-1.jpg",
+   "slot": "photo-service-2.jpg",
+   "from": "google-4f172e91dc66b10c.jpg",
+   "bytes": 174589
+  },
+  {
+   "slot": "photo-service-3.jpg",
    "from": "google-3fa31cab0e65e400.jpg",
    "bytes": 157963
   },
   {
-   "slot": "photo-gallery-2.jpg",
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-8a1e96496a7d1894.jpg",
+   "bytes": 197494
+  },
+  {
+   "slot": "photo-gallery-8.jpg",
    "from": "google-69791d34b2da6795.jpg",
    "bytes": 134445
+  },
+  {
+   "slot": "photo-gallery-9.jpg",
+   "from": "google-1a05e6a69f985928.jpg",
+   "bytes": 91836
   },
   {
    "slot": "logo.png",
@@ -58,42 +113,56 @@
   }
  ],
  "skipped": [
-  "classification read: 18 verdicts",
+  "classification read: 42 verdicts",
   "staged 21 harvest photos",
-  "refused_unlooked:google-1a05e6a69f985928.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-1e71b3e2c183068d.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-239214e20da6c531.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-26e47880bbc7bcc2.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-4f172e91dc66b10c.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-524177e5e00d85ba.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-6931dc7abf66175b.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-88ca50c928b78a4f.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-8a1e96496a7d1894.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-bc05f60c104626cf.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-cc4cdd1282a55e33.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-e202c8f64ec4a2c3.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-26e47880bbc7bcc2.jpg:LOGO_NOT_PHOTO: gold bull on black plate, not a job photograph",
   "hero_cand_refuse:google-86e4be10a1075494.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-ec6822ea75c7879f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-bc05f60c104626cf.jpg:road_no_landscape",
   "hero_cand_refuse:google-a19e4940aa64b544.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-6931dc7abf66175b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-239214e20da6c531.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-306fb72ee3640bed.jpg:road_no_landscape",
+  "hero_cand_refuse:google-cc4cdd1282a55e33.jpg:road_no_landscape",
   "hero_cand_refuse:google-230760922a0c5df1.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-1e71b3e2c183068d.jpg:blurry_low_contrast",
+  "hero_cand_refuse:google-e202c8f64ec4a2c3.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-88ca50c928b78a4f.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-8a1e96496a7d1894.jpg:road_no_landscape",
   "hero_cand_refuse:google-151f7a6480b6a87d.jpg:road_no_landscape",
+  "hero_cand_refuse:google-4f172e91dc66b10c.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-3fa31cab0e65e400.jpg:road_no_landscape",
   "hero_cand_refuse:google-69791d34b2da6795.jpg:portrait_aspect_hero_refuse",
-  "photo-gallery-3.jpg",
-  "photo-gallery-4.jpg",
-  "photo-gallery-5.jpg",
-  "photo-gallery-6.jpg",
-  "photo-service-2.jpg",
-  "photo-gallery-7.jpg",
-  "photo-gallery-8.jpg",
-  "photo-gallery-9.jpg",
+  "hero_cand_refuse:google-1a05e6a69f985928.jpg:too_small_bytes",
+  "hero_cand_refuse:google-524177e5e00d85ba.jpg:too_small_bytes",
   "photo-services-hero.jpg",
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 9,
- "refused_by_class": 12
+ "candidates": 20,
+ "refused_by_class": 1,
+ "altBySlot": {
+  "photo-hero.jpg": "Track lights and pendants on timber trusses in a sanctuary",
+  "photo-about.jpg": "Rodeo Electric worker on a lime ladder at a red metal building",
+  "photo-card-about.jpg": "Emporia EV charger on sage wood siding with coiled cable",
+  "photo-card-services.jpg": "ETC lighting controllers and labeled church lighting junction boxes",
+  "photo-card-reviews.jpg": "Wagon-wheel chandelier and track lights on a timber ceiling",
+  "photo-card-photos.jpg": "Wood slat starburst chandelier on a vaulted ceiling",
+  "photo-ctaband.jpg": "Open 200 amp outdoor panel with labeled kitchen HVAC and laundry circuits",
+  "photo-quoteband.jpg": "Yellow cable rough-in through basement wall studs",
+  "photo-gallery-1.jpg": "Parallel metal conduits strapped to a beam in an open ceiling",
+  "photo-gallery-2.jpg": "LED shop lights on metal trusses in a shop building",
+  "photo-gallery-3.jpg": "Emporia EV charger mounted on green wood siding",
+  "photo-gallery-4.jpg": "Shop subpanel, conduit, and a red tool chest",
+  "photo-gallery-5.jpg": "Black ceiling fan and spot lights on a timber vaulted ceiling",
+  "photo-gallery-6.jpg": "Eight matching conduit bends across a metal ceiling",
+  "photo-service-1.jpg": "Orange Werner ladder in a beadboard hallway under new recessed lights",
+  "photo-service-2.jpg": "Metal 240-volt outlet box on a steel stud",
+  "photo-service-3.jpg": "Recessed lights in a basement room with fireplace still in progress",
+  "photo-gallery-7.jpg": "Recessed lights in a finished basement room",
+  "photo-gallery-8.jpg": "LED wall pack on grey metal siding at a gable peak",
+  "photo-gallery-9.jpg": "Eight parallel metal conduits bending into a grey service panel"
+ }
 }
