@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "durhamslandscaping",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#25421A",
+  "palette": {
+    "BRAND": "#25421A",
+    "PRIMARY": "#27461B",
+    "PRIMARY_DK": "#1D3314",
+    "PRIMARY_MID": "#2F5421",
+    "ACCENT": "#3E6E2B",
+    "ACCENT_DK": "#2B4D1E",
+    "ACCENT_LT": "#569A3D",
+    "ON_DARK": "#CEE8C4",
+    "MENU_INK": "#12210D",
+    "TINT_1": "#E1F1DA",
+    "TINT_2": "#EAF5E5",
+    "TINT_3": "#DAEED3",
+    "TINT_4": "#DDEFD7",
+    "LINE_2": "#C2E2B6",
+    "MUTED_BRAND": "#85C56D",
+    "MIST": "#F4FAF2",
+    "LINE": "#D4EBCC",
+    "PRIMARY_RGB": "39,70,27",
+    "ACCENT_RGB": "62,110,43",
+    "SCRIM_RGB": "47,84,33",
+    "SCRIM2_RGB": "29,51,20",
+    "MENU_INK_RGB": "18,33,13",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.62,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 6.05,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.07,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.81,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
