@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <meta name="vendly-demo-build" content="{{BUILD_STAMP}}">
+<meta name="vendly-hydroclean-class" content="{{HYDROCLEAN_CLASS}}">
 <meta name="vendly-google-rating" content="{{GOOGLE_RATING}}">
 <meta name="vendly-google-review-count" content="{{GOOGLE_REVIEW_COUNT}}">
 <meta name="vendly-review-source" content="{{REVIEW_SOURCE}}">
@@ -44,6 +45,11 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <body>
 {{PREVIEW_DISCLOSURE_HTML}}
 <a class="skiplink" href="#main">Skip to content</a>
+
+<div class="phone-strip" role="banner">
+  <a href="tel:{{TEL}}" aria-label="Call {{BUSINESS_NAME}} at {{PHONE}}">{{PHONE}}</a>
+</div>
+{{SOCIAL_ROW_HTML}}
 
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
@@ -95,7 +101,12 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <p class="lede">{{HERO_LEDE}}</p>
 
     <div class="cta">
-      <a class="btn btn-red phone-cta-desktop" href="tel:{{TEL}}">Call {{PHONE}}</a>
+      <!-- MEGA-1940: primary mobile fold CTA is the estimate link, not a hidden phone button.
+           Call stays reachable via the top phone-strip (always visible), the desktop header, and
+           the sticky mobile-callbar CALL button - never hidden here by .phone-cta-desktop, and
+           never .btn-ghost so the max-width:900 rule that hides a ghost #quote dupe does not
+           accidentally hide this one too (site.css). -->
+      <a class="btn btn-red" href="#quote">{{HERO_ESTIMATE_LABEL}}</a>
       <a class="btn btn-ghost" href="photos.html">See our work</a>
     </div>
 {{HERO_BADGE_BLOCK}}
@@ -104,6 +115,23 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     </div>
   </div>
 </section>
+
+<!--SECTION:home-reviews-->
+<section class="home-reviews{{REVIEWSBAND_CLASS}}" id="home-reviews" aria-labelledby="h-home-reviews">
+  {{REVIEWSBAND_IMG_HTML}}
+  <div class="wrap">
+    <div class="center">
+      <h2 id="h-home-reviews">{{REVIEWS_H2}}</h2>
+    </div>
+    <div class="rv-list">
+      <div class="rv-carousel"><div class="rv-track" role="list">
+{{REVIEWS_CARDS_HTML}}
+      </div></div>
+    </div>
+    <p class="center" style="margin-top:22px;margin-bottom:0"><a class="btn btn-ghost" href="reviews.html">See all reviews</a></p>
+  </div>
+</section>
+<!--/SECTION:home-reviews-->
 
 <!--SECTION:strip-->
 <div class="strip">
@@ -148,6 +176,18 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   </div>
 </section>
 
+<!-- lc-midcta ("Tell us what you need") retired 2026-08-15, Jacob EYES MEGA-1820: the sticky
+     mobile callbar (Ask us / Get estimate / CALL) already carries this exact convert action on
+     every scroll position, so a second full-width "Tell us what you need" band a few sections
+     later was a repeat, not new information. Not in the hydro-prompt canonical home order
+     either (see HYDROCLEAN-CLASS-GENERATE-PROMPT.md ORDER line - no MIDCTA slot). Dropped at
+     the mold, not patched per-demo, so no future generate ships it. -->
+
+<!-- SECTION:home-about retired 2026-08-17. MEGA-1940 teaser reused photo-about on index AND
+     about.html. DemoImageGate counts that file sitewide and refused Durhams as DUPLICATE_PHOTO.
+     Pointing the teaser at photo-card-about duplicated the explore About card on the same homepage.
+     Explore About card (photo-card-about.jpg) + about.html (photo-about.jpg) stay. Restore a teaser
+     only with a dedicated unique slot. generate-from-blank-mold.js also cutSection home-about. -->
 
 <!--SECTION:beforeafter-->
 <section class="reveal" aria-labelledby="h-ba">
@@ -170,7 +210,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="center">
       <p class="kicker">Coverage</p>
       <h2 id="h-hours">{{COVERAGE_H2}}</h2>
-      <p class="lede">Open {{HOURS_LINE}}</p>
+      {{HOURS_LEDE_LINE}}
     </div>
     <div class="areas" style="margin-top:26px">
 {{AREAS_HTML}}
@@ -195,13 +235,29 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   </div>
 </section>
 
-<section class="reveal mist" id="quote" aria-labelledby="h-quote">
+<!--SECTION:home-trust-->
+<section class="home-trust lc-trust" aria-labelledby="h-home-trust">
+  <div class="wrap">
+    <p class="lc-eyebrow">{{TRUST_EYEBROW}}</p>
+    <h2 id="h-home-trust">{{TRUST_BAND_H2}}</h2>
+    <div class="t3 lc-trust-grid">
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true">{{TRUST_ICON_1}}</div><h3>{{TRUST_1_H}}</h3><p>{{TRUST_1_P}}</p></article>
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true">{{TRUST_ICON_2}}</div><h3>{{TRUST_2_H}}</h3><p>{{TRUST_2_P}}</p></article>
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true">{{TRUST_ICON_3}}</div><h3>{{TRUST_3_H}}</h3><p>{{TRUST_3_P}}</p></article>
+    </div>
+    <a class="btn lc-trust-cta" href="contact.html">{{TRUST_CTA}}</a>
+  </div>
+</section>
+<!--/SECTION:home-trust-->
+
+<section class="reveal mist{{QUOTEBAND_CLASS}}" id="quote" aria-labelledby="h-quote">
+  {{QUOTEBAND_IMG_HTML}}
   <div class="wrap">
     <div class="leadwrap">
       <div>
         <p class="kicker">Get a quote</p>
         <h2 id="h-quote">{{QUOTE_H2}}</h2>
-        <p class="lede" style="color:var(--muted)">{{QUOTE_LEDE}}</p>
+        <p class="lede"{{QUOTE_LEDE_STYLE_ATTR}}>{{QUOTE_LEDE}}</p>
         <div class="badges" style="margin-top:26px">
           <span class="badge" style="text-transform:none"><a href="tel:{{TEL}}" style="color:inherit;text-decoration:none">{{PHONE}}</a></span>
         </div>
@@ -235,7 +291,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     </div>
   </div>
 </section>
-
 </main>
 
 <footer>
@@ -243,7 +298,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo.png?v={{ASSET_VER}}" alt="{{BUSINESS_NAME}}">
+          <img class="logo-footer" src="assets/logo-footer.png?v={{ASSET_VER}}" alt="{{BUSINESS_NAME}}">
         </div>
         <p style="margin:0;max-width:34ch">{{FOOTER_BLURB}}</p>
       </div>
@@ -251,7 +306,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <h3 class="fh">Contact</h3>
         <ul>
           <li><a href="tel:{{TEL}}">{{PHONE}}</a></li>
-                  </ul>
+        </ul>
       </div>
       <div>
         <h3 class="fh">Menu</h3>
@@ -261,8 +316,8 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
           <li><a href="services.html">Services offered</a></li>
           <li><a href="reviews.html">Customer reviews</a></li>
           <li><a href="photos.html">Photos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
       <div>
         <h3 class="fh">Services</h3>
@@ -295,16 +350,16 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     tenantId: "{{TENANT_ID}}",
     demoSlug: "{{SLUG}}",
     endpoint: "https://vendly-jarvis.vercel.app",
-    name: "{{BUSINESS_NAME}}",
+    name: {{BUSINESS_NAME_JS}},
     greeting: "{{CONCIERGE_GREETING}}",
     nudge: "{{CONCIERGE_NUDGE}}",
     disablePeek: true,
     forceRender: true,
-    phone: "",
-    sms: "",
-    quoteUrl: "",
+    phone: "{{TEL}}",
+    sms: "{{TEL}}",
+    quoteUrl: "#quote",
     bookUrl: "",
-    contactUrl: "index.html#quote",
+    contactUrl: "./index.html#quote",
     suggestions: {{CONCIERGE_SUGGESTIONS_JSON}},
     accent: "{{ACCENT}}"
   };
@@ -320,7 +375,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   };
 </script>
 <script src="assets/beforeafter.js?v={{ASSET_VER}}" defer></script>
-<script src="assets/hero-rotator.js?v={{ASSET_VER}}" defer></script>
 <script src="assets/site.js?v={{ASSET_VER}}" defer></script>
 <script id="v-lb-js">
 (function(){
