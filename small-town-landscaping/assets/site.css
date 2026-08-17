@@ -203,7 +203,7 @@ textarea{min-height:112px;resize:vertical}
 footer{background:var(--blue-dk);color:#CFE6B2;padding:56px 0 30px;font-size:15px}
 footer a{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
-footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8FB4E4;margin:0 0 15px}
+footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#E4F1D5;margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
 footer li a{display:inline-block;padding:4px 0}
@@ -589,3 +589,9 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
   .contact-shot{order:-1;margin-bottom:28px}
   .contact-facts{gap:24px;margin-bottom:28px}
 }
+
+/* Footer mark sits directly on the olive band. .logo-chip (site.css:498) paints a
+   rounded --primary plate behind it; header.site already strips that plate (site.css:436) and the
+   footer never did, so the mark shipped inside a green box. The mark is now reversed for dark
+   bands and needs no backing at all. Specificity (0,1,1) beats .logo-chip regardless of order. */
+footer .logo-chip{background:transparent;padding:0;border-radius:0;box-shadow:none}
