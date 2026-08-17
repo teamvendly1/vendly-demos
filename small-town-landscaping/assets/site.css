@@ -1,6 +1,6 @@
 /* NO-CAPTIONS mold 2026-08-12 */
 html{scroll-padding-bottom:112px}
-:root{
+:root{--phone-strip-h:50px;
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
   --blue:#507326;
   --blue-dk:#334918;
@@ -45,7 +45,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .logo-chip{display:inline-flex;background:transparent;padding:0;border-radius:0}
 .logo-footer{height:44px;width:auto;display:block}
 
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:13px 0}
 .logo{grid-column:2;justify-self:center}
 .bizmeta{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
@@ -386,10 +386,8 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
 
-/* Parkers RT-clone 2026-08-11: one phone surface at a time.
-   Desktop = header call button + in-page Call CTAs.
-   Mobile = sticky CALL bar ONLY (no hero/ctaband/strip number stacking). */
-.phone-strip{display:none!important}
+/* Hydro class: phone-first strip stays visible. 2026-08-11 Parkers hide is superseded.
+   Desktop still uses header + in-page Call. Mobile keeps the sticky CALL bar PLUS the tel strip. */
 .logo{background:transparent;padding:0;border-radius:0;object-fit:contain}
 .hero{isolation:isolate}
 .hero img.bg{z-index:0}
