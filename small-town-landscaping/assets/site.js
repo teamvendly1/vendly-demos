@@ -84,5 +84,16 @@
       if(r.top<vh && r.bottom>0){ startCounter(el); }
       else{ cio.observe(el); }
     });
+
+    /* Jacob 2026-08-17 Pixel: sticky header at --phone-strip-h left a hole
+       of page content above the logo bar. .site-chrome is position:fixed.
+       Pad the document so the hero is not under it. */
+    var chrome=document.querySelector('.site-chrome');
+    if(chrome){
+      var bumpChrome=function(){ document.body.style.paddingTop=chrome.offsetHeight+'px'; };
+      bumpChrome();
+      window.addEventListener('resize', bumpChrome);
+      if(window.ResizeObserver){ try{ new ResizeObserver(bumpChrome).observe(chrome); }catch(e2){} }
+    }
   }catch(e){}
 })();
