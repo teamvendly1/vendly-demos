@@ -35,7 +35,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 
 
 /* phone-first strip (Hydro steal: number alone above chrome) */
-.phone-strip{background:var(--blue-dk);color:#fff;text-align:center;font:700 16px/1 Inter,sans-serif}
+.phone-strip{position:sticky;top:0;z-index:80;background:var(--blue-dk);color:#fff;text-align:center;font:700 16px/1 Inter,sans-serif}
 .phone-strip a{display:block;padding:12px 16px;color:#fff;text-decoration:none;letter-spacing:.02em}
 .phone-strip a:hover{background:#253612}
 @media(min-width:900px){.phone-strip a{padding:11px 16px;font-size:15px}}
