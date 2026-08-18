@@ -1,18 +1,21 @@
 {
- "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-18T14:38:43.337Z",
- "slug": "beachboysauto",
- "logo_sha256": "995897d8c0c19921872913fea3c9c52bc294b04874f518f54d6a232e06836fe1",
- "origin": "their-google-listing:human-flagged-mark",
- "source_url": "https://www.google.com/maps/place/Beach+Boys+Auto/@33.8610664,-78.6530208,17z/data=!3m1!4b1!4m6!3m5!1s0x890087634d25154d:0x813004d19bd9d077!8m2!3d33.8610664!4d-78.6530208!16s%2Fg%2F1tnbl_dw?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
- "source_file": "",
- "verdict": {
-  "ok": true,
-  "flatness": 0.488,
-  "transparent": 0,
-  "decided_by": "flatness",
-  "w": 335,
-  "h": 225
- },
- "post_stage_transform": "logo-transparent-margin"
+  "schema": "vendly.autodemo.mark-classify-receipt/1",
+  "at": "2026-08-18T14:38:43.337Z",
+  "slug": "beachboysauto",
+  "logo_sha256": "995897d8c0c19921872913fea3c9c52bc294b04874f518f54d6a232e06836fe1",
+  "origin": "their-google-listing:human-flagged-mark",
+  "source_url": "https://www.google.com/maps/place/Beach+Boys+Auto/@33.8610664,-78.6530208,17z/data=!3m1!4b1!4m6!3m5!1s0x890087634d25154d:0x813004d19bd9d077!8m2!3d33.8610664!4d-78.6530208!16s%2Fg%2F1tnbl_dw?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "source_file": "",
+  "verdict": {
+    "ok": true,
+    "flatness": 0.488,
+    "transparent": 0,
+    "decided_by": "flatness",
+    "w": 335,
+    "h": 225
+  },
+  "post_stage_transform": "logo-transparent-margin",
+  "human_verdict": "pass",
+  "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+  "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Real hand-illustrated logo, real shop exterior/engine work photos, real Google reviews confirmed on reviews.html, correct phone (843) 663-2525 and address, no placeholders."
 }
