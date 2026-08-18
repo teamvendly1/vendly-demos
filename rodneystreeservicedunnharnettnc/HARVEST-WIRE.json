@@ -1,94 +1,111 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-16T23:21:58.160Z",
+ "at": "2026-08-18T06:21:14.756Z",
  "slug": "rodneystreeservicedunnharnettnc",
  "wired": [
   {
    "slot": "photo-hero.jpg",
    "from": "google-4d9e2f1a6d77b77d.jpg",
    "bytes": 481537,
+   "letterbox_stripped": null,
    "trade_score": 3.5,
    "reason": "hero_work_rank"
   },
   {
-   "slot": "photo-about.jpg",
+   "slot": "photo-card-about.jpg",
    "from": "google-affa3b00898622a0.jpg",
-   "bytes": 622466
+   "bytes": 622466,
+   "letterbox_stripped": null
   },
   {
-   "slot": "photo-card-about.jpg",
+   "slot": "photo-about.jpg",
    "from": "google-e40ee16ecc275467.jpg",
-   "bytes": 397593
+   "bytes": 397593,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
    "from": "google-f16426198251529a.jpg",
-   "bytes": 736744
+   "bytes": 736744,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-da1f96c1981ed729.jpg",
-   "bytes": 596513
+   "bytes": 596513,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-6531fa810aea1a62.jpg",
-   "bytes": 490374
+   "bytes": 490374,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-ctaband.jpg",
    "from": "google-d9fc7aeac83119df.jpg",
-   "bytes": 723442
+   "bytes": 723442,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-quoteband.jpg",
    "from": "google-038063a336afd239.jpg",
-   "bytes": 655631
+   "bytes": 655631,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-1.jpg",
    "from": "google-57e2f19135f559a7.jpg",
-   "bytes": 625531
+   "bytes": 625531,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
    "from": "google-12e85a4978f3b057.jpg",
-   "bytes": 622216
+   "bytes": 622216,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-3.jpg",
    "from": "google-e52d603bcb69a080.jpg",
-   "bytes": 619109
+   "bytes": 619109,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-4.jpg",
    "from": "google-d6cf0a5e478ecbfb.jpg",
-   "bytes": 548483
+   "bytes": 548483,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-5.jpg",
    "from": "google-39bdc79abf8a90f7.jpg",
-   "bytes": 532375
+   "bytes": 532375,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-6.jpg",
    "from": "google-b680087e3c45b5ab.jpg",
-   "bytes": 464781
+   "bytes": 464781,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-service-1.jpg",
    "from": "google-2438dc6a01d03b73.jpg",
-   "bytes": 280465
+   "bytes": 280465,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-5d1f3f6c75f38c98.jpg",
-   "bytes": 257286
+   "bytes": 257286,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-7ffa96887bd372c7.jpg",
-   "bytes": 300339
+   "bytes": 300339,
+   "letterbox_stripped": null
   },
   {
    "slot": "logo.png",
@@ -114,13 +131,14 @@
   "hero_cand_refuse:google-d9fc7aeac83119df.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-038063a336afd239.jpg:road_no_landscape",
   "hero_cand_refuse:google-57e2f19135f559a7.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-affa3b00898622a0.jpg:portrait_aspect_hero_refuse",
+  "hero_hold_crew_for_about:google-affa3b00898622a0.jpg",
   "hero_cand_refuse:google-12e85a4978f3b057.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-e52d603bcb69a080.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-da1f96c1981ed729.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-d6cf0a5e478ecbfb.jpg:close_crop_alt",
   "hero_cand_refuse:google-6531fa810aea1a62.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-b680087e3c45b5ab.jpg:portrait_aspect_hero_refuse",
+  "hero_hold_crew_for_about:google-e40ee16ecc275467.jpg",
   "hero_cand_refuse:google-7ffa96887bd372c7.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-2438dc6a01d03b73.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-5d1f3f6c75f38c98.jpg:portrait_aspect_hero_refuse",
@@ -137,8 +155,8 @@
  "refused_by_class": 10,
  "altBySlot": {
   "photo-hero.jpg": "Climber walking out along a heavy lateral limb on rope, taking it back toward the trunk in sections",
-  "photo-about.jpg": "Man in a white KASK helmet and work shirt putting a felling cut into a thick trunk, chips flying from the bar",
-  "photo-card-about.jpg": "Climber in a lime helmet and maroon shirt standing on a high limb with the saw, ropes hanging down the stem",
+  "photo-card-about.jpg": "Man in a white KASK helmet and work shirt putting a felling cut into a thick trunk, chips flying from the bar",
+  "photo-about.jpg": "Climber in a lime helmet and maroon shirt standing on a high limb with the saw, ropes hanging down the stem",
   "photo-card-services.jpg": "Face cut opened in a thick trunk with the Stihl saw parked on the needles and chips heaped at the hinge",
   "photo-card-reviews.jpg": "Two sawyers bucking a felled trunk on the grass, Stihl saw in the cut and another worker further down the log",
   "photo-card-photos.jpg": "Sawyer down at the base of a heavy leaning pine with the face cut already made and the sawdust piled at his feet",
