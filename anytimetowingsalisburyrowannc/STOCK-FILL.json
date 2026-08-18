@@ -1,0 +1,195 @@
+{
+  "schema": "vendly.autodemo.stock-fill/1",
+  "at": "2026-08-18T17:10:39.824Z",
+  "trade": "towing",
+  "slotHints": {
+    "photo-service-1.jpg": "Winch-out and recovery",
+    "photo-service-2.jpg": "Car and light truck transport",
+    "photo-service-3.jpg": "Heavy and oversize loads"
+  },
+  "ok": false,
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "4872ea7ac3bc59702ffcc363274e5b273fea3685583a8754841640faca28842d",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "fd220f27fe787593d227f3288a8b9928745acb35a41999a367597eceb0bfe367",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "a31064c4b00b91a31a848d3643c9a790a69dc83054b6309bcef6fadbc4e4dc6e",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "de61f1bed5154831319eeeee86d73ecb0498ad9f71e9dc5b5c8406ca5d9fc594",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "4435f5ba9bb1f80b84a63cfdecc5125083a60b4e81e5acd33343b6dd237af5f0",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "05e8081bfb29bbb00bbe95cf7cf8677377f6e5584e2a9ba7bd7beae413c47e97",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "8a254d2e4957c97681b5de0ccaf0e39bce881ccbba4f865774eee7e390061c8a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "255f4d552dd32a2a14621fb1d2d6646c24addd207c358e3d65147261021aa7eb",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "96f8ba7e3dfcd6d81a511abc7e9f70075cbd66e5bc4fc4a8db68e9fb4e16ed2d",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "78d6fc12c8aa0397c51c647354c003cbce0d7ce10ef386dba8cc47b6061a79ee",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "9fab32fded0793aea782aaa1b025115714af3a5c1ea3000a3c987c2b4c7a6e68",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "0a88b24c62291b5dcf73c732a05da514e8be91994daef061596d307d443ff3d3",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    }
+  ],
+  "filled": [
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "Heavy and oversize loads",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    }
+  ],
+  "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "towing",
+      "service": "",
+      "fileName": "photo-photos-cta.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "towing",
+      "service": "Heavy and oversize loads",
+      "fileName": "photo-service-3.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "towing",
+      "service": "",
+      "fileName": "photo-service-4.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "towing",
+      "service": "",
+      "fileName": "photo-service-5.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "towing",
+      "service": "",
+      "fileName": "photo-service-6.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    }
+  ],
+  "distinct": 12,
+  "slots": 17,
+  "stock_provenance_rows": 0,
+  "family": "towing",
+  "refuse_borrow": false,
+  "provenance_ok": true
+}
