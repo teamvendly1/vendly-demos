@@ -1,18 +1,21 @@
 {
- "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-18T15:22:42.466Z",
- "slug": "precisionautomotive",
- "logo_sha256": "c102c1da503b7ba5781a5f31f81c3be9ec9dfb394c18e4b41fb2ea558f14a74a",
- "origin": "their-google-listing:human-flagged-mark",
- "source_url": "https://www.google.com/maps/place/Precision+Automotive/@35.4319393,-83.4321915,17z/data=!3m1!4b1!4m6!3m5!1s0x885949efb0cbc3c7:0x1af7e8e52e1412b0!8m2!3d35.4319393!4d-83.4321915!16s%2Fg%2F11vzxjkz50?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
- "source_file": "",
- "verdict": {
-  "ok": true,
-  "flatness": 0.81,
-  "transparent": 0,
-  "decided_by": "flatness",
-  "w": 1298,
-  "h": 1178
- },
- "post_stage_transform": "logo-transparent-margin"
+  "schema": "vendly.autodemo.mark-classify-receipt/1",
+  "at": "2026-08-18T15:22:42.466Z",
+  "slug": "precisionautomotive",
+  "logo_sha256": "c102c1da503b7ba5781a5f31f81c3be9ec9dfb394c18e4b41fb2ea558f14a74a",
+  "origin": "their-google-listing:human-flagged-mark",
+  "source_url": "https://www.google.com/maps/place/Precision+Automotive/@35.4319393,-83.4321915,17z/data=!3m1!4b1!4m6!3m5!1s0x885949efb0cbc3c7:0x1af7e8e52e1412b0!8m2!3d35.4319393!4d-83.4321915!16s%2Fg%2F11vzxjkz50?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "source_file": "",
+  "verdict": {
+    "ok": true,
+    "flatness": 0.81,
+    "transparent": 0,
+    "decided_by": "flatness",
+    "w": 1298,
+    "h": 1178
+  },
+  "post_stage_transform": "logo-transparent-margin",
+  "human_verdict": "pass",
+  "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+  "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Real gear-badge logo, real truck/shop photos, real Google reviews visible, correct phone (828) 341-2366 and address, no placeholders."
 }
