@@ -1,0 +1,101 @@
+{
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-18T16:10:54.429Z",
+  "slug": "enrouteautocenter",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "photo-gallery-1.jpg",
+      "bytes": 208792,
+      "trade_score": 3.5,
+      "reason": "hero_contrast_retarget:photo-gallery-1.jpg"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "from": "google-aa654aca15c93369.jpg",
+      "bytes": 247615,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-about.jpg",
+      "from": "google-21abe1272a936e5d.jpg",
+      "bytes": 235430,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "from": "google-1547077dc15fd5c3.jpg",
+      "bytes": 239968,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-reviews.jpg",
+      "from": "google-8edb3c2af03593c5.jpg",
+      "bytes": 231739,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-photos.jpg",
+      "from": "google-a8086ec748299218.jpg",
+      "bytes": 217684,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "google-2de08e85d5cde0bb.jpg",
+      "bytes": 208792,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "google-c7443fe770601769.jpg",
+      "bytes": 196588,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "logo.png",
+      "from": "their-google-listing:human-flagged-mark",
+      "bytes": 36267,
+      "source_url": "https://www.facebook.com/enrouteautocenter"
+    }
+  ],
+  "skipped": [
+    "classification read: 16 verdicts",
+    "staged 8 harvest photos",
+    "hero_cand_refuse:google-1547077dc15fd5c3.jpg:road_no_landscape",
+    "hero_cand_refuse:google-8edb3c2af03593c5.jpg:road_no_landscape",
+    "photo-gallery-3.jpg",
+    "photo-ctaband.jpg",
+    "photo-quoteband.jpg",
+    "photo-gallery-4.jpg",
+    "photo-gallery-5.jpg",
+    "photo-gallery-6.jpg",
+    "photo-service-1.jpg",
+    "photo-service-2.jpg",
+    "photo-service-3.jpg",
+    "photo-gallery-7.jpg",
+    "photo-gallery-8.jpg",
+    "photo-gallery-9.jpg",
+    "photo-services-hero.jpg",
+    "photo-contact.jpg",
+    "photo-photos-cta.jpg",
+    "photo-reviewsband.jpg",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+  ],
+  "candidates": 8,
+  "altBySlot": {
+    "photo-hero.jpg": "Open shop floor with two-post lifts, a diagnostic station and several customer cars",
+    "photo-card-about.jpg": "Customer waiting area with a wall TV and the orange and blue stripe theme",
+    "photo-about.jpg": "Second waiting room view with a checkerboard bench and seating",
+    "photo-card-services.jpg": "State inspection diagnostic computer station with dual monitors",
+    "photo-card-reviews.jpg": "Mechanic wearing a headlamp working on a black BMW engine bay",
+    "photo-card-photos.jpg": "Mechanic in glasses inspecting an engine bay closely with the hood up",
+    "photo-gallery-1.jpg": "Open shop floor with two-post lifts, a diagnostic station and several customer cars",
+    "photo-gallery-2.jpg": "Enroute Auto Center front desk painted with the logo, orange and blue racing stripes on the walls"
+  },
+  "hero_retarget": {
+    "at": "2026-08-18T16:10:56.231Z",
+    "from_slot": "photo-gallery-1.jpg",
+    "reason": "hero_contrast_retarget"
+  }
+}

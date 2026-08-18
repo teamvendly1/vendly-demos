@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T04:11:29.861Z",
+  "at": "2026-08-18T16:12:42.275Z",
   "trade": "tree-service",
   "slotHints": {},
   "ok": false,
@@ -36,20 +36,8 @@
       "niche_folder": null
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "d4f19dc0eefffee71de1b9a801f0fa5d15f137b42297461ff3121d96113fcd0f",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-hero.jpg",
       "sha256": "99cc0d6c08d9c93cb5ca0a0415efc7d2388565f4f85b7469ba327231bc066ae3",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "622e77d4b9a8ec738703aa2f6615e7a819b37806bd85e1a4559dec90f814c721",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -57,6 +45,15 @@
   "filled": [
     {
       "file": "photo-contact.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-ctaband.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -155,6 +152,17 @@
       "reason": "stock_gap_all_claimed",
       "family": "tree-service",
       "service": "",
+      "fileName": "photo-ctaband.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
       "fileName": "photo-photos-cta.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
@@ -238,8 +246,8 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 8,
-  "slots": 17,
+  "distinct": 6,
+  "slots": 16,
   "stock_provenance_rows": 0,
   "family": "tree-service",
   "refuse_borrow": false,

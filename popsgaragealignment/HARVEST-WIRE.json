@@ -1,0 +1,124 @@
+{
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-18T16:12:06.614Z",
+  "slug": "popsgaragealignment",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "photo-gallery-3.jpg",
+      "bytes": 172227,
+      "trade_score": 3.5,
+      "reason": "hero_contrast_retarget:photo-gallery-3.jpg"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "from": "google-04dc5893e9e01840.jpg",
+      "bytes": 368793,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-about.jpg",
+      "from": "google-62acabd64e5b62b7.jpg",
+      "bytes": 238123,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "from": "google-e89c64687ca9b89f.jpg",
+      "bytes": 260046,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-reviews.jpg",
+      "from": "google-ead711759df4e83b.jpg",
+      "bytes": 222072,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-photos.jpg",
+      "from": "google-15458a5c7218c43a.jpg",
+      "bytes": 153654,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "google-6794998dd7d94752.jpg",
+      "bytes": 187267,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "google-066ac90f837ebf9d.jpg",
+      "bytes": 173392,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "from": "google-c9b3be89a626eb36.jpg",
+      "bytes": 172227,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-ctaband.jpg",
+      "from": "google-64bcc8b3bf565dfb.jpg",
+      "bytes": 149935,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-quoteband.jpg",
+      "from": "google-743e53b555bcee7b.jpg",
+      "bytes": 137953,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "logo.png",
+      "from": "facebook-profile-mark:eyes-verified",
+      "bytes": 1005692,
+      "source_url": "https://www.facebook.com/PopsGarageNMB"
+    }
+  ],
+  "skipped": [
+    "classification read: 22 verdicts",
+    "staged 11 harvest photos",
+    "hero_cand_refuse:google-04dc5893e9e01840.jpg:road_no_landscape",
+    "hero_cand_refuse:google-62acabd64e5b62b7.jpg:road_no_landscape",
+    "hero_cand_refuse:google-ead711759df4e83b.jpg:road_no_landscape",
+    "hero_cand_refuse:google-6794998dd7d94752.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-066ac90f837ebf9d.jpg:road_no_landscape",
+    "hero_cand_refuse:google-15458a5c7218c43a.jpg:close_crop_alt",
+    "hero_cand_refuse:google-743e53b555bcee7b.jpg:road_no_landscape",
+    "photo-gallery-4.jpg",
+    "photo-gallery-5.jpg",
+    "photo-gallery-6.jpg",
+    "photo-service-1.jpg",
+    "photo-service-2.jpg",
+    "photo-service-3.jpg",
+    "photo-gallery-7.jpg",
+    "photo-gallery-8.jpg",
+    "photo-gallery-9.jpg",
+    "photo-services-hero.jpg",
+    "photo-contact.jpg",
+    "photo-photos-cta.jpg",
+    "photo-reviewsband.jpg",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+  ],
+  "candidates": 11,
+  "altBySlot": {
+    "photo-hero.jpg": "Pop's Garage and Alignment building on a clear day with a classic car parked out front",
+    "photo-card-about.jpg": "Pop's Garage Auto Service Center storefront at dawn with open bays",
+    "photo-about.jpg": "Covered self-serve bay and seating area beside the shop",
+    "photo-card-services.jpg": "Mechanic working in an open bay lined with traffic cones",
+    "photo-card-reviews.jpg": "Detailed shot of a classic muscle car engine bay serviced at the shop",
+    "photo-card-photos.jpg": "Close-up underneath a vehicle mid-repair at Pop's Garage",
+    "photo-gallery-1.jpg": "Now Open banner over a bay with a car up on the alignment lift",
+    "photo-gallery-2.jpg": "Pop's Garage and Alignment sign close over the open service bays",
+    "photo-gallery-3.jpg": "Pop's Garage and Alignment building on a clear day with a classic car parked out front",
+    "photo-ctaband.jpg": "Pop's Garage and Alignment sign above the open roll-up bay doors",
+    "photo-quoteband.jpg": "Auto Service Center storefront with cars parked out front"
+  },
+  "hero_retarget": {
+    "at": "2026-08-18T16:12:08.922Z",
+    "from_slot": "photo-gallery-3.jpg",
+    "reason": "hero_contrast_retarget"
+  }
+}

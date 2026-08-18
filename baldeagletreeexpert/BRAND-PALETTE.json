@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "baldeagletreeexpert",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#210D04",
+  "palette": {
+    "BRAND": "#210D04",
+    "PRIMARY": "#56220A",
+    "PRIMARY_DK": "#401908",
+    "PRIMARY_MID": "#69290D",
+    "ACCENT": "#883611",
+    "ACCENT_DK": "#60260C",
+    "ACCENT_LT": "#BF4B17",
+    "ON_DARK": "#F6CAB6",
+    "MENU_INK": "#291005",
+    "TINT_1": "#F9DED2",
+    "TINT_2": "#FBE8DF",
+    "TINT_3": "#F8D7C8",
+    "TINT_4": "#F9DBCD",
+    "LINE_2": "#F4BDA4",
+    "MUTED_BRAND": "#E97B49",
+    "MIST": "#FDF3EF",
+    "LINE": "#F7D1BF",
+    "PRIMARY_RGB": "86,34,10",
+    "ACCENT_RGB": "136,54,17",
+    "SCRIM_RGB": "105,41,13",
+    "SCRIM2_RGB": "64,25,8",
+    "MENU_INK_RGB": "41,16,5",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.89,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.13,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.62,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.94,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
