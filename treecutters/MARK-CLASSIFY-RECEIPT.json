@@ -1,18 +1,21 @@
 {
- "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-18T14:00:20.567Z",
- "slug": "treecutters",
- "logo_sha256": "8657cf452759f196cdc17ebef29777e7646f7431db1ae7f29178c8df48609e2d",
- "origin": "their-google-listing:human-flagged-mark",
- "source_url": "https://www.google.com/maps/place/Tree+Cutters/@35.8372056,-82.6915806,9z/data=!4m10!1m2!2m1!1sTree+Cutters+Lenoir+(Caldwell)!3m6!1s0x8850d89c87598527:0xb00bbdbe5fb3f1f2!8m2!3d35.8372056!4d-81.5380161!15sCh5UcmVlIEN1dHRlcnMgTGVub2lyIChDYWxkd2VsbClaHiIcdHJlZSBjdXR0ZXJzIGxlbm9pciBjYWxkd2VsbJIBDHRyZWVf",
- "source_file": "",
- "verdict": {
-  "ok": true,
-  "flatness": 0.658,
-  "transparent": 0,
-  "decided_by": "flatness",
-  "w": 1568,
-  "h": 960
- },
- "post_stage_transform": "logo-transparent-margin"
+  "schema": "vendly.autodemo.mark-classify-receipt/1",
+  "at": "2026-08-18T14:00:20.567Z",
+  "slug": "treecutters",
+  "logo_sha256": "8657cf452759f196cdc17ebef29777e7646f7431db1ae7f29178c8df48609e2d",
+  "origin": "their-google-listing:human-flagged-mark",
+  "source_url": "https://www.google.com/maps/place/Tree+Cutters/@35.8372056,-82.6915806,9z/data=!4m10!1m2!2m1!1sTree+Cutters+Lenoir+(Caldwell)!3m6!1s0x8850d89c87598527:0xb00bbdbe5fb3f1f2!8m2!3d35.8372056!4d-81.5380161!15sCh5UcmVlIEN1dHRlcnMgTGVub2lyIChDYWxkd2VsbClaHiIcdHJlZSBjdXR0ZXJzIGxlbm9pciBjYWxkd2VsbJIBDHRyZWVf",
+  "source_file": "",
+  "verdict": {
+    "ok": true,
+    "flatness": 0.658,
+    "transparent": 0,
+    "decided_by": "flatness",
+    "w": 1568,
+    "h": 960
+  },
+  "post_stage_transform": "logo-transparent-margin",
+  "human_verdict": "pass",
+  "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+  "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Distinctive real beaver-mascot logo (genuine custom artwork, not AI-wordmark), real crew/equipment photos, real Google reviews (Carol Staton visible), correct phone (828) 640-0703 and address, no placeholders, no wrong numbers."
 }
