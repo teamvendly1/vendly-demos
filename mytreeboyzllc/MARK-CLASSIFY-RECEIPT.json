@@ -1,18 +1,23 @@
 {
  "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-17T23:41:22.988Z",
+ "at": "2026-08-18T07:22:10.217Z",
  "slug": "mytreeboyzllc",
- "logo_sha256": "e77ad39447f1eb035fa9306cfbc2838785de85f49818c5e474dba560e2baad70",
+ "logo_sha256": "6a324626bd6a2d2e82bd48e45248db88c1d122b45ac6115e5d407f2cbfd55b05",
  "origin": "their-google-listing:human-flagged-mark",
  "source_url": "https://www.google.com/maps/place/My+Tree+Boyz+llc/@39.392369,-74.8384066,9z/data=!3m1!4b1!4m6!3m5!1s0x89c0d428561970f5:0xb2b6a06f6c2a8f36!8m2!3d39.392369!4d-74.8384066!16s%2Fg%2F11c314bhrg?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
  "source_file": "",
  "verdict": {
   "ok": true,
-  "flatness": 0.561,
+  "flatness": 0.417,
   "transparent": 0,
   "decided_by": "flatness",
-  "w": 170,
-  "h": 170
+  "w": 1570,
+  "h": 930
  },
+ "human_verdict": "pass",
+ "human_verdict_by": "claude-logo-uncropped-investigation-2026-08-18",
+ "human_verdict_at": "2026-08-18T07:10:00.000Z",
+ "human_verdict_note": "LOGO_UNCROPPED_SIGN_PHOTO fix. The shipped logo was a blurry 170x170 crop of the mascot decal off a black dump-truck panel (mark_crop set_by=cursor-eyes-2026-08-17, forced to 170x170 only to clear the isMark() 160px floor, and still swept in background tree branches plus part of the phone/service text). The same HARVEST.json is_brand_mark set also contains two clean, high-resolution photos of the business's own printed business card (google-a862cb51543dce88.jpg 1600x1077 and google-4653242ecff511f6.jpg 1600x1200) which stageBrandMark's SOURCE 1 loop never reached because it returns on the FIRST flagged photo that passes isMark(), not the best one. Cropped google-4653242ecff511f6.jpg to 1570x930 (left=15,top=95), dropping only the 'Chris Stengel - Owner/Operator - 856-535-7186' band at the bottom - the exact 2-band badge/contact-info pattern stage-brand-mark.js already documents dropping for autoadventure. Verified by rendering the actual output file (not just its byte size) at both full size and at 56px header render height - legible mascot + MY TREE BOYZ wordmark at both.",
+ "human_verdict_carried_from": "2026-08-18T07:21:27.818Z",
  "post_stage_transform": "logo-transparent-margin"
 }

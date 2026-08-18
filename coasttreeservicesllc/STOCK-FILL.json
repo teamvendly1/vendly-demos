@@ -1,0 +1,223 @@
+{
+  "schema": "vendly.autodemo.stock-fill/1",
+  "at": "2026-08-18T06:09:26.999Z",
+  "trade": "tree-service",
+  "slotHints": {
+    "photo-service-1.jpg": "Storm damage and emergency removal",
+    "photo-service-2.jpg": "Climbing and sectional dismantling",
+    "photo-service-3.jpg": "Crane and bucket work"
+  },
+  "ok": false,
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "d272e700c7119039b1af58ac3c4e01cc6bfa35ea9f8022a4ae4a7489230526a1",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "59b8bfb0e752ef590e0bc8056dc6b22d83cfd78c6b78452b2634dcebc1cc0120",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "6482945e8f013258b943348bfb52ce097936dcacb32c59f4a19223680cf9b874",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "ff020d71653ba1ca4ead091930ecaad5ab472bf12d67c6b8abd0c8896e4c72e3",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "1fb622f80de36e9716a689a375b9bf78e300313ff2522e6ab8cbf5cf23f705a9",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "7cf72babac3ff0142beece6bc1608da9440d4178e52fd8400dfc20f5a59c9864",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "a4b406b1abc2e8d43870616a5330ef2f5be4886217e77214ed6a879416ed67b8",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "d43e41944cc8ab6c872fc302ec5aabbb178f98b8f12d43704e0369aaa00d3d1b",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "3cbfca659836d53105ee3208e5d70a7a073f5f772d1e501fa2fdd1cb0fd215e0",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "057d90d1cd7d5aeb5d65afed46b44a6839fa0b5c745911430b995e475cc60739",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    }
+  ],
+  "filled": [
+    {
+      "file": "photo-contact.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "Climbing and sectional dismantling",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    }
+  ],
+  "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-contact.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-photos-cta.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "Climbing and sectional dismantling",
+      "fileName": "photo-service-2.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-service-4.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-service-5.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-service-6.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-services-hero.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    }
+  ],
+  "distinct": 10,
+  "slots": 17,
+  "stock_provenance_rows": 0,
+  "family": "tree-service",
+  "refuse_borrow": false,
+  "provenance_ok": true
+}

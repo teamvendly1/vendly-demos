@@ -1,0 +1,187 @@
+{
+  "schema": "vendly.autodemo.stock-fill/1",
+  "at": "2026-08-18T09:50:22.651Z",
+  "trade": "auto-repair",
+  "slotHints": {
+    "photo-service-1.jpg": "Diagnostics and engine work",
+    "photo-service-2.jpg": "Brakes, steering and suspension",
+    "photo-service-3.jpg": "Tires and wheels"
+  },
+  "ok": false,
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "e187214506bfbac85fd25b3c675a088e02b5c968b5f1689d59d42a137af12d99",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "0bdf8f880bdcc350c1e43fb65ff991a3218a714b63e049ac1dc0bbadcbb032ed",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "674fdbbda7604fcf1c765602ac963edd94c3f7fadf12678de849bd87e3f26af2",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "416e906c20f180eb3b1161cff3076890ec5fca7a76c1c671df240c458696ee99",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "5497ccb96c84ec3832bf8ca8670ee999f7652343b34f9f07475f5ad5220695ac",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "cd729aea0920f11d602bbafcad7b976e459d0efac8b57f5a11c36bd6595f0e78",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "00343627ff7edb1dbededb915bef171bf1a68e0ab7c147fbb0f0731b5bf47773",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "1d3eecb24a27fe0f14a3a3931f0212c43db6f5f08c08882652874dcbccf930ea",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "1a77a42d68ad63af8211fb571164140e96a9b3c969d12ce2723d1376ec718a87",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "e512e659a3bf3a25e9c4da0aa94bbc994539e2717ecf9b7d5dc63a3ca610fadc",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "e743eae51f647517766bbdff249f8032602a19b739549a2803e767996406ff8f",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "9afafb2d710b2d57b72156ea744e36c8c5f4e45bb02d0dfff8658b5eef20dc7a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "f96b14c16b0e70a4daf6651163528f9921c94b039ae9b02fcddf62faf36b90e1",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "9446e0a9073fcc0af09fb2d03fb910badd56ac3c39f35932e20ef300a6fe9708",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    }
+  ],
+  "filled": [
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "Tires and wheels",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    }
+  ],
+  "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "Tires and wheels",
+      "fileName": "photo-service-3.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-service-4.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-service-5.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-service-6.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    }
+  ],
+  "distinct": 14,
+  "slots": 18,
+  "stock_provenance_rows": 0,
+  "family": "auto-repair",
+  "refuse_borrow": false,
+  "provenance_ok": true
+}
