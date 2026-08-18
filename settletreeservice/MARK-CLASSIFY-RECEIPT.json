@@ -1,18 +1,21 @@
 {
- "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-18T16:12:39.760Z",
- "slug": "settletreeservice",
- "logo_sha256": "f64ce06ed3b98edeb2b3143f32cda6516fed1829a86433a8a20215c09b882228",
- "origin": "their-google-listing:human-flagged-mark",
- "source_url": "https://www.facebook.com/settletreeservice",
- "source_file": "",
- "verdict": {
-  "ok": true,
-  "flatness": 0.827,
-  "transparent": 0,
-  "decided_by": "flatness",
-  "w": 1664,
-  "h": 1664
- },
- "post_stage_transform": "logo-transparent-margin"
+  "schema": "vendly.autodemo.mark-classify-receipt/1",
+  "at": "2026-08-18T16:12:39.760Z",
+  "slug": "settletreeservice",
+  "logo_sha256": "f64ce06ed3b98edeb2b3143f32cda6516fed1829a86433a8a20215c09b882228",
+  "origin": "their-google-listing:human-flagged-mark",
+  "source_url": "https://www.facebook.com/settletreeservice",
+  "source_file": "",
+  "verdict": {
+    "ok": true,
+    "flatness": 0.827,
+    "transparent": 0,
+    "decided_by": "flatness",
+    "w": 1664,
+    "h": 1664
+  },
+  "post_stage_transform": "logo-transparent-margin",
+  "human_verdict": "pass",
+  "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+  "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Real professional badge logo (STS monogram with crossed axes), real Google reviews (genuine reviewer spelled it Steller in their own words, left verbatim), correct phone (252) 241-6224, no placeholders."
 }
