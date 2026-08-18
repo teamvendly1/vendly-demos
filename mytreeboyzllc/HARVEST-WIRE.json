@@ -1,199 +1,230 @@
 {
- "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T07:22:09.937Z",
- "slug": "mytreeboyzllc",
- "wired": [
-  {
-   "slot": "photo-hero.jpg",
-   "from": "google-957a892460bc6855.jpg",
-   "bytes": 452535,
-   "letterbox_stripped": null,
-   "trade_score": 3.5,
-   "reason": "hero_work_rank"
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-18T13:19:23.662Z",
+  "slug": "mytreeboyzllc",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "photo-service-3.jpg",
+      "bytes": 208262,
+      "trade_score": 7.5,
+      "reason": "hero_contrast_retarget:photo-service-3.jpg"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "from": "google-f653b4741544c97e.jpg",
+      "bytes": 379372,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-about.jpg",
+      "from": "google-2cb430a5bd897934.jpg",
+      "bytes": 363876,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "from": "google-98e074958a4ee8f5.jpg",
+      "bytes": 505782,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-reviews.jpg",
+      "from": "google-06c88b674027d904.jpg",
+      "bytes": 482297,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-photos.jpg",
+      "from": "google-393c488a94d13968.jpg",
+      "bytes": 478945,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "google-875f95336e810823.jpg",
+      "bytes": 665551,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "google-dbff85c1b72cf847.jpg",
+      "bytes": 602982,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "from": "google-b30c117fa6566e03.jpg",
+      "bytes": 534477,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-ctaband.jpg",
+      "from": "google-bae2669d4f1f4403.jpg",
+      "bytes": 528634,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-quoteband.jpg",
+      "from": "google-5ab0f6ce5351c90c.jpg",
+      "bytes": 508131,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "from": "google-4561eebe784a524c.jpg",
+      "bytes": 463102,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "from": "google-db11322b539c8884.jpg",
+      "bytes": 456503,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "from": "google-dea3f77c20a6ce2b.jpg",
+      "bytes": 451233,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-service-1.jpg",
+      "from": "google-1524ddb2d650d5ab.jpg",
+      "bytes": 331250,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-service-2.jpg",
+      "from": "google-7cc39fac0c7d33cc.jpg",
+      "bytes": 257613,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-service-3.jpg",
+      "from": "google-c41e0b0692b60c8e.jpg",
+      "bytes": 208262,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "from": "google-20a43dab16f6edb1.jpg",
+      "bytes": 372772,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-8.jpg",
+      "from": "google-24a4c11b3d22f97e.jpg",
+      "bytes": 313653,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-9.jpg",
+      "from": "google-8f3aa2f28fd2e2e0.jpg",
+      "bytes": 247387,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-services-hero.jpg",
+      "from": "google-8cf92f9614da9480.jpg",
+      "bytes": 174480,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-contact.jpg",
+      "from": "google-09f10a89f08fb8f2.jpg",
+      "bytes": 239088,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-photos-cta.jpg",
+      "from": "google-a862cb51543dce88.jpg",
+      "bytes": 95723,
+      "letterbox_stripped": "v6.9%"
+    },
+    {
+      "slot": "photo-reviewsband.jpg",
+      "from": "google-957a892460bc6855.jpg",
+      "bytes": 452535,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "logo.png",
+      "from": "human-approved-preserved",
+      "bytes": 1136495,
+      "source_url": "https://www.google.com/maps/place/My+Tree+Boyz+llc/@39.392369,-74.8384066,9z/data=!3m1!4b1!4m6!3m5!1s0x89c0d428561970f5:0xb2b6a06f6c2a8f36!8m2!3d39.392369!4d-74.8384066!16s%2Fg%2F11c314bhrg?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+      "human_verdict_by": "claude-logo-uncropped-investigation-2026-08-18"
+    }
+  ],
+  "skipped": [
+    "classification read: 58 verdicts",
+    "staged 40 harvest photos",
+    "refused_unlooked:google-052bd5088ebe2b6c.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-1aeec3f2a48bcaf7.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-1d69a34732647f71.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-2548526e17b10ed7.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-25c51bd6e210bc69.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-512325fa34c4cd78.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-62288fb0c5f497e6.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-63ec1cbbb1152a71.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-a5507172099ac22a.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-d6b003f010b7ea6c.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-fbb0f9fc0156bcda.jpg:NEEDS_SUBJECT_LOOK",
+    "hero_cand_refuse:google-dbff85c1b72cf847.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-b30c117fa6566e03.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-bae2669d4f1f4403.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-5ab0f6ce5351c90c.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-06c88b674027d904.jpg:road_no_landscape",
+    "hero_cand_refuse:google-4561eebe784a524c.jpg:road_no_landscape",
+    "hero_cand_refuse:google-db11322b539c8884.jpg:road_no_landscape",
+    "hero_cand_refuse:google-1e1a3e7882567a51.jpg:portrait_aspect_hero_refuse",
+    "hero_hold_crew_for_about:google-f653b4741544c97e.jpg",
+    "hero_cand_refuse:google-20a43dab16f6edb1.jpg:portrait_aspect_hero_refuse",
+    "hero_hold_crew_for_about:google-2cb430a5bd897934.jpg",
+    "hero_cand_refuse:google-1524ddb2d650d5ab.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-24a4c11b3d22f97e.jpg:road_no_landscape",
+    "hero_cand_refuse:google-7cc39fac0c7d33cc.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-8f3aa2f28fd2e2e0.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-09f10a89f08fb8f2.jpg:road_no_landscape",
+    "hero_cand_refuse:google-4b199024a6af2a33.jpg:portrait_aspect_hero_refuse",
+    "hero_hold_crew_for_about:google-4653242ecff511f6.jpg",
+    "hero_cand_refuse:google-8cf92f9614da9480.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-13ec28806b8a1b89.jpg:low_res_lt_1080",
+    "hero_cand_refuse:google-a862cb51543dce88.jpg:too_small_bytes",
+    "hero_cand_refuse:google-fc9929acbc915bec.jpg:too_small_bytes",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+  ],
+  "candidates": 29,
+  "refused_by_class": 11,
+  "altBySlot": {
+    "photo-hero.jpg": "Worker operating a stump grinder in a yard beside a white garage",
+    "photo-card-about.jpg": "Crew in orange safety gear working around cut logs and green waste containers on a lawn",
+    "photo-about.jpg": "Crew loading cut logs and equipment onto a trailer on a lawn",
+    "photo-card-services.jpg": "Crew in red processing a felled tree trunk with a chainsaw and grapple equipment",
+    "photo-card-reviews.jpg": "Crew working a debris pile on a foggy street with a service truck nearby",
+    "photo-card-photos.jpg": "Worker on a stump grinder machine working a yard beside a house",
+    "photo-gallery-1.jpg": "Yellow skid-steer with a grapple claw attachment moving cut logs",
+    "photo-gallery-2.jpg": "Bucket truck lift working over trees along a tree-lined residential street",
+    "photo-gallery-3.jpg": "Bucket truck cutting a large tree limb near a chimney in winter",
+    "photo-ctaband.jpg": "Bucket truck lift raised among bare winter trees on a snowy street",
+    "photo-quoteband.jpg": "Bucket truck lift raised high among trees against a cloudy sky",
+    "photo-gallery-4.jpg": "Bucket truck working a tree near overhead power lines and a house",
+    "photo-gallery-5.jpg": "Yellow skid-steer loader beside a stack of freshly cut logs at a house",
+    "photo-gallery-6.jpg": "Crane boom extended over a tree job near a cemetery fence line",
+    "photo-service-1.jpg": "Bucket truck lift raised beside a two-story house with a worker near the tree canopy",
+    "photo-service-2.jpg": "Crew working at the base of a large tree near a road with safety cones set out",
+    "photo-service-3.jpg": "Worker operating a stump grinder in a yard beside a white garage",
+    "photo-gallery-7.jpg": "Bucket truck loading cut logs onto a truck bed on a snowy street",
+    "photo-gallery-8.jpg": "Bucket truck working near power lines on a residential street with cones set out",
+    "photo-gallery-9.jpg": "Crane hoisting a large cut tree section into the air against a clear sky",
+    "photo-services-hero.jpg": "Worker operating a stump grinder beside a house garage",
+    "photo-contact.jpg": "Bucket truck lift raised among bare trees on a foggy street",
+    "photo-photos-cta.jpg": "Crane lifting cut logs near overhead power lines with crew in red below",
+    "photo-reviewsband.jpg": "Skid-steer and service trucks parked on a lawn ahead of a job"
   },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-98e074958a4ee8f5.jpg",
-   "bytes": 505782,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-393c488a94d13968.jpg",
-   "bytes": 478945,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-875f95336e810823.jpg",
-   "bytes": 665551,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-2548526e17b10ed7.jpg",
-   "bytes": 398290,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-f653b4741544c97e.jpg",
-   "bytes": 379372,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "from": "google-dbff85c1b72cf847.jpg",
-   "bytes": 602982,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "from": "google-3a770c65aaba6202.jpg",
-   "bytes": 563471,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "from": "google-b30c117fa6566e03.jpg",
-   "bytes": 534477,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-bae2669d4f1f4403.jpg",
-   "bytes": 528634,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "google-d6b003f010b7ea6c.jpg",
-   "bytes": 527147,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-4.jpg",
-   "from": "google-5ab0f6ce5351c90c.jpg",
-   "bytes": 508131,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-5.jpg",
-   "from": "google-06c88b674027d904.jpg",
-   "bytes": 482297,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-6.jpg",
-   "from": "google-4561eebe784a524c.jpg",
-   "bytes": 463102,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-service-1.jpg",
-   "from": "google-db11322b539c8884.jpg",
-   "bytes": 456503,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-service-2.jpg",
-   "from": "google-1e1a3e7882567a51.jpg",
-   "bytes": 408295,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-service-3.jpg",
-   "from": "google-20a43dab16f6edb1.jpg",
-   "bytes": 372772,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-7.jpg",
-   "from": "google-fbb0f9fc0156bcda.jpg",
-   "bytes": 426405,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-8.jpg",
-   "from": "google-2cb430a5bd897934.jpg",
-   "bytes": 363876,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-9.jpg",
-   "from": "google-1524ddb2d650d5ab.jpg",
-   "bytes": 331250,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-services-hero.jpg",
-   "from": "google-63ec1cbbb1152a71.jpg",
-   "bytes": 327454,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-contact.jpg",
-   "from": "google-24a4c11b3d22f97e.jpg",
-   "bytes": 313653,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-photos-cta.jpg",
-   "from": "google-8f3aa2f28fd2e2e0.jpg",
-   "bytes": 247387,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-reviewsband.jpg",
-   "from": "google-4b199024a6af2a33.jpg",
-   "bytes": 202621,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "logo.png",
-   "from": "human-approved-preserved",
-   "bytes": 1253253,
-   "source_url": "https://www.google.com/maps/place/My+Tree+Boyz+llc/@39.392369,-74.8384066,9z/data=!3m1!4b1!4m6!3m5!1s0x89c0d428561970f5:0xb2b6a06f6c2a8f36!8m2!3d39.392369!4d-74.8384066!16s%2Fg%2F11c314bhrg?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
-   "human_verdict_by": "claude-logo-uncropped-investigation-2026-08-18"
+  "hero_retarget": {
+    "at": "2026-08-18T13:19:26.770Z",
+    "from_slot": "photo-service-3.jpg",
+    "reason": "hero_contrast_retarget"
   }
- ],
- "skipped": [
-  "classification read: 70 verdicts",
-  "staged 40 harvest photos",
-  "refused_unlooked:google-1aeec3f2a48bcaf7.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-25c51bd6e210bc69.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-4653242ecff511f6.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-512325fa34c4cd78.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-a862cb51543dce88.jpg:NEEDS_SUBJECT_LOOK",
-  "hero_cand_refuse:google-dbff85c1b72cf847.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-b30c117fa6566e03.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-bae2669d4f1f4403.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-d6b003f010b7ea6c.jpg:road_no_landscape",
-  "hero_cand_refuse:google-5ab0f6ce5351c90c.jpg:portrait_aspect_hero_refuse",
-  "hero_hold_crew_for_about:google-98e074958a4ee8f5.jpg",
-  "hero_cand_refuse:google-06c88b674027d904.jpg:road_no_landscape",
-  "hero_hold_crew_for_about:google-393c488a94d13968.jpg",
-  "hero_cand_refuse:google-4561eebe784a524c.jpg:road_no_landscape",
-  "hero_cand_refuse:google-db11322b539c8884.jpg:road_no_landscape",
-  "hero_cand_refuse:google-052bd5088ebe2b6c.jpg:road_no_landscape",
-  "hero_cand_refuse:google-1e1a3e7882567a51.jpg:portrait_aspect_hero_refuse",
-  "hero_hold_crew_for_about:google-2548526e17b10ed7.jpg",
-  "hero_hold_crew_for_about:google-f653b4741544c97e.jpg",
-  "hero_cand_refuse:google-20a43dab16f6edb1.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-2cb430a5bd897934.jpg:road_no_landscape",
-  "hero_cand_refuse:google-1524ddb2d650d5ab.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-24a4c11b3d22f97e.jpg:road_no_landscape",
-  "hero_cand_refuse:google-7cc39fac0c7d33cc.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-8f3aa2f28fd2e2e0.jpg:portrait_aspect_hero_refuse",
-  "hero_hold_crew_for_about:google-62288fb0c5f497e6.jpg",
-  "hero_cand_refuse:google-09f10a89f08fb8f2.jpg:road_no_landscape",
-  "hero_hold_crew_for_about:google-c41e0b0692b60c8e.jpg",
-  "hero_cand_refuse:google-4b199024a6af2a33.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-8cf92f9614da9480.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-13ec28806b8a1b89.jpg:low_res_lt_1080",
-  "hero_cand_refuse:google-fc9929acbc915bec.jpg:too_small_bytes",
-  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
- ],
- "candidates": 35,
- "refused_by_class": 5
 }
