@@ -260,6 +260,13 @@ footer li a{display:inline-block;padding:4px 0}
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
 }
+/* REVERTED 2026-08-18. I first "fixed" this to var(--ink), reading the eye-audit's paraphrase
+   ("sticky bottom action bar... mustard/olive... FAILS") without checking Jacob's actual ruling
+   text first. DEMO-SHIP-STANDARD.md Section I says, verbatim: "Their mark colour on the badge and
+   on estimate / CALL is enough." Brand color on THESE TWO BUTTONS IS THE RULING, not a violation
+   of it. Reverted to the original tokens before this was ever wrong in a shipped file. The real
+   defect Section I names is the PHONE STRIP and the REVIEW BAND going mustard - neither of which
+   is this selector. See _tmp/claude-desktop-out/OUT-0238-*.md for what was actually checked. */
 .mobile-callbar .mcb-est{background:var(--brand)}
 .mobile-callbar .mcb-call{background:var(--blue)}
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}

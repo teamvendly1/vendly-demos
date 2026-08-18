@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T06:17:27.130Z",
+  "at": "2026-08-18T14:37:03.829Z",
   "slug": "metroautoworks",
   "wired": [
     {
@@ -41,31 +41,31 @@
       "letterbox_stripped": null
     },
     {
-      "slot": "photo-ctaband.jpg",
+      "slot": "photo-gallery-1.jpg",
       "from": "google-da782c8cb12de901.jpg",
       "bytes": 308117,
       "letterbox_stripped": null
     },
     {
-      "slot": "photo-quoteband.jpg",
+      "slot": "photo-gallery-2.jpg",
       "from": "google-ef2422fc74b9e448.jpg",
       "bytes": 301155,
       "letterbox_stripped": null
     },
     {
-      "slot": "photo-gallery-1.jpg",
+      "slot": "photo-gallery-3.jpg",
       "from": "google-8888daf6375a7d58.jpg",
       "bytes": 293656,
       "letterbox_stripped": null
     },
     {
-      "slot": "photo-gallery-2.jpg",
+      "slot": "photo-ctaband.jpg",
       "from": "google-b405a65d9ece3966.jpg",
       "bytes": 286918,
       "letterbox_stripped": null
     },
     {
-      "slot": "photo-gallery-3.jpg",
+      "slot": "photo-quoteband.jpg",
       "from": "google-ec8709123cd6ddf1.jpg",
       "bytes": 285637,
       "letterbox_stripped": null
@@ -150,9 +150,10 @@
     },
     {
       "slot": "logo.png",
-      "from": "their-google-listing:human-flagged-mark",
-      "bytes": 519161,
-      "source_url": "https://www.facebook.com/metroautoworks"
+      "from": "human-approved-preserved",
+      "bytes": 526374,
+      "source_url": "https://www.facebook.com/metroautoworks",
+      "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
     }
   ],
   "skipped": [
@@ -193,11 +194,11 @@
     "photo-card-services.jpg": "Twin turbo installation with intercooler piping routed through the front of the car",
     "photo-card-reviews.jpg": "Fabricated stainless headers laid out beside the catalytic section",
     "photo-card-photos.jpg": "Underside of a car on the lift showing a custom twin exit exhaust",
-    "photo-ctaband.jpg": "Audi engine bay opened up with the covers off for service",
-    "photo-quoteband.jpg": "BorgWarner turbocharger and supporting parts unboxed and laid out ready for a build",
-    "photo-gallery-1.jpg": "Cylinder head stripped down on the bench with the valvetrain removed",
-    "photo-gallery-2.jpg": "Turbocharged engine bay in a blue car with the intercooler piping fitted",
-    "photo-gallery-3.jpg": "Stainless exhaust section routed along the underbody of a car on the lift",
+    "photo-gallery-1.jpg": "Audi engine bay opened up with the covers off for service",
+    "photo-gallery-2.jpg": "BorgWarner turbocharger and supporting parts unboxed and laid out ready for a build",
+    "photo-gallery-3.jpg": "Cylinder head stripped down on the bench with the valvetrain removed",
+    "photo-ctaband.jpg": "Turbocharged engine bay in a blue car with the intercooler piping fitted",
+    "photo-quoteband.jpg": "Stainless exhaust section routed along the underbody of a car on the lift",
     "photo-gallery-4.jpg": "Chrysler 300 up on the lift with the bonnet open for diagnosis",
     "photo-gallery-5.jpg": "Bare engine block on the bench with the deck surface machined and cylinders honed",
     "photo-gallery-6.jpg": "Engine bay with polished intake piping and custom wiring loomed in",
@@ -213,7 +214,7 @@
     "photo-reviewsband.jpg": "Engine block on the stand with valves and assembly hardware laid across the deck"
   },
   "hero_retarget": {
-    "at": "2026-08-18T06:17:30.407Z",
+    "at": "2026-08-18T14:37:06.762Z",
     "from_slot": "photo-service-1.jpg",
     "reason": "hero_contrast_retarget"
   }
