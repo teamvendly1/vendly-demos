@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="vendly-demo-build" content="blank-mold-20260814-cleareyes">
+<meta name="vendly-demo-build" content="blank-mold-20260817-hydroclean">
+<meta name="vendly-hydroclean-class" content="20260815-c8f645b5e949">
 <meta name="vendly-google-rating" content="">
 <meta name="vendly-google-review-count" content="">
 <meta name="vendly-review-source" content="">
 <title>Hernandez &amp; Brothers Hardscaping LLC</title>
-<meta name="description" content="Hernandez &amp; Brothers Hardscaping LLC, Bridgeton. A full service and professional lawn care &amp; maintenance firm based in Southern, NJ.">
-<meta name="theme-color" content="#204128">
+<meta name="description" content="Hernandez &amp; Brothers Hardscaping LLC, Bridgeton. A full service and rofessional lawn care &amp; maintainence firm based in Southern, NJ.">
+<meta name="theme-color" content="#520F1A">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=harv20260814f">
+<link rel="stylesheet" href="assets/site.css?v=harv20260817234803">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -60,6 +61,11 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Hernandez &amp; Brothers Hardscaping LLC.</div>
 <a class="skiplink" href="#main">Skip to content</a>
 
+<div class="phone-strip" role="banner">
+  <a href="tel:+18568990240" aria-label="Call Hernandez &amp; Brothers Hardscaping LLC at (856) 899-0240">(856) 899-0240</a>
+</div>
+<div class="lc-social" role="navigation" aria-label="Find us online"><a class="lc-social-link" href="https://www.facebook.com/hardscapi" rel="noopener" aria-label="Hernandez &amp; Brothers Hardscaping LLC on Facebook"><img src="assets/facebook-f.svg" width="22" height="22" alt=""></a></div>
+
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
   <div class="mcb-rule" aria-hidden="true"></div>
@@ -75,7 +81,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <span class="navtoggle-text">Menu</span>
     </button>
     <a href="index.html" aria-label="Hernandez &amp; Brothers Hardscaping LLC home" style="grid-column:2;justify-self:center">
-      <img class="logo" src="assets/logo-wordmark.png?v=harv20260814f" alt="Hernandez &amp; Brothers Hardscaping LLC">
+      <img class="logo" src="assets/logo.png?v=harv20260817234803" alt="Hernandez &amp; Brothers Hardscaping LLC">
     </a>
     <span class="navbalance" aria-hidden="true">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -103,23 +109,44 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <main id="main">
 
 <section class="hero hero-darken-band" aria-labelledby="h-hero">
-  <img class="bg" src="assets/photo-hx.jpg?v=harv20260814dc" alt="Landscaping work in Bridgeton" loading="eager">
+  <img class="bg" src="assets/photo-hero.jpg?v=harv20260817234803" alt="Paver patio and retaining wall picked out by low lighting after dark" loading="eager" fetchpriority="high">
   <div class="wrap hero-inner">
     <span class="eyebrow">Bridgeton</span>
-    <h1 id="h-hero">Pavers, walls, and yards that look finished. <em>Put us on it.</em></h1>
-    <p class="lede">Hardscaping and lawn care for homes around Bridgeton, Southern NJ.</p>
+    <h1 id="h-hero"> <em>Landscaping in Bridgeton, done properly.</em></h1>
+    <p class="lede">A full service and rofessional lawn care &amp; maintainence firm based in Southern, NJ.</p>
 
     <div class="cta">
-      <a class="btn btn-red phone-cta-desktop" href="tel:+18568990240">Call (856) 899-0240</a>
+      <!-- MEGA-1940: primary mobile fold CTA is the estimate link, not a hidden phone button.
+           Call stays reachable via the top phone-strip (always visible), the desktop header, and
+           the sticky mobile-callbar CALL button - never hidden here by .phone-cta-desktop, and
+           never .btn-ghost so the max-width:900 rule that hides a ghost #quote dupe does not
+           accidentally hide this one too (site.css). -->
+      <a class="btn btn-red" href="#quote">Get a landscape company estimate</a>
       <a class="btn btn-ghost" href="photos.html">See our work</a>
     </div>
 
     <div class="trust">
-      <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C9E4CF" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Bridgeton local</span>
+      <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F3BAC3" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Bridgeton local</span>
     </div>
   </div>
 </section>
 
+<section class="home-reviews" id="home-reviews" aria-labelledby="h-home-reviews">
+  
+  <div class="wrap">
+    <div class="center">
+      <h2 id="h-home-reviews">What customers say</h2>
+    </div>
+    <div class="rv-list">
+      <div class="rv-carousel"><div class="rv-track" role="list">
+<article class="rv-card" role="listitem"><span class="rv-badge"><img src="assets/facebook-f.svg" width="20" height="20" alt=""></span><div class="rv-head"><span class="rv-who" style="background:hsl(35 42% 30%)" aria-hidden="true">A</span><div class="rv-meta"><cite class="rv-name">Ana Rae</cite></div></div><blockquote class="rv-body">I can't say enough great things about Hernandez &amp; Brothers! We have used them for about 6 seasons now and are never disappointed. They are timely and efficient and beat every price in the area! You won't regret working with Hernandez &amp; Brothers, and your yard will thank you!</blockquote><span class="rv-src">Published on facebook_uia_20260814</span></article>
+<article class="rv-card" role="listitem"><span class="rv-badge"><img src="assets/facebook-f.svg" width="20" height="20" alt=""></span><div class="rv-head"><span class="rv-who" style="background:hsl(93 42% 30%)" aria-hidden="true">M</span><div class="rv-meta"><cite class="rv-name">Michele Milligan Farrell</cite></div></div><blockquote class="rv-body">They are a great price, nice work and clean up well.</blockquote><span class="rv-src">Published on facebook_uia_20260814</span></article>
+<article class="rv-card" role="listitem"><span class="rv-badge"><img src="assets/facebook-f.svg" width="20" height="20" alt=""></span><div class="rv-head"><span class="rv-who" style="background:hsl(151 42% 30%)" aria-hidden="true">A</span><div class="rv-meta"><cite class="rv-name">Ann Marie Sladek</cite></div></div><blockquote class="rv-body">Thank you Arnulfo for the amazing yard transformation. I'm so pleased with all the hard work you and your men did to make my yard look so good. The pictures do not do it justice!!</blockquote><span class="rv-src">Published on facebook_uia_20260814</span></article>
+      </div></div>
+    </div>
+    <p class="center" style="margin-top:22px;margin-bottom:0"><a class="btn btn-ghost" href="reviews.html">See all reviews</a></p>
+  </div>
+</section>
 
 
 <section class="reveal mist in" aria-labelledby="h-explore">
@@ -127,76 +154,81 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="center">
       <p class="kicker">Explore Hernandez &amp; Brothers Hardscaping LLC</p>
       <h2 id="h-explore">Details worth knowing before the landscaping visit</h2>
-      <p class="lede">Hardscaping and lawn care for homes around Bridgeton. Pavers, walls, mulch, and the weekly upkeep that keeps a yard looking finished.</p>
     </div>
     
     
         <div class="svc" style="margin-top:34px">
       <a class="card card-photo" href="about.html" style="color:inherit;text-decoration:none;display:block">
-        
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-about.jpg?v=harv20260817234803" data-v-lb-alt="Paver patio with a raised seating wall and a built in grill station against a fence" aria-label="Paver patio with a raised seating wall and a built in grill station against a fence - Open photo"><img src="assets/photo-card-about.jpg?v=harv20260817234803" alt="Paver patio with a raised seating wall and a built in grill station against a fence" loading="lazy"></button></div>
         <h3>About us</h3>
-        <p>Hernandez &amp; Brothers Hardscaping LLC, Bridgeton. A full service and professional lawn care &amp; maintenance firm based in Southern, NJ.</p>
       </a>
       <a class="card card-photo" href="services.html" style="color:inherit;text-decoration:none;display:block">
-        
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-services.jpg?v=harv20260817234803" data-v-lb-alt="Front entrance walkway with stone retaining walls stepping down to the pavement" aria-label="Front entrance walkway with stone retaining walls stepping down to the pavement - Open photo"><img src="assets/photo-card-services.jpg?v=harv20260817234803" alt="Front entrance walkway with stone retaining walls stepping down to the pavement" loading="lazy"></button></div>
         <h3>Services offered</h3>
-        <p>Landscape Company</p>
+        <p>See everything we take on</p>
       </a>
       <a class="card card-photo" href="reviews.html" style="color:inherit;text-decoration:none;display:block">
-        
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-reviews.jpg?v=harv20260817234803" data-v-lb-alt="The same front walkway and stone walls seen wider, taking in the driveway and street" aria-label="The same front walkway and stone walls seen wider, taking in the driveway and street - Open photo"><img src="assets/photo-card-reviews.jpg?v=harv20260817234803" alt="The same front walkway and stone walls seen wider, taking in the driveway and street" loading="lazy"></button></div>
         <h3>Customer reviews</h3>
-        <p>Real Facebook reviews from homeowners around Bridgeton who hired this crew.</p>
+        <p>Read what past customers said</p>
       </a>
       <a class="card card-photo" href="photos.html" style="color:inherit;text-decoration:none;display:block">
-        
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-photos.jpg?v=harv20260817234803" data-v-lb-alt="Herringbone brick driveway laid up to the garage with a planted mulch bed alongside" aria-label="Herringbone brick driveway laid up to the garage with a planted mulch bed alongside - Open photo"><img src="assets/photo-card-photos.jpg?v=harv20260817234803" alt="Herringbone brick driveway laid up to the garage with a planted mulch bed alongside" loading="lazy"></button></div>
         <h3>Photos</h3>
-        <p>Pavers, retaining walls, and finished yards from jobs they actually did.</p>
+        <p>Browse recent job photos</p>
       </a>
     </div>
   </div>
 </section>
 
+<!-- lc-midcta ("Tell us what you need") retired 2026-08-15, Jacob EYES MEGA-1820: the sticky
+     mobile callbar (Ask us / Get estimate / CALL) already carries this exact convert action on
+     every scroll position, so a second full-width "Tell us what you need" band a few sections
+     later was a repeat, not new information. Not in the hydro-prompt canonical home order
+     either (see HYDROCLEAN-CLASS-GENERATE-PROMPT.md ORDER line - no MIDCTA slot). Dropped at
+     the mold, not patched per-demo, so no future generate ships it. -->
 
+<!-- SECTION:home-about retired 2026-08-17. MEGA-1940 teaser reused photo-about on index AND
+     about.html. DemoImageGate counts that file sitewide and refused Durhams as DUPLICATE_PHOTO.
+     Pointing the teaser at photo-card-about duplicated the explore About card on the same homepage.
+     Explore About card (photo-card-about.jpg) + about.html (photo-about.jpg) stay. Restore a teaser
+     only with a dedicated unique slot. generate-from-blank-mold.js also cutSection home-about. -->
 
-
-
-<section class="reveal" aria-labelledby="h-hours">
-  <div class="wrap">
-    <div class="center">
-      <p class="kicker">Coverage</p>
-      <h2 id="h-hours">Bridgeton, and the towns around it</h2>
-      <p class="lede">Based in Bridgeton. Call if you are nearby and want a look at your yard.</p>
-    </div>
-    <div class="areas" style="margin-top:26px">
-      <span class="area">Bridgeton</span>
-    </div>
-    <p class="center" style="margin-top:28px;margin-bottom:0">
-      <a class="btn btn-blue" href="about.html">See who we are and where we work</a>
-    </p>
-  </div>
-</section>
 
 
 <section class="ctaband reveal" aria-labelledby="h-ctaband">
-  
+  <img class="bg" src="assets/photo-ctaband.jpg?v=harv20260817234803" alt="Herringbone brick walkway running along the side of a house past a bed of young arborvitae" aria-hidden="true" loading="lazy">
   <div class="wrap inner">
-    <h2 id="h-ctaband">What we do</h2>
+    <h2 id="h-ctaband">Ready when something with the yard is off</h2>
     <p>Call (856) 899-0240 or send a note.</p>
     <div class="cta" style="justify-content:center;margin-bottom:0">
       <a class="btn btn-red phone-cta-desktop" href="tel:+18568990240">Call (856) 899-0240</a>
-      <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Request an estimate</a>
+      <a class="btn btn-ghost" href="#quote" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.30);color:#fff">Tell us what the yard is doing</a>
     </div>
     <p class="photonote">See sample work on our <a href="photos.html" style="color:#fff">photos page</a>.</p>
   </div>
 </section>
 
-<section class="reveal mist" id="quote" aria-labelledby="h-quote">
+<section class="home-trust lc-trust" aria-labelledby="h-home-trust">
+  <div class="wrap">
+    <p class="lc-eyebrow">Serving Bridgeton</p>
+    <h2 id="h-home-trust">A higher standard of landscape company</h2>
+    <div class="t3 lc-trust-grid">
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.6 3.6l2.8 1.4a1.6 1.6 0 0 1 .7 2.1L9 9.4a11.8 11.8 0 0 0 5.6 5.6l2.3-1.1a1.6 1.6 0 0 1 2.1.7l1.4 2.8a1.6 1.6 0 0 1-.9 2.2c-1 .4-2.1.5-3.2.3C10.9 19 5 13.1 4.1 6.7c-.2-1.1-.1-2.2.3-3.2a1.6 1.6 0 0 1 2.2-.9z"/></svg></div><h3>You reach us</h3><p>Call (856) 899-0240 and a real person answers.</p></article>
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.4 4.6c-9 0-14.8 5.8-14.8 14.8 9 0 14.8-5.8 14.8-14.8z"/><path d="M6.4 17.6L17 7"/></svg></div><h3>Local to Bridgeton</h3><p>We work in Bridgeton, not a national call center.</p></article>
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2.4" width="6" height="3.2" rx="1"/><path d="M8.4 11h7.2M8.4 14.6h7.2M8.4 18.2h4.4"/></svg></div><h3>Landscape Company, on the page</h3><p>This site is built around the work we actually do: Landscape Company.</p></article>
+    </div>
+    <a class="btn lc-trust-cta" href="contact.html">Get a free quote</a>
+  </div>
+</section>
+
+<section class="reveal mist pband" id="quote" aria-labelledby="h-quote">
+  <img class="bg" src="assets/photo-quoteband.jpg?v=harv20260817234803" alt="" aria-hidden="true" loading="lazy">
   <div class="wrap">
     <div class="leadwrap">
       <div>
         <p class="kicker">Get a quote</p>
-        <h2 id="h-quote">Tell us what you need</h2>
-        <p class="lede" style="color:var(--muted)">Hardscaping and lawn care for homes around Bridgeton. Pavers, walls, mulch, and the weekly upkeep that keeps a yard looking finished.</p>
+        <h2 id="h-quote">Tell us what the yard is doing</h2>
         <div class="badges" style="margin-top:26px">
           <span class="badge" style="text-transform:none"><a href="tel:+18568990240" style="color:inherit;text-decoration:none">(856) 899-0240</a></span>
         </div>
@@ -217,12 +249,12 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <div class="field">
           <label for="f-type">What do you need</label>
           <select id="f-type" name="type">
-            <option>Landscape Company</option>
+            <option>Landscaping</option>
             <option>Not sure, call and ask</option>
           </select>
         </div>
         <div class="field">
-          <label for="f-msg">What do you need</label>
+          <label for="f-msg">Tell us more</label>
           <textarea id="f-msg" name="message" placeholder=""></textarea>
         </div>
         <button class="btn btn-blue" type="submit" style="width:100%;justify-content:center;border:0;cursor:pointer">Send estimate request</button>
@@ -231,7 +263,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     </div>
   </div>
 </section>
-
 </main>
 
 <footer>
@@ -239,7 +270,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo-wordmark.png?v=harv20260814f" alt="Hernandez &amp; Brothers Hardscaping LLC">
+          <img class="logo-footer" src="assets/logo-footer.png?v=harv20260817234803" alt="Hernandez &amp; Brothers Hardscaping LLC">
         </div>
         <p style="margin:0;max-width:34ch">Hernandez &amp; Brothers Hardscaping LLC serving Bridgeton.</p>
       </div>
@@ -247,7 +278,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <h3 class="fh">Contact</h3>
         <ul>
           <li><a href="tel:+18568990240">(856) 899-0240</a></li>
-                  </ul>
+        </ul>
       </div>
       <div>
         <h3 class="fh">Menu</h3>
@@ -257,13 +288,13 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
           <li><a href="services.html">Services offered</a></li>
           <li><a href="reviews.html">Customer reviews</a></li>
           <li><a href="photos.html">Photos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
       <div>
         <h3 class="fh">Services</h3>
         <ul>
-          <li>Landscape Company</li>
+          <li>Landscaping</li>
         </ul>
       </div>
     </div>
@@ -291,23 +322,22 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     tenantId: "demo-hernandez-brothers-hardscaping-llc",
     demoSlug: "hernandez-brothers-hardscaping-llc",
     endpoint: "https://vendly-jarvis.vercel.app",
-    name: "Hernandez &amp; Brothers Hardscaping LLC",
+    name: "Hernandez & Brothers Hardscaping LLC",
     greeting: "",
     nudge: "",
     disablePeek: true,
     forceRender: true,
-    phone: "",
-    sms: "",
-    quoteUrl: "",
+    phone: "+18568990240",
+    sms: "+18568990240",
+    quoteUrl: "#quote",
     bookUrl: "",
-    contactUrl: "index.html#quote",
+    contactUrl: "./index.html#quote",
     suggestions: [],
-    accent: "#33663F"
+    accent: "#821728"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=harv20260814dc" defer></script>
-<script src="assets/hero-rotator.js?v=harv20260814dc" defer></script>
-<script src="assets/site.js?v=harv20260814dc" defer></script>
+<script src="assets/siteassistant-v2.js?v=harv20260817234803" defer></script>
+<script src="assets/site.js?v=harv20260817234803" defer></script>
 <script id="v-lb-js">
 (function(){
   if (window.__vendlyLightbox) return;
