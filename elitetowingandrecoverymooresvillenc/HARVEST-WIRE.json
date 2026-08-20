@@ -1,0 +1,131 @@
+{
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-20T21:21:35.538Z",
+  "slug": "elitetowingandrecoverymooresvillenc",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "photo-gallery-1.jpg",
+      "bytes": 122604,
+      "trade_score": 3.5,
+      "reason": "hero_contrast_retarget:photo-gallery-1.jpg"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "from": "manual-08.jpg",
+      "bytes": 773801,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-about.jpg",
+      "from": "manual-11.jpg",
+      "bytes": 613691,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "from": "manual-09.jpg",
+      "bytes": 540855,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-reviews.jpg",
+      "from": "manual-10.jpg",
+      "bytes": 320601,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-photos.jpg",
+      "from": "manual-02.jpg",
+      "bytes": 126714,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "manual-05.jpg",
+      "bytes": 122604,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "manual-04.jpg",
+      "bytes": 117877,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "from": "manual-06.jpg",
+      "bytes": 59346,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-ctaband.jpg",
+      "from": "manual-01.jpg",
+      "bytes": 57397,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-quoteband.jpg",
+      "from": "manual-03.jpg",
+      "bytes": 54763,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "logo.png",
+      "from": "charter-placeholder-your-logo-here",
+      "bytes": 21159,
+      "placeholder": true,
+      "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+    }
+  ],
+  "skipped": [
+    "classification read: 11 verdicts",
+    "staged 11 harvest photos",
+    "hero_cand_refuse:manual-08.jpg:no_tool_no_machine_facing_camera",
+    "hero_cand_refuse:manual-11.jpg:no_tool_no_machine_facing_camera",
+    "hero_cand_refuse:manual-09.jpg:road_no_landscape",
+    "hero_cand_refuse:manual-10.jpg:no_tool_no_machine_facing_camera",
+    "hero_cand_refuse:manual-07.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:manual-02.jpg:no_tool_no_machine_facing_camera",
+    "hero_cand_refuse:manual-05.jpg:no_tool_no_machine_facing_camera",
+    "hero_cand_refuse:manual-04.jpg:no_tool_no_machine_facing_camera",
+    "hero_cand_refuse:manual-06.jpg:low_res_lt_960",
+    "hero_cand_refuse:manual-01.jpg:low_res_lt_960",
+    "hero_cand_refuse:manual-03.jpg:low_res_lt_960",
+    "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (manual-07.jpg)",
+    "photo-gallery-4.jpg",
+    "photo-gallery-5.jpg",
+    "photo-gallery-6.jpg",
+    "photo-service-1.jpg",
+    "photo-service-2.jpg",
+    "photo-service-3.jpg",
+    "photo-gallery-7.jpg",
+    "photo-gallery-8.jpg",
+    "photo-gallery-9.jpg",
+    "photo-services-hero.jpg",
+    "photo-contact.jpg",
+    "photo-photos-cta.jpg",
+    "photo-reviewsband.jpg",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+  ],
+  "candidates": 11,
+  "photo_candidates": 11,
+  "altBySlot": {
+    "photo-hero.jpg": "Pale yellow Porsche 912 with classic 911s behind it inside a client vehicle collection.",
+    "photo-card-about.jpg": "Elite Towing and Recovery motorcycle transport pickup with a maroon cruiser strapped in the bed.",
+    "photo-about.jpg": "Elite motorcycle transport truck with a Honda Gold Wing touring bike loaded and strapped.",
+    "photo-card-services.jpg": "Elite flatbed hauling a zero-turn mower on a utility trailer while wheel-lift towing a white minivan.",
+    "photo-card-reviews.jpg": "Two blue tool chests wrapped in moving blankets and ratchet-strapped to the flatbed deck.",
+    "photo-card-photos.jpg": "Classic Mercedes 280SE coupe and a vintage microcar on the wood floor of a client collection hall.",
+    "photo-gallery-1.jpg": "Pale yellow Porsche 912 with classic 911s behind it inside a client vehicle collection.",
+    "photo-gallery-2.jpg": "Red Porsche 912 and classic sports cars staged on the collection floor for a transport move.",
+    "photo-gallery-3.jpg": "Long view of a private collection hall with Porsche 356 roadsters and Mercedes sedans during a move.",
+    "photo-ctaband.jpg": "Silver Ferrari 550 Maranello inside a client private car collection during a vehicle transport job.",
+    "photo-quoteband.jpg": "Row of classic Porsches and a green Alfa Romeo spider lined up in a client collection during transport work."
+  },
+  "hero_retarget": {
+    "at": "2026-08-20T21:21:37.579Z",
+    "from_slot": "photo-gallery-1.jpg",
+    "reason": "hero_contrast_retarget"
+  }
+}
