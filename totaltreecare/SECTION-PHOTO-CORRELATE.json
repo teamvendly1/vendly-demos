@@ -1,0 +1,57 @@
+{
+  "at": "2026-08-18T21:35:22.935Z",
+  "ok": false,
+  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "trade": "tree-service",
+  "replaced": [],
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "600103ca42b1e16a507c7d5bc99cd191414a1fbf9e24b49dc20b2b65b0212bb3",
+      "bytes": 300625
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "4a9fcd29a33057a288cd9e114fbe09ea7fdc9f0163e87558c7f399a8f18f494c",
+      "bytes": 634204
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "47cb3dd425d045f9e48ba7a5beb0805c0aba311205a760afd024834241223ba9",
+      "bytes": 621951
+    }
+  ],
+  "failed": [
+    {
+      "file": "photo-card-about.jpg",
+      "reasons": [
+        "cross_demo_dupe:totaltreecaredunnharnettnc/photo-card-about.jpg"
+      ]
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "reasons": [
+        "cross_demo_dupe:totaltreecaredunnharnettnc/photo-card-reviews.jpg"
+      ]
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "reasons": [
+        "cross_demo_dupe:totaltreecaredunnharnettnc/photo-ctaband.jpg"
+      ]
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "reasons": [
+        "cross_demo_dupe:totaltreecaredunnharnettnc/photo-about.jpg"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "reasons": [
+        "cross_demo_dupe:totaltreecaredunnharnettnc/photo-gallery-6.jpg"
+      ]
+    }
+  ],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}

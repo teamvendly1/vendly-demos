@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T16:12:06.614Z",
+  "at": "2026-08-18T21:26:05.660Z",
   "slug": "popsgaragealignment",
   "wired": [
     {
@@ -72,9 +72,10 @@
     },
     {
       "slot": "logo.png",
-      "from": "facebook-profile-mark:eyes-verified",
-      "bytes": 1005692,
-      "source_url": "https://www.facebook.com/PopsGarageNMB"
+      "from": "human-approved-preserved",
+      "bytes": 1015889,
+      "source_url": "https://www.facebook.com/PopsGarageNMB",
+      "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
     }
   ],
   "skipped": [
@@ -117,7 +118,7 @@
     "photo-quoteband.jpg": "Auto Service Center storefront with cars parked out front"
   },
   "hero_retarget": {
-    "at": "2026-08-18T16:12:08.922Z",
+    "at": "2026-08-18T21:26:07.248Z",
     "from_slot": "photo-gallery-3.jpg",
     "reason": "hero_contrast_retarget"
   }

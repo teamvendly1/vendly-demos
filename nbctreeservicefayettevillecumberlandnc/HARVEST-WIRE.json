@@ -1,114 +1,121 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-15T18:00:59.157Z",
-  "slug": "nbctreeservicefayettevillecumberlandnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-c569f6931c4916c3.jpg",
-      "bytes": 564876,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-5de711b025f7cad9.jpg",
-      "bytes": 671579
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-556621506a57c1ed.jpg",
-      "bytes": 620959
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-bdc78aeaa60fb93e.jpg",
-      "bytes": 607805
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-f839acbab67b8b3c.jpg",
-      "bytes": 486722
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-280701d93d8b2a0d.jpg",
-      "bytes": 446823
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-96b0bbb7c7e33a23.jpg",
-      "bytes": 284134
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-43185fc55b018948.jpg",
-      "bytes": 205500
-    }
-  ],
-  "skipped": [
-    "classification read: 18 verdicts",
-    "staged 39 harvest photos",
-    "refused_unlooked:google-020b4ff2f6b5d878.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-04dbc938d3156eec.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-102655962f39cb2a.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-125d852cb055969f.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-1794826c7214d68d.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-341558e8d7bb5589.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-3f33ae0b514e98c2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-41c44b3a12617af5.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-41f0533236f92eff.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-499146393dc79605.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5d727288cdb82d24.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-769dae5d8996876e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-80d13c927eaafbdb.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-850d51858ddbfa92.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-89d13c8adb505177.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-8a16a47f6f1698a2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-91334f605bb5ba16.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a153b2ecae88e8e2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a53bc534c7c50736.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a5b2da80e51e7265.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-ab0178f53e96708c.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b1fec7a7a90cb292.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b724e726e3088f37.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c117b5a006eef0d1.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c3480300ffc5c975.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d36440b09236ca10.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-eae4f498800600d0.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_by_class:google-ee1407d639eb6c1d.jpg:CLUTTERED_REFUSE_FOREGROUND: wheelie bin and rubbish bags dominate the frame, house number legible",
-    "refused_unlooked:google-f4708c1cd76821a1.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-fa733293179c2b1a.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-fd48ad9fded1fc47.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-5de711b025f7cad9.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-556621506a57c1ed.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-bdc78aeaa60fb93e.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-f839acbab67b8b3c.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-280701d93d8b2a0d.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-96b0bbb7c7e33a23.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-43185fc55b018948.jpg:ground_only_no_horizon",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-2.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-about.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg"
-  ],
-  "candidates": 8,
-  "refused_by_class": 31,
-  "altBySlot": {
-    "photo-hero.jpg": "Tracked excavator working beside a topped trunk with cut limbs stacked across the lawn",
-    "photo-card-services.jpg": "Crane boom lifting a heavy trunk section up and away from the roof of a house",
-    "photo-card-reviews.jpg": "Freshly cut limb laid on the lawn of a well kept property with the crown work under way behind",
-    "photo-card-photos.jpg": "Operator in a hi-vis shirt running a tracked excavator down the narrow gap between a fence and a house",
-    "photo-ctaband.jpg": "Hardwood beside a house left clean after pruning, the cut ends visible along the limbs",
-    "photo-gallery-1.jpg": "Bucket boom raised into the crown of a tall pine standing hard against the side of a house",
-    "photo-gallery-2.jpg": "Heavy dump trailer hitched and ready to haul brush away from a job",
-    "photo-gallery-3.jpg": "Crew working a tree in a commercial car park with cones set out and the chip truck alongside"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-15T20:49:00.835Z",
+ "slug": "nbctreeservicefayettevillecumberlandnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-c569f6931c4916c3.jpg",
+   "bytes": 564876,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-5de711b025f7cad9.jpg",
+   "bytes": 671579
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-556621506a57c1ed.jpg",
+   "bytes": 620959
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-bdc78aeaa60fb93e.jpg",
+   "bytes": 607805
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-f839acbab67b8b3c.jpg",
+   "bytes": 486722
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-280701d93d8b2a0d.jpg",
+   "bytes": 446823
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-96b0bbb7c7e33a23.jpg",
+   "bytes": 284134
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-43185fc55b018948.jpg",
+   "bytes": 205500
+  },
+  {
+   "slot": "logo.png",
+   "from": "their-google-listing:ismark",
+   "bytes": 3377442,
+   "source_url": "https://www.google.com/maps/place/NBC+Tree+Service/@35.0155306,-78.963595,17z/data=!3m1!4b1!4m6!3m5!1s0x89ab153cec223279:0x41f41fda90ee2def!8m2!3d35.0155306!4d-78.963595!16s%2Fg%2F11fkkyy7r4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
   }
+ ],
+ "skipped": [
+  "classification read: 18 verdicts",
+  "staged 39 harvest photos",
+  "refused_unlooked:google-020b4ff2f6b5d878.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-04dbc938d3156eec.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-102655962f39cb2a.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-125d852cb055969f.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-1794826c7214d68d.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-341558e8d7bb5589.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-3f33ae0b514e98c2.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-41c44b3a12617af5.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-41f0533236f92eff.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-499146393dc79605.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-5d727288cdb82d24.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-769dae5d8996876e.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-80d13c927eaafbdb.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-850d51858ddbfa92.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-89d13c8adb505177.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-8a16a47f6f1698a2.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-91334f605bb5ba16.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a153b2ecae88e8e2.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a53bc534c7c50736.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a5b2da80e51e7265.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-ab0178f53e96708c.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-b1fec7a7a90cb292.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-b724e726e3088f37.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c117b5a006eef0d1.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c3480300ffc5c975.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-d36440b09236ca10.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-eae4f498800600d0.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-ee1407d639eb6c1d.jpg:CLUTTERED_REFUSE_FOREGROUND: wheelie bin and rubbish bags dominate the frame, house number legible",
+  "refused_unlooked:google-f4708c1cd76821a1.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-fa733293179c2b1a.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-fd48ad9fded1fc47.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-5de711b025f7cad9.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-556621506a57c1ed.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-bdc78aeaa60fb93e.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-f839acbab67b8b3c.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-280701d93d8b2a0d.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-96b0bbb7c7e33a23.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-43185fc55b018948.jpg:ground_only_no_horizon",
+  "photo-gallery-3.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-2.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15)"
+ ],
+ "candidates": 8,
+ "refused_by_class": 31,
+ "altBySlot": {
+  "photo-hero.jpg": "Tracked excavator working beside a topped trunk with cut limbs stacked across the lawn",
+  "photo-about.jpg": "Crane boom lifting a heavy trunk section up and away from the roof of a house",
+  "photo-card-services.jpg": "Freshly cut limb laid on the lawn of a well kept property with the crown work under way behind",
+  "photo-card-reviews.jpg": "Operator in a hi-vis shirt running a tracked excavator down the narrow gap between a fence and a house",
+  "photo-card-photos.jpg": "Hardwood beside a house left clean after pruning, the cut ends visible along the limbs",
+  "photo-ctaband.jpg": "Bucket boom raised into the crown of a tall pine standing hard against the side of a house",
+  "photo-gallery-1.jpg": "Heavy dump trailer hitched and ready to haul brush away from a job",
+  "photo-gallery-2.jpg": "Crew working a tree in a commercial car park with cones set out and the chip truck alongside"
+ }
 }

@@ -34,19 +34,17 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .previewbar{display:none!important;height:0!important;padding:0!important;margin:0!important;overflow:hidden!important;border:0!important}
 
 
-/* phone-first strip (Hydro steal: number alone above chrome) */
-.phone-strip{background:var(--blue-dk);color:#fff;text-align:center;font:700 16px/1 Inter,sans-serif}
-.phone-strip a{display:block;padding:12px 16px;color:#fff;text-decoration:none;letter-spacing:.02em}
+/* phone-first strip. Jacob 2026-08-15 Hydro class. Number is the first thing on the page. */
+:root{--phone-strip-h:48px}
+.phone-strip{position:sticky;top:0;z-index:80;background:var(--blue);color:#fff;text-align:center;font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;letter-spacing:.04em}
+.phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
 .phone-strip a:hover{background:#172230}
-@media(min-width:900px){.phone-strip a{padding:11px 16px;font-size:15px}}
-/* real logo mark, cropped from the logo Luke sent over SMS */
-/* Logo sized up 68px -> 88px (Jacob 0057: more upfront on load). */
+@media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+
+header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
 .logo{height:88px;width:auto;display:block}
-/* ONE .logo-chip rule forever (Jacob 2026-08-13). Transparent - never a painted plate. */
 .logo-chip{display:inline-flex;align-items:center;background:transparent;padding:0;border-radius:0;box-shadow:none}
 .logo-footer{height:44px;width:auto;display:block}
-
-header.site{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:13px 0}
 .logo{grid-column:2;justify-self:center}
 .bizmeta{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
@@ -84,8 +82,17 @@ background:
 @media(max-width:900px){
   .hero-inner{padding-top:10px;padding-bottom:10px}
   .hero .eyebrow{margin-bottom:6px}
-  .hero h1{margin:0 0 6px;font-size:clamp(26px,7.6vw,38px);line-height:1.06;max-width:18ch}
-  .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
+  /*
+    TYPE SCALE IS THE WHOLE LOOK (Lowcountry standard section 4, Jacob 2026-08-15). Measured on the
+    live page at 375px: 7.6vw resolved to 28.5px against their 60-70px. The size RATIO between the
+    headline and the quiet body copy is what makes their page read as designed and ours as a
+    template, so raising this is not cosmetic.
+
+    max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
+    runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
+  */
+  .hero h1{margin:0 0 10px;font-size:clamp(38px,12vw,60px);line-height:1.02;max-width:none;text-wrap:balance}
+  .hero .lede{margin:0 0 14px;font-size:16px;line-height:1.45;max-width:36ch}
   .hero .cta{margin-bottom:8px;gap:8px}
   .hero-rtb{margin:2px 0 6px}
   .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:5px 10px;padding-bottom:0;margin:0}
@@ -99,7 +106,14 @@ background:
 }
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#C8D5E5;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
 .hero .eyebrow{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
-.hero h1{max-width:16ch;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+/*
+  max-width MOVED to a desktop-only query on 2026-08-15. It sat here, unqualified and LATER in the
+  file than the mobile @media block, so it silently beat the mobile rule at equal specificity - the
+  big centred mobile headline would have kept wrapping into a 16ch column and the CSS would have
+  looked correct while the screen disagreed. Measured on the live page, not read off this file.
+*/
+.hero h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+@media(min-width:901px){.hero h1{max-width:16ch}}
 .hero h1 em{font-style:normal;color:#C8D5E5;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.4)}
 .lede{font-size:19px;color:#D5DFEB;max-width:56ch;margin:0 0 20px}
 .hero .lede{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
@@ -387,10 +401,10 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
 
-/* Parkers RT-clone 2026-08-11: one phone surface at a time.
-   Desktop = header call button + in-page Call CTAs.
-   Mobile = sticky CALL bar ONLY (no hero/ctaband/strip number stacking). */
-.phone-strip{display:none!important}
+/* Jacob 2026-08-15 SUPERSEDES the 2026-08-11 "one phone surface" hide.
+   HydroClean class: top tel bar ALWAYS visible + sticky Estimate/CALL at bottom.
+   Mid-page Call CTAs still hide on small screens so we do not stack three mid-body numbers. */
+.phone-strip{display:block!important}
 .logo{background:transparent;padding:0;border-radius:0;object-fit:contain}
 .hero{isolation:isolate}
 .hero img.bg{z-index:0}
@@ -430,6 +444,15 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .card.card-photo .card-shot img{width:100%;height:100%;object-fit:cover;display:block}
 .svc .card.card-photo{padding-top:14px}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
+.home-reviews{background:var(--blue);color:#fff;padding:clamp(40px,6vw,72px) 0}
+.home-reviews h2{color:#fff}
+.home-reviews .lede,.home-reviews .kicker{color:rgba(255,255,255,.88)}
+.home-reviews .rv-card{background:#fff;color:var(--ink)}
+.home-trust{background:var(--mist);padding:clamp(36px,5vw,64px) 0}
+.home-trust .t3{display:grid;gap:16px}
+@media(min-width:720px){.home-trust .t3{grid-template-columns:repeat(3,1fr)}}
+.home-trust article{background:#fff;padding:22px 20px;border-radius:14px;box-shadow:var(--shadow)}
+.home-trust article h3{margin-bottom:.4em}
 
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
@@ -656,4 +679,133 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+/* ==========================================================================
+   LOWCOUNTRY SHAPE — items 2, 3 and 7 from _remote/state/LOWCOUNTRY-STANDARD.md
+   ========================================================================== */
+
+/* 2. THE PHONE IS THE FIRST THING ON THE PAGE.
+      lowcountryhydroclean.com puts (843) 708-1794 in a full-width brand band at
+      30px ABOVE the logo - not in a menu, not a small link. For a trade whose
+      whole funnel is a phone call, burying the number below the fold is the
+      single most expensive layout decision we were making. */
+.lc-phoneband {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--brand, #12334F);
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(20px, 6vw, 30px);
+  letter-spacing: .5px;
+  padding: 12px 16px;
+  text-decoration: none;
+  line-height: 1.1;
+}
+.lc-phoneband:hover,
+.lc-phoneband:focus { filter: brightness(1.08); }
+
+/* 7. MAP SITS BESIDE CALL. A local trade has to answer "are you near me" and the
+      reference build does it without leaving the page. */
+.mobile-callbar .mcb-row { display: flex; }
+.mobile-callbar .mcb-map {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .5px;
+  padding: 14px 8px;
+  background: rgba(255,255,255,.10);
+}
+
+/* 3. FULL-BLEED BRAND BANDS ALTERNATE WITH WHITE.
+      Their sections run photo, brand colour, white, photo, brand colour, white -
+      every band edge to edge. Ours was white on white with cards floating in it,
+      and that single difference is most of the "theirs looks designed, ours looks
+      like a template" gap. Odd content sections now take the brand band. */
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) {
+  background: var(--brand, #12334F);
+  color: #fff;
+}
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) h2,
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) h3,
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) .eyebrow,
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) .lede {
+  color: #fff;
+}
+/* cards keep their white ground so they lift off the coloured band */
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) .card {
+  background: #fff;
+  color: var(--ink, #14140F);
+}
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) .card h3,
+main > section:nth-of-type(odd):not(.hero):not(.band-photo) .card p {
+  color: var(--ink, #14140F);
+}
+
+/* generous vertical rhythm - the reference build breathes, ours was tight */
+main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px, 9vw, 96px); }
+
+/* 5. THREE TRUST CARDS. The reference build runs a differentiator block on every page and it is
+      the cheapest section to fill because it is posture, not facts. */
+.lc-trust { background: var(--brand, #12334F); color: #fff; }
+.lc-trust .eyebrow, .lc-trust h2 { color: #fff; text-align: center; }
+.lc-trust-grid { display: grid; gap: 16px; margin: 28px 0 8px; }
+@media (min-width: 760px) { .lc-trust-grid { grid-template-columns: repeat(3, 1fr); } }
+.lc-trust-card { background: #fff; color: var(--ink, #14140F); border-radius: 16px; padding: 22px 20px; }
+.lc-trust-card h3 { margin: 0 0 8px; font-size: clamp(18px, 4.6vw, 22px); }
+.lc-trust-card p { margin: 0; }
+.lc-trust-cta { display: block; width: fit-content; margin: 26px auto 0; }
+@media (max-width: 700px) { .lc-trust-card, .lc-trust-card h3, .lc-trust-card p { text-align: center; } }
+
+
+/* ---- Lowcountry header band 2: socials, directly under the phone (2026-08-15) ---- */
+.lc-social{display:flex;align-items:center;justify-content:center;gap:26px;
+  background:var(--brand,#14406b);padding:8px 12px;border-top:1px solid rgba(255,255,255,.14)}
+.lc-social-link{display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;background:#fff;text-decoration:none;flex:none}
+.lc-social-link img{display:block;width:22px;height:22px}
+.lc-social-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+
+/* ---- Lowcountry trust band: three posture cards + its own CTA ---- */
+.lc-trust .lc-eyebrow{margin:0 0 6px;text-align:center;text-transform:uppercase;
+  letter-spacing:.14em;font-size:12.5px;font-weight:700;opacity:.72}
+.lc-trust h2{text-align:center;text-wrap:balance}
+.lc-trust-grid{margin-top:26px}
+.lc-trust-card{text-align:center;padding:26px 20px;border-radius:14px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.lc-trust-card h3{margin:0 0 8px}
+.lc-trust-card p{margin:0}
+.lc-trust-cta{display:block;width:max-content;margin:28px auto 0}
+
+@media (max-width:700px){
+  .lc-social{gap:20px}
+  .lc-trust-grid{display:grid;grid-template-columns:1fr;gap:14px}
+  .lc-trust-card{text-align:center}
+  .lc-trust-cta{width:100%;text-align:center}
+}
+
+
+/* ---- LC-TYPE-SCALE: section headings follow the hero up, but stay clearly below it so the
+   ratio still reads as a hierarchy rather than two competing shouts (2026-08-15). ---- */
+@media (max-width:700px){
+  h2{font-size:clamp(32px,9.5vw,46px);line-height:1.05;text-wrap:balance}
+  h3{font-size:clamp(19px,5.2vw,24px);line-height:1.15}
+  .lede,p{font-size:16px}
+}
+
+
+/* ---- Lowcountry standard: the SECOND CTA, mid-page (2026-08-15). Light on purpose - a line and
+   two buttons, never a second hero. ---- */
+.lc-midcta{background:var(--mist);text-align:center}
+.lc-midcta h2{margin:0 0 10px}
+.lc-midcta p{margin:0 auto 22px;max-width:52ch;color:var(--muted)}
+.lc-midcta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+@media (max-width:700px){
+  .lc-midcta-actions{flex-direction:column;align-items:stretch}
+  .lc-midcta-actions .btn{justify-content:center}
 }

@@ -1,0 +1,173 @@
+{
+  "schema": "vendly.autodemo.stock-fill/1",
+  "at": "2026-08-18T06:13:55.615Z",
+  "trade": "tree-service",
+  "slotHints": {
+    "photo-service-1.jpg": "Storm damage and emergency removal",
+    "photo-service-2.jpg": "Crane and bucket work",
+    "photo-service-3.jpg": "Stump and debris clearance"
+  },
+  "ok": false,
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "80cc21b99931affaf7e4e87c3fc7b64aaf7a393249778ba8a2e4b2ab234df913",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "a37772ee6254f18ee37ccf3a27e01a176a275e97292ef255ef7d6a4292b11ebe",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "679a79684820269455d30e1b305f9dad7e30262b43eddf3b2d0c0d3109d1e64f",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "34b8caf204be7ba7cadfe489cb537fd589994b910aa0757a7b07eb240c015c31",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "95b18dafc4810eed68e87515c4096c57745578ec90d0d1153a6a68a51605415c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "db00e5ebf3e981fff4fee16d48f378c5cbc3ef3c5782871ea48a95a457086879",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "21614f5d03f1b993f158d15de7c86edcfa24028d45b19d1f7ccecda05d785bfd",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "f1462f3981721f7c608ad9e4cb280f916decfae5d6c3e3aebf5ba07b6ea1c6ae",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "48430fc411a5f19d2fc9652804a2a695185513c801dac16e6efa9bd89047509a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "ac8eedcbfb1fd9a2e717eff7ec55dfa35f28b3518720cb7880d7ca130f3f08eb",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "5f31749cc40679a5cc467342e737e81dfd9025ca7785fb086142dcc4fcc5091f",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "6c00c7003e224b39f8006ad8857f26624d41be61ad12ae3b590a882d8ddb165a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "2b82d7af8a0724a31d413f94ea13f0d948a786dc5ebcd406f44440172d6e805c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "5015fa257055f2384b3ceb5e19c5c2f15e2956c7ca8fb2561c31f2cc3d288cd6",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "4329960240253c7916a85ee53191dc36314292b2a42947f7d8f0845d650e6571",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    }
+  ],
+  "filled": [
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    }
+  ],
+  "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-service-4.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-service-5.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "tree-service",
+      "service": "",
+      "fileName": "photo-service-6.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    }
+  ],
+  "distinct": 15,
+  "slots": 18,
+  "stock_provenance_rows": 0,
+  "family": "tree-service",
+  "refuse_borrow": false,
+  "provenance_ok": true
+}

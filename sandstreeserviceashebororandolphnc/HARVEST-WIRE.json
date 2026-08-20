@@ -1,110 +1,117 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-15T17:58:13.333Z",
-  "slug": "sandstreeserviceashebororandolphnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-e5d0f4ed64ac2268.jpg",
-      "bytes": 521924,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-f698c099be26be10.jpg",
-      "bytes": 523075
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-09dedcee936c5153.jpg",
-      "bytes": 521237
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-544910467a1d529f.jpg",
-      "bytes": 507762
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-25de787f8e4eca08.jpg",
-      "bytes": 467084
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-f295d4840e77b33f.jpg",
-      "bytes": 409062
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-696dea8192d1c3e5.jpg",
-      "bytes": 400493
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-2c32de1c85430d38.jpg",
-      "bytes": 249144
-    }
-  ],
-  "skipped": [
-    "classification read: 22 verdicts",
-    "staged 40 harvest photos",
-    "refused_unlooked:google-030695d944cee8f9.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_by_class:google-0894207ae1429da1.jpg:OFF_TRADE_COSTUME: owner in a pink wig on a pink tractor for a charity drive, not tree work",
-    "refused_unlooked:google-0af78f3ad89986ad.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-1c7926503eea3090.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-1d76efc098eb529e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-20531fb515a7b658.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-247e7a44f05233fc.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-25bbd3041e7af59a.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-3231d0444058f25e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-38fa3f79c09b3655.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-3ef1e3cace2d75a7.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-440abd888d22b198.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-49280d10a9589df0.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-50a36da92451ae13.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5ad8ce90a363f672.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-63d0222b8c7ddc97.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-68f0ee1b031031ec.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-6c35274cd7bb3d54.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_by_class:google-6f4fc541f510a7a2.jpg:FOREIGN_BRAND_VISIBLE: hired crane truck carries another company name on the door",
-    "refused_unlooked:google-8119b590b36b4420.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a2a50c57d7db890c.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a8431079c4760517.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_by_class:google-b4444978164e98d9.jpg:UNFLATTERING_INTERIOR: cluttered office with packing boxes, sells nothing",
-    "refused_unlooked:google-bfd3ad187f4031b4.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c172dd147673c64f.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c212612b7a34f0c9.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d72ab2b9804c55a0.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d8bc06b4a83add05.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-db1fe707ec31bcc9.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-e7ffe775e439db22.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-f62b7b743d599a16.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-fc5508c7652e1e97.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-544910467a1d529f.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-2c32de1c85430d38.jpg:portrait_aspect_hero_refuse",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-2.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-about.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg"
-  ],
-  "candidates": 8,
-  "refused_by_class": 32,
-  "altBySlot": {
-    "photo-hero.jpg": "Grapple lifting a cut limb clear over the roof of a garden shed",
-    "photo-card-services.jpg": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown",
-    "photo-card-reviews.jpg": "Oak come down against the balcony of a brick house with the crown across the deck",
-    "photo-card-photos.jpg": "Crew member walking past cut oak rounds with a pickup crushed under a trunk behind him",
-    "photo-ctaband.jpg": "Climber standing on the roof ridge while the grapple lifts a cut limb clear of the house",
-    "photo-gallery-1.jpg": "Heavy trunk leaning across the porch roof of a shingled house after a storm",
-    "photo-gallery-2.jpg": "Storm-felled oak lying the length of a timber deck with a chainsaw set down beside it",
-    "photo-gallery-3.jpg": "Rack of ground protection mats loaded on the trailer, used to keep heavy machines off a lawn"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-15T20:46:25.657Z",
+ "slug": "sandstreeserviceashebororandolphnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-e5d0f4ed64ac2268.jpg",
+   "bytes": 521924,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-f698c099be26be10.jpg",
+   "bytes": 523075
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-09dedcee936c5153.jpg",
+   "bytes": 521237
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-544910467a1d529f.jpg",
+   "bytes": 507762
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-25de787f8e4eca08.jpg",
+   "bytes": 467084
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-f295d4840e77b33f.jpg",
+   "bytes": 409062
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-696dea8192d1c3e5.jpg",
+   "bytes": 400493
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-2c32de1c85430d38.jpg",
+   "bytes": 249144
+  },
+  {
+   "slot": "logo.png",
+   "from": "their-google-listing:ismark",
+   "bytes": 2927985,
+   "source_url": "https://www.google.com/maps/place/Sands+Tree+Service/@35.5938035,-79.8193749,17z/data=!3m1!4b1!4m6!3m5!1s0x88536603ce885a53:0x3ecd65899c987ed7!8m2!3d35.5938035!4d-79.8193749!16s%2Fg%2F1hc2kk24j?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
   }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 40 harvest photos",
+  "refused_unlooked:google-030695d944cee8f9.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-0894207ae1429da1.jpg:OFF_TRADE_COSTUME: owner in a pink wig on a pink tractor for a charity drive, not tree work",
+  "refused_unlooked:google-0af78f3ad89986ad.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-1c7926503eea3090.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-1d76efc098eb529e.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-20531fb515a7b658.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-247e7a44f05233fc.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-25bbd3041e7af59a.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-3231d0444058f25e.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-38fa3f79c09b3655.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-3ef1e3cace2d75a7.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-440abd888d22b198.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-49280d10a9589df0.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-50a36da92451ae13.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-5ad8ce90a363f672.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-63d0222b8c7ddc97.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-68f0ee1b031031ec.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-6c35274cd7bb3d54.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-6f4fc541f510a7a2.jpg:FOREIGN_BRAND_VISIBLE: hired crane truck carries another company name on the door",
+  "refused_unlooked:google-8119b590b36b4420.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a2a50c57d7db890c.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a8431079c4760517.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-b4444978164e98d9.jpg:UNFLATTERING_INTERIOR: cluttered office with packing boxes, sells nothing",
+  "refused_unlooked:google-bfd3ad187f4031b4.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c172dd147673c64f.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c212612b7a34f0c9.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-d72ab2b9804c55a0.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-d8bc06b4a83add05.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-db1fe707ec31bcc9.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-e7ffe775e439db22.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-f62b7b743d599a16.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-fc5508c7652e1e97.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-544910467a1d529f.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-2c32de1c85430d38.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-3.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-2.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15)"
+ ],
+ "candidates": 8,
+ "refused_by_class": 32,
+ "altBySlot": {
+  "photo-hero.jpg": "Grapple lifting a cut limb clear over the roof of a garden shed",
+  "photo-about.jpg": "Knuckle boom grapple taking hold of a heavy oak limb over a fallen crown",
+  "photo-card-services.jpg": "Oak come down against the balcony of a brick house with the crown across the deck",
+  "photo-card-reviews.jpg": "Crew member walking past cut oak rounds with a pickup crushed under a trunk behind him",
+  "photo-card-photos.jpg": "Climber standing on the roof ridge while the grapple lifts a cut limb clear of the house",
+  "photo-ctaband.jpg": "Heavy trunk leaning across the porch roof of a shingled house after a storm",
+  "photo-gallery-1.jpg": "Storm-felled oak lying the length of a timber deck with a chainsaw set down beside it",
+  "photo-gallery-2.jpg": "Rack of ground protection mats loaded on the trailer, used to keep heavy machines off a lawn"
+ }
 }

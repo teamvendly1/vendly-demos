@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T16:10:54.429Z",
+  "at": "2026-08-18T21:24:32.958Z",
   "slug": "enrouteautocenter",
   "wired": [
     {
@@ -54,9 +54,10 @@
     },
     {
       "slot": "logo.png",
-      "from": "their-google-listing:human-flagged-mark",
-      "bytes": 36267,
-      "source_url": "https://www.facebook.com/enrouteautocenter"
+      "from": "human-approved-preserved",
+      "bytes": 37208,
+      "source_url": "https://www.facebook.com/enrouteautocenter",
+      "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
     }
   ],
   "skipped": [
@@ -94,7 +95,7 @@
     "photo-gallery-2.jpg": "Enroute Auto Center front desk painted with the logo, orange and blue racing stripes on the walls"
   },
   "hero_retarget": {
-    "at": "2026-08-18T16:10:56.231Z",
+    "at": "2026-08-18T21:24:34.240Z",
     "from_slot": "photo-gallery-1.jpg",
     "reason": "hero_contrast_retarget"
   }

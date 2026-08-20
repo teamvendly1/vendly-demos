@@ -1,115 +1,153 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-15T01:27:22.001Z",
+  "at": "2026-08-15T19:53:41.705Z",
   "slug": "torrestreeserviceburlingtonalamancenc",
   "wired": [
     {
-      "slot": "photo-gallery-1.jpg",
+      "slot": "photo-hero.jpg",
       "from": "google-3a8835f2d5451b51.jpg",
-      "bytes": 614011
+      "bytes": 614011,
+      "trade_score": 0,
+      "reason": "hero_work_rank"
     },
     {
-      "slot": "photo-gallery-2.jpg",
+      "slot": "photo-about.jpg",
+      "from": "google-debb55d17f754f6d.jpg",
+      "bytes": 593507
+    },
+    {
+      "slot": "photo-card-services.jpg",
       "from": "google-00d40bbd32b0e871.jpg",
       "bytes": 497488
     },
     {
-      "slot": "photo-gallery-3.jpg",
+      "slot": "photo-card-reviews.jpg",
       "from": "google-3376d561f09506ef.jpg",
       "bytes": 466237
     },
     {
-      "slot": "photo-gallery-4.jpg",
+      "slot": "photo-card-photos.jpg",
       "from": "google-81cebcd1d7a7ea36.jpg",
       "bytes": 460592
     },
     {
-      "slot": "photo-gallery-5.jpg",
+      "slot": "photo-ctaband.jpg",
       "from": "google-182f416415520bab.jpg",
       "bytes": 460324
     },
     {
-      "slot": "photo-gallery-6.jpg",
+      "slot": "photo-gallery-1.jpg",
+      "from": "google-6fc4ab8dc61250ac.jpg",
+      "bytes": 455716
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
       "from": "google-06b86d9faa0bfee8.jpg",
       "bytes": 440434
     },
     {
-      "slot": "photo-service-2.jpg",
+      "slot": "photo-gallery-3.jpg",
       "from": "google-c2ea478b98b6fa0b.jpg",
       "bytes": 407162
     },
     {
-      "slot": "photo-gallery-7.jpg",
+      "slot": "photo-gallery-4.jpg",
+      "from": "google-ae322951d8d48459.jpg",
+      "bytes": 361958
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
       "from": "google-b0222f36f6813228.jpg",
       "bytes": 359462
     },
     {
+      "slot": "photo-gallery-6.jpg",
+      "from": "google-ecb8cd9794e0d938.jpg",
+      "bytes": 325838
+    },
+    {
+      "slot": "photo-service-2.jpg",
+      "from": "google-f47cd2313d799c4f.jpg",
+      "bytes": 325453
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "from": "google-47ecdb1b74e5091f.jpg",
+      "bytes": 321382
+    },
+    {
       "slot": "photo-gallery-8.jpg",
+      "from": "google-c183107c6f9ff912.jpg",
+      "bytes": 317897
+    },
+    {
+      "slot": "photo-gallery-9.jpg",
       "from": "google-dbfd6bde4573c183.jpg",
       "bytes": 313621
     },
     {
-      "slot": "photo-gallery-9.jpg",
+      "slot": "photo-services-hero.jpg",
       "from": "google-818fa8add3abc5df.jpg",
       "bytes": 280829
     },
     {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-996822a050d68fc5.jpg",
-      "bytes": 212872
+      "slot": "photo-contact.jpg",
+      "from": "google-c234eab01e9f955d.jpg",
+      "bytes": 271243
     },
     {
-      "slot": "photo-card-services.jpg",
-      "from": "google-3834760a6c26e6e6.jpg",
-      "bytes": 136300
+      "slot": "photo-photos-cta.jpg",
+      "from": "google-996822a050d68fc5.jpg",
+      "bytes": 212872
     }
   ],
   "skipped": [
     "classification read: 42 verdicts",
     "staged 21 harvest photos",
-    "refused_by_class:google-47ecdb1b74e5091f.jpg:LOW_QUALITY: video screengrab with player furniture down the right edge and a soft, upscaled frame",
-    "refused_by_class:google-6fc4ab8dc61250ac.jpg:LOW_QUALITY: climber is small and lost in dense canopy clutter; sharper frames of the same work are kept",
-    "refused_by_class:google-a730cc5235fbd26a.jpg:LOW_QUALITY: visibly soft and out of focus",
-    "refused_by_class:google-ae322951d8d48459.jpg:LOW_QUALITY: out of focus, and the frame is mostly brush litter with the worker screened behind branches",
-    "refused_by_class:google-c183107c6f9ff912.jpg:LOW_QUALITY: soft video screengrab with letterboxing and player furniture at the edges",
-    "refused_by_class:google-c234eab01e9f955d.jpg:BURNED_IN_TEXT: Snapchat interface burned into the frame, including the Add a Lens button and the phone status bar",
-    "refused_by_class:google-debb55d17f754f6d.jpg:DUPLICATE: same trunk and sawdust as a kept frame, shot a moment later and less clearly",
-    "refused_by_class:google-ecb8cd9794e0d938.jpg:BURNED_IN_TEXT: Snapchat interface burned into the frame, status bar at the top and the lens button at the bottom",
-    "refused_by_class:google-f47cd2313d799c4f.jpg:LOW_QUALITY: heavily oversharpened and noisy; twelve cleaner frames of the same climbing work are kept",
     "hero_cand_refuse:google-3a8835f2d5451b51.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-debb55d17f754f6d.jpg:road_no_landscape",
     "hero_cand_refuse:google-00d40bbd32b0e871.jpg:road_no_landscape",
     "hero_cand_refuse:google-3376d561f09506ef.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-81cebcd1d7a7ea36.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-182f416415520bab.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-6fc4ab8dc61250ac.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-06b86d9faa0bfee8.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-c2ea478b98b6fa0b.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-ae322951d8d48459.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-b0222f36f6813228.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-ecb8cd9794e0d938.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-f47cd2313d799c4f.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-47ecdb1b74e5091f.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-c183107c6f9ff912.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-dbfd6bde4573c183.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-818fa8add3abc5df.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-c234eab01e9f955d.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-996822a050d68fc5.jpg:portrait_aspect_hero_refuse",
+    "hero_cand_refuse:google-a730cc5235fbd26a.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-3834760a6c26e6e6.jpg:portrait_aspect_hero_refuse",
-    "photo-hero.jpg: no work-visible harvest candidate",
-    "photo-card-reviews.jpg",
-    "photo-card-photos.jpg",
-    "photo-about.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg"
+    "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-3a8835f2d5451b51.jpg)",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15)"
   ],
-  "candidates": 12,
-  "refused_by_class": 9,
+  "candidates": 21,
   "altBySlot": {
-    "photo-gallery-1.jpg": "Sawyer bucking a massive felled trunk into rounds beside the sections already cut, on the grass between two buildings",
-    "photo-gallery-2.jpg": "Sawyer in a hi-vis shirt driving the felling cut into a massive trunk at dusk with the hinge already open",
-    "photo-gallery-3.jpg": "Climber part way up a tall spar stripping the last limbs, the cut rounds already stacked on the lawn below",
-    "photo-gallery-4.jpg": "Climber part way up a straight trunk on spikes with his rope run out below him through summer woodland",
-    "photo-gallery-5.jpg": "Climber roped into the top of a bare hardwood taking the leader out against a clear blue sky",
-    "photo-gallery-6.jpg": "Three-man crew standing with the wide stump of the tree they have just taken down at the edge of the woods",
-    "photo-service-2.jpg": "Sawyer kneeling into the back cut on a huge trunk with the bar buried and sawdust banked around his knees",
-    "photo-gallery-7.jpg": "Groundman watching from the lawn as a climber takes the top out of an ivy-clad conifer, cut rounds stacked beside him",
-    "photo-gallery-8.jpg": "Climber roped into a bare oak above the road with the dump trailer backed onto the drive below",
-    "photo-gallery-9.jpg": "Climber balanced out along a leaning limb above a house roof, taking the end of it off in pieces",
-    "photo-ctaband.jpg": "Climber near the top of a stripped spar with two rigging lines run down, framed against deep blue sky and a single cloud",
-    "photo-card-services.jpg": "Climber working the last stub down from the top of a stripped spar against a bright cloudy sky"
+    "photo-hero.jpg": "Sawyer bucking a large trunk section into rounds on a back lawn, the cut slabs and log lengths stacked behind him",
+    "photo-about.jpg": "Worker standing at a broad fresh stump with the trunk already sectioned into heavy rounds along the kerb behind",
+    "photo-card-services.jpg": "Sawyer cutting a deep face notch into a mature roadside oak, the wedge of wood already dropped out at his feet",
+    "photo-card-reviews.jpg": "Stripped trunk left standing on a front lawn beside a brick house, the limbs already down and cut into rounds and stacked on the grass",
+    "photo-card-photos.jpg": "Climber tied in against the trunk mid-canopy, cutting stubs off as he works his way down through the green",
+    "photo-ctaband.jpg": "Climber near the very top of a bare spar taking off the last of the upper limbs, seen from directly below against blue sky",
+    "photo-gallery-1.jpg": "Climber working deep inside a dense evergreen canopy, tied in and cutting his way out through the green",
+    "photo-gallery-2.jpg": "Three of the crew in matching hi-vis shirts gathered around a freshly cut stump on a cleared site at the end of a removal",
+    "photo-gallery-3.jpg": "Groundman kneeling at the base of a very large trunk, running a chainsaw through the butt cut with the felled crown lying behind him",
+    "photo-gallery-4.jpg": "Worker in orange hi-vis cutting fallen limbs down to size on the ground, brushwood spread around him",
+    "photo-gallery-5.jpg": "Tall tree being taken down limb by limb beside a garden shed, a climber high in what is left of the crown and a groundman clearing brush below",
+    "photo-gallery-6.jpg": "Climber ascending a tall oak in late autumn foliage, the climbing line running the full height of the trunk",
+    "photo-service-2.jpg": "Climber high in a spring canopy in fresh leaf, working along a heavy lateral limb with the rigging rope hanging beneath him",
+    "photo-gallery-7.jpg": "Climber hanging on rope alongside a heavy trunk with the rigging lines angled down to the ground crew out of frame",
+    "photo-gallery-8.jpg": "Climber suspended on rope against the trunk of a large oak in autumn colour, the street and neighbouring houses visible behind",
+    "photo-gallery-9.jpg": "Climber part way up a bare autumn oak on a residential street, rigging line running down to the ground crew",
+    "photo-services-hero.jpg": "Climber working out along a long leaning limb that reaches over a house roof, cutting it back in sections",
+    "photo-contact.jpg": "Climber seated in a crotch of a big oak cutting a limb away, the pale ends of earlier cuts showing on either side of him",
+    "photo-photos-cta.jpg": "Climber roped near the top of a dead tree that has already been stripped to a bare spar, working against an open blue sky"
   }
 }

@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T14:38:09.805Z",
+  "at": "2026-08-18T21:24:11.948Z",
   "slug": "ddautorepair",
   "wired": [
     {
@@ -84,9 +84,10 @@
     },
     {
       "slot": "logo.png",
-      "from": "their-google-listing:human-flagged-mark",
-      "bytes": 506905,
-      "source_url": "https://www.google.com/maps/place/D%26D+Auto+Repair/@34.318389,-79.8587554,17z/data=!3m1!4b1!4m6!3m5!1s0x88556f2971faf587:0x6986701281e39068!8m2!3d34.318389!4d-79.8587554!16s%2Fg%2F11jvmhjv84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
+      "from": "human-approved-preserved",
+      "bytes": 514870,
+      "source_url": "https://www.google.com/maps/place/D%26D+Auto+Repair/@34.318389,-79.8587554,17z/data=!3m1!4b1!4m6!3m5!1s0x88556f2971faf587:0x6986701281e39068!8m2!3d34.318389!4d-79.8587554!16s%2Fg%2F11jvmhjv84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+      "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
     }
   ],
   "skipped": [
@@ -131,7 +132,7 @@
     "photo-gallery-5.jpg": "Customer's silver lifted Silverado pickup"
   },
   "hero_retarget": {
-    "at": "2026-08-18T14:38:11.868Z",
+    "at": "2026-08-18T21:24:13.915Z",
     "from_slot": "photo-gallery-3.jpg",
     "reason": "hero_contrast_retarget"
   }

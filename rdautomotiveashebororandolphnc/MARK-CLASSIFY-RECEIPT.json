@@ -1,18 +1,23 @@
 {
  "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-17T06:10:07.761Z",
+ "at": "2026-08-18T06:19:29.391Z",
  "slug": "rdautomotiveashebororandolphnc",
- "logo_sha256": "8c357b4e821c212682130eacb07019e533098f9ce9046a73a55b11a60a95ca6b",
- "origin": "their-google-listing:human-flagged-mark",
+ "logo_sha256": "78a6be02f9fc2f22455aa6a31c860ebac33fd3a300f7fbd7d39fb600a3472cf6",
+ "origin": "their-google-listing:isMark-auto",
  "source_url": "https://www.google.com/maps/place/R%26D+Automotive/@35.7203865,-79.8113196,17z/data=!3m1!4b1!4m6!3m5!1s0x8853693f14b01a67:0xb72bcc610815bde8!8m2!3d35.7203865!4d-79.8113196!16s%2Fg%2F1tf_tkn_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
  "source_file": "",
  "verdict": {
   "ok": true,
-  "flatness": 0.903,
+  "flatness": 0.639,
   "transparent": 0,
   "decided_by": "flatness",
-  "w": 1000,
-  "h": 182
+  "w": 1044,
+  "h": 800
  },
+ "human_verdict": "pass",
+ "human_verdict_by": "jacob-at-desk-2026-08-17-0900ET + claude-code-direct-look",
+ "human_verdict_at": "2026-08-17T13:45:54.661Z",
+ "human_verdict_note": "Header mark approved by eye: cream plate knocked out, wordmark clean, 625-5610 is their own (336) number with area code omitted as signage does.",
+ "human_verdict_carried_from": "2026-08-18T05:42:53.168Z",
  "post_stage_transform": "logo-transparent-margin"
 }

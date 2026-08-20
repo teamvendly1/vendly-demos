@@ -1,31 +1,37 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-15T17:56:01.513Z",
+  "at": "2026-08-15T20:50:33.367Z",
   "trade": "towing",
   "slotHints": {},
   "ok": false,
   "kept": [
     {
-      "file": "photo-card-photos.jpg",
-      "sha256": "619e2a40a40dec576e649053d80cef84561a275fcb86fb68bc0f9ab9d1b29b68",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "9dfb7b94dd0db070d81243ae591a9c7238549366b916b7502cd18d0f3b5878dc",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-services.jpg",
+      "file": "photo-about.jpg",
       "sha256": "82ca2bb07c94410bfbcbfbb29843437cf034da35ff106deff5a55772ee26e64a",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-ctaband.jpg",
+      "file": "photo-card-photos.jpg",
       "sha256": "332c292f8c99f4103a78918988c3392a88d2de9a76f1dc1796b78d7b156704c9",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "619e2a40a40dec576e649053d80cef84561a275fcb86fb68bc0f9ab9d1b29b68",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "9dfb7b94dd0db070d81243ae591a9c7238549366b916b7502cd18d0f3b5878dc",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "28bce48133c327884de45ab4f62e2bf49474e49a5a6ff639d2e9323bcd24e669",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -37,15 +43,6 @@
     }
   ],
   "filled": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
     {
       "file": "photo-card-about.jpg",
       "sha256": null,
@@ -138,17 +135,6 @@
     }
   ],
   "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-about.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
     {
       "ok": false,
       "gap": true,
@@ -260,7 +246,7 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 5,
+  "distinct": 6,
   "slots": 16,
   "stock_provenance_rows": 0,
   "family": "towing",

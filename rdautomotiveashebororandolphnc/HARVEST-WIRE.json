@@ -1,75 +1,88 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-17T06:10:07.722Z",
+ "at": "2026-08-18T06:19:29.278Z",
  "slug": "rdautomotiveashebororandolphnc",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "google-530709fd9427ea6c.jpg",
-   "bytes": 129865,
+   "from": "google-649d1d7248b89cc4.jpg",
+   "bytes": 130684,
+   "letterbox_stripped": null,
    "trade_score": 2.5,
    "reason": "hero_work_rank"
   },
   {
-   "slot": "photo-about.jpg",
+   "slot": "photo-card-about.jpg",
    "from": "google-aed672ad3527b2ab.jpg",
-   "bytes": 137364
+   "bytes": 137364,
+   "letterbox_stripped": null
   },
   {
-   "slot": "photo-card-about.jpg",
-   "from": "google-b74f27dbd90d9ea9.jpg",
-   "bytes": 118073
+   "slot": "photo-about.jpg",
+   "from": "google-530709fd9427ea6c.jpg",
+   "bytes": 129865,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
    "from": "google-4c5dedfcd8673444.jpg",
-   "bytes": 179352
+   "bytes": 179352,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-reviews.jpg",
-   "from": "google-95e8a7dae7397d02.jpg",
-   "bytes": 100090
+   "from": "google-b74f27dbd90d9ea9.jpg",
+   "bytes": 118073,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-photos.jpg",
-   "from": "google-649d1d7248b89cc4.jpg",
-   "bytes": 130684
+   "from": "google-95e8a7dae7397d02.jpg",
+   "bytes": 100090,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-ctaband.jpg",
    "from": "google-9bcc91bae86529c0.jpg",
-   "bytes": 129824
+   "bytes": 129824,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-quoteband.jpg",
    "from": "google-a16740c46017ca05.jpg",
-   "bytes": 120000
+   "bytes": 120000,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-1.jpg",
    "from": "google-342202649e16d162.jpg",
-   "bytes": 114079
+   "bytes": 114079,
+   "letterbox_stripped": "h10.3%"
   },
   {
    "slot": "photo-gallery-2.jpg",
    "from": "google-ab5ef6e9255b6187.jpg",
-   "bytes": 109518
+   "bytes": 109518,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-3.jpg",
    "from": "google-85e09a172de076a0.jpg",
-   "bytes": 93254
+   "bytes": 93254,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-4.jpg",
    "from": "google-09189004c6a56ee6.jpg",
-   "bytes": 131802
+   "bytes": 131802,
+   "letterbox_stripped": null
   },
   {
    "slot": "logo.png",
-   "from": "their-google-listing:human-flagged-mark",
-   "bytes": 206679,
-   "source_url": "https://www.google.com/maps/place/R%26D+Automotive/@35.7203865,-79.8113196,17z/data=!3m1!4b1!4m6!3m5!1s0x8853693f14b01a67:0xb72bcc610815bde8!8m2!3d35.7203865!4d-79.8113196!16s%2Fg%2F1tf_tkn_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
+   "from": "human-approved-preserved",
+   "bytes": 132389,
+   "source_url": "https://www.google.com/maps/place/R%26D+Automotive/@35.7203865,-79.8113196,17z/data=!3m1!4b1!4m6!3m5!1s0x8853693f14b01a67:0xb72bcc610815bde8!8m2!3d35.7203865!4d-79.8113196!16s%2Fg%2F1tf_tkn_?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+   "human_verdict_by": "jacob-at-desk-2026-08-17-0900ET + claude-code-direct-look"
   }
  ],
  "skipped": [
@@ -80,11 +93,13 @@
   "refused_unlooked:google-b9d661626db8c2eb.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-e7b23ff9f3c21e83.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-ef7a194f9ba3bed9.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_hold_crew_for_about:google-aed672ad3527b2ab.jpg",
   "hero_cand_refuse:google-09189004c6a56ee6.jpg:low_res_lt_1080",
-  "hero_cand_refuse:google-b74f27dbd90d9ea9.jpg:too_small_bytes",
+  "hero_hold_crew_for_about:google-530709fd9427ea6c.jpg",
+  "hero_hold_crew_for_about:google-b74f27dbd90d9ea9.jpg",
   "hero_cand_refuse:google-342202649e16d162.jpg:too_small_bytes",
   "hero_cand_refuse:google-ab5ef6e9255b6187.jpg:too_small_bytes",
-  "hero_cand_refuse:google-95e8a7dae7397d02.jpg:too_small_bytes",
+  "hero_hold_crew_for_about:google-95e8a7dae7397d02.jpg",
   "hero_cand_refuse:google-85e09a172de076a0.jpg:too_small_bytes",
   "photo-gallery-5.jpg",
   "photo-gallery-6.jpg",
@@ -103,12 +118,12 @@
  "candidates": 12,
  "refused_by_class": 5,
  "altBySlot": {
-  "photo-hero.jpg": "R&D Automotive front desk staff member handling customer keys and paperwork at the shop office",
-  "photo-about.jpg": "three R&D Automotive team members standing together outside the shop's storefront window",
-  "photo-card-about.jpg": "three R&D Automotive team members at the parts counter inside the shop",
+  "photo-hero.jpg": "technician working on a suspension component at a workbench in the shop",
+  "photo-card-about.jpg": "three R&D Automotive team members standing together outside the shop's storefront window",
+  "photo-about.jpg": "R&D Automotive front desk staff member handling customer keys and paperwork at the shop office",
   "photo-card-services.jpg": "technician mounting a tire on a tire changer machine in the shop",
-  "photo-card-reviews.jpg": "R&D Automotive front desk staff member answering the phone at the shop office",
-  "photo-card-photos.jpg": "technician working on a suspension component at a workbench in the shop",
+  "photo-card-reviews.jpg": "three R&D Automotive team members at the parts counter inside the shop",
+  "photo-card-photos.jpg": "R&D Automotive front desk staff member answering the phone at the shop office",
   "photo-ctaband.jpg": "technician in R&D Automotive shirt draining fluid from a vehicle on a lift",
   "photo-quoteband.jpg": "technician in R&D Automotive shirt working on suspension parts under a lifted truck",
   "photo-gallery-1.jpg": "technician in R&D Automotive shirt torquing a wheel on a lifted vehicle",

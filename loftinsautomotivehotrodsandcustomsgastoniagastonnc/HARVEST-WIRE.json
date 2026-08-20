@@ -1,0 +1,120 @@
+{
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-18T18:00:45.667Z",
+  "slug": "loftinsautomotivehotrodsandcustomsgastoniagastonnc",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "photo-gallery-3.jpg",
+      "bytes": 221129,
+      "trade_score": 3.5,
+      "reason": "hero_contrast_retarget:photo-gallery-3.jpg"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "from": "google-f77e78be05946c06.jpg",
+      "bytes": 298571,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-about.jpg",
+      "from": "google-7d8b1ee1e3fa99b2.jpg",
+      "bytes": 293117,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "from": "google-44b41c173e935b09.jpg",
+      "bytes": 255682,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-reviews.jpg",
+      "from": "google-a9ce0cba17ebaeb8.jpg",
+      "bytes": 306455,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-photos.jpg",
+      "from": "google-2b467f54a97c003d.jpg",
+      "bytes": 298368,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "google-d479f8569e7bbb49.jpg",
+      "bytes": 272337,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "google-675d07213429e797.jpg",
+      "bytes": 232739,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "from": "google-bf96d3125c92a2d2.jpg",
+      "bytes": 221129,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-ctaband.jpg",
+      "from": "google-240a2b6094b41b1c.jpg",
+      "bytes": 215420,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-quoteband.jpg",
+      "from": "google-8a82126284459964.jpg",
+      "bytes": 145159,
+      "letterbox_stripped": null
+    }
+  ],
+  "skipped": [
+    "classification read: 22 verdicts",
+    "staged 16 harvest photos",
+    "refused_unlooked:google-436f59b2587a617a.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-45a6790e6e754f7c.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-514071eb8c346821.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-9804d0296601f2d8.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_unlooked:google-ef36a5c60cc814d4.jpg:NEEDS_SUBJECT_LOOK",
+    "hero_cand_refuse:google-a9ce0cba17ebaeb8.jpg:road_no_landscape",
+    "hero_hold_crew_for_about:google-f77e78be05946c06.jpg",
+    "hero_cand_refuse:google-675d07213429e797.jpg:portrait_aspect_hero_refuse",
+    "photo-gallery-4.jpg",
+    "photo-gallery-5.jpg",
+    "photo-gallery-6.jpg",
+    "photo-service-1.jpg",
+    "photo-service-2.jpg",
+    "photo-service-3.jpg",
+    "photo-gallery-7.jpg",
+    "photo-gallery-8.jpg",
+    "photo-gallery-9.jpg",
+    "photo-services-hero.jpg",
+    "photo-contact.jpg",
+    "photo-photos-cta.jpg",
+    "photo-reviewsband.jpg",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+  ],
+  "candidates": 11,
+  "refused_by_class": 5,
+  "altBySlot": {
+    "photo-hero.jpg": "Modern sports car with the front end stripped off and a front-mount intercooler fitted in behind the bumper beam",
+    "photo-card-about.jpg": "One of the technicians working over an open cylinder head with the camshafts and rockers exposed, spanner still on the cap",
+    "photo-about.jpg": "Cylinder head off and set face up on the bench, the chambers and valve seats clean and ready to go back on",
+    "photo-card-services.jpg": "Brake disc and hub exposed with the caliper off, the corrosion on the rotor face showing why it is being replaced",
+    "photo-card-reviews.jpg": "Engine bay of an older car with the block back in and the ancillaries being refitted around it",
+    "photo-card-photos.jpg": "New head gasket held up over the open engine bay before the head goes back down onto the block",
+    "photo-gallery-1.jpg": "Engine block and timing cover freshly painted and standing on the stand with the heads laid out behind",
+    "photo-gallery-2.jpg": "Engine bay with the forced induction plumbing and ancillaries fitted, the belt run laid out across the front of the engine",
+    "photo-gallery-3.jpg": "Modern sports car with the front end stripped off and a front-mount intercooler fitted in behind the bumper beam",
+    "photo-ctaband.jpg": "Inside the workshop with several classic cars up on lifts and on the floor, the bays running the length of the building",
+    "photo-quoteband.jpg": "The workshop from the yard with the inspection station notice by the door and the service van parked outside"
+  },
+  "hero_retarget": {
+    "at": "2026-08-18T18:00:46.345Z",
+    "from_slot": "photo-gallery-3.jpg",
+    "reason": "hero_contrast_retarget"
+  }
+}
