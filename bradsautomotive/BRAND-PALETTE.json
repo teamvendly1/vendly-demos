@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "bradsautomotive",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#322518",
+  "palette": {
+    "BRAND": "#322518",
+    "PRIMARY": "#41301F",
+    "PRIMARY_DK": "#302417",
+    "PRIMARY_MID": "#4F3B26",
+    "ACCENT": "#674D32",
+    "ACCENT_DK": "#483623",
+    "ACCENT_LT": "#916B45",
+    "ON_DARK": "#E5D6C8",
+    "MENU_INK": "#1F170F",
+    "TINT_1": "#EEE6DD",
+    "TINT_2": "#F3EDE7",
+    "TINT_3": "#EBE0D6",
+    "TINT_4": "#EDE3D9",
+    "LINE_2": "#DECCBA",
+    "MUTED_BRAND": "#BD9975",
+    "MIST": "#F9F6F3",
+    "LINE": "#E8DBCF",
+    "PRIMARY_RGB": "65,48,31",
+    "ACCENT_RGB": "103,77,50",
+    "SCRIM_RGB": "79,59,38",
+    "SCRIM2_RGB": "48,36,23",
+    "MENU_INK_RGB": "31,23,15",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.59,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 7.82,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.87,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.68,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
