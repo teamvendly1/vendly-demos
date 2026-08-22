@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "arbortreeexperts",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#363024",
+  "palette": {
+    "BRAND": "#363024",
+    "PRIMARY": "#3A3427",
+    "PRIMARY_DK": "#2B261D",
+    "PRIMARY_MID": "#463F2F",
+    "ACCENT": "#5C523D",
+    "ACCENT_DK": "#40392B",
+    "ACCENT_LT": "#817256",
+    "ON_DARK": "#DED9CE",
+    "MENU_INK": "#1C1812",
+    "TINT_1": "#EBE7E0",
+    "TINT_2": "#F1EEEA",
+    "TINT_3": "#E7E2DA",
+    "TINT_4": "#E9E5DD",
+    "LINE_2": "#D6CFC2",
+    "MUTED_BRAND": "#ADA085",
+    "MIST": "#F8F7F4",
+    "LINE": "#E2DED4",
+    "PRIMARY_RGB": "58,52,39",
+    "ACCENT_RGB": "92,82,61",
+    "SCRIM_RGB": "70,63,47",
+    "SCRIM2_RGB": "43,38,29",
+    "MENU_INK_RGB": "28,24,18",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.35,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 7.69,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.78,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.67,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
