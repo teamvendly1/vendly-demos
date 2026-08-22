@@ -4,8 +4,8 @@
   "tenant_id": "demo-baldeagletreeexpert",
   "phone": "(828) 421-3256",
   "tel": "+18284213256",
-  "brand_color": "#210D04",
-  "palette_source": "their-mark:logo.png",
+  "brand_color": "#26303A",
+  "palette_source": "fallback-trade-or-neutral",
   "site_host": "",
   "city": "Franklin",
   "region": "NC",
@@ -54,13 +54,13 @@
   "area_lede": "",
   "svc_hero_h1": "The tree service work we take on",
   "svc_hero_lede": "",
-  "svc_list_h2": "What we do",
+  "svc_list_h2": "tree service jobs we take on",
   "services": [
     {
       "title": "Climbing and sectional dismantling",
       "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
-      "slot": "",
-      "alt": "",
+      "slot": "photo-service-1.jpg",
+      "alt": "Dead hazard tree circled for removal next to a house among tall hardwoods",
       "evidence": "Climber roped high in a tall hardwood canopy beside a cabin roofline"
     },
     {
@@ -76,13 +76,33 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Log cabin with a deck, a tree being worked overhanging the stairs",
+      "alt": "",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Dead hazard tree circled for removal next to a house among tall hardwoods",
+      "alt": "",
       "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Climber's-eye view straight down at a cabin roof from high in the canopy",
+      "subject_class": "premises"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "",
+      "subject_class": "team"
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "alt": "",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "alt": "Log cabin with a deck, a tree being worked overhanging the stairs",
+      "subject_class": "finished_result"
     }
   ],
   "reviews_h2": "What customers say",
@@ -181,12 +201,12 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Climber in full harness and helmet working a tall pine, gear bag staged at the base",
+    "hero": "Tree service work in Franklin",
     "card_about": "Two crew members in hard hats assessing a tree limb over a house roofline",
-    "card_services": "Climber roped high in a tall hardwood canopy beside a cabin roofline",
-    "card_reviews": "Climber's-eye view straight down at a cabin roof from high in the canopy",
-    "card_photos": "Climbing ropes rigged tight beside a house gable for a precision removal",
-    "ctaband": "Tree service job photo",
+    "card_services": "Climber in full harness and helmet working a tall pine, gear bag staged at the base",
+    "card_reviews": "Customer review context photo",
+    "card_photos": "Climber roped high in a tall hardwood canopy beside a cabin roofline",
+    "ctaband": "Climbing ropes rigged tight beside a house gable for a precision removal",
     "about": "Freshly cut log rounds on the ground in front of a log cabin after a removal",
     "contact": "Bald Eagle Tree Expert",
     "services_hero": "Tree service services"
@@ -196,11 +216,9 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\baldeagletreeexpert\\HARVEST.json",
-    "at": "2026-08-18T21:28:50.051Z",
+    "at": "2026-08-22T23:33:11.428Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\baldeagletreeexpert\\DEMO-FACTS.json",
-    "wrote_facts_from_harvest": true,
-    "rebuilt": true,
+    "facts_path": "C:/VendlyVault/_tmp/autodemo/demos/baldeagletreeexpert/DEMO-FACTS.json",
     "harvest_merged": true
   },
   "address": {
@@ -226,7 +244,7 @@
     "source_is_google": true
   },
   "services_source": "their-photographs",
-  "photo_count": 8,
+  "photo_count": 15,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
   "_contact_map_mode": "hyperlink"

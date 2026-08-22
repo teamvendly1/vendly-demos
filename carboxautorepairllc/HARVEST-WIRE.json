@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T21:21:38.079Z",
+ "at": "2026-08-22T23:35:10.649Z",
  "slug": "carboxautorepairllc",
  "wired": [
   {
@@ -146,16 +146,16 @@
   {
    "slot": "logo.png",
    "from": "human-approved-preserved",
-   "bytes": 157910,
+   "bytes": 115598,
    "source_url": "https://www.google.com/maps/place/Car-Box+Auto+Repair+LLC/@35.303766,-78.611516,17z/data=!3m1!4b1!4m6!3m5!1s0x89ab812a7c9d5131:0xe7c9d3b215920cde!8m2!3d35.303766!4d-78.611516!16s%2Fg%2F11khtryw5c?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
    "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
   }
  ],
  "skipped": [
-  "classification read: 46 verdicts",
+  "classification read: 48 verdicts",
   "staged 30 harvest photos",
   "refused_unlooked:google-31d0d9b44481526b.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-4350ca3bcf53c8c8.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-4350ca3bcf53c8c8.jpg:reject",
   "refused_unlooked:google-70424b04819b64ff.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-777731a5f4ec2866.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-b5d3a3ad1859c43d.jpg:NEEDS_SUBJECT_LOOK",
@@ -183,13 +183,16 @@
   "hero_cand_refuse:google-6a83be527286b8a2.jpg:road_no_landscape",
   "hero_cand_refuse:google-322452224c0a4d12.jpg:close_crop_alt",
   "hero_cand_refuse:google-99f323feba698326.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-7d64408996c51f05.jpg:too_small_bytes",
+  "hero_cand_refuse:google-7d64408996c51f05.jpg:road_no_landscape",
   "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-6af473e5bcf77fb9.jpg)",
   "photo-reviewsband.jpg",
+  "photo-contact-hero.jpg",
+  "photo-reviews-hero.jpg",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 23,
  "refused_by_class": 7,
+ "photo_candidates": 23,
  "altBySlot": {
   "photo-hero.jpg": "Fluids and hand tools staged on a rolling cart",
   "photo-card-about.jpg": "Three team members posing together in the shop",

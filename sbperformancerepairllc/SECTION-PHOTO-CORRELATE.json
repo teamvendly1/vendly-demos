@@ -1,9 +1,37 @@
 {
-  "at": "2026-08-18T21:14:42.886Z",
+  "at": "2026-08-22T23:32:38.889Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "auto-repair",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-service-4.jpg",
+      "source": "stock-library",
+      "sha256": "ede6b53f22caf26ed5c83e8146e197cf44efed8d6c7e10d8ee9f0f545b0a4e6a",
+      "reasons": [
+        "cross_demo_dupe:a1automotiveservices/photo-card-services.jpg"
+      ],
+      "service": "trade work"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "stock-library",
+      "sha256": "157e1aa97f8378765fac8d8a65ddb5a3a5165405766efbc2a18554ea7a37d459",
+      "reasons": [
+        "cross_demo_dupe:affordableautomotive/photo-card-reviews.jpg"
+      ],
+      "service": "trade work"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "source": "stock-library",
+      "sha256": "56992b5749a3c236065b8f4a8d9f15afa9bc9f2808ae253cd1e4b24af63f5767",
+      "reasons": [
+        "cross_demo_dupe:carscooksautorepairspecialists/photo-card-photos.jpg"
+      ],
+      "service": "trade work"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -31,6 +59,11 @@
       "bytes": 420680
     },
     {
+      "file": "photo-contact-hero.jpg",
+      "sha256": "b0ce5f757a3472bba4f6fdf7df744f73b0a9195ecfead597869b8b77534cba17",
+      "bytes": 339178
+    },
+    {
       "file": "photo-contact.jpg",
       "sha256": "cfb6a414dfa365e098f25a1d0e325ac45649c3d2c9e378f2c56a0a4f61459f9f",
       "bytes": 393980
@@ -54,6 +87,11 @@
       "file": "photo-quoteband.jpg",
       "sha256": "34e463ad1c4f1ec32cf3ea2ccbe9ce772206600a7c359e21cddd3b6acb40504d",
       "bytes": 342590
+    },
+    {
+      "file": "photo-reviews-hero.jpg",
+      "sha256": "689939e46e00275f8becf46f87454fb41940a16a0e505abff1ea3cee8d544d7b",
+      "bytes": 330761
     },
     {
       "file": "photo-reviewsband.jpg",

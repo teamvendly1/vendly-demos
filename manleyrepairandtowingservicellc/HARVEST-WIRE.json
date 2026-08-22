@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T21:18:04.325Z",
+  "at": "2026-08-22T23:34:30.930Z",
   "slug": "manleyrepairandtowingservicellc",
   "wired": [
     {
@@ -149,20 +149,32 @@
       "letterbox_stripped": null
     },
     {
+      "slot": "photo-contact-hero.jpg",
+      "from": "google-4e1e3b9c100b5424.jpg",
+      "bytes": 361785,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-reviews-hero.jpg",
+      "from": "google-a7f53deb5960e211.jpg",
+      "bytes": 328087,
+      "letterbox_stripped": null
+    },
+    {
       "slot": "logo.png",
       "from": "human-approved-preserved",
-      "bytes": 392991,
+      "bytes": 318514,
       "source_url": "https://www.google.com/maps/place/Manley+Repair+and+Towing+Service+LLC/@36.4523855,-77.665491,17z/data=!3m1!4b1!4m6!3m5!1s0x89ae113335e82433:0xc6193135827ec9aa!8m2!3d36.4523855!4d-77.665491!16s%2Fg%2F11x6d_j7f1?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
       "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
     }
   ],
   "skipped": [
-    "classification read: 58 verdicts",
+    "classification read: 60 verdicts",
     "staged 33 harvest photos",
     "refused_unlooked:google-12f2cf5d7f47fcea.jpg:NEEDS_SUBJECT_LOOK",
     "refused_unlooked:google-249a6abdfe8712e4.jpg:NEEDS_SUBJECT_LOOK",
     "refused_unlooked:google-36d3aab3ba2440da.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-458748818a84e3a5.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_by_class:google-458748818a84e3a5.jpg:reject",
     "hero_cand_refuse:google-77f0ca44c2728bb6.jpg:road_no_landscape",
     "hero_cand_refuse:google-63591db4f7d8612d.jpg:road_no_landscape",
     "hero_cand_refuse:google-c51eb821a805961d.jpg:road_no_landscape",
@@ -197,6 +209,7 @@
   ],
   "candidates": 29,
   "refused_by_class": 4,
+  "photo_candidates": 29,
   "altBySlot": {
     "photo-hero.jpg": "Truck approaching at night with headlights on",
     "photo-card-about.jpg": "Shop storefront with a black Jeep parked outside",
@@ -221,10 +234,12 @@
     "photo-services-hero.jpg": "Blue Kenworth semi truck parked beside a company van",
     "photo-contact.jpg": "Company van parked beside a black semi truck",
     "photo-photos-cta.jpg": "White company van parked at the shop",
-    "photo-reviewsband.jpg": "Travel trailer parked in the lot"
+    "photo-reviewsband.jpg": "Travel trailer parked in the lot",
+    "photo-contact-hero.jpg": "White company van parked on the grass",
+    "photo-reviews-hero.jpg": "Shop storefront with a vintage car parked outside"
   },
   "hero_retarget": {
-    "at": "2026-08-18T21:18:06.688Z",
+    "at": "2026-08-22T23:34:33.387Z",
     "from_slot": "photo-service-2.jpg",
     "reason": "hero_contrast_retarget"
   }

@@ -6,13 +6,12 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Customer Reviews | SB Performance &amp; Repair LLC</title>
 <meta name="description" content="SB Performance &amp; Repair LLC serving Lancaster - auto repair that shows up when you call.">
-<meta name="theme-color" content="#213240">
+<meta name="theme-color" content="#103251">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=harv20260818211432">
-<meta name="vendly-demo-build" content="blank-mold-20260818-hydroclean">
-<meta name="vendly-hydroclean-class" content="20260815-c8f645b5e949">
+<meta name="vendly-demo-build" content="blank-mold-20260822-hydroclean">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -39,10 +38,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <body>
 <div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of SB Performance &amp; Repair LLC.</div>
 <a class="skiplink" href="#main">Skip to content</a>
-<div class="phone-strip" role="banner">
-  <a href="tel:+16787900489" aria-label="Call SB Performance &amp; Repair LLC at (678) 790-0489">(678) 790-0489</a>
-</div>
-
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
   <div class="mcb-rule" aria-hidden="true"></div>
@@ -83,7 +78,8 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   </nav>
 </header>
 <main id="main">
-<section class="reveal" aria-labelledby="h-reviews" style="padding-top:clamp(56px,8vw,102px)">
+<section class="hero hero-sub" aria-labelledby="h-reviews-hero"><img class="bg" src="assets/photo-reviews-hero.jpg?v=harv20260818211432" alt="Silver Honda Accord coupe raised on the outdoor lift" loading="eager"><div class="wrap hero-inner"><span class="eyebrow">Reviews</span><h1 id="h-reviews-hero">What customers say</h1></div></section>
+<section class="reveal" aria-labelledby="h-reviews" style="padding-top:0">
   <div class="wrap">
     <div class="center">
       <p class="kicker">What customers said</p>
@@ -149,25 +145,18 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     tenantId: "demo-sbperformancerepairllc",
     demoSlug: "sbperformancerepairllc",
     endpoint: "https://vendly-jarvis.vercel.app",
-    name: "SB Performance & Repair LLC",
+    name: "SB Performance &amp; Repair LLC",
     greeting: "",
     nudge: "",
     disablePeek: true,
-    /* forceRender 2026-08-17. Measured: https://vendly-jarvis.vercel.app/api/status
-       answers 404 {"active":false} for any tenant that is not deployed, and
-       siteassistant-v2.js boot() treats a definitive active:false as OFF and renders
-       NOTHING. index/about/services/photos already carried forceRender; reviews and
-       contact did not, so the Ask-us chat was missing on 2 of 6 pages of EVERY demo -
-       including contact, the highest-intent page. A demo is not a live tenant, so it
-       must never ask the kill switch for permission to show its own chat. */
     forceRender: true,
     phone: "+16787900489",
     sms: "+16787900489",
-    quoteUrl: "#quote",
+    quoteUrl: "",
     bookUrl: "",
     contactUrl: "./contact.html",
     suggestions: [],
-    accent: "#344E65"
+    accent: "#194F80"
   };
 </script>
 <script src="assets/siteassistant-v2.js?v=harv20260818211432" defer></script>

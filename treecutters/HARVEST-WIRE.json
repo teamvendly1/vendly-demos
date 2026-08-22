@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T21:12:51.837Z",
+  "at": "2026-08-22T23:33:49.304Z",
   "slug": "treecutters",
   "wired": [
     {
@@ -149,18 +149,30 @@
       "letterbox_stripped": null
     },
     {
+      "slot": "photo-contact-hero.jpg",
+      "from": "google-d20531b19cb3b9e4.jpg",
+      "bytes": 322946,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-reviews-hero.jpg",
+      "from": "google-dc1d03c6794e3480.jpg",
+      "bytes": 227083,
+      "letterbox_stripped": null
+    },
+    {
       "slot": "logo.png",
       "from": "human-approved-preserved",
-      "bytes": 1183156,
+      "bytes": 1117572,
       "source_url": "https://www.google.com/maps/place/Tree+Cutters/@35.8372056,-82.6915806,9z/data=!4m10!1m2!2m1!1sTree+Cutters+Lenoir+(Caldwell)!3m6!1s0x8850d89c87598527:0xb00bbdbe5fb3f1f2!8m2!3d35.8372056!4d-81.5380161!15sCh5UcmVlIEN1dHRlcnMgTGVub2lyIChDYWxkd2VsbClaHiIcdHJlZSBjdXR0ZXJzIGxlbm9pciBjYWxkd2VsbJIBDHRyZWVf",
       "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
     }
   ],
   "skipped": [
-    "classification read: 62 verdicts",
+    "classification read: 64 verdicts",
     "staged 33 harvest photos",
     "refused_unlooked:google-5bc7571d6a3c5ad2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-6a8fa6150bddefec.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_by_class:google-6a8fa6150bddefec.jpg:reject",
     "hero_cand_refuse:google-b2c9313e2db2d6cb.jpg:portrait_aspect_hero_refuse",
     "hero_cand_refuse:google-7ba9db3c9870d9b8.jpg:road_no_landscape",
     "hero_cand_refuse:google-fa19706aeb5267f6.jpg:portrait_aspect_hero_refuse",
@@ -185,6 +197,7 @@
   ],
   "candidates": 31,
   "refused_by_class": 2,
+  "photo_candidates": 31,
   "altBySlot": {
     "photo-hero.jpg": "Crane truck cutting sections from a tall tree",
     "photo-card-about.jpg": "Worker in the bucket with the Tree Cutters truck below",
@@ -209,10 +222,12 @@
     "photo-services-hero.jpg": "Freshly trimmed tree with a house in the background",
     "photo-contact.jpg": "Equipment reflected in the mirrors mounted on the bucket lift",
     "photo-photos-cta.jpg": "Dead tree top left standing against a clear sky",
-    "photo-reviewsband.jpg": "Tall dead tree being cut near overhead wires"
+    "photo-reviewsband.jpg": "Tall dead tree being cut near overhead wires",
+    "photo-contact-hero.jpg": "Tree Cutters truck parked near a stack of cinder blocks",
+    "photo-reviews-hero.jpg": "Tree Cutters truck reaching a tree with the boom lift"
   },
   "hero_retarget": {
-    "at": "2026-08-18T21:12:55.243Z",
+    "at": "2026-08-22T23:33:52.821Z",
     "from_slot": "photo-service-2.jpg",
     "reason": "hero_contrast_retarget"
   }

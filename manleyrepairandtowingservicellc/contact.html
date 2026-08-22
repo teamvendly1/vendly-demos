@@ -6,13 +6,12 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Contact | Manley Repair and Towing Service LLC</title>
 <meta name="description" content="Manley Repair and Towing Service LLC serving Roanoke Rapids - towing that shows up when you call.">
-<meta name="theme-color" content="#003161">
+<meta name="theme-color" content="#26303B">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=harv20260818211759">
-<meta name="vendly-demo-build" content="blank-mold-20260818-hydroclean">
-<meta name="vendly-hydroclean-class" content="20260815-c8f645b5e949">
+<meta name="vendly-demo-build" content="blank-mold-20260822-hydroclean">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -39,10 +38,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <body>
 <div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Manley Repair and Towing Service LLC.</div>
 <a class="skiplink" href="#main">Skip to content</a>
-
-<div class="phone-strip" role="banner">
-  <a href="tel:+12523609381" aria-label="Call Manley Repair and Towing Service LLC at (252) 360-9381">(252) 360-9381</a>
-</div>
 
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
@@ -85,7 +80,8 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 </header>
 
 <main id="main">
-<section class="reveal mist contact-page" aria-labelledby="h-contact">
+<section class="hero hero-sub" aria-labelledby="h-contact-hero"><img class="bg" src="assets/photo-contact-hero.jpg?v=harv20260818211759" alt="White company van parked on the grass" loading="eager"><div class="wrap hero-inner"><span class="eyebrow">Contact</span><h1 id="h-contact-hero">Get in touch</h1></div></section>
+<section class="reveal mist contact-page" aria-labelledby="h-contact" style="padding-top:0">
   <div class="wrap">
     <div class="leadwrap contact-lead">
       <div class="contact-copy">
@@ -95,36 +91,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <p class="contact-cta"><a class="btn btn-blue" href="index.html#quote">Get estimate</a></p>
       </div>
       
-      <form id="leadform" class="contact-form" novalidate>
-        <p class="kicker" style="margin-top:0">Send a message</p>
-        <div class="field">
-          <label for="cf-name">Your name <span class="req">(required)</span></label>
-          <input id="cf-name" name="name" type="text" autocomplete="name" required>
-        </div>
-        <div class="field">
-          <label for="cf-phone">Phone <span class="req">(required)</span></label>
-          <input id="cf-phone" name="phone" type="tel" autocomplete="tel" required>
-        </div>
-        <div class="field">
-          <label for="cf-email">Email</label>
-          <input id="cf-email" name="email" type="email" autocomplete="email">
-        </div>
-        <div class="field">
-          <label for="cf-type">What do you need</label>
-          <select id="cf-type" name="type">
-            <option>Powersports and small equipment</option>
-            <option>Car and light truck transport</option>
-            <option>Heavy and oversize loads</option>
-            <option>Night and out of hours calls</option>
-            <option>Not sure, call and ask</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="cf-msg">Tell us more</label>
-          <textarea id="cf-msg" name="message" placeholder=""></textarea>
-        </div>
-        <button class="btn btn-blue" type="submit" style="width:100%;justify-content:center;border:0;cursor:pointer">Send message</button>
-      </form>
     </div>
   </div>
 </section>
@@ -143,7 +109,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <h3 class="fh">Contact</h3>
         <ul>
           <li><a href="tel:+12523609381">(252) 360-9381</a></li>
-        </ul>
+                  </ul>
       </div>
       <div>
         <h3 class="fh">Menu</h3>
@@ -182,29 +148,15 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     greeting: "",
     nudge: "",
     disablePeek: true,
-    /* forceRender 2026-08-17. Measured: https://vendly-jarvis.vercel.app/api/status
-       answers 404 {"active":false} for any tenant that is not deployed, and
-       siteassistant-v2.js boot() treats a definitive active:false as OFF and renders
-       NOTHING. index/about/services/photos already carried forceRender; reviews and
-       contact did not, so the Ask-us chat was missing on 2 of 6 pages of EVERY demo -
-       including contact, the highest-intent page. A demo is not a live tenant, so it
-       must never ask the kill switch for permission to show its own chat. */
     forceRender: true,
     phone: "+12523609381",
     sms: "+12523609381",
-    quoteUrl: "#quote",
+    quoteUrl: "",
     bookUrl: "",
     contactUrl: "./contact.html",
     suggestions: [],
-    accent: "#004D99"
+    accent: "#3D4C5C"
   };
-</script>
-
-<script>
-(function(){
-  var lf=document.getElementById(leadform);
-  if(lf){ lf.addEventListener(submit,function(e){ e.preventDefault(); alert("Preview only. On the live site this goes straight to Manley Repair and Towing Service LLC and is captured as a lead."); }); }
-})();
 </script>
 <script src="assets/siteassistant-v2.js?v=harv20260818211759" defer></script>
 <script src="assets/site.js?v=harv20260818211759" defer></script>

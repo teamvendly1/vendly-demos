@@ -1,89 +1,102 @@
 {
-  "at": "2026-08-21T06:03:00.804Z",
+  "at": "2026-08-22T23:38:59.774Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "towing",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-contact.jpg",
+      "source": "stock-library",
+      "sha256": "fdb196d6229e3d459c4ab993c2d3d837ffe96c4020bc3917daeba0b5052c635d",
+      "reasons": [
+        "cross_demo_dupe:castlehaynetowing/photo-card-about.jpg"
+      ],
+      "service": "trade work"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "stock-library",
+      "sha256": "5bf42ed46b8d4e71d25f27b6b1d4bc74347177c8a90761b036467d7a9e21af07",
+      "reasons": [
+        "cross_demo_dupe:abctowinglexingtonnc/photo-services-hero.jpg"
+      ],
+      "service": "trade work"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "source": "stock-library",
+      "sha256": "cd4cf9239ea31defc9fed91a5a7407fb49e799e97cbbdf314d688730948a4403",
+      "reasons": [
+        "cross_demo_dupe:castlehaynetowing/photo-photos-cta.jpg"
+      ],
+      "service": "trade work"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "b5de42073df3cbf509f5d4f39526004bd43a08e0bf52c856ba4e0c851f42f0b3",
-      "bytes": 250196
+      "sha256": "3c3aef0979a56e863034df281ab0ccea06ee25c976828a824dc0cff69ae9d234",
+      "bytes": 294895
     },
     {
       "file": "photo-card-about.jpg",
+      "sha256": "708001da49e7898ae5d8d9af8241ce6d7bf478b3f708e03e21f523a04d14a6e1",
+      "bytes": 333509
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "39b798e61d73d9833fef950919da29317b68bb276e6c9a0f61fb9bc288902eb2",
+      "bytes": 75995
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "ee53d9de5d20b428cdf3e1561b057e1ddf60b3092e9e8c3222a2ab8963e784e0",
+      "bytes": 151987
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "c0a7b3d2aaa0d2c0921024b9adf05749d171122caa9fd34ae4a66be38d69c952",
+      "bytes": 283937
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "14df015f707e0ed4e5638eb9ac137c38aca1d342f8d9e08affa06520ae063f61",
+      "bytes": 291581
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "6c4b520435cef4aa88de7e6d81524f992dd211712265ef05667b974cf0614e94",
+      "bytes": 350162
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "a31a5db60e54af852ff2997432e7b26c7d1606856a3f1789d92f4b01b6b42aea",
+      "bytes": 211463
+    },
+    {
+      "file": "photo-service-3.jpg",
       "sha256": "83d3a888390c772bed2e82a5ac3ccc25419874694f70615901bd2e60e19254d6",
       "bytes": 75539
     },
     {
-      "file": "photo-card-photos.jpg",
-      "sha256": "dfb4d33f10bc629b41d431a1f96890f1b938098bfade6a06dded342ccbf692d7",
-      "bytes": 336057
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "72ecc8a404af117192c38a591392e22c0c4f9d302762c5139933a7d033c4dd10",
-      "bytes": 316888
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "8034cee8e136227fe0d712278e5ed94a7b088a223afd4d0495ce39021ba45574",
-      "bytes": 113259
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "db6f773dd90bcb452ae1fc6bc6b25be72e680df4b6e3bb0a2290b8f683644c87",
-      "bytes": 225850
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "2886951a5998940ec2a212704134051e2950dda714973edce5edc520f2728b44",
-      "bytes": 89319
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "7d6262dbe8db1c67360d3def460e5b6270b7b879b8e5449d4862e367cb855565",
-      "bytes": 272393
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "70171c371ab6c8e2350407bb6f0c1ebd903b55035bc2dec8dc15cb63ccd43409",
-      "bytes": 236206
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "bf4b3a01ce9ddf0c925dbdde63aa3f6492fb4aeaadfcd607a211e9c1f43732f6",
-      "bytes": 235118
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "490122fc761649d39dcf938cc38ed3d559420851be231c6d1ec068088af2f1a9",
-      "bytes": 127133
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "5261590546b35f07186960d2515727e1bc0447273b99a6b147f44e36420f3558",
-      "bytes": 110813
-    },
-    {
       "file": "photo-service-4.jpg",
-      "sha256": "cd4cf9239ea31defc9fed91a5a7407fb49e799e97cbbdf314d688730948a4403",
-      "bytes": 90151
+      "sha256": "384b958610cfb861291c6f044fa70b0db9fe05e3ac70e313a30e132234510c32",
+      "bytes": 122750
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "1fb8ff71c1a4940ce92c0c0df36b63553c040468be4298a8e099b4769714b070",
-      "bytes": 209099
+      "sha256": "84d3f8278dd741c1857a2cd38e048abcf3780cb21c92d61059c6445d30a36f17",
+      "bytes": 150673
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "24296473ab10cdb80c3cb2630a67a435dfcaf2e9fffee900818a3e27b8819589",
-      "bytes": 241666
+      "sha256": "d20a185ecf39226e34d5849fa5ce86c5e9902956ceba0835c3fac6ce1bef3f81",
+      "bytes": 367056
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "9806aec54c66581454e7fb14cf5a1751eda19094640f4038024877c1ff206fce",
-      "bytes": 167310
+      "sha256": "4eae88bca6b03fdce0323b977a990ed98a679c9049bca208ecfd8dcbd447caaf",
+      "bytes": 122107
     }
   ],
   "failed": [],

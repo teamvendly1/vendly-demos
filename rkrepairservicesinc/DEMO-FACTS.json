@@ -4,8 +4,8 @@
   "tenant_id": "demo-rkrepairservicesinc",
   "phone": "(843) 784-3040",
   "tel": "+18437843040",
-  "brand_color": "#303A41",
-  "palette_source": "their-mark:logo.png",
+  "brand_color": "#123A5E",
+  "palette_source": "fallback-trade-or-neutral",
   "site_host": "",
   "city": "Hardeeville",
   "region": "SC",
@@ -54,27 +54,27 @@
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
   "svc_hero_lede": "",
-  "svc_list_h2": "What we do",
+  "svc_list_h2": "Auto repair, start to finish",
   "services": [
     {
       "title": "Diagnostics and engine work",
       "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
       "slot": "photo-service-1.jpg",
-      "alt": "Teal vintage truck parked at the shop building",
+      "alt": "Teal vintage truck parked facing the camera",
       "evidence": "Shop building exterior with the garage bay doors"
     },
     {
       "title": "Tires and wheels",
       "body": "Fitting and balancing on the machine, with the weights set where they belong.",
       "slot": "photo-service-2.jpg",
-      "alt": "Travel trailer and red truck parked at the lot",
+      "alt": "Wide view of the parking lot with several trucks and trailers",
       "evidence": "Technician working on a tire on the shop floor"
     },
     {
       "title": "Exhaust and underbody",
       "body": "Up on the lift, where the rust and the leaks actually are.",
       "slot": "photo-service-3.jpg",
-      "alt": "Shop building exterior lit up at night",
+      "alt": "Teal vintage truck parked at the shop building",
       "evidence": "Technician working on a vehicle raised on the lift"
     }
   ],
@@ -98,32 +98,32 @@
     },
     {
       "slot": "photo-gallery-4.jpg",
-      "alt": "Parking lot with a boat on a trailer",
+      "alt": "Empty corner of the parking lot with cars in the distance",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-5.jpg",
-      "alt": "Teal vintage truck parked facing the camera",
+      "alt": "Fall decorations with scarecrows and pumpkins at the shop",
       "subject_class": "team"
     },
     {
       "slot": "photo-gallery-6.jpg",
-      "alt": "Wide view of the parking lot with several trucks and trailers",
+      "alt": "Parking lot with a boat on a trailer",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-7.jpg",
-      "alt": "Shop storefront with the OPEN sign displayed",
+      "alt": "Travel trailer and red truck parked at the lot",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-8.jpg",
-      "alt": "Snow covered lot with footprints near the shop",
+      "alt": "Shop building exterior lit up at night",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-9.jpg",
-      "alt": "Two trucks parked beside a boat on a trailer",
+      "alt": "Shop storefront with the OPEN sign displayed",
       "subject_class": "premises"
     }
   ],
@@ -457,21 +457,21 @@
     "card_services": "Technician working on a tire on the shop floor",
     "card_reviews": "Technician welding with sparks flying in the shop",
     "card_photos": "Technician working on a vehicle raised on the lift",
-    "ctaband": "Empty corner of the parking lot with cars in the distance",
+    "ctaband": "Auto repair job photo",
     "about": "Team members dressed up for a fall event outside the shop",
-    "contact": "Empty road and lot view near the shop",
-    "services_hero": "Wall of tires stocked in the shop"
+    "contact": "Two trucks parked beside a boat on a trailer",
+    "services_hero": "Snow covered lot with footprints near the shop",
+    "contact_hero": "Shop entrance door with the OPEN sign",
+    "reviews_hero": "White tow truck with company markings and a driver inside"
   },
   "send": "NO",
   "asset_version": "harv20260818211844",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rkrepairservicesinc\\HARVEST.json",
-    "at": "2026-08-18T21:18:44.200Z",
+    "at": "2026-08-22T23:31:33.577Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rkrepairservicesinc\\DEMO-FACTS.json",
-    "wrote_facts_from_harvest": true,
-    "rebuilt": true,
+    "facts_path": "C:/VendlyVault/_tmp/autodemo/demos/rkrepairservicesinc/DEMO-FACTS.json",
     "harvest_merged": true
   },
   "address": {
@@ -496,7 +496,7 @@
     "source_is_google": true
   },
   "services_source": "their-photographs",
-  "photo_count": 29,
+  "photo_count": 31,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
   "_contact_map_mode": "hyperlink"

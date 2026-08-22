@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T19:32:59.998Z",
+ "at": "2026-08-22T23:36:25.315Z",
  "slug": "rodeoelectric",
  "wired": [
   {
@@ -92,17 +92,17 @@
   {
    "slot": "logo.png",
    "from": "human-approved-preserved",
-   "bytes": 170207,
+   "bytes": 93932,
    "source_url": "https://www.google.com/maps/place/Rodeo+Electric/@35.6857239,-79.7603026,9z/data=!3m1!4b1!4m6!3m5!1s0x8908a5115df2371f:0x2f466826b65cd33c!8m2!3d35.6857239!4d-79.7603026!16s%2Fg%2F11vxpntjyd?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
    "human_verdict_by": "claude-code-eyes-audit-20260818"
   }
  ],
  "skipped": [
-  "classification read: 28 verdicts",
+  "classification read: 30 verdicts",
   "staged 21 harvest photos",
   "refused_unlooked:google-1e71b3e2c183068d.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-239214e20da6c531.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-26e47880bbc7bcc2.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-26e47880bbc7bcc2.jpg:reject",
   "refused_unlooked:google-4f172e91dc66b10c.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-69791d34b2da6795.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-8a1e96496a7d1894.jpg:NEEDS_SUBJECT_LOOK",
@@ -118,8 +118,8 @@
   "hero_cand_refuse:google-88ca50c928b78a4f.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-151f7a6480b6a87d.jpg:road_no_landscape",
   "hero_cand_refuse:google-3fa31cab0e65e400.jpg:road_no_landscape",
-  "hero_cand_refuse:google-1a05e6a69f985928.jpg:too_small_bytes",
-  "hero_cand_refuse:google-524177e5e00d85ba.jpg:too_small_bytes",
+  "hero_cand_refuse:google-1a05e6a69f985928.jpg:road_no_landscape",
+  "hero_cand_refuse:google-524177e5e00d85ba.jpg:portrait_aspect_hero_refuse",
   "photo-service-1.jpg",
   "photo-service-2.jpg",
   "photo-service-3.jpg",
@@ -130,10 +130,13 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
+  "photo-contact-hero.jpg",
+  "photo-reviews-hero.jpg",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 14,
  "refused_by_class": 7,
+ "photo_candidates": 14,
  "altBySlot": {
   "photo-hero.jpg": "Vaulted wood-ceilinged sanctuary with stage lighting installed",
   "photo-card-about.jpg": "Custom iron chandelier installed under a wood ceiling",

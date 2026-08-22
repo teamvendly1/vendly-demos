@@ -1,13 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T21:18:51.696Z",
+  "at": "2026-08-22T23:31:41.111Z",
   "trade": "auto-repair",
   "slotHints": {
     "photo-service-1.jpg": "Diagnostics and engine work",
     "photo-service-2.jpg": "Tires and wheels",
     "photo-service-3.jpg": "Exhaust and underbody"
   },
-  "ok": false,
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -40,147 +40,156 @@
       "niche_folder": null
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "d0b407d9cd4fdc2b816fa9b76991651084047a3b888dd36cf8320baa62266753",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "fe1d55d17130ae60ac6927b8148402b34f1993a233e065dfd890ee8b05b7470d",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "5b25229e666548a1cf61ddef4742254c1bf90f42ad35818d0eabb957dec269cf",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-photos-cta.jpg",
+      "file": "photo-contact-hero.jpg",
       "sha256": "75d83abbefe5b357b0443b4b778d33fecf169918cce430ceb7521c32e001c716",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-quoteband.jpg",
-      "sha256": "57cc30ea7c5808c9541917fdbbb3da32a3961eaad761f187ce0cdaf1d97a1a9c",
+      "file": "photo-contact.jpg",
+      "sha256": "21cf686d6b0a0a331be087ffb24f07d0eb0e578ecfeb679af1c4a8f3fccb553a",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-reviewsband.jpg",
+      "file": "photo-ctaband.jpg",
+      "sha256": "f3c951ef31a334a0ee67a96df84a8327f1936dd2c46b43e48861f850c72b2d4d",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "4d3fbf4afdbcf47921fef7a2f4ac9569d74a4aa42e4a6e5d4ef2111ce0ec4821",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "10af034ddf1d86c53272fe96d97031c60f8c3bbcca3724328be19c68cf15e4b8",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "1ceea0d35a17bf5419b95afda638decd690934df34baf09377c131fc605c7fff",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-reviews-hero.jpg",
       "sha256": "4eaab8d5a30a353739e661e5b8876693838ff02221459e4e6d0ab31c3e30b5c2",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "d0b407d9cd4fdc2b816fa9b76991651084047a3b888dd36cf8320baa62266753",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-service-1.jpg",
-      "sha256": "66a300e6c35b7bc86ae7a35f0be2a9c7fc71b2cde7ae40afe54220a364bdc188",
+      "sha256": "862ba45e1ec07c560b0d36ed300e6cb3ec784e3ddea81f0db365bef896b782b8",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "8e3835aa878d41aca93075fb53812bfa9603cc573aa89f5ec95e3052b02aeb27",
+      "sha256": "3a9cd766eb7ffa894e4aabbb6a5d2dc6ca98e5a9c0a7d21d4ba02d3fd1f80074",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "66a300e6c35b7bc86ae7a35f0be2a9c7fc71b2cde7ae40afe54220a364bdc188",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "10af034ddf1d86c53272fe96d97031c60f8c3bbcca3724328be19c68cf15e4b8",
+      "sha256": "282957afe19d925ed4c170378aedeab78f5fb5185b7074953f203ea53a8809b0",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
   ],
   "filled": [
     {
-      "file": "photo-service-3.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "Exhaust and underbody",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "8585fbc9a00485c497344b24aaf594de7121fac3d7b3eba785dc340684925d79",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/checking-kart-tire-pressure-in-black-and-white-5640643/",
+        "subject_alt": "brake rotor closeup workshop",
+        "found_by_query": "brake rotor closeup workshop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-black-white-mechanic-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:57.974Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "94e100d0e7d3af264ae921d9c0efbfb085f1378a49bc26d9014915b80921f5bb",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/close-up-of-lsa-supercharged-car-engine-28840176/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-view-supercharged-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:36.786Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "066a4872879ac9290ffd3a962d7c400412d4df8b949ce7d6ee7ba7a7252260f8",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/man-in-black-jacket-sitting-on-chair-4488641/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-mechanic-diligently-working-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:46.388Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     }
   ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "Exhaust and underbody",
-      "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 14,
-  "slots": 18,
-  "stock_provenance_rows": 0,
+  "gaps": [],
+  "distinct": 20,
+  "slots": 20,
+  "stock_provenance_rows": 3,
   "family": "auto-repair",
   "refuse_borrow": false,
   "provenance_ok": true
