@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "cbaautomotivellc",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#4C241E",
+  "palette": {
+    "BRAND": "#4C241E",
+    "PRIMARY": "#45211B",
+    "PRIMARY_DK": "#331814",
+    "PRIMARY_MID": "#542821",
+    "ACCENT": "#6E342B",
+    "ACCENT_DK": "#4D241E",
+    "ACCENT_LT": "#9A493D",
+    "ON_DARK": "#E8C9C4",
+    "MENU_INK": "#21100D",
+    "TINT_1": "#F1DDDA",
+    "TINT_2": "#F5E7E5",
+    "TINT_3": "#EED7D3",
+    "TINT_4": "#EFDAD7",
+    "LINE_2": "#E2BCB6",
+    "MUTED_BRAND": "#C5786D",
+    "MIST": "#FAF3F2",
+    "LINE": "#EBD0CC",
+    "PRIMARY_RGB": "69,33,27",
+    "ACCENT_RGB": "110,52,43",
+    "SCRIM_RGB": "84,40,33",
+    "SCRIM2_RGB": "51,24,20",
+    "MENU_INK_RGB": "33,16,13",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.13,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.59,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.14,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.35,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
