@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "brucesautomuffler",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#21180F",
+  "palette": {
+    "BRAND": "#21180F",
+    "PRIMARY": "#43301E",
+    "PRIMARY_DK": "#312416",
+    "PRIMARY_MID": "#513B25",
+    "ACCENT": "#694C30",
+    "ACCENT_DK": "#4A3621",
+    "ACCENT_LT": "#936B43",
+    "ON_DARK": "#E6D6C7",
+    "MENU_INK": "#20170E",
+    "TINT_1": "#EFE6DC",
+    "TINT_2": "#F4EDE6",
+    "TINT_3": "#ECE0D5",
+    "TINT_4": "#EDE3D8",
+    "LINE_2": "#DFCCB9",
+    "MUTED_BRAND": "#BF9973",
+    "MIST": "#F9F6F3",
+    "LINE": "#E9DBCE",
+    "PRIMARY_RGB": "67,48,30",
+    "ACCENT_RGB": "105,76,48",
+    "SCRIM_RGB": "81,59,37",
+    "SCRIM2_RGB": "49,36,22",
+    "MENU_INK_RGB": "32,23,14",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.5,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 7.84,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.81,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.64,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
