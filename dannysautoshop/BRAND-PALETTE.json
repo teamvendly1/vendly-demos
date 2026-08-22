@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "dannysautoshop",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#151825",
+  "palette": {
+    "BRAND": "#151825",
+    "PRIMARY": "#23283E",
+    "PRIMARY_DK": "#1A1E2E",
+    "PRIMARY_MID": "#2A314B",
+    "ACCENT": "#373F62",
+    "ACCENT_DK": "#272C44",
+    "ACCENT_LT": "#4E5989",
+    "ON_DARK": "#CBCFE1",
+    "MENU_INK": "#11131D",
+    "TINT_1": "#DEE1ED",
+    "TINT_2": "#E8EAF2",
+    "TINT_3": "#D8DBE9",
+    "TINT_4": "#DBDEEB",
+    "LINE_2": "#BEC3DA",
+    "MUTED_BRAND": "#7D87B5",
+    "MIST": "#F4F5F9",
+    "LINE": "#D1D5E5",
+    "PRIMARY_RGB": "35,40,62",
+    "ACCENT_RGB": "55,63,98",
+    "SCRIM_RGB": "42,49,75",
+    "SCRIM2_RGB": "26,30,46",
+    "MENU_INK_RGB": "17,19,29",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.54,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 10.24,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.38,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.51,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
