@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "autotech",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#563029",
+  "palette": {
+    "BRAND": "#563029",
+    "PRIMARY": "#42251F",
+    "PRIMARY_DK": "#301B17",
+    "PRIMARY_MID": "#4F2C26",
+    "ACCENT": "#683A31",
+    "ACCENT_DK": "#492823",
+    "ACCENT_LT": "#915145",
+    "ON_DARK": "#E5CCC8",
+    "MENU_INK": "#1F110F",
+    "TINT_1": "#EFDFDC",
+    "TINT_2": "#F3E9E7",
+    "TINT_3": "#EBD9D6",
+    "TINT_4": "#EDDCD9",
+    "LINE_2": "#DEC0BA",
+    "MUTED_BRAND": "#BD8075",
+    "MIST": "#F9F4F3",
+    "LINE": "#E8D3CF",
+    "PRIMARY_RGB": "66,37,31",
+    "ACCENT_RGB": "104,58,49",
+    "SCRIM_RGB": "79,44,38",
+    "SCRIM2_RGB": "48,27,23",
+    "MENU_INK_RGB": "31,17,15",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.85,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.38,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.1,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.34,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
