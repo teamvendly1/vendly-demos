@@ -1,137 +1,138 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-20T22:19:13.849Z",
-  "slug": "lebronautorepairrahwayunionnj",
-  "wired": [
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "manual-09.jpg",
-      "bytes": 519302,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "manual-11.jpg",
-      "bytes": 501835,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "manual-07.jpg",
-      "bytes": 308855,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "manual-03.jpg",
-      "bytes": 480157,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "manual-05.jpg",
-      "bytes": 448254,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "manual-06.jpg",
-      "bytes": 413263,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "manual-10.jpg",
-      "bytes": 394948,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "manual-08.jpg",
-      "bytes": 392799,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "manual-01.jpg",
-      "bytes": 360444,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "manual-04.jpg",
-      "bytes": 343564,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "from": "manual-02.jpg",
-      "bytes": 153773,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "charter-placeholder-your-logo-here",
-      "bytes": 21159,
-      "placeholder": true,
-      "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
-    },
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-gallery-4.jpg",
-      "bytes": 153773,
-      "trade_score": 3.5,
-      "reason": "hero_contrast_retarget:photo-gallery-4.jpg"
-    }
-  ],
-  "skipped": [
-    "classification read: 11 verdicts",
-    "staged 11 harvest photos",
-    "hero_cand_refuse:manual-09.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-11.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-03.jpg:road_no_landscape",
-    "hero_cand_refuse:manual-05.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-06.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-10.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-08.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-01.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-04.jpg:road_no_landscape",
-    "hero_cand_refuse:manual-07.jpg:road_no_landscape",
-    "hero_cand_refuse:manual-02.jpg:no_tool_no_machine_facing_camera",
-    "photo-hero.jpg: no work-visible harvest candidate",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 11,
-  "photo_candidates": 11,
-  "altBySlot": {
-    "photo-card-about.jpg": "Red Jeep Cherokee 4x4 lifted overhead showing the exhaust and rear suspension during service.",
-    "photo-about.jpg": "Customer classic 1952 Chevy in blue photographed outside the shop after service.",
-    "photo-card-services.jpg": "New clutch pressure plate and flywheel installed and torqued before the transmission goes back in.",
-    "photo-card-reviews.jpg": "White Corvette Z06 raised on the two-post lift while a technician inspects the underside with a work light.",
-    "photo-card-photos.jpg": "Rear drum brake, coil spring and new shock absorber up close during a suspension job.",
-    "photo-gallery-1.jpg": "Shop floor with a BMW and a black Porsche 911 up on lifts while technicians work a brake job between them.",
-    "photo-gallery-2.jpg": "White Maserati Ghibli in for an oil service with Mobil 1 Formula M on the engine cover.",
-    "photo-gallery-3.jpg": "Looking under a raised black Mustang toward a white GMC SUV on the neighboring lift in the service bays.",
-    "photo-ctaband.jpg": "Technician in a Lebron Auto Repair sweatshirt working over the open front end of a red convertible in the shop.",
-    "photo-quoteband.jpg": "LeBron Auto Repair storefront on St. George Avenue with a black Fox-body Mustang parked outside the open bays.",
-    "photo-gallery-4.jpg": "Classic 1952 Chevy Deluxe in blue up on the lift with its wheels off during brake and suspension work.",
-    "photo-hero.jpg": "Classic 1952 Chevy Deluxe in blue up on the lift with its wheels off during brake and suspension work."
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-20T22:19:13.849Z",
+ "slug": "lebronautorepairrahwayunionnj",
+ "wired": [
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "manual-09.jpg",
+   "bytes": 519302,
+   "letterbox_stripped": null
   },
-  "hero_retarget": {
-    "at": "2026-08-20T22:19:16.378Z",
-    "from_slot": "photo-gallery-4.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-about.jpg",
+   "from": "manual-11.jpg",
+   "bytes": 501835,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "manual-07.jpg",
+   "bytes": 308855,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "manual-03.jpg",
+   "bytes": 480157,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "manual-05.jpg",
+   "bytes": 448254,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "manual-06.jpg",
+   "bytes": 413263,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "manual-10.jpg",
+   "bytes": 394948,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "manual-08.jpg",
+   "bytes": 392799,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "manual-01.jpg",
+   "bytes": 360444,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "manual-04.jpg",
+   "bytes": 343564,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "manual-02.jpg",
+   "bytes": 153773,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-hero.jpg",
+   "from": "photo-gallery-4.jpg",
+   "bytes": 153773,
+   "trade_score": 3.5,
+   "reason": "hero_contrast_retarget:photo-gallery-4.jpg"
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)",
+   "patched_by": "logo-only-patch-2026-08-22 (blank-header-logo remediation, keyout-skip fix)"
   }
+ ],
+ "skipped": [
+  "classification read: 11 verdicts",
+  "staged 11 harvest photos",
+  "hero_cand_refuse:manual-09.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-11.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-03.jpg:road_no_landscape",
+  "hero_cand_refuse:manual-05.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-06.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-10.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-08.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-01.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-04.jpg:road_no_landscape",
+  "hero_cand_refuse:manual-07.jpg:road_no_landscape",
+  "hero_cand_refuse:manual-02.jpg:no_tool_no_machine_facing_camera",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 11,
+ "photo_candidates": 11,
+ "altBySlot": {
+  "photo-card-about.jpg": "Red Jeep Cherokee 4x4 lifted overhead showing the exhaust and rear suspension during service.",
+  "photo-about.jpg": "Customer classic 1952 Chevy in blue photographed outside the shop after service.",
+  "photo-card-services.jpg": "New clutch pressure plate and flywheel installed and torqued before the transmission goes back in.",
+  "photo-card-reviews.jpg": "White Corvette Z06 raised on the two-post lift while a technician inspects the underside with a work light.",
+  "photo-card-photos.jpg": "Rear drum brake, coil spring and new shock absorber up close during a suspension job.",
+  "photo-gallery-1.jpg": "Shop floor with a BMW and a black Porsche 911 up on lifts while technicians work a brake job between them.",
+  "photo-gallery-2.jpg": "White Maserati Ghibli in for an oil service with Mobil 1 Formula M on the engine cover.",
+  "photo-gallery-3.jpg": "Looking under a raised black Mustang toward a white GMC SUV on the neighboring lift in the service bays.",
+  "photo-ctaband.jpg": "Technician in a Lebron Auto Repair sweatshirt working over the open front end of a red convertible in the shop.",
+  "photo-quoteband.jpg": "LeBron Auto Repair storefront on St. George Avenue with a black Fox-body Mustang parked outside the open bays.",
+  "photo-gallery-4.jpg": "Classic 1952 Chevy Deluxe in blue up on the lift with its wheels off during brake and suspension work.",
+  "photo-hero.jpg": "Classic 1952 Chevy Deluxe in blue up on the lift with its wheels off during brake and suspension work."
+ },
+ "hero_retarget": {
+  "at": "2026-08-20T22:19:16.378Z",
+  "from_slot": "photo-gallery-4.jpg",
+  "reason": "hero_contrast_retarget"
+ }
 }
