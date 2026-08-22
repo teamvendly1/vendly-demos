@@ -1,118 +1,119 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-21T03:51:17.521Z",
-  "slug": "classaautobodyhackensackbergennj",
-  "wired": [
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "manual-01.jpg",
-      "bytes": 152673,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "manual-06.jpg",
-      "bytes": 141939,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "manual-05.jpg",
-      "bytes": 83826,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "manual-07.jpg",
-      "bytes": 140161,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "manual-04.jpg",
-      "bytes": 138126,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "manual-02.jpg",
-      "bytes": 137006,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "manual-08.jpg",
-      "bytes": 126995,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "manual-03.jpg",
-      "bytes": 83728,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "charter-placeholder-your-logo-here",
-      "bytes": 21159,
-      "placeholder": true,
-      "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
-    },
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-gallery-3.jpg",
-      "bytes": 83728,
-      "trade_score": 3.5,
-      "reason": "hero_contrast_retarget:photo-gallery-3.jpg"
-    }
-  ],
-  "skipped": [
-    "classification read: 8 verdicts",
-    "staged 8 harvest photos",
-    "hero_cand_refuse:manual-01.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-06.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-07.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-04.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-02.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-08.jpg:road_no_landscape",
-    "hero_cand_refuse:manual-05.jpg:no_tool_no_machine_facing_camera",
-    "hero_cand_refuse:manual-03.jpg:no_tool_no_machine_facing_camera",
-    "photo-hero.jpg: no work-visible harvest candidate",
-    "photo-ctaband.jpg",
-    "photo-quoteband.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "photo-ctaband.jpg",
-    "photo-quoteband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 8,
-  "photo_candidates": 8,
-  "altBySlot": {
-    "photo-card-about.jpg": "Shop bay at Class A Autobody with a white sedan raised on the lift next to a service van, another vehicle mid-repair on the far lift",
-    "photo-about.jpg": "Row of customer vehicles parked inside the shop next to the paint booth doors, including a Land Rover and a Jaguar sedan",
-    "photo-card-services.jpg": "Shop bay with a work van and sedan raised on a lift under fluorescent lighting, tool carts and a rotary lift in the background",
-    "photo-card-reviews.jpg": "Another shop bay angle showing a car mid-repair with body panels removed, parked alongside two other customer vehicles",
-    "photo-card-photos.jpg": "Front desk and reception counter at Class A Autobody, wall clock and service-hours sign, framed certifications by the window",
-    "photo-gallery-1.jpg": "Class A Autobody's garage entrance from the street, blue signage with address and phone, a customer SUV parked inside the open bay",
-    "photo-gallery-2.jpg": "SUV raised on a lift in the shop bay next to a service van, tool cart and alignment equipment nearby, garage door open to the street",
-    "photo-gallery-3.jpg": "Waiting room at Class A Autobody with their wall-mounted logo sign, certifications and awards framed on the wall, leather guest chairs",
-    "photo-hero.jpg": "Waiting room at Class A Autobody with their wall-mounted logo sign, certifications and awards framed on the wall, leather guest chairs"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-21T03:51:17.521Z",
+ "slug": "classaautobodyhackensackbergennj",
+ "wired": [
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "manual-01.jpg",
+   "bytes": 152673,
+   "letterbox_stripped": null
   },
-  "hero_retarget": {
-    "at": "2026-08-21T03:51:19.912Z",
-    "from_slot": "photo-gallery-3.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-about.jpg",
+   "from": "manual-06.jpg",
+   "bytes": 141939,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "manual-05.jpg",
+   "bytes": 83826,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "manual-07.jpg",
+   "bytes": 140161,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "manual-04.jpg",
+   "bytes": 138126,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "manual-02.jpg",
+   "bytes": 137006,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "manual-08.jpg",
+   "bytes": 126995,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "manual-03.jpg",
+   "bytes": 83728,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-hero.jpg",
+   "from": "photo-gallery-3.jpg",
+   "bytes": 83728,
+   "trade_score": 3.5,
+   "reason": "hero_contrast_retarget:photo-gallery-3.jpg"
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)",
+   "patched_by": "logo-only-patch-2026-08-22 (blank-header-logo remediation, keyout-skip fix)"
   }
+ ],
+ "skipped": [
+  "classification read: 8 verdicts",
+  "staged 8 harvest photos",
+  "hero_cand_refuse:manual-01.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-06.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-07.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-04.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-02.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-08.jpg:road_no_landscape",
+  "hero_cand_refuse:manual-05.jpg:no_tool_no_machine_facing_camera",
+  "hero_cand_refuse:manual-03.jpg:no_tool_no_machine_facing_camera",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "photo_candidates": 8,
+ "altBySlot": {
+  "photo-card-about.jpg": "Shop bay at Class A Autobody with a white sedan raised on the lift next to a service van, another vehicle mid-repair on the far lift",
+  "photo-about.jpg": "Row of customer vehicles parked inside the shop next to the paint booth doors, including a Land Rover and a Jaguar sedan",
+  "photo-card-services.jpg": "Shop bay with a work van and sedan raised on a lift under fluorescent lighting, tool carts and a rotary lift in the background",
+  "photo-card-reviews.jpg": "Another shop bay angle showing a car mid-repair with body panels removed, parked alongside two other customer vehicles",
+  "photo-card-photos.jpg": "Front desk and reception counter at Class A Autobody, wall clock and service-hours sign, framed certifications by the window",
+  "photo-gallery-1.jpg": "Class A Autobody's garage entrance from the street, blue signage with address and phone, a customer SUV parked inside the open bay",
+  "photo-gallery-2.jpg": "SUV raised on a lift in the shop bay next to a service van, tool cart and alignment equipment nearby, garage door open to the street",
+  "photo-gallery-3.jpg": "Waiting room at Class A Autobody with their wall-mounted logo sign, certifications and awards framed on the wall, leather guest chairs",
+  "photo-hero.jpg": "Waiting room at Class A Autobody with their wall-mounted logo sign, certifications and awards framed on the wall, leather guest chairs"
+ },
+ "hero_retarget": {
+  "at": "2026-08-21T03:51:19.912Z",
+  "from_slot": "photo-gallery-3.jpg",
+  "reason": "hero_contrast_retarget"
+ }
 }
