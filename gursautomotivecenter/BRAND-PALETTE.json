@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "gursautomotivecenter",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#232513",
+  "palette": {
+    "BRAND": "#232513",
+    "PRIMARY": "#3D4021",
+    "PRIMARY_DK": "#2D2F18",
+    "PRIMARY_MID": "#494E28",
+    "ACCENT": "#606534",
+    "ACCENT_DK": "#434724",
+    "ACCENT_LT": "#868E49",
+    "ON_DARK": "#E0E3C9",
+    "MENU_INK": "#1D1E10",
+    "TINT_1": "#ECEEDD",
+    "TINT_2": "#F2F3E7",
+    "TINT_3": "#E8EAD7",
+    "TINT_4": "#EAECDA",
+    "LINE_2": "#D9DCBC",
+    "MUTED_BRAND": "#B3BA78",
+    "MIST": "#F8F9F3",
+    "LINE": "#E4E7D0",
+    "PRIMARY_RGB": "61,64,33",
+    "ACCENT_RGB": "96,101,52",
+    "SCRIM_RGB": "73,78,40",
+    "SCRIM2_RGB": "45,47,24",
+    "MENU_INK_RGB": "29,30,16",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.75,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 6.16,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.19,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.86,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
