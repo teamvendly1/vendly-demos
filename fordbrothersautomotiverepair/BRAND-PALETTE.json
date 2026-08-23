@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "fordbrothersautomotiverepair",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#210E0A",
+  "palette": {
+    "BRAND": "#210E0A",
+    "PRIMARY": "#4A2017",
+    "PRIMARY_DK": "#371711",
+    "PRIMARY_MID": "#5A261B",
+    "ACCENT": "#753224",
+    "ACCENT_DK": "#522319",
+    "ACCENT_LT": "#A44632",
+    "ON_DARK": "#ECC8C0",
+    "MENU_INK": "#230F0B",
+    "TINT_1": "#F3DDD8",
+    "TINT_2": "#F7E7E4",
+    "TINT_3": "#F1D6D0",
+    "TINT_4": "#F2D9D4",
+    "LINE_2": "#E7BAB1",
+    "MUTED_BRAND": "#D07562",
+    "MIST": "#FBF3F1",
+    "LINE": "#EECFC8",
+    "PRIMARY_RGB": "74,32,23",
+    "ACCENT_RGB": "117,50,36",
+    "SCRIM_RGB": "90,38,27",
+    "SCRIM2_RGB": "55,23,17",
+    "MENU_INK_RGB": "35,15,11",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.91,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.38,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.35,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
