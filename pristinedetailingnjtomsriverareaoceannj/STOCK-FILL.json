@@ -1,63 +1,55 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-20T19:05:30.847Z",
+  "at": "2026-08-23T18:11:51.283Z",
   "trade": "car-wash",
-  "slotHints": {
-    "photo-service-1.jpg": "Auto detailing"
-  },
+  "slotHints": {},
   "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "3fe352ad86df499b3778b3baec7a3b7f5e7b6643de45d031de4ec2e437db2181",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "e01700ebccf87794f8d0108095963e613de756ba1be38cd5be6a6f3f87511149",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "6508de8a9f7d6868475affe0d69b88529ecda596365b67a2ed429312c57e7fc3",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "412d39c6c4bf5e0bb6d8e3d086fcc1bb611e6fde485edf5561db83f157d4bb73",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-services.jpg",
       "sha256": "fdd41d96fe91756d62d3e1388eb0fc2311f9b3bc3ddd2ad9fcc2e524fa2bf854",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "da4adf0683a72b40eed61edc392224c8f4a49ea9e82502c88fe861f677755805",
+      "file": "photo-card-about.jpg",
+      "sha256": "3fe352ad86df499b3778b3baec7a3b7f5e7b6643de45d031de4ec2e437db2181",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-hero.jpg",
+      "file": "photo-card-photos.jpg",
       "sha256": "31a885802c52cf2d9f42b49f8392d7cbbc45693010f27c8e1ea42c5ada60815b",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-quoteband.jpg",
+      "file": "photo-card-reviews.jpg",
+      "sha256": "6508de8a9f7d6868475affe0d69b88529ecda596365b67a2ed429312c57e7fc3",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "412d39c6c4bf5e0bb6d8e3d086fcc1bb611e6fde485edf5561db83f157d4bb73",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
       "sha256": "08d9bb158e4a31a78710bb336df3b949aef39716ff0afdc720703ab1e2cdc8fe",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-service-1.jpg",
-      "sha256": "4a8474977e0199847550f43abe8f593fd30bdcfbf4bbbdbfc2f35448cfc11e63",
+      "file": "photo-hero.jpg",
+      "sha256": "e01700ebccf87794f8d0108095963e613de756ba1be38cd5be6a6f3f87511149",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "663a3d52b14393fc99664f9514daa4dcae0c598a260e40990bbd0f1a2a65ba3a",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -65,54 +57,6 @@
   "filled": [
     {
       "file": "photo-contact.jpg",
-      "sha256": "ed47fc6ae22f2d6b1b3a83b02ee0832b4c93dc228458b2316eb104b43f16c3c3",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/a-black-car-being-washed-4870740/",
-        "subject_alt": "self service car wash bay wand",
-        "found_by_query": "self service car wash bay wand",
-        "family": "car-wash",
-        "library_file": "car-wash-side-view-black-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:29:03.717Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "ad02fd7a3f459b404073d4b3a54d7d304b58f7f2cf095d7027d4e1d6b1e26286",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/minimalist-streetlight-and-building-facade-30400841/",
-        "subject_alt": "self service car wash bay wand",
-        "found_by_query": "self service car wash bay wand",
-        "family": "car-wash",
-        "library_file": "car-wash-minimalist-streetlight-front-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:29:22.838Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
-    },
-    {
-      "file": "photo-service-2.jpg",
       "sha256": "22eae4351103d5a4e9865d4375b5711b6dd3d19b7f9b990cd477268742ac6a34",
       "source": "stock-library",
       "provenance": {
@@ -132,134 +76,206 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 53
+      }
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "b7b249519ca63f9258a4250c7f043ebef5f16d5c09582e4aef72881fbdba5dda",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/caution-sign-for-pressure-washer-safety-at-night-34194571/",
+        "subject_alt": "self service car wash bay wand",
+        "found_by_query": "self service car wash bay wand",
+        "family": "car-wash",
+        "library_file": "car-wash-yellow-caution-sign-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:29:12.709Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 53
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "7e5c070184ded0c0601f0bff0d06cec6f16192e97c1718adc967ad7013058c64",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/traffic-on-highway-leading-to-bayrakli-tunnel-izmir-38278634/",
+        "subject_alt": "automatic car wash tunnel brushes",
+        "found_by_query": "automatic car wash tunnel brushes",
+        "family": "car-wash",
+        "library_file": "car-wash-view-vehicles-highway-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T16:02:08.921Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 53
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "1aa591e542289a613017746971dd7619da0c92bcdf4c4a747edcb52f25c15a03",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tunnel-scene-with-vehicles-in-izmir-turkiye-38278623/",
+        "subject_alt": "automatic car wash tunnel brushes",
+        "found_by_query": "automatic car wash tunnel brushes",
+        "family": "car-wash",
+        "library_file": "car-wash-vehicles-driving-through-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T16:02:09.243Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 53
       }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "ffd2f5ae4bda38e692db592226052101425b6c97651589d60e14cdff4250a124",
+      "sha256": "95a721c9fbad5bfc64bae37cd10abd67148b830d2a5b3e97a3bf7c5d641ee8d5",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/neon-lit-garage-at-night-with-reflections-30831682/",
-        "subject_alt": "self service car wash bay wand",
-        "found_by_query": "self service car wash bay wand",
+        "source_url": "https://www.pexels.com/photo/entrance-to-parking-lot-17458002/",
+        "subject_alt": "automatic car wash tunnel brushes",
+        "found_by_query": "automatic car wash tunnel brushes",
         "family": "car-wash",
-        "library_file": "car-wash-neon-lit-auto-garage-01.jpg",
+        "library_file": "car-wash-view-underground-parking-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:29:12.006Z",
+        "downloaded_at": "2026-08-13T16:02:10.721Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 53
       }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "87e3b29f80f0ec9b06918abf267598f22836e4b06d5bd91b8d19599431fddbc0",
+      "sha256": "3063cbc82d5b1e271768d5f0ee82e1601229ef4094005122f4b616ae7259d58a",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/curved-urban-tunnel-with-sunlight-entrance-31189966/",
+        "source_url": "https://www.pexels.com/photo/man-brushing-pastry-with-egg-wash-10307513/",
         "subject_alt": "automatic car wash tunnel brushes",
         "found_by_query": "automatic car wash tunnel brushes",
         "family": "car-wash",
-        "library_file": "car-wash-modern-curved-tunnel-01.jpg",
+        "library_file": "car-wash-man-brushing-dough-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T16:02:13.587Z",
+        "downloaded_at": "2026-08-13T16:02:11.860Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 53
       }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "9a7869f334484256bcfff7104984101b718b8b2f9071ad6017d5f5cb812d1730",
+      "sha256": "b3a1e415ef9509a6822960d1d9268f9142719f8757a84bc7a6d6bc78e5274ff8",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/a-person-washing-a-car-grill-4870699/",
+        "source_url": "https://www.pexels.com/photo/red-building-facade-with-street-lamp-against-blue-sky-29407207/",
         "subject_alt": "self service car wash bay wand",
         "found_by_query": "self service car wash bay wand",
         "family": "car-wash",
-        "library_file": "car-wash-detailed-view-hand-01.jpg",
+        "library_file": "car-wash-vivid-red-building-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:29:07.582Z",
+        "downloaded_at": "2026-08-13T15:29:16.355Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 53
       }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "9694ed4d2c816bf42ff903ede383e713c8633035d5418c6787b4f28278c1eb54",
+      "sha256": "a23d1c9c6de64d6a4bc8da8b43d4475a74f08cd61cf504107248ecfb438e4a74",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/dynamic-motion-blur-of-car-in-dark-tunnel-37383934/",
-        "subject_alt": "automatic car wash tunnel brushes",
-        "found_by_query": "automatic car wash tunnel brushes",
+        "source_url": "https://www.pexels.com/photo/industrial-worker-using-high-pressure-washer-at-night-34194579/",
+        "subject_alt": "self service car wash bay wand",
+        "found_by_query": "self service car wash bay wand",
         "family": "car-wash",
-        "library_file": "car-wash-sleek-car-speeds-01.jpg",
+        "library_file": "car-wash-man-protective-gear-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T16:02:07.726Z",
+        "downloaded_at": "2026-08-13T15:29:19.228Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 53
       }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "717ad6c33885fe30242b34cf2c63dbe4fbcc3e165cd93157084284481f1c9f79",
+      "sha256": "51b5190b89aee4494ab59aba3c6ec876ce6606445d4043a7248636d9a2b08a81",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/lomo-gas-station-in-bad-hersfeld-germany-30894744/",
+        "source_url": "https://www.pexels.com/photo/white-wooden-wall-under-blue-sky-14488407/",
         "subject_alt": "self service car wash bay wand",
         "found_by_query": "self service car wash bay wand",
         "family": "car-wash",
-        "library_file": "car-wash-lomo-gas-station-01.jpg",
+        "library_file": "car-wash-minimalist-exterior-wall-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:29:23.291Z",
+        "downloaded_at": "2026-08-13T15:29:19.620Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 53
       }
     }
   ],
   "gaps": [],
   "distinct": 17,
   "slots": 17,
-  "stock_provenance_rows": 8,
+  "stock_provenance_rows": 9,
   "family": "car-wash",
   "refuse_borrow": false,
   "provenance_ok": true
