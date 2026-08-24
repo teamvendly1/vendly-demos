@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T05:40:06.366Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-24T18:32:56.687Z",
   "slug": "blockerboyscustoms",
-  "removed_count": 45,
+  "removed_count": 44,
   "removed_sample": [
     "google-01e9696c6c2a3336.jpg",
     "google-0baaf6f3da0b4024.jpg",
@@ -17,5 +17,10 @@
     "google-479d60f6b268f37a.jpg",
     "google-4aa8bbdf1f7b63bf.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\blockerboyscustoms",
+  "published_ref_count": 31,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }
