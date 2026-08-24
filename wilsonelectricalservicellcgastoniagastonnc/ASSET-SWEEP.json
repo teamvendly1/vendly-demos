@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-18T06:47:23.143Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-24T18:16:00.481Z",
   "slug": "wilsonelectricalservicellcgastoniagastonnc",
-  "removed_count": 35,
+  "removed_count": 33,
   "removed_sample": [
     "google-19ed532ba50a5a70.jpg",
     "google-291f9c4593047391.jpg",
@@ -17,5 +17,10 @@
     "google-e084c2dc05c39006.jpg",
     "google-e758025dca4e8a8c.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\wilsonelectricalservicellcgastoniagastonnc",
+  "published_ref_count": 20,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }
