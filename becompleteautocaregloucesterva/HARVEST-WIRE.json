@@ -1,0 +1,102 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T17:45:15.580Z",
+ "slug": "becompleteautocaregloucesterva",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "fb-02.jpg",
+   "bytes": 147764,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "fb-03.jpg",
+   "bytes": 10347,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "fb-10.jpg",
+   "bytes": 9903,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "fb-08.jpg",
+   "bytes": 9741,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-06.jpg",
+   "bytes": 8786,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "fb-07.jpg",
+   "bytes": 7672,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "facebook-profile-mark:eyes-verified",
+   "bytes": 854716,
+   "source_url": "https://www.facebook.com/Bryanscompleteautocare/"
+  }
+ ],
+ "skipped": [
+  "classification read: 9 verdicts",
+  "staged 10 harvest photos from fb-photos",
+  "refused_by_class:fb-04.jpg:reject",
+  "refused_unlooked:fb-05.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:fb-02.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-08.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-06.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (fb-02.jpg)",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 6,
+ "refused_by_class": 2,
+ "photo_candidates": 6,
+ "altBySlot": {
+  "photo-hero.jpg": "B&E Complete Auto Care - technician at work on site (photo 2)",
+  "photo-card-about.jpg": "B&E Complete Auto Care - technician at work on site (photo 3)",
+  "photo-about.jpg": "B&E Complete Auto Care - technician at work on site (photo 8)",
+  "photo-card-services.jpg": "B&E Complete Auto Care - technician at work on site (photo 6)",
+  "photo-card-reviews.jpg": "B&E Complete Auto Care - technician at work on site (photo 4)",
+  "photo-card-photos.jpg": "B&E Complete Auto Care - technician at work on site (photo 5)"
+ },
+ "dedupe_fixed": 5
+}

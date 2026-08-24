@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-23T02:30:11.914Z",
+  "at": "2026-08-24T17:49:39.932Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "towing",
@@ -53,6 +53,36 @@
       ],
       "service": "trade work",
       "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mooresautoandtowingincpetersburgva\\fb-photos\\fb-10.jpg"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "2e9b9bca4ced93fe9acf6d5045a7ba5a97f204452b93e0c6d9a782de8d103607",
+      "reasons": [
+        "tiny_gallery_thumb"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mooresautoandtowingincpetersburgva\\fb-photos\\fb-07.jpg"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4d641ee7ca17e9f0a87d9eecc24609520e6c5ba3945a8adbb9214b982a71906d",
+      "reasons": [
+        "tiny_gallery_thumb"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mooresautoandtowingincpetersburgva\\fb-photos\\fb-09.jpg"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "58d3e7ca1c70e0a303cf8c161c5445900676b99e7602926abef25f0c52c7779d",
+      "reasons": [
+        "tiny_gallery_thumb"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mooresautoandtowingincpetersburgva\\fb-photos\\fb-05.jpg"
     }
   ],
   "kept": [
@@ -63,5 +93,43 @@
     }
   ],
   "failed": [],
+  "gallery_gaps": [
+    {
+      "file": "photo-gallery-4.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "reasons": [
+        "stub"
+      ]
+    }
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
