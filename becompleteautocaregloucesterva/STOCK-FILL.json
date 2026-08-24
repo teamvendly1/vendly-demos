@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-24T17:45:17.794Z",
+  "at": "2026-08-24T18:05:37.027Z",
   "trade": "auto-repair",
   "slotHints": {},
   "ok": false,
@@ -18,20 +18,14 @@
       "niche_folder": null
     },
     {
-      "file": "photo-card-photos.jpg",
+      "file": "photo-card-reviews.jpg",
       "sha256": "0a2b7dffcd5178b8af8865d8fda1a9926131fa83476d1e012be8fe86c1f4feba",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "67fd50b248a28060d66e30a593a771496e29ec5434e2faee89bf9337075c5f97",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-card-services.jpg",
-      "sha256": "4c544eba4301483795359283721e1cc4e11a229bad448c7ce2f3285910a39801",
+      "sha256": "67fd50b248a28060d66e30a593a771496e29ec5434e2faee89bf9337075c5f97",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -43,6 +37,15 @@
     }
   ],
   "filled": [
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
     {
       "file": "photo-contact.jpg",
       "sha256": null,
@@ -135,6 +138,17 @@
     }
   ],
   "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-card-photos.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
     {
       "ok": false,
       "gap": true,
@@ -246,7 +260,7 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 6,
+  "distinct": 5,
   "slots": 16,
   "stock_provenance_rows": 0,
   "family": "auto-repair",
