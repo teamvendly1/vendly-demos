@@ -49,18 +49,33 @@
   "footer_blurb": "EL Electric Contracting LLC serving New Bern.",
   "about_h2": "About EL Electric Contracting LLC",
   "about_p1": "We handle electrical for homes and businesses around New Bern.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers panels and service upgrades, generators and backup power, conduit, meters and exterior work. We work out of New Bern and the towns around it.",
   "area_h2": "We work in and around New Bern",
   "area_lede": "",
   "svc_hero_h1": "The electrical work we take on",
   "svc_hero_lede": "",
-  "svc_list_h2": "What we do",
+  "svc_list_h2": "What we handle: electrical",
   "services": [
     {
-      "title": "Electrical",
-      "body": "",
-      "slot": "",
-      "alt": ""
+      "title": "Panels and service upgrades",
+      "body": "Old fuses and undersized panels come out and a panel built for the load the space actually draws goes in.",
+      "slot": "photo-service-1.jpg",
+      "alt": "Crane lifting a large industrial generator over a fenced equipment pad",
+      "evidence": "Industrial breaker panel wired and labeled inside an electrical enclosure"
+    },
+    {
+      "title": "Generators and backup power",
+      "body": "The transfer switch and inlet are set up so the generator picks up the exact circuits it is sized for.",
+      "slot": "photo-service-2.jpg",
+      "alt": "Crane setting a large Generac industrial generator into place behind a chain-link fence",
+      "evidence": "Crane setting a large Generac industrial generator into place behind a chain-link fence"
+    },
+    {
+      "title": "Conduit, meters and exterior work",
+      "body": "Conduit, meters and disconnects are run and fastened outside the same way they are inside, sealed against the weather.",
+      "slot": "photo-service-3.jpg",
+      "alt": "EL Electric Contracting LLC - technician at work on site (photo 11)",
+      "evidence": "Crew trenching underground conduit beside a historic brick building with a mini excavator"
     }
   ],
   "photos_h2": "Recent work",
@@ -68,12 +83,42 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "EL Electric Contracting truck towing a trailer loaded with boxed Generac generators",
+      "alt": "EL Electric Contracting LLC - technician at work on site (photo 3)",
       "subject_class": "team"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "EL Electric Contracting yard sign propped against the company truck",
+      "alt": "EL Electric Contracting LLC - technician at work on site (photo 10)",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Conduit stubbed up from a freshly dug trench beside a building foundation",
+      "subject_class": "vehicles"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "EL Electric Contracting LLC - technician at work on site (photo 12)",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "alt": "EL Electric Contracting LLC - technician at work on site (photo 9)",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "alt": "EL Electric Contracting LLC - technician at work on site (photo 1)",
+      "subject_class": "finished_result"
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "alt": "Industrial breaker panel wired and labeled inside an electrical enclosure",
+      "subject_class": "vehicles"
+    },
+    {
+      "slot": "photo-gallery-8.jpg",
+      "alt": "EL Electric Contracting truck towing a trailer loaded with boxed Generac generators",
       "subject_class": "trade_work"
     }
   ],
@@ -252,11 +297,11 @@
   "alts": {
     "hero": "Crew trenching underground conduit beside a historic brick building with a mini excavator",
     "card_about": "EL Electric Contracting crew in orange shirts running rough-in wiring in a new-construction house",
-    "card_services": "Crane lifting a large industrial generator over a fenced equipment pad",
-    "card_reviews": "Crane setting a large Generac industrial generator into place behind a chain-link fence",
-    "card_photos": "Industrial breaker panel wired and labeled inside an electrical enclosure",
-    "ctaband": "Electrical job photo",
-    "about": "Conduit stubbed up from a freshly dug trench beside a building foundation",
+    "card_services": "EL Electric Contracting LLC - technician at work on site (photo 7)",
+    "card_reviews": "EL Electric Contracting LLC - technician at work on site (photo 8)",
+    "card_photos": "EL Electric Contracting LLC - technician at work on site (photo 4)",
+    "ctaband": "EL Electric Contracting LLC - technician at work on site (photo 5)",
+    "about": "EL Electric Contracting LLC - technician at work on site (photo 6)",
     "contact": "EL Electric Contracting LLC",
     "services_hero": "Electrical services"
   },
@@ -265,11 +310,9 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\elelectriccontractingllc\\HARVEST.json",
-    "at": "2026-08-18T07:08:46.274Z",
+    "at": "2026-08-24T18:59:36.644Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\elelectriccontractingllc\\DEMO-FACTS.json",
-    "wrote_facts_from_harvest": true,
-    "rebuilt": true,
+    "facts_path": "_tmp\\autodemo\\demos\\elelectriccontractingllc\\DEMO-FACTS.json",
     "harvest_merged": true
   },
   "address": {
@@ -294,7 +337,8 @@
     "url": "",
     "source_is_google": true
   },
-  "photo_count": 8,
+  "services_source": "their-photographs",
+  "photo_count": 20,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
   "_contact_map_mode": "hyperlink"

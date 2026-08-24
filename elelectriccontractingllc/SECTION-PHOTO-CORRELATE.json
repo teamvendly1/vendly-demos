@@ -1,14 +1,24 @@
 {
-  "at": "2026-08-18T07:08:50.029Z",
+  "at": "2026-08-24T18:59:52.277Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "electrical",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-contact.jpg",
+      "source": "stock-library",
+      "sha256": "c3bd2cadc9517a89f1b2e583468a69a46d92959be7458ae7c72300af6e80c633",
+      "reasons": [
+        "cross_demo_dupe:elelectriccontractingllcnewberncravennc/photo-ctaband.jpg"
+      ],
+      "service": "trade work"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "f043409e555aa8dae2b452ac60eb1280914bc2332062fc036fea23bfaed41d6e",
-      "bytes": 462199
+      "sha256": "b6b6eb7293f5741fa873ffb63a63f7ec6052d452a13e685f151587cbff7d46fb",
+      "bytes": 740066
     },
     {
       "file": "photo-card-about.jpg",
@@ -17,25 +27,121 @@
     },
     {
       "file": "photo-card-photos.jpg",
+      "sha256": "5f448cb3d5c6d3d606b0883fd6f2cc3ceaf3f77813a06874185b6dba794c9062",
+      "bytes": 515546
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "bdd1fe55ae59af9f95f169a8bd022915cd433a584f6732a895e1c7f1ca6c6f99",
+      "bytes": 584222
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "df89ade35e8e6cc91c7bbf14c6b7b346abdfb9431077a6fa823135e4b9602747",
+      "bytes": 654972
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "cfe3673824c9a1ab52407c640df222cabea19cc9b4a8b58cafaa731a831f4d73",
+      "bytes": 418063
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "510c077de6b6d4dbc5f4dd1201cf9effedb1e53fedf098942ce10d954113ccab",
+      "bytes": 510532
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "a610918d8b8790a1b1d216f9d5e1598d97e6bbcfbbb11643ae7e7008e9fd3a1d",
+      "bytes": 480029
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "f043409e555aa8dae2b452ac60eb1280914bc2332062fc036fea23bfaed41d6e",
+      "bytes": 462199
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "f07faeeb26bc3291ddab2c4cbc7ec4a34dbe39cbf4810e38b9e9d21b06f97db5",
+      "bytes": 216114
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "4191a4d360fe896ae6cd3acffb3f7eb73211b5288d42209af7f79ace7c9df1d8",
+      "bytes": 200576
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "ef9c82d76c6ccd076914d3221492173d2d68a1746669356568a5ddb9e08399f0",
+      "bytes": 171770
+    },
+    {
+      "file": "photo-gallery-7.jpg",
       "sha256": "8f27f05511c92004445a1467c72d81b743ed67ba5b4c9eca6211a630b0b6ddfb",
       "bytes": 156385
     },
     {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "dd2547e8437359dac3874fe5001001f358c214959fa3294b0ba7da22bcee1906",
-      "bytes": 141895
+      "file": "photo-gallery-8.jpg",
+      "sha256": "1b69273f4c421bf7192ae73b3566fcb8451efb2ab267f86e35f2c896f5c82760",
+      "bytes": 632139
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "98ba33f2aa1392c393e7d5e4d564a67258476f6f064e45daf44e3aaee882564b",
-      "bytes": 156822
+      "file": "photo-gallery-9.jpg",
+      "sha256": "d2dac41c2331985b619d610f40cdd1a5301c9fafc9dfb702c1560244e976daf0",
+      "bytes": 103016
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "2c62e877a4d71b46181962a86f61d174ba88b617e86182af2ea3a1f8081622b0",
       "bytes": 523794
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "f535881e1cd99cc9aeaacd03406a1933473c2a2573574e599ac2ab160c99aa81",
+      "bytes": 209419
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "ed3bf9be472b0558353f46734c3daad4411d6447b2fb4902c9b192f92b251ccf",
+      "bytes": 310980
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "98ba33f2aa1392c393e7d5e4d564a67258476f6f064e45daf44e3aaee882564b",
+      "bytes": 156822
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "dd2547e8437359dac3874fe5001001f358c214959fa3294b0ba7da22bcee1906",
+      "bytes": 141895
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "0767461dafb398d136d109b46e781dbb300f3348292f5d5548c74b9796aa1944",
+      "bytes": 124955
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "8f7297f77ade5387a972630aa5c7e25c3018812111f4765165ab179203260d26",
+      "bytes": 69901
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "95f9a2befdc02ca555a60f5dd8638a815910400af9364afe9fd14e33303a070f",
+      "bytes": 152467
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "5e7929e857e699d5706bf8b74e4bc95fd5a9321a49f4fd6550e6c5f6ebff0ddf",
+      "bytes": 55994
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "ea3e138abb81c76abc3534bdad4a4604726e978534c1837ad983f00ba4ef0834",
+      "bytes": 53138
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
