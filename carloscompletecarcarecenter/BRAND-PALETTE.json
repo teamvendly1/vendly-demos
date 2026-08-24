@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "carloscompletecarcarecenter",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#131F2A",
+  "palette": {
+    "BRAND": "#131F2A",
+    "PRIMARY": "#1E3143",
+    "PRIMARY_DK": "#162431",
+    "PRIMARY_MID": "#253C51",
+    "ACCENT": "#304E69",
+    "ACCENT_DK": "#21364A",
+    "ACCENT_LT": "#436D93",
+    "ON_DARK": "#C7D7E6",
+    "MENU_INK": "#0E1720",
+    "TINT_1": "#DCE6EF",
+    "TINT_2": "#E6EDF4",
+    "TINT_3": "#D5E1EC",
+    "TINT_4": "#D8E3EE",
+    "LINE_2": "#B9CDDF",
+    "MUTED_BRAND": "#739BBF",
+    "MIST": "#F3F6F9",
+    "LINE": "#CEDCE9",
+    "PRIMARY_RGB": "30,49,67",
+    "ACCENT_RGB": "48,78,105",
+    "SCRIM_RGB": "37,60,81",
+    "SCRIM2_RGB": "22,36,49",
+    "MENU_INK_RGB": "14,23,32",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.33,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.68,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.07,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.07,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "carolinacarcare",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#050E1E",
+  "palette": {
+    "BRAND": "#050E1E",
+    "PRIMARY": "#0E2753",
+    "PRIMARY_DK": "#0A1D3D",
+    "PRIMARY_MID": "#112F65",
+    "ACCENT": "#163D83",
+    "ACCENT_DK": "#0F2B5C",
+    "ACCENT_LT": "#1F56B8",
+    "ON_DARK": "#B9CEF3",
+    "MENU_INK": "#071227",
+    "TINT_1": "#D3E0F8",
+    "TINT_2": "#E0EAFA",
+    "TINT_3": "#CBDAF6",
+    "TINT_4": "#CFDDF7",
+    "LINE_2": "#A8C2F0",
+    "MUTED_BRAND": "#5085E2",
+    "MIST": "#F0F4FC",
+    "LINE": "#C2D4F5",
+    "PRIMARY_RGB": "14,39,83",
+    "ACCENT_RGB": "22,61,131",
+    "SCRIM_RGB": "17,47,101",
+    "SCRIM2_RGB": "10,29,61",
+    "MENU_INK_RGB": "7,18,39",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.65,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 10.35,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.2,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.67,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "certifiedautomotive",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#001534",
+  "palette": {
+    "BRAND": "#001534",
+    "PRIMARY": "#002761",
+    "PRIMARY_DK": "#001D47",
+    "PRIMARY_MID": "#002F75",
+    "ACCENT": "#003E99",
+    "ACCENT_DK": "#002B6B",
+    "ACCENT_LT": "#0057D6",
+    "ON_DARK": "#ADCEFF",
+    "MENU_INK": "#00132E",
+    "TINT_1": "#CCE1FF",
+    "TINT_2": "#DBEAFF",
+    "TINT_3": "#C2DBFF",
+    "TINT_4": "#C7DEFF",
+    "LINE_2": "#99C2FF",
+    "MUTED_BRAND": "#3385FF",
+    "MIST": "#EDF4FF",
+    "LINE": "#B8D4FF",
+    "PRIMARY_RGB": "0,39,97",
+    "ACCENT_RGB": "0,62,153",
+    "SCRIM_RGB": "0,47,117",
+    "SCRIM2_RGB": "0,29,71",
+    "MENU_INK_RGB": "0,19,46",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.36,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.77,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.92,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.54,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
