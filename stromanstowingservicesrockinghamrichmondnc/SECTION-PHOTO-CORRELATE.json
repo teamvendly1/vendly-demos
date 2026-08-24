@@ -1,66 +1,232 @@
 {
-  "at": "2026-08-15T19:54:43.647Z",
+  "at": "2026-08-24T18:49:09.052Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "towing",
-  "replaced": [],
-  "kept": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": "301b64c086144ab245f0cf68c0de01a8e50f01b8a3c0cc52e39f657d6ff05a73",
-      "bytes": 525098
-    },
+  "replaced": [
     {
       "file": "photo-card-about.jpg",
+      "source": "stock-library",
       "sha256": "cf31fcca6bbee38c1bd1dfb15cb6f89eeca0aec17e5bb707ca45cd5a582e23a3",
-      "bytes": 250669
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-gallery-4.jpg"
+      ],
+      "service": "crew shop jobsite"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "cd185ea06239471f928f8db243433931e9d071cd33660f281550c618f44e1035",
-      "bytes": 451702
+      "source": "harvest-fallback",
+      "sha256": "9d27f122a363208bc6c3e2ca54db117707b2d7e72fa34a8997c9212855f84589",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-gallery-9.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-9d27f122a363208b.jpg"
     },
     {
       "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "cd185ea06239471f928f8db243433931e9d071cd33660f281550c618f44e1035",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-ctaband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-cd185ea06239471f.jpg"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "301b64c086144ab245f0cf68c0de01a8e50f01b8a3c0cc52e39f657d6ff05a73",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-service-1.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-301b64c086144ab2.jpg"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "efa1bce24cd9b1fcfb2d15c6adbed7b65a68404ba04c8e220ffe2cba38bf4a81",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-services-hero.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-efa1bce24cd9b1fc.jpg"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f482cd70ee7c578f29ca07f2a166d9fcef705617f135adcd30773a315fd92ad1",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-quoteband.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-f482cd70ee7c578f.jpg"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "eee18f15febe2b27baf11ae4f2c79a6e3e61b6c683f1d6c56b6bb23ac8d68d22",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-gallery-6.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-eee18f15febe2b27.jpg"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4ac00ce6bc69c359cee5154f35097f32196fc4f36b8df42d451abfc6230b030c",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-gallery-3.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-4ac00ce6bc69c359.jpg"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "e6a386ecab24e936f5b27ddbb908d0c17354eb685565810d338d8e05c4307b69",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-service-3.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-e6a386ecab24e936.jpg"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
+      "sha256": "722643a5d99ab1d669033d5c9750a855e502b9f6d106cfb19687cb9da059d572",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-gallery-7.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-722643a5d99ab1d6.jpg"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "70efaaf330e7fe3e80f43a7c2d30cd927358b8ef6243a97b3ec231ff9563d940",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-about.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-70efaaf330e7fe3e.jpg"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "harvest-fallback",
+      "sha256": "d314d58014776be06db8c4767044348cfc4164fad4c58682e1dc520538e1440a",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-reviewsband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-d314d58014776be0.jpg"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "fd9eb296fab8978253b241f0285600376b1039176b8db8d37cb3990a6ddefd68",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-card-photos.jpg"
+      ],
+      "service": "Powersports and small equipment",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-fd9eb296fab89782.jpg"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "27a88ac1b6e511daf8e859a3e65f59951a52ca2b6b81630163ce6ccd60c53ae7",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-service-2.jpg"
+      ],
+      "service": "Car and light truck transport",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-27a88ac1b6e511da.jpg"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "828d84af480c9045b06a0fdf79ab16b15570177f71950d00ccb8b09b8a054d9a",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-service-4.jpg"
+      ],
+      "service": "Heavy and oversize loads",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-828d84af480c9045.jpg"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "source": "harvest-fallback",
+      "sha256": "08397e68e4d3c9c0593042092cbc4e2421251f049e95d25b1eb23b59be4333c1",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-card-services.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-08397e68e4d3c9c0.jpg"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "harvest-fallback",
+      "sha256": "52af38d4177a922690b9427b84eac01f9227ef0c89bd5ef8b617d7483b6c42a8",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservices/photo-gallery-8.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservicesrockinghamrichmondnc\\assets\\google\\google-52af38d4177a9226.jpg"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "ca0e3d5ab1dc9a510c640da15c56fe06f591cf3565eaf5b128ada7fc5a0cc66d",
+      "bytes": 384593
+    },
+    {
+      "file": "photo-gallery-1.jpg",
       "sha256": "3237360b68fde00ed89ee1de785103c7f53b576c7b40f11546acf14b1012c298",
       "bytes": 490685
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "f482cd70ee7c578f29ca07f2a166d9fcef705617f135adcd30773a315fd92ad1",
-      "bytes": 518428
+      "file": "photo-gallery-3.jpg",
+      "sha256": "96e23055f8101153d1a71b94d2973c324f6921a984d6c25c3ce51b1cb0b5c264",
+      "bytes": 387810
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "9d27f122a363208bc6c3e2ca54db117707b2d7e72fa34a8997c9212855f84589",
-      "bytes": 295003
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "fd9eb296fab8978253b241f0285600376b1039176b8db8d37cb3990a6ddefd68",
-      "bytes": 422885
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "8b3d15d4b68abc88e36c8deb622dc5dcf7c147e2932829684cc411d3bbcf42e7",
-      "bytes": 329896
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "eee18f15febe2b27baf11ae4f2c79a6e3e61b6c683f1d6c56b6bb23ac8d68d22",
-      "bytes": 288064
-    },
-    {
-      "file": "photo-service-2.jpg",
+      "file": "photo-gallery-4.jpg",
       "sha256": "2d777888efef0ff1bb38e2150d103dcc14ed2bd7af27b0d0dad2438391cdd4d2",
       "bytes": 362503
     },
     {
-      "file": "photo-services-hero.jpg",
-      "sha256": "d314d58014776be06db8c4767044348cfc4164fad4c58682e1dc520538e1440a",
-      "bytes": 333847
+      "file": "photo-gallery-6.jpg",
+      "sha256": "f6de95f834e683623953eac723ee5503234089a7a883e5a33c59a3066dd6c1f7",
+      "bytes": 336338
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "eadde3c52e64a5a925b5a0b983660fd73c52b52bd28ddfbf9929840858fcb69e",
+      "bytes": 172744
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "20022118228bf863db11dec8f8db6485713666fadfec623678f0da10c79a6727",
+      "bytes": 363208
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "176a80c78f8174b8898d25cac7ebdfa2d2fc61812fd261be51d5280cd6118345",
+      "bytes": 167142
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "8b3d15d4b68abc88e36c8deb622dc5dcf7c147e2932829684cc411d3bbcf42e7",
+      "bytes": 329896
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "dfa37e92b13bd133f8757cea3193fc9a1dcfb1e280e3def20b2eb24e1492abb2",
+      "bytes": 93951
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

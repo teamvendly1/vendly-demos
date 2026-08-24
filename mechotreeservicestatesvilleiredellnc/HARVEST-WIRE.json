@@ -1,153 +1,270 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T18:00:50.422Z",
-  "slug": "mechotreeservicestatesvilleiredellnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-68a83dce05f45e81.jpg",
-      "bytes": 654753,
-      "letterbox_stripped": null,
-      "trade_score": 0,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-8d597f6104a527b9.jpg",
-      "bytes": 523298,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-5237b4d77820acf5.jpg",
-      "bytes": 500953,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-bcdee46c2c8367f8.jpg",
-      "bytes": 603760,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-9cf9130eb2b0e551.jpg",
-      "bytes": 533976,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-3c77713fb284f691.jpg",
-      "bytes": 438993,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-b4895464e88fca4c.jpg",
-      "bytes": 518606,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-4d6506994f6f5b38.jpg",
-      "bytes": 445310,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-341ff1e16a23fecf.jpg",
-      "bytes": 429688,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-188455326ab1dcfb.jpg",
-      "bytes": 390616,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-b59d0f5b5cdd8b9f.jpg",
-      "bytes": 363628,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "from": "google-74444c96e5f00854.jpg",
-      "bytes": 362917,
-      "letterbox_stripped": null
-    }
-  ],
-  "skipped": [
-    "classification read: 24 verdicts",
-    "staged 38 harvest photos",
-    "refused_unlooked:google-010e7099636e4c7b.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-07892f5ece65b6bd.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-151bb910d41307c4.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-1703ab6cb53faf8e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-24704175e8a49c3b.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-36e7cbaf62677de1.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-4104d21e3697a2b3.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-4384b493be9a1cad.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-53dc7a9bf09c69c8.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5a9f10e08fdd6f39.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-666517f65a92e543.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-6d2497d717e57d7a.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-78a3b831f1928ecd.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-7b777a61c8540ea7.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-7fbbf3320337ef03.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-864bbd374a3ea8c8.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-91701df0abaca924.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-9665b923e47df438.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-98bc74257b659d97.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b2a348a8a5a48445.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-ced23802141a4837.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d42d990af8b65435.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-dc63e7f0599e5a64.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-dd9586828d85d881.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-e9b792b349755a0f.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-ea4cc5cb5499ad19.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-68a83dce05f45e81.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-bcdee46c2c8367f8.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-9cf9130eb2b0e551.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-8d597f6104a527b9.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-b4895464e88fca4c.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-5237b4d77820acf5.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-4d6506994f6f5b38.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-3c77713fb284f691.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-341ff1e16a23fecf.jpg:road_no_landscape",
-    "hero_cand_refuse:google-188455326ab1dcfb.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-b59d0f5b5cdd8b9f.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-74444c96e5f00854.jpg:portrait_aspect_hero_refuse",
-    "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-68a83dce05f45e81.jpg)",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 12,
-  "refused_by_class": 26,
-  "altBySlot": {
-    "photo-hero.jpg": "Rigging lines run high into a broad canopy directly over a house, set before any weight is taken on the limbs",
-    "photo-card-about.jpg": "Tree down across a roof with two of the crew working on the shingles, sectioning the trunk where it has come to rest",
-    "photo-about.jpg": "Storm-thrown tree lying uprooted across a slope with its root plate torn out of the bank, the crew working the crown apart above it",
-    "photo-card-services.jpg": "Close view of a trunk with a long open split running up the bark, the structural fault that put the tree on the removal list",
-    "photo-card-reviews.jpg": "Climber high on a heavy trunk with the laterals cut back to bright stubs, working down through the remaining leaders",
-    "photo-card-photos.jpg": "Tracked machine with a grinder head working a wide stump down, the fresh grindings heaped in a ring around it",
-    "photo-gallery-1.jpg": "Very large trunk being felled with the rigging line set, the sawyer working the cut at the base with the crown already off",
-    "photo-gallery-2.jpg": "Garden alongside a house left clean after a removal, the ground raked back and fresh mulch laid where the tree stood",
-    "photo-gallery-3.jpg": "Climber part way up a bare multi-stemmed tree beside an old clapboard house, taking the leaders down in sections",
-    "photo-ctaband.jpg": "Climber near the top of a tall bare spar under a grey sky, taking the last stubs off above the houses",
-    "photo-quoteband.jpg": "Heavy limb brought down across a house roof, a climber out on the trunk cutting it back clear of the ridge",
-    "photo-gallery-4.jpg": "Dead hardwood standing bare against a summer sky while the evergreens around it are still in full leaf, waiting to come down over a fence line"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T18:49:24.987Z",
+ "slug": "mechotreeservicestatesvilleiredellnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-d42d990af8b65435.jpg",
+   "bytes": 674328,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-8d597f6104a527b9.jpg",
+   "bytes": 523298,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-5237b4d77820acf5.jpg",
+   "bytes": 500953,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-9665b923e47df438.jpg",
+   "bytes": 828969,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-dd9586828d85d881.jpg",
+   "bytes": 738142,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-7b777a61c8540ea7.jpg",
+   "bytes": 698016,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-ea4cc5cb5499ad19.jpg",
+   "bytes": 685529,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-53dc7a9bf09c69c8.jpg",
+   "bytes": 682924,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-dc63e7f0599e5a64.jpg",
+   "bytes": 671437,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-68a83dce05f45e81.jpg",
+   "bytes": 654753,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-98bc74257b659d97.jpg",
+   "bytes": 651417,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-4104d21e3697a2b3.jpg",
+   "bytes": 650157,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-e9b792b349755a0f.jpg",
+   "bytes": 618131,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-bcdee46c2c8367f8.jpg",
+   "bytes": 603760,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-5a9f10e08fdd6f39.jpg",
+   "bytes": 567017,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-91701df0abaca924.jpg",
+   "bytes": 561768,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-864bbd374a3ea8c8.jpg",
+   "bytes": 544849,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-9cf9130eb2b0e551.jpg",
+   "bytes": 533976,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-8.jpg",
+   "from": "google-b4895464e88fca4c.jpg",
+   "bytes": 518606,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-9.jpg",
+   "from": "google-78a3b831f1928ecd.jpg",
+   "bytes": 460231,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-services-hero.jpg",
+   "from": "google-3c77713fb284f691.jpg",
+   "bytes": 438993,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-contact.jpg",
+   "from": "google-4d6506994f6f5b38.jpg",
+   "bytes": 445310,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-photos-cta.jpg",
+   "from": "google-341ff1e16a23fecf.jpg",
+   "bytes": 429688,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-reviewsband.jpg",
+   "from": "google-24704175e8a49c3b.jpg",
+   "bytes": 419896,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ba-before.jpg",
+   "from": "google-7fbbf3320337ef03.jpg",
+   "bytes": 397553,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-family.jpg",
+   "from": "google-188455326ab1dcfb.jpg",
+   "bytes": 390616,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-ced23802141a4837.jpg",
+   "bytes": 369044,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-b59d0f5b5cdd8b9f.jpg",
+   "bytes": 363628,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-74444c96e5f00854.jpg",
+   "bytes": 362917,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 77 verdicts",
+  "staged 38 harvest photos from assets",
+  "refused_by_class:google-07892f5ece65b6bd.jpg:reject",
+  "refused_by_class:google-1703ab6cb53faf8e.jpg:reject",
+  "refused_by_class:google-6d2497d717e57d7a.jpg:reject",
+  "hero_cand_refuse:google-9665b923e47df438.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-dd9586828d85d881.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-7b777a61c8540ea7.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-ea4cc5cb5499ad19.jpg:road_no_landscape",
+  "hero_cand_refuse:google-53dc7a9bf09c69c8.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-dc63e7f0599e5a64.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-68a83dce05f45e81.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-98bc74257b659d97.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-e9b792b349755a0f.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-bcdee46c2c8367f8.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-5a9f10e08fdd6f39.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-91701df0abaca924.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-9cf9130eb2b0e551.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-8d597f6104a527b9.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b4895464e88fca4c.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-5237b4d77820acf5.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-78a3b831f1928ecd.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-4d6506994f6f5b38.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-3c77713fb284f691.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-341ff1e16a23fecf.jpg:road_no_landscape",
+  "hero_cand_refuse:google-24704175e8a49c3b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-7fbbf3320337ef03.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-188455326ab1dcfb.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-ced23802141a4837.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b59d0f5b5cdd8b9f.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-74444c96e5f00854.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-666517f65a92e543.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-151bb910d41307c4.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-010e7099636e4c7b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-4384b493be9a1cad.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b2a348a8a5a48445.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-36e7cbaf62677de1.jpg:low_res_lt_960",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 35,
+ "refused_by_class": 3,
+ "photo_candidates": 35,
+ "altBySlot": {
+  "photo-hero.jpg": "Mecho Tree Service - technician at work on site (photo 4)",
+  "photo-card-about.jpg": "Tree down across a roof with two of the crew working on the shingles, sectioning the trunk where it has come to rest",
+  "photo-about.jpg": "Storm-thrown tree lying uprooted across a slope with its root plate torn out of the bank, the crew working the crown apart above it",
+  "photo-card-services.jpg": "Mecho Tree Service - technician at work on site (photo 23)",
+  "photo-card-reviews.jpg": "Mecho Tree Service - technician at work on site (photo 12)",
+  "photo-card-photos.jpg": "Mecho Tree Service - technician at work on site (photo 10)",
+  "photo-gallery-1.jpg": "Mecho Tree Service - technician at work on site (photo 13)",
+  "photo-gallery-2.jpg": "Mecho Tree Service - technician at work on site (photo 6)",
+  "photo-gallery-3.jpg": "Mecho Tree Service - technician at work on site (photo 7)",
+  "photo-ctaband.jpg": "Rigging lines run high into a broad canopy directly over a house, set before any weight is taken on the limbs",
+  "photo-quoteband.jpg": "Mecho Tree Service - technician at work on site (photo 21)",
+  "photo-gallery-4.jpg": "Mecho Tree Service - technician at work on site (photo 9)",
+  "photo-gallery-5.jpg": "Mecho Tree Service - technician at work on site (photo 15)",
+  "photo-gallery-6.jpg": "Close view of a trunk with a long open split running up the bark, the structural fault that put the tree on the removal list",
+  "photo-service-1.jpg": "Mecho Tree Service - technician at work on site (photo 24)",
+  "photo-service-2.jpg": "Mecho Tree Service - technician at work on site (photo 22)",
+  "photo-service-3.jpg": "Mecho Tree Service - technician at work on site (photo 20)",
+  "photo-gallery-7.jpg": "Climber high on a heavy trunk with the laterals cut back to bright stubs, working down through the remaining leaders",
+  "photo-gallery-8.jpg": "Very large trunk being felled with the rigging line set, the sawyer working the cut at the base with the crown already off",
+  "photo-gallery-9.jpg": "Mecho Tree Service - technician at work on site (photo 1)",
+  "photo-services-hero.jpg": "Tracked machine with a grinder head working a wide stump down, the fresh grindings heaped in a ring around it",
+  "photo-contact.jpg": "Garden alongside a house left clean after a removal, the ground raked back and fresh mulch laid where the tree stood",
+  "photo-photos-cta.jpg": "Climber part way up a bare multi-stemmed tree beside an old clapboard house, taking the leaders down in sections",
+  "photo-reviewsband.jpg": "Mecho Tree Service - technician at work on site (photo 18)",
+  "photo-ba-before.jpg": "Mecho Tree Service - technician at work on site (photo 3)",
+  "photo-family.jpg": "Climber near the top of a tall bare spar under a grey sky, taking the last stubs off above the houses",
+  "photo-service-4.jpg": "Mecho Tree Service - technician at work on site (photo 16)",
+  "photo-service-5.jpg": "Heavy limb brought down across a house roof, a climber out on the trunk cutting it back clear of the ridge",
+  "photo-service-6.jpg": "Mecho Tree Service - technician at work on site (photo 5)"
+ },
+ "dedupe_fixed": 5
 }
