@@ -8,8 +8,9 @@ html{scroll-padding-bottom:112px}
   --red:#654D34;
   --paper:#FFFFFF;
   --mist:#F9F6F3;
-  --ink:#101724;
-  --muted:#54637A;
+  --ink:#1E1710;
+  --muted:#BA9978;
+  --brand:#403021;
   --line:#E7DBD0;
   --radius:16px;
   --shadow:0 12px 30px -16px rgba(64,48,33,.32);
@@ -36,7 +37,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 
 /* phone-first strip. Jacob 2026-08-15 Hydro class. Number is the first thing on the page. */
 :root{--phone-strip-h:48px}
-.phone-strip{position:sticky;top:0;z-index:80;background:var(--blue);color:#fff;text-align:center;font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;letter-spacing:.04em}
+.phone-strip{position:sticky;top:0;z-index:80;background:var(--ink);color:#fff;text-align:center;font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;letter-spacing:.04em}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
 .phone-strip a:hover{background:#2F2418}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
@@ -115,8 +116,8 @@ background:
 .hero h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
 @media(min-width:901px){.hero h1{max-width:16ch}}
 .hero h1 em{font-style:normal;color:#E3D6C9;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.4)}
-.lede{font-size:19px;color:#EAE0D7;max-width:56ch;margin:0 0 20px}
-.hero .lede{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
+.lede{font-size:19px;color:var(--ink);max-width:56ch;margin:0 0 20px}
+.hero .lede,.pband .lede{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:18px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
 .tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#EEE6DD;background:transparent;border:0;padding:0;border-radius:0}
@@ -131,13 +132,13 @@ background:
 section{padding:clamp(56px,8vw,102px) 0}
 section.mist{background:var(--mist)}
 .center{text-align:center;max-width:62ch;margin:0 auto clamp(34px,5vw,54px)}
-.center .lede{color:var(--muted);margin:0 auto}
+.center .lede{color:var(--ink);margin:0 auto}
 .kicker{font:700 12.5px/1 Inter,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--blue);margin-bottom:13px}
 
 /* services */
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
-.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:#C6D8EE}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--brand)}
 .icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(101,77,52,.8)}
 .icn svg{stroke:#fff}
 /* Explore cards use real photographs, never person/asterisk/camera glyphs. */
@@ -211,7 +212,7 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var
 input:focus,textarea:focus,select:focus{border-color:var(--blue)}
 textarea{min-height:112px;resize:vertical}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.req{font-weight:400;color:var(--muted, #54637A)}
+.req{font-weight:400;color:var(--muted)}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
 
@@ -259,8 +260,15 @@ footer li a{display:inline-block;padding:4px 0}
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
 }
-.mobile-callbar .mcb-est{background:#2F2418}
-.mobile-callbar .mcb-call{background:var(--red)}
+/* REVERTED 2026-08-18. I first "fixed" this to var(--ink), reading the eye-audit's paraphrase
+   ("sticky bottom action bar... mustard/olive... FAILS") without checking Jacob's actual ruling
+   text first. DEMO-SHIP-STANDARD.md Section I says, verbatim: "Their mark colour on the badge and
+   on estimate / CALL is enough." Brand color on THESE TWO BUTTONS IS THE RULING, not a violation
+   of it. Reverted to the original tokens before this was ever wrong in a shipped file. The real
+   defect Section I names is the PHONE STRIP and the REVIEW BAND going mustard - neither of which
+   is this selector. See _tmp/claude-desktop-out/OUT-0238-*.md for what was actually checked. */
+.mobile-callbar .mcb-est{background:var(--brand)}
+.mobile-callbar .mcb-call{background:var(--blue)}
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
@@ -292,6 +300,8 @@ border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1p
 .rv-stars-base svg{fill:#DADCE0}
 .rv-stars-fill svg{fill:#FBBC04}
 .rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;max-height:9.5em;overflow-y:auto}
+.home-reviews .rv-card{min-height:220px}
+.home-reviews .rv-body{color:#202124;display:block;min-height:4.5em}
 .rv-src{display:block;margin-top:8px;color:#70757a;font:500 12.5px/1.4 Inter,sans-serif}
 .rvHonesty{max-width:64ch;margin:0 0 18px;font-size:.92rem;line-height:1.5;opacity:.88}
 @media(max-width:700px){.rv-card{flex-basis:86%;width:86%}}
@@ -321,15 +331,17 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   .bar{gap:12px}
 }
 @media(max-width:640px){
-  /* Logo TRUE viewport center with hamburger (Jacob Pixel ~17:10 FAIL, ~17:15
-     absolute still +58px right on measure). Mirror the Menu button width with an
-     invisible .navbalance so flex space-between centers the logo for real. */
+  /* Keep the 3-column GRID on the phone (Jacob 2026-08-16 17:38). Flex + space-between
+     centers a CIRCLE (Clayton / Rodney) and leaves a tall portrait mark (Total Tree)
+     looking shoved left because the img box shrinks to ~48px while Menu stays wide.
+     Column 2 is always true center. Cropped knockout marks can use the height now. */
   .bizmeta{display:none}
-  .bar{display:flex;align-items:center;justify-content:space-between;gap:0;min-height:72px}
-  .navtoggle{flex:0 0 auto;grid-column:unset;justify-self:unset;position:relative;z-index:2}
-  .navbalance{flex:0 0 auto;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
+  .bar{display:grid;grid-template-columns:min-content 1fr min-content;align-items:center;gap:0;min-height:80px}
+  .navtoggle{grid-column:1;justify-self:start;position:relative;z-index:2}
+  .bar > a{grid-column:2;justify-self:center;display:flex;align-items:center;justify-content:center;max-width:100%}
+  .navbalance{grid-column:3;justify-self:end;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
   .navbalance svg{visibility:hidden}
-  .logo{position:static;left:auto;transform:none;height:64px;margin:0;grid-column:unset;justify-self:unset;flex:0 1 auto}
+  .logo{position:static;left:auto;transform:none;height:80px;max-width:min(240px,62vw);width:auto;margin:0;flex:none}
   /* Jacob phone audit 2026-08-02 (em2154): the service cards, their icons,
      the badge rows and the stat tiles read left-stuck on a narrow screen.
      Center only these named attention blocks, not body copy. .reviewband
@@ -353,7 +365,11 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .sa-input,.sa-form input,.sa-form textarea{font-size:16px!important;line-height:1.4}
 
 /* demo-motion 2026-08-12: polished-plain reveal; CATTAILS-NOT-GLOBAL; prefers-reduced-motion */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+/* Content is visible without JS. IO .in animation is extra, never the only way text appears.
+   Measured 2026-08-15: about.html with class=reveal and no .in painted invisible (opacity 0)
+   until IntersectionObserver ran. Cursor IDE screenshot: About copy and photo looked washed out.
+   Same class as the 2026-08-12 180px empty explore gap. Fail-open. */
+.reveal{opacity:1;transform:none}
 .reveal.in{opacity:1;transform:none}
 .reveal-d1{transition-delay:.08s}
 .reveal-d2{transition-delay:.16s}
@@ -367,8 +383,16 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .hero .eyebrow,.hero .lede,.hero .cta{animation:none}
 }
 /* CTA-BELOW-GAP FIX 2026-08-12: first section after urgency strip must paint on fold.
-   Root cause of ~180px empty white: .reveal{opacity:0} + IO rootMargin -8% so explore
-   sat invisible between strip and sticky. Not sticky clearance, not hero pad. */
+   Root cause of ~180px empty white: the old .reveal rule at rest-opacity zero, plus IO
+   rootMargin -8%, so explore sat invisible between strip and sticky. Not sticky clearance, not
+   hero pad.
+   MEGA-1940 2026-08-15: this comment used to spell the old rule out literally with no space
+   between the class and the brace, which is the exact substring REVEAL_INVISIBLE_WITHOUT_JS
+   (generate-from-blank-mold.js) scans the whole compiled site.css for - a false positive from a
+   comment describing a fixed bug, not the live rule two rules above (still opacity:1). Reworded
+   so the gate reads the file's actual behaviour rather than its own history; never loosen the
+   gate itself to clear this - it is right to refuse a genuine "class dot reveal, no space, brace,
+   opacity, colon, zero" rule. */
 .strip + .reveal,.strip + .reveal.in{opacity:1;transform:none}
 @media(max-width:900px){
   .strip + section.reveal{
@@ -397,6 +421,33 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband h2{color:#fff;margin-bottom:.35em}
 .ctaband p{color:#EAE0D7;max-width:54ch;margin:0 auto 18px}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#BA9978;margin-top:14px;margin-bottom:0}
+
+/*
+  PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
+  flat brand-blue / mist-white home bands, per this mold's own SYSTEM PROMPT line in
+  HYDROCLEAN-CLASS-GENERATE-PROMPT.md: "CONVERT_PANEL / other flat brand-blue or mist-white home
+  bands should carry a photo background (the ctaband pattern) when harvest or stock can supply
+  one, distinct per band, never reused across two bands or two businesses."
+
+  OPT-IN ONLY. The generator adds the "pband" token onto the section class AND emits the <img
+  class="bg"> together, in the same pass, only when a real (non-stub, >=5KB) harvest photograph
+  landed in photo-reviewsband.jpg / photo-quoteband.jpg - lowest-priority slots, filled only from
+  whatever the home page's other photo slots left unused. A business with no surplus photography
+  renders these two sections exactly as before: flat var(--blue) / var(--mist), no img, no
+  overlay, nothing to strip. See wireHarvestPhotosIntoSlots() targets list.
+*/
+.pband{position:relative;overflow:hidden}
+.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.55;z-index:0}
+.pband>.wrap{position:relative;z-index:2}
+/* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
+   the photo only needs the same scrim ctaband uses, nothing else changes. */
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(64,48,33,.84) 0%,rgba(64,48,33,.72) 100%)}
+/* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
+   so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
+   stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(64,48,33,.92) 0%,rgba(64,48,33,.84) 100%)}
+#quote.pband h2{color:#fff}
+#quote.pband .kicker{color:#EEE6DD}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -444,9 +495,9 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .card.card-photo .card-shot img{width:100%;height:100%;object-fit:cover;display:block}
 .svc .card.card-photo{padding-top:14px}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
-.home-reviews{background:var(--blue);color:#fff;padding:clamp(40px,6vw,72px) 0}
-.home-reviews h2{color:#fff}
-.home-reviews .lede,.home-reviews .kicker{color:rgba(255,255,255,.88)}
+.home-reviews{background:var(--mist);color:var(--ink);padding:clamp(40px,6vw,72px) 0}
+.home-reviews h2{color:var(--ink)}
+.home-reviews .lede,.home-reviews .kicker{color:var(--muted)}
 .home-reviews .rv-card{background:#fff;color:var(--ink)}
 .home-trust{background:var(--mist);padding:clamp(36px,5vw,64px) 0}
 .home-trust .t3{display:grid;gap:16px}
@@ -456,9 +507,21 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-header.site{background:#403021!important;border-bottom-color:rgba(255,255,255,.12)}
+/*
+  HEADER = THE LOGO'S OWN PLATE COLOUR, NOT THE BRAND PRIMARY (Jacob CLEAR 2026-08-15,
+  HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
+  canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
+  white card, so most demos will now show a white/near-white header instead of the old flat
+  #403021. That is deliberate - it is what makes the (correctly keyed) logo look like it has
+  no plate at all, because the plate colour and the header colour are now the same colour.
+*/
+header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
-header.site .bizmeta .btn,header.site .bizmeta a.btn{color:#fff}
+/* header.site .bizmeta .btn{color:#fff} REMOVED 2026-08-15: dated from when the header was
+   always a dark/navy plate. HEADER_BG is now the logo's own sampled colour (often white -
+   see the block above), so this blanket override was a white-on-white landmine for any future
+   .bizmeta button that is not .btn-red (.btn-red already sets its own white-on-red via its own
+   rule and does not need this). Each button's own class owns its own contrast now. */
 header.site .navtoggle{background:#fff!important;color:#403021!important;border-color:rgba(255,255,255,.45)}
 header.site .navtoggle svg{stroke:#403021!important}
 header.site .navtoggle .navtoggle-text{color:#403021!important}
@@ -467,7 +530,10 @@ header.site .navtoggle .navtoggle-text{color:#403021!important}
 .btn-blue:hover{background:#473624}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-header.site .navtoggle{background:#FFFFFF !important;color:#1E1710 !important;border:1px solid #ECE3DA !important}
+/* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
+   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #ECE3DA, which nearly
+   vanished once the header itself could also be white/pale (see HEADER_BG above). */
+header.site .navtoggle{background:#FFFFFF !important;color:#1E1710 !important;border:1px solid rgba(16,23,36,.22) !important}
 header.site .navtoggle svg{stroke:#1E1710 !important}
 header.site .navtoggle .navtoggle-text{color:#1E1710 !important;opacity:1 !important}
 header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(30,23,16,.18)}
@@ -519,17 +585,10 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 .mobile-callbar{z-index:120}
 footer{position:relative;z-index:1}
 
-/* mold-hero-rotator-20260812 */
-.hero-rotator{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.hero-rotator [data-hero-slide]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;
-  opacity:0;transition:opacity .9s ease}
-.hero-rotator [data-hero-slide].is-active{opacity:1}
-.hero-rotator [data-hero-slide]:first-child{opacity:1}
-@media(prefers-reduced-motion:reduce){
-  .hero-rotator [data-hero-slide]{transition:none}
-  .hero-rotator [data-hero-slide]:not(:first-child){display:none!important}
-  .hero-rotator [data-hero-slide]:first-child{opacity:1!important}
-}
+/* hero-rotator.js dropped 2026-08-15 (see generate-from-blank-mold.js): one static harvest
+   hero photo now, never a rotator. The .hero-rotator/[data-hero-slide] rules that styled the
+   old cross-fade were dead weight with no matching markup anywhere in this mold - removed
+   2026-08-15 rather than left to rot next to the code that killed the feature. */
 /* Compact hero badge - must not push CTA below 375 fold (Jared 2026-08-12) */
 .hero-rtb{margin:8px 0 0;max-width:100%}
 .hero-rtb .rtb{display:inline-flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 14px;max-width:100%}
@@ -694,7 +753,7 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
   display: block;
   width: 100%;
   text-align: center;
-  background: var(--brand, #12334F);
+  background: var(--brand);
   color: #fff;
   font-weight: 800;
   font-size: clamp(20px, 6vw, 30px);
@@ -722,50 +781,26 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
   background: rgba(255,255,255,.10);
 }
 
-/* 3. FULL-BLEED BRAND BANDS ALTERNATE WITH WHITE.
-      Their sections run photo, brand colour, white, photo, brand colour, white -
-      every band edge to edge. Ours was white on white with cards floating in it,
-      and that single difference is most of the "theirs looks designed, ours looks
-      like a template" gap. Odd content sections now take the brand band. */
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) {
-  background: var(--brand, #12334F);
-  color: #fff;
-}
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) h2,
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) h3,
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) .eyebrow,
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) .lede {
-  color: #fff;
-}
-/* cards keep their white ground so they lift off the coloured band */
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) .card {
-  background: #fff;
-  color: var(--ink, #14140F);
-}
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) .card h3,
-main > section:nth-of-type(odd):not(.hero):not(.band-photo) .card p {
-  color: var(--ink, #14140F);
-}
-
 /* generous vertical rhythm - the reference build breathes, ours was tight */
 main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px, 9vw, 96px); }
 
-/* 5. THREE TRUST CARDS. The reference build runs a differentiator block on every page and it is
-      the cheapest section to fill because it is posture, not facts. */
-.lc-trust { background: var(--brand, #12334F); color: #fff; }
+/* 5. THREE TRUST CARDS. Same sampled PRIMARY as phone/reviews, never a second hue. */
+.lc-trust { background: var(--brand); color: #fff; }
 .lc-trust .eyebrow, .lc-trust h2 { color: #fff; text-align: center; }
 .lc-trust-grid { display: grid; gap: 16px; margin: 28px 0 8px; }
 @media (min-width: 760px) { .lc-trust-grid { grid-template-columns: repeat(3, 1fr); } }
 .lc-trust-card { background: #fff; color: var(--ink, #14140F); border-radius: 16px; padding: 22px 20px; }
 .lc-trust-card h3 { margin: 0 0 8px; font-size: clamp(18px, 4.6vw, 22px); }
 .lc-trust-card p { margin: 0; }
-.lc-trust-cta { display: block; width: fit-content; margin: 26px auto 0; }
+.lc-trust a,
+.lc-trust-cta { color: #fff; }
+.lc-trust-cta { display: block; width: fit-content; margin: 26px auto 0; background: transparent; border: 2px solid rgba(255,255,255,.55); }
 @media (max-width: 700px) { .lc-trust-card, .lc-trust-card h3, .lc-trust-card p { text-align: center; } }
 
 
 /* ---- Lowcountry header band 2: socials, directly under the phone (2026-08-15) ---- */
 .lc-social{display:flex;align-items:center;justify-content:center;gap:26px;
-  background:var(--brand,#14406b);padding:8px 12px;border-top:1px solid rgba(255,255,255,.14)}
+  background:var(--brand);padding:8px 12px;border-top:1px solid rgba(255,255,255,.14)}
 .lc-social-link{display:inline-flex;align-items:center;justify-content:center;
   width:38px;height:38px;border-radius:50%;background:#fff;text-decoration:none;flex:none}
 .lc-social-link img{display:block;width:22px;height:22px}
@@ -777,10 +812,21 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
 .lc-trust h2{text-align:center;text-wrap:balance}
 .lc-trust-grid{margin-top:26px}
 .lc-trust-card{text-align:center;padding:26px 20px;border-radius:14px;
-  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+  background:#fff;border:1px solid var(--line)}
 .lc-trust-card h3{margin:0 0 8px}
 .lc-trust-card p{margin:0}
 .lc-trust-cta{display:block;width:max-content;margin:28px auto 0}
+/* Trust card ICON (2026-08-15, Jacob EYES MEGA-1838): reverted the 2026-08-15/MEGA-1820 photo
+   experiment - three empty text cards FAIL, but a photo thumbnail is not the fix either (Hydro's
+   own "Higher Standard" band uses icon blurbs, not photos - photos belong on hero/ctaband/reviews/
+   form). Each card now carries an original inline SVG glyph, trade-aware, chosen by
+   trustIconsFor() in generate-from-blank-mold.js; the whole grid still ships or omits as one unit
+   via skipper-structure-assert / build-refusal, it just never depends on a photograph landing. */
+.lc-trust-icon{width:52px;height:52px;border-radius:50%;margin:0 auto 14px;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);
+  display:grid;place-items:center;flex:none}
+.lc-trust-icon svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
 
 @media (max-width:700px){
   .lc-social{gap:20px}
@@ -809,3 +855,7 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions{flex-direction:column;align-items:stretch}
   .lc-midcta-actions .btn{justify-content:center}
 }
+/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+/* VENDLY-CARDCROP-FIX-20260824 END */

@@ -397,3 +397,7 @@ header.site .navtoggle,header.site .navtoggle-text,header.site .navbalance,heade
 header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
 header.site .logo-chip{background:transparent;padding:0}
 .btn-primary,.cta .btn,.stickybar .btn-call,a.btn-primary{background:#C52528!important;border-color:#C52528!important}
+/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+/* VENDLY-CARDCROP-FIX-20260824 END */

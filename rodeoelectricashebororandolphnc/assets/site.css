@@ -848,3 +848,7 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions{flex-direction:column;align-items:stretch}
   .lc-midcta-actions .btn{justify-content:center}
 }
+/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+/* VENDLY-CARDCROP-FIX-20260824 END */
