@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<meta name="vendly-demo-build" content="blank-mold-20260815-cleareyes">
+<meta name="vendly-demo-build" content="blank-mold-20260824-hydroclean">
+<meta name="vendly-hydroclean-class" content="20260815-c8f645b5e949">
 <meta name="vendly-google-rating" content="4.9">
 <meta name="vendly-google-review-count" content="147">
 <meta name="vendly-review-source" content="Google">
@@ -31,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=harv20260815">
+<link rel="stylesheet" href="assets/site.css?v=harv20260824050710">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -59,6 +60,11 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Rex Towing.</div>
 <a class="skiplink" href="#main">Skip to content</a>
 
+<div class="phone-strip" role="banner">
+  <a href="tel:+19806997770" aria-label="Call Rex Towing at (980) 699-7770">(980) 699-7770</a>
+</div>
+
+
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
   <div class="mcb-rule" aria-hidden="true"></div>
@@ -74,7 +80,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <span class="navtoggle-text">Menu</span>
     </button>
     <a href="index.html" aria-label="Rex Towing home" style="grid-column:2;justify-self:center">
-      <img class="logo" src="assets/logo.png?v=harv20260815" alt="Rex Towing">
+      <img class="logo" src="assets/logo.png?v=harv20260824050710" alt="Rex Towing">
     </a>
     <span class="navbalance" aria-hidden="true">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -102,23 +108,44 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <main id="main">
 
 <section class="hero hero-darken-band" aria-labelledby="h-hero">
-  <div class="hero-rotator" data-hero-rotator aria-hidden="true"><img data-hero-slide class="bg is-active" src="assets/photo-gallery-2.jpg?v=harv20260815" alt="BMW SUV chained down on the deck, shot low against a clear sky" loading="eager" fetchpriority="high"><img data-hero-slide class="bg" src="assets/photo-hero.jpg?v=harv20260815" alt="Porsche sports car loaded on the flatbed beside the branded Rex Towing wrecker" loading="lazy"><img data-hero-slide class="bg" src="assets/photo-gallery-3.jpg?v=harv20260815" alt="Ladder-rack work van recovered onto the flatbed at night outside a filling station" loading="lazy"></div>
+  <img class="bg" src="assets/photo-hero.jpg?v=harv20260824050710" alt="Rex Towing - technician at work on site (photo 6)" loading="eager" fetchpriority="high">
   <div class="wrap hero-inner">
     <span class="eyebrow">Wingate</span>
-    <h1 id="h-hero">Bought a car that has to be trailered home? <em>Call us.</em></h1>
+    <h1 id="h-hero"> <em>Careful towing in Wingate, start to finish.</em></h1>
     <p class="lede">Towing done right. Call and we will take a look.</p>
 
     <div class="cta">
-      <a class="btn btn-red phone-cta-desktop" href="tel:+19806997770">Call (980) 699-7770</a>
+      <!-- MEGA-1940: primary mobile fold CTA is the estimate link, not a hidden phone button.
+           Call stays reachable via the top phone-strip (always visible), the desktop header, and
+           the sticky mobile-callbar CALL button - never hidden here by .phone-cta-desktop, and
+           never .btn-ghost so the max-width:900 rule that hides a ghost #quote dupe does not
+           accidentally hide this one too (site.css). -->
+      <a class="btn btn-red" href="#quote">Get a towing service estimate</a>
       <a class="btn btn-ghost" href="photos.html">See our work</a>
     </div>
-    <div class="hero-rtb"><div class="rtb"><a class="rtb-block" href="https://www.google.com/maps/search/Rex%20Towing%20Monroe%20NC?hl=en&amp;gl=us" rel="nofollow noopener" target="_blank" aria-label="rated 4.9/5 based on 147 reviews"><span class="rtb-mark"><img class="rtb-mark" src="assets/google-g.svg" width="18" height="18" alt="" aria-hidden="true"></span><span class="rtb-stars" role="img" aria-label="4.9 out of 5"><span class="rtb-stars-base"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rtb-stars-fill" style="width:98.0%"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><span class="rtb-rated">rated 4.9/5 based on 147 reviews</span></a></div></div>
+    <div class="hero-rtb"><div class="rtb"><a class="rtb-block" href="https://www.google.com/maps/search/Rex%20Towing%20Monroe%20NC?hl=en&amp;gl=us" rel="nofollow noopener" aria-label="rated 4.9/5 based on 147 reviews"><span class="rtb-mark"><img class="rtb-mark" src="assets/google-g.svg" width="18" height="18" alt="" aria-hidden="true"></span><span class="rtb-stars" role="img" aria-label="4.9 out of 5"><span class="rtb-stars-base"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rtb-stars-fill" style="width:98.0%"><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><span class="rtb-rated">rated 4.9/5 based on 147 reviews</span></a></div></div>
     <div class="trust">
       <span class="tchip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFADAF" stroke-width="2.3" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Wingate local</span>
     </div>
   </div>
 </section>
 
+<section class="home-reviews pband" id="home-reviews" aria-labelledby="h-home-reviews">
+  <img class="bg" src="assets/photo-reviewsband.jpg?v=harv20260824050710" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap">
+    <div class="center">
+      <h2 id="h-home-reviews">From the operator</h2>
+    </div>
+    <div class="rv-list">
+      <div class="rv-carousel"><div class="rv-track" role="list">
+<article class="rv-card" role="listitem"><span class="rv-badge"><img src="assets/google-g.svg" width="20" height="20" alt=""></span><div class="rv-head"><span class="rv-who" style="background:hsl(35 42% 30%)" aria-hidden="true">J</span><div class="rv-meta"><cite class="rv-name">Jade F.</cite><span class="rv-when">a month ago</span></div></div><span class="rv-stars" role="img" aria-label="5 out of 5"><span class="rv-stars-base"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rv-stars-fill" style="width:100.0%"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><blockquote class="rv-body">Super fast response, arrived less than 30mins after call.. driver ran into an issue because my car sat so low; however found a solution very fast. Would recommend.</blockquote><span class="rv-src">Published on Google.</span></article>
+<article class="rv-card" role="listitem"><span class="rv-badge"><img src="assets/google-g.svg" width="20" height="20" alt=""></span><div class="rv-head"><span class="rv-who" style="background:hsl(93 42% 30%)" aria-hidden="true">K</span><div class="rv-meta"><cite class="rv-name">Kelley Ard</cite><span class="rv-when">a month ago</span></div></div><span class="rv-stars" role="img" aria-label="5 out of 5"><span class="rv-stars-base"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rv-stars-fill" style="width:100.0%"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><blockquote class="rv-body">I've used this service three times now, and every experience has been excellent. They have the best prices around, the driver is always friendly, and they're consistently on time. Highly recommend!</blockquote><span class="rv-src">Published on Google.</span></article>
+<article class="rv-card" role="listitem"><span class="rv-badge"><img src="assets/google-g.svg" width="20" height="20" alt=""></span><div class="rv-head"><span class="rv-who" style="background:hsl(151 42% 30%)" aria-hidden="true">J</span><div class="rv-meta"><cite class="rv-name">Jeff Morris</cite><span class="rv-when">4 months ago</span></div></div><span class="rv-stars" role="img" aria-label="5 out of 5"><span class="rv-stars-base"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span><span class="rv-stars-fill" style="width:100.0%"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false"><path d="M10 1.6l2.5 5.3 5.6.8-4.1 4.1 1 5.8L10 14.9 4.9 17.6l1-5.8L1.8 7.7l5.6-.8z"/></svg></span></span><blockquote class="rv-body">Very pleased. I broke down in my work van in front of customer house and they came quick! The gentleman that towed my car was very nice. I will definitely be keeping there number if I ever need quick tow again for good price.</blockquote><span class="rv-src">Published on Google.</span></article>
+      </div></div>
+    </div>
+    <p class="center" style="margin-top:22px;margin-bottom:0"><a class="btn btn-ghost" href="reviews.html">See all reviews</a></p>
+  </div>
+</section>
 
 
 <section class="reveal mist in" aria-labelledby="h-explore">
@@ -126,54 +153,50 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="center">
       <p class="kicker">Explore Rex Towing</p>
       <h2 id="h-explore">The calls we take at 3am</h2>
-      <p class="lede"></p>
     </div>
     
     
         <div class="svc" style="margin-top:34px">
-      
+      <a class="card card-photo" href="about.html" style="color:inherit;text-decoration:none;display:block">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-about.jpg?v=harv20260824050710" data-v-lb-alt="Operator in a hi-vis jacket walking the winch line out across a dark field on a night recovery" aria-label="Operator in a hi-vis jacket walking the winch line out across a dark field on a night recovery - Open photo"><img src="assets/photo-card-about.jpg?v=harv20260824050710" alt="Operator in a hi-vis jacket walking the winch line out across a dark field on a night recovery" loading="lazy"></button></div>
+        <h3>About us</h3>
+      </a>
       <a class="card card-photo" href="services.html" style="color:inherit;text-decoration:none;display:block">
-        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-services.jpg?v=harv20260815" data-v-lb-alt="Three wreckers parked on the yard, the near flatbed carrying the Rex Towing name on its door" aria-label="Three wreckers parked on the yard, the near flatbed carrying the Rex Towing name on its door - Open photo"><img src="assets/photo-card-services.jpg?v=harv20260815" alt="Three wreckers parked on the yard, the near flatbed carrying the Rex Towing name on its door" loading="lazy"></button></div>
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-services.jpg?v=harv20260824050710" data-v-lb-alt="Rex Towing - technician at work on site (photo 23)" aria-label="Rex Towing - technician at work on site (photo 23) - Open photo"><img src="assets/photo-card-services.jpg?v=harv20260824050710" alt="Rex Towing - technician at work on site (photo 23)" loading="lazy"></button></div>
         <h3>Services offered</h3>
-        <p></p>
+        <p>See everything we take on</p>
       </a>
       <a class="card card-photo" href="reviews.html" style="color:inherit;text-decoration:none;display:block">
-        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-reviews.jpg?v=harv20260815" data-v-lb-alt="Rex Towing flatbed on a residential street with a lifted golf cart winched up on the deck" aria-label="Rex Towing flatbed on a residential street with a lifted golf cart winched up on the deck - Open photo"><img src="assets/photo-card-reviews.jpg?v=harv20260815" alt="Rex Towing flatbed on a residential street with a lifted golf cart winched up on the deck" loading="lazy"></button></div>
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-reviews.jpg?v=harv20260824050710" data-v-lb-alt="Rex Towing - technician at work on site (photo 28)" aria-label="Rex Towing - technician at work on site (photo 28) - Open photo"><img src="assets/photo-card-reviews.jpg?v=harv20260824050710" alt="Rex Towing - technician at work on site (photo 28)" loading="lazy"></button></div>
         <h3>Customer reviews</h3>
-        <p></p>
+        <p>Read what past customers said</p>
       </a>
       <a class="card card-photo" href="photos.html" style="color:inherit;text-decoration:none;display:block">
-        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-photos.jpg?v=harv20260815" data-v-lb-alt="Harley-Davidson strapped down on the flatbed with soft ties and a wheel chock" aria-label="Harley-Davidson strapped down on the flatbed with soft ties and a wheel chock - Open photo"><img src="assets/photo-card-photos.jpg?v=harv20260815" alt="Harley-Davidson strapped down on the flatbed with soft ties and a wheel chock" loading="lazy"></button></div>
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-card-photos.jpg?v=harv20260824050710" data-v-lb-alt="Rex Towing - technician at work on site (photo 29)" aria-label="Rex Towing - technician at work on site (photo 29) - Open photo"><img src="assets/photo-card-photos.jpg?v=harv20260824050710" alt="Rex Towing - technician at work on site (photo 29)" loading="lazy"></button></div>
         <h3>Photos</h3>
-        <p></p>
+        <p>Browse recent job photos</p>
       </a>
     </div>
   </div>
 </section>
 
+<!-- lc-midcta ("Tell us what you need") retired 2026-08-15, Jacob EYES MEGA-1820: the sticky
+     mobile callbar (Ask us / Get estimate / CALL) already carries this exact convert action on
+     every scroll position, so a second full-width "Tell us what you need" band a few sections
+     later was a repeat, not new information. Not in the hydro-prompt canonical home order
+     either (see HYDROCLEAN-CLASS-GENERATE-PROMPT.md ORDER line - no MIDCTA slot). Dropped at
+     the mold, not patched per-demo, so no future generate ships it. -->
 
+<!-- SECTION:home-about retired 2026-08-17. MEGA-1940 teaser reused photo-about on index AND
+     about.html. DemoImageGate counts that file sitewide and refused Durhams as DUPLICATE_PHOTO.
+     Pointing the teaser at photo-card-about duplicated the explore About card on the same homepage.
+     Explore About card (photo-card-about.jpg) + about.html (photo-about.jpg) stay. Restore a teaser
+     only with a dedicated unique slot. generate-from-blank-mold.js also cutSection home-about. -->
 
-
-
-<section class="reveal" aria-labelledby="h-hours">
-  <div class="wrap">
-    <div class="center">
-      <p class="kicker">Coverage</p>
-      <h2 id="h-hours">Wingate, and the towns around it</h2>
-      <p class="lede">Open </p>
-    </div>
-    <div class="areas" style="margin-top:26px">
-      <span class="area">Wingate</span>
-    </div>
-    <p class="center" style="margin-top:28px;margin-bottom:0">
-      <a class="btn btn-blue" href="about.html">See who we are and where we work</a>
-    </p>
-  </div>
-</section>
 
 
 <section class="ctaband reveal" aria-labelledby="h-ctaband">
-  <img class="bg" src="assets/photo-ctaband.jpg?v=harv20260815" alt="Operator in a hi-vis jacket walking the winch line out across a dark field on a night recovery" aria-hidden="true" loading="lazy">
+  <img class="bg" src="assets/photo-ctaband.jpg?v=harv20260824050710" alt="Rex Towing - technician at work on site (photo 16)" aria-hidden="true" loading="lazy">
   <div class="wrap inner">
     <h2 id="h-ctaband">Call us and we will come to you</h2>
     <p>Call (980) 699-7770 or send a note.</p>
@@ -185,13 +208,26 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   </div>
 </section>
 
-<section class="reveal mist" id="quote" aria-labelledby="h-quote">
+<section class="home-trust lc-trust" aria-labelledby="h-home-trust">
+  <div class="wrap">
+    <p class="lc-eyebrow">Serving Wingate</p>
+    <h2 id="h-home-trust">A higher standard of towing service</h2>
+    <div class="t3 lc-trust-grid">
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6.6 3.6l2.8 1.4a1.6 1.6 0 0 1 .7 2.1L9 9.4a11.8 11.8 0 0 0 5.6 5.6l2.3-1.1a1.6 1.6 0 0 1 2.1.7l1.4 2.8a1.6 1.6 0 0 1-.9 2.2c-1 .4-2.1.5-3.2.3C10.9 19 5 13.1 4.1 6.7c-.2-1.1-.1-2.2.3-3.2a1.6 1.6 0 0 1 2.2-.9z"/></svg></div><h3>You reach us</h3><p>Call (980) 699-7770 and a real person answers.</p></article>
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2.6 6.8h11.6v9.4H2.6z"/><path d="M14.2 10.2h4.4l2.8 3.4v2.6h-7.2z"/><circle cx="7" cy="18.4" r="1.8"/><circle cx="17.6" cy="18.4" r="1.8"/></svg></div><h3>Local to Wingate</h3><p>We work in Wingate, not a national call center.</p></article>
+      <article class="lc-trust-card"><div class="lc-trust-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><rect x="9" y="2.4" width="6" height="3.2" rx="1"/><path d="M8.4 11h7.2M8.4 14.6h7.2M8.4 18.2h4.4"/></svg></div><h3>Towing service, on the page</h3><p>This site is built around the work we actually do: Towing service.</p></article>
+    </div>
+    <a class="btn lc-trust-cta" href="contact.html">Get a free quote</a>
+  </div>
+</section>
+
+<section class="reveal mist pband" id="quote" aria-labelledby="h-quote">
+  <img class="bg" src="assets/photo-quoteband.jpg?v=harv20260824050710" alt="" aria-hidden="true" loading="lazy">
   <div class="wrap">
     <div class="leadwrap">
       <div>
         <p class="kicker">Get a quote</p>
         <h2 id="h-quote">Tell us about the vehicle</h2>
-        <p class="lede" style="color:var(--muted)"></p>
         <div class="badges" style="margin-top:26px">
           <span class="badge" style="text-transform:none"><a href="tel:+19806997770" style="color:inherit;text-decoration:none">(980) 699-7770</a></span>
         </div>
@@ -221,7 +257,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
           </select>
         </div>
         <div class="field">
-          <label for="f-msg">What do you need</label>
+          <label for="f-msg">Tell us more</label>
           <textarea id="f-msg" name="message" placeholder=""></textarea>
         </div>
         <button class="btn btn-blue" type="submit" style="width:100%;justify-content:center;border:0;cursor:pointer">Send estimate request</button>
@@ -230,7 +266,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     </div>
   </div>
 </section>
-
 </main>
 
 <footer>
@@ -238,7 +273,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          <img class="logo-footer" src="assets/logo.png?v=harv20260815" alt="Rex Towing">
+          <img class="logo-footer" src="assets/logo-footer.png?v=harv20260824050710" alt="Rex Towing">
         </div>
         <p style="margin:0;max-width:34ch">Rex Towing serving Wingate.</p>
       </div>
@@ -246,7 +281,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <h3 class="fh">Contact</h3>
         <ul>
           <li><a href="tel:+19806997770">(980) 699-7770</a></li>
-                  </ul>
+        </ul>
       </div>
       <div>
         <h3 class="fh">Menu</h3>
@@ -256,8 +291,8 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
           <li><a href="services.html">Services offered</a></li>
           <li><a href="reviews.html">Customer reviews</a></li>
           <li><a href="photos.html">Photos</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
       <div>
         <h3 class="fh">Services</h3>
@@ -298,18 +333,17 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     nudge: "",
     disablePeek: true,
     forceRender: true,
-    phone: "",
-    sms: "",
-    quoteUrl: "",
+    phone: "+19806997770",
+    sms: "+19806997770",
+    quoteUrl: "#quote",
     bookUrl: "",
-    contactUrl: "index.html#quote",
+    contactUrl: "./index.html#quote",
     suggestions: [],
     accent: "#990003"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=harv20260815" defer></script>
-<script src="assets/hero-rotator.js?v=harv20260815" defer></script>
-<script src="assets/site.js?v=harv20260815" defer></script>
+<script src="assets/siteassistant-v2.js?v=harv20260824050710" defer></script>
+<script src="assets/site.js?v=harv20260824050710" defer></script>
 <script id="v-lb-js">
 (function(){
   if (window.__vendlyLightbox) return;

@@ -1,13 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T10:37:48.006Z",
+  "at": "2026-08-24T05:09:35.381Z",
   "trade": "auto-repair",
   "slotHints": {
     "photo-service-1.jpg": "Diagnostics and engine work",
     "photo-service-2.jpg": "Brakes, steering and suspension",
     "photo-service-3.jpg": "Exhaust and underbody"
   },
-  "ok": false,
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -53,7 +53,7 @@
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "766005e079c9755417476a054be8d555f18a802b1de0f22da90d1a403d4d2001",
+      "sha256": "b1a39b73ed2721aaa70412482e150e09b74a7abc97ed60e81717729917ce174e",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -88,97 +88,39 @@
       "niche_folder": null
     },
     {
+      "file": "photo-service-3.jpg",
+      "sha256": "766005e079c9755417476a054be8d555f18a802b1de0f22da90d1a403d4d2001",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "a7521440d4ef61f6a195ed0f276789f79459cd1f0266dea714f9b9db39f5338c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "fa664b580ce0cfbd8d34b5710582af451489da523f4c54317919c66a7ad328fb",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "5487f78f6890763e8a521d1a8685f9ead14896b2d249119154686dc7ae36d7d2",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-services-hero.jpg",
       "sha256": "2b2c84274bb6af2dd852ae8150d29882a1c7630afa467caf547da9ce86161a6d",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
   ],
-  "filled": [
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "Exhaust and underbody",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    }
-  ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "Exhaust and underbody",
-      "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 14,
+  "filled": [],
+  "gaps": [],
+  "distinct": 18,
   "slots": 18,
   "stock_provenance_rows": 0,
   "family": "auto-repair",

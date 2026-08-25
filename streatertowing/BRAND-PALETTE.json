@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "streatertowing",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#3C342B",
+  "palette": {
+    "BRAND": "#3C342B",
+    "PRIMARY": "#383128",
+    "PRIMARY_DK": "#2A241E",
+    "PRIMARY_MID": "#443B31",
+    "ACCENT": "#594D40",
+    "ACCENT_DK": "#3E362D",
+    "ACCENT_LT": "#7D6C59",
+    "ON_DARK": "#DDD7CF",
+    "MENU_INK": "#1B1713",
+    "TINT_1": "#EAE6E1",
+    "TINT_2": "#F0EDEA",
+    "TINT_3": "#E5E1DB",
+    "TINT_4": "#E8E3DE",
+    "LINE_2": "#D4CCC4",
+    "MUTED_BRAND": "#AA9A88",
+    "MIST": "#F8F6F5",
+    "LINE": "#E1DCD5",
+    "PRIMARY_RGB": "56,49,40",
+    "ACCENT_RGB": "89,77,64",
+    "SCRIM_RGB": "68,59,49",
+    "SCRIM2_RGB": "42,36,30",
+    "MENU_INK_RGB": "27,23,19",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.82,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.2,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.97,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.82,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

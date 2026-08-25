@@ -1,0 +1,171 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T05:06:23.647Z",
+ "slug": "wilsonelectricalservicellc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-3f10c01eb676a5f4.jpg",
+   "bytes": 283504,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-67810bd34ce6f47e.jpg",
+   "bytes": 202395,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-62f962b3e25a27f8.jpg",
+   "bytes": 102181,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-2d7a389531d6070c.jpg",
+   "bytes": 241019,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-19ed532ba50a5a70.jpg",
+   "bytes": 321650,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-e758025dca4e8a8c.jpg",
+   "bytes": 241446,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-faa9092b1fbe5995.jpg",
+   "bytes": 349718,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-f11fc465d10be8ca.jpg",
+   "bytes": 303189,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-f58e0a9779cab2aa.jpg",
+   "bytes": 290475,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-b3abedb868f1e0ee.jpg",
+   "bytes": 228402,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-ff2f5103dd6b87ca.jpg",
+   "bytes": 208266,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-ec942f186eba3ff7.jpg",
+   "bytes": 203786,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-291f9c4593047391.jpg",
+   "bytes": 180952,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-8bd37e3d8de2b979.jpg",
+   "bytes": 174741,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-fd2103d017ff2bbb.jpg",
+   "bytes": 104756,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-b68ba2648b09f243.jpg",
+   "bytes": 144532,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-6632d172ad1cb16d.jpg",
+   "bytes": 206737,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 36 verdicts",
+  "staged 18 harvest photos from assets",
+  "refused_by_class:google-e084c2dc05c39006.jpg:reject",
+  "hero_cand_refuse:google-faa9092b1fbe5995.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-f11fc465d10be8ca.jpg:road_no_landscape",
+  "hero_cand_refuse:google-e758025dca4e8a8c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-2d7a389531d6070c.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b3abedb868f1e0ee.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-ff2f5103dd6b87ca.jpg:road_no_landscape",
+  "hero_cand_refuse:google-ec942f186eba3ff7.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-67810bd34ce6f47e.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-8bd37e3d8de2b979.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b68ba2648b09f243.jpg:road_no_landscape",
+  "hero_cand_refuse:google-fd2103d017ff2bbb.jpg:blurry_low_contrast",
+  "hero_cand_refuse:google-62f962b3e25a27f8.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 17,
+ "refused_by_class": 1,
+ "photo_candidates": 17,
+ "altBySlot": {
+  "photo-hero.jpg": "Portrait of a young man wearing a pink West Coast Choppers shirt outdoors",
+  "photo-card-about.jpg": "Two people working together to install a ceiling fan in a wood-paneled room",
+  "photo-about.jpg": "Close selfie portrait of a woman and a man smiling together",
+  "photo-card-services.jpg": "Open electrical panel with wiring exposed inside an unfinished wall cavity",
+  "photo-card-reviews.jpg": "House under construction with house wrap and two workers on site",
+  "photo-card-photos.jpg": "Framed house interior under construction with open stud walls",
+  "photo-gallery-1.jpg": "HVAC condenser unit mounted outside a brick house next to the electrical meter",
+  "photo-gallery-2.jpg": "Electrical meter and conduit mounted on a brick wall",
+  "photo-gallery-3.jpg": "White Gree mini-split AC condenser unit installed on the ground outside",
+  "photo-ctaband.jpg": "Electrical meter box mounted on the house's beige siding",
+  "photo-quoteband.jpg": "Close-up of electrical conduit mounted along the house's roofline",
+  "photo-gallery-4.jpg": "Electrical panel installed and wired inside the wall cavity",
+  "photo-gallery-5.jpg": "Electrical panel mounted on a stud wall near a window during construction",
+  "photo-gallery-6.jpg": "Open wall cavity showing insulation and an older wall-mounted AC unit",
+  "photo-service-1.jpg": "Hallway ceiling with recessed lighting fixtures installed",
+  "photo-service-2.jpg": "Close-up of an electrical meter and conduit mounted on gray siding",
+  "photo-service-3.jpg": "House under construction with house wrap, building materials and a ladder"
+ },
+ "dedupe_fixed": 5
+}

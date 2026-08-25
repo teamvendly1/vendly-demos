@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "lancesautoanddieselrepair",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#2C231A",
+  "palette": {
+    "BRAND": "#2C231A",
+    "PRIMARY": "#3D3024",
+    "PRIMARY_DK": "#2D241B",
+    "PRIMARY_MID": "#4A3B2C",
+    "ACCENT": "#604D39",
+    "ACCENT_DK": "#433628",
+    "ACCENT_LT": "#876B50",
+    "ON_DARK": "#E1D6CC",
+    "MENU_INK": "#1D1711",
+    "TINT_1": "#ECE6DF",
+    "TINT_2": "#F2EDE9",
+    "TINT_3": "#E8E0D9",
+    "TINT_4": "#EAE3DC",
+    "LINE_2": "#D9CCBF",
+    "MUTED_BRAND": "#B3997F",
+    "MIST": "#F8F6F4",
+    "LINE": "#E4DBD2",
+    "PRIMARY_RGB": "61,48,36",
+    "ACCENT_RGB": "96,77,57",
+    "SCRIM_RGB": "74,59,44",
+    "SCRIM2_RGB": "45,36,27",
+    "MENU_INK_RGB": "29,23,17",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.75,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.02,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.92,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.75,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -22,7 +22,7 @@
   "eyebrow": "Newport",
   "h1_lead": "",
   "h1_emph": "Tree work in Newport that shows up when you call.",
-  "hero_lede": "Tree service done right. Call and we will take a look.",
+  "hero_lede": "Tree service in Newport. Recent jobs are on the photos page.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "Newport",
@@ -49,7 +49,7 @@
   "footer_blurb": "Hampton's Tree Service & Firewood serving Newport.",
   "about_h2": "About Hampton's Tree Service & Firewood",
   "about_p1": "We handle tree service for homes and businesses around Newport.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers climbing and sectional dismantling, stump and debris clearance. We work out of Newport and the towns around it.",
   "area_h2": "Where we take on tree service work near Newport",
   "area_lede": "",
   "svc_hero_h1": "The tree service work we take on",
@@ -57,10 +57,18 @@
   "svc_list_h2": "tree service jobs we take on",
   "services": [
     {
-      "title": "Tree service",
-      "body": "Trees are pruned, removed or cleared with the work planned around what is standing nearby.",
+      "title": "Climbing and sectional dismantling",
+      "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "Climber in red helmet ascending a pine trunk on rope, chainsaw cutting with wood chips fly"
+    },
+    {
+      "title": "Stump and debris clearance",
+      "body": "The wood is cut down, cleared out and the ground left usable again.",
+      "slot": "",
+      "alt": "",
+      "evidence": "Two ground crew members raking and clearing cut branches and pine debris from a yard near "
     }
   ],
   "photos_h2": "A look at the work",
@@ -68,17 +76,17 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Two workers raking cut branches and pine cones off a lawn near a house",
+      "alt": "Climber near the top of a topped tree trunk making a cut with wood debris flying off the saw",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Climber roped at the base of a tall pine tree's canopy",
+      "alt": "Wide shot of a tall pine tree with a climber near the crown and ropes visible against blue sky",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-3.jpg",
-      "alt": "Climber roped high on a tall stripped tree trunk against a hazy sky",
+      "alt": "Climber roped in near the top of a freshly topped dead tree trunk against a hazy white sky",
       "subject_class": "trade_work"
     }
   ],
@@ -206,22 +214,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Two climbers working at different heights in a tall pine tree",
-    "card_about": "Climber high in a pine tree cutting branches with ropes visible",
-    "card_services": "Climber high on a tall pine tree cutting near the top against a blue sky",
-    "card_reviews": "Climber in an orange helmet cutting branches near the top of a tall pine tree",
-    "card_photos": "Climber cutting a large section off the top of a stripped tree trunk with wood chips flying",
-    "ctaband": "Climber near the top of a tall pine tree against a blue sky",
-    "about": "Climber cutting a tall tree trunk with sawdust spraying against green canopy",
+    "hero": "Wide shot of two tall pines with a climber visible high in the left tree against blue sky",
+    "card_about": "Two ground crew members raking and clearing cut branches and pine debris from a yard near a gray house",
+    "card_services": "Close-up of a climber in tree canopy working with ropes and orange safety gear",
+    "card_reviews": "Wide shot of two tall pine trees with a climber working partway up the near trunk against blue sky",
+    "card_photos": "Climber in red helmet ascending a pine trunk on rope, chainsaw cutting with wood chips flying against clear blue sky",
+    "ctaband": "Wide shot of a single tall pine tree with a climber ascending near the top against clear blue sky",
+    "about": "Climber cutting into a large trunk with a chainsaw, sawdust spraying, green tree canopy in background",
     "contact": "Hampton's Tree Service & Firewood",
     "services_hero": "Tree service services"
   },
   "send": "NO",
-  "asset_version": "harv20260823001455",
+  "asset_version": "harv20260824055014",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hamptonstreeservicefirewood\\HARVEST.json",
-    "at": "2026-08-23T00:14:55.314Z",
+    "at": "2026-08-24T05:50:14.878Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hamptonstreeservicefirewood\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -250,6 +258,7 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-photographs",
   "photo_count": 11,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

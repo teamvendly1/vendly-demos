@@ -1,0 +1,57 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "supremegarageroadservicellc",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#554101",
+  "palette": {
+    "BRAND": "#554101",
+    "PRIMARY": "#604901",
+    "PRIMARY_DK": "#473601",
+    "PRIMARY_MID": "#745901",
+    "ACCENT": "#947102",
+    "ACCENT_DK": "#6A5101",
+    "ACCENT_LT": "#D4A202",
+    "ON_DARK": "#FEEBAE",
+    "MENU_INK": "#2D2301",
+    "TINT_1": "#FEF3CD",
+    "TINT_2": "#FFF6DC",
+    "TINT_3": "#FEF0C3",
+    "TINT_4": "#FEF1C8",
+    "LINE_2": "#FEE69A",
+    "MUTED_BRAND": "#FDCD35",
+    "MIST": "#FFFBED",
+    "LINE": "#FEEEB8",
+    "PRIMARY_RGB": "96,73,1",
+    "ACCENT_RGB": "148,113,2",
+    "SCRIM_RGB": "116,89,1",
+    "SCRIM2_RGB": "71,54,1",
+    "MENU_INK_RGB": "45,35,1",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 8.57,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 4.54,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 7.23,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 15.53,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: white label on accent button = 4.36:1 (needs 4.5)"
+  ]
+}

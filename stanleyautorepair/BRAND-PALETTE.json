@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "stanleyautorepair",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#3C2F24",
+  "palette": {
+    "BRAND": "#3C2F24",
+    "PRIMARY": "#3D2F24",
+    "PRIMARY_DK": "#2D231B",
+    "PRIMARY_MID": "#49392C",
+    "ACCENT": "#604B39",
+    "ACCENT_DK": "#433428",
+    "ACCENT_LT": "#866950",
+    "ON_DARK": "#E0D5CC",
+    "MENU_INK": "#1D1611",
+    "TINT_1": "#ECE5DF",
+    "TINT_2": "#F2EDE9",
+    "TINT_3": "#E8E0D9",
+    "TINT_4": "#EAE2DC",
+    "LINE_2": "#D9CBBF",
+    "MUTED_BRAND": "#B39780",
+    "MIST": "#F8F6F4",
+    "LINE": "#E4DBD2",
+    "PRIMARY_RGB": "61,47,36",
+    "ACCENT_RGB": "96,75,57",
+    "SCRIM_RGB": "73,57,44",
+    "SCRIM2_RGB": "45,35,27",
+    "MENU_INK_RGB": "29,22,17",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.88,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.19,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.93,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.87,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "hallstreeservices",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#20240E",
+  "palette": {
+    "BRAND": "#20240E",
+    "PRIMARY": "#3E461B",
+    "PRIMARY_DK": "#2E3314",
+    "PRIMARY_MID": "#4B5421",
+    "ACCENT": "#626E2B",
+    "ACCENT_DK": "#454D1E",
+    "ACCENT_LT": "#899A3C",
+    "ON_DARK": "#E2E8C4",
+    "MENU_INK": "#1D210D",
+    "TINT_1": "#EDF1DA",
+    "TINT_2": "#F2F5E5",
+    "TINT_3": "#E9EED3",
+    "TINT_4": "#EBEFD7",
+    "LINE_2": "#DAE2B6",
+    "MUTED_BRAND": "#B6C66C",
+    "MIST": "#F9FAF2",
+    "LINE": "#E5EBCC",
+    "PRIMARY_RGB": "62,70,27",
+    "ACCENT_RGB": "98,110,43",
+    "SCRIM_RGB": "75,84,33",
+    "SCRIM2_RGB": "46,51,20",
+    "MENU_INK_RGB": "29,33,13",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.02,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 5.55,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 7.9,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.46,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

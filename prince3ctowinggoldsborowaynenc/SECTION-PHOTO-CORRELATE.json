@@ -1,51 +1,233 @@
 {
-  "at": "2026-08-17T04:35:32.990Z",
+  "at": "2026-08-24T14:37:16.813Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "towing",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "7f222192817aab429a8ba01b7ffe4a3c674a721fcf1d87cea337238ecd5615b5",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-1.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-7f222192817aab42.jpg"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1c13f1ffc6611fe508e3a90b643cf0ed0cc90b80a9ea81dd89eb3e940837f82d",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-card-reviews.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-1c13f1ffc6611fe5.jpg"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "harvest-fallback",
+      "sha256": "cc10b42fe34bbdb3dc97e3875bd03c700f15f037774b06220c4e7567a791aa6b",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-3.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-cc10b42fe34bbdb3.jpg"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "428cc4d8ae90b655adfd3e18eeb42ec7eed48654a863a2c56b114ff3ef96cc33",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-2.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-428cc4d8ae90b655.jpg"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "44d69a2d42f678d7c303111be0563a51c36d2475e766d6ada6d4429ab9e20937",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-family.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-44d69a2d42f678d7.jpg"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "49e7c77dabc1100f7efeeb7e4d608e2cb58f97023bf9afc5f8504fb27a525e6b",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-5.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-49e7c77dabc1100f.jpg"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "15586b3f07cf4c748a17e07747c1b848b36f9340d0d0b75a63ef67f796015bb2",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-ctaband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-15586b3f07cf4c74.jpg"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "5974cbdaad188d2087d6e76872ff58473c922ddebf0dc41988787531d266f9fd",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-quoteband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-5974cbdaad188d20.jpg"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "86a439c3d04f12f6b628243e61d83ebd1c043fc731b636e18ed84692fd3a9aad",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-4.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-86a439c3d04f12f6.jpg"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "2976f8843e4bf899efe81da74738b90e6422ee9a6717111c59a07c3a3466ef7b",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-service-1.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-2976f8843e4bf899.jpg"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
+      "sha256": "464ea32160aedf7342931f8b03c51df1b72dd013e48dcb24525ac2b63cd08ee6",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-photos-cta.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-464ea32160aedf73.jpg"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3cc7f24578aa71d2836bc01fcf72dfdf3d9f017e1ee3e51f08cea7519b058481",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-reviewsband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-3cc7f24578aa71d2.jpg"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b76e1bc2e03534799ff51c754fcf28823a691539eae75283f972809b5faeb0de",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-hero.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-b76e1bc2e0353479.jpg"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "84d55373653336b77becf6a12e2757c9d2e10e98fb2f983c26e415bde1a53c02",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-8.jpg"
+      ],
+      "service": "Winch-out and recovery",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-84d55373653336b7.jpg"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "5bc93db6d3867b461016b948ad32e2f787fffbbb4a3355ef9e353a6bcc5b646a",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-9.jpg"
+      ],
+      "service": "Car and light truck transport",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-5bc93db6d3867b46.jpg"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a27fd750d7133f803e06c2cc0a84b226e79c4d585e8458425ecf0a91989056e5",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-services-hero.jpg"
+      ],
+      "service": "Heavy and oversize loads",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-a27fd750d7133f80.jpg"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4cc2cc378bbe5b49a2bc672dba7f17152f6fc89bb85d72213d5f5838d990f0c6",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-card-photos.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-4cc2cc378bbe5b49.jpg"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "5a7fca862226512ff71b731ea35aedff97411ef75f0a7658a2e715fc17934622",
+      "bytes": 187576
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "62f1489841beeef8da2efa4028964a9d37c36df6b02ae8931ddab4a98a96891b",
+      "bytes": 295992
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "18b12d4a94c29e993d3baeb1ea647f1c930700ee009b4849c56421872c1f53ff",
+      "bytes": 286336
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "044a2ada7dd0924aef9f5f71f48bf545e27a110de0626284c39e500ae0cb5011",
+      "bytes": 267103
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "69747b7101373181aa1a36e859b8c191c0b5fa5db791c13193a63258d5089c97",
+      "bytes": 226622
+    },
+    {
+      "file": "photo-quoteband.jpg",
       "sha256": "a81b3d2c96de23fbb501e67b41054ccaf8f1fc75a1d8e566cb2e788f3037dd2f",
       "bytes": 309663
     },
     {
-      "file": "photo-card-about.jpg",
-      "sha256": "1c13f1ffc6611fe508e3a90b643cf0ed0cc90b80a9ea81dd89eb3e940837f82d",
-      "bytes": 229152
+      "file": "photo-reviewsband.jpg",
+      "sha256": "e6ec811038ba072affa21fa7103a6ee152b8253451c962e8dfb1684b37035557",
+      "bytes": 222015
     },
     {
-      "file": "photo-card-photos.jpg",
+      "file": "photo-service-4.jpg",
+      "sha256": "f4cc335238baf7e8c80c307a91c30c73cb8faf9c405da40755a6d09762443738",
+      "bytes": 196748
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "0230b84ffb2e6a1078f244c88e3eaeae61e5f7952a0ff17b854dd82ac1ad19a2",
+      "bytes": 172849
+    },
+    {
+      "file": "photo-service-6.jpg",
       "sha256": "c9253bd0ee75995ddef8851bf970047f2903e08bd977db4fffcea32e01d4c7de",
       "bytes": 166619
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "7f222192817aab429a8ba01b7ffe4a3c674a721fcf1d87cea337238ecd5615b5",
-      "bytes": 211882
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "cc10b42fe34bbdb3dc97e3875bd03c700f15f037774b06220c4e7567a791aa6b",
-      "bytes": 167604
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "44d69a2d42f678d7c303111be0563a51c36d2475e766d6ada6d4429ab9e20937",
-      "bytes": 459546
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "49e7c77dabc1100f7efeeb7e4d608e2cb58f97023bf9afc5f8504fb27a525e6b",
-      "bytes": 173312
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "428cc4d8ae90b655adfd3e18eeb42ec7eed48654a863a2c56b114ff3ef96cc33",
-      "bytes": 408124
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

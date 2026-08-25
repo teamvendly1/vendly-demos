@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T04:24:26.583Z",
+  "at": "2026-08-24T14:00:48.494Z",
   "trade": "tree-service",
   "slotHints": {
     "photo-service-1.jpg": "Storm damage and emergency removal",
@@ -46,7 +46,7 @@
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "62ac706cdd85cff63ea136d6519cd9a17ae1797ea13c0869d9669b9dd65a69c6",
+      "sha256": "54ff2e42e835eae04a5adbf80186ccc4e7da155f527fb7ddbe7332746fba1471",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -64,7 +64,7 @@
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "79733928377c8923d981d30441bbea6e2334cf850768e80c8ee26d24dbd9278f",
+      "sha256": "bb19f7d028fcfc810b29f8d700eb9a51e3eefa2381509a214e388094f9a7a145",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -93,6 +93,18 @@
       "niche_folder": null
     },
     {
+      "file": "photo-service-4.jpg",
+      "sha256": "3fafd7952341015ed97e06ec013d13aebd1b904d7b85999d0cd7fecde4e723c8",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "aa3b852c246f1ffab80b974d2bba627ffbfad9ad64dafda209c7b366d114ba7c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-services-hero.jpg",
       "sha256": "b0479dc2ced6f55901cbbeee02a3cbb98c71e65f5faefba872314d95f69971a4",
       "source": "harvest_or_prior",
@@ -100,24 +112,6 @@
     }
   ],
   "filled": [
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
     {
       "file": "photo-service-6.jpg",
       "sha256": null,
@@ -135,35 +129,13 @@
       "reason": "stock_gap_all_claimed",
       "family": "tree-service",
       "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-6.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 15,
+  "distinct": 17,
   "slots": 18,
   "stock_provenance_rows": 0,
   "family": "tree-service",
