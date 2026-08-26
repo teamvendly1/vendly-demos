@@ -1,171 +1,230 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T07:43:40.235Z",
-  "slug": "performanceplusautomotive",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-service-1.jpg",
-      "bytes": 311510,
-      "trade_score": 7.5,
-      "reason": "hero_contrast_retarget:photo-service-1.jpg"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-b1ecf18e9257cb21.jpg",
-      "bytes": 367214,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-2e33aa68330c1a57.jpg",
-      "bytes": 419859,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-bbd50b1c8f6e3c58.jpg",
-      "bytes": 167586,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-ecc3e10e58781209.jpg",
-      "bytes": 342920,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-ed6a45e77121709c.jpg",
-      "bytes": 331252,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-9dfc2c35ed7abebe.jpg",
-      "bytes": 303485,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-eebddac8a775bc4c.jpg",
-      "bytes": 301755,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-99b4a59a78083545.jpg",
-      "bytes": 286457,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-35ff4e887c317fc4.jpg",
-      "bytes": 199177,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-020ee0ce32d1ae5e.jpg",
-      "bytes": 181766,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "from": "google-d08f2fe2a7c4e951.jpg",
-      "bytes": 167936,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
-      "from": "google-897d0fa3b033a428.jpg",
-      "bytes": 140982,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
-      "from": "google-4f86efafc29a509d.jpg",
-      "bytes": 333335,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-1.jpg",
-      "from": "google-4ba04909e0a37e7f.jpg",
-      "bytes": 311510,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-2.jpg",
-      "from": "google-6031fb558556da0c.jpg",
-      "bytes": 289492,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-3.jpg",
-      "from": "google-65480c1a447ced44.jpg",
-      "bytes": 284497,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-7.jpg",
-      "from": "google-e80844a8e6505618.jpg",
-      "bytes": 224450,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "facebook-profile-mark:eyes-verified",
-      "bytes": 664226,
-      "source_url": "https://www.facebook.com/Performanceplusautomotive"
-    }
-  ],
-  "skipped": [
-    "classification read: 42 verdicts",
-    "staged 21 harvest photos",
-    "refused_by_class:google-0cb8a0150b5e4b9e.jpg:reject",
-    "refused_by_class:google-ea2e0d8f52d200b3.jpg:reject",
-    "refused_by_class:google-f525f23df8980509.jpg:reject",
-    "hero_hold_crew_for_about:google-b1ecf18e9257cb21.jpg",
-    "hero_cand_refuse:google-eebddac8a775bc4c.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-6031fb558556da0c.jpg:road_no_landscape",
-    "hero_cand_refuse:google-35ff4e887c317fc4.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-020ee0ce32d1ae5e.jpg:road_no_landscape",
-    "hero_cand_refuse:google-d08f2fe2a7c4e951.jpg:close_crop_alt",
-    "hero_cand_refuse:google-bbd50b1c8f6e3c58.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-897d0fa3b033a428.jpg:portrait_aspect_hero_refuse",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 18,
-  "refused_by_class": 3,
-  "altBySlot": {
-    "photo-hero.jpg": "Green Challenger parked in the shop bay",
-    "photo-about.jpg": "Two technicians working in the bay, one under a car on the lift",
-    "photo-card-about.jpg": "Green Challenger parked at the storefront with the shop sign clearly visible",
-    "photo-card-services.jpg": "Technician holding a wiring harness connector",
-    "photo-card-reviews.jpg": "Green Challenger with hood up, oil service line attached, in the bay",
-    "photo-card-photos.jpg": "Brake bleeder tool hooked to an SRT engine bay mid-service",
-    "photo-gallery-1.jpg": "Gray Mustang up on a two-post lift with hood open for service",
-    "photo-gallery-2.jpg": "Wide engine bay shot with valve covers off mid-repair",
-    "photo-gallery-3.jpg": "Orange classic truck with hood up next to a black muscle car in the shop bay",
-    "photo-ctaband.jpg": "Close-up of engine valve cover and rocker assembly",
-    "photo-quoteband.jpg": "Underside close-up of a rusted CV joint and suspension arm",
-    "photo-gallery-4.jpg": "Underside close-up of a rusted CV joint and hub",
-    "photo-gallery-5.jpg": "Close-up of a brake rotor and hub assembly",
-    "photo-gallery-6.jpg": "Gray Camaro parked in the shop bay",
-    "photo-service-1.jpg": "Green Challenger parked in the shop bay",
-    "photo-service-2.jpg": "Storefront sign PERFORMANCE PLUS AUTOMOTIVE with phone, classic Impala parked in the lot",
-    "photo-service-3.jpg": "Customer car parked directly in front of the shop with the storefront sign and address visible",
-    "photo-gallery-7.jpg": "Classic white Impala street-side photo"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T00:38:08.268Z",
+ "slug": "performanceplusautomotive",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-7594466826eb03c9.jpg",
+   "bytes": 357849,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
   },
-  "hero_retarget": {
-    "at": "2026-08-18T07:43:43.499Z",
-    "from_slot": "photo-service-1.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-b1ecf18e9257cb21.jpg",
+   "bytes": 124871,
+   "smart_crop": true,
+   "src": "google-b1ecf18e9257cb21.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 5,
+   "detail_score": 21.147,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-2e33aa68330c1a57.jpg",
+   "bytes": 419859,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-bbd50b1c8f6e3c58.jpg",
+   "bytes": 75598,
+   "smart_crop": true,
+   "src": "google-bbd50b1c8f6e3c58.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 80,
+   "detail_score": 15.797,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-ecc3e10e58781209.jpg",
+   "bytes": 136840,
+   "smart_crop": true,
+   "src": "google-ecc3e10e58781209.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 22.65,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-ed6a45e77121709c.jpg",
+   "bytes": 138410,
+   "smart_crop": true,
+   "src": "google-ed6a45e77121709c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 26.423,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-9dfc2c35ed7abebe.jpg",
+   "bytes": 303485,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-eebddac8a775bc4c.jpg",
+   "bytes": 301755,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-99b4a59a78083545.jpg",
+   "bytes": 286457,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-35ff4e887c317fc4.jpg",
+   "bytes": 199177,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-020ee0ce32d1ae5e.jpg",
+   "bytes": 181766,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-d08f2fe2a7c4e951.jpg",
+   "bytes": 167936,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-897d0fa3b033a428.jpg",
+   "bytes": 140982,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-4f86efafc29a509d.jpg",
+   "bytes": 333335,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-4ba04909e0a37e7f.jpg",
+   "bytes": 125487,
+   "smart_crop": true,
+   "src": "google-4ba04909e0a37e7f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 21.607,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-6031fb558556da0c.jpg",
+   "bytes": 109218,
+   "smart_crop": true,
+   "src": "google-6031fb558556da0c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 18.02,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-65480c1a447ced44.jpg",
+   "bytes": 107187,
+   "smart_crop": true,
+   "src": "google-65480c1a447ced44.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 14.234,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-e80844a8e6505618.jpg",
+   "bytes": 224450,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "facebook-profile-mark:eyes-verified",
+   "bytes": 664226,
+   "source_url": "https://www.facebook.com/Performanceplusautomotive"
   }
+ ],
+ "skipped": [
+  "classification read: 42 verdicts",
+  "staged 21 harvest photos from assets",
+  "refused_by_class:google-0cb8a0150b5e4b9e.jpg:reject",
+  "refused_by_class:google-ea2e0d8f52d200b3.jpg:reject",
+  "refused_by_class:google-f525f23df8980509.jpg:reject",
+  "hero_hold_crew_for_about:google-b1ecf18e9257cb21.jpg",
+  "hero_cand_refuse:google-eebddac8a775bc4c.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-6031fb558556da0c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-35ff4e887c317fc4.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-020ee0ce32d1ae5e.jpg:road_no_landscape",
+  "hero_cand_refuse:google-d08f2fe2a7c4e951.jpg:close_crop_alt",
+  "hero_cand_refuse:google-bbd50b1c8f6e3c58.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-897d0fa3b033a428.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 18,
+ "refused_by_class": 3,
+ "photo_candidates": 18,
+ "altBySlot": {
+  "photo-hero.jpg": "Several customer muscle cars parked in the shop bay",
+  "photo-card-about.jpg": "Two technicians working in the bay, one under a car on the lift",
+  "photo-about.jpg": "Green Challenger parked at the storefront with the shop sign clearly visible",
+  "photo-card-services.jpg": "Technician holding a wiring harness connector",
+  "photo-card-reviews.jpg": "Green Challenger with hood up, oil service line attached, in the bay",
+  "photo-card-photos.jpg": "Brake bleeder tool hooked to an SRT engine bay mid-service",
+  "photo-gallery-1.jpg": "Gray Mustang up on a two-post lift with hood open for service",
+  "photo-gallery-2.jpg": "Wide engine bay shot with valve covers off mid-repair",
+  "photo-gallery-3.jpg": "Orange classic truck with hood up next to a black muscle car in the shop bay",
+  "photo-ctaband.jpg": "Close-up of engine valve cover and rocker assembly",
+  "photo-quoteband.jpg": "Underside close-up of a rusted CV joint and suspension arm",
+  "photo-gallery-4.jpg": "Underside close-up of a rusted CV joint and hub",
+  "photo-gallery-5.jpg": "Close-up of a brake rotor and hub assembly",
+  "photo-gallery-6.jpg": "Gray Camaro parked in the shop bay",
+  "photo-service-1.jpg": "Green Challenger parked in the shop bay",
+  "photo-service-2.jpg": "Storefront sign PERFORMANCE PLUS AUTOMOTIVE with phone, classic Impala parked in the lot",
+  "photo-service-3.jpg": "Customer car parked directly in front of the shop with the storefront sign and address visible",
+  "photo-gallery-7.jpg": "Performance Plus Automotive - company vehicle on the job (photo 1)"
+ },
+ "dedupe_fixed": 5
 }

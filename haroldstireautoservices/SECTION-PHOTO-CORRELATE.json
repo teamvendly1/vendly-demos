@@ -1,99 +1,302 @@
 {
-  "at": "2026-08-24T05:50:47.512Z",
+  "at": "2026-08-26T00:44:09.552Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "66d853173028d54a9621231b69f114e16e6ac211dd1d256654873462b53085c5",
-      "bytes": 421706
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "6f49d8f96979fe2c65e0e7060c9fbec11e284c84c7c1ce5af4897905d74cda56",
-      "bytes": 185241
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "243d1e9513372f82a0b585394cf166c944509b109d7f5495dba8a91dc69567b2",
-      "bytes": 280934
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "bae5ae5820357a3539ff24b37f55d2b8532c5e6544e9f5559ad3bd43fdfd7e35",
-      "bytes": 283628
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "b83663fff5fde38694aebc6ecf157f5306f96eebbdee2a52be139c140ac2b210",
-      "bytes": 289661
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "8a0988a4203385236cd48e2a314ba5b1769a84a78dad7dc6abc7eaed45019f0b",
-      "bytes": 259292
-    },
-    {
-      "file": "photo-gallery-1.jpg",
-      "sha256": "dde4ae76eceddbf57e2a01797db61f57eff6c6f4f4558b762fc9008f21319f4e",
-      "bytes": 249734
-    },
-    {
-      "file": "photo-gallery-2.jpg",
-      "sha256": "9f3ea9d13661944f263a003e2160095b459556e695f113681cc434fd4bd50787",
-      "bytes": 389671
+      "bytes": 421706,
+      "alt": "wide interior view of the work bay with tire racks, equipment, and two mechanics"
     },
     {
       "file": "photo-gallery-3.jpg",
       "sha256": "afa577f84a3f21ca99ad4ed634e47469c6aaf08af3c2f249bce189b346607e5b",
-      "bytes": 299113
+      "bytes": 299113,
+      "alt": "close-up of a pickup truck's front tire and running board in a gravel lot"
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "27019c1447cff5620b44515e4042a29235ece8578deb32f7fb25ad33229f0ed5",
-      "bytes": 232527
-    }
-  ],
-  "failed": [],
-  "gallery_gaps": [
+      "file": "photo-card-about.jpg",
+      "sha256": "098dabe8f1385ada4048d99bd7e70b0825961b346be2563f0e0b765c8bfb39ce",
+      "bytes": 98216,
+      "alt": "front service counter with a staff member standing behind it and another person filming",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:staff member:auto"
+      ]
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "824627a54450eea18f08882febc45dbf1d9051455f34f5d41ae35d933a42052f",
+      "bytes": 95753,
+      "alt": "close-up of a bare silver alloy wheel rim with no tire mounted, resting on the floor",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "1d24f53d43ddd6be0e344be4c5a96f6242cbeee7282870f74494b581ddb8d8a6",
+      "bytes": 108759,
+      "alt": "close-up of a wheel's spoke openings with Michelin lettering visible along the tire sidewall",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:lettering:auto"
+      ]
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "ef70458fc40e14ea510c9180cb6a31fbb20001c055b742318930aec6de041dd7",
+      "bytes": 113138,
+      "alt": "close-up of a Michelin tire tread and sidewall mounted on a wheel in the shop",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "8a0988a4203385236cd48e2a314ba5b1769a84a78dad7dc6abc7eaed45019f0b",
+      "bytes": 259292,
+      "alt": "shop lobby with wood paneled walls, corkboard of photos, and a decorated Christmas tree",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "dde4ae76eceddbf57e2a01797db61f57eff6c6f4f4558b762fc9008f21319f4e",
+      "bytes": 249734,
+      "alt": "close-up of black tire tread pattern and warning label text on a mounted wheel",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:text:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "9f3ea9d13661944f263a003e2160095b459556e695f113681cc434fd4bd50787",
+      "bytes": 389671,
+      "alt": "close-up of a white spoked trailer wheel and mounted tire photographed outdoors",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
     {
       "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "27019c1447cff5620b44515e4042a29235ece8578deb32f7fb25ad33229f0ed5",
+      "bytes": 232527,
+      "alt": "customer waiting area with Coca-Cola vending machines and wooden rocking chairs by the door",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:lifestyle_decor:chair"
+      ]
     }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "front service counter with a staff member standing behind it and another person filming",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:staff member:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "close-up of a bare silver alloy wheel rim with no tire mounted, resting on the floor",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "close-up of a wheel's spoke openings with Michelin lettering visible along the tire sidewall",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:lettering:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "close-up of a Michelin tire tread and sidewall mounted on a wheel in the shop",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "shop lobby with wood paneled walls, corkboard of photos, and a decorated Christmas tree",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "close-up of black tire tread pattern and warning label text on a mounted wheel",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:text:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "close-up of a white spoked trailer wheel and mounted tire photographed outdoors",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "customer waiting area with Coca-Cola vending machines and wooden rocking chairs by the door",
+      "relevance": {
+        "ok": false,
+        "score": -25,
+        "reason": "lifestyle_decor:chair"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-ctaband.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

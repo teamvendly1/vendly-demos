@@ -31,7 +31,7 @@
   "strip_body": "",
   "explore_h2": "What comes into our shop",
   "explore_lede": "",
-  "card_about": "",
+  "card_about": "Who you are calling, and the work we do in Moyock.",
   "card_services": "See everything we take on",
   "card_reviews": "Read what past customers said",
   "card_photos": "Browse recent job photos",
@@ -58,9 +58,9 @@
   "services": [
     {
       "title": "Auto repair",
-      "body": "",
+      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
       "slot": "photo-service-1.jpg",
-      "alt": "Man in a blue t-shirt holding a trophy beside a light blue muscle car"
+      "alt": "Close view of a chrome-bumpered pickup truck's front end"
     }
   ],
   "photos_h2": "Auto repair work near Moyock",
@@ -68,47 +68,47 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Yellow vintage pickup truck parked on the grass",
+      "alt": "Two Best of Show trophies displayed on a table at the car show",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Row of classic cars parked in a gravel lot with people walking by",
+      "alt": "Small crowd gathered near a truck and an enclosed trailer",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-3.jpg",
-      "alt": "Pink vintage sedan parked in a grassy area",
+      "alt": "Man in a blue t-shirt holding a trophy beside a light blue muscle car",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-4.jpg",
-      "alt": "Red vintage car with its hood open showing the engine bay",
+      "alt": "Row of classic cars parked in a gravel lot with people walking by",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-5.jpg",
-      "alt": "Black flatbed tow truck with custom graphics parked on the grass",
+      "alt": "Pink vintage sedan parked in a grassy area",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-6.jpg",
-      "alt": "Red sports car with its hood open, other show cars parked behind it",
+      "alt": "Row of classic cars and pickups parked at an outdoor car show",
       "subject_class": "vehicles"
     },
     {
       "slot": "photo-gallery-7.jpg",
-      "alt": "Two vintage cars parked side by side with their hoods open",
+      "alt": "Red sports car with its hood open, other show cars parked behind it",
       "subject_class": "people"
     },
     {
       "slot": "photo-gallery-8.jpg",
-      "alt": "Turquoise vintage car with a polished chrome engine on display",
+      "alt": "Two vintage cars parked side by side with their hoods open",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-9.jpg",
-      "alt": "Blue hot rod with a supercharged engine and yellow wheels on display",
+      "alt": "Turquoise vintage car with a polished chrome engine on display",
       "subject_class": "people"
     }
   ],
@@ -342,33 +342,33 @@
   ],
   "contact_h2": "Reach us in Moyock",
   "contact_lede": "",
-  "contact_photo_slot": "",
-  "contact_photo_tier": "none",
+  "contact_photo_slot": "photo-family.jpg",
+  "contact_photo_tier": "owner",
   "contact_map": "link",
   "place_customers_visit": true,
   "has_storefront": true,
   "alts": {
     "hero": "Blue vintage car parked at the car show, seen from the side",
     "card_about": "People walking through a gravel lot at an outdoor car show",
-    "card_services": "Two Best of Show trophies displayed on a table at the car show",
-    "card_reviews": "Small crowd gathered near a truck and an enclosed trailer",
-    "card_photos": "Small crowd of people walking among parked classic cars at a car show",
-    "ctaband": "Row of classic cars and pickups parked at an outdoor car show",
-    "about": "Man in a blue shirt holding a trophy beside a silver vintage car",
+    "card_services": "Group of people posing together with a trophy in front of vehicles",
+    "card_reviews": "Group of people standing near parked cars, one holding a trophy",
+    "card_photos": "Man in a blue shirt holding a trophy beside a silver vintage car",
+    "ctaband": "Man standing beside a vintage car with its hood open and a Ford emblem visible",
+    "about": "Small crowd of people walking among parked classic cars at a car show",
     "contact": "Vintage pickup truck with its hood raised at an outdoor car show",
-    "services_hero": "Man standing beside a vintage car with its hood open and a Ford emblem visible"
+    "services_hero": "Blue hot rod with a supercharged engine and yellow wheels on display"
   },
   "send": "NO",
   "asset_version": "harv20260822224738",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\meandeansautomotive\\HARVEST.json",
-    "at": "2026-08-22T22:47:38.301Z",
+    "at": "2026-08-26T00:34:23.824Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\meandeansautomotive\\DEMO-FACTS.json",
+    "facts_path": "C:/Users/jacob/vendly-code/vendly-demos/meandeansautomotive/DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
     "rebuilt": true,
-    "harvest_merged": true
+    "harvest_merged": false
   },
   "address": {
     "street": "1402 Caratoke Hwy",
@@ -392,7 +392,7 @@
     "source_is_google": true
   },
   "photo_count": 30,
-  "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
-  "contact_photo_omit": true,
-  "_contact_map_mode": "hyperlink"
+  "contact_photo_tier_why": "harvest face file photo-family.jpg",
+  "contact_photo_omit": false,
+  "_contact_map_mode": "pin-link"
 }

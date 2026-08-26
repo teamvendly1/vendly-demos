@@ -1,114 +1,576 @@
 {
-  "at": "2026-08-22T22:47:51.709Z",
+  "at": "2026-08-26T00:34:57.144Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
-      "file": "photo-service-4.jpg",
+      "file": "photo-about.jpg",
       "source": "stock-library",
       "sha256": "b86c92256145b304afb0d67f5d406b5685eef9bddb8ba324a68444f112b03f4d",
       "reasons": [
-        "cross_demo_dupe:allnoneautorepairtowinginc/photo-card-services.jpg"
+        "off_section_relevance:trade_deny:people:auto"
       ],
-      "service": "trade work"
+      "service": "crew shop jobsite",
+      "score_alt": "engine bay diagnostic tools"
     },
     {
-      "file": "photo-service-5.jpg",
-      "source": "stock-library",
-      "sha256": "7f3fc4db0d751ad60570da86c59fb581e65d7712e092f060be5c7cd8e2e872d4",
-      "reasons": [
-        "cross_demo_dupe:allansautomotive/photo-card-photos.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-6.jpg",
+      "file": "photo-card-about.jpg",
       "source": "stock-library",
       "sha256": "269c88a0fa6e0d29c88068adcd925746c66d2e4cbc0088e32b96994fedf9e245",
       "reasons": [
-        "cross_demo_dupe:aaautomotiveservices/photo-services-hero.jpg"
+        "off_section_relevance:trade_deny:people:auto"
       ],
-      "service": "trade work"
+      "service": "crew shop jobsite",
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "stock-library",
+      "sha256": "7f3fc4db0d751ad60570da86c59fb581e65d7712e092f060be5c7cd8e2e872d4",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "score_alt": "car on lift garage bay"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b3c35285a1e5f30e70f9ac97d6e9b8fda72d77cf33cbddb1c1caf0ae6cef4b99",
+      "reasons": [
+        "off_section_relevance:trade_deny:people:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\meandeansautomotive\\assets\\google\\google-b3c35285a1e5f30e.jpg",
+      "score_alt": "Black flatbed tow truck with custom graphics parked on the grass"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "c23c527b4f6e38738bc8339070cb5d0b5ba71b9010b9d234faae8abdc6dbb06f",
+      "reasons": [
+        "off_section_relevance:trade_deny:posing:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\meandeansautomotive\\assets\\google\\google-c23c527b4f6e3873.jpg",
+      "score_alt": "Red vintage car with its hood open showing the engine bay"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4270b1fbc50719f26009dbd0832ecff53175e083de5f85ac297a201b5c8a681a",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\meandeansautomotive\\assets\\google\\google-4270b1fbc50719f2.jpg",
+      "score_alt": "Engine bay of a blue car shown with the hood open"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "9517c3bfdabfe4be0a0403d6b93a10d99fd40f7a8d5b320469c698f9123a1103",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\meandeansautomotive\\assets\\google\\google-9517c3bfdabfe4be.jpg",
+      "score_alt": "Dark green vintage wagon parked in a gravel lot"
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "2ecb4e3e2d441caf77bd1dd9661b9803de5cad85db482ad4a03d7cfe3efff759",
-      "bytes": 404852
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "65286d9ff54bbc0d2f0f92b4b4bb9a51b394a1d783b19008fd7111ad874d8b5e",
-      "bytes": 407823
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "d53c314a1967fa478ec422917c87086720e65cb4fe50304555aff7c89c6d9776",
-      "bytes": 380763
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "c6802d40a6acc8d1e8e7d023cf68c608ad7ed68ff2fc61e4ccb4ddbbd359d337",
-      "bytes": 383870
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "93f243dfc837c6f2a3b7054d770ec3911f784845d40473f76164c29df3968b22",
-      "bytes": 388933
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "ab0830ab92157882bb7e30df006780d11929803d48b3ffe3c666cce2454bfd38",
-      "bytes": 476022
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "dad97e29e9a309e234da7c69f0618d1d064f246b2fb1511d3ec7415cb2d108f2",
-      "bytes": 616371
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "151ad817284df2548f5a4a9ef1f9deddc9ad7f85e04cd7735d7a86109fbd5bd0",
-      "bytes": 159713
+      "file": "photo-gallery-9.jpg",
+      "sha256": "ad61f7d84749e995472414fcf4e5552e73e826f7cf02dd4d85f5b04066b9552a",
+      "bytes": 487181,
+      "alt": "Turquoise vintage car with a polished chrome engine on display"
     },
     {
       "file": "photo-photos-cta.jpg",
       "sha256": "febf660a7db0d589827c1f0aaf8b8daabac7fef97ecd9d84ce530daa9a03b95f",
-      "bytes": 438998
+      "bytes": 438998,
+      "alt": "Engine bay of a silver vintage car shown with the hood open"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "0ef17e316914329b5377d03609427062178ed1d6194320cb634bc0a08e1a0ae5",
+      "bytes": 212968,
+      "alt": "Red vintage car with its hood open showing the engine bay"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "3c5863dd362be7c2a39db9e847a29315cecfce43af4b9f6a3aad71b729799e69",
+      "bytes": 222383,
+      "alt": "Black flatbed tow truck with custom graphics parked on the grass"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "f7e23dfdb3dd1b7bae2b7ea37edf50cf7a85d70fdaa1741fea7173035fe273cc",
+      "bytes": 411682,
+      "alt": "Weathered vintage pickup truck parked in a gravel lot"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "48c9bf7abd049befe3c160c72bb886c2f4995459400355b6e963529ac68e33d1",
+      "bytes": 381607,
+      "alt": "Dark pickup truck parked in a gravel lot"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "2309cbf76717e69bdf791b497f4428d804863963f4b9b2a56ca003f37da15a20",
+      "bytes": 485315,
+      "alt": "Blue hot rod with a supercharged engine and yellow wheels on display"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "93f243dfc837c6f2a3b7054d770ec3911f784845d40473f76164c29df3968b22",
+      "bytes": 388933,
+      "alt": "Two Best of Show trophies displayed on a table at the car show",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "c6802d40a6acc8d1e8e7d023cf68c608ad7ed68ff2fc61e4ccb4ddbbd359d337",
+      "bytes": 383870,
+      "alt": "Small crowd gathered near a truck and an enclosed trailer",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "38241bc063e21c5dda6a159053bcddfaa9b1e1816221c27321fbb8b48397b831",
+      "bytes": 355973,
+      "alt": "Man in a blue t-shirt holding a trophy beside a light blue muscle car",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "8a64e65b4dbde46a797cd3d8b9a51ae75a58f38b91ca779a4cb15094d8e4c732",
+      "bytes": 689656,
+      "alt": "Row of classic cars parked in a gravel lot with people walking by",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:people:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "0edc9a9f34f02691de62a707b24b8a918c88657132d2a9e187acbfbb5d04df6a",
+      "bytes": 647320,
+      "alt": "Pink vintage sedan parked in a grassy area",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "dad97e29e9a309e234da7c69f0618d1d064f246b2fb1511d3ec7415cb2d108f2",
+      "bytes": 616371,
+      "alt": "Row of classic cars and pickups parked at an outdoor car show",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "a9fffcb7038534973786159e8683fee93d701997eb5bfc891be3a4b41411fc04",
+      "bytes": 494614,
+      "alt": "Red sports car with its hood open, other show cars parked behind it",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "5554ba54ad3d3fcdfd817be7aa74a2adf2a2da936d230f799589adc12e7dc9c5",
+      "bytes": 489804,
+      "alt": "Two vintage cars parked side by side with their hoods open",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "151ad817284df2548f5a4a9ef1f9deddc9ad7f85e04cd7735d7a86109fbd5bd0",
+      "bytes": 159713,
+      "alt": "Blue vintage car parked at the car show, seen from the side",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "00008b454fd42ab075fed925f4fffded027ee1ee503db33505e6f8e7f31d803a",
-      "bytes": 564229
+      "sha256": "22a667d37623accc1a72411c6aebde67d04c76090343479c5819b8554aab3738",
+      "bytes": 698373,
+      "alt": "Yellow vintage pickup truck parked on the grass",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "a39ec48408ce69fd60f10440197f74c9fe18f731582b1cf429be60d83bceff4b",
-      "bytes": 431417
+      "bytes": 431417,
+      "alt": "Row of classic cars parked outside a red metal building",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "38241bc063e21c5dda6a159053bcddfaa9b1e1816221c27321fbb8b48397b831",
-      "bytes": 355973
+      "sha256": "57d3eabe01661866433a590ddf312b316e633a49698951b85f50cc75e376e515",
+      "bytes": 198490,
+      "alt": "Close view of a chrome-bumpered pickup truck's front end",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
-      "file": "photo-service-2.jpg",
-      "sha256": "362616f8f9f879cbad54ea9c529eed21d806b66e4459e9db7686f0a4f911ad0e",
-      "bytes": 292243
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "96c3472d3f8eab658a2e6c5cf3963502c7939e8628feb05dac8d37e6a28c4066",
-      "bytes": 260691
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "77c6a950092303dc1e344535d0988c4914424300af6a3023cdd2a84a3666e4d2",
-      "bytes": 233302
+      "file": "photo-service-5.jpg",
+      "sha256": "59c0930aefbf92616590fd3885c8527aab05899251c496e378fe2164a2029750",
+      "bytes": 409953,
+      "alt": "Close view of a blue vintage car's front fender and headlight",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Small crowd of people walking among parked classic cars at a car show",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:people:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "People walking through a gravel lot at an outdoor car show",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:people:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Man in a blue shirt holding a trophy beside a silver vintage car",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Group of people standing near parked cars, one holding a trophy",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:people:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Group of people posing together with a trophy in front of vehicles",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:posing:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-contact.jpg",
+      "alt": "Vintage pickup truck with its hood raised at an outdoor car show",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Man standing beside a vintage car with its hood open and a Ford emblem visible",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Two Best of Show trophies displayed on a table at the car show",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Small crowd gathered near a truck and an enclosed trailer",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Man in a blue t-shirt holding a trophy beside a light blue muscle car",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Row of classic cars parked in a gravel lot with people walking by",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:people:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Pink vintage sedan parked in a grassy area",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Row of classic cars and pickups parked at an outdoor car show",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "Red sports car with its hood open, other show cars parked behind it",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "Two vintage cars parked side by side with their hoods open",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Blue vintage car parked at the car show, seen from the side",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "Yellow vintage pickup truck parked on the grass",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "alt": "Row of classic cars parked outside a red metal building",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Close view of a chrome-bumpered pickup truck's front end",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "alt": "Close view of a blue vintage car's front fender and headlight",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-quoteband.jpg",
+    "correlate_restore_no_stock:photo-reviewsband.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-5.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

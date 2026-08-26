@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-25T23:00:52.203Z",
+  "at": "2026-08-26T00:43:47.089Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
@@ -33,6 +33,39 @@
       ],
       "service": "trade work",
       "score_alt": "car on lift garage bay"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "fc37a97533a852ef03dbe5841cfba7eaa6565d1b11848ce60c0e563bdd4b98aa",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\aoneautomotivellc\\assets\\google\\google-fc37a97533a852ef.jpg",
+      "score_alt": "Shop workbench with disassembled transmission and engine parts laid out"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "c453fc261668ebe5eb60cd239c8ad7d354ddf15e5b18d5a8cdce079032b089e8",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\aoneautomotivellc\\assets\\google\\google-c453fc261668ebe5.jpg",
+      "score_alt": "Close-up of a turbocharger mounted on an engine"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a26cbf7eda248b0ac92f0c944ec4379129555cefa75ce209f68d6786435ec76f",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\aoneautomotivellc\\assets\\google\\google-a26cbf7eda248b0a.jpg",
+      "score_alt": "Close-up of engine head gaskets laid out on a workbench"
     }
   ],
   "kept": [
@@ -119,36 +152,6 @@
       "sha256": "fd691b3b4e8614358dfed98e67987468ed05c1f8122bdd3f43ddb6751f156260",
       "bytes": 170422,
       "alt": "engine bay diagnostic tools"
-    },
-    {
-      "file": "photo-gallery-4.jpg",
-      "sha256": "0462826e4ddaa4fb76ad0a600556a4021bc817f44a811ffd80e393bcc9835a4b",
-      "bytes": 241327,
-      "alt": "Close-up of a white van's front bumper and fender showing damage",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
-    },
-    {
-      "file": "photo-gallery-5.jpg",
-      "sha256": "5b87c03a54b2464cb4ba2c12afb92cf74b8fed5065933a3c548dd43acf506750",
-      "bytes": 187156,
-      "alt": "Close-up of a white cargo van's front fender and wheel",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
-    },
-    {
-      "file": "photo-gallery-7.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
     },
     {
       "file": "photo-gallery-8.jpg",
@@ -306,9 +309,6 @@
     }
   ],
   "skipped": [
-    "correlate_restore_no_stock:photo-gallery-4.jpg",
-    "correlate_restore_no_stock:photo-gallery-5.jpg",
-    "correlate_restore_no_stock:photo-gallery-7.jpg",
     "correlate_restore_no_stock:photo-gallery-8.jpg",
     "correlate_restore_no_stock:photo-gallery-9.jpg",
     "correlate_restore_no_stock:photo-hero.jpg",
