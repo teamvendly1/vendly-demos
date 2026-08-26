@@ -1,65 +1,222 @@
 {
-  "at": "2026-08-18T07:26:50.267Z",
+  "at": "2026-08-26T16:48:54.710Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
   "replaced": [
     {
       "file": "photo-about.jpg",
-      "source": "Pexels",
-      "sha256": "4a5b019d897013879fdb08105d8ae9a9269e8054cef09d4dbc4c826dd1a2fd31",
+      "source": "harvest-fallback",
+      "sha256": "7d00795d08edd663c3697e3c05187239fb11fc4a1305bf23349cd7596eb20c8a",
       "reasons": [
-        "cross_demo_dupe:gapatreecarellc/photo-card-reviews.jpg"
+        "off_section_relevance:trade_deny:branded:landscape"
       ],
-      "service": "crew shop jobsite"
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\gapatreecarellcconcordcabarrusnc\\assets\\google\\google-7d00795d08edd663.jpg",
+      "score_alt": "Tall straight hardwood standing in woodland with one of the crew at the base sizing up the stem before the cut"
     },
     {
       "file": "photo-card-about.jpg",
-      "source": "Pexels",
-      "sha256": "fa89a5910cfbef20ee058ecb20a4e107902353f6ce77059a320fc215f183b0ce",
+      "source": "harvest-fallback",
+      "sha256": "8df3962b3a7827659db541b56c728b6d4814a2817c7718b0e3dcf592af2c7632",
       "reasons": [
         "cross_demo_dupe:gapatreecarellc/photo-card-services.jpg"
       ],
-      "service": "crew shop jobsite"
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\gapatreecarellcconcordcabarrusnc\\assets\\google\\google-8df3962b3a782765.jpg",
+      "score_alt": "Rounds and log lengths laid out across a lawn where the trunk was sectioned, the saw set down in the foreground"
     },
     {
       "file": "photo-card-photos.jpg",
-      "source": "Pexels",
-      "sha256": "2cc4b6e7f93c994d55bf4c4fe6c9bb69a2b16d3a2f7f59acf79512eaac8ed349",
+      "source": "harvest-fallback",
+      "sha256": "479034d37816974626a888580edd4f46f4883a9b86d9b861dcb7c70820801d02",
       "reasons": [
-        "cross_demo_dupe:gapatreecarellc/photo-gallery-2.jpg"
+        "off_section_relevance:trade_require_miss:landscape"
       ],
-      "service": null
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\gapatreecarellcconcordcabarrusnc\\assets\\google\\google-479034d378169746.jpg",
+      "score_alt": "Looking straight down the climbing line from up in the crown, the garage roof and driveway far below"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "585cb9d2852d288e2ceecf5d4741cb7a4addd956c308ab4d9859358b893bf689",
+      "bytes": 243947,
+      "alt": "Tall straight hardwood standing in woodland with one of the crew at the base siz"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "source": "Pexels",
-      "sha256": "6fc4c06df88db7099a1bb211c8435b36e09af78d128c6766bbc4a58cd19470f2",
+      "sha256": "08d35fc25e01caa6e610e91483acfbe03db019100cd462cb677ffaf8ca84ceb5",
+      "bytes": 81542,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "cross_demo_dupe:gapatreecarellc/photo-card-about.jpg"
-      ],
-      "service": null
+      ]
     },
     {
-      "file": "photo-card-services.jpg",
-      "source": "Pexels",
-      "sha256": "cd2b2e5ad9b8f2c774d624e68655a1263f938d6400908488db9deaa0527aa4cb",
+      "file": "photo-gallery-1.jpg",
+      "sha256": "9d0029b614ff016154fb6a1acc067ee91050c555669dd43891393fd649da260c",
+      "bytes": 628278,
+      "alt": "Stem taken down to a bare spar with the cut stubs stepping up it, the removed sections already on the ground below",
+      "restored": true,
       "reasons": [
-        "cross_demo_dupe:gapatreecarellc/photo-about.jpg"
-      ],
-      "service": "trade work"
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "479034d37816974626a888580edd4f46f4883a9b86d9b861dcb7c70820801d02",
+      "bytes": 514205,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:gapatreecarellc/photo-gallery-1.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
       "file": "photo-hero.jpg",
-      "source": "Pexels",
-      "sha256": "9468bc73b1c4c54db42ae1ed371d50e2cac7646d47d79b9c1f5cef9379e54ce4",
+      "sha256": "8df3962b3a7827659db541b56c728b6d4814a2817c7718b0e3dcf592af2c7632",
+      "bytes": 781706,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "cross_demo_dupe:gapatreecarellc/photo-hero.jpg"
-      ],
-      "service": null
+      ]
     }
   ],
-  "kept": [],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Crew member in a branded shirt trimming a shrub line back with a hedge trimmer, the cuttings dropped on the grass",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:branded:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Trailer loaded with cut logs and brush hitched behind the pickup, ready to be hauled off the job",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Stem taken down to a bare spar with the cut stubs stepping up it, the removed sections already on the ground below",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -1,116 +1,426 @@
 {
-  "at": "2026-08-22T23:47:13.220Z",
+  "at": "2026-08-26T16:34:58.621Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
   "replaced": [
     {
-      "file": "photo-service-6.jpg",
+      "file": "photo-about.jpg",
+      "source": "Pexels",
+      "sha256": "367e667dcee58495ebaef263e8ee956efa97baa96c44780b057b7f8e75b5978e",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "Pexels",
+      "sha256": "27c662908240438479acc0c14faee361646590277648ea20ee805cdc6135f25e",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "PEX plumbing manifold install"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
       "source": "stock-library",
       "sha256": "e220ccc2d02390a6ab8f903e8fea3488f91ef0247785eae9ae31ce3598682b96",
       "reasons": [
-        "cross_demo_dupe:acmeplumbingheatingcolexingtondavidsonnc/photo-card-reviews.jpg"
+        "off_section_relevance:trade_deny:debris:plumbing",
+        "unflattering_subject:unflattering:debris"
       ],
-      "service": "trade work"
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "stock-library",
+      "sha256": "6175cbb9aad848420dc05468c446d8bb2ae87b7a2bc7de647a4f9e6ad436dd49",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "stock-library",
+      "sha256": "cecff313ccf9c2bd8503ccb972b63c2c8b37cf838ac667bb0683778b319372e2",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "stock-library",
+      "sha256": "8d633b4c5394ee0ccef3454554a22b7ae475674f3a6d882dba750dffda76b1d4",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "stock-library",
+      "sha256": "82ef0ddfcfe25179e8dee84f3848494b5fa2ac2c7a7a5014c95e45f87f9de233",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "97e022b53cc6ced8fe75c16dd98c1a7c71e29fad5cccaa31ae314b66c5ee85b3",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": null,
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "stock-library",
+      "sha256": "2ea286f4b32a889c12ea773f57c913b10f14b2c8555a61102727e0bd875788a6",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Drains and sewer lines"
+      ],
+      "service": "Drains and sewer lines",
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "stock-library",
+      "sha256": "663a94a9942d9380daf087f72612f362fe758492598b8e0302bde78028ad9a6d",
+      "reasons": [
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": "Bathroom and fixture work",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "stock-library",
+      "sha256": "480b33436563f35c970a09830f7f7bd10b04b6bcca93ad157552b6ed31143532",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "stock-library",
+      "sha256": "f20d26a51456368706e44e1062dbd0340c7d4b379ba21c2280f912bf44054826",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "stock-library",
+      "sha256": "84143892dabfe534cbf84380327770ca5189b8444699d3c9e70e9375ad5da357",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "d5610d09537048ac7e8cccd338c4013baef0f6d112ae12551a23be2622ac3cf1",
-      "bytes": 270433
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "96285bda12b85b4fa288c5ca6d7a15f790fc86431988c685f1fba8286dd05acf",
-      "bytes": 615863
-    },
-    {
       "file": "photo-card-photos.jpg",
-      "sha256": "ea79648727842285ca7295b25dbcd291145b2cbf633e4605069c75ce9f463d42",
-      "bytes": 524010
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "1ac703745f38da6f44c1ee53172ae9391adc49413da44ed6a105f6d54860e81c",
-      "bytes": 552963
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "912add03040ef3925f4b4e3b88d43b5d259099e0f396ecbf76a1a3890a6fb533",
-      "bytes": 189167
-    },
-    {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "2a6100bea9b284861dff4582650b97edbad65a50e0a314c3b9f1d9d11c09a4f8",
-      "bytes": 559317
+      "sha256": "062116202da6df2d8398ddd01fff4683eef8526b667fc95c206a61c80f9c678d",
+      "bytes": 220117,
+      "alt": "Drain jetting machine parked on an epoxy floor near a drain"
     },
     {
       "file": "photo-contact.jpg",
       "sha256": "2ce6389e9055c44efb078ea58a736b39d152a1588c26b605d550b210ad295104",
-      "bytes": 174863
+      "bytes": 174863,
+      "alt": "Close-up looking down into a dark drain pipe interior"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "45bacfd081e3317363ef46feaf8da3168e309e62224269a39ae5dffa1a28f5f3",
-      "bytes": 398066
+      "bytes": 398066,
+      "alt": "Drain cleaning and jetting equipment set up in a parking lot near a trailer"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "223c482673dbb021fd2e57b654a7d62c0d4144b0849b887e3a92e0609506f486",
+      "bytes": 419962,
+      "alt": "Drain snake machine set up near a floor drain with water on the floor"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "15af469a939f4f09f36fe435a98d7142bbc4f1bd117be9be5bc30d50ac4347cb",
+      "bytes": 334036,
+      "alt": "Water heater unit installed in an attic space with insulation"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "4537cf88b6087c8abf8b789c75ab2a10f9642d1dc5db2207bd3e705d21387b92",
+      "bytes": 339014,
+      "alt": "Portable work light and drain equipment set up outside a mobile home"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "53c9ac506677e75409228bfbaeedbbc2d975da07c324efe95ce3365f93a95c9a",
+      "bytes": 216193,
+      "alt": "Close-up of a hand holding a corroded pipe section removed from a job"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "9d9ba3129ff9af0441306f2ef99e8e3186c105422f2d5a37538460042130eaf1",
+      "bytes": 206692,
+      "alt": "Water heater installed in a utility room with a pressure tank and copper piping"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "5487b88f6f9b061813f31f2e0828b67a8f5126cf4ee26c7ca89da15671c98b80",
-      "bytes": 273675
+      "sha256": "f17966ec46ca0e727de7458314cdde2f0f2c653492aec4f08080aa14907552a4",
+      "bytes": 292341,
+      "alt": "Industrial interior space with equipment and overhead pipes"
     },
     {
       "file": "photo-photos-cta.jpg",
       "sha256": "6b5b3fc06dac557cd0b262162cf9890b6715c2e1572698e1d87d38b11fc2bc1c",
-      "bytes": 151042
+      "bytes": 151042,
+      "alt": "ADA-accessible bathroom with grab bars, a toilet and a tub"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "53d097c1d1a7c467dcaaf1b60a7f2b52aa745b8e51068a52a0bf665ad0d50a24",
-      "bytes": 349751
-    },
-    {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "ba50e27bd653a154e37164307c942e648b926c3ebe8302b286c95feddfef6dc1",
-      "bytes": 343383
+      "bytes": 349751,
+      "alt": "Rooftop view of pipe racks and equipment on a commercial building roof"
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "0e39a066b7e22a02accaa1f6f0aac8fe3f4c07e941049afb00d83c541280bf3e",
-      "bytes": 87363
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "f27bc8bda59d7f4c3e1deb53009f616332ee664ab6c24fbf98d215168a4479fe",
-      "bytes": 282515
+      "bytes": 87363,
+      "alt": "Close-up of a hand holding a corroded pipe fitting removed from a job"
     },
     {
       "file": "photo-service-2.jpg",
+      "sha256": "fa341e24f998d947e829436e224bed17b8d9047eebfb5314aca2bad9a628126a",
+      "bytes": 118967,
+      "alt": "Water heater and pressure tank system installed near a brick staircase"
+    },
+    {
+      "file": "photo-service-6.jpg",
       "sha256": "ce9047fdc5708fa62aee3c89d3b6d1bb70d75fe3e86a9adf67f6505ede06c7a6",
-      "bytes": 129069
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "5acc07681972589bf2ab9d707d45a01e482950766d33b0d02b36ff5c9cb59533",
-      "bytes": 251776
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": "367e667dcee58495ebaef263e8ee956efa97baa96c44780b057b7f8e75b5978e",
-      "bytes": 114151
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "27c662908240438479acc0c14faee361646590277648ea20ee805cdc6135f25e",
-      "bytes": 295344
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "d874fc790c90ebaf0a3af3e58d875bce131e647c7f7abb3af170307761bc8c16",
-      "bytes": 180500
+      "bytes": 129069,
+      "alt": "pipe wrench on copper pipe"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Worker on a scissor lift working on an overhead structure",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Close-up of a worker's boots beside a drain jetting machine near two floor drain openings",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Close-up of a severely corroded drain fitting with debris",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:debris:plumbing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:debris",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Worker on a ladder installing a water treatment device in a utility closet",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Outdoor water valve and backflow preventer installation near dry brush",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Close-up of an old corroded toilet flange in a tiled floor before replacement",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Close-up of a toilet flange installation on a tiled floor",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Crane truck lifting large tanks at an outdoor job site with workers in safety vests",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "New tiled shower stall installed beside a toilet in a bathroom",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Drains and sewer lines"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Tankless water heater installed on a wall",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "Large commercial laundry press machine in an industrial setting",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "alt": "White cargo van parked outside a grocery store",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "alt": "Water treatment filtration system installed near a doorway",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

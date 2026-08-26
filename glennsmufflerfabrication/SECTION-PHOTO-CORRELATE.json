@@ -1,101 +1,374 @@
 {
-  "at": "2026-08-24T05:20:00.928Z",
+  "at": "2026-08-26T16:53:41.484Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
-  "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": "21571e51e8a082b1c6c1256bcef24f28ffcc8aa841222128c4755eb833905b75",
-      "bytes": 228472
-    },
+  "schema": "vendly.autodemo.section-photo-correlate/2",
+  "trade": "plumbing",
+  "replaced": [
     {
       "file": "photo-card-about.jpg",
-      "sha256": "5d0fb0b6259d964ea9aee485099c18cd3b20523075527ea9714b1b23a0b3c6d1",
-      "bytes": 338870
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "498ebd4e3cd548d663525aa5bcbd14c967642fda03bb6137cf8e0cc4acd298b1",
-      "bytes": 285857
+      "source": "Pexels",
+      "sha256": "7c091268e266bfc27378f92eba4f39c7c5e0a2ec456bdcecb4e40de216fcbe8d",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "387e7fc6e0bcc21941956d2ebe2556694e2c5ff4e70c6e4a481e58433ba51178",
-      "bytes": 293126
+      "source": "stock-library",
+      "sha256": "1789c821212c414399ea493c77745bd1003c1ca9c13a0d6004a18a6dbf452482",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "070a59dbf4fea46c1ce58a9be1953b71eab8635e0486bd30b02bdaf64c37e899",
-      "bytes": 315526
+      "source": "stock-library",
+      "sha256": "ebcd9ab5caba05227a9cb9c45b96cca5db700da65db1a986b516d86348b03aed",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "93d3de327cf47c59b0cf96ff5f11b6ce12f11717193fa88868911e927297d7bd",
-      "bytes": 167823
+      "source": "stock-library",
+      "sha256": "80657db641383b6b50fb26ecf39edc6a10360b8b4fa3bb35f015115c772b8acf",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-gallery-1.jpg",
-      "sha256": "0fa3ee51db20eb1a8c3ec4ff6d7a76eaeec53b70dda639c7fa03de9dedd3e320",
-      "bytes": 300605
+      "source": "stock-library",
+      "sha256": "a7aedf8e8ce7bb2fa226fa438595656986cc796e1dfda80b16d73cc21d1ed929",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "PEX plumbing manifold install"
     },
     {
       "file": "photo-gallery-2.jpg",
-      "sha256": "2996f734de3a63348818fdd999ed44fbed7de07258d4ed607f12340c3784f090",
-      "bytes": 242914
+      "source": "stock-library",
+      "sha256": "5782e28ca32582ceec73c1df2d109b24616b31ad40b8306a26e8528ec873bd6c",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "stock-library",
+      "sha256": "f6daa77465a710473db57a2716d70bde9f9a86e1a6d27160c4f305a0dccb596a",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "stock-library",
+      "sha256": "4512f71dd2dd0460b40da061bc712a36db608d9969b94e400f7f5580e4432cca",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "0b4c8367bd98b239bfbb80b52777cf4aaaa4e79689e51efabe6484048a19aab5",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "modern home bathroom interior clean"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "stock-library",
+      "sha256": "17bcbb1d9b75726f43cc10b7fc13337eb558f10e520f478d88697b78707010a0",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "stock-library",
+      "sha256": "ce4b08d2ede8ebd4fbf25c1503a596d5d3397e0fc6bc1aefdc868e90a5baa7d8",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "stock-library",
+      "sha256": "a8892afdbec137255acde32f9841e02304584c3df1e53fed5e0745fe26d103cb",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "stock-library",
+      "sha256": "561d6ba9c135d5b96f7fe5f512e28d9dd0fecaf3006ecfd0853e65c0e817575f",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "5d0fb0b6259d964ea9aee485099c18cd3b20523075527ea9714b1b23a0b3c6d1",
+      "bytes": 338870,
+      "alt": "Underside view of a purple vintage muscle car's rear end and exhaust raised on a"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "185beceb688149ea675de20316f364dcb6e563ce4362eb83ca86ec38dfb7da05",
+      "bytes": 119232,
+      "alt": "Underside view of a lifted truck's front axle and off-road tires on a lift"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "ea42266229e0df5fa6fab7ed98bd2534f6d24493fa1e965eb6309c0094ab3fc6",
+      "bytes": 155662,
+      "alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-gallery-3.jpg",
       "sha256": "59e18d63588011ca71a730563fef8d26b39c7a63f74f7d1ea8aa32a65abd33f6",
-      "bytes": 241486
+      "bytes": 241486,
+      "alt": "Rear underside view of a white Ford Super Duty truck's exhaust system on a lift"
     },
     {
-      "file": "photo-gallery-4.jpg",
-      "sha256": "50827aab634ff5dd7b8a9322edd4dc093a345c422f2d0274af4ac9dc10d8f904",
-      "bytes": 376006
-    },
-    {
-      "file": "photo-gallery-5.jpg",
-      "sha256": "c634f06e5491c5f3e2dc6cc3fa427e5ad13f1177e1930c1c3da6e985ced6c887",
-      "bytes": 328139
-    },
-    {
-      "file": "photo-gallery-6.jpg",
-      "sha256": "b9714b5d4b11b66a8b80fa12f6c9d022c89a751614a50ce2582e8fd3e3e6b276",
-      "bytes": 270555
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "da8a94f31017cd89e6647d39dfcd5cad995dff4b64a63b972d02dc41338b1c4f",
-      "bytes": 326582
+      "file": "photo-photos-cta.jpg",
+      "sha256": "29f0b7fc5c499d2f650dbd052cedbff808ee2cc5ac3770a071730fd37c65e187",
+      "bytes": 150929,
+      "alt": "pipe wrench on copper pipe"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "4f547b68c544624741c9f97ace4a9e092a9cfc16d97fc03a86b69c613178b9f1",
-      "bytes": 544398
+      "bytes": 544398,
+      "alt": "Silver Jeep Wrangler with lifted suspension and mud tires parked outside"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "aa807e0ec63132d1d5be50eb5deba01dd8f18714e39ad5d733b233fee957cb4e",
+      "bytes": 146226,
+      "alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "73ccc852b098b03c80689ce961d8f72ae6d5125013bbdcc35319a30a0a81601e",
+      "bytes": 137396,
+      "alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "edf753d33eea8e0cff7dc5ed71973cf529065c44533def8b833b5272f1e843c8",
+      "bytes": 135152,
+      "alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "c43aa806879d7f8e7757b63900ebf389f0f94079b262750bdc29ea334fe09604",
+      "bytes": 186304,
+      "alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "4a6ff7703f586db9d37fdd7ef501e0afd5463e6f39b560703ee97ac085953801",
+      "bytes": 114911,
+      "alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "ad02e4c66d69bbade72f72f74536e879d6c1973da82a7b3dd175c5a681853636",
+      "bytes": 129942,
+      "alt": "water heater install basement"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "040375f8b7402e4e84e1b550f072e71df22993b0ae6bd9cb4c16689f660c639d",
+      "bytes": 218428,
+      "alt": "drain snake cable clog"
     }
   ],
   "failed": [],
-  "gallery_gaps": [
+  "gallery_gaps": [],
+  "rescored": [
     {
-      "file": "photo-gallery-7.jpg",
-      "reasons": [
-        "stub"
-      ]
+      "file": "photo-card-about.jpg",
+      "alt": "White Mazda Miata's rear end with a custom exhaust installed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
     },
     {
-      "file": "photo-gallery-8.jpg",
-      "reasons": [
-        "stub"
-      ]
+      "file": "photo-card-reviews.jpg",
+      "alt": "Man wearing a graphic hoodie standing indoors with his back to the camera",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
     },
     {
-      "file": "photo-gallery-9.jpg",
-      "reasons": [
-        "stub"
-      ]
+      "file": "photo-card-services.jpg",
+      "alt": "Underside view of a Jeep's frame with a dual exhaust system installed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Underside view of an exhaust system with a resonator installed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Close-up of a dual exhaust muffler setup installed under an orange vehicle",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Underside view of a black vehicle's front suspension and exhaust",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Green vintage pickup truck with blue whitewall tires parked in the shop",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "White vintage GMC pickup with a camper shell parked outside",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "White vintage Ford pickup truck parked on a car trailer in the shop",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Teal vintage Chevy pickup truck raised on a lift with workers nearby",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
     }
   ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

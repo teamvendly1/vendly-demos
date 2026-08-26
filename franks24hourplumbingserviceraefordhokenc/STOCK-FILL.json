@@ -1,9 +1,9 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T17:17:11.453Z",
+  "at": "2026-08-26T16:45:14.314Z",
   "trade": "plumbing",
   "slotHints": {},
-  "ok": false,
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -13,25 +13,25 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "6ab33ec9f5971315e9eb92e7e90501bdfd1bed4a14861eb38384c42ca05d8ca4",
+      "sha256": "12e945657a93ba21f5b0e6951d43243a569b05241426ae9364d33b3cbafa63c3",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "12dc9abf4be8ba75d6be18f9b6ff4be8f06f305d39f707a565a83bd1784dd2ce",
+      "sha256": "bbf36bd690fc816fa41fd8688844b1a82524a33e6b025dd31d226924cad5e9ff",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "4fd09f8690dedd51477c63948bc996035c1ff6f92b6d412305dd8c7c55a382b7",
+      "sha256": "acbcf7abbd1a8e3eab4422e00b6381f5a4bc4b97ac20fb18a627843e79d9814b",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "39b780162d483662767724d8a494379694b02be9076af1b8648670958b0ce487",
+      "sha256": "e34c07635fae441b00a5480e346cc795e007c54217375572950da1dba3e497c9",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -51,190 +51,225 @@
   "filled": [
     {
       "file": "photo-contact.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "2c6edce713dcd4c4431825b3febcb1b08d40826526acc8a1756d4698481c6f1c",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-person-washing-hands-8804978/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-hands-washing-faucet-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:16.466Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 131
+      }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "e1b1d17963569eb91feaac54b1db7c6ce402a207a503585180354293a0e2e697",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-modern-bathroom-with-white-walls-and-bathtub-7534571/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-interior-contemporary-bathroom-07.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:23.195Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 130
+      }
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "1fb852b7a3112dc6549ea3a3a8e1e476c9ad982245504337e296ba6bcd858531",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/industrial-wall-with-red-pipes-in-minimalist-frame-29206840/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
+        "family": "plumbing",
+        "library_file": "plumbing-minimalist-industrial-wall-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:30:59.978Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 129
+      }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "c25889429dd39d372d36ae0d237e9874fbdddc9582da37f82c0aadf50660b7da",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/white-ceramic-sink-near-white-ceramic-bathtub-8146329/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-modern-bathroom-design-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:35.679Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 128
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "1e30f207bc109a4fd5a1fdfc47177407093b0905b6eafff6b7299cd75d0ec9f4",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/comfort-room-interior-design-with-white-ceramic-sink-and-tiled-walls-8082333/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-clean-spacious-bathroom-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:24.014Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 127
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "603355bdc450fbe389096adbf4a292968829453c4b5449433b82d41ad7006fd0",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/round-mirrors-above-white-and-black-wooden-sink-cabinet-5502253/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-sleek-black-white-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T16:04:15.982Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 126
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "eed48e18bb500d1e2c02702c1ed8b7d07ede3d2685741eccdb9e0fbbdca1dd1c",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-a-luxury-bathroom-with-glass-shower-cabin-in-beige-tone-8082561/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-spacious-contemporary-bathroom-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:52.656Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 125
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "c72b3ef9b89841903fed6d4b0b3263e9c21d55698374125094450de7491b0003",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/modern-bathroom-interior-with-gray-tiled-wall-35493894/",
+        "subject_alt": "PEX plumbing manifold install",
+        "found_by_query": "PEX plumbing manifold install",
+        "family": "plumbing",
+        "library_file": "plumbing-spacious-bathroom-interior-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:02.737Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 124
+      }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "593afa57b31175eeeea07bdce4c6841eba06c6a1bc3be600d348cb9228b3066f",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/faucet-in-close-up-photography-4194851/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
+        "family": "plumbing",
+        "library_file": "plumbing-stylish-bathroom-gold-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:23.166Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 123
+      }
     }
   ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-contact.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-photos-cta.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-2.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-services-hero.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 7,
+  "gaps": [],
+  "distinct": 16,
   "slots": 16,
-  "stock_provenance_rows": 0,
+  "stock_provenance_rows": 9,
   "family": "plumbing",
   "refuse_borrow": false,
   "provenance_ok": true

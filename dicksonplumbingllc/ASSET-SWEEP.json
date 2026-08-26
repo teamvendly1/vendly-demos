@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:47:14.561Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T16:35:53.051Z",
   "slug": "dicksonplumbingllc",
-  "removed_count": 36,
+  "removed_count": 34,
   "removed_sample": [
     "google-00b44b8294a33285.jpg",
     "google-09d259e4177ab902.jpg",
@@ -17,5 +17,10 @@
     "google-53c9ac506677e754.jpg",
     "google-53d097c1d1a7c467.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\dicksonplumbingllc",
+  "published_ref_count": 30,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

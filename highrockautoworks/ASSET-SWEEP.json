@@ -1,6 +1,6 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T05:37:27.641Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T17:00:00.266Z",
   "slug": "highrockautoworks",
   "removed_count": 27,
   "removed_sample": [
@@ -17,5 +17,10 @@
     "google-591ec88e0cf874c4.jpg",
     "google-61ad9d0a7de8f2bb.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\highrockautoworks",
+  "published_ref_count": 26,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

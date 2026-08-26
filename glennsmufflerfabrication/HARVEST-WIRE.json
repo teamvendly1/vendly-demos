@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:19:54.184Z",
+ "at": "2026-08-26T16:52:57.492Z",
  "slug": "glennsmufflerfabrication",
  "wired": [
   {
@@ -12,13 +12,21 @@
    "reason": "hero_work_rank"
   },
   {
-   "slot": "photo-about.jpg",
+   "slot": "photo-card-about.jpg",
    "from": "google-21571e51e8a082b1.jpg",
-   "bytes": 228472,
-   "letterbox_stripped": null
+   "bytes": 110574,
+   "smart_crop": true,
+   "src": "google-21571e51e8a082b1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 27.11,
+   "orientation": "portrait"
   },
   {
-   "slot": "photo-card-about.jpg",
+   "slot": "photo-about.jpg",
    "from": "google-5d0fb0b6259d964e.jpg",
    "bytes": 338870,
    "letterbox_stripped": null
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-070a59dbf4fea46c.jpg",
-   "bytes": 315526,
-   "letterbox_stripped": null
+   "bytes": 129621,
+   "smart_crop": true,
+   "src": "google-070a59dbf4fea46c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 80,
+   "detail_score": 24.94,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-387e7fc6e0bcc219.jpg",
-   "bytes": 293126,
-   "letterbox_stripped": null
+   "bytes": 119871,
+   "smart_crop": true,
+   "src": "google-387e7fc6e0bcc219.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 25.237,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-498ebd4e3cd548d6.jpg",
-   "bytes": 285857,
-   "letterbox_stripped": null
+   "bytes": 119232,
+   "smart_crop": true,
+   "src": "google-498ebd4e3cd548d6.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 20.845,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -131,8 +163,8 @@
  "photo_candidates": 14,
  "altBySlot": {
   "photo-hero.jpg": "Teal vintage Chevy pickup truck raised on a lift with workers nearby",
-  "photo-about.jpg": "White Mazda Miata's rear end with a custom exhaust installed",
-  "photo-card-about.jpg": "Underside view of a purple vintage muscle car's rear end and exhaust raised on a lift",
+  "photo-card-about.jpg": "White Mazda Miata's rear end with a custom exhaust installed",
+  "photo-about.jpg": "Underside view of a purple vintage muscle car's rear end and exhaust raised on a lift",
   "photo-card-services.jpg": "Underside view of a Jeep's frame with a dual exhaust system installed",
   "photo-card-reviews.jpg": "Man wearing a graphic hoodie standing indoors with his back to the camera",
   "photo-card-photos.jpg": "Underside view of a lifted truck's front axle and off-road tires on a lift",
