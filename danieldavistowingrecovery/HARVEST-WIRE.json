@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:41:40.072Z",
+ "at": "2026-08-26T01:14:36.572Z",
  "slug": "danieldavistowingrecovery",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-2819bb3aa7c22c93.jpg",
-   "bytes": 510376,
-   "letterbox_stripped": null
+   "bytes": 183622,
+   "smart_crop": true,
+   "src": "google-2819bb3aa7c22c93.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 18,
+   "detail_score": 26.478,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-cd37dc4e424d880c.jpg",
-   "bytes": 474237,
-   "letterbox_stripped": null
+   "bytes": 168283,
+   "smart_crop": true,
+   "src": "google-cd37dc4e424d880c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 28,
+   "detail_score": 26.199,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-6ed5284bbae3c5cd.jpg",
-   "bytes": 410142,
-   "letterbox_stripped": null
+   "bytes": 162956,
+   "smart_crop": true,
+   "src": "google-6ed5284bbae3c5cd.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 21.711,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-e806f12be6334f99.jpg",
-   "bytes": 401150,
-   "letterbox_stripped": null
+   "bytes": 169379,
+   "smart_crop": true,
+   "src": "google-e806f12be6334f99.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 24.302,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -80,15 +112,12 @@
   }
  ],
  "skipped": [
-  "classification read: 22 verdicts",
-  "staged 11 harvest photos",
+  "staged 11 harvest photos from assets",
   "hero_cand_refuse:google-9a07167f2494a320.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-cd37dc4e424d880c.jpg:road_no_landscape",
   "hero_cand_refuse:google-6ed5284bbae3c5cd.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-e806f12be6334f99.jpg:road_no_landscape",
-  "hero_cand_refuse:google-51637ec59c4b671d.jpg:close_crop_alt",
   "hero_cand_refuse:google-2bcd8598ffa635ea.jpg:road_no_landscape",
-  "hero_cand_refuse:google-cb7fe68fda1e9d4a.jpg:close_crop_alt",
   "hero_cand_refuse:google-c552e04d82bcb97c.jpg:road_no_landscape",
   "hero_cand_refuse:google-7d4ef562208969b0.jpg:portrait_aspect_hero_refuse",
   "photo-gallery-4.jpg",
@@ -104,23 +133,14 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 11,
  "photo_candidates": 11,
- "altBySlot": {
-  "photo-hero.jpg": "Red Jeep Liberty with a crumpled front end parked at an impound lot with a roof light bar",
-  "photo-card-about.jpg": "Red Jeep Wrangler with front-end damage parked in a gravel impound lot",
-  "photo-about.jpg": "Front three-quarter view of a crashed red Jeep Liberty marked with an impound case number",
-  "photo-card-services.jpg": "Side view of a wrecked red Jeep Liberty marked with an impound case number and roof light bar",
-  "photo-card-reviews.jpg": "Close-up of an open fuel filler door showing the gas cap area on a red vehicle",
-  "photo-card-photos.jpg": "Rear view of a red Jeep Liberty with a spare tire mount parked in a gravel lot",
-  "photo-gallery-1.jpg": "Close-up of a shattered windshield on a red Jeep with a roof-mounted light bar",
-  "photo-gallery-2.jpg": "Rear view of a muddy red Jeep Liberty with a spare tire and North Carolina plate",
-  "photo-gallery-3.jpg": "Close-up of a muddy windshield with a light bar mounted above",
-  "photo-ctaband.jpg": "Interior front seats of a recovered vehicle with scattered papers and debris",
-  "photo-quoteband.jpg": "Interior back seat of a recovered vehicle with debris scattered on the seat and floor"
- }
+ "dedupe_fixed": 5
 }

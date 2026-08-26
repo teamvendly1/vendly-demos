@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:18:50.424Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:59:51.681Z",
   "slug": "bradsautomotive",
-  "removed_count": 19,
+  "removed_count": 18,
   "removed_sample": [
     "google-2a3ff3f3393523bd.jpg",
     "google-35c0b80822407d26.jpg",
@@ -13,9 +13,17 @@
     "google-d85f64b7bddfdbbf.jpg",
     "google-ef9a9dfe372c978f.jpg",
     "google-fd03e4dc5accf0af.jpg",
-    "logo-footer.png",
     "photo-ba-after.jpg",
-    "photo-ba-before.jpg"
+    "photo-ba-before.jpg",
+    "photo-family.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\bradsautomotive",
+  "published_ref_count": 14,
+  "retained_published_count": 2,
+  "retained_published_sample": [
+    "photo-gallery-2.jpg",
+    "photo-gallery-3.jpg"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

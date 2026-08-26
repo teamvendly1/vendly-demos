@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:32:35.625Z",
+ "at": "2026-08-26T01:18:35.292Z",
  "slug": "carolinacarcare",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-aa902d5a6fa16087.jpg",
-   "bytes": 135612,
-   "letterbox_stripped": null
+   "bytes": 96505,
+   "smart_crop": true,
+   "src": "google-aa902d5a6fa16087.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x901",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 13,
+   "detail_score": 23.667,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-e1e7f0c9195d1688.jpg",
-   "bytes": 325133,
-   "letterbox_stripped": null
+   "bytes": 141930,
+   "smart_crop": true,
+   "src": "google-e1e7f0c9195d1688.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 38,
+   "detail_score": 31.453,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-55e6631c3f5ffcc3.jpg",
-   "bytes": 482918,
-   "letterbox_stripped": null
+   "bytes": 151119,
+   "smart_crop": true,
+   "src": "google-55e6631c3f5ffcc3.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1599x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 30.767,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-7ccb380b20131197.jpg",
-   "bytes": 447763,
-   "letterbox_stripped": null
+   "bytes": 140578,
+   "smart_crop": true,
+   "src": "google-7ccb380b20131197.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1599x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 26.286,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-013536b5a73284da.jpg",
-   "bytes": 186824,
-   "letterbox_stripped": null
+   "bytes": 96979,
+   "smart_crop": true,
+   "src": "google-013536b5a73284da.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1033",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 17.654,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-678d1358c51b5c5f.jpg",
-   "bytes": 165287,
-   "letterbox_stripped": null
+   "bytes": 91570,
+   "smart_crop": true,
+   "src": "google-678d1358c51b5c5f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 21.467,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-e5248225f3ca3737.jpg",
-   "bytes": 163377,
-   "letterbox_stripped": null
+   "bytes": 82215,
+   "smart_crop": true,
+   "src": "google-e5248225f3ca3737.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 20.815,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-7.jpg",

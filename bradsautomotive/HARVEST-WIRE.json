@@ -1,117 +1,137 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-22T23:18:46.297Z",
-  "slug": "bradsautomotive",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-gallery-2.jpg",
-      "bytes": 348153,
-      "trade_score": 3.5,
-      "reason": "hero_contrast_retarget:photo-gallery-2.jpg"
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-2a3ff3f3393523bd.jpg",
-      "bytes": 439354,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-d85f64b7bddfdbbf.jpg",
-      "bytes": 67287,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-35c0b80822407d26.jpg",
-      "bytes": 365884,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-cc33a4a8794c3314.jpg",
-      "bytes": 61487,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-6fd1de50e8adb972.jpg",
-      "bytes": 136002,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-5f63e01ccd8b86c6.jpg",
-      "bytes": 463402,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-cf14ee54ba1401fe.jpg",
-      "bytes": 222997,
-      "letterbox_stripped": "v18.0%"
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-ef9a9dfe372c978f.jpg",
-      "bytes": 66277,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "charter-placeholder-your-logo-here",
-      "bytes": 21159,
-      "placeholder": true,
-      "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
-    }
-  ],
-  "skipped": [
-    "classification read: 18 verdicts",
-    "staged 9 harvest photos",
-    "hero_cand_refuse:google-5f63e01ccd8b86c6.jpg:road_no_landscape",
-    "hero_hold_crew_for_about:google-2a3ff3f3393523bd.jpg",
-    "hero_cand_refuse:google-35c0b80822407d26.jpg:close_crop_alt",
-    "hero_cand_refuse:google-6fd1de50e8adb972.jpg:close_crop_alt",
-    "hero_hold_crew_for_about:google-d85f64b7bddfdbbf.jpg",
-    "hero_hold_crew_for_about:google-cc33a4a8794c3314.jpg",
-    "photo-ctaband.jpg",
-    "photo-quoteband.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "photo-contact-hero.jpg",
-    "photo-reviews-hero.jpg",
-    "photo-ctaband.jpg",
-    "photo-quoteband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 9,
-  "photo_candidates": 9,
-  "altBySlot": {
-    "photo-hero.jpg": "Automotive Service Center storefront lit up at night with the garage bay visible",
-    "photo-card-about.jpg": "Man giving a thumbs up beside a silver sedan with the hood open outside the shop",
-    "photo-about.jpg": "Parade float decorated with small trees and banners passing storefronts",
-    "photo-card-services.jpg": "Rebuilt engine cylinder head assembly resting on a workbench stand in the shop",
-    "photo-card-reviews.jpg": "Parade float decorated with trees and banners moving down the street",
-    "photo-card-photos.jpg": "Close-up of an engine bay with power tools resting on top during service",
-    "photo-gallery-1.jpg": "White lifted Chevy pickup truck with black wheels parked in the lot",
-    "photo-gallery-2.jpg": "Automotive Service Center storefront lit up at night with the garage bay visible",
-    "photo-gallery-3.jpg": "Brad's Automotive Repair storefront with tire brand banners and a minivan parked outside"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T00:59:07.031Z",
+ "slug": "bradsautomotive",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-fd03e4dc5accf0af.jpg",
+   "bytes": 234549,
+   "letterbox_stripped": null,
+   "trade_score": 2.5,
+   "reason": "hero_work_rank"
   },
-  "hero_retarget": {
-    "at": "2026-08-22T23:18:47.408Z",
-    "from_slot": "photo-gallery-2.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-cf14ee54ba1401fe.jpg",
+   "bytes": 130536,
+   "smart_crop": true,
+   "src": "google-cf14ee54ba1401fe.jpg",
+   "letterbox_stripped": "v18.0%",
+   "src_wh": "1600x738",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 25.637,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-ef9a9dfe372c978f.jpg",
+   "bytes": 66277,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-2a3ff3f3393523bd.jpg",
+   "bytes": 145751,
+   "smart_crop": true,
+   "src": "google-2a3ff3f3393523bd.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 33,
+   "detail_score": 27.587,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-35c0b80822407d26.jpg",
+   "bytes": 140329,
+   "smart_crop": true,
+   "src": "google-35c0b80822407d26.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 29.701,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-6fd1de50e8adb972.jpg",
+   "bytes": 82754,
+   "smart_crop": true,
+   "src": "google-6fd1de50e8adb972.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1080x1081",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 20.659,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-5f63e01ccd8b86c6.jpg",
+   "bytes": 463402,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 14 verdicts",
+  "staged 9 harvest photos from assets",
+  "refused_unlooked:google-cc33a4a8794c3314.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-d85f64b7bddfdbbf.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-5f63e01ccd8b86c6.jpg:road_no_landscape",
+  "hero_cand_refuse:google-2a3ff3f3393523bd.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-6fd1de50e8adb972.jpg:close_crop_alt",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 7,
+ "refused_by_class": 2,
+ "photo_candidates": 7,
+ "altBySlot": {
+  "photo-hero.jpg": "Red 1970s convertible muscle car with its hood raised, parked outside showing chrome Daytona wheels.",
+  "photo-card-about.jpg": "Night exterior of the shop's lit service bays with a car up inside and tire equipment visible.",
+  "photo-about.jpg": "Daytime storefront reading Brad's Automotive Repair with Kumho and Michelin tire banners and a car parked out front.",
+  "photo-card-services.jpg": "Man in a Clemson hoodie giving a thumbs up beside a silver sedan with its hood propped open in a parking lot.",
+  "photo-card-reviews.jpg": "Bare V8 cylinder head and engine block mounted on a rolling engine stand mid-rebuild.",
+  "photo-card-photos.jpg": "Close-up of red pneumatic tools being used on an open engine bay during service.",
+  "photo-gallery-1.jpg": "White Chevy Silverado pickup truck with black aftermarket wheels parked in the lot."
+ },
+ "dedupe_fixed": 5
 }

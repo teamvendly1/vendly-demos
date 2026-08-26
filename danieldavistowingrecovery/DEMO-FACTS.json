@@ -31,7 +31,7 @@
   "strip_body": "",
   "explore_h2": "Stuck, stranded, or off the road",
   "explore_lede": "",
-  "card_about": "",
+  "card_about": "Who you are calling, and the work we do in Winston-Salem.",
   "card_services": "See everything we take on",
   "card_reviews": "Read what past customers said",
   "card_photos": "Browse recent job photos",
@@ -73,23 +73,7 @@
   ],
   "photos_h2": "Jobs we have finished lately",
   "photos_lede": "",
-  "gallery": [
-    {
-      "slot": "photo-gallery-1.jpg",
-      "alt": "Close-up of a shattered windshield on a red Jeep with a roof-mounted light bar",
-      "subject_class": "vehicles"
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "alt": "Rear view of a muddy red Jeep Liberty with a spare tire and North Carolina plate",
-      "subject_class": "vehicles"
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "alt": "Close-up of a muddy windshield with a light bar mounted above",
-      "subject_class": "vehicles"
-    }
-  ],
+  "gallery": [],
   "reviews_h2": "Quoted from real jobs",
   "reviews_lede": "",
   "reviews": [
@@ -250,12 +234,12 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\danieldavistowingrecovery\\HARVEST.json",
-    "at": "2026-08-22T23:41:37.899Z",
+    "at": "2026-08-26T01:14:34.370Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\danieldavistowingrecovery\\DEMO-FACTS.json",
+    "facts_path": "C:/Users/jacob/vendly-code/vendly-demos/danieldavistowingrecovery/DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
     "rebuilt": true,
-    "harvest_merged": true
+    "harvest_merged": false
   },
   "address": {
     "street": "155 Salem Creek Dr",
@@ -283,5 +267,6 @@
   "photo_count": 11,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "hyperlink"
+  "_contact_map_mode": "pin-link",
+  "zero_harvest_photos": true
 }

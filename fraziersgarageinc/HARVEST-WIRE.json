@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:48:23.417Z",
+ "at": "2026-08-26T01:07:30.199Z",
  "slug": "fraziersgarageinc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-7bdcad41896320df.jpg",
-   "bytes": 404255,
-   "letterbox_stripped": null
+   "bytes": 139941,
+   "smart_crop": true,
+   "src": "google-7bdcad41896320df.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 40,
+   "detail_score": 28.366,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-4b05b173832c77f5.jpg",
-   "bytes": 244612,
-   "letterbox_stripped": null
+   "bytes": 101850,
+   "smart_crop": true,
+   "src": "google-4b05b173832c77f5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 24.999,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-e1a8dc7d7f573b77.jpg",
-   "bytes": 267576,
-   "letterbox_stripped": null
+   "bytes": 120586,
+   "smart_crop": true,
+   "src": "google-e1a8dc7d7f573b77.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 29.599,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-74a0f492da437128.jpg",
-   "bytes": 195822,
-   "letterbox_stripped": null
+   "bytes": 94777,
+   "smart_crop": true,
+   "src": "google-74a0f492da437128.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 21.311,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",

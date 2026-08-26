@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T05:17:15.114Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T01:18:28.606Z",
   "slug": "carloscompletecarcarecenter",
-  "removed_count": 27,
+  "removed_count": 30,
   "removed_sample": [
     "google-1ad91c04b45c45c0.jpg",
     "google-335674a94f2f18a9.jpg",
@@ -17,5 +17,10 @@
     "google-af41b80d79904651.jpg",
     "google-af852dc509008a38.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\carloscompletecarcarecenter",
+  "published_ref_count": 20,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

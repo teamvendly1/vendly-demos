@@ -1,27 +1,93 @@
 {
-  "at": "2026-08-25T22:58:34.997Z",
+  "at": "2026-08-26T01:16:10.755Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1fead91c164b612bde3041d1e01717fcab71f5a5b419558323de5c377a065bee",
+      "reasons": [
+        "off_section_relevance:trade_deny:people:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-1fead91c164b612b.jpg",
+      "score_alt": "Technician working over an open engine bay with the front end stripped back, cordless driver in hand"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b22229274466aadc46914cb437dbf8505532a55102a5d676b3ba4a79968434e7",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-b22229274466aadc.jpg",
+      "score_alt": "Technician kneeling at the front of a vehicle working behind the bumper, the light rig pulled in over the job"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "438886fc99cc9f7ba10f2c3604c0fd290b86f9e5c36a01520a768fc31db97d44",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-438886fc99cc9f7b.jpg",
+      "score_alt": "Technician working from the driver's seat of a car stripped to the bare dash frame, the trim and console out"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "99f323feba698326e4626db772ca92ec8d37b66e07dccc3697727aea36e22bbd",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-99f323feba698326.jpg",
+      "score_alt": "Sump dropped off the engine with the pickup and gasket face exposed for cleaning"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f893ce7dbcdbd5e32b4f0573e65f14e9382b10d438cdc81a9d9bf656afe269a8",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-f893ce7dbcdbd5e3.jpg",
+      "score_alt": "Car-Box Auto Repair LLC - technician at work on site (photo 2)"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "95648adcae2bd75f0506d9e39d02dbbedc4d8e82608e66038a61476ca0b557e3",
+      "reasons": [
+        "cross_demo_dupe:carboxautorepairllc/photo-gallery-5.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-95648adcae2bd75f.jpg",
+      "score_alt": "Car-Box Auto Repair LLC - technician at work on site (photo 3)"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "source": "harvest-fallback",
+      "sha256": "7d64408996c51f0554aa22f0a2d70660d4c6cb573c657b9d8f7bc3fdec9f1429",
+      "reasons": [
+        "cross_demo_dupe:carboxautorepairllc/photo-gallery-9.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carboxautorepairllcdunnharnettnc\\assets\\google\\google-7d64408996c51f05.jpg",
+      "score_alt": "Car-Box Auto Repair LLC - technician at work on site (photo 4)"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "407d97b8997878f5da039f310d6283f49727d79724c61bfe38f1fb02b8044447",
       "bytes": 198014,
       "alt": "Sump dropped off the engine with the pickup and gasket face exposed for cleaning"
-    },
-    {
-      "file": "photo-gallery-1.jpg",
-      "sha256": "b22229274466aadc46914cb437dbf8505532a55102a5d676b3ba4a79968434e7",
-      "bytes": 288971,
-      "alt": "Technician kneeling at the front of a vehicle working behind the bumper, the lig"
-    },
-    {
-      "file": "photo-gallery-8.jpg",
-      "sha256": "1fead91c164b612bde3041d1e01717fcab71f5a5b419558323de5c377a065bee",
-      "bytes": 167486,
-      "alt": "Technician working over an open engine bay with the front end stripped back, cor"
     },
     {
       "file": "photo-quoteband.jpg",
@@ -36,63 +102,13 @@
       "alt": "Technician working from the driver's seat of a car stripped to the bare dash fra"
     },
     {
-      "file": "photo-card-about.jpg",
-      "sha256": "048724057066a6bd2f634310f7ac81f06eaf02654b40778cd41d8ee4479e8afb",
-      "bytes": 119752,
-      "alt": "Three people standing together in the workshop between the lifts and the tool boxes",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_deny:people:auto"
-      ]
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "8872f2cd8a253432bae883753617072b90eb8fe60d065e91994c5379ea478448",
-      "bytes": 120469,
-      "alt": "Camshafts, rockers and valvetrain hardware laid out on the bench in the order they came off the head",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "0a0e887c5b2af7f3a36493709f5fed4bb5fcfa5e80acb9744166fcbb87f48bc7",
-      "bytes": 130021,
-      "alt": "Gearbox bellhousing and the old clutch assembly on the bench beside the replacement pressure plate and release bearing",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "fc9934776ab76c559cd44324c9c7e90f15af13c4bdea540801819e5b21a339af",
-      "bytes": 139193,
-      "alt": "Transmission stripped down on the bench with the shafts, synchros and new bearings laid out in order",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "ec6f5bfde03987221b40c83a23d55408fb8f4d13a5dadd04faa22d92931f10c7",
-      "bytes": 239043,
+      "file": "photo-gallery-1.jpg",
+      "sha256": "b22229274466aadc46914cb437dbf8505532a55102a5d676b3ba4a79968434e7",
+      "bytes": 288971,
       "alt": null,
       "restored": true,
       "reasons": [
-        "cross_demo_dupe:carboxautorepairllc/photo-gallery-9.jpg"
-      ]
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "1f49b3bb069561d8739c3b095f775d2da50796be085acc1f3cc8c9677d3c49e6",
-      "bytes": 281347,
-      "alt": "Differential opened on the axle with the crown wheel and pinion exposed, the housing supported on a stand",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
+        "cross_demo_dupe:carboxautorepairllc/photo-gallery-7.jpg"
       ]
     },
     {
@@ -119,10 +135,10 @@
       "file": "photo-gallery-4.jpg",
       "sha256": "ac928cf834c3c783675ec447aac8b19d68e561b4ff024d0207bcce31a389ad88",
       "bytes": 262649,
-      "alt": "Car-Box Auto Repair LLC - technician at work on site (photo 6)",
+      "alt": null,
       "restored": true,
       "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify"
+        "cross_demo_dupe:carboxautorepairllc/photo-photos-cta.jpg"
       ]
     },
     {
@@ -156,13 +172,23 @@
       ]
     },
     {
-      "file": "photo-gallery-9.jpg",
-      "sha256": "90e8b772d041e102a44bb67d0d0219a7b47c4c84a97dc8f7ed08f8c64383c7c9",
-      "bytes": 167295,
+      "file": "photo-gallery-8.jpg",
+      "sha256": "1fead91c164b612bde3041d1e01717fcab71f5a5b419558323de5c377a065bee",
+      "bytes": 167486,
       "alt": null,
       "restored": true,
       "reasons": [
-        "cross_demo_dupe:carboxautorepairllc/photo-gallery-7.jpg"
+        "cross_demo_dupe:carboxautorepairllc/photo-gallery-3.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "90e8b772d041e102a44bb67d0d0219a7b47c4c84a97dc8f7ed08f8c64383c7c9",
+      "bytes": 167295,
+      "alt": "Diagnostic tablet showing live tyre pressure sensor readings with one wheel position reading as failed",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
       ]
     },
     {
@@ -172,17 +198,7 @@
       "alt": null,
       "restored": true,
       "reasons": [
-        "cross_demo_dupe:carboxautorepairllc/photo-services-hero.jpg"
-      ]
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "7d64408996c51f0554aa22f0a2d70660d4c6cb573c657b9d8f7bc3fdec9f1429",
-      "bytes": 114544,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "cross_demo_dupe:carboxautorepairllc/photo-photos-cta.jpg"
+        "cross_demo_dupe:carboxautorepairllc/photo-gallery-8.jpg"
       ]
     },
     {
@@ -212,7 +228,7 @@
       "alt": null,
       "restored": true,
       "reasons": [
-        "cross_demo_dupe:carboxautorepairllc/photo-gallery-8.jpg"
+        "cross_demo_dupe:carboxautorepairllc/photo-services-hero.jpg"
       ]
     }
   ],
@@ -280,8 +296,8 @@
       }
     },
     {
-      "file": "photo-ctaband.jpg",
-      "alt": "Differential opened on the axle with the crown wheel and pinion exposed, the housing supported on a stand",
+      "file": "photo-contact.jpg",
+      "alt": "Dial gauge set on a magnetic base against the crown wheel to measure backlash before the diff goes back together",
       "relevance": {
         "ok": false,
         "score": -12,
@@ -325,21 +341,6 @@
       }
     },
     {
-      "file": "photo-gallery-4.jpg",
-      "alt": "Car-Box Auto Repair LLC - technician at work on site (photo 6)",
-      "relevance": {
-        "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
-      },
-      "flattery": {
-        "ok": true,
-        "score": 0,
-        "reason": "",
-        "strict": false
-      }
-    },
-    {
       "file": "photo-gallery-5.jpg",
       "alt": "Car-Box Auto Repair LLC - technician at work on site (photo 7)",
       "relevance": {
@@ -370,6 +371,21 @@
       }
     },
     {
+      "file": "photo-gallery-9.jpg",
+      "alt": "Diagnostic tablet showing live tyre pressure sensor readings with one wheel position reading as failed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
       "file": "photo-service-2.jpg",
       "alt": "Car-Box Auto Repair LLC - technician at work on site (photo 2)",
       "relevance": {
@@ -386,21 +402,16 @@
     }
   ],
   "skipped": [
-    "correlate_restore_no_stock:photo-card-about.jpg",
-    "correlate_restore_no_stock:photo-card-photos.jpg",
-    "correlate_restore_no_stock:photo-card-reviews.jpg",
-    "correlate_restore_no_stock:photo-card-services.jpg",
-    "correlate_restore_no_stock:photo-contact.jpg",
-    "correlate_restore_no_stock:photo-ctaband.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
     "correlate_restore_no_stock:photo-gallery-2.jpg",
     "correlate_restore_no_stock:photo-gallery-3.jpg",
     "correlate_restore_no_stock:photo-gallery-4.jpg",
     "correlate_restore_no_stock:photo-gallery-5.jpg",
     "correlate_restore_no_stock:photo-gallery-6.jpg",
     "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
     "correlate_restore_no_stock:photo-gallery-9.jpg",
     "correlate_restore_no_stock:photo-hero.jpg",
-    "correlate_restore_no_stock:photo-photos-cta.jpg",
     "correlate_restore_no_stock:photo-service-2.jpg",
     "correlate_restore_no_stock:photo-service-3.jpg",
     "correlate_restore_no_stock:photo-services-hero.jpg"

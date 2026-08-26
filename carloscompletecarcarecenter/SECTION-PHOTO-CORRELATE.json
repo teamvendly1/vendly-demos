@@ -1,111 +1,286 @@
 {
-  "at": "2026-08-24T05:17:12.729Z",
+  "at": "2026-08-26T01:17:46.079Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "955bad8b3f6a7529dad4dd1b834b347ccba3fd58e84fb182be94bcabcb86f5a0",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carloscompletecarcarecenter\\assets\\google\\google-955bad8b3f6a7529.jpg",
+      "score_alt": "Young mechanic wiping his hands with a rag near a vehicle in the shop"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4187e074c4018a1fa9c658d98a398d23c891ef73f6a9c5544ea6299e4e9f4096",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carloscompletecarcarecenter\\assets\\google\\google-4187e074c4018a1f.jpg",
+      "score_alt": "Mechanic wearing glasses holding a diagnostic tablet in the shop"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b08069777061770bf93a1bbeee40cfcd0ae7675e42ec99b81e7f219517e58836",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carloscompletecarcarecenter\\assets\\google\\google-b08069777061770b.jpg",
+      "score_alt": "Young mechanic writing on a clipboard wearing a Complete Car Care shirt"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3f65cd9bf551d93184396a030bcdbbdff5e8515eaaedeea9780c3c2a1b3e3bd2",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\carloscompletecarcarecenter\\assets\\google\\google-3f65cd9bf551d931.jpg",
+      "score_alt": "Two mechanics working together under an open truck hood"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "6162261cf20bd506367680fecf03aedc1eeb6e2e37b62da41b6f323e86198c3f",
-      "bytes": 206126
+      "bytes": 206126,
+      "alt": "Two mechanics working together lifting a vehicle's suspension component"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "3f65cd9bf551d93184396a030bcdbbdff5e8515eaaedeea9780c3c2a1b3e3bd2",
-      "bytes": 217218
+      "sha256": "7bebabe2e21b651c5a29a38612a135787cc7528f6d43a0f93fd2e59c72db35d9",
+      "bytes": 117630,
+      "alt": "Two mechanics working together under an open truck hood"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "955bad8b3f6a7529dad4dd1b834b347ccba3fd58e84fb182be94bcabcb86f5a0",
-      "bytes": 164672
+      "sha256": "b159e5d53ddf8601e6e16d79ed6f2671652100dd39765f8f368be5a6046fa88f",
+      "bytes": 95050,
+      "alt": "Young mechanic wiping his hands with a rag near a vehicle in the shop"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "b08069777061770bf93a1bbeee40cfcd0ae7675e42ec99b81e7f219517e58836",
-      "bytes": 187532
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "1ad91c04b45c45c0da50a5397273436ed4aa9886f2784388f7d8d214ed17a935",
-      "bytes": 190176
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "6009a67f68abdfb16480dd675a2b17890221e9fa92de21122137408951771cf0",
-      "bytes": 208297
+      "sha256": "8384f2565d2766a28edbf346ccd3ec1db77493b43f5cc9590809c65673e09f1f",
+      "bytes": 90787,
+      "alt": "Young mechanic writing on a clipboard wearing a Complete Car Care shirt"
     },
     {
       "file": "photo-gallery-1.jpg",
       "sha256": "b7b7b3f143d75adaa76582987426301cc74bb3eb7278c96b29f85831a304dbc4",
-      "bytes": 205656
+      "bytes": 205656,
+      "alt": "Silver Honda Accord raised on a lift, front view"
     },
     {
       "file": "photo-gallery-2.jpg",
       "sha256": "f564284f2e28baffa45bdc708af098314debda527fe7635c17ea2e3fa053ee06",
-      "bytes": 125086
-    },
-    {
-      "file": "photo-gallery-3.jpg",
-      "sha256": "af852dc509008a387d03db978f949e8203bdd07255b39c6aaeb02c5cd39a2a7b",
-      "bytes": 278898
-    },
-    {
-      "file": "photo-gallery-4.jpg",
-      "sha256": "717819f6a7cbb4e72a396a5eac80ad50552e0785f03ec47c27590f5a0b48f66b",
-      "bytes": 158107
+      "bytes": 125086,
+      "alt": "Mechanic using an air tool on a wheel under a raised vehicle"
     },
     {
       "file": "photo-gallery-5.jpg",
       "sha256": "b0db6024c115dcdc1783e88fd533d3e5808b19d195d1b018874a7d026e25fe15",
-      "bytes": 152719
-    },
-    {
-      "file": "photo-gallery-6.jpg",
-      "sha256": "b4019a235b7761c284e4ef589df1f5b4a9842d257b9626ae6025c16534fc0e15",
-      "bytes": 130583
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "cc131fdf211f768d80fc371d396d9df76556576c7d5de0c0742788f4b11323c1",
-      "bytes": 239290
+      "bytes": 152719,
+      "alt": "Tires and Repair shop exterior with customer vehicles parked in front"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "af41b80d79904651177f3f1dcddf5eb5ff60defef46ac67c45263dbb9b7bc38f",
-      "bytes": 162385
+      "bytes": 162385,
+      "alt": "Mechanic in coveralls holding a yellow tow chain"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "4187e074c4018a1fa9c658d98a398d23c891ef73f6a9c5544ea6299e4e9f4096",
-      "bytes": 126613
+      "sha256": "abf12c2f2374de5822b5d10286eac4dce0595cbdcef423950b49da3e06343473",
+      "bytes": 80637,
+      "alt": "Mechanic wearing glasses holding a diagnostic tablet in the shop"
     },
     {
-      "file": "photo-service-2.jpg",
-      "sha256": "335674a94f2f18a9162e22955b8f325867f4fe09fdcdf717b3b675545a3ed356",
-      "bytes": 127583
-    }
-  ],
-  "failed": [],
-  "gallery_gaps": [
+      "file": "photo-gallery-6.jpg",
+      "sha256": "b4019a235b7761c284e4ef589df1f5b4a9842d257b9626ae6025c16534fc0e15",
+      "bytes": 130583,
+      "alt": "Decorative sculpture made from car parts displayed with a candle in the shop",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
     {
       "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "cc131fdf211f768d80fc371d396d9df76556576c7d5de0c0742788f4b11323c1",
+      "bytes": 239290,
+      "alt": "Man standing at the front desk with vintage car posters and memorabilia on the wall",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:poster:auto"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "7bf8e2b71c849df0f4055df4d5627ba124e68cc052439d13977f135c66439be8",
+      "bytes": 74391,
+      "alt": "Rows of new oil filters stacked on a shop shelf",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Worker leaning into a black car's front end under bright shop lighting",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Close-up of the Lube and Oil building signage lettering",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Stack of new tires in the shop beside service equipment",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Close-up of a customer vehicle's headlight",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Decorative sculpture made from car parts displayed with a candle in the shop",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Man standing at the front desk with vintage car posters and memorabilia on the wall",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:poster:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Rows of new oil filters stacked on a shop shelf",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

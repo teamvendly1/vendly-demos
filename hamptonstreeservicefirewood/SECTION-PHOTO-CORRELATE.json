@@ -1,104 +1,311 @@
 {
-  "at": "2026-08-24T05:50:24.170Z",
+  "at": "2026-08-26T01:04:34.984Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "180976806d03e688272118bef609bd7fbf247c1a9beeda5fb5ff1119ce4eb12d",
-      "bytes": 494510
+      "source": "harvest-fallback",
+      "sha256": "edd6fb69b3f885c6cfc14ce6ad4f992a09998546145d9d65dd467ea32f542450",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hamptonstreeservicefirewood\\assets\\google\\google-edd6fb69b3f885c6.jpg",
+      "score_alt": "Wide shot of two tall pine trees with a climber working partway up the near trunk against blue sky"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "6c63eb5fc54d9648ae4bf432b36afe2151ba01125aabf45a3b12d7d567d98c22",
-      "bytes": 334009
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "242bc8962ff80b99def1816affffd67c05f72aeda2de4e11870c9918b9ab6725",
-      "bytes": 368320
-    },
+      "source": "harvest-fallback",
+      "sha256": "98f8dba10f0c906a1325a7fb7ae5f2a1a4087ca014c31bed8bf3faad48d3eccb",
+      "reasons": [
+        "off_section_relevance:trade_deny:debris:landscape",
+        "unflattering_subject:unflattering:debris"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hamptonstreeservicefirewood\\assets\\google\\google-98f8dba10f0c906a.jpg",
+      "score_alt": "Close-up of a climber in tree canopy working with ropes and orange safety gear"
+    }
+  ],
+  "kept": [
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "edd6fb69b3f885c6cfc14ce6ad4f992a09998546145d9d65dd467ea32f542450",
-      "bytes": 461175
+      "sha256": "fb0e5a98b46a7a5924b76153c4dabbbb46be86d58e628bc789f9bd2e85c71599",
+      "bytes": 221452,
+      "alt": "Wide shot of two tall pine trees with a climber working partway up the near trun"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "98f8dba10f0c906a1325a7fb7ae5f2a1a4087ca014c31bed8bf3faad48d3eccb",
-      "bytes": 529361
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "94cd78758f6f8ccea21a9a4f6ef3825f63112b5abd8f3c44eb9f6cd0b8066ca1",
-      "bytes": 93574
-    },
-    {
-      "file": "photo-gallery-1.jpg",
-      "sha256": "bc34a584b2b95658ab9b8e6e1c5a775708f37ab835f5b5cc1c6f419cd85b79ac",
-      "bytes": 276246
-    },
-    {
-      "file": "photo-gallery-2.jpg",
-      "sha256": "7dbb7ac47b09e3df21e43353180eb140179297a2294585b04d04ce321eab9980",
-      "bytes": 270518
-    },
-    {
-      "file": "photo-gallery-3.jpg",
-      "sha256": "b01331d1bc1c6439b581e456dcedd1286439b99941f460e45fbce5d53c933392",
-      "bytes": 201006
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "957edd3d4a69fdd3ce4e68cb083a33694be3dcc3d89789e97221b72bca617d08",
-      "bytes": 489718
+      "sha256": "60f23381350d51fb582f721d831055e53ee439e956ada8c0c66fb03cd657e747",
+      "bytes": 228902,
+      "alt": "Close-up of a climber in tree canopy working with ropes and orange safety gear"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "865980ee28a7dad3dc0184bcdb053094c2f2017c4294016836aa5f066e5782f0",
-      "bytes": 62906
-    }
-  ],
-  "failed": [],
-  "gallery_gaps": [
+      "bytes": 62906,
+      "alt": "Climber in orange shirt and red helmet working partway up a bare tree trunk with"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "c8604c503145b01a3722154bd7ae43da9513bfe67658eae83c326eb172fc2218",
+      "bytes": 162191,
+      "alt": "Climber in red helmet ascending a pine trunk on rope, chainsaw cutting with wood chips flying against clear blue sky",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "94cd78758f6f8ccea21a9a4f6ef3825f63112b5abd8f3c44eb9f6cd0b8066ca1",
+      "bytes": 93574,
+      "alt": "Wide shot of a single tall pine tree with a climber ascending near the top against clear blue sky",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "bc34a584b2b95658ab9b8e6e1c5a775708f37ab835f5b5cc1c6f419cd85b79ac",
+      "bytes": 276246,
+      "alt": "Climber near the top of a topped tree trunk making a cut with wood debris flying off the saw",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:debris:landscape",
+        "unflattering_subject:unflattering:debris"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "7dbb7ac47b09e3df21e43353180eb140179297a2294585b04d04ce321eab9980",
+      "bytes": 270518,
+      "alt": "Wide shot of a tall pine tree with a climber near the crown and ropes visible against blue sky",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "b01331d1bc1c6439b581e456dcedd1286439b99941f460e45fbce5d53c933392",
+      "bytes": 201006,
+      "alt": "Climber roped in near the top of a freshly topped dead tree trunk against a hazy white sky",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
     {
       "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "957edd3d4a69fdd3ce4e68cb083a33694be3dcc3d89789e97221b72bca617d08",
+      "bytes": 489718,
+      "alt": "Wide shot of two tall pines with a climber visible high in the left tree against blue sky",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
     }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Climber cutting into a large trunk with a chainsaw, sawdust spraying, green tree canopy in background",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Two ground crew members raking and clearing cut branches and pine debris from a yard near a gray house",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:debris:landscape"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:debris",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Climber in red helmet ascending a pine trunk on rope, chainsaw cutting with wood chips flying against clear blue sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Wide shot of a single tall pine tree with a climber ascending near the top against clear blue sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Climber near the top of a topped tree trunk making a cut with wood debris flying off the saw",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:debris:landscape"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:debris",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Wide shot of a tall pine tree with a climber near the crown and ropes visible against blue sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Climber roped in near the top of a freshly topped dead tree trunk against a hazy white sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Wide shot of two tall pines with a climber visible high in the left tree against blue sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-ctaband.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
