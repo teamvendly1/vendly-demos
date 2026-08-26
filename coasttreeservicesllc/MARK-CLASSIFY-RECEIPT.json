@@ -1,21 +1,23 @@
 {
-  "schema": "vendly.autodemo.mark-classify-receipt/1",
-  "at": "2026-08-18T06:09:24.213Z",
-  "slug": "coasttreeservicesllc",
-  "logo_sha256": "b4a988d7b01938702c62bb0df87e588ce707f7994ad0e133ab5f9be3039b4b94",
-  "origin": "their-google-listing:human-flagged-mark",
-  "source_url": "https://www.google.com/maps/place/Coast+Tree+Services+LLC/@35.562382,-76.990002,17z/data=!3m1!4b1!4m6!3m5!1s0x61f1f95df58e9ae3:0xc773e90909fdc21!8m2!3d35.562382!4d-76.990002!16s%2Fg%2F11wwzhx2h8?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
-  "source_file": "",
-  "verdict": {
-    "ok": true,
-    "flatness": 0.932,
-    "transparent": 0,
-    "decided_by": "flatness",
-    "w": 815,
-    "h": 652
-  },
-  "post_stage_transform": "logo-transparent-margin",
-  "human_verdict": "pass",
-  "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
-  "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Real (modest-resolution but genuine) illustrated tree logo, real forest/tree-work photos, real Google reviews (Bonnie Perkins visible), correct phone (252) 402-6433 and address, no placeholders."
+ "schema": "vendly.autodemo.mark-classify-receipt/1",
+ "at": "2026-08-26T16:15:40.780Z",
+ "slug": "coasttreeservicesllc",
+ "logo_sha256": "b71e0a696d6daa538552d888eb79e703b27293277d6fee2924a49c1ab56160fc",
+ "origin": "their-google-listing:human-flagged-mark",
+ "source_url": "https://www.google.com/maps/place/Coast+Tree+Services+LLC/@35.562382,-76.990002,17z/data=!3m1!4b1!4m6!3m5!1s0x61f1f95df58e9ae3:0xc773e90909fdc21!8m2!3d35.562382!4d-76.990002!16s%2Fg%2F11wwzhx2h8?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+ "source_file": "",
+ "verdict": {
+  "ok": true,
+  "flatness": 0.932,
+  "transparent": 0,
+  "decided_by": "flatness",
+  "w": 815,
+  "h": 652
+ },
+ "human_verdict": "pass",
+ "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+ "human_verdict_at": null,
+ "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Real (modest-resolution but genuine) illustrated tree logo, real forest/tree-work photos, real Google reviews (Bonnie Perkins visible), correct phone (252) 402-6433 and address, no placeholders.",
+ "human_verdict_carried_from": "2026-08-18T06:09:24.213Z",
+ "post_stage_transform": "logo-transparent-margin"
 }

@@ -1,62 +1,58 @@
 {
-  "at": "2026-08-24T06:24:09.367Z",
+  "at": "2026-08-26T16:20:01.138Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
   "replaced": [
     {
-      "file": "photo-about.jpg",
-      "source": "stock-library",
-      "sha256": "ca1c37e5501dc536a221fb3f4b26c7c2662bb4ac4a619976d47bb3616b8ab0c2",
-      "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-hero.jpg"
-      ],
-      "service": "crew shop jobsite"
-    },
-    {
       "file": "photo-card-about.jpg",
       "source": "stock-library",
-      "sha256": "f405ae5788ce06b65e61e9e325ce88af3a981d97532b18d6d165a25d9f02614b",
+      "sha256": "35f2d674978fc868238758a5a799bd917e8c90c0659d12b1458a836ac52e3b08",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-1.jpg"
+        "off_section_relevance:trade_require_miss:plumbing"
       ],
-      "service": "crew shop jobsite"
+      "service": "crew shop jobsite",
+      "score_alt": "pipe wrench on copper pipe"
     },
     {
       "file": "photo-card-photos.jpg",
       "source": "stock-library",
-      "sha256": "a6215248b8ecd8479ab8b40eef8a7a2ec35615f7c0cb67dccbf1230f3b0fc76a",
+      "sha256": "3681098baeebcd550272de0656ba271c1e162836806f407f838485304ec496b3",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-card-about.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "drain snake cable clog"
     },
     {
       "file": "photo-card-reviews.jpg",
       "source": "stock-library",
-      "sha256": "231e4e5c95defd2f7bd7489ea2fa628967514a448ddc229c3ccd7d952cf7052a",
+      "sha256": "a6215248b8ecd8479ab8b40eef8a7a2ec35615f7c0cb67dccbf1230f3b0fc76a",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-card-photos.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-card-services.jpg",
       "source": "stock-library",
-      "sha256": "36b53dc4e5cd2f05dec46052f12cd7f3300554fdc9cd570cd6a310cf9bb81b88",
+      "sha256": "88ad5692358115cae512bfc310c4f4436ae80498b1017c6cc1bb4226f5d583a0",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-card-reviews.jpg"
       ],
-      "service": "trade work"
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-contact.jpg",
       "source": "stock-library",
-      "sha256": "fab33e8f9a1bd2f2e7c1c88df5f4da47a9c209bffb39fcc95b034afaaeefb9b5",
+      "sha256": "dbfdd7694efd4d94efbf0378552a4baf989be4176483a07a49358a675dbb2f2a",
       "reasons": [
-        "cross_demo_dupe:ashleysplumbing/photo-ctaband.jpg"
+        "cross_demo_dupe:ashleysplumbing/photo-hero.jpg"
       ],
-      "service": "trade work"
+      "service": "trade work",
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-ctaband.jpg",
@@ -65,163 +61,328 @@
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-3.jpg"
       ],
-      "service": "trade work"
+      "service": "trade work",
+      "score_alt": "drain snake cable clog"
     },
     {
       "file": "photo-gallery-1.jpg",
       "source": "stock-library",
-      "sha256": "c8af8db7598115c2be726d883503ebc491ac74624901540391f2a34258f86af2",
+      "sha256": "daa65c8703fea19642d71a74a4c85f9164e56e8b2912f853b3b4307e24657502",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-card-services.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-gallery-2.jpg",
       "source": "stock-library",
-      "sha256": "bf056418a7c42fdb3abcfe97b622b6af7a15565a4c9acb46c783355c01bc98d9",
+      "sha256": "e3e484e5f5695837efe38b228f1c8daccdd82790081a8375d825cc15ced9c6f5",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-about.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "drain snake cable clog"
     },
     {
       "file": "photo-gallery-3.jpg",
       "source": "stock-library",
-      "sha256": "39bfb37780f6129916511538aef150d8207c7d04420df65341c2090d6439a680",
+      "sha256": "4cc68e59bf572dbce8e79932d11bd52ed11c2b9e8b66b50e4759b24201a449fe",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-2.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-gallery-4.jpg",
       "source": "stock-library",
-      "sha256": "119c8f0cd21bed89f9448e758a07bc54848f56323fac8636966d57d4322b4ba4",
+      "sha256": "68e7c95a0101d33fddd92520663c4689f36891b9c1eaadeb4bdde8dd030d1e7e",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-quoteband.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-gallery-5.jpg",
       "source": "stock-library",
-      "sha256": "88ad5692358115cae512bfc310c4f4436ae80498b1017c6cc1bb4226f5d583a0",
+      "sha256": "36b53dc4e5cd2f05dec46052f12cd7f3300554fdc9cd570cd6a310cf9bb81b88",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-4.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-gallery-6.jpg",
       "source": "stock-library",
-      "sha256": "642a2cfa2eddd08aa4fccd613032dc51fed13b5269f10daeaadde88dbf53d0f7",
+      "sha256": "f405ae5788ce06b65e61e9e325ce88af3a981d97532b18d6d165a25d9f02614b",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-5.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-gallery-7.jpg",
       "source": "stock-library",
-      "sha256": "58c50dfccbc1b9e419fef640f00f0d4aa70cacd5408aba63d3fdd3c9b6e97659",
+      "sha256": "231e4e5c95defd2f7bd7489ea2fa628967514a448ddc229c3ccd7d952cf7052a",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-service-3.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-gallery-8.jpg",
       "source": "stock-library",
-      "sha256": "418ed7c1f460fd9b2af5e95197f4d507f03778b081e77a10248425222835a198",
+      "sha256": "642a2cfa2eddd08aa4fccd613032dc51fed13b5269f10daeaadde88dbf53d0f7",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-8.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-gallery-9.jpg",
       "source": "stock-library",
-      "sha256": "a0d5a3b3acfd2bff9af363b06f8bdf9c6561980e8c7e5771fdd796fb59c43b51",
+      "sha256": "5fe7caaa42ebc678aaa249ed6cd721e76e35689e8695b7a9bb93af23475237d8",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-9.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "stock-library",
+      "sha256": "119c8f0cd21bed89f9448e758a07bc54848f56323fac8636966d57d4322b4ba4",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
     },
     {
       "file": "photo-service-1.jpg",
       "source": "stock-library",
-      "sha256": "e3e484e5f5695837efe38b228f1c8daccdd82790081a8375d825cc15ced9c6f5",
+      "sha256": "4474df4eb1f39347c8cd506cbd4ff4897b097039451da458c97aa7712a3f1b62",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-6.jpg"
+        "off_section_relevance:section_need_miss:Drains and sewer lines"
       ],
-      "service": "Drains and sewer lines"
+      "service": "Drains and sewer lines",
+      "score_alt": "drain snake cable clog"
     },
     {
       "file": "photo-service-2.jpg",
       "source": "stock-library",
-      "sha256": "18ed5d8a144ab356631c1d299c2a73b0b4bf3cac65f66a2f1a14a48cd94583ff",
+      "sha256": "a0d5a3b3acfd2bff9af363b06f8bdf9c6561980e8c7e5771fdd796fb59c43b51",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-gallery-7.jpg"
+        "off_section_relevance:trade_require_miss:plumbing"
       ],
-      "service": "Water heaters"
+      "service": "Water heaters",
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-service-3.jpg",
       "source": "stock-library",
-      "sha256": "dbfdd7694efd4d94efbf0378552a4baf989be4176483a07a49358a675dbb2f2a",
+      "sha256": "58c50dfccbc1b9e419fef640f00f0d4aa70cacd5408aba63d3fdd3c9b6e97659",
       "reasons": [
         "cross_demo_dupe:cobiaplumbingconstruction/photo-service-2.jpg"
       ],
-      "service": "Excavation and service lines"
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "source": "stock-library",
-      "sha256": "5fe7caaa42ebc678aaa249ed6cd721e76e35689e8695b7a9bb93af23475237d8",
-      "reasons": [
-        "cross_demo_dupe:acmeplumbingheatingco/photo-card-services.jpg"
-      ],
-      "service": "trade work"
+      "service": "Excavation and service lines",
+      "score_alt": "pipe wrench on copper pipe"
     },
     {
       "file": "photo-services-hero.jpg",
       "source": "stock-library",
-      "sha256": "4cc68e59bf572dbce8e79932d11bd52ed11c2b9e8b66b50e4759b24201a449fe",
+      "sha256": "ca1c37e5501dc536a221fb3f4b26c7c2662bb4ac4a619976d47bb3616b8ab0c2",
       "reasons": [
-        "cross_demo_dupe:cobiaplumbingconstruction/photo-services-hero.jpg"
+        "off_section_relevance:trade_require_miss:plumbing"
       ],
-      "service": "trade work"
+      "service": "trade work",
+      "score_alt": "modern home bathroom interior clean"
     }
   ],
   "kept": [
     {
-      "file": "photo-hero.jpg",
-      "sha256": "7d0754d58859b3a4285627bd403a3e7af3fbcc6c40897249d82ba056da9bd355",
-      "bytes": 596113
+      "file": "photo-about.jpg",
+      "sha256": "de5c55ef53916cae952772df0ad4ba6a8db35c7ed8a121753e848d73d6d8e5f2",
+      "bytes": 133652,
+      "alt": "Electric cylinder fitted in a closet with the supply and expansion lines run in "
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "68e7c95a0101d33fddd92520663c4689f36891b9c1eaadeb4bdde8dd030d1e7e",
-      "bytes": 150615
+      "sha256": "18ed5d8a144ab356631c1d299c2a73b0b4bf3cac65f66a2f1a14a48cd94583ff",
+      "bytes": 72663,
+      "alt": "drain snake cable clog"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "a4fa658aa3c8ec40e6df1a30a57b8949f535121ba3e0c4dcf917860bbbde2b15",
-      "bytes": 288508
+      "bytes": 288508,
+      "alt": "Tankless water heater fitted to the outside wall with the packaging still on the"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "daa65c8703fea19642d71a74a4c85f9164e56e8b2912f853b3b4307e24657502",
-      "bytes": 111835
+      "sha256": "bf056418a7c42fdb3abcfe97b622b6af7a15565a4c9acb46c783355c01bc98d9",
+      "bytes": 175169,
+      "alt": "water heater install basement"
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "3681098baeebcd550272de0656ba271c1e162836806f407f838485304ec496b3",
-      "bytes": 241094
+      "sha256": "39bfb37780f6129916511538aef150d8207c7d04420df65341c2090d6439a680",
+      "bytes": 201984,
+      "alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "c8af8db7598115c2be726d883503ebc491ac74624901540391f2a34258f86af2",
+      "bytes": 425547,
+      "alt": "pipe wrench on copper pipe"
     }
   ],
   "failed": [],
   "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Tankless unit fixed to a brick elevation with the gas line and condensate run tied in down the wall",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Cobia Plumbing & Construction - technician at work on site (photo 4)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Cobia Plumbing & Construction - technician at work on site (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "Cobia Plumbing & Construction - technician at work on site (photo 6)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "alt": "Cobia Plumbing & Construction - technician at work on site (photo 7)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Cobia Plumbing & Construction - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Wall opened at floor level on a concrete slab, the old supply and waste lines exposed for replacement",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Drains and sewer lines"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Whirlpool bath dropped into its framed opening and levelled, the jets and overflow set ready for the supply to be run",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "alt": "Service van with an enclosed utility body, the side doors open on the racked-out interior",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

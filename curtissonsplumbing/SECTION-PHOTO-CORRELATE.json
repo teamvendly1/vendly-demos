@@ -1,116 +1,330 @@
 {
-  "at": "2026-08-22T23:40:34.543Z",
+  "at": "2026-08-26T16:24:10.758Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
   "replaced": [
     {
-      "file": "photo-service-5.jpg",
-      "source": "stock-library",
+      "file": "photo-about.jpg",
+      "source": "Pexels",
       "sha256": "6849591b729361b5858b5cf5d0521bb52051583299177750f88fd2a65a613066",
       "reasons": [
-        "cross_demo_dupe:locklearsplumbingllclaurinburgscotlandnc/photo-hero.jpg"
+        "off_section_relevance:trade_require_miss:plumbing"
       ],
-      "service": "trade work"
+      "service": "crew shop jobsite",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "Pexels",
+      "sha256": "f8181d96e5c47bf6c12d2dd809a9c5cd713ed49d1f0149cececcd47412187a7d",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "stock-library",
+      "sha256": "dcda99e612daaf0235324d5deb98ee5e71a63e9a1610233135a1e71e20c1a6f4",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "stock-library",
+      "sha256": "89997bd4d7a20f57b21ac2a8e5c4b7b751c20d9bb570ac2f4067a23b5df6259b",
+      "reasons": [
+        "cross_demo_dupe:curtissonsplumbinghickorycatawbanc/photo-photos-cta.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "stock-library",
+      "sha256": "e55f770a3539e114f748561c767dd44e3aa5a763e7b952cca74008a05f9dca19",
+      "reasons": [
+        "cross_demo_dupe:curtissonsplumbinghickorycatawbanc/photo-quoteband.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "stock-library",
+      "sha256": "eb954115dae232765898dc89d58b51d9d4dc4adafc245de02e9f98bd0ac86a20",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "stock-library",
+      "sha256": "2c2a6e673e92448378e4c65dee57e563d655d42a2cb1e70ffc5582608e247d32",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing",
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "stock-library",
+      "sha256": "f2e92e1079acf4ea8109b159a63eb5f15a2d19ea1c7f13300acc4e212b15dc0b",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "stock-library",
+      "sha256": "cbe73cd230758692083ba489990dce29dc7bb42b3d72872ab53e593b7af1f9ce",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "stock-library",
+      "sha256": "fd582b0f9da287beac5a9cf885ee7fd99b219771e17ab9d98a9adda33a832359",
+      "reasons": [
+        "cross_demo_dupe:curtissonsplumbinghickorycatawbanc/photo-reviewsband.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "5fb790ba9f298c584f58de6c1a94108c1bbbb4af244e491de7587f1d5657bdbf",
-      "bytes": 189517
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "33ad2f2f3ba44d95c34b2bcccf7e28adba1b050ff56bb5d6a49db730bf26d882",
-      "bytes": 191177
-    },
-    {
       "file": "photo-card-photos.jpg",
-      "sha256": "e58ea8cdc5acaa5b6f294f26fc626286c8c2e4139088c7d99fc9871f25d177fe",
-      "bytes": 150531
+      "sha256": "2b0312143ce592160b94c55a1acb8a9b9d7d9bbdcd736c17f4372a96c7283b37",
+      "bytes": 133726,
+      "alt": "Crawlspace with an insulated pipe run along the ground and vapor barrier materia"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "233b23e4f455ec0789124c6819143dc55bf8d4807036a3de5b681fdec481f3f5",
-      "bytes": 202879
+      "sha256": "885d96d08b293e0fdd5f93cc121f06b8ff0257ad94a55b34b51a6e8cc86277ec",
+      "bytes": 128155,
+      "alt": "Outdoor excavation with a green sewer cleanout installed near a wooden bench in "
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "594722998391d39066d9e553ccd8d785450b67799ced7eb2c430beb012ce8902",
-      "bytes": 245321
+      "file": "photo-gallery-3.jpg",
+      "sha256": "7a9a2fcf91b09c15bd8e8c2cc06960dd0d98e6d4b08f92f62b820dd43cf61df6",
+      "bytes": 150449,
+      "alt": "Outdoor trench with a white pipe run along a support post"
     },
     {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "0338c5f4d0c84a286430180e26ac236db08ba03189a694c0b89af54a80e69482",
-      "bytes": 75394
+      "file": "photo-gallery-4.jpg",
+      "sha256": "f59cb36774d99cbd9143696ec08b5ef4cc8bf6206d78fc2b6ba4a07b84f688b6",
+      "bytes": 144102,
+      "alt": "Bathroom with a newly installed toilet"
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "d30120d463c69a7e783728ccf925e0f2e272c1b2a4cbcc2f7c6ab5194fea9026",
-      "bytes": 90977
+      "file": "photo-gallery-6.jpg",
+      "sha256": "85d47aaf9800e6ffe4085c1c72d9581a4cd34f41125e3a57fb544b6829846a99",
+      "bytes": 127197,
+      "alt": "Bank of tankless water heaters mounted on a wall with pipes connected"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "24ee1f8f5e2c94382145286a437889b6a15206554abaf071ee217d38fd5310ee",
-      "bytes": 148630
+      "file": "photo-gallery-7.jpg",
+      "sha256": "08d31a9c0395845e7ef16e3c203b137cf10ceb7d2f91a2c55327da1fe061a5b4",
+      "bytes": 126329,
+      "alt": "Decorative tiled shower floor with stacked stone and pebble accents"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "4e6b7c4df91517ce07f71f6d5cb2497458b0b42c836c23fccc79723f20d2ce50",
+      "bytes": 112180,
+      "alt": "Bathroom under construction with exposed studs and color-coded PEX piping"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "116c73a201ac3caeb4a0a198e8991f197175c0b8c5d544b22560d6f318d30e8c",
+      "bytes": 94117,
+      "alt": "Modern bathroom with a freestanding tub beside a glass-block window"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "0872fb0dc417b03f17af228fb353ef1795adc792ea28b67918824a49883ed2c7",
-      "bytes": 128532
+      "bytes": 128532,
+      "alt": "Aerial drone view of a property showing a trenched pipeline route across the yar"
     },
     {
       "file": "photo-photos-cta.jpg",
       "sha256": "271c5ab6f3c7509e6cf32e535e9a2eebbe3a3a188c81860b3b2eda025e24b3a0",
-      "bytes": 79951
+      "bytes": 79951,
+      "alt": "Bathroom vanity with dual sinks and black fixtures installed under a mirror"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "8284437dc541662d704e46b0fac59f75115b2af8f4a25e6db43169872618f284",
-      "bytes": 146942
-    },
-    {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "4b86651b5974778e2fbf113ec8cc562b3a1e14ce26132de249478df32bbc1620",
-      "bytes": 71398
+      "bytes": 146942,
+      "alt": "Bathroom vanity with a round mirror and granite-look walls"
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "89452e0e177b7980b81c95f8e0e511edca404eda2cf776f968f8ed35c687dc02",
-      "bytes": 78773
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "3bafd39bde8828de113dd8e0cfeb7554162fb105b1c8c95b630b8143efc5e5c7",
-      "bytes": 117185
+      "bytes": 78773,
+      "alt": "Bathroom under construction with exposed studs, a shower pan and copper piping"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "d643c31889990d8e5dac46da23999c66d973cbe0ec2059d68d6eab65afd154a2",
-      "bytes": 103940
+      "sha256": "726a32d898169d1099262fd0f4f7a132b086b6ff10ce4f6c9dd2f5e14b945115",
+      "bytes": 88880,
+      "alt": "New double-basin kitchen sink installed under a window"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "261237245b218e9077d64d3ffe72375d33e4738d24b05a3efb606577fb98d544",
-      "bytes": 91452
+      "sha256": "8663ff50abff2690681fa22a9a100c9955a2eecc4e33406af4007875921fff58",
+      "bytes": 49936,
+      "alt": "New toilet installed beside a glass shower enclosure in a bathroom"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "dcda99e612daaf0235324d5deb98ee5e71a63e9a1610233135a1e71e20c1a6f4",
-      "bytes": 157597
+      "sha256": "17f10d54262710594e57da39a3dbf1ceda8bcc91b5de86e71fe094c6003f7496",
+      "bytes": 70668,
+      "alt": "Small bathroom with a new toilet installed near a glass shower door"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "f8181d96e5c47bf6c12d2dd809a9c5cd713ed49d1f0149cececcd47412187a7d",
-      "bytes": 166549
+      "sha256": "789743207e8beed53ff5145037e4ec6168072b43e6073d55651333b6fcd1fcb5",
+      "bytes": 48899,
+      "alt": "Close-up of hands using a wrench on a P-trap under a sink"
     },
     {
-      "file": "photo-services-hero.jpg",
-      "sha256": "c900dd721b5ff9b1a35a546da7fcd06e6738e77f6c01847392a565a5cc2c28df",
-      "bytes": 83454
+      "file": "photo-service-1.jpg",
+      "sha256": "42e532e5abb67f3f859bb042601b806485f04ad65807e2006e6b7e6f6cfbb48d",
+      "bytes": 73491,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:curtissonsplumbinghickorycatawbanc/photo-service-3.jpg"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Outdoor spigot installation mounted on a brick wall with a protective cover",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "New outdoor AC condenser unit installed beside a house",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Excavated red-clay trench with a green sewer cleanout cap freshly installed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Outdoor AC condenser unit installed beside a house with fresh mulch",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Outdoor AC condenser unit installed on a concrete pad near a brick wall",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Outdoor kitchen island with a grill beside a lake view",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "alt": "Close-up of a jetted whirlpool tub installed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-service-1.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

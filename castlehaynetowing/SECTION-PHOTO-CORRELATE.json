@@ -1,152 +1,314 @@
 {
-  "at": "2026-08-21T07:12:17.304Z",
+  "at": "2026-08-26T16:12:57.976Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
   "replaced": [
     {
-      "file": "photo-about.jpg",
-      "source": "stock-library",
-      "sha256": "c1aa9a3345acf1399f91e3f989a6b09f09631ff936054ae802902edb2cc1eb0b",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-card-photos.jpg"
-      ],
-      "service": "crew shop jobsite"
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "source": "stock-library",
-      "sha256": "fdb196d6229e3d459c4ab993c2d3d837ffe96c4020bc3917daeba0b5052c635d",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-about.jpg"
-      ],
-      "service": "crew shop jobsite"
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "source": "stock-library",
-      "sha256": "db6f773dd90bcb452ae1fc6bc6b25be72e680df4b6e3bb0a2290b8f683644c87",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-service-1.jpg"
-      ],
-      "service": null
-    },
-    {
       "file": "photo-card-reviews.jpg",
       "source": "stock-library",
-      "sha256": "8fce91a9bd90cd520b6b00b1871fcd982c0e58ca43fbcb2433a33b8fa3ff3654",
+      "sha256": "2c6cefa0983ccd4309858d0122266bc82cc0d691d252386710048cb81dd1e0f4",
       "reasons": [
-        "cross_demo_dupe:abwtowing/photo-contact.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
       ],
-      "service": null
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "source": "stock-library",
-      "sha256": "09d435366d89f9316144af83d964a8011ced7954e22f964f6d0e2e06738903aa",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-service-5.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-contact.jpg",
-      "source": "stock-library",
-      "sha256": "2b0fc4c60137445e695eb5cf637c6e584c0cf6ed7ca7879662ffd8293dd05ed9",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-card-reviews.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "source": "stock-library",
-      "sha256": "3d96f19b26035798b05aad0f9d9a8004fbecf82a5cd9615ca0210f7a780765a1",
-      "reasons": [
-        "cross_demo_dupe:abtowingtransportofncllcsnowhillgreenenc/photo-hero.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-hero.jpg",
-      "source": "stock-library",
-      "sha256": "fb7f0d2e06532e6f11443955b190e950cef8dc41346649875698d38e0073cf47",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-services-hero.jpg"
-      ],
-      "service": null
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "source": "stock-library",
-      "sha256": "d9f20bd22202460468c73aeb01db15e6c7aab90ca84b4f6b1d99aaa775ce4c2f",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-card-services.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "source": "stock-library",
-      "sha256": "2536b5dade7ec71de1a1fea874944c959c998f27aa9b9d8339ce342ee4e5bad9",
-      "reasons": [
-        "cross_demo_dupe:abtowingtransportofncllcsnowhillgreenenc/photo-service-1.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "source": "stock-library",
-      "sha256": "2352bfd6ae14f0d165a20657198b967dd4e9aaf8e05cf359558e6c7843b05d94",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-card-about.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "source": "stock-library",
-      "sha256": "bf4b3a01ce9ddf0c925dbdde63aa3f6492fb4aeaadfcd607a211e9c1f43732f6",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-service-6.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "source": "stock-library",
-      "sha256": "6be45332100f42854ec40e8f180bcf129ac83cf064f2891d22c077bf6c9c8f3a",
-      "reasons": [
-        "cross_demo_dupe:abwtowing/photo-photos-cta.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "source": "stock-library",
-      "sha256": "f262632bbffccde1c139d40b6db1d5502bfa86e61cdc9fff641212ba0b7f3895",
-      "reasons": [
-        "cross_demo_dupe:abtowingtransportofncllcsnowhillgreenenc/photo-photos-cta.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "source": "stock-library",
-      "sha256": "3af1705b755afe965e8eaa019a22d4a38192309c6dc665167c091ba9ad067410",
-      "reasons": [
-        "cross_demo_dupe:abtowingtransportofncllcsnowhillgreenenc/photo-card-services.jpg"
-      ],
-      "service": "trade work"
+      "service": null,
+      "score_alt": "tow truck empty flatbed highway"
     }
   ],
   "kept": [
     {
+      "file": "photo-card-photos.jpg",
+      "sha256": "72ecc8a404af117192c38a591392e22c0c4f9d302762c5139933a7d033c4dd10",
+      "bytes": 316888,
+      "alt": "tow truck roadside assistance"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "2b0fc4c60137445e695eb5cf637c6e584c0cf6ed7ca7879662ffd8293dd05ed9",
+      "bytes": 216417,
+      "alt": "wheel lift tow truck street"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "d5ec151c43eef8d20ed390f2cd9c2f9091ebc84187608d1b57ac058e74748fd2",
+      "bytes": 161299,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
       "file": "photo-photos-cta.jpg",
-      "sha256": "cd4cf9239ea31defc9fed91a5a7407fb49e799e97cbbdf314d688730948a4403",
-      "bytes": 90151
+      "sha256": "2eaf8c1e67e95e9da63de4b64d4821167650a7efb34a590f852962e8f90c2242",
+      "bytes": 314691,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "768ed5a7b71015e7c06e02b4a206d1bf2ee0ae813930ff9745fc8a6ceba26035",
+      "bytes": 179177,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "5db0e0965f28da1dac1e07029d401a87d05dfa0c6da25137ef65abfec042bc27",
+      "bytes": 319287,
+      "alt": "wheel lift tow truck street"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "7345f7c3ffa899eb43c896f9d8500e4971face3863969ae6687b58db07bc41a8",
+      "bytes": 165992,
+      "alt": "tow truck driver strapping wheel"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "97a7ad5f067e2385e1999ae887a9341dba812498a3436bbd06306eb8d2057e5b",
+      "bytes": 253068,
+      "alt": "wheel lift tow truck street"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "ff0638561104abdd3806172baa4ff9d2c6e4b631debcbef6e3756ab34394730e",
+      "bytes": 116756,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "224e4d1281887b65648764d149772bb3255e5f9fad79b5be070c334351ec5465",
+      "bytes": 185490,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "53ee4a600087931ac07679f8696f7c733bdc7893febb5172a2dd2171462cc327",
+      "bytes": 95144,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-about.jpg",
+      "sha256": "feac706e1d3734192a47e81710326a518d3e852bd7c8cffa5f1f711a8b87e322",
+      "bytes": 420592,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "f518846f0c161c5096d2a37305a0c1208918f900618682e4124c00fceb228131",
+      "bytes": 242152,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "1396d72e3d41f53711d95e9c5c5cf6ddbeffbc51d2fa325d48541644372dc0ff",
+      "bytes": 124007,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "6de944104671edcad3f6690312db1b1ebdd6bc873cfea4640a7b497bcc2a65a0",
+      "bytes": 698678,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

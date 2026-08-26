@@ -1,11 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T13:35:33.316Z",
+  "at": "2026-08-26T16:22:05.951Z",
   "trade": "electrical",
   "slotHints": {
-    "photo-service-1.jpg": "Electrical"
+    "photo-service-1.jpg": "Panels and service upgrades",
+    "photo-service-2.jpg": "Generators and backup power",
+    "photo-service-3.jpg": "EV charger installation"
   },
-  "ok": false,
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -15,25 +17,25 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "17afac03dc38f67bd5ab415a8e633273945e40565ef1e05b556db23c2e8a0b30",
+      "sha256": "747e5baefae4de2e27940bab28b96c0e7902fa98715bb7786fdaa98e5aeedade",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "3381078ac4c7def630a53c99a5f058669042c969044cd547971470489d9f8ae4",
+      "sha256": "d1f6d42083339f3d8aad0b32cdc685615de30b5b044f48b82d29380224bfb8e5",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "4cd524c93a519e27e1cee6d2a2764509ab4e460dd9694dc54631571b782938d3",
+      "sha256": "fb0c3e4825a13914fbfa5fb5cbce4b2b5f596401dff941a51bea8eb46595e508",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "e9facd0495963f49f584dc1f04a26335236cbc79f065ce01f142173687a6328a",
+      "sha256": "48d6ec6782969b6c05afd2230688929dd6d0dd33a5d265a5887ec1d951c0b90a",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -63,19 +65,19 @@
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "d64304cb9421606e6239c215d51bbdf3d0a18f1c22fe48677f34ce0051e30ad6",
+      "sha256": "1684138ba35edf4a0dd9bca487a67ccb5fa86052a207efdbba20c94cc07ac837",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "25bff628bc3d308a37e7b7fe201d311cb32d4d7b92ec9fd02567359775e9e48c",
+      "sha256": "9bb7bf0aa36b5566f64a6c5511c7bd44ca8319ce51efd4c7150c61d3e081e3aa",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "3a8f27553b6fe9d51d5c3e3265ec9bd9201119406eaa8c49842fbedab3e94129",
+      "sha256": "ce2206c488f2c234524178428cd903e45767fa48b2467edf91ad5c57dacd2aec",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -89,90 +91,105 @@
   "filled": [
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "b9f8311e413cc46fe258edbe56ada0010aabdb22165b39e4c362596971dee9a0",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/white-and-brown-wooden-dining-table-10099163/",
+        "subject_alt": "light fixture install ceiling",
+        "found_by_query": "light fixture install ceiling",
+        "family": "electrical",
+        "library_file": "electrical-well-lit-dining-room-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:26:23.847Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 85
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "af55a34d73ad38b30398f376a52abac8f5cfd58d6824eb659f21ef38114b465f",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/spacious-light-room-with-cupboards-6489096/",
+        "subject_alt": "light fixture install ceiling",
+        "found_by_query": "light fixture install ceiling",
+        "family": "electrical",
+        "library_file": "electrical-minimalist-design-modern-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:26:28.898Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 85
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "bf0ced17b65e97939bc31ad1fad87d3730877dbc4e58caff9718956261b4b01b",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/stylish-apartment-with-couch-and-kitchen-furniture-6527034/",
+        "subject_alt": "light fixture install ceiling",
+        "found_by_query": "light fixture install ceiling",
+        "family": "electrical",
+        "library_file": "electrical-interior-spacious-apartment-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:26:31.289Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 85
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "dac50d955939d00e187a0fdd503bc3d4ae9d81b5a29d1482f0c807da3f468765",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/ornate-mosque-interior-with-stained-glass-windows-38726562/",
+        "subject_alt": "light fixture install ceiling",
+        "found_by_query": "light fixture install ceiling",
+        "family": "electrical",
+        "library_file": "electrical-elegant-chandelier-vibrant-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:26:38.708Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 85
+      }
     }
   ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "electrical",
-      "service": "",
-      "fileName": "photo-photos-cta.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "electrical",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "electrical",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "electrical",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 13,
+  "gaps": [],
+  "distinct": 17,
   "slots": 17,
-  "stock_provenance_rows": 0,
+  "stock_provenance_rows": 4,
   "family": "electrical",
   "refuse_borrow": false,
   "provenance_ok": true

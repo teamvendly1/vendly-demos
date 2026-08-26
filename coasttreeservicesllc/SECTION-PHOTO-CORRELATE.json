@@ -1,61 +1,221 @@
 {
-  "at": "2026-08-18T06:09:27.573Z",
+  "at": "2026-08-26T16:15:48.445Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "ff020d71653ba1ca4ead091930ecaad5ab472bf12d67c6b8abd0c8896e4c72e3",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\coasttreeservicesllc\\assets\\google\\google-ff020d71653ba1ca.jpg",
+      "score_alt": "excavator clearing land in a wooded lot"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1fb622f80de36e9716a689a375b9bf78e300313ff2522e6ab8cbf5cf23f705a9",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\coasttreeservicesllc\\assets\\google\\google-1fb622f80de36e97.jpg",
+      "score_alt": "yellow Vermeer stump grinder working through a tree stump"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "6482945e8f013258b943348bfb52ce097936dcacb32c59f4a19223680cf9b874",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\coasttreeservicesllc\\assets\\google\\google-6482945e8f013258.jpg",
+      "score_alt": "bare tree with a bucket lift truck positioned at its base"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "59b8bfb0e752ef590e0bc8056dc6b22d83cfd78c6b78452b2634dcebc1cc0120",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\coasttreeservicesllc\\assets\\google\\google-59b8bfb0e752ef59.jpg",
+      "score_alt": "cleared dirt patch behind a chain link fence after land clearing"
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a4b406b1abc2e8d43870616a5330ef2f5be4886217e77214ed6a879416ed67b8",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\coasttreeservicesllc\\assets\\google\\google-a4b406b1abc2e8d4.jpg",
+      "score_alt": "large fallen tree trunks across a cleared lot after storm cleanup"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "d272e700c7119039b1af58ac3c4e01cc6bfa35ea9f8022a4ae4a7489230526a1",
-      "bytes": 597188
+      "bytes": 597188,
+      "alt": "cleared dirt lot with houses visible in the background"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "59b8bfb0e752ef590e0bc8056dc6b22d83cfd78c6b78452b2634dcebc1cc0120",
-      "bytes": 735864
+      "sha256": "be609af67932e084e808e6950ba470495b02111e46e8cbde6624cff7e1d82dad",
+      "bytes": 261739,
+      "alt": "cleared dirt patch behind a chain link fence after land clearing"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "6482945e8f013258b943348bfb52ce097936dcacb32c59f4a19223680cf9b874",
-      "bytes": 656815
+      "sha256": "4ff4f95bc5b54fd27c86d608c12d96fa40a7b804581650d6d57e57907ee3167c",
+      "bytes": 256440,
+      "alt": "bare tree with a bucket lift truck positioned at its base"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "ff020d71653ba1ca4ead091930ecaad5ab472bf12d67c6b8abd0c8896e4c72e3",
-      "bytes": 674742
+      "sha256": "71821aee6e62722d3e4dbfcb6a0b0df8c50e487d337ce4ec845fa25f04d00a5d",
+      "bytes": 250573,
+      "alt": "excavator clearing land in a wooded lot"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "1fb622f80de36e9716a689a375b9bf78e300313ff2522e6ab8cbf5cf23f705a9",
-      "bytes": 724279
+      "sha256": "13524a5cca8795f669b54791152512e318e9612496059ca71168bb2e928f842d",
+      "bytes": 240160,
+      "alt": "yellow Vermeer stump grinder working through a tree stump"
     },
     {
       "file": "photo-ctaband.jpg",
+      "sha256": "7ca213d2fbaecfb4c713c10ce1321d4ca9d589af74c863068377d760280e2278",
+      "bytes": 602048,
+      "alt": "large pile of cut brush and branches in an open yard"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
       "sha256": "7cf72babac3ff0142beece6bc1608da9440d4178e52fd8400dfc20f5a59c9864",
-      "bytes": 647852
+      "bytes": 647852,
+      "alt": "yard with trees and mulch during a tree service job"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "03ddfdb4a15c820510e48e9b6012c65b99b3e57798176c9be7161ea1b3264023",
+      "bytes": 542806,
+      "alt": "cleared dirt driveway lot with trucks visible in the background"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "1eec122ca353f38c1add1ebe53b134c2d80e6febeeb0819598c7dca754882644",
+      "bytes": 488240,
+      "alt": "bucket lift truck positioned at a house for tree work over the roof"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "5158b35912d3b32b78b9d4489a7ed9df28bf222bc809552061c67dc9e0ca513e",
+      "bytes": 658027,
+      "alt": "orange JLG lift truck parked near a house at a job site"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "e23b0d34e22d07f406cb450a792a2c5a1b0b5ce0b5688ed738e0193f2001554c",
+      "bytes": 580499,
+      "alt": "orange JLG bucket lift truck parked in a yard beside a shed"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "a4b406b1abc2e8d43870616a5330ef2f5be4886217e77214ed6a879416ed67b8",
-      "bytes": 407912
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "d43e41944cc8ab6c872fc302ec5aabbb178f98b8f12d43704e0369aaa00d3d1b",
-      "bytes": 645065
+      "sha256": "1aeb92f77d532d3dc24937106d1086486bca97a27ab7ff26aeb1e26ead34db0f",
+      "bytes": 524377,
+      "alt": "large fallen tree lying across an open yard"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "3cbfca659836d53105ee3208e5d70a7a073f5f772d1e501fa2fdd1cb0fd215e0",
-      "bytes": 478931
+      "sha256": "c983d383ba222ede6070641ee59ba0d7eaf2ffc8d5fd1b0604a7b50db983032b",
+      "bytes": 140144,
+      "alt": "blue bucket lift truck extended high into a tree beside a house"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "242e239ac6c7caef23b21ac666079a0a1c866fa0ad925d17245ccb4e0c0a2a6f",
+      "bytes": 225046,
+      "alt": "large fallen tree trunks across a cleared lot after storm cleanup"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "057d90d1cd7d5aeb5d65afed46b44a6839fa0b5c745911430b995e475cc60739",
-      "bytes": 662493
+      "sha256": "dcee60f81f26d213678c515aa841b02f2ce4773c754383d981bdb604e1be8002",
+      "bytes": 257845,
+      "alt": "yellow bucket lift equipment parked in an overgrown yard"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "bare trees in a wooded lot with tools staged on the ground",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "large oak tree canopy over a house with a ladder set up against the trunk",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "large tree overhanging a house roof with a company car parked nearby",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "tree branches partially cut back over a house roof",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
