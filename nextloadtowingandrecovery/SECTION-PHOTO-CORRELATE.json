@@ -1,7 +1,7 @@
 {
-  "at": "2026-08-24T14:22:28.699Z",
+  "at": "2026-08-26T17:26:41.052Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
   "replaced": [
     {
@@ -9,170 +9,303 @@
       "source": "harvest-fallback",
       "sha256": "806c8e53ac05ccebd6fbbedb1175e1f8cdbfe71654bdaec9467c2f8dfb8f22ef",
       "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-about.jpg"
+        "off_section_relevance:trade_require_miss:towing"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-806c8e53ac05cceb.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-806c8e53ac05cceb.jpg",
+      "score_alt": "Silver sedan strapped down on the flatbed at the side of a tree lined road."
     },
     {
       "file": "photo-card-reviews.jpg",
       "source": "harvest-fallback",
-      "sha256": "2af28ec204e17e37a22326e00569f5b60f203166fede4e73ff10e56fcad8cb96",
-      "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-card-about.jpg"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-2af28ec204e17e37.jpg"
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "source": "harvest-fallback",
-      "sha256": "5a73a29459b8f7c1c4e110150484c4b982cf2fa35a9c4d8c65e811c0299dd1cf",
+      "sha256": "287b5ba251ed8daebda0c464d4e48319e3849645054efdd701d6ec4fd08dad4a",
       "reasons": [
         "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-card-photos.jpg"
       ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-287b5ba251ed8dae.jpg",
+      "score_alt": "Tesla Cybertruck loaded on the flatbed deck with a wheel strap over the front tyre."
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f47efd0ae0aa776530fda062a4a68fcfc42a1983d7585ff7a06666c4746bfac6",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ],
       "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-5a73a29459b8f7c1.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-f47efd0ae0aa7765.jpg",
+      "score_alt": "Green forklift chained down on the flatbed deck at night."
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "5a37f87d888f88ca76da3fef53aaf0eeefec1197aeb83745379f6d14cc53ae73",
+      "reasons": [
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-photos-cta.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-5a37f87d888f88ca.jpg",
+      "score_alt": "Old rusted cabover truck out on the road seen past the cab of the recovery truck."
     },
     {
       "file": "photo-gallery-1.jpg",
       "source": "harvest-fallback",
-      "sha256": "d3533050dd5468206f54609aeac361b4f8ba71ad22cc00b879c0013a230a7d71",
+      "sha256": "3f328972f140524a8501d3a482ba45a842f3fe8586bd1561ea24097e76eb17d1",
       "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-card-services.jpg"
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-quoteband.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-d3533050dd546820.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-3f328972f140524a.jpg",
+      "score_alt": "Close view of a dark truck cab with an amber light bar and a white van behind it."
     },
     {
       "file": "photo-gallery-2.jpg",
       "source": "harvest-fallback",
-      "sha256": "287b5ba251ed8daebda0c464d4e48319e3849645054efdd701d6ec4fd08dad4a",
+      "sha256": "7d6d1553f8814386027aed9f040317de2d5ea40b5098e09267865911f90e4efc",
       "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-card-reviews.jpg"
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-3.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-287b5ba251ed8dae.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-7d6d1553f8814386.jpg",
+      "score_alt": "The company recovery truck with chrome exhaust stacks parked out on the road."
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "8588ba59352d518ae4d2fbb89310ad22406a943331aae5f225afcfaf8978c985",
+      "reasons": [
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-7.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-8588ba59352d518a.jpg",
+      "score_alt": "Dark sport utility on the flatbed with a dark sedan standing on the lot alongside."
     },
     {
       "file": "photo-gallery-4.jpg",
       "source": "harvest-fallback",
-      "sha256": "f47efd0ae0aa776530fda062a4a68fcfc42a1983d7585ff7a06666c4746bfac6",
+      "sha256": "11f6820b52a2b13e2ca9c75669cf78dbe0e65d821696894800d57477735e5b08",
       "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-1.jpg"
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-5.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-f47efd0ae0aa7765.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-11f6820b52a2b13e.jpg",
+      "score_alt": "White dually pickup hitched to a red flatbed trailer parked on grass."
     },
     {
-      "file": "photo-gallery-5.jpg",
+      "file": "photo-gallery-6.jpg",
       "source": "harvest-fallback",
-      "sha256": "44e88b51a570541bf24eeb3b9979d49464a23d5056656d53b8dca0154b47a93f",
+      "sha256": "ac1f80b063265fde95b8468b2e26c13624e73f2b2730cb30e819152dff146c61",
       "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-2.jpg"
+        "off_section_relevance:trade_require_miss:towing"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-44e88b51a570541b.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-ac1f80b063265fde.jpg",
+      "score_alt": "White dually pickup and a red trailer parked on a sandy lot beside another truck."
     },
     {
-      "file": "photo-hero.jpg",
+      "file": "photo-gallery-7.jpg",
       "source": "harvest-fallback",
-      "sha256": "4dd60482f512c4fcac72e09daea5726901a4c3eab461e699a87cdc49c87d7f28",
+      "sha256": "6684696d7bd894e7b2118e3390d30a86e3abb2687d72405fab5c0aac9e762a33",
       "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-hero.jpg"
+        "off_section_relevance:trade_require_miss:towing"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-4dd60482f512c4fc.jpg"
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "source": "harvest-fallback",
-      "sha256": "3f328972f140524a8501d3a482ba45a842f3fe8586bd1561ea24097e76eb17d1",
-      "reasons": [
-        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-3.jpg"
-      ],
-      "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-3f328972f140524a.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\nextloadtowingandrecovery\\assets\\google\\google-6684696d7bd894e7.jpg",
+      "score_alt": "Black rollback tow truck with an empty steel deck parked beside the highway at dusk."
     }
   ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "1f7278ebbcb1161eba21594c76503e7c59f9a02019d8dbb85c437861ab9516c9",
-      "bytes": 578063
+      "bytes": 578063,
+      "alt": "Flatbed carrying a black car parked in the street beside a light blue crossover."
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "8588ba59352d518ae4d2fbb89310ad22406a943331aae5f225afcfaf8978c985",
-      "bytes": 582021
+      "sha256": "232d92d287c3a0e4f3cf190bcc5da93823c1c99d391e6510b319dc7bdd9e9e46",
+      "bytes": 271754,
+      "alt": "Dark sport utility on the flatbed with a dark sedan standing on the lot alongsid"
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "e5f4706a4a7ced2ec80f678b28adf41e3a0c6bf449eddbe76525fda4817d1872",
-      "bytes": 573637
+      "file": "photo-ctaband.jpg",
+      "sha256": "1df6d458afd4e5c34ef1e6a6432e4dd4a65a2e341f2713c0704f90b003502424",
+      "bytes": 468948,
+      "alt": "Green forklift chained down on the flatbed deck at night."
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "6684696d7bd894e7b2118e3390d30a86e3abb2687d72405fab5c0aac9e762a33",
-      "bytes": 338880
+      "file": "photo-gallery-5.jpg",
+      "sha256": "5a73a29459b8f7c1c4e110150484c4b982cf2fa35a9c4d8c65e811c0299dd1cf",
+      "bytes": 344768,
+      "alt": "White high roof cargo van loaded on the flatbed deck with the wheels strapped do"
     },
     {
-      "file": "photo-gallery-3.jpg",
-      "sha256": "0c6d8e17f4fa994713080a9476838f8992e1727c6a8c602611990e5093ca7a90",
-      "bytes": 430876
-    },
-    {
-      "file": "photo-gallery-6.jpg",
-      "sha256": "aa632f2247d7195869877477998fa55804bed31f10f716aea697e8d3fa1ce8d0",
-      "bytes": 344415
-    },
-    {
-      "file": "photo-gallery-7.jpg",
-      "sha256": "80436ce961519efb78aeaa5224f9585bcc1d6ef567e8510fff7fb76df3175fdf",
-      "bytes": 487464
-    },
-    {
-      "file": "photo-gallery-8.jpg",
-      "sha256": "11f6820b52a2b13e2ca9c75669cf78dbe0e65d821696894800d57477735e5b08",
-      "bytes": 475703
-    },
-    {
-      "file": "photo-gallery-9.jpg",
-      "sha256": "b28db06ff15656278bf90129fd06281d71324e4f363fff3f603125e642c491af",
-      "bytes": 451759
+      "file": "photo-photos-cta.jpg",
+      "sha256": "2af28ec204e17e37a22326e00569f5b60f203166fede4e73ff10e56fcad8cb96",
+      "bytes": 319492,
+      "alt": "White dual rear wheel pickup with its headlights on towing a loaded trailer acro"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "7355937ceea93ff23d2dc9a576aca0b9cc74d925756daeaa675438bd8ad0f478",
-      "bytes": 363237
+      "bytes": 363237,
+      "alt": "Gold sedan riding on the flatbed with the sun low over the road ahead."
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "1c754f90f819728c5f45f38059cdba51fbd02ec8f74ba73d8372846c59f952c1",
-      "bytes": 157109
+      "bytes": 157109,
+      "alt": "White rollback tow truck with an empty deck parked in front of a blue metal buil"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "5a37f87d888f88ca76da3fef53aaf0eeefec1197aeb83745379f6d14cc53ae73",
-      "bytes": 171380
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "6e5401bb444b6e0e351ff0ab11fd732c6019ed40ed63ea2cd3108508394f5cb9",
-      "bytes": 623298
+      "sha256": "88fc33e30b8aead45cf267e1ab000724d9d799e426253c06b996abc3cdfe9934",
+      "bytes": 74406,
+      "alt": "Old rusted cabover truck out on the road seen past the cab of the recovery truck"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "7d6d1553f8814386027aed9f040317de2d5ea40b5098e09267865911f90e4efc",
-      "bytes": 508484
+      "sha256": "59501ed6581f53907b946d8bf4ce3fe0d463ef9a0d1ff7d7ca50335d5b5d52c7",
+      "bytes": 186010,
+      "alt": "The company recovery truck with chrome exhaust stacks parked out on the road."
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "11f6820b52a2b13e2ca9c75669cf78dbe0e65d821696894800d57477735e5b08",
+      "bytes": 475703,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-hero.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "b28db06ff15656278bf90129fd06281d71324e4f363fff3f603125e642c491af",
+      "bytes": 451759,
+      "alt": "Front three quarter view of a white GMC dually on sand with a loaded trailer behind.",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "4dd60482f512c4fcac72e09daea5726901a4c3eab461e699a87cdc49c87d7f28",
+      "bytes": 710787,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-gallery-6.jpg"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "0282f714d3b1e4c68ce942323fffeb6123d772e8563a704e00135af91355b108",
+      "bytes": 159599,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-card-about.jpg"
+      ]
     },
     {
       "file": "photo-services-hero.jpg",
       "sha256": "ac1f80b063265fde95b8468b2e26c13624e73f2b2730cb30e819152dff146c61",
-      "bytes": 366143
+      "bytes": 366143,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:nextloadtowingandrecoverylumbertonrobesonnc/photo-services-hero.jpg"
+      ]
     }
   ],
   "failed": [],
   "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Yellow school bus loaded onto a red three axle gooseneck trailer.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "White Ford crossover chained down on a red trailer deck in a parking lot.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "White Chevrolet pickup with front end damage loaded behind a white dually.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "White dually and a trailer of loaded vehicles standing on a sandy lot by a building.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "alt": "Front three quarter view of a white GMC dually on sand with a loaded trailer behind.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-services-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T14:22:30.116Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T17:26:48.145Z",
   "slug": "nextloadtowingandrecovery",
-  "removed_count": 36,
+  "removed_count": 35,
   "removed_sample": [
     "google-0c6d8e17f4fa9947.jpg",
     "google-11f6820b52a2b13e.jpg",
@@ -17,5 +17,10 @@
     "google-5a37f87d888f88ca.jpg",
     "google-5a73a29459b8f7c1.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\nextloadtowingandrecovery",
+  "published_ref_count": 25,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }
