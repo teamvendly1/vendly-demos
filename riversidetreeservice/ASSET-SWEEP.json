@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-23T00:11:51.623Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:48:27.403Z",
   "slug": "riversidetreeservice",
-  "removed_count": 40,
+  "removed_count": 41,
   "removed_sample": [
     "google-184bf1dac351fb53.jpg",
     "google-262f5cd9eaea9a1d.jpg",
@@ -17,5 +17,10 @@
     "google-42bf4cf7b7b61c33.jpg",
     "google-45207712124229e0.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:/Users/jacob/vendly-code/vendly-demos/riversidetreeservice",
+  "published_ref_count": 28,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }
