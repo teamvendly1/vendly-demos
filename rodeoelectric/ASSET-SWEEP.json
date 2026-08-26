@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:37:37.311Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T01:59:40.900Z",
   "slug": "rodeoelectric",
-  "removed_count": 35,
+  "removed_count": 36,
   "removed_sample": [
     "google-151f7a6480b6a87d.jpg",
     "google-1a05e6a69f985928.jpg",
@@ -17,5 +17,10 @@
     "google-6931dc7abf66175b.jpg",
     "google-69791d34b2da6795.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:/Users/jacob/vendly-code/vendly-demos/rodeoelectric",
+  "published_ref_count": 22,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

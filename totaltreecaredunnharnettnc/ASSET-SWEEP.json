@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-17T22:33:24.571Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T02:03:08.732Z",
   "slug": "totaltreecaredunnharnettnc",
-  "removed_count": 32,
+  "removed_count": 38,
   "removed_sample": [
     "google-20cda3cba11219f7.jpg",
     "google-23b36742a29c9d47.jpg",
@@ -17,5 +17,10 @@
     "google-6aeb954c1835d232.jpg",
     "google-734440ccadba890f.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:/Users/jacob/vendly-code/vendly-demos/totaltreecaredunnharnettnc",
+  "published_ref_count": 23,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

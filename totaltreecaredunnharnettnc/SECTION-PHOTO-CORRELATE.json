@@ -1,61 +1,333 @@
 {
-  "at": "2026-08-17T22:32:58.016Z",
+  "at": "2026-08-26T02:02:58.536Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "d023d84eb4cbed5b68fa7799bd9740ff374453c3f42ba637102e4c8691295ccd",
-      "bytes": 759528
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "3f921ac8d6970d3e5aaf1fbc20a0d408f5bcd29becad863f3b879cd1ab258792",
-      "bytes": 402568
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "deed7a4e2292217b9d12d9b7cef691938f06e9594b33483fb7ad2d53fb14bdaf",
-      "bytes": 711307
+      "source": "stock-library",
+      "sha256": "0b0601720f2b673f94bce6b41bf6eb56f6b2ee79f18a316cf976373b16e914e5",
+      "reasons": [
+        "cross_demo_dupe:totaltreecare/photo-about.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "hedge trimming large shrubs equipment"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "843d45a43a447f29026445bc0b9700435ff172e2ecc4163dc36fc4ff8a44855a",
-      "bytes": 757694
+      "source": "harvest-fallback",
+      "sha256": "d023d84eb4cbed5b68fa7799bd9740ff374453c3f42ba637102e4c8691295ccd",
+      "reasons": [
+        "cross_demo_dupe:totaltreecare/photo-card-photos.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\totaltreecaredunnharnettnc\\assets\\google\\google-d023d84eb4cbed5b.jpg",
+      "score_alt": "Two of the crew working along a felled trunk on a front lawn, cutting it into transportable lengths with the brush piled off to one side"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "47cb3dd425d045f9e48ba7a5beb0805c0aba311205a760afd024834241223ba9",
-      "bytes": 621951
+      "source": "harvest-fallback",
+      "sha256": "4a9fcd29a33057a288cd9e114fbe09ea7fdc9f0163e87558c7f399a8f18f494c",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\totaltreecaredunnharnettnc\\assets\\google\\google-4a9fcd29a33057a2.jpg",
+      "score_alt": "Compact red stump grinder parked on a yard blanketed in fresh grindings where a stump has just been taken out"
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "43030977484a2eae5958a6f62127cd56d2d7e8be879dfeac66e410b907cabb70",
-      "bytes": 786635
+      "source": "harvest-fallback",
+      "sha256": "deed7a4e2292217b9d12d9b7cef691938f06e9594b33483fb7ad2d53fb14bdaf",
+      "reasons": [
+        "off_section_relevance:trade_deny:decay:landscape",
+        "unflattering_subject:unflattering:decay"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\totaltreecaredunnharnettnc\\assets\\google\\google-deed7a4e2292217b.jpg",
+      "score_alt": "Track loader lifting a pine log clear of a white picket fence, with the rest of the trunk already bucked into lengths on the grass"
     },
     {
-      "file": "photo-hero.jpg",
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
       "sha256": "20cda3cba11219f7794398288ec73c3c13f1454165ed4e0f96bf49506414a95f",
-      "bytes": 757499
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\totaltreecaredunnharnettnc\\assets\\google\\google-20cda3cba11219f7.jpg",
+      "score_alt": "Yellow tracked loader working at the edge of a treeline, clearing cut material off the lawn behind it"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f7bff97783bfe4241e75ab82010a372409c8eb22eae12304d06992ee7c90f3d2",
+      "reasons": [
+        "cross_demo_dupe:totaltreecare/photo-gallery-2.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\totaltreecaredunnharnettnc\\assets\\google\\google-f7bff97783bfe424.jpg",
+      "score_alt": "Tracked spider lift with its boom extended up into the canopy of a large oak, reaching limbs well out over the property"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "90698f5b2f02aa8e7c99a940b32de48f358a09362786e5b63d58772953d98470",
+      "bytes": 162875,
+      "alt": "Crew member in a tan helmet looking at the camera, with a second climber tied in"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "a4bd4bdc1de7e5cf0b90d72342acbd8ad16b09196952c7a125ea69a276263e31",
+      "bytes": 243194,
+      "alt": "Track loader lifting a pine log clear of a white picket fence, with the rest of "
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "09ae96822c8754ef0575be8fbe3c143afdf912f267cfe1c2c11eb8f5caafec8b",
+      "bytes": 286835,
+      "alt": "brush pile loading truck yard waste"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "9ebfd89d89b8c656c6d9de9f5708215c1b6a52adcab6a2ed2ec1f4b8f2098d78",
+      "bytes": 274679,
+      "alt": "Tracked spider lift set up on its outriggers beneath a big oak with the boom rai"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "3d48da672713eb762c45382cbc7bed4dfabf780bc4bda33fecd80592faf68b70",
+      "bytes": 444976,
+      "alt": "hedge trimming large shrubs equipment"
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "6aeb954c1835d23216b6caae335f3d405ba7ca82cce63cf659a9b4e7b8614e73",
-      "bytes": 655580
+      "sha256": "90b7c68ec9bdf3fc00a97136f86db1fcbec066a79174a30f6474ad9830403f1b",
+      "bytes": 585168,
+      "alt": "Large tree brought down across a leaf-covered front yard, lying clear of the hou"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "515d0d1f855d942783ead88963af19fd829c44a042bdc706171c337b52906faf",
+      "bytes": 254439,
+      "alt": "Yellow tracked loader working at the edge of a treeline, clearing cut material o"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "4a9fcd29a33057a288cd9e114fbe09ea7fdc9f0163e87558c7f399a8f18f494c",
-      "bytes": 634204
+      "sha256": "8aa9520403751d9df474ed064b63804631fe940f6dbbcc24e51b5f2ab7ca29ab",
+      "bytes": 232407,
+      "alt": "Compact red stump grinder parked on a yard blanketed in fresh grindings where a "
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "f7bff97783bfe4241e75ab82010a372409c8eb22eae12304d06992ee7c90f3d2",
-      "bytes": 437627
+      "sha256": "b4128a72bdfdc22324174f5a79e401d1d4a6e76dafdc92714be506bbe25d98c0",
+      "bytes": 197421,
+      "alt": "Tracked spider lift with its boom extended up into the canopy of a large oak, re"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "37d77d82d7e44fcc75bde51290f605a641c8ff0758d5d14ddd4c9fbed4a3f000",
+      "bytes": 330970,
+      "alt": "lifting cut tree section with crane"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "1ced8b8a28e84a37c4fb358decdc8f9afbf2b2b7aec92200c9009a9b941a8c63",
+      "bytes": 195397,
+      "alt": "hedge trimming large shrubs equipment"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "9f98c4ebba8376459ec2769ff02359518a42dc4eb10bb8a27f57e9b7ae1a7718",
+      "bytes": 314303,
+      "alt": "hedge trimming large shrubs equipment"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "e3805c398758dcad47988d272cbe2707f7c993a6e009c7603a062b0d49692464",
+      "bytes": 639411,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:totaltreecare/photo-gallery-3.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "23b36742a29c9d4758fbd3621accbcf7bfbfbbbba7a7f6d538d1f4e33de8d9df",
+      "bytes": 531631,
+      "alt": "Shadow of a climber on a ladder thrown across white siding, a chainsaw on the ground beside the outdoor unit",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "99f2bc326262ddc185ef4023b370937d2345772433bc930a06197f129f3a739d",
+      "bytes": 506563,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:totaltreecare/photo-gallery-5.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "d1a9fa5d252e17bb3cec832fe3754f4a27370eaf05ae25cc89c2faa0f8bef06e",
+      "bytes": 420301,
+      "alt": "Close view of the stump grinder wheel biting into a stump, chips thrown out across the ground around it",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "90561339828026e80e3c5bd46dac4fc90f7db70d952528aeb03e6c3a944a9239",
+      "bytes": 615683,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:totaltreecare/photo-hero.jpg"
+      ]
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "4162ac3c7871494475fd98f8af4ab5ee6846e9864961538cdbc76fed599cf647",
+      "bytes": 178210,
+      "alt": "pole saw trimming high branches",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Chainsaw resting on a wide fresh-cut stump, the sawdust still heaped across the cut face",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Cut stump showing extensive internal decay and bracket fungus growing at the base, the reason the tree had to come out",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:decay:landscape"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:decay",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Mature tree left standing after a crown reduction, the ground beneath it raked clear of the cut brush and the fence line",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Shadow of a climber on a ladder thrown across white siding, a chainsaw on the ground beside the outdoor unit",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Close view of the stump grinder wheel biting into a stump, chips thrown out across the ground around it",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "pole saw trimming high branches",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-4.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

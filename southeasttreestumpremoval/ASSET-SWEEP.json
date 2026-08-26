@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-18T21:27:59.128Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T02:07:12.545Z",
   "slug": "southeasttreestumpremoval",
-  "removed_count": 29,
+  "removed_count": 37,
   "removed_sample": [
     "google-17657369043436e1.jpg",
     "google-2a7928a2f44003aa.jpg",
@@ -17,5 +17,10 @@
     "google-b238da91b7ffa064.jpg",
     "google-b2cb925776ae6545.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:/Users/jacob/vendly-code/vendly-demos/southeasttreestumpremoval",
+  "published_ref_count": 18,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

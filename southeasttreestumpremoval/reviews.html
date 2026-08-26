@@ -11,8 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=harv20260818212729">
-<meta name="vendly-demo-build" content="blank-mold-20260818-hydroclean">
-<meta name="vendly-hydroclean-class" content="20260815-c8f645b5e949">
+<meta name="vendly-demo-build" content="blank-mold-20260826-hydroclean">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -39,10 +38,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <body>
 <div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Southeast Tree &amp; Stump Removal, LLC.</div>
 <a class="skiplink" href="#main">Skip to content</a>
-<div class="phone-strip" role="banner">
-  <a href="tel:+19109953223" aria-label="Call Southeast Tree &amp; Stump Removal, LLC at (910) 995-3223">(910) 995-3223</a>
-</div>
-
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
   <div class="mcb-rule" aria-hidden="true"></div>
@@ -83,7 +78,8 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   </nav>
 </header>
 <main id="main">
-<section class="reveal" aria-labelledby="h-reviews" style="padding-top:clamp(56px,8vw,102px)">
+
+<section class="reveal" aria-labelledby="h-reviews" style="">
   <div class="wrap">
     <div class="center">
       <p class="kicker">What customers said</p>
@@ -150,21 +146,14 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     tenantId: "demo-southeasttreestumpremoval",
     demoSlug: "southeasttreestumpremoval",
     endpoint: "https://vendly-jarvis.vercel.app",
-    name: "Southeast Tree & Stump Removal, LLC",
+    name: "Southeast Tree &amp; Stump Removal, LLC",
     greeting: "",
     nudge: "",
     disablePeek: true,
-    /* forceRender 2026-08-17. Measured: https://vendly-jarvis.vercel.app/api/status
-       answers 404 {"active":false} for any tenant that is not deployed, and
-       siteassistant-v2.js boot() treats a definitive active:false as OFF and renders
-       NOTHING. index/about/services/photos already carried forceRender; reviews and
-       contact did not, so the Ask-us chat was missing on 2 of 6 pages of EVERY demo -
-       including contact, the highest-intent page. A demo is not a live tenant, so it
-       must never ask the kill switch for permission to show its own chat. */
     forceRender: true,
     phone: "+19109953223",
     sms: "+19109953223",
-    quoteUrl: "#quote",
+    quoteUrl: "",
     bookUrl: "",
     contactUrl: "./contact.html",
     suggestions: [],

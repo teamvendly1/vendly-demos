@@ -1,109 +1,185 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-17T05:23:34.052Z",
+ "at": "2026-08-26T01:43:08.866Z",
  "slug": "rodeoelectricashebororandolphnc",
  "wired": [
   {
    "slot": "photo-hero.jpg",
    "from": "google-bfe407be42790afa.jpg",
    "bytes": 220979,
+   "letterbox_stripped": null,
    "trade_score": 2.5,
    "reason": "hero_work_rank"
   },
   {
-   "slot": "photo-about.jpg",
+   "slot": "photo-card-about.jpg",
    "from": "google-524177e5e00d85ba.jpg",
-   "bytes": 82611
+   "bytes": 67977,
+   "smart_crop": true,
+   "src": "google-524177e5e00d85ba.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x960",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 78,
+   "detail_score": 23.996,
+   "orientation": "portrait"
   },
   {
-   "slot": "photo-card-about.jpg",
+   "slot": "photo-about.jpg",
    "from": "google-ec6822ea75c7879f.jpg",
-   "bytes": 339498
+   "bytes": 339498,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
    "from": "google-a19e4940aa64b544.jpg",
-   "bytes": 316730
+   "bytes": 119214,
+   "smart_crop": true,
+   "src": "google-a19e4940aa64b544.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 73,
+   "detail_score": 23.384,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-86e4be10a1075494.jpg",
-   "bytes": 354592
+   "bytes": 138529,
+   "smart_crop": true,
+   "src": "google-86e4be10a1075494.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 18,
+   "detail_score": 31.728,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-239214e20da6c531.jpg",
-   "bytes": 300029
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-bc05f60c104626cf.jpg",
-   "bytes": 321553
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "google-6931dc7abf66175b.jpg",
-   "bytes": 312385
+   "bytes": 96036,
+   "smart_crop": true,
+   "src": "google-239214e20da6c531.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 27.501,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "google-306fb72ee3640bed.jpg",
-   "bytes": 283723
+   "from": "google-bc05f60c104626cf.jpg",
+   "bytes": 321553,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
-   "from": "google-cc4cdd1282a55e33.jpg",
-   "bytes": 282786
+   "from": "google-6931dc7abf66175b.jpg",
+   "bytes": 312385,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-3.jpg",
+   "from": "google-306fb72ee3640bed.jpg",
+   "bytes": 283723,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-cc4cdd1282a55e33.jpg",
+   "bytes": 282786,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
    "from": "google-230760922a0c5df1.jpg",
-   "bytes": 257237
+   "bytes": 257237,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-4.jpg",
    "from": "google-1e71b3e2c183068d.jpg",
-   "bytes": 228443
+   "bytes": 228443,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-5.jpg",
    "from": "google-e202c8f64ec4a2c3.jpg",
-   "bytes": 208711
+   "bytes": 208711,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-6.jpg",
    "from": "google-88ca50c928b78a4f.jpg",
-   "bytes": 203761
+   "bytes": 203761,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-service-1.jpg",
    "from": "google-151f7a6480b6a87d.jpg",
-   "bytes": 177130
+   "bytes": 80251,
+   "smart_crop": true,
+   "src": "google-151f7a6480b6a87d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 83,
+   "detail_score": 13.907,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-4f172e91dc66b10c.jpg",
-   "bytes": 174589
+   "bytes": 62945,
+   "smart_crop": true,
+   "src": "google-4f172e91dc66b10c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 30,
+   "detail_score": 16.796,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-3fa31cab0e65e400.jpg",
-   "bytes": 157963
+   "bytes": 61183,
+   "smart_crop": true,
+   "src": "google-3fa31cab0e65e400.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 7.805,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-7.jpg",
    "from": "google-8a1e96496a7d1894.jpg",
-   "bytes": 197494
+   "bytes": 197494,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-8.jpg",
    "from": "google-69791d34b2da6795.jpg",
-   "bytes": 134445
+   "bytes": 134445,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-9.jpg",
    "from": "google-1a05e6a69f985928.jpg",
-   "bytes": 91836
+   "bytes": 91836,
+   "letterbox_stripped": null
   },
   {
    "slot": "logo.png",
@@ -114,7 +190,7 @@
  ],
  "skipped": [
   "classification read: 42 verdicts",
-  "staged 21 harvest photos",
+  "staged 21 harvest photos from assets",
   "refused_by_class:google-26e47880bbc7bcc2.jpg:LOGO_NOT_PHOTO: gold bull on black plate, not a job photograph",
   "hero_cand_refuse:google-86e4be10a1075494.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-ec6822ea75c7879f.jpg:road_no_landscape",
@@ -133,28 +209,34 @@
   "hero_cand_refuse:google-4f172e91dc66b10c.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-3fa31cab0e65e400.jpg:road_no_landscape",
   "hero_cand_refuse:google-69791d34b2da6795.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-1a05e6a69f985928.jpg:too_small_bytes",
-  "hero_cand_refuse:google-524177e5e00d85ba.jpg:too_small_bytes",
+  "hero_cand_refuse:google-1a05e6a69f985928.jpg:road_no_landscape",
+  "hero_hold_crew_for_about:google-524177e5e00d85ba.jpg",
   "photo-services-hero.jpg",
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 20,
  "refused_by_class": 1,
+ "photo_candidates": 20,
  "altBySlot": {
   "photo-hero.jpg": "Track lights and pendants on timber trusses in a sanctuary",
-  "photo-about.jpg": "Rodeo Electric worker on a lime ladder at a red metal building",
-  "photo-card-about.jpg": "Emporia EV charger on sage wood siding with coiled cable",
+  "photo-card-about.jpg": "Rodeo Electric worker on a lime ladder at a red metal building",
+  "photo-about.jpg": "Emporia EV charger on sage wood siding with coiled cable",
   "photo-card-services.jpg": "ETC lighting controllers and labeled church lighting junction boxes",
   "photo-card-reviews.jpg": "Open 200 amp outdoor panel with labeled kitchen HVAC and laundry circuits",
   "photo-card-photos.jpg": "Parallel metal conduits strapped to a beam in an open ceiling",
-  "photo-ctaband.jpg": "Yellow cable rough-in through basement wall studs",
-  "photo-quoteband.jpg": "Wagon-wheel chandelier and track lights on a timber ceiling",
-  "photo-gallery-1.jpg": "LED shop lights on metal trusses in a shop building",
-  "photo-gallery-2.jpg": "Emporia EV charger mounted on green wood siding",
-  "photo-gallery-3.jpg": "Wood slat starburst chandelier on a vaulted ceiling",
+  "photo-gallery-1.jpg": "Yellow cable rough-in through basement wall studs",
+  "photo-gallery-2.jpg": "Wagon-wheel chandelier and track lights on a timber ceiling",
+  "photo-gallery-3.jpg": "LED shop lights on metal trusses in a shop building",
+  "photo-ctaband.jpg": "Emporia EV charger mounted on green wood siding",
+  "photo-quoteband.jpg": "Wood slat starburst chandelier on a vaulted ceiling",
   "photo-gallery-4.jpg": "Shop subpanel, conduit, and a red tool chest",
   "photo-gallery-5.jpg": "Black ceiling fan and spot lights on a timber vaulted ceiling",
   "photo-gallery-6.jpg": "Eight matching conduit bends across a metal ceiling",
@@ -164,5 +246,6 @@
   "photo-gallery-7.jpg": "Recessed lights in a finished basement room",
   "photo-gallery-8.jpg": "LED wall pack on grey metal siding at a gable peak",
   "photo-gallery-9.jpg": "Eight parallel metal conduits bending into a grey service panel"
- }
+ },
+ "dedupe_fixed": 5
 }
