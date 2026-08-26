@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T05:56:23.150Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T17:37:46.840Z",
   "slug": "randycashplumbingcompany",
-  "removed_count": 48,
+  "removed_count": 45,
   "removed_sample": [
     "google-054ba085061731e2.jpg",
     "google-05c076de624b87e3.jpg",
@@ -17,5 +17,10 @@
     "google-43cfce15024eedd5.jpg",
     "google-447465122157aeba.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\randycashplumbingcompany",
+  "published_ref_count": 28,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:22:40.637Z",
+ "at": "2026-08-26T17:51:53.989Z",
  "slug": "saylerssonautomotivetowing",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-b8bbd1a275e47c79.jpg",
-   "bytes": 351610,
-   "letterbox_stripped": null
+   "bytes": 134299,
+   "smart_crop": true,
+   "src": "google-b8bbd1a275e47c79.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 24.365,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-6a529b10139fb505.jpg",
-   "bytes": 347737,
-   "letterbox_stripped": null
+   "bytes": 144503,
+   "smart_crop": true,
+   "src": "google-6a529b10139fb505.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 29.179,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-2a9b18b4614d872d.jpg",
-   "bytes": 324814,
-   "letterbox_stripped": null
+   "bytes": 139971,
+   "smart_crop": true,
+   "src": "google-2a9b18b4614d872d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 24.236,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-192900f55437ae40.jpg",
-   "bytes": 315397,
-   "letterbox_stripped": null
+   "bytes": 143393,
+   "smart_crop": true,
+   "src": "google-192900f55437ae40.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 27.227,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -93,7 +125,7 @@
  ],
  "skipped": [
   "classification read: 26 verdicts",
-  "staged 13 harvest photos",
+  "staged 13 harvest photos from assets",
   "hero_cand_refuse:google-20ae09ebe3d221fd.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-c968a4b0c16961cb.jpg:road_no_landscape",
   "hero_cand_refuse:google-268914b14aa13765.jpg:road_no_landscape",
@@ -114,8 +146,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 13,
@@ -134,5 +169,6 @@
   "photo-quoteband.jpg": "Purple custom lowered car with gold wheels raised on a lift inside the shop",
   "photo-gallery-4.jpg": "White lifted vintage Ford pickup parked outside the shop",
   "photo-gallery-5.jpg": "Close-up of a gray truck's hood and headlight with the gas cap open"
- }
+ },
+ "dedupe_fixed": 5
 }

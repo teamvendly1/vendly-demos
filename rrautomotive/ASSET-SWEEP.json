@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T05:52:30.634Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T17:46:51.238Z",
   "slug": "rrautomotive",
-  "removed_count": 17,
+  "removed_count": 22,
   "removed_sample": [
     "google-1375c2531ca3357b.jpg",
     "google-2326428751713549.jpg",
@@ -17,5 +17,10 @@
     "google-e748603d26497665.jpg",
     "google-eaa0a87e73f1509f.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\rrautomotive",
+  "published_ref_count": 18,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

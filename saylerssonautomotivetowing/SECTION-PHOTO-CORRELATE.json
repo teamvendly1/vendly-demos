@@ -1,51 +1,219 @@
 {
-  "at": "2026-08-22T23:22:43.594Z",
+  "at": "2026-08-26T17:52:02.338Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "cf2b50dd155ccac9d45f4f9863cf151eae719e0c6989902baadadbd64a1e0c64",
-      "bytes": 327710
+      "source": "harvest-fallback",
+      "sha256": "b8bbd1a275e47c796ad6380a78eb31cf2fa3951362549ebada16e185db432f54",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\saylerssonautomotivetowing\\assets\\google\\google-b8bbd1a275e47c79.jpg",
+      "score_alt": "Tan Ford Ranger pickup with the hood open showing the engine"
     },
     {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "6a529b10139fb505d61832922d70897d77241c3b02c73d3465fe3da89b9747f2",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\saylerssonautomotivetowing\\assets\\google\\google-6a529b10139fb505.jpg",
+      "score_alt": "Close-up of a modified engine bay with red intake components and a twin-turbo setup"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "192900f55437ae403d75b43a67d51bc64c1ecf6e5569236dd87a5ff48e52b744",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\saylerssonautomotivetowing\\assets\\google\\google-192900f55437ae40.jpg",
+      "score_alt": "Underside view of a vehicle's front suspension and brake components raised on the lift"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "2a9b18b4614d872d6a30ef25af6f2131e06d138666fe215fabc5194bfdbee6aa",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\saylerssonautomotivetowing\\assets\\google\\google-2a9b18b4614d872d.jpg",
+      "score_alt": "White flatbed tow truck hauling a blue and white classic pickup truck"
+    }
+  ],
+  "kept": [
+    {
       "file": "photo-card-about.jpg",
-      "sha256": "b8bbd1a275e47c796ad6380a78eb31cf2fa3951362549ebada16e185db432f54",
-      "bytes": 351610
+      "sha256": "4b3b39f403368e25add5a78e8b6be37bc971f069a329f71c28c31ca6138cabd2",
+      "bytes": 134299,
+      "alt": "Tan Ford Ranger pickup with the hood open showing the engine"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "192900f55437ae403d75b43a67d51bc64c1ecf6e5569236dd87a5ff48e52b744",
-      "bytes": 315397
+      "sha256": "b32adccd1e44a3a0f7015836f0f3fa672969ea9388e4d6dd9c5a0f289e5b249c",
+      "bytes": 143393,
+      "alt": "Underside view of a vehicle's front suspension and brake components raised on th"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "2a9b18b4614d872d6a30ef25af6f2131e06d138666fe215fabc5194bfdbee6aa",
-      "bytes": 324814
+      "sha256": "9aa08c6a212d50c82e2d97e40696d8ce26376af5e7b326ece5f18f9af515edeb",
+      "bytes": 139971,
+      "alt": "White flatbed tow truck hauling a blue and white classic pickup truck"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "6a529b10139fb505d61832922d70897d77241c3b02c73d3465fe3da89b9747f2",
-      "bytes": 347737
+      "sha256": "c26dc6466e8045c4f0f373932fb9a96d8a559e65684c575ec03cb021b27fcdc0",
+      "bytes": 144503,
+      "alt": "Close-up of a modified engine bay with red intake components and a twin-turbo se"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "268914b14aa1376529eb24e908259e8e3e3c122e64fb10b10ed86aabe89e5948",
-      "bytes": 389079
+      "bytes": 389079,
+      "alt": "Silver Ford F-250 lifted truck parked in the shop's parking lot"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "d6a2ae28e53ab302e0d3a37d877d5426ecf8b12493e70cd3b793a6744f9b80d6",
+      "bytes": 305683,
+      "alt": "Silver SUV with the hood open showing the engine bay in the shop"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "aaf87ecb417e247c043f70aa6fea0e81b09d559d601c7a15e4e36c73db6199e0",
+      "bytes": 346935,
+      "alt": "White lifted vintage Ford pickup parked outside the shop"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "18ced422e7b12c9daeb7227888a273a2a00c8e45da45656486dc262d79719dc0",
-      "bytes": 478642
+      "bytes": 478642,
+      "alt": "White flatbed tow truck parked on wet pavement outside the shop"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "01df21e8f377ea468ebaeaf59dcf23dbfcb384d1230cfee3be2d9d073b85917e",
-      "bytes": 361271
+      "bytes": 361271,
+      "alt": "Purple custom lowered car with gold wheels raised on a lift inside the shop"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "White heavy-duty pickup truck with the hood open, a black SUV visible nearby",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Black Range Rover parked outdoors near trees",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Cream classic Ford pickup lowered on custom wheels parked on the street",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Close-up of a gray truck's hood and headlight with the gas cap open",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

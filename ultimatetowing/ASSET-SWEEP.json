@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-24T05:37:37.398Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T18:06:56.572Z",
   "slug": "ultimatetowing",
-  "removed_count": 21,
+  "removed_count": 25,
   "removed_sample": [
     "google-0c5873bcba8f9678.jpg",
     "google-11fdd87d9bf284e2.jpg",
@@ -17,5 +17,10 @@
     "google-b5e46d3f7ccddb7b.jpg",
     "google-b789431a5c4c88b1.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\ultimatetowing",
+  "published_ref_count": 19,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

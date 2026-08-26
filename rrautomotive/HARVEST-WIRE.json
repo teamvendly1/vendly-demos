@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:52:22.335Z",
+ "at": "2026-08-26T17:46:00.122Z",
  "slug": "rrautomotive",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-1375c2531ca3357b.jpg",
-   "bytes": 119347,
-   "letterbox_stripped": null
+   "bytes": 116802,
+   "smart_crop": true,
+   "src": "google-1375c2531ca3357b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x720",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 23.101,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-fe4138bde715220f.jpg",
-   "bytes": 280570,
-   "letterbox_stripped": null
+   "bytes": 135159,
+   "smart_crop": true,
+   "src": "google-fe4138bde715220f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 25.86,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-e2e015f9f9891d6a.jpg",
-   "bytes": 255885,
-   "letterbox_stripped": null
+   "bytes": 118015,
+   "smart_crop": true,
+   "src": "google-e2e015f9f9891d6a.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 24.917,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-79737f9ec6b20c31.jpg",
-   "bytes": 245215,
-   "letterbox_stripped": null
+   "bytes": 114304,
+   "smart_crop": true,
+   "src": "google-79737f9ec6b20c31.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 83,
+   "detail_score": 21.67,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",

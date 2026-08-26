@@ -1,162 +1,290 @@
 {
-  "at": "2026-08-24T14:09:42.204Z",
+  "at": "2026-08-26T17:54:43.719Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "landscaping",
   "replaced": [
     {
+      "file": "photo-card-reviews.jpg",
+      "source": "stock-library",
+      "sha256": "ce0981b14723326eb4468139892241105f8aa87cf5d8056c1e51dc6e5d6f35f9",
+      "reasons": [
+        "off_section_relevance:trade_deny:pool:landscape"
+      ],
+      "service": null,
+      "score_alt": "irrigation valve box trench"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "stock-library",
+      "sha256": "c57d03f75e2f0758cf959e88ba8606a1e013cd4ae8a88537a7aa9c18d4112f07",
+      "reasons": [
+        "off_section_relevance:trade_deny:pool:landscape"
+      ],
+      "service": "trade work",
+      "score_alt": "irrigation valve box trench"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "stock-library",
+      "sha256": "ee8e499a9a2745b93e695c8a2a40fded851b367a97197aac62651e11b2072378",
+      "reasons": [
+        "off_section_relevance:trade_deny:pool:landscape"
+      ],
+      "service": "trade work",
+      "score_alt": "mulch bed shrub planting"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "stock-library",
+      "sha256": "97fc53364a919d93f79e45dd90530303cc30c392f04099a643dd6b40d803c01e",
+      "reasons": [
+        "off_section_relevance:trade_deny:pool:landscape"
+      ],
+      "service": null,
+      "score_alt": "mulch bed shrub planting"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "stock-library",
+      "sha256": "490eb9e99027809a3b7097b3f68630b418ecf3e0a9cb21922421561c4673d030",
+      "reasons": [
+        "off_section_relevance:trade_deny:pool:landscape"
+      ],
+      "service": null,
+      "score_alt": "mulch bed shrub planting"
+    },
+    {
       "file": "photo-gallery-4.jpg",
       "source": "stock-library",
-      "sha256": "acce1d88a8c84f2807f81f25e5345e6893776e0889bc796959c4196a154f670d",
+      "sha256": "72f2b60b1c3f6b87094f0c2c8cd7f5259551bf3a90e735f711056afdd18a23af",
       "reasons": [
         "stub"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "lawn mower cutting turf"
     },
     {
       "file": "photo-gallery-5.jpg",
       "source": "stock-library",
-      "sha256": "fd1dbf24ac51ae87e9d0819355602e860c7c55878b19f863cd522ad81d356552",
+      "sha256": "dd3c408fe02b3959aa88b41e64939bc41d7c3c64f5dd0d518c8cec1efb51d43f",
       "reasons": [
         "stub"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "excavator grading residential lot"
     },
     {
       "file": "photo-gallery-6.jpg",
-      "source": "stock-library",
-      "sha256": "c57d03f75e2f0758cf959e88ba8606a1e013cd4ae8a88537a7aa9c18d4112f07",
+      "source": "harvest-fallback",
+      "sha256": "fa45334d6fd0e451f974129c98753c81f74b23201a5de9f87237248e0133cd05",
       "reasons": [
         "stub"
       ],
-      "service": null
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\smithslandscapinglawnmaintenancellcdunnharnettnc\\assets\\google\\google-fa45334d6fd0e451.jpg",
+      "score_alt": "Front bed of shrubs clipped to shape and edged clean against the walkway, the turf still dormant for winter"
     },
     {
       "file": "photo-gallery-7.jpg",
-      "source": "stock-library",
-      "sha256": "490eb9e99027809a3b7097b3f68630b418ecf3e0a9cb21922421561c4673d030",
+      "source": "harvest-fallback",
+      "sha256": "c0f974fdc4aee8cd1694fa3acd357d4c8b7e23fa004fc95d8a96ffef2867b7fe",
       "reasons": [
         "stub"
       ],
-      "service": null
-    },
-    {
-      "file": "photo-gallery-8.jpg",
-      "source": "stock-library",
-      "sha256": "ce0981b14723326eb4468139892241105f8aa87cf5d8056c1e51dc6e5d6f35f9",
-      "reasons": [
-        "stub"
-      ],
-      "service": null
-    },
-    {
-      "file": "photo-gallery-9.jpg",
-      "source": "stock-library",
-      "sha256": "97fc53364a919d93f79e45dd90530303cc30c392f04099a643dd6b40d803c01e",
-      "reasons": [
-        "stub"
-      ],
-      "service": null
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\smithslandscapinglawnmaintenancellcdunnharnettnc\\assets\\google\\google-c0f974fdc4aee8cd.jpg",
+      "score_alt": "Run of fresh turf laid from the porch out across the garden, the seam line clear against the prepared soil"
     }
   ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "eb7cd3bca88c672a739baabd2982bb46396d79f21e7a89f04071724916dd2b93",
-      "bytes": 517189
+      "bytes": 517189,
+      "alt": "Fresh dark mulch laid the length of a side bed and edged square against the conc"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "fa45334d6fd0e451f974129c98753c81f74b23201a5de9f87237248e0133cd05",
-      "bytes": 629214
+      "sha256": "3cab93029cc9517e9eedbdbbba7f9250040cee8c9d3eed264b10b442df1b58bf",
+      "bytes": 215511,
+      "alt": "Front bed of shrubs clipped to shape and edged clean against the walkway, the tu"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "c0f974fdc4aee8cd1694fa3acd357d4c8b7e23fa004fc95d8a96ffef2867b7fe",
-      "bytes": 621864
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "6d250af0e83ba790b3139ba0d5bcccc0305822906b6d085f4d7d00f18a78af73",
-      "bytes": 769054
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "b72eb429f3d2fbdb9a975258e69d99bd24455a45d557f8124a16cc4d0b1d7557",
-      "bytes": 510750
+      "sha256": "4e007556d93af6579036dc8883cbb9a67e4d5d7da3f810cf575e96ae770777e0",
+      "bytes": 210988,
+      "alt": "Run of fresh turf laid from the porch out across the garden, the seam line clear"
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "6dec43504af3640146aac1aa6e8c838792d0867ecedbc2d18751efde82e8c828",
-      "bytes": 247752
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "1bbc5876223670defb2b4a3d300c49fdb70b7bbb50634357723bb1af807c2bfd",
-      "bytes": 369004
+      "sha256": "9a1d707b2f4d56be2c713460b9e42ad7f10c666abc97950f3bf66ce9906558d8",
+      "bytes": 207322,
+      "alt": "mulch bed shrub planting"
     },
     {
       "file": "photo-gallery-1.jpg",
       "sha256": "30de6ef98011f24c6fcb700dde88a4d75ad5fd5cd9d9832964c9e49b491ff829",
-      "bytes": 487184
-    },
-    {
-      "file": "photo-gallery-2.jpg",
-      "sha256": "dac653ab78ecc60252393e987719ec0a484f8fd2c4d307b28f63313b96a2f6ae",
-      "bytes": 447986
-    },
-    {
-      "file": "photo-gallery-3.jpg",
-      "sha256": "462642458f2d3cb41588817492d2fa95523ffb4bcc24d9889c79940b8111d741",
-      "bytes": 414377
+      "bytes": 487184,
+      "alt": "New turf laid in strips across a back garden, the joints tight and the remaining"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "90e52c4548636578d90d39a97e16f4bff21f45478818ae9e9d3006e28ea21fed",
-      "bytes": 641506
+      "bytes": 641506,
+      "alt": "New turf laid and rolled in beside the house, the green strip meeting the dorman"
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "72f2b60b1c3f6b87094f0c2c8cd7f5259551bf3a90e735f711056afdd18a23af",
-      "bytes": 703859
+      "sha256": "6dec43504af3640146aac1aa6e8c838792d0867ecedbc2d18751efde82e8c828",
+      "bytes": 247752,
+      "alt": "landscape edging bed install"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "ee8e499a9a2745b93e695c8a2a40fded851b367a97197aac62651e11b2072378",
-      "bytes": 357557
+      "sha256": "fd1dbf24ac51ae87e9d0819355602e860c7c55878b19f863cd522ad81d356552",
+      "bytes": 135019,
+      "alt": "mulch bed shrub planting"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "a8cddc537c24ace8999db29558e6e4129ac68adc7c1fc9815ceae4cb69ce1738",
-      "bytes": 227696
+      "sha256": "82803504e5da6d575f050837a0348c6c8ac8a5f7319e42dbbb80eb508d6761d0",
+      "bytes": 200355,
+      "alt": "lawn mower cutting turf"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "1e1273f296afd2775888a63f5e185874a67e343e9028b1ea3e64ce4f5fc5b30a",
-      "bytes": 105585
+      "sha256": "f09758829257e71181555148353682c16ca353cd788c6d99211bd20fa00d18aa",
+      "bytes": 510976,
+      "alt": "landscape edging bed install"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "b0133d3be5fb757762c26b2706d64dff0fbe38b5552fa105b2f51d267687661c",
-      "bytes": 363677
+      "sha256": "a8cddc537c24ace8999db29558e6e4129ac68adc7c1fc9815ceae4cb69ce1738",
+      "bytes": 227696,
+      "alt": "landscape edging bed install"
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "9a1d707b2f4d56be2c713460b9e42ad7f10c666abc97950f3bf66ce9906558d8",
-      "bytes": 207322
+      "sha256": "acce1d88a8c84f2807f81f25e5345e6893776e0889bc796959c4196a154f670d",
+      "bytes": 186485,
+      "alt": "irrigation valve box trench"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "f09758829257e71181555148353682c16ca353cd788c6d99211bd20fa00d18aa",
-      "bytes": 510976
+      "sha256": "1e1273f296afd2775888a63f5e185874a67e343e9028b1ea3e64ce4f5fc5b30a",
+      "bytes": 105585,
+      "alt": "mulch bed shrub planting"
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "82803504e5da6d575f050837a0348c6c8ac8a5f7319e42dbbb80eb508d6761d0",
-      "bytes": 200355
+      "sha256": "b0133d3be5fb757762c26b2706d64dff0fbe38b5552fa105b2f51d267687661c",
+      "bytes": 363677,
+      "alt": "landscape edging bed install"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     }
   ],
   "failed": [],
   "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Pool surround with the garden graded back to bare soil, the ground levelled and ready for turf",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:pool:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Pool surround finished with a dry stone retaining wall, gravel bed, low planting and path lighting set along the edge",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:pool:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Rear of a house with the pool in and the surrounding ground prepared, materials still stacked on the terrace",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:pool:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Back garden under work beside a pool, the ground stripped back and stone slabs stacked on site ready to lay",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:pool:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Finished pool terrace with the concrete poured and the coping run round the water, the lake beyond the treeline",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:pool:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

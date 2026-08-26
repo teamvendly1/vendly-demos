@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:37:30.247Z",
+ "at": "2026-08-26T18:06:16.416Z",
  "slug": "ultimatetowing",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-126316e7bb309234.jpg",
-   "bytes": 470819,
-   "letterbox_stripped": null
+   "bytes": 169138,
+   "smart_crop": true,
+   "src": "google-126316e7bb309234.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 19.643,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-dbb2e40d7860d40f.jpg",
-   "bytes": 253637,
-   "letterbox_stripped": null
+   "bytes": 102784,
+   "smart_crop": true,
+   "src": "google-dbb2e40d7860d40f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 20,
+   "detail_score": 16.679,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-ae60d7b468088bf2.jpg",
-   "bytes": 181669,
-   "letterbox_stripped": null
+   "bytes": 94095,
+   "smart_crop": true,
+   "src": "google-ae60d7b468088bf2.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 22.437,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-69e4c1b801b239db.jpg",
-   "bytes": 174251,
-   "letterbox_stripped": null
+   "bytes": 150663,
+   "smart_crop": true,
+   "src": "google-69e4c1b801b239db.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1000x750",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 28.979,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",

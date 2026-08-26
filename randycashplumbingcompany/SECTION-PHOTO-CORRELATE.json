@@ -1,17 +1,28 @@
 {
-  "at": "2026-08-24T05:56:21.859Z",
+  "at": "2026-08-26T17:37:38.714Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
   "replaced": [
     {
+      "file": "photo-card-about.jpg",
+      "source": "Pexels",
+      "sha256": "68d804a781cba626d166f69f0ea6db6ef970d2536e8f7d129c2c6d59679e8e0d",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "water heater install basement"
+    },
+    {
       "file": "photo-gallery-1.jpg",
       "source": "stock-library",
-      "sha256": "68d804a781cba626d166f69f0ea6db6ef970d2536e8f7d129c2c6d59679e8e0d",
+      "sha256": "0dbad6a653715574a1569882358caa36b4c342c53789dea38d16715f2a3f1e79",
       "reasons": [
         "cross_demo_dupe:randycashplumbingcompanyfayettevillecumberlandnc/photo-gallery-1.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "water heater install basement"
     },
     {
       "file": "photo-gallery-2.jpg",
@@ -20,141 +31,317 @@
       "reasons": [
         "cross_demo_dupe:randycashplumbingcompanyfayettevillecumberlandnc/photo-gallery-2.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "PEX plumbing manifold install"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "stock-library",
+      "sha256": "2b991dfbf0d2d00ee34eb65cd3c3097df8402a872396e8ac852275228ae8999d",
+      "reasons": [
+        "off_section_relevance:trade_deny:debris:plumbing",
+        "unflattering_subject:unflattering:debris"
+      ],
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-gallery-5.jpg",
       "source": "stock-library",
-      "sha256": "0dbad6a653715574a1569882358caa36b4c342c53789dea38d16715f2a3f1e79",
+      "sha256": "95da756ea8f44cc5f23b2524871e0f908395230196ea72baa82682f30c927a0f",
       "reasons": [
         "cross_demo_dupe:randycashplumbingcompanyfayettevillecumberlandnc/photo-gallery-5.jpg"
       ],
-      "service": null
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "25804680f895fe833aae858f967e300b014f5a3922255b3287feb80a542db27f",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "stock-library",
+      "sha256": "8cd8037d433afd78f29a5b26b00cc442ee64f4ca5e185c1676f3eda88e44c95e",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "stock-library",
+      "sha256": "b50104e6fd2235b14916f07a55a3469db7f9c299df1df936264d5d4301737937",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:plumbing"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "stock-library",
+      "sha256": "54b02531916c8155c371551b86df711c103db8da1929282ba35e7cd5ba2c9c1c",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "stock-library",
+      "sha256": "650fdbeb9830428d6b5674b7695a8043c607d0b3eb74ade334c761725a119750",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Drains and sewer lines"
+      ],
+      "service": "Drains and sewer lines",
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "source": "stock-library",
+      "sha256": "efebc7b45168f62cdb5e3922ff009d0374c1c7429817a07eec53e1c59e51cdcc",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "Water heaters",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "stock-library",
+      "sha256": "1a6db5a39a32e61493f9b576af09490fa97f6a248232c4b4610b8d3cc287f42d",
+      "reasons": [
+        "cross_demo_dupe:randycashplumbingcompanyfayettevillecumberlandnc/photo-reviewsband.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     }
   ],
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "1e08cb59cd8c3054d40700df4163df3d5fb9094be6d582857187e3f6dca6e4a0",
-      "bytes": 553863
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "6bf8305a2ae3af7ebb81b50d7b79ed7267cc39989498f0e6b789b15873f55fdb",
-      "bytes": 604702
+      "sha256": "6dcb62e61e28812ecad88f7b6032d0fd14ede87189c1d7d480f3305ac949ccd8",
+      "bytes": 217625,
+      "alt": "Handheld shower head on a slide bar mounted against a marble tiled wall."
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "fe5f2f66da48ca6ef016823a7fdb7309306cbce4b8ad4316c219de221d2c5fdb",
-      "bytes": 468474
+      "sha256": "bf3e01adf07c7701ba01868d4519fb687a777b3c58da582507f37d771821a627",
+      "bytes": 227632,
+      "alt": "PVC pipe stub sticking out of an earth bank next to a broken concrete surround."
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "1bfbe1d958364f044ca9246c6bfc1e7c9373357d722e2829b1a87e7738521191",
-      "bytes": 518496
+      "sha256": "d1235054e33ea48f0b6e5c84b2299606ef5008f19be27541e99edb8840f2eb5c",
+      "bytes": 216411,
+      "alt": "Under slab drain lines and a brass cleanout stub laid out in a trench of orange "
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "ea8f264b5c666e8cb29abddd886f80107d309c4a495a14d65dad6910e24b619c",
-      "bytes": 544510
+      "sha256": "586043bf57401b2ebd095d03473596ce476cd1edf4a65e9350fd3cdb949a5d97",
+      "bytes": 236546,
+      "alt": "Trench with drain lines and a brass cleanout with a step ladder set up alongside"
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "22d52932ec6435dd79dbb9fea6cc8d4b4b83e6f2d1c22dabb2a89450f47b8efc",
-      "bytes": 217404
+      "sha256": "d853961bb6e75e10de2c9d298cb554b15bd7493673eb70e8877f832fbff99456",
+      "bytes": 184458,
+      "alt": "Tiled shower with a chrome shower head, mixer valve and a recessed niche."
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "d0fd9d9c17de99090761780e94d1d67078553e86954a76e8c566724d7110a141",
-      "bytes": 275083
-    },
-    {
-      "file": "photo-gallery-3.jpg",
-      "sha256": "c56de529b540c3be8a9c7dcb42d8930e1565ea4494b424c4c7169d977c44f9d3",
-      "bytes": 295365
+      "bytes": 275083,
+      "alt": "Plumber holding up a scaled over electric water heater element removed from a ta"
     },
     {
       "file": "photo-gallery-4.jpg",
       "sha256": "43c439de0fded899481f290bb7d4587877f46c0cedb229ce39a5efcab8839b3e",
-      "bytes": 263294
-    },
-    {
-      "file": "photo-gallery-6.jpg",
-      "sha256": "8479ee93c4933f864dde5a2bb808700273570492b92818dd786c11b01bb6aa8c",
-      "bytes": 259263
-    },
-    {
-      "file": "photo-gallery-7.jpg",
-      "sha256": "91ba6132abe4791a4eb2ecc83c515b83294ad11c584c23d51ee5ab4197aa1fee",
-      "bytes": 225831
-    },
-    {
-      "file": "photo-gallery-8.jpg",
-      "sha256": "53d28c566065eca2eb486a2adaa85c076c233fed286073528d6c7ea26cdd87c1",
-      "bytes": 224062
+      "bytes": 263294,
+      "alt": "Cast iron drain line running through a crawl space alongside insulated ductwork."
     },
     {
       "file": "photo-gallery-9.jpg",
-      "sha256": "05c076de624b87e3c3ce8e95aa44b27ebc9b2723dff8d8941f8e3035ff690263",
-      "bytes": 222043
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "7b50dcbc0c7fc3f037d84d7c05403ac3bb96c65722dd7ec081398d9f3a9c295e",
-      "bytes": 588415
+      "sha256": "a7ceba2f80f2a534e50706f9c98a64fb4cbcdcdd4f3ea0ea2c66a8e32e00d747",
+      "bytes": 189124,
+      "alt": "Bank of black iron drain and vent piping in a basement with a pink flanged valve"
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "70cdae1c1f834037e3ac4d76cc6290b1dd5508eb16d29e2322a91fef68e719b8",
-      "bytes": 205110
+      "sha256": "054ba085061731e24efdf714bdca739320234b092d32966ac1747c70677533a4",
+      "bytes": 178214,
+      "alt": "Tiled walk in shower with a built in bench seat and a mosaic tile floor."
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "d830dfd76ae594630db40b253df9daa2a6abb5d938d0f2f410cf05622eff9bae",
-      "bytes": 268257
+      "bytes": 268257,
+      "alt": "Pipework running low through a crawl space with a red tool set down on the groun"
     },
     {
       "file": "photo-reviewsband.jpg",
-      "sha256": "a7ceba2f80f2a534e50706f9c98a64fb4cbcdcdd4f3ea0ea2c66a8e32e00d747",
-      "bytes": 189124
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "3db9774ae50e2d5236a7fdb559a972b29c6ab508a974c881abb0e5ce6a099e9c",
-      "bytes": 258165
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "6e15d60f1b3432c9a6ab68316cb2557c5c9ed24cbc2d6b35b704516f14568e81",
-      "bytes": 257870
+      "sha256": "a579ba0b995732ca0383081c65ec73cb81f02067569854485dd8836efe87a3ef",
+      "bytes": 177366,
+      "alt": "Jetted tub protected with blue film sitting on a frame in a tiled bathroom under"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "a63318e5ddb972f2c76afc53d906378a4b840e80090cb003f3f6f8c78e8334c7",
-      "bytes": 232735
+      "sha256": "701a74a1d78fe3e4b3f6e1eea49f1a17088f36de9bc6d3a4df93caa24fe28900",
+      "bytes": 92636,
+      "alt": "Commercial gas water heater connected up with its data labels and flue fitting v"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "d853961bb6e75e10de2c9d298cb554b15bd7493673eb70e8877f832fbff99456",
-      "bytes": 184458
+      "sha256": "5d64deb9dd4534eabe137f739a291459eba75d619762e169a5d5ec91d838a9d7",
+      "bytes": 160862,
+      "alt": "Water heater gas control valve with a yellow flexible gas connector and shut off"
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "644fcba10ee185ad21a7771162210e5275df34c076b631bb9933f2a49831224e",
-      "bytes": 183335
+      "sha256": "069932526e58fe14733e0346ac4a06e29678594cc1f9f7fdb10aef7ea5d4bab2",
+      "bytes": 155798,
+      "alt": "Close up of a gas water heater control valve and thermostat dial with its warnin"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "054ba085061731e24efdf714bdca739320234b092d32966ac1747c70677533a4",
-      "bytes": 178214
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "6dcb62e61e28812ecad88f7b6032d0fd14ede87189c1d7d480f3305ac949ccd8",
-      "bytes": 217625
+      "sha256": "43cfce15024eedd5eee696aa826f758659b25f62b085ea722c54acce50603463",
+      "bytes": 103687,
+      "alt": "Water heater standing connected in the corner of a room with a dark tiled floor."
     }
   ],
   "failed": [],
   "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Worker holding up a long mass of tree roots pulled out of a blocked sewer line in the street.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Gutted bathroom stripped back to bare studs and floorboards with debris across the floor.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:debris:plumbing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:debris",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Hand resting on the rusted flange of a large industrial pump being worked on outdoors.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "Heavy black iron piping and a valve joined to a blue painted riser against a concrete wall.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "Two bronze drinking fountains on a dark blue tiled wall with a handwritten out of order sign taped above.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Excavated hole and mounded soil in a front yard with a pickup truck parked at the kerb.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Grease interceptor set into a commercial kitchen floor with PVC lines running to it.",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Drains and sewer lines"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Top of a large industrial pump housing with the coupling and bolts exposed.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

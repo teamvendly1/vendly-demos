@@ -1,208 +1,279 @@
 {
-  "at": "2026-08-24T14:21:01.586Z",
+  "at": "2026-08-26T17:59:41.037Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
   "replaced": [
     {
-      "file": "photo-card-about.jpg",
+      "file": "photo-about.jpg",
       "source": "harvest-fallback",
-      "sha256": "9d27f122a363208bc6c3e2ca54db117707b2d7e72fa34a8997c9212855f84589",
+      "sha256": "f482cd70ee7c578f29ca07f2a166d9fcef705617f135adcd30773a315fd92ad1",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-services-hero.jpg"
+        "off_section_relevance:trade_deny:worker:towing"
       ],
       "service": "crew shop jobsite",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-9d27f122a363208b.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-f482cd70ee7c578f.jpg",
+      "score_alt": "Car with the front end torn open and the hood folded back sitting in roadside grass."
     },
     {
-      "file": "photo-card-reviews.jpg",
+      "file": "photo-contact.jpg",
       "source": "harvest-fallback",
       "sha256": "cd185ea06239471f928f8db243433931e9d071cd33660f281550c618f44e1035",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-card-services.jpg"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-cd185ea06239471f.jpg"
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "source": "harvest-fallback",
-      "sha256": "301b64c086144ab245f0cf68c0de01a8e50f01b8a3c0cc52e39f657d6ff05a73",
-      "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-8.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-photos-cta.jpg"
       ],
       "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-301b64c086144ab2.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-cd185ea06239471f.jpg",
+      "score_alt": "Silver sedan loaded on the deck of the white flatbed wrecker at the roadside."
     },
     {
       "file": "photo-ctaband.jpg",
       "source": "harvest-fallback",
-      "sha256": "f482cd70ee7c578f29ca07f2a166d9fcef705617f135adcd30773a315fd92ad1",
+      "sha256": "301b64c086144ab245f0cf68c0de01a8e50f01b8a3c0cc52e39f657d6ff05a73",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-3.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-about.jpg"
       ],
       "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-f482cd70ee7c578f.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-301b64c086144ab2.jpg",
+      "score_alt": "Older red Chevrolet wrecker with a boom parked on the shoulder of a tree lined road."
     },
     {
       "file": "photo-gallery-1.jpg",
       "source": "harvest-fallback",
       "sha256": "eee18f15febe2b27baf11ae4f2c79a6e3e61b6c683f1d6c56b6bb23ac8d68d22",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-card-reviews.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-1.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-eee18f15febe2b27.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-eee18f15febe2b27.jpg",
+      "score_alt": "White wrecker with its amber beacon on and a wheel lift dolly hitched behind at dusk."
     },
     {
       "file": "photo-gallery-2.jpg",
       "source": "harvest-fallback",
       "sha256": "4ac00ce6bc69c359cee5154f35097f32196fc4f36b8df42d451abfc6230b030c",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-card-photos.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-card-reviews.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-4ac00ce6bc69c359.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-4ac00ce6bc69c359.jpg",
+      "score_alt": "White Chrysler sedan riding on the flatbed seen from the cab window out on the highway."
     },
     {
       "file": "photo-gallery-3.jpg",
       "source": "harvest-fallback",
       "sha256": "e6a386ecab24e936f5b27ddbb908d0c17354eb685565810d338d8e05c4307b69",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-ctaband.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-service-1.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-e6a386ecab24e936.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-e6a386ecab24e936.jpg",
+      "score_alt": "Silver Dodge Charger being winched up off the grass onto the flatbed."
     },
     {
       "file": "photo-gallery-4.jpg",
       "source": "harvest-fallback",
-      "sha256": "d314d58014776be06db8c4767044348cfc4164fad4c58682e1dc520538e1440a",
+      "sha256": "70efaaf330e7fe3e80f43a7c2d30cd927358b8ef6243a97b3ec231ff9563d940",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-6.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-quoteband.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-d314d58014776be0.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-70efaaf330e7fe3e.jpg",
+      "score_alt": "Red wrecker towing a white box truck past a fuel station forecourt."
     },
     {
       "file": "photo-gallery-5.jpg",
       "source": "harvest-fallback",
-      "sha256": "20022118228bf863db11dec8f8db6485713666fadfec623678f0da10c79a6727",
+      "sha256": "d314d58014776be06db8c4767044348cfc4164fad4c58682e1dc520538e1440a",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-7.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-services-hero.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-20022118228bf863.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-d314d58014776be0.jpg",
+      "score_alt": "Driver in a high visibility shirt and orange beanie standing beside the company tow truck."
     },
     {
       "file": "photo-gallery-6.jpg",
       "source": "harvest-fallback",
-      "sha256": "fd9eb296fab8978253b241f0285600376b1039176b8db8d37cb3990a6ddefd68",
+      "sha256": "20022118228bf863db11dec8f8db6485713666fadfec623678f0da10c79a6727",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-9.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-gallery-6.jpg"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-fd9eb296fab89782.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-20022118228bf863.jpg",
+      "score_alt": "Champagne Infiniti sedan sitting on the tilted flatbed ramp on the road."
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "source": "harvest-fallback",
+      "sha256": "fd9eb296fab8978253b241f0285600376b1039176b8db8d37cb3990a6ddefd68",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-reviewsband.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-fd9eb296fab89782.jpg",
+      "score_alt": "White classic car winched up the steeply tilted red flatbed deck."
     },
     {
       "file": "photo-service-1.jpg",
       "source": "harvest-fallback",
-      "sha256": "52af38d4177a922690b9427b84eac01f9227ef0c89bd5ef8b617d7483b6c42a8",
+      "sha256": "27a88ac1b6e511daf8e859a3e65f59951a52ca2b6b81630163ce6ccd60c53ae7",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-hero.jpg"
+        "off_section_relevance:trade_require_miss:towing",
+        "unflattering_subject:unflattering:wreck"
       ],
       "service": "Powersports and small equipment",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-52af38d4177a9226.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-27a88ac1b6e511da.jpg",
+      "score_alt": "Dark Dodge Charger on the flatbed at night under the lot lighting."
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "828d84af480c9045b06a0fdf79ab16b15570177f71950d00ccb8b09b8a054d9a",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-service-5.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-828d84af480c9045.jpg",
+      "score_alt": "Bright blue Ford Mustang electric loaded on the red flatbed deck."
     },
     {
       "file": "photo-service-6.jpg",
       "source": "harvest-fallback",
-      "sha256": "2dabaeebe97197495e2f8f8def7f3a66ada91a08629acd211a6d642ac4b44053",
+      "sha256": "52af38d4177a922690b9427b84eac01f9227ef0c89bd5ef8b617d7483b6c42a8",
       "reasons": [
-        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-about.jpg"
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-card-services.jpg"
       ],
       "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-2dabaeebe9719749.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-52af38d4177a9226.jpg",
+      "score_alt": "Wrecker with a red car on the deck parked beside electric vehicle charging stalls."
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "harvest-fallback",
+      "sha256": "2dabaeebe97197495e2f8f8def7f3a66ada91a08629acd211a6d642ac4b44053",
+      "reasons": [
+        "cross_demo_dupe:stromanstowingservicesrockinghamrichmondnc/photo-service-4.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stromanstowingservices\\assets\\google\\google-2dabaeebe9719749.jpg",
+      "score_alt": "Red wrecker with spare wheels racked behind the cab parked beside a metal building."
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "c2758b75279f6e306176a1b293efe7a954d125aba8de67777ea6f2fa05a3e0f4",
-      "bytes": 222187
+      "file": "photo-card-about.jpg",
+      "sha256": "5228fb3c590cf5423035bf4f59ba8dd568177dd47ab1baa9036d374b7df992ae",
+      "bytes": 136494,
+      "alt": "Driver in a high visibility shirt and orange beanie standing beside the company "
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "27a88ac1b6e511daf8e859a3e65f59951a52ca2b6b81630163ce6ccd60c53ae7",
-      "bytes": 218449
+      "sha256": "c544040089c4f5104dbd82b487d6bc0678c9ea51d24105bbc6316d6ed656bff0",
+      "bytes": 99803,
+      "alt": "Dark Dodge Charger on the flatbed at night under the lot lighting."
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "eadde3c52e64a5a925b5a0b983660fd73c52b52bd28ddfbf9929840858fcb69e",
-      "bytes": 172744
+      "file": "photo-card-reviews.jpg",
+      "sha256": "04fddefdc5f6d3648da8337c318fa542893da0ce6cc018996855fde2b5d4bd8a",
+      "bytes": 220779,
+      "alt": "Car with the front end torn open and the hood folded back sitting in roadside gr"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "2e7445925d63964ed30ee15825d16fca0591da077a2380790bf58dcc2fbee1a5",
+      "bytes": 190400,
+      "alt": "Silver Dodge Charger being winched up off the grass onto the flatbed."
     },
     {
       "file": "photo-gallery-7.jpg",
       "sha256": "08397e68e4d3c9c0593042092cbc4e2421251f049e95d25b1eb23b59be4333c1",
-      "bytes": 241815
+      "bytes": 241815,
+      "alt": "Black sport utility with crash damage and a deployed airbag loaded on the flatbe"
     },
     {
       "file": "photo-gallery-8.jpg",
       "sha256": "1cbb93d9dbe2eaadfe58eea4cafc1b2992f833b225149b13c62aedadc2e25b5e",
-      "bytes": 188862
+      "bytes": 188862,
+      "alt": "Red Dodge Challenger on the flatbed deck in front of a brick building."
     },
     {
       "file": "photo-gallery-9.jpg",
       "sha256": "89a60fe425cb36dba55949a3e92563e198fdc42db34b63de841016652982b544",
-      "bytes": 175023
+      "bytes": 175023,
+      "alt": "White passenger van loaded on the flatbed deck after dark."
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "28da579c05f4257d65203a8cf263330d844f586b0a3e54b4e07a86328eafa9f2",
-      "bytes": 249678
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "176a80c78f8174b8898d25cac7ebdfa2d2fc61812fd261be51d5280cd6118345",
-      "bytes": 167142
+      "bytes": 249678,
+      "alt": "Dark Ford crew cab pickup with chrome steps parked on grass."
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "efa1bce24cd9b1fcfb2d15c6adbed7b65a68404ba04c8e220ffe2cba38bf4a81",
-      "bytes": 375288
+      "bytes": 375288,
+      "alt": "Black Hummer secured on the red flatbed deck ready to move."
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "722643a5d99ab1d669033d5c9750a855e502b9f6d106cfb19687cb9da059d572",
-      "bytes": 149649
+      "bytes": 149649,
+      "alt": "White box truck loaded onto the flatbed deck under lights after dark."
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "70efaaf330e7fe3e80f43a7c2d30cd927358b8ef6243a97b3ec231ff9563d940",
-      "bytes": 277921
+      "sha256": "382f69583a4a2e2bb4d6a65dd360ecb19450562f19095bfdcca1f4a563bf56da",
+      "bytes": 105077,
+      "alt": "Red wrecker towing a white box truck past a fuel station forecourt."
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "f7f4eb9a6fd76e29ef1a096c8619c1e4ab5ef3e0c5d7ff05b59ce9071fbf9302",
-      "bytes": 244109
+      "sha256": "6c4cd1a18e76056aef4d0753e369707dafe032c2923571cc6b78e18c03f3aaea",
+      "bytes": 103240,
+      "alt": "Dark sport utility on the flatbed behind the white cab with the company script o"
     },
     {
       "file": "photo-service-4.jpg",
       "sha256": "c231a4499469fb7f38fe0c21632938bef6b812507a6a6e2b7c8828bcbc6651d9",
-      "bytes": 120169
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "dfa37e92b13bd133f8757cea3193fc9a1dcfb1e280e3def20b2eb24e1492abb2",
-      "bytes": 93951
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "828d84af480c9045b06a0fdf79ab16b15570177f71950d00ccb8b09b8a054d9a",
-      "bytes": 173576
+      "bytes": 120169,
+      "alt": "White GMC sport utility riding on the flatbed seen from the cab out on a country"
     }
   ],
   "failed": [],
   "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Large cable spool being loaded onto the red truck bed with a worker standing alongside.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Close up of a wrecked white car with the bumper and headlight assembly torn away.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:wreck",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

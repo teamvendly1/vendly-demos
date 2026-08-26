@@ -1,11 +1,12 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-22T23:41:02.465Z",
+  "at": "2026-08-26T17:37:56.207Z",
   "trade": "plumbing",
   "slotHints": {
     "photo-service-1.jpg": "Drains and sewer lines",
     "photo-service-2.jpg": "Water heaters",
-    "photo-service-3.jpg": "Excavation and service lines"
+    "photo-service-3.jpg": "Excavation and service lines",
+    "photo-service-4.jpg": "Bathroom and fixture work"
   },
   "ok": true,
   "kept": [
@@ -17,31 +18,25 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "ea8f264b5c666e8cb29abddd886f80107d309c4a495a14d65dad6910e24b619c",
+      "sha256": "1d72dd32daa6655aab21290cff7b307b596da51d5abe92ef17cbe75ed38a6ebb",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "fe5f2f66da48ca6ef016823a7fdb7309306cbce4b8ad4316c219de221d2c5fdb",
+      "sha256": "3c6aa1b5fbdd8b83dceabc4c435321b30b94fa276343a143de1ba70895eaeffe",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "1e08cb59cd8c3054d40700df4163df3d5fb9094be6d582857187e3f6dca6e4a0",
+      "sha256": "bf3e01adf07c7701ba01868d4519fb687a777b3c58da582507f37d771821a627",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "6bf8305a2ae3af7ebb81b50d7b79ed7267cc39989498f0e6b789b15873f55fdb",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "5d69f8d4c5906581cb315462f7175263cd2e44f07ab72d0a0f65211b8d80f8c6",
+      "sha256": "586043bf57401b2ebd095d03473596ce476cd1edf4a65e9350fd3cdb949a5d97",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -59,7 +54,7 @@
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "6e8a08f5b71e0f7d62cb6152b74f3e0e26fb93f17db3bb802dc30eb1969c1830",
+      "sha256": "7b50dcbc0c7fc3f037d84d7c05403ac3bb96c65722dd7ec081398d9f3a9c295e",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -76,12 +71,6 @@
       "niche_folder": null
     },
     {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "d853961bb6e75e10de2c9d298cb554b15bd7493673eb70e8877f832fbff99456",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-reviewsband.jpg",
       "sha256": "70c89ed6a7d1a50409d7b7d98f6896dc3d910ec337a58ef0ee9f1ca55e6c4375",
       "source": "harvest_or_prior",
@@ -89,19 +78,37 @@
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "3db9774ae50e2d5236a7fdb559a972b29c6ab508a974c881abb0e5ce6a099e9c",
+      "sha256": "1690bfeb9d7eceaf40616e3e6534befd8985352f1b95730b4e6388cc3340f221",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "6e15d60f1b3432c9a6ab68316cb2557c5c9ed24cbc2d6b35b704516f14568e81",
+      "sha256": "42474bc6d67ff36adf3deaf96d4bad55dcd0e706f634e55d8bf72a9466b92005",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "a63318e5ddb972f2c76afc53d906378a4b840e80090cb003f3f6f8c78e8334c7",
+      "sha256": "ae7933db409e67028c0b8fa94ddc232452a4fae7382e47416c14505312b1285a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "644fcba10ee185ad21a7771162210e5275df34c076b631bb9933f2a49831224e",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "054ba085061731e24efdf714bdca739320234b092d32966ac1747c70677533a4",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "a579ba0b995732ca0383081c65ec73cb81f02067569854485dd8836efe87a3ef",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -112,84 +119,11 @@
       "niche_folder": null
     }
   ],
-  "filled": [
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": "7cb22f9e0a79313b96edee584bf1df6fc44f1e1aab01c21ac2f2373c054ed3d9",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/moody-black-and-white-interior-home-scene-28879555/",
-        "subject_alt": "pipe wrench on copper pipe",
-        "found_by_query": "pipe wrench on copper pipe",
-        "family": "plumbing",
-        "library_file": "plumbing-black-white-bathroom-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:23:25.451Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 241
-      }
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "683d75aa25906b8cd222a94ba8995e4993bbe52fdcb23c8b2e9c1f36efed39bc",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/bathroom-interior-with-sink-on-counter-near-mirror-and-bath-6444967/",
-        "subject_alt": "drain snake cable clog",
-        "found_by_query": "drain snake cable clog",
-        "family": "plumbing",
-        "library_file": "plumbing-interior-light-bathroom-03.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:24:40.008Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 241
-      }
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": "fd29972ef5809c2c05eeb95823342d52c70eaf28295d83cc400b59cf7af8ef74",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (royalty free, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/toilet-and-sink-in-modern-light-bathroom-6890406/",
-        "subject_alt": "modern home bathroom interior clean",
-        "found_by_query": "modern home bathroom interior clean",
-        "family": "plumbing",
-        "library_file": "plumbing-small-modern-bathroom-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-12T16:50:48.357Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 241
-      }
-    }
-  ],
+  "filled": [],
   "gaps": [],
-  "distinct": 20,
-  "slots": 20,
-  "stock_provenance_rows": 3,
+  "distinct": 18,
+  "slots": 18,
+  "stock_provenance_rows": 0,
   "family": "plumbing",
   "refuse_borrow": false,
   "provenance_ok": true

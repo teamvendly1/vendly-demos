@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:40:08.083Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T18:05:51.677Z",
   "slug": "trustedtowinginc",
-  "removed_count": 29,
+  "removed_count": 28,
   "removed_sample": [
     "google-004b0d5bfd6e4fa9.jpg",
     "google-0322bbdff17916a7.jpg",
@@ -17,5 +17,10 @@
     "google-41ac995ac3355cfb.jpg",
     "google-595deed031ccb885.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\trustedtowinginc",
+  "published_ref_count": 24,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:06:23.647Z",
+ "at": "2026-08-26T18:09:54.992Z",
  "slug": "wilsonelectricalservicellc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-67810bd34ce6f47e.jpg",
-   "bytes": 202395,
-   "letterbox_stripped": null
+   "bytes": 78188,
+   "smart_crop": true,
+   "src": "google-67810bd34ce6f47e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1342x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 45,
+   "detail_score": 13.751,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-2d7a389531d6070c.jpg",
-   "bytes": 241019,
-   "letterbox_stripped": null
+   "bytes": 94191,
+   "smart_crop": true,
+   "src": "google-2d7a389531d6070c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 33,
+   "detail_score": 20.328,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-19ed532ba50a5a70.jpg",
-   "bytes": 321650,
-   "letterbox_stripped": null
+   "bytes": 155717,
+   "smart_crop": true,
+   "src": "google-19ed532ba50a5a70.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 65,
+   "detail_score": 28.351,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-e758025dca4e8a8c.jpg",
-   "bytes": 241446,
-   "letterbox_stripped": null
+   "bytes": 105241,
+   "smart_crop": true,
+   "src": "google-e758025dca4e8a8c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 21.444,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-fd2103d017ff2bbb.jpg",
-   "bytes": 104756,
-   "letterbox_stripped": null
+   "bytes": 37423,
+   "smart_crop": true,
+   "src": "google-fd2103d017ff2bbb.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 3.424,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-b68ba2648b09f243.jpg",
-   "bytes": 144532,
-   "letterbox_stripped": null
+   "bytes": 55299,
+   "smart_crop": true,
+   "src": "google-b68ba2648b09f243.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 10.147,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-6632d172ad1cb16d.jpg",
-   "bytes": 206737,
-   "letterbox_stripped": null
+   "bytes": 117329,
+   "smart_crop": true,
+   "src": "google-6632d172ad1cb16d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 24.965,
+   "orientation": "landscape"
   },
   {
    "slot": "logo.png",

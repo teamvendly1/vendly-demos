@@ -1,96 +1,186 @@
 {
-  "at": "2026-08-22T23:40:06.700Z",
+  "at": "2026-08-26T18:05:45.026Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1a86a9347ea288d776dbfd2b64906d8264157bde0c23fa837bb47016f1ebd504",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\trustedtowinginc\\assets\\google\\google-1a86a9347ea288d7.jpg",
+      "score_alt": "Flatbed tow truck hauling a black sedan through a residential street"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1e9a8c6f0baa0674bb48424d0da3ef2b516277ceba6bebd60bb7b903b7900af6",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\trustedtowinginc\\assets\\google\\google-1e9a8c6f0baa0674.jpg",
+      "score_alt": "Tow truck hauling an orange Dodge pickup at night near a garage door"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3299c6ffd3c46dbbce26c4b609ae3654cd91ee389fad9c0866f6a8f1d1a29387",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\trustedtowinginc\\assets\\google\\google-3299c6ffd3c46dbb.jpg",
+      "score_alt": "Tow truck hauling a small white utility trailer with a red pickup nearby"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "604eb8d705e9e824dc21ce6c4a615b142e052ababab061a91a2dddf005de72d1",
-      "bytes": 562719
+      "bytes": 562719,
+      "alt": "Red flatbed tow truck hauling a black skid steer loader"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "1a86a9347ea288d776dbfd2b64906d8264157bde0c23fa837bb47016f1ebd504",
-      "bytes": 596572
+      "sha256": "3f012017b9b1e2590621430fbd2ca34f2bc18f7b42878ce3cb8554f253e7e231",
+      "bytes": 225447,
+      "alt": "Flatbed tow truck hauling a black sedan through a residential street"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "c239890d21b3ffd0f768f92184722e5a39caa9c08365d9350461242b758163ac",
-      "bytes": 507588
+      "sha256": "6d2b21a96c21d00fe39f46c4cbfad5cf516707e81e6c20a6edc9e5d7fe36b3b0",
+      "bytes": 178866,
+      "alt": "White heavy-duty tow truck with a forklift loaded on its flatbed"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "d49342fe21cc3bf558185077d39d3b50867cfb1f3ea1ed9efdd28b1434de1026",
-      "bytes": 533799
+      "sha256": "679f51d8c795c41bed0a26d21669ab22d1275a80072ff6e1ab18f5bed9a8605d",
+      "bytes": 170029,
+      "alt": "Red flatbed tow truck hauling a white sedan on a gravel road"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "3299c6ffd3c46dbbce26c4b609ae3654cd91ee389fad9c0866f6a8f1d1a29387",
-      "bytes": 544557
+      "sha256": "a407e3bd6b3d69043c8d68692a24cfdab1a81f9a91a97ebc5cfc6d63a76ae629",
+      "bytes": 200267,
+      "alt": "Tow truck hauling a small white utility trailer with a red pickup nearby"
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "7062452dcf3364cb79fff660081e0b1815a1e014dd3b1e647393d940fc591c70",
-      "bytes": 109906
+      "sha256": "45dc919ad5a88ec36c9521f32fccc322d388ce9a9bdc07471b72f0bdbef6bf63",
+      "bytes": 120840,
+      "alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "33e4ecc4aac3622b18743ad3f14ff92b5ba3be5ebbc633b7eb9f84cf2754b39c",
-      "bytes": 414316
+      "bytes": 414316,
+      "alt": "Red Dodge Durango being towed on a wheel-lift at the roadside"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "3f238b4711438848887f767ea91cd5bf3b94eb20dc47a27a71d1e242ac508e8d",
+      "bytes": 503534,
+      "alt": "Flatbed tow truck hauling a white sports coupe outside a shop building"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "004b0d5bfd6e4fa97b9e070ca75794cd95dee9743bb6f6437e602825abbb3ee9",
+      "bytes": 448759,
+      "alt": "Tow truck with lights flashing hauling a white pickup truck on the grass"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "595deed031ccb885c4939b54b07df83f6c664b87adbfe859c211ebf4159a0dd4",
+      "bytes": 427618,
+      "alt": "White tow truck hauling a white sedan along the road"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "129bae4a4d81008b24f8af3fea14969e39d483653f1fd4d2bdaaa41ac3b366e2",
+      "bytes": 372674,
+      "alt": "Red and black tow truck hauling a blue Ford Mustang"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "e898c9121d06826555228cbde77401d42a8b63fb3a13932bbfc3147611853c19",
+      "bytes": 341016,
+      "alt": "Tow truck hauling a dark green Jeep Grand Cherokee at night in a parking lot"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "41ac995ac3355cfb4bcf81d3cdb9c030f71e3144220254a1766308e6c3c50360",
+      "bytes": 307444,
+      "alt": "White wheel-lift tow truck hauling a car in a parking lot on a rainy day"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "31da17f4b2ce6f90da71cdbab97d6bcc623e8069a4864366d2b87ad456b89f48",
-      "bytes": 324497
+      "bytes": 324497,
+      "alt": "Tow truck hauling a dark blue Toyota Camry sedan"
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "45dc919ad5a88ec36c9521f32fccc322d388ce9a9bdc07471b72f0bdbef6bf63",
-      "bytes": 120840
+      "sha256": "f61966d3a255573f2742220d02877440a1afb97361cee67216b9dd9432f2d7c8",
+      "bytes": 153270,
+      "alt": "tow truck winch hook vehicle"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "2eca47680c8c96bfd18c1293281ba747beb422be2d56a8a65a2f34f0fd1de388",
-      "bytes": 386373
+      "bytes": 386373,
+      "alt": "Red and black tow truck hauling a black pickup truck"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "0322bbdff17916a730c04462bdbece6d628e834bfc1c701204050404bab2e014",
-      "bytes": 282427
+      "sha256": "7905194a72f4f36ce79418bb266e8dc0069d03b3a33c8703293d13fae0d174ab",
+      "bytes": 146497,
+      "alt": "White tow truck hauling a red pickup truck near a gas station"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "1e9a8c6f0baa0674bb48424d0da3ef2b516277ceba6bebd60bb7b903b7900af6",
-      "bytes": 278430
+      "sha256": "f1e4872f33f3b76d5e9c46be43f95336811aa0db335575c27da3c10b66d54e81",
+      "bytes": 111072,
+      "alt": "Tow truck hauling an orange Dodge pickup at night near a garage door"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "831dc6dbf78c7afa110b92ae7507364a771e97240c893311d8468392b702cfff",
-      "bytes": 219306
+      "sha256": "6ebd6808ad286687d311054761d7c460ffd315dc3fe8fb757a638cac7dfc7595",
+      "bytes": 114090,
+      "alt": "Black tow truck hauling a black pickup and a dark sedan together with sun flare "
     },
     {
       "file": "photo-service-4.jpg",
       "sha256": "e8f78a1b6ac5579a8f0f0c4bed9f7fd4224cdfc580085204c1d2c2211e1737ef",
-      "bytes": 253386
+      "bytes": 253386,
+      "alt": "tow truck winch hook vehicle"
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "305b9dd959af09467cc309b2e717904de4170c6055d6d8ff8224d8c43a286dfa",
-      "bytes": 319003
+      "sha256": "7062452dcf3364cb79fff660081e0b1815a1e014dd3b1e647393d940fc591c70",
+      "bytes": 109906,
+      "alt": "wheel lift tow truck street"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "f61966d3a255573f2742220d02877440a1afb97361cee67216b9dd9432f2d7c8",
-      "bytes": 153270
+      "sha256": "0b08c9931881419d9342f69b7ddd65dad74d0a96d09701bc930f0bb63929225a",
+      "bytes": 247421,
+      "alt": "wheel lift tow truck street"
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "0b08c9931881419d9342f69b7ddd65dad74d0a96d09701bc930f0bb63929225a",
-      "bytes": 247421
+      "sha256": "305b9dd959af09467cc309b2e717904de4170c6055d6d8ff8224d8c43a286dfa",
+      "bytes": 319003,
+      "alt": "tow truck empty flatbed highway"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -1,104 +1,223 @@
 {
-  "at": "2026-08-24T05:49:50.639Z",
+  "at": "2026-08-26T18:09:12.639Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
-      "file": "photo-gallery-4.jpg",
+      "file": "photo-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "24fe3fae3b8c0b939a465c82fd6893d9247caddaaf4f9d9d97de4b08c5550da1",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westtireandautorepair\\assets\\google\\google-24fe3fae3b8c0b93.jpg",
+      "score_alt": "vintage blue and black antique car with wire wheels raised on a flatbed lift for service"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "47db9d4597b5466383f4127440441e73d8e597fe591f1912289990ce5ff72a68",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westtireandautorepair\\assets\\google\\google-47db9d4597b54663.jpg",
+      "score_alt": "white pickup truck with hood open and front bumper removed exposing the radiator during repair"
+    },
+    {
+      "file": "photo-card-services.jpg",
       "source": "harvest-fallback",
       "sha256": "48e2ca33c32a539cf785afce9b47aa276ecac235c91d24cebe7d34796c6faf65",
       "reasons": [
-        "stub"
+        "off_section_relevance:trade_require_miss:auto"
       ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westtireandautorepair\\assets\\google\\google-48e2ca33c32a539c.jpg"
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westtireandautorepair\\assets\\google\\google-48e2ca33c32a539c.jpg",
+      "score_alt": "empty blue four post alignment lift with diamond plate ramp in an unoccupied shop bay"
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "176aca700314ade772a1c2dd6d1e976bc87e014bb920a24666409f7d66a539ce",
-      "bytes": 167348
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "9434b8106a3caa417351bab7ed31c55e720c78a63b5fd2dd76db1f686f61fa63",
-      "bytes": 202469
-    },
-    {
       "file": "photo-card-photos.jpg",
-      "sha256": "24fe3fae3b8c0b939a465c82fd6893d9247caddaaf4f9d9d97de4b08c5550da1",
-      "bytes": 214882
+      "sha256": "0dc493cc1fc41cde85d6687faba7b7f7c7f03c5e3737d0d40a6f978073984fe2",
+      "bytes": 130824,
+      "alt": "vintage blue and black antique car with wire wheels raised on a flatbed lift for"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "47db9d4597b5466383f4127440441e73d8e597fe591f1912289990ce5ff72a68",
-      "bytes": 254187
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "578c21f59f1cd6fde6ef7b6d2a87c04f7abc265422585d00ab995ebc492d4ce9",
-      "bytes": 350636
+      "sha256": "3835c6b192b3b5e686acb55e79a6986c932cec2d805e54f5f46642a65658aebd",
+      "bytes": 114281,
+      "alt": "white pickup truck with hood open and front bumper removed exposing the radiator"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "2c74daf1fa1455ae6cfd0c78ba749fe52a45129370c4d3296a3d3827891131e8",
-      "bytes": 194821
+      "bytes": 194821,
+      "alt": "empty blue four post alignment lift with diamond plate ramp in an unoccupied sho"
     },
     {
       "file": "photo-gallery-1.jpg",
       "sha256": "2f316daee85d59953609fbb64f1d1c0eb64c92739e32603753a33870e409a373",
-      "bytes": 140077
+      "bytes": 140077,
+      "alt": "engine bay backfiring with a large flame while two mechanics in hoodies work und"
     },
     {
       "file": "photo-gallery-2.jpg",
       "sha256": "acfd70b48f87353fe427338ef6fdaf80225ed5b6ebef7de00d2dfa69c72b8eae",
-      "bytes": 317769
-    },
-    {
-      "file": "photo-gallery-3.jpg",
-      "sha256": "41caa86d631950ba1342759033ed2a1490f0a91a84eef4bd0abb388fc23253bd",
-      "bytes": 292470
+      "bytes": 317769,
+      "alt": "blue sedan raised on a red scissor lift photographed from the rear inside the sh"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "3f1cc208b4b2c2c5f8cdf4a3ae608aa09f0bde8244d3b036fd112c3653e5bfbd",
-      "bytes": 315861
-    }
-  ],
-  "failed": [],
-  "gallery_gaps": [
+      "bytes": 315861,
+      "alt": "dark gray sports car raised on a red alignment lift inside the shop bay with too"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "41caa86d631950ba1342759033ed2a1490f0a91a84eef4bd0abb388fc23253bd",
+      "bytes": 292470,
+      "alt": "black sports car with white racing stripes raised on a lift beside red rolling toolboxes",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:racing:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
     {
       "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "storefront exterior showing West Tire and Auto Repair sign, red awning, and parking lot with customer cars",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "empty red vehicle alignment rack with parallel rails and hand tools resting on the platform",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "close up of a vehicle underbody aluminum oil pan and bolts photographed during service",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "black sports car with white racing stripes raised on a lift beside red rolling toolboxes",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:racing:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

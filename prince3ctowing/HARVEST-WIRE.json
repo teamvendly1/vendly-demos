@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:20:09.838Z",
+ "at": "2026-08-26T17:36:16.260Z",
  "slug": "prince3ctowing",
  "wired": [
   {
@@ -12,13 +12,21 @@
    "reason": "hero_work_rank"
   },
   {
-   "slot": "photo-about.jpg",
+   "slot": "photo-card-about.jpg",
    "from": "google-8e6b62fb9c255332.jpg",
-   "bytes": 482804,
-   "letterbox_stripped": null
+   "bytes": 207178,
+   "smart_crop": true,
+   "src": "google-8e6b62fb9c255332.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 80,
+   "detail_score": 23.979,
+   "orientation": "portrait"
   },
   {
-   "slot": "photo-card-about.jpg",
+   "slot": "photo-about.jpg",
    "from": "google-428cc4d8ae90b655.jpg",
    "bytes": 408124,
    "letterbox_stripped": null
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-1bc2b1cf1ca54a63.jpg",
-   "bytes": 395071,
-   "letterbox_stripped": null
+   "bytes": 130410,
+   "smart_crop": true,
+   "src": "google-1bc2b1cf1ca54a63.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 70,
+   "detail_score": 26.186,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-187061e29c8f7b7d.jpg",
-   "bytes": 391451,
-   "letterbox_stripped": null
+   "bytes": 162588,
+   "smart_crop": true,
+   "src": "google-187061e29c8f7b7d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 36.75,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-4d1214c2b8bbeba1.jpg",
-   "bytes": 382233,
-   "letterbox_stripped": null
+   "bytes": 132980,
+   "smart_crop": true,
+   "src": "google-4d1214c2b8bbeba1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1560x1170",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 17.828,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-a0cb9e3028a1b8d7.jpg",
-   "bytes": 299294,
-   "letterbox_stripped": null
+   "bytes": 165634,
+   "smart_crop": true,
+   "src": "google-a0cb9e3028a1b8d7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 49.514,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-62f1489841beeef8.jpg",
-   "bytes": 295992,
-   "letterbox_stripped": null
+   "bytes": 125460,
+   "smart_crop": true,
+   "src": "google-62f1489841beeef8.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 18.759,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-18b12d4a94c29e99.jpg",
-   "bytes": 286336,
-   "letterbox_stripped": null
+   "bytes": 149061,
+   "smart_crop": true,
+   "src": "google-18b12d4a94c29e99.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 25.334,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -238,8 +294,8 @@
  "photo_candidates": 39,
  "altBySlot": {
   "photo-hero.jpg": "Prince 3C Towing - technician at work on site (photo 11)",
-  "photo-about.jpg": "Prince 3C Towing - technician at work on site (photo 9)",
-  "photo-card-about.jpg": "Prince 3C Towing - technician at work on site (photo 8)",
+  "photo-card-about.jpg": "Prince 3C Towing - technician at work on site (photo 9)",
+  "photo-about.jpg": "Prince 3C Towing - technician at work on site (photo 8)",
   "photo-card-services.jpg": "Prince 3C Towing - technician at work on site (photo 3)",
   "photo-card-reviews.jpg": "Prince 3C Towing - technician at work on site (photo 33)",
   "photo-card-photos.jpg": "Prince 3C Towing - technician at work on site (photo 24)",

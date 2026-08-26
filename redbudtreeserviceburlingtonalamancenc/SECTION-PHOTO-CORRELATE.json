@@ -1,95 +1,222 @@
 {
-  "at": "2026-08-24T14:35:53.361Z",
+  "at": "2026-08-26T17:39:16.025Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "9d7516bdacf6c3d85d18ba94bd0391d5fbf4aa49d6168975e1070d3b18cbb197",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:landscape"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\redbudtreeserviceburlingtonalamancenc\\assets\\google\\google-9d7516bdacf6c3d8.jpg",
+      "score_alt": "Operator working from the bucket alongside a heavy limb, taking it off in sections with the truck set up on the road below"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "392b8a543c31da2bd695d1cfc9657a05080b3eaf0aab080b2a96d0fbba09a490",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\redbudtreeserviceburlingtonalamancenc\\assets\\google\\google-392b8a543c31da2b.jpg",
+      "score_alt": "Boom extended into the canopy against a hazy sky, the operator working high above the treeline"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "0b8c1d8ee3251593a760416a99aece5c2d913bc4c02c9fe001a8fc2f4443580e",
-      "bytes": 631768
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "3fbf142a4eb10dce7ac3a445ce72886381cfb7b4620fc5e3c7218cbfc220c0ee",
-      "bytes": 158001
+      "bytes": 631768,
+      "alt": "Bucket boom run right up into the top of a bare hardwood, the operator working t"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "392b8a543c31da2bd695d1cfc9657a05080b3eaf0aab080b2a96d0fbba09a490",
-      "bytes": 387521
+      "sha256": "9174162dcb6aead04180990308aa0b4f43762e30f7a1f1905a9b61faf74e8263",
+      "bytes": 165923,
+      "alt": "Boom extended into the canopy against a hazy sky, the operator working high abov"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "9d7516bdacf6c3d85d18ba94bd0391d5fbf4aa49d6168975e1070d3b18cbb197",
-      "bytes": 427953
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "dfa58aab291599856af7f06021a45edc4299849faea0993b99f60b3a78b9dbf5",
-      "bytes": 564889
-    },
-    {
-      "file": "photo-gallery-1.jpg",
-      "sha256": "5feabec6c5b8046528812845dbc4fc4b8abba935e5905a1e63f4159a58df4cdb",
-      "bytes": 512893
-    },
-    {
-      "file": "photo-gallery-2.jpg",
-      "sha256": "03b4d314a9c37fad9739fbc025779e7cd5a71cf7eb23d55dc82a04ce277201d3",
-      "bytes": 275883
+      "sha256": "040221bc35efbc4157a96df2e8919a4c983b55d2c020d0bbd493492a9acde7c9",
+      "bytes": 188012,
+      "alt": "Operator working from the bucket alongside a heavy limb, taking it off in sectio"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "98fbebfd05a6f4b1c93d564027de78af2716819d54e5270ef318fc9c1955ba41",
-      "bytes": 588734
-    }
-  ],
-  "failed": [],
-  "gallery_gaps": [
+      "bytes": 588734,
+      "alt": "Seen from the machine seat over the grapple, ground protection mats laid across "
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "5feabec6c5b8046528812845dbc4fc4b8abba935e5905a1e63f4159a58df4cdb",
+      "bytes": 512893,
+      "alt": "Boom raised out of the truck body into the crown above, seen from the ground beside the outriggers",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "03b4d314a9c37fad9739fbc025779e7cd5a71cf7eb23d55dc82a04ce277201d3",
+      "bytes": 275883,
+      "alt": "Stem taken down to a bare spar with the bucket alongside it and the cut sections already stacked at the base",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
+    },
     {
       "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Worker out along a limb in full leaf, roped in and cutting it back toward the trunk",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Sawyer cutting into the base of a heavy stump with the grindings heaped around him and the truck boom behind",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Boom raised out of the truck body into the crown above, seen from the ground beside the outriggers",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Stem taken down to a bare spar with the bucket alongside it and the cut sections already stacked at the base",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

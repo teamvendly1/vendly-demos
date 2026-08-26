@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T22:55:58.653Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T18:01:29.489Z",
   "slug": "t-r-truck-and-auto-repair",
-  "removed_count": 61,
+  "removed_count": 49,
   "removed_sample": [
     "atmosphere-hero.jpg",
     "google-000b3c585c9491aa.jpg",
@@ -17,5 +17,14 @@
     "google-4e01d2485ff96f48.jpg",
     "google-4ebb68f8e850a2aa.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\t-r-truck-and-auto-repair",
+  "published_ref_count": 20,
+  "retained_published_count": 3,
+  "retained_published_sample": [
+    "photo-service-1.jpg",
+    "photo-service-2.jpg",
+    "photo-service-3.jpg"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

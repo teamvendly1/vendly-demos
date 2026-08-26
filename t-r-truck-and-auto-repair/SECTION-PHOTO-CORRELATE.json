@@ -1,124 +1,385 @@
 {
-  "at": "2026-08-22T22:55:57.227Z",
+  "at": "2026-08-26T18:00:54.258Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
-      "file": "photo-service-4.jpg",
+      "file": "photo-card-reviews.jpg",
       "source": "stock-library",
       "sha256": "ec850c054390e7204f76c5441b60eefa5dd780d587e62436e2eaba4f998b03d8",
       "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_deny:lettering:auto"
+      ],
+      "service": "trade work",
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": null,
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": "trade work",
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "Pexels",
+      "sha256": "2c8e1951a4dc7fd28a78c5b4b2aaf2a7a7bb1a93a2d5dab0ca65b74997838196",
+      "reasons": [
         "cross_demo_dupe:christianautomotive/photo-about.jpg"
       ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "source": "stock-library",
-      "sha256": "318b4ed5a24ab683c460e6c5317ac71bbd08d16124ef16b1732081d8bd7bf05a",
-      "reasons": [
-        "cross_demo_dupe:aaautomotiveofncllc/photo-card-about.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "source": "stock-library",
-      "sha256": "21b018a3afd662d6d0f4e28d24d2274825644d1042c5df809e8e0b27bcb0b87b",
-      "reasons": [
-        "cross_demo_dupe:aatireautorepairs/photo-card-reviews.jpg"
-      ],
-      "service": "trade work"
+      "service": "trade work",
+      "score_alt": "Old car engine on a workshop table with tools and a red car in the background."
     }
   ],
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "efe20f711a96ea09152e7adcbd7848e95f89fc5bb562f0842118f1021357d806",
-      "bytes": 400290
+      "sha256": "4e01d2485ff96f4822d48c669d59a202f69eebf4553f464cd3b53050ef09ec98",
+      "bytes": 332895,
+      "alt": "Freshly washed white Ram 3500 crew cab on wet concrete with a red wash bucket an"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "d1e2361e420d7a9d226e4fc54b804eb453f43b63c9814031fb5d7093ff9feea1",
-      "bytes": 405089
+      "sha256": "5773aa0634cefe85b31eecc651be9da5009e51c41670ab640a23a6bcc17f385a",
+      "bytes": 75034,
+      "alt": "Man leaning into the open front and rear doors of an older red Ford crew cab pic"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "bdf4faf80515d1dc50c813384e0fa4c24553fc901832ebb64764c50ab5f4d01a",
-      "bytes": 471169
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "1a9bc5c21dd40b0833b42fc117a7238543530f76fcfd384cfcbc3e1ec625c79b",
-      "bytes": 228144
+      "sha256": "f908f38e9d836f39b4ad452c1573175204433d3076794c3ccd837cde133cb5db",
+      "bytes": 159793,
+      "alt": "Diesel engine lifted out and sitting on a wooden pallet with the exhaust manifol"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "a2d1623c88288f9857e8554591d0065733f222443230c358d1883de558a9f08c",
-      "bytes": 325415
+      "sha256": "6ed45a0ed896f46bf2f19932b4afb76001898e0730aac3c394e6d6ada62a3ad2",
+      "bytes": 139168,
+      "alt": "Chevrolet 2500 with its entire front clip hoisted overhead, leaving the engine, "
     },
     {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "ca9cf61a9c1be7bcb8d7b755994534d86fb0064900cdd714995c7696fb052e15",
-      "bytes": 237369
-    },
-    {
-      "file": "photo-contact.jpg",
+      "file": "photo-gallery-4.jpg",
       "sha256": "6ff2d19b9985967ba98eaaa39baa45760f02f2bbba165867e6451f142f81e6d1",
-      "bytes": 262910
+      "bytes": 262910,
+      "alt": "Orange Nissan 300ZX raised on the blue two post lift while a man in a green tank"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "415d6261ea2dd36bfc6e5e9b499ea1efc325ad48bd4ee143a31079bf49532f44",
-      "bytes": 364547
+      "file": "photo-gallery-8.jpg",
+      "sha256": "cd584ea1f2c169151ce026047670820f11f47dbf740ff09d117f41c481403a08",
+      "bytes": 298303,
+      "alt": "Rear of a cream Mini Cooper with a black roof parked on the concrete beside a bl"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "f9f8a33e57d11be145b4b5f595bdad713a961f3f42803fba3839e359dd8235f1",
-      "bytes": 230301
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "da45ff2164933fd95c4b309219808bab967ec4deb373e695e91d92c0ed9418d3",
-      "bytes": 259032
+      "sha256": "05aa71758086e47ab82e430e89298d136412e8a3de9566da4b447c44af2dc3f0",
+      "bytes": 214824,
+      "alt": "Blue Ford hatchback held up on the blue two post lift with green rolling tool ch"
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "4e01d2485ff96f4822d48c669d59a202f69eebf4553f464cd3b53050ef09ec98",
-      "bytes": 332895
-    },
-    {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "4ff8982fb846e7e87e495e499cabe80d6a40b90a7d89aac757be8f1980e2441b",
-      "bytes": 232048
-    },
-    {
-      "file": "photo-reviewsband.jpg",
-      "sha256": "bb0cd02f8fda11cd91f9ddc8e72a8b116f023359acbceaeae83c5460b6d23213",
-      "bytes": 257669
+      "sha256": "852ce18629cc90e6655994a9d3097b8ca44f55d63e6a733371b828bce03be973",
+      "bytes": 278687,
+      "alt": "Transmission strapped to a red shop crane outside the open bay while three men s"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "fbb81d9e16622a26bc135877016e420e5abb45452c64f2e341a139643e8b0108",
-      "bytes": 298109
+      "sha256": "49cb6fedb045944571ec1950cee399399d02e5409add94f4d96e15532d0eab5f",
+      "bytes": 96127,
+      "alt": "Blue cruiser motorcycle parked on the concrete outside the WE ARE OPEN bay while"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "4187933e997ae3ce8550cd39cee54994e64ee679e325737e138c3e83a0ddf783",
-      "bytes": 293619
+      "sha256": "d0c50c84f7cc13d58acc3dcab10e4510db9a9b8ba511f2760f8c0a5cd34789f9",
+      "bytes": 86593,
+      "alt": "Technician working a rugged diagnostic laptop propped on a silver car's hood out"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "b4f7093a173ded4a99c055ea74923c43e379aff10481dad19ce983fd4c1e0c56",
-      "bytes": 291713
+      "sha256": "f48211e44b6ebe1656a56b90c8f17c0131942dbb9b59dd3151b7d2e42bdc80b4",
+      "bytes": 131226,
+      "alt": "Wide open steel service bay with a two post lift, a diesel engine on a rolling s"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "318b4ed5a24ab683c460e6c5317ac71bbd08d16124ef16b1732081d8bd7bf05a",
+      "bytes": 161469,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "21b018a3afd662d6d0f4e28d24d2274825644d1042c5df809e8e0b27bcb0b87b",
+      "bytes": 73417,
+      "alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "000b3c585c9491aaa44349dc0f5cd7c1af449a6047f60722731d95bcd205fdf9",
-      "bytes": 264100
+      "sha256": "ca9cf61a9c1be7bcb8d7b755994534d86fb0064900cdd714995c7696fb052e15",
+      "bytes": 237369,
+      "alt": "Front of the white and red shop at golden hour, WE ARE OPEN painted above the cl"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "T&R Truck and Auto Repair llc - technician at work on site (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-contact.jpg",
+      "alt": "Red brick and white metal shop front painted Gas and Diesel, with Vet Discount Owned and Free A C Check lettering beside",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:lettering:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Man at the office desk stamping a paper wall calendar, a stack of green handwritten work orders and pens laid out in fro",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Two men at the front of a silver GMC Acadia with its headlights on, one writing on a pad braced against the hood in the ",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "White International 4300 medium duty truck with its cab tilted forward, the diesel engine and radiator exposed, parked o",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Man wearing a bluetooth earpiece writing notes with a laptop open on a car's hood outside the shop's brick and white wal",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Man sitting astride a blue cruiser motorcycle outside the shop while two others look it over, the neon OPEN sign lit in ",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Two men at the driver's door of a silver GMC crossover parked beside the office window, low sun flaring off the white wa",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "White International flatbed lettered NOT FOR HIRE parked on the grass verge directly under the T and R Truck and Auto Re",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "alt": "Black flat finish rat rod flatbed truck parked on the concrete beneath the T and R roadside sign in low evening sun.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "alt": "Close view of the T and R Truck and Auto Repair sign board with the shop's flatbed truck parked underneath and the highw",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

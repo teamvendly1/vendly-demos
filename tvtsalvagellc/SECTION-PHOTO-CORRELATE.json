@@ -1,66 +1,166 @@
 {
-  "at": "2026-08-18T08:45:40.881Z",
+  "at": "2026-08-26T18:06:03.853Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "8dda8f6bbe5b59bc47d91c61ad485781b6e8d9cdabf5482909e1aa95f5531f9b",
-      "bytes": 560442
+      "source": "harvest-fallback",
+      "sha256": "0db1e9489dd752a841bd3d8689596e774a917bf6435b8d1a4fdf232e46b41ca5",
+      "reasons": [
+        "unflattering_subject:unflattering:wreck"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tvtsalvagellc\\assets\\google\\google-0db1e9489dd752a8.jpg",
+      "score_alt": "Flatbed with amber lights flashing hauls a dark hatchback through a nighttime parking lot"
     },
     {
-      "file": "photo-card-about.jpg",
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
       "sha256": "26c775aa93d843dddab1f81c28ef584bbfe22ea5614bd440c4f86b5b04dfe694",
-      "bytes": 384724
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tvtsalvagellc\\assets\\google\\google-26c775aa93d843dd.jpg",
+      "score_alt": "Flatbed parked outside the open garage bay while a technician works on a vehicle inside the shop"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "8409c6b3a265f441952c58f19b6b68ad28c0332740355d65e7ad52a964e1c34f",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tvtsalvagellc\\assets\\google\\google-8409c6b3a265f441.jpg",
+      "score_alt": "Flatbed hauls a custom gray Dodge Challenger on big chrome wheels under a parking lot light at night"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "8d690cf9db4e60b46608ddd5fd5d5268cd96dc22a90af3469e22f0e277f3615e",
+      "bytes": 183275,
+      "alt": "Flatbed parked outside the open garage bay while a technician works on a vehicle"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "90993b8576631f99afacb6be7e042e917688baec57fc7e3c0c485f0998d58a99",
-      "bytes": 679624
+      "sha256": "9c96473d018f7fc245d07686583b5c3729bd443571515a218dc590f316cc3d79",
+      "bytes": 278333,
+      "alt": "Flatbed loaded with a black Mercedes sedan parked roadside among autumn pine tre"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "35cea3e5e2657c9985989e9c2f21b88b898747de643d9499c3c2a6180b227474",
-      "bytes": 377724
+      "sha256": "fba9c80ecadbc5023e01de725241dd4db82a89d0308b6494f23303730632c1b5",
+      "bytes": 164564,
+      "alt": "Flatbed transports two vintage Ford tractors, one gray and one red, down a rural"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "914af6e5fb5874ce9cd4996279bff67dfdb4f73e73c585c82bd263c10577278f",
-      "bytes": 437310
+      "sha256": "699af228fd44f136df37b338c40443d70402c7c9a01b44a57700b578a6371226",
+      "bytes": 129824,
+      "alt": "Flatbed hauls a black cruiser motorcycle strapped upright in a strip mall parkin"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "9b311d6db38b08ec40910237f93cbad55f59eebfba61659aa5f6b5b7f2d22ecf",
-      "bytes": 292270
+      "bytes": 292270,
+      "alt": "Flatbed carries a red Toyota Yaris hatchback under a clear blue sky outside a sh"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "efafb47aa5dde2a66377fe018647df857780d09638f2a29eb379c0ea6965b196",
+      "bytes": 432312,
+      "alt": "Flatbed loaded with a gray minivan parked in a wooded driveway near a home's bac"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "9fe18d24a6955594d87475d332963ca8b5c7753cb6de4c0b7f4d64c2d744c966",
+      "bytes": 427916,
+      "alt": "Flatbed carries a white Ford pickup truck along a grassy roadside shoulder"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "93be388356bd490046f252b53898f0a1e6d5453b1fe34753b93046e57ae4fb78",
+      "bytes": 400058,
+      "alt": "Flatbed loaded with a dark BMW sedan parked among trees beside a large outdoor A"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "e1622f6226cc75e810729ce4a93870e3176321516ff0433a80ec87c860d0ac06",
+      "bytes": 260119,
+      "alt": "Flatbed loaded with a black sedan parked under a gas station fuel canopy in Abbe"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "357359cf45aca4828024fd00e814e21157bfb3dc01169e40661694efe8868e70",
+      "bytes": 255688,
+      "alt": "Flatbed loaded with a black GMC Yukon Denali parked under a gas station canopy o"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "d700d4dc90b9b6874234557ce86d541769ce01cd29477fb5fca2980d843ac976",
+      "bytes": 225076,
+      "alt": "Flatbed carries a black Toyota Sequoia SUV backlit by low evening sun"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "dfb98364ae940f94ade998e6e686bc93d059a061dec585382e95cc047e67bd21",
+      "bytes": 154331,
+      "alt": "Close-up of the cab door reading Time Valued Towing and Transport with a car loa"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "0e4097e0c871a3abd310f8a84a2ddb9c035dd73b94066ddccd1ec01006ea934b",
-      "bytes": 207411
+      "bytes": 207411,
+      "alt": "Flatbed hauls a blue Toyota Highlander SUV strapped down along a chain-link fenc"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "171d603b61b0ee5c422da1ccc0e77164e5ef869c5bb0daf58438eac3778def06",
-      "bytes": 278776
+      "bytes": 278776,
+      "alt": "Flatbed hauls a black Dodge Ram 1500 pickup truck through a residential parking "
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "8409c6b3a265f441952c58f19b6b68ad28c0332740355d65e7ad52a964e1c34f",
-      "bytes": 221609
+      "sha256": "324df23a4f5b55f5ee894709e2cc70d31ae0c52e22dad8a542f12a3628e8463d",
+      "bytes": 99824,
+      "alt": "Flatbed hauls a custom gray Dodge Challenger on big chrome wheels under a parkin"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "3f9f2056fcd7bfb0d8e44877835fbdc30f712aaff8680cf06ca0eb5d9dfc1260",
-      "bytes": 193442
+      "sha256": "3ed21ca8d54c54c4f1105d0996a8c0f7dfc61665adaf5ef2efff9721d07aa0e2",
+      "bytes": 105599,
+      "alt": "Flatbed with tilted bed loads a yellow convertible sports car at sunset on a rur"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "6e6a48a9cdbd90a8914c9ebeba2397d5600207394ad2bbc2f81eb3705db80649",
-      "bytes": 286621
+      "sha256": "3839b4453a8e679fd9633fd8f1f2660c9bdf1ac06a01b55b033efd471301fd32",
+      "bytes": 72937,
+      "alt": "Flatbed with amber lights flashing hauls a dark hatchback through a nighttime pa"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Flatbed recovers a wrecked red GMC Yukon from a wooded roadside, driver visible in the cab",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:wreck",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -1,41 +1,539 @@
 {
-  "at": "2026-08-18T21:26:29.494Z",
+  "at": "2026-08-26T17:41:08.098Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "harvest-fallback",
+      "sha256": "8af143d6b2c2c3aeca12088b30442b6bf2db390aa2488c067ba3b1cb0dacb552",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rightmyerlawncareandstumpgrinding\\assets\\google\\google-8af143d6b2c2c3ae.jpg",
+      "score_alt": "Landscaping crew and dump trailer clearing overgrown shrub beds beside a garage"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "19bc25d9fc8ff68d11e1f31c37ac08470fc9b6d5851c64cf96542395c9843b8b",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rightmyerlawncareandstumpgrinding\\assets\\google\\google-19bc25d9fc8ff68d.jpg",
+      "score_alt": "Yellow Caterpillar and orange Kubota mini excavators parked side by side in an equipment yard"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "010c0552c5f0001015943f8c515c07c6e67c17b4001129b2379db89e1291cc1f",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": "Tree service",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rightmyerlawncareandstumpgrinding\\assets\\google\\google-010c0552c5f00010.jpg",
+      "score_alt": "Grey pickup truck towing the Rightmyer Lawncare and Stump Grinding branded enclosed trailer on a lawn"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "b72175b604ae57060afebd2ef3efa111c32d12bb826f7194fd92573f5f61e3f4",
-      "bytes": 569759
+      "bytes": 569759,
+      "alt": "Freshly mulched garden bed with a young crepe myrtle beside a brick building and"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "8af143d6b2c2c3aeca12088b30442b6bf2db390aa2488c067ba3b1cb0dacb552",
-      "bytes": 397591
+      "sha256": "aa69a27ad7cce1da06b05296311445dbffa792db68eec7fb8e73e1981d332fa9",
+      "bytes": 198541,
+      "alt": "Landscaping crew and dump trailer clearing overgrown shrub beds beside a garage"
     },
     {
-      "file": "photo-card-photos.jpg",
-      "sha256": "b993bcdd59fe306f39f3d7ed61bb84849f5806a8c28a0546ead3191a26756994",
-      "bytes": 633009
+      "file": "photo-contact.jpg",
+      "sha256": "143def72611a18c85361f315c30b7bef71bbeb7f0876ad809ef2462f1c8a26c2",
+      "bytes": 450701,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 22)"
     },
     {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "6960363f432e97fe459ff201f00ebb922798792501d4481d5c1f9e8576f442f6",
-      "bytes": 518818
+      "file": "photo-ctaband.jpg",
+      "sha256": "bec7e900a62ca248e74f634636bfec1acd1bfcc883e47e8fa74cafde27067dd7",
+      "bytes": 575172,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 24)"
     },
     {
-      "file": "photo-card-services.jpg",
+      "file": "photo-gallery-1.jpg",
       "sha256": "cc5f5e243b25334436174ea30fa8629f4bd8d602134d3b1dce68f50c145fae8b",
-      "bytes": 628458
+      "bytes": 628458,
+      "alt": "Yellow stump grinder parked in a yard beside a broken tree trunk near a house"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "6da8c0b04a69523a09dedfeea602519f02ed2e23a0fe4fc28ef556ed823b7cc3",
-      "bytes": 465843
+      "bytes": 465843,
+      "alt": "Freshly trimmed round hedges and fresh pine straw mulch along a brick house foun"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "aff907ad943726b6d335de7aabe0a656923ccec9145969eddb6bb0fbdcd19805",
+      "bytes": 448261,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 6)"
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "c43bd8a9a7ceae72216636476d20fc59d94e52377c815363ca1e795b68f48533",
+      "bytes": 548273,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 17)"
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "08016da98b57f779a67f649bc869f279a0348d4ceb836342a55510d4215258e5",
+      "bytes": 441014,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 1)"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "b4daa31208953acdb704b9eff3619ef22b52445269697a6b214a6ec733fa2d11",
+      "bytes": 240371,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "df155a0cd5abdb0b74c77545da1161942f61e905c50198e1cefa3ff93fda4c51",
+      "bytes": 605460,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 30)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "49278c7d718768a4c149315b183ceb404387585600c1b5b49e682aee5739a773",
+      "bytes": 601721,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 9)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6960363f432e97fe459ff201f00ebb922798792501d4481d5c1f9e8576f442f6",
+      "bytes": 518818,
+      "alt": "Yellow stump grinder with the Rightmyer Lawncare and Stump Grinding branded panel, grinding a fresh stump in a backyard",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:branded:landscape"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "bd0957d3e8a658ae6cbec6a8e4974bc7786890873dbeb523d1dff0d2dfa6d9bd",
+      "bytes": 517913,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 20)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "ed1cb1c02db64b8718fb8ea24694159157ea41155d6140ad45e6591c3fc6894b",
+      "bytes": 517062,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 23)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "f06f6a9e58b633965c516d70cfd081c6ff4caaf2c16b281d01e78799512adad6",
+      "bytes": 480455,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 14)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "80769e42fccbea1fc51a10559f875eea107c11a7f14b5ed34cf46c821f77d316",
+      "bytes": 479362,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 31)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "1ced8be82630e021cf484c0fb17aaa584a75ca87c7af4007e316872f1b692643",
+      "bytes": 466911,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 11)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "b5f0bf224b1087896335bc752d8e99c336a45287a2beffb30d8911d052dcb756",
+      "bytes": 153857,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 3)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "34915c9076fbd5934a2bf572a7ea712945a3346da8ff0c0bd81b5d2dda32850f",
+      "bytes": 152028,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 19)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "52c8d96b7ba57854b11de130624352a4889d3950d52416dd79bc2c9beef617ae",
+      "bytes": 420105,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 25)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "a80de52f990c344c884d7675e3a586075df600464c5df8a227dd52a0e52656e9",
+      "bytes": 387496,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 16)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "6e3b6ac1f39774706bc70b51bb6cf856ce697fb5248be823787714b6132469ed",
+      "bytes": 363093,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 27)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "0878da80e3e63340c55eceae71c2aa0c15f176da68cbf75e479b419f4348bdd2",
+      "bytes": 460979,
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 12)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 18)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 28)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 30)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Yellow stump grinder with the Rightmyer Lawncare and Stump Grinding branded panel, grinding a fresh stump in a backyard",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:branded:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 20)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 23)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 14)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 31)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 11)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 10)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 3)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 19)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 25)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 16)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 27)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "alt": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 12)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg",
+    "correlate_restore_no_stock:photo-service-4.jpg",
+    "correlate_restore_no_stock:photo-service-5.jpg",
+    "correlate_restore_no_stock:photo-service-6.jpg",
+    "correlate_restore_no_stock:photo-services-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
