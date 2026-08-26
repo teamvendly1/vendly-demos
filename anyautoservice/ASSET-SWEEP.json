@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:02:52.964Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T15:46:36.282Z",
   "slug": "anyautoservice",
-  "removed_count": 47,
+  "removed_count": 45,
   "removed_sample": [
     "google-02eec172351f7c36.jpg",
     "google-078f7099cabf9538.jpg",
@@ -17,5 +17,10 @@
     "google-5b783b1c924f742e.jpg",
     "google-628260e3a500a4b3.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\anyautoservice",
+  "published_ref_count": 30,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

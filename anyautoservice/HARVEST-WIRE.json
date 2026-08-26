@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:02:45.550Z",
+ "at": "2026-08-26T15:45:53.542Z",
  "slug": "anyautoservice",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-078f7099cabf9538.jpg",
-   "bytes": 357590,
-   "letterbox_stripped": null
+   "bytes": 131573,
+   "smart_crop": true,
+   "src": "google-078f7099cabf9538.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 22.709,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-46766acc3b8515f1.jpg",
-   "bytes": 268339,
-   "letterbox_stripped": null
+   "bytes": 119539,
+   "smart_crop": true,
+   "src": "google-46766acc3b8515f1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 25,
+   "detail_score": 27.626,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-a030e301bf3f26ce.jpg",
-   "bytes": 363731,
-   "letterbox_stripped": null
+   "bytes": 147673,
+   "smart_crop": true,
+   "src": "google-a030e301bf3f26ce.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 75,
+   "detail_score": 27.89,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-52d50cb4e2b718b9.jpg",
-   "bytes": 345871,
-   "letterbox_stripped": null
+   "bytes": 143917,
+   "smart_crop": true,
+   "src": "google-52d50cb4e2b718b9.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 65,
+   "detail_score": 27.42,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-91ea0299d5484055.jpg",
-   "bytes": 276911,
-   "letterbox_stripped": null
+   "bytes": 111066,
+   "smart_crop": true,
+   "src": "google-91ea0299d5484055.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 26.198,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-d769a61ab73b9e74.jpg",
-   "bytes": 269962,
-   "letterbox_stripped": null
+   "bytes": 125316,
+   "smart_crop": true,
+   "src": "google-d769a61ab73b9e74.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 40,
+   "detail_score": 27.717,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-b371803326fe7fdb.jpg",
-   "bytes": 266362,
-   "letterbox_stripped": null
+   "bytes": 107110,
+   "smart_crop": true,
+   "src": "google-b371803326fe7fdb.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 24.377,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -150,16 +206,39 @@
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-contact-hero.jpg",
+   "slot": "photo-ba-before.jpg",
    "from": "google-6f0338600b5fbe97.jpg",
    "bytes": 435545,
-   "letterbox_stripped": null
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
   },
   {
-   "slot": "photo-reviews-hero.jpg",
+   "slot": "photo-family.jpg",
    "from": "google-cb0def54f50a3cd6.jpg",
    "bytes": 431658,
-   "letterbox_stripped": null
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-156279f9c22daac4.jpg",
+   "bytes": 396335,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-8e48e0649b218a41.jpg",
+   "bytes": 370084,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-fcbd16b252a56a62.jpg",
+   "bytes": 363552,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
   },
   {
    "slot": "logo.png",
@@ -171,7 +250,7 @@
  ],
  "skipped": [
   "classification read: 78 verdicts",
-  "staged 39 harvest photos",
+  "staged 39 harvest photos from assets",
   "hero_cand_refuse:google-4151b139ceea8a3a.jpg:road_no_landscape",
   "hero_cand_refuse:google-6f0338600b5fbe97.jpg:road_no_landscape",
   "hero_cand_refuse:google-cb0def54f50a3cd6.jpg:road_no_landscape",
@@ -241,7 +320,11 @@
   "photo-contact.jpg": "Dark SUV raised on a lift with the hood open beside a rolling tool cabinet",
   "photo-photos-cta.jpg": "Silver Range Rover raised on a lift in the service bay",
   "photo-reviewsband.jpg": "Sedan raised on a two-post lift inside the service bay",
-  "photo-contact-hero.jpg": "White SUV parked in the service bay viewed from the rear",
-  "photo-reviews-hero.jpg": "White sedan parked in front of the garage beside the shop phone number sign"
- }
+  "photo-ba-before.jpg": "White SUV parked in the service bay viewed from the rear",
+  "photo-family.jpg": "White sedan parked in front of the garage beside the shop phone number sign",
+  "photo-service-4.jpg": "Exterior shop lot with Any Auto Garage signage and several cars parked",
+  "photo-service-5.jpg": "Exterior garage lot with several parked cars in front of the shop building",
+  "photo-service-6.jpg": "Auto Garage storefront exterior signage with cars parked out front"
+ },
+ "dedupe_fixed": 5
 }
