@@ -1,67 +1,276 @@
 {
-  "at": "2026-08-22T16:47:14.089Z",
+  "at": "2026-08-26T00:56:55.108Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "landscaping",
   "replaced": [
     {
       "file": "photo-about.jpg",
-      "source": "harvest-fallback",
-      "sha256": "37b6dc0fa3b90d9611e47407bf96cf504e2d603d27e16b4be047df8710473610",
+      "source": "stock-library",
+      "sha256": "1b4d254a82f86e44971dfd3e2b23364c32d21ba4f494879438cb61bbb7ef15c1",
       "reasons": [
         "tiny_fb_or_screenshotish"
       ],
       "service": "crew shop jobsite",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\fb-photos\\fb-08.jpg"
+      "score_alt": "catch basin yard drainage"
     },
     {
       "file": "photo-card-about.jpg",
-      "source": "harvest-fallback",
-      "sha256": "14c6eecdc01c9522ae56f79054253b4419caa23b4f8895c50829e0b947658abf",
+      "source": "stock-library",
+      "sha256": "c9f5f2cd8c1ab83a527c6e05c4b8c65ababbbe947d0456e8f0da65a1e4982bbf",
       "reasons": [
         "tiny_fb_or_screenshotish"
       ],
       "service": "crew shop jobsite",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\fb-photos\\fb-05.jpg"
+      "score_alt": "landscape edging bed install"
     },
     {
-      "file": "photo-card-photos.jpg",
+      "file": "photo-ctaband.jpg",
       "source": "harvest-fallback",
-      "sha256": "bbf64f49accebbca4a67a556fc988223f5818c97439af9ef5cb4fb767e704ddf",
+      "sha256": "c6b56202e36f2e291986705e5cd76d02fdf17ae0bb2b568b8be36cdf3516b79a",
       "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\fb-photos\\fb-07.jpg"
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "source": "harvest-fallback",
-      "sha256": "8355f5c6450d4f2547dcedacd0d65cbf384ebab4ed430eb85897409fda7c5f77",
-      "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\fb-photos\\fb-06.jpg"
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "source": "harvest-fallback",
-      "sha256": "a9d0a3633020df9c0f025d4afe1ccf8412b241a01949ab0b70e26f2489b3f815",
-      "reasons": [
-        "tiny_fb_or_screenshotish"
+        "off_section_relevance:trade_require_miss:landscape"
       ],
       "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\fb-photos\\fb-03.jpg"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\fb-photos\\fb-02.jpg",
+      "score_alt": "Bluegrass Lawn Care LLC - technician at work on site (photo 2)"
     }
   ],
   "kept": [
     {
+      "file": "photo-contact.jpg",
+      "sha256": "b4c2ad9dfcf7ff91ab469ec2d48d523b7fb3bfe6a6945988ae0d870ebd944be3",
+      "bytes": 253886,
+      "alt": "landscape edging bed install"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "6927f0df6110b6851e2a5bd544b702e4dff7415f63ce1848c67314a18320b584",
+      "bytes": 377891,
+      "alt": "mulch bed shrub planting"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "04f5adc170ea670ff5c2bca1f8ce62acf42b6aad5ba086dce5f851fc5e1cc71d",
+      "bytes": 207912,
+      "alt": "landscape edging bed install"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "548a48865a1845cf4827b005f6e6ac130e1001e249f8f099a2f30313304f5302",
+      "bytes": 464697,
+      "alt": "mulch bed shrub planting"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "e979d83fda02234df615eee566f109b228e678e6f8b47a8833084ae9de72bb94",
+      "bytes": 527766,
+      "alt": "landscape edging bed install"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "5576ca4b521d7b5c5b37ccebf41177a324f635fd3c2b9c236664e3bc5cdeb766",
+      "bytes": 414280,
+      "alt": "mulch bed shrub planting"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "a6bacf16202c90fff330fc77df0cf558c680200761bd49e16eeba9f37d65a6fc",
+      "bytes": 163305,
+      "alt": "landscape edging bed install"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "301054c998fe4f7b33c60cc1d68f1eada539d26926d7003d71d6461d24e8ff16",
+      "bytes": 290052,
+      "alt": "mulch bed shrub planting"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "f132a64c9c5cc1ca5ccc0a5aa6bf76b754fe057170cc0671e3ea578f0252cf9c",
+      "bytes": 365382,
+      "alt": "irrigation valve box trench"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "aa097e4c1a1014489d5a7ddf84fb6603ecc4b0b71013d53da25d33c7d0e60a8e",
+      "bytes": 7127,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "tiny_fb_or_screenshotish"
+      ]
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "95e7c4aecd34820fd87ea0a27813627633137822d1ae25520ed6448c8d38bec4",
+      "bytes": 7286,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "tiny_fb_or_screenshotish"
+      ]
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "3895218a815646c4228163cf4e1951e1cc259275cbed0806c646ea53744f7b6e",
+      "bytes": 6774,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "tiny_fb_or_screenshotish"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "8a9891d38e2e6694e0657bebd4afe6390db68238a0146f1f15bf128355c26ffe",
+      "bytes": 10339,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "tiny_gallery_thumb"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "a65c812414b2f6386239439aa2ed4ce1ee0f9d1a488dd55dfdb3451a219ad521",
+      "bytes": 9370,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "tiny_gallery_thumb"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "e554c6775f6549e51f37804e843e964434f4c91f677fd6690aa5aed9c6682913",
+      "bytes": 7248,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "tiny_gallery_thumb"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
       "file": "photo-hero.jpg",
       "sha256": "c6b56202e36f2e291986705e5cd76d02fdf17ae0bb2b568b8be36cdf3516b79a",
-      "bytes": 194564
+      "bytes": 194564,
+      "alt": "Bluegrass Lawn Care LLC - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "flagstone walkway retaining wall",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Bluegrass Lawn Care LLC - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

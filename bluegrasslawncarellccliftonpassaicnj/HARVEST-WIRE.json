@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T16:46:55.624Z",
+ "at": "2026-08-26T00:56:01.751Z",
  "slug": "bluegrasslawncarellccliftonpassaicnj",
  "wired": [
   {
@@ -13,38 +13,70 @@
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 10339,
-   "letterbox_stripped": null
+   "from": "fb-08.jpg",
+   "bytes": 7814,
+   "smart_crop": true,
+   "src": "fb-08.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 43,
+   "detail_score": 19.616,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 11410,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
    "from": "fb-05.jpg",
    "bytes": 11121,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-card-reviews.jpg",
+   "slot": "photo-card-services.jpg",
    "from": "fb-07.jpg",
-   "bytes": 10826,
-   "letterbox_stripped": null
+   "bytes": 6774,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 10,
+   "detail_score": 18.356,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-06.jpg",
+   "bytes": 7286,
+   "smart_crop": true,
+   "src": "fb-06.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 33,
+   "detail_score": 18.602,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
-   "from": "fb-06.jpg",
-   "bytes": 10794,
-   "letterbox_stripped": null
+   "from": "fb-03.jpg",
+   "bytes": 7127,
+   "smart_crop": true,
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 18.886,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 10658,
+   "from": "fb-09.jpg",
+   "bytes": 10339,
    "letterbox_stripped": null
   },
   {
@@ -96,19 +128,25 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 9,
  "photo_candidates": 9,
  "altBySlot": {
-  "photo-hero.jpg": "Freshly striped, professionally mowed backyard lawn bordered by a privacy hedge and mature trees in fall color.",
-  "photo-card-about.jpg": "Two crew members kneeling to install synthetic turf panels in a backyard, seaming the edges by hand.",
-  "photo-about.jpg": "Landscaped bed around a mailbox post with mulch and shrubs next to a stamped paver driveway and stone steps.",
-  "photo-card-services.jpg": "Newly installed white vinyl privacy fence with a row of young arborvitae planted along its base.",
-  "photo-card-reviews.jpg": "Long white vinyl fence line backed by a full row of newly planted arborvitae hedging.",
-  "photo-card-photos.jpg": "Mulched foundation planting bed with a small evergreen shrub and hosta beside a house entry with stone steps.",
-  "photo-gallery-1.jpg": "New landscape bed at a house foundation with mulch, a young weeping tree, and mixed shrubs beside stone steps.",
-  "photo-gallery-2.jpg": "Planting bed along a paver driveway with mulch and shrubs at the base of a stacked-stone house foundation.",
-  "photo-gallery-3.jpg": "Finished synthetic turf patio bordered by stone edging, with outdoor furniture visible in the background."
- }
+  "photo-hero.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 2)",
+  "photo-card-about.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 8)",
+  "photo-about.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 5)",
+  "photo-card-services.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 7)",
+  "photo-card-reviews.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 6)",
+  "photo-card-photos.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 3)",
+  "photo-gallery-1.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 9)",
+  "photo-gallery-2.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 4)",
+  "photo-gallery-3.jpg": "Bluegrass Lawn Care LLC - technician at work on site (photo 10)"
+ },
+ "dedupe_fixed": 5
 }

@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T16:47:15.852Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:57:48.624Z",
   "slug": "bluegrasslawncarellccliftonpassaicnj",
-  "removed_count": 21,
+  "removed_count": 28,
   "removed_sample": [
     "fb-01.jpg",
     "fb-02.jpg",
@@ -17,5 +17,12 @@
     "logo-deslab.png",
     "logo-keyed.png"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\bluegrasslawncarellccliftonpassaicnj",
+  "published_ref_count": 16,
+  "retained_published_count": 1,
+  "retained_published_sample": [
+    "logo-footer.png"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }
