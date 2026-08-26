@@ -1,95 +1,282 @@
 {
-  "at": "2026-08-24T05:50:59.191Z",
+  "at": "2026-08-26T00:49:04.137Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "fbd1a4f9072cab0e50d7f7f83ebe089c7a23088bd9eef7ad28bdbe7e82155c9d",
-      "bytes": 251660
+      "source": "harvest-fallback",
+      "sha256": "f14b05b8141013e889b17f9cdd1faeabc43c1243946b2ee13637700705d826fc",
+      "reasons": [
+        "off_section_relevance:trade_deny:logo:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\autoshop\\assets\\google\\google-f14b05b8141013e8.jpg",
+      "score_alt": "Two technicians in the service bay pose beneath a black Lexus SUV raised on the two-post lift with oil bottles staged on the floor"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "144bbe0f5625584a38270fdd05d08a38cbc11e3afbdcf00a6442b62d93323617",
+      "bytes": 148193,
+      "alt": "Two technicians in the service bay pose beneath a black Lexus SUV raised on the "
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "d1a4202b8ad2702a9a7e1121fa1b985f648a81a3e2139366a41c794d998818a8",
-      "bytes": 255869
+      "sha256": "61e3af8b23c3c99446a772bf7d26060f6de08f757078386d312be5bcc7dc4963",
+      "bytes": 106209,
+      "alt": "Blue rebuilt engine displayed on a metal stand in the lobby beneath a large wall mirror, red and black branded wainscoti",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:branded:auto"
+      ]
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "0f6d6c240bac8a306a03963b641cb86ec346ae11f2cce0afce14be0b52dd7a0e",
-      "bytes": 178736
+      "sha256": "7d1743a6b1fad852574c747c68792b25dd9c0b29e16903a736e0d9b5d838b143",
+      "bytes": 64067,
+      "alt": "View through two doorways to the service reception window and a back storage room with the round AutoShop wall decal and",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "29f24e6b2c10ddb0777ac47ea07c2e0df7b1d2220d64aba72074fca1a8cf4437",
-      "bytes": 237099
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "f14b05b8141013e889b17f9cdd1faeabc43c1243946b2ee13637700705d826fc",
-      "bytes": 324538
+      "sha256": "4bbdfe2d411b3d5f66d380f90ecc7576c5ef275aeb26f058229fd240abc4c09a",
+      "bytes": 122446,
+      "alt": "Lobby seating area looking through to the front reception desk with a computer monitor, next to the glass door bearing t",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:logo:auto"
+      ]
     },
     {
       "file": "photo-gallery-1.jpg",
       "sha256": "d4d5483ad5bd239ef720efe17596e6206ca32bb93375fdbaaf77af042b15634e",
-      "bytes": 157071
+      "bytes": 157071,
+      "alt": "Customer waiting area with two gray leather chairs below the black car-outline AutoShop wall mural, wood plank floor",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:lifestyle_decor:chair"
+      ]
     },
     {
       "file": "photo-gallery-2.jpg",
       "sha256": "addb339a3e2caca662743f52c6115b1976465313bd6dca74ec3afa19ce68fd89",
-      "bytes": 91314
+      "bytes": 91314,
+      "alt": "Inside view of the service reception window with the AutoShop oval decal on the wall and a thank-you-for-your-business s",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ]
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "b65e06ba71be7c943154561e424e651f6a4a789bcfea6040cf1810de21b09630",
-      "bytes": 162714
-    }
-  ],
-  "failed": [],
-  "gallery_gaps": [
-    {
       "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
     },
     {
       "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
       "reasons": [
         "stub"
       ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "b65e06ba71be7c943154561e424e651f6a4a789bcfea6040cf1810de21b09630",
+      "bytes": 162714,
+      "alt": "Waiting room with two gray chairs and a round coffee table facing the glass entry door printed with the oval AutoShop lo",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:lifestyle_decor:chair"
+      ]
     }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Interior wall mural of the AutoShop car logo behind a display shelf holding branded ball caps, a chrome tailpipe, and a ",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:logo:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Blue rebuilt engine displayed on a metal stand in the lobby beneath a large wall mirror, red and black branded wainscoti",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:branded:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "View through two doorways to the service reception window and a back storage room with the round AutoShop wall decal and",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Lobby seating area looking through to the front reception desk with a computer monitor, next to the glass door bearing t",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:logo:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Customer waiting area with two gray leather chairs below the black car-outline AutoShop wall mural, wood plank floor",
+      "relevance": {
+        "ok": false,
+        "score": -25,
+        "reason": "lifestyle_decor:chair"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Inside view of the service reception window with the AutoShop oval decal on the wall and a thank-you-for-your-business s",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Waiting room with two gray chairs and a round coffee table facing the glass entry door printed with the oval AutoShop lo",
+      "relevance": {
+        "ok": false,
+        "score": -25,
+        "reason": "lifestyle_decor:chair"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

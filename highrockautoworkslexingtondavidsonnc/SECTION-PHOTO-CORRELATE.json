@@ -1,51 +1,344 @@
 {
-  "at": "2026-08-17T04:25:48.265Z",
+  "at": "2026-08-26T00:52:00.867Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
+      "source": "harvest-fallback",
       "sha256": "eccaf61a1c107aa8e21117383a8908ce741a995bd48ede7ad0afe4a28a2a9ac1",
-      "bytes": 357479
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "5194d941ffc99afb9a13766f7fef4ea92c00b445b7ea673811c2cfefbfee3bd5",
-      "bytes": 437618
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "17f307519d6d069374c4b5800afe2770c49154e7b94ea864aeabefbcbc1ad7c3",
-      "bytes": 367984
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "745466048a8daa6539d2cc32fc5415733f6b9fa46e38b5c4aa63a93059975a32",
-      "bytes": 398634
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "87a692c51d2156921a9615a5003254d9110c802adcba303bdf02eb634d8465ac",
-      "bytes": 419284
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-eccaf61a1c107aa8.jpg",
+      "score_alt": "Coupe finished and pulled out onto the gravel in front of the workshop doors, ready for collection"
     },
     {
       "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "2cda64be4cca02902be485e2880e8ae4472f2067bf12bd7732764b0f8cd2ee49",
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-gallery-2.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-2cda64be4cca0290.jpg",
+      "score_alt": "Saloon raised on the two-post lift with the underside clear to work, the arms set square under the jacking points"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "5194d941ffc99afb9a13766f7fef4ea92c00b445b7ea673811c2cfefbfee3bd5",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-5194d941ffc99afb.jpg",
+      "score_alt": "Hot hatch on the lift with the bonnet up and a front wheel off, the brake caliper exposed behind it"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4f7cb8fb409641d49af7d26dd51ef069534b806bea23beb5a17ee3f56fa0d869",
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-services-hero.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-4f7cb8fb409641d4.jpg",
+      "score_alt": "Italian saloon raised on the lift and framed square from the front through the open workshop door"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "87a692c51d2156921a9615a5003254d9110c802adcba303bdf02eb634d8465ac",
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-ctaband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-87a692c51d215692.jpg",
+      "score_alt": "Coupe in the bay with the correct grade of oil set out in front of it before the service starts"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b02cad21e328f65e56d65bc0aad38eb199026bb35ee5bc6f15790403728682ad",
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-quoteband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-b02cad21e328f65e.jpg",
+      "score_alt": "Saloon with the bonnet up in the workshop, tools laid out on the floor within reach of the front end"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "harvest-fallback",
+      "sha256": "6ce9966567419e0b2b163af45108a6ebeba06244213121177d05c1820ad722cc",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-6ce9966567419e0b.jpg",
+      "score_alt": "Compact SUV finished and parked outside the workshop, the wheels cleaned down before handover"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "745466048a8daa6539d2cc32fc5415733f6b9fa46e38b5c4aa63a93059975a32",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-745466048a8daa65.jpg",
+      "score_alt": "Engine bay opened up with the oil being poured, the covers off and the fill point clear"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
       "sha256": "e05af0240c718be96a8ce331fb3b0cddffce4c290e6f00f53077b46df3161170",
-      "bytes": 363943
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\highrockautoworkslexingtondavidsonnc\\assets\\google\\google-e05af0240c718be9.jpg",
+      "score_alt": "Close view down into an engine bay with a tool on a sensor housing, working in among the pipework"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "32c9e71948d4467bbe3e218f13a517f8e2c46e7997c33b09a64ad4f97d60f513",
+      "bytes": 192319,
+      "alt": "Coupe finished and pulled out onto the gravel in front of the workshop doors, re"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "3c7467f95dce34917be694877a9546d09ec1b1ab1f075f93fe7058355d7749b7",
+      "bytes": 162493,
+      "alt": "Engine bay opened up with the oil being poured, the covers off and the fill poin"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "bc4db284b8872c0c7338a8b033928d7ac34c65697a7ba8876e8579e5c12f1114",
+      "bytes": 168030,
+      "alt": "Coupe in the bay with the correct grade of oil set out in front of it before the"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "322fc0fa5a796a580290653c4bba66e3b1a17559002fff8ce078c0805fffd35e",
+      "bytes": 177648,
+      "alt": "Hot hatch on the lift with the bonnet up and a front wheel off, the brake calipe"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "17f307519d6d069374c4b5800afe2770c49154e7b94ea864aeabefbcbc1ad7c3",
+      "bytes": 367984,
+      "alt": "Air conditioning service under way with the recovery machine connected to both s"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "b02cad21e328f65e56d65bc0aad38eb199026bb35ee5bc6f15790403728682ad",
+      "bytes": 242963,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-gallery-6.jpg"
+      ]
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "2cda64be4cca02902be485e2880e8ae4472f2067bf12bd7732764b0f8cd2ee49",
-      "bytes": 304269
+      "sha256": "6ce9966567419e0b2b163af45108a6ebeba06244213121177d05c1820ad722cc",
+      "bytes": 329976,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-gallery-9.jpg"
+      ]
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "4f7cb8fb409641d49af7d26dd51ef069534b806bea23beb5a17ee3f56fa0d869",
-      "bytes": 362914
+      "sha256": "ec4ba42619bd4c749b77b487d8340017e40f8b9bee60833a34ebc67f3a139807",
+      "bytes": 360143,
+      "alt": "High Rock Autoworks - technician at work on site (photo 7)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "318a37092881905ea0f9538b7e038031948e3ebba9ba8e4fd6542addfb9a470d",
+      "bytes": 140400,
+      "alt": "High Rock Autoworks - technician at work on site (photo 5)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "7a9e261e37e17c19ee15bedb8ed2224d7484fd20e71747b7d61b4d22385306f7",
+      "bytes": 147201,
+      "alt": "Full service laid out in front of the car - oil, filters, plugs and wiper blades set out before a single component is to",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "5ce02b6fb2bafdcc2edc44510a03d1924bfebd0f45f4e8f183c4d8a195ed95d8",
+      "bytes": 142493,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-card-reviews.jpg"
+      ]
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "61ad9d0a7de8f2bb64399fca593e9972976660e21374b1e495f981510d77afa9",
+      "bytes": 205995,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:highrockautoworks/photo-gallery-8.jpg"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "High Rock Autoworks - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "High Rock Autoworks - technician at work on site (photo 6)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Transmission service kit laid out on the bench - fluid, filter, pan gasket and additive together before the job starts",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "High Rock Autoworks - technician at work on site (photo 3)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "High Rock Autoworks - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "High Rock Autoworks - technician at work on site (photo 7)",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "High Rock Autoworks - technician at work on site (photo 5)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Full service laid out in front of the car - oil, filters, plugs and wiper blades set out before a single component is to",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-quoteband.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg",
+    "correlate_restore_no_stock:photo-services-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

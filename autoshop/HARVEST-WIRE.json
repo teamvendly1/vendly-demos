@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:50:50.988Z",
+ "at": "2026-08-26T00:48:52.173Z",
  "slug": "autoshop",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-d1a4202b8ad2702a.jpg",
-   "bytes": 255869,
-   "letterbox_stripped": null
+   "bytes": 106209,
+   "smart_crop": true,
+   "src": "google-d1a4202b8ad2702a.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 24.338,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-f14b05b8141013e8.jpg",
-   "bytes": 324538,
-   "letterbox_stripped": null
+   "bytes": 148193,
+   "smart_crop": true,
+   "src": "google-f14b05b8141013e8.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 29.085,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-29f24e6b2c10ddb0.jpg",
-   "bytes": 237099,
-   "letterbox_stripped": null
+   "bytes": 122446,
+   "smart_crop": true,
+   "src": "google-29f24e6b2c10ddb0.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x901",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 26.971,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-0f6d6c240bac8a30.jpg",
-   "bytes": 178736,
-   "letterbox_stripped": null
+   "bytes": 64067,
+   "smart_crop": true,
+   "src": "google-0f6d6c240bac8a30.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 23,
+   "detail_score": 15.222,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",

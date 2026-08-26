@@ -1,9 +1,21 @@
 {
-  "at": "2026-08-25T23:02:09.982Z",
+  "at": "2026-08-26T00:48:10.857Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3d391ded5497c1f345ea127677f0073170e38ad7c32570722697aa131cf76e4c",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\autoserviceexpertsnewbern\\assets\\google\\google-3d391ded5497c1f3.jpg",
+      "score_alt": "Vehicle with the hood open showing the engine bay disassembled and wiring exposed"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -160,16 +172,6 @@
       "sha256": "536e941ab970fdce775f91a408e79e2bf76350c4f0695f8356c717ae27b508bd",
       "bytes": 305787,
       "alt": "Red pickup truck raised on a two-post lift in the shop bay"
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "7440e5bde2ce5685e6d1c458c5e0d2e434e8f578590238e62071432718ef9e1a",
-      "bytes": 169597,
-      "alt": "Parking lot with a landscaped median and a flag pole in the distance",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
     }
   ],
   "failed": [],
@@ -191,8 +193,6 @@
       }
     }
   ],
-  "skipped": [
-    "correlate_restore_no_stock:photo-card-about.jpg"
-  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

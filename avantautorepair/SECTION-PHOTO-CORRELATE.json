@@ -1,51 +1,345 @@
 {
-  "at": "2026-08-22T23:11:57.925Z",
+  "at": "2026-08-26T00:50:20.655Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f3c3c2e095a72ec67a276eebf1794b759557388c8dcb6fe18f9e5e8332862afe",
+      "reasons": [
+        "off_section_relevance:trade_deny:person:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\avantautorepair\\assets\\google\\google-f3c3c2e095a72ec6.jpg",
+      "score_alt": "Close-up of a red motorcycle fuel tank in a cluttered garage"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "2f488e4c3a30b00ba4284df8ea6882e5f989258be70c82d58d31c34610400965",
-      "bytes": 162949
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "91c180b6257412cd015905bcdd64b971471d2069f0fa386103314c2e9198a7ae",
-      "bytes": 270929
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "e4f8de9a4cfb6ce9067dfebe93477c39ca17624ff7341769863ffbae40d18610",
-      "bytes": 238085
+      "bytes": 162949,
+      "alt": "Open engine bay of a tan minivan parked in the yard"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "f3c3c2e095a72ec67a276eebf1794b759557388c8dcb6fe18f9e5e8332862afe",
-      "bytes": 278543
+      "sha256": "a012777ae9f8d20d128449e2ac6341fe316c4e85cae6010df0a7b076fd5d8d1b",
+      "bytes": 94044,
+      "alt": "Close-up of a red motorcycle fuel tank in a cluttered garage"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "ad7d8c33cb031fe0d7ac865a164349ea7ae2cea13ab7ce419fb94ab162fb76e7",
+      "bytes": 98030,
+      "alt": "Close-up of a brake rotor and caliper assembly removed from a vehicle",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "eb2b3179bebf856f029f31612e06a67c697aedd56b83ca3a5560841d42aefd90",
-      "bytes": 363279
+      "sha256": "4440ec517eda01938b17c9f74e594beb30a5f8deb1e6caf8f376a221d7ae226d",
+      "bytes": 138143,
+      "alt": "Close-up of a brake rotor and hub assembly on the ground beside shop tools",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "47202b5a5915a7b7700e218812d122facebaec2ba838491bdd930002c38db438",
-      "bytes": 252146
+      "bytes": 252146,
+      "alt": "Black SUV with a spare tire mounted on the rear door parked in the yard",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "7f9e951dc102ae35a9768c289e67b13aa6e7ba58cd814c772fca8567afd94f7f",
+      "bytes": 224492,
+      "alt": "Close-up of a radiator removed and leaning against a bumper",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "26c622ed29614f949608f21956d9c3894450fc6eb3c16bf990a6bedfa751972b",
+      "bytes": 310121,
+      "alt": "Black SUV's front end covered with pine debris parked in the yard",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:debris:auto",
+        "unflattering_subject:unflattering:debris"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "a028bfb0f0aaa427089a0fb7943a4436cd8cd0f5b0a3b45fc37f6e4803b36035",
+      "bytes": 292570,
+      "alt": "Black SUV parked among trees in the salvage yard",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "78af90c9570452f0e60a79e2781152703fc95980a78de2581a0b7b5ae23d0159",
+      "bytes": 187722,
+      "alt": "Vintage brown pickup truck with googly-eye stickers on the windshield parked at dusk",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "baee77da3cb8fb8ef895a5756bcaee321d9a6d6256b8b4b972e556bd95276123",
-      "bytes": 370124
+      "bytes": 370124,
+      "alt": "Person standing on the seat of a red motorcycle among stacked tires",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:person:auto"
+      ]
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "1afee2a92703b9c86f40f37175f9e5074f0d933e7eb8ec1da772bac5da0be870",
-      "bytes": 246746
+      "bytes": 246746,
+      "alt": "Black SUV parked in the yard with pine needles scattered on the roof",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Person standing beside a red Hyosung motorcycle among stacked tires in the yard",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:person:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Close-up of a brake rotor and caliper assembly removed from a vehicle",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Close-up of a brake rotor and hub assembly on the ground beside shop tools",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Black SUV with a spare tire mounted on the rear door parked in the yard",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Close-up of a radiator removed and leaning against a bumper",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Black SUV's front end covered with pine debris parked in the yard",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:debris:auto"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:debris",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Black SUV parked among trees in the salvage yard",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Vintage brown pickup truck with googly-eye stickers on the windshield parked at dusk",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Person standing on the seat of a red motorcycle among stacked tires",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:person:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "Black SUV parked in the yard with pine needles scattered on the roof",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-ctaband.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-quoteband.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

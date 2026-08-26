@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:11:59.296Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:50:50.338Z",
   "slug": "avantautorepair",
-  "removed_count": 22,
+  "removed_count": 21,
   "removed_sample": [
     "google-1afee2a92703b9c8.jpg",
     "google-1d158fd9e3b873f1.jpg",
@@ -17,5 +17,10 @@
     "google-e4f8de9a4cfb6ce9.jpg",
     "google-eb2b3179bebf856f.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\avantautorepair",
+  "published_ref_count": 17,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

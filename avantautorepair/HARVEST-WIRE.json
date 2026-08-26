@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:11:55.012Z",
+ "at": "2026-08-26T00:50:06.960Z",
  "slug": "avantautorepair",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-91c180b6257412cd.jpg",
-   "bytes": 270929,
-   "letterbox_stripped": null
+   "bytes": 109061,
+   "smart_crop": true,
+   "src": "google-91c180b6257412cd.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 21.463,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-eb2b3179bebf856f.jpg",
-   "bytes": 363279,
-   "letterbox_stripped": null
+   "bytes": 138143,
+   "smart_crop": true,
+   "src": "google-eb2b3179bebf856f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 80,
+   "detail_score": 22.34,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-f3c3c2e095a72ec6.jpg",
-   "bytes": 278543,
-   "letterbox_stripped": null
+   "bytes": 94044,
+   "smart_crop": true,
+   "src": "google-f3c3c2e095a72ec6.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 10,
+   "detail_score": 13.341,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-e4f8de9a4cfb6ce9.jpg",
-   "bytes": 238085,
-   "letterbox_stripped": null
+   "bytes": 98030,
+   "smart_crop": true,
+   "src": "google-e4f8de9a4cfb6ce9.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 30,
+   "detail_score": 19.584,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -87,7 +119,7 @@
  ],
  "skipped": [
   "classification read: 26 verdicts",
-  "staged 13 harvest photos",
+  "staged 13 harvest photos from assets",
   "refused_by_class:google-1d158fd9e3b873f1.jpg:reject",
   "hero_cand_refuse:google-eb2b3179bebf856f.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-26c622ed29614f94.jpg:road_no_landscape",
@@ -108,8 +140,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 12,
@@ -128,5 +163,6 @@
   "photo-ctaband.jpg": "Black SUV with a spare tire mounted on the rear door parked in the yard",
   "photo-quoteband.jpg": "Black SUV parked in the yard with pine needles scattered on the roof",
   "photo-gallery-4.jpg": "Vintage brown pickup truck with googly-eye stickers on the windshield parked at dusk"
- }
+ },
+ "dedupe_fixed": 5
 }
