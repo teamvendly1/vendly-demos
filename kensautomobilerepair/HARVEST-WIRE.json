@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:46:08.818Z",
+ "at": "2026-08-26T00:21:53.468Z",
  "slug": "kensautomobilerepair",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-74ced035d70e7f63.jpg",
-   "bytes": 553202,
-   "letterbox_stripped": null
+   "bytes": 229913,
+   "smart_crop": true,
+   "src": "google-74ced035d70e7f63.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1205",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 39.899,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-6a7e2617583349f3.jpg",
-   "bytes": 314146,
-   "letterbox_stripped": null
+   "bytes": 135696,
+   "smart_crop": true,
+   "src": "google-6a7e2617583349f3.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1205",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 34.685,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-5cbefbd33d131bf3.jpg",
-   "bytes": 307218,
-   "letterbox_stripped": null
+   "bytes": 127682,
+   "smart_crop": true,
+   "src": "google-5cbefbd33d131bf3.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 20.172,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-b61bde2ee2ca7cd7.jpg",
-   "bytes": 290377,
-   "letterbox_stripped": null
+   "bytes": 100352,
+   "smart_crop": true,
+   "src": "google-b61bde2ee2ca7cd7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 3,
+   "detail_score": 17.802,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-5fa9dd2a37273bfe.jpg",
-   "bytes": 150727,
-   "letterbox_stripped": null
+   "bytes": 61792,
+   "smart_crop": true,
+   "src": "google-5fa9dd2a37273bfe.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 10.041,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-2ddc6e3621077f26.jpg",
-   "bytes": 238803,
-   "letterbox_stripped": null
+   "bytes": 112577,
+   "smart_crop": true,
+   "src": "google-2ddc6e3621077f26.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 15,
+   "detail_score": 23.814,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-79850651fb75ccf4.jpg",
-   "bytes": 226679,
-   "letterbox_stripped": null
+   "bytes": 100567,
+   "smart_crop": true,
+   "src": "google-79850651fb75ccf4.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 45,
+   "detail_score": 17.422,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -129,7 +185,7 @@
  ],
  "skipped": [
   "classification read: 42 verdicts",
-  "staged 21 harvest photos",
+  "staged 21 harvest photos from assets",
   "refused_by_class:google-a224530aaf89fb4f.jpg:reject",
   "refused_by_class:google-bfac7ff5bc8fb17e.jpg:reject",
   "hero_cand_refuse:google-eba3870486711fba.jpg:portrait_aspect_hero_refuse",
@@ -152,8 +208,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 19,
@@ -179,5 +238,6 @@
   "photo-service-3.jpg": "Close-up of the Ken's Auto-Mobile Repair yard sign with its phone number",
   "photo-gallery-7.jpg": "Red classic Corvette parked inside a garage",
   "photo-gallery-8.jpg": "Black classic Corvette parked inside a garage with shelving"
- }
+ },
+ "dedupe_fixed": 5
 }
