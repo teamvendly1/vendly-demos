@@ -1,91 +1,346 @@
 {
-  "at": "2026-08-21T06:05:00.184Z",
+  "at": "2026-08-25T23:40:09.380Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [],
   "kept": [
     {
+      "file": "photo-ctaband.jpg",
+      "sha256": "2541b88dd3a3c52c8df6a2666b0464409a4fbd7ce3a5aa069e98d824afc1f8d0",
+      "bytes": 132280,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 6)"
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "a2c13e313a098dd238a19e42af0e747deff53cfe6301db7c8453b880b267e43b",
+      "bytes": 109798,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 3)"
+    },
+    {
       "file": "photo-about.jpg",
-      "sha256": "1398ec07733af858669d12fa3d31cf3531373b3b3eedb0bc3a6cbc9c2ca75235",
-      "bytes": 202334
+      "sha256": "51e9e46026fd744dc775406e479c47fbfecd6f6fbb79d8be874afb3696c40e9a",
+      "bytes": 547825,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 12)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "04c60d01769914fda86c6e73b06d5934c6c099dbcb3347b8393818182cc3b4a5",
-      "bytes": 111273
+      "sha256": "64035daa7ae04caebdf3482b0b7e23389bbab6536e28598107a33aef88101ba6",
+      "bytes": 193905,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 11)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "4224e3deac5e4b5eb581d643b4f77ff96858ec8c2eedf3a9a359f6b75919b913",
-      "bytes": 309664
+      "sha256": "d2ee2307a4307ec4b29d6025c11ee0ee03c8b7f3dc1053becab6491ddca03097",
+      "bytes": 112820,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 4)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "70f56cdedc56c23c18beb3ef59a205af4a5766d21ea4f4e034016974307a1004",
-      "bytes": 139614
+      "sha256": "0106067f40427228932de43286114210a6e9981a891e4a4ec277aac13e22a8f6",
+      "bytes": 133368,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 10)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "4261c72f2184889303982680458546288f1297e57d6369c57140650ae35732cf",
-      "bytes": 211874
+      "sha256": "94e56801ac71d2f0b74e26655948ddd8728a52e817aebeca7c1a7681c25e883e",
+      "bytes": 201531,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 9)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "14507348e255a31e5d8e8e964650f7e4f0bd97312a956091bb739386f5cd60a8",
-      "bytes": 297581
+      "file": "photo-gallery-1.jpg",
+      "sha256": "dfa03adf360de76c7cbc850e85d366d7cca3729d42f304af6c0d0b1906ccc9c2",
+      "bytes": 285812,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 7)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "2fdd7c60b42990175731b0e3524eba316b792dad1edfe172e3934d394508996a",
-      "bytes": 124932
+      "file": "photo-gallery-2.jpg",
+      "sha256": "3c0b7d1d033f6747d90f469e659c551813777e549a7aec94d2f7df24f65caa70",
+      "bytes": 271940,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 8)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "0ec2617c2b03b29fa28d7f8895701df6b4981cb239988b10e54c1a4de62f1f68",
+      "bytes": 144499,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 1)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "da3127e8ade588f44016a3f4cb5075e25908f4010c24b678302caeff6cb14302",
+      "bytes": 105293,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 5)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "ce0e58a9591d40f92e9a300794b0a6a6c6ecd8f7a9a25a51bd3b3b441ab5248d",
-      "bytes": 64226
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "3bd06a10fda7286c26ec3b786e163ccfe4706c2daf82ca344a35fd9901cfc27e",
-      "bytes": 149894
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "9c6e39aebdb309238424dad3d14777560920ca77a38e9391bac42bf0fd8776d2",
-      "bytes": 162311
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "c5b33cc9136eb313a16df62ed596eb9364cd89189d44d6a1eab9d8e54a7b43a9",
-      "bytes": 157678
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "2e3f436a43f0c86142b39ab808de966ce15a42b3b8a633c75c76e1a7b6b25d00",
-      "bytes": 143658
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": "7687cb4a01f2ab942429c990305cd678cbc4f6b627a136ce208536da62f26f5b",
-      "bytes": 158809
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "53519167297bb01156b184ccf35107534155af1a65f9b50594f1e07c99cdf82a",
-      "bytes": 198326
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": "c93a88c50cd16d57d0cad63e50ae25971ed1be4be661fbd47a8194bc0446fadc",
-      "bytes": 235364
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "6f9978de7fd8ea452a4547a2c54b6ac63f0fd8b2122d677dadf8cf1761b8073b",
-      "bytes": 84195
+      "sha256": "fa4b2b93c21861a73bfbd4344ef83d501192c7f17af1b2800b46b1391274d6f4",
+      "bytes": 191502,
+      "alt": "A-1 Auto Repair - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 12)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 11)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 4)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 10)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 7)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 8)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 5)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "A-1 Auto Repair - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -1,31 +1,31 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-22T23:10:30.600Z",
+  "at": "2026-08-24T05:50:52.277Z",
   "trade": "auto-repair",
   "slotHints": {},
   "ok": false,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "d1a4202b8ad2702a9a7e1121fa1b985f648a81a3e2139366a41c794d998818a8",
+      "sha256": "fbd1a4f9072cab0e50d7f7f83ebe089c7a23088bd9eef7ad28bdbe7e82155c9d",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "c830502777d8d9f745d8e9c522e68b0bf6c9e8ce93eff4942bce71fbdece1be4",
+      "sha256": "d1a4202b8ad2702a9a7e1121fa1b985f648a81a3e2139366a41c794d998818a8",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "9fe6541d91f0b493d746f3c6353f3208e51739ced5057c038dc3a401a0780a03",
+      "sha256": "0f6d6c240bac8a306a03963b641cb86ec346ae11f2cce0afce14be0b52dd7a0e",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "fbd1a4f9072cab0e50d7f7f83ebe089c7a23088bd9eef7ad28bdbe7e82155c9d",
+      "sha256": "29f24e6b2c10ddb0777ac47ea07c2e0df7b1d2220d64aba72074fca1a8cf4437",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -36,20 +36,8 @@
       "niche_folder": null
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "d4d5483ad5bd239ef720efe17596e6206ca32bb93375fdbaaf77af042b15634e",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-hero.jpg",
-      "sha256": "29f24e6b2c10ddb0777ac47ea07c2e0df7b1d2220d64aba72074fca1a8cf4437",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "addb339a3e2caca662743f52c6115b1976465313bd6dca74ec3afa19ce68fd89",
+      "sha256": "b65e06ba71be7c943154561e424e651f6a4a789bcfea6040cf1810de21b09630",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -57,6 +45,15 @@
   "filled": [
     {
       "file": "photo-contact.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-ctaband.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -155,6 +152,17 @@
       "reason": "stock_gap_all_claimed",
       "family": "auto-repair",
       "service": "",
+      "fileName": "photo-ctaband.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
       "fileName": "photo-photos-cta.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
@@ -238,8 +246,8 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 8,
-  "slots": 17,
+  "distinct": 6,
+  "slots": 16,
   "stock_provenance_rows": 0,
   "family": "auto-repair",
   "refuse_borrow": false,

@@ -1,95 +1,119 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T04:26:24.706Z",
-  "slug": "redbudtreeserviceburlingtonalamancenc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-98fbebfd05a6f4b1.jpg",
-      "bytes": 588734,
-      "trade_score": 0,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-3fbf142a4eb10dce.jpg",
-      "bytes": 158001
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-0b8c1d8ee3251593.jpg",
-      "bytes": 631768
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-dfa58aab29159985.jpg",
-      "bytes": 564889
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-9d7516bdacf6c3d8.jpg",
-      "bytes": 427953
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-392b8a543c31da2b.jpg",
-      "bytes": 387521
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-5feabec6c5b80465.jpg",
-      "bytes": 512893
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-03b4d314a9c37fad.jpg",
-      "bytes": 275883
-    }
-  ],
-  "skipped": [
-    "classification read: 16 verdicts",
-    "staged 12 harvest photos",
-    "refused_unlooked:google-95b7b97fa0248e3b.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-ab12e21ea95f9b30.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-bae5c1b4259c8313.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-be5c0014ec9af343.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-0b8c1d8ee3251593.jpg:road_no_landscape",
-    "hero_cand_refuse:google-98fbebfd05a6f4b1.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-dfa58aab29159985.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-5feabec6c5b80465.jpg:road_no_landscape",
-    "hero_cand_refuse:google-9d7516bdacf6c3d8.jpg:road_no_landscape",
-    "hero_cand_refuse:google-392b8a543c31da2b.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-03b4d314a9c37fad.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-3fbf142a4eb10dce.jpg:low_res_lt_1080",
-    "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-98fbebfd05a6f4b1.jpg)",
-    "photo-gallery-1.jpg",
-    "photo-gallery-2.jpg",
-    "photo-gallery-3.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 8,
-  "refused_by_class": 4,
-  "altBySlot": {
-    "photo-hero.jpg": "Seen from the machine seat over the grapple, ground protection mats laid across the lawn to carry the plant in without rutting it",
-    "photo-about.jpg": "Worker out along a limb in full leaf, roped in and cutting it back toward the trunk",
-    "photo-card-about.jpg": "Bucket boom run right up into the top of a bare hardwood, the operator working the last of the leaders against a clear sky",
-    "photo-card-services.jpg": "Sawyer cutting into the base of a heavy stump with the grindings heaped around him and the truck boom behind",
-    "photo-card-reviews.jpg": "Operator working from the bucket alongside a heavy limb, taking it off in sections with the truck set up on the road below",
-    "photo-card-photos.jpg": "Boom extended into the canopy against a hazy sky, the operator working high above the treeline",
-    "photo-ctaband.jpg": "Boom raised out of the truck body into the crown above, seen from the ground beside the outriggers",
-    "photo-quoteband.jpg": "Stem taken down to a bare spar with the bucket alongside it and the cut sections already stacked at the base"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T14:35:44.341Z",
+ "slug": "redbudtreeserviceburlingtonalamancenc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-98fbebfd05a6f4b1.jpg",
+   "bytes": 588734,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-3fbf142a4eb10dce.jpg",
+   "bytes": 158001,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-0b8c1d8ee3251593.jpg",
+   "bytes": 631768,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-dfa58aab29159985.jpg",
+   "bytes": 564889,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-9d7516bdacf6c3d8.jpg",
+   "bytes": 427953,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-392b8a543c31da2b.jpg",
+   "bytes": 387521,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-5feabec6c5b80465.jpg",
+   "bytes": 512893,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-03b4d314a9c37fad.jpg",
+   "bytes": 275883,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 16 verdicts",
+  "staged 12 harvest photos from assets",
+  "refused_unlooked:google-95b7b97fa0248e3b.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-ab12e21ea95f9b30.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-bae5c1b4259c8313.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-be5c0014ec9af343.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-0b8c1d8ee3251593.jpg:road_no_landscape",
+  "hero_cand_refuse:google-98fbebfd05a6f4b1.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-dfa58aab29159985.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-5feabec6c5b80465.jpg:road_no_landscape",
+  "hero_cand_refuse:google-9d7516bdacf6c3d8.jpg:road_no_landscape",
+  "hero_cand_refuse:google-392b8a543c31da2b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-03b4d314a9c37fad.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-3fbf142a4eb10dce.jpg:portrait_aspect_hero_refuse",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-98fbebfd05a6f4b1.jpg)",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "refused_by_class": 4,
+ "photo_candidates": 8,
+ "altBySlot": {
+  "photo-hero.jpg": "Seen from the machine seat over the grapple, ground protection mats laid across the lawn to carry the plant in without rutting it",
+  "photo-card-about.jpg": "Worker out along a limb in full leaf, roped in and cutting it back toward the trunk",
+  "photo-about.jpg": "Bucket boom run right up into the top of a bare hardwood, the operator working the last of the leaders against a clear sky",
+  "photo-card-services.jpg": "Sawyer cutting into the base of a heavy stump with the grindings heaped around him and the truck boom behind",
+  "photo-card-reviews.jpg": "Operator working from the bucket alongside a heavy limb, taking it off in sections with the truck set up on the road below",
+  "photo-card-photos.jpg": "Boom extended into the canopy against a hazy sky, the operator working high above the treeline",
+  "photo-gallery-1.jpg": "Boom raised out of the truck body into the crown above, seen from the ground beside the outriggers",
+  "photo-gallery-2.jpg": "Stem taken down to a bare spar with the bucket alongside it and the cut sections already stacked at the base"
+ },
+ "dedupe_fixed": 5
 }

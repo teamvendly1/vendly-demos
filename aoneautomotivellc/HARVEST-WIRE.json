@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:03:30.513Z",
+ "at": "2026-08-25T23:00:41.528Z",
  "slug": "aoneautomotivellc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-8f030ea753bc655f.jpg",
-   "bytes": 335168,
-   "letterbox_stripped": null
+   "bytes": 193828,
+   "smart_crop": true,
+   "src": "google-8f030ea753bc655f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x747",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 30.77,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-c453fc261668ebe5.jpg",
-   "bytes": 90259,
-   "letterbox_stripped": null
+   "bytes": 90136,
+   "smart_crop": true,
+   "src": "google-c453fc261668ebe5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1080x525",
+   "out_wh": "840x525",
+   "crop_axis": "x",
+   "crop_offset_pct": 18,
+   "detail_score": 36.403,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-a26cbf7eda248b0a.jpg",
-   "bytes": 213777,
-   "letterbox_stripped": null
+   "bytes": 79561,
+   "smart_crop": true,
+   "src": "google-a26cbf7eda248b0a.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "747x1600",
+   "out_wh": "747x467",
+   "crop_axis": "y",
+   "crop_offset_pct": 30,
+   "detail_score": 30.251,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-fc37a97533a852ef.jpg",
-   "bytes": 208704,
-   "letterbox_stripped": null
+   "bytes": 126303,
+   "smart_crop": true,
+   "src": "google-fc37a97533a852ef.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x747",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 95,
+   "detail_score": 26.666,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -99,7 +131,7 @@
  ],
  "skipped": [
   "classification read: 28 verdicts",
-  "staged 14 harvest photos",
+  "staged 14 harvest photos from assets",
   "hero_cand_refuse:google-5b38af81b27ea113.jpg:road_no_landscape",
   "hero_cand_refuse:google-0462826e4ddaa4fb.jpg:road_no_landscape",
   "hero_cand_refuse:google-a26cbf7eda248b0a.jpg:road_no_landscape",
@@ -119,8 +151,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 14,
@@ -140,5 +175,6 @@
   "photo-gallery-4.jpg": "Close-up of a white van's front bumper and fender showing damage",
   "photo-gallery-5.jpg": "Close-up of a white cargo van's front fender and wheel",
   "photo-gallery-6.jpg": "Vintage red and black classic car parked on the grass roadside"
- }
+ },
+ "dedupe_fixed": 5
 }

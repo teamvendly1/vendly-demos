@@ -1,19 +1,40 @@
 {
-  "at": "2026-08-17T04:25:42.459Z",
+  "at": "2026-08-24T14:42:00.288Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "auto-repair",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "c7443fe770601769feac3ab7a98d4c6d3f96aefd04399d618ceb97ccee3f80ea",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenter/photo-gallery-1.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\enrouteautocenterclintonsampsonnc\\assets\\google\\google-c7443fe770601769.jpg"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "2de08e85d5cde0bb7bc01e3dc2f82ed175dbc2acd9ab841eeab13967ba6c4480",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenter/photo-gallery-2.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\enrouteautocenterclintonsampsonnc\\assets\\google\\google-2de08e85d5cde0bb.jpg"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "8edb3c2af03593c5e04f6eec9090e8f5ec123826424d9ed2ff3db5edcc5d36d4",
-      "bytes": 231739
+      "sha256": "a8086ec748299218fb046dc23f8d74ed669fe307b3cea83b77766a011c5a00c0",
+      "bytes": 217684
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "a8086ec748299218fb046dc23f8d74ed669fe307b3cea83b77766a011c5a00c0",
-      "bytes": 217684
+      "sha256": "8edb3c2af03593c5e04f6eec9090e8f5ec123826424d9ed2ff3db5edcc5d36d4",
+      "bytes": 231739
     },
     {
       "file": "photo-card-photos.jpg",
@@ -31,21 +52,55 @@
       "bytes": 239968
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "2de08e85d5cde0bb7bc01e3dc2f82ed175dbc2acd9ab841eeab13967ba6c4480",
-      "bytes": 208792
-    },
-    {
       "file": "photo-hero.jpg",
       "sha256": "3a0fa6edd81fa82390607639e4baaab4ca298818af29d7cfeb15aaab94abf0e4",
       "bytes": 253418
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "c7443fe770601769feac3ab7a98d4c6d3f96aefd04399d618ceb97ccee3f80ea",
-      "bytes": 196588
     }
   ],
   "failed": [],
+  "gallery_gaps": [
+    {
+      "file": "photo-gallery-3.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "reasons": [
+        "stub"
+      ]
+    }
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

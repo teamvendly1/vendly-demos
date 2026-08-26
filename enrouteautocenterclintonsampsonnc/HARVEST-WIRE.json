@@ -1,83 +1,108 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T04:25:41.657Z",
-  "slug": "enrouteautocenterclintonsampsonnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-3a0fa6edd81fa823.jpg",
-      "bytes": 253418,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-8edb3c2af03593c5.jpg",
-      "bytes": 231739
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-a8086ec748299218.jpg",
-      "bytes": 217684
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-1547077dc15fd5c3.jpg",
-      "bytes": 239968
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-aa654aca15c93369.jpg",
-      "bytes": 247615
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-21abe1272a936e5d.jpg",
-      "bytes": 235430
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-2de08e85d5cde0bb.jpg",
-      "bytes": 208792
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-c7443fe770601769.jpg",
-      "bytes": 196588
-    }
-  ],
-  "skipped": [
-    "classification read: 16 verdicts",
-    "staged 8 harvest photos",
-    "hero_cand_refuse:google-1547077dc15fd5c3.jpg:road_no_landscape",
-    "hero_cand_refuse:google-8edb3c2af03593c5.jpg:road_no_landscape",
-    "photo-gallery-1.jpg",
-    "photo-gallery-2.jpg",
-    "photo-gallery-3.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 8,
-  "altBySlot": {
-    "photo-hero.jpg": "The shop frontage with the company sign and telephone number above the door and the open sign lit in the window",
-    "photo-about.jpg": "Technician working over an open engine bay under a head torch, the tools laid out on a tray on the wing",
-    "photo-card-about.jpg": "Technician leaning in over the engine bay of a raised vehicle, working down at the alternator and belt run",
-    "photo-card-services.jpg": "Diagnostic bench with the state inspection menu up on screen and the scan equipment wired in alongside",
-    "photo-card-reviews.jpg": "Customer waiting area with the wall banded in company colours and the screen mounted at the far end",
-    "photo-card-photos.jpg": "The other side of the waiting room with the bench seating and a table set out for customers",
-    "photo-ctaband.jpg": "Inside the workshop looking down the floor past the two-post lift, customer vehicles parked either side",
-    "photo-quoteband.jpg": "The front counter with the company mark set into the panel and the reception area kept clear behind it"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T14:41:49.999Z",
+ "slug": "enrouteautocenterclintonsampsonnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-3a0fa6edd81fa823.jpg",
+   "bytes": 253418,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-8edb3c2af03593c5.jpg",
+   "bytes": 231739,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-a8086ec748299218.jpg",
+   "bytes": 217684,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-1547077dc15fd5c3.jpg",
+   "bytes": 239968,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-aa654aca15c93369.jpg",
+   "bytes": 247615,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-21abe1272a936e5d.jpg",
+   "bytes": 235430,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-2de08e85d5cde0bb.jpg",
+   "bytes": 208792,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-c7443fe770601769.jpg",
+   "bytes": 196588,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 16 verdicts",
+  "staged 8 harvest photos from assets",
+  "hero_cand_refuse:google-1547077dc15fd5c3.jpg:road_no_landscape",
+  "hero_hold_crew_for_about:google-8edb3c2af03593c5.jpg",
+  "hero_hold_crew_for_about:google-a8086ec748299218.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "photo_candidates": 8,
+ "altBySlot": {
+  "photo-hero.jpg": "The shop frontage with the company sign and telephone number above the door and the open sign lit in the window",
+  "photo-card-about.jpg": "Technician working over an open engine bay under a head torch, the tools laid out on a tray on the wing",
+  "photo-about.jpg": "Technician leaning in over the engine bay of a raised vehicle, working down at the alternator and belt run",
+  "photo-card-services.jpg": "Diagnostic bench with the state inspection menu up on screen and the scan equipment wired in alongside",
+  "photo-card-reviews.jpg": "Customer waiting area with the wall banded in company colours and the screen mounted at the far end",
+  "photo-card-photos.jpg": "The other side of the waiting room with the bench seating and a table set out for customers",
+  "photo-gallery-1.jpg": "Inside the workshop looking down the floor past the two-post lift, customer vehicles parked either side",
+  "photo-gallery-2.jpg": "The front counter with the company mark set into the panel and the reception area kept clear behind it"
+ },
+ "dedupe_fixed": 5
 }

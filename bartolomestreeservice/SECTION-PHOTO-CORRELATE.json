@@ -1,99 +1,233 @@
 {
-  "at": "2026-08-18T06:14:00.824Z",
+  "at": "2026-08-24T13:57:13.326Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "tree-service",
   "replaced": [
     {
+      "file": "photo-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "d6f660492e43d645324fc5ad671242204731a43d3637563d60a6cdd51f99ca27",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-service-3.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-d6f660492e43d645.jpg"
+    },
+    {
       "file": "photo-card-photos.jpg",
-      "source": "Pexels",
-      "sha256": "c5136617d75d60ad236293c748fe7fe6fe695c7713a2ea26ac3da59a5e84a8b6",
+      "source": "harvest-fallback",
+      "sha256": "3d259b8c007f903dd544b0ba31000171d77073babbbcd2c4e1296c2fba76dd8c",
       "reasons": [
         "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-card-about.jpg"
       ],
-      "service": null
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-3d259b8c007f903d.jpg"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "ac8eedcbfb1fd9a2e717eff7ec55dfa35f28b3518720cb7880d7ca130f3f08eb",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-service-2.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-ac8eedcbfb1fd9a2.jpg"
     },
     {
       "file": "photo-card-services.jpg",
-      "source": "Pexels",
-      "sha256": "0643ee86d9082ef6e7d564334e0aa880565996527a67068d0643682b1df1cd35",
-      "reasons": [
-        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-2.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "source": "Pexels",
-      "sha256": "51eebddd16e909caa36cb3cdb04d5b0e17bca1192cbec97b9ba329effcf03458",
+      "source": "harvest-fallback",
+      "sha256": "6d18a66dfb5e8dd8311440dbbb9d7f7857c59ef1efc98f612a2eb729ce9cf5a4",
       "reasons": [
         "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-ctaband.jpg"
       ],
-      "service": "trade work"
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-6d18a66dfb5e8dd8.jpg"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "95b18dafc4810eed68e87515c4096c57745578ec90d0d1153a6a68a51605415c",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-3.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-95b18dafc4810eed.jpg"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "679a79684820269455d30e1b305f9dad7e30262b43eddf3b2d0c0d3109d1e64f",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-hero.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-679a796848202694.jpg"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "47db68d375b593ff2651c080c8da805e54bb5d0d11a0b5ad918f6ef7c5bfdc7a",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-card-services.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-47db68d375b593ff.jpg"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "829f1d1acca48bee69a9a99905ce1d71b5351bd952cce84ddd4904c111273450",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-2.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-829f1d1acca48bee.jpg"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "e6231e9c823cca73881c074187fafacb9ce9de77001417fa695e622339db8d9a",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-quoteband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-e6231e9c823cca73.jpg"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f1462f3981721f7c608ad9e4cb280f916decfae5d6c3e3aebf5ba07b6ea1c6ae",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-4.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-f1462f3981721f7c.jpg"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "45d8e5f2ea553f19606be867beaa6dd6992107008841547968647e16f9f7c043",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-5.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-45d8e5f2ea553f19.jpg"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4329960240253c7916a85ee53191dc36314292b2a42947f7d8f0845d650e6571",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-about.jpg"
+      ],
+      "service": "Storm damage and emergency removal",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-4329960240253c79.jpg"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "ce09ccce01f13470f1558cde082c939acf937f9b16320985b35b5cadd99446ee",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-8.jpg"
+      ],
+      "service": "Crane and bucket work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-ce09ccce01f13470.jpg"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "38dafcd6668ffa17da34627ba307df744077f1b49ba5111ec078b9512c12fca7",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-service-4.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-38dafcd6668ffa17.jpg"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "6af9c4b30ce30710507a4a590f960911a4d18cbfb2119e59405ca0038600216e",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-service-6.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-6af9c4b30ce30710.jpg"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "source": "harvest-fallback",
+      "sha256": "6c00c7003e224b39f8006ad8857f26624d41be61ad12ae3b590a882d8ddb165a",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-service-1.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-6c00c7003e224b39.jpg"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1d651c91d126f3193ea971acf34121d523cbca42584354eb5448b7bb05403cd9",
+      "reasons": [
+        "cross_demo_dupe:bartolomestreeservicesanfordleenc/photo-gallery-1.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bartolomestreeservice\\assets\\google\\google-1d651c91d126f319.jpg"
     }
   ],
   "kept": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": "80cc21b99931affaf7e4e87c3fc7b64aaf7a393249778ba8a2e4b2ab234df913",
-      "bytes": 592198
-    },
     {
       "file": "photo-card-about.jpg",
       "sha256": "a37772ee6254f18ee37ccf3a27e01a176a275e97292ef255ef7d6a4292b11ebe",
       "bytes": 687300
     },
     {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "34b8caf204be7ba7cadfe489cb537fd589994b910aa0757a7b07eb240c015c31",
-      "bytes": 437402
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "db00e5ebf3e981fff4fee16d48f378c5cbc3ef3c5782871ea48a95a457086879",
-      "bytes": 538730
-    },
-    {
-      "file": "photo-ctaband.jpg",
+      "file": "photo-gallery-1.jpg",
       "sha256": "21614f5d03f1b993f158d15de7c86edcfa24028d45b19d1f7ccecda05d785bfd",
       "bytes": 730787
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "f1462f3981721f7c608ad9e4cb280f916decfae5d6c3e3aebf5ba07b6ea1c6ae",
-      "bytes": 673380
+      "file": "photo-gallery-4.jpg",
+      "sha256": "d1213c363c343881380eb7b19cbb66e5a5baba60b86e44447bf9d54d05fee608",
+      "bytes": 650065
     },
     {
-      "file": "photo-quoteband.jpg",
-      "sha256": "ac8eedcbfb1fd9a2e717eff7ec55dfa35f28b3518720cb7880d7ca130f3f08eb",
-      "bytes": 681817
+      "file": "photo-gallery-6.jpg",
+      "sha256": "94624975e5a80c087d80e2fe625bd955bf4c0012e637516bcf118078f911b08a",
+      "bytes": 617194
     },
     {
-      "file": "photo-reviewsband.jpg",
-      "sha256": "5f31749cc40679a5cc467342e737e81dfd9025ca7785fb086142dcc4fcc5091f",
-      "bytes": 526138
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "6c00c7003e224b39f8006ad8857f26624d41be61ad12ae3b590a882d8ddb165a",
-      "bytes": 568226
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "2b82d7af8a0724a31d413f94ea13f0d948a786dc5ebcd406f44440172d6e805c",
-      "bytes": 567090
-    },
-    {
-      "file": "photo-service-3.jpg",
+      "file": "photo-gallery-8.jpg",
       "sha256": "5015fa257055f2384b3ceb5e19c5c2f15e2956c7ca8fb2561c31f2cc3d288cd6",
       "bytes": 562780
     },
     {
-      "file": "photo-services-hero.jpg",
-      "sha256": "4329960240253c7916a85ee53191dc36314292b2a42947f7d8f0845d650e6571",
-      "bytes": 542248
+      "file": "photo-hero.jpg",
+      "sha256": "4372a1f17e903ada1590d09b25962c0033a8e6214b2450d02276ada99ed8d7da",
+      "bytes": 183137
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "db00e5ebf3e981fff4fee16d48f378c5cbc3ef3c5782871ea48a95a457086879",
+      "bytes": 538730
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "35f4b26ef5067c594d9fa84b026f9b08ef7336da5eff77039eeaf9f61ac86baf",
+      "bytes": 651631
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "48430fc411a5f19d2fc9652804a2a695185513c801dac16e6efa9bd89047509a",
+      "bytes": 527507
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "2b82d7af8a0724a31d413f94ea13f0d948a786dc5ebcd406f44440172d6e805c",
+      "bytes": 567090
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -25,7 +25,9 @@
     "ACCENT_RGB": "92,79,61",
     "SCRIM_RGB": "71,61,46",
     "SCRIM2_RGB": "43,37,28",
-    "MENU_INK_RGB": "28,24,18"
+    "MENU_INK_RGB": "28,24,18",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
   },
   "contrast": [
     {
@@ -46,6 +48,11 @@
     {
       "pair": "menu ink on white",
       "ratio": 17.67,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.38,
       "pass": true
     }
   ],

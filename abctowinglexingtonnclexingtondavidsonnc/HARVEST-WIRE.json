@@ -1,19 +1,29 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-21T06:11:07.460Z",
+ "at": "2026-08-25T23:46:16.765Z",
  "slug": "abctowinglexingtonnclexingtondavidsonnc",
  "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-3cf6f277f92abfac.jpg",
+   "bytes": 84967,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
   {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
    "bytes": 21159,
    "placeholder": true,
-   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)",
-   "patched_by": "logo-only-patch-2026-08-22 (blank-header-logo remediation, keyout-skip fix)"
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
  ],
  "skipped": [
-  "photo-hero.jpg: no work-visible harvest candidate",
+  "classification read: 2 verdicts",
+  "staged 1 harvest photos from assets",
+  "hero_cand_refuse:google-3cf6f277f92abfac.jpg:portrait_aspect_hero_refuse",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-3cf6f277f92abfac.jpg)",
   "photo-card-about.jpg",
   "photo-about.jpg",
   "photo-card-services.jpg",
@@ -39,8 +49,14 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 0,
- "photo_candidates": 0
+ "candidates": 1,
+ "photo_candidates": 1,
+ "dedupe_fixed": 5
 }

@@ -1,19 +1,19 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-17T04:25:42.110Z",
+  "at": "2026-08-24T14:41:51.464Z",
   "trade": "auto-repair",
   "slotHints": {},
   "ok": false,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "8edb3c2af03593c5e04f6eec9090e8f5ec123826424d9ed2ff3db5edcc5d36d4",
+      "sha256": "a8086ec748299218fb046dc23f8d74ed669fe307b3cea83b77766a011c5a00c0",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "a8086ec748299218fb046dc23f8d74ed669fe307b3cea83b77766a011c5a00c0",
+      "sha256": "8edb3c2af03593c5e04f6eec9090e8f5ec123826424d9ed2ff3db5edcc5d36d4",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -36,20 +36,8 @@
       "niche_folder": null
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "2de08e85d5cde0bb7bc01e3dc2f82ed175dbc2acd9ab841eeab13967ba6c4480",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-hero.jpg",
       "sha256": "3a0fa6edd81fa82390607639e4baaab4ca298818af29d7cfeb15aaab94abf0e4",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "c7443fe770601769feac3ab7a98d4c6d3f96aefd04399d618ceb97ccee3f80ea",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -57,6 +45,15 @@
   "filled": [
     {
       "file": "photo-contact.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-ctaband.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -155,6 +152,17 @@
       "reason": "stock_gap_all_claimed",
       "family": "auto-repair",
       "service": "",
+      "fileName": "photo-ctaband.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
       "fileName": "photo-photos-cta.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
@@ -238,8 +246,8 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 8,
-  "slots": 17,
+  "distinct": 6,
+  "slots": 16,
   "stock_provenance_rows": 0,
   "family": "auto-repair",
   "refuse_borrow": false,

@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:35:10.649Z",
+ "at": "2026-08-25T22:54:26.465Z",
  "slug": "carboxautorepairllc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-c3021ab78d460b10.jpg",
-   "bytes": 269316,
-   "letterbox_stripped": null
+   "bytes": 119752,
+   "smart_crop": true,
+   "src": "google-c3021ab78d460b10.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "901x1600",
+   "out_wh": "901x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 40,
+   "detail_score": 28.866,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-ac928cf834c3c783.jpg",
-   "bytes": 262649,
-   "letterbox_stripped": null
+   "bytes": 132533,
+   "smart_crop": true,
+   "src": "google-ac928cf834c3c783.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "901x1600",
+   "out_wh": "901x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 33,
+   "detail_score": 33.773,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-122bde027ef02550.jpg",
-   "bytes": 363113,
-   "letterbox_stripped": null
+   "bytes": 161196,
+   "smart_crop": true,
+   "src": "google-122bde027ef02550.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "901x1600",
+   "out_wh": "901x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 45.367,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-b1694e6a8c1376e4.jpg",
-   "bytes": 300086,
-   "letterbox_stripped": null
+   "bytes": 130021,
+   "smart_crop": true,
+   "src": "google-b1694e6a8c1376e4.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "901x1600",
+   "out_wh": "901x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 38,
+   "detail_score": 32.489,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-8bbf0e2de5b1a6f5.jpg",
-   "bytes": 218829,
-   "letterbox_stripped": null
+   "bytes": 123210,
+   "smart_crop": true,
+   "src": "google-8bbf0e2de5b1a6f5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1145x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 68,
+   "detail_score": 29.915,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-5713dcd4ca053b1a.jpg",
-   "bytes": 171336,
-   "letterbox_stripped": "v17.9%"
+   "bytes": 83539,
+   "smart_crop": true,
+   "src": "google-5713dcd4ca053b1a.jpg",
+   "letterbox_stripped": "v17.9%",
+   "src_wh": "738x1314",
+   "out_wh": "738x461",
+   "crop_axis": "y",
+   "crop_offset_pct": 70,
+   "detail_score": 33.625,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-1fead91c164b612b.jpg",
-   "bytes": 167486,
-   "letterbox_stripped": null
+   "bytes": 65868,
+   "smart_crop": true,
+   "src": "google-1fead91c164b612b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "916x1600",
+   "out_wh": "916x573",
+   "crop_axis": "y",
+   "crop_offset_pct": 63,
+   "detail_score": 26.149,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -153,7 +209,7 @@
  ],
  "skipped": [
   "classification read: 48 verdicts",
-  "staged 30 harvest photos",
+  "staged 30 harvest photos from assets",
   "refused_unlooked:google-31d0d9b44481526b.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:google-4350ca3bcf53c8c8.jpg:reject",
   "refused_unlooked:google-70424b04819b64ff.jpg:NEEDS_SUBJECT_LOOK",
@@ -186,8 +242,11 @@
   "hero_cand_refuse:google-7d64408996c51f05.jpg:road_no_landscape",
   "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-6af473e5bcf77fb9.jpg)",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 23,
@@ -217,5 +276,6 @@
   "photo-services-hero.jpg": "Close-up of engine timing components during a repair",
   "photo-contact.jpg": "Close-up of an oil pan removed during service",
   "photo-photos-cta.jpg": "Technician holding a small part during a repair"
- }
+ },
+ "dedupe_fixed": 5
 }

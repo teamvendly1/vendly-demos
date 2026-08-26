@@ -1,87 +1,91 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-15T00:30:14.191Z",
+  "at": "2026-08-22T23:43:46.079Z",
   "trade": "auto-repair",
-  "slotHints": {},
-  "ok": false,
+  "slotHints": {
+    "photo-service-1.jpg": "Brakes, steering and suspension",
+    "photo-service-2.jpg": "Tires and wheels",
+    "photo-service-3.jpg": "Exhaust and underbody"
+  },
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "2674f43d94365268774475d94487dfb911d3ff67d119196b3bd605ff43f8a724",
+      "sha256": "0e200b7eb3e8480c24789b75765d38681dd93f8ba5228498fed9ed765546c877",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "ea22417be60536a59afec6bf63ca4e4e6aac5c6622723128192247d59bb420df",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "f3cc6533783c6f34488dd9415cc22aa99981090fa06783c2bc4acb7e87970cdd",
+      "sha256": "d758d901ac31e20e0389e3c993aa6f20e7eb61e67bc8113c3e6624e49518e913",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "ad7ed1bc5e1cfdbecc5d2dedeac3c77c7bb356eb3d84b89cce8bcd17f80c021f",
+      "sha256": "f40af19a4ba3403340899e0e49d8534d540f80031fd5a69620cc72936b0d0561",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "4cdfaf02d47face14a63c8536b138c8523e810aa44355318b46eebc6c93fef35",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "f6ec35b5ca3c367d4ef842ef7f241b92990eff2ecda5a29fb53e18e06c14cb6e",
+      "sha256": "8f5f01d4674d316d1f4ceaf5df0c256481b37829465806d60851e35ae1f26817",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "6fd5dae8e13344cab840c74cc34f5ee0c66408c0569b7107ff83cf641bd3aaa5",
+      "sha256": "9d3aa463511e72aefa5bce525508c3216ecf21c96d8731d6a4a2da6ae66f03b1",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "7463a9ec86161d30b83dc56bc312bcb8287078c9f82facb231e668fa00a0c7fd",
+      "sha256": "f3cc6533783c6f34488dd9415cc22aa99981090fa06783c2bc4acb7e87970cdd",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "c31d7726b0fa10ea6750fc170ac328e2098df1a0a962745dd08d420808cff9a0",
+      "file": "photo-quoteband.jpg",
+      "sha256": "9cf3ff8681cf83d6689103cbf188ff71aed6fad26b648e466993b2e33733d589",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-service-2.jpg",
-      "sha256": "a852317f4b011232bd6b8cea18051645ba943b99b0b2e70adefac0da642a1d9e",
+      "file": "photo-service-1.jpg",
+      "sha256": "ad7ed1bc5e1cfdbecc5d2dedeac3c77c7bb356eb3d84b89cce8bcd17f80c021f",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-services-hero.jpg",
-      "sha256": "e9c31293b99f1151276cc876e8ae3609dc356d9bd8db9e72c7028acb34f4b278",
+      "file": "photo-service-3.jpg",
+      "sha256": "2674f43d94365268774475d94487dfb911d3ff67d119196b3bd605ff43f8a724",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
   ],
   "filled": [
     {
-      "file": "photo-card-about.jpg",
-      "sha256": "bd3ae2b8f276e62fe1a04db26ffd9af54497905568ecd09734b882fef64b241d",
+      "file": "photo-contact.jpg",
+      "sha256": "bcaa6276d5e1a17e1e2de03faef66dfb8578962bc55f00304892edbfcbb6c733",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/car-with-open-hood-8985969/",
-        "subject_alt": "car repair garage interior bay",
-        "found_by_query": "car repair garage interior bay",
+        "source_url": "https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-fixing-a-car-8478259/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
         "family": "auto-repair",
-        "library_file": "auto-repair-detailed-car-engine-01.jpg",
+        "library_file": "auto-repair-auto-mechanic-performs-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-12T16:50:33.868Z",
+        "downloaded_at": "2026-08-13T15:39:23.881Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
@@ -92,20 +96,20 @@
       }
     },
     {
-      "file": "photo-service-1.jpg",
-      "sha256": "0c16be9fb8a70503701985b9057da82e71192560a39e98a42f5c34589f83213a",
+      "file": "photo-photos-cta.jpg",
+      "sha256": "8abd28a7aaaa3b6aa4ed5008b0b55a21969152abbf169fc2d364ace75aa973a2",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/a-man-in-blue-suit-checking-a-car-8986172/",
-        "subject_alt": "car repair garage interior bay",
-        "found_by_query": "car repair garage interior bay",
+        "source_url": "https://www.pexels.com/photo/a-mechanic-working-on-an-undercarriage-of-a-car-8986101/",
+        "subject_alt": "car on lift garage bay",
+        "found_by_query": "car on lift garage bay",
         "family": "auto-repair",
-        "library_file": "auto-repair-mechanic-performs-detailed-01.jpg",
+        "library_file": "auto-repair-mechanic-blue-coveralls-02.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-12T16:50:36.718Z",
+        "downloaded_at": "2026-08-13T15:30:45.095Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
@@ -116,24 +120,24 @@
       }
     },
     {
-      "file": "photo-service-3.jpg",
-      "sha256": "4858ee6f3faabadc6ce0bbb8130774cfa0c1e19949b617e42b0627af9f0f63e6",
+      "file": "photo-service-2.jpg",
+      "sha256": "41eb208edddb63a4ce7ed927db471a716f3814dc278d75767766c87735e6121d",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/gray-car-in-auto-repair-shop-10126656/",
-        "subject_alt": "car repair garage interior bay",
-        "found_by_query": "car repair garage interior bay",
+        "source_url": "https://www.pexels.com/photo/a-man-holding-tools-9606741/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
         "family": "auto-repair",
-        "library_file": "auto-repair-gray-car-undergoing-01.jpg",
+        "library_file": "auto-repair-close-up-mechanic-hand-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-12T16:50:36.335Z",
-        "service_title": null,
+        "downloaded_at": "2026-08-13T15:58:17.442Z",
+        "service_title": "Tires and wheels",
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
-      "service": null,
+      "service": "Tires and wheels",
       "claims": {
         "claimed": true,
         "unclaimed_remaining_family_estimate": 0
@@ -141,19 +145,19 @@
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "b48ddfb4d9eaf395a37c20c4d501ac67993b52bfcaf71c95657452cf11fc00b0",
+      "sha256": "d059ec68fd9bcf373a1f2938568db88209379e5fa8669bee4f92d77a11810830",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/a-person-repairing-car-engine-4116225/",
-        "subject_alt": "car repair garage interior bay",
-        "found_by_query": "car repair garage interior bay",
+        "source_url": "https://www.pexels.com/photo/engine-and-car-parts-under-open-hood-20710348/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
         "family": "auto-repair",
-        "library_file": "auto-repair-mechanic-hands-repairing-01.jpg",
+        "library_file": "auto-repair-high-resolution-classic-car-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-12T16:50:36.588Z",
+        "downloaded_at": "2026-08-13T15:58:39.726Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
@@ -165,44 +169,81 @@
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "a3d36fb82502de2a83040f1c84fb103071bbcd7888a45c3bac5641f7be331af8",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/sleek-black-car-in-urban-parking-garage-28986828/",
+        "subject_alt": "car on lift garage bay",
+        "found_by_query": "car on lift garage bay",
+        "family": "auto-repair",
+        "library_file": "auto-repair-stylish-black-car-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:30:52.898Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    }
-  ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "auto-repair",
-      "fileName": "photo-service-5.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+      "sha256": "c85d997e99a8d2f40e56be812de154273d4c3082dac7c033a75b18caac1db543",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/industrial-workshop-with-heavy-lifting-equipment-29224595/",
+        "subject_alt": "brake rotor closeup workshop",
+        "found_by_query": "brake rotor closeup workshop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-spacious-industrial-workshop-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:58.140Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     },
     {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "auto-repair",
-      "fileName": "photo-service-6.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+      "file": "photo-services-hero.jpg",
+      "sha256": "4ae3c23a71b8a4a848df47f2416ce9631675e25ee48ef0612e172ab59cf8e863",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/greasy-hand-holding-black-metallic-spare-parts-7568431/",
+        "subject_alt": "brake rotor closeup workshop",
+        "found_by_query": "brake rotor closeup workshop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-mechanic-workshop-handling-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:59:00.894Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     }
   ],
-  "distinct": 14,
-  "slots": 16,
-  "stock_provenance_rows": 4,
+  "gaps": [],
+  "distinct": 17,
+  "slots": 17,
+  "stock_provenance_rows": 7,
   "family": "auto-repair",
   "refuse_borrow": false,
   "provenance_ok": true

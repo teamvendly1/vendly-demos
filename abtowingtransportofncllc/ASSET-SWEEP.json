@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-18T11:38:27.718Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-25T23:47:58.898Z",
   "slug": "abtowingtransportofncllc",
-  "removed_count": 27,
+  "removed_count": 26,
   "removed_sample": [
     "google-1b3a2ff4214e8375.jpg",
     "google-29f34a19c7d3177f.jpg",
@@ -17,5 +17,10 @@
     "google-943b7e86ad8e12f8.jpg",
     "google-9c4e4dbe1f385d78.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\abtowingtransportofncllc",
+  "published_ref_count": 19,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

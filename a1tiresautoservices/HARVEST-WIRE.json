@@ -1,27 +1,112 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-21T06:03:40.052Z",
+ "at": "2026-08-25T23:40:48.848Z",
  "slug": "a1tiresautoservices",
  "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-c095393006681b57.jpg",
+   "bytes": 262671,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-588089bbe015f305.jpg",
+   "bytes": 123567,
+   "smart_crop": true,
+   "src": "google-588089bbe015f305.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 23.501,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-08552a6228e7373b.jpg",
+   "bytes": 257267,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-9bf51a938c9e89dc.jpg",
+   "bytes": 96806,
+   "smart_crop": true,
+   "src": "google-9bf51a938c9e89dc.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 17.734,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-97d1e97483232d1b.jpg",
+   "bytes": 118883,
+   "smart_crop": true,
+   "src": "google-97d1e97483232d1b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 46.193,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-adfe8710aefcfa7e.jpg",
+   "bytes": 50890,
+   "smart_crop": true,
+   "src": "google-adfe8710aefcfa7e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x960",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 13,
+   "detail_score": 19.875,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-d8c7bd5118e1e56e.jpg",
+   "bytes": 80324,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-da06ef640d501e4d.jpg",
+   "bytes": 67066,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-a90a0c9a1a0bca78.jpg",
+   "bytes": 48970,
+   "letterbox_stripped": null
+  },
   {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
    "bytes": 21159,
    "placeholder": true,
-   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)",
-   "patched_by": "logo-only-patch-2026-08-22 (blank-header-logo remediation, keyout-skip fix)"
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
  ],
  "skipped": [
-  "photo-hero.jpg: no work-visible harvest candidate",
-  "photo-card-about.jpg",
-  "photo-about.jpg",
-  "photo-card-services.jpg",
-  "photo-card-reviews.jpg",
-  "photo-card-photos.jpg",
-  "photo-gallery-1.jpg",
-  "photo-gallery-2.jpg",
-  "photo-gallery-3.jpg",
+  "classification read: 18 verdicts",
+  "staged 9 harvest photos from assets",
+  "hero_cand_refuse:google-97d1e97483232d1b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-adfe8710aefcfa7e.jpg:road_no_landscape",
+  "hero_cand_refuse:google-d8c7bd5118e1e56e.jpg:low_res_lt_960",
+  "hero_cand_refuse:google-da06ef640d501e4d.jpg:low_res_lt_960",
+  "hero_cand_refuse:google-a90a0c9a1a0bca78.jpg:low_res_lt_960",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
   "photo-gallery-4.jpg",
@@ -39,8 +124,25 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 0,
- "photo_candidates": 0
+ "candidates": 9,
+ "photo_candidates": 9,
+ "altBySlot": {
+  "photo-hero.jpg": "A1 Tires & Auto Services - technician at work on site (photo 2)",
+  "photo-card-about.jpg": "A1 Tires & Auto Services - technician at work on site (photo 1)",
+  "photo-about.jpg": "A1 Tires & Auto Services - technician at work on site (photo 3)",
+  "photo-card-services.jpg": "A1 Tires & Auto Services - technician at work on site (photo 8)",
+  "photo-card-reviews.jpg": "A1 Tires & Auto Services - technician at work on site (photo 7)",
+  "photo-card-photos.jpg": "A1 Tires & Auto Services - technician at work on site (photo 5)",
+  "photo-gallery-1.jpg": "A1 Tires & Auto Services - technician at work on site (photo 4)",
+  "photo-gallery-2.jpg": "A1 Tires & Auto Services - technician at work on site (photo 6)",
+  "photo-gallery-3.jpg": "A1 Tires & Auto Services - technician at work on site (photo 9)"
+ },
+ "dedupe_fixed": 5
 }

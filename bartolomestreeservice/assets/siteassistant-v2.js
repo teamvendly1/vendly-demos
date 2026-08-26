@@ -322,7 +322,7 @@
       // prefers-reduced-motion rule already kills its transition.
       ".sa-scrim{position:fixed;inset:0;z-index:2147483000;background:rgba(10,12,14,.42);" +
       "display:none;opacity:0;transition:opacity .18s ease}" +
-      ".sa-launch{position:fixed;bottom:96px;z-index:2147483000;display:inline-flex;align-items:center;gap:9px;" +
+      ".sa-launch{position:fixed;bottom:20px;z-index:2147483000;display:inline-flex;align-items:center;gap:9px;" +
       "border:none;border-radius:999px;padding:13px 20px 13px 16px;background:var(--sa-accent);color:#fff;" +
       "font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 6px 22px rgba(0,0,0,.22)}" +
       ".sa-launch.sa-right{right:20px}.sa-launch.sa-left{left:20px}" +

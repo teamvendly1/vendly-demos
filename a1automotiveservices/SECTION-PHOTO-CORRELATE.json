@@ -1,91 +1,291 @@
 {
-  "at": "2026-08-21T06:04:02.356Z",
+  "at": "2026-08-25T23:39:21.855Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "87a743a827e24e507cbce3fdf55be9d397434e7d960c324282e47fc0d61c2226",
-      "bytes": 78844
+      "source": "stock-library",
+      "sha256": "d0549e36d9125c8c43fae679779d04562a0a75145838ac773325bccf19a06eaf",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "car on lift garage bay"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "9a8fa2cb8aecfb672d04157f6abc76e6e93f8705d85c7fa8732014fad4fd5528",
-      "bytes": 132899
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "482f1d41214fed70f0747ae141400f9f85658a6f508e00ac58ef7f7a81986d3e",
-      "bytes": 144879
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "d3cb2d526a603767a06a5cddbb88fee976e4c3205dd66b048d68ae85b074d40e",
-      "bytes": 135415
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "ede6b53f22caf26ed5c83e8146e197cf44efed8d6c7e10d8ee9f0f545b0a4e6a",
-      "bytes": 191388
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "92958ff08bb1e5ebb31852941bcbd875ae674fb3845d75b5d0eca744a0ad1cbf",
-      "bytes": 160891
+      "source": "stock-library",
+      "sha256": "1d27597905bbfebc71b1950da1ab1ba0d88d85f66d8fbe8d3acf059b7a9f9961",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "a46075697cf5dd6a2ffdab10f58d2ccf6ff0a06c9ff6a4e5b432c878a91f8323",
-      "bytes": 189220
+      "source": "stock-library",
+      "sha256": "6b6d42c4f9543f090eace250c6b8c4bd800dca44b38b1608fa949d9096931a51",
+      "reasons": [
+        "cross_demo_dupe:a1tiresautoservices/photo-hero.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "mechanic workshop tools garage"
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "23ab8d7ec4d99ad942feff1882409d64f5c1bc071a3eaca461c5ee59d76581c1",
-      "bytes": 154710
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "a2d61cb36774f8f1a3c900c9329bf4cc9bf6f576ce8f3e6995269650b4daa973",
-      "bytes": 137737
+      "file": "photo-gallery-1.jpg",
+      "source": "stock-library",
+      "sha256": "dc91e991febd75ccb2f6085cdf3a89a9cca8e434573ae794f6937b72a787a067",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "brake rotor closeup workshop"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "4efe6342edc10c34c7a0699e9bf76b5f37069b0b2e2f8c2d8f28f6ce894e54c1",
-      "bytes": 353976
+      "source": "harvest-fallback",
+      "sha256": "2cff34ff5f8d428f6d6b8ae8d2482e19d6f218c9209372554bd6e497e87aca5e",
+      "reasons": [
+        "cross_demo_dupe:carpenterstiresauto/photo-services-hero.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\a1automotiveservices\\assets\\google\\google-2cff34ff5f8d428f.jpg",
+      "score_alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "48616a365c86148e84e535687f549a42a73ddf78c6f96e599b125b25cdf99b1f",
-      "bytes": 122524
+      "source": "harvest-fallback",
+      "sha256": "f6360685d5a214a260b2c8bc870f60bf48084fc3b788b8694424bd63ebfbd98b",
+      "reasons": [
+        "cross_demo_dupe:carscooksautorepairspecialists/photo-about.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\a1automotiveservices\\assets\\google\\google-f6360685d5a214a2.jpg",
+      "score_alt": "brake rotor closeup workshop"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "9bf469ad2543733a0e37ed8c17689bc9323ce14a897185cddb776c5fd4e155de",
+      "bytes": 186645,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "87a743a827e24e507cbce3fdf55be9d397434e7d960c324282e47fc0d61c2226",
+      "bytes": 78844,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "165c4f786a4aebd881f4e4c8e74daee50a66848b31d152b90e5f2ca324c440f7",
+      "bytes": 118808,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "a58e85ecb4beb5b6f8f68e6343acd85f7e6ad1ede5d3d67fc7edcee5ec9a4215",
+      "bytes": 189947,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "075ea5edb4a0bdc29eb72f254c01c1ef6adf6c888af40fa7dc635ee3d4206929",
+      "bytes": 218585,
+      "alt": "mechanic tools toolbox garage"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "3b112c2a3864b5c7ebd37f34456913a43e794e0c198476177023f346b87d07d6",
-      "bytes": 131611
+      "sha256": "d55c57036a0a6ce7070473130114d7f303d0c0f3c5c55b589e316636694301cf",
+      "bytes": 132768,
+      "alt": "mechanic tools toolbox garage"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "9d820525413492718b2e049411a0bb5d2e4297e2ed93fbc8f98c518f8e6c7d9d",
-      "bytes": 205267
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "650dcf0a7fc04d230bd77b8476047a21e4c7bd930b8273ddf3f8642fbbc543dd",
-      "bytes": 115397
+      "sha256": "1d8fd6c6ebf635cec44727d3131058f9a98d60eef7425f98a8565d2a16fbf929",
+      "bytes": 174418,
+      "alt": "mechanic workshop tools garage"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "9c57c3f8db8ae8a0989b044f1836926a7b20575ea93273425dcd115510d91dd7",
-      "bytes": 160449
+      "sha256": "4191f4c11b606bee8cfc9d9f0835039d0e05f1111cc06a1eafe943f4daac7f70",
+      "bytes": 115614,
+      "alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "644893e2562f832615e6a18b438c6793e4d9fe60a18223e413a30a0083cdae32",
-      "bytes": 156225
+      "sha256": "ec5dddb004904a074951de2c981e262595ffb841ad5b0470e2a041c1818e538a",
+      "bytes": 215732,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "1f41a5b066b06f3e3504fea6ad8b66c3da76401c7accdace2de57e02a00eae49",
+      "bytes": 309026,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "d0549e36d9125c8c43fae679779d04562a0a75145838ac773325bccf19a06eaf",
+      "bytes": 195487,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:adamstireautorepair/photo-services-hero.jpg"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-5.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

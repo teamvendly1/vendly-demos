@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:09:45.243Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-25T23:02:53.453Z",
   "slug": "autoserviceexpertsnewbern",
-  "removed_count": 44,
+  "removed_count": 45,
   "removed_sample": [
     "google-013a4b0efbe007cc.jpg",
     "google-07b65f662a192c64.jpg",
@@ -17,5 +17,10 @@
     "google-250068618108602a.jpg",
     "google-3785d83b98a340ca.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\autoserviceexpertsnewbern",
+  "published_ref_count": 30,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

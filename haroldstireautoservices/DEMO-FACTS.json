@@ -22,7 +22,7 @@
   "eyebrow": "Easley",
   "h1_lead": "",
   "h1_emph": "A higher standard of auto repair in Easley.",
-  "hero_lede": "Auto repair done right. Call and we will take a look.",
+  "hero_lede": "Tire service in Easley. Recent jobs are on the photos page.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "Easley",
@@ -49,7 +49,7 @@
   "footer_blurb": "Harold's Tire & Auto Services serving Easley.",
   "about_h2": "About Harold's Tire & Auto Services",
   "about_p1": "We handle auto repair for drivers who need it done right.",
-  "about_p2": "",
+  "about_p2": "Every photograph on this site is our own work, and it covers diagnostics and engine work, tires and wheels. We work out of Easley and the towns around it.",
   "area_h2": "Serving Easley and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -57,10 +57,18 @@
   "svc_list_h2": "Auto repair, start to finish",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Diagnostics and engine work",
+      "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": "wide interior view of the work bay with tire racks, equipment, and two mechanics working"
+    },
+    {
+      "title": "Tires and wheels",
+      "body": "Fitting and balancing on the machine, with the weights set where they belong.",
+      "slot": "",
+      "alt": "",
+      "evidence": "wide interior view of the work bay with tire racks, equipment, and two mechanics working"
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -68,21 +76,21 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Close-up of an alloy wheel showing a repair patch inside the spoke",
+      "alt": "close-up of black tire tread pattern and warning label text on a mounted wheel",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Close-up of a worn tire tread with a repair patch",
+      "alt": "close-up of a white spoked trailer wheel and mounted tire photographed outdoors",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-3.jpg",
-      "alt": "Close-up of a spare tire mounted under a trailer",
+      "alt": "close-up of a pickup truck's front tire and running board in a gravel lot",
       "subject_class": "trade_work"
     }
   ],
-  "reviews_h2": "Quoted from real jobs",
+  "reviews_h2": "Straight from the owner",
   "reviews_lede": "",
   "reviews": [
     {
@@ -591,22 +599,22 @@
   "place_customers_visit": true,
   "has_storefront": true,
   "alts": {
-    "hero": "Interior waiting area with a vending machine and wooden rocking chairs",
-    "card_about": "Man photographing another man standing at the shop counter",
-    "card_services": "Close-up of a tire tread with a repair plug installed",
-    "card_reviews": "Interior open-air shop with tire equipment and workers, tires hanging on the wall",
-    "card_photos": "Close-up of an alloy wheel with repair patch material visible",
-    "ctaband": "Close-up of a vehicle's front bumper and tire near the ground",
-    "about": "Man and a child in a costume crown opening gifts at an event",
+    "hero": "customer waiting area with Coca-Cola vending machines and wooden rocking chairs by the door",
+    "card_about": "front service counter with a staff member standing behind it and another person filming",
+    "card_services": "close-up of a Michelin tire tread and sidewall mounted on a wheel in the shop",
+    "card_reviews": "close-up of a wheel's spoke openings with Michelin lettering visible along the tire sidewall",
+    "card_photos": "close-up of a bare silver alloy wheel rim with no tire mounted, resting on the floor",
+    "ctaband": "shop lobby with wood paneled walls, corkboard of photos, and a decorated Christmas tree",
+    "about": "wide interior view of the work bay with tire racks, equipment, and two mechanics working",
     "contact": "Harold's Tire & Auto Services",
     "services_hero": "Auto repair services"
   },
   "send": "NO",
-  "asset_version": "harv20260823001745",
+  "asset_version": "harv20260824055038",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\haroldstireautoservices\\HARVEST.json",
-    "at": "2026-08-23T00:17:45.841Z",
+    "at": "2026-08-24T05:50:38.173Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\haroldstireautoservices\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -634,7 +642,8 @@
     "url": "",
     "source_is_google": true
   },
-  "photo_count": 9,
+  "services_source": "their-photographs",
+  "photo_count": 10,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
   "_contact_map_mode": "hyperlink"

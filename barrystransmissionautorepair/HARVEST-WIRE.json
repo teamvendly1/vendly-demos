@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:13:18.738Z",
+ "at": "2026-08-24T05:50:04.505Z",
  "slug": "barrystransmissionautorepair",
  "wired": [
   {
@@ -19,8 +19,8 @@
   },
   {
    "slot": "photo-about.jpg",
-   "from": "google-c796d9766eca5962.jpg",
-   "bytes": 145031,
+   "from": "google-c716363863746958.jpg",
+   "bytes": 249554,
    "letterbox_stripped": null
   },
   {
@@ -31,12 +31,6 @@
   },
   {
    "slot": "photo-card-reviews.jpg",
-   "from": "google-c716363863746958.jpg",
-   "bytes": 249554,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-photos.jpg",
    "from": "google-4ce12f1fd923b53e.jpg",
    "bytes": 216207,
    "letterbox_stripped": null
@@ -50,19 +44,19 @@
   }
  ],
  "skipped": [
-  "classification read: 14 verdicts",
-  "staged 12 harvest photos",
+  "classification read: 12 verdicts",
+  "staged 12 harvest photos from assets",
   "refused_unlooked:google-09453d47f06a2c9a.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-1d7dcd1f0917c7f3.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:google-7c8e276dc6908c10.jpg:reject",
   "refused_unlooked:google-89d729e17d986123.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-92c20d482e2a5a29.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-a97021edd01d05ae.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c796d9766eca5962.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:google-46d2ff915a6599cb.jpg:road_no_landscape",
-  "hero_cand_refuse:google-c716363863746958.jpg:close_crop_alt",
   "hero_cand_refuse:google-4ee9852c5e5dcb44.jpg:road_no_landscape",
   "hero_cand_refuse:google-4ce12f1fd923b53e.jpg:road_no_landscape",
-  "hero_cand_refuse:google-c796d9766eca5962.jpg:portrait_aspect_hero_refuse",
+  "photo-card-photos.jpg",
   "photo-gallery-1.jpg",
   "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
@@ -81,21 +75,24 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 6,
- "refused_by_class": 6,
- "photo_candidates": 6,
+ "candidates": 5,
+ "refused_by_class": 7,
+ "photo_candidates": 5,
  "altBySlot": {
-  "photo-hero.jpg": "Wide view of the red-roofed shop building with work trucks parked out front on a grassy lot",
-  "photo-card-about.jpg": "Shop building exterior on a rainy day with a covered porch, vending machine and picnic table",
-  "photo-about.jpg": "Framed NAPA AutoCare Center membership certificate hanging on the shop wall",
-  "photo-card-services.jpg": "Red flatbed tow truck with the shop's signage parked beside a shipping container",
-  "photo-card-reviews.jpg": "Close-up of a rebuilt engine block with chrome accessories hanging on a hoist chain in the shop",
-  "photo-card-photos.jpg": "Red vintage muscle car parked in a gravel lot near other vehicles"
- }
+  "photo-hero.jpg": "White metal shop building with red roof and Barry's Transmission sign, red service trucks painted with Window Motors and Tune Ups parked out front",
+  "photo-card-about.jpg": "Shop office entrance with red neon OPEN sign, Pepsi vending machine, and picnic table on a rainy wet parking lot",
+  "photo-about.jpg": "Rebuilt V8 engine with polished chrome valve covers and pulleys hanging from a chain hoist beside parts bins",
+  "photo-card-services.jpg": "Red Barry's Transmission flatbed rollback tow truck with the shop name and phone number painted on the door",
+  "photo-card-reviews.jpg": "Restored red Chevelle El Camino parked on the gravel shop lot with customer vehicles parked behind it"
+ },
+ "dedupe_fixed": 5
 }

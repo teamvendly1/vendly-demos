@@ -1,51 +1,138 @@
 {
-  "at": "2026-08-17T04:26:05.697Z",
+  "at": "2026-08-24T15:01:52.794Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "tree-service",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "b03ce86dcd914ac2ae10706f2130c40d125c773fc15fc1825085aea7d576c3a2",
-      "bytes": 760222
+      "source": "harvest-fallback",
+      "sha256": "abca4b469a7824f46ae0df8b676c2cb56c9aaf8ab3c1bedb24fca7bc019d5fa6",
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-about.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-abca4b469a7824f4.jpg"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "abca4b469a7824f46ae0df8b676c2cb56c9aaf8ab3c1bedb24fca7bc019d5fa6",
-      "bytes": 617343
-    },
-    {
-      "file": "photo-card-photos.jpg",
+      "source": "harvest-fallback",
       "sha256": "9c64cd0d8e5f91e7dc095bd58daeaef6acbc5ec7123958a326a0866af1427ab4",
-      "bytes": 252465
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-ctaband.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-9c64cd0d8e5f91e7.jpg"
     },
     {
-      "file": "photo-card-reviews.jpg",
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "50b5d9be423dcf2771a86fac934f36d377c46455b870adb682208e2e279e810c",
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-card-reviews.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-50b5d9be423dcf27.jpg"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
       "sha256": "27b3934b91debc1ca8fe186a9de49e09023dfd6a4bed8dfee5eeac5c6f33d055",
-      "bytes": 554529
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-gallery-8.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-27b3934b91debc1c.jpg"
     },
     {
-      "file": "photo-card-services.jpg",
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "81a87e222524db6b1ca05c96889773308683c319380a68708eb4e8aedfded9e7",
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-quoteband.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-81a87e222524db6b.jpg"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b03ce86dcd914ac2ae10706f2130c40d125c773fc15fc1825085aea7d576c3a2",
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-card-about.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-b03ce86dcd914ac2.jpg"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
       "sha256": "897a7fc8018ffcbb9f82f0b8aa997a4016938778595779509b9350db91c50030",
-      "bytes": 779869
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-gallery-5.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-897a7fc8018ffcbb.jpg"
     },
     {
-      "file": "photo-ctaband.jpg",
+      "file": "photo-gallery-6.jpg",
+      "source": "harvest-fallback",
       "sha256": "d426d0ed4e99cead8e5c3034ec65f27222aa2c1a1b21a681bdd38a20933b25b4",
-      "bytes": 128804
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-card-photos.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-d426d0ed4e99cead.jpg"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "533cf467d381eee46855058409c1263452b8917ee2dd9f971da844f1685c7476",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-533cf467d381eee4.jpg"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
+      "sha256": "387d54d5d86d093aa4c5aaec3e7937b886b835c738f921d881929b9e7e2e78d1",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-387d54d5d86d093a.jpg"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "cfc115b89f6ab2868ec7c6b49d720b08a6127a6be2c55140b35e4f615822ba75",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-cfc115b89f6ab286.jpg"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "81a87e222524db6b1ca05c96889773308683c319380a68708eb4e8aedfded9e7",
-      "bytes": 438561
-    },
+      "source": "harvest-fallback",
+      "sha256": "5ef2188448785fd58cb5e96529ba7d0943c9f36772b9ba18581df2c04b7ea1d3",
+      "reasons": [
+        "cross_demo_dupe:mikestreeservice/photo-gallery-7.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mikestreeservicemarshvilleunionnc\\assets\\google\\google-5ef2188448785fd5.jpg"
+    }
+  ],
+  "kept": [
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "50b5d9be423dcf2771a86fac934f36d377c46455b870adb682208e2e279e810c",
-      "bytes": 390585
+      "sha256": "5bbffcc6b2bc5dd27aa1f742f601430e17c70bbd5032dd3c6c2f7fcf2774050c",
+      "bytes": 344856
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

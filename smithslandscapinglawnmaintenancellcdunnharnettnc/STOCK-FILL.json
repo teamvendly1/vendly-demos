@@ -1,19 +1,19 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-17T04:26:36.135Z",
+  "at": "2026-08-24T14:09:16.594Z",
   "trade": "landscaping",
   "slotHints": {},
-  "ok": false,
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "fa45334d6fd0e451f974129c98753c81f74b23201a5de9f87237248e0133cd05",
+      "sha256": "eb7cd3bca88c672a739baabd2982bb46396d79f21e7a89f04071724916dd2b93",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "eb7cd3bca88c672a739baabd2982bb46396d79f21e7a89f04071724916dd2b93",
+      "sha256": "fa45334d6fd0e451f974129c98753c81f74b23201a5de9f87237248e0133cd05",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -37,7 +37,7 @@
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "30de6ef98011f24c6fcb700dde88a4d75ad5fd5cd9d9832964c9e49b491ff829",
+      "sha256": "1bbc5876223670defb2b4a3d300c49fdb70b7bbb50634357723bb1af807c2bfd",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -46,201 +46,230 @@
       "sha256": "90e52c4548636578d90d39a97e16f4bff21f45478818ae9e9d3006e28ea21fed",
       "source": "harvest_or_prior",
       "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "dac653ab78ecc60252393e987719ec0a484f8fd2c4d307b28f63313b96a2f6ae",
-      "source": "harvest_or_prior",
-      "niche_folder": null
     }
   ],
   "filled": [
     {
       "file": "photo-contact.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "6dec43504af3640146aac1aa6e8c838792d0867ecedbc2d18751efde82e8c828",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/garden-tools-with-soil-on-wooden-table-11337256/",
+        "subject_alt": "landscape edging bed install",
+        "found_by_query": "landscape edging bed install",
+        "family": "landscaping",
+        "library_file": "landscaping-flat-lay-gardening-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:16:30.721Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 145
+      }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "72f2b60b1c3f6b87094f0c2c8cd7f5259551bf3a90e735f711056afdd18a23af",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/close-up-of-soccer-field-lines-on-green-grass-36386777/",
+        "subject_alt": "lawn mower cutting turf",
+        "found_by_query": "lawn mower cutting turf",
+        "family": "landscaping",
+        "library_file": "landscaping-detailed-view-white-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:14:26.292Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 144
+      }
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "ee8e499a9a2745b93e695c8a2a40fded851b367a97197aac62651e11b2072378",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/green-leaves-growing-on-branches-in-park-4495801/",
+        "subject_alt": "mulch bed shrub planting",
+        "found_by_query": "mulch bed shrub planting",
+        "family": "landscaping",
+        "library_file": "landscaping-background-green-leaves-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:13:58.403Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 143
+      }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "a8cddc537c24ace8999db29558e6e4129ac68adc7c1fc9815ceae4cb69ce1738",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/red-and-yellow-tulips-in-a-garden-8347188/",
+        "subject_alt": "landscape edging bed install",
+        "found_by_query": "landscape edging bed install",
+        "family": "landscaping",
+        "library_file": "landscaping-vibrant-field-red-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:16:51.125Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 142
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "1e1273f296afd2775888a63f5e185874a67e343e9028b1ea3e64ce4f5fc5b30a",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/gardener-trimming-hedge-with-pruning-shears-38936348/",
+        "subject_alt": "mulch bed shrub planting",
+        "found_by_query": "mulch bed shrub planting",
+        "family": "landscaping",
+        "library_file": "landscaping-close-up-hands-trimming-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:13:56.065Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 141
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "b0133d3be5fb757762c26b2706d64dff0fbe38b5552fa105b2f51d267687661c",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/serene-spring-garden-with-colorful-flowers-31816131/",
+        "subject_alt": "landscape edging bed install",
+        "found_by_query": "landscape edging bed install",
+        "family": "landscaping",
+        "library_file": "landscaping-lush-garden-vibrant-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:16:48.363Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 140
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "9a1d707b2f4d56be2c713460b9e42ad7f10c666abc97950f3bf66ce9906558d8",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/adorable-rabbit-in-a-garden-setting-38148904/",
+        "subject_alt": "mulch bed shrub planting",
+        "found_by_query": "mulch bed shrub planting",
+        "family": "landscaping",
+        "library_file": "landscaping-cute-rabbit-sitting-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:13:51.889Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 139
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "f09758829257e71181555148353682c16ca353cd788c6d99211bd20fa00d18aa",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/scenic-pathway-with-vibrant-tulips-in-bloom-37821610/",
+        "subject_alt": "landscape edging bed install",
+        "found_by_query": "landscape edging bed install",
+        "family": "landscaping",
+        "library_file": "landscaping-beautiful-garden-scene-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:16:40.872Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 138
+      }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "82803504e5da6d575f050837a0348c6c8ac8a5f7319e42dbbb80eb508d6761d0",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tractor-plowing-field-on-a-sunny-spring-day-31586234/",
+        "subject_alt": "lawn mower cutting turf",
+        "found_by_query": "lawn mower cutting turf",
+        "family": "landscaping",
+        "library_file": "landscaping-tractor-plows-sunny-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:14:33.750Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 137
+      }
     }
   ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-contact.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-photos-cta.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-service-2.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "landscaping",
-      "service": "",
-      "fileName": "photo-services-hero.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 8,
-  "slots": 17,
-  "stock_provenance_rows": 0,
+  "gaps": [],
+  "distinct": 16,
+  "slots": 16,
+  "stock_provenance_rows": 9,
   "family": "landscaping",
   "refuse_borrow": false,
   "provenance_ok": true
