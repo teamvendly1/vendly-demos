@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "bishoptireautoservice",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#24140E",
+  "palette": {
+    "BRAND": "#24140E",
+    "PRIMARY": "#46271B",
+    "PRIMARY_DK": "#331D14",
+    "PRIMARY_MID": "#542F21",
+    "ACCENT": "#6E3D2B",
+    "ACCENT_DK": "#4D2B1E",
+    "ACCENT_LT": "#9A563C",
+    "ON_DARK": "#E8CEC4",
+    "MENU_INK": "#21120D",
+    "TINT_1": "#F1E0DA",
+    "TINT_2": "#F5EAE5",
+    "TINT_3": "#EEDAD3",
+    "TINT_4": "#EFDDD7",
+    "LINE_2": "#E2C2B6",
+    "MUTED_BRAND": "#C6856C",
+    "MIST": "#FAF4F2",
+    "LINE": "#EBD4CC",
+    "PRIMARY_RGB": "70,39,27",
+    "ACCENT_RGB": "110,61,43",
+    "SCRIM_RGB": "84,47,33",
+    "SCRIM2_RGB": "51,29,20",
+    "MENU_INK_RGB": "33,18,13",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.41,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.88,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.97,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.15,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.15,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

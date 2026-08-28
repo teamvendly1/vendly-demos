@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "rjautomotive",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#27090E",
+  "palette": {
+    "BRAND": "#27090E",
+    "PRIMARY": "#4F121C",
+    "PRIMARY_DK": "#3A0D15",
+    "PRIMARY_MID": "#5F1622",
+    "ACCENT": "#7C1D2D",
+    "ACCENT_DK": "#57141F",
+    "ACCENT_LT": "#AE283E",
+    "ON_DARK": "#F0BDC5",
+    "MENU_INK": "#25090D",
+    "TINT_1": "#F5D6DB",
+    "TINT_2": "#F8E2E6",
+    "TINT_3": "#F4CDD4",
+    "TINT_4": "#F4D1D7",
+    "LINE_2": "#ECACB7",
+    "MUTED_BRAND": "#D9596E",
+    "MIST": "#FCF0F2",
+    "LINE": "#F2C5CC",
+    "PRIMARY_RGB": "79,18,28",
+    "ACCENT_RGB": "124,29,45",
+    "SCRIM_RGB": "95,22,34",
+    "SCRIM2_RGB": "58,13,21",
+    "MENU_INK_RGB": "37,9,13",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.63,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 10.14,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.91,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.69,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 9.12,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
