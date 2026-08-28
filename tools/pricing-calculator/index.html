@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Should I Charge? Hourly Rate Calculator | Vendly</title>
+<meta name="description" content="Free hourly rate calculator for trades and small business owners. Work out what to charge based on the income you want, real overhead, and how many hours you can actually bill.">
+<link rel="stylesheet" href="../assets/tools.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="https://vendly.ink">Vendly<span>.</span></a>
+    <nav>
+      <a href="https://vendly.ink">Home</a>
+      <a href="../">Free Tools</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow"><a href="../">Free Tools</a> / Pricing Calculator</p>
+    <h1>What Should I Charge?</h1>
+    <p class="lede">Most rates get picked by copying a competitor or guessing. This works backward from the income you actually want, your real overhead, and how many hours you can realistically bill - not a fantasy 40 billable hours a week.</p>
+  </div>
+
+  <div class="wrap">
+    <form id="rateForm" class="panel no-print" autocomplete="off">
+      <div class="grid">
+        <div class="field">
+          <label for="desiredIncome">Take-home income you want ($ / year)</label>
+          <span class="hint">What you want to pay yourself, before this business's expenses</span>
+          <input type="number" id="desiredIncome" min="0" step="500" value="70000" required>
+        </div>
+        <div class="field">
+          <label for="annualOverhead">Annual business overhead ($)</label>
+          <span class="hint">Insurance, vehicle, tools, software, licensing - the whole year</span>
+          <input type="number" id="annualOverhead" min="0" step="100" value="15000">
+        </div>
+        <div class="field">
+          <label for="weeksPerYear">Working weeks / year</label>
+          <span class="hint">52 minus vacation, sick time, holidays</span>
+          <input type="number" id="weeksPerYear" min="1" max="52" step="1" value="48">
+        </div>
+        <div class="field">
+          <label for="daysPerWeek">Working days / week</label>
+          <input type="number" id="daysPerWeek" min="1" max="7" step="1" value="5">
+        </div>
+        <div class="field">
+          <label for="billableHoursPerDay">Billable hours / day</label>
+          <span class="hint">Actual paid work, not driving, quoting, or admin</span>
+          <input type="number" id="billableHoursPerDay" min="0.5" max="16" step="0.5" value="5.5">
+        </div>
+        <div class="field">
+          <label for="profitMarginPct">Target profit margin (%)</label>
+          <span class="hint">Cushion above cost + income, for growth and slow weeks</span>
+          <input type="number" id="profitMarginPct" min="0" max="90" step="1" value="15">
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn">Calculate my rate</button>
+        <button type="button" class="btn secondary" id="printBtn">Print this</button>
+      </div>
+    </form>
+
+    <div class="result" id="result" aria-live="polite">
+      <div class="row"><span>Real annual billable hours</span><span class="val" id="r-hours">0</span></div>
+      <div class="row"><span>Income + overhead needed</span><span class="val" id="r-base">$0.00</span></div>
+      <div class="row"><span>Required revenue (with margin)</span><span class="val" id="r-required">$0.00</span></div>
+      <div class="row total"><span>You should charge, per hour</span><span class="val" id="r-hourly">$0.00</span></div>
+      <div class="row"><span>Equivalent day rate</span><span class="val" id="r-day">$0.00</span></div>
+      <div class="row"><span>Equivalent week rate</span><span class="val" id="r-week">$0.00</span></div>
+      <div class="row"><span>Monthly revenue target</span><span class="val" id="r-monthly">$0.00</span></div>
+    </div>
+
+    <div class="callout no-print">
+      Why "real" billable hours matters: a 40-hour week almost never means 40 billed hours. Driving between jobs, writing quotes, ordering parts, and admin all eat real time that a customer never sees on an invoice. Guessing your rate off a 40-hour week is the single most common way trades businesses under-price themselves.
+    </div>
+
+    <div class="lead-box no-print">
+      <h3>Want this emailed to you?</h3>
+      <p>Optional - drop your email and we will send a copy of this breakdown, plus the occasional tip on pricing jobs right. No spam, unsubscribe anytime.</p>
+      <form id="rateLeadForm" class="lead-form">
+        <input type="email" placeholder="you@business.com" required>
+        <button type="submit" class="btn small">Email me this</button>
+      </form>
+      <p class="lead-msg"></p>
+      <p class="fine-print">The calculator above works whether or not you submit this. We're Vendly - we build websites and back-office tools for trades businesses.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-brand">Vendly</span>
+    <p>Free tools for trades and small business owners. <a href="../">See all free tools</a> &middot; <a href="https://vendly.ink">vendly.ink</a></p>
+  </div>
+</footer>
+
+<script src="../assets/calc.js"></script>
+<script src="../assets/lead.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var fmt = function (n) {
+    return "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+
+  var lastResult = null;
+
+  function readInputs() {
+    return {
+      desiredIncome: $("desiredIncome").value,
+      annualOverhead: $("annualOverhead").value,
+      weeksPerYear: $("weeksPerYear").value,
+      daysPerWeek: $("daysPerWeek").value,
+      billableHoursPerDay: $("billableHoursPerDay").value,
+      profitMarginPct: $("profitMarginPct").value
+    };
+  }
+
+  function render() {
+    var r = VendlyCalc.calcRate(readInputs());
+    lastResult = r;
+    $("r-hours").textContent = Number(r.annualBillableHours).toLocaleString("en-US");
+    $("r-base").textContent = fmt(r.baseNeed);
+    $("r-required").textContent = fmt(r.requiredRevenue);
+    $("r-hourly").textContent = fmt(r.hourlyRate) + " / hr";
+    $("r-day").textContent = fmt(r.dayRate) + " / day";
+    $("r-week").textContent = fmt(r.weekRate) + " / week";
+    $("r-monthly").textContent = fmt(r.monthlyRevenueTarget) + " / mo";
+  }
+
+  document.getElementById("rateForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    render();
+  });
+  ["desiredIncome", "annualOverhead", "weeksPerYear", "daysPerWeek", "billableHoursPerDay", "profitMarginPct"].forEach(function (id) {
+    $(id).addEventListener("input", render);
+  });
+  $("printBtn").addEventListener("click", function () { window.print(); });
+
+  render();
+
+  VendlyLead.wireLeadForm("rateLeadForm", "Pricing Calculator", function () {
+    return lastResult ? { recommended_hourly_rate: lastResult.hourlyRate } : {};
+  });
+})();
+</script>
+</body>
+</html>

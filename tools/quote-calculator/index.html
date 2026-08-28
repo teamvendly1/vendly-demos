@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Job Quote &amp; Estimate Calculator | Vendly</title>
+<meta name="description" content="Free job quote calculator for trades and contractors. Enter labor rate, hours, materials, markup, overhead, and tax to get a real, itemized price - not a guess.">
+<link rel="stylesheet" href="../assets/tools.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="https://vendly.ink">Vendly<span>.</span></a>
+    <nav>
+      <a href="https://vendly.ink">Home</a>
+      <a href="../">Free Tools</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow"><a href="../">Free Tools</a> / Quote Calculator</p>
+    <h1>Job Quote &amp; Estimate Calculator</h1>
+    <p class="lede">Stop quoting off the top of your head. Enter what the job actually costs you and this works out what to charge, itemized, so you can hand a customer a number you can defend.</p>
+  </div>
+
+  <div class="wrap">
+    <form id="quoteForm" class="panel no-print" autocomplete="off">
+      <div class="grid">
+        <div class="field">
+          <label for="laborRate">Labor rate ($ / hour)</label>
+          <input type="number" id="laborRate" min="0" step="0.01" value="75" required>
+        </div>
+        <div class="field">
+          <label for="hours">Estimated hours</label>
+          <input type="number" id="hours" min="0" step="0.25" value="8" required>
+        </div>
+        <div class="field">
+          <label for="materials">Materials cost ($)</label>
+          <span class="hint">What you pay, before markup</span>
+          <input type="number" id="materials" min="0" step="0.01" value="250">
+        </div>
+        <div class="field">
+          <label for="materialsMarkupPct">Materials markup (%)</label>
+          <span class="hint">What you add for sourcing/handling</span>
+          <input type="number" id="materialsMarkupPct" min="0" step="1" value="20">
+        </div>
+        <div class="field">
+          <label for="overheadPct">Overhead / contingency (%)</label>
+          <span class="hint">Insurance, vehicle, tools, admin time</span>
+          <input type="number" id="overheadPct" min="0" step="1" value="10">
+        </div>
+        <div class="field">
+          <label for="taxPct">Sales tax (%)</label>
+          <span class="hint">Set to 0 if labor/parts are not taxed in your state</span>
+          <input type="number" id="taxPct" min="0" step="0.01" value="0">
+        </div>
+      </div>
+      <div class="btn-row">
+        <button type="submit" class="btn">Calculate quote</button>
+        <button type="button" class="btn secondary" id="printBtn">Print this quote</button>
+      </div>
+    </form>
+
+    <div class="result" id="result" aria-live="polite">
+      <div class="row"><span>Labor (rate &times; hours)</span><span class="val" id="r-labor">$0.00</span></div>
+      <div class="row"><span>Materials (with markup)</span><span class="val" id="r-materials">$0.00</span></div>
+      <div class="row"><span>Subtotal</span><span class="val" id="r-subtotal">$0.00</span></div>
+      <div class="row"><span>Overhead / contingency</span><span class="val" id="r-overhead">$0.00</span></div>
+      <div class="row"><span>Pre-tax total</span><span class="val" id="r-pretax">$0.00</span></div>
+      <div class="row"><span>Tax</span><span class="val" id="r-tax">$0.00</span></div>
+      <div class="row total"><span>Quote total</span><span class="val" id="r-total">$0.00</span></div>
+      <div class="row"><span>Effective flat rate / hour</span><span class="val" id="r-effrate">$0.00</span></div>
+    </div>
+
+    <div class="callout no-print">
+      This adds a real overhead line on purpose. A quote that only covers labor and parts is quietly losing money on gas, insurance, tool wear, and the time you spend driving and writing the quote itself. That is what the overhead percentage is standing in for.
+    </div>
+
+    <div class="lead-box no-print">
+      <h3>Want this emailed to you?</h3>
+      <p>Optional - drop your email and we will send a copy of this breakdown, plus the occasional tip on pricing jobs right. No spam, unsubscribe anytime.</p>
+      <form id="quoteLeadForm" class="lead-form">
+        <input type="email" placeholder="you@business.com" required>
+        <button type="submit" class="btn small">Email me this</button>
+      </form>
+      <p class="lead-msg"></p>
+      <p class="fine-print">The calculator above works whether or not you submit this. We're Vendly - we build websites and back-office tools for trades businesses.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-brand">Vendly</span>
+    <p>Free tools for trades and small business owners. <a href="../">See all free tools</a> &middot; <a href="https://vendly.ink">vendly.ink</a></p>
+  </div>
+</footer>
+
+<script src="../assets/calc.js"></script>
+<script src="../assets/lead.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var fmt = function (n) {
+    return "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+
+  var lastResult = null;
+
+  function readInputs() {
+    return {
+      laborRate: $("laborRate").value,
+      hours: $("hours").value,
+      materials: $("materials").value,
+      materialsMarkupPct: $("materialsMarkupPct").value,
+      overheadPct: $("overheadPct").value,
+      taxPct: $("taxPct").value
+    };
+  }
+
+  function render() {
+    var r = VendlyCalc.calcQuote(readInputs());
+    lastResult = r;
+    $("r-labor").textContent = fmt(r.laborTotal);
+    $("r-materials").textContent = fmt(r.materialsWithMarkup);
+    $("r-subtotal").textContent = fmt(r.subtotal);
+    $("r-overhead").textContent = fmt(r.overheadAmount);
+    $("r-pretax").textContent = fmt(r.preTaxTotal);
+    $("r-tax").textContent = fmt(r.taxAmount);
+    $("r-total").textContent = fmt(r.grandTotal);
+    $("r-effrate").textContent = fmt(r.effectiveHourlyIfFlat) + " / hr";
+  }
+
+  document.getElementById("quoteForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    render();
+  });
+  ["laborRate", "hours", "materials", "materialsMarkupPct", "overheadPct", "taxPct"].forEach(function (id) {
+    $(id).addEventListener("input", render);
+  });
+  $("printBtn").addEventListener("click", function () { window.print(); });
+
+  render();
+
+  VendlyLead.wireLeadForm("quoteLeadForm", "Quote Calculator", function () {
+    return lastResult ? { quote_total: lastResult.grandTotal } : {};
+  });
+})();
+</script>
+</body>
+</html>

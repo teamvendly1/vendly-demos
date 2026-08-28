@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Invoice Generator | Vendly</title>
+<meta name="description" content="Free invoice generator for small businesses and contractors. Add line items, tax, and payments, then print a clean invoice straight to PDF. Nothing is uploaded or stored.">
+<link rel="stylesheet" href="../assets/tools.css">
+<style>
+  #invoicePreview{background:#fff;border:1px solid var(--line);border-radius:16px;padding:34px 36px}
+  .inv-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:22px}
+  .inv-from h2{margin-bottom:2px}
+  .inv-from .muted, .inv-to .muted{color:#5a5a4e;font-size:14px;white-space:pre-line}
+  .inv-meta{text-align:right}
+  .inv-meta .big{font-family:Fraunces,Georgia,serif;font-size:26px;font-weight:700;color:var(--gold)}
+  .inv-meta table{margin-left:auto;font-size:14px;border-collapse:collapse}
+  .inv-meta td{padding:2px 0 2px 14px;text-align:right}
+  .inv-meta td.k{color:#7a7a6d;padding-left:0}
+  .inv-parties{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+  .inv-parties h3{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#7a7a6d;margin-bottom:6px}
+  .inv-totals{margin-top:6px;margin-left:auto;max-width:320px}
+  .inv-totals .row{display:flex;justify-content:space-between;padding:6px 0;font-size:15px}
+  .inv-totals .row.total{font-weight:700;font-size:19px;border-top:2px solid var(--ink);padding-top:10px;margin-top:4px}
+  .inv-totals .row.balance{font-weight:700;color:var(--gold)}
+  .inv-notes{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-size:14px;color:#4a4a40;white-space:pre-line}
+  @media print{ #invoicePreview{border:none;padding:0} .panel{display:none !important} }
+</style>
+</head>
+<body>
+<header class="site-header no-print">
+  <div class="wrap bar">
+    <a class="brand" href="https://vendly.ink">Vendly<span>.</span></a>
+    <nav>
+      <a href="https://vendly.ink">Home</a>
+      <a href="../">Free Tools</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero no-print">
+    <p class="eyebrow"><a href="../">Free Tools</a> / Invoice Generator</p>
+    <h1>Invoice Generator</h1>
+    <p class="lede">Fill in your details and line items on the left, watch a real invoice build itself below, then print it straight to PDF. Everything happens in your browser - nothing is uploaded anywhere.</p>
+  </div>
+
+  <div class="wrap">
+    <form id="invoiceForm" class="panel no-print" autocomplete="off">
+      <h2>Your business</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="bizName">Business name</label>
+          <input type="text" id="bizName" value="Your Business Name">
+        </div>
+        <div class="field">
+          <label for="bizContact">Contact info</label>
+          <span class="hint">Phone, email, address - one per line</span>
+          <textarea id="bizContact" rows="3">(555) 555-0100
+you@yourbusiness.com</textarea>
+        </div>
+      </div>
+
+      <h2 style="margin-top:22px">Bill to</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="clientName">Client name</label>
+          <input type="text" id="clientName" value="Client Name">
+        </div>
+        <div class="field">
+          <label for="clientContact">Client address / contact</label>
+          <textarea id="clientContact" rows="3"></textarea>
+        </div>
+      </div>
+
+      <h2 style="margin-top:22px">Invoice details</h2>
+      <div class="grid">
+        <div class="field">
+          <label for="invNumber">Invoice #</label>
+          <input type="text" id="invNumber" value="1001">
+        </div>
+        <div class="field">
+          <label for="invDate">Invoice date</label>
+          <input type="date" id="invDate">
+        </div>
+        <div class="field">
+          <label for="dueDate">Due date</label>
+          <input type="date" id="dueDate">
+        </div>
+        <div class="field">
+          <label for="taxPct">Tax (%)</label>
+          <input type="number" id="taxPct" min="0" step="0.01" value="0">
+        </div>
+        <div class="field">
+          <label for="amountPaid">Amount already paid ($)</label>
+          <input type="number" id="amountPaid" min="0" step="0.01" value="0">
+        </div>
+      </div>
+
+      <h2 style="margin-top:22px">Line items</h2>
+      <div class="table-scroll">
+        <table class="items" id="itemsTable">
+          <thead>
+            <tr><th style="width:50%">Description</th><th>Qty</th><th>Unit price</th><th class="num">Total</th><th></th></tr>
+          </thead>
+          <tbody id="itemsBody"></tbody>
+        </table>
+      </div>
+      <button type="button" class="btn secondary small" id="addRow" style="margin-top:10px">+ Add line item</button>
+
+      <div class="field" style="margin-top:18px">
+        <label for="notes">Notes / payment terms</label>
+        <textarea id="notes" rows="2">Payment due within 15 days. Thank you for your business.</textarea>
+      </div>
+
+      <div class="btn-row">
+        <button type="button" class="btn" id="printBtn">Print / Save as PDF</button>
+        <button type="button" class="btn secondary" id="downloadBtn">Download as HTML</button>
+      </div>
+    </form>
+
+    <div id="invoicePreview" aria-live="polite">
+      <div class="inv-top">
+        <div class="inv-from">
+          <h2 id="p-bizName">Your Business Name</h2>
+          <div class="muted" id="p-bizContact"></div>
+        </div>
+        <div class="inv-meta">
+          <div class="big">INVOICE</div>
+          <table>
+            <tr><td class="k">Invoice #</td><td id="p-invNumber"></td></tr>
+            <tr><td class="k">Date</td><td id="p-invDate"></td></tr>
+            <tr><td class="k">Due</td><td id="p-dueDate"></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="inv-parties">
+        <div class="inv-to">
+          <h3>Bill To</h3>
+          <div style="font-weight:600" id="p-clientName"></div>
+          <div class="muted" id="p-clientContact"></div>
+        </div>
+      </div>
+      <div class="table-scroll">
+        <table class="items">
+          <thead>
+            <tr><th style="width:50%">Description</th><th>Qty</th><th>Unit price</th><th class="num">Total</th></tr>
+          </thead>
+          <tbody id="p-itemsBody"></tbody>
+        </table>
+      </div>
+      <div class="inv-totals">
+        <div class="row"><span>Subtotal</span><span id="p-subtotal">$0.00</span></div>
+        <div class="row"><span id="p-taxLabel">Tax</span><span id="p-tax">$0.00</span></div>
+        <div class="row total"><span>Total</span><span id="p-total">$0.00</span></div>
+        <div class="row"><span>Amount paid</span><span id="p-paid">$0.00</span></div>
+        <div class="row balance"><span>Balance due</span><span id="p-balance">$0.00</span></div>
+      </div>
+      <div class="inv-notes" id="p-notes"></div>
+    </div>
+
+    <div class="lead-box no-print">
+      <h3>Want this template emailed to you?</h3>
+      <p>Optional - drop your email and we will send you this invoice as a starting template, plus the occasional tip on getting paid faster. No spam, unsubscribe anytime.</p>
+      <form id="invoiceLeadForm" class="lead-form">
+        <input type="email" placeholder="you@business.com" required>
+        <button type="submit" class="btn small">Email me this</button>
+      </form>
+      <p class="lead-msg"></p>
+      <p class="fine-print">The generator above works whether or not you submit this. We're Vendly - we build websites and back-office tools for trades businesses.</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer no-print">
+  <div class="wrap">
+    <span class="foot-brand">Vendly</span>
+    <p>Free tools for trades and small business owners. <a href="../">See all free tools</a> &middot; <a href="https://vendly.ink">vendly.ink</a></p>
+  </div>
+</footer>
+
+<script src="../assets/calc.js"></script>
+<script src="../assets/lead.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var fmt = function (n) {
+    return "$" + Number(n).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+  var escapeHtml = function (s) {
+    return (s || "").toString().replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  };
+  var fmtDate = function (iso) {
+    if (!iso) return "";
+    var parts = iso.split("-");
+    if (parts.length !== 3) return iso;
+    var d = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+    return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+  };
+
+  var rowId = 0;
+  function addRow(desc, qty, price) {
+    rowId++;
+    var tr = document.createElement("tr");
+    tr.dataset.rowId = rowId;
+    tr.innerHTML =
+      '<td><input type="text" class="li-desc" value="' + escapeHtml(desc || "") + '" placeholder="Labor, part, or service"></td>' +
+      '<td><input type="number" class="li-qty" min="0" step="0.5" value="' + (qty != null ? qty : 1) + '"></td>' +
+      '<td><input type="number" class="li-price" min="0" step="0.01" value="' + (price != null ? price : 0) + '"></td>' +
+      '<td class="num li-total">$0.00</td>' +
+      '<td><button type="button" class="remove-row" aria-label="Remove line">&times;</button></td>';
+    $("itemsBody").appendChild(tr);
+    tr.querySelectorAll("input").forEach(function (inp) { inp.addEventListener("input", render); });
+    tr.querySelector(".remove-row").addEventListener("click", function () {
+      tr.remove();
+      render();
+    });
+  }
+
+  function readLineItems() {
+    var rows = $("itemsBody").querySelectorAll("tr");
+    var items = [];
+    rows.forEach(function (tr) {
+      items.push({
+        description: tr.querySelector(".li-desc").value,
+        qty: tr.querySelector(".li-qty").value,
+        unitPrice: tr.querySelector(".li-price").value
+      });
+    });
+    return items;
+  }
+
+  var lastResult = null;
+
+  function render() {
+    var items = readLineItems();
+    var taxPct = $("taxPct").value;
+    var paid = $("amountPaid").value;
+    var r = VendlyCalc.calcInvoice(items, taxPct, paid);
+    lastResult = r;
+
+    // live per-row totals in the edit table
+    var rows = $("itemsBody").querySelectorAll("tr");
+    rows.forEach(function (tr, i) {
+      var li = r.lineItems[i];
+      tr.querySelector(".li-total").textContent = li ? fmt(li.lineTotal) : "$0.00";
+    });
+
+    // preview header
+    $("p-bizName").textContent = $("bizName").value || "Your Business Name";
+    $("p-bizContact").textContent = $("bizContact").value;
+    $("p-clientName").textContent = $("clientName").value || "Client Name";
+    $("p-clientContact").textContent = $("clientContact").value;
+    $("p-invNumber").textContent = $("invNumber").value;
+    $("p-invDate").textContent = fmtDate($("invDate").value);
+    $("p-dueDate").textContent = fmtDate($("dueDate").value);
+    $("p-notes").textContent = $("notes").value;
+
+    // preview line items
+    var body = $("p-itemsBody");
+    body.innerHTML = "";
+    r.lineItems.forEach(function (li) {
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        "<td>" + escapeHtml(li.description || "(item)") + "</td>" +
+        "<td>" + li.qty + "</td>" +
+        "<td>" + fmt(li.unitPrice) + "</td>" +
+        '<td class="num">' + fmt(li.lineTotal) + "</td>";
+      body.appendChild(tr);
+    });
+
+    $("p-taxLabel").textContent = "Tax (" + r.taxPct + "%)";
+    $("p-subtotal").textContent = fmt(r.subtotal);
+    $("p-tax").textContent = fmt(r.taxAmount);
+    $("p-total").textContent = fmt(r.total);
+    $("p-paid").textContent = fmt(r.amountPaid);
+    $("p-balance").textContent = fmt(r.balanceDue);
+  }
+
+  $("addRow").addEventListener("click", function () { addRow("", 1, 0); render(); });
+  [
+    "bizName", "bizContact", "clientName", "clientContact",
+    "invNumber", "invDate", "dueDate", "taxPct", "amountPaid", "notes"
+  ].forEach(function (id) { $(id).addEventListener("input", render); });
+
+  $("printBtn").addEventListener("click", function () { window.print(); });
+
+  $("downloadBtn").addEventListener("click", function () {
+    var previewHtml = $("invoicePreview").outerHTML;
+    var styleTag = document.querySelector('link[href="../assets/tools.css"]');
+    var doc =
+      "<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Invoice " +
+      escapeHtml($("invNumber").value) +
+      "</title><style>" +
+      "body{font-family:Georgia,serif;background:#fff;color:#14140F;margin:40px}" +
+      ".inv-top{display:flex;justify-content:space-between;border-bottom:2px solid #14140F;padding-bottom:18px;margin-bottom:22px}" +
+      ".inv-meta{text-align:right}.inv-meta table{margin-left:auto;font-size:14px}.inv-meta td{padding:2px 0 2px 14px;text-align:right}" +
+      ".inv-meta .big{font-size:26px;font-weight:700;color:#6A5A1E}" +
+      "table.items{width:100%;border-collapse:collapse;margin-top:10px}table.items th{text-align:left;font-size:12px;text-transform:uppercase;color:#7a7a6d;padding:8px 6px;border-bottom:2px solid #E7E2D2}" +
+      "table.items td{padding:8px 6px;border-bottom:1px solid #E7E2D2}.num{text-align:right}" +
+      ".inv-totals{margin-top:6px;margin-left:auto;max-width:320px}.inv-totals .row{display:flex;justify-content:space-between;padding:6px 0}" +
+      ".inv-totals .total{font-weight:700;font-size:19px;border-top:2px solid #14140F;padding-top:10px}" +
+      ".inv-totals .balance{font-weight:700;color:#6A5A1E}" +
+      ".muted{color:#5a5a4e;font-size:14px;white-space:pre-line}.inv-notes{margin-top:26px;padding-top:14px;border-top:1px solid #E7E2D2;white-space:pre-line}" +
+      "</style></head><body>" + previewHtml + "</body></html>";
+    var blob = new Blob([doc], { type: "text/html" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "invoice-" + ($("invNumber").value || "draft") + ".html";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+  });
+
+  // seed today / +15 days, three sample rows, then render
+  var today = new Date();
+  var due = new Date(today.getTime() + 15 * 24 * 60 * 60 * 1000);
+  $("invDate").value = today.toISOString().slice(0, 10);
+  $("dueDate").value = due.toISOString().slice(0, 10);
+
+  addRow("Service call / labor", 3, 75);
+  addRow("Replacement part", 1, 120);
+  render();
+
+  VendlyLead.wireLeadForm("invoiceLeadForm", "Invoice Generator", function () {
+    return lastResult ? { invoice_total: lastResult.total } : {};
+  });
+})();
+</script>
+</body>
+</html>
