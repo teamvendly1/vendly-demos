@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T13:35:15.517Z",
+ "at": "2026-08-28T01:04:34.643Z",
  "slug": "plumbingagents",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-dda8d7ca3e71d4b8.jpg",
-   "bytes": 533068,
-   "letterbox_stripped": null
+   "bytes": 194626,
+   "smart_crop": true,
+   "src": "google-dda8d7ca3e71d4b8.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 36.176,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-cec27e91f5f6fb79.jpg",
-   "bytes": 112999,
-   "letterbox_stripped": "v38.4%"
+   "bytes": 61628,
+   "smart_crop": true,
+   "src": "google-cec27e91f5f6fb79.jpg",
+   "letterbox_stripped": "v38.4%",
+   "src_wh": "739x986",
+   "out_wh": "739x462",
+   "crop_axis": "y",
+   "crop_offset_pct": 5,
+   "detail_score": 20.818,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-1be9405def572821.jpg",
-   "bytes": 700989,
-   "letterbox_stripped": null
+   "bytes": 276587,
+   "smart_crop": true,
+   "src": "google-1be9405def572821.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 45.417,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-403af456c2b46143.jpg",
-   "bytes": 171047,
-   "letterbox_stripped": "v20.1%"
+   "bytes": 90843,
+   "smart_crop": true,
+   "src": "google-403af456c2b46143.jpg",
+   "letterbox_stripped": "v20.1%",
+   "src_wh": "739x1279",
+   "out_wh": "739x462",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 28.068,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-feaac65ee4bd9537.jpg",
-   "bytes": 88516,
-   "letterbox_stripped": "v25.0%"
+   "bytes": 43181,
+   "smart_crop": true,
+   "src": "google-feaac65ee4bd9537.jpg",
+   "letterbox_stripped": "v25.0%",
+   "src_wh": "750x1000",
+   "out_wh": "750x469",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 13.8,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-ee07ba47fb42bc1b.jpg",
-   "bytes": 137151,
-   "letterbox_stripped": null
+   "bytes": 85656,
+   "smart_crop": true,
+   "src": "google-ee07ba47fb42bc1b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "828x1070",
+   "out_wh": "828x518",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 19.188,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-2dc6e74ef55ea254.jpg",
-   "bytes": 132048,
-   "letterbox_stripped": null
+   "bytes": 76681,
+   "smart_crop": true,
+   "src": "google-2dc6e74ef55ea254.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "828x1040",
+   "out_wh": "828x518",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 18.605,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -150,6 +206,41 @@
    "letterbox_stripped": null
   },
   {
+   "slot": "photo-ba-before.jpg",
+   "from": "google-6a7d273f5aba2ff4.jpg",
+   "bytes": 77720,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-family.jpg",
+   "from": "google-0c5115f8b705d797.jpg",
+   "bytes": 58387,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-dae9790e57068f9c.jpg",
+   "bytes": 54038,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-b03d5b388d4292c0.jpg",
+   "bytes": 196788,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-b2207f5d65be6956.jpg",
+   "bytes": 130583,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
    "slot": "logo.png",
    "from": "their-google-listing:human-flagged-mark",
    "bytes": 174549,
@@ -158,7 +249,7 @@
  ],
  "skipped": [
   "classification read: 70 verdicts",
-  "staged 37 harvest photos",
+  "staged 37 harvest photos from assets",
   "refused_unlooked:google-a1b398e2d2dbce1a.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-e5ab8393b1de37fc.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:google-fb0000000000000e.jpg:LOGO_NOT_PHOTO: graphic mark already flagged is_brand_mark",
@@ -167,38 +258,37 @@
   "hero_cand_refuse:google-3916e4bb76d78b62.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-de06d6b85af28550.jpg",
   "hero_cand_refuse:google-fb6130c43bb4fb40.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-e0b488ae3ebf14fa.jpg:low_res_lt_1080",
+  "hero_cand_refuse:google-e0b488ae3ebf14fa.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-b03d5b388d4292c0.jpg",
   "hero_cand_refuse:google-0fde7bb3a7140ccb.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-403af456c2b46143.jpg",
-  "hero_cand_refuse:google-e213c21f656551e1.jpg:low_res_lt_1080",
-  "hero_cand_refuse:google-c9160bb1a38e93c3.jpg:low_res_lt_1080",
+  "hero_cand_refuse:google-e213c21f656551e1.jpg:low_res_lt_960",
+  "hero_cand_refuse:google-c9160bb1a38e93c3.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-fe382b6308282545.jpg:road_no_landscape",
-  "hero_cand_refuse:google-bfdc1643a996a21f.jpg:low_res_lt_1080",
+  "hero_cand_refuse:google-bfdc1643a996a21f.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-53796c21b18c6d54.jpg:road_no_landscape",
   "hero_cand_refuse:google-bdf731eaa3e23f6d.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-ee07ba47fb42bc1b.jpg:low_res_lt_1080",
-  "hero_cand_refuse:google-2dc6e74ef55ea254.jpg:low_res_lt_1080",
+  "hero_cand_refuse:google-ee07ba47fb42bc1b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-2dc6e74ef55ea254.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-b2207f5d65be6956.jpg",
-  "hero_cand_refuse:google-54af17f2221458c2.jpg:low_res_lt_1080",
+  "hero_cand_refuse:google-54af17f2221458c2.jpg:low_res_lt_960",
   "hero_cand_refuse:google-b87fff9f088dc46d.jpg:road_no_landscape",
-  "hero_cand_refuse:google-454da47dc532b5f5.jpg:too_small_bytes",
-  "hero_cand_refuse:google-cec27e91f5f6fb79.jpg:too_small_bytes",
-  "hero_cand_refuse:google-9ccc7fac7ca1cfdf.jpg:too_small_bytes",
+  "hero_cand_refuse:google-454da47dc532b5f5.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-cec27e91f5f6fb79.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-9ccc7fac7ca1cfdf.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-b2f98e4f72a58d74.jpg",
-  "hero_cand_refuse:google-8fde0bfc581263b0.jpg:too_small_bytes",
-  "hero_cand_refuse:google-076975c1aee184c2.jpg:too_small_bytes",
-  "hero_cand_refuse:google-cd3093cfab2c454e.jpg:too_small_bytes",
-  "hero_cand_refuse:google-feaac65ee4bd9537.jpg:too_small_bytes",
-  "hero_cand_refuse:google-22dce70836a65653.jpg:too_small_bytes",
-  "hero_cand_refuse:google-198ea14f6e4b02a7.jpg:too_small_bytes",
-  "hero_cand_refuse:google-6a7d273f5aba2ff4.jpg:too_small_bytes",
-  "hero_cand_refuse:google-0c5115f8b705d797.jpg:too_small_bytes",
-  "hero_cand_refuse:google-dae9790e57068f9c.jpg:too_small_bytes",
+  "hero_cand_refuse:google-8fde0bfc581263b0.jpg:low_res_lt_960",
+  "hero_cand_refuse:google-076975c1aee184c2.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-cd3093cfab2c454e.jpg:road_no_landscape",
+  "hero_cand_refuse:google-feaac65ee4bd9537.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-22dce70836a65653.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-6a7d273f5aba2ff4.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-dae9790e57068f9c.jpg:low_res_lt_960",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 34,
  "refused_by_class": 3,
+ "photo_candidates": 34,
  "altBySlot": {
   "photo-hero.jpg": "excavator and dirt at a job site clearing land for underground plumbing work",
   "photo-card-about.jpg": "large group photo of the crew standing together outdoors near a stone patio",
@@ -223,6 +313,12 @@
   "photo-services-hero.jpg": "bathroom with pedestal sink freshly installed near doorway",
   "photo-contact.jpg": "wall studs wrapped in plastic sheeting with PVC pipe run through them",
   "photo-photos-cta.jpg": "attic framing with copper pipe runs and insulation paper visible",
-  "photo-reviewsband.jpg": "white toilet freshly installed in a small bathroom"
- }
+  "photo-reviewsband.jpg": "white toilet freshly installed in a small bathroom",
+  "photo-ba-before.jpg": "propane gas water heater with digital timer display and insulated pipe",
+  "photo-family.jpg": "crawlspace PVC drain pipe run beneath wood floor joists",
+  "photo-service-4.jpg": "utility mop sink installed with drain fittings visible",
+  "photo-service-5.jpg": "technician kneeling on a floor installing a drain fitting",
+  "photo-service-6.jpg": "technician in a cap installing a tankless water heater on a wood paneled wall"
+ },
+ "dedupe_fixed": 5
 }

@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:32:07.269Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-28T00:59:31.882Z",
   "slug": "millsrivertowing",
-  "removed_count": 28,
+  "removed_count": 27,
   "removed_sample": [
     "google-3b0a3cc7bea2f93b.jpg",
     "google-417100bd57739cc6.jpg",
@@ -17,5 +17,10 @@
     "google-8bf899adfaa86592.jpg",
     "google-a7aa456cdbbc6805.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\millsrivertowing",
+  "published_ref_count": 23,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }
