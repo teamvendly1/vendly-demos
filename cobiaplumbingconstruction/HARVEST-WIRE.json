@@ -1,193 +1,249 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-22T23:33:43.077Z",
-  "slug": "cobiaplumbingconstruction",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-service-1.jpg",
-      "bytes": 133652,
-      "trade_score": 7.5,
-      "reason": "hero_contrast_retarget:photo-service-1.jpg"
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-945b10a82764dac6.jpg",
-      "bytes": 381607,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-a2d0b1af1cb25f67.jpg",
-      "bytes": 317114,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-24873b5b63f419d2.jpg",
-      "bytes": 328779,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-b6fe5dcd7a9f0dbd.jpg",
-      "bytes": 510441,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-c200908868f0c173.jpg",
-      "bytes": 404273,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-69eb46f56f8caa5d.jpg",
-      "bytes": 614478,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-81aef095d072bd1b.jpg",
-      "bytes": 311026,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-466356e74602aeb5.jpg",
-      "bytes": 303557,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-a4fa658aa3c8ec40.jpg",
-      "bytes": 288508,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-9c9343937e977637.jpg",
-      "bytes": 249629,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "from": "google-8ac82958f66dfa22.jpg",
-      "bytes": 220685,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
-      "from": "google-9316c65934624b72.jpg",
-      "bytes": 213683,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
-      "from": "google-32d79290f903bd2c.jpg",
-      "bytes": 137643,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-1.jpg",
-      "from": "google-de5c55ef53916cae.jpg",
-      "bytes": 133652,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-2.jpg",
-      "from": "google-ab8745dd000cc85a.jpg",
-      "bytes": 119850,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-3.jpg",
-      "from": "google-eedf240df3920843.jpg",
-      "bytes": 101858,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-7.jpg",
-      "from": "google-0ec4986c017eec4d.jpg",
-      "bytes": 130270,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-8.jpg",
-      "from": "google-3c8b0b3a79397871.jpg",
-      "bytes": 93508,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-9.jpg",
-      "from": "google-47da1944ef6b4cb9.jpg",
-      "bytes": 70457,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-services-hero.jpg",
-      "from": "google-b455033c9c13ba20.jpg",
-      "bytes": 355282,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "charter-placeholder-your-logo-here",
-      "bytes": 21159,
-      "placeholder": true,
-      "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
-    }
-  ],
-  "skipped": [
-    "classification read: 42 verdicts",
-    "staged 21 harvest photos",
-    "hero_cand_refuse:google-69eb46f56f8caa5d.jpg:close_crop_alt",
-    "hero_cand_refuse:google-b6fe5dcd7a9f0dbd.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-c200908868f0c173.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-24873b5b63f419d2.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-a2d0b1af1cb25f67.jpg:road_no_landscape",
-    "hero_cand_refuse:google-466356e74602aeb5.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-a4fa658aa3c8ec40.jpg:road_no_landscape",
-    "hero_cand_refuse:google-32d79290f903bd2c.jpg:road_no_landscape",
-    "hero_cand_refuse:google-ab8745dd000cc85a.jpg:blurry_low_contrast",
-    "hero_cand_refuse:google-eedf240df3920843.jpg:blurry_low_contrast",
-    "hero_cand_refuse:google-3c8b0b3a79397871.jpg:blurry_low_contrast",
-    "hero_cand_refuse:google-47da1944ef6b4cb9.jpg:blurry_low_contrast",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "photo-contact-hero.jpg",
-    "photo-reviews-hero.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 21,
-  "photo_candidates": 21,
-  "altBySlot": {
-    "photo-hero.jpg": "Water heater installed in an unfinished framed utility closet with pipes",
-    "photo-card-about.jpg": "Brick walkway with a pink-handled spigot valve visible",
-    "photo-about.jpg": "Finished tiled shower stall with a decorative niche and fixtures installed",
-    "photo-card-services.jpg": "Close-up of a toilet flange installed on the subfloor",
-    "photo-card-reviews.jpg": "Close-up of a water pipe leaking onto rocky ground",
-    "photo-card-photos.jpg": "Exposed subfloor showing a drain pipe and rusted components during a repair",
-    "photo-gallery-1.jpg": "Close-up of a tankless water heater mounted on a brick exterior wall",
-    "photo-gallery-2.jpg": "Crawlspace utility area with exposed plumbing pipes on a rack",
-    "photo-gallery-3.jpg": "Close-up of a rusted old toilet flange in a subfloor drain opening",
-    "photo-ctaband.jpg": "New tankless water heater mounted on a brick exterior wall",
-    "photo-quoteband.jpg": "Freestanding tub set in an unfinished bathroom with tarps and tools around it",
-    "photo-gallery-4.jpg": "Underside of a floor joist area showing a newly installed PVC drain pipe",
-    "photo-gallery-5.jpg": "Tiled shower stall with a decorative niche under construction with tools nearby",
-    "photo-gallery-6.jpg": "Interior wall opened up showing plumbing pipe rough-in work",
-    "photo-service-1.jpg": "Water heater installed in an unfinished framed utility closet with pipes",
-    "photo-service-2.jpg": "Freestanding oval tub installed in a bathroom with a window and black faucet",
-    "photo-service-3.jpg": "New white bathtub and shower surround installed in a bathroom",
-    "photo-gallery-7.jpg": "Whirlpool tub set in place during a bathroom framing construction project",
-    "photo-gallery-8.jpg": "Freestanding oval tub installed in a different bathroom with a window and black faucet",
-    "photo-gallery-9.jpg": "Close-up of a jetted whirlpool tub interior installed",
-    "photo-services-hero.jpg": "White utility service van with a roof rack parked in a lot"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T16:16:37.027Z",
+ "slug": "cobiaplumbingconstruction",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-7d0754d58859b3a4.jpg",
+   "bytes": 596113,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
   },
-  "hero_retarget": {
-    "at": "2026-08-22T23:33:45.477Z",
-    "from_slot": "photo-service-1.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-945b10a82764dac6.jpg",
+   "bytes": 160919,
+   "smart_crop": true,
+   "src": "google-945b10a82764dac6.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 19.202,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-a2d0b1af1cb25f67.jpg",
+   "bytes": 317114,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-24873b5b63f419d2.jpg",
+   "bytes": 122150,
+   "smart_crop": true,
+   "src": "google-24873b5b63f419d2.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 18.636,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-b6fe5dcd7a9f0dbd.jpg",
+   "bytes": 214418,
+   "smart_crop": true,
+   "src": "google-b6fe5dcd7a9f0dbd.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 36.727,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-c200908868f0c173.jpg",
+   "bytes": 164112,
+   "smart_crop": true,
+   "src": "google-c200908868f0c173.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 28.849,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-69eb46f56f8caa5d.jpg",
+   "bytes": 614478,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-81aef095d072bd1b.jpg",
+   "bytes": 311026,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-466356e74602aeb5.jpg",
+   "bytes": 303557,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-a4fa658aa3c8ec40.jpg",
+   "bytes": 288508,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-9c9343937e977637.jpg",
+   "bytes": 249629,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-8ac82958f66dfa22.jpg",
+   "bytes": 220685,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-9316c65934624b72.jpg",
+   "bytes": 213683,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-32d79290f903bd2c.jpg",
+   "bytes": 137643,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-de5c55ef53916cae.jpg",
+   "bytes": 62909,
+   "smart_crop": true,
+   "src": "google-de5c55ef53916cae.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 30,
+   "detail_score": 9.607,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-ab8745dd000cc85a.jpg",
+   "bytes": 51314,
+   "smart_crop": true,
+   "src": "google-ab8745dd000cc85a.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 8.76,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-eedf240df3920843.jpg",
+   "bytes": 52499,
+   "smart_crop": true,
+   "src": "google-eedf240df3920843.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 7.899,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-0ec4986c017eec4d.jpg",
+   "bytes": 130270,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-8.jpg",
+   "from": "google-3c8b0b3a79397871.jpg",
+   "bytes": 93508,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-9.jpg",
+   "from": "google-47da1944ef6b4cb9.jpg",
+   "bytes": 70457,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-services-hero.jpg",
+   "from": "google-b455033c9c13ba20.jpg",
+   "bytes": 355282,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 42 verdicts",
+  "staged 21 harvest photos from assets",
+  "hero_cand_refuse:google-69eb46f56f8caa5d.jpg:close_crop_alt",
+  "hero_cand_refuse:google-b6fe5dcd7a9f0dbd.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-c200908868f0c173.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-24873b5b63f419d2.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-a2d0b1af1cb25f67.jpg:road_no_landscape",
+  "hero_cand_refuse:google-466356e74602aeb5.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-a4fa658aa3c8ec40.jpg:road_no_landscape",
+  "hero_cand_refuse:google-32d79290f903bd2c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-ab8745dd000cc85a.jpg:blurry_low_contrast",
+  "hero_cand_refuse:google-eedf240df3920843.jpg:blurry_low_contrast",
+  "hero_cand_refuse:google-3c8b0b3a79397871.jpg:blurry_low_contrast",
+  "hero_cand_refuse:google-47da1944ef6b4cb9.jpg:blurry_low_contrast",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 21,
+ "photo_candidates": 21,
+ "altBySlot": {
+  "photo-hero.jpg": "Brick walkway with a green sprinkler valve visible in the grass",
+  "photo-card-about.jpg": "Brick walkway with a pink-handled spigot valve visible",
+  "photo-about.jpg": "Finished tiled shower stall with a decorative niche and fixtures installed",
+  "photo-card-services.jpg": "Close-up of a toilet flange installed on the subfloor",
+  "photo-card-reviews.jpg": "Close-up of a water pipe leaking onto rocky ground",
+  "photo-card-photos.jpg": "Exposed subfloor showing a drain pipe and rusted components during a repair",
+  "photo-gallery-1.jpg": "Close-up of a tankless water heater mounted on a brick exterior wall",
+  "photo-gallery-2.jpg": "Crawlspace utility area with exposed plumbing pipes on a rack",
+  "photo-gallery-3.jpg": "Close-up of a rusted old toilet flange in a subfloor drain opening",
+  "photo-ctaband.jpg": "New tankless water heater mounted on a brick exterior wall",
+  "photo-quoteband.jpg": "Freestanding tub set in an unfinished bathroom with tarps and tools around it",
+  "photo-gallery-4.jpg": "Underside of a floor joist area showing a newly installed PVC drain pipe",
+  "photo-gallery-5.jpg": "Tiled shower stall with a decorative niche under construction with tools nearby",
+  "photo-gallery-6.jpg": "Interior wall opened up showing plumbing pipe rough-in work",
+  "photo-service-1.jpg": "Water heater installed in an unfinished framed utility closet with pipes",
+  "photo-service-2.jpg": "Freestanding oval tub installed in a bathroom with a window and black faucet",
+  "photo-service-3.jpg": "New white bathtub and shower surround installed in a bathroom",
+  "photo-gallery-7.jpg": "Whirlpool tub set in place during a bathroom framing construction project",
+  "photo-gallery-8.jpg": "Freestanding oval tub installed in a different bathroom with a window and black faucet",
+  "photo-gallery-9.jpg": "Close-up of a jetted whirlpool tub interior installed",
+  "photo-services-hero.jpg": "White utility service van with a roof rack parked in a lot"
+ },
+ "dedupe_fixed": 5
 }

@@ -1,176 +1,236 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T22:32:53.508Z",
-  "slug": "totaltreecaredunnharnettnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-service-1.jpg",
-      "bytes": 757499,
-      "trade_score": 12.5,
-      "reason": "hero_contrast_retarget:photo-service-1.jpg"
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-3f921ac8d6970d3e.jpg",
-      "bytes": 402568,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-d023d84eb4cbed5b.jpg",
-      "bytes": 759528,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-47cb3dd425d045f9.jpg",
-      "bytes": 621951,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-843d45a43a447f29.jpg",
-      "bytes": 757694,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-deed7a4e2292217b.jpg",
-      "bytes": 711307,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-43030977484a2eae.jpg",
-      "bytes": 786635,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-6aeb954c1835d232.jpg",
-      "bytes": 655580,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-e3805c398758dcad.jpg",
-      "bytes": 639411,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-d3590605243f5106.jpg",
-      "bytes": 634612,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-90b7c68ec9bdf3fc.jpg",
-      "bytes": 585168,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "from": "google-23b36742a29c9d47.jpg",
-      "bytes": 531631,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
-      "from": "google-99f2bc326262ddc1.jpg",
-      "bytes": 506563,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
-      "from": "google-d1a9fa5d252e17bb.jpg",
-      "bytes": 420301,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-1.jpg",
-      "from": "google-20cda3cba11219f7.jpg",
-      "bytes": 757499,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-2.jpg",
-      "from": "google-4a9fcd29a33057a2.jpg",
-      "bytes": 634204,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-3.jpg",
-      "from": "google-f7bff97783bfe424.jpg",
-      "bytes": 437627,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-7.jpg",
-      "from": "google-9ebfd89d89b8c656.jpg",
-      "bytes": 274679,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "their-google-listing:human-flagged-mark",
-      "bytes": 814372,
-      "source_url": "https://www.google.com/maps/place/Total+Tree+Care/@35.1705075,-79.86097,7z/data=!3m1!4b1!4m6!3m5!1s0x8e899da16691ccd7:0x6ea2f7c87c2d7d22!8m2!3d35.1705075!4d-79.86097!16s%2Fg%2F11yq_vqcn5?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
-    }
-  ],
-  "skipped": [
-    "classification read: 48 verdicts",
-    "staged 24 harvest photos",
-    "refused_by_class:google-27ccf7e79772f4a4.jpg:FILLER_NO_WORK: large tree on a lawn, no tools, no cut, no crew",
-    "refused_by_class:google-33a152d80b15573e.jpg:FILLER_NO_WORK: three leafy trees on a lawn with houses behind, no trade",
-    "refused_by_class:google-600103ca42b1e16a.jpg:OFF_TRADE: indoor rope-rescue hang with donut boxes in the foreground, not a tree job",
-    "refused_by_class:google-623a949f84b53247.jpg:FILLER_NO_WORK: mature multi-trunk tree in a backyard, no work visible",
-    "refused_by_class:google-734440ccadba890f.jpg:LOGO_NOT_PHOTO: graphic mark already flagged is_brand_mark",
-    "refused_by_class:google-80ce2c331d0786ee.jpg:FILLER_NO_WORK: sunny yard and a large leafy tree, no cut and no crew",
-    "hero_cand_refuse:google-843d45a43a447f29.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-6aeb954c1835d232.jpg:road_no_landscape",
-    "hero_cand_refuse:google-d3590605243f5106.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-47cb3dd425d045f9.jpg:close_crop_alt",
-    "hero_cand_refuse:google-23b36742a29c9d47.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-99f2bc326262ddc1.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-f7bff97783bfe424.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-d1a9fa5d252e17bb.jpg:close_crop_alt",
-    "hero_hold_crew_for_about:google-3f921ac8d6970d3e.jpg",
-    "hero_cand_refuse:google-9ebfd89d89b8c656.jpg:portrait_aspect_hero_refuse",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 18,
-  "refused_by_class": 6,
-  "altBySlot": {
-    "photo-hero.jpg": "Yellow tracked loader working at the edge of a treeline, clearing cut material off the lawn behind it",
-    "photo-card-about.jpg": "Crew member in a tan helmet looking at the camera, with a second climber tied in on the trunk behind him",
-    "photo-about.jpg": "Two of the crew working along a felled trunk on a front lawn, cutting it into transportable lengths with the brush piled off to one side",
-    "photo-card-services.jpg": "Chainsaw resting on a wide fresh-cut stump, the sawdust still heaped across the cut face",
-    "photo-card-reviews.jpg": "Sawyer kneeling at the foot of a very large trunk, cutting in at the base with the trunk measured and marked above him",
-    "photo-card-photos.jpg": "Track loader lifting a pine log clear of a white picket fence, with the rest of the trunk already bucked into lengths on the grass",
-    "photo-ctaband.jpg": "Mature tree left standing after a crown reduction, the ground beneath it raked clear of the cut brush and the fence line tidy again",
-    "photo-quoteband.jpg": "Large trunk with a heavy burl and open cavity running up its base, the kind of structural defect that decides whether a tree stays",
-    "photo-gallery-1.jpg": "Looking down from a lift onto a pruned hardwood, fresh cut faces on the remaining limbs and the cut logs piled below",
-    "photo-gallery-2.jpg": "Cut stump showing extensive internal decay and bracket fungus growing at the base, the reason the tree had to come out",
-    "photo-gallery-3.jpg": "Large tree brought down across a leaf-covered front yard, lying clear of the house and its shed",
-    "photo-gallery-4.jpg": "Shadow of a climber on a ladder thrown across white siding, a chainsaw on the ground beside the outdoor unit",
-    "photo-gallery-5.jpg": "Tall pines being taken down between two houses, the crown already off the nearest trunk and a compact track loader standing by at the base",
-    "photo-gallery-6.jpg": "Close view of the stump grinder wheel biting into a stump, chips thrown out across the ground around it",
-    "photo-service-1.jpg": "Yellow tracked loader working at the edge of a treeline, clearing cut material off the lawn behind it",
-    "photo-service-2.jpg": "Compact red stump grinder parked on a yard blanketed in fresh grindings where a stump has just been taken out",
-    "photo-service-3.jpg": "Tracked spider lift with its boom extended up into the canopy of a large oak, reaching limbs well out over the property",
-    "photo-gallery-7.jpg": "Tracked spider lift set up on its outriggers beneath a big oak with the boom raised into the crown above"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T02:01:45.243Z",
+ "slug": "totaltreecaredunnharnettnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-90561339828026e8.jpg",
+   "bytes": 615683,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
   },
-  "hero_retarget": {
-    "at": "2026-08-17T22:32:57.245Z",
-    "from_slot": "photo-service-1.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-3f921ac8d6970d3e.jpg",
+   "bytes": 162875,
+   "smart_crop": true,
+   "src": "google-3f921ac8d6970d3e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 36.72,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-d023d84eb4cbed5b.jpg",
+   "bytes": 759528,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-47cb3dd425d045f9.jpg",
+   "bytes": 243270,
+   "smart_crop": true,
+   "src": "google-47cb3dd425d045f9.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 39.039,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-843d45a43a447f29.jpg",
+   "bytes": 276488,
+   "smart_crop": true,
+   "src": "google-843d45a43a447f29.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 41.741,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-deed7a4e2292217b.jpg",
+   "bytes": 243194,
+   "smart_crop": true,
+   "src": "google-deed7a4e2292217b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 37.398,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-43030977484a2eae.jpg",
+   "bytes": 786635,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-6aeb954c1835d232.jpg",
+   "bytes": 655580,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-e3805c398758dcad.jpg",
+   "bytes": 639411,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-d3590605243f5106.jpg",
+   "bytes": 634612,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-90b7c68ec9bdf3fc.jpg",
+   "bytes": 585168,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-23b36742a29c9d47.jpg",
+   "bytes": 531631,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-99f2bc326262ddc1.jpg",
+   "bytes": 506563,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-d1a9fa5d252e17bb.jpg",
+   "bytes": 420301,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-20cda3cba11219f7.jpg",
+   "bytes": 254439,
+   "smart_crop": true,
+   "src": "google-20cda3cba11219f7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 20,
+   "detail_score": 37.576,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-4a9fcd29a33057a2.jpg",
+   "bytes": 232407,
+   "smart_crop": true,
+   "src": "google-4a9fcd29a33057a2.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 36.785,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-f7bff97783bfe424.jpg",
+   "bytes": 197421,
+   "smart_crop": true,
+   "src": "google-f7bff97783bfe424.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1599",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 20,
+   "detail_score": 56.709,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-9ebfd89d89b8c656.jpg",
+   "bytes": 274679,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "human-approved-preserved",
+   "bytes": 827660,
+   "source_url": "https://www.google.com/maps/place/Total+Tree+Care/@35.1705075,-79.86097,7z/data=!3m1!4b1!4m6!3m5!1s0x8e899da16691ccd7:0x6ea2f7c87c2d7d22!8m2!3d35.1705075!4d-79.86097!16s%2Fg%2F11yq_vqcn5?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+   "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
   }
+ ],
+ "skipped": [
+  "classification read: 48 verdicts",
+  "staged 24 harvest photos from assets",
+  "refused_by_class:google-27ccf7e79772f4a4.jpg:FILLER_NO_WORK: large tree on a lawn, no tools, no cut, no crew",
+  "refused_by_class:google-33a152d80b15573e.jpg:FILLER_NO_WORK: three leafy trees on a lawn with houses behind, no trade",
+  "refused_by_class:google-600103ca42b1e16a.jpg:OFF_TRADE: indoor rope-rescue hang with donut boxes in the foreground, not a tree job",
+  "refused_by_class:google-623a949f84b53247.jpg:FILLER_NO_WORK: mature multi-trunk tree in a backyard, no work visible",
+  "refused_by_class:google-734440ccadba890f.jpg:LOGO_NOT_PHOTO: graphic mark already flagged is_brand_mark",
+  "refused_by_class:google-80ce2c331d0786ee.jpg:FILLER_NO_WORK: sunny yard and a large leafy tree, no cut and no crew",
+  "hero_cand_refuse:google-843d45a43a447f29.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-6aeb954c1835d232.jpg:road_no_landscape",
+  "hero_cand_refuse:google-d3590605243f5106.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-47cb3dd425d045f9.jpg:close_crop_alt",
+  "hero_cand_refuse:google-23b36742a29c9d47.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-99f2bc326262ddc1.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-f7bff97783bfe424.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-d1a9fa5d252e17bb.jpg:close_crop_alt",
+  "hero_hold_crew_for_about:google-3f921ac8d6970d3e.jpg",
+  "hero_cand_refuse:google-9ebfd89d89b8c656.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 18,
+ "refused_by_class": 6,
+ "photo_candidates": 18,
+ "altBySlot": {
+  "photo-hero.jpg": "Worker crossing a cleared yard where a tree has been sectioned into rounds and stacked ready to be hauled out",
+  "photo-card-about.jpg": "Crew member in a tan helmet looking at the camera, with a second climber tied in on the trunk behind him",
+  "photo-about.jpg": "Two of the crew working along a felled trunk on a front lawn, cutting it into transportable lengths with the brush piled off to one side",
+  "photo-card-services.jpg": "Chainsaw resting on a wide fresh-cut stump, the sawdust still heaped across the cut face",
+  "photo-card-reviews.jpg": "Sawyer kneeling at the foot of a very large trunk, cutting in at the base with the trunk measured and marked above him",
+  "photo-card-photos.jpg": "Track loader lifting a pine log clear of a white picket fence, with the rest of the trunk already bucked into lengths on the grass",
+  "photo-gallery-1.jpg": "Mature tree left standing after a crown reduction, the ground beneath it raked clear of the cut brush and the fence line tidy again",
+  "photo-gallery-2.jpg": "Large trunk with a heavy burl and open cavity running up its base, the kind of structural defect that decides whether a tree stays",
+  "photo-gallery-3.jpg": "Looking down from a lift onto a pruned hardwood, fresh cut faces on the remaining limbs and the cut logs piled below",
+  "photo-ctaband.jpg": "Cut stump showing extensive internal decay and bracket fungus growing at the base, the reason the tree had to come out",
+  "photo-quoteband.jpg": "Large tree brought down across a leaf-covered front yard, lying clear of the house and its shed",
+  "photo-gallery-4.jpg": "Shadow of a climber on a ladder thrown across white siding, a chainsaw on the ground beside the outdoor unit",
+  "photo-gallery-5.jpg": "Tall pines being taken down between two houses, the crown already off the nearest trunk and a compact track loader standing by at the base",
+  "photo-gallery-6.jpg": "Close view of the stump grinder wheel biting into a stump, chips thrown out across the ground around it",
+  "photo-service-1.jpg": "Yellow tracked loader working at the edge of a treeline, clearing cut material off the lawn behind it",
+  "photo-service-2.jpg": "Compact red stump grinder parked on a yard blanketed in fresh grindings where a stump has just been taken out",
+  "photo-service-3.jpg": "Tracked spider lift with its boom extended up into the canopy of a large oak, reaching limbs well out over the property",
+  "photo-gallery-7.jpg": "Tracked spider lift set up on its outriggers beneath a big oak with the boom raised into the crown above"
+ },
+ "dedupe_fixed": 5
 }

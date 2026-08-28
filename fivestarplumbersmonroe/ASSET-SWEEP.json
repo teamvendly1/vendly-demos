@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:56:09.468Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T16:44:22.800Z",
   "slug": "fivestarplumbersmonroe",
-  "removed_count": 41,
+  "removed_count": 35,
   "removed_sample": [
     "google-1250ded4a7b67eb5.jpg",
     "google-1e2138edb7f2301b.jpg",
@@ -17,5 +17,10 @@
     "google-6a2d8d75d614a403.jpg",
     "google-79df0c5b90b1c3cf.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\fivestarplumbersmonroe",
+  "published_ref_count": 27,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

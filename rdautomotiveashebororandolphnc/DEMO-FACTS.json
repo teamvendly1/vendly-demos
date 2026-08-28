@@ -31,7 +31,7 @@
   "strip_body": "",
   "explore_h2": "Tell us what it is doing and we will take it from there",
   "explore_lede": "",
-  "card_about": "",
+  "card_about": "Who you are calling, and the work we do in Asheboro.",
   "card_services": "See everything we take on",
   "card_reviews": "Read what past customers said",
   "card_photos": "Browse recent job photos",
@@ -54,7 +54,7 @@
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
   "svc_hero_lede": "",
-  "svc_list_h2": "What we do",
+  "svc_list_h2": "What we handle: auto repair",
   "services": [
     {
       "title": "Diagnostics and engine work",
@@ -90,22 +90,22 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "technician in R&D Automotive shirt torquing a wheel on a lifted vehicle",
+      "alt": "technician mounting a tire on a tire changer machine in the shop",
       "subject_class": "premises"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "technician in R&D Automotive shirt performing brake work on a lifted red vehicle",
+      "alt": "technician working on a suspension component at a workbench in the shop",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-3.jpg",
-      "alt": "mechanic in R&D Automotive shirt draining fluid from a vehicle on a lift",
+      "alt": "technician in R&D Automotive shirt draining fluid from a vehicle on a lift",
       "subject_class": "team"
     },
     {
       "slot": "photo-gallery-4.jpg",
-      "alt": "R&D Automotive & Tire shop front with multiple open bay doors and vehicles on lifts",
+      "alt": "technician in R&D Automotive shirt performing brake work on a lifted red vehicle",
       "subject_class": "team"
     }
   ],
@@ -303,12 +303,12 @@
   "place_customers_visit": true,
   "has_storefront": true,
   "alts": {
-    "hero": "technician working on a suspension component at a workbench in the shop",
+    "hero": "R&D Automotive - technician at work on site (photo 1)",
     "card_about": "three R&D Automotive team members standing together outside the shop's storefront window",
-    "card_services": "technician mounting a tire on a tire changer machine in the shop",
+    "card_services": "R&D Automotive - technician at work on site (photo 2)",
     "card_reviews": "three R&D Automotive team members at the parts counter inside the shop",
     "card_photos": "R&D Automotive front desk staff member answering the phone at the shop office",
-    "ctaband": "technician in R&D Automotive shirt draining fluid from a vehicle on a lift",
+    "ctaband": "technician in R&D Automotive shirt working on suspension parts under a lifted truck",
     "about": "R&D Automotive front desk staff member handling customer keys and paperwork at the shop office",
     "contact": "R&D Automotive",
     "services_hero": "Auto repair services"
@@ -318,12 +318,12 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rdautomotiveashebororandolphnc\\HARVEST.json",
-    "at": "2026-08-18T06:19:28.050Z",
+    "at": "2026-08-25T22:53:35.676Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rdautomotiveashebororandolphnc\\DEMO-FACTS.json",
+    "facts_path": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\rdautomotiveashebororandolphnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
     "rebuilt": true,
-    "harvest_merged": true
+    "harvest_merged": false
   },
   "address": {
     "street": "114 Plummer St",
@@ -350,5 +350,5 @@
   "photo_count": 12,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "hyperlink"
+  "_contact_map_mode": "pin-link"
 }

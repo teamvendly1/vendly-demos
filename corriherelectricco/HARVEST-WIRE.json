@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T13:35:30.958Z",
+ "at": "2026-08-26T16:21:59.897Z",
  "slug": "corriherelectricco",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-17afac03dc38f67b.jpg",
-   "bytes": 611319,
-   "letterbox_stripped": null
+   "bytes": 226149,
+   "smart_crop": true,
+   "src": "google-17afac03dc38f67b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 32.797,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-e9facd0495963f49.jpg",
-   "bytes": 399166,
-   "letterbox_stripped": null
+   "bytes": 155395,
+   "smart_crop": true,
+   "src": "google-e9facd0495963f49.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 24.247,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-4cd524c93a519e27.jpg",
-   "bytes": 592606,
-   "letterbox_stripped": null
+   "bytes": 220800,
+   "smart_crop": true,
+   "src": "google-4cd524c93a519e27.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 28.707,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-3381078ac4c7def6.jpg",
-   "bytes": 257092,
-   "letterbox_stripped": null
+   "bytes": 120681,
+   "smart_crop": true,
+   "src": "google-3381078ac4c7def6.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 38.57,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-3e2251cd357a3fab.jpg",
-   "bytes": 119902,
-   "letterbox_stripped": "v17.2%"
+   "bytes": 59742,
+   "smart_crop": true,
+   "src": "google-3e2251cd357a3fab.jpg",
+   "letterbox_stripped": "v17.2%",
+   "src_wh": "746x1325",
+   "out_wh": "746x466",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 18.765,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-d7429e743fd35313.jpg",
-   "bytes": 61127,
-   "letterbox_stripped": "v17.2%"
+   "bytes": 26780,
+   "smart_crop": true,
+   "src": "google-d7429e743fd35313.jpg",
+   "letterbox_stripped": "v17.2%",
+   "src_wh": "746x1325",
+   "out_wh": "746x466",
+   "crop_axis": "y",
+   "crop_offset_pct": 65,
+   "detail_score": 9.679,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-3a8f27553b6fe9d5.jpg",
-   "bytes": 59390,
-   "letterbox_stripped": null
+   "bytes": 21087,
+   "smart_crop": true,
+   "src": "google-3a8f27553b6fe9d5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x1600",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 7.853,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -140,25 +196,25 @@
   {
    "slot": "logo.png",
    "from": "human-approved-preserved",
-   "bytes": 273040,
+   "bytes": 138418,
    "source_url": "https://www.google.com/maps/place/Corriher+Electric+Co./@35.4599266,-80.6422918,17z/data=!3m1!4b1!4m6!3m5!1s0xa26283ca1fdcb66d:0x6b594074fa01a2cf!8m2!3d35.4599266!4d-80.6422918!16s%2Fg%2F11nxkhxdsf?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
    "human_verdict_by": "claude-code-pixel-emulated-review-2026-08-18"
   }
  ],
  "skipped": [
-  "classification read: 44 verdicts",
-  "staged 45 harvest photos",
+  "classification read: 50 verdicts",
+  "staged 45 harvest photos from assets",
   "refused_unlooked:google-09421f612311157f.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-18e863b9e7b8053e.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-1af0126bb73fe927.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-1c184802c83b757d.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-1ce15cfd8357f222.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-1de9227c02475a45.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-2ec8e58ce8bd14b5.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-2ec8e58ce8bd14b5.jpg:reject",
   "refused_unlooked:google-310badaf49becfba.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-32abb2fb25aef988.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-7fb23077c667da54.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-91173efdde1d1cde.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-91173efdde1d1cde.jpg:reject",
   "refused_unlooked:google-99c44dfe8eebfc01.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-c56fcd56e555e15e.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-c82a390f8e7f8e44.jpg:NEEDS_SUBJECT_LOOK",
@@ -187,19 +243,25 @@
   "hero_cand_refuse:google-4719d9f1d7bc59e0.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-a1fac9b575399b54.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-3dd9ef8d04aff48f.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-3e2251cd357a3fab.jpg:too_small_bytes",
-  "hero_cand_refuse:google-b78efb0cfce38951.jpg:too_small_bytes",
-  "hero_cand_refuse:google-d7429e743fd35313.jpg:too_small_bytes",
-  "hero_cand_refuse:google-3a8f27553b6fe9d5.jpg:too_small_bytes",
-  "hero_cand_refuse:google-3a4dbf33389361d9.jpg:too_small_bytes",
-  "hero_cand_refuse:google-9adae832649d5591.jpg:too_small_bytes",
+  "hero_cand_refuse:google-3e2251cd357a3fab.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b78efb0cfce38951.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-d7429e743fd35313.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-3a8f27553b6fe9d5.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-3a4dbf33389361d9.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-9adae832649d5591.jpg:portrait_aspect_hero_refuse",
   "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-edeb7f85e29bd0f2.jpg)",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 22,
  "refused_by_class": 23,
+ "photo_candidates": 22,
  "altBySlot": {
   "photo-hero.jpg": "Brick mailbox column at dusk with warm LED accent lighting glowing under both cap courses",
   "photo-card-about.jpg": "Brick mailbox column with accent lighting installed, at the end of a concrete driveway",
@@ -223,5 +285,6 @@
   "photo-gallery-9.jpg": "Breaker panel mounted on a finished interior wall with its cover in place",
   "photo-services-hero.jpg": "Breaker panel on an interior wall with a small device mounted next to it",
   "photo-contact.jpg": "Corriher Electric service truck with a ladder rack, parked in a lot"
- }
+ },
+ "dedupe_fixed": 5
 }

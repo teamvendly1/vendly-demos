@@ -1,18 +1,27 @@
 {
  "schema": "vendly.autodemo.mark-classify-receipt/1",
- "at": "2026-08-22T16:47:19.070Z",
+ "at": "2026-08-25T16:58:00.000Z",
  "slug": "jjhooktowingllcvinelandcumberlandnj",
- "logo_sha256": "46135c1402785a8c1aad61c2b2247c52b062a5375108933b119921b92b7613f2",
- "origin": "facebook-profile-mark:eyes-verified",
- "source_url": "https://www.facebook.com/jjhooktowing/",
- "source_file": "C:\\VendlyVault\\_remote\\state\\prospect-logos\\jjhooktowingllcvinelandcumberlandnj\\facebook-profile.jpg",
+ "logo_sha256": "4F26DC05586BC43BB26E99292189E0CD3A4DFFBA87802A1A3A2BD5CCEF4DF477",
+ "origin": "vehicle-photo-crop:photo-card-about.jpg",
+ "source_url": "https://teamvendly1.github.io/vendly-demos/jjhooktowingllcvinelandcumberlandnj/assets/photo-card-about.jpg",
+ "source_file": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\jjhooktowingllcvinelandcumberlandnj\\assets\\photo-card-about.jpg",
+ "mark_crop": {
+  "left": 560,
+  "top": 90,
+  "width": 300,
+  "height": 300,
+  "set_by": "cursor-eyes-2026-08-25",
+  "why": "Circular hook-graphic jj-hook TOWING emblem on driver door; replaces wrong facebook-profile truck photo."
+ },
  "verdict": {
   "ok": true,
   "flatness": null,
-  "transparent": null,
-  "decided_by": "human-eyes",
-  "w": 958,
-  "h": 959
+  "transparent": true,
+  "decided_by": "cursor-eyes-2026-08-25",
+  "w": 300,
+  "h": 300
  },
- "post_stage_transform": "logo-transparent-margin"
+ "post_stage_transform": "keyout-logo-flat-bg.ps1",
+ "supersedes": "facebook-profile-mark:eyes-verified (2026-08-22)"
 }

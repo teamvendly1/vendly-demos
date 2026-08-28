@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "jimmystowing",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#1B1F0E",
+  "palette": {
+    "BRAND": "#1B1F0E",
+    "PRIMARY": "#3A431E",
+    "PRIMARY_DK": "#2B3116",
+    "PRIMARY_MID": "#465124",
+    "ACCENT": "#5C6930",
+    "ACCENT_DK": "#404A21",
+    "ACCENT_LT": "#819443",
+    "ON_DARK": "#DEE6C7",
+    "MENU_INK": "#1C200E",
+    "TINT_1": "#EBEFDC",
+    "TINT_2": "#F1F4E6",
+    "TINT_3": "#E7ECD5",
+    "TINT_4": "#E9EED8",
+    "LINE_2": "#D6DFB9",
+    "MUTED_BRAND": "#ADC072",
+    "MIST": "#F8F9F3",
+    "LINE": "#E2E9CE",
+    "PRIMARY_RGB": "58,67,30",
+    "ACCENT_RGB": "92,105,48",
+    "SCRIM_RGB": "70,81,36",
+    "SCRIM2_RGB": "43,49,22",
+    "MENU_INK_RGB": "28,32,14",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.49,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 5.97,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.12,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.64,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

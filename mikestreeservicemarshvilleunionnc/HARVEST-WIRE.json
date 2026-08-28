@@ -1,97 +1,154 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T04:26:04.929Z",
-  "slug": "mikestreeservicemarshvilleunionnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-81a87e222524db6b.jpg",
-      "bytes": 438561,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-b03ce86dcd914ac2.jpg",
-      "bytes": 760222
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-abca4b469a7824f4.jpg",
-      "bytes": 617343
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-897a7fc8018ffcbb.jpg",
-      "bytes": 779869
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-27b3934b91debc1c.jpg",
-      "bytes": 554529
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-9c64cd0d8e5f91e7.jpg",
-      "bytes": 252465
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-d426d0ed4e99cead.jpg",
-      "bytes": 128804
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-50b5d9be423dcf27.jpg",
-      "bytes": 390585
-    }
-  ],
-  "skipped": [
-    "classification read: 16 verdicts",
-    "staged 18 harvest photos",
-    "refused_unlooked:google-1c6db498aedafb32.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-387d54d5d86d093a.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-533cf467d381eee4.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5855348c34a24ded.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5bbffcc6b2bc5dd2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5ef2188448785fd5.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-9062ad2476ae1041.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a2173d9ef9785d78.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a6222acadd1db8d9.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-cfc115b89f6ab286.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-b03ce86dcd914ac2.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-abca4b469a7824f4.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-27b3934b91debc1c.jpg:road_no_landscape",
-    "hero_cand_refuse:google-9c64cd0d8e5f91e7.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-d426d0ed4e99cead.jpg:low_res_lt_1080",
-    "photo-gallery-1.jpg",
-    "photo-gallery-2.jpg",
-    "photo-gallery-3.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 8,
-  "refused_by_class": 10,
-  "altBySlot": {
-    "photo-hero.jpg": "Back garden left clean where a stump has been ground out beside the patio, the soil raked back level to the edging",
-    "photo-about.jpg": "Chipper and the company truck set up together at the edge of a wooded lot with one of the crew working the feed",
-    "photo-card-about.jpg": "One of the crew kneeling beside a wide fresh-cut stump with the blower in hand, clearing the sawdust off the cut face",
-    "photo-card-services.jpg": "Climber roped high in a multi-stemmed tree already stripped to bare stems, working the leaders down in sections",
-    "photo-card-reviews.jpg": "Tall stem stripped back to a bare white spar beside a house, its limbs already taken off above the roofline",
-    "photo-card-photos.jpg": "Pine standing dead over a garden with its needles gone brown while the trees around it are still in leaf, waiting to come down",
-    "photo-ctaband.jpg": "Sawyer bucking a felled trunk into rounds at the roadside, the cut slabs stacked flat beside him",
-    "photo-quoteband.jpg": "Company tip truck loaded from a tracked machine on a site blanketed in fresh chip, the body already part full"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T14:40:34.175Z",
+ "slug": "mikestreeservicemarshvilleunionnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-533cf467d381eee4.jpg",
+   "bytes": 648146,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-b03ce86dcd914ac2.jpg",
+   "bytes": 760222,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-abca4b469a7824f4.jpg",
+   "bytes": 617343,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-897a7fc8018ffcbb.jpg",
+   "bytes": 779869,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-5ef2188448785fd5.jpg",
+   "bytes": 652904,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-1c6db498aedafb32.jpg",
+   "bytes": 600625,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-27b3934b91debc1c.jpg",
+   "bytes": 554529,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-cfc115b89f6ab286.jpg",
+   "bytes": 547669,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-387d54d5d86d093a.jpg",
+   "bytes": 505147,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-81a87e222524db6b.jpg",
+   "bytes": 438561,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-5bbffcc6b2bc5dd2.jpg",
+   "bytes": 344856,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-9c64cd0d8e5f91e7.jpg",
+   "bytes": 252465,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-d426d0ed4e99cead.jpg",
+   "bytes": 128804,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-50b5d9be423dcf27.jpg",
+   "bytes": 390585,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 28 verdicts",
+  "staged 18 harvest photos from assets",
+  "refused_unlooked:google-5855348c34a24ded.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-9062ad2476ae1041.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a2173d9ef9785d78.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a6222acadd1db8d9.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-b03ce86dcd914ac2.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-5ef2188448785fd5.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-abca4b469a7824f4.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-1c6db498aedafb32.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-27b3934b91debc1c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-cfc115b89f6ab286.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-387d54d5d86d093a.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-5bbffcc6b2bc5dd2.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-9c64cd0d8e5f91e7.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-d426d0ed4e99cead.jpg:low_res_lt_960",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 14,
+ "refused_by_class": 4,
+ "photo_candidates": 14,
+ "altBySlot": {
+  "photo-hero.jpg": "Mike's Tree Service - technician at work on site (photo 2)",
+  "photo-card-about.jpg": "Chipper and the company truck set up together at the edge of a wooded lot with one of the crew working the feed",
+  "photo-about.jpg": "One of the crew kneeling beside a wide fresh-cut stump with the blower in hand, clearing the sawdust off the cut face",
+  "photo-card-services.jpg": "Climber roped high in a multi-stemmed tree already stripped to bare stems, working the leaders down in sections",
+  "photo-card-reviews.jpg": "Mike's Tree Service - technician at work on site (photo 5)",
+  "photo-card-photos.jpg": "Mike's Tree Service - technician at work on site (photo 6)",
+  "photo-gallery-1.jpg": "Tall stem stripped back to a bare white spar beside a house, its limbs already taken off above the roofline",
+  "photo-gallery-2.jpg": "Mike's Tree Service - technician at work on site (photo 4)",
+  "photo-gallery-3.jpg": "Mike's Tree Service - technician at work on site (photo 3)",
+  "photo-ctaband.jpg": "Back garden left clean where a stump has been ground out beside the patio, the soil raked back level to the edging",
+  "photo-quoteband.jpg": "Mike's Tree Service - technician at work on site (photo 1)",
+  "photo-gallery-4.jpg": "Pine standing dead over a garden with its needles gone brown while the trees around it are still in leaf, waiting to come down",
+  "photo-gallery-5.jpg": "Sawyer bucking a felled trunk into rounds at the roadside, the cut slabs stacked flat beside him",
+  "photo-gallery-6.jpg": "Company tip truck loaded from a tracked machine on a site blanketed in fresh chip, the body already part full"
+ },
+ "dedupe_fixed": 5
 }

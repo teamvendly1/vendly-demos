@@ -1,9 +1,10 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T21:20:45.952Z",
+  "at": "2026-08-26T00:53:25.231Z",
   "trade": "auto-repair",
   "slotHints": {
-    "photo-service-1.jpg": "Diagnostics and engine work"
+    "photo-service-1.jpg": "Diagnostics and engine work",
+    "photo-service-2.jpg": "Exhaust and underbody"
   },
   "ok": false,
   "kept": [
@@ -15,49 +16,55 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "05402964e34f5741a2708f878ac376e9272f0c5e244e7fdd8975f6b1103a1eb2",
+      "sha256": "7b4264dfa068d65c976f1614e506d0d4fcdcb84ce68570af88981b3daa50311e",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "76953d1b72e66d541cfe217c5386d7fda14205125540ebc6f84cc9d53875931b",
+      "sha256": "02bf1a6a80f868e3a71ae167ca06dd89173c38b4893eb70b5e8eb9c56ff4ba21",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "914a5b6d7e403ce7f4bdc4d18f311c78ee9f4ee9b11079e6d163a27ca1f3854c",
+      "sha256": "4d852a5e540ab981fe64016fb988c3508c28a7d2b60a636b69d0b56bc0fae3af",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "b0493048fcf4dd7ffabc80a22df2369c0f1c6ad2d7077dd732e01d948b87276b",
+      "sha256": "883ee4b3339e2484c98b3e31bdee052e04b1b3a409753bd57728320f283fdf80",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "f713a28cf9b59f2e6a4b16ebfef0e31e90f6534e8dae7e59d3e11b7f74b354b3",
+      "sha256": "51f248525d7a81726fefe73f2dc008e2e85f4c83fe9f76a91eb246400346e870",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "82f5e592b19e09e1a0372198c96e923ba88060430b2d9bcbc5d273d1e8c6fe2e",
+      "sha256": "28b2e1e8b673dab32d28764e841757c04e6ea3fe7e4a123c0950b9a3e5ea6b22",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "1da394b75e7fa6dcdcd1462291ac62711ee767c4cf07ffe01c91c2bc6b0eaec2",
+      "sha256": "f713a28cf9b59f2e6a4b16ebfef0e31e90f6534e8dae7e59d3e11b7f74b354b3",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "0cd5c0e0531ee0938ef83721b59a68a8214cd0f291f45aeda000c880f522807f",
+      "sha256": "5b385589de96cc2961bd33b972c387c868ab667b1f554ec4b9dc286016b81d0d",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "af1ff2b2564a9c142cb4d9dddc926680a55e6581e029dbf6786f162c9778c30b",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -74,15 +81,6 @@
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-2.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -165,17 +163,6 @@
       "reason": "stock_gap_all_claimed",
       "family": "auto-repair",
       "service": "",
-      "fileName": "photo-service-2.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
       "fileName": "photo-service-3.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
@@ -226,7 +213,7 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 9,
+  "distinct": 10,
   "slots": 17,
   "stock_provenance_rows": 0,
   "family": "auto-repair",

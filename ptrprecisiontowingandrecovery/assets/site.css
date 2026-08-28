@@ -260,6 +260,13 @@ footer li a{display:inline-block;padding:4px 0}
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
 }
+/* REVERTED 2026-08-18. I first "fixed" this to var(--ink), reading the eye-audit's paraphrase
+   ("sticky bottom action bar... mustard/olive... FAILS") without checking Jacob's actual ruling
+   text first. DEMO-SHIP-STANDARD.md Section I says, verbatim: "Their mark colour on the badge and
+   on estimate / CALL is enough." Brand color on THESE TWO BUTTONS IS THE RULING, not a violation
+   of it. Reverted to the original tokens before this was ever wrong in a shipped file. The real
+   defect Section I names is the PHONE STRIP and the REVIEW BAND going mustard - neither of which
+   is this selector. See _tmp/claude-desktop-out/OUT-0238-*.md for what was actually checked. */
 .mobile-callbar .mcb-est{background:var(--brand)}
 .mobile-callbar .mcb-call{background:var(--blue)}
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
@@ -553,6 +560,34 @@ header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#FEDCE1 !
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
 .v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
 .v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+/* ---------------------------------------------------------------------------------------------
+   CARD PHOTO CROP FIX - 2026-08-24. Measured: 419 of 419 demos mis-cropped, ZERO clean.
+
+   .card-shot sets aspect-ratio:16/10 on the WRAPPER and expects the photo to fill it. But the
+   <img> is a GRANDCHILD, not a child: lightboxImg() in generate-from-blank-mold.js wraps every
+   photo in <button class="v-lb-btn">. TWO separate rules broke the crop and BOTH had to be
+   fixed - the one-line remedy that was filed only addressed the first and would have left the
+   defect live:
+
+     1. .v-lb-btn has AUTO height, so .card-shot img{height:100%} resolved against an indefinite
+        height. A percentage against an indefinite height is ignored, so object-fit:cover never
+        engaged and the photo rendered at its own intrinsic ratio.
+     2. .v-lb-btn img{height:auto} (line above) TIES .card-shot img{height:100%} on specificity -
+        (0,1,1) each, class + element - and wins on source order because it comes later. So even
+        with a definite button height the image would still have been height:auto.
+
+   Symptoms this produced: ratio above 1.6 letterboxed into a dark #0a1622 band under the photo;
+   ratio below 1.6 silently TOP-CROPPED; 228 demos had a portrait photo in a 16:10 box, worst
+   case 0.41, showing about a quarter of the frame.
+
+   Scoped to .card-shot deliberately. .gallery img and .shot img carry aspect-ratio on the IMAGE
+   itself, so their height:auto resolves to a definite box and they crop correctly today - they
+   are not broken and must not be "fixed".
+
+   VERIFY THIS ON THE RENDERED FRAME, NEVER HERE. Four spacing fixes were confirmed in this
+   stylesheet on 2026-08-12 and changed nothing on screen. */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
 .v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
 background:rgba(10,10,8,.92);touch-action:none}
 .v-lb-root.is-open{display:flex}

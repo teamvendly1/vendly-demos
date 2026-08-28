@@ -31,7 +31,7 @@
   "strip_body": "",
   "explore_h2": "If it will not move, we will move it",
   "explore_lede": "",
-  "card_about": "",
+  "card_about": "Who you are calling, and the work we do in Statesville.",
   "card_services": "See everything we take on",
   "card_reviews": "Read what past customers said",
   "card_photos": "Browse recent job photos",
@@ -54,7 +54,7 @@
   "area_lede": "",
   "svc_hero_h1": "The towing work we take on",
   "svc_hero_lede": "",
-  "svc_list_h2": "What we do",
+  "svc_list_h2": "Auto repair services",
   "services": [
     {
       "title": "Car and light truck transport",
@@ -76,12 +76,12 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "J&J technician working underneath a raised Corvette on the shop lift",
+      "alt": "Diesel engine hoisted out of a pickup truck by chain hook during teardown in the shop bay",
       "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Pickup truck raised on a four-post lift for engine and drivetrain repair",
+      "alt": "Disassembled diesel engine and frame components laid out during a rebuild",
       "subject_class": "trade_work"
     }
   ],
@@ -112,19 +112,19 @@
   ],
   "contact_h2": "Get in touch",
   "contact_lede": "",
-  "contact_photo_slot": "logo.png",
-  "contact_photo_tier": "logo",
+  "contact_photo_slot": "",
+  "contact_photo_tier": "none",
   "contact_map": "link",
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Statesville",
-    "card_about": "J & J Towing and Auto Repair (24hr Towing) crew and job photo",
-    "card_services": "Diesel engine hoisted out of a pickup truck by chain hook during teardown in the shop bay",
-    "card_reviews": "Cummins 6.7L Turbo Diesel engine cover installed in a Dodge Ram engine bay",
-    "card_photos": "Disassembled diesel engine and frame components laid out during a rebuild",
+    "hero": "Shop floor with two trucks up on lifts, hoods open for service",
+    "card_about": "J&J technician working underneath a raised Corvette on the shop lift",
+    "card_services": "Cummins 6.7L Turbo Diesel engine cover installed in a Dodge Ram engine bay",
+    "card_reviews": "Heavy-duty rotator tow truck crew loading a generator onto a trailer",
+    "card_photos": "Ford Power Stroke V8 Turbo Diesel engine bay mid-repair with tools staged",
     "ctaband": "Heavy-duty rotator tow truck crew loading a generator onto a trailer",
-    "about": "Ford Power Stroke V8 Turbo Diesel engine bay mid-repair with tools staged",
+    "about": "J&J technician in a company polo holds a small white puppy in the shop office",
     "contact": "J & J Towing and Auto Repair (24hr Towing)",
     "services_hero": "Towing services"
   },
@@ -133,12 +133,12 @@
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\jjtowingandautorepairstatesvilleiredellnc\\HARVEST.json",
-    "at": "2026-08-16T06:29:18.375Z",
+    "at": "2026-08-25T22:59:59.110Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\jjtowingandautorepairstatesvilleiredellnc\\DEMO-FACTS.json",
+    "facts_path": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\jjtowingandautorepairstatesvilleiredellnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
     "rebuilt": true,
-    "harvest_merged": true
+    "harvest_merged": false
   },
   "address": {
     "street": "2014 Shelton Ave",
@@ -163,7 +163,7 @@
   },
   "services_source": "their-photographs",
   "photo_count": 8,
-  "contact_photo_tier_why": "business logo logo.png",
-  "contact_photo_omit": false,
-  "_contact_map_mode": "hyperlink"
+  "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
+  "contact_photo_omit": true,
+  "_contact_map_mode": "pin-link"
 }

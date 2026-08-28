@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T22:47:43.521Z",
+ "at": "2026-08-26T00:34:30.841Z",
  "slug": "meandeansautomotive",
  "wired": [
   {
@@ -14,121 +14,177 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-65286d9ff54bbc0d.jpg",
-   "bytes": 407823,
-   "letterbox_stripped": null
+   "bytes": 150907,
+   "smart_crop": true,
+   "src": "google-65286d9ff54bbc0d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 27.211,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "google-2ecb4e3e2d441caf.jpg",
-   "bytes": 404852,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-93f243dfc837c6f2.jpg",
-   "bytes": 388933,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-c6802d40a6acc8d1.jpg",
-   "bytes": 383870,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-photos.jpg",
    "from": "google-d53c314a1967fa47.jpg",
    "bytes": 380763,
    "letterbox_stripped": null
   },
   {
+   "slot": "photo-card-services.jpg",
+   "from": "google-362616f8f9f879cb.jpg",
+   "bytes": 121791,
+   "smart_crop": true,
+   "src": "google-362616f8f9f879cb.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 23.114,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-96c3472d3f8eab65.jpg",
+   "bytes": 114107,
+   "smart_crop": true,
+   "src": "google-96c3472d3f8eab65.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 30,
+   "detail_score": 22.088,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-2ecb4e3e2d441caf.jpg",
+   "bytes": 137815,
+   "smart_crop": true,
+   "src": "google-2ecb4e3e2d441caf.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 23,
+   "detail_score": 25.055,
+   "orientation": "portrait"
+  },
+  {
    "slot": "photo-gallery-1.jpg",
-   "from": "google-22a667d37623accc.jpg",
-   "bytes": 698373,
+   "from": "google-93f243dfc837c6f2.jpg",
+   "bytes": 388933,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
-   "from": "google-8a64e65b4dbde46a.jpg",
-   "bytes": 689656,
+   "from": "google-c6802d40a6acc8d1.jpg",
+   "bytes": 383870,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-3.jpg",
-   "from": "google-0edc9a9f34f02691.jpg",
-   "bytes": 647320,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-dad97e29e9a309e2.jpg",
-   "bytes": 616371,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "google-00008b454fd42ab0.jpg",
-   "bytes": 564229,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-4.jpg",
-   "from": "google-c23c527b4f6e3873.jpg",
-   "bytes": 539489,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-5.jpg",
-   "from": "google-b3c35285a1e5f30e.jpg",
-   "bytes": 535982,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-6.jpg",
-   "from": "google-a9fffcb703853497.jpg",
-   "bytes": 494614,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-service-1.jpg",
    "from": "google-38241bc063e21c5d.jpg",
    "bytes": 355973,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-service-2.jpg",
-   "from": "google-362616f8f9f879cb.jpg",
-   "bytes": 292243,
+   "slot": "photo-ctaband.jpg",
+   "from": "google-77c6a950092303dc.jpg",
+   "bytes": 233302,
    "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-22a667d37623accc.jpg",
+   "bytes": 698373,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-8a64e65b4dbde46a.jpg",
+   "bytes": 689656,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-0edc9a9f34f02691.jpg",
+   "bytes": 647320,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-dad97e29e9a309e2.jpg",
+   "bytes": 616371,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-00008b454fd42ab0.jpg",
+   "bytes": 198490,
+   "smart_crop": true,
+   "src": "google-00008b454fd42ab0.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 29.147,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-c23c527b4f6e3873.jpg",
+   "bytes": 212968,
+   "smart_crop": true,
+   "src": "google-c23c527b4f6e3873.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 30.4,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
-   "from": "google-96c3472d3f8eab65.jpg",
-   "bytes": 260691,
-   "letterbox_stripped": null
+   "from": "google-b3c35285a1e5f30e.jpg",
+   "bytes": 222383,
+   "smart_crop": true,
+   "src": "google-b3c35285a1e5f30e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1205x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 35.497,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
+   "from": "google-a9fffcb703853497.jpg",
+   "bytes": 494614,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-8.jpg",
    "from": "google-5554ba54ad3d3fcd.jpg",
    "bytes": 489804,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-gallery-8.jpg",
+   "slot": "photo-gallery-9.jpg",
    "from": "google-ad61f7d84749e995.jpg",
    "bytes": 487181,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-gallery-9.jpg",
+   "slot": "photo-services-hero.jpg",
    "from": "google-2309cbf76717e69b.jpg",
    "bytes": 485315,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-services-hero.jpg",
-   "from": "google-77c6a950092303dc.jpg",
-   "bytes": 233302,
    "letterbox_stripped": null
   },
   {
@@ -150,6 +206,41 @@
    "letterbox_stripped": null
   },
   {
+   "slot": "photo-ba-before.jpg",
+   "from": "google-5beea3705ecea7c4.jpg",
+   "bytes": 426339,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-family.jpg",
+   "from": "google-4270b1fbc50719f2.jpg",
+   "bytes": 415071,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-f7e23dfdb3dd1b7b.jpg",
+   "bytes": 411682,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-59c0930aefbf9261.jpg",
+   "bytes": 409953,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-48c9bf7abd049bef.jpg",
+   "bytes": 381607,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
    "bytes": 21159,
@@ -159,7 +250,7 @@
  ],
  "skipped": [
   "classification read: 76 verdicts",
-  "staged 38 harvest photos",
+  "staged 38 harvest photos from assets",
   "hero_cand_refuse:google-22a667d37623accc.jpg:road_no_landscape",
   "hero_cand_refuse:google-8a64e65b4dbde46a.jpg:road_no_landscape",
   "hero_cand_refuse:google-0edc9a9f34f02691.jpg:road_no_landscape",
@@ -178,23 +269,23 @@
   "hero_cand_refuse:google-4270b1fbc50719f2.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-f7e23dfdb3dd1b7b.jpg:road_no_landscape",
   "hero_cand_refuse:google-59c0930aefbf9261.jpg:portrait_aspect_hero_refuse",
-  "hero_hold_crew_for_about:google-65286d9ff54bbc0d.jpg",
-  "hero_hold_crew_for_about:google-2ecb4e3e2d441caf.jpg",
+  "hero_cand_refuse:google-65286d9ff54bbc0d.jpg:road_no_landscape",
+  "hero_cand_refuse:google-2ecb4e3e2d441caf.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-93f243dfc837c6f2.jpg:road_no_landscape",
-  "hero_hold_crew_for_about:google-c6802d40a6acc8d1.jpg",
+  "hero_cand_refuse:google-c6802d40a6acc8d1.jpg:road_no_landscape",
   "hero_cand_refuse:google-48c9bf7abd049bef.jpg:road_no_landscape",
-  "hero_hold_crew_for_about:google-d53c314a1967fa47.jpg",
+  "hero_cand_refuse:google-d53c314a1967fa47.jpg:road_no_landscape",
   "hero_cand_refuse:google-bce48b2eaaf314cb.jpg:road_no_landscape",
-  "hero_hold_crew_for_about:google-38241bc063e21c5d.jpg",
+  "hero_cand_refuse:google-38241bc063e21c5d.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-97b91f3e8e78c2e4.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-0652c07b9da82d14.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-b3b7971f468a1cef.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-531c43aa883e9fc3.jpg:portrait_aspect_hero_refuse",
-  "hero_hold_crew_for_about:google-362616f8f9f879cb.jpg",
-  "hero_hold_crew_for_about:google-96c3472d3f8eab65.jpg",
+  "hero_cand_refuse:google-362616f8f9f879cb.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-96c3472d3f8eab65.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-9fc43a66bab0231c.jpg:road_no_landscape",
   "hero_cand_refuse:google-ea2c7b67c5b191a5.jpg:road_no_landscape",
-  "hero_hold_crew_for_about:google-77c6a950092303dc.jpg",
+  "hero_cand_refuse:google-77c6a950092303dc.jpg:road_no_landscape",
   "hero_cand_refuse:google-9517c3bfdabfe4be.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-843435c6d2e852ee.jpg:portrait_aspect_hero_refuse",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
@@ -204,27 +295,33 @@
  "altBySlot": {
   "photo-hero.jpg": "Blue vintage car parked at the car show, seen from the side",
   "photo-card-about.jpg": "People walking through a gravel lot at an outdoor car show",
-  "photo-about.jpg": "Man in a blue shirt holding a trophy beside a silver vintage car",
-  "photo-card-services.jpg": "Two Best of Show trophies displayed on a table at the car show",
-  "photo-card-reviews.jpg": "Small crowd gathered near a truck and an enclosed trailer",
-  "photo-card-photos.jpg": "Small crowd of people walking among parked classic cars at a car show",
-  "photo-gallery-1.jpg": "Yellow vintage pickup truck parked on the grass",
-  "photo-gallery-2.jpg": "Row of classic cars parked in a gravel lot with people walking by",
-  "photo-gallery-3.jpg": "Pink vintage sedan parked in a grassy area",
-  "photo-ctaband.jpg": "Row of classic cars and pickups parked at an outdoor car show",
-  "photo-quoteband.jpg": "Close view of a chrome-bumpered pickup truck's front end",
-  "photo-gallery-4.jpg": "Red vintage car with its hood open showing the engine bay",
-  "photo-gallery-5.jpg": "Black flatbed tow truck with custom graphics parked on the grass",
-  "photo-gallery-6.jpg": "Red sports car with its hood open, other show cars parked behind it",
-  "photo-service-1.jpg": "Man in a blue t-shirt holding a trophy beside a light blue muscle car",
-  "photo-service-2.jpg": "Group of people posing together with a trophy in front of vehicles",
-  "photo-service-3.jpg": "Group of people standing near parked cars, one holding a trophy",
-  "photo-gallery-7.jpg": "Two vintage cars parked side by side with their hoods open",
-  "photo-gallery-8.jpg": "Turquoise vintage car with a polished chrome engine on display",
-  "photo-gallery-9.jpg": "Blue hot rod with a supercharged engine and yellow wheels on display",
-  "photo-services-hero.jpg": "Man standing beside a vintage car with its hood open and a Ford emblem visible",
+  "photo-about.jpg": "Small crowd of people walking among parked classic cars at a car show",
+  "photo-card-services.jpg": "Group of people posing together with a trophy in front of vehicles",
+  "photo-card-reviews.jpg": "Group of people standing near parked cars, one holding a trophy",
+  "photo-card-photos.jpg": "Man in a blue shirt holding a trophy beside a silver vintage car",
+  "photo-gallery-1.jpg": "Two Best of Show trophies displayed on a table at the car show",
+  "photo-gallery-2.jpg": "Small crowd gathered near a truck and an enclosed trailer",
+  "photo-gallery-3.jpg": "Man in a blue t-shirt holding a trophy beside a light blue muscle car",
+  "photo-ctaband.jpg": "Man standing beside a vintage car with its hood open and a Ford emblem visible",
+  "photo-quoteband.jpg": "Yellow vintage pickup truck parked on the grass",
+  "photo-gallery-4.jpg": "Row of classic cars parked in a gravel lot with people walking by",
+  "photo-gallery-5.jpg": "Pink vintage sedan parked in a grassy area",
+  "photo-gallery-6.jpg": "Row of classic cars and pickups parked at an outdoor car show",
+  "photo-service-1.jpg": "Close view of a chrome-bumpered pickup truck's front end",
+  "photo-service-2.jpg": "Red vintage car with its hood open showing the engine bay",
+  "photo-service-3.jpg": "Black flatbed tow truck with custom graphics parked on the grass",
+  "photo-gallery-7.jpg": "Red sports car with its hood open, other show cars parked behind it",
+  "photo-gallery-8.jpg": "Two vintage cars parked side by side with their hoods open",
+  "photo-gallery-9.jpg": "Turquoise vintage car with a polished chrome engine on display",
+  "photo-services-hero.jpg": "Blue hot rod with a supercharged engine and yellow wheels on display",
   "photo-contact.jpg": "Vintage pickup truck with its hood raised at an outdoor car show",
   "photo-photos-cta.jpg": "Engine bay of a silver vintage car shown with the hood open",
-  "photo-reviewsband.jpg": "Row of classic cars parked outside a red metal building"
- }
+  "photo-reviewsband.jpg": "Row of classic cars parked outside a red metal building",
+  "photo-ba-before.jpg": "Close view of a car's side panel with a flame and skull graphic",
+  "photo-family.jpg": "Engine bay of a blue car shown with the hood open",
+  "photo-service-4.jpg": "Weathered vintage pickup truck parked in a gravel lot",
+  "photo-service-5.jpg": "Close view of a blue vintage car's front fender and headlight",
+  "photo-service-6.jpg": "Dark pickup truck parked in a gravel lot"
+ },
+ "dedupe_fixed": 5
 }

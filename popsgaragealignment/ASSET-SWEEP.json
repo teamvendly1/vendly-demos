@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-18T21:26:13.365Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T17:35:44.734Z",
   "slug": "popsgaragealignment",
-  "removed_count": 21,
+  "removed_count": 22,
   "removed_sample": [
     "google-04dc5893e9e01840.jpg",
     "google-066ac90f837ebf9d.jpg",
@@ -15,7 +15,14 @@
     "google-c9b3be89a626eb36.jpg",
     "google-e89c64687ca9b89f.jpg",
     "google-ead711759df4e83b.jpg",
-    "logo-keyed.png"
+    "logo-deslab.png"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\popsgaragealignment",
+  "published_ref_count": 18,
+  "retained_published_count": 1,
+  "retained_published_sample": [
+    "logo-footer.png"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

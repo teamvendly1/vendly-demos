@@ -1,45 +1,77 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:05:40.811Z",
+ "at": "2026-08-26T16:54:42.733Z",
  "slug": "greenplumbingservicesharrisonburgva",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 8374,
+   "from": "fb-09.jpg",
+   "bytes": 8404,
    "letterbox_stripped": null,
    "trade_score": 0,
    "reason": "hero_work_rank"
   },
   {
    "slot": "photo-card-about.jpg",
+   "from": "fb-08.jpg",
+   "bytes": 6751,
+   "smart_crop": true,
+   "src": "fb-08.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 14.57,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
    "from": "fb-05.jpg",
    "bytes": 8349,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-about.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 7445,
-   "letterbox_stripped": null
-  },
-  {
    "slot": "photo-card-services.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 8404,
-   "letterbox_stripped": null
+   "from": "fb-07.jpg",
+   "bytes": 6148,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 14.932,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "fb-06.jpg",
-   "bytes": 6854,
-   "letterbox_stripped": null
+   "bytes": 5176,
+   "smart_crop": true,
+   "src": "fb-06.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 10.025,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "fb-03.jpg",
-   "bytes": 5679,
-   "letterbox_stripped": null
+   "bytes": 4958,
+   "smart_crop": true,
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 8.237,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -49,10 +81,9 @@
   },
   {
    "slot": "logo.png",
-   "from": "charter-placeholder-your-logo-here",
-   "bytes": 21159,
-   "placeholder": true,
-   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+   "from": "facebook-profile-mark:eyes-verified",
+   "bytes": 223605,
+   "source_url": "https://www.facebook.com/greenplumbingservice/"
   }
  ],
  "skipped": [
@@ -66,7 +97,7 @@
   "hero_cand_refuse:fb-06.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
-  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-08.jpg)",
+  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-09.jpg)",
   "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
@@ -97,13 +128,13 @@
  "refused_by_class": 1,
  "photo_candidates": 7,
  "altBySlot": {
-  "photo-hero.jpg": "Water softener and filtration system installed against a basement wall with wiring",
-  "photo-card-about.jpg": "Basement utility area with a water heater, water softener and filtration system installed",
-  "photo-about.jpg": "Blue Water Pro pressure tank with fresh pipe connections",
-  "photo-card-services.jpg": "Close-up of a toilet valve and flange mid-repair on a bathroom floor",
-  "photo-card-reviews.jpg": "Close-up of a Bradford White water heater with new copper pipe work",
-  "photo-card-photos.jpg": "New white plumbing valve fittings laid out next to red-handled pliers",
-  "photo-gallery-1.jpg": "Close-up of a white PVC pipe coupling with rust staining"
+  "photo-hero.jpg": "Green Plumbing Services - technician at work on site (photo 7)",
+  "photo-card-about.jpg": "Green Plumbing Services - technician at work on site (photo 6)",
+  "photo-about.jpg": "Green Plumbing Services - technician at work on site (photo 3)",
+  "photo-card-services.jpg": "Green Plumbing Services - technician at work on site (photo 5)",
+  "photo-card-reviews.jpg": "Green Plumbing Services - technician at work on site (photo 4)",
+  "photo-card-photos.jpg": "Green Plumbing Services - technician at work on site (photo 1)",
+  "photo-gallery-1.jpg": "Green Plumbing Services - technician at work on site (photo 8)"
  },
  "dedupe_fixed": 5
 }

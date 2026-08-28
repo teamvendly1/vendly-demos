@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:03:51.443Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:44:17.633Z",
   "slug": "aoneautomotivellc",
-  "removed_count": 28,
+  "removed_count": 25,
   "removed_sample": [
     "google-0462826e4ddaa4fb.jpg",
     "google-0bed4afaabdfb91c.jpg",
@@ -17,5 +17,10 @@
     "google-c453fc261668ebe5.jpg",
     "google-df184f7f3a303f03.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\aoneautomotivellc",
+  "published_ref_count": 22,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

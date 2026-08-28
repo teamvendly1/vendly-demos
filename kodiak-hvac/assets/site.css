@@ -124,3 +124,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .header-rtb .rtb{max-width:280px}
 @media(max-width:900px){.header-rtb{display:none}}
 .rtb-faces,.rtb-disc{display:none!important}
+/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+/* VENDLY-CARDCROP-FIX-20260824 END */

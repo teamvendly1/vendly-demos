@@ -1,56 +1,326 @@
 {
-  "at": "2026-08-18T21:20:46.682Z",
+  "at": "2026-08-26T00:53:35.217Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "da280ccf3e132b350c0be0f2f27e18f8cf963322a7e2eacd24504551adb1306d",
-      "bytes": 250125
+      "source": "harvest-fallback",
+      "sha256": "76953d1b72e66d541cfe217c5386d7fda14205125540ebc6f84cc9d53875931b",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\beachboysauto\\assets\\google\\google-76953d1b72e66d54.jpg",
+      "score_alt": "UTV raised on the lift for service, interior shop view"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "05402964e34f5741a2708f878ac376e9272f0c5e244e7fdd8975f6b1103a1eb2",
-      "bytes": 267525
-    },
+      "source": "harvest-fallback",
+      "sha256": "914a5b6d7e403ce7f4bdc4d18f311c78ee9f4ee9b11079e6d163a27ca1f3854c",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:auto"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\beachboysauto\\assets\\google\\google-914a5b6d7e403ce7.jpg",
+      "score_alt": "Close-up of a big-block engine with a chrome air cleaner"
+    }
+  ],
+  "kept": [
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "76953d1b72e66d541cfe217c5386d7fda14205125540ebc6f84cc9d53875931b",
-      "bytes": 311631
+      "sha256": "02bf1a6a80f868e3a71ae167ca06dd89173c38b4893eb70b5e8eb9c56ff4ba21",
+      "bytes": 142248,
+      "alt": "UTV raised on the lift for service, interior shop view"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "914a5b6d7e403ce7f4bdc4d18f311c78ee9f4ee9b11079e6d163a27ca1f3854c",
-      "bytes": 416048
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "b0493048fcf4dd7ffabc80a22df2369c0f1c6ad2d7077dd732e01d948b87276b",
-      "bytes": 426613
+      "sha256": "4d852a5e540ab981fe64016fb988c3508c28a7d2b60a636b69d0b56bc0fae3af",
+      "bytes": 159927,
+      "alt": "Close-up of a big-block engine with a chrome air cleaner"
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "f713a28cf9b59f2e6a4b16ebfef0e31e90f6534e8dae7e59d3e11b7f74b354b3",
-      "bytes": 437759
+      "sha256": "51f248525d7a81726fefe73f2dc008e2e85f4c83fe9f76a91eb246400346e870",
+      "bytes": 444209,
+      "alt": "Customer's lifted red GMC pickup with off-road tires"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "b3699d45fd294bf760a723d2fd63627507e850ccaecadfb2d6652b01621719e4",
+      "bytes": 303708,
+      "alt": "UTV raised on the lift inside the shop with motorcycles nearby"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "01b131dc63fc959236a18b42bf7e0fb0a2cc88ddc4fde3089b31957e9e860e71",
+      "bytes": 306199,
+      "alt": "Customer's black Jeep parked in a covered garage"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "82f5e592b19e09e1a0372198c96e923ba88060430b2d9bcbc5d273d1e8c6fe2e",
-      "bytes": 277898
+      "sha256": "28b2e1e8b673dab32d28764e841757c04e6ea3fe7e4a123c0950b9a3e5ea6b22",
+      "bytes": 473762,
+      "alt": "Customer's tan Can-Am ATV parked roadside"
     },
     {
       "file": "photo-quoteband.jpg",
+      "sha256": "f713a28cf9b59f2e6a4b16ebfef0e31e90f6534e8dae7e59d3e11b7f74b354b3",
+      "bytes": 437759,
+      "alt": "Customer's black and yellow ATV parked roadside near the shop"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "883ee4b3339e2484c98b3e31bdee052e04b1b3a409753bd57728320f283fdf80",
+      "bytes": 213823,
+      "alt": "Rusted truck cab being prepped and primed for restoration",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "0b2ba3b6801cf6fc6e70dbdce4707919fd566db24e8ee88fab9740174006b796",
+      "bytes": 306778,
+      "alt": "Beach Boys Auto - technician at work on site (photo 1)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "82f5e592b19e09e1a0372198c96e923ba88060430b2d9bcbc5d273d1e8c6fe2e",
+      "bytes": 277898,
+      "alt": "Classic yellow Mustang fastback in the shop for restoration",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
       "sha256": "1da394b75e7fa6dcdcd1462291ac62711ee767c4cf07ffe01c91c2bc6b0eaec2",
-      "bytes": 329387
+      "bytes": 329387,
+      "alt": "Classic grey Impala parked outside the shop",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "8f02d6c6c0f68e1a17fb89948928d39d8fa945f77cf6dd160c06e24f7917126c",
+      "bytes": 309347,
+      "alt": "Customer's white Dodge Charger parked outside",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "0cd5c0e0531ee0938ef83721b59a68a8214cd0f291f45aeda000c880f522807f",
-      "bytes": 140842
+      "sha256": "5b385589de96cc2961bd33b972c387c868ab667b1f554ec4b9dc286016b81d0d",
+      "bytes": 146295,
+      "alt": "Classic black Impala with a sunroof parked outside",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "af1ff2b2564a9c142cb4d9dddc926680a55e6581e029dbf6786f162c9778c30b",
+      "bytes": 78882,
+      "alt": "Customer's red UTV with oversized mud tires",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Shop exterior with a purple muscle car and other customer vehicles parked outside",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Shop exterior with Falken Tires signage and customer cars parked",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Rusted truck cab being prepped and primed for restoration",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Beach Boys Auto - technician at work on site (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Classic yellow Mustang fastback in the shop for restoration",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Classic grey Impala parked outside the shop",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Customer's white Dodge Charger parked outside",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Classic black Impala with a sunroof parked outside",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Customer's red UTV with oversized mud tires",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

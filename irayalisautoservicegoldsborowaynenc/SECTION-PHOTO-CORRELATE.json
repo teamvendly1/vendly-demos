@@ -1,41 +1,211 @@
 {
-  "at": "2026-08-15T20:48:12.249Z",
+  "at": "2026-08-24T18:43:00.948Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "cd6c5630830769d4d2f1f51af664b4d480f68fe959e028660acb3e6a85825101",
-      "bytes": 406659
+      "source": "stock-library",
+      "sha256": "871715f94c3300d4e17d5a9bf8ad10eb39767dbf28430c03bab7437b987b2a95",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-9.jpg"
+      ],
+      "service": "crew shop jobsite"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "stock-library",
+      "sha256": "4d4c9f806307644e3129543b09478aa44c99e0714070d33475904c3c0cce8f9b",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-5.jpg"
+      ],
+      "service": "crew shop jobsite"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "f9cf621d30ce8d02da7330027f08428a981fdbfb9475bc62d09f898262a7dfc4",
-      "bytes": 371976
+      "source": "stock-library",
+      "sha256": "0fa71048b19f3ceee052aa3de75dc9074179cf1e178bccb634fd1acfe26f0bb7",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-card-photos.jpg"
+      ],
+      "service": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "968beea7438afc7545ee1c90946fb1c9479a396f018dedea9ad0bdfdd84838e3",
-      "bytes": 375339
+      "source": "stock-library",
+      "sha256": "7b3aac82cbf656997abac7365b15ada1ea188e83b57cc0c11203d5aa207165ee",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-card-reviews.jpg"
+      ],
+      "service": null
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "76570e69343f7364f83fac3b37ebe4db0317a70ededcf82a6f61ad93097daf2d",
-      "bytes": 404213
+      "file": "photo-contact.jpg",
+      "source": "stock-library",
+      "sha256": "9a8fa2cb8aecfb672d04157f6abc76e6e93f8705d85c7fa8732014fad4fd5528",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-services-hero.jpg"
+      ],
+      "service": "trade work"
     },
     {
       "file": "photo-ctaband.jpg",
+      "source": "stock-library",
+      "sha256": "722e99c81059444d964d6ed061d86b0ce2a4682069729bcbd291d07eb454176e",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-3.jpg"
+      ],
+      "service": "trade work"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "stock-library",
+      "sha256": "761fbcfde3e3f6e4fe440e96ba09ef6495511ce09456dc4562c1e001d26311a3",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-1.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "stock-library",
+      "sha256": "b9ac9e1a3dc65d9be50f019733919906651b776cb7ab82ba5df55a98e7470857",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-2.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "stock-library",
+      "sha256": "e7617d8469704ff166d1a5f4e9fc400df6d6b8e4b56cabd1191e426163e95335",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-card-services.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "stock-library",
+      "sha256": "eb1082d8d0d08baa051aba88a80fa3d5e98f7e2ccb9369d878cd54f55c8e571e",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-quoteband.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "9429d4da97ae3bbb6a44e5c407da7a674750ae95b9680b4342449a91bf7a8e8c",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-4.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "stock-library",
+      "sha256": "d927087243114fbaed92d2d2839185e2e000a1b9dfa005624733ad5d60fa7a42",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-7.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "999ef9506fd548bda1223d6b0f8a562f754691a74cccbc2dc106b703a11a24a5",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-gallery-8.jpg"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\assets\\google\\google-999ef9506fd548bd.jpg"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "source": "harvest-fallback",
       "sha256": "fc8f76f87e7c2d0463e467ef8052addd6bac7336ec7896bdd8d81d6c14a443b7",
-      "bytes": 331580
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-photos-cta.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\assets\\google\\google-fc8f76f87e7c2d04.jpg"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "76570e69343f7364f83fac3b37ebe4db0317a70ededcf82a6f61ad93097daf2d",
+      "reasons": [
+        "cross_demo_dupe:irayalisautoservice/photo-hero.jpg"
+      ],
+      "service": "Tires and wheels",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\assets\\google\\google-76570e69343f7364.jpg"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "d860797174fad33947e1cd8ef7cd416e2c92fef28c26aacc11bdc5ca5c413baa",
+      "bytes": 589641
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "ac9bf0e2727e30f9777527b2d4c5dd7ba0e00c6ad8e54c8b210c6c6b403351eb",
+      "bytes": 458311
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "de3692767049d46b96e026fadffb94fed50a7f90cc69f6fe7e522d1735a2136c",
+      "bytes": 301860
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "f98dd627b5b908fcf3108f2f9a9506b500bf7297686962086c2bc7476168873b",
       "bytes": 304344
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "842669806ccf8de6058501078066156b40e7d28d15f33d53d341b4524b23df7c",
+      "bytes": 400176
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "156ac1f794fa5e3146e8433010cd5572e1191ba6604c19ca52a64748b32498af",
+      "bytes": 255012
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "f197e48a95fbd6c80cc1d1be361f410ca42561431c9e68245d39589664101c4e",
+      "bytes": 366830
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "d2da3de4c14cf1371096068ac0b6d794a0a10f53d4454b50c4fa94181b41b241",
+      "bytes": 321799
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "fa42c3e8f0c7d0f9e213a85858aa26583142b3a07bde7f9a49534436f1c1edef",
+      "bytes": 234606
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "6f4e85013eb9bc3e845e949d8ee61728b2261235a0341342437d7ad4cf93acc6",
+      "bytes": 179616
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "fe5bfb83b0577a07352427718aa9f3254c071ffe64d60a5d650778a25ea95b7d",
+      "bytes": 170673
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "67796da79e7f5beb72c66bb166ed0ec3e77113a0f9b642a3671f5cf7ba4b5de3",
+      "bytes": 282601
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

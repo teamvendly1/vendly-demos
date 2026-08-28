@@ -1,13 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T13:35:38.006Z",
+  "at": "2026-08-26T17:33:02.228Z",
   "trade": "plumbing",
   "slotHints": {
     "photo-service-1.jpg": "Drains and sewer lines",
     "photo-service-2.jpg": "Water heaters",
     "photo-service-3.jpg": "Excavation and service lines"
   },
-  "ok": false,
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -17,25 +17,25 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "220c094620ea34e315c11ccb05b339e6d7b5b429a25510888dda304853eef3cf",
+      "sha256": "1d4029eb0170c17043ae6f5f8563f64bdba2e91adb13c21ab7a9f09d40b71828",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "fd23db46b0e6f648874fafb928879c460f1417a8f821375f30c2269a11ca6931",
+      "sha256": "173c28c8d4497b09c7809d45db4243a536e1fb3e2d273611389f4fb16d035df0",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "12a03d7ebe236e21f8c4ec94fed904c828eda241cec32d67d230cb1569700bd2",
+      "sha256": "59d429fa8666aadb89a561736bb5b25010772a2ea4bd9d3e452c01dc97f05517",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "47b6b87f80e946a934c7701bae22f2b0c43386a8a310d95cb47b31958b12d0b5",
+      "sha256": "c818bf1df643ebdd141ff0c200ba8797f5ebc58716107e0be9c36cc66bccefec",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -53,7 +53,7 @@
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "382aa7dd03b36ef922f6beb9834a7d981f70cae64164e3f34931aa4051cb7d34",
+      "sha256": "4b6f09797d8de27e56743a2ec53ab793f43fa0ea2cde280bfc43edfe1854ef72",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -76,14 +76,38 @@
       "niche_folder": null
     },
     {
+      "file": "photo-service-1.jpg",
+      "sha256": "a031dfcdf6eb20849fc3e0b56501fce32bd4f5c4b8be9df47ab4f57f8d2fcb8b",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-service-2.jpg",
-      "sha256": "5bd08114be7398ab5ff99cb50c29af86d7605e9de0b20f5f6792bb3ba8d4110c",
+      "sha256": "02363dc4a69f7ff16ba6d177b57c21f7d4726e8800e410fe04c39e052dec980c",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "af096e5ed3c3a0c24639c46232a8a009502bea020df9cf4cfa9a3c57fbf7bc28",
+      "sha256": "0e1da925ee5311253c2d98a80daef48da4044fbe4e9806623a161e7792fb3efd",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "d9dc61ff64454fd4dbefd6a5d8ace48d56c3e95b083a1422cfcd58befb017197",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "e35a6164be530c0ca947f907da5f34061ed55d375817a86916cf1fdb5a648a7e",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "eee952750d4e7e6407d72e028c8acfc655511ff73c976b2e2fdc090a13aeb75e",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -94,91 +118,9 @@
       "niche_folder": null
     }
   ],
-  "filled": [
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "Drains and sewer lines",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    }
-  ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "Drains and sewer lines",
-      "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "plumbing",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 14,
+  "filled": [],
+  "gaps": [],
+  "distinct": 18,
   "slots": 18,
   "stock_provenance_rows": 0,
   "family": "plumbing",

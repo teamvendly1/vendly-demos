@@ -1,0 +1,17 @@
+{
+  "refused": true,
+  "problems": [
+    "NO_LOGO_IN_HEADER: logo.png missing or stub — refuse ship (do not strip and continue)",
+    "NO_LOGO_IN_HEADER: index.html missing logo img",
+    "NO_LOGO_IN_HEADER: index <header> has no logo img (Charlotte class — phone+nav only)",
+    "NO_LOGO_IN_HEADER: assets/logo.png missing or stub (<5KB)",
+    "NO_HARVESTED_MARK: this run did not wire a harvested graphic into logo.png (Gaston leftover-lockup class 2026-08-15)",
+    "NO_HARVESTED_MARK: index must reference assets/logo.png and the file must be a real harvested graphic (>=2KB)",
+    "ABOUT_CARD_NOT_PEOPLE: the harvest has 1 photo(s) classified team, but the homepage About card is (missing img) with no team wire. Jacob 2026-08-17: a person hidden behind a roll of turf is not an About card when a crew-at-work photo is sitting in the same folder. Wire the team photo into that slot.",
+    "NO_HERO_PHOTO: homepage hero has no photo-hero.jpg / photo-hx.jpg",
+    "NO_ABOUT_PHOTO: about page missing a real photograph of crew/shop/truck/job",
+    "FORM_NOT_ON_PHOTO: harvest has 8 unused photo(s) after higher slots but #quote is not .pband - the lead form should sit on a photograph, not the flat mist background"
+  ],
+  "generator_defect_fix_version": 1,
+  "checked_at": "2026-08-25T22:56:04.561Z"
+}

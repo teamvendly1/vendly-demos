@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-23T00:00:44.401Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:38:38.211Z",
   "slug": "landscapingbymarcy",
-  "removed_count": 43,
+  "removed_count": 42,
   "removed_sample": [
     "google-06863576389326c9.jpg",
     "google-16dc9247678cd7df.jpg",
@@ -17,5 +17,10 @@
     "google-543a0c0a0080c82e.jpg",
     "google-58a883fd524aeba1.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:/Users/jacob/vendly-code/vendly-demos/landscapingbymarcy",
+  "published_ref_count": 26,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

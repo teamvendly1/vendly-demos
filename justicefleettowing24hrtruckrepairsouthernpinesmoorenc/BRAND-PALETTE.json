@@ -2,52 +2,56 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "justicefleettowing24hrtruckrepairsouthernpinesmoorenc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#24364C",
+  "brand_input": "#150101",
   "palette": {
-    "BRAND": "#24364C",
-    "PRIMARY": "#1F2F42",
-    "PRIMARY_DK": "#172230",
-    "PRIMARY_MID": "#263950",
-    "ACCENT": "#314A68",
-    "ACCENT_DK": "#223449",
-    "ACCENT_LT": "#456791",
-    "ON_DARK": "#C8D5E5",
-    "MENU_INK": "#0F161F",
-    "TINT_1": "#DCE5EF",
-    "TINT_2": "#E7EDF4",
-    "TINT_3": "#D5DFEB",
-    "TINT_4": "#D9E2ED",
-    "LINE_2": "#BACADE",
-    "MUTED_BRAND": "#7595BD",
-    "MIST": "#F3F6F9",
-    "LINE": "#CFDAE8",
-    "PRIMARY_RGB": "31,47,66",
-    "ACCENT_RGB": "49,74,104",
-    "SCRIM_RGB": "38,57,80",
-    "SCRIM2_RGB": "23,34,48",
-    "MENU_INK_RGB": "15,22,31"
+    "BRAND": "#2B4C7E",
+    "PRIMARY": "#192C48",
+    "PRIMARY_DK": "#122035",
+    "PRIMARY_MID": "#1E3557",
+    "ACCENT": "#274572",
+    "ACCENT_DK": "#1B3050",
+    "ACCENT_LT": "#3760A0",
+    "ON_DARK": "#C2D2EA",
+    "MENU_INK": "#0C1522",
+    "TINT_1": "#D9E3F2",
+    "TINT_2": "#E4EBF6",
+    "TINT_3": "#D1DDEF",
+    "TINT_4": "#D5E0F1",
+    "LINE_2": "#B3C7E5",
+    "MUTED_BRAND": "#678FCB",
+    "MIST": "#F2F5FA",
+    "LINE": "#CAD8ED",
+    "PRIMARY_RGB": "25,44,72",
+    "ACCENT_RGB": "39,69,114",
+    "SCRIM_RGB": "30,53,87",
+    "SCRIM2_RGB": "18,32,53",
+    "MENU_INK_RGB": "12,21,34",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 13.61,
+      "ratio": 14.05,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 9.09,
+      "ratio": 9.63,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 9.14,
+      "ratio": 9.16,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 18.18,
+      "ratio": 18.32,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (near_black(l=0.043)), fell back to trade-family or neutral #2B4C7E"
+  ]
 }

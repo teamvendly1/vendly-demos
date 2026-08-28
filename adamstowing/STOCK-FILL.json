@@ -1,11 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-22T22:58:44.688Z",
+  "at": "2026-08-26T00:27:20.306Z",
   "trade": "towing",
   "slotHints": {
     "photo-service-1.jpg": "Powersports and small equipment",
     "photo-service-2.jpg": "Winch-out and recovery",
-    "photo-service-3.jpg": "Car and light truck transport"
+    "photo-service-3.jpg": "Car and light truck transport",
+    "photo-service-4.jpg": "Heavy and oversize loads",
+    "photo-service-5.jpg": "Night and out of hours calls"
   },
   "ok": true,
   "kept": [
@@ -17,31 +19,25 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "e333ac0274f1cbf13de5f8819a981d28257b7dd36e579af43228f5213c046a0a",
+      "sha256": "1d7bc89e698f5a5d5ced714bc520c495665b7b1a70aed1693927d143245ff001",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "eb409c02d2a2b9f782867c7368b22b0a3cb7207061ef4d2e6cb6f7b03794b603",
+      "sha256": "626f9619a0a019962365830979e1ad30c4462949a99de98f8d4c128cdf0a1722",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "cc0c5a12fc2f3f3ff7c1d8f9c04a5bfcc47f3d8a9e9179553c05029954e195f7",
+      "sha256": "cdd8df6d5f022f1d91dc01e643f89e30f7f7230f4cb570f5bba721e39f29d071",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "53d2719bc3f40507157ab5e836c8632c68b7c4f98177507be9d5a665df085c84",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "f67aa6eb33d7f71fbab0cb09373599126e41d936467c3e8653644967adbef81d",
+      "sha256": "9d1280fa55c28eb0835424592fe8a08696ac086dca6e230efca1e052981a2348",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -59,7 +55,7 @@
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "d9395d3cf18f6f73b0c9e08d84c34a9a52b71a891ed54617d2a9375d64da1183",
+      "sha256": "906519874ac2bf6151cae6f9c6f1b93665a012b3ead9d1a5798d16f627d4b6a2",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -76,12 +72,6 @@
       "niche_folder": null
     },
     {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "fa7bb92b47a93dcbb7c5132048124da470020841788681d3d4b6a19fe3d12ed7",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-reviewsband.jpg",
       "sha256": "68d176d44d330596c72dd285b4bfbf1d120d1c19a7109c98f04e3d5ce333ea2b",
       "source": "harvest_or_prior",
@@ -89,13 +79,37 @@
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "bbb431a586c09efcd58c20cea4ff3d523c711badc7203a24bb3c71bfea10484b",
+      "sha256": "1a5f5477763b22612cef11529a2681eec12b81baace3f7864bda4429d6eec3a0",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "bd58814014714e297e6dbfc1352ac865af68826528190146be61486d5b0363d0",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "f7144afcccfa6915ff738b6843e7752566a43c0d7a91f2bbd10e1e5c5b974148",
+      "sha256": "678ea1153571d2d64fe7bb0c5c0112bc9f74a17508def3dfe1f3da9f2a807fe7",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "c170aad546cd18047e773c20f4fc2ea614259f3f02a286ea2c628cc30212d887",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "436e4badf2fc37721bf3416c75cfd9708ff467c66a130ecb962e81a221186c7b",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "c1a261a53c88d86b3e0b44b5ecc99aed0ceecfdb0b0f53ff4e516e5e043af6ef",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -106,108 +120,11 @@
       "niche_folder": null
     }
   ],
-  "filled": [
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "19ec55e76b42e504d1623f9ef3a5977248497704261498aad62b0346cfcee351",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/truck-on-the-road-5959507/",
-        "subject_alt": "tow truck empty flatbed highway",
-        "found_by_query": "tow truck empty flatbed highway",
-        "family": "towing",
-        "library_file": "towing-truck-navigates-winding-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:22:15.974Z",
-        "service_title": "Winch-out and recovery",
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": "Winch-out and recovery",
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 275
-      }
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": "496e43bd60fcb06b9f37e54c34e5f8456dcdac7b86c40de70d15c6623b3f0ff7",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/the-road-through-the-great-canadian-rockies-19013071/",
-        "subject_alt": "tow truck empty flatbed highway",
-        "found_by_query": "tow truck empty flatbed highway",
-        "family": "towing",
-        "library_file": "towing-picturesque-drive-through-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:22:43.873Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 274
-      }
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "7a7c94ab43c87797649074d95d72e34422a4550d67382ed9c8cd079d3998d40a",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/vintage-blue-truck-in-ukrainian-countryside-35089141/",
-        "subject_alt": "tow truck winch hook vehicle",
-        "found_by_query": "tow truck winch hook vehicle",
-        "family": "towing",
-        "library_file": "towing-old-blue-truck-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:21:18.484Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 272
-      }
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": "f6add2b7640e84aa5d2f1b272bf4d015583455f33df5b358c491850ec1e77bb0",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/semi-truck-on-scenic-highway-with-mountains-34902065/",
-        "subject_alt": "tow truck empty flatbed highway",
-        "found_by_query": "tow truck empty flatbed highway",
-        "family": "towing",
-        "library_file": "towing-semi-truck-travels-scenic-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:22:08.690Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 271
-      }
-    }
-  ],
+  "filled": [],
   "gaps": [],
-  "distinct": 20,
-  "slots": 20,
-  "stock_provenance_rows": 4,
+  "distinct": 18,
+  "slots": 18,
+  "stock_provenance_rows": 0,
   "family": "towing",
   "refuse_borrow": false,
   "provenance_ok": true

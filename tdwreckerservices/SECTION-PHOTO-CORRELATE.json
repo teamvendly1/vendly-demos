@@ -1,0 +1,283 @@
+{
+  "at": "2026-08-26T00:43:49.184Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/2",
+  "trade": "towing",
+  "replaced": [
+    {
+      "file": "photo-about.jpg",
+      "source": "harvest-fallback",
+      "sha256": "7beaaa8db31429ff78d93a8588426d7ce4a130fb5fe5668949c372ce6d486d35",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tdwreckerservices\\assets\\google\\google-7beaaa8db31429ff.jpg",
+      "score_alt": "Black dually pickup truck loaded onto a rollback tow truck's flatbed for transport."
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3cef2f40e9120b08dd8564818e9fdd99a02817cba019a569ad9e818b59ec2580",
+      "reasons": [
+        "off_section_relevance:trade_deny:abandoned:towing",
+        "unflattering_subject:unflattering:abandoned"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tdwreckerservices\\assets\\google\\google-3cef2f40e9120b08.jpg",
+      "score_alt": "Silver Mercedes-Benz SL convertible secured on the rollback flatbed of a tow truck."
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "80401172b7551ceec7ee5caf1377c16a00fb00115f533660b80f8eb366a030db",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tdwreckerservices\\assets\\google\\google-80401172b7551cee.jpg",
+      "score_alt": "White dually Ram pickup truck strapped down on a rollback tow truck flatbed in a parking lot."
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "931d857ad2fbe16fea1486918d2e359dda2bd93e8329e0bc45df9b6e5f4c0d65",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\tdwreckerservices\\assets\\google\\google-931d857ad2fbe16f.jpg",
+      "score_alt": "Driver seated in a truck cab wearing sunglasses and work coveralls, checking his phone."
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "05ff4425ec2358b7199bd9df3d7cd1f59b264780e15875c5ca78e5d224c72955",
+      "bytes": 101824,
+      "alt": "Driver seated in a truck cab wearing sunglasses and work coveralls, checking his"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "ee720fd9ab88e324937312d848339dc77b721baad4b1dc04e52db69b63e71887",
+      "bytes": 108252,
+      "alt": "Black dually pickup truck loaded onto a rollback tow truck's flatbed for transpo"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "210b5caa24be2da9959924d6b65ed48605d5c11c1e6ec62dd0226ff8ef0f4974",
+      "bytes": 143477,
+      "alt": "Silver Mercedes-Benz SL convertible secured on the rollback flatbed of a tow tru"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "aad154a7b178ffe058af4d62311301afcd9ff630a44cf38cde4960b50f2eebff",
+      "bytes": 135015,
+      "alt": "White dually Ram pickup truck strapped down on a rollback tow truck flatbed in a"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "97765a97eec7aaffded9a35b66f3049d04d23d85815fd190e3ce1b1704fe95ce",
+      "bytes": 241323,
+      "alt": "wheel lift tow truck street"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "0f875ed174fa2e73501db0c7c5e9dd35e588e37b39f00d4e52d9d0dc27b17b80",
+      "bytes": 144210,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "dae5efb948abd0d8530f223dd09be3d3b5dc7db85d82fe7e857a8ebe51b30ea1",
+      "bytes": 138130,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "df8331b3a856ce04b106199eac516c4985a0db3a2a98b480d553b086d8c87001",
+      "bytes": 243507,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "4e0ac2c20f9931e967693fab7dec5ce75d7f518a22eda75b2d67bde891be9d93",
+      "bytes": 254064,
+      "alt": "roadside recovery flatbed"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "e7aa093b1a17a01ca0571a852641b4e58413d612e32dcad6b0b120d8420b6254",
+      "bytes": 274747,
+      "alt": "roadside recovery flatbed"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "e872573ee5c59c88af4cbc0a8b9359620647faa06b49b49226c1d70fdda292c8",
+      "bytes": 174823,
+      "alt": "wheel lift tow truck street"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "3a32475ec893e25cfd8512239b0771cea1fcee38b5dfaa2f213d9d778fe57565",
+      "bytes": 189550,
+      "alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "0df7e5e0f0b298076225f719cff1abcdbaad770d3b56f3ac31daca865a1373b6",
+      "bytes": 159547,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "e12ec1803f5a65cb26d98ddbe09d40bf7d55c5f405e001173a52d088cfd0f110",
+      "bytes": 277006,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "90d2666982408e030874be1e11731a14dbb5a13606b7a6f49277c87e7a357a8e",
+      "bytes": 388901,
+      "alt": "Front corner view of the rusty maroon Ford Bronco showing its fender, wheel, and side mirror.",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ]
+    }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Worker standing at the rear of the flatbed while a vehicle's front wheel is winched aboard.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Rusty maroon Ford Bronco sitting abandoned among overgrown brush and fallen branches.",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:abandoned:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:abandoned",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Close-up of a classic Mercedes convertible's engine bay showing the polished air intake and engine block.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Front corner view of the rusty maroon Ford Bronco showing its fender, wheel, and side mirror.",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}

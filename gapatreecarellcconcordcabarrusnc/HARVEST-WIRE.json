@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T07:26:40.430Z",
+ "at": "2026-08-26T16:48:41.233Z",
  "slug": "gapatreecarellcconcordcabarrusnc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-419e04db9fab2d09.jpg",
-   "bytes": 563656,
-   "letterbox_stripped": null
+   "bytes": 200002,
+   "smart_crop": true,
+   "src": "google-419e04db9fab2d09.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 37.415,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-7d00795d08edd663.jpg",
-   "bytes": 705765,
-   "letterbox_stripped": null
+   "bytes": 243947,
+   "smart_crop": true,
+   "src": "google-7d00795d08edd663.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 50.743,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-4d06e3017586a77e.jpg",
-   "bytes": 239596,
-   "letterbox_stripped": null
+   "bytes": 81542,
+   "smart_crop": true,
+   "src": "google-4d06e3017586a77e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 17.451,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-6aa3199afb2bbdb6.jpg",
-   "bytes": 656895,
-   "letterbox_stripped": null
+   "bytes": 260068,
+   "smart_crop": true,
+   "src": "google-6aa3199afb2bbdb6.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 35.723,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -62,7 +94,7 @@
  ],
  "skipped": [
   "classification read: 18 verdicts",
-  "staged 9 harvest photos",
+  "staged 9 harvest photos from assets",
   "refused_by_class:google-409cde377bc8534a.jpg:LOGO_NOT_PHOTO: graphic mark already flagged is_brand_mark",
   "hero_cand_refuse:google-8df3962b3a782765.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-7d00795d08edd663.jpg:portrait_aspect_hero_refuse",
@@ -89,10 +121,18 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 8,
  "refused_by_class": 1,
+ "photo_candidates": 8,
  "altBySlot": {
   "photo-hero.jpg": "Rounds and log lengths laid out across a lawn where the trunk was sectioned, the saw set down in the foreground",
   "photo-card-about.jpg": "Two of the crew in branded shirts working a pile of cut rounds, one bucking with the saw while the other clears behind",
@@ -102,5 +142,6 @@
   "photo-card-photos.jpg": "Trailer loaded with cut logs and brush hitched behind the pickup, ready to be hauled off the job",
   "photo-gallery-1.jpg": "Stem taken down to a bare spar with the cut stubs stepping up it, the removed sections already on the ground below",
   "photo-gallery-2.jpg": "Looking straight down the climbing line from up in the crown, the garage roof and driveway far below"
- }
+ },
+ "dedupe_fixed": 5
 }

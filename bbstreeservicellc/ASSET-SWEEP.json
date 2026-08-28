@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:14:39.140Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:53:19.130Z",
   "slug": "bbstreeservicellc",
-  "removed_count": 28,
+  "removed_count": 27,
   "removed_sample": [
     "google-16c0922e69fa39bf.jpg",
     "google-1f9f63ec1ed9d0fe.jpg",
@@ -17,5 +17,10 @@
     "google-856f9ed5f0f15c72.jpg",
     "google-8b231a31ddbc66b8.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\bbstreeservicellc",
+  "published_ref_count": 21,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

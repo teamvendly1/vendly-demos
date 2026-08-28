@@ -1,19 +1,30 @@
 {
-  "at": "2026-08-17T04:26:33.279Z",
+  "at": "2026-08-24T14:32:41.586Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "towing",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "340a02fa8be2992f5b0d045e89296d24ef92eb68d4137b6fe60a2bcbef666fd7",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\sandstowingandautolumbertonrobesonnc\\assets\\google\\google-340a02fa8be2992f.jpg"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "7fd23a32a6dcdd25d75344a2cb92c1fbbcb880ca3099f44ce7d06ab13f05902f",
-      "bytes": 199813
+      "sha256": "72a94ce8494221356bbf223a0b63c232f8535d044ba572db48fb86db2640cde5",
+      "bytes": 570603
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "72a94ce8494221356bbf223a0b63c232f8535d044ba572db48fb86db2640cde5",
-      "bytes": 570603
+      "sha256": "7fd23a32a6dcdd25d75344a2cb92c1fbbcb880ca3099f44ce7d06ab13f05902f",
+      "bytes": 199813
     },
     {
       "file": "photo-card-photos.jpg",
@@ -32,8 +43,28 @@
     },
     {
       "file": "photo-ctaband.jpg",
+      "sha256": "81d36980174d9fc5a5a34b00d62dd44b3408946366ae497fbd77b579ccdf88cc",
+      "bytes": 81442
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "9c8b1adff158bd5d0caa1f82ca90a4c340aa261e2fcf6c193fb3a9f170a295ac",
+      "bytes": 283128
+    },
+    {
+      "file": "photo-gallery-2.jpg",
       "sha256": "0eb74b27fa20f81b7092c1aecbc9e039e3e1871638ae7b9b3a608a2dd4732b9e",
       "bytes": 242878
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "acdbf10c973ac55cb814b50192cfbdb8d8edb33d660d3d88bc075a2e0929fc55",
+      "bytes": 260477
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "f7e0c681163e360c32690e10793aa81ae8af692e0cb646871faf7ef211e558db",
+      "bytes": 252083
     },
     {
       "file": "photo-hero.jpg",
@@ -42,10 +73,36 @@
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "340a02fa8be2992f5b0d045e89296d24ef92eb68d4137b6fe60a2bcbef666fd7",
-      "bytes": 211196
+      "sha256": "12d2302672a115da566ae568ed69ecec91d854d8a5e75f7b814ad0c15eb5a8e5",
+      "bytes": 293539
     }
   ],
   "failed": [],
+  "gallery_gaps": [
+    {
+      "file": "photo-gallery-6.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "reasons": [
+        "stub"
+      ]
+    }
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

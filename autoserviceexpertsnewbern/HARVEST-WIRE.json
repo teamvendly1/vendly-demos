@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:09:39.722Z",
+ "at": "2026-08-26T00:48:05.933Z",
  "slug": "autoserviceexpertsnewbern",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-1669844b546e27b7.jpg",
-   "bytes": 414499,
-   "letterbox_stripped": null
+   "bytes": 169597,
+   "smart_crop": true,
+   "src": "google-1669844b546e27b7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 26.977,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-3d391ded5497c1f3.jpg",
-   "bytes": 406389,
-   "letterbox_stripped": null
+   "bytes": 163680,
+   "smart_crop": true,
+   "src": "google-3d391ded5497c1f3.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 28,
+   "detail_score": 33.484,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-42617075ede93374.jpg",
-   "bytes": 430836,
-   "letterbox_stripped": null
+   "bytes": 137300,
+   "smart_crop": true,
+   "src": "google-42617075ede93374.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1499",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 26.707,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-f465eb8c1b8a7f86.jpg",
-   "bytes": 389858,
-   "letterbox_stripped": null
+   "bytes": 156665,
+   "smart_crop": true,
+   "src": "google-f465eb8c1b8a7f86.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 30.688,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-f022078718106cbf.jpg",
-   "bytes": 334332,
-   "letterbox_stripped": null
+   "bytes": 142699,
+   "smart_crop": true,
+   "src": "google-f022078718106cbf.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 28,
+   "detail_score": 23.833,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-12debac3f95b47d1.jpg",
-   "bytes": 333493,
-   "letterbox_stripped": null
+   "bytes": 133681,
+   "smart_crop": true,
+   "src": "google-12debac3f95b47d1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 30.733,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-6eeb5f0370db27df.jpg",
-   "bytes": 329248,
-   "letterbox_stripped": null
+   "bytes": 125229,
+   "smart_crop": true,
+   "src": "google-6eeb5f0370db27df.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 25.106,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -150,16 +206,39 @@
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-contact-hero.jpg",
+   "slot": "photo-ba-before.jpg",
    "from": "google-c69536ecfa4589ba.jpg",
    "bytes": 234528,
-   "letterbox_stripped": null
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
   },
   {
-   "slot": "photo-reviews-hero.jpg",
+   "slot": "photo-family.jpg",
    "from": "google-0a7b3b4e9ed58b2c.jpg",
    "bytes": 339217,
-   "letterbox_stripped": null
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-4b65621292d3f562.jpg",
+   "bytes": 337596,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-f40f52faa459c911.jpg",
+   "bytes": 326128,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-bd6495479debe278.jpg",
+   "bytes": 297246,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
   },
   {
    "slot": "logo.png",
@@ -171,7 +250,7 @@
  ],
  "skipped": [
   "classification read: 78 verdicts",
-  "staged 39 harvest photos",
+  "staged 39 harvest photos from assets",
   "refused_by_class:google-013a4b0efbe007cc.jpg:reject",
   "refused_by_class:google-07b65f662a192c64.jpg:reject",
   "refused_by_class:google-2177136fb3b1ade7.jpg:reject",
@@ -231,7 +310,11 @@
   "photo-contact.jpg": "Engine removed and set on the shop floor with mounting hardware nearby",
   "photo-photos-cta.jpg": "Engine hoist lifting an engine block out of a vehicle in the shop",
   "photo-reviewsband.jpg": "White pickup truck raised on a lift with the front wheel removed near the bay door",
-  "photo-contact-hero.jpg": "Vehicle undergoing undercarriage work supported on jack stands in the shop",
-  "photo-reviews-hero.jpg": "Interior shop bay viewed down the aisle with red lift posts and tool stations"
- }
+  "photo-ba-before.jpg": "Vehicle undergoing undercarriage work supported on jack stands in the shop",
+  "photo-family.jpg": "Interior shop bay viewed down the aisle with red lift posts and tool stations",
+  "photo-service-4.jpg": "Shop bay interior with a dark pickup parked beside a red tool cart",
+  "photo-service-5.jpg": "Wide view down the shop garage with a truck parked at the far end near the open bay door",
+  "photo-service-6.jpg": "Yellow Central Transport tractor-trailer parked outside beside a forklift"
+ },
+ "dedupe_fixed": 5
 }

@@ -1,61 +1,207 @@
 {
-  "at": "2026-08-22T23:01:43.027Z",
+  "at": "2026-08-26T00:41:02.374Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a4f66b21d838343a21c754361b8206cc48ee3a62c53cb4f5894e23c3df22ad7a",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\americantreeco\\assets\\google\\google-a4f66b21d838343a.jpg",
+      "score_alt": "Bucket lift truck raised high into a tall pine tree for removal work"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "harvest-fallback",
+      "sha256": "ba9a1b8222a92659b3c6d47308058e802f639e0bbb42241560344d0b26aedf14",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\americantreeco\\assets\\google\\google-ba9a1b8222a92659.jpg",
+      "score_alt": "Overgrown wooded backyard with cut brush piled on the ground"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
+      "sha256": "59db2ba2590c1821858ec8295cb61d04315140bf175977dd4e7f88efe8a9be63",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\americantreeco\\assets\\google\\google-59db2ba2590c1821.jpg",
+      "score_alt": "Bucket lift crane raised beside a house reaching into tall trees near the roofline"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "harvest-fallback",
+      "sha256": "e915db8e71959b3f2e7b08712fab29fdb6806d37ac3d959c72c2db8077a01eea",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\americantreeco\\assets\\google\\google-e915db8e71959b3f.jpg",
+      "score_alt": "Cleared dirt yard around a large remaining tree beside a white house"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "2fa1bdf03b88860ba0d888dd2176f432be3c6e0e4866c8480cd637ff01fff92e",
-      "bytes": 610898
+      "bytes": 610898,
+      "alt": "Cleared dirt yard beneath tall trees near a driveway"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "e915db8e71959b3f2e7b08712fab29fdb6806d37ac3d959c72c2db8077a01eea",
-      "bytes": 639540
+      "sha256": "97e069a0c7bf98db44030aea19fc8cc06aa867af6be2118ba86e99303db22d3a",
+      "bytes": 202959,
+      "alt": "Cleared dirt yard around a large remaining tree beside a white house"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "a4f66b21d838343a21c754361b8206cc48ee3a62c53cb4f5894e23c3df22ad7a",
-      "bytes": 336376
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "e756fccc75b568855d4e897d21e4fbc0156be40b53e67c375b2e003207c9edbb",
-      "bytes": 486146
+      "sha256": "dc94a017071aee5938dc99e49bcdc9a4445d650dd65bc2aa5a61deeccb722b09",
+      "bytes": 183282,
+      "alt": "Bucket lift truck raised high into a tall pine tree for removal work"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "59db2ba2590c1821858ec8295cb61d04315140bf175977dd4e7f88efe8a9be63",
-      "bytes": 552499
+      "sha256": "94774cf988ea60a0cc68ef6fba3d0d5e4c74046af1b7778d6e64982fe9361798",
+      "bytes": 196191,
+      "alt": "Bucket lift crane raised beside a house reaching into tall trees near the roofli"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "025bef73447e7855e7cdd26626ee027bd67ca449d6ca4a4e563a6e1f908bd25d",
-      "bytes": 572566
+      "bytes": 572566,
+      "alt": "Cleared dirt driveway lined by trees leading out to the street"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "0c4e22678368fd2b5839fb6dce097e3bfa62f531803031ec8ecc12fa1a8714a9",
+      "bytes": 606984,
+      "alt": "Newly built wooden deck in a backyard clearing surrounded by tall trees"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "14dbc12e1dee368e921135f5a8c7eb3b104bb12b9aa1e1fac99aa2a72cab046c",
+      "bytes": 605522,
+      "alt": "Cleared dirt lot with tree stumps removed in a wooded backyard"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "1cfec1f87896cac94067c6809cdd7b7a6aabc5aa89baf941601a4d7a6e16161a",
+      "bytes": 585561,
+      "alt": "Wooded yard cleared beneath tall trees with a dirt path and house visible"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "d743fa20dbe8a4b5a41d64a6a668cd47d302f7c1a42594f770ba8ec2c29fe8e7",
+      "bytes": 519531,
+      "alt": "Cleared dirt driveway running beside a house out to the street through the trees"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "bbcdcd6668d903ac65691f7926684fae768b12d489d4f090a68c0c61b255f73e",
+      "bytes": 478894,
+      "alt": "Cleared dirt yard beside a house with a wooden deck bench and neighboring homes "
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "d6400ff50c317387dfb5db230ab3ffce58d0b43e8d7285b8a700044a96fe5eae",
+      "bytes": 463167,
+      "alt": "Chain-link fence beside a freshly cut tree stump and cleared branches"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "ba9a1b8222a92659b3c6d47308058e802f639e0bbb42241560344d0b26aedf14",
-      "bytes": 536424
+      "sha256": "119217e08f0ae124c2086377748842587f6dab2cbc960e170bb0e525810e7fa8",
+      "bytes": 518698,
+      "alt": "View from a wooden deck across a cleared yard lined by tall trees"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "5826aa3ad91a682ac16b76e1ee09ed54d8bbd19a4a548253170732c9ca599d28",
-      "bytes": 530358
+      "bytes": 530358,
+      "alt": "Yellow bucket lift equipment parked in a cleared yard at dusk"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "779a4b99a3ef47fbc939a83f3ea2524f77a52d67126beecea6e4777c8681549d",
-      "bytes": 745700
+      "sha256": "318a820a6125433d658c943ec2d4e7d5c47e7c0b804f00b0e14bc5614cd92e0a",
+      "bytes": 254051,
+      "alt": "View up into a leafy green tree canopy against a bright sky"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "b0aeff367dcf28e6b7032f893fcfe74101625da7afd67622b3392b2ae773ec7f",
+      "bytes": 248398,
+      "alt": "Overgrown wooded backyard with cut brush piled on the ground"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "952f59d0d0e06958c9bf91587c0c348d552ef46b988cb21ff358c92b5d4bd484",
-      "bytes": 585995
+      "sha256": "835c6af6572ec9075c461cef87071025d8a2b6ed197814f5207f5c423a4b71a9",
+      "bytes": 281728,
+      "alt": "Tall evergreen tree standing beside a house against a blue sky",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:landscape"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "View up through tree branches showing one bare dead tree among green ones",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "View up through a tall tree canopy against a cloudy sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Tall evergreen tree standing beside a house against a blue sky",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-service-2.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

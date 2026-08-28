@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-22T23:49:52.044Z",
+  "at": "2026-08-24T17:44:45.491Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/1",
   "trade": "auto-repair",
@@ -17,23 +17,38 @@
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "f942dc95ee7e129359b90a4401b345d2ee0093ab7fa47114268d5eb1aaad7482",
-      "bytes": 276986
+      "sha256": "b208c5adfff1f63f9e19cb9d77116554f92b0324e465196e7a3c831ee6c753a3",
+      "bytes": 104400
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "5a998dbc9b880225b11c6f35400ee1a075e3121ec07ec0b691e24716bff57fad",
-      "bytes": 298107
-    },
-    {
-      "file": "photo-card-services.jpg",
       "sha256": "152975d5df2c50ad1fa452b2b93bf2f60f371f5f6bdd07d1280bda05abd61585",
       "bytes": 449761
     },
     {
+      "file": "photo-card-services.jpg",
+      "sha256": "a29f1696e3cfc75e6367037489434ea15aa4536072dbf58ce3984dce6de9e208",
+      "bytes": 187387
+    },
+    {
       "file": "photo-ctaband.jpg",
-      "sha256": "b208c5adfff1f63f9e19cb9d77116554f92b0324e465196e7a3c831ee6c753a3",
-      "bytes": 104400
+      "sha256": "53f986a970ecadd5a391b621215a9fd8bde5d771fad8dba16af77d17ab7e581b",
+      "bytes": 130685
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "5a998dbc9b880225b11c6f35400ee1a075e3121ec07ec0b691e24716bff57fad",
+      "bytes": 298107
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "f942dc95ee7e129359b90a4401b345d2ee0093ab7fa47114268d5eb1aaad7482",
+      "bytes": 276986
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "8b89009153977458e7a38d4caa9c57b6132a5700aa4d5a2447b0bff15d61e40e",
+      "bytes": 192740
     },
     {
       "file": "photo-hero.jpg",
@@ -42,5 +57,43 @@
     }
   ],
   "failed": [],
+  "gallery_gaps": [
+    {
+      "file": "photo-gallery-4.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "reasons": [
+        "stub"
+      ]
+    }
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

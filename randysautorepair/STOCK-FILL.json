@@ -1,0 +1,143 @@
+{
+  "schema": "vendly.autodemo.stock-fill/1",
+  "at": "2026-08-24T05:28:20.934Z",
+  "trade": "auto-repair",
+  "slotHints": {
+    "photo-service-1.jpg": "Auto repair"
+  },
+  "ok": false,
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "2bdda9b4a2376ee4b211bfedd3195db5dd97311a9c597bb9041daa039d212d3a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "423eb2fa264d291009d42769d7111569ade19c884ae9c007a9680f7ab27cac41",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "800ce8cc8ddd91906368ea0f8d7d15b3a2cf1b68069b173b0a9173a033db38af",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "173c4152c049bb47e34df84cc2f8b44e16095365519ed8744d1ad2fcece26ed8",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "f2491f31d6bc714656e11702c044619556b159eb1484755b89e8b3d35f5f6953",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "0be8962a1ee80ab25c12a73eac65e25943b56ddb742c0167974df9df4760a492",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "39b9eaf3552dccfdcd75b86a930e755ebfcadc027932130c71abfef36a03d3e3",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "b40ca66dfe7944fe60ab2ed2b7611d0500ebeaf04f963b5c3fae08ca341f38b9",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "96b4374a97b86cba01495328678507ae3805af633a4642ade673ccc81c6923f9",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "e11c74d09d1b0034896633989a5719369735c5cbf28336663c3a83037331d828",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "caeda2436392add922591e361f81aceb1615ef216bb98f843d3efd754daee85c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "01244f407c4ab6bcd86994f97df2ebb642be4f6f1789d389638a4cc77f1cd93a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "ff5bd901d5f020a51c6ed432d4172fb4fabd2c39d419d7d6a279e45649bcbda4",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "f89ba724f14412228b073dbf24d9783f7f561f52180890849b0ece6052eb8c71",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "31a0259504f69d1516ae23845d4638908aba4122662b5b9b1f68424dcab0d40f",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "ac64bef3c80cf5c7aa0548bda6b53998448ed1e9f4e76a8ef002400e2bff6b9b",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "edd73b31e7ccdad11cb6f60197a965405db6267dcc1efefea614ce5ed85ab758",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    }
+  ],
+  "filled": [
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    }
+  ],
+  "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-service-6.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    }
+  ],
+  "distinct": 17,
+  "slots": 18,
+  "stock_provenance_rows": 0,
+  "family": "auto-repair",
+  "refuse_borrow": false,
+  "provenance_ok": true
+}

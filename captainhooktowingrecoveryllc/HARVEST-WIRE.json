@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:25:00.616Z",
+ "at": "2026-08-28T00:16:57.668Z",
  "slug": "captainhooktowingrecoveryllc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-02d15988467eb9c5.jpg",
-   "bytes": 313473,
-   "letterbox_stripped": null
+   "bytes": 150348,
+   "smart_crop": true,
+   "src": "google-02d15988467eb9c5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 22.109,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,32 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-274f55f3ba6a48b1.jpg",
-   "bytes": 244320,
-   "letterbox_stripped": null
+   "bytes": 124364,
+   "smart_crop": true,
+   "src": "google-274f55f3ba6a48b1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 21.408,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
-   "from": "google-23c280bb72628bee.jpg",
-   "bytes": 219724,
-   "letterbox_stripped": null
+   "from": "google-66b6fb0c2421ba74.jpg",
+   "bytes": 96707,
+   "smart_crop": true,
+   "src": "google-66b6fb0c2421ba74.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 23,
+   "detail_score": 16.669,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
-   "from": "google-66b6fb0c2421ba74.jpg",
-   "bytes": 191314,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "from": "google-15ff4ad6334d4b22.jpg",
-   "bytes": 329363,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
    "from": "google-5d74da9b78901618.jpg",
-   "bytes": 234353,
-   "letterbox_stripped": null
+   "bytes": 123067,
+   "smart_crop": true,
+   "src": "google-5d74da9b78901618.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 22.297,
+   "orientation": "landscape"
   },
   {
    "slot": "logo.png",
@@ -62,14 +82,16 @@
   }
  ],
  "skipped": [
-  "classification read: 16 verdicts",
-  "staged 8 harvest photos",
-  "hero_cand_refuse:google-15ff4ad6334d4b22.jpg:portrait_aspect_hero_refuse",
+  "classification read: 12 verdicts",
+  "staged 8 harvest photos from assets",
+  "refused_unlooked:google-15ff4ad6334d4b22.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-23c280bb72628bee.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:google-02d15988467eb9c5.jpg:road_no_landscape",
   "hero_cand_refuse:google-274f55f3ba6a48b1.jpg:road_no_landscape",
   "hero_cand_refuse:google-5d74da9b78901618.jpg:road_no_landscape",
-  "hero_cand_refuse:google-23c280bb72628bee.jpg:road_no_landscape",
   "hero_cand_refuse:google-66b6fb0c2421ba74.jpg:road_no_landscape",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -86,22 +108,25 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 8,
- "photo_candidates": 8,
+ "candidates": 6,
+ "refused_by_class": 2,
+ "photo_candidates": 6,
  "altBySlot": {
-  "photo-hero.jpg": "Yellow flatbed tow truck hauling a red motorcycle through a wooded area",
-  "photo-card-about.jpg": "Flatbed truck hauling a small blue storage shed with a ladder inside",
-  "photo-about.jpg": "Yellow flatbed tow truck hauling a rusty vintage hot rod truck",
-  "photo-card-services.jpg": "Yellow flatbed tow truck hauling a boat with an outboard motor near houses",
-  "photo-card-reviews.jpg": "Flatbed truck hauling a rusty orange vintage Volkswagen Beetle",
-  "photo-card-photos.jpg": "Yellow flatbed tow truck hauling a blue Ford Mustang under a cloudy sky",
-  "photo-gallery-1.jpg": "Black sedan submerged in a canal with only the rear visible above the water",
-  "photo-gallery-2.jpg": "Yellow Captain Hook Towing flatbed truck parked outside"
- }
+  "photo-hero.jpg": "Captain Hook's flatbed tow truck carrying a red and white touring motorcycle secured with straps on a sandy road in the woods.",
+  "photo-card-about.jpg": "The tow truck's flatbed hauling a large blue two-story storage shed with caution tape stretched across its open door down a tree-lined driveway.",
+  "photo-about.jpg": "The company's flatbed tow truck hauling a rusted, unfinished hot rod project car through a parking lot under a partly cloudy sky.",
+  "photo-card-services.jpg": "Captain Hook's tow truck lifting a Boston Whaler boat and trailer onto its flatbed in a residential neighborhood.",
+  "photo-card-reviews.jpg": "Captain Hook's tow truck transporting a blue and white striped Ford Mustang Shelby GT350 on its flatbed on an overcast day.",
+  "photo-card-photos.jpg": "Captain Hook's yellow flatbed tow truck with its cartoon pirate logo parked in a driveway beside a light gray mobile home with a red front door."
+ },
+ "dedupe_fixed": 5
 }

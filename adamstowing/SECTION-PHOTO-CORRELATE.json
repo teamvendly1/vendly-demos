@@ -1,111 +1,480 @@
 {
-  "at": "2026-08-22T22:58:45.958Z",
+  "at": "2026-08-26T00:27:29.655Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "856f7a474b1d374b03d9cb627ce926823ae3899d77ed3039443b52891bcdc80a",
-      "bytes": 636333
+      "source": "stock-library",
+      "sha256": "f6add2b7640e84aa5d2f1b272bf4d015583455f33df5b358c491850ec1e77bb0",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing",
+        "unflattering_subject:unflattering:crashed"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "e333ac0274f1cbf13de5f8819a981d28257b7dd36e579af43228f5213c046a0a",
-      "bytes": 664236
+      "source": "stock-library",
+      "sha256": "19ec55e76b42e504d1623f9ef3a5977248497704261498aad62b0346cfcee351",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "eb409c02d2a2b9f782867c7368b22b0a3cb7207061ef4d2e6cb6f7b03794b603",
-      "bytes": 571112
+      "source": "stock-library",
+      "sha256": "496e43bd60fcb06b9f37e54c34e5f8456dcdac7b86c40de70d15c6623b3f0ff7",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing"
+      ],
+      "service": null,
+      "score_alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "cc0c5a12fc2f3f3ff7c1d8f9c04a5bfcc47f3d8a9e9179553c05029954e195f7",
-      "bytes": 629293
+      "source": "stock-library",
+      "sha256": "7a7c94ab43c87797649074d95d72e34422a4550d67382ed9c8cd079d3998d40a",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing"
+      ],
+      "service": null,
+      "score_alt": "tow truck winch hook vehicle"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "53d2719bc3f40507157ab5e836c8632c68b7c4f98177507be9d5a665df085c84",
-      "bytes": 273711
-    },
-    {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "f67aa6eb33d7f71fbab0cb09373599126e41d936467c3e8653644967adbef81d",
-      "bytes": 767047
+      "source": "harvest-fallback",
+      "sha256": "d9395d3cf18f6f73b0c9e08d84c34a9a52b71a891ed54617d2a9375d64da1183",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\adamstowing\\assets\\google\\google-d9395d3cf18f6f73.jpg",
+      "score_alt": "Flatbed tow truck hauling a black classic convertible down a rural road"
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "799d8c5b020cabd8796cca3a7d0c8c1f7edc9896d3108cfd2d1b14df5158bf8e",
-      "bytes": 270297
+      "source": "harvest-fallback",
+      "sha256": "09c46695121122818e34b70079a80bed50eb931c1614a940e35870f3ccabcad0",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:towing"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\adamstowing\\assets\\google\\google-09c4669512112281.jpg",
+      "score_alt": "White SUV run off the road into a wooded area beside a driveway marker"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "b47bacf57b94ddd4ced32f35d6fb131d371bedd2400d06a476424a1f7be9a23a",
+      "bytes": 668486,
+      "alt": "Rural gravel road lined with trees, a truck with lit brake lights visible in the"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "ac56b818540bbccbd95baedc148899531cd192567dbd0a5178bd2cdd750ccded",
-      "bytes": 663363
+      "file": "photo-gallery-4.jpg",
+      "sha256": "a7c8edd554d3e650149e14a3a76fd96622437a9ebc636a970d4acd6e4f5c914f",
+      "bytes": 608730,
+      "alt": "Flatbed tow truck hauling a loaded car down a rural tree-lined road"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "3b46af7c118835da3abcf5383df51002642c59145c4afca799c64cb50e5ff9bf",
+      "bytes": 538021,
+      "alt": "Flatbed tow truck hauling a blue front-loader tractor down a gravel road"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "d830196221950b566afbf0fbda130e3c8bb97d836b04ad850d7fa19dcde97f4e",
+      "bytes": 412151,
+      "alt": "Adam's Towing flatbed hauling a silver sports car past a gas station"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "bb6c2a05d157e719ea8fdb0f5d010011df07dec963d1569ca3ee30830ff19162",
+      "bytes": 386958,
+      "alt": "Man driving a blue tractor up a ramp onto a flatbed trailer"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "809948be7f64f565856fa5ff5f508117e3c36b1cce17245256d166869c4a1356",
+      "bytes": 338905,
+      "alt": "Flatbed tow truck hauling a white travel trailer down a rural road under blue sk"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "d9395d3cf18f6f73b0c9e08d84c34a9a52b71a891ed54617d2a9375d64da1183",
-      "bytes": 536398
+      "sha256": "906519874ac2bf6151cae6f9c6f1b93665a012b3ead9d1a5798d16f627d4b6a2",
+      "bytes": 622872,
+      "alt": "Flatbed tow truck parked on a gravel road hauling a trailer near the tree line"
     },
     {
       "file": "photo-photos-cta.jpg",
       "sha256": "feaeb2ea622ee01089aa0501fed6c591a8b52efcacee3953a506947516f8bf88",
-      "bytes": 257149
+      "bytes": 257149,
+      "alt": "White box truck tilted on a hillside near a house during a recovery"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "ebf761fc7f78ad5665606f994891fa21d389b68fb20dc83fd1b2d3406dc3a487",
-      "bytes": 634619
+      "bytes": 634619,
+      "alt": "Flatbed truck hauling heavy equipment on a trailer down a tree-lined rural road"
     },
     {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "fa7bb92b47a93dcbb7c5132048124da470020841788681d3d4b6a19fe3d12ed7",
-      "bytes": 689283
+      "file": "photo-service-2.jpg",
+      "sha256": "bd58814014714e297e6dbfc1352ac865af68826528190146be61486d5b0363d0",
+      "bytes": 191791,
+      "alt": "Flatbed tow truck hauling a black classic convertible down a rural road"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "436e4badf2fc37721bf3416c75cfd9708ff467c66a130ecb962e81a221186c7b",
+      "bytes": 649757,
+      "alt": "White heavy flatbed truck parked on a gravel lot near trees"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "c1a261a53c88d86b3e0b44b5ecc99aed0ceecfdb0b0f53ff4e516e5e043af6ef",
+      "bytes": 580260,
+      "alt": "Black pickup truck run off the road into a wooded area"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "ac56b818540bbccbd95baedc148899531cd192567dbd0a5178bd2cdd750ccded",
+      "bytes": 663363,
+      "alt": "Vehicle wreckage partly submerged in a creek surrounded by tree branches",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:wreckage:towing",
+        "unflattering_subject:unflattering:wreckage"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "2013b34fc06a4807c8a0269ccf9609dd5220f220b044a7de76769e9e637a77f4",
+      "bytes": 791117,
+      "alt": "Crashed vehicle wreckage down a dirt embankment among trees",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:wreckage:towing",
+        "unflattering_subject:unflattering:crashed"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "b26698f74d37daca176456978a66c1b92caa34ba7c15872c40c2065b7d94cbe8",
+      "bytes": 691631,
+      "alt": "Muddy creek embankment recovery scene with debris and a partially submerged vehicle",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:debris:towing",
+        "unflattering_subject:unflattering:debris"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "b27b54464a473f9c1ce350a77c00035822cbbed2442ac8f54de7ad9c58d1aa05",
+      "bytes": 600791,
+      "alt": "White box van rolled onto its side in the grass beside a rural road",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ]
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "68d176d44d330596c72dd285b4bfbf1d120d1c19a7109c98f04e3d5ce333ea2b",
-      "bytes": 84760
+      "bytes": 84760,
+      "alt": "Nighttime roadside accident scene lit by a hazard triangle sign and headlights",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:towing",
+        "unflattering_subject:unflattering:accident scene"
+      ]
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "bbb431a586c09efcd58c20cea4ff3d523c711badc7203a24bb3c71bfea10484b",
-      "bytes": 404245
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "19ec55e76b42e504d1623f9ef3a5977248497704261498aad62b0346cfcee351",
-      "bytes": 139497
+      "sha256": "1a5f5477763b22612cef11529a2681eec12b81baace3f7864bda4429d6eec3a0",
+      "bytes": 214983,
+      "alt": "SUV tipped onto its side being loaded onto a flatbed as a worker stands beside a guardrail",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:towing"
+      ]
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "f7144afcccfa6915ff738b6843e7752566a43c0d7a91f2bbd10e1e5c5b974148",
-      "bytes": 415862
+      "sha256": "678ea1153571d2d64fe7bb0c5c0112bc9f74a17508def3dfe1f3da9f2a807fe7",
+      "bytes": 169656,
+      "alt": "Tow operator in a safety vest hooking up a damaged sedan on the roadway beside a garbage truck",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:garbage:towing"
+      ]
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "496e43bd60fcb06b9f37e54c34e5f8456dcdac7b86c40de70d15c6623b3f0ff7",
-      "bytes": 115825
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "7a7c94ab43c87797649074d95d72e34422a4550d67382ed9c8cd079d3998d40a",
-      "bytes": 369762
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": "f6add2b7640e84aa5d2f1b272bf4d015583455f33df5b358c491850ec1e77bb0",
-      "bytes": 112374
+      "sha256": "c170aad546cd18047e773c20f4fc2ea614259f3f02a286ea2c628cc30212d887",
+      "bytes": 674869,
+      "alt": "White sedan run off the road into a muddy grass embankment",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ]
     },
     {
       "file": "photo-services-hero.jpg",
       "sha256": "2dadb2108dc62b9dfcd0d281ee8bc017c6df2c0a98c78e9d0e4e815ea9b6d7fe",
-      "bytes": 274265
+      "bytes": 274265,
+      "alt": "Adam's Towing flatbed truck hauling a red sports car with company signage visible on the bed",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:towing"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Worker in a safety vest standing near a crashed pickup truck at an off-road recovery site",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:crashed",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Worker in a safety vest working near a flatbed trailer on a rural roadside",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Red pickup truck flipped on its side being winched onto a flatbed with a worker in a safety vest",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Worker in a safety vest walking beside a black pickup truck being loaded onto a flatbed",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Nighttime creek-side vehicle recovery with rescue workers under red emergency lighting",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-contact.jpg",
+      "alt": "Flatbed tow truck with company signage hauling an ATV side-by-side near a building",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Vehicle wreckage partly submerged in a creek surrounded by tree branches",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:wreckage:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:wreckage",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Crashed vehicle wreckage down a dirt embankment among trees",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:wreckage:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:crashed",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Muddy creek embankment recovery scene with debris and a partially submerged vehicle",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:debris:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:debris",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "White box van rolled onto its side in the grass beside a rural road",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "alt": "Nighttime roadside accident scene lit by a hazard triangle sign and headlights",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:accident scene",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "SUV tipped onto its side being loaded onto a flatbed as a worker stands beside a guardrail",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Tow operator in a safety vest hooking up a damaged sedan on the roadway beside a garbage truck",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:garbage:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "White sedan run off the road into a muddy grass embankment",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "alt": "Adam's Towing flatbed truck hauling a red sports car with company signage visible on the bed",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-ctaband.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-reviewsband.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg",
+    "correlate_restore_no_stock:photo-service-4.jpg",
+    "correlate_restore_no_stock:photo-services-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

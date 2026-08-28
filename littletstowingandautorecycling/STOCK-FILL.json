@@ -1,57 +1,75 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T10:42:00.924Z",
+  "at": "2026-08-26T17:17:08.479Z",
   "trade": "towing",
   "slotHints": {
-    "photo-service-1.jpg": "Winch-out and recovery"
+    "photo-service-1.jpg": "Towing"
   },
   "ok": false,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "4d756b688dd6b961214260f38beaff674b7abfc3bd3152197b66a4f16b097890",
+      "sha256": "35c28fead8a597744b852f751f9de30d00ac0519cdb95cddfd6b5d9cb67d8b45",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "8942be878bd09c441b84739fa3c9ebfe6a6c920b74248b6692dc5a4e4a6a6217",
+      "sha256": "b8c3b9386a035161b43e22f4340c3b7e8ae347b3798a095052b66eb3ad8279a8",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "7759cf56ba2872810c3bf2b5fe57ab9edae7d0117d2bc3c64c00d55bfedfd1b3",
+      "sha256": "48ea46c9be7dc357818a12a40a6fc67d9229cd57e94e9e0389279eab3d862db8",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "e9f01dc245ab33f591fb8a405fdc7f7f8619865925d21d7aa9152fc6f40785b8",
+      "sha256": "116f8b326b1f61e53d378656b66c9f28c127ae44ef7fbce95b05068e067e797f",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "677ed55afbb3f6994dacb7e9a8bc130a73f0edf3c26db0f7c4c38513a32e6edb",
+      "sha256": "57ea797cf49858303816afbf89516a5a07a1a3c064548f7ca3674c91e2924418",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "b2da40705882bc29b5b348c5f39f1ef4bed742c67a1891fd95e8a8556267a12e",
+      "sha256": "550e95bc91f61045f00a745207c1fc2ca75afb1df608356685fbcc8e8c07deef",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "bd58f49f9dd1e9f91e343e307f977f06a5cec1aaf803d5e06677f32c41747aa5",
+      "sha256": "82c9b0511f2566bad2868bb4e1fa754d3db787e70ea401ed2fee3542760d74ff",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "d83958fc350f087884ecf8fd68dbd6ab1a4c456976d8b53489607b0b2ccc7606",
+      "sha256": "bd58f49f9dd1e9f91e343e307f977f06a5cec1aaf803d5e06677f32c41747aa5",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "00ba76f30432cb2bad9d37e84a6ce2ba7b5be285b3544fd4d4eb0089bd8cb76a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "32d49a8ffb15f99680b6b27e723df55e5eb00ad4b3441bf7249f51d9bc9a8586",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "1ce0e21e3b7eb7816046738820083899ec43af2c61b691151a1bf3f141c1e619",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -68,33 +86,6 @@
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "Winch-out and recovery",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-3.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -167,39 +158,6 @@
       "gap": true,
       "reason": "stock_gap_all_claimed",
       "family": "towing",
-      "service": "Winch-out and recovery",
-      "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-2.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
       "service": "",
       "fileName": "photo-service-4.jpg",
       "unclaimed_remaining": 0,
@@ -240,7 +198,7 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 8,
+  "distinct": 11,
   "slots": 17,
   "stock_provenance_rows": 0,
   "family": "towing",

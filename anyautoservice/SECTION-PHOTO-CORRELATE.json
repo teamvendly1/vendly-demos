@@ -1,124 +1,335 @@
 {
-  "at": "2026-08-22T23:02:51.660Z",
+  "at": "2026-08-26T15:45:58.105Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
-      "file": "photo-service-4.jpg",
-      "source": "stock-library",
-      "sha256": "c086a256f252de16f55f9f4bd7c9870954e45449d0c5f210f430437bf4d87bc8",
-      "reasons": [
-        "cross_demo_dupe:affordableautomotive/photo-about.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "source": "stock-library",
-      "sha256": "1f392d3330c56fc5888e28454caa7aae062bdc41c852519a5f0d525f3e83f659",
-      "reasons": [
-        "cross_demo_dupe:affordableautorepairgastoniagastonnc/photo-ctaband.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-6.jpg",
+      "file": "photo-card-about.jpg",
       "source": "stock-library",
       "sha256": "d4e465a18dc7845f6eafce9fa80979b7f05841f2e369dcbf5fcf08617fbcd64a",
       "reasons": [
-        "cross_demo_dupe:aaautomotiveservices/photo-card-photos.jpg"
+        "off_section_relevance:trade_deny:worker:auto"
       ],
-      "service": "trade work"
+      "service": "crew shop jobsite",
+      "score_alt": "brake rotor closeup workshop"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a030e301bf3f26ced966495ba82098b2bdcc340a4d8ea1c9a6cc99d04ee03231",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservice\\assets\\google\\google-a030e301bf3f26ce.jpg",
+      "score_alt": "Wheel and tire being serviced on shop equipment inside the garage"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "stock-library",
+      "sha256": "1f392d3330c56fc5888e28454caa7aae062bdc41c852519a5f0d525f3e83f659",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "31c615b900cb4a4f0cc6ec2d4530c26f8493216afa17353a1c2f8a059e754e8e",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservice\\assets\\google\\google-31c615b900cb4a4f.jpg",
+      "score_alt": "White convertible with the top down and hood open on a lift inside the garage"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b371803326fe7fdb473675ec44e7a06d8153ad11dec1d2fb98f045f65d87465d",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservice\\assets\\google\\google-b371803326fe7fdb.jpg",
+      "score_alt": "White car raised on a lift with the hood open in the service bay"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "stock-library",
+      "sha256": "c086a256f252de16f55f9f4bd7c9870954e45449d0c5f210f430437bf4d87bc8",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:auto"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "6f88496c25b9e04ad8949e1268a832e1516e865b5aa4fbf134b61686149293e9",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservice\\assets\\google\\google-6f88496c25b9e04a.jpg",
+      "score_alt": "ATV parked beside a red gas can with a pickup truck raised on a lift in the background"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "source": "harvest-fallback",
+      "sha256": "02eec172351f7c36ae5673e7dfbb0bd57e595165f0bd09099411191c476088a7",
+      "reasons": [
+        "off_section_relevance:trade_deny:signage:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservice\\assets\\google\\google-02eec172351f7c36.jpg",
+      "score_alt": "White Range Rover parked in front of the open garage bay entrance"
     }
   ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "4151b139ceea8a3a827a963c0ec882278ab83895d58e2ed95cb34ec61d5b12be",
-      "bytes": 443349
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "078f7099cabf95384da8b65c33bf9e9c023dbca5144b5ea8bd2fa143e8d0f28c",
-      "bytes": 357590
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "52d50cb4e2b718b90bbe77b821eeb35e5dc80e934c97e16702046bd1ac6e2fc7",
-      "bytes": 345871
+      "bytes": 443349,
+      "alt": "Any Auto Garage storefront exterior with a car parked out front and the bay door"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "a030e301bf3f26ced966495ba82098b2bdcc340a4d8ea1c9a6cc99d04ee03231",
-      "bytes": 363731
+      "sha256": "4cfcdc17c564fb6824ddca592c7137e39cf446fdcc765978b4d31686f184eb0f",
+      "bytes": 147673,
+      "alt": "Wheel and tire being serviced on shop equipment inside the garage"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "46766acc3b8515f1c2b8f628e84fb44c775f103a2af8fced427150bfce022c1f",
-      "bytes": 268339
-    },
-    {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "6f0338600b5fbe977e381644514df497e86ea2e100bac35830183e086fe3baa1",
-      "bytes": 435545
+      "sha256": "8a5f205b4faf04a58a7fab7d95bf834e998799f17e81318824ebf227f3949945",
+      "bytes": 119539,
+      "alt": "Close-up of an open engine bay showing the engine block and wiring"
     },
     {
       "file": "photo-contact.jpg",
       "sha256": "916f086bda0f7365f51775b738e31bda34fa54dee0123f4068a573c34d92c5fa",
-      "bytes": 186768
+      "bytes": 186768,
+      "alt": "Dark SUV raised on a lift with the hood open beside a rolling tool cabinet"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "5b783b1c924f742e7b680946075ae1dd2ac6bab10c6b9362681d7cb38597e5b3",
-      "bytes": 313895
+      "file": "photo-gallery-2.jpg",
+      "sha256": "88d1576080c1b0933b47ac37bef7f6d64238ea52e9ac8d0f6f95cde9b64f5b87",
+      "bytes": 343618,
+      "alt": "Sedan raised on a lift viewed from the rear inside the service bay"
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "a30dcf67f8c95a52b1b070f1c912fa83f849040f6b440235ad4e67914dbdd688",
-      "bytes": 382183
+      "file": "photo-gallery-3.jpg",
+      "sha256": "94307d23597b63a517d4a26ed640fcd8a31b8ad961a368ae65a091b078560ff4",
+      "bytes": 322389,
+      "alt": "Silver SUV with the hood open showing the engine bay in the service area"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "e5db43e0c47a7dd521e4f3d7561f13c3daff9d88e85f2b298b4accdeffada141",
+      "bytes": 295124,
+      "alt": "Dark blue sedan raised on a lift in the service bay"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "d594a5699aa607253e817824fd664343a9f9e27791b1f34853848e541a16d8b6",
+      "bytes": 290169,
+      "alt": "Mechanic working under the raised hood of a dark sedan"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "21a2baeeea68712ab3e5622516161de23749ca2b0c24ba8a83fb98ce10797cba",
+      "bytes": 259720,
+      "alt": "White sedan raised on a lift inside the service bay"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "73bc0e27924640e0e8ba7d0229851add3fbf4dd61613425947f6369cc0ad277d",
+      "bytes": 255414,
+      "alt": "Black Jeep Wrangler raised on a lift beside a rolling tool cabinet"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "84517d49b51fa0280fb79919904f751b2f25ee7f180f4a76676055417645f59b",
+      "bytes": 254958,
+      "alt": "Gray sedan with the hood open beside a tool cart in the service bay"
     },
     {
       "file": "photo-photos-cta.jpg",
       "sha256": "8ad2cb43aa2e967ab559f0a7c2456cc60e20fa84b43ef425db0eacfd77385fee",
-      "bytes": 168826
+      "bytes": 168826,
+      "alt": "Silver Range Rover raised on a lift in the service bay"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "e5561cac734b5a878ba30cbdac757022cc2574fb1b0a71eebdbbfd59a2231121",
-      "bytes": 309584
-    },
-    {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "cb0def54f50a3cd6f2168a27245b0832cf325961de264243a2e1e9c443de6f49",
-      "bytes": 431658
+      "bytes": 309584,
+      "alt": "Sedan raised on a lift with a mechanic working underneath beside a tool rack"
     },
     {
       "file": "photo-reviewsband.jpg",
       "sha256": "85da890cc63badbe2a8dc948a5a84ab2e619b6e58a1bb8700d2d4502441a2c09",
-      "bytes": 166266
+      "bytes": 166266,
+      "alt": "Sedan raised on a two-post lift inside the service bay"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "91ea0299d54840552e89e15f4656b30ac46f1e3e602b4897b04639a3fdec4b32",
-      "bytes": 276911
+      "sha256": "b6308a55c559c3e074eb42c569a669e919fdfb3ca5a8bb642af8ab8e2f3b020c",
+      "bytes": 111066,
+      "alt": "Mechanic working on the open hood of a dark sedan in the bay"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "d769a61ab73b9e74b3712c14ec14ddcc72e2b5c377ab784984518664bbb79cac",
-      "bytes": 269962
+      "sha256": "e22c60dec946a11b2f8565f041e35826969f8c3e9ba132f75be8685e3fb7ca71",
+      "bytes": 125316,
+      "alt": "Dark sedan raised on a lift with the hood open and a mechanic in the background"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "b371803326fe7fdb473675ec44e7a06d8153ad11dec1d2fb98f045f65d87465d",
-      "bytes": 266362
+      "sha256": "b1ff39ed4ec31fb88dcc947cec3726d0226fca21e934db6ef10c3dc4a3550238",
+      "bytes": 107110,
+      "alt": "White car raised on a lift with the hood open in the service bay"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "8e48e0649b218a410e075a08292f2deabbf16b240eb07a96c69c629564556159",
+      "bytes": 370084,
+      "alt": "Exterior garage lot with several parked cars in front of the shop building"
     },
     {
       "file": "photo-services-hero.jpg",
       "sha256": "c9f58b4b23f9064252a0de61bdfa99d4cac317afca836b1415458c89cf363303",
-      "bytes": 231127
+      "bytes": 231127,
+      "alt": "Close-up of a sports car engine bay with the hood raised"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Blue hatchback parked in the service bay with a worker standing beside another vehicle",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Close-up of an exposed undercarriage component with shop tools nearby",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "White hatchback with the rear hatch open exposing components beside a tool cart",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Mechanic standing beside a black sedan under the shop's service signage",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "White SUV with the hood open and workers standing nearby in the bay",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Lube Express garage door signage with a dark SUV parked outside and a worker standing nearby",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "Exterior shop lot with Any Auto Garage signage and several cars parked",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "alt": "Auto Garage storefront exterior signage with cars parked out front",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:signage:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

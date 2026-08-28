@@ -1,46 +1,228 @@
 {
-  "at": "2026-08-18T17:17:12.168Z",
+  "at": "2026-08-26T16:45:31.531Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "stock-library",
+      "sha256": "8762824f81ad3ae92494a4b5087eaaa74d2ecb6a3a615180ba684e1c1aa9d0ce",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "source": "stock-library",
+      "sha256": "064c604ce8722b691c6735af5aa12e8badb3e366751f6cf6223a419edf28be51",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "stock-library",
+      "sha256": "9185a8a80f06d5039d413b8606eceb7c6a00bba9ae29f1c6c39443f633951f56",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "stock-library",
+      "sha256": "a1b6f11c38a59edd111d69020603ad83ef83bdea8a2ea8e4655dfdafea0e63b3",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "2c01083c6b7b47fc975fd35ec358a13b99fe9a45183920bcedc36bf940539bde",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "source": "stock-library",
+      "sha256": "63210bd283f5fe995354292fc947fd67eae31b3ee529494627536a682b95c481",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "PEX plumbing manifold install"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "source": "stock-library",
+      "sha256": "ac6e97c49470cc1722375a9252e3861b1b13e64de0744e2ef2ee283fb005a95d",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "stock-library",
+      "sha256": "0775d0536d9a5bc0fe9cae3570a86b3105cae3449d42fb83964d7ae2da62b9d3",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "395a5c3debcc4d3e684c5fb22925a86eb6ed33c3c35af4594e7b51d6a80818c9",
-      "bytes": 387178
+      "bytes": 387178,
+      "alt": "Pipework run under the floor between the joists with water damage to the boards "
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "6ab33ec9f5971315e9eb92e7e90501bdfd1bed4a14861eb38384c42ca05d8ca4",
-      "bytes": 75778
+      "sha256": "12e945657a93ba21f5b0e6951d43243a569b05241426ae9364d33b3cbafa63c3",
+      "bytes": 38469,
+      "alt": "New vanity unit and basin set with the tap fitted, a level laid across the top t"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "12dc9abf4be8ba75d6be18f9b6ff4be8f06f305d39f707a565a83bd1784dd2ce",
-      "bytes": 263166
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "4fd09f8690dedd51477c63948bc996035c1ff6f92b6d412305dd8c7c55a382b7",
-      "bytes": 287605
+      "sha256": "bbf36bd690fc816fa41fd8688844b1a82524a33e6b025dd31d226924cad5e9ff",
+      "bytes": 109202,
+      "alt": "Well pump and pressure tank piped up under a house with the gauge and shut-off v"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "39b780162d483662767724d8a494379694b02be9076af1b8648670958b0ce487",
-      "bytes": 178584
+      "sha256": "e34c07635fae441b00a5480e346cc795e007c54217375572950da1dba3e497c9",
+      "bytes": 86531,
+      "alt": "Water heater with the access cover off, the gas valve, thermostat and wiring exp"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "2c6edce713dcd4c4431825b3febcb1b08d40826526acc8a1756d4698481c6f1c",
+      "bytes": 98771,
+      "alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "4381b7fadee52505e62d12088e15c03ae618d88aaf1bd4e9be113b29d884ea5d",
-      "bytes": 76901
+      "bytes": 76901,
+      "alt": "Shower valve cartridge stripped down on the edge of the bath with the seats, spr"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "2ff0ca74709cb683b654d609f289b55990ff83f6a19c0d629813328a33ad1266",
+      "bytes": 252761,
+      "alt": "Pressure tank and pump standing in a wet crawl space, the pipework and fittings "
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6c35a566e7649bc8bb1e715202cdda36180beda482af794d4b4f4cf1104c000f",
+      "bytes": 82741,
+      "alt": "Shower valve trim plate with the cartridge drawn out, the brass body left open i"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "814022ce1121eba7fc9d552b1325bb312c192c86caba4c93946cd918df79a6d5",
-      "bytes": 315169
+      "bytes": 315169,
+      "alt": "Jet pump and pressure tank in a crawl space, the suction and discharge piped in "
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "e1b1d17963569eb91feaac54b1db7c6ce402a207a503585180354293a0e2e697",
+      "bytes": 106118,
+      "alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "1fb852b7a3112dc6549ea3a3a8e1e476c9ad982245504337e296ba6bcd858531",
+      "bytes": 48531,
+      "alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "c25889429dd39d372d36ae0d237e9874fbdddc9582da37f82c0aadf50660b7da",
+      "bytes": 115998,
+      "alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "1e30f207bc109a4fd5a1fdfc47177407093b0905b6eafff6b7299cd75d0ec9f4",
+      "bytes": 210101,
+      "alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "603355bdc450fbe389096adbf4a292968829453c4b5449433b82d41ad7006fd0",
+      "bytes": 67293,
+      "alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "eed48e18bb500d1e2c02702c1ed8b7d07ede3d2685741eccdb9e0fbbdca1dd1c",
+      "bytes": 141408,
+      "alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "c72b3ef9b89841903fed6d4b0b3263e9c21d55698374125094450de7491b0003",
+      "bytes": 151647,
+      "alt": "PEX plumbing manifold install"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "593afa57b31175eeeea07bdce4c6841eba06c6a1bc3be600d348cb9228b3066f",
+      "bytes": 91488,
+      "alt": "pipe wrench on copper pipe"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Wall opened right back to the studs where a leak has run, the old supply lines exposed above the damaged plate",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Copper riser and tee gone green with corrosion where it runs through the insulation, the reason the line is being replac",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

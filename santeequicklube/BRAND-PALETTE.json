@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "santeequicklube",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#161D26",
+  "palette": {
+    "BRAND": "#161D26",
+    "PRIMARY": "#242F3D",
+    "PRIMARY_DK": "#1A232D",
+    "PRIMARY_MID": "#2B394A",
+    "ACCENT": "#384A61",
+    "ACCENT_DK": "#273444",
+    "ACCENT_LT": "#4F6888",
+    "ON_DARK": "#CBD5E1",
+    "MENU_INK": "#11161D",
+    "TINT_1": "#DFE5EC",
+    "TINT_2": "#E8EDF2",
+    "TINT_3": "#D8DFE9",
+    "TINT_4": "#DBE2EA",
+    "LINE_2": "#BECADA",
+    "MUTED_BRAND": "#7E96B4",
+    "MIST": "#F4F6F8",
+    "LINE": "#D2DAE5",
+    "PRIMARY_RGB": "36,47,61",
+    "ACCENT_RGB": "56,74,97",
+    "SCRIM_RGB": "43,57,74",
+    "SCRIM2_RGB": "26,35,45",
+    "MENU_INK_RGB": "17,22,29",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.56,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.05,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.13,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.16,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.35,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

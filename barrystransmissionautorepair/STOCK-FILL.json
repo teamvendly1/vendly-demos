@@ -1,13 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-22T23:13:19.713Z",
+  "at": "2026-08-24T05:50:05.417Z",
   "trade": "auto-repair",
   "slotHints": {},
   "ok": false,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "c796d9766eca5962e64d67d0de819e8637a7ad22806704f3eb1c2c1ee402fb4c",
+      "sha256": "c7163638637469587c12ef5c8af6ecbbb023ec9cd8d1542d52fae5bb93ac7b63",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -18,14 +18,8 @@
       "niche_folder": null
     },
     {
-      "file": "photo-card-photos.jpg",
-      "sha256": "4ce12f1fd923b53e4955a0ce957b76ebbd368cf4ffee38b5421a8d2a4c9c3dca",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
       "file": "photo-card-reviews.jpg",
-      "sha256": "c7163638637469587c12ef5c8af6ecbbb023ec9cd8d1542d52fae5bb93ac7b63",
+      "sha256": "4ce12f1fd923b53e4955a0ce957b76ebbd368cf4ffee38b5421a8d2a4c9c3dca",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -43,6 +37,15 @@
     }
   ],
   "filled": [
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
     {
       "file": "photo-contact.jpg",
       "sha256": null,
@@ -135,6 +138,17 @@
     }
   ],
   "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-card-photos.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
     {
       "ok": false,
       "gap": true,
@@ -246,7 +260,7 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 6,
+  "distinct": 5,
   "slots": 16,
   "stock_provenance_rows": 0,
   "family": "auto-repair",

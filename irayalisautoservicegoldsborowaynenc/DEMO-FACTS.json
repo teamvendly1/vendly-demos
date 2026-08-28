@@ -13,7 +13,7 @@
   "trade_key": "auto",
   "stock_key": "auto-repair",
   "niche": "auto",
-  "trade_label": "Auto repair",
+  "trade_label": "Auto repair shop",
   "schema_type": "LocalBusiness",
   "title_suffix": "",
   "meta_description": "Irayalis Auto Service serving Goldsboro - auto repair that shows up when you call.",
@@ -21,8 +21,8 @@
   "facebook_url": "",
   "eyebrow": "Goldsboro",
   "h1_lead": "",
-  "h1_emph": "Auto repair in Goldsboro, done properly.",
-  "hero_lede": "Auto repair done right. Call and we will take a look.",
+  "h1_emph": "Auto repair in Goldsboro, without the runaround.",
+  "hero_lede": "Auto repair shop on 207 E Oak St in Goldsboro. Recent jobs are on the photos page.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "Goldsboro",
@@ -32,9 +32,9 @@
   "explore_h2": "What comes into our shop",
   "explore_lede": "",
   "card_about": "",
-  "card_services": "Diagnostics and engine work",
-  "card_reviews": "",
-  "card_photos": "",
+  "card_services": "See everything we take on",
+  "card_reviews": "Read what past customers said",
+  "card_photos": "Browse recent job photos",
   "coverage_h2": "Goldsboro, and the towns around it",
   "hours_line": "",
   "service_areas": [
@@ -44,62 +44,97 @@
   "cta_body": "Call (919) 432-8082 or send a note.",
   "quote_h2": "Tell us about the car",
   "quote_lede": "",
-  "form_msg_label": "What do you need",
+  "form_msg_label": "Tell us more",
   "form_placeholder": "",
   "footer_blurb": "Irayalis Auto Service serving Goldsboro.",
   "about_h2": "About Irayalis Auto Service",
   "about_p1": "We handle auto repair for drivers who need it done right.",
-  "about_p2": "Every photograph on this site is our own work, and it covers diagnostics and engine work, brakes, steering and suspension, tyres and wheels. 101 customers have left us a review, averaging 4.7 out of 5. We work out of Goldsboro and the towns around it.",
-  "area_h2": "Where we work",
+  "about_p2": "Every photograph on this site is our own work, and it covers diagnostics and engine work, brakes, steering and suspension, tires and wheels. 101 customers have left us a review, averaging 4.7 out of 5. We work out of Goldsboro and the towns around it.",
+  "area_h2": "The towns around Goldsboro, too",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
   "svc_hero_lede": "",
-  "svc_list_h2": "What we do",
+  "svc_list_h2": "The auto repair work we do",
   "services": [
     {
       "title": "Diagnostics and engine work",
       "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
-      "slot": "",
-      "alt": "",
+      "slot": "photo-service-1.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 21)",
       "evidence": "Car up on the two-post lift with a mechanic working underneath and an engine block on a pa"
     },
     {
       "title": "Brakes, steering and suspension",
       "body": "Worn parts come off and the replacement goes on beside them, so you can see what was actually changed.",
-      "slot": "",
-      "alt": "",
+      "slot": "photo-service-2.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 9)",
       "evidence": "New strut assembly laid beside the rusted one it replaced on the workshop floor"
     },
     {
-      "title": "Tyres and wheels",
+      "title": "Tires and wheels",
       "body": "Fitting and balancing on the machine, with the weights set where they belong.",
-      "slot": "",
-      "alt": "",
+      "slot": "photo-service-3.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 4)",
       "evidence": "Car raised on the lift with a wheel off and the bonnet up, sunlight coming through the ope"
     },
     {
       "title": "Exhaust and underbody",
       "body": "Up on the lift, where the rust and the leaks actually are.",
-      "slot": "",
-      "alt": "",
+      "slot": "photo-service-4.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 18)",
       "evidence": "Car up on the two-post lift with a mechanic working underneath and an engine block on a pa"
     }
   ],
-  "photos_h2": "Recent work",
+  "photos_h2": "Auto repair work near Goldsboro",
   "photos_lede": "",
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "Technician under a raised car working along the exhaust with a tool in hand",
-      "subject_class": "premises"
+      "alt": "Irayalis Auto Service - technician at work on site (photo 31)",
+      "subject_class": "trade_work"
     },
     {
       "slot": "photo-gallery-2.jpg",
-      "alt": "Wheel balancer with a tyre mounted and trays of wheel weights ready beside it",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 25)",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 14)",
       "subject_class": "premises"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 3)",
+      "subject_class": "premises"
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 17)",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "alt": "Engine bay opened up with the intake off and the injector ports plugged while the work is under way",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 16)",
+      "subject_class": "premises"
+    },
+    {
+      "slot": "photo-gallery-8.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 27)",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-9.jpg",
+      "alt": "Irayalis Auto Service - technician at work on site (photo 12)",
+      "subject_class": "trade_work"
     }
   ],
-  "reviews_h2": "What customers say",
+  "reviews_h2": "Straight from the owner",
   "reviews_lede": "",
   "reviews": [
     {
@@ -124,34 +159,32 @@
       "published_relative": "6 years ago"
     }
   ],
-  "contact_h2": "Contact",
+  "contact_h2": "Talk to us",
   "contact_lede": "",
-  "contact_photo_slot": "logo.png",
-  "contact_photo_tier": "logo",
+  "contact_photo_slot": "photo-family.jpg",
+  "contact_photo_tier": "owner",
   "contact_map": "link",
-  "place_customers_visit": false,
-  "has_storefront": false,
+  "place_customers_visit": true,
+  "has_storefront": true,
   "alts": {
     "hero": "Car raised on the lift with a wheel off and the bonnet up, sunlight coming through the open bay",
-    "card_about": "Irayalis Auto Service crew and job photo",
-    "card_services": "The shop from the road, three bay doors under the Irayalis Auto Service sign with cars waiting on the lot",
-    "card_reviews": "Engine bay opened up with the intake off and the injector ports plugged while the work is under way",
-    "card_photos": "Mechanic leaning deep into an engine bay with the shelves of oil stacked behind him",
-    "ctaband": "Car up on the two-post lift with a mechanic working underneath and an engine block on a pallet nearby",
-    "about": "New strut assembly laid beside the rusted one it replaced on the workshop floor",
-    "contact": "Irayalis Auto Service",
-    "services_hero": "Auto repair services"
+    "card_about": "Mechanic leaning deep into an engine bay with the shelves of oil stacked behind him",
+    "card_services": "Irayalis Auto Service - technician at work on site (photo 26)",
+    "card_reviews": "Irayalis Auto Service - technician at work on site (photo 13)",
+    "card_photos": "Irayalis Auto Service - technician at work on site (photo 29)",
+    "ctaband": "New strut assembly laid beside the rusted one it replaced on the workshop floor",
+    "about": "Technician under a raised car working along the exhaust with a tool in hand",
+    "contact": "Irayalis Auto Service - technician at work on site (photo 8)",
+    "services_hero": "Irayalis Auto Service - technician at work on site (photo 22)"
   },
   "send": "NO",
-  "asset_version": "harv20260815",
+  "asset_version": "harv20260824055832",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\HARVEST.json",
-    "at": "2026-08-15T20:48:09.593Z",
+    "at": "2026-08-24T18:42:46.578Z",
     "zero_human_input": true,
-    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\DEMO-FACTS.json",
-    "wrote_facts_from_harvest": true,
-    "rebuilt": true,
+    "facts_path": "_tmp\\autodemo\\demos\\irayalisautoservicegoldsborowaynenc\\DEMO-FACTS.json",
     "harvest_merged": true
   },
   "address": {
@@ -160,7 +193,7 @@
     "region": "NC",
     "postal": "27530",
     "source_url": "",
-    "customers_visit": false
+    "customers_visit": true
   },
   "google_harvest": {
     "rating": 4.7,
@@ -176,8 +209,8 @@
     "source_is_google": true
   },
   "services_source": "their-photographs",
-  "photo_count": 8,
-  "contact_photo_tier_why": "business logo logo.png",
+  "photo_count": 37,
+  "contact_photo_tier_why": "harvest face file photo-family.jpg",
   "contact_photo_omit": false,
   "_contact_map_mode": "hyperlink"
 }

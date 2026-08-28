@@ -1,11 +1,12 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-18T09:40:48.389Z",
+  "at": "2026-08-24T05:41:15.364Z",
   "trade": "auto-repair",
   "slotHints": {
     "photo-service-1.jpg": "Diagnostics and engine work",
     "photo-service-2.jpg": "Brakes, steering and suspension",
-    "photo-service-3.jpg": "Tires and wheels"
+    "photo-service-3.jpg": "Tires and wheels",
+    "photo-service-4.jpg": "Exhaust and underbody"
   },
   "ok": false,
   "kept": [
@@ -41,7 +42,7 @@
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "065dc68a39c1b92187f66751448cf0f15310aaaa047f01b34181d5cc7c0ad809",
+      "sha256": "4e369b957507ee4eab42c80e18cbbf9929d3fa3febab0a4a22e947f147f934b4",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -59,7 +60,7 @@
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "7ce10ae837ac54973b6969b31208cf626611fb5444daa63ca08016cd58b33f62",
+      "sha256": "065dc68a39c1b92187f66751448cf0f15310aaaa047f01b34181d5cc7c0ad809",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -71,7 +72,7 @@
     },
     {
       "file": "photo-reviewsband.jpg",
-      "sha256": "bebb08c001a712bac1af0e77040c130201a20baaff951d73f9000f8380c0e3ee",
+      "sha256": "7ce10ae837ac54973b6969b31208cf626611fb5444daa63ca08016cd58b33f62",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -94,31 +95,25 @@
       "niche_folder": null
     },
     {
+      "file": "photo-service-4.jpg",
+      "sha256": "3eaf7446616cf3b0e52850a340f7e2014ae4f96a5050ab5cfe728e846de2d248",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "edf014ce44a66d6739f18029f56cf77f71588714df01a0f627e96f1379bef2ae",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-services-hero.jpg",
-      "sha256": "4e369b957507ee4eab42c80e18cbbf9929d3fa3febab0a4a22e947f147f934b4",
+      "sha256": "004948620a5688d865b5660bad04ecc3fea9d224b35be116dcc9b4cda25fe381",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
   ],
   "filled": [
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
     {
       "file": "photo-service-6.jpg",
       "sha256": null,
@@ -136,35 +131,13 @@
       "reason": "stock_gap_all_claimed",
       "family": "auto-repair",
       "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "auto-repair",
-      "service": "",
       "fileName": "photo-service-6.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 15,
+  "distinct": 17,
   "slots": 18,
   "stock_provenance_rows": 0,
   "family": "auto-repair",

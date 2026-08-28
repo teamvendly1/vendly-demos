@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:34:21.654Z",
+ "at": "2026-08-26T15:03:35.000Z",
  "slug": "mountainboysautorepair",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-5b55bb3e6ca15f06.jpg",
-   "bytes": 466564,
-   "letterbox_stripped": null
+   "bytes": 237641,
+   "smart_crop": true,
+   "src": "google-5b55bb3e6ca15f06.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 37.024,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-c2047b12375a321d.jpg",
-   "bytes": 411345,
-   "letterbox_stripped": null
+   "bytes": 164111,
+   "smart_crop": true,
+   "src": "google-c2047b12375a321d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 41.7,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-e838c8694754d873.jpg",
-   "bytes": 452914,
-   "letterbox_stripped": null
+   "bytes": 157740,
+   "smart_crop": true,
+   "src": "google-e838c8694754d873.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 38,
+   "detail_score": 45.317,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-3f71856837764dac.jpg",
-   "bytes": 342428,
-   "letterbox_stripped": null
+   "bytes": 153670,
+   "smart_crop": true,
+   "src": "google-3f71856837764dac.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 73,
+   "detail_score": 36.937,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,14 +124,30 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-463a5d66ba4346d8.jpg",
-   "bytes": 389401,
-   "letterbox_stripped": null
+   "bytes": 208453,
+   "smart_crop": true,
+   "src": "google-463a5d66ba4346d8.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 34.884,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-9fe60d6d86d64884.jpg",
-   "bytes": 307759,
-   "letterbox_stripped": null
+   "bytes": 113186,
+   "smart_crop": true,
+   "src": "google-9fe60d6d86d64884.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 16.151,
+   "orientation": "landscape"
   },
   {
    "slot": "logo.png",
@@ -111,7 +159,7 @@
  ],
  "skipped": [
   "classification read: 34 verdicts",
-  "staged 17 harvest photos",
+  "staged 17 harvest photos from assets",
   "refused_by_class:google-7e35e995991260ef.jpg:reject",
   "hero_cand_refuse:google-8414c306458086cf.jpg:road_no_landscape",
   "hero_cand_refuse:google-5b55bb3e6ca15f06.jpg:road_no_landscape",
@@ -136,8 +184,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 16,
@@ -160,5 +211,6 @@
   "photo-gallery-6.jpg": "Tan Dodge Dakota pickup parked outdoors with the hood up",
   "photo-service-1.jpg": "Roadside sign reading Mountain Boys Auto Repair Diesel Repair on a hillside",
   "photo-service-2.jpg": "Gravel lot with checkered racing flags and vans parked at dusk"
- }
+ },
+ "dedupe_fixed": 5
 }

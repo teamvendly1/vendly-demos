@@ -1,51 +1,484 @@
 {
-  "at": "2026-08-17T04:35:32.990Z",
+  "at": "2026-08-26T17:37:10.010Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "a81b3d2c96de23fbb501e67b41054ccaf8f1fc75a1d8e566cb2e788f3037dd2f",
-      "bytes": 309663
+      "source": "harvest-fallback",
+      "sha256": "7f222192817aab429a8ba01b7ffe4a3c674a721fcf1d87cea337238ecd5615b5",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-1.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-7f222192817aab42.jpg",
+      "score_alt": "Prince 3C Towing truck with door decal hauling a white Kia Sportage on a car trailer through a neighborhood"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "1c13f1ffc6611fe508e3a90b643cf0ed0cc90b80a9ea81dd89eb3e940837f82d",
-      "bytes": 229152
+      "source": "harvest-fallback",
+      "sha256": "cc10b42fe34bbdb3dc97e3875bd03c700f15f037774b06220c4e7567a791aa6b",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-card-reviews.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-cc10b42fe34bbdb3.jpg",
+      "score_alt": "White Dodge Charger secured on the tow trailer at night with the amber beacon lit"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "c9253bd0ee75995ddef8851bf970047f2903e08bd977db4fffcea32e01d4c7de",
-      "bytes": 166619
+      "source": "harvest-fallback",
+      "sha256": "428cc4d8ae90b655adfd3e18eeb42ec7eed48654a863a2c56b114ff3ef96cc33",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-428cc4d8ae90b655.jpg",
+      "score_alt": "Company vehicle carrying the Prince 3C Towing name and number on the door with a beacon on the roof"
     },
     {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "7f222192817aab429a8ba01b7ffe4a3c674a721fcf1d87cea337238ecd5615b5",
-      "bytes": 211882
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "cc10b42fe34bbdb3dc97e3875bd03c700f15f037774b06220c4e7567a791aa6b",
-      "bytes": 167604
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "15586b3f07cf4c748a17e07747c1b848b36f9340d0d0b75a63ef67f796015bb2",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-family.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-15586b3f07cf4c74.jpg",
+      "score_alt": "Prince 3C Towing - technician at work on site (photo 1)"
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "44d69a2d42f678d7c303111be0563a51c36d2475e766d6ada6d4429ab9e20937",
-      "bytes": 459546
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "49e7c77dabc1100f7efeeb7e4d608e2cb58f97023bf9afc5f8504fb27a525e6b",
-      "bytes": 173312
+      "source": "harvest-fallback",
+      "sha256": "5974cbdaad188d2087d6e76872ff58473c922ddebf0dc41988787531d266f9fd",
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-5.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-5974cbdaad188d20.jpg",
+      "score_alt": "Prince 3C Towing - technician at work on site (photo 2)"
     },
     {
       "file": "photo-quoteband.jpg",
-      "sha256": "428cc4d8ae90b655adfd3e18eeb42ec7eed48654a863a2c56b114ff3ef96cc33",
-      "bytes": 408124
+      "source": "harvest-fallback",
+      "sha256": "86a439c3d04f12f6b628243e61d83ebd1c043fc731b636e18ed84692fd3a9aad",
+      "reasons": [
+        "unflattering_subject:unflattering:wreck"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowinggoldsborowaynenc\\assets\\google\\google-86a439c3d04f12f6.jpg",
+      "score_alt": "Prince 3C Towing - technician at work on site (photo 3)"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "5f1f1c8c36e36eec62be497aa86be60322a6821942cda6ae236e71bcb2517bdd",
+      "bytes": 75123,
+      "alt": "White Dodge Charger secured on the tow trailer at night with the amber beacon li"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "69747b7101373181aa1a36e859b8c191c0b5fa5db791c13193a63258d5089c97",
+      "bytes": 226622,
+      "alt": "Prince 3C Towing - technician at work on site (photo 18)"
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "e6ec811038ba072affa21fa7103a6ee152b8253451c962e8dfb1684b37035557",
+      "bytes": 222015,
+      "alt": "Prince 3C Towing - technician at work on site (photo 14)"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "c9253bd0ee75995ddef8851bf970047f2903e08bd977db4fffcea32e01d4c7de",
+      "bytes": 166619,
+      "alt": "Classic two-tone Ford pickup strapped to the tow trailer on the roadside at dusk"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "1c13f1ffc6611fe508e3a90b643cf0ed0cc90b80a9ea81dd89eb3e940837f82d",
+      "bytes": 229152,
+      "alt": "White Ford Ranger loaded on the tow trailer with the winch and battery pack visi"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "4ed4107f01238d8b7523a18d31d6141b05b060ea2ba20994c977729c1173207d",
+      "bytes": 170764,
+      "alt": "Prince 3C Towing - technician at work on site (photo 3)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "2e192c6dc8b632ae3b75e885121e5b4897dd7a9529dac78f1c0d857556d7c60f",
+      "bytes": 359126,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-ctaband.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "2976f8843e4bf899efe81da74738b90e6422ee9a6717111c59a07c3a3466ef7b",
+      "bytes": 340688,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-quoteband.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "a3200a5a2fdf773a59cd3a2b8ba060c80f6f2100641980c035ca7ebde5386483",
+      "bytes": 321594,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-gallery-4.jpg"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "a0cb9e3028a1b8d7e5b11dcc58d0c3f7ce13985cb4d10e9ea173e328a08fe171",
+      "bytes": 299294,
+      "alt": "Prince 3C Towing - technician at work on site (photo 23)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "62f1489841beeef8da2efa4028964a9d37c36df6b02ae8931ddab4a98a96891b",
+      "bytes": 295992,
+      "alt": "Prince 3C Towing - technician at work on site (photo 13)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "18b12d4a94c29e993d3baeb1ea647f1c930700ee009b4849c56421872c1f53ff",
+      "bytes": 286336,
+      "alt": "Prince 3C Towing - technician at work on site (photo 16)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "044a2ada7dd0924aef9f5f71f48bf545e27a110de0626284c39e500ae0cb5011",
+      "bytes": 267103,
+      "alt": "Prince 3C Towing - technician at work on site (photo 19)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "4cc2cc378bbe5b49a2bc672dba7f17152f6fc89bb85d72213d5f5838d990f0c6",
+      "bytes": 258326,
+      "alt": "Prince 3C Towing - technician at work on site (photo 11)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "464ea32160aedf7342931f8b03c51df1b72dd013e48dcb24525ac2b63cd08ee6",
+      "bytes": 255259,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-reviewsband.jpg"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "15586b3f07cf4c748a17e07747c1b848b36f9340d0d0b75a63ef67f796015bb2",
+      "bytes": 148790,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:prince3ctowing/photo-hero.jpg"
+      ]
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "a545b6db97b97d8c73f43e9fcbde2c734125d9a6a8a06388db1fa5eee4715d25",
+      "bytes": 118426,
+      "alt": "Prince 3C Towing - technician at work on site (photo 12)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "7a968b5912badf5e63d299d953a7c4873fd896871d614e96233e8992e19d1181",
+      "bytes": 118678,
+      "alt": "Prince 3C Towing - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "c6f1ec635b807467a0741c5111e00c78b5e5fe90b3cd9f5884dd038d1c561866",
+      "bytes": 122410,
+      "alt": "Prince 3C Towing - technician at work on site (photo 9)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "f4cc335238baf7e8c80c307a91c30c73cb8faf9c405da40755a6d09762443738",
+      "bytes": 196748,
+      "alt": "Prince 3C Towing - technician at work on site (photo 27)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "0230b84ffb2e6a1078f244c88e3eaeae61e5f7952a0ff17b854dd82ac1ad19a2",
+      "bytes": 172849,
+      "alt": "Prince 3C Towing - technician at work on site (photo 28)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 24)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 3)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 23)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 13)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 16)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 19)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 11)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "Prince 3C Towing flatbed pickup loading a wrecked tan sedan at an intersection",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:wreck",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 12)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 27)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "alt": "Prince 3C Towing - technician at work on site (photo 28)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg",
+    "correlate_restore_no_stock:photo-service-4.jpg",
+    "correlate_restore_no_stock:photo-service-5.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

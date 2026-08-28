@@ -1,0 +1,171 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T17:46:00.122Z",
+ "slug": "rrautomotive",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-fe7422f25870d729.jpg",
+   "bytes": 254104,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-1375c2531ca3357b.jpg",
+   "bytes": 116802,
+   "smart_crop": true,
+   "src": "google-1375c2531ca3357b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x720",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 23.101,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-78c6c2a22462fc5f.jpg",
+   "bytes": 375274,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-fe4138bde715220f.jpg",
+   "bytes": 135159,
+   "smart_crop": true,
+   "src": "google-fe4138bde715220f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 25.86,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-e2e015f9f9891d6a.jpg",
+   "bytes": 118015,
+   "smart_crop": true,
+   "src": "google-e2e015f9f9891d6a.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 24.917,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-79737f9ec6b20c31.jpg",
+   "bytes": 114304,
+   "smart_crop": true,
+   "src": "google-79737f9ec6b20c31.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 83,
+   "detail_score": 21.67,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-2326428751713549.jpg",
+   "bytes": 242224,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-e748603d26497665.jpg",
+   "bytes": 215049,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-6d585f13a10ff82a.jpg",
+   "bytes": 143154,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-eaa0a87e73f1509f.jpg",
+   "bytes": 123841,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-9c77e8f8d4082d22.jpg",
+   "bytes": 64249,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-25d6e463c86a15c9.jpg",
+   "bytes": 205849,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 28 verdicts",
+  "staged 14 harvest photos from assets",
+  "refused_by_class:google-81c65345fdd2e0f9.jpg:reject",
+  "refused_by_class:google-ca71e583a927282f.jpg:reject",
+  "hero_cand_refuse:google-78c6c2a22462fc5f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-fe4138bde715220f.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-e2e015f9f9891d6a.jpg:road_no_landscape",
+  "hero_cand_refuse:google-79737f9ec6b20c31.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-2326428751713549.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-e748603d26497665.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-25d6e463c86a15c9.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-eaa0a87e73f1509f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-9c77e8f8d4082d22.jpg:road_no_landscape",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 12,
+ "refused_by_class": 2,
+ "photo_candidates": 12,
+ "altBySlot": {
+  "photo-hero.jpg": "black muscle car and a red sedan both parked with hoods open inside the shop bay under a two-post lift",
+  "photo-card-about.jpg": "red and white classic Chevrolet Impala parked outside the R&R Automotive storefront under the Tune-Ups and Suspension Safety signage",
+  "photo-about.jpg": "two workers moving an engine on a wheeled cart across a gravel lot, one riding a small red utility mower alongside",
+  "photo-card-services.jpg": "mechanic in a black hoodie kneeling to work on the underside of a white boat hull propped on jack stands with tools spread on a red cloth",
+  "photo-card-reviews.jpg": "mechanic lifting an engine off a rolling stand against a pegboard tool wall with a large standing shop fan nearby",
+  "photo-card-photos.jpg": "close view of a mechanic's gloved hands disassembling the boat's outdrive unit over a drip pan on the shop floor",
+  "photo-gallery-1.jpg": "two mechanics leaning into the open hood of a black SUV in a wood-beamed barn-style shop bay with a red-cloth rolling table of supplies in front",
+  "photo-gallery-2.jpg": "mechanic reaching up to work on the stern drive underneath a Stingray boat hull raised on a trailer",
+  "photo-gallery-3.jpg": "mechanic reaching into an open engine bay with a red catch bucket hanging from the radiator support beside a Robinair AC recharge machine",
+  "photo-ctaband.jpg": "engine and front suspension assembly with coilover struts pulled from a vehicle, sport motorcycle parked behind it in the shop",
+  "photo-quoteband.jpg": "engine hoisted out of a maroon car on a two-post lift and set on a wood pallet on the shop floor",
+  "photo-gallery-4.jpg": "black ATV and green dirt bike parked side by side in a dim shop bay next to oil jugs and yellow jack stands"
+ },
+ "dedupe_fixed": 5
+}

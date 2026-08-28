@@ -1,0 +1,162 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T16:20:50.207Z",
+ "slug": "coonhoundtowingllc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-607d8f8d262e8e0b.jpg",
+   "bytes": 580977,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-2cce080ea8a2afc0.jpg",
+   "bytes": 141606,
+   "smart_crop": true,
+   "src": "google-2cce080ea8a2afc0.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 53,
+   "detail_score": 25.44,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-8c57478d66a08a6c.jpg",
+   "bytes": 562691,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-699833317fda3d31.jpg",
+   "bytes": 253679,
+   "smart_crop": true,
+   "src": "google-699833317fda3d31.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 26.967,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-fdddac87a16162d7.jpg",
+   "bytes": 160084,
+   "smart_crop": true,
+   "src": "google-fdddac87a16162d7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 21.486,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-433cea13fba9078f.jpg",
+   "bytes": 86478,
+   "smart_crop": true,
+   "src": "google-433cea13fba9078f.jpg",
+   "letterbox_stripped": "v23.9%",
+   "src_wh": "900x1218",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 15.969,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-f37ee0ac51559141.jpg",
+   "bytes": 499679,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-bc605fae17ac67eb.jpg",
+   "bytes": 415707,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-89c3947e01b4de41.jpg",
+   "bytes": 287328,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-4c3cd1584b779a7b.jpg",
+   "bytes": 240616,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 24 verdicts",
+  "staged 12 harvest photos from assets",
+  "refused_by_class:google-3a83a4c497e7ab20.jpg:reject",
+  "refused_by_class:google-7cb05dde3c078637.jpg:reject",
+  "hero_cand_refuse:google-607d8f8d262e8e0b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-8c57478d66a08a6c.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-699833317fda3d31.jpg:road_no_landscape",
+  "hero_cand_refuse:google-f37ee0ac51559141.jpg:road_no_landscape",
+  "hero_cand_refuse:google-fdddac87a16162d7.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-bc605fae17ac67eb.jpg:portrait_aspect_hero_refuse",
+  "hero_hold_crew_for_about:google-2cce080ea8a2afc0.jpg",
+  "hero_cand_refuse:google-89c3947e01b4de41.jpg:road_no_landscape",
+  "hero_cand_refuse:google-4c3cd1584b779a7b.jpg:road_no_landscape",
+  "hero_cand_refuse:google-433cea13fba9078f.jpg:road_no_landscape",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-607d8f8d262e8e0b.jpg)",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 10,
+ "refused_by_class": 2,
+ "photo_candidates": 10,
+ "altBySlot": {
+  "photo-hero.jpg": "Red rollback tow truck hauling a light-colored minivan up a two-lane road past a wooded hillside.",
+  "photo-card-about.jpg": "Man driving a Coonhound Garage flatbed truck with his arm out the window and a small dog sitting on his lap.",
+  "photo-about.jpg": "Coonhound Garage yard sign reading Auto Repair, Quality Service, and 24/7 Towing with both phone numbers, flanked by trimmed shrubs on the lawn.",
+  "photo-card-services.jpg": "Dark flatbed tow truck hauling a maroon sedan through a parking lot with long afternoon shadows.",
+  "photo-card-reviews.jpg": "Rain-soaked roadside recovery scene with a white pickup truck rolled onto its roof in the grass and trees off the shoulder.",
+  "photo-card-photos.jpg": "Nighttime tow truck with headlights and taillights lit, working a vehicle recovery on its flatbed in the dark.",
+  "photo-gallery-1.jpg": "Dark flatbed tow truck parked outside a metal shop bay door with a lime-green metal storage box strapped to the bed.",
+  "photo-gallery-2.jpg": "Red heavy-duty rollback tow truck parked in a gravel lot next to shipping containers on a sunny day.",
+  "photo-gallery-3.jpg": "Empty dark flatbed tow truck parked on a wet driveway in front of a two-story house on a hillside.",
+  "photo-ctaband.jpg": "Black Fox-body Mustang loaded on a flatbed tow truck parked at a gas station forecourt under a clear sky."
+ },
+ "dedupe_fixed": 5
+}

@@ -1,10 +1,12 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-21T06:04:03.706Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-25T23:39:53.729Z",
   "slug": "a1automotiveservices",
-  "removed_count": 20,
+  "removed_count": 21,
   "removed_sample": [
-    "logo-keyed.png",
+    "google-1f41a5b066b06f3e.jpg",
+    "google-2cff34ff5f8d428f.jpg",
+    "google-f6360685d5a214a2.jpg",
     "photo-ba-after.jpg",
     "photo-ba-before.jpg",
     "photo-contact.jpg",
@@ -13,9 +15,12 @@
     "photo-gallery-2.jpg",
     "photo-gallery-3.jpg",
     "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-gallery-7.jpg"
+    "photo-gallery-5.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\a1automotiveservices",
+  "published_ref_count": 14,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

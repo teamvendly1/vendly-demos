@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:01:44.410Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:41:48.056Z",
   "slug": "americantreeco",
-  "removed_count": 25,
+  "removed_count": 24,
   "removed_sample": [
     "google-025bef73447e7855.jpg",
     "google-0c4e22678368fd2b.jpg",
@@ -17,5 +17,10 @@
     "google-779a4b99a3ef47fb.jpg",
     "google-952f59d0d0e06958.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\americantreeco",
+  "published_ref_count": 22,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

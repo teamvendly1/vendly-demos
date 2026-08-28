@@ -10,9 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=harv20260818171709">
-<meta name="vendly-demo-build" content="blank-mold-20260818-hydroclean">
-<meta name="vendly-hydroclean-class" content="20260815-c8f645b5e949">
+<link rel="stylesheet" href="assets/site.css?v=harv20260826164457">
+<meta name="vendly-demo-build" content="blank-mold-20260826-hydroclean">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -39,10 +38,6 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <body>
 <div class="demo-preview">This is a preview built by Vendly. It is not an official or affiliated site of Frank's 24-hour Plumbing Service.</div>
 <a class="skiplink" href="#main">Skip to content</a>
-<div class="phone-strip" role="banner">
-  <a href="tel:+19106336448" aria-label="Call Frank's 24-hour Plumbing Service at (910) 633-6448">(910) 633-6448</a>
-</div>
-
 <div class="mobile-callbar" role="navigation" aria-label="Quick actions">
   <button type="button" class="mcb-ask" data-ask-jessica>Ask us a question</button>
   <div class="mcb-rule" aria-hidden="true"></div>
@@ -58,7 +53,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <span class="navtoggle-text">Menu</span>
     </button>
     <a href="index.html" aria-label="Frank's 24-hour Plumbing Service home" style="grid-column:2;justify-self:center">
-      
+      <img class="logo" src="assets/logo.png?v=harv20260826164457" alt="Frank's 24-hour Plumbing Service">
     </a>
     <span class="navbalance" aria-hidden="true">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -83,11 +78,12 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   </nav>
 </header>
 <main id="main">
-<section class="reveal" aria-labelledby="h-reviews" style="padding-top:clamp(56px,8vw,102px)">
+
+<section class="reveal" aria-labelledby="h-reviews" style="">
   <div class="wrap">
     <div class="center">
       <p class="kicker">What customers said</p>
-      <h2 id="h-reviews">What customers say</h2>
+      <h2 id="h-reviews">In their own words</h2>
       <p class="lede">What customers said after the job.</p>
     </div>
     <div class="rv-list">
@@ -106,7 +102,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          
+          <img class="logo-footer" src="assets/logo-footer.png?v=harv20260826164457" alt="Frank's 24-hour Plumbing Service">
         </div>
         <p style="margin:0;max-width:34ch">Frank's 24-hour Plumbing Service serving Raeford.</p>
       </div>
@@ -150,25 +146,18 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     greeting: "",
     nudge: "",
     disablePeek: true,
-    /* forceRender 2026-08-17. Measured: https://vendly-jarvis.vercel.app/api/status
-       answers 404 {"active":false} for any tenant that is not deployed, and
-       siteassistant-v2.js boot() treats a definitive active:false as OFF and renders
-       NOTHING. index/about/services/photos already carried forceRender; reviews and
-       contact did not, so the Ask-us chat was missing on 2 of 6 pages of EVERY demo -
-       including contact, the highest-intent page. A demo is not a live tenant, so it
-       must never ask the kill switch for permission to show its own chat. */
     forceRender: true,
     phone: "+19106336448",
     sms: "+19106336448",
-    quoteUrl: "#quote",
+    quoteUrl: "",
     bookUrl: "",
     contactUrl: "./contact.html",
     suggestions: [],
     accent: "#5F4E3A"
   };
 </script>
-<script src="assets/siteassistant-v2.js?v=harv20260818171709" defer></script>
-<script src="assets/site.js?v=harv20260818171709" defer></script>
+<script src="assets/siteassistant-v2.js?v=harv20260826164457" defer></script>
+<script src="assets/site.js?v=harv20260826164457" defer></script>
 <script id="v-lb-js">
 (function(){
   if (window.__vendlyLightbox) return;

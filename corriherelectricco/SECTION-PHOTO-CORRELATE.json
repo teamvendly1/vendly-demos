@@ -1,76 +1,318 @@
 {
-  "at": "2026-08-18T13:35:34.141Z",
+  "at": "2026-08-26T16:22:25.969Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "electrical",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-services.jpg",
+      "source": "stock-library",
+      "sha256": "f7194b0993baf693814b4e1c8e4b90e673b6dac204459507414693dc3ed8ade0",
+      "reasons": [
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": "trade work",
+      "score_alt": "conduit pipe electrical install"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3a8f27553b6fe9d51d5c3e3265ec9bd9201119406eaa8c49842fbedab3e94129",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:electric"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\corriherelectricco\\assets\\google\\google-3a8f27553b6fe9d5.jpg",
+      "score_alt": "EvoCharge EV charging station mounted beside the breaker panel"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3381078ac4c7def630a53c99a5f058669042c969044cd547971470489d9f8ae4",
+      "reasons": [
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\corriherelectricco\\assets\\google\\google-3381078ac4c7def6.jpg",
+      "score_alt": "Two open panels with wiring being run through an old brick basement ceiling"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "17afac03dc38f67bd5ab415a8e633273945e40565ef1e05b556db23c2e8a0b30",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:electric"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\corriherelectricco\\assets\\google\\google-17afac03dc38f67b.jpg",
+      "score_alt": "Brick mailbox column with accent lighting installed, at the end of a concrete driveway"
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "3dd9ef8d04aff48fa279b7360b4f3c338f666f1eca8ecd881dcc1728754e089a",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:electric",
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": null,
+      "from": "C:/VendlyVault/_tmp/autodemo/demos/corriherelectricco/assets/google/google-3dd9ef8d04aff48f.jpg",
+      "score_alt": "Breaker panel in a garage doorway with the surrounding wall sheeted in plastic during the work"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "source": "harvest-fallback",
+      "sha256": "9adae832649d55919450c66ff469dfe995ff7c1a017118c93f928265dd0ff894",
+      "reasons": [
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": "Generators and backup power",
+      "from": "C:/VendlyVault/_tmp/autodemo/demos/corriherelectricco/assets/google/google-9adae832649d5591.jpg",
+      "score_alt": "Breaker panel on an interior wall with a small device mounted next to it"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a1fac9b575399b5433c98ca0d6c2ae81d0852a20dad6a2eb39af37cffc29bbc1",
+      "reasons": [
+        "tiny_fb_or_screenshotish"
+      ],
+      "service": "EV charger installation",
+      "from": "C:/VendlyVault/_tmp/autodemo/demos/corriherelectricco/assets/google/google-a1fac9b575399b54.jpg",
+      "score_alt": "Meter base and exterior panel on a brick wall with conduit running down to the ground"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "09e4f4a4be5153529bd29caf910889aae4d39a1503c5c835201bc0febe1911d8",
-      "bytes": 195893
+      "bytes": 195893,
+      "alt": "Brick column lit with green landscape lighting after dark"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "17afac03dc38f67bd5ab415a8e633273945e40565ef1e05b556db23c2e8a0b30",
-      "bytes": 611319
+      "sha256": "747e5baefae4de2e27940bab28b96c0e7902fa98715bb7786fdaa98e5aeedade",
+      "bytes": 226149,
+      "alt": "Brick mailbox column with accent lighting installed, at the end of a concrete dr"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "3381078ac4c7def630a53c99a5f058669042c969044cd547971470489d9f8ae4",
-      "bytes": 257092
+      "sha256": "d1f6d42083339f3d8aad0b32cdc685615de30b5b044f48b82d29380224bfb8e5",
+      "bytes": 120681,
+      "alt": "Two open panels with wiring being run through an old brick basement ceiling"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "4cd524c93a519e27e1cee6d2a2764509ab4e460dd9694dc54631571b782938d3",
-      "bytes": 592606
+      "sha256": "fb0c3e4825a13914fbfa5fb5cbce4b2b5f596401dff941a51bea8eb46595e508",
+      "bytes": 220800,
+      "alt": "Electric meter and breaker panel mounted side by side on a brick exterior"
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "e9facd0495963f49f584dc1f04a26335236cbc79f065ce01f142173687a6328a",
-      "bytes": 399166
+      "file": "photo-gallery-1.jpg",
+      "sha256": "990dfc8187ebb37dd3f769fe00891fb80d19ba59eb6eea1c70a1b190872230ba",
+      "bytes": 565887,
+      "alt": "Exterior disconnect and panel with conduit runs along a brick wall"
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "1bc58688469a53690c449b8d01e6c578b96a0a524211b1602ea838b9f0d63a37",
-      "bytes": 107221
+      "file": "photo-gallery-2.jpg",
+      "sha256": "154f6861aa65e60090d3ee244b2d2b3c4f8f89c1b78524434a542bdb985894cf",
+      "bytes": 410623,
+      "alt": "Exterior conduit and boxes running beside a crawlspace access door"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "797e62e6041d50453c34fa411a2a217e73ae76d86ca77e3775e2699dd5cd5c48",
-      "bytes": 333521
+      "file": "photo-gallery-3.jpg",
+      "sha256": "805553b9109225d4ef2d2f206df1c4f65c3b63d27a5265ddbef8195b45005075",
+      "bytes": 339781,
+      "alt": "Portable generator on a driveway connected to the transfer switch and meter base"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "fc6a3766fac6504c343944f257f9ef2749930fcb674fab97673cdef3a83f31ca",
+      "bytes": 269536,
+      "alt": "Old fuse panel with pull-out main and range switches opened up for a service upg"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "0413999287d8e26fa50d37b75579c287ad52c3cd67f4a1445c19ef1dd37510b2",
+      "bytes": 261572,
+      "alt": "Round LED high bay lights mounted to the steel purlins of a metal workshop build"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "170b8d8de266414356a9dcb8f122fbaf1c7a69676436b463e557db110dfd162f",
+      "bytes": 199327,
+      "alt": "Meter base and exterior panel on a brick wall with conduit running down to the g"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "779a09100ad619cc8346c8e3fb8e8051906f8f895d7ff9cb1bec3a364559a165",
+      "bytes": 230200,
+      "alt": "Breaker panel in a garage doorway with the surrounding wall sheeted in plastic d"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "3a4dbf33389361d96b283710f51204ca376e9aff80136b628f1ad7d4e58041d8",
+      "bytes": 57586,
+      "alt": "Breaker panel mounted on a finished interior wall with its cover in place"
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "edeb7f85e29bd0f288d8a05a006ca4f61e56efea0ab24499a8a50d5e90b73449",
-      "bytes": 617700
+      "bytes": 617700,
+      "alt": "Brick mailbox column at dusk with warm LED accent lighting glowing under both ca"
     },
     {
-      "file": "photo-quoteband.jpg",
-      "sha256": "3a47ec8494f38eeaee6b92a5456a5ee7047dbf9476c8bcbf2581cf9c811a91c0",
-      "bytes": 317220
+      "file": "photo-photos-cta.jpg",
+      "sha256": "b9f8311e413cc46fe258edbe56ada0010aabdb22165b39e4c362596971dee9a0",
+      "bytes": 193904,
+      "alt": "light fixture install ceiling"
     },
     {
-      "file": "photo-service-1.jpg",
-      "sha256": "d64304cb9421606e6239c215d51bbdf3d0a18f1c22fe48677f34ce0051e30ad6",
-      "bytes": 193658
+      "file": "photo-service-4.jpg",
+      "sha256": "af55a34d73ad38b30398f376a52abac8f5cfd58d6824eb659f21ef38114b465f",
+      "bytes": 111845,
+      "alt": "light fixture install ceiling"
     },
     {
-      "file": "photo-service-2.jpg",
-      "sha256": "25bff628bc3d308a37e7b7fe201d311cb32d4d7b92ec9fd02567359775e9e48c",
-      "bytes": 95037
+      "file": "photo-service-5.jpg",
+      "sha256": "bf0ced17b65e97939bc31ad1fad87d3730877dbc4e58caff9718956261b4b01b",
+      "bytes": 118526,
+      "alt": "light fixture install ceiling"
     },
     {
-      "file": "photo-service-3.jpg",
-      "sha256": "3a8f27553b6fe9d51d5c3e3265ec9bd9201119406eaa8c49842fbedab3e94129",
-      "bytes": 59390
+      "file": "photo-service-6.jpg",
+      "sha256": "dac50d955939d00e187a0fdd503bc3d4ae9d81b5a29d1482f0c807da3f468765",
+      "bytes": 342705,
+      "alt": "light fixture install ceiling"
     },
     {
       "file": "photo-services-hero.jpg",
       "sha256": "98741e497cb9570a9418b1cbce3916c9be9002c4b6c3f21369a599cf3bdf5d0e",
-      "bytes": 41566
+      "bytes": 41566,
+      "alt": "Breaker panel on an interior wall with a small device mounted next to it"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "1684138ba35edf4a0dd9bca487a67ccb5fa86052a207efdbba20c94cc07ac837",
+      "bytes": 59742,
+      "alt": "Grizzl-E EV charger installed in a garage corner with the cable coiled on its holster",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:section_need_miss:Panels and service upgrades"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "New electrical panel installed on an old brick basement wall with conduit run overhead",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-contact.jpg",
+      "alt": "Corriher Electric service truck with a ladder rack, parked in a lot",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:electric"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Generator power inlet box installed on the brick exterior of a house",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Electric meter and junction boxes mounted together on a brick exterior wall",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:electric"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "Automatic transfer switch and meter base installed on a brick wall next to a portable generator",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:electric"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Grizzl-E EV charger installed in a garage corner with the cable coiled on its holster",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Panels and service upgrades"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Interior breaker panel with a surge protection device installed on the wall beside it",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-service-1.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

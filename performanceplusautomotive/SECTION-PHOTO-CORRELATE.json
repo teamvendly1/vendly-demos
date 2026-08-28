@@ -1,61 +1,386 @@
 {
-  "at": "2026-08-18T07:43:44.355Z",
+  "at": "2026-08-26T00:38:22.467Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "b1ecf18e9257cb21f205bf5c1b7494f20757a80d9af3af7242da4b96ed31eab5",
-      "bytes": 367214
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "2e33aa68330c1a57b5ba4d01fc0e5aa8a15d5035d8c5eec77941fca4b52e6dbd",
-      "bytes": 419859
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "ed6a45e77121709cf1816032a482c52f539b272e02b445948a0536d9fe553b3d",
-      "bytes": 331252
+      "source": "stock-library",
+      "sha256": "26ee31d0aa415d02ef863bd7fade5efcbd8688d14ff6a94e3f7715dc2385dcc5",
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "brake rotor closeup workshop"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "ecc3e10e58781209992cd763fc3caad8be528c3135f17606a2009a47a164e737",
-      "bytes": 342920
+      "source": "stock-library",
+      "sha256": "96c181daa8de6e6eaecf5f89f1979fa4392c3ad8ec34c15d41d39e25494c7605",
+      "reasons": [
+        "unflattering_subject:unflattering:hood up"
+      ],
+      "service": null,
+      "score_alt": "car on lift garage bay"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "bbd50b1c8f6e3c58f2ec48c819d7e8cc6b376c4fd78156a9761faf7ed58ae194",
-      "bytes": 167586
+      "source": "harvest-fallback",
+      "sha256": "ed6a45e77121709cf1816032a482c52f539b272e02b445948a0536d9fe553b3d",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\performanceplusautomotive\\assets\\google\\google-ed6a45e77121709c.jpg",
+      "score_alt": "Brake bleeder tool hooked to an SRT engine bay mid-service"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "harvest-fallback",
+      "sha256": "b1ecf18e9257cb21f205bf5c1b7494f20757a80d9af3af7242da4b96ed31eab5",
+      "reasons": [
+        "unflattering_subject:unflattering:hood up"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\performanceplusautomotive\\assets\\google\\google-b1ecf18e9257cb21.jpg",
+      "score_alt": "Two technicians working in the bay, one under a car on the lift"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "4ba04909e0a37e7f5649c939442227cc11b5b34c4ace85486d7d1a11161ed8af",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\performanceplusautomotive\\assets\\google\\google-4ba04909e0a37e7f.jpg",
+      "score_alt": "Green Challenger parked in the shop bay"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "5c0cfc541897f3774034869187694f7fc45daa11f11871c6b4a2848922b034de",
+      "bytes": 124871,
+      "alt": "Two technicians working in the bay, one under a car on the lift"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "c9df0bf692c49f5585aeb6cd7f22fdfb71f6a83dd5b420bbbaeae284c368466b",
+      "bytes": 138410,
+      "alt": "Brake bleeder tool hooked to an SRT engine bay mid-service"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "1af121ae0c52e58006fdd856cf0d673d098fafa65b1c55ea23cdce874660f18d",
+      "bytes": 165186,
+      "alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "35ff4e887c317fc4820b94b580ff60d74b2a3729371a2c82c17b9e1ad247576b",
-      "bytes": 199177
+      "bytes": 199177,
+      "alt": "Close-up of engine valve cover and rocker assembly"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "9dfc2c35ed7abebe8d6f0ce6042f29515c68e99b63227b2b85c41520975ca7f0",
+      "bytes": 303485,
+      "alt": "Gray Mustang up on a two-post lift with hood open for service"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "eebddac8a775bc4c5c99f036ab2891bb2d55df61962b20f48de527b20a72ca91",
+      "bytes": 301755,
+      "alt": "Wide engine bay shot with valve covers off mid-repair"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "4f86efafc29a509d76c6db9f27a37c966aba940c49d6f4533e1ac135b48cb388",
+      "bytes": 333335,
+      "alt": "Gray Camaro parked in the shop bay"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "4ba04909e0a37e7f5649c939442227cc11b5b34c4ace85486d7d1a11161ed8af",
-      "bytes": 311510
+      "sha256": "7594466826eb03c9a31c290e957452c1fc69435af6d81e2dcebe89edbef82ac2",
+      "bytes": 357849,
+      "alt": "Several customer muscle cars parked in the shop bay"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "ebdf850aaef1a302d9bd7559138af9b17a73104e9d1891c31ff6df5beea2a7af",
+      "bytes": 260161,
+      "alt": "brake rotor closeup workshop"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "c33f97a6088af27c8f0f37528383302d138da7be880dd93257403d94af7f3cd9",
+      "bytes": 125487,
+      "alt": "Green Challenger parked in the shop bay"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "0189a1635b43f96a9bd83eec76029177973342c2d6225cd6153ded1802faeae9",
+      "bytes": 158893,
+      "alt": "brake rotor closeup workshop"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "63557128b1bbd7b8a5ab4d0f89e8c0c7ae1d43d6292d3537d430ccfc1fea50f4",
+      "bytes": 155865,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "4150f9204c908affeccc8552eb58ac58dc8c1a92bd11728273204f2d0b61927f",
+      "bytes": 226620,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "897d0fa3b033a4281d2ed1c1f587c35f046f74535aa898b81c402f8036e95b14",
+      "bytes": 140982,
+      "alt": "Close-up of a brake rotor and hub assembly",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "e80844a8e6505618189cb1b1a012c3599da6031a1ca852f059be70ff5fd6b664",
+      "bytes": 224450,
+      "alt": "Performance Plus Automotive - company vehicle on the job (photo 1)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "020ee0ce32d1ae5ebb5e9aca8362703b893a872ae2c642fc4e66a2e1e0cb0915",
-      "bytes": 181766
+      "bytes": 181766,
+      "alt": "Underside close-up of a rusted CV joint and suspension arm",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "6031fb558556da0c23ae47172bd7220a9de78e8a5ad3f33e4c5042ae9153d1d5",
-      "bytes": 289492
+      "sha256": "0ca521a1ecae1e101cebc44f80015821abef9e465e95080acb823cf36a5b7257",
+      "bytes": 109218,
+      "alt": "Storefront sign PERFORMANCE PLUS AUTOMOTIVE with phone, classic Impala parked in the lot",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ]
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "65480c1a447ced4429e2f5faaef03ecd6c8b6fa51e9f9c2a0c668e7707d2be8d",
-      "bytes": 284497
+      "sha256": "086a54fbef39d9e1264f90dbb9d7745c66a551f67591d82194e5c0d7d930c083",
+      "bytes": 107187,
+      "alt": "Customer car parked directly in front of the shop with the storefront sign and address visible",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ]
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "96c181daa8de6e6eaecf5f89f1979fa4392c3ad8ec34c15d41d39e25494c7605",
+      "bytes": 283232,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:carpenterstiresauto/photo-photos-cta.jpg"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Green Challenger parked at the storefront with the shop sign clearly visible",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Green Challenger with hood up, oil service line attached, in the bay",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:hood up",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Technician holding a wiring harness connector",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Orange classic truck with hood up next to a black muscle car in the shop bay",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:hood up",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Underside close-up of a rusted CV joint and hub",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Close-up of a brake rotor and hub assembly",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "Performance Plus Automotive - company vehicle on the job (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "Underside close-up of a rusted CV joint and suspension arm",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "Storefront sign PERFORMANCE PLUS AUTOMOTIVE with phone, classic Impala parked in the lot",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Customer car parked directly in front of the shop with the storefront sign and address visible",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-quoteband.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg",
+    "correlate_restore_no_stock:photo-service-6.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

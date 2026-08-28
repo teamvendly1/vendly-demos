@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:34:26.185Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T15:04:23.412Z",
   "slug": "mountainboysautorepair",
-  "removed_count": 26,
+  "removed_count": 25,
   "removed_sample": [
     "google-153afcc2c873e699.jpg",
     "google-32bea4cf3832a22d.jpg",
@@ -17,5 +17,10 @@
     "google-8694ac63f0cc2eb5.jpg",
     "google-9fe60d6d86d64884.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\mountainboysautorepair",
+  "published_ref_count": 20,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:39:57.016Z",
+ "at": "2026-08-26T18:05:39.331Z",
  "slug": "trustedtowinginc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-1a86a9347ea288d7.jpg",
-   "bytes": 596572,
-   "letterbox_stripped": null
+   "bytes": 225447,
+   "smart_crop": true,
+   "src": "google-1a86a9347ea288d7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 26.969,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-3299c6ffd3c46dbb.jpg",
-   "bytes": 544557,
-   "letterbox_stripped": null
+   "bytes": 200267,
+   "smart_crop": true,
+   "src": "google-3299c6ffd3c46dbb.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 28,
+   "detail_score": 28.953,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-d49342fe21cc3bf5.jpg",
-   "bytes": 533799,
-   "letterbox_stripped": null
+   "bytes": 170029,
+   "smart_crop": true,
+   "src": "google-d49342fe21cc3bf5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 13,
+   "detail_score": 25.827,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-c239890d21b3ffd0.jpg",
-   "bytes": 507588,
-   "letterbox_stripped": null
+   "bytes": 178866,
+   "smart_crop": true,
+   "src": "google-c239890d21b3ffd0.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 24.279,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-0322bbdff17916a7.jpg",
-   "bytes": 282427,
-   "letterbox_stripped": null
+   "bytes": 146497,
+   "smart_crop": true,
+   "src": "google-0322bbdff17916a7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 45,
+   "detail_score": 22.633,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-1e9a8c6f0baa0674.jpg",
-   "bytes": 278430,
-   "letterbox_stripped": null
+   "bytes": 111072,
+   "smart_crop": true,
+   "src": "google-1e9a8c6f0baa0674.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 16.732,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-831dc6dbf78c7afa.jpg",
-   "bytes": 219306,
-   "letterbox_stripped": null
+   "bytes": 114090,
+   "smart_crop": true,
+   "src": "google-831dc6dbf78c7afa.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 78,
+   "detail_score": 16.515,
+   "orientation": "portrait"
   },
   {
    "slot": "logo.png",
@@ -117,7 +173,7 @@
  ],
  "skipped": [
   "classification read: 36 verdicts",
-  "staged 18 harvest photos",
+  "staged 18 harvest photos from assets",
   "refused_by_class:google-a55092b72dc3e473.jpg:reject",
   "hero_cand_refuse:google-1a86a9347ea288d7.jpg:road_no_landscape",
   "hero_cand_refuse:google-604eb8d705e9e824.jpg:road_no_landscape",
@@ -142,8 +198,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 17,
@@ -167,5 +226,6 @@
   "photo-service-1.jpg": "White tow truck hauling a red pickup truck near a gas station",
   "photo-service-2.jpg": "Tow truck hauling an orange Dodge pickup at night near a garage door",
   "photo-service-3.jpg": "Black tow truck hauling a black pickup and a dark sedan together with sun flare in frame"
- }
+ },
+ "dedupe_fixed": 5
 }

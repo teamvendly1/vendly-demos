@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "mendozalandscapingandmore",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#253013",
+  "palette": {
+    "BRAND": "#253013",
+    "PRIMARY": "#36451B",
+    "PRIMARY_DK": "#273314",
+    "PRIMARY_MID": "#415421",
+    "ACCENT": "#546E2B",
+    "ACCENT_DK": "#3B4D1E",
+    "ACCENT_LT": "#76993D",
+    "ON_DARK": "#DAE8C5",
+    "MENU_INK": "#19210D",
+    "TINT_1": "#E8F1DA",
+    "TINT_2": "#EFF5E5",
+    "TINT_3": "#E4EED3",
+    "TINT_4": "#E6EFD7",
+    "LINE_2": "#D1E2B6",
+    "MUTED_BRAND": "#A4C56D",
+    "MIST": "#F7FAF2",
+    "LINE": "#DFEBCC",
+    "PRIMARY_RGB": "54,69,27",
+    "ACCENT_RGB": "84,110,43",
+    "SCRIM_RGB": "65,84,33",
+    "SCRIM2_RGB": "39,51,20",
+    "MENU_INK_RGB": "25,33,13",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.38,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 5.77,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.07,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.6,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

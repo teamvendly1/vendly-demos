@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:40:26.374Z",
+ "at": "2026-08-26T16:23:41.578Z",
  "slug": "curtissonsplumbing",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-33ad2f2f3ba44d95.jpg",
-   "bytes": 191177,
-   "letterbox_stripped": null
+   "bytes": 92035,
+   "smart_crop": true,
+   "src": "google-33ad2f2f3ba44d95.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "734x978",
+   "out_wh": "734x459",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 42.687,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-594722998391d390.jpg",
-   "bytes": 245321,
-   "letterbox_stripped": null
+   "bytes": 127205,
+   "smart_crop": true,
+   "src": "google-594722998391d390.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "740x987",
+   "out_wh": "740x463",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 37.902,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-233b23e4f455ec07.jpg",
-   "bytes": 202879,
-   "letterbox_stripped": null
+   "bytes": 128155,
+   "smart_crop": true,
+   "src": "google-233b23e4f455ec07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "799x854",
+   "out_wh": "799x499",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 36.974,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-e58ea8cdc5acaa5b.jpg",
-   "bytes": 150531,
-   "letterbox_stripped": null
+   "bytes": 133726,
+   "smart_crop": true,
+   "src": "google-e58ea8cdc5acaa5b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x720",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 29.987,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-3bafd39bde8828de.jpg",
-   "bytes": 117185,
-   "letterbox_stripped": null
+   "bytes": 73491,
+   "smart_crop": true,
+   "src": "google-3bafd39bde8828de.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "734x978",
+   "out_wh": "734x459",
+   "crop_axis": "y",
+   "crop_offset_pct": 60,
+   "detail_score": 28.682,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-d643c31889990d8e.jpg",
-   "bytes": 103940,
-   "letterbox_stripped": null
+   "bytes": 88880,
+   "smart_crop": true,
+   "src": "google-d643c31889990d8e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "926x694",
+   "out_wh": "926x579",
+   "crop_axis": "y",
+   "crop_offset_pct": 63,
+   "detail_score": 18.035,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-261237245b218e90.jpg",
-   "bytes": 91452,
-   "letterbox_stripped": null
+   "bytes": 49936,
+   "smart_crop": true,
+   "src": "google-261237245b218e90.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "659x879",
+   "out_wh": "659x412",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 15.953,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -150,16 +206,39 @@
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-contact-hero.jpg",
+   "slot": "photo-ba-before.jpg",
    "from": "google-0338c5f4d0c84a28.jpg",
    "bytes": 75394,
-   "letterbox_stripped": null
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
   },
   {
-   "slot": "photo-reviews-hero.jpg",
+   "slot": "photo-family.jpg",
    "from": "google-4b86651b5974778e.jpg",
    "bytes": 71398,
-   "letterbox_stripped": null
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-17f10d5426271059.jpg",
+   "bytes": 70668,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-a3b1151b59739ec2.jpg",
+   "bytes": 63208,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-789743207e8beed5.jpg",
+   "bytes": 48899,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
   },
   {
    "slot": "logo.png",
@@ -171,7 +250,7 @@
  ],
  "skipped": [
   "classification read: 74 verdicts",
-  "staged 37 harvest photos",
+  "staged 37 harvest photos from assets",
   "refused_by_class:google-201ad8135717e4a1.jpg:reject",
   "hero_cand_refuse:google-594722998391d390.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-233b23e4f455ec07.jpg:low_res_lt_960",
@@ -203,8 +282,8 @@
   "hero_cand_refuse:google-4bd49a57f1636f5b.jpg:low_res_lt_960",
   "hero_cand_refuse:google-a3b1151b59739ec2.jpg:low_res_lt_960",
   "hero_cand_refuse:google-fb20cb117e8c3ca8.jpg:low_res_lt_960",
-  "hero_cand_refuse:google-789743207e8beed5.jpg:too_small_bytes",
-  "hero_cand_refuse:google-56c134d6c1aef42c.jpg:too_small_bytes",
+  "hero_cand_refuse:google-789743207e8beed5.jpg:low_res_lt_960",
+  "hero_cand_refuse:google-56c134d6c1aef42c.jpg:low_res_lt_960",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 36,
@@ -235,7 +314,11 @@
   "photo-contact.jpg": "Wall-mounted tankless water heater system with copper piping exposed in a stud wall",
   "photo-photos-cta.jpg": "Bathroom vanity with dual sinks and black fixtures installed under a mirror",
   "photo-reviewsband.jpg": "Bathroom under construction with exposed studs, a shower pan and copper piping",
-  "photo-contact-hero.jpg": "Modern glass shower enclosure with black fixtures and a round rain shower head",
-  "photo-reviews-hero.jpg": "Stainless steel utility sink installed on a countertop"
- }
+  "photo-ba-before.jpg": "Modern glass shower enclosure with black fixtures and a round rain shower head",
+  "photo-family.jpg": "Stainless steel utility sink installed on a countertop",
+  "photo-service-4.jpg": "Small bathroom with a new toilet installed near a glass shower door",
+  "photo-service-5.jpg": "Close-up of a jetted whirlpool tub installed",
+  "photo-service-6.jpg": "Close-up of hands using a wrench on a P-trap under a sink"
+ },
+ "dedupe_fixed": 5
 }

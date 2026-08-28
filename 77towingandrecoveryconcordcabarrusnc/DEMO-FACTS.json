@@ -4,8 +4,8 @@
   "tenant_id": "demo-77towingandrecoveryconcordcabarrusnc",
   "phone": "(704) 791-5409",
   "tel": "+17047915409",
-  "brand_color": "#26303A",
-  "palette_source": "fallback-trade-or-neutral",
+  "brand_color": "#312A19",
+  "palette_source": "their-photography:google-6c4b520435cef4aa.jpg",
   "site_host": "",
   "city": "Concord",
   "region": "",
@@ -21,8 +21,8 @@
   "facebook_url": "",
   "eyebrow": "Concord",
   "h1_lead": "",
-  "h1_emph": "A higher standard of towing in Concord.",
-  "hero_lede": "Towing done right. Call and we will take a look.",
+  "h1_emph": "Towing in Concord, without the runaround.",
+  "hero_lede": "Towing service in Concord. Call and we will take a look.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "Concord",
@@ -31,11 +31,11 @@
   "strip_body": "",
   "explore_h2": "If it will not move, we will move it",
   "explore_lede": "",
-  "card_about": "",
+  "card_about": "Who you are calling, and the work we do in Concord.",
   "card_services": "See everything we take on",
   "card_reviews": "Read what past customers said",
   "card_photos": "Browse recent job photos",
-  "coverage_h2": "Concord, and the towns around it",
+  "coverage_h2": "Concord and nearby",
   "hours_line": "",
   "service_areas": [
     "Concord"
@@ -48,9 +48,9 @@
   "form_placeholder": "",
   "footer_blurb": "77 Towing and Recovery serving Concord.",
   "about_h2": "About 77 Towing and Recovery",
-  "about_p1": "We handle towing for drivers who need it done right.",
-  "about_p2": "72 customers have left us a review, averaging 4.4 out of 5. We work out of Concord and the towns around it.",
-  "area_h2": "We work in and around Concord",
+  "about_p1": "Our car left us stranded on a busy highway, this past Monday morning, on the way to take our granddaughter to school. We called 77 Towing and they came out quickly. Towed our car to where we needed it. Whole experience was super smooth. We appreciate their kindness and professionalism. And we highly recommend them!",
+  "about_p2": "Professional, affordable, and an all around great experience. Most times when someone needs a tow truck it is bad enough, Jonah and his team make it less painful. Great communication and appreciate the team. These guys are outstanding when it comes to towing! Very impressed with their pricing & delivery of my very special cargo. Thank y'all again, honestly if you need a tow call these guys, you won't regret the outco",
+  "area_h2": "Serving Concord and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The towing work we take on",
   "svc_hero_lede": "",
@@ -63,10 +63,26 @@
       "alt": ""
     }
   ],
-  "photos_h2": "Recent work",
+  "photos_h2": "Towing work near Concord",
   "photos_lede": "",
-  "gallery": [],
-  "reviews_h2": "What customers say",
+  "gallery": [
+    {
+      "slot": "photo-about.jpg",
+      "alt": "77 Towing and Recovery at work",
+      "subject_class": "reused_about"
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "alt": "Towing service photo",
+      "subject_class": "reused_card_services"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "alt": "77 Towing and Recovery crew and job photo",
+      "subject_class": "reused_card_about"
+    }
+  ],
+  "reviews_h2": "From the operator",
   "reviews_lede": "",
   "reviews": [
     {
@@ -91,7 +107,7 @@
       "published_relative": "3 months ago"
     }
   ],
-  "contact_h2": "Get in touch",
+  "contact_h2": "Reach us in Concord",
   "contact_lede": "",
   "contact_photo_slot": "",
   "contact_photo_tier": "none",
@@ -110,13 +126,13 @@
     "services_hero": "Towing services"
   },
   "send": "NO",
-  "asset_version": "harv20260818201733",
+  "asset_version": "harv20260825233820",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\77towingandrecoveryconcordcabarrusnc\\HARVEST.json",
-    "at": "2026-08-22T23:38:34.840Z",
+    "at": "2026-08-28T01:32:56.794Z",
     "zero_human_input": true,
-    "facts_path": "C:/VendlyVault/_tmp/autodemo/demos/77towingandrecoveryconcordcabarrusnc/DEMO-FACTS.json",
+    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\77towingandrecoveryconcordcabarrusnc\\DEMO-FACTS.json",
     "harvest_merged": true
   },
   "address": {
@@ -141,5 +157,5 @@
   "photo_count": 4,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "hyperlink"
+  "_contact_map_mode": "pin-link"
 }

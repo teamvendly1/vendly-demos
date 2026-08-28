@@ -1,91 +1,282 @@
 {
-  "at": "2026-08-21T06:07:24.533Z",
+  "at": "2026-08-25T23:41:55.428Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": "0ef2e38e2e67b84d684f43c007b6dc7dc55a820f26cef80f6d159f665914439c",
-      "bytes": 208581
-    },
+  "replaced": [
     {
       "file": "photo-card-about.jpg",
-      "sha256": "37f857cb7512879a7131d279336f9be4d6c540b5bb6067d4f6895e57018804ce",
-      "bytes": 122616
+      "source": "stock-library",
+      "sha256": "57beb0032b075f50f981e931bd68aad8dbe9680c6c7f49f1e0b83cc4006b0736",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "d4e465a18dc7845f6eafce9fa80979b7f05841f2e369dcbf5fcf08617fbcd64a",
-      "bytes": 218946
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "ef89d5c01c567b56c2bec2f4c7e6ed5c4d2e47657968f48c822eb8407b0add39",
-      "bytes": 165516
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "63557128b1bbd7b8a5ab4d0f89e8c0c7ae1d43d6292d3537d430ccfc1fea50f4",
-      "bytes": 155865
+      "source": "stock-library",
+      "sha256": "e81bf85f51253dc9c7dc8e54da2d182a7009b4a025964635963743e81b6cd6a8",
+      "reasons": [
+        "cross_demo_dupe:adamsautosalesbodyshop/photo-hero.jpg"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "eb99087afed140a84266185aef3f89bb5a92c18948e8c61dc2930166df90b5fb",
-      "bytes": 222606
+      "source": "stock-library",
+      "sha256": "cc483c00ebf7ff59f77082e14ae5b2df8539f1a2bc9a5032dfdcc55194127967",
+      "reasons": [
+        "cross_demo_dupe:abbevilletireautomotive/photo-ctaband.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "mechanic tools toolbox garage"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "804734d09aec39df168825c3dce18e53928045df09aa36cba174d1edbd612b8f",
-      "bytes": 174056
+      "file": "photo-gallery-1.jpg",
+      "source": "stock-library",
+      "sha256": "50e851d715d84d2c138a43ccbd48cbee2a56a46c6d1319737f4c80e397b6050e",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "7557b1f576db1415459f9007257fbd8860887da795620734e2c715feba20f724",
-      "bytes": 90263
+      "file": "photo-gallery-2.jpg",
+      "source": "stock-library",
+      "sha256": "a906b652372722a0bb5833443600c8e0b9e4de4698d9ba1dd439eb7797ad1a6f",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "source": "stock-library",
+      "sha256": "6aa3bd9158fc9167b68cd02b8f6518239d792162ba976f3292c91573a03be3ca",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "brake rotor closeup workshop"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "stock-library",
+      "sha256": "bd4d5fb65f4c65d6d8fc7eff5fa2aead80a0ca45cde59a7985214dc3a9eea5d4",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "brake rotor closeup workshop"
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "f314f5927ee58528d501c78a4927886e381245e30c76cd75ee4ce57fd06988c0",
-      "bytes": 236465
+      "source": "harvest-fallback",
+      "sha256": "da81e1613040588530f806993b251032ab471519c518420a10dba2e0bdf54a10",
+      "reasons": [
+        "cross_demo_dupe:carsautorepair/photo-ctaband.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\aaautomotiveservices\\assets\\google\\google-da81e16130405885.jpg",
+      "score_alt": "engine bay diagnostic tools"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "40c5f100982d820ff6936ed09c538785b193c7c072e94b003a6203d207e1cdde",
+      "bytes": 149041,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "bead2033862f4ff734306525bd23ccf593de92f9db42c1c309d3f260c4fff515",
+      "bytes": 226749,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "c950e10c561bf46380ae0aae7f6cdc50ee73b8dfbd5c84e44d2126af54daaed1",
+      "bytes": 197676,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "f509b986930e238c9cb04b24884e9f72a6d457be0f7a0d83ce2b6dd6218aa818",
+      "bytes": 186745,
+      "alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "50e851d715d84d2c138a43ccbd48cbee2a56a46c6d1319737f4c80e397b6050e",
-      "bytes": 234164
+      "sha256": "644893e2562f832615e6a18b438c6793e4d9fe60a18223e413a30a0083cdae32",
+      "bytes": 156225,
+      "alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "21b7c8b60e812c65a7c4c9be0a6a3a4f3d159b0ac6d15ad45b54f56796d3b066",
-      "bytes": 131553
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "5e0228b3ca1a098a24f050bcf0a6c711489b1c18645fb8a22ced6f8525585869",
-      "bytes": 130557
+      "sha256": "3f6bba23e22ff01ee86bde716a7f5211bf17d1ce38cb92c24033edb56a7fde8d",
+      "bytes": 181967,
+      "alt": "brake rotor closeup workshop"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "26e05a0f2b90ecf7c98e098d10a771e8440ca862ac0da4d0569eb4e60b71bdac",
-      "bytes": 118732
+      "sha256": "489f370e4f5272eb1a0d08b360182c440d2371f6e1bc9d41566fd21b66f46cdc",
+      "bytes": 221883,
+      "alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "4eb63417f616277de1115af2efefa503545550a0fe43f8beec1c3e7d6e13272b",
+      "bytes": 235700,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "a906b652372722a0bb5833443600c8e0b9e4de4698d9ba1dd439eb7797ad1a6f",
+      "bytes": 233749,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:christianautomotive/photo-hero.jpg"
+      ]
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "057b0bfad2dba64709e398191fcf62f7dc4956edbe52b6dac6917b18b78fc3b4",
-      "bytes": 157128
+      "sha256": "57beb0032b075f50f981e931bd68aad8dbe9680c6c7f49f1e0b83cc4006b0736",
+      "bytes": 200217,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:allensautomotivejacksonvilleonslownc/photo-services-hero.jpg"
+      ]
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "7743834232b02b96f6a3f6ed2fb25068341b58d57e26cd219bafcdf9b9d58ec3",
-      "bytes": 148042
+      "sha256": "6aa3bd9158fc9167b68cd02b8f6518239d792162ba976f3292c91573a03be3ca",
+      "bytes": 158596,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:affordableautomotive/photo-hero.jpg"
+      ]
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "7f3fc4db0d751ad60570da86c59fb581e65d7712e092f060be5c7cd8e2e872d4",
-      "bytes": 187473
+      "sha256": "bd4d5fb65f4c65d6d8fc7eff5fa2aead80a0ca45cde59a7985214dc3a9eea5d4",
+      "bytes": 99156,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:ajautoservice/photo-services-hero.jpg"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg",
+    "correlate_restore_no_stock:photo-service-5.jpg",
+    "correlate_restore_no_stock:photo-service-6.jpg",
+    "correlate_restore_no_stock:photo-services-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

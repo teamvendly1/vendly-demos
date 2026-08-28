@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-23T00:17:47.637Z",
+ "at": "2026-08-26T00:43:57.988Z",
  "slug": "haroldstireautoservices",
  "wired": [
   {
@@ -14,59 +14,85 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-6f49d8f96979fe2c.jpg",
-   "bytes": 185241,
-   "letterbox_stripped": null
+   "bytes": 98216,
+   "smart_crop": true,
+   "src": "google-6f49d8f96979fe2c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 16.849,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "google-146b1e5044e61da6.jpg",
-   "bytes": 183135,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-b83663fff5fde386.jpg",
-   "bytes": 289661,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
    "from": "google-66d853173028d54a.jpg",
    "bytes": 421706,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-card-photos.jpg",
+   "slot": "photo-card-services.jpg",
+   "from": "google-b83663fff5fde386.jpg",
+   "bytes": 113138,
+   "smart_crop": true,
+   "src": "google-b83663fff5fde386.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 38,
+   "detail_score": 22.137,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
    "from": "google-bae5ae5820357a35.jpg",
-   "bytes": 283628,
-   "letterbox_stripped": null
+   "bytes": 108759,
+   "smart_crop": true,
+   "src": "google-bae5ae5820357a35.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 23.969,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-243d1e9513372f82.jpg",
+   "bytes": 95753,
+   "smart_crop": true,
+   "src": "google-243d1e9513372f82.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 65,
+   "detail_score": 18.634,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "google-243d1e9513372f82.jpg",
-   "bytes": 280934,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
    "from": "google-dde4ae76eceddbf5.jpg",
    "bytes": 249734,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-gallery-3.jpg",
+   "slot": "photo-gallery-2.jpg",
    "from": "google-9f3ea9d13661944f.jpg",
    "bytes": 389671,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-ctaband.jpg",
+   "slot": "photo-gallery-3.jpg",
    "from": "google-afa577f84a3f21ca.jpg",
    "bytes": 299113,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-quoteband.jpg",
+   "slot": "photo-ctaband.jpg",
    "from": "google-8a0988a420338523.jpg",
    "bytes": 259292,
    "letterbox_stripped": null
@@ -80,8 +106,9 @@
   }
  ],
  "skipped": [
-  "classification read: 22 verdicts",
-  "staged 11 harvest photos",
+  "classification read: 20 verdicts",
+  "staged 11 harvest photos from assets",
+  "refused_unlooked:google-146b1e5044e61da6.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:google-66d853173028d54a.jpg:road_no_landscape",
   "hero_cand_refuse:google-9f3ea9d13661944f.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-afa577f84a3f21ca.jpg:road_no_landscape",
@@ -92,8 +119,8 @@
   "hero_cand_refuse:google-dde4ae76eceddbf5.jpg:road_no_landscape",
   "hero_cand_refuse:google-27019c1447cff562.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-6f49d8f96979fe2c.jpg",
-  "hero_hold_crew_for_about:google-146b1e5044e61da6.jpg",
   "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-27019c1447cff562.jpg)",
+  "photo-quoteband.jpg",
   "photo-gallery-4.jpg",
   "photo-gallery-5.jpg",
   "photo-gallery-6.jpg",
@@ -107,23 +134,28 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 11,
- "photo_candidates": 11,
+ "candidates": 10,
+ "refused_by_class": 1,
+ "photo_candidates": 10,
  "altBySlot": {
-  "photo-hero.jpg": "Interior waiting area with a vending machine and wooden rocking chairs",
-  "photo-card-about.jpg": "Man photographing another man standing at the shop counter",
-  "photo-about.jpg": "Man and a child in a costume crown opening gifts at an event",
-  "photo-card-services.jpg": "Close-up of a tire tread with a repair plug installed",
-  "photo-card-reviews.jpg": "Interior open-air shop with tire equipment and workers, tires hanging on the wall",
-  "photo-card-photos.jpg": "Close-up of an alloy wheel with repair patch material visible",
-  "photo-gallery-1.jpg": "Close-up of an alloy wheel showing a repair patch inside the spoke",
-  "photo-gallery-2.jpg": "Close-up of a worn tire tread with a repair patch",
-  "photo-gallery-3.jpg": "Close-up of a spare tire mounted under a trailer",
-  "photo-ctaband.jpg": "Close-up of a vehicle's front bumper and tire near the ground",
-  "photo-quoteband.jpg": "Interior showroom with a decorated Christmas tree and framed certificates on wood paneling"
- }
+  "photo-hero.jpg": "customer waiting area with Coca-Cola vending machines and wooden rocking chairs by the door",
+  "photo-card-about.jpg": "front service counter with a staff member standing behind it and another person filming",
+  "photo-about.jpg": "wide interior view of the work bay with tire racks, equipment, and two mechanics working",
+  "photo-card-services.jpg": "close-up of a Michelin tire tread and sidewall mounted on a wheel in the shop",
+  "photo-card-reviews.jpg": "close-up of a wheel's spoke openings with Michelin lettering visible along the tire sidewall",
+  "photo-card-photos.jpg": "close-up of a bare silver alloy wheel rim with no tire mounted, resting on the floor",
+  "photo-gallery-1.jpg": "close-up of black tire tread pattern and warning label text on a mounted wheel",
+  "photo-gallery-2.jpg": "close-up of a white spoked trailer wheel and mounted tire photographed outdoors",
+  "photo-gallery-3.jpg": "close-up of a pickup truck's front tire and running board in a gravel lot",
+  "photo-ctaband.jpg": "shop lobby with wood paneled walls, corkboard of photos, and a decorated Christmas tree"
+ },
+ "dedupe_fixed": 5
 }

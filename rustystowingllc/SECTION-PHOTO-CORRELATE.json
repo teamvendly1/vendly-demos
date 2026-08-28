@@ -1,111 +1,334 @@
 {
-  "at": "2026-08-23T00:15:52.963Z",
+  "at": "2026-08-28T01:15:36.459Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "6254e6bf9d092a4983ff439a2292b62245fb3584df504de0e7d256d58f803131",
-      "bytes": 240972
+      "source": "stock-library",
+      "sha256": "f90e3ebbbd6b180f65cffa4f83e16218f0a5334ac1ced1238e9c341b84f43fbe",
+      "reasons": [
+        "unflattering_subject:about_unflattering_auto"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "f0189cd3694c886d48ef16015f922458a14b0736c962270561efd246d897ebcd",
-      "bytes": 662364
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "f10523d3f7f15565b6a8f1b4c89dbf34ac0aabf6dab37332554b0cf08d2cb247",
-      "bytes": 207823
+      "source": "stock-library",
+      "sha256": "0c782c704e56fc8981c86a81dc5da9020efd6fb71fb6b6a3be13680535ebbffd",
+      "reasons": [
+        "off_section_relevance:trade_deny:banner:towing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "tow truck winch hook vehicle"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "8b75ebda2337e67cdb0bd734359fd441651c80b5fd968e2c817599fe1a5ea3d0",
-      "bytes": 214465
+      "source": "stock-library",
+      "sha256": "29e4155d8fd6db4b8c29c0a6f4aaf70cc41f7359e3f40962d24b81a2218e94f9",
+      "reasons": [
+        "off_section_relevance:trade_deny:posing:towing"
+      ],
+      "service": null,
+      "score_alt": "tow truck winch hook vehicle"
     },
     {
-      "file": "photo-card-services.jpg",
-      "sha256": "26b5f532f43ee429c406eb42ca9da24db0c8be384b3f4d218244e3f7db50b483",
-      "bytes": 451648
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "9cd6935d3f62952fb6493f146744dced1a3febfb4759d5c53c6c1c37b42c14c8",
+      "reasons": [
+        "off_section_relevance:trade_deny:posing:towing"
+      ],
+      "service": null,
+      "score_alt": "tow truck winch hook vehicle"
     },
     {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "18bd2717d04c2fa7c63be27eb03e81b35e10e82cad87cbed6ba1b01dfac94351",
-      "bytes": 506696
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "2765fa5065fc7f4eb87d9f9ca9464f4e619128f5df44746b839ef683e0600819",
-      "bytes": 106736
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "24403de9f64071735524993b1a996a35deba140332781d34b5771943eb8d5f2e",
-      "bytes": 352463
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "90654ed93eab084f5dd797e3a67afc8f031353768882df8aeceff7a95458786a",
-      "bytes": 233296
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "57ae6b692790bea90981f9bf729c2d34496be7d9c1ab04647e0ba8218ed35bf3",
-      "bytes": 96287
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "8c7ac6fbc485de4d2322c603acc2ea77fbb7e1d0ed6d112ae19375044d0bd06d",
-      "bytes": 288877
-    },
-    {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "9ed61684202804b83a21d3992b6868b827bf7204ca92dc2cdc8b9c5a9fe52443",
-      "bytes": 463023
+      "file": "photo-gallery-8.jpg",
+      "source": "harvest-fallback",
+      "sha256": "a79b7e8d84942138e788ef04cb332ce58cd11ba27b0cae074d5b07cf76a71459",
+      "reasons": [
+        "off_section_relevance:trade_deny:posing:towing"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rustystowingllc\\assets\\google\\google-a79b7e8d84942138.jpg",
+      "score_alt": "Red flatbed tow truck hauling a white shuttle bus"
     },
     {
       "file": "photo-reviewsband.jpg",
-      "sha256": "0f9a4c7baad0a050367d9c0b11a290dac3cbc4b6730945bfa10c59a0ef8b1bf8",
-      "bytes": 764962
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "a79b7e8d84942138e788ef04cb332ce58cd11ba27b0cae074d5b07cf76a71459",
-      "bytes": 239706
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "f90e3ebbbd6b180f65cffa4f83e16218f0a5334ac1ced1238e9c341b84f43fbe",
-      "bytes": 92807
+      "source": "harvest-fallback",
+      "sha256": "90654ed93eab084f5dd797e3a67afc8f031353768882df8aeceff7a95458786a",
+      "reasons": [
+        "off_section_relevance:trade_deny:posing:towing"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rustystowingllc\\assets\\google\\google-90654ed93eab084f.jpg",
+      "score_alt": "Red flatbed tow truck hauling a white pickup truck in a parking lot"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "1d2d54bbfad0d4670dc756ad47aa2d3c27d231ae5a8f5d8d7b92f398b06e9610",
-      "bytes": 211627
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": "0c782c704e56fc8981c86a81dc5da9020efd6fb71fb6b6a3be13680535ebbffd",
-      "bytes": 113297
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "9cd6935d3f62952fb6493f146744dced1a3febfb4759d5c53c6c1c37b42c14c8",
-      "bytes": 352221
+      "source": "harvest-fallback",
+      "sha256": "26b5f532f43ee429c406eb42ca9da24db0c8be384b3f4d218244e3f7db50b483",
+      "reasons": [
+        "off_section_relevance:trade_deny:posing:towing"
+      ],
+      "service": "Heavy and oversize loads",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rustystowingllc\\assets\\google\\google-26b5f532f43ee429.jpg",
+      "score_alt": "Red flatbed tow truck hauling a blue Dodge Charger"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "29e4155d8fd6db4b8c29c0a6f4aaf70cc41f7359e3f40962d24b81a2218e94f9",
-      "bytes": 265377
+      "source": "harvest-fallback",
+      "sha256": "ad807cf667d0f9e0092712a9ad6935a097aaf4494748f89c246f58430d2c54f8",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:towing"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rustystowingllc\\assets\\google\\google-ad807cf667d0f9e0.jpg",
+      "score_alt": "White tow truck with its lights on at night"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "d3e16ab74e392a45712f7619a2d27957b96f9c23cc8b67d3d1e2ba7e80c62589",
+      "bytes": 184935,
+      "alt": "Red tow truck hauling a white boat"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "fb49ef6f17d5776b9aaaaea9ba03ea02c5b6d01bc1a1f1dfb5ac51ebced43e4d",
+      "bytes": 187455,
+      "alt": "Red flatbed tow truck hauling a blue Dodge Charger"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "0825c7e5c88a0e9d734bed06af21e257775ac072a475bfd1058f30b772dfd45d",
+      "bytes": 181235,
+      "alt": "Red tow truck hauling a red car near a racetrack setting"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "8c7ac6fbc485de4d2322c603acc2ea77fbb7e1d0ed6d112ae19375044d0bd06d",
+      "bytes": 288877,
+      "alt": "Red tow truck hauling a mini skid steer loader"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "f45e925d56b2899803c9e41fea8c274363bb8dc7feabb721376dc3b8956bd1ac",
+      "bytes": 471085,
+      "alt": "Red tow truck hauling a rusty vintage pickup across a grassy field"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "a2c4023260e75dac797443d1cf2caa1034ccc3b5f591b11726f38aa5df922e82",
+      "bytes": 355485,
+      "alt": "Red flatbed tow truck hauling a blue muscle car"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "24403de9f64071735524993b1a996a35deba140332781d34b5771943eb8d5f2e",
+      "bytes": 352463,
+      "alt": "Black tow truck hauling a black sports car parked at a business lot"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "0e13d4e765a85712e697623ffa3c57518ee4b07f81071ac14a0585dc30e06dad",
+      "bytes": 273002,
+      "alt": "Red flatbed tow truck hauling a gray sedan, motion blur in frame"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "71e76e403e93a2c05390bbf69917b7ebcc5d983bcd2f05ac47e4248e2c335ae7",
+      "bytes": 243172,
+      "alt": "Black classic roadster loaded on a flatbed tow truck"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "1d2d54bbfad0d4670dc756ad47aa2d3c27d231ae5a8f5d8d7b92f398b06e9610",
+      "bytes": 211627,
+      "alt": "Small gray storage shed being towed on a trailer"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "bd923da53b48baa13a9de149557cd9d7ef679e2633743616d79b3ad8b7abba65",
+      "bytes": 206520,
+      "alt": "Black tow truck hauling a white pickup truck"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "b8569b4fd96ee14f4058f78e570326f7948203eb0d24f74240eec1f8162d8860",
+      "bytes": 345758,
+      "alt": "Red tow truck hauling a red convertible classic car"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "9605d60f81b97123d19fec54bf6d5794d6073846e20ebf416ac06c5ea09e1113",
+      "bytes": 171225,
+      "alt": "Red tow truck hauling a red classic Mustang"
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "b77e3e3c9a0688f17bd24411abd64622de79b020d5ccfa529d68ff0fc2022ff2",
+      "bytes": 288086,
+      "alt": "Red flatbed tow truck hauling a white boat on its trailer"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "f65d65521d4ab775d2a421bee89e525740abcf10acab9a7dbaa1bde8e1385b12",
+      "bytes": 92821,
+      "alt": "Red flatbed tow truck hauling a white shuttle bus"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "6a62202cbd7077da9b7e55275edaf9b03e8712b48411e970fe10ffaad455bd31",
+      "bytes": 126318,
+      "alt": "Red flatbed tow truck hauling a white pickup truck in a parking lot"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "0f9a4c7baad0a050367d9c0b11a290dac3cbc4b6730945bfa10c59a0ef8b1bf8",
+      "bytes": 764962,
+      "alt": "Black tow truck parked near a blue tractor on a grassy lot"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "18bd2717d04c2fa7c63be27eb03e81b35e10e82cad87cbed6ba1b01dfac94351",
+      "bytes": 506696,
+      "alt": "Red race car and towing equipment at a raceway event"
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "9605d60f81b97123d19fec54bf6d5794d6073846e20ebf416ac06c5ea09e1113",
-      "bytes": 171225
+      "sha256": "3a0ad60e60f6a528ac7fdf5acdbe8b2ccb82b7d1c7030c1ab2b05a27d614d2d5",
+      "bytes": 312463,
+      "alt": "Black tow truck hauling a black Tesla sedan"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Business card for Rusty's Towing LLC listing the owner and contact information",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -25,
+        "reason": "about_unflattering_auto",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Two men posing near the black tow truck with a Best of the Pee Dee award banner",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:banner:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Youth baseball team wearing sponsored Rusty's Towing jerseys posing for a group photo",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:posing:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "alt": "Two mascots posing with a man at a stadium event",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:posing:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "Youth baseball team in red shirts posing together for another sponsorship photo",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:posing:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "alt": "Two costumed mascots posing together at a sports stadium event",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:posing:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Youth baseball team in matching red Rusty's shirts posing together",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:posing:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "alt": "Best of the Pee Dee 2021 award badge graphic",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

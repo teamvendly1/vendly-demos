@@ -1,51 +1,509 @@
 {
-  "at": "2026-08-17T04:42:12.355Z",
+  "at": "2026-08-26T14:55:07.781Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "b3dbdd5d0546ca7cac5b56c526ffb92d804b72cfb615705425f3ac1608056e8e",
-      "bytes": 250169
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "03d60428e1dc455a36aa8c742d20c31065e4bbe49d25462bbb29bccb456c32a7",
-      "bytes": 501093
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "46c8c2ebb1de1911d1f472d5465686dad9378d78c89896bcd8538710d2236735",
-      "bytes": 203073
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "718458167e95af3b7a410933d43a15395ad0ec188b9969d0711b0a1117a422de",
-      "bytes": 273403
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "98baa7be26214e26129813d904b0e47b6a6d6ab56c493d697c54c357843b20d7",
-      "bytes": 285414
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "6df263ca9d3cb16a0fac97f57e5b89ce2f3165122c89d19fcdd7d622e8e4d96e",
-      "bytes": 151191
-    },
-    {
-      "file": "photo-hero.jpg",
+      "file": "photo-contact.jpg",
       "sha256": "baaf2a9e6bcec6e8ee2354d5b87d792a69ba01659d5a79b06e939c3f48271f25",
-      "bytes": 140118
+      "bytes": 140118,
+      "alt": "Open service bay interior with a two-post lift and diagnostic equipment, a truck"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "46c8c2ebb1de1911d1f472d5465686dad9378d78c89896bcd8538710d2236735",
+      "bytes": 203073,
+      "alt": "Hofmann wheel balancing machine set up in the shop bay"
     },
     {
       "file": "photo-quoteband.jpg",
+      "sha256": "718458167e95af3b7a410933d43a15395ad0ec188b9969d0711b0a1117a422de",
+      "bytes": 273403,
+      "alt": "Mechanic working near a classic blue IROC-Z Camaro parked in the shop"
+    },
+    {
+      "file": "photo-services-hero.jpg",
       "sha256": "da77c2e797573651e3bcedc979eecd67d8e7dc35dbb214376b83f3727be8388c",
-      "bytes": 269870
+      "bytes": 269870,
+      "alt": "401 Automotive Services shop building with garage bays open and classic cars par"
+    },
+    {
+      "file": "photo-about.jpg",
+      "sha256": "03d60428e1dc455a36aa8c742d20c31065e4bbe49d25462bbb29bccb456c32a7",
+      "bytes": 501093,
+      "alt": "401 Automotive Services roadside sign with the blue 401 shield mark and shop hours",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:sign:auto"
+      ]
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "a97e122b030d0ebb6a33ba38ef993f2469f5e8d147f58299363ddd8e70834b87",
+      "bytes": 89991,
+      "alt": "Two 401 Automotive Services team members applying epoxy floor coating during a shop expansion",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "6ee250192522c801e27233914c2adffa6091349978c4db7054ff287b699b2b8f",
+      "bytes": 180349,
+      "alt": "401 Automotive Services - technician at work on site (photo 5)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "5bfee5d0bb8709aa4f4d3983fe9b8948474cee424059cc79f925476f5345603d",
+      "bytes": 167789,
+      "alt": "401 Automotive Services - technician at work on site (photo 4)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "3195e883576b295e47fb0a6fcd5dc041f979be1da6e68eb2231aea6d8b552bf0",
+      "bytes": 156823,
+      "alt": "401 Automotive Services - technician at work on site (photo 13)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "98baa7be26214e26129813d904b0e47b6a6d6ab56c493d697c54c357843b20d7",
+      "bytes": 285414,
+      "alt": "Custom dune buggy kit car being serviced in the shop with a welder and tool chests behind it",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "2869be6176fede70b5e82a943e7b14689b08cf6be38acbee7b6519b185b217b8",
+      "bytes": 429471,
+      "alt": "401 Automotive Services - technician at work on site (photo 10)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "fa57fca2e529503bb6fc87f9d198137f3760060b810b2ba21f8ed29430863a84",
+      "bytes": 352761,
+      "alt": "401 Automotive Services - technician at work on site (photo 9)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "2b647203666c14db37821f64f6213b837402cdfb4a457e62151e5a5adb48d3a8",
+      "bytes": 350021,
+      "alt": "401 Automotive Services - technician at work on site (photo 12)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "50f3d17bccee7ee0393ffde8f7119cecbbb69bbac17b16ae301d57f437200a14",
+      "bytes": 236003,
+      "alt": "401 Automotive Services - technician at work on site (photo 6)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "094db3569fbff0a2a4052d395948a1b80deb738ee0ae32a558adbe8da19c984c",
+      "bytes": 223893,
+      "alt": "401 Automotive Services - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "4b7c66b9d70d446667aa1d071bac23aaf39a6d933adb5414d2aaddefb8402476",
+      "bytes": 149063,
+      "alt": "401 Automotive Services - technician at work on site (photo 14)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "e6ae089e937db20a9488581194eef634224bcb89cca72b18d14be6a01d461325",
+      "bytes": 140766,
+      "alt": "401 Automotive Services - technician at work on site (photo 8)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "634b9169e678e08fe152b03620041e07479dc9fd0d4e564b82175cabefa9dec4",
+      "bytes": 110632,
+      "alt": "401 Automotive Services - technician at work on site (photo 7)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "1c8178839af341f4c82331bb1e8c0473404aa1cae7c04aa1525d703aa4616a02",
+      "bytes": 314620,
+      "alt": "401 Automotive Services - technician at work on site (photo 11)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "fe4f5fee5bd436e88a07d04c3cc65dbe2a84c35e044d925f214fa241d5310a23",
+      "bytes": 82803,
+      "alt": "401 Automotive Services - technician at work on site (photo 1)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "684c4c992b0bfa033d06b5dedcc0d8b2976acf8e8c7ff951b34c4eb7901ff144",
+      "bytes": 75533,
+      "alt": "401 Automotive Services - technician at work on site (photo 3)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "c6e176ae2dca0d8b51e746ac60f30070abbd01db2b050aa501afd12e9e215358",
+      "bytes": 97999,
+      "alt": "BG PF5 transmission fluid exchange machine staged in the shop with service fluids on top",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "401 Automotive Services roadside sign with the blue 401 shield mark and shop hours",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:sign:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Two 401 Automotive Services team members applying epoxy floor coating during a shop expansion",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 5)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 4)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 13)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Custom dune buggy kit car being serviced in the shop with a welder and tool chests behind it",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 10)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 12)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 6)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 14)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 8)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 7)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 11)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "401 Automotive Services - technician at work on site (photo 3)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "BG PF5 transmission fluid exchange machine staged in the shop with service fluids on top",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-ctaband.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

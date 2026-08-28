@@ -2,29 +2,29 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "pioneerplumbingwadesboroansonnc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#1B3F4A",
+  "brand_input": "#1A3F4A",
   "palette": {
-    "BRAND": "#1B3F4A",
-    "PRIMARY": "#1A3C47",
-    "PRIMARY_DK": "#132D34",
-    "PRIMARY_MID": "#1F4956",
-    "ACCENT": "#295F70",
-    "ACCENT_DK": "#1D434E",
-    "ACCENT_LT": "#39869D",
-    "ON_DARK": "#C3E0E9",
+    "BRAND": "#1A3F4A",
+    "PRIMARY": "#193D48",
+    "PRIMARY_DK": "#132D35",
+    "PRIMARY_MID": "#1E4A57",
+    "ACCENT": "#286071",
+    "ACCENT_DK": "#1C434F",
+    "ACCENT_LT": "#38879F",
+    "ON_DARK": "#C3E1EA",
     "MENU_INK": "#0C1D22",
-    "TINT_1": "#DAECF1",
-    "TINT_2": "#E5F2F5",
+    "TINT_1": "#D9ECF2",
+    "TINT_2": "#E5F2F6",
     "TINT_3": "#D2E8EF",
-    "TINT_4": "#D6EAF0",
+    "TINT_4": "#D5EAF0",
     "LINE_2": "#B4D9E4",
-    "MUTED_BRAND": "#6AB2C8",
+    "MUTED_BRAND": "#68B4CA",
     "MIST": "#F2F8FA",
-    "LINE": "#CBE4EC",
-    "PRIMARY_RGB": "26,60,71",
-    "ACCENT_RGB": "41,95,112",
-    "SCRIM_RGB": "31,73,86",
-    "SCRIM2_RGB": "19,45,52",
+    "LINE": "#CAE5EC",
+    "PRIMARY_RGB": "25,61,72",
+    "ACCENT_RGB": "40,96,113",
+    "SCRIM_RGB": "30,74,87",
+    "SCRIM2_RGB": "19,45,53",
     "MENU_INK_RGB": "12,29,34",
     "HEADER_BG": "#FFFFFF",
     "HEADER_BORDER": "rgba(16,23,36,.22)"
@@ -32,22 +32,27 @@
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 11.79,
+      "ratio": 11.65,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 7.08,
+      "ratio": 7,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.51,
+      "ratio": 8.48,
       "pass": true
     },
     {
       "pair": "menu ink on white",
       "ratio": 17.29,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 6.52,
       "pass": true
     }
   ],

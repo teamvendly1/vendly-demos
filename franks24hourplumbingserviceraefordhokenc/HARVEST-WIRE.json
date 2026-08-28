@@ -1,112 +1,159 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-18T17:17:10.983Z",
-  "slug": "franks24hourplumbingserviceraefordhokenc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-814022ce1121eba7.jpg",
-      "bytes": 315169,
-      "letterbox_stripped": null,
-      "trade_score": 0,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-74253fd081941508.jpg",
-      "bytes": 67863,
-      "letterbox_stripped": "v19.9%"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-395a5c3debcc4d3e.jpg",
-      "bytes": 387178,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-39b780162d483662.jpg",
-      "bytes": 178584,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-4fd09f8690dedd51.jpg",
-      "bytes": 287605,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-12dc9abf4be8ba75.jpg",
-      "bytes": 263166,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-2ff0ca74709cb683.jpg",
-      "bytes": 252761,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-e69799c5e1e4c1d0.jpg",
-      "bytes": 204525,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-6c35a566e7649bc8.jpg",
-      "bytes": 82741,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-4381b7fadee52505.jpg",
-      "bytes": 76901,
-      "letterbox_stripped": null
-    }
-  ],
-  "skipped": [
-    "classification read: 20 verdicts",
-    "staged 10 harvest photos",
-    "hero_cand_refuse:google-395a5c3debcc4d3e.jpg:road_no_landscape",
-    "hero_cand_refuse:google-814022ce1121eba7.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-4fd09f8690dedd51.jpg:road_no_landscape",
-    "hero_cand_refuse:google-12dc9abf4be8ba75.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-2ff0ca74709cb683.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-e69799c5e1e4c1d0.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-39b780162d483662.jpg:road_no_landscape",
-    "hero_cand_refuse:google-6c35a566e7649bc8.jpg:too_small_bytes",
-    "hero_cand_refuse:google-4381b7fadee52505.jpg:too_small_bytes",
-    "hero_cand_refuse:google-74253fd081941508.jpg:too_small_bytes",
-    "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-814022ce1121eba7.jpg)",
-    "photo-quoteband.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 10,
-  "altBySlot": {
-    "photo-hero.jpg": "Jet pump and pressure tank in a crawl space, the suction and discharge piped in and the pressure switch wired",
-    "photo-card-about.jpg": "New vanity unit and basin set with the tap fitted, a level laid across the top to check it before final fixing",
-    "photo-about.jpg": "Pipework run under the floor between the joists with water damage to the boards and framing around it",
-    "photo-card-services.jpg": "Water heater with the access cover off, the gas valve, thermostat and wiring exposed for the fault to be traced",
-    "photo-card-reviews.jpg": "Wall opened right back to the studs where a leak has run, the old supply lines exposed above the damaged plate",
-    "photo-card-photos.jpg": "Well pump and pressure tank piped up under a house with the gauge and shut-off valve fitted on the discharge tee",
-    "photo-gallery-1.jpg": "Pressure tank and pump standing in a wet crawl space, the pipework and fittings around them showing where the water has been running",
-    "photo-gallery-2.jpg": "Copper riser and tee gone green with corrosion where it runs through the insulation, the reason the line is being replaced",
-    "photo-gallery-3.jpg": "Shower valve trim plate with the cartridge drawn out, the brass body left open in the wall",
-    "photo-ctaband.jpg": "Shower valve cartridge stripped down on the edge of the bath with the seats, springs and handle laid out beside the pliers"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T16:44:59.591Z",
+ "slug": "franks24hourplumbingserviceraefordhokenc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-814022ce1121eba7.jpg",
+   "bytes": 315169,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-74253fd081941508.jpg",
+   "bytes": 38469,
+   "smart_crop": true,
+   "src": "google-74253fd081941508.jpg",
+   "letterbox_stripped": "v19.8%",
+   "src_wh": "1200x1283",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 8.537,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-395a5c3debcc4d3e.jpg",
+   "bytes": 387178,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-39b780162d483662.jpg",
+   "bytes": 86531,
+   "smart_crop": true,
+   "src": "google-39b780162d483662.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 35,
+   "detail_score": 15.612,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-4fd09f8690dedd51.jpg",
+   "bytes": 116285,
+   "smart_crop": true,
+   "src": "google-4fd09f8690dedd51.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 19.278,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-12dc9abf4be8ba75.jpg",
+   "bytes": 109202,
+   "smart_crop": true,
+   "src": "google-12dc9abf4be8ba75.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 18.616,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-2ff0ca74709cb683.jpg",
+   "bytes": 252761,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-e69799c5e1e4c1d0.jpg",
+   "bytes": 204525,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-6c35a566e7649bc8.jpg",
+   "bytes": 82741,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-4381b7fadee52505.jpg",
+   "bytes": 76901,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 20 verdicts",
+  "staged 10 harvest photos from assets",
+  "hero_cand_refuse:google-395a5c3debcc4d3e.jpg:road_no_landscape",
+  "hero_cand_refuse:google-814022ce1121eba7.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-4fd09f8690dedd51.jpg:road_no_landscape",
+  "hero_cand_refuse:google-12dc9abf4be8ba75.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-2ff0ca74709cb683.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-e69799c5e1e4c1d0.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-39b780162d483662.jpg:road_no_landscape",
+  "hero_cand_refuse:google-6c35a566e7649bc8.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-4381b7fadee52505.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-74253fd081941508.jpg:portrait_aspect_hero_refuse",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-814022ce1121eba7.jpg)",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 10,
+ "photo_candidates": 10,
+ "altBySlot": {
+  "photo-hero.jpg": "Jet pump and pressure tank in a crawl space, the suction and discharge piped in and the pressure switch wired",
+  "photo-card-about.jpg": "New vanity unit and basin set with the tap fitted, a level laid across the top to check it before final fixing",
+  "photo-about.jpg": "Pipework run under the floor between the joists with water damage to the boards and framing around it",
+  "photo-card-services.jpg": "Water heater with the access cover off, the gas valve, thermostat and wiring exposed for the fault to be traced",
+  "photo-card-reviews.jpg": "Wall opened right back to the studs where a leak has run, the old supply lines exposed above the damaged plate",
+  "photo-card-photos.jpg": "Well pump and pressure tank piped up under a house with the gauge and shut-off valve fitted on the discharge tee",
+  "photo-gallery-1.jpg": "Pressure tank and pump standing in a wet crawl space, the pipework and fittings around them showing where the water has been running",
+  "photo-gallery-2.jpg": "Copper riser and tee gone green with corrosion where it runs through the insulation, the reason the line is being replaced",
+  "photo-gallery-3.jpg": "Shower valve trim plate with the cartridge drawn out, the brass body left open in the wall",
+  "photo-ctaband.jpg": "Shower valve cartridge stripped down on the edge of the bath with the seats, springs and handle laid out beside the pliers"
+ },
+ "dedupe_fixed": 5
 }

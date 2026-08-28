@@ -1,112 +1,254 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-15T20:50:32.548Z",
-  "slug": "rextowingmonroeunionnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-a6ca03109e018881.jpg",
-      "bytes": 500144,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-82ca2bb07c94410b.jpg",
-      "bytes": 507383
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-9dfb7b94dd0db070.jpg",
-      "bytes": 453315
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-619e2a40a40dec57.jpg",
-      "bytes": 444108
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-332c292f8c99f410.jpg",
-      "bytes": 380551
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-28bce48133c32788.jpg",
-      "bytes": 360369
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-7f24b0370d069b4d.jpg",
-      "bytes": 307851
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-2aba51e0d2c120a8.jpg",
-      "bytes": 190759
-    }
-  ],
-  "skipped": [
-    "classification read: 16 verdicts",
-    "staged 40 harvest photos",
-    "refused_unlooked:google-04ad57e82daaac84.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-0816422195b9917b.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-18c1d04f6ff5d116.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-1ad2c0e019946c7e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-226c3cad7067696f.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-2aab8ab9e2fde7d4.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-2feff9c7f6a03787.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-3f4985fc48214e3e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-4378badc0d38cb50.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-43b973e22ad7114e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-49db7b533d87dd17.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-572fbd97229d105d.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5f855d9b270351ac.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-7340a32bee82284f.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-764677f9c133b0f5.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-8d0274603b47eefd.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-8e9f8eca9c5a211f.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-8eeffbc8bf581405.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-9f902161a83e77e2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a0cecb88a81320e6.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-a74282e91941120a.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b4e4844ea15e8a94.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b89f4f1b2be4b196.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b98c65e0e7004ee1.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-bdbbc562fb880b3c.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c43c423f94f02645.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c460cee08e2c8296.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d106df775ffe834c.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-dac04512b3cd53b4.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-e79a256eea40295b.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-f2f435051de574d2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-f762e06671d4fcd5.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-82ca2bb07c94410b.jpg:road_no_landscape",
-    "hero_cand_refuse:google-619e2a40a40dec57.jpg:road_no_landscape",
-    "hero_cand_refuse:google-28bce48133c32788.jpg:road_no_landscape",
-    "photo-gallery-3.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-2.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15)"
-  ],
-  "candidates": 8,
-  "refused_by_class": 32,
-  "altBySlot": {
-    "photo-hero.jpg": "Porsche sports car loaded on the flatbed beside the branded Rex Towing wrecker",
-    "photo-about.jpg": "Three wreckers parked on the yard, the near flatbed carrying the Rex Towing name on its door",
-    "photo-card-services.jpg": "Rex Towing flatbed on a residential street with a lifted golf cart winched up on the deck",
-    "photo-card-reviews.jpg": "Harley-Davidson strapped down on the flatbed with soft ties and a wheel chock",
-    "photo-card-photos.jpg": "Operator in a hi-vis jacket walking the winch line out across a dark field on a night recovery",
-    "photo-ctaband.jpg": "Red Freightliner flatbed loaded with a pickup, working a call after dark",
-    "photo-gallery-1.jpg": "BMW SUV chained down on the deck, shot low against a clear sky",
-    "photo-gallery-2.jpg": "Ladder-rack work van recovered onto the flatbed at night outside a filling station"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T05:07:17.121Z",
+ "slug": "rextowingmonroeunionnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-d106df775ffe834c.jpg",
+   "bytes": 256418,
+   "letterbox_stripped": "v25.2%",
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-332c292f8c99f410.jpg",
+   "bytes": 380551,
+   "letterbox_stripped": "v14.7%"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-82ca2bb07c94410b.jpg",
+   "bytes": 507383,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-c43c423f94f02645.jpg",
+   "bytes": 619654,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-2feff9c7f6a03787.jpg",
+   "bytes": 551928,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-226c3cad7067696f.jpg",
+   "bytes": 545141,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-a6ca03109e018881.jpg",
+   "bytes": 500144,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-c460cee08e2c8296.jpg",
+   "bytes": 485604,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-a0cecb88a81320e6.jpg",
+   "bytes": 479466,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-49db7b533d87dd17.jpg",
+   "bytes": 471377,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-619e2a40a40dec57.jpg",
+   "bytes": 444108,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-43b973e22ad7114e.jpg",
+   "bytes": 431889,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-a74282e91941120a.jpg",
+   "bytes": 428147,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-f762e06671d4fcd5.jpg",
+   "bytes": 421996,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-8d0274603b47eefd.jpg",
+   "bytes": 404521,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-bdbbc562fb880b3c.jpg",
+   "bytes": 394810,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-18c1d04f6ff5d116.jpg",
+   "bytes": 394458,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-b89f4f1b2be4b196.jpg",
+   "bytes": 389431,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-8.jpg",
+   "from": "google-1ad2c0e019946c7e.jpg",
+   "bytes": 370977,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-9.jpg",
+   "from": "google-e79a256eea40295b.jpg",
+   "bytes": 364334,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-services-hero.jpg",
+   "from": "google-764677f9c133b0f5.jpg",
+   "bytes": 358946,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-contact.jpg",
+   "from": "google-7340a32bee82284f.jpg",
+   "bytes": 357224,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-photos-cta.jpg",
+   "from": "google-0816422195b9917b.jpg",
+   "bytes": 319113,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-reviewsband.jpg",
+   "from": "google-9f902161a83e77e2.jpg",
+   "bytes": 318792,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ba-before.jpg",
+   "from": "google-7f24b0370d069b4d.jpg",
+   "bytes": 307851,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-family.jpg",
+   "from": "google-dac04512b3cd53b4.jpg",
+   "bytes": 302159,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-2aab8ab9e2fde7d4.jpg",
+   "bytes": 298697,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-b4e4844ea15e8a94.jpg",
+   "bytes": 290319,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-4378badc0d38cb50.jpg",
+   "bytes": 266909,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 80 verdicts",
+  "staged 40 harvest photos from assets",
+  "refused_by_class:google-04ad57e82daaac84.jpg:reject",
+  "refused_by_class:google-572fbd97229d105d.jpg:reject",
+  "refused_by_class:google-5f855d9b270351ac.jpg:reject",
+  "hero_cand_refuse:google-2feff9c7f6a03787.jpg:road_no_landscape",
+  "hero_cand_refuse:google-226c3cad7067696f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-82ca2bb07c94410b.jpg:road_no_landscape",
+  "hero_cand_refuse:google-c460cee08e2c8296.jpg:road_no_landscape",
+  "hero_cand_refuse:google-49db7b533d87dd17.jpg:road_no_landscape",
+  "hero_cand_refuse:google-619e2a40a40dec57.jpg:road_no_landscape",
+  "hero_cand_refuse:google-b89f4f1b2be4b196.jpg:road_no_landscape",
+  "hero_hold_crew_for_about:google-332c292f8c99f410.jpg",
+  "hero_cand_refuse:google-1ad2c0e019946c7e.jpg:road_no_landscape",
+  "hero_cand_refuse:google-28bce48133c32788.jpg:road_no_landscape",
+  "hero_cand_refuse:google-7340a32bee82284f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-9f902161a83e77e2.jpg:road_no_landscape",
+  "hero_cand_refuse:google-2aab8ab9e2fde7d4.jpg:road_no_landscape",
+  "hero_cand_refuse:google-b4e4844ea15e8a94.jpg:road_no_landscape",
+  "hero_cand_refuse:google-4378badc0d38cb50.jpg:road_no_landscape",
+  "hero_cand_refuse:google-8e9f8eca9c5a211f.jpg:road_no_landscape",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 37,
+ "refused_by_class": 3,
+ "photo_candidates": 37,
+ "altBySlot": {
+  "photo-hero.jpg": "Rex Towing - technician at work on site (photo 12)",
+  "photo-card-about.jpg": "Operator in a hi-vis jacket walking the winch line out across a dark field on a night recovery",
+  "photo-about.jpg": "Three wreckers parked on the yard, the near flatbed carrying the Rex Towing name on its door",
+  "photo-card-services.jpg": "Rex Towing - technician at work on site (photo 23)",
+  "photo-card-reviews.jpg": "Rex Towing - technician at work on site (photo 28)",
+  "photo-card-photos.jpg": "Rex Towing - technician at work on site (photo 29)",
+  "photo-gallery-1.jpg": "Porsche sports car loaded on the flatbed beside the branded Rex Towing wrecker",
+  "photo-gallery-2.jpg": "Rex Towing - technician at work on site (photo 1)",
+  "photo-gallery-3.jpg": "Rex Towing - technician at work on site (photo 25)",
+  "photo-ctaband.jpg": "Rex Towing - technician at work on site (photo 16)",
+  "photo-quoteband.jpg": "Harley-Davidson strapped down on the flatbed with soft ties and a wheel chock",
+  "photo-gallery-4.jpg": "Rex Towing - technician at work on site (photo 3)",
+  "photo-gallery-5.jpg": "Rex Towing - technician at work on site (photo 13)",
+  "photo-gallery-6.jpg": "Rex Towing - technician at work on site (photo 11)",
+  "photo-service-1.jpg": "Rex Towing - technician at work on site (photo 6)",
+  "photo-service-2.jpg": "Rex Towing - technician at work on site (photo 8)",
+  "photo-service-3.jpg": "Rex Towing - technician at work on site (photo 9)",
+  "photo-gallery-7.jpg": "Rex Towing - technician at work on site (photo 21)",
+  "photo-gallery-8.jpg": "Rex Towing - technician at work on site (photo 2)",
+  "photo-gallery-9.jpg": "Rex Towing - technician at work on site (photo 14)",
+  "photo-services-hero.jpg": "Rex Towing - technician at work on site (photo 27)",
+  "photo-contact.jpg": "Rex Towing - technician at work on site (photo 20)",
+  "photo-photos-cta.jpg": "Rex Towing - technician at work on site (photo 18)",
+  "photo-reviewsband.jpg": "Rex Towing - technician at work on site (photo 22)",
+  "photo-ba-before.jpg": "BMW SUV chained down on the deck, shot low against a clear sky",
+  "photo-family.jpg": "Rex Towing - technician at work on site (photo 7)",
+  "photo-service-4.jpg": "Rex Towing - technician at work on site (photo 10)",
+  "photo-service-5.jpg": "Rex Towing - technician at work on site (photo 5)",
+  "photo-service-6.jpg": "Rex Towing - technician at work on site (photo 19)"
+ },
+ "dedupe_fixed": 5
 }

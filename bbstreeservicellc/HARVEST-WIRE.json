@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T23:14:34.638Z",
+ "at": "2026-08-26T00:52:26.905Z",
  "slug": "bbstreeservicellc",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-856f9ed5f0f15c72.jpg",
-   "bytes": 229966,
-   "letterbox_stripped": null
+   "bytes": 127198,
+   "smart_crop": true,
+   "src": "google-856f9ed5f0f15c72.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 93,
+   "detail_score": 36.812,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-51ca447757609bad.jpg",
-   "bytes": 52151,
-   "letterbox_stripped": null
+   "bytes": 46705,
+   "smart_crop": true,
+   "src": "google-51ca447757609bad.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x960",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 3,
+   "detail_score": 25.919,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-cbd707a2cefb4ad6.jpg",
-   "bytes": 735945,
-   "letterbox_stripped": null
+   "bytes": 266378,
+   "smart_crop": true,
+   "src": "google-cbd707a2cefb4ad6.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 3,
+   "detail_score": 40.603,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-1f9f63ec1ed9d0fe.jpg",
-   "bytes": 664704,
-   "letterbox_stripped": null
+   "bytes": 193541,
+   "smart_crop": true,
+   "src": "google-1f9f63ec1ed9d0fe.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 85,
+   "detail_score": 20.438,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-6afec2eaf086fa57.jpg",
-   "bytes": 77677,
-   "letterbox_stripped": null
+   "bytes": 45857,
+   "smart_crop": true,
+   "src": "google-6afec2eaf086fa57.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x960",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 14.565,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-21c463197792d20a.jpg",
-   "bytes": 62419,
-   "letterbox_stripped": "v21.9%"
+   "bytes": 29438,
+   "smart_crop": true,
+   "src": "google-21c463197792d20a.jpg",
+   "letterbox_stripped": "v21.9%",
+   "src_wh": "528x750",
+   "out_wh": "528x330",
+   "crop_axis": "y",
+   "crop_offset_pct": 88,
+   "detail_score": 25.075,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-76ab3863d55aeb01.jpg",
-   "bytes": 656239,
-   "letterbox_stripped": null
+   "bytes": 230896,
+   "smart_crop": true,
+   "src": "google-76ab3863d55aeb01.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 33.173,
+   "orientation": "landscape"
   },
   {
    "slot": "logo.png",
@@ -117,7 +173,7 @@
  ],
  "skipped": [
   "classification read: 40 verdicts",
-  "staged 20 harvest photos",
+  "staged 20 harvest photos from assets",
   "refused_by_class:google-16c0922e69fa39bf.jpg:reject",
   "refused_by_class:google-64f8c4f3fbd3aae5.jpg:reject",
   "refused_by_class:google-93b505d908896389.jpg:reject",
@@ -140,8 +196,11 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 17,
@@ -165,5 +224,6 @@
   "photo-service-1.jpg": "Climber near the top of a tall pine tree against a clear blue sky",
   "photo-service-2.jpg": "Climber silhouetted at the top of a bare tree against a blue sky",
   "photo-service-3.jpg": "Tall pine trees near a house and parked vehicles with one large tree partially cut"
- }
+ },
+ "dedupe_fixed": 5
 }

@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-23T00:00:37.138Z",
+ "at": "2026-08-26T00:37:16.871Z",
  "slug": "landscapingbymarcy",
  "wired": [
   {
@@ -14,8 +14,16 @@
   {
    "slot": "photo-card-about.jpg",
    "from": "google-1c4959d614317c7a.jpg",
-   "bytes": 467374,
-   "letterbox_stripped": null
+   "bytes": 180382,
+   "smart_crop": true,
+   "src": "google-1c4959d614317c7a.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 45.661,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
@@ -26,20 +34,44 @@
   {
    "slot": "photo-card-services.jpg",
    "from": "google-b51059f2e2d3b929.jpg",
-   "bytes": 581361,
-   "letterbox_stripped": null
+   "bytes": 243964,
+   "smart_crop": true,
+   "src": "google-b51059f2e2d3b929.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 33,
+   "detail_score": 39.498,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "google-5c9449eb0464586e.jpg",
-   "bytes": 522518,
-   "letterbox_stripped": null
+   "bytes": 221781,
+   "smart_crop": true,
+   "src": "google-5c9449eb0464586e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 39.41,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "google-543a0c0a0080c82e.jpg",
-   "bytes": 313723,
-   "letterbox_stripped": null
+   "bytes": 131902,
+   "smart_crop": true,
+   "src": "google-543a0c0a0080c82e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 22.594,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-1.jpg",
@@ -92,20 +124,44 @@
   {
    "slot": "photo-service-1.jpg",
    "from": "google-b69118dc1b10323e.jpg",
-   "bytes": 148080,
-   "letterbox_stripped": null
+   "bytes": 89370,
+   "smart_crop": true,
+   "src": "google-b69118dc1b10323e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x960",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 34.633,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-2.jpg",
    "from": "google-613e2af03c861a18.jpg",
-   "bytes": 355933,
-   "letterbox_stripped": null
+   "bytes": 159747,
+   "smart_crop": true,
+   "src": "google-613e2af03c861a18.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 63,
+   "detail_score": 27.757,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-service-3.jpg",
    "from": "google-d15d161dbf6c733e.jpg",
-   "bytes": 323247,
-   "letterbox_stripped": null
+   "bytes": 178132,
+   "smart_crop": true,
+   "src": "google-d15d161dbf6c733e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 24.067,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-gallery-7.jpg",
@@ -159,7 +215,7 @@
  ],
  "skipped": [
   "classification read: 64 verdicts",
-  "staged 33 harvest photos",
+  "staged 33 harvest photos from assets",
   "refused_by_class:google-43acb643226fccb0.jpg:reject",
   "refused_by_class:google-58a883fd524aeba1.jpg:reject",
   "refused_by_class:google-68e0d696e3563791.jpg:reject",
@@ -194,8 +250,11 @@
   "hero_cand_refuse:google-642eee65a1ca63e4.jpg:portrait_aspect_hero_refuse",
   "hero_hold_crew_for_about:google-7804bdec874d7d0d.jpg",
   "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-5f9c7eb02c23ee00.jpg)",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 24,
@@ -226,5 +285,6 @@
   "photo-contact.jpg": "Close-up of a yellow iris flower",
   "photo-photos-cta.jpg": "Pink flowering shrub shaped into a ball form on the lawn",
   "photo-reviewsband.jpg": "Older man raking gravel near a house's siding"
- }
+ },
+ "dedupe_fixed": 5
 }

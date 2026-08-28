@@ -1,6 +1,6 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-18T21:21:14.716Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T00:54:12.826Z",
   "slug": "beachboysauto",
   "removed_count": 28,
   "removed_sample": [
@@ -17,5 +17,10 @@
     "google-914a5b6d7e403ce7.jpg",
     "google-9c9ca66bdeba81da.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\beachboysauto",
+  "published_ref_count": 20,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

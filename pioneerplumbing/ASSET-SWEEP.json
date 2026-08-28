@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-18T06:35:50.863Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-26T17:32:44.004Z",
   "slug": "pioneerplumbing",
-  "removed_count": 43,
+  "removed_count": 41,
   "removed_sample": [
     "google-12a03d7ebe236e21.jpg",
     "google-1e4149eb073cc248.jpg",
@@ -17,5 +17,10 @@
     "google-5b09ccc0f2d5a738.jpg",
     "google-5bd08114be7398ab.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\pioneerplumbing",
+  "published_ref_count": 26,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

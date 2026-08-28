@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-22T23:00:08.637Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-28T00:03:19.321Z",
   "slug": "ahtowing",
-  "removed_count": 30,
+  "removed_count": 29,
   "removed_sample": [
     "google-017c5bb1ddd61f31.jpg",
     "google-08b55158f1319f16.jpg",
@@ -17,5 +17,16 @@
     "google-aaddf888c57cc465.jpg",
     "google-ecc8e76a54b02dc4.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\ahtowing",
+  "published_ref_count": 17,
+  "retained_published_count": 5,
+  "retained_published_sample": [
+    "photo-card-photos.jpg",
+    "photo-gallery-1.jpg",
+    "photo-gallery-2.jpg",
+    "photo-gallery-3.jpg",
+    "photo-photos-cta.jpg"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

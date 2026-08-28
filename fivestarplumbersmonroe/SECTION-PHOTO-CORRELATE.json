@@ -1,116 +1,349 @@
 {
-  "at": "2026-08-22T23:56:08.162Z",
+  "at": "2026-08-26T16:43:44.846Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
   "replaced": [
     {
-      "file": "photo-service-6.jpg",
+      "file": "photo-about.jpg",
+      "source": "Pexels",
+      "sha256": "e21d3951248ee74e7bc103aad6c48840eab773887c7ce7f1c29b027a362a6ddc",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "Pexels",
+      "sha256": "28177edc11c025f0afe7f3a413c55d87a8ea89eac8b904c5959f7d9e37967b15",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "stock-library",
+      "sha256": "39b7a1a9f62da2defd9696ab5dcd42e2b41b03d9948cb330dabce328bbd99345",
+      "reasons": [
+        "off_section_relevance:trade_deny:worker:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
       "source": "stock-library",
       "sha256": "963c903effca73fed4005c0c1eede2c16fd091ed56c1901d76428a8e87b7683c",
       "reasons": [
-        "cross_demo_dupe:alphaomegaplumbing/photo-services-hero.jpg"
+        "off_section_relevance:trade_require_miss:plumbing"
       ],
-      "service": "trade work"
+      "service": null,
+      "score_alt": "clean kitchen sink home interior"
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "source": "stock-library",
+      "sha256": "524347e4e267317b2e69156975385a22fdeccea6e4d9a15cf79cb4c72a24b12b",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "stock-library",
+      "sha256": "955d51abb16975d2e725450e57d3279c91a633c36b64c41702bb4e184b363c61",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Drains and sewer lines"
+      ],
+      "service": "Drains and sewer lines",
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "stock-library",
+      "sha256": "9c3cc3c8baf8f6348817f6a98946f7fadac05266e845b5a995ad5b0afca270b2",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "Excavation and service lines",
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "stock-library",
+      "sha256": "ecb2499f1b9151d6f1e7481ff8f2f8f9e52c9f6a666e4222fdf82b2309f7bc45",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "Bathroom and fixture work",
+      "score_alt": "water heater install basement"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "stock-library",
+      "sha256": "cf8c5e5af12f09b198525515b75c87d038aadbac5104846b69fdad3ee4e736d5",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "6207c25be20ae4754226b82ac28cbcd25b95f24a43a05882fdb3b4936908cbf5",
-      "bytes": 143777
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "acc1b2e62961d6e279590e78dd79e7271e6e6326b9a1175d1efa965c6a1e1277",
-      "bytes": 189446
-    },
-    {
       "file": "photo-card-photos.jpg",
-      "sha256": "8955a2d7a5c31d4b55b90bde33c9226f675e1f3adc5dc46b0eac66390a19a5bc",
-      "bytes": 236364
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "e8192b0b2335fef90947f1b5922efd691cb744e66f5d7cc42988f1ca19d0c74a",
-      "bytes": 109172
+      "sha256": "a14b935ab777f6321c6b706df27515744635167a2123ada0df77cdd535d62dd7",
+      "bytes": 153868,
+      "alt": "Plumber holding a wrench standing in front of a wall pegboard of plumbing fittin"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "cabdcdda251b451ae00fa80f67fe596e61c3452061d256cbfe0c0828bf6bb5ee",
-      "bytes": 259567
-    },
-    {
-      "file": "photo-contact-hero.jpg",
-      "sha256": "b95b80d51936b9e6ac13b6f0d099d634abe48af3cf188d2db808a8e30624abd5",
-      "bytes": 98290
+      "sha256": "99492922d7acd75d9d53b0ea5fa662e056b31efa4efdff7ddcb29bebb18f4431",
+      "bytes": 142802,
+      "alt": "Plumber installing a vertical drain pipe in an outdoor trench"
     },
     {
       "file": "photo-contact.jpg",
       "sha256": "3f5a8d17994639a3906c2d9aedf0b60a1650ba8756e858944c0b98c0da008c6b",
-      "bytes": 134538
+      "bytes": 134538,
+      "alt": "Plumber lying under a kitchen cabinet reaching pipes overhead"
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": "ac21983cee5f4337faaff8f95bcdcb4307cd57b8600d2d609b9cede2b61c1886",
-      "bytes": 173744
+      "bytes": 173744,
+      "alt": "Kitchen sink installed under a window with tools laid on the counter"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "bafd0e8355632bc323117d6a2dbb97eeda56ee6e90e8826ad59002626353f533",
+      "bytes": 220619,
+      "alt": "Plumber fitting white PVC pipe inside a stud wall"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "4047f4facae1842177b74b5bd773faa8b72234e96cae7309571ef5255fd1c1c9",
+      "bytes": 204187,
+      "alt": "Plumber crouched under a kitchen sink writing on a clipboard"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "93a7291a65a5da87e353a9bec4c2980d2c0586002610d294fa6549c843bac16e",
+      "bytes": 196947,
+      "alt": "Plumber standing in a shower stall holding a shower fixture"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "1e2138edb7f2301b227bb00b71903d2dfdb7951dc3043755a6cbbe33d74b0986",
+      "bytes": 164186,
+      "alt": "Close-up of hands adjusting a water heater control valve"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "d23df42c26e6ade2456850c24f25d2c49e8e906571fb7010250965dec5bc98c1",
+      "bytes": 159810,
+      "alt": "Plumber attaching a garbage disposal drain pipe under a kitchen sink"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "504ccb562882efdbc2fd4f096baca3fdefa666da5cc71e52c9fc3d5b9a1ca779",
+      "bytes": 143883,
+      "alt": "Plumber working under a kitchen sink with a wrench beside the faucet"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "c8cb1bbae523522c44b952de1b3c79268aec8de53e3b059fa5900b13de350fbf",
+      "bytes": 143346,
+      "alt": "Close-up of gloved hands using a wrench on brass radiator valves"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "9d2ff862fcd895ef50b46bb2a339d2bdea7b380e932f6ef347ff042ab50256e2",
+      "bytes": 139655,
+      "alt": "Plumber tightening a fitting under a bathroom sink"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "1250ded4a7b67eb564cc150baae74b31e9c0fcdf5f4ee47a4833b76dd1cd5b21",
-      "bytes": 129370
+      "sha256": "69d058c5865b6368e131fc4daa2857fd8f08da3037313abf378059e9a96bb8f3",
+      "bytes": 135598,
+      "alt": "Kitchen counter with a gold-tone faucet and vessel sink set into a marble counte"
     },
     {
       "file": "photo-photos-cta.jpg",
       "sha256": "f1d89ea278b751f5744a66ff4015a4ea72d0f954ccbe51d41fc8ab37b143dfb4",
-      "bytes": 124589
+      "bytes": 124589,
+      "alt": "Plumber working on pipes under a bathroom sink"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "52cbc1a05d7773e1ef63f8c44b1cf600217b9a5df2319ac369690ce74de49678",
-      "bytes": 168222
-    },
-    {
-      "file": "photo-reviews-hero.jpg",
-      "sha256": "6a2d8d75d614a403bb35218c90851d19b69126e3b3fcb5a2161c8186d7171f87",
-      "bytes": 92573
-    },
-    {
-      "file": "photo-reviewsband.jpg",
-      "sha256": "b2ac2c06e1980575d82ce3f6bd3bae1c735f15ef36414235e31befe782d1772d",
-      "bytes": 121255
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "28177edc11c025f0afe7f3a413c55d87a8ea89eac8b904c5959f7d9e37967b15",
-      "bytes": 267315
+      "bytes": 168222,
+      "alt": "Plumber lying on the floor working near a copper pipe fitting"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "37c1fabd0235ecc63608f73e53a0ce13519a3b2643153c8a548bc0442809adfa",
-      "bytes": 34335
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "79df0c5b90b1c3cf214af55aa06b8de3ed13a30d1b681cf5ec20b3a3cfde6a0d",
-      "bytes": 145406
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "sha256": "39b7a1a9f62da2defd9696ab5dcd42e2b41b03d9948cb330dabce328bbd99345",
-      "bytes": 101418
+      "sha256": "4137f0bfb4ca3ac2c466c77d85e77338ad5bf7ba8174c388445033a54e32be44",
+      "bytes": 25528,
+      "alt": "Close-up of flexible supply lines and a P-trap installed under a sink"
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "e21d3951248ee74e7bc103aad6c48840eab773887c7ce7f1c29b027a362a6ddc",
-      "bytes": 169645
+      "sha256": "b6df553f5f3fdd4f74e43e3fc0da428583667917cf6f9073825cb0951680a5c2",
+      "bytes": 73561,
+      "alt": "Close-up of hands adjusting a chrome tub faucet with a wrench"
     },
     {
-      "file": "photo-services-hero.jpg",
-      "sha256": "dd695c184e39eb5f766727b9dd185710d7c480c3383f134889f145b9cf9f1bbb",
-      "bytes": 135453
+      "file": "photo-service-6.jpg",
+      "sha256": "df531f0e787a0250dc0d6bc9f556634dd5059604f2afb9152755894c6b0706e5",
+      "bytes": 171868,
+      "alt": "Close-up of a wall pegboard stocked with brass plumbing fittings"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Worker adjusting overhead piping in a mechanical utility room",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Worker crouched using a tool on an outdoor brick wall spigot",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Worker in a hardhat inspecting an attic access panel",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:worker:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Plumber tightening a fitting inside a kitchen cabinet",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "alt": "Close-up of hands using pliers on a copper fitting near a wall",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Plumber installing a wall-mounted fixture with a tool bag open nearby",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Drains and sewer lines"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Close-up of hands using pliers on a flexible supply line fitting",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "Close-up of hands adjusting a pressure gauge on a valve",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "alt": "Close-up of a hand holding a pressure gauge",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

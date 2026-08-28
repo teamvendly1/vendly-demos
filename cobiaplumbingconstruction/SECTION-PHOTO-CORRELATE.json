@@ -1,96 +1,276 @@
 {
-  "at": "2026-08-22T23:33:54.799Z",
+  "at": "2026-08-26T16:17:03.877Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "plumbing",
-  "replaced": [],
+  "replaced": [
+    {
+      "file": "photo-card-about.jpg",
+      "source": "stock-library",
+      "sha256": "eabb2bc9d04edcd086c1a6df6c3e3b847fc1b7d4c08cc9e9eed65ece27285585",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "stock-library",
+      "sha256": "11ec374d3081e67f4268a608263672d0472e92b75952f58ff8513282c95c4bf3",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing",
+        "unflattering_subject:unflattering:stalled on"
+      ],
+      "service": "trade work",
+      "score_alt": "pipe wrench on copper pipe"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "stock-library",
+      "sha256": "1612f1be98877c81fcee09c98c512aa1e58d531ce6e1e1cc45a61dd6f4aa0910",
+      "reasons": [
+        "cross_demo_dupe:cobiaplumbingconstructionfayettevillecumberlandnc/photo-quoteband.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "stock-library",
+      "sha256": "ea4f3f2e271eccff644d9eb6ebab99d5f029adcf4ff655369f1e0ab09935ce77",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "stock-library",
+      "sha256": "fd583bda7f36a7589d0148d8d47c72d5c05ff1457868a04e3b2308dd4c5725be",
+      "reasons": [
+        "cross_demo_dupe:cobiaplumbingconstructionfayettevillecumberlandnc/photo-hero.jpg"
+      ],
+      "service": null,
+      "score_alt": "bathroom faucet install sink"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "source": "stock-library",
+      "sha256": "6d850ce6d56bca3f43b200c06804a3b14e1a5af234a860f9d3b7bdbf741e4f3f",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Drains and sewer lines"
+      ],
+      "service": "Drains and sewer lines",
+      "score_alt": "drain snake cable clog"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "stock-library",
+      "sha256": "f7000dfc33e505315778fa9e37b284b49d56c8427f9b4e38a3848ba077f1b197",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:plumbing"
+      ],
+      "service": "trade work",
+      "score_alt": "water heater install basement"
+    }
+  ],
   "kept": [
     {
       "file": "photo-about.jpg",
       "sha256": "a2d0b1af1cb25f67b82d7d94e0960ec37f3f977a9b2aa3b6efab475454e6f646",
-      "bytes": 317114
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "945b10a82764dac6f768c154faedb5586d7fe0886fcea438c2d40e3b7039e08e",
-      "bytes": 381607
+      "bytes": 317114,
+      "alt": "Finished tiled shower stall with a decorative niche and fixtures installed"
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "c200908868f0c173e7c7a0f89130451c75cec917fda44b64695c313efcaaf0db",
-      "bytes": 404273
+      "sha256": "69c481a4d40e2ede4a71fb973d50ddf9ba3952d3a5f316f95fbc660b7c683f56",
+      "bytes": 164112,
+      "alt": "Exposed subfloor showing a drain pipe and rusted components during a repair"
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "b6fe5dcd7a9f0dbd9b5a66c0f4754c7acc0ac7f9184cb6979313ada23afc3b7e",
-      "bytes": 510441
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "24873b5b63f419d24ddbc2dfae828aa56320b16fd98f21f1a0fa9f44d42e9293",
-      "bytes": 328779
+      "sha256": "0fb137edd5c65b2f5f58f414e984d91af211c12ddacf33c4d2767d97b88aedf2",
+      "bytes": 214418,
+      "alt": "Close-up of a water pipe leaking onto rocky ground"
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "44c77871c483d4923e8f97a378a81b869ec856272464e46ab82420f5e5fcdd75",
-      "bytes": 252307
+      "sha256": "7241a9cb343fe0d4ffa63a5d025dd0be774a3c96fe6f5c0c634589260722c934",
+      "bytes": 67113,
+      "alt": "pipe wrench on copper pipe"
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "a4fa658aa3c8ec40e6df1a30a57b8949f535121ba3e0c4dcf917860bbbde2b15",
-      "bytes": 288508
+      "file": "photo-gallery-1.jpg",
+      "sha256": "69eb46f56f8caa5d6b773d794ce1d7567f8af119b48d6d9f4c430f11fcc410be",
+      "bytes": 614478,
+      "alt": "Close-up of a tankless water heater mounted on a brick exterior wall"
     },
     {
-      "file": "photo-hero.jpg",
-      "sha256": "de5c55ef53916cae952772df0ad4ba6a8db35c7ed8a121753e848d73d6d8e5f2",
-      "bytes": 133652
+      "file": "photo-gallery-2.jpg",
+      "sha256": "81aef095d072bd1bd85ba104f13051017ef4592e2f95d43437c5f8e9cc185426",
+      "bytes": 311026,
+      "alt": "Crawlspace utility area with exposed plumbing pipes on a rack"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "466356e74602aeb5aac1d814e0ef7b88380d8ab35a331436bce7da5486fd2b25",
+      "bytes": 303557,
+      "alt": "Close-up of a rusted old toilet flange in a subfloor drain opening"
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "8ac82958f66dfa22b6d84da60c21c83e23eee5cece45f7859f1ce6991d67d37f",
+      "bytes": 220685,
+      "alt": "Underside of a floor joist area showing a newly installed PVC drain pipe"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "9316c65934624b72fdf70d15883904508a15f9c7b3503758f6e10516efc448c2",
+      "bytes": 213683,
+      "alt": "Tiled shower stall with a decorative niche under construction with tools nearby"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "32d79290f903bd2c6ff34077c4e07769b63ac9b0ea0357d605990c9647085d33",
+      "bytes": 137643,
+      "alt": "Interior wall opened up showing plumbing pipe rough-in work"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "0ec4986c017eec4d3afd518ea72f7a3057559c9e6fd107a01d3050898392b6e7",
+      "bytes": 130270,
+      "alt": "Whirlpool tub set in place during a bathroom framing construction project"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "3c8b0b3a7939787148731ea492cdc1bce7181c845a05e257b3cd9d0765f44e1f",
+      "bytes": 93508,
+      "alt": "Freestanding oval tub installed in a different bathroom with a window and black "
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "11ec374d3081e67f4268a608263672d0472e92b75952f58ff8513282c95c4bf3",
-      "bytes": 75750
+      "sha256": "04d07ac4bb05d8553c1194e050fd853de76a7aa5f3a68dffff49a3e306ef5be4",
+      "bytes": 176074,
+      "alt": "water heater install basement"
     },
     {
       "file": "photo-quoteband.jpg",
       "sha256": "9c9343937e97763714bc5761a67e06b2dae6c9c7edf1da995438891d66b1a81a",
-      "bytes": 249629
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "3426285b8560be6abeb8aa22ee75d7f34ce3dacfe0151ad0bf0de72dcb9cde25",
-      "bytes": 105435
+      "bytes": 249629,
+      "alt": "Freestanding tub set in an unfinished bathroom with tarps and tools around it"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "ab8745dd000cc85af5e52e335809f0f72ccf6f7bf91c6579f168581084fc8be3",
-      "bytes": 119850
+      "sha256": "fede6f5ba12a456e605af0535e0ea4072d3abf7732de10f5c651ac50bbc581b5",
+      "bytes": 51314,
+      "alt": "Freestanding oval tub installed in a bathroom with a window and black faucet"
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "eedf240df3920843fab96778d229ec279b6ce37088822afa2daa8394dcd3e8f5",
-      "bytes": 101858
+      "sha256": "d9ab0b90b3a0c2cc9ff83e2fedef13d928e1ae45ef667d3c9aa713584510e0d0",
+      "bytes": 52499,
+      "alt": "New white bathtub and shower surround installed in a bathroom"
     },
     {
       "file": "photo-service-4.jpg",
       "sha256": "ac8d39d05ad6618013966af15179cd2d4647d982e1e6c215e96854374e707e1b",
-      "bytes": 107603
+      "bytes": 107603,
+      "alt": "bathroom faucet install sink"
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "7241a9cb343fe0d4ffa63a5d025dd0be774a3c96fe6f5c0c634589260722c934",
-      "bytes": 67113
+      "sha256": "3426285b8560be6abeb8aa22ee75d7f34ce3dacfe0151ad0bf0de72dcb9cde25",
+      "bytes": 105435,
+      "alt": "drain snake cable clog"
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "04d07ac4bb05d8553c1194e050fd853de76a7aa5f3a68dffff49a3e306ef5be4",
-      "bytes": 176074
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "b455033c9c13ba205c916d720e62161c291372af7e01ad7851055f1d9dd70a7f",
-      "bytes": 355282
+      "sha256": "44c77871c483d4923e8f97a378a81b869ec856272464e46ab82420f5e5fcdd75",
+      "bytes": 252307,
+      "alt": "bathroom faucet install sink"
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Brick walkway with a pink-handled spigot valve visible",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Close-up of a toilet flange installed on the subfloor",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:stalled on",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "alt": "Close-up of a jetted whirlpool tub interior installed",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "alt": "Water heater installed in an unfinished framed utility closet with pipes",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Drains and sewer lines"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "alt": "White utility service van with a roof rack parked in a lot",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:plumbing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

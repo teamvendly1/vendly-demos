@@ -1,21 +1,28 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-20T23:09:56.454Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-28T00:37:17.881Z",
   "slug": "grovattmechanicalmoyocknc",
-  "removed_count": 20,
+  "removed_count": 23,
   "removed_sample": [
+    "logo-deslab.png",
     "logo-keyed.png",
     "photo-ba-after.jpg",
     "photo-ba-before.jpg",
+    "photo-card-photos.jpg",
     "photo-contact.jpg",
     "photo-family.jpg",
     "photo-gallery-1.jpg",
     "photo-gallery-2.jpg",
     "photo-gallery-3.jpg",
     "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-gallery-7.jpg"
+    "photo-gallery-5.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\grovattmechanicalmoyocknc",
+  "published_ref_count": 14,
+  "retained_published_count": 1,
+  "retained_published_sample": [
+    "logo-footer.png"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

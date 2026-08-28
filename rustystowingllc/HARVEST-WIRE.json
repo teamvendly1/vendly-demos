@@ -1,233 +1,310 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-23T00:15:47.574Z",
-  "slug": "rustystowingllc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "photo-service-2.jpg",
-      "bytes": 233296,
-      "trade_score": 8.5,
-      "reason": "hero_contrast_retarget:photo-service-2.jpg"
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-f0189cd3694c886d.jpg",
-      "bytes": 662364,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-6254e6bf9d092a49.jpg",
-      "bytes": 240972,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-26b5f532f43ee429.jpg",
-      "bytes": 451648,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-8b75ebda2337e67c.jpg",
-      "bytes": 214465,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-f10523d3f7f15565.jpg",
-      "bytes": 207823,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-d5c09a28064095ea.jpg",
-      "bytes": 528346,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-f45e925d56b28998.jpg",
-      "bytes": 471085,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-a2c4023260e75dac.jpg",
-      "bytes": 355485,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-24403de9f6407173.jpg",
-      "bytes": 352463,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-8c7ac6fbc485de4d.jpg",
-      "bytes": 288877,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-4.jpg",
-      "from": "google-b77e3e3c9a0688f1.jpg",
-      "bytes": 288086,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-5.jpg",
-      "from": "google-0e13d4e765a85712.jpg",
-      "bytes": 273002,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-6.jpg",
-      "from": "google-71e76e403e93a2c0.jpg",
-      "bytes": 243172,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-1.jpg",
-      "from": "google-a79b7e8d84942138.jpg",
-      "bytes": 239706,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-2.jpg",
-      "from": "google-90654ed93eab084f.jpg",
-      "bytes": 233296,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-service-3.jpg",
-      "from": "google-1d2d54bbfad0d467.jpg",
-      "bytes": 211627,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-7.jpg",
-      "from": "google-bd923da53b48baa1.jpg",
-      "bytes": 206520,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-gallery-8.jpg",
-      "from": "google-bcbe8b0ff2d9af26.jpg",
-      "bytes": 186839,
-      "letterbox_stripped": "v7.5%"
-    },
-    {
-      "slot": "photo-gallery-9.jpg",
-      "from": "google-0825c7e5c88a0e9d.jpg",
-      "bytes": 181235,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-services-hero.jpg",
-      "from": "google-9605d60f81b97123.jpg",
-      "bytes": 171225,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-contact.jpg",
-      "from": "google-2765fa5065fc7f4e.jpg",
-      "bytes": 106736,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-photos-cta.jpg",
-      "from": "google-57ae6b692790bea9.jpg",
-      "bytes": 96287,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-reviewsband.jpg",
-      "from": "google-0f9a4c7baad0a050.jpg",
-      "bytes": 764962,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-contact-hero.jpg",
-      "from": "google-18bd2717d04c2fa7.jpg",
-      "bytes": 506696,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "photo-reviews-hero.jpg",
-      "from": "google-9ed61684202804b8.jpg",
-      "bytes": 463023,
-      "letterbox_stripped": null
-    },
-    {
-      "slot": "logo.png",
-      "from": "charter-placeholder-your-logo-here",
-      "bytes": 21159,
-      "placeholder": true,
-      "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
-    }
-  ],
-  "skipped": [
-    "classification read: 76 verdicts",
-    "staged 39 harvest photos",
-    "refused_by_class:google-0819dc0d3dfb8530.jpg:reject",
-    "refused_by_class:google-30391e8c0b9f633f.jpg:reject",
-    "refused_by_class:google-3a1ad5a58824c77b.jpg:reject",
-    "refused_unlooked:google-fe3eb03684a6f105.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_hold_crew_for_about:google-f0189cd3694c886d.jpg",
-    "hero_cand_refuse:google-26b5f532f43ee429.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-a2c4023260e75dac.jpg:road_no_landscape",
-    "hero_cand_refuse:google-c96d24d114c450bf.jpg:road_no_landscape",
-    "hero_cand_refuse:google-eb8440e9be6a12f3.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-0e13d4e765a85712.jpg:road_no_landscape",
-    "hero_hold_crew_for_about:google-6254e6bf9d092a49.jpg",
-    "hero_cand_refuse:google-a79b7e8d84942138.jpg:road_no_landscape",
-    "hero_hold_crew_for_about:google-8b75ebda2337e67c.jpg",
-    "hero_hold_crew_for_about:google-f10523d3f7f15565.jpg",
-    "hero_hold_crew_for_about:google-180a0fe14175f40b.jpg",
-    "hero_cand_refuse:google-bcbe8b0ff2d9af26.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-9605d60f81b97123.jpg:road_no_landscape",
-    "hero_hold_crew_for_about:google-91573590c727be01.jpg",
-    "hero_cand_refuse:google-7ae6ec96de5e5934.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-2765fa5065fc7f4e.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-57ae6b692790bea9.jpg:portrait_aspect_hero_refuse",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 35,
-  "refused_by_class": 4,
-  "photo_candidates": 35,
-  "altBySlot": {
-    "photo-hero.jpg": "Red flatbed tow truck hauling a white pickup truck in a parking lot",
-    "photo-card-about.jpg": "Youth baseball team wearing sponsored Rusty's Towing jerseys posing for a group photo",
-    "photo-about.jpg": "Two mascots posing with a man at a stadium event",
-    "photo-card-services.jpg": "Red flatbed tow truck hauling a blue Dodge Charger",
-    "photo-card-reviews.jpg": "Youth baseball team in matching red Rusty's shirts posing together",
-    "photo-card-photos.jpg": "Youth baseball team in red shirts posing together for another sponsorship photo",
-    "photo-gallery-1.jpg": "Red tow truck hauling a white boat",
-    "photo-gallery-2.jpg": "Red tow truck hauling a rusty vintage pickup across a grassy field",
-    "photo-gallery-3.jpg": "Red flatbed tow truck hauling a blue muscle car",
-    "photo-ctaband.jpg": "Black tow truck hauling a black sports car parked at a business lot",
-    "photo-quoteband.jpg": "Red tow truck hauling a mini skid steer loader",
-    "photo-gallery-4.jpg": "Red flatbed tow truck hauling a white boat on its trailer",
-    "photo-gallery-5.jpg": "Red flatbed tow truck hauling a gray sedan, motion blur in frame",
-    "photo-gallery-6.jpg": "Black classic roadster loaded on a flatbed tow truck",
-    "photo-service-1.jpg": "Red flatbed tow truck hauling a white shuttle bus",
-    "photo-service-2.jpg": "Red flatbed tow truck hauling a white pickup truck in a parking lot",
-    "photo-service-3.jpg": "Small gray storage shed being towed on a trailer",
-    "photo-gallery-7.jpg": "Black tow truck hauling a white pickup truck",
-    "photo-gallery-8.jpg": "Black tow truck hauling a black Tesla sedan",
-    "photo-gallery-9.jpg": "Red tow truck hauling a red car near a racetrack setting",
-    "photo-services-hero.jpg": "Red tow truck hauling a red classic Mustang",
-    "photo-contact.jpg": "Red tow truck hauling a black classic car in a parking lot",
-    "photo-photos-cta.jpg": "Red tow truck hauling a white boat, slightly blurry image",
-    "photo-reviewsband.jpg": "Black tow truck parked near a blue tractor on a grassy lot",
-    "photo-contact-hero.jpg": "Red race car and towing equipment at a raceway event",
-    "photo-reviews-hero.jpg": "Best of the Pee Dee 2021 award badge graphic"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-28T01:15:23.909Z",
+ "slug": "rustystowingllc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-b8569b4fd96ee14f.jpg",
+   "bytes": 345758,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
   },
-  "hero_retarget": {
-    "at": "2026-08-23T00:15:50.293Z",
-    "from_slot": "photo-service-2.jpg",
-    "reason": "hero_contrast_retarget"
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-180a0fe14175f40b.jpg",
+   "bytes": 95948,
+   "smart_crop": true,
+   "src": "google-180a0fe14175f40b.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 53,
+   "detail_score": 17.002,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-ce1663408e03d1f8.jpg",
+   "bytes": 281336,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-26b5f532f43ee429.jpg",
+   "bytes": 187455,
+   "smart_crop": true,
+   "src": "google-26b5f532f43ee429.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 43,
+   "detail_score": 30.524,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-f0189cd3694c886d.jpg",
+   "bytes": 225046,
+   "smart_crop": true,
+   "src": "google-f0189cd3694c886d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 41.574,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-d5c09a28064095ea.jpg",
+   "bytes": 184935,
+   "smart_crop": true,
+   "src": "google-d5c09a28064095ea.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 25.497,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-f45e925d56b28998.jpg",
+   "bytes": 471085,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-a2c4023260e75dac.jpg",
+   "bytes": 355485,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-24403de9f6407173.jpg",
+   "bytes": 352463,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-8c7ac6fbc485de4d.jpg",
+   "bytes": 288877,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-b77e3e3c9a0688f1.jpg",
+   "bytes": 288086,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-0e13d4e765a85712.jpg",
+   "bytes": 273002,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-71e76e403e93a2c0.jpg",
+   "bytes": 243172,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-6254e6bf9d092a49.jpg",
+   "bytes": 240972,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-service-1.jpg",
+   "from": "google-a79b7e8d84942138.jpg",
+   "bytes": 92821,
+   "smart_crop": true,
+   "src": "google-a79b7e8d84942138.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 17.22,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-2.jpg",
+   "from": "google-90654ed93eab084f.jpg",
+   "bytes": 126318,
+   "smart_crop": true,
+   "src": "google-90654ed93eab084f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 22.53,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-service-3.jpg",
+   "from": "google-8b75ebda2337e67c.jpg",
+   "bytes": 72700,
+   "smart_crop": true,
+   "src": "google-8b75ebda2337e67c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 10.858,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "google-1d2d54bbfad0d467.jpg",
+   "bytes": 211627,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-8.jpg",
+   "from": "google-f10523d3f7f15565.jpg",
+   "bytes": 207823,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-9.jpg",
+   "from": "google-bd923da53b48baa1.jpg",
+   "bytes": 206520,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-services-hero.jpg",
+   "from": "google-bcbe8b0ff2d9af26.jpg",
+   "bytes": 186839,
+   "letterbox_stripped": "v7.5%"
+  },
+  {
+   "slot": "photo-contact.jpg",
+   "from": "google-0825c7e5c88a0e9d.jpg",
+   "bytes": 181235,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-photos-cta.jpg",
+   "from": "google-9605d60f81b97123.jpg",
+   "bytes": 171225,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-reviewsband.jpg",
+   "from": "google-91573590c727be01.jpg",
+   "bytes": 169460,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ba-before.jpg",
+   "from": "google-2765fa5065fc7f4e.jpg",
+   "bytes": 106736,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-family.jpg",
+   "from": "google-57ae6b692790bea9.jpg",
+   "bytes": 96287,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-4.jpg",
+   "from": "google-0f9a4c7baad0a050.jpg",
+   "bytes": 764962,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-5.jpg",
+   "from": "google-18bd2717d04c2fa7.jpg",
+   "bytes": 506696,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-9ed61684202804b8.jpg",
+   "bytes": 463023,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "classification read: 76 verdicts",
+  "staged 39 harvest photos from assets",
+  "refused_by_class:google-0819dc0d3dfb8530.jpg:reject",
+  "refused_by_class:google-30391e8c0b9f633f.jpg:reject",
+  "refused_by_class:google-3a1ad5a58824c77b.jpg:reject",
+  "refused_unlooked:google-fe3eb03684a6f105.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-f0189cd3694c886d.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-26b5f532f43ee429.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-a2c4023260e75dac.jpg:road_no_landscape",
+  "hero_cand_refuse:google-c96d24d114c450bf.jpg:road_no_landscape",
+  "hero_cand_refuse:google-eb8440e9be6a12f3.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-0e13d4e765a85712.jpg:road_no_landscape",
+  "hero_cand_refuse:google-a79b7e8d84942138.jpg:road_no_landscape",
+  "hero_cand_refuse:google-8b75ebda2337e67c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-f10523d3f7f15565.jpg:portrait_aspect_hero_refuse",
+  "hero_hold_crew_for_about:google-180a0fe14175f40b.jpg",
+  "hero_cand_refuse:google-bcbe8b0ff2d9af26.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-9605d60f81b97123.jpg:road_no_landscape",
+  "hero_cand_refuse:google-7ae6ec96de5e5934.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-2765fa5065fc7f4e.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-57ae6b692790bea9.jpg:portrait_aspect_hero_refuse",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 35,
+ "refused_by_class": 4,
+ "photo_candidates": 35,
+ "altBySlot": {
+  "photo-hero.jpg": "Red tow truck hauling a red convertible classic car",
+  "photo-card-about.jpg": "Two men posing near the black tow truck with a Best of the Pee Dee award banner",
+  "photo-about.jpg": "Business card for Rusty's Towing LLC listing the owner and contact information",
+  "photo-card-services.jpg": "Red flatbed tow truck hauling a blue Dodge Charger",
+  "photo-card-reviews.jpg": "Youth baseball team wearing sponsored Rusty's Towing jerseys posing for a group photo",
+  "photo-card-photos.jpg": "Red tow truck hauling a white boat",
+  "photo-gallery-1.jpg": "Red tow truck hauling a rusty vintage pickup across a grassy field",
+  "photo-gallery-2.jpg": "Red flatbed tow truck hauling a blue muscle car",
+  "photo-gallery-3.jpg": "Black tow truck hauling a black sports car parked at a business lot",
+  "photo-ctaband.jpg": "Red tow truck hauling a mini skid steer loader",
+  "photo-quoteband.jpg": "Red flatbed tow truck hauling a white boat on its trailer",
+  "photo-gallery-4.jpg": "Red flatbed tow truck hauling a gray sedan, motion blur in frame",
+  "photo-gallery-5.jpg": "Black classic roadster loaded on a flatbed tow truck",
+  "photo-gallery-6.jpg": "Two mascots posing with a man at a stadium event",
+  "photo-service-1.jpg": "Red flatbed tow truck hauling a white shuttle bus",
+  "photo-service-2.jpg": "Red flatbed tow truck hauling a white pickup truck in a parking lot",
+  "photo-service-3.jpg": "Youth baseball team in matching red Rusty's shirts posing together",
+  "photo-gallery-7.jpg": "Small gray storage shed being towed on a trailer",
+  "photo-gallery-8.jpg": "Youth baseball team in red shirts posing together for another sponsorship photo",
+  "photo-gallery-9.jpg": "Black tow truck hauling a white pickup truck",
+  "photo-services-hero.jpg": "Black tow truck hauling a black Tesla sedan",
+  "photo-contact.jpg": "Red tow truck hauling a red car near a racetrack setting",
+  "photo-photos-cta.jpg": "Red tow truck hauling a red classic Mustang",
+  "photo-reviewsband.jpg": "Two costumed mascots posing together at a sports stadium event",
+  "photo-ba-before.jpg": "Red tow truck hauling a black classic car in a parking lot",
+  "photo-family.jpg": "Red tow truck hauling a white boat, slightly blurry image",
+  "photo-service-4.jpg": "Black tow truck parked near a blue tractor on a grassy lot",
+  "photo-service-5.jpg": "Red race car and towing equipment at a raceway event",
+  "photo-service-6.jpg": "Best of the Pee Dee 2021 award badge graphic"
+ },
+ "dedupe_fixed": 5
 }

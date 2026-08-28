@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "jimmysgarage",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#222513",
+  "palette": {
+    "BRAND": "#222513",
+    "PRIMARY": "#3B4021",
+    "PRIMARY_DK": "#2B2F18",
+    "PRIMARY_MID": "#474E28",
+    "ACCENT": "#5D6534",
+    "ACCENT_DK": "#414724",
+    "ACCENT_LT": "#828E49",
+    "ON_DARK": "#DFE3C9",
+    "MENU_INK": "#1C1E10",
+    "TINT_1": "#EBEEDD",
+    "TINT_2": "#F1F3E7",
+    "TINT_3": "#E7EAD7",
+    "TINT_4": "#E9ECDA",
+    "LINE_2": "#D7DCBC",
+    "MUTED_BRAND": "#AFBA78",
+    "MIST": "#F8F9F3",
+    "LINE": "#E3E7D0",
+    "PRIMARY_RGB": "59,64,33",
+    "ACCENT_RGB": "93,101,52",
+    "SCRIM_RGB": "71,78,40",
+    "SCRIM2_RGB": "43,47,24",
+    "MENU_INK_RGB": "28,30,16",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.82,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 6.22,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.23,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.9,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

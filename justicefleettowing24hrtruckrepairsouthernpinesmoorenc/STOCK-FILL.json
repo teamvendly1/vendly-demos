@@ -1,37 +1,53 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-15T20:47:58.448Z",
+  "at": "2026-08-24T05:17:48.873Z",
   "trade": "towing",
-  "slotHints": {},
-  "ok": false,
+  "slotHints": {
+    "photo-service-1.jpg": "Car and light truck transport",
+    "photo-service-2.jpg": "Heavy and oversize loads",
+    "photo-service-3.jpg": "Night and out of hours calls"
+  },
+  "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "e97eb36936b5338a55394f6c1679e516480e7322b78d89beb0ab036ab69939d5",
+      "sha256": "5f4268a4660f05019f931c6343ab479271081b4adb455cc5fab0e517abe10832",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
-      "file": "photo-card-photos.jpg",
-      "sha256": "f2e9b03f090a02b9210fe7384998a66ae4bac0f68f87182fcf38552e7eb4227e",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "d94a0e89d6ad74c6fcc7e1894a6739303cfae6d645fd7617850456eea3789a09",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-services.jpg",
+      "file": "photo-card-about.jpg",
       "sha256": "f8141982756c6aadd68cf9e519d30c691be997b37bec4b9279cff14eaac28484",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
+      "file": "photo-card-photos.jpg",
+      "sha256": "c769e6ba0065e6634d7604f7be05bb30e24a9d4219d1634b8d87fb055a522d7b",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "1718d948a0190c863f429a4754b5aa0ef8a1e75afadbefd36f362455fe9570e6",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "cab44f6c1487df7a5b25ed5e3e62a435c54830583a200089256b5cec46bd9cee",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "4c7337e5f311b4b8f2281491d100c985ec8d0a8dd983caf12a2ba2fe055e5572",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
       "file": "photo-ctaband.jpg",
-      "sha256": "b8fa2b5484227301df034932ff87370a725fb38365a25907ab44a35970684eda",
+      "sha256": "4d51c1e56469f9432d5209e9fc49f53642171bd5c520a60cf3adcc17212a428e",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -40,214 +56,72 @@
       "sha256": "b235765578a5041a3859fa3f8a3bb7bbc339205e03fcf10c8da967ed1f734909",
       "source": "harvest_or_prior",
       "niche_folder": null
-    }
-  ],
-  "filled": [
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "7dd50536fdf204c7dfb610ba6f2d2020242ccae277277b37358fa474064fef00",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "065a47dc017390d25565b9610614fedc1993238702fa995d54b0c2b3f49330bc",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "ec12a19fbecec060171e0c07f88e4be69c228486dacef537b69f9bee60a54f55",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "53d6956a7404585c0c7ecc31bb6452552b4523c56e7509ab0e51f2733d603e27",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "b9eeee2f9e1a06778354cc7a8f952696829e3e729b6c91aaea914f4a42bfca1c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "0f0f5fe9d66003ad3df781eccd39f604b61f0f64735d89e4b5ea70794fbbd26e",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "e5750314ca276f8c3ace7127ab020ea384c1991caa6f5acca80933ffebc6c8b2",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "4ee19c54b6214a044a1024c369baaa4edf8e4849450061c993e7a67fd4019431",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "69b10f88fe5e54f1606563cd321a24852fbf5134873419418aa7af0e98c9f94d",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "eb560c4ce943099e3f464fb0dada858582b7241e3f7277ef62d059a17a91d864",
+      "source": "harvest_or_prior",
+      "niche_folder": null
     }
   ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-card-about.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-contact.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-photos-cta.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-2.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-services-hero.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    }
-  ],
-  "distinct": 6,
-  "slots": 16,
+  "filled": [],
+  "gaps": [],
+  "distinct": 18,
+  "slots": 18,
   "stock_provenance_rows": 0,
   "family": "towing",
   "refuse_borrow": false,
