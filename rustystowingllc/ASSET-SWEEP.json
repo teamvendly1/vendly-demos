@@ -1,8 +1,8 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-23T00:15:54.363Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-08-28T01:16:13.970Z",
   "slug": "rustystowingllc",
-  "removed_count": 50,
+  "removed_count": 44,
   "removed_sample": [
     "google-0819dc0d3dfb8530.jpg",
     "google-0825c7e5c88a0e9d.jpg",
@@ -17,5 +17,10 @@
     "google-2765fa5065fc7f4e.jpg",
     "google-30391e8c0b9f633f.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\rustystowingllc",
+  "published_ref_count": 27,
+  "retained_published_count": 0,
+  "retained_published_sample": [],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

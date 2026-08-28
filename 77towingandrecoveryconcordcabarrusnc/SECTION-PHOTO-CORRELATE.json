@@ -1,59 +1,21 @@
 {
-  "at": "2026-08-25T23:38:36.103Z",
+  "at": "2026-08-28T01:30:42.303Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
-  "replaced": [
-    {
-      "file": "photo-about.jpg",
-      "source": "stock-library",
-      "sha256": "5bf42ed46b8d4e71d25f27b6b1d4bc74347177c8a90761b036467d7a9e21af07",
-      "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify",
-        "unflattering_subject:about_slot_invented_alt"
-      ],
-      "service": "crew shop jobsite",
-      "score_alt": "flatbed tow truck highway"
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "source": "stock-library",
-      "sha256": "cd4cf9239ea31defc9fed91a5a7407fb49e799e97cbbdf314d688730948a4403",
-      "reasons": [
-        "cross_demo_dupe:77towingandrecovery/photo-card-about.jpg"
-      ],
-      "service": "crew shop jobsite",
-      "score_alt": "flatbed tow truck loading car"
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "source": "harvest-fallback",
-      "sha256": "3c3aef0979a56e863034df281ab0ccea06ee25c976828a824dc0cff69ae9d234",
-      "reasons": [
-        "cross_demo_dupe:abctowinglexingtonnc/photo-services-hero.jpg"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\77towingandrecoveryconcordcabarrusnc\\assets\\google\\google-3c3aef0979a56e86.jpg",
-      "score_alt": "flatbed tow truck highway"
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "source": "harvest-fallback",
-      "sha256": "c0a7b3d2aaa0d2c0921024b9adf05749d171122caa9fd34ae4a66be38d69c952",
-      "reasons": [
-        "cross_demo_dupe:castlehaynetowing/photo-photos-cta.jpg"
-      ],
-      "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\77towingandrecoveryconcordcabarrusnc\\assets\\google\\google-c0a7b3d2aaa0d2c0.jpg",
-      "score_alt": "flatbed tow truck loading car"
-    }
-  ],
+  "replaced": [],
   "kept": [
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "fdb196d6229e3d459c4ab993c2d3d837ffe96c4020bc3917daeba0b5052c635d",
-      "bytes": 254910,
+      "sha256": "83d3a888390c772bed2e82a5ac3ccc25419874694f70615901bd2e60e19254d6",
+      "bytes": 75539,
       "alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "5bf42ed46b8d4e71d25f27b6b1d4bc74347177c8a90761b036467d7a9e21af07",
+      "bytes": 131024,
+      "alt": "flatbed tow truck highway"
     },
     {
       "file": "photo-contact.jpg",
@@ -69,45 +31,72 @@
     },
     {
       "file": "photo-photos-cta.jpg",
+      "sha256": "fdb196d6229e3d459c4ab993c2d3d837ffe96c4020bc3917daeba0b5052c635d",
+      "bytes": 254910,
+      "alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-service-1.jpg",
       "sha256": "84d3f8278dd741c1857a2cd38e048abcf3780cb21c92d61059c6445d30a36f17",
       "bytes": 150673,
       "alt": "tow truck winch hook vehicle"
     },
     {
-      "file": "photo-service-1.jpg",
+      "file": "photo-service-2.jpg",
       "sha256": "d20a185ecf39226e34d5849fa5ce86c5e9902956ceba0835c3fac6ce1bef3f81",
       "bytes": 367056,
       "alt": "tow truck winch hook vehicle"
     },
     {
-      "file": "photo-service-2.jpg",
+      "file": "photo-service-3.jpg",
       "sha256": "14df015f707e0ed4e5638eb9ac137c38aca1d342f8d9e08affa06520ae063f61",
       "bytes": 291581,
       "alt": "tow truck winch hook vehicle"
     },
     {
-      "file": "photo-service-3.jpg",
+      "file": "photo-service-4.jpg",
       "sha256": "a31a5db60e54af852ff2997432e7b26c7d1606856a3f1789d92f4b01b6b42aea",
       "bytes": 211463,
       "alt": "roadside recovery flatbed"
     },
     {
-      "file": "photo-service-4.jpg",
+      "file": "photo-service-5.jpg",
       "sha256": "39b798e61d73d9833fef950919da29317b68bb276e6c9a0f61fb9bc288902eb2",
       "bytes": 75995,
       "alt": "wheel lift tow truck street"
     },
     {
-      "file": "photo-service-5.jpg",
+      "file": "photo-service-6.jpg",
       "sha256": "ee53d9de5d20b428cdf3e1561b057e1ddf60b3092e9e8c3222a2ab8963e784e0",
       "bytes": 151987,
       "alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "83d3a888390c772bed2e82a5ac3ccc25419874694f70615901bd2e60e19254d6",
-      "bytes": 75539,
+      "sha256": "cd4cf9239ea31defc9fed91a5a7407fb49e799e97cbbdf314d688730948a4403",
+      "bytes": 90151,
       "alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-about.jpg",
+      "sha256": "3c3aef0979a56e863034df281ab0ccea06ee25c976828a824dc0cff69ae9d234",
+      "bytes": 294895,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "61efdaf9102187c37326356223e7755c22a13386cb50cf4350323d77e2b183b6",
+      "bytes": 169137,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:77towingandrecovery/photo-card-about.jpg"
+      ]
     },
     {
       "file": "photo-card-services.jpg",
@@ -240,6 +229,8 @@
     }
   ],
   "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-card-about.jpg",
     "correlate_restore_no_stock:photo-card-services.jpg",
     "correlate_restore_no_stock:photo-gallery-1.jpg",
     "correlate_restore_no_stock:photo-gallery-2.jpg",
