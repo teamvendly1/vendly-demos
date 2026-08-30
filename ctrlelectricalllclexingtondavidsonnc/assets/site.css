@@ -1,0 +1,888 @@
+/* NO-CAPTIONS mold 2026-08-12 */
+html{scroll-padding-bottom:112px}
+:root{
+  /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
+  --blue:#3D4C5C;
+  --blue-dk:#26303B;
+  --blue-lt:#556B81;
+  --red:#3D4C5C;
+  --paper:#FFFFFF;
+  --mist:#F4F6F8;
+  --ink:#12171C;
+  --muted:#8499AE;
+  --brand:#26303B;
+  --line:#D4DBE3;
+  --radius:16px;
+  --shadow:0 12px 30px -16px rgba(38,48,59,.32);
+  --shadow-lg:0 30px 60px -28px rgba(38,48,59,.45);
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+h1,h2,h3{line-height:1.1;margin:0 0 .5em;overflow-wrap:break-word;word-wrap:break-word}
+h1{font:700 clamp(34px,6.2vw,62px)/1.04 Barlow Condensed,Inter,sans-serif;letter-spacing:-.01em;text-transform:uppercase}
+h2{font:700 clamp(27px,4vw,42px)/1.08 Barlow Condensed,Inter,sans-serif;text-transform:uppercase;letter-spacing:.01em}
+h3{font:700 19px/1.25 Inter,sans-serif}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px}
+.skiplink{position:absolute;left:-9999px;top:0;background:var(--blue-dk);color:#fff;padding:12px 18px;z-index:200}
+.skiplink:focus{left:8px;top:8px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+
+/* Preview banner MUST NOT ship to prospects (Jacob 2026-08-11). Keep class inert if leftover markup. */
+.previewbar{display:none!important;height:0!important;padding:0!important;margin:0!important;overflow:hidden!important;border:0!important}
+
+
+/* phone-first strip. Jacob 2026-08-15 Hydro class. Number is the first thing on the page. */
+:root{--phone-strip-h:48px}
+.phone-strip{position:sticky;top:0;z-index:80;background:var(--ink);color:#fff;text-align:center;font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;letter-spacing:.04em}
+.phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
+.phone-strip a:hover{background:#1C242B}
+@media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+
+header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
+.logo{height:88px;width:auto;display:block}
+.logo-chip{display:inline-flex;align-items:center;background:transparent;padding:0;border-radius:0;box-shadow:none}
+.logo-footer{height:44px;width:auto;display:block}
+.bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;padding:13px 0}
+.logo{grid-column:2;justify-self:center}
+.bizmeta{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(61,76,92,.7)}
+.btn-red:hover{background:#1C242B}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(61,76,92,.7)}
+.btn-blue:hover{background:#2A3641}
+.btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
+.btn-ghost:hover{border-color:var(--blue)}
+
+/* hero */
+/* HERO GAP FIX (a) Jared CLEAR 2026-08-12: shrink hero to CONTENT height - no 100svh / min-height fill. */
+/* HERO GAP FIX2b: section{padding:clamp(56px..)} was the real empty slab (~56-102px top+bottom on .hero). */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk);min-height:0;height:auto;padding:0}
+/* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.96}
+/*
+  KILL HERO BUBBLE (Jacob CLEAR 2026-08-12): NO rounded panel / card / pill behind hero copy.
+  Readable order: quiet-zone photo -> full-bleed soft gradient (no edge/radius, covers ALL text)
+  -> type treatment last (shadow / weight / colour). Never a visible box again.
+*/
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:0;
+background:
+  linear-gradient(90deg,rgba(46,59,71,.78) 0%,rgba(46,59,71,.62) 34%,rgba(46,59,71,.38) 58%,rgba(46,59,71,.14) 78%,rgba(46,59,71,0) 100%),
+  linear-gradient(180deg,rgba(46,59,71,.45) 0%,rgba(46,59,71,.18) 42%,rgba(46,59,71,.42) 100%)}
+.hero-inner{position:relative;z-index:2;padding:clamp(28px,4.5vw,56px) 0 clamp(18px,3vw,36px);background:transparent}
+/*
+  HERO GAP FIX2 (2026-08-12): prior 104px sticky clearance WAS the ~275px empty driveway slab.
+  Sticky is position:fixed overlay - do NOT pad the hero by bar height. Hero ends at chips + normal pad.
+  fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
+*/
+@media(max-width:900px){
+  .hero-inner{padding-top:10px;padding-bottom:10px}
+  .hero .eyebrow{margin-bottom:6px}
+  /*
+    TYPE SCALE IS THE WHOLE LOOK (Lowcountry standard section 4, Jacob 2026-08-15). Measured on the
+    live page at 375px: 7.6vw resolved to 28.5px against their 60-70px. The size RATIO between the
+    headline and the quiet body copy is what makes their page read as designed and ours as a
+    template, so raising this is not cosmetic.
+
+    max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
+    runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
+  */
+  .hero h1{margin:0 0 10px;font-size:clamp(38px,12vw,60px);line-height:1.02;max-width:none;text-wrap:balance}
+  .hero .lede{margin:0 0 14px;font-size:16px;line-height:1.45;max-width:36ch}
+  .hero .cta{margin-bottom:8px;gap:8px}
+  .hero-rtb{margin:2px 0 6px}
+  .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:5px 10px;padding-bottom:0;margin:0}
+  .hero .tchip{font-size:12px;padding:1px 0}
+}
+/* Contact/about shots: keep faces in frame; sticky must not own the only visible strip. */
+@media(max-width:900px){
+  .leadwrap .shot{margin-bottom:12px}
+  .leadwrap .shot img{object-position:center 12%;aspect-ratio:3/4;max-height:min(70vh,520px)}
+  .mist.reveal{padding-bottom:24px}
+}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#CED6DF;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
+.hero .eyebrow{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
+/*
+  max-width MOVED to a desktop-only query on 2026-08-15. It sat here, unqualified and LATER in the
+  file than the mobile @media block, so it silently beat the mobile rule at equal specificity - the
+  big centred mobile headline would have kept wrapping into a 16ch column and the CSS would have
+  looked correct while the screen disagreed. Measured on the live page, not read off this file.
+*/
+.hero h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+@media(min-width:901px){.hero h1{max-width:16ch}}
+.hero h1 em{font-style:normal;color:#CED6DF;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.4)}
+.lede{font-size:19px;color:var(--ink);max-width:56ch;margin:0 0 20px}
+.hero .lede,.pband .lede{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
+.cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:18px}
+.trust{display:flex;gap:9px;flex-wrap:wrap}
+.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#E0E6EB;background:transparent;border:0;padding:0;border-radius:0}
+.hero .tchip{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4);padding:4px 0}
+.tchip svg{flex:0 0 auto}
+
+/* urgency strip */
+.strip{background:var(--red);color:#fff;padding:15px 0}
+.strip .wrap{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;text-align:center;font:600 16px/1.4 Inter,sans-serif}
+.strip a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+
+section{padding:clamp(56px,8vw,102px) 0}
+section.mist{background:var(--mist)}
+.center{text-align:center;max-width:62ch;margin:0 auto clamp(34px,5vw,54px)}
+.center .lede{color:var(--ink);margin:0 auto}
+.kicker{font:700 12.5px/1 Inter,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:var(--blue);margin-bottom:13px}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--brand)}
+.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(61,76,92,.8)}
+.icn svg{stroke:#fff}
+/* Explore cards use real photographs, never person/asterisk/camera glyphs. */
+.card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
+.card-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.card.card-photo{padding-top:0}
+.card p{color:var(--muted);margin:0;font-size:15.5px}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;border-radius:12px}
+@media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.gallery{grid-template-columns:repeat(4,1fr);gap:17px}}
+
+/* photo groups on photos.html, Luke's own groupings from the job site */
+.jobgroup{margin-bottom:44px}
+.jobgroup:last-child{margin-bottom:0}
+.jobgroup h3{margin-bottom:16px;color:var(--blue-dk)}
+.jobgroup .gallery{margin-bottom:0}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,58px);align-items:center}
+.shot{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);background:var(--blue-dk)}
+.shot img{width:100%;height:100%;object-fit:cover;background:var(--blue-dk);aspect-ratio:4/3;display:block}
+.shot.shot-contain img{object-fit:contain;object-position:center center;background:#1a1f16}
+.corner:empty,.corner[hidden]{display:none!important}
+.corner{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font:700 12px/1 Inter,sans-serif;letter-spacing:.13em;text-transform:uppercase;padding:11px 16px;border-radius:0 12px 0 0}
+.sig{margin-top:26px;padding-top:22px;border-top:2px solid var(--line)}
+.sig .nm{font:700 19px/1.2 Inter,sans-serif;color:var(--blue-dk)}
+.sig .rl{font-size:14.5px;color:var(--muted)}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.badge{display:inline-flex;align-items:center;gap:8px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-dk);background:#fff;border:2px solid var(--line);padding:11px 15px;border-radius:10px}
+.badge svg{stroke:var(--red)}
+.stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}
+.stat{background:var(--mist);border:1px solid var(--line);border-radius:12px;padding:16px 22px;min-width:150px}
+.statnum{display:block;font:700 40px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
+.statlabel{display:block;font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+
+/* honest FB review band */
+.reviewband{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;align-items:center;margin-bottom:6px}
+.revstat{text-align:center;min-width:120px}
+.revnum{display:block;font:700 46px/1 Barlow Condensed,Inter,sans-serif;color:var(--blue-dk)}
+.revlabel{display:block;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-top:5px}
+
+/* hours */
+.hours{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:19px}
+.hrow{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.hrow:last-child{border-bottom:0}
+.hrow b{color:var(--blue-dk)}
+.hrow span{color:var(--muted)}
+.afterhours{background:var(--blue-dk);color:#E0E6EB;border-radius:var(--radius);padding:29px 26px}
+.afterhours h3{color:#fff}
+.afterhours p{margin:0 0 20px;font-size:15.5px;color:#C1CCD7}
+
+/* area */
+.areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
+.area{font:600 14.5px/1 Inter,sans-serif;color:var(--blue-dk);background:#fff;border:1px solid var(--line);padding:11px 16px;border-radius:999px}
+
+/* lead form */
+.leadwrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,52px);align-items:start}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,3.4vw,34px);box-shadow:var(--shadow-lg)}
+.field{margin-bottom:17px}
+label{display:block;font:600 14px/1 Inter,sans-serif;color:var(--blue-dk);margin-bottom:8px}
+input,textarea,select{width:100%;font:400 16px/1.4 Inter,sans-serif;color:var(--ink);padding:14px 15px;border:2px solid var(--line);border-radius:11px;background:#fff}
+/* WCAG 2.1 AA 2.4.7 focus visible): the prior rule suppressed the focus
+   outline on form fields and replaced it with a border-colour change only.
+   Colour alone is not a sufficient focus indicator, so keyboard users lost
+   their place in the form. Restored a real focus ring that meets the 3:1
+   non-text contrast requirement. Internal build standard. Never stated as a claim client-facing. */
+input:focus-visible,textarea:focus-visible,select:focus-visible{border-color:var(--blue);outline:3px solid var(--red);outline-offset:2px}
+input:focus,textarea:focus,select:focus{border-color:var(--blue)}
+textarea{min-height:112px;resize:vertical}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.req{font-weight:400;color:var(--muted)}
+.hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
+.formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
+
+footer{background:var(--blue-dk);color:#C1CCD7;padding:56px 0 30px;font-size:15px}
+footer a{color:#fff}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
+footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:10px}
+footer li a{display:inline-block;padding:4px 0}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8499AE}
+
+/* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
+   three line and then you can choose between like About us, services offered,
+   customer reviews, photos". Shown at every width so the behaviour he described
+   is the behaviour he gets, on a phone or a desktop. */
+.navtoggle{grid-column:1;justify-self:start;display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 13px;cursor:pointer;font:700 14px/1 Inter,sans-serif;color:var(--blue-dk)}
+.navtoggle:hover{border-color:var(--blue)}
+.navtoggle svg{stroke:var(--blue-dk)}
+.navtoggle .navtoggle-text{display:none}
+@media(min-width:700px){.navtoggle .navtoggle-text{display:inline}}
+/* Mirror spacer for mobile logo center only - never visible on desktop. */
+.navbalance{display:none}
+.navbalance .navtoggle-text{display:none}
+.sitemenu{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:70}
+.sitemenu[hidden]{display:none}
+.sitemenu ul{list-style:none;margin:0;padding:8px 0;max-width:var(--wrap);margin-inline:auto}
+.sitemenu li{margin:0}
+.sitemenu a{display:block;padding:15px 22px;color:var(--blue-dk);text-decoration:none;font:600 17px/1.2 Inter,sans-serif;border-bottom:1px solid var(--mist)}
+.sitemenu li:last-child a{border-bottom:0}
+.sitemenu a:hover{background:var(--mist);color:var(--blue)}
+
+/* Sticky footer chrome: Ask FIRST, then estimate + CALL (Jacob 2026-08-11 - order only, no restyle).
+   Ask IS the chatbot button. Floating .sa-launch / .sa-peek stay hidden. */
+.mobile-callbar{
+  display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;
+  position:fixed;left:0;right:0;bottom:0;z-index:110;
+  background:var(--blue-dk);color:#fff;padding:0;
+  box-shadow:0 -8px 24px -12px rgba(16,23,36,.45);
+  min-height:90px;
+  isolation:isolate
+}
+.mobile-callbar .mcb-row{display:flex;align-items:stretch;width:100%;min-height:48px}
+.mobile-callbar .mcb-row a{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 10px;color:#fff;text-decoration:none;font:700 14px/1 Inter,sans-serif
+}
+/* REVERTED 2026-08-18. I first "fixed" this to var(--ink), reading the eye-audit's paraphrase
+   ("sticky bottom action bar... mustard/olive... FAILS") without checking Jacob's actual ruling
+   text first. DEMO-SHIP-STANDARD.md Section I says, verbatim: "Their mark colour on the badge and
+   on estimate / CALL is enough." Brand color on THESE TWO BUTTONS IS THE RULING, not a violation
+   of it. Reverted to the original tokens before this was ever wrong in a shipped file. The real
+   defect Section I names is the PHONE STRIP and the REVIEW BAND going mustard - neither of which
+   is this selector. See _tmp/claude-desktop-out/OUT-0238-*.md for what was actually checked. */
+.mobile-callbar .mcb-est{background:var(--brand)}
+.mobile-callbar .mcb-call{background:var(--blue)}
+.mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
+.mobile-callbar .mcb-ask{
+  display:block;width:100%;border:0;margin:0;cursor:pointer;
+  background:#26303B;color:#E0E6EB;
+  font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
+  padding:14px 10px;text-align:center;min-height:44px
+}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#2E3B47;color:#fff;outline:none}
+.sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
+/* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
+html{scrollbar-gutter:stable}
+body{padding-bottom:140px}
+footer{padding-bottom:30px}
+/* Google-look review cards + hero badge (2026-08-12). */
+.rv-carousel{display:flex;gap:10px;align-items:stretch}
+.rv-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;flex:1;padding-bottom:10px}
+.rv-card{scroll-snap-align:start;flex:0 0 310px;width:310px;max-width:86vw;position:relative;background:#fff;
+border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
+.rv-badge{position:absolute;top:12px;right:12px;line-height:0}
+.rv-head{display:flex;align-items:center;gap:10px;padding-right:28px;margin-bottom:8px}
+.rv-avatar,.rv-who{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover}
+.rv-who{display:inline-flex;align-items:center;justify-content:center;color:#fff;font:600 15px/1 Inter,sans-serif}
+.rv-meta{display:flex;flex-direction:column;gap:2px;min-width:0}
+.rv-name{color:#1a73e8;font:500 15px/1.25 Inter,sans-serif;font-style:normal}
+.rv-when{color:#70757a;font:400 12.5px/1.3 Inter,sans-serif}
+.rv-stars{position:relative;display:inline-block;line-height:0;margin:4px 0}
+.rv-stars-base,.rv-stars-fill{display:block;line-height:0;white-space:nowrap}
+.rv-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
+.rv-stars-base svg{fill:#DADCE0}
+.rv-stars-fill svg{fill:#FBBC04}
+.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:24;overflow:hidden}
+.home-reviews .rv-card{min-height:220px}
+.home-reviews .rv-body{color:#202124;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;min-height:4.5em}
+.rv-src{display:block;margin-top:8px;color:#70757a;font:500 12.5px/1.4 Inter,sans-serif}
+.rvHonesty{max-width:64ch;margin:0 0 18px;font-size:.92rem;line-height:1.5;opacity:.88}
+@media(max-width:700px){.rv-card{flex-basis:86%;width:86%}}
+@media(prefers-reduced-motion:reduce){.rv-track{scroll-behavior:auto}}
+.rtb{display:inline-flex;flex-direction:column;align-items:flex-start;gap:6px;text-decoration:none;color:inherit;max-width:min(100%,420px)}
+.rtb-row{display:inline-flex;align-items:center;gap:8px;line-height:0}
+.rtb-mark{flex:none;width:20px;height:20px;display:block}
+.rtb-stars{position:relative;display:inline-block;line-height:0;white-space:nowrap}
+.rtb-stars-base,.rtb-stars-fill{display:block;line-height:0;white-space:nowrap}
+.rtb-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
+.rtb-stars-base svg{fill:#DADCE0}
+.rtb-stars-fill svg{fill:#FBBC04}
+.rtb-caption{font:500 13px/1.35 Inter,system-ui,sans-serif;color:#fff;
+text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
+.hero .rtb,.hero-inner .rtb,.hero-rtb .rtb{color:#fff}
+.hero-rtb{margin:10px 0 0;max-width:100%}
+@media(max-width:400px){.rtb-caption{font-size:12px;max-width:32ch}.hero-rtb{margin-top:8px}}
+.header-rtb .rtb-caption{color:var(--ink,#14140F);text-shadow:none;font-size:12px}
+.header-rtb .rtb{max-width:280px}
+@media(max-width:900px){.header-rtb{display:none}}
+.rtb-faces,.rtb-disc{display:none!important}
+:root{--rv-gold:#C9A227}
+
+@media(max-width:860px){
+  .about,.leadwrap{grid-template-columns:1fr}
+  .bizmeta .pill{display:none}
+  .bar{gap:12px}
+}
+@media(max-width:640px){
+  /* Keep the 3-column GRID on the phone (Jacob 2026-08-16 17:38). Flex + space-between
+     centers a CIRCLE (Clayton / Rodney) and leaves a tall portrait mark (Total Tree)
+     looking shoved left because the img box shrinks to ~48px while Menu stays wide.
+     Column 2 is always true center. Cropped knockout marks can use the height now. */
+  .bizmeta{display:none}
+  .bar{display:grid;grid-template-columns:min-content 1fr min-content;align-items:center;gap:0;min-height:80px}
+  .navtoggle{grid-column:1;justify-self:start;position:relative;z-index:2}
+  .bar > a{grid-column:2;justify-self:center;display:flex;align-items:center;justify-content:center;max-width:100%}
+  .navbalance{grid-column:3;justify-self:end;visibility:hidden;pointer-events:none;display:inline-flex;align-items:center;gap:9px;border:1px solid transparent;border-radius:12px;padding:10px 13px}
+  .navbalance svg{visibility:hidden}
+  .logo{position:static;left:auto;transform:none;height:80px;max-width:min(240px,62vw);width:auto;margin:0;flex:none}
+  /* Jacob phone audit 2026-08-02 (em2154): the service cards, their icons,
+     the badge rows and the stat tiles read left-stuck on a narrow screen.
+     Center only these named attention blocks, not body copy. .reviewband
+     and .revstat are already centered upstream. */
+  .svc .card{text-align:center}
+  /* Phone audit 15:10 screenshots: the trust chips under the hero were the
+     actually-ragged block, not the service cards. Center them too. */
+  .trust{justify-content:center}
+  .svc .card .icn{margin-left:auto;margin-right:auto}
+  .badges{justify-content:center}
+  .stats{justify-content:center}
+  .stat{text-align:center}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* iOS auto-zoom fix, added 2026-08-01 23:15 ET.
+   Safari zooms in on focus for any input under 16px and does not zoom back out.
+   The SiteAssistant widget declares no font-size on .sa-input or .sa-form, so the
+   field falls through to the UA default of roughly 13.3px and triggers it.
+   !important is deliberate: the widget injects its stylesheet after this block. */
+.sa-input,.sa-form input,.sa-form textarea{font-size:16px!important;line-height:1.4}
+
+/* demo-motion 2026-08-12: polished-plain reveal; CATTAILS-NOT-GLOBAL; prefers-reduced-motion */
+/* Content is visible without JS. IO .in animation is extra, never the only way text appears.
+   Measured 2026-08-15: about.html with class=reveal and no .in painted invisible (opacity 0)
+   until IntersectionObserver ran. Cursor IDE screenshot: About copy and photo looked washed out.
+   Same class as the 2026-08-12 180px empty explore gap. Fail-open. */
+.reveal{opacity:1;transform:none}
+.reveal.in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.16s}
+.reveal-d3{transition-delay:.24s}
+.hero .eyebrow{animation:popIn .5s ease both}
+.hero .lede{animation:popIn .55s ease .08s both}
+.hero .cta{animation:popIn .55s ease .14s both}
+@keyframes popIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+.reveal,.reveal-d1,.reveal-d2,.reveal-d3{opacity:1;transform:none;transition:none}
+.hero .eyebrow,.hero .lede,.hero .cta{animation:none}
+}
+/* CTA-BELOW-GAP FIX 2026-08-12: first section after urgency strip must paint on fold.
+   Root cause of ~180px empty white: the old .reveal rule at rest-opacity zero, plus IO
+   rootMargin -8%, so explore sat invisible between strip and sticky. Not sticky clearance, not
+   hero pad.
+   MEGA-1940 2026-08-15: this comment used to spell the old rule out literally with no space
+   between the class and the brace, which is the exact substring REVEAL_INVISIBLE_WITHOUT_JS
+   (generate-from-blank-mold.js) scans the whole compiled site.css for - a false positive from a
+   comment describing a fixed bug, not the live rule two rules above (still opacity:1). Reworded
+   so the gate reads the file's actual behaviour rather than its own history; never loosen the
+   gate itself to clear this - it is right to refuse a genuine "class dot reveal, no space, brace,
+   opacity, colon, zero" rule. */
+.strip + .reveal,.strip + .reveal.in{opacity:1;transform:none}
+@media(max-width:900px){
+  .strip + section.reveal{
+    padding-top:22px;
+    padding-bottom:32px;
+  }
+  .strip + section.reveal .center{margin-bottom:14px}
+  .strip + section.reveal .svc{margin-top:14px!important}
+}
+
+/* ref-learn 0037: source line under a counter, so every number on the page
+   carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */
+/* WCAG 2.1 AA 1.4.3 contrast: #7A8798 on the #F4F7FB band measured
+   3.37:1, under the 4.5:1 floor for body text. My own 0037 edit introduced it.
+   var(--muted) #54637A measures 5.70:1 on the same background. */
+.revsrc{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
+
+/* ref-learn 0037: closing CTA band over licensed atmosphere photography.
+   All six references close with a full-bleed CTA. The photo is licensed stock
+   used as atmosphere only and is never presented as Luke's own work. */
+/* Compact CTA band - kill the ~450px near-black empty slab under the buttons. */
+.ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.72) 0%,rgba(38,48,59,.58) 100%)}
+.ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
+.ctaband h2{color:#fff;margin-bottom:.35em}
+.ctaband p{color:#DAE0E7;max-width:54ch;margin:0 auto 18px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8499AE;margin-top:14px;margin-bottom:0}
+
+/*
+  PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
+  flat brand-blue / mist-white home bands, per this mold's own SYSTEM PROMPT line in
+  HYDROCLEAN-CLASS-GENERATE-PROMPT.md: "CONVERT_PANEL / other flat brand-blue or mist-white home
+  bands should carry a photo background (the ctaband pattern) when harvest or stock can supply
+  one, distinct per band, never reused across two bands or two businesses."
+
+  OPT-IN ONLY. The generator adds the "pband" token onto the section class AND emits the <img
+  class="bg"> together, in the same pass, only when a real (non-stub, >=5KB) harvest photograph
+  landed in photo-reviewsband.jpg / photo-quoteband.jpg - lowest-priority slots, filled only from
+  whatever the home page's other photo slots left unused. A business with no surplus photography
+  renders these two sections exactly as before: flat var(--blue) / var(--mist), no img, no
+  overlay, nothing to strip. See wireHarvestPhotosIntoSlots() targets list.
+*/
+.pband{position:relative;overflow:hidden}
+.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.55;z-index:0}
+.pband>.wrap{position:relative;z-index:2}
+/* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
+   the photo only needs the same scrim ctaband uses, nothing else changes. */
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.84) 0%,rgba(38,48,59,.72) 100%)}
+/* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
+   so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
+   stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.92) 0%,rgba(38,48,59,.84) 100%)}
+#quote.pband h2{color:#fff}
+#quote.pband .kicker{color:#E0E6EB}
+/* Inner-page photo lead (services / reviews) - real photo, not a color slab */
+.page-photo{margin:0 0 28px}
+.page-photo .shot{max-width:920px;margin:0 auto}
+
+/* Jacob 2026-08-15 SUPERSEDES the 2026-08-11 "one phone surface" hide.
+   HydroClean class: top tel bar ALWAYS visible + sticky Estimate/CALL at bottom.
+   Mid-page Call CTAs still hide on small screens so we do not stack three mid-body numbers. */
+.phone-strip{display:block!important}
+.logo{background:transparent;padding:0;border-radius:0;object-fit:contain}
+.hero{isolation:isolate}
+.hero img.bg{z-index:0}
+.hero::after{z-index:1}
+.hero-inner{z-index:2}
+.hero h1,.hero .lede,.hero .eyebrow,.hero .cta,.hero .trust{position:relative;z-index:3}
+/* Audit FAIL 2026-08-11: mobile fold/quote stacked phone 3x. Sticky CALL is the one. */
+@media(max-width:640px){
+  .phone-cta-desktop{display:none!important}
+  .ctaband .cta{justify-content:center}
+}
+@media(max-width:900px){.hero .cta a[href="#quote"].btn-ghost,.hero .cta a.hero-est-dupe{display:none!important}}
+
+.rtb{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:inherit;max-width:100%}
+
+
+
+.rtb-body{display:flex;flex-direction:column;gap:1px;min-width:0;line-height:1.25}
+.rtb-top{display:inline-flex;align-items:center;gap:6px}
+.rtb-mark{flex:none}
+.rtb-stars{position:relative;display:inline-block;line-height:0;white-space:nowrap}
+.rtb-stars-base,.rtb-stars-fill{display:block;line-height:0;white-space:nowrap}
+.rtb-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
+.rtb-stars-base svg{fill:#DADCE0}
+.rtb-stars-fill svg{fill:var(--rv-gold,#C9A227)}
+.rtb-rated{font-weight:700;font-size:.95rem}
+.rtb-count{font-size:.88rem;opacity:.88}
+.rtb-src{font-size:.72rem;opacity:.72;letter-spacing:.02em}
+.hero .rtb,.hero-inner .rtb{color:#fff}
+.hero 
+.hero .rtb-src,.hero .rtb-count{opacity:.85}
+.header-rtb{max-width:280px}
+.header-rtb .rtb{color:var(--ink,#14140F)}
+.header-rtb .rtb-rated{font-size:.88rem}
+@media(max-width:900px){.header-rtb{display:none}}
+.card.card-photo .card-shot{aspect-ratio:16/10;overflow:hidden;border-radius:10px;margin:0 0 12px;background:#0a1622}
+.card.card-photo .card-shot img{width:100%;height:100%;object-fit:cover;display:block}
+.svc .card.card-photo{padding-top:14px}
+.rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
+.home-reviews{background:var(--mist);color:var(--ink);padding:clamp(40px,6vw,72px) 0}
+.home-reviews h2{color:var(--ink)}
+.home-reviews .lede,.home-reviews .kicker{color:var(--muted)}
+.home-reviews .rv-card{background:#fff;color:var(--ink)}
+.home-trust{background:var(--mist);padding:clamp(36px,5vw,64px) 0}
+.home-trust .t3{display:grid;gap:16px}
+@media(min-width:720px){.home-trust .t3{grid-template-columns:repeat(3,1fr)}}
+.home-trust article{background:#fff;padding:22px 20px;border-radius:14px;box-shadow:var(--shadow)}
+.home-trust article h3{margin-bottom:.4em}
+
+
+/* Vendly blank mold. Palette tokens are derived from the business brand colour. */
+/*
+  HEADER = THE LOGO'S OWN PLATE COLOUR, NOT THE BRAND PRIMARY (Jacob CLEAR 2026-08-15,
+  HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
+  canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
+  white card, so most demos will now show a white/near-white header instead of the old flat
+  #26303B. That is deliberate - it is what makes the (correctly keyed) logo look like it has
+  no plate at all, because the plate colour and the header colour are now the same colour.
+*/
+header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
+header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
+/* header.site .bizmeta .btn{color:#fff} REMOVED 2026-08-15: dated from when the header was
+   always a dark/navy plate. HEADER_BG is now the logo's own sampled colour (often white -
+   see the block above), so this blanket override was a white-on-white landmine for any future
+   .bizmeta button that is not .btn-red (.btn-red already sets its own white-on-red via its own
+   rule and does not need this). Each button's own class owns its own contrast now. */
+header.site .navtoggle{background:#fff!important;color:#26303B!important;border-color:rgba(255,255,255,.45)}
+header.site .navtoggle svg{stroke:#26303B!important}
+header.site .navtoggle .navtoggle-text{color:#26303B!important}
+.hero h1 em{color:#CED6DF!important}
+.btn-red:hover{background:#1C242B}
+.btn-blue:hover{background:#2A3641}
+
+/* Vendly blank mold. Palette tokens are derived from the business brand colour. */
+/* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
+   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #DDE3E9, which nearly
+   vanished once the header itself could also be white/pale (see HEADER_BG above). */
+header.site .navtoggle{background:#FFFFFF !important;color:#12171C !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle svg{stroke:#12171C !important}
+header.site .navtoggle .navtoggle-text{color:#12171C !important;opacity:1 !important}
+header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(18,23,28,.18)}
+header.site .sitemenu a{color:#12171C !important;background:#FFFFFF !important;opacity:1 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E9EDF1 !important;color:#26303B !important}
+/* Hero copy sits on photograph + full-bleed gradient only. Bubble/panel KILLED 2026-08-12. */
+.hero-inner{isolation:isolate;background:transparent}
+.hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
+.hero-inner > .trust,.hero-inner > .hero-rtb{position:relative;z-index:3;background:transparent}
+.hero-inner::before{content:none;display:none}
+/*
+  #ba-sod CONTRACT (mold assert - do not rename without updating beforeafter.js target):
+  - Mount id for the before/after slider (`target: "#ba-sod"` in index.html).
+  - When JS mounts a .ba child, keep aspect-ratio so Coverage never jumps under a white slab.
+  - When empty (no BA facts / cutSection removed the block), :empty hides the mount entirely.
+  - Generator cutSection('beforeafter') removes the whole section when facts lack a pair;
+    this CSS is the last line of defense if an empty mount survives a partial fill.
+*/
+#ba-sod{min-height:0}
+#ba-sod:empty{display:none;margin:0!important;min-height:0!important}
+#ba-sod .ba{aspect-ratio:16/10;background:#1a1a16}
+
+.v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
+width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
+.v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
+.v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+/* ---------------------------------------------------------------------------------------------
+   CARD PHOTO CROP FIX - 2026-08-24. Measured: 419 of 419 demos mis-cropped, ZERO clean.
+
+   .card-shot sets aspect-ratio:16/10 on the WRAPPER and expects the photo to fill it. But the
+   <img> is a GRANDCHILD, not a child: lightboxImg() in generate-from-blank-mold.js wraps every
+   photo in <button class="v-lb-btn">. TWO separate rules broke the crop and BOTH had to be
+   fixed - the one-line remedy that was filed only addressed the first and would have left the
+   defect live:
+
+     1. .v-lb-btn has AUTO height, so .card-shot img{height:100%} resolved against an indefinite
+        height. A percentage against an indefinite height is ignored, so object-fit:cover never
+        engaged and the photo rendered at its own intrinsic ratio.
+     2. .v-lb-btn img{height:auto} (line above) TIES .card-shot img{height:100%} on specificity -
+        (0,1,1) each, class + element - and wins on source order because it comes later. So even
+        with a definite button height the image would still have been height:auto.
+
+   Symptoms this produced: ratio above 1.6 letterboxed into a dark #0a1622 band under the photo;
+   ratio below 1.6 silently TOP-CROPPED; 228 demos had a portrait photo in a 16:10 box, worst
+   case 0.41, showing about a quarter of the frame.
+
+   Scoped to .card-shot deliberately. .gallery img and .shot img carry aspect-ratio on the IMAGE
+   itself, so their height:auto resolves to a definite box and they crop correctly today - they
+   are not broken and must not be "fixed".
+
+   VERIFY THIS ON THE RENDERED FRAME, NEVER HERE. Four spacing fixes were confirmed in this
+   stylesheet on 2026-08-12 and changed nothing on screen. */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
+.v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
+background:rgba(10,10,8,.92);touch-action:none}
+.v-lb-root.is-open{display:flex}
+.v-lb-stage{position:relative;max-width:min(96vw,1200px);max-height:92vh;overflow:hidden;
+display:flex;align-items:center;justify-content:center}
+.v-lb-img{max-width:96vw;max-height:92vh;width:auto;height:auto;object-fit:contain;
+transform-origin:center center;transition:transform .18s ease;user-select:none;
+-webkit-user-drag:none;cursor:grab}
+.v-lb-img.is-zoomed{cursor:grabbing;transition:none}
+.v-lb-close{position:fixed;top:12px;right:12px;z-index:100000;width:44px;height:44px;
+border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(0,0,0,.45);
+color:#fff;font:600 22px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.v-lb-close:focus-visible{outline:2px solid #FBBC04;outline-offset:2px}
+.v-lb-cap{position:fixed;left:0;right:0;bottom:0;padding:14px 18px;text-align:center;
+color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+@media(prefers-reduced-motion:reduce){.v-lb-img{transition:none}}
+
+/*
+  Sticky Ask vs footer z-order (mold-harden-20260812):
+  .mobile-callbar must paint ABOVE footer so Ask/estimate/CALL stay tappable.
+  footer stays in normal flow at z-index 1; bar is fixed at 120.
+*/
+.mobile-callbar{z-index:120}
+footer{position:relative;z-index:1}
+
+/* hero-rotator.js dropped 2026-08-15 (see generate-from-blank-mold.js): one static harvest
+   hero photo now, never a rotator. The .hero-rotator/[data-hero-slide] rules that styled the
+   old cross-fade were dead weight with no matching markup anywhere in this mold - removed
+   2026-08-15 rather than left to rot next to the code that killed the feature. */
+/* Compact hero badge - must not push CTA below 375 fold (Jared 2026-08-12) */
+.hero-rtb{margin:8px 0 0;max-width:100%}
+.hero-rtb .rtb{display:inline-flex;flex-direction:row;flex-wrap:wrap;align-items:center;gap:8px 14px;max-width:100%}
+.hero-rtb .rtb-block{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:#fff}
+.hero-rtb .rtb-mark{width:18px;height:18px;flex:none}
+.hero-rtb .rtb-stars svg{width:17px;height:17px}
+.hero-rtb .rtb-rated{font:600 12.5px/1.25 Inter,system-ui,sans-serif;color:#fff;
+  text-shadow:0 1px 2px rgba(0,0,0,.65)}
+.hero-rtb .rtb-src{display:none}
+.rtb-stars-fill svg{fill:#FBBC04!important}
+.rv-stars-fill svg{fill:#FBBC04!important}
+.rv-card{border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.12),0 4px 14px rgba(0,0,0,.06)}
+
+/* fix5 contact: family faces above sticky callbar */
+@media(max-width:900px){
+  .leadwrap .shot{margin-bottom:24px}
+  .leadwrap .shot img{object-position:center top;aspect-ratio:4/5;max-height:min(62vh,480px);width:100%}
+}
+
+/* Family / owner contact photo: full frame, NEVER lightbox (Jacob CLEAR 2026-08-12) */
+.shot .family-photo,.shot img.family-photo{cursor:default;pointer-events:none;width:100%;height:auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:#1a1f16}
+/* Contact face tier 2: their logo contained + centred, never stretched, never on a chip. */
+.shot .contact-logo,.shot img.contact-logo{cursor:default;pointer-events:none;width:100%;max-width:280px;height:auto;margin:0 auto;object-fit:contain;object-position:center center;aspect-ratio:auto;display:block;background:transparent}
+.shot.shot-contain{background:#1a1f16}
+/* Logo-tier contact: no dark plate behind the mark (that read as a chip). */
+.shot.shot-contain:has(.contact-logo),.contact-shot:has(.contact-logo){background:transparent;border:0;box-shadow:none;padding:0}
+.contact-shot:empty{display:none}
+/* Trade-visible hero that needs a darker type band (not a darker photo) */
+.hero.hero-darken-band::after{background:
+  linear-gradient(90deg,rgba(46,59,71,.90) 0%,rgba(46,59,71,.78) 36%,rgba(46,59,71,.48) 58%,rgba(46,59,71,.18) 78%,rgba(46,59,71,0) 100%),
+  linear-gradient(180deg,rgba(46,59,71,.58) 0%,rgba(46,59,71,.28) 42%,rgba(46,59,71,.52) 100%)}
+
+/* Contact address maps link (pattern A) - visible focus, full address is the link text */
+a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
+a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
+.contact-map{margin-top:4px;max-width:560px;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#1a1f16}
+.contact-map iframe{border:0;width:100%;height:100%;display:block;pointer-events:auto}
+.contact-map-static-link{display:block;margin-top:10px;max-width:560px;border-radius:12px;overflow:hidden;line-height:0}
+.contact-map-static{display:block;width:100%;height:auto;max-width:560px;border-radius:12px}
+.contact-map-pin-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 14px;border-radius:10px;background:rgba(26,31,22,.06);color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}
+.contact-map-pin-link:hover{text-decoration:underline}
+.contact-map-pin-icon{color:var(--accent,#c0392b);flex-shrink:0}
+.demo-preview{background:#1c1c1e;color:#e8e6e3;font-size:11px;line-height:1.4;padding:6px 18px;text-align:center}
+.demo-preview a{color:#fff}
+
+/* Contact page structure (Jacob CLEAR 2026-08-12 ~15:2x) - labelled blocks, not a pile */
+.contact-page{padding-top:clamp(56px,8vw,102px);padding-bottom:clamp(48px,7vw,88px)}
+.contact-lede{color:var(--muted);margin:0 0 28px}
+.contact-facts{display:grid;gap:28px;margin:0 0 32px;max-width:34rem}
+.contact-block{margin:0;padding:0}
+.contact-label{
+  margin:0 0 8px;padding:0;
+  font-family:"Barlow Condensed",system-ui,sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);line-height:1.2
+}
+.contact-value{margin:0;font-size:17px;line-height:1.45;color:var(--ink)}
+.contact-street,.contact-cityline{display:block}
+.contact-tel{
+  display:inline-flex;align-items:center;min-height:44px;padding:8px 0;
+  font-size:20px;font-weight:600;color:var(--ink);text-decoration:none
+}
+.contact-tel:hover{text-decoration:underline;text-underline-offset:3px}
+.contact-tel:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-radius:2px}
+.contact-hours{
+  list-style:none;margin:0;padding:0;
+  display:grid;gap:8px;max-width:22rem
+}
+.contact-hours li{
+  display:grid;grid-template-columns:7.5rem 1fr;gap:12px 16px;
+  align-items:baseline;font-size:16px;line-height:1.35
+}
+.contact-hours .hours-day{font-weight:600;color:var(--ink)}
+.contact-hours .hours-time{color:var(--muted)}
+.contact-towns{margin:0;color:var(--muted);font-size:16px;line-height:1.5}
+.contact-services{margin:0;padding-left:1.15rem;color:var(--ink);font-size:16px;line-height:1.5}
+.contact-services li{margin:0 0 6px}
+.contact-cta{margin:8px 0 0}
+.contact-addr-stack{display:inline-block;line-height:1.45}
+@media(max-width:375px){
+  .contact-hours li{grid-template-columns:1fr;gap:2px}
+  .contact-hours .hours-day{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .contact-hours .hours-time{font-size:16px;color:var(--ink)}
+}
+@media(max-width:900px){
+  .contact-lead{display:flex;flex-direction:column}
+  .contact-shot{order:-1;margin-bottom:28px}
+  .contact-facts{gap:24px;margin-bottom:28px}
+}
+
+/* ==========================================================================
+   MOBILE IS THE PRIORITY, AND MOBILE IS CENTRED.
+   Added 2026-08-15 after Jacob: "on mobile everything centered all the way down
+   through the site, the header centered, the buttons are centered."
+
+   Measured against lowcountryhydroclean.com on a 412x915 viewport, and measured
+   against our own output on the same viewport. Two concrete faults:
+
+     1. .hero-inner carried `padding: clamp(...) 0` - ZERO horizontal padding - so
+        the eyebrow and the h1 started at x=0, hard against the left edge of the
+        phone with no margin at all. On Rex Towing the headline was literally
+        touching the screen edge.
+     2. Nothing was centred. Every heading, lede and button ran left while the
+        reference build centres all of it down the whole page.
+
+   Desktop is untouched. This is a max-width block only.
+   ========================================================================== */
+@media (max-width: 700px) {
+  .hero-inner,
+  .hero-inner .eyebrow,
+  .hero-inner h1,
+  .hero-inner .lede {
+    text-align: center;
+  }
+  .hero-inner {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  /* buttons sit centred and wrap instead of running off the edge */
+  .hero-inner .cta,
+  .hero-inner .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  /* the rating badge and trust chips line up under the buttons, centred */
+  .hero-rtb,
+  .hero-inner .chips,
+  .hero-inner .trust {
+    justify-content: center;
+    text-align: center;
+  }
+  /* section headings and their eyebrows, all the way down the page */
+  section .wrap > .eyebrow,
+  section .wrap > h2,
+  section .wrap > h3,
+  section .wrap > .lede,
+  .band .wrap > h2,
+  .band .wrap > .lede {
+    text-align: center;
+  }
+  /* cards read better centred at phone width */
+  .card h3,
+  .card p {
+    text-align: center;
+  }
+  /* nothing may sit flush against the edge of the screen */
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ==========================================================================
+   LOWCOUNTRY SHAPE — items 2, 3 and 7 from _remote/state/LOWCOUNTRY-STANDARD.md
+   ========================================================================== */
+
+/* 2. THE PHONE IS THE FIRST THING ON THE PAGE.
+      lowcountryhydroclean.com puts (843) 708-1794 in a full-width brand band at
+      30px ABOVE the logo - not in a menu, not a small link. For a trade whose
+      whole funnel is a phone call, burying the number below the fold is the
+      single most expensive layout decision we were making. */
+.lc-phoneband {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(20px, 6vw, 30px);
+  letter-spacing: .5px;
+  padding: 12px 16px;
+  text-decoration: none;
+  line-height: 1.1;
+}
+.lc-phoneband:hover,
+.lc-phoneband:focus { filter: brightness(1.08); }
+
+/* 7. MAP SITS BESIDE CALL. A local trade has to answer "are you near me" and the
+      reference build does it without leaving the page. */
+.mobile-callbar .mcb-row { display: flex; }
+.mobile-callbar .mcb-map {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .5px;
+  padding: 14px 8px;
+  background: rgba(255,255,255,.10);
+}
+
+/* generous vertical rhythm - the reference build breathes, ours was tight */
+main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px, 9vw, 96px); }
+
+/* 5. THREE TRUST CARDS. Same sampled PRIMARY as phone/reviews, never a second hue. */
+.lc-trust { background: var(--brand); color: #fff; }
+.lc-trust .eyebrow, .lc-trust h2 { color: #fff; text-align: center; }
+.lc-trust-grid { display: grid; gap: 16px; margin: 28px 0 8px; }
+@media (min-width: 760px) { .lc-trust-grid { grid-template-columns: repeat(3, 1fr); } }
+.lc-trust-card { background: #fff; color: var(--ink, #14140F); border-radius: 16px; padding: 22px 20px; }
+.lc-trust-card h3 { margin: 0 0 8px; font-size: clamp(18px, 4.6vw, 22px); }
+.lc-trust-card p { margin: 0; }
+.lc-trust a,
+.lc-trust-cta { color: #fff; }
+.lc-trust-cta { display: block; width: fit-content; margin: 26px auto 0; background: transparent; border: 2px solid rgba(255,255,255,.55); }
+@media (max-width: 700px) { .lc-trust-card, .lc-trust-card h3, .lc-trust-card p { text-align: center; } }
+
+
+/* ---- Lowcountry header band 2: socials, directly under the phone (2026-08-15) ---- */
+.lc-social{display:flex;align-items:center;justify-content:center;gap:26px;
+  background:var(--brand);padding:8px 12px;border-top:1px solid rgba(255,255,255,.14)}
+.lc-social-link{display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:50%;background:#fff;text-decoration:none;flex:none}
+.lc-social-link img{display:block;width:22px;height:22px}
+.lc-social-link:focus-visible{outline:3px solid #fff;outline-offset:2px}
+
+/* ---- Lowcountry trust band: three posture cards + its own CTA ---- */
+.lc-trust .lc-eyebrow{margin:0 0 6px;text-align:center;text-transform:uppercase;
+  letter-spacing:.14em;font-size:12.5px;font-weight:700;opacity:.72}
+.lc-trust h2{text-align:center;text-wrap:balance}
+.lc-trust-grid{margin-top:26px}
+.lc-trust-card{text-align:center;padding:26px 20px;border-radius:14px;
+  background:#fff;border:1px solid var(--line)}
+.lc-trust-card h3{margin:0 0 8px}
+.lc-trust-card p{margin:0}
+.lc-trust-cta{display:block;width:max-content;margin:28px auto 0}
+/* Trust card ICON (2026-08-15, Jacob EYES MEGA-1838): reverted the 2026-08-15/MEGA-1820 photo
+   experiment - three empty text cards FAIL, but a photo thumbnail is not the fix either (Hydro's
+   own "Higher Standard" band uses icon blurbs, not photos - photos belong on hero/ctaband/reviews/
+   form). Each card now carries an original inline SVG glyph, trade-aware, chosen by
+   trustIconsFor() in generate-from-blank-mold.js; the whole grid still ships or omits as one unit
+   via skipper-structure-assert / build-refusal, it just never depends on a photograph landing. */
+.lc-trust-icon{width:52px;height:52px;border-radius:50%;margin:0 auto 14px;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);
+  display:grid;place-items:center;flex:none}
+.lc-trust-icon svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round}
+
+@media (max-width:700px){
+  .lc-social{gap:20px}
+  .lc-trust-grid{display:grid;grid-template-columns:1fr;gap:14px}
+  .lc-trust-card{text-align:center}
+  .lc-trust-cta{width:100%;text-align:center}
+}
+
+
+/* ---- LC-TYPE-SCALE: section headings follow the hero up, but stay clearly below it so the
+   ratio still reads as a hierarchy rather than two competing shouts (2026-08-15). ---- */
+@media (max-width:700px){
+  h2{font-size:clamp(32px,9.5vw,46px);line-height:1.05;text-wrap:balance}
+  h3{font-size:clamp(19px,5.2vw,24px);line-height:1.15}
+  .lede,p{font-size:16px}
+}
+
+
+/* ---- Lowcountry standard: the SECOND CTA, mid-page (2026-08-15). Light on purpose - a line and
+   two buttons, never a second hero. ---- */
+.lc-midcta{background:var(--mist);text-align:center}
+.lc-midcta h2{margin:0 0 10px}
+.lc-midcta p{margin:0 auto 22px;max-width:52ch;color:var(--muted)}
+.lc-midcta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+@media (max-width:700px){
+  .lc-midcta-actions{flex-direction:column;align-items:stretch}
+  .lc-midcta-actions .btn{justify-content:center}
+}

@@ -1,108 +1,52 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T04:25:50.350Z",
-  "slug": "interstateautotruckserviceincdunnharnettnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-ab12142714b1ea10.jpg",
-      "bytes": 272324,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-9a19e3a361fc240d.jpg",
-      "bytes": 360830
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-4e00d6e6f8b506e5.jpg",
-      "bytes": 302337
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-b0f0263672976cb8.jpg",
-      "bytes": 345478
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-9a1b40bc612aae15.jpg",
-      "bytes": 398591
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-5e97ccb20ba6333c.jpg",
-      "bytes": 339961
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-56ac9a3a48d48060.jpg",
-      "bytes": 392497
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-9709897a09c0d21b.jpg",
-      "bytes": 299338
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-02f65a1db8fa6d27.jpg",
-      "bytes": 210172
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-265e02663ed4f350.jpg",
-      "bytes": 126845
-    }
-  ],
-  "skipped": [
-    "classification read: 20 verdicts",
-    "staged 22 harvest photos",
-    "refused_unlooked:google-08a2476ad7dd1113.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-4074aff2389e4251.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5c00c12fa65d8160.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5ce274e5a6537ea9.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-8bb486327e78f4a4.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-94a71c9cc2ed18c5.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-971ffcb76c5d9643.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-af653f3874ae7933.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b0d6e534ee4cc555.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-c759b24fe6f778ed.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-cd6c0059961d49bc.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-f0ba7cc81587acf1.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-9a1b40bc612aae15.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-b0f0263672976cb8.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-4e00d6e6f8b506e5.jpg:road_no_landscape",
-    "hero_cand_refuse:google-265e02663ed4f350.jpg:low_res_lt_1080",
-    "photo-gallery-3.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 10,
-  "refused_by_class": 12,
-  "altBySlot": {
-    "photo-hero.jpg": "Workshop building with the business name and number painted across the gable and a truck parked at the roller door",
-    "photo-about.jpg": "Stacks of used tyres and wheels ranged across the yard outside the workshop doors",
-    "photo-card-about.jpg": "The main building from the road with the business name and telephone number on the wall and service trucks in the yard",
-    "photo-card-services.jpg": "Turbocharger and its oil feed lines exposed on a heavy diesel engine, the charge pipework disconnected around it",
-    "photo-card-reviews.jpg": "SUV loaded onto a car hauler and strapped through the wheels, the ramps still down at the rear",
-    "photo-card-photos.jpg": "Tractor unit standing on the lot with its stacks and mirrors clear against the treeline",
-    "photo-ctaband.jpg": "Heavy wrecker parked under the open-sided shelter alongside a trailer on the gravel yard",
-    "photo-quoteband.jpg": "Heavy recovery unit and a tractor drawn up in front of the shop under the parts and towing signage",
-    "photo-gallery-1.jpg": "The site office building at the edge of the yard with the used tyre sign fixed beside the door",
-    "photo-gallery-2.jpg": "The yard and workshop frontage with the parts, tyre and recovery signage above the open bay and a service truck drawn up outside"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-30T16:56:51.854Z",
+ "slug": "interstateautotruckserviceincdunnharnettnc",
+ "wired": [
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

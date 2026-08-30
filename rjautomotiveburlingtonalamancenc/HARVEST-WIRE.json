@@ -1,110 +1,52 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T04:26:27.946Z",
-  "slug": "rjautomotiveburlingtonalamancenc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-35846097a61dd609.jpg",
-      "bytes": 274042,
-      "trade_score": 2,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-a092eeb8e0314fea.jpg",
-      "bytes": 330309
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-e95905feddb776eb.jpg",
-      "bytes": 295109
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-9405421ecbad4cb9.jpg",
-      "bytes": 274108
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-a96b7cfe338f6a65.jpg",
-      "bytes": 335542
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-6d315e2402e18e38.jpg",
-      "bytes": 328136
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-86ecd13cb1670b5b.jpg",
-      "bytes": 327299
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-54cd9b08dd4ee393.jpg",
-      "bytes": 321899
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-272056cb37aaa87f.jpg",
-      "bytes": 268741
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "from": "google-02061404e8c33172.jpg",
-      "bytes": 412621
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "from": "google-f024cd26cb5a31d0.jpg",
-      "bytes": 270094
-    }
-  ],
-  "skipped": [
-    "classification read: 22 verdicts",
-    "staged 15 harvest photos",
-    "refused_unlooked:google-161d1e40752ebf25.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-34a9c6ee18134bde.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d5de8f1315056832.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-d7a31b0b9cb2694b.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-02061404e8c33172.jpg:road_no_landscape",
-    "hero_cand_refuse:google-a96b7cfe338f6a65.jpg:road_no_landscape",
-    "hero_cand_refuse:google-a092eeb8e0314fea.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-6d315e2402e18e38.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-86ecd13cb1670b5b.jpg:road_no_landscape",
-    "hero_cand_refuse:google-54cd9b08dd4ee393.jpg:road_no_landscape",
-    "hero_cand_refuse:google-e95905feddb776eb.jpg:road_no_landscape",
-    "hero_cand_refuse:google-9405421ecbad4cb9.jpg:portrait_aspect_hero_refuse",
-    "hero_cand_refuse:google-272056cb37aaa87f.jpg:road_no_landscape",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 11,
-  "refused_by_class": 4,
-  "altBySlot": {
-    "photo-hero.jpg": "Work van with the front clip removed and the engine exposed across the full width of the bay",
-    "photo-about.jpg": "Two of the crew working together over an open engine bay, one steadying the job while the other makes the cut",
-    "photo-card-about.jpg": "Technician working at the open front of a truck, the coolant bottle and pipework exposed in front of him",
-    "photo-card-services.jpg": "Close view of hands working an impact gun down in an engine bay among the hoses and wiring",
-    "photo-card-reviews.jpg": "Saloon with the front end stripped back to the subframe, the engine drawn forward and the bonnet propped high",
-    "photo-card-photos.jpg": "Technician up over the wing of a pickup on a creeper board, reaching down into the back of the engine bay",
-    "photo-ctaband.jpg": "Transmission stripped down on the shop floor with the case, shafts, drums and clutch packs laid out in order",
-    "photo-quoteband.jpg": "Compact saloon on the forecourt with the bonnet up, the engine bay open for the fault to be traced",
-    "photo-gallery-1.jpg": "Truck engine opened right down to the cylinder heads, the intake and covers off and the valvetrain exposed",
-    "photo-gallery-2.jpg": "The shop frontage with the name across the parapet, the bay doors open and motorcycles parked out front",
-    "photo-gallery-3.jpg": "The roadside sign carrying the business name and number, standing at the entrance with the shop behind"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-30T16:47:30.282Z",
+ "slug": "rjautomotiveburlingtonalamancenc",
+ "wired": [
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

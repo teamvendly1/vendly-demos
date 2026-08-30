@@ -859,3 +859,9 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
 .card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
 .card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
 /* VENDLY-CARDCROP-FIX-20260824 END */
+
+/* HEADER MARK PLATE - ghost 49.4% on #FFFFFF -> 7.1% on #14140F.
+   Written by lib/mark-readability.js chooseMarkPlate(). Scoped to .logo so nav, menu sheet,
+   toggle pill and .bizmeta contrast are untouched. Remove this block only by fixing the mark. */
+header.site .logo{background:#14140F;padding:10px 16px;border-radius:12px;box-shadow:none;box-sizing:border-box}
+header.site .logo-chip{background:transparent}

@@ -1,62 +1,76 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-17T04:32:48.659Z",
+  "at": "2026-08-30T16:48:58.179Z",
   "trade": "auto-repair",
   "slotHints": {},
   "ok": false,
-  "kept": [
+  "kept": [],
+  "filled": [
     {
       "file": "photo-about.jpg",
-      "sha256": "22adb879faaf07bfb1c54e95bd5467e032a636c018704e49e514ebbb101fa8c7",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "f387fc55f332f6ac1f23a77cc65df7df8199650705a900c734ecd1ba6657c3e0",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "314eff00fd68207f19569844d8bb88b8fdd59bcc4270bf483991d2873634f950",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "804d410e3bf9c216446c42ab961780f8f8c1bf545839d56a5e54735d67b61b34",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "570972bae37eeafd3939f335da023f2912d8b2ed976c90bdb25be4d8f0db4a76",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "aeb62f67ffe6b68048545eafcbe45bf850f0754d794acba210384ed4d170a86e",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "aa4db332ba6727d9f618a8171e2e9fb84c8599d81472f59243c5f5ce1738c815",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "ef043eb2737632a8c49f688806c1fe55b653fc0aef2e8b59c138af6b9e4e25f5",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    }
-  ],
-  "filled": [
-    {
-      "file": "photo-contact.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -144,7 +158,84 @@
       "reason": "stock_gap_all_claimed",
       "family": "auto-repair",
       "service": "",
+      "fileName": "photo-about.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-card-about.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-card-photos.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-card-reviews.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-card-services.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
       "fileName": "photo-contact.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-ctaband.jpg",
+      "unclaimed_remaining": 0,
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed",
+      "family": "auto-repair",
+      "service": "",
+      "fileName": "photo-hero.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
@@ -238,8 +329,8 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 8,
-  "slots": 17,
+  "distinct": 0,
+  "slots": 16,
   "stock_provenance_rows": 0,
   "family": "auto-repair",
   "refuse_borrow": false,

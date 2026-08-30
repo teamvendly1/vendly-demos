@@ -1,102 +1,52 @@
 {
-  "schema": "vendly.autodemo.harvest-wire/1",
-  "at": "2026-08-17T04:26:45.879Z",
-  "slug": "watsonwreckertruckservicesrockinghamrichmondnc",
-  "wired": [
-    {
-      "slot": "photo-hero.jpg",
-      "from": "google-a3fdd8d8a9dd6f3c.jpg",
-      "bytes": 579023,
-      "trade_score": 3.5,
-      "reason": "hero_work_rank"
-    },
-    {
-      "slot": "photo-about.jpg",
-      "from": "google-9020faa262d034fe.jpg",
-      "bytes": 405059
-    },
-    {
-      "slot": "photo-card-about.jpg",
-      "from": "google-1e9798f2a4526959.jpg",
-      "bytes": 201251
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "from": "google-55adae366df7092f.jpg",
-      "bytes": 394175
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "from": "google-1419761d92123581.jpg",
-      "bytes": 225519
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "from": "google-27e5f7eace433ef0.jpg",
-      "bytes": 164533
-    },
-    {
-      "slot": "photo-ctaband.jpg",
-      "from": "google-55a06c5dae54f9d7.jpg",
-      "bytes": 367451
-    },
-    {
-      "slot": "photo-quoteband.jpg",
-      "from": "google-a247fbf5a34a26ce.jpg",
-      "bytes": 202419
-    },
-    {
-      "slot": "photo-gallery-1.jpg",
-      "from": "google-c583144c1dee6ffd.jpg",
-      "bytes": 130045
-    }
-  ],
-  "skipped": [
-    "classification read: 18 verdicts",
-    "staged 19 harvest photos",
-    "refused_unlooked:google-132f4bafc056c13b.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-1e5813ba46120ae2.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-3085491be8aaf81d.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-45ec69872e7dc55e.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-56c3f9fa58a3ffef.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-5b3221fcf575ebab.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-b0c7264d2a1d75e7.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-dd8123e25db2d754.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-ef97a5f9d0081af7.jpg:NEEDS_SUBJECT_LOOK",
-    "refused_unlooked:google-ff447c0ef620a024.jpg:NEEDS_SUBJECT_LOOK",
-    "hero_cand_refuse:google-9020faa262d034fe.jpg:road_no_landscape",
-    "hero_cand_refuse:google-55a06c5dae54f9d7.jpg:road_no_landscape",
-    "hero_cand_refuse:google-a247fbf5a34a26ce.jpg:road_no_landscape",
-    "hero_cand_refuse:google-1e9798f2a4526959.jpg:road_no_landscape",
-    "hero_cand_refuse:google-27e5f7eace433ef0.jpg:low_res_lt_1080",
-    "photo-gallery-2.jpg",
-    "photo-gallery-3.jpg",
-    "photo-gallery-4.jpg",
-    "photo-gallery-5.jpg",
-    "photo-gallery-6.jpg",
-    "photo-service-1.jpg",
-    "photo-service-2.jpg",
-    "photo-service-3.jpg",
-    "photo-gallery-7.jpg",
-    "photo-gallery-8.jpg",
-    "photo-gallery-9.jpg",
-    "photo-services-hero.jpg",
-    "photo-contact.jpg",
-    "photo-photos-cta.jpg",
-    "photo-reviewsband.jpg",
-    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
-  ],
-  "candidates": 9,
-  "refused_by_class": 10,
-  "altBySlot": {
-    "photo-hero.jpg": "Rotator set up on a tree-lined road with the boom raised and the outriggers run out ready to take a lift",
-    "photo-about.jpg": "The yard and workshop building seen across the open hard standing with the trucks parked down the far side",
-    "photo-card-about.jpg": "The painted company sign fixed to the block wall above the office door, carrying the name and the town",
-    "photo-card-services.jpg": "Heavy rotator in full livery caught in low evening light with the boom stowed and the marker lamps lit",
-    "photo-card-reviews.jpg": "Wrecker in the orange and white livery with the telephone number lettered the length of the body, parked on the gravel",
-    "photo-card-photos.jpg": "Two of the fleet drawn up nose out under the open canopy, boom trucks either side of the bay",
-    "photo-ctaband.jpg": "Service pickup lettered with the company name and number, parked on the yard with the fleet behind it",
-    "photo-quoteband.jpg": "Heavy rotator on the road outside the yard, its boom and outriggers folded down along the deck",
-    "photo-gallery-1.jpg": "Heavy wrecker parked inside the workshop bay with the underlift stowed and the shop equipment behind it"
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-30T16:47:52.654Z",
+ "slug": "watsonwreckertruckservicesrockinghamrichmondnc",
+ "wired": [
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
+ ],
+ "skipped": [
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }
