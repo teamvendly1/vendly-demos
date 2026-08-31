@@ -1,13 +1,37 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-30T23:24:30.797Z",
+  "at": "2026-08-31T16:16:38.007Z",
   "trade": "landscaping",
   "slotHints": {},
-  "ok": false,
+  "ok": true,
   "kept": [],
   "filled": [
     {
       "file": "photo-about.jpg",
+      "sha256": "2b63cd9079d927a7661967bb57a6e8393dbbf476e14fcb7b5f2ab53707afb642",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/vibrant-gateball-court-with-ball-and-hoop-34984887/",
+        "subject_alt": "lawn mower cutting turf",
+        "found_by_query": "lawn mower cutting turf",
+        "family": "landscaping",
+        "library_file": "landscaping-vivid-gateball-court-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:14:28.009Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 35
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
       "sha256": "fca40250ed692afa0b58b6157b9f77e57072768f453c8a79afd11810c956038a",
       "source": "stock-library",
       "provenance": {
@@ -27,55 +51,31 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
-      }
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "4c6a5f45cd37917189be14d606d1f67a226f00b8d69c88112b8b04dd6f57eba5",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/moving-a-plat-in-a-pot-12267851/",
-        "subject_alt": "mulch bed shrub planting",
-        "found_by_query": "mulch bed shrub planting",
-        "family": "landscaping",
-        "library_file": "landscaping-close-up-gardener-planting-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:56.392Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
+        "unclaimed_remaining_family_estimate": 35
       }
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "b41569bd84a181ef4fe5a2462b8b6413b4a71823e612538c066f31dbfa21aedb",
+      "sha256": "f8cd26060a5d0613564c9dfba75f849907c31146cd70880fbd024b8e159e674d",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/springtime-rural-landscape-with-blossoming-tree-32359011/",
-        "subject_alt": "landscape edging bed install",
-        "found_by_query": "landscape edging bed install",
+        "source_url": "https://www.pexels.com/photo/windmills-in-a-valley-21768279/",
+        "subject_alt": "irrigation valve box trench",
+        "found_by_query": "irrigation valve box trench",
         "family": "landscaping",
-        "library_file": "landscaping-captivating-rural-landscape-01.jpg",
+        "library_file": "landscaping-panoramic-view-lush-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:16:24.061Z",
+        "downloaded_at": "2026-08-22T22:12:49.202Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
+        "unclaimed_remaining_family_estimate": 35
       }
     },
     {
@@ -99,59 +99,35 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
+        "unclaimed_remaining_family_estimate": 35
       }
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "f8cd26060a5d0613564c9dfba75f849907c31146cd70880fbd024b8e159e674d",
+      "sha256": "4c6a5f45cd37917189be14d606d1f67a226f00b8d69c88112b8b04dd6f57eba5",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/windmills-in-a-valley-21768279/",
-        "subject_alt": "irrigation valve box trench",
-        "found_by_query": "irrigation valve box trench",
+        "source_url": "https://www.pexels.com/photo/moving-a-plat-in-a-pot-12267851/",
+        "subject_alt": "mulch bed shrub planting",
+        "found_by_query": "mulch bed shrub planting",
         "family": "landscaping",
-        "library_file": "landscaping-panoramic-view-lush-01.jpg",
+        "library_file": "landscaping-close-up-gardener-planting-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:12:49.202Z",
+        "downloaded_at": "2026-08-22T22:13:56.392Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
+        "unclaimed_remaining_family_estimate": 35
       }
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "6d31ac83ef1322e92b1df8b36be5c47934f654f4602022f51f0ab83a4019f116",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/scenic-summer-pathway-in-elazig-turkiye-32972569/",
-        "subject_alt": "flagstone walkway retaining wall",
-        "found_by_query": "flagstone walkway retaining wall",
-        "family": "landscaping",
-        "library_file": "landscaping-sunny-cobblestone-path-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:27.031Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
-      }
-    },
-    {
-      "file": "photo-ctaband.jpg",
       "sha256": "74e03192ef6ed2a5146d83ff992c96f855f1a401a6a568af5c0ec5cd1450c2b4",
       "source": "stock-library",
       "provenance": {
@@ -171,59 +147,59 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 3
+        "unclaimed_remaining_family_estimate": 35
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "812e8d8fcd8471cf48d49cff56cb8db7fdcf2eb2bbc782190299e66b7a3be27b",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/shovel-in-pile-of-gravel-stones-26925731/",
+        "subject_alt": "landscape edging bed install",
+        "found_by_query": "landscape edging bed install",
+        "family": "landscaping",
+        "library_file": "landscaping-metal-shovel-lying-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:16:25.918Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 35
       }
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "2b63cd9079d927a7661967bb57a6e8393dbbf476e14fcb7b5f2ab53707afb642",
+      "sha256": "e3fc5e5f52da841b27c58c4c243236856c10c27be0736b83694d7add5a5a86fd",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/vibrant-gateball-court-with-ball-and-hoop-34984887/",
-        "subject_alt": "lawn mower cutting turf",
-        "found_by_query": "lawn mower cutting turf",
+        "source_url": "https://www.pexels.com/photo/person-water-the-growing-green-plants-7782899/",
+        "subject_alt": "mulched garden bed suburban",
+        "found_by_query": "mulched garden bed suburban",
         "family": "landscaping",
-        "library_file": "landscaping-vivid-gateball-court-01.jpg",
+        "library_file": "landscaping-close-up-gardener-using-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:14:28.009Z",
+        "downloaded_at": "2026-08-12T16:50:19.693Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 2
+        "unclaimed_remaining_family_estimate": 34
       }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "10621995f07a9a831bb8cf552792c810ff05429b28845e7ec0221131975412fe",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/a-small-plant-with-green-leaves-growing-out-of-the-ground-27509142/",
-        "subject_alt": "mulch bed shrub planting",
-        "found_by_query": "mulch bed shrub planting",
-        "family": "landscaping",
-        "library_file": "landscaping-close-up-green-plant-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:42.581Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 1
-      }
-    },
-    {
-      "file": "photo-service-1.jpg",
       "sha256": "08f78401af9bf4cb50ca3d037b0d2ad6c9c2a5856c78ec1f6d44b2b61fdbb942",
       "source": "stock-library",
       "provenance": {
@@ -243,117 +219,182 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
+        "unclaimed_remaining_family_estimate": 33
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "abf2e168600d092357047b382b113de4c974a64a7c75778018938d29566e6eab",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/irrigation-system-in-an-agricultural-field-26903736/",
+        "subject_alt": "irrigation valve box trench",
+        "found_by_query": "irrigation valve box trench",
+        "family": "landscaping",
+        "library_file": "landscaping-vast-irrigation-system-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:12:25.045Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 32
       }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "692a6a971f3e303826f46e245171f35aa60f9b6dee937f73b217150218c34740",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/mower-28180214/",
+        "subject_alt": "lawn mower cutting turf",
+        "found_by_query": "lawn mower cutting turf",
+        "family": "landscaping",
+        "library_file": "landscaping-man-mowing-lawn-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:14:29.874Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 31
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "a378b28f0a7159d1aecf00ca9eef800f806f1bfbd024a942d2bdb826e8564777",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/charming-san-francisco-suburb-landscape-view-36672345/",
+        "subject_alt": "flagstone walkway retaining wall",
+        "found_by_query": "flagstone walkway retaining wall",
+        "family": "landscaping",
+        "library_file": "landscaping-sunny-suburban-landscape-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:13:30.056Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 30
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "da6dda50d47cd4cb87997dbd88b2edae5444312b9621023fac34559e191bcd07",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/wet-grass-near-a-sprinkler-8791454/",
+        "subject_alt": "sod install roll lawn",
+        "found_by_query": "sod install roll lawn",
+        "family": "landscaping",
+        "library_file": "landscaping-sprinkler-hydrates-vibrant-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:30:00.442Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 29
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "123c41ab1badee7b945f301a3a341a8bfe3246452e5cc2a2f0f19f124826deea",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/flowerbed-with-lush-foliage-15750344/",
+        "subject_alt": "mulch bed shrub planting",
+        "found_by_query": "mulch bed shrub planting",
+        "family": "landscaping",
+        "library_file": "landscaping-vibrant-view-dense-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:13:59.807Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "88a108ce16b48a544994b2ea47cc113734a13ba59f8973100f0b4a68b92cd46d",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/scenic-house-with-green-lawn-in-oconomowoc-wisconsin-33250038/",
+        "subject_alt": "zero turn mower lawn residential yard",
+        "found_by_query": "zero turn mower lawn residential yard",
+        "family": "landscaping",
+        "library_file": "landscaping-charming-house-surrounded-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T16:03:37.605Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 27
+      }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "da9b3cde74be54354ff4220a476ed51b1e4bd07e53262e61aab4cf1e3f2cdab8",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/close-up-of-green-shrub-in-planter-pot-34641562/",
+        "subject_alt": "mulch bed shrub planting",
+        "found_by_query": "mulch bed shrub planting",
+        "family": "landscaping",
+        "library_file": "landscaping-lush-green-shrub-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:13:50.242Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 26
+      }
     }
   ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "landscaping",
-      "fileName": "photo-service-2.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "landscaping",
-      "fileName": "photo-service-3.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "landscaping",
-      "fileName": "photo-service-4.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "landscaping",
-      "fileName": "photo-service-5.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "landscaping",
-      "fileName": "photo-service-6.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed_or_avoided",
-      "family": "landscaping",
-      "fileName": "photo-services-hero.jpg",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
-    }
-  ],
-  "distinct": 10,
+  "gaps": [],
+  "distinct": 16,
   "slots": 16,
-  "stock_provenance_rows": 10,
+  "stock_provenance_rows": 16,
   "family": "landscaping",
   "refuse_borrow": false,
   "provenance_ok": true
