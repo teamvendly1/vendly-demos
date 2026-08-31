@@ -222,7 +222,8 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-footer li a{display:inline-block;padding:4px 0}
+/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
 .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#3C61F6}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click

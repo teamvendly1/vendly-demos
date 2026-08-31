@@ -222,7 +222,16 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-footer li a{display:inline-block;padding:4px 0}
+/* ROOT-CAUSE FIX 2026-08-30: was display:inline-block;padding:4px 0 only, which rendered at
+   32.75px (footer's inherited line-height:1.65 unitless multiplier x its own 15px font-size =
+   24.75px line box, + 8px padding = 32.75px, measured on-device as 33px). That was BELOW the
+   40px hard-audit-gate floor and Jacob's 44px ADA tap-target standard, on every footer nav link
+   (Contact/Menu/Services), on every page, of every demo built from this mold - the single
+   corpus-wide source of ~42+ of ~44-46 tap-target failures per demo. min-height forces a real
+   44px box regardless of any future line-height/font-size change elsewhere on the page (global
+   *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
+   keeps the text vertically centered inside that taller box instead of shifting up. */
+footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
 .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:{{MUTED_BRAND}}}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click

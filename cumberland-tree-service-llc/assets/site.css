@@ -170,7 +170,8 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8FB4E4;margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-footer li a{display:inline-block;padding:4px 0}
+/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
 .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#6DC57E}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
@@ -457,3 +458,9 @@ footer{position:relative;z-index:1}
 .card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
 .card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
 /* VENDLY-CARDCROP-FIX-20260824 END */
+
+/* HEADER MARK PLATE - ghost 100.0% on #1C4524 -> 0.0% on #14140F.
+   Written by lib/mark-readability.js chooseMarkPlate(). Scoped to .logo so nav, menu sheet,
+   toggle pill and .bizmeta contrast are untouched. Remove this block only by fixing the mark. */
+header.site .logo{background:#14140F;padding:10px 16px;border-radius:12px;box-shadow:none;box-sizing:border-box}
+header.site .logo-chip{background:transparent}
