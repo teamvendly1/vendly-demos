@@ -2,59 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "wilsonelectricalservicellc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#22190E",
+  "brand_input": "#2B4C7E",
   "palette": {
-    "BRAND": "#22190E",
-    "PRIMARY": "#45321C",
-    "PRIMARY_DK": "#332515",
-    "PRIMARY_MID": "#533D22",
-    "ACCENT": "#6C502D",
-    "ACCENT_DK": "#4C381F",
-    "ACCENT_LT": "#98703E",
-    "ON_DARK": "#E7D8C5",
-    "MENU_INK": "#21180D",
-    "TINT_1": "#F0E7DB",
-    "TINT_2": "#F5EEE6",
-    "TINT_3": "#EDE2D4",
-    "TINT_4": "#EFE4D7",
-    "LINE_2": "#E1CEB7",
-    "MUTED_BRAND": "#C39D6F",
-    "MIST": "#FAF6F2",
-    "LINE": "#EADDCC",
-    "PRIMARY_RGB": "69,50,28",
-    "ACCENT_RGB": "108,80,45",
-    "SCRIM_RGB": "83,61,34",
-    "SCRIM2_RGB": "51,37,21",
-    "MENU_INK_RGB": "33,24,13",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#2B4C7E",
+    "PRIMARY": "#192C48",
+    "PRIMARY_DK": "#122035",
+    "PRIMARY_MID": "#1E3557",
+    "ACCENT": "#274572",
+    "ACCENT_DK": "#1B3050",
+    "ACCENT_LT": "#3760A0",
+    "ON_DARK": "#C2D2EA",
+    "MENU_INK": "#0C1522",
+    "TINT_1": "#D9E3F2",
+    "TINT_2": "#E4EBF6",
+    "TINT_3": "#D1DDEF",
+    "TINT_4": "#D5E0F1",
+    "LINE_2": "#B3C7E5",
+    "MUTED_BRAND": "#678FCB",
+    "MIST": "#F2F5FA",
+    "LINE": "#CAD8ED",
+    "PRIMARY_RGB": "25,44,72",
+    "ACCENT_RGB": "39,69,114",
+    "SCRIM_RGB": "30,53,87",
+    "SCRIM2_RGB": "18,32,53",
+    "MENU_INK_RGB": "12,21,34"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 12.17,
+      "ratio": 14.05,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 7.44,
+      "ratio": 9.63,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.71,
+      "ratio": 9.16,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 17.48,
+      "ratio": 18.32,
       "pass": true
     },
     {
       "pair": "accent as kicker text on mist",
-      "ratio": 6.92,
+      "ratio": 8.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #2B4C7E"
+  ]
 }

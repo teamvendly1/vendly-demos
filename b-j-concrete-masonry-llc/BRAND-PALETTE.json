@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "b-j-concrete-masonry-llc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#393519",
+  "brand_input": "#2B4C7E",
   "palette": {
-    "BRAND": "#393519",
-    "PRIMARY": "#433F1E",
-    "PRIMARY_DK": "#322E16",
-    "PRIMARY_MID": "#524C24",
-    "ACCENT": "#6A632F",
-    "ACCENT_DK": "#4A4521",
-    "ACCENT_LT": "#958A41",
-    "ON_DARK": "#E6E2C6",
-    "MENU_INK": "#201E0E",
-    "TINT_1": "#EFEDDC",
-    "TINT_2": "#F4F2E6",
-    "TINT_3": "#ECE9D4",
-    "TINT_4": "#EEEBD8",
-    "LINE_2": "#E0DBB8",
-    "MUTED_BRAND": "#C1B771",
-    "MIST": "#FAF9F3",
-    "LINE": "#E9E6CD",
-    "PRIMARY_RGB": "67,63,30",
-    "ACCENT_RGB": "106,99,47",
-    "SCRIM_RGB": "82,76,36",
-    "SCRIM2_RGB": "50,46,22",
-    "MENU_INK_RGB": "32,30,14",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#2B4C7E",
+    "PRIMARY": "#192C48",
+    "PRIMARY_DK": "#122035",
+    "PRIMARY_MID": "#1E3557",
+    "ACCENT": "#274572",
+    "ACCENT_DK": "#1B3050",
+    "ACCENT_LT": "#3760A0",
+    "ON_DARK": "#C2D2EA",
+    "MENU_INK": "#0C1522",
+    "TINT_1": "#D9E3F2",
+    "TINT_2": "#E4EBF6",
+    "TINT_3": "#D1DDEF",
+    "TINT_4": "#D5E0F1",
+    "LINE_2": "#B3C7E5",
+    "MUTED_BRAND": "#678FCB",
+    "MIST": "#F2F5FA",
+    "LINE": "#CAD8ED",
+    "PRIMARY_RGB": "25,44,72",
+    "ACCENT_RGB": "39,69,114",
+    "SCRIM_RGB": "30,53,87",
+    "SCRIM2_RGB": "18,32,53",
+    "MENU_INK_RGB": "12,21,34"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 10.67,
+      "ratio": 14.05,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 6.11,
+      "ratio": 9.63,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.16,
+      "ratio": 9.16,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 16.75,
+      "ratio": 18.32,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #2B4C7E"
+  ]
 }

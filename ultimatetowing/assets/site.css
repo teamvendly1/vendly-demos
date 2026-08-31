@@ -2,14 +2,14 @@
 html{scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-  --blue:#595240;
+  --blue:#595140;
   --blue-dk:#383429;
-  --blue-lt:#7D735A;
-  --red:#595240;
+  --blue-lt:#7D725A;
+  --red:#595140;
   --paper:#FFFFFF;
   --mist:#F8F7F5;
-  --ink:#1B1913;
-  --muted:#AAA188;
+  --ink:#1B1813;
+  --muted:#AAA088;
   --brand:#383429;
   --line:#E1DED5;
   --radius:16px;
@@ -52,10 +52,10 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 .pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(89,82,64,.7)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(89,81,64,.7)}
 .btn-red:hover{background:#2A261E}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(89,82,64,.7)}
-.btn-blue:hover{background:#3E3A2D}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(89,81,64,.7)}
+.btn-blue:hover{background:#3E392D}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
 .btn-ghost:hover{border-color:var(--blue)}
 
@@ -72,8 +72,8 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 */
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:0;
 background:
-  linear-gradient(90deg,rgba(68,63,49,.78) 0%,rgba(68,63,49,.62) 34%,rgba(68,63,49,.38) 58%,rgba(68,63,49,.14) 78%,rgba(68,63,49,0) 100%),
-  linear-gradient(180deg,rgba(68,63,49,.45) 0%,rgba(68,63,49,.18) 42%,rgba(68,63,49,.42) 100%)}
+  linear-gradient(90deg,rgba(68,62,49,.78) 0%,rgba(68,62,49,.62) 34%,rgba(68,62,49,.38) 58%,rgba(68,62,49,.14) 78%,rgba(68,62,49,0) 100%),
+  linear-gradient(180deg,rgba(68,62,49,.45) 0%,rgba(68,62,49,.18) 42%,rgba(68,62,49,.42) 100%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(28px,4.5vw,56px) 0 clamp(18px,3vw,36px);background:transparent}
 /*
   HERO GAP FIX2 (2026-08-12): prior 104px sticky clearance WAS the ~275px empty driveway slab.
@@ -139,7 +139,7 @@ section.mist{background:var(--mist)}
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--brand)}
-.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(89,82,64,.8)}
+.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(89,81,64,.8)}
 .icn svg{stroke:#fff}
 /* Explore cards use real photographs, never person/asterisk/camera glyphs. */
 .card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
@@ -191,7 +191,7 @@ section.mist{background:var(--mist)}
 .hrow span{color:var(--muted)}
 .afterhours{background:var(--blue-dk);color:#EAE7E1;border-radius:var(--radius);padding:29px 26px}
 .afterhours h3{color:#fff}
-.afterhours p{margin:0 0 20px;font-size:15.5px;color:#D4D0C4}
+.afterhours p{margin:0 0 20px;font-size:15.5px;color:#D4CFC4}
 
 /* area */
 .areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
@@ -216,7 +216,7 @@ textarea{min-height:112px;resize:vertical}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
 
-footer{background:var(--blue-dk);color:#D4D0C4;padding:56px 0 30px;font-size:15px}
+footer{background:var(--blue-dk);color:#D4CFC4;padding:56px 0 30px;font-size:15px}
 footer a{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
@@ -224,7 +224,7 @@ footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
 /* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#AAA188}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#AAA088}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -277,7 +277,7 @@ footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
-.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#443F31;color:#fff;outline:none}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#443E31;color:#fff;outline:none}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
@@ -420,8 +420,8 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(56,52,41,.72) 0%,rgba(56,52,41,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#E5E3DB;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#AAA188;margin-top:14px;margin-bottom:0}
+.ctaband p{color:#E5E2DB;max-width:54ch;margin:0 auto 18px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#AAA088;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
@@ -528,18 +528,18 @@ header.site .navtoggle svg{stroke:#383429!important}
 header.site .navtoggle .navtoggle-text{color:#383429!important}
 .hero h1 em{color:#DDD9D0!important}
 .btn-red:hover{background:#2A261E}
-.btn-blue:hover{background:#3E3A2D}
+.btn-blue:hover{background:#3E392D}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
    BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #E8E5DE, which nearly
    vanished once the header itself could also be white/pale (see HEADER_BG above). */
-header.site .navtoggle{background:#FFFFFF !important;color:#1B1913 !important;border:1px solid rgba(16,23,36,.22) !important}
-header.site .navtoggle svg{stroke:#1B1913 !important}
-header.site .navtoggle .navtoggle-text{color:#1B1913 !important;opacity:1 !important}
-header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(27,25,19,.18)}
-header.site .sitemenu a{color:#1B1913 !important;background:#FFFFFF !important;opacity:1 !important}
-header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#F0EFEA !important;color:#383429 !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#1B1813 !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle svg{stroke:#1B1813 !important}
+header.site .navtoggle .navtoggle-text{color:#1B1813 !important;opacity:1 !important}
+header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(27,24,19,.18)}
+header.site .sitemenu a{color:#1B1813 !important;background:#FFFFFF !important;opacity:1 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#F0EEEA !important;color:#383429 !important}
 /* Hero copy sits on photograph + full-bleed gradient only. Bubble/panel KILLED 2026-08-12. */
 .hero-inner{isolation:isolate;background:transparent}
 .hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
@@ -647,8 +647,8 @@ footer{position:relative;z-index:1}
 .contact-shot:empty{display:none}
 /* Trade-visible hero that needs a darker type band (not a darker photo) */
 .hero.hero-darken-band::after{background:
-  linear-gradient(90deg,rgba(68,63,49,.90) 0%,rgba(68,63,49,.78) 36%,rgba(68,63,49,.48) 58%,rgba(68,63,49,.18) 78%,rgba(68,63,49,0) 100%),
-  linear-gradient(180deg,rgba(68,63,49,.58) 0%,rgba(68,63,49,.28) 42%,rgba(68,63,49,.52) 100%)}
+  linear-gradient(90deg,rgba(68,62,49,.90) 0%,rgba(68,62,49,.78) 36%,rgba(68,62,49,.48) 58%,rgba(68,62,49,.18) 78%,rgba(68,62,49,0) 100%),
+  linear-gradient(180deg,rgba(68,62,49,.58) 0%,rgba(68,62,49,.28) 42%,rgba(68,62,49,.52) 100%)}
 
 /* Contact address maps link (pattern A) - visible focus, full address is the link text */
 a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}

@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "rosewoodautoanddieselrepairllc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#36241F",
+  "brand_input": "#123A5E",
   "palette": {
-    "BRAND": "#36241F",
-    "PRIMARY": "#3E2923",
-    "PRIMARY_DK": "#2D1E1A",
-    "PRIMARY_MID": "#4B322B",
-    "ACCENT": "#614138",
-    "ACCENT_DK": "#442D27",
-    "ACCENT_LT": "#885B4E",
-    "ON_DARK": "#E1D0CB",
-    "MENU_INK": "#1D1311",
-    "TINT_1": "#ECE2DF",
-    "TINT_2": "#F2EAE8",
-    "TINT_3": "#E9DCD8",
-    "TINT_4": "#EBDFDB",
-    "LINE_2": "#DAC4BE",
-    "MUTED_BRAND": "#B5897D",
-    "MIST": "#F8F5F4",
-    "LINE": "#E5D6D2",
-    "PRIMARY_RGB": "62,41,35",
-    "ACCENT_RGB": "97,65,56",
-    "SCRIM_RGB": "75,50,43",
-    "SCRIM2_RGB": "45,30,26",
-    "MENU_INK_RGB": "29,19,17",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#123A5E",
+    "PRIMARY": "#103251",
+    "PRIMARY_DK": "#0B253C",
+    "PRIMARY_MID": "#133D62",
+    "ACCENT": "#194F80",
+    "ACCENT_DK": "#11375A",
+    "ACCENT_LT": "#226FB4",
+    "ON_DARK": "#BBD8F2",
+    "MENU_INK": "#071827",
+    "TINT_1": "#D4E6F7",
+    "TINT_2": "#E1EEF9",
+    "TINT_3": "#CCE1F5",
+    "TINT_4": "#D0E4F6",
+    "LINE_2": "#A9CEEF",
+    "MUTED_BRAND": "#549DDE",
+    "MIST": "#F0F6FC",
+    "LINE": "#C3DDF4",
+    "PRIMARY_RGB": "16,50,81",
+    "ACCENT_RGB": "25,79,128",
+    "SCRIM_RGB": "19,61,98",
+    "SCRIM2_RGB": "11,37,60",
+    "MENU_INK_RGB": "7,24,39"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 13.58,
+      "ratio": 13.15,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 9.05,
+      "ratio": 8.5,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 9.11,
+      "ratio": 8.9,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 18.21,
+      "ratio": 17.96,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #123A5E"
+  ]
 }

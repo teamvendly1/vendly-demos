@@ -2,52 +2,55 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "rextowingmonroeunionnc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#380001",
+  "brand_input": "#3A0101",
   "palette": {
-    "BRAND": "#380001",
-    "PRIMARY": "#610002",
-    "PRIMARY_DK": "#470001",
-    "PRIMARY_MID": "#750002",
-    "ACCENT": "#990003",
-    "ACCENT_DK": "#6B0002",
-    "ACCENT_LT": "#D60004",
-    "ON_DARK": "#FFADAF",
-    "MENU_INK": "#2E0001",
-    "TINT_1": "#FFCCCD",
-    "TINT_2": "#FFDBDC",
-    "TINT_3": "#FFC2C3",
-    "TINT_4": "#FFC7C8",
-    "LINE_2": "#FF999B",
-    "MUTED_BRAND": "#FF3337",
+    "BRAND": "#3A0101",
+    "PRIMARY": "#5F0202",
+    "PRIMARY_DK": "#460101",
+    "PRIMARY_MID": "#730202",
+    "ACCENT": "#960303",
+    "ACCENT_DK": "#690202",
+    "ACCENT_LT": "#D30404",
+    "ON_DARK": "#FEAFAF",
+    "MENU_INK": "#2D0101",
+    "TINT_1": "#FECDCD",
+    "TINT_2": "#FEDCDC",
+    "TINT_3": "#FEC3C3",
+    "TINT_4": "#FEC8C8",
+    "LINE_2": "#FD9B9B",
+    "MUTED_BRAND": "#FC3636",
     "MIST": "#FFEDED",
-    "LINE": "#FFB8B9",
-    "PRIMARY_RGB": "97,0,2",
-    "ACCENT_RGB": "153,0,3",
-    "SCRIM_RGB": "117,0,2",
-    "SCRIM2_RGB": "71,0,1",
-    "MENU_INK_RGB": "46,0,1",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "LINE": "#FEB9B9",
+    "PRIMARY_RGB": "95,2,2",
+    "ACCENT_RGB": "150,3,3",
+    "SCRIM_RGB": "115,2,2",
+    "SCRIM2_RGB": "70,1,1",
+    "MENU_INK_RGB": "45,1,1"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 13.92,
+      "ratio": 14.04,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 8.91,
+      "ratio": 9.09,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 7.85,
+      "ratio": 8,
       "pass": true
     },
     {
       "pair": "menu ink on white",
       "ratio": 18.81,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.04,
       "pass": true
     }
   ],

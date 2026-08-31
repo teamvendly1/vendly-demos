@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "carolinacarcarekannapoliscabarrusnc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#050E1E",
+  "brand_input": "#123A5E",
   "palette": {
-    "BRAND": "#050E1E",
-    "PRIMARY": "#0E2753",
-    "PRIMARY_DK": "#0A1D3D",
-    "PRIMARY_MID": "#112F65",
-    "ACCENT": "#163D83",
-    "ACCENT_DK": "#0F2B5C",
-    "ACCENT_LT": "#1F56B8",
-    "ON_DARK": "#B9CEF3",
-    "MENU_INK": "#071227",
-    "TINT_1": "#D3E0F8",
-    "TINT_2": "#E0EAFA",
-    "TINT_3": "#CBDAF6",
-    "TINT_4": "#CFDDF7",
-    "LINE_2": "#A8C2F0",
-    "MUTED_BRAND": "#5085E2",
-    "MIST": "#F0F4FC",
-    "LINE": "#C2D4F5",
-    "PRIMARY_RGB": "14,39,83",
-    "ACCENT_RGB": "22,61,131",
-    "SCRIM_RGB": "17,47,101",
-    "SCRIM2_RGB": "10,29,61",
-    "MENU_INK_RGB": "7,18,39",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#123A5E",
+    "PRIMARY": "#103251",
+    "PRIMARY_DK": "#0B253C",
+    "PRIMARY_MID": "#133D62",
+    "ACCENT": "#194F80",
+    "ACCENT_DK": "#11375A",
+    "ACCENT_LT": "#226FB4",
+    "ON_DARK": "#BBD8F2",
+    "MENU_INK": "#071827",
+    "TINT_1": "#D4E6F7",
+    "TINT_2": "#E1EEF9",
+    "TINT_3": "#CCE1F5",
+    "TINT_4": "#D0E4F6",
+    "LINE_2": "#A9CEEF",
+    "MUTED_BRAND": "#549DDE",
+    "MIST": "#F0F6FC",
+    "LINE": "#C3DDF4",
+    "PRIMARY_RGB": "16,50,81",
+    "ACCENT_RGB": "25,79,128",
+    "SCRIM_RGB": "19,61,98",
+    "SCRIM2_RGB": "11,37,60",
+    "MENU_INK_RGB": "7,24,39"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 14.65,
+      "ratio": 13.15,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 10.35,
+      "ratio": 8.5,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 9.2,
+      "ratio": 8.9,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 18.67,
+      "ratio": 17.96,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #123A5E"
+  ]
 }

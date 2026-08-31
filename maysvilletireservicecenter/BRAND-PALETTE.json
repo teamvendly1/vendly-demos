@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "maysvilletireservicecenter",
   "mold": "_template-skipper-blank",
-  "brand_input": "#393028",
+  "brand_input": "#123A5E",
   "palette": {
-    "BRAND": "#393028",
-    "PRIMARY": "#393028",
-    "PRIMARY_DK": "#2A231D",
-    "PRIMARY_MID": "#453A30",
-    "ACCENT": "#5A4C3F",
-    "ACCENT_DK": "#3F352C",
-    "ACCENT_LT": "#7E6A58",
-    "ON_DARK": "#DDD6CF",
-    "MENU_INK": "#1B1713",
-    "TINT_1": "#EAE5E1",
-    "TINT_2": "#F0EDEA",
-    "TINT_3": "#E6E0DB",
-    "TINT_4": "#E8E3DE",
-    "LINE_2": "#D5CBC3",
-    "MUTED_BRAND": "#AB9887",
-    "MIST": "#F8F6F5",
-    "LINE": "#E2DBD5",
-    "PRIMARY_RGB": "57,48,40",
-    "ACCENT_RGB": "90,76,63",
-    "SCRIM_RGB": "69,58,48",
-    "SCRIM2_RGB": "42,35,29",
-    "MENU_INK_RGB": "27,23,19",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#123A5E",
+    "PRIMARY": "#103251",
+    "PRIMARY_DK": "#0B253C",
+    "PRIMARY_MID": "#133D62",
+    "ACCENT": "#194F80",
+    "ACCENT_DK": "#11375A",
+    "ACCENT_LT": "#226FB4",
+    "ON_DARK": "#BBD8F2",
+    "MENU_INK": "#071827",
+    "TINT_1": "#D4E6F7",
+    "TINT_2": "#E1EEF9",
+    "TINT_3": "#CCE1F5",
+    "TINT_4": "#D0E4F6",
+    "LINE_2": "#A9CEEF",
+    "MUTED_BRAND": "#549DDE",
+    "MIST": "#F0F6FC",
+    "LINE": "#C3DDF4",
+    "PRIMARY_RGB": "16,50,81",
+    "ACCENT_RGB": "25,79,128",
+    "SCRIM_RGB": "19,61,98",
+    "SCRIM2_RGB": "11,37,60",
+    "MENU_INK_RGB": "7,24,39"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 12.9,
+      "ratio": 13.15,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 8.27,
+      "ratio": 8.5,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.97,
+      "ratio": 8.9,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 17.82,
+      "ratio": 17.96,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #123A5E"
+  ]
 }

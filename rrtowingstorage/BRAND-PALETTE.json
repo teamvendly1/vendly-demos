@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "rrtowingstorage",
   "mold": "_template-skipper-blank",
-  "brand_input": "#3B4024",
+  "brand_input": "#2B4C7E",
   "palette": {
-    "BRAND": "#3B4024",
-    "PRIMARY": "#393E23",
-    "PRIMARY_DK": "#2A2E1A",
-    "PRIMARY_MID": "#454B2A",
-    "ACCENT": "#5A6237",
-    "ACCENT_DK": "#3F4527",
-    "ACCENT_LT": "#7E894D",
-    "ON_DARK": "#DEE2CB",
-    "MENU_INK": "#1B1D11",
-    "TINT_1": "#EAEDDE",
-    "TINT_2": "#F0F2E8",
-    "TINT_3": "#E6E9D8",
-    "TINT_4": "#E8EBDB",
-    "LINE_2": "#D5DABE",
-    "MUTED_BRAND": "#ABB67C",
-    "MIST": "#F8F9F4",
-    "LINE": "#E2E5D1",
-    "PRIMARY_RGB": "57,62,35",
-    "ACCENT_RGB": "90,98,55",
-    "SCRIM_RGB": "69,75,42",
-    "SCRIM2_RGB": "42,46,26",
-    "MENU_INK_RGB": "27,29,17",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#2B4C7E",
+    "PRIMARY": "#192C48",
+    "PRIMARY_DK": "#122035",
+    "PRIMARY_MID": "#1E3557",
+    "ACCENT": "#274572",
+    "ACCENT_DK": "#1B3050",
+    "ACCENT_LT": "#3760A0",
+    "ON_DARK": "#C2D2EA",
+    "MENU_INK": "#0C1522",
+    "TINT_1": "#D9E3F2",
+    "TINT_2": "#E4EBF6",
+    "TINT_3": "#D1DDEF",
+    "TINT_4": "#D5E0F1",
+    "LINE_2": "#B3C7E5",
+    "MUTED_BRAND": "#678FCB",
+    "MIST": "#F2F5FA",
+    "LINE": "#CAD8ED",
+    "PRIMARY_RGB": "25,44,72",
+    "ACCENT_RGB": "39,69,114",
+    "SCRIM_RGB": "30,53,87",
+    "SCRIM2_RGB": "18,32,53",
+    "MENU_INK_RGB": "12,21,34"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 11.13,
+      "ratio": 14.05,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 6.49,
+      "ratio": 9.63,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.4,
+      "ratio": 9.16,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 17.07,
+      "ratio": 18.32,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #2B4C7E"
+  ]
 }

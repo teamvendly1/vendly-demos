@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "mechotreeservicestatesvilleiredellnc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#1F2A14",
+  "brand_input": "#2B4C7E",
   "palette": {
-    "BRAND": "#1F2A14",
-    "PRIMARY": "#30421F",
-    "PRIMARY_DK": "#243017",
-    "PRIMARY_MID": "#3B4F26",
-    "ACCENT": "#4D6831",
-    "ACCENT_DK": "#364923",
-    "ACCENT_LT": "#6B9145",
-    "ON_DARK": "#D6E5C8",
-    "MENU_INK": "#171F0F",
-    "TINT_1": "#E6EFDC",
-    "TINT_2": "#EDF3E7",
-    "TINT_3": "#E0EBD6",
-    "TINT_4": "#E3EDD9",
-    "LINE_2": "#CCDEBA",
-    "MUTED_BRAND": "#99BD75",
-    "MIST": "#F6F9F3",
-    "LINE": "#DBE8CF",
-    "PRIMARY_RGB": "48,66,31",
-    "ACCENT_RGB": "77,104,49",
-    "SCRIM_RGB": "59,79,38",
-    "SCRIM2_RGB": "36,48,23",
-    "MENU_INK_RGB": "23,31,15",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#2B4C7E",
+    "PRIMARY": "#192C48",
+    "PRIMARY_DK": "#122035",
+    "PRIMARY_MID": "#1E3557",
+    "ACCENT": "#274572",
+    "ACCENT_DK": "#1B3050",
+    "ACCENT_LT": "#3760A0",
+    "ON_DARK": "#C2D2EA",
+    "MENU_INK": "#0C1522",
+    "TINT_1": "#D9E3F2",
+    "TINT_2": "#E4EBF6",
+    "TINT_3": "#D1DDEF",
+    "TINT_4": "#D5E0F1",
+    "LINE_2": "#B3C7E5",
+    "MUTED_BRAND": "#678FCB",
+    "MIST": "#F2F5FA",
+    "LINE": "#CAD8ED",
+    "PRIMARY_RGB": "25,44,72",
+    "ACCENT_RGB": "39,69,114",
+    "SCRIM_RGB": "30,53,87",
+    "SCRIM2_RGB": "18,32,53",
+    "MENU_INK_RGB": "12,21,34"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 10.91,
+      "ratio": 14.05,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 6.29,
+      "ratio": 9.63,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.26,
+      "ratio": 9.16,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 16.94,
+      "ratio": 18.32,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #2B4C7E"
+  ]
 }

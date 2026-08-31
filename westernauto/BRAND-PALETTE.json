@@ -8,7 +8,7 @@
     "PRIMARY": "#605701",
     "PRIMARY_DK": "#474001",
     "PRIMARY_MID": "#746901",
-    "ACCENT": "#847702",
+    "ACCENT": "#837602",
     "ACCENT_DK": "#6A6001",
     "ACCENT_LT": "#D4C003",
     "ON_DARK": "#FEF6AE",
@@ -22,12 +22,10 @@
     "MIST": "#FFFDED",
     "LINE": "#FEF7B8",
     "PRIMARY_RGB": "96,87,1",
-    "ACCENT_RGB": "132,119,2",
+    "ACCENT_RGB": "131,118,2",
     "SCRIM_RGB": "116,105,1",
     "SCRIM2_RGB": "71,64,1",
-    "MENU_INK_RGB": "45,41,1",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "MENU_INK_RGB": "45,41,1"
   },
   "contrast": [
     {
@@ -37,7 +35,7 @@
     },
     {
       "pair": "white on accent",
-      "ratio": 4.54,
+      "ratio": 4.61,
       "pass": true
     },
     {
@@ -49,9 +47,14 @@
       "pair": "menu ink on white",
       "ratio": 14.69,
       "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 4.5,
+      "pass": true
     }
   ],
   "notes": [
-    "contrast repair applied: white label on accent button = 3.56:1 (needs 4.5)"
+    "contrast repair applied: white label on accent button = 3.56:1 (needs 4.5); accent as kicker text on the mist band = 3.48:1 (needs 4.5)"
   ]
 }

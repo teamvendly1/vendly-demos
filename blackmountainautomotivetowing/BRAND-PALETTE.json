@@ -2,54 +2,59 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "blackmountainautomotivetowing",
   "mold": "_template-skipper-blank",
-  "brand_input": "#1F2513",
+  "brand_input": "#123A5E",
   "palette": {
-    "BRAND": "#1F2513",
-    "PRIMARY": "#364021",
-    "PRIMARY_DK": "#282F18",
-    "PRIMARY_MID": "#414E28",
-    "ACCENT": "#556534",
-    "ACCENT_DK": "#3B4724",
-    "ACCENT_LT": "#778E49",
-    "ON_DARK": "#DBE3C9",
-    "MENU_INK": "#191E10",
-    "TINT_1": "#E8EEDD",
-    "TINT_2": "#EFF3E7",
-    "TINT_3": "#E4EAD7",
-    "TINT_4": "#E6ECDA",
-    "LINE_2": "#D1DCBC",
-    "MUTED_BRAND": "#A4BA78",
-    "MIST": "#F7F9F3",
-    "LINE": "#DFE7D0",
-    "PRIMARY_RGB": "54,64,33",
-    "ACCENT_RGB": "85,101,52",
-    "SCRIM_RGB": "65,78,40",
-    "SCRIM2_RGB": "40,47,24",
-    "MENU_INK_RGB": "25,30,16",
-    "HEADER_BG": "#FFFFFF",
-    "HEADER_BORDER": "rgba(16,23,36,.22)"
+    "BRAND": "#123A5E",
+    "PRIMARY": "#103251",
+    "PRIMARY_DK": "#0B253C",
+    "PRIMARY_MID": "#133D62",
+    "ACCENT": "#194F80",
+    "ACCENT_DK": "#11375A",
+    "ACCENT_LT": "#226FB4",
+    "ON_DARK": "#BBD8F2",
+    "MENU_INK": "#071827",
+    "TINT_1": "#D4E6F7",
+    "TINT_2": "#E1EEF9",
+    "TINT_3": "#CCE1F5",
+    "TINT_4": "#D0E4F6",
+    "LINE_2": "#A9CEEF",
+    "MUTED_BRAND": "#549DDE",
+    "MIST": "#F0F6FC",
+    "LINE": "#C3DDF4",
+    "PRIMARY_RGB": "16,50,81",
+    "ACCENT_RGB": "25,79,128",
+    "SCRIM_RGB": "19,61,98",
+    "SCRIM2_RGB": "11,37,60",
+    "MENU_INK_RGB": "7,24,39"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 10.98,
+      "ratio": 13.15,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 6.37,
+      "ratio": 8.5,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.29,
+      "ratio": 8.9,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 17.01,
+      "ratio": 17.96,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.81,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "brand colour rejected (unparseable), fell back to trade-family or neutral #123A5E"
+  ]
 }
