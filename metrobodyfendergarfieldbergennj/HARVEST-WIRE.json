@@ -1,54 +1,88 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-22T22:47:57.694Z",
+ "at": "2026-08-30T23:50:10.777Z",
  "slug": "metrobodyfendergarfieldbergennj",
  "wired": [
   {
+   "slot": "photo-hero.jpg",
+   "from": "fb-06.jpg",
+   "bytes": 211609,
+   "letterbox_stripped": null,
+   "trade_score": 1.5,
+   "reason": "hero_work_rank"
+  },
+  {
    "slot": "photo-card-about.jpg",
-   "from": "fb-02.jpg",
-   "bytes": 168982,
-   "letterbox_stripped": null
+   "from": "fb-04.jpg",
+   "bytes": 165609,
+   "smart_crop": true,
+   "src": "fb-04.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 85,
+   "detail_score": 25.095,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-06.jpg",
-   "bytes": 12265,
+   "from": "fb-10.jpg",
+   "bytes": 178940,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 10556,
-   "letterbox_stripped": null
+   "from": "fb-02.jpg",
+   "bytes": 159332,
+   "smart_crop": true,
+   "src": "fb-02.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x720",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 23.51,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 10476,
-   "letterbox_stripped": null
+   "from": "fb-09.jpg",
+   "bytes": 153808,
+   "smart_crop": true,
+   "src": "fb-09.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 93,
+   "detail_score": 25.742,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "fb-05.jpg",
-   "bytes": 10193,
-   "letterbox_stripped": null
+   "bytes": 97249,
+   "smart_crop": true,
+   "src": "fb-05.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 23.704,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 9911,
+   "from": "fb-03.jpg",
+   "bytes": 147233,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
    "from": "fb-07.jpg",
-   "bytes": 7581,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 7228,
+   "bytes": 65906,
    "letterbox_stripped": null
   },
   {
@@ -61,16 +95,14 @@
  ],
  "skipped": [
   "classification read: 10 verdicts",
-  "staged 10 harvest photos",
+  "staged 10 harvest photos from fb-photos",
+  "refused_by_class:fb-08.jpg:reject",
+  "hero_cand_refuse:fb-04.jpg:road_no_landscape",
   "hero_cand_refuse:fb-02.jpg:road_no_landscape",
-  "hero_cand_refuse:fb-06.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-03.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-04.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-05.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-10.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-07.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-09.jpg:too_small_bytes",
-  "photo-hero.jpg: no work-visible harvest candidate",
+  "hero_cand_refuse:fb-09.jpg:ground_only_no_horizon",
+  "hero_cand_refuse:fb-05.jpg:road_no_landscape",
+  "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
+  "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
   "photo-gallery-4.jpg",
@@ -88,18 +120,25 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 8,
+ "refused_by_class": 1,
  "photo_candidates": 8,
  "altBySlot": {
-  "photo-card-about.jpg": "Red BMW 1M and gray BMW M3 parked outside Metro Body and Fender's storefront after finished work",
-  "photo-about.jpg": "Gray BMW M4 finished after body work, parked outside on a tree-lined street",
-  "photo-card-services.jpg": "Black Tesla Model Y parked outside the shop alongside other finished vehicles",
-  "photo-card-reviews.jpg": "Red BMW 1M and gray BMW M3 parked closer to the Metro Body and Fender storefront sign",
-  "photo-card-photos.jpg": "White BMW M5 finished after body work, parked outside the shop with other vehicles",
-  "photo-gallery-1.jpg": "White BMW E30 coupe, close-up front angle, parked at the shop",
-  "photo-gallery-2.jpg": "Black Nissan 370Z with custom wheels, finished after body work",
-  "photo-gallery-3.jpg": "White BMW E30 coupe with aftermarket wheels parked in the shop's lot"
- }
+  "photo-hero.jpg": "Metro Body & Fender - technician at work on site (photo 6)",
+  "photo-card-about.jpg": "Metro Body & Fender - technician at work on site (photo 4)",
+  "photo-about.jpg": "Metro Body & Fender - technician at work on site (photo 9)",
+  "photo-card-services.jpg": "Metro Body & Fender - technician at work on site (photo 2)",
+  "photo-card-reviews.jpg": "Metro Body & Fender - technician at work on site (photo 8)",
+  "photo-card-photos.jpg": "Metro Body & Fender - technician at work on site (photo 5)",
+  "photo-gallery-1.jpg": "Metro Body & Fender - technician at work on site (photo 3)",
+  "photo-gallery-2.jpg": "Metro Body & Fender - technician at work on site (photo 7)"
+ },
+ "dedupe_fixed": 5
 }

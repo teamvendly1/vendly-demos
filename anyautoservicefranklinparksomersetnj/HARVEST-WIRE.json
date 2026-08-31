@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-23T05:45:20.030Z",
+ "at": "2026-08-30T23:15:51.375Z",
  "slug": "anyautoservicefranklinparksomersetnj",
  "wired": [
   {
@@ -13,39 +13,77 @@
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 12948,
-   "letterbox_stripped": null
+   "from": "fb-07.jpg",
+   "bytes": 63979,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 31.54,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 12683,
+   "from": "fb-09.jpg",
+   "bytes": 80440,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
    "from": "fb-10.jpg",
-   "bytes": 10750,
-   "letterbox_stripped": null
+   "bytes": 60987,
+   "smart_crop": true,
+   "src": "fb-10.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 23.041,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "fb-08.jpg",
-   "bytes": 9638,
-   "letterbox_stripped": null
+   "bytes": 57670,
+   "smart_crop": true,
+   "src": "fb-08.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 22.878,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
    "from": "fb-03.jpg",
-   "bytes": 8030,
-   "letterbox_stripped": null
+   "bytes": 40494,
+   "smart_crop": true,
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 12.827,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
    "from": "fb-05.jpg",
-   "bytes": 7023,
+   "bytes": 44580,
    "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "fb-06.jpg",
+   "bytes": 25541,
+   "letterbox_stripped": "v12.4%"
   },
   {
    "slot": "logo.png",
@@ -59,15 +97,15 @@
   "classification read: 10 verdicts",
   "staged 10 harvest photos from fb-photos",
   "refused_by_class:fb-04.jpg:reject",
-  "hero_cand_refuse:fb-02.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:fb-09.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-09.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-08.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-02.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-05.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-06.jpg:low_res_lt_960",
   "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (fb-02.jpg)",
-  "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -86,18 +124,25 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 7,
+ "candidates": 8,
  "refused_by_class": 1,
- "photo_candidates": 7,
+ "photo_candidates": 8,
  "altBySlot": {
-  "photo-hero.jpg": "Any Auto Service — technician at work on site (photo 2)",
-  "photo-card-about.jpg": "Any Auto Service — technician at work on site (photo 8)",
-  "photo-about.jpg": "Any Auto Service — technician at work on site (photo 6)",
-  "photo-card-services.jpg": "Any Auto Service — technician at work on site (photo 9)",
-  "photo-card-reviews.jpg": "Any Auto Service — technician at work on site (photo 7)",
-  "photo-card-photos.jpg": "Any Auto Service — technician at work on site (photo 3)",
-  "photo-gallery-1.jpg": "Any Auto Service — technician at work on site (photo 4)"
- }
+  "photo-hero.jpg": "Any Auto Service - technician at work on site (photo 2)",
+  "photo-card-about.jpg": "Any Auto Service - technician at work on site (photo 6)",
+  "photo-about.jpg": "Any Auto Service - technician at work on site (photo 8)",
+  "photo-card-services.jpg": "Any Auto Service - technician at work on site (photo 9)",
+  "photo-card-reviews.jpg": "Any Auto Service - technician at work on site (photo 7)",
+  "photo-card-photos.jpg": "Any Auto Service - technician at work on site (photo 3)",
+  "photo-gallery-1.jpg": "Any Auto Service - technician at work on site (photo 4)",
+  "photo-gallery-2.jpg": "Any Auto Service - technician at work on site (photo 5)"
+ },
+ "dedupe_fixed": 5
 }

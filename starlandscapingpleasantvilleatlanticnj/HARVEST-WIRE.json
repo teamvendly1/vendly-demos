@@ -1,62 +1,94 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T04:16:05.351Z",
+ "at": "2026-08-30T23:56:47.636Z",
  "slug": "starlandscapingpleasantvilleatlanticnj",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "fb-02.jpg",
-   "bytes": 203728,
+   "from": "fb-03.jpg",
+   "bytes": 251260,
    "letterbox_stripped": null,
-   "trade_score": 0,
+   "trade_score": 1.5,
    "reason": "hero_work_rank"
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 13306,
-   "letterbox_stripped": null
+   "from": "fb-07.jpg",
+   "bytes": 184723,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 31.359,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 10097,
+   "from": "fb-08.jpg",
+   "bytes": 275435,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
-   "from": "fb-05.jpg",
-   "bytes": 8453,
-   "letterbox_stripped": null
+   "from": "fb-04.jpg",
+   "bytes": 191303,
+   "smart_crop": true,
+   "src": "fb-04.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 45,
+   "detail_score": 35.259,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
-   "from": "fb-06.jpg",
-   "bytes": 9647,
-   "letterbox_stripped": null
+   "from": "fb-02.jpg",
+   "bytes": 111034,
+   "smart_crop": true,
+   "src": "fb-02.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x960",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 36.928,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-card-photos.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 12553,
-   "letterbox_stripped": null
+   "from": "fb-10.jpg",
+   "bytes": 151015,
+   "smart_crop": true,
+   "src": "fb-10.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 26.431,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 10824,
+   "from": "fb-06.jpg",
+   "bytes": 185737,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 10485,
+   "from": "fb-09.jpg",
+   "bytes": 168325,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-3.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 10145,
+   "from": "fb-05.jpg",
+   "bytes": 139521,
    "letterbox_stripped": null
   },
   {
@@ -68,18 +100,10 @@
   }
  ],
  "skipped": [
-  "classification read: 9 verdicts",
-  "staged 10 harvest photos",
+  "classification read: 10 verdicts",
+  "staged 10 harvest photos from fb-photos",
+  "hero_cand_refuse:fb-08.jpg:road_no_landscape",
   "hero_cand_refuse:fb-02.jpg:portrait_aspect_hero_refuse",
-  "hero_hold_crew_for_about:fb-04.jpg",
-  "hero_cand_refuse:fb-03.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-07.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-08.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-09.jpg:too_small_bytes",
-  "hero_hold_crew_for_about:fb-10.jpg",
-  "hero_cand_refuse:fb-06.jpg:too_small_bytes",
-  "hero_cand_refuse:fb-05.jpg:too_small_bytes",
-  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (fb-02.jpg)",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
   "photo-gallery-4.jpg",
@@ -95,23 +119,27 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-contact-hero.jpg",
-  "photo-reviews-hero.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
  "candidates": 9,
  "photo_candidates": 9,
  "altBySlot": {
-  "photo-hero.jpg": "Landscaped garden bed with mulch and plantings, company trailer parked in the lot behind it",
-  "photo-card-about.jpg": "Crew member in a hard hat using a chainsaw to cut into a large fallen tree trunk",
-  "photo-about.jpg": "Crew member cutting a large fallen tree trunk into rounds along a residential curb",
-  "photo-card-services.jpg": "Crew member working from a bucket truck lift high in a tall bare tree",
-  "photo-card-reviews.jpg": "Bucket truck lift raised into a bare tree against a blue sky during tree removal",
-  "photo-card-photos.jpg": "Stump grinding machine positioned over cut tree stumps in a residential lawn",
-  "photo-gallery-1.jpg": "Bare dirt patch left in a lawn after a tree stump was ground out and cleared",
-  "photo-gallery-2.jpg": "Freshly cut tree stump remaining in a yard bordered by woods",
-  "photo-gallery-3.jpg": "Company dump truck loaded with cut logs and yard debris parked at a job site"
- }
+  "photo-hero.jpg": "Star Landscaping - technician at work on site (photo 3)",
+  "photo-card-about.jpg": "Star Landscaping - technician at work on site (photo 7)",
+  "photo-about.jpg": "Star Landscaping - technician at work on site (photo 8)",
+  "photo-card-services.jpg": "Star Landscaping - technician at work on site (photo 4)",
+  "photo-card-reviews.jpg": "Star Landscaping - technician at work on site (photo 2)",
+  "photo-card-photos.jpg": "Star Landscaping - technician at work on site (photo 10)",
+  "photo-gallery-1.jpg": "Star Landscaping - technician at work on site (photo 6)",
+  "photo-gallery-2.jpg": "Star Landscaping - technician at work on site (photo 9)",
+  "photo-gallery-3.jpg": "Star Landscaping - technician at work on site (photo 5)"
+ },
+ "dedupe_fixed": 5
 }

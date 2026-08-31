@@ -1,5 +1,5 @@
 {
-  "at": "2026-08-30T16:22:05.363Z",
+  "at": "2026-08-30T23:21:37.694Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "electrical",
@@ -26,24 +26,14 @@
       "score_alt": "modern home interior lighting"
     },
     {
-      "file": "photo-card-services.jpg",
-      "source": "stock-library",
-      "sha256": "74ada6aad95c97d6e6650a4201f6f2c6f3a66da6e5ec9d704d8c9351eb56cc15",
-      "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": "trade work",
-      "score_alt": "modern home interior lighting"
-    },
-    {
       "file": "photo-gallery-1.jpg",
       "source": "stock-library",
-      "sha256": "25df8b67346e32e32aa45ab2de1bd66b5139d37076a8cd379274f28932c17f85",
+      "sha256": "ec2a807507baf31b7937e165f1738d2c46e197533b8f572775185f83c9512277",
       "reasons": [
         "stub"
       ],
       "service": null,
-      "score_alt": "modern home interior warm lighting"
+      "score_alt": "GFCI outlet closeup install"
     },
     {
       "file": "photo-gallery-2.jpg",
@@ -68,6 +58,16 @@
     {
       "file": "photo-gallery-4.jpg",
       "source": "stock-library",
+      "sha256": "74ada6aad95c97d6e6650a4201f6f2c6f3a66da6e5ec9d704d8c9351eb56cc15",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "modern home interior lighting"
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "stock-library",
       "sha256": "0978c3abbca93999a47c6fe6a13b7016867bc261c9c2c53c2567e48809beb576",
       "reasons": [
         "stub"
@@ -76,14 +76,14 @@
       "score_alt": "electrical panel breaker box open"
     },
     {
-      "file": "photo-gallery-5.jpg",
+      "file": "photo-gallery-7.jpg",
       "source": "stock-library",
-      "sha256": "ec2a807507baf31b7937e165f1738d2c46e197533b8f572775185f83c9512277",
+      "sha256": "25df8b67346e32e32aa45ab2de1bd66b5139d37076a8cd379274f28932c17f85",
       "reasons": [
         "stub"
       ],
       "service": null,
-      "score_alt": "GFCI outlet closeup install"
+      "score_alt": "modern home interior warm lighting"
     },
     {
       "file": "photo-photos-cta.jpg",
@@ -181,17 +181,17 @@
       "alt": "romex wire outlet install"
     },
     {
-      "file": "photo-gallery-6.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
+      "file": "photo-card-services.jpg",
+      "sha256": "153b86a47b58c9dd1655b63ce2f0936175fc6e131091ae24deb43dbcfcf9fccb",
+      "bytes": 5065,
       "alt": null,
       "restored": true,
       "reasons": [
-        "stub"
+        "tiny_fb_or_screenshotish"
       ]
     },
     {
-      "file": "photo-gallery-7.jpg",
+      "file": "photo-gallery-6.jpg",
       "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
       "bytes": 70,
       "alt": null,
@@ -241,8 +241,8 @@
     }
   ],
   "skipped": [
+    "correlate_restore_no_stock:photo-card-services.jpg",
     "correlate_restore_no_stock:photo-gallery-6.jpg",
-    "correlate_restore_no_stock:photo-gallery-7.jpg",
     "correlate_restore_no_stock:photo-gallery-8.jpg",
     "correlate_restore_no_stock:photo-gallery-9.jpg"
   ],

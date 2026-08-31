@@ -1,57 +1,89 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-24T05:08:16.535Z",
+ "at": "2026-08-30T23:36:42.129Z",
  "slug": "infiniteoutdoordesignsllclakehopatcongsussexnj",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 16123,
+   "from": "fb-07.jpg",
+   "bytes": 300648,
    "letterbox_stripped": null,
-   "trade_score": 0,
+   "trade_score": 1.5,
    "reason": "hero_work_rank"
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 15375,
-   "letterbox_stripped": null
+   "from": "fb-08.jpg",
+   "bytes": 174489,
+   "smart_crop": true,
+   "src": "fb-08.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 44.429,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 14756,
+   "from": "fb-10.jpg",
+   "bytes": 218685,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
    "from": "fb-05.jpg",
-   "bytes": 12759,
-   "letterbox_stripped": "v10.7%"
+   "bytes": 182780,
+   "smart_crop": true,
+   "src": "fb-05.jpg",
+   "letterbox_stripped": "v10.7%",
+   "src_wh": "960x857",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 3,
+   "detail_score": 35.623,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
    "from": "fb-06.jpg",
-   "bytes": 12208,
-   "letterbox_stripped": null
+   "bytes": 138601,
+   "smart_crop": true,
+   "src": "fb-06.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 33.228,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 11328,
-   "letterbox_stripped": null
+   "from": "fb-04.jpg",
+   "bytes": 165909,
+   "smart_crop": true,
+   "src": "fb-04.jpg",
+   "letterbox_stripped": "v31.9%",
+   "src_wh": "960x654",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 27.836,
+   "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 9294,
-   "letterbox_stripped": "v24.8%"
+   "from": "fb-09.jpg",
+   "bytes": 140897,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 8687,
-   "letterbox_stripped": "v31.6%"
+   "from": "fb-03.jpg",
+   "bytes": 107300,
+   "letterbox_stripped": "v25.0%"
   },
   {
    "slot": "logo.png",
@@ -65,15 +97,7 @@
   "classification read: 10 verdicts",
   "staged 10 harvest photos from fb-photos",
   "refused_by_class:fb-02.jpg:reject",
-  "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-08.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-05.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-06.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-09.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
-  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-10.jpg)",
+  "hero_cand_refuse:fb-08.jpg:road_no_landscape",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -103,14 +127,14 @@
  "refused_by_class": 1,
  "photo_candidates": 8,
  "altBySlot": {
-  "photo-hero.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 9)",
-  "photo-card-about.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 6)",
-  "photo-about.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 7)",
-  "photo-card-services.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 4)",
-  "photo-card-reviews.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 5)",
-  "photo-card-photos.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 8)",
-  "photo-gallery-1.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 2)",
-  "photo-gallery-2.jpg": "Infinite Outdoor Designs LLC — technician at work on site (photo 3)"
+  "photo-hero.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 6)",
+  "photo-card-about.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 7)",
+  "photo-about.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 9)",
+  "photo-card-services.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 4)",
+  "photo-card-reviews.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 5)",
+  "photo-card-photos.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 3)",
+  "photo-gallery-1.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 8)",
+  "photo-gallery-2.jpg": "Infinite Outdoor Designs LLC - technician at work on site (photo 2)"
  },
  "dedupe_fixed": 5
 }

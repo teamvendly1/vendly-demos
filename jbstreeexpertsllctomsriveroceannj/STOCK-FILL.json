@@ -1,19 +1,31 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-28T20:56:41.269Z",
+  "at": "2026-08-30T23:39:50.496Z",
   "trade": "tree-service",
   "slotHints": {},
   "ok": false,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "73fc5ce1d5656800456385313971acf80e4dc4f88fafe9ef17b12968d458cc8b",
+      "sha256": "1e6bcf0c472ed7adf97e221ff66d76b77e447ef6fe4ca72ff75e5cde1e1dfd1b",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "3b111f8f0a765b18c953351ab76e5c238f84c01177453739020a29102d3f308c",
+      "sha256": "86a15631d2a051f6fceec59df3d268e3d8426935f6b8b0accfe27955378dfb6a",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "177206105e584efbd256db5f9b12d981cf21eec2bbdf896065475f96778d5dba",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "6a81da63aa41dd1fc948b32a87e57de1405283f5d243e89d4865df8602f6d9a5",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
@@ -27,24 +39,6 @@
   "filled": [
     {
       "file": "photo-card-photos.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    },
-    {
-      "file": "photo-card-services.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
@@ -161,28 +155,6 @@
       "reason": "stock_gap_all_claimed",
       "family": "tree-service",
       "service": "",
-      "fileName": "photo-card-reviews.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-card-services.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
       "fileName": "photo-contact.jpg",
       "unclaimed_remaining": 0,
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
@@ -288,7 +260,7 @@
       "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
     }
   ],
-  "distinct": 3,
+  "distinct": 5,
   "slots": 16,
   "stock_provenance_rows": 0,
   "family": "tree-service",

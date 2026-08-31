@@ -1,67 +1,304 @@
 {
-  "at": "2026-08-23T05:45:29.531Z",
+  "at": "2026-08-30T23:16:37.930Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [
+  "replaced": [],
+  "kept": [
     {
       "file": "photo-about.jpg",
-      "source": "harvest-fallback",
-      "sha256": "9f149e7474d5cde9c258ba6aad43642955d525675c84b51dccb74cb75166e432",
+      "sha256": "f259dfd2df0cdfa9f7d747cfcae83ed8512d34272c74f8e920ed065ea37604d3",
+      "bytes": 80440,
+      "alt": "Any Auto Service - technician at work on site (photo 8)",
+      "restored": true,
       "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": "crew shop jobsite",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservicefranklinparksomersetnj\\fb-photos\\fb-09.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     },
     {
       "file": "photo-card-about.jpg",
-      "source": "harvest-fallback",
-      "sha256": "bf609c0a94cd60435dc0fff95cdf878aed9a78145102e416ab8080fbae02a951",
+      "sha256": "5327d6b260fe3a57f74882286dfb5572118ef7d42b3ad2cfb41b373226f39f68",
+      "bytes": 63979,
+      "alt": "Any Auto Service - technician at work on site (photo 6)",
+      "restored": true,
       "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": "crew shop jobsite",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservicefranklinparksomersetnj\\fb-photos\\fb-07.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     },
     {
       "file": "photo-card-photos.jpg",
-      "source": "harvest-fallback",
-      "sha256": "c45e781d4bc673f13c3aa3c4ba0bd0e58e4d36dd40b55974d76d51cdce4b6498",
+      "sha256": "930e0362a848bb5f5e319c8aed94e93fde085d5603e9cd4d1796b6eb11345e6d",
+      "bytes": 40494,
+      "alt": "Any Auto Service - technician at work on site (photo 3)",
+      "restored": true,
       "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservicefranklinparksomersetnj\\fb-photos\\fb-10.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     },
     {
       "file": "photo-card-reviews.jpg",
-      "source": "harvest-fallback",
-      "sha256": "a037d7e604638ea7aed6200268d0ab98bbb945bd66ffc8a9a89f5af2add1e136",
+      "sha256": "aa8e013754fd744be13df49c873f0d5b892aacbc7eca237eadba7e9d51f80530",
+      "bytes": 57670,
+      "alt": "Any Auto Service - technician at work on site (photo 7)",
+      "restored": true,
       "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservicefranklinparksomersetnj\\fb-photos\\fb-08.jpg"
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
     },
     {
       "file": "photo-card-services.jpg",
-      "source": "harvest-fallback",
-      "sha256": "5805c4799d2fd1ae198412e2f0c208653591bbfcf80b83b91e5ecd41bebb353a",
+      "sha256": "345f7a271c72bb33f152d79cbaca1dc938eb73929d35802c17909f5ba78b719a",
+      "bytes": 60987,
+      "alt": "Any Auto Service - technician at work on site (photo 9)",
+      "restored": true,
       "reasons": [
-        "tiny_fb_or_screenshotish"
-      ],
-      "service": "trade work",
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\anyautoservicefranklinparksomersetnj\\fb-photos\\fb-03.jpg"
-    }
-  ],
-  "kept": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "35fbcf6bda4405ef887c3ddecae449f1fd4f7028965f9841d97831a402e60d43",
+      "bytes": 44580,
+      "alt": "Any Auto Service - technician at work on site (photo 4)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "0b5c081172abbbe1ff9e926bae2585d03bab0115b4d3d2430ec08e95ef75d265",
+      "bytes": 47764,
+      "alt": "Any Auto Service - technician at work on site (photo 5)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
     {
       "file": "photo-hero.jpg",
       "sha256": "f1d51734c8ce8eb88997136737003a770bbf59cb0d6961705447a46d3d53be24",
-      "bytes": 56938
+      "bytes": 56938,
+      "alt": "Any Auto Service - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 8)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 6)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 3)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 7)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 4)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 5)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Any Auto Service - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
