@@ -1,6 +1,6 @@
 {
-  "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-12T19:42:41.119Z",
+  "schema": "vendly.autodemo.stock-fill/2",
+  "at": "2026-09-01T17:06:09.050Z",
   "trade": "landscaping",
   "slotHints": {
     "photo-service-1.jpg": "Irrigation",
@@ -10,172 +10,223 @@
     "photo-service-5.jpg": "Land clearing",
     "photo-service-6.jpg": "Tree removal"
   },
-  "ok": true,
+  "ledger_honesty_note": "REWRITTEN 2026-09-01 by seat claude-skipper-fix because the previous version was false and\na vault note had already repeated it to describe a client's page.\n\nWHAT THE OLD VERSION SAID:  stock_provenance_rows: 0, distinct 32, slots 32, every row\n\"harvest_or_prior\" - which a vault note turned into \"No stock photography at all. Every\nimage on our demo is his own work.\"\n\nWHAT WAS ACTUALLY TRUE, measured:\n  - 17 of the 32 rows named files DELETED by the 2026-08-14 unreferenced-image purge.\n  - 10 files on disk (the gallery set and the before/after pair) had no row at all.\n  - 11 of 12 rows that did name a live file recorded the WRONG SHA-256, because the\n    2026-08-25 smart-crop rewrote the bytes and nothing updated the ledger.\n  - The page was carrying a Dutch windmill at Keukenhof, an eastern-European lakeside\n    villa, a Pacific-Northwest culvert and a flat texture of grass.\n\nTHE LABEL WAS NOT EVEN WRONG ABOUT THE MECHANISM, WHICH IS THE POINT. Drainage1.jpg on\nthe owner's OWN published site is the same photograph as the old photo-service-3.jpg. It\ngenuinely was harvested. It is stock HE licensed. So:\n\n    HARVEST MEANS \"IT CAME OFF THEIR SITE\". IT DOES NOT MEAN \"THEY MADE IT\".\n\nThat is why this schema separates `source` (where the bytes came from) from `authorship`\n(who made the photograph). Only `authorship` may ever support a claim to a client or a\nprospect. `authorship: \"unverified\"` means NOBODY HAS CHECKED - it does not mean stock and\nit does not mean theirs, and it must never be reported as either.",
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "cdc88212a1d8ba9ad9cfb3573c1fbb7c470c09d24da75b58a85ec38b74fc6c29",
-      "source": "harvest_or_prior"
+      "file": "photo-ba-after.jpg",
+      "sha256": "36e62a57212342227ac17742ce1c81332293a83fac7ef0a3ff0505cf75727176",
+      "bytes": 515990,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
-      "file": "photo-beds.jpg",
-      "sha256": "60178e78a94e84716d85296f5da6b6245d1657339a663270ca54ed0c4cb787f9",
-      "source": "harvest_or_prior"
+      "file": "photo-ba-before.jpg",
+      "sha256": "c5cd58edb9aafa82e611f3f209f489337602c9fed9c95041719121365b195495",
+      "bytes": 656793,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "394180afd045d1bb0ca2460286236132e0914bd92c66f44230a880f50b790266",
-      "source": "harvest_or_prior"
+      "sha256": "b430042819a6591676c4f1240dba25dedab5637cd65b17b1e62e97d9a1f2d672",
+      "bytes": 98933,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "22b89ea75f1af6f01581718f6e2e7a1edd8de65b0561619bd541e8f275620580",
-      "source": "harvest_or_prior"
+      "sha256": "2be713342072f53e85fd3fa2590257975474526d65a9c38770c3c3b5381f739b",
+      "bytes": 196245,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "7bb417570ea33fb8300e226d1702a813b8f50c2656ef0492e14b3422d4b13f95",
-      "source": "harvest_or_prior"
+      "sha256": "513f23b15ccc7bd10f8a96b38bc6fd870986487b38dc43e69d324643f415c974",
+      "bytes": 165319,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "46b7b11537d6349197925f8527aaface2cfaddd49ef2fb5b60e0c775ec5bfb1a",
-      "source": "harvest_or_prior"
+      "sha256": "247df2c5ac2b341d89ddc970cee698e23249bd4c61fe96ca3ee373fc4c6412ec",
+      "bytes": 211512,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-clearing.jpg",
       "sha256": "e7333a9628e5f6f52c97a8e0adfdead0cb05a740b2f58670dfa56306864d4efb",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "9d392ca0c69eaf01d738c53d9247eaf9dac64455de0b91cf0709bff7f2cacd64",
-      "source": "harvest_or_prior"
+      "bytes": 872068,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-crew.jpg",
-      "sha256": "b32b84c52b6722b8095101aa50d4e03189d293a0064ed3f6b0afa6906d1e6356",
-      "source": "harvest_or_prior"
+      "sha256": "c4fb82aba77fcd67aeb415a9a4bc78682bbab5f75ecd434ef28b62f1028304a5",
+      "bytes": 567065,
+      "source": "harvest_owner_site",
+      "authorship": "owner_camera",
+      "evidence": "https://irp.cdn-website.com/fca059a7/dms3rep/multi/1000001181.jpg - camera-named file on the owner's own published gallery",
+      "placed": "2026-09-01 by claude-skipper-fix"
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "53d3c85a573b447558a559df30e0e37c48c1991ddc033b65827beb176264b2f4",
-      "source": "harvest_or_prior"
+      "sha256": "30bfc0004eac97f15c190d933b73f394d5e4053c142b8340b47146902bffa528",
+      "bytes": 453320,
+      "source": "harvest_owner_site",
+      "authorship": "owner_camera",
+      "evidence": "https://irp.cdn-website.com/fca059a7/dms3rep/multi/20230817_121356.jpg - camera-named file on the owner's own published gallery",
+      "placed": "2026-09-01 by claude-skipper-fix"
     },
     {
       "file": "photo-drainage.jpg",
       "sha256": "f0e7f5847eac09a085423f987fd6e9789a9b1176ce7eab0eb9e84aab90f77ed8",
-      "source": "harvest_or_prior"
+      "bytes": 568454,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "5863338e203f8618b33ce612dd6e4660ea91a8ae044147c98f8d2bd430cfb5d5",
+      "bytes": 586227,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "3aad50876d5ce3c3873ec8ee769487621b1baef0bb7b302b3f566f62fc59eeb3",
+      "bytes": 926584,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "760c493601511e88314852dfd1ddb2a5d6ac5f276912e20acb077385cc3acaa3",
+      "bytes": 815522,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "24b21d3c49f18bdd6f4aef1a58632f45adfe82e665fca13d8adcdb2f8bb65f51",
+      "bytes": 750109,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "59aab9259273cbae63d2bc78649a82861c2bb7410cdd3aa9560c262aa9be269e",
+      "bytes": 477323,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "2d6d39385475929c89bea719b64f71ba972db7c0712a093bcfc9de08f2119458",
+      "bytes": 446215,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "e75dbbeac7ed3d5c06bad0221654a49aaf1dcd2ff41210dd3ecfe1c550f327c4",
+      "bytes": 264982,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "f9a3d818dc01de81406e675d04b0c446534b2c10300bc73236680f6fa47a30a0",
+      "bytes": 537237,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-grading2.jpg",
       "sha256": "e3288801360a73baf5ee7a4b0ff1179385d2ed67433b95f60976bf3914c99073",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-gravel-drive.jpg",
-      "sha256": "f6247f302ee59a387b0f149d9ca6f7885bb0cf692a6df13082a3958c764c126d",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "c94f4a113df87121be36d7af129d46022da7ddfd9b8446bbf4440e9104b8c1bd",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-house-drive.jpg",
-      "sha256": "7b9d5edfec753186355ee95ceb49f414a1770085c5349e93d54c8a6db117f43b",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-hydrangea.jpg",
-      "sha256": "747189593009898f03f3fe32abecfe1994cb04b4738d74d460c9251b1511e16c",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-lawn-pines.jpg",
-      "sha256": "b1db7ad5ad0ce12fe7a68fb116ae21eb1038be8e00f4a6a0b28180c311ffb857",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-lawn-wide.jpg",
-      "sha256": "ae0b26b272ba3e9eae21973246011e1358530910af4f562e7ecf07951e603069",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-owner.jpg",
-      "sha256": "4066e9736de252c1bc96a37d0b4d2a7f740e02e970468f24ff8bbf6d5e127a87",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-palm-house.jpg",
-      "sha256": "6c0aef7f8ce9fe73a0ced6b0c790ae63893bf046ef79881865d71bece796a79c",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-palms.jpg",
-      "sha256": "b83f2bdbb77ad1a6c6f7d2518ebfb632c425b887eb204529fb2437e51c9de06b",
-      "source": "harvest_or_prior"
+      "bytes": 266701,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "ec4cda21bdc32f2efc27751067ff8f62b4693f31231e9b0f81fde6f2dfde3d54",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-pond.jpg",
-      "sha256": "52da28951f7629211d1e17ac265d8d5bedbc4e98bb516d68a072d6b07233e7fc",
-      "source": "harvest_or_prior"
+      "sha256": "f75e2eecb9cb6231b132026602cb48f70687b99d0ffb5e351e8ccdd07367423d",
+      "bytes": 525731,
+      "source": "harvest_owner_site",
+      "authorship": "owner_camera",
+      "evidence": "https://irp.cdn-website.com/fca059a7/dms3rep/multi/1000001924.jpg - camera-named file on the owner's own published gallery",
+      "placed": "2026-09-01 by claude-skipper-fix"
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "6bf21b0b8b89302cc61482a9ed40501a4f71b8b6aea0492f0d6c23d9d926b78c",
-      "source": "harvest_or_prior"
+      "sha256": "1cc205df2a1e4efcf337bc735295b1d551e5e282a875a729114fc7b65c5e95c3",
+      "bytes": 231446,
+      "source": "harvest_owner_site",
+      "authorship": "owner_camera",
+      "evidence": "https://irp.cdn-website.com/fca059a7/dms3rep/multi/1000002122.jpg - camera-named file on the owner's own published gallery",
+      "placed": "2026-09-01 by claude-skipper-fix"
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "a9f4e252dcf997c19c59c3f25562b3c22d6c9c58edb31616e69ef97034cc0e2f",
-      "source": "harvest_or_prior"
+      "sha256": "b3821a93d50bc915c7dc37063c9905da87591d864b0d243e7e57d403669b68de",
+      "bytes": 157084,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "7c01d2bc9eff1c1deab0805fd2159be06e5d6737669672073fb6bfb5257a3ea0",
-      "source": "harvest_or_prior"
+      "sha256": "066ea5bfbb0153c2c7a76ed4e4b34a39582e25ef342378bef2851385dc23b012",
+      "bytes": 212972,
+      "source": "harvest_owner_site",
+      "authorship": "owner_camera",
+      "evidence": "https://irp.cdn-website.com/fca059a7/dms3rep/multi/20230216_101212.jpg - camera-named file on the owner's own published gallery",
+      "placed": "2026-09-01 by claude-skipper-fix"
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "307e2adc7f4c9c375dc24d5b6df9ce18047b7b24e380043d8165085223d4a392",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "ba26225964a488a650c8883b4f89ce09849439e5ca82e7ba3434bd446b892321",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": "20a572e6301e773d4cceaf469606e513762ad2e3bbcadfa9b47f5981278dc1c8",
-      "source": "harvest_or_prior"
+      "sha256": "3fae3baeef504cb33f11c65c474756978b6eb33910a848064a6e970720dc020f",
+      "bytes": 197223,
+      "source": "harvest_or_prior",
+      "authorship": "unverified",
+      "evidence": ""
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "029be8a831e19e16e5dc271e75fd95788b8ba1026370b63d75e831b4b5b9f0b0",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-sod-crew.jpg",
-      "sha256": "dd089834861f226f6756dc2dcdae7d133fa05e2e6e71a790f3e3ad5774be1e4b",
-      "source": "harvest_or_prior"
-    },
-    {
-      "file": "photo-sod-fence.jpg",
-      "sha256": "9e06c929f6862ec1e5b9f0c7cdd15dd3508639d4ec3fc72f814893cdf9693591",
-      "source": "harvest_or_prior"
+      "sha256": "7d585ccb8ba4b16719f9ed9e30855083110cd319d072efbe2029ef1dc7527fe1",
+      "bytes": 552032,
+      "source": "harvest_owner_site",
+      "authorship": "owner_camera",
+      "evidence": "https://irp.cdn-website.com/fca059a7/dms3rep/multi/20230822_125234.jpg - camera-named file on the owner's own published gallery",
+      "placed": "2026-09-01 by claude-skipper-fix"
     }
   ],
   "filled": [],
   "gaps": [],
-  "distinct": 32,
-  "slots": 32,
-  "stock_provenance_rows": 0
+  "distinct": 25,
+  "slots": 25,
+  "stock_provenance_rows": 0,
+  "owner_camera_rows": 6,
+  "unverified_authorship_rows": 19,
+  "verified_by": "lib/photo-provenance-verify.js verifyProvenanceLedger",
+  "verification_limit": "Stock cross-check is EXACT SHA-256 and CANNOT see a re-crop. A clean run proves the ledger is internally consistent with the bytes on disk. It is NOT evidence that a photograph is the business's own work.",
+  "ok": true
 }
