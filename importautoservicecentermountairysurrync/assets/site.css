@@ -41,6 +41,29 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
 .phone-strip a:hover{background:#0B253C}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+/*
+  NO-PHONE VARIANT (2026-08-31). The strip can now carry an email address instead of a phone
+  number. A phone is ~14 characters; measured across the 378 real phoneless businesses in the
+  email lane, addresses run to 46 (median 24, 48 rows over 30). At the strip's 22px Barlow
+  Condensed a 46-character address overruns 360px, and DEMO-SHIP-STANDARD forbids a page that
+  scrolls sideways.
+
+  Two layers, because the first one alone is not a guarantee:
+    - the generator sets an inline font-size computed from THIS address's actual length, so the
+      common case simply fits at full size and only long addresses shrink;
+    - these rules are the backstop that makes overflow impossible regardless of what the
+      generator computed - the line can never wrap (which would change --phone-strip-h and float
+      the sticky header mid-page, the exact defect Jacob caught on the Pixel 2026-08-17) and can
+      never push the page wider than the viewport.
+
+  Scoped to [data-contact-route="email"], so no existing phone demo can be affected by it -
+  none of them carry that attribute.
+*/
+.phone-strip[data-contact-route="email"] a,
+.phone-strip[data-contact-route="facebook"] a{
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  letter-spacing:.01em;text-transform:none
+}
 
 header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
 .logo{height:88px;width:auto;display:block}
