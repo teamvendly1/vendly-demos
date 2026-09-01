@@ -1,0 +1,154 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-26T01:07:30.199Z",
+ "slug": "fraziersgarageinc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-89fe639e2b5d4a9c.jpg",
+   "bytes": 336356,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-7bdcad41896320df.jpg",
+   "bytes": 139941,
+   "smart_crop": true,
+   "src": "google-7bdcad41896320df.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 40,
+   "detail_score": 28.366,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-e9bb2a6bcc222b1d.jpg",
+   "bytes": 353906,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-4b05b173832c77f5.jpg",
+   "bytes": 101850,
+   "smart_crop": true,
+   "src": "google-4b05b173832c77f5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 24.999,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-e1a8dc7d7f573b77.jpg",
+   "bytes": 120586,
+   "smart_crop": true,
+   "src": "google-e1a8dc7d7f573b77.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 57,
+   "detail_score": 29.599,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-74a0f492da437128.jpg",
+   "bytes": 94777,
+   "smart_crop": true,
+   "src": "google-74a0f492da437128.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 21.311,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-f028d04d8d8111e5.jpg",
+   "bytes": 192308,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-a2e8c5efba724532.jpg",
+   "bytes": 389489,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-af3041bbea27a78c.jpg",
+   "bytes": 273797,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-78d1eca1304c66a2.jpg",
+   "bytes": 216951,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 11 harvest photos from assets",
+  "refused_by_class:google-77edc21a01a22549.jpg:reject",
+  "hero_cand_refuse:google-7bdcad41896320df.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-a2e8c5efba724532.jpg:road_no_landscape",
+  "hero_cand_refuse:google-e1a8dc7d7f573b77.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-74a0f492da437128.jpg:close_crop_alt",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 10,
+ "refused_by_class": 1,
+ "photo_candidates": 10,
+ "altBySlot": {
+  "photo-hero.jpg": "interior view of a Ford truck cabin showing tan leather seats and the steering wheel",
+  "photo-card-about.jpg": "black and white archival photo of the Frazier's Garage building with its AC Delco sign and a car parked out front",
+  "photo-about.jpg": "open engine bay on a tan pickup truck with engine components exposed in natural light",
+  "photo-card-services.jpg": "polished aftermarket engine with red accents and chrome components installed in an engine bay",
+  "photo-card-reviews.jpg": "engine being lifted out of a black SUV with an engine hoist in the shop bay",
+  "photo-card-photos.jpg": "close-up of an open engine bay on a weathered vehicle showing rust and exposed wiring",
+  "photo-gallery-1.jpg": "teal vintage two-door sedan raised on an indoor lift inside the repair shop bay",
+  "photo-gallery-2.jpg": "silver Ford pickup truck parked outdoors in a driveway with trees in the background",
+  "photo-gallery-3.jpg": "yellow classic muscle car parked between blue two-post lifts inside the garage bay",
+  "photo-ctaband.jpg": "red and white two-tone vintage coupe parked inside the garage under fluorescent lighting"
+ },
+ "dedupe_fixed": 5
+}

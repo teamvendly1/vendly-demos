@@ -1,0 +1,109 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-18T07:09:57.204Z",
+ "slug": "holmestransportation",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-9555f7400b3bf0a7.jpg",
+   "bytes": 318672,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-0fb1246bc5970614.jpg",
+   "bytes": 501249,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-5633d96d7e53f3f6.jpg",
+   "bytes": 383868,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-41f81556e7779454.jpg",
+   "bytes": 331209,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-63728fbc5339a6d2.jpg",
+   "bytes": 212647,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-b591e2a37f1a7403.jpg",
+   "bytes": 181731,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-7c29b4be70917a72.jpg",
+   "bytes": 445613,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-13ea96076b7d15a3.jpg",
+   "bytes": 273301,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "their-google-listing:human-flagged-mark",
+   "bytes": 102737,
+   "source_url": "https://www.google.com/maps/place/Holmes+Transportation/@35.6621782,-80.4709461,17z/data=!3m1!4b1!4m6!3m5!1s0x8853f33aea90f72b:0x5f2cf460abf6c3c3!8m2!3d35.6621782!4d-80.4709461!16s%2Fg%2F11y769dzgp?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D"
+  }
+ ],
+ "skipped": [
+  "classification read: 24 verdicts",
+  "staged 12 harvest photos",
+  "refused_by_class:google-54169c35dbfb0157.jpg:DUPLICATE_OF_MARK: same Holmes Transportation logo graphic already flagged as the brand mark",
+  "refused_by_class:google-c5fd195c7903f245.jpg:DUPLICATE_CAB_VIEW: repetitive cab interior mirror composition already represented",
+  "refused_by_class:google-e65ef123fa313b5d.jpg:DUPLICATE_CAB_VIEW: repetitive cab interior mirror composition already represented",
+  "refused_by_class:google-f7f8ae7f6f9b3f3c.jpg:brand_mark",
+  "hero_cand_refuse:google-0fb1246bc5970614.jpg:road_no_landscape",
+  "hero_cand_refuse:google-7c29b4be70917a72.jpg:road_no_landscape",
+  "hero_cand_refuse:google-5633d96d7e53f3f6.jpg:road_no_landscape",
+  "hero_cand_refuse:google-41f81556e7779454.jpg:road_no_landscape",
+  "hero_cand_refuse:google-9555f7400b3bf0a7.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-13ea96076b7d15a3.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-63728fbc5339a6d2.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-b591e2a37f1a7403.jpg:portrait_aspect_hero_refuse",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-9555f7400b3bf0a7.jpg)",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "refused_by_class": 4,
+ "altBySlot": {
+  "photo-hero.jpg": "Damaged white SUV with the hood up, staged in a yard for transport",
+  "photo-card-about.jpg": "Wrecked SUV with doors open and interior parts removed, staged in a yard for transport",
+  "photo-about.jpg": "Damaged van staged at a scrapyard beside heavy shredding equipment for transport",
+  "photo-card-services.jpg": "View through the transport truck cab mirror of the road with a vehicle staged ahead",
+  "photo-card-reviews.jpg": "View from inside the transport truck cab with a hi-vis jacket on the seat",
+  "photo-card-photos.jpg": "View through the transport truck's side mirror of the highway with a vehicle on the trailer ahead",
+  "photo-gallery-1.jpg": "Wrecked SUV with a shattered windshield loaded on the flatbed transport truck",
+  "photo-gallery-2.jpg": "Black Chevrolet Tahoe staged in the lot ready for transport"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T05:51:14.730Z",
+ "slug": "archerautomotivellc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-3b29b0bb1db2c633.jpg",
+   "bytes": 350134,
+   "letterbox_stripped": null,
+   "trade_score": 2.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-2c0adc9925c6cd32.jpg",
+   "bytes": 334472,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-e8810a0cc30960dd.jpg",
+   "bytes": 253330,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-938718570928624f.jpg",
+   "bytes": 169058,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 8 verdicts",
+  "staged 11 harvest photos from assets",
+  "refused_unlooked:google-2877d50b2e81c753.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-79572441944d90bd.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-949f81d3ead0b917.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a41c55f4175897a0.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-aa230740b88ab58e.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-b08f435e2953de1a.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-b5213187e9159125.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-2c0adc9925c6cd32.jpg:road_no_landscape",
+  "hero_cand_refuse:google-938718570928624f.jpg:road_no_landscape",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 4,
+ "refused_by_class": 7,
+ "photo_candidates": 4,
+ "altBySlot": {
+  "photo-hero.jpg": "Large hand painted aerial style mural of the Lake Wylie community covering the building's side wall",
+  "photo-card-about.jpg": "Wide roadside view across the highway showing the shop building, mural, and parked cars along the block",
+  "photo-about.jpg": "Shop building's gable end covered by a hand painted Lake Wylie mural beside the red front door and windows",
+  "photo-card-services.jpg": "Pickup truck body raised on a two post lift exposing the bare stripped frame underneath in the repair bay"
+ },
+ "dedupe_fixed": 5
+}

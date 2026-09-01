@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "dannysmufflershop",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#29313F",
+  "palette": {
+    "BRAND": "#29313F",
+    "PRIMARY": "#262E3B",
+    "PRIMARY_DK": "#1C222B",
+    "PRIMARY_MID": "#2E3747",
+    "ACCENT": "#3C485D",
+    "ACCENT_DK": "#2A3241",
+    "ACCENT_LT": "#546582",
+    "ON_DARK": "#CED4DF",
+    "MENU_INK": "#12161C",
+    "TINT_1": "#E0E4EB",
+    "TINT_2": "#E9ECF1",
+    "TINT_3": "#DADFE7",
+    "TINT_4": "#DDE1E9",
+    "LINE_2": "#C1C9D7",
+    "MUTED_BRAND": "#8393AF",
+    "MIST": "#F4F6F8",
+    "LINE": "#D4D9E3",
+    "PRIMARY_RGB": "38,46,59",
+    "ACCENT_RGB": "60,72,93",
+    "SCRIM_RGB": "46,55,71",
+    "SCRIM2_RGB": "28,34,43",
+    "MENU_INK_RGB": "18,22,28",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.67,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.22,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.18,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.15,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

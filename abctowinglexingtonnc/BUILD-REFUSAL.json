@@ -1,0 +1,16 @@
+{
+  "refused": true,
+  "problems": [
+    "section_photo_correlate_failed: photo-card-photos.jpg,photo-card-services.jpg,photo-contact.jpg",
+    "NO_LOGO_IN_HEADER: logo.png missing or stub — refuse ship (do not strip and continue)",
+    "NO_LOGO_IN_HEADER: index.html missing logo img",
+    "NO_LOGO_IN_HEADER: index <header> has no logo img (Charlotte class — phone+nav only)",
+    "NO_LOGO_IN_HEADER: assets/logo.png missing or stub (<5KB)",
+    "REVIEW_TEXT_AS_ABOUT_COPY: about.html About paragraph is a harvested customer review presented as the business's own self-description: \"I seriously can’t thank Scott enough for all his help when I was stuck on the side of the road with a flat tire. He was there within minutes and drove me around\"",
+    "REVIEW_TEXT_AS_ABOUT_COPY: about.html About paragraph is a harvested customer review presented as the business's own self-description: \"I was miles from home. Feeling destitute on the side of the road. I called up ABC Towing and knew they had my back. He arrived asap and quickly loaded my Jeep. \"",
+    "NO_HARVESTED_MARK: index must reference assets/logo.png and the file must be a real harvested graphic (>=2KB)",
+    "NO_HERO_PHOTO: homepage hero has no photo-hero.jpg / photo-hx.jpg"
+  ],
+  "generator_defect_fix_version": 1,
+  "checked_at": "2026-09-01T00:24:05.583Z"
+}

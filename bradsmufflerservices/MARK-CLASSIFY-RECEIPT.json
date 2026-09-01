@@ -1,0 +1,23 @@
+{
+ "schema": "vendly.autodemo.mark-classify-receipt/1",
+ "at": "2026-08-18T21:17:01.660Z",
+ "slug": "bradsmufflerservices",
+ "logo_sha256": "80f43c9365c1c5bcf450a470f1e781a551329117480afd6d74d51040c657f946",
+ "origin": "their-google-listing:human-flagged-mark",
+ "source_url": "https://www.google.com/maps/place/Brad's+Muffler+Services/@34.2482204,-80.6158574,17z/data=!3m1!4b1!4m6!3m5!1s0x8855f0b7555b7eef:0x1062b43a8b773105!8m2!3d34.2482204!4d-80.6158574!16s%2Fg%2F1td4f7x7?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+ "source_file": "",
+ "verdict": {
+  "ok": true,
+  "flatness": 0.445,
+  "transparent": 0,
+  "decided_by": "flatness",
+  "w": 1150,
+  "h": 345
+ },
+ "human_verdict": "pass",
+ "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+ "human_verdict_at": null,
+ "human_verdict_note": "Full mobile-viewport audit: home, about, services, photos (incl. lightbox), reviews, contact. Found and fixed a real defect - the about-card photo was cropping to pure treeline/sky with no building visible; recropped from the same source to show the shop signage/bay door/truck (commit c5faa6e6). Everything else clean: real logo, real reviews (Duane Holvey/Derrick Mcleod/Chris Tallon), correct phone/address, working contact form, no placeholders, no wrong numbers.",
+ "human_verdict_carried_from": "2026-08-18T21:15:51.682Z",
+ "post_stage_transform": "logo-transparent-margin"
+}

@@ -1,0 +1,112 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-18T21:23:26.913Z",
+ "slug": "dannysmufflershop",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-5cdb522f071729da.jpg",
+   "bytes": 300838,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-a64e974f1fae4acf.jpg",
+   "bytes": 513564,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-ace4ab79ac943cbe.jpg",
+   "bytes": 275298,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-e75efb014c64f7cb.jpg",
+   "bytes": 522733,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-230da5de8dde3050.jpg",
+   "bytes": 209839,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-d2891160157b83f1.jpg",
+   "bytes": 181406,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-96b1866c97dab483.jpg",
+   "bytes": 160623,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-c7b056693f886821.jpg",
+   "bytes": 156938,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "human-approved-preserved",
+   "bytes": 2007393,
+   "source_url": "https://www.facebook.com/dannysmufflershop",
+   "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
+  }
+ ],
+ "skipped": [
+  "classification read: 16 verdicts",
+  "staged 17 harvest photos",
+  "refused_unlooked:google-1f1a59fc76426b98.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-42180fec233ced14.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-51dd74fb03852559.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-543560e18b34ac48.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-584953283718029c.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-5900a38ff5174811.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-6b578a3a9b4b5436.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-9f6bcebbc01dac00.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-d0b9fb973fc8651a.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-e75efb014c64f7cb.jpg:road_no_landscape",
+  "hero_cand_refuse:google-a64e974f1fae4acf.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-ace4ab79ac943cbe.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-230da5de8dde3050.jpg:road_no_landscape",
+  "hero_cand_refuse:google-d2891160157b83f1.jpg:road_no_landscape",
+  "hero_cand_refuse:google-96b1866c97dab483.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "refused_by_class": 9,
+ "altBySlot": {
+  "photo-hero.jpg": "Custom dual stainless exhaust tips installed on a Nissan Maxima",
+  "photo-card-about.jpg": "A welded exhaust-pipe sculpture out front with a roadside Muffler flag beyond it",
+  "photo-about.jpg": "A whimsical pig sculpture welded from old exhaust pipe outside the shop",
+  "photo-card-services.jpg": "A rusted-through old muffler pulled off a car and set against the shop wall",
+  "photo-card-reviews.jpg": "Cars up on lifts inside the shop bay seen through the office window",
+  "photo-card-photos.jpg": "Danny's Muffler Shop waiting room counter with the ring-buzzer-for-service sign",
+  "photo-gallery-1.jpg": "Danny's Muffler Shop waiting area with framed motorsports art and a coffee station",
+  "photo-gallery-2.jpg": "Danny's Muffler Shop storefront with the yellow sign and welding-repair placard"
+ }
+}

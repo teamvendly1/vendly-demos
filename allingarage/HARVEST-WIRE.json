@@ -1,0 +1,171 @@
+{
+  "schema": "vendly.autodemo.harvest-wire/1",
+  "at": "2026-08-22T23:35:46.222Z",
+  "slug": "allingarage",
+  "wired": [
+    {
+      "slot": "photo-hero.jpg",
+      "from": "photo-service-1.jpg",
+      "bytes": 101767,
+      "trade_score": 7,
+      "reason": "hero_contrast_retarget:photo-service-1.jpg"
+    },
+    {
+      "slot": "photo-card-about.jpg",
+      "from": "google-ed610689dc08a06d.jpg",
+      "bytes": 47637,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-about.jpg",
+      "from": "google-67810abff579920c.jpg",
+      "bytes": 232093,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-services.jpg",
+      "from": "google-b14d97d9fd1de5e8.jpg",
+      "bytes": 124696,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-reviews.jpg",
+      "from": "google-87e0cabd288cb0e9.jpg",
+      "bytes": 257969,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-card-photos.jpg",
+      "from": "google-a6dd4c1f85a04805.jpg",
+      "bytes": 224670,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-1.jpg",
+      "from": "google-a2c248e351bdfb34.jpg",
+      "bytes": 194369,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "from": "google-4acaec2424a22be3.jpg",
+      "bytes": 169634,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "from": "google-1fe5f470a8effc37.jpg",
+      "bytes": 93161,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-ctaband.jpg",
+      "from": "google-aec40875e8708211.jpg",
+      "bytes": 287131,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-quoteband.jpg",
+      "from": "google-6782ad8bf1a0515d.jpg",
+      "bytes": 239693,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "from": "google-f9859933b308c718.jpg",
+      "bytes": 189622,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "from": "google-8a83275a3baf75af.jpg",
+      "bytes": 177674,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "from": "google-a0efb429e6545e36.jpg",
+      "bytes": 172169,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-service-1.jpg",
+      "from": "google-607392358064fa9f.jpg",
+      "bytes": 101767,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-service-2.jpg",
+      "from": "google-36a65cfa70e94158.jpg",
+      "bytes": 91760,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "photo-service-3.jpg",
+      "from": "google-a711282bdbab5069.jpg",
+      "bytes": 70862,
+      "letterbox_stripped": null
+    },
+    {
+      "slot": "logo.png",
+      "from": "human-approved-preserved",
+      "bytes": 576215,
+      "source_url": "https://www.google.com/maps/place/All+In+Garage/@32.3114558,-80.9659794,17z/data=!3m1!4b1!4m6!3m5!1s0x88fb8de76f419c03:0xef35ba4abf1163ea!8m2!3d32.3114558!4d-80.9659794!16s%2Fg%2F11b7l387m0?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+      "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
+    }
+  ],
+  "skipped": [
+    "classification read: 36 verdicts",
+    "staged 20 harvest photos",
+    "refused_unlooked:google-47f2815bde965d94.jpg:NEEDS_SUBJECT_LOOK",
+    "refused_by_class:google-bf07f67670ff6f60.jpg:reject",
+    "refused_unlooked:google-ef631cdb36018879.jpg:NEEDS_SUBJECT_LOOK",
+    "hero_cand_refuse:google-6782ad8bf1a0515d.jpg:road_no_landscape",
+    "hero_cand_refuse:google-a6dd4c1f85a04805.jpg:road_no_landscape",
+    "hero_cand_refuse:google-a2c248e351bdfb34.jpg:road_no_landscape",
+    "hero_cand_refuse:google-f9859933b308c718.jpg:road_no_landscape",
+    "hero_cand_refuse:google-8a83275a3baf75af.jpg:road_no_landscape",
+    "hero_cand_refuse:google-a0efb429e6545e36.jpg:road_no_landscape",
+    "hero_cand_refuse:google-b14d97d9fd1de5e8.jpg:close_crop_alt",
+    "hero_cand_refuse:google-36a65cfa70e94158.jpg:road_no_landscape",
+    "hero_cand_refuse:google-a711282bdbab5069.jpg:road_no_landscape",
+    "hero_cand_refuse:google-ed610689dc08a06d.jpg:too_small_bytes",
+    "photo-gallery-7.jpg",
+    "photo-gallery-8.jpg",
+    "photo-gallery-9.jpg",
+    "photo-services-hero.jpg",
+    "photo-contact.jpg",
+    "photo-photos-cta.jpg",
+    "photo-reviewsband.jpg",
+    "photo-contact-hero.jpg",
+    "photo-reviews-hero.jpg",
+    "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+  ],
+  "candidates": 17,
+  "refused_by_class": 3,
+  "photo_candidates": 17,
+  "altBySlot": {
+    "photo-hero.jpg": "Customer's blue Mustang GT parked in the shop bay",
+    "photo-card-about.jpg": "Custom black vintage pickup with red pinstripe trim, front three-quarter view",
+    "photo-about.jpg": "Classic Mustang raised on the two-post lift with a row of custom motorcycles parked below",
+    "photo-card-services.jpg": "Close-up of an aftermarket engine installation with a red valve cover",
+    "photo-card-reviews.jpg": "Technician working underneath the hood of a car raised on the lift",
+    "photo-card-photos.jpg": "Classic Chevy SS raised on the two-post lift, a hot rod project visible behind it",
+    "photo-gallery-1.jpg": "Classic green convertible with the hood up for service",
+    "photo-gallery-2.jpg": "Red classic muscle car raised on the lift inside the shop",
+    "photo-gallery-3.jpg": "Cases of racing fuel stocked for their performance customers",
+    "photo-ctaband.jpg": "Row of customer motorcycles parked in the shop",
+    "photo-quoteband.jpg": "Rusted vintage pickup parked outside on the grass",
+    "photo-gallery-4.jpg": "Customer's two-tone classic Ford parked in the shop bay",
+    "photo-gallery-5.jpg": "Classic pink and white convertible parked in the shop bay",
+    "photo-gallery-6.jpg": "Customer's gold classic coupe parked in the shop",
+    "photo-service-1.jpg": "Customer's blue Mustang GT parked in the shop bay",
+    "photo-service-2.jpg": "Customer's white Tesla Model S parked in the shop",
+    "photo-service-3.jpg": "Classic black roadster parked nose-first in the bay"
+  },
+  "hero_retarget": {
+    "at": "2026-08-22T23:35:48.629Z",
+    "from_slot": "photo-service-1.jpg",
+    "reason": "hero_contrast_retarget"
+  }
+}
