@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "hamptonstreeservicefirewood",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#161A08",
+  "palette": {
+    "BRAND": "#161A08",
+    "PRIMARY": "#3F4A17",
+    "PRIMARY_DK": "#2E3711",
+    "PRIMARY_MID": "#4C5A1C",
+    "ACCENT": "#637524",
+    "ACCENT_DK": "#455219",
+    "ACCENT_LT": "#8BA432",
+    "ON_DARK": "#E2ECC1",
+    "MENU_INK": "#1E230B",
+    "TINT_1": "#EDF3D8",
+    "TINT_2": "#F2F7E4",
+    "TINT_3": "#E9F1D0",
+    "TINT_4": "#EBF2D4",
+    "LINE_2": "#DBE7B1",
+    "MUTED_BRAND": "#B7CF63",
+    "MIST": "#F9FBF1",
+    "LINE": "#E6EEC8",
+    "PRIMARY_RGB": "63,74,23",
+    "ACCENT_RGB": "99,117,36",
+    "SCRIM_RGB": "76,90,28",
+    "SCRIM2_RGB": "46,55,17",
+    "MENU_INK_RGB": "30,35,11",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 9.53,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 5.12,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 7.72,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.15,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 4.9,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

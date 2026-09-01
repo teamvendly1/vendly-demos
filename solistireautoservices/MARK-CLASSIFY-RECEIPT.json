@@ -1,0 +1,21 @@
+{
+ "schema": "vendly.autodemo.mark-classify-receipt/1",
+ "at": "2026-08-18T07:10:00.000Z",
+ "slug": "solistireautoservices",
+ "logo_sha256": "199312289841872182238a1af1eb1c1568e07763f7c80b5164a7080fd7e30ff7",
+ "origin": "facebook-profile-mark:eyes-verified:crop-tightened",
+ "source_url": "https://www.facebook.com/solistiresandauto",
+ "source_file": "C:/VendlyVault/_remote/state/prospect-logos/solistireautoservices/candidate-solistiresandauto.jpg",
+ "verdict": {
+  "ok": true,
+  "flatness": null,
+  "transparent": null,
+  "decided_by": "claude-eyes-crop-2026-08-18",
+  "w": 955,
+  "h": 555
+ },
+ "human_verdict": "pass",
+ "human_verdict_by": "claude-logo-uncropped-investigation-2026-08-18",
+ "human_verdict_at": "2026-08-18T07:10:00.000Z",
+ "human_verdict_note": "LOGO_UNCROPPED_SIGN_PHOTO fix. The shipped logo.png (1017x1016, already alpha-punched around the sky) was still the FULL roadside billboard scene - sign plus mounting pole, guy wires, roadside trees and a leftover sky-cutout artifact - because stageFacebookProfileMark (lib/hydroclean-class.js) has no crop step at all, unlike stage-brand-mark.js's mark_crop mechanism: it only trim()s uniform-color margins and ships whatever EYES marked is_a_mark=true, with no way to isolate a sub-region. Applied a plain rectangular extract (left=30, top=255, width=955, height=555) on the already-shipped alpha PNG using the same sharp .extract()+trim(threshold:22)+ensureAlpha()+png() chain stage-brand-mark.js's own encodeAndWrite() uses, to drop the pole/wires/trees below the sign and the sky above it. The sign itself is still photographed at an upward angle (real trapezoidal perspective distortion on a flat, matte, well-lit printed vinyl banner - not curved or glossy), so some perspective skew on 'SOLIS TIRES AUTO SERVICE' remains; that is inherent to the source photo, not fixable by a rectangular crop, and was not attempted. Verified by rendering the output file at full size and downscaled to 56px header height - legible business name, tagline and phone number at both."
+}

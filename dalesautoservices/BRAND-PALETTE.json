@@ -1,0 +1,58 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "dalesautoservices",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#472A29",
+  "palette": {
+    "BRAND": "#472A29",
+    "PRIMARY": "#3D2423",
+    "PRIMARY_DK": "#2D1B1A",
+    "PRIMARY_MID": "#4A2C2B",
+    "ACCENT": "#613938",
+    "ACCENT_DK": "#442827",
+    "ACCENT_LT": "#88504E",
+    "ON_DARK": "#E1CCCB",
+    "MENU_INK": "#1D1111",
+    "TINT_1": "#ECDFDF",
+    "TINT_2": "#F2E9E8",
+    "TINT_3": "#E9D9D8",
+    "TINT_4": "#EADCDB",
+    "LINE_2": "#DABFBE",
+    "MUTED_BRAND": "#B47F7E",
+    "MIST": "#F8F4F4",
+    "LINE": "#E5D2D2",
+    "PRIMARY_RGB": "61,36,35",
+    "ACCENT_RGB": "97,57,56",
+    "SCRIM_RGB": "74,44,43",
+    "SCRIM2_RGB": "45,27,26",
+    "MENU_INK_RGB": "29,17,17"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.24,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.76,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.29,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.41,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.95,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "cmtowingandrecovery",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#040D23",
+  "palette": {
+    "BRAND": "#040D23",
+    "PRIMARY": "#0A2057",
+    "PRIMARY_DK": "#071840",
+    "PRIMARY_MID": "#0C2769",
+    "ACCENT": "#103389",
+    "ACCENT_DK": "#0B2460",
+    "ACCENT_LT": "#1647C0",
+    "ON_DARK": "#B6C9F7",
+    "MENU_INK": "#050F29",
+    "TINT_1": "#D1DDFA",
+    "TINT_2": "#DFE7FB",
+    "TINT_3": "#C8D6F9",
+    "TINT_4": "#CDDAF9",
+    "LINE_2": "#A3BBF5",
+    "MUTED_BRAND": "#4877EA",
+    "MIST": "#EFF3FD",
+    "LINE": "#BFCFF8",
+    "PRIMARY_RGB": "10,32,87",
+    "ACCENT_RGB": "16,51,137",
+    "SCRIM_RGB": "12,39,105",
+    "SCRIM2_RGB": "7,24,64",
+    "MENU_INK_RGB": "5,15,41",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 15.47,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 11.31,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.35,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.97,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,141 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-18T21:27:07.221Z",
+ "slug": "settletreeservice",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-99cc0d6c08d9c93c.jpg",
+   "bytes": 654725,
+   "letterbox_stripped": null,
+   "trade_score": 0.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-eef98e078e7df3f3.jpg",
+   "bytes": 739322,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-43e380d7eae927a2.jpg",
+   "bytes": 490987,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-29d6bb252ffc514b.jpg",
+   "bytes": 518607,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-884fb796dd800101.jpg",
+   "bytes": 388242,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-66fa5d4fc5c7d86c.jpg",
+   "bytes": 243166,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-495056200039f036.jpg",
+   "bytes": 179425,
+   "letterbox_stripped": "v18.3%"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-622e77d4b9a8ec73.jpg",
+   "bytes": 369762,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-695f9b27cb087b96.jpg",
+   "bytes": 359705,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "human-approved-preserved",
+   "bytes": 748181,
+   "source_url": "https://www.facebook.com/settletreeservice",
+   "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
+  }
+ ],
+ "skipped": [
+  "classification read: 20 verdicts",
+  "staged 40 harvest photos",
+  "refused_unlooked:google-03becd89eacc1042.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-13398f240f3eaf18.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-1cf9a50abf4ca2cd.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-23178dff633690f6.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-23306327699cd2c0.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-2dfce66e6d0893e9.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-4c1c1719d8d83228.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-4cf274856cdec225.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-4e2f8dc6b37ef4b2.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-53ea51d0e8a631e6.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-5641e6919e0dd828.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-56d028599813c585.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-8815ee6dfb9b4222.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-8c62c4fbb653ce0f.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a97970a4bb12a16d.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-b9e287156d3b444f.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-bd699f6eca751104.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-bd7522ffe750b5f6.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-bf8c94fc69e3dd71.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-bfd6d9715a263756.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c87b0f6aa7f273b9.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-c95afbf9c58b48fc.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-ce623fe366ec01c2.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-d77f7452e5445295.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-e2390e93548adb86.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:google-e63b8b8fdfa7721b.jpg:CLAUDE_HERO_TEXTURE: too busy for hero slot (std=66), demoted to keep the low-texture chip-truck candidate eligible; still a fine gallery-quality photo but this build needs a hero winner",
+  "refused_unlooked:google-e815c0281dfb2412.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-ec1ea019aa89db2b.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-f10745bcc5078524.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-f121bb22013335c3.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-f9b6422d1d485ea2.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_hold_crew_for_about:google-eef98e078e7df3f3.jpg",
+  "hero_cand_refuse:google-29d6bb252ffc514b.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-884fb796dd800101.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-622e77d4b9a8ec73.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-695f9b27cb087b96.jpg:close_crop_alt",
+  "hero_cand_refuse:google-66fa5d4fc5c7d86c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-495056200039f036.jpg:portrait_aspect_hero_refuse",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 9,
+ "refused_by_class": 31,
+ "altBySlot": {
+  "photo-hero.jpg": "Settle yellow chip truck towing the stump grinder down a neighborhood street",
+  "photo-card-about.jpg": "Three-man crew on a ladder and pole saws trimming a holly tree by a back porch",
+  "photo-about.jpg": "A freshly cut pine snag against a clear blue sky, climbing rope and carabiner still rigged",
+  "photo-card-services.jpg": "Vermeer wood chipper loading brush into the dump truck beside a house",
+  "photo-card-reviews.jpg": "Climber working at the top of a pine snag, chainsaw in hand, harness clipped in",
+  "photo-card-photos.jpg": "Climber working high in a pine canopy above a residential street",
+  "photo-gallery-1.jpg": "Bucket lift raised beside a tall pine with the chip truck staged below",
+  "photo-gallery-2.jpg": "Settle Tree Service bucket truck lettered with the phone number, parked at the shop",
+  "photo-gallery-3.jpg": "Close-up of the Settle Property Maintenance and Tree Service truck door lettering with the phone number"
+ }
+}
