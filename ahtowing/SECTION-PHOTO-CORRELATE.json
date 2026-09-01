@@ -1,104 +1,430 @@
 {
-  "at": "2026-08-22T23:00:07.196Z",
+  "at": "2026-09-01T01:20:58.412Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "towing",
   "replaced": [
     {
-      "file": "photo-contact.jpg",
-      "source": "stock-library",
-      "sha256": "c1aa9a3345acf1399f91e3f989a6b09f09631ff936054ae802902edb2cc1eb0b",
+      "file": "photo-photos-cta.jpg",
+      "source": "harvest-fallback",
+      "sha256": "017c5bb1ddd61f31f7c7bf32e0d5f686913c653fbc9565b3277be201b1f664e8",
       "reasons": [
-        "cross_demo_dupe:citytowinginc/photo-ctaband.jpg"
+        "unflattering_subject:unflattering:breakdown"
       ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "source": "stock-library",
-      "sha256": "ed7759bf6e74ffe60717da61e6d990b2395b3d04b74074ee79068f50b7ff776f",
-      "reasons": [
-        "cross_demo_dupe:certifiedtowingrecovery/photo-card-about.jpg"
-      ],
-      "service": "trade work"
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "source": "stock-library",
-      "sha256": "2536b5dade7ec71de1a1fea874944c959c998f27aa9b9d8339ce342ee4e5bad9",
-      "reasons": [
-        "cross_demo_dupe:castlehaynetowing/photo-about.jpg"
-      ],
-      "service": "trade work"
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\ahtowing\\assets\\google\\google-017c5bb1ddd61f31.jpg",
+      "score_alt": "A & H TOWING - technician at work on site (photo 3)"
     }
   ],
   "kept": [
     {
-      "file": "photo-about.jpg",
-      "sha256": "9889b7efdf7863ce5acaf5e5fb7fc0cb7031d9d20fe56c1892456f4cb58f6140",
-      "bytes": 402940
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "017c5bb1ddd61f31f7c7bf32e0d5f686913c653fbc9565b3277be201b1f664e8",
-      "bytes": 431762
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "838a30e6e44e895b744194648219d4b4f0bf3a2511bef2f8846aa7c475607682",
-      "bytes": 250475
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "3f73e6a2e111c3a19b04baa3cef40e67679753c4023a2088b6e7a926f6ca3581",
-      "bytes": 349636
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "08b55158f1319f160c3459f0b9d3c9d46ad7bc4bf27d08806029e2628a5e6b6f",
-      "bytes": 350106
+      "file": "photo-contact.jpg",
+      "sha256": "b2022cb770ebcfd34fe4173b4c8835fa05db631d3e0b1f002d4bb9720b24d15a",
+      "bytes": 125083,
+      "alt": "tow truck empty flatbed highway"
     },
     {
       "file": "photo-ctaband.jpg",
+      "sha256": "3074c8bb6467a20a109408739267e0335af24bed579f637b1d6f1f841cec0285",
+      "bytes": 220378,
+      "alt": "A & H TOWING - technician at work on site (photo 12)"
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "91d29aca5e88111dc508dcfa5fb2b8444a1f4b4be5896a836ce4b42c5cfe9cb1",
+      "bytes": 204811,
+      "alt": "A & H TOWING - technician at work on site (photo 8)"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "d7ab202162c4d1d956cfa28f0cb2d8b2ffda00b0bcc75dff7cabfb89228716a1",
+      "bytes": 179361,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "95770edaecfa7bbd2bb22b71880e9eae64dd88b1bade886a84cf4eb4ae722370",
+      "bytes": 158796,
+      "alt": "tow truck driver strapping wheel"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "23fb1a645680f6fb18ca40d89132974411e1ae65c9069e4e45fbf5b908b20088",
+      "bytes": 145917,
+      "alt": "tow truck driver strapping wheel"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "eacefeb966693accadf4cd882b10dae9972939f59c6fd29af39131c2de417046",
+      "bytes": 195639,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "b651e501b9cdea03b94c0c457dbff0269b2c64cfa085750aa37df567d7ff7231",
+      "bytes": 280849,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-service-6.jpg",
       "sha256": "cdb494308dc713ba71561dd9819da2db67a88be6af0ff15ed68394af429788ec",
-      "bytes": 187625
+      "bytes": 187625,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-about.jpg",
+      "sha256": "9889b7efdf7863ce5acaf5e5fb7fc0cb7031d9d20fe56c1892456f4cb58f6140",
+      "bytes": 402940,
+      "alt": "A & H TOWING - technician at work on site (photo 9)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "a4d48baa3e79b450c668feed10aac37ea12af64e559383448fb14d704d070d5e",
+      "bytes": 134496,
+      "alt": "A & H TOWING - technician at work on site (photo 3)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "a016ab3273e1c19608e25765a22369f0708d2da04ae4711b9434f9e38b5f5f8d",
+      "bytes": 130277,
+      "alt": "A & H TOWING - technician at work on site (photo 6)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "c128f897bcec5c59041da8f015ba7f5ca85bb5c95b63cc0ee5d89086fdeb7865",
+      "bytes": 123497,
+      "alt": "A & H TOWING - technician at work on site (photo 7)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "6069d5348f65fd867d7327fc309bc497603f02d924725211d45bcc707a9dd22f",
+      "bytes": 130099,
+      "alt": "A & H TOWING - technician at work on site (photo 11)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "3f73e6a2e111c3a19b04baa3cef40e67679753c4023a2088b6e7a926f6ca3581",
+      "bytes": 349636,
+      "alt": "A & H TOWING - technician at work on site (photo 2)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "838a30e6e44e895b744194648219d4b4f0bf3a2511bef2f8846aa7c475607682",
+      "bytes": 250475,
+      "alt": "A & H TOWING - technician at work on site (photo 13)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "253bdbf8f7f6f5eee901443498cec6390570299883560e61d19e5b6f16b06a9b",
+      "bytes": 234245,
+      "alt": "A & H TOWING - technician at work on site (photo 10)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "4a907474327947a1078ae2089b1bc06855263cd7e76b3de1c6ee6b23a960117c",
+      "bytes": 169498,
+      "alt": "A & H TOWING - technician at work on site (photo 1)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "f19a7a110b067d3480a5f34d946cfc39e2c1fe032a27f747cae00d2111dcf68a",
+      "bytes": 130548,
+      "alt": "A & H TOWING - technician at work on site (photo 4)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
       "file": "photo-hero.jpg",
       "sha256": "3451cfe704544a50b7b60980aa919c7743a06690b24765b29cf842b69ed4d58e",
-      "bytes": 374665
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "d7ab202162c4d1d956cfa28f0cb2d8b2ffda00b0bcc75dff7cabfb89228716a1",
-      "bytes": 179361
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "b2022cb770ebcfd34fe4173b4c8835fa05db631d3e0b1f002d4bb9720b24d15a",
-      "bytes": 125083
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "eacefeb966693accadf4cd882b10dae9972939f59c6fd29af39131c2de417046",
-      "bytes": 195639
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "b651e501b9cdea03b94c0c457dbff0269b2c64cfa085750aa37df567d7ff7231",
-      "bytes": 280849
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "330fe5aa6bf938d3c81da249389c8e64748727d68b235ccebafcbf72ed5524b9",
-      "bytes": 122052
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "sha256": "54704ef359c51f04e770010eae4d57c7aad692cf75b0ee261f3a56512e60b97c",
-      "bytes": 364207
+      "bytes": 374665,
+      "alt": "A & H TOWING - technician at work on site (photo 5)",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 9)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 3)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 6)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 7)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 11)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 2)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 13)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 10)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 1)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 4)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "A & H TOWING - technician at work on site (photo 5)",
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "alt": "breakdown recovery truck night roadside",
+      "relevance": {
+        "ok": true,
+        "score": 4,
+        "reason": ""
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:breakdown",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-card-about.jpg",
+    "correlate_restore_no_stock:photo-card-photos.jpg",
+    "correlate_restore_no_stock:photo-card-reviews.jpg",
+    "correlate_restore_no_stock:photo-card-services.jpg",
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -1,16 +1,8 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-28T01:45:28.789Z",
+ "at": "2026-09-01T00:54:40.819Z",
  "slug": "affordableautorepair24hourtowing",
  "wired": [
-  {
-   "slot": "photo-hero.jpg",
-   "from": "google-2ab2b3aef413c878.jpg",
-   "bytes": 229149,
-   "letterbox_stripped": null,
-   "trade_score": 3.5,
-   "reason": "hero_work_rank"
-  },
   {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
@@ -20,8 +12,7 @@
   }
  ],
  "skipped": [
-  "classification read: 2 verdicts",
-  "staged 1 harvest photos from assets",
+  "photo-hero.jpg: no work-visible harvest candidate",
   "photo-card-about.jpg",
   "photo-about.jpg",
   "photo-card-services.jpg",
@@ -47,14 +38,15 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
-  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 1,
- "photo_candidates": 1,
- "dedupe_fixed": 5
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

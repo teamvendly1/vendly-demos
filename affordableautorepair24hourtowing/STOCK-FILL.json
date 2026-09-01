@@ -1,33 +1,26 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-28T01:45:32.669Z",
+  "at": "2026-09-01T00:54:51.843Z",
   "trade": "auto-repair",
   "slotHints": {},
-  "ok": true,
-  "kept": [
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "2ab2b3aef413c87860fa24a868f2a492ac0fb6b67c09133c8582b4ed089b5a0d",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    }
-  ],
+  "ok": false,
+  "kept": [],
   "filled": [
     {
       "file": "photo-about.jpg",
-      "sha256": "c15f6612cecf33d91909f5d591a28ab2825b790aa3ac2e3c69241d3ec009000a",
+      "sha256": "e670abfc83cc82ff8531316ef51bf1ba3b7852d3e35f06f4ad9c97cb1e4d1401",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/tools-in-a-toolbox-19541291/",
+        "source_url": "https://www.pexels.com/photo/close-up-of-a-high-performance-engine-32725838/",
         "subject_alt": "engine bay diagnostic tools",
         "found_by_query": "engine bay diagnostic tools",
         "family": "auto-repair",
-        "library_file": "auto-repair-detailed-view-assorted-01.jpg",
+        "library_file": "auto-repair-detailed-view-high-performance-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:20.872Z",
+        "downloaded_at": "2026-08-13T15:58:12.238Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
@@ -39,54 +32,6 @@
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "b48ddfb4d9eaf395a37c20c4d501ac67993b52bfcaf71c95657452cf11fc00b0",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/a-person-repairing-car-engine-4116225/",
-        "subject_alt": "car repair garage interior bay",
-        "found_by_query": "car repair garage interior bay",
-        "family": "auto-repair",
-        "library_file": "auto-repair-mechanic-hands-repairing-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-12T16:50:36.588Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "dd90d546b3d7f88e6e0b88db14639aa968fb970454a5c0df5076d25868fb79e5",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/mechanic-fixing-the-wipers-of-a-car-8478220/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-mechanic-checking-car-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:39:22.428Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
-    },
-    {
-      "file": "photo-card-reviews.jpg",
       "sha256": "6f9978de7fd8ea452a4547a2c54b6ac63f0fd8b2122d677dadf8cf1761b8073b",
       "source": "stock-library",
       "provenance": {
@@ -110,7 +55,31 @@
       }
     },
     {
-      "file": "photo-card-services.jpg",
+      "file": "photo-card-photos.jpg",
+      "sha256": "c15f6612cecf33d91909f5d591a28ab2825b790aa3ac2e3c69241d3ec009000a",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tools-in-a-toolbox-19541291/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-view-assorted-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:20.872Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
       "sha256": "39282f4b2ff3deb5bec43607c94b0b0fbfbf09e41e8ec0483f4e29480892274c",
       "source": "stock-library",
       "provenance": {
@@ -134,31 +103,7 @@
       }
     },
     {
-      "file": "photo-contact.jpg",
-      "sha256": "ef89d5c01c567b56c2bec2f4c7e6ed5c4d2e47657968f48c822eb8407b0add39",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/mechanics-working-on-car-20041492/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-mechanics-focused-inspecting-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:12.851Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
-    },
-    {
-      "file": "photo-ctaband.jpg",
+      "file": "photo-card-services.jpg",
       "sha256": "6ec50b25b4490b7f946957f5289abdfc0e35a38760bb5d4b7eed83fbc03830fb",
       "source": "stock-library",
       "provenance": {
@@ -182,7 +127,31 @@
       }
     },
     {
-      "file": "photo-photos-cta.jpg",
+      "file": "photo-contact.jpg",
+      "sha256": "b48ddfb4d9eaf395a37c20c4d501ac67993b52bfcaf71c95657452cf11fc00b0",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-person-repairing-car-engine-4116225/",
+        "subject_alt": "car repair garage interior bay",
+        "found_by_query": "car repair garage interior bay",
+        "family": "auto-repair",
+        "library_file": "auto-repair-mechanic-hands-repairing-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:36.588Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
       "sha256": "03af8ac3adee49af9c22cf2db8e8f65cff589fa7c0e23420bc1e7a32442ced90",
       "source": "stock-library",
       "provenance": {
@@ -206,20 +175,20 @@
       }
     },
     {
-      "file": "photo-service-1.jpg",
-      "sha256": "1552086bbfe74c70540831109d0d03638b3320da0c38f5aa0b54e12cad8c9ea3",
+      "file": "photo-hero.jpg",
+      "sha256": "dd90d546b3d7f88e6e0b88db14639aa968fb970454a5c0df5076d25868fb79e5",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/close-up-of-steel-in-workshop-4116294/",
+        "source_url": "https://www.pexels.com/photo/mechanic-fixing-the-wipers-of-a-car-8478220/",
         "subject_alt": "engine bay diagnostic tools",
         "found_by_query": "engine bay diagnostic tools",
         "family": "auto-repair",
-        "library_file": "auto-repair-close-up-car-engine-04.jpg",
+        "library_file": "auto-repair-mechanic-checking-car-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:31.120Z",
+        "downloaded_at": "2026-08-13T15:39:22.428Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
@@ -228,156 +197,149 @@
         "claimed": true,
         "unclaimed_remaining_family_estimate": 0
       }
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "b75757088e4b5a0db51bdbe563d9873f352cfaaedea9e20f2610898563a47170",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/close-up-of-classic-car-engine-with-holley-air-filter-34115064/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-detailed-view-classic-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:34.463Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "13a91f2adc05a90120c02599c2094a551ef0f8aa537c68ca74b8e657491a6aff",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-and-gray-pants-standing-in-front-of-table-4489758/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-two-auto-mechanics-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:40.934Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "7ad1ce7b1f0b8ad70a8dc51a1b21bc81ac63b63a2776080bbaec66f469f524d5",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/auto-mechanical-parts-for-repair-7568418/",
-        "subject_alt": "brake rotor closeup workshop",
-        "found_by_query": "brake rotor closeup workshop",
-        "family": "auto-repair",
-        "library_file": "auto-repair-detailed-arrangement-mechanical-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:59:16.455Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "054502505b359ae9bd88173fed72c3eeeb61cd2bb9e9f73bd71e07d1843cbb09",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/car-engine-lifted-by-chain-4116203/",
-        "subject_alt": "car on lift garage bay",
-        "found_by_query": "car on lift garage bay",
-        "family": "auto-repair",
-        "library_file": "auto-repair-detailed-view-car-03.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:30:43.823Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "c5ba8ef85260fd94f843ac494c1b17b5aaa3ff538b055b335f7678c699badf47",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/mechanic-working-with-car-engine-13065692/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-mechanic-diagnosing-car-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:39:18.499Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "e670abfc83cc82ff8531316ef51bf1ba3b7852d3e35f06f4ad9c97cb1e4d1401",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/close-up-of-a-high-performance-engine-32725838/",
-        "subject_alt": "engine bay diagnostic tools",
-        "found_by_query": "engine bay diagnostic tools",
-        "family": "auto-repair",
-        "library_file": "auto-repair-detailed-view-high-performance-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-13T15:58:12.238Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 0
-      }
+      "sha256": null,
+      "source": "STOCK_GAP",
+      "service": "",
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
+      "refuse_borrow": false
     }
   ],
-  "gaps": [],
-  "distinct": 16,
+  "gaps": [
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-photos-cta.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-service-1.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-service-2.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-service-3.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-service-4.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-service-5.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-service-6.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    },
+    {
+      "ok": false,
+      "gap": true,
+      "reason": "stock_gap_all_claimed_or_avoided",
+      "family": "auto-repair",
+      "fileName": "photo-services-hero.jpg",
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
+    }
+  ],
+  "distinct": 8,
   "slots": 16,
-  "stock_provenance_rows": 15,
+  "stock_provenance_rows": 8,
   "family": "auto-repair",
   "refuse_borrow": false,
   "provenance_ok": true

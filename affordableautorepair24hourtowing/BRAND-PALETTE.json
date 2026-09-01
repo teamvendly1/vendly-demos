@@ -2,45 +2,47 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "affordableautorepair24hourtowing",
   "mold": "_template-skipper-blank",
-  "brand_input": "#0D1A24",
+  "brand_input": "#123A5E",
   "palette": {
-    "BRAND": "#0D1A24",
-    "PRIMARY": "#1A3347",
-    "PRIMARY_DK": "#132634",
-    "PRIMARY_MID": "#1F3E56",
-    "ACCENT": "#295170",
-    "ACCENT_DK": "#1C394F",
-    "ACCENT_LT": "#39729D",
-    "ON_DARK": "#C3D9E9",
-    "MENU_INK": "#0C1822",
-    "TINT_1": "#DAE7F1",
-    "TINT_2": "#E5EEF6",
-    "TINT_3": "#D2E2EF",
-    "TINT_4": "#D6E5F0",
-    "LINE_2": "#B4CFE4",
-    "MUTED_BRAND": "#699FC9",
-    "MIST": "#F2F7FA",
-    "LINE": "#CBDDEC",
-    "PRIMARY_RGB": "26,51,71",
-    "ACCENT_RGB": "41,81,112",
-    "SCRIM_RGB": "31,62,86",
-    "SCRIM2_RGB": "19,38,52",
-    "MENU_INK_RGB": "12,24,34"
+    "BRAND": "#123A5E",
+    "PRIMARY": "#103251",
+    "PRIMARY_DK": "#0B253C",
+    "PRIMARY_MID": "#133D62",
+    "ACCENT": "#194F80",
+    "ACCENT_DK": "#11375A",
+    "ACCENT_LT": "#226FB4",
+    "ON_DARK": "#BBD8F2",
+    "MENU_INK": "#071827",
+    "TINT_1": "#D4E6F7",
+    "TINT_2": "#E1EEF9",
+    "TINT_3": "#CCE1F5",
+    "TINT_4": "#D0E4F6",
+    "LINE_2": "#A9CEEF",
+    "MUTED_BRAND": "#549DDE",
+    "MIST": "#F0F6FC",
+    "LINE": "#C3DDF4",
+    "PRIMARY_RGB": "16,50,81",
+    "ACCENT_RGB": "25,79,128",
+    "SCRIM_RGB": "19,61,98",
+    "SCRIM2_RGB": "11,37,60",
+    "MENU_INK_RGB": "7,24,39",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 13.06,
+      "ratio": 13.15,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 8.38,
+      "ratio": 8.5,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.97,
+      "ratio": 8.9,
       "pass": true
     },
     {
@@ -50,7 +52,7 @@
     },
     {
       "pair": "accent as kicker text on mist",
-      "ratio": 7.77,
+      "ratio": 7.81,
       "pass": true
     }
   ],
