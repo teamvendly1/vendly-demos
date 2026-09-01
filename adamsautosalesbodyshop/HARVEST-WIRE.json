@@ -1,109 +1,25 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-26T00:26:18.318Z",
+ "at": "2026-09-01T17:17:51.096Z",
  "slug": "adamsautosalesbodyshop",
  "wired": [
   {
-   "slot": "photo-hero.jpg",
-   "from": "google-63ab6f23e7e0a715.jpg",
-   "bytes": 131727,
-   "letterbox_stripped": null,
-   "trade_score": 2.5,
-   "reason": "hero_work_rank"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-70cec2312e250256.jpg",
-   "bytes": 138235,
-   "smart_crop": true,
-   "src": "google-70cec2312e250256.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x1200",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 53,
-   "detail_score": 27.325,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-f661663d8f87737c.jpg",
-   "bytes": 342597,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-b7dc9363c2699c37.jpg",
-   "bytes": 94268,
-   "smart_crop": true,
-   "src": "google-b7dc9363c2699c37.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 0,
-   "detail_score": 16.65,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-d96406033bde1750.jpg",
-   "bytes": 73974,
-   "smart_crop": true,
-   "src": "google-d96406033bde1750.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x1200",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 0,
-   "detail_score": 14.846,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-9a7aed7bf8d439b4.jpg",
-   "bytes": 120833,
-   "smart_crop": true,
-   "src": "google-9a7aed7bf8d439b4.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x720",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 55,
-   "detail_score": 22.019,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "from": "google-177f9d730df8cc98.jpg",
-   "bytes": 124624,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "from": "google-247f2f0bed37550e.jpg",
-   "bytes": 96325,
-   "letterbox_stripped": null
-  },
-  {
    "slot": "logo.png",
-   "from": "charter-placeholder-your-logo-here",
+   "from": "human-approved-preserved",
    "bytes": 21159,
-   "placeholder": true,
-   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+   "source_url": "",
+   "human_verdict_by": "cursor-eyes-20260826"
   }
  ],
  "skipped": [
-  "classification read: 20 verdicts",
-  "staged 10 harvest photos from assets",
-  "refused_by_class:google-7fb980ce32ee4267.jpg:reject",
-  "refused_by_class:google-c36274e3eac03ee8.jpg:reject",
-  "hero_cand_refuse:google-70cec2312e250256.jpg:road_no_landscape",
-  "hero_cand_refuse:google-f661663d8f87737c.jpg:road_no_landscape",
-  "hero_cand_refuse:google-b7dc9363c2699c37.jpg:road_no_landscape",
-  "hero_cand_refuse:google-d96406033bde1750.jpg:road_no_landscape",
-  "hero_cand_refuse:google-9a7aed7bf8d439b4.jpg:road_no_landscape",
-  "hero_cand_refuse:google-247f2f0bed37550e.jpg:road_no_landscape",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -122,25 +38,15 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
-  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 8,
- "refused_by_class": 2,
- "photo_candidates": 8,
- "altBySlot": {
-  "photo-hero.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 5)",
-  "photo-card-about.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 2)",
-  "photo-about.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 7)",
-  "photo-card-services.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 6)",
-  "photo-card-reviews.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 4)",
-  "photo-card-photos.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 1)",
-  "photo-gallery-1.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 8)",
-  "photo-gallery-2.jpg": "Adams Auto Sales & Body Shop - technician at work on site (photo 3)"
- },
- "dedupe_fixed": 5
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

@@ -41,6 +41,29 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
 .phone-strip a:hover{background:#0B253C}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+/*
+  NO-PHONE VARIANT (2026-08-31). The strip can now carry an email address instead of a phone
+  number. A phone is ~14 characters; measured across the 378 real phoneless businesses in the
+  email lane, addresses run to 46 (median 24, 48 rows over 30). At the strip's 22px Barlow
+  Condensed a 46-character address overruns 360px, and DEMO-SHIP-STANDARD forbids a page that
+  scrolls sideways.
+
+  Two layers, because the first one alone is not a guarantee:
+    - the generator sets an inline font-size computed from THIS address's actual length, so the
+      common case simply fits at full size and only long addresses shrink;
+    - these rules are the backstop that makes overflow impossible regardless of what the
+      generator computed - the line can never wrap (which would change --phone-strip-h and float
+      the sticky header mid-page, the exact defect Jacob caught on the Pixel 2026-08-17) and can
+      never push the page wider than the viewport.
+
+  Scoped to [data-contact-route="email"], so no existing phone demo can be affected by it -
+  none of them carry that attribute.
+*/
+.phone-strip[data-contact-route="email"] a,
+.phone-strip[data-contact-route="facebook"] a{
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  letter-spacing:.01em;text-transform:none
+}
 
 header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
 .logo{height:88px;width:auto;display:block}
@@ -222,7 +245,15 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+/* ROOT-CAUSE FIX 2026-08-30: was display:inline-block;padding:4px 0 only, which rendered at
+   32.75px (footer's inherited line-height:1.65 unitless multiplier x its own 15px font-size =
+   24.75px line box, + 8px padding = 32.75px, measured on-device as 33px). That was BELOW the
+   40px hard-audit-gate floor and Jacob's 44px ADA tap-target standard, on every footer nav link
+   (Contact/Menu/Services), on every page, of every demo built from this mold - the single
+   corpus-wide source of ~42+ of ~44-46 tap-target failures per demo. min-height forces a real
+   44px box regardless of any future line-height/font-size change elsewhere on the page (global
+   *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
+   keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
 .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#549DDE}
 
@@ -300,9 +331,9 @@ border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1p
 .rv-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
 .rv-stars-base svg{fill:#DADCE0}
 .rv-stars-fill svg{fill:#FBBC04}
-.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;max-height:9.5em;overflow-y:auto}
+.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:24;overflow:hidden}
 .home-reviews .rv-card{min-height:220px}
-.home-reviews .rv-body{color:#202124;display:block;min-height:4.5em}
+.home-reviews .rv-body{color:#202124;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;min-height:4.5em}
 .rv-src{display:block;margin-top:8px;color:#70757a;font:500 12.5px/1.4 Inter,sans-serif}
 .rvHonesty{max-width:64ch;margin:0 0 18px;font-size:.92rem;line-height:1.5;opacity:.88}
 @media(max-width:700px){.rv-card{flex-basis:86%;width:86%}}
@@ -887,3 +918,9 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions{flex-direction:column;align-items:stretch}
   .lc-midcta-actions .btn{justify-content:center}
 }
+
+/* HEADER MARK PLATE - ghost 100.0% on #FFFFFF -> 0.0% on #14140F.
+   Written by lib/mark-readability.js chooseMarkPlate(). Scoped to .logo so nav, menu sheet,
+   toggle pill and .bizmeta contrast are untouched. Remove this block only by fixing the mark. */
+header.site .logo{background:#14140F;padding:10px 16px;border-radius:12px;box-shadow:none;box-sizing:border-box}
+header.site .logo-chip{background:transparent}
