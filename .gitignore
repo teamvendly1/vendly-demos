@@ -273,3 +273,15 @@ SOURCE.txt
 /t-r-truck-and-auto-repair-the-diesel-specialists/
 /jersey-mobile-mechanics/
 /704tint/
+
+# ---- BUILD STAGING DIRECTORIES - NEVER PUBLISH. Added 2026-09-01 (seat minors-unpublish-242). ----
+# generate-from-blank-mold stages a rebuild in <slug>.stage-<pid>/ and renames it over <slug>/ only
+# on success. 37 of these were sitting in the working tree at 14:22 today, the oldest 78 minutes,
+# because a failed or in-flight rebuild never cleans them up. publish-site-demos.ps1 line 494 runs
+# , which would commit every one of them and serve it at /<slug>.stage-<pid>/.
+# It has never happened (0 in HEAD) - that is timing, not a guard.
+#
+# It matters beyond tidiness: 15 of those 37 are demos unpublished today under the minors law, so
+# one unlucky  would have republished an unexamined page at a sibling URL and made the
+# takedown look complete while it was not.
+*.stage-*/
