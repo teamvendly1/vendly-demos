@@ -1,0 +1,161 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-25T22:55:10.765Z",
+ "slug": "lafamiliaautorepairtiresllcclintonsampsonnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-663574f66c54fe51.jpg",
+   "bytes": 278110,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-e2d3ec2bc75a8df1.jpg",
+   "bytes": 95332,
+   "smart_crop": true,
+   "src": "google-e2d3ec2bc75a8df1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "900x1600",
+   "out_wh": "900x563",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 27.86,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-73df88c3ff81c149.jpg",
+   "bytes": 100865,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-da3640157fbdca45.jpg",
+   "bytes": 125065,
+   "smart_crop": true,
+   "src": "google-da3640157fbdca45.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 40,
+   "detail_score": 24.999,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-364689505a56ca54.jpg",
+   "bytes": 102425,
+   "smart_crop": true,
+   "src": "google-364689505a56ca54.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 33,
+   "detail_score": 21.635,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-ac36420dad94b299.jpg",
+   "bytes": 116486,
+   "smart_crop": true,
+   "src": "google-ac36420dad94b299.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 19.366,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-cbaa337523963bfe.jpg",
+   "bytes": 203052,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-8293a04721b41fba.jpg",
+   "bytes": 193072,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-248f8fd835454065.jpg",
+   "bytes": 174573,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-bb2ac14469eff292.jpg",
+   "bytes": 132920,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "human-approved-preserved",
+   "bytes": 146225,
+   "source_url": "https://www.google.com/maps/place/La+Familia+Auto+Repair+%26+Tires+LLC/@35.0094971,-78.3186375,17z/data=!3m1!4b1!4m6!3m5!1s0x89ab9519e220d1cb:0x23cfa4f829bec3a5!8m2!3d35.0094971!4d-78.3186375!16s%2Fg%2F11vrvp3l54?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+   "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
+  }
+ ],
+ "skipped": [
+  "classification read: 20 verdicts",
+  "staged 14 harvest photos from assets",
+  "refused_unlooked:google-2a55b387402b08a5.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-7aa1d3902480df52.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-ead980b4b8ac432b.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-faa95e72ded38a92.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-da3640157fbdca45.jpg:road_no_landscape",
+  "hero_cand_refuse:google-364689505a56ca54.jpg:road_no_landscape",
+  "hero_cand_refuse:google-cbaa337523963bfe.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-8293a04721b41fba.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-e2d3ec2bc75a8df1.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-248f8fd835454065.jpg:road_no_landscape",
+  "hero_cand_refuse:google-bb2ac14469eff292.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-73df88c3ff81c149.jpg:portrait_aspect_hero_refuse",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 10,
+ "refused_by_class": 4,
+ "photo_candidates": 10,
+ "altBySlot": {
+  "photo-hero.jpg": "Heavy-duty dually pickup in the workshop bay with a wheel off and the jack stands set under the front axle",
+  "photo-card-about.jpg": "Brake disc and hub exposed with the wheel off, the pad wear and rotor face visible from underneath",
+  "photo-about.jpg": "The illuminated shop sign lit up over the office windows after dark with the service list posted on the glass",
+  "photo-card-services.jpg": "Full-size SUV raised on the two-post lift, the arms set square under the sills and the bay doors open behind",
+  "photo-card-reviews.jpg": "Saloon raised on the lift with the front wheels off, the alignment and diagnostic equipment standing by the bay wall",
+  "photo-card-photos.jpg": "Vehicle on the lift with the bonnet up and the waste oil drain wheeled in beneath it for a service",
+  "photo-gallery-1.jpg": "La Familia Auto Repair & Tires LLC - technician at work on site (photo 2)",
+  "photo-gallery-2.jpg": "La Familia Auto Repair & Tires LLC - technician at work on site (photo 1)",
+  "photo-gallery-3.jpg": "Wheel balancer set up in the tyre bay with the weight rack on the wall and tyres stacked either side",
+  "photo-ctaband.jpg": "New muffler still in its wrapping, held up before it goes on the car"
+ },
+ "dedupe_fixed": 5
+}

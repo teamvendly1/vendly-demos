@@ -1,0 +1,55 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "paceautomotiveservicecenter",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#001A3D",
+  "palette": {
+    "BRAND": "#001A3D",
+    "PRIMARY": "#002961",
+    "PRIMARY_DK": "#001E47",
+    "PRIMARY_MID": "#003275",
+    "ACCENT": "#004199",
+    "ACCENT_DK": "#002E6B",
+    "ACCENT_LT": "#005BD6",
+    "ON_DARK": "#ADD0FF",
+    "MENU_INK": "#00142E",
+    "TINT_1": "#CCE2FF",
+    "TINT_2": "#DBEBFF",
+    "TINT_3": "#C2DCFF",
+    "TINT_4": "#C7DFFF",
+    "LINE_2": "#99C4FF",
+    "MUTED_BRAND": "#338AFF",
+    "MIST": "#EDF5FF",
+    "LINE": "#B8D6FF",
+    "PRIMARY_RGB": "0,41,97",
+    "ACCENT_RGB": "0,65,153",
+    "SCRIM_RGB": "0,50,117",
+    "SCRIM2_RGB": "0,30,71",
+    "MENU_INK_RGB": "0,20,46",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.1,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.48,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.89,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.43,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

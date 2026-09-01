@@ -1,0 +1,21 @@
+{
+  "schema": "vendly.autodemo.mark-classify-receipt/1",
+  "at": "2026-08-18T15:25:55.422Z",
+  "slug": "autoadventureservicesrepairtowinghickorycatawbanc",
+  "logo_sha256": "2edb9cfb17ee8f77601220ba8c593ffe1dac15464d81390d394d2a6e79e0a5ef",
+  "origin": "their-google-listing:human-flagged-mark",
+  "source_url": "https://www.google.com/maps/place/Auto+Adventure+Services+Automotive+Repair+Facility+%26+Automotive+Towing%2FRecovery+LLC/@35.7395612,-81.3166433,17z/data=!3m1!4b1!4m6!3m5!1s0x885130482d4f28ff:0x41984f8fc3ef14e0!8m2!3d35.7395612!4d-81.3166433!16s%2Fg%2F11g_qfdsj?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4w",
+  "source_file": "",
+  "verdict": {
+    "ok": true,
+    "flatness": 0.665,
+    "transparent": 0,
+    "decided_by": "flatness",
+    "w": 694,
+    "h": 480
+  },
+  "post_stage_transform": "logo-transparent-margin",
+  "human_verdict": "pass",
+  "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+  "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Found and fixed a real defect - the about-card photo was cropping to mostly sky/bare trees (same class as bradsmufflerservices earlier); recropped from the same source to keep the truck-loading/trailer/worker scene in frame (commit pending). Real shield logo, real reviews visible, correct phone (828) 322-9911 and address, no placeholders."
+}

@@ -1,0 +1,131 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-08-24T05:49:54.360Z",
+ "slug": "gadsdensautoservice",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-f3da5787071b8e0d.jpg",
+   "bytes": 275222,
+   "letterbox_stripped": null,
+   "trade_score": 2.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-88dda0b2398945a7.jpg",
+   "bytes": 437462,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-f2ba853f005e9c05.jpg",
+   "bytes": 430635,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-933c828ef1bf7044.jpg",
+   "bytes": 427623,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-b7ad253952bffc08.jpg",
+   "bytes": 417789,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-c281438807a295a3.jpg",
+   "bytes": 414571,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-a03e4d56a0630a2b.jpg",
+   "bytes": 393010,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-09d05c18c887f318.jpg",
+   "bytes": 345255,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-973a198d091148d2.jpg",
+   "bytes": 310257,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-407e54b51285ac66.jpg",
+   "bytes": 288057,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-1b6da8fb26d9b9d6.jpg",
+   "bytes": 234247,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 24 verdicts",
+  "staged 12 harvest photos from assets",
+  "refused_by_class:google-e5e40fb094045f10.jpg:reject",
+  "hero_cand_refuse:google-88dda0b2398945a7.jpg:road_no_landscape",
+  "hero_cand_refuse:google-f2ba853f005e9c05.jpg:road_no_landscape",
+  "hero_cand_refuse:google-933c828ef1bf7044.jpg:road_no_landscape",
+  "hero_cand_refuse:google-c281438807a295a3.jpg:road_no_landscape",
+  "hero_cand_refuse:google-a03e4d56a0630a2b.jpg:road_no_landscape",
+  "hero_cand_refuse:google-09d05c18c887f318.jpg:road_no_landscape",
+  "hero_cand_refuse:google-973a198d091148d2.jpg:road_no_landscape",
+  "hero_cand_refuse:google-1b6da8fb26d9b9d6.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 11,
+ "refused_by_class": 1,
+ "photo_candidates": 11,
+ "altBySlot": {
+  "photo-hero.jpg": "Faded maroon pickup truck parked outside the shop with a technician crouched working at the front wheel well",
+  "photo-card-about.jpg": "Exterior of the metal shop building with both garage bay doors open and a gravel lot out front",
+  "photo-about.jpg": "Aluminum transmission oil pan and case sitting on a stand against a wood-framed wall with tools hanging",
+  "photo-card-services.jpg": "Disassembled transmission gears, shafts and case laid out across a metal workbench for inspection",
+  "photo-card-reviews.jpg": "Two pickup trucks raised on twin-post lifts inside the shop bay while a technician works underneath one",
+  "photo-card-photos.jpg": "Close-up of a bare aluminum transmission pan with multiple bolt holes and fluid passages visible",
+  "photo-gallery-1.jpg": "Transmission clutch discs and friction plates spread across a blue tool chest lid",
+  "photo-gallery-2.jpg": "Table covered in transmission internals including bearings, shaft, plates and a valve body plate",
+  "photo-gallery-3.jpg": "Close-up of a silver transmission bellhousing casting with a large center bore and bolt pattern",
+  "photo-ctaband.jpg": "Red extended-cab pickup truck with windows and trim masked off in blue tape and paper for paint prep",
+  "photo-quoteband.jpg": "Interior view into a transmission bellhousing showing the flexplate and torque converter opening"
+ },
+ "dedupe_fixed": 5
+}
