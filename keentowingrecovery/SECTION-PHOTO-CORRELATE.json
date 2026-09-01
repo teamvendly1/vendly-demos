@@ -1,0 +1,434 @@
+{
+  "at": "2026-08-26T00:38:57.489Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/2",
+  "trade": "towing",
+  "replaced": [
+    {
+      "file": "photo-about.jpg",
+      "source": "stock-library",
+      "sha256": "c53545b7873501b803686924c34eb954dc94457e3ff7cd1bd7a17384f8f9f47e",
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "roadside recovery flatbed"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "harvest-fallback",
+      "sha256": "552a30bbbbb7edc81385b4225444ed853d59067883a3eb320fea7c0656d90f5b",
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\keentowingrecovery\\assets\\google\\google-552a30bbbbb7edc8.jpg",
+      "score_alt": "Rotator truck lit up with blue LED lighting at night"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "harvest-fallback",
+      "sha256": "284a63ad0ed07a1becb9d672bc6a925e1d600d7a58250a1e4a03ba5abd1ecf87",
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\keentowingrecovery\\assets\\google\\google-284a63ad0ed07a1b.jpg",
+      "score_alt": "White rotator truck lifting heavy equipment marked Oversize Load"
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "source": "harvest-fallback",
+      "sha256": "1fd65a837af5bb21ff09351aef503858ad03d416ac6ff393798d8ae0c8cacc7b",
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\keentowingrecovery\\assets\\google\\google-1fd65a837af5bb21.jpg",
+      "score_alt": "Rotator truck at night lifting equipment near traffic lights"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "78a8fdf7998d43a0647d274b6f49518de044100b6cee0fe48c3768d25346a2f5",
+      "bytes": 209749,
+      "alt": "Rotator truck at night lifting equipment near traffic lights"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "6236fc53e836768abba988efab173d84d91582c9b86d6651ef852af9fee96ab3",
+      "bytes": 156444,
+      "alt": "White rotator truck lifting heavy equipment marked Oversize Load"
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "97f31e116424ac209ef2b1c3e0c76a2b050f0d008c2f7d505633af545a1334c0",
+      "bytes": 105763,
+      "alt": "White heavy rotator truck parked inside a warehouse"
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "f550168a90fa3f30ed66b7c6583994f4a29d417f9af29ed49608afc3c285fe63",
+      "bytes": 503162,
+      "alt": "White flatbed truck parked on gravel near a brick building"
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6ccd92d1ead8930607ba14428103d5cdebcd095e0db47eb21d631a3d0ead89da",
+      "bytes": 322852,
+      "alt": "White heavy-duty rotator tow truck parked, side view"
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "d08c06c1cc2abc5ffc026def1528e31b5c19f944a1fa84dca7c0923766d32e70",
+      "bytes": 228892,
+      "alt": "White heavy rotator truck parked on gravel among bare trees"
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "a19b3e9a1dc7f8b2f089188a703e4a5460695811b5c7ee4c7d80a38d63d7baf9",
+      "bytes": 223913,
+      "alt": "Yellow company pickup truck parked under a covered area"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "01ba8431b1fc4787b367635656a72bb57a9090d7f94a153c9e3216f0641027bd",
+      "bytes": 223525,
+      "alt": "tow truck empty flatbed highway"
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "c8f9fc6bd4c50366e26730e5980bd3b2b60e1892139395af244b1a1d81ce70b7",
+      "bytes": 94230,
+      "alt": "Rotator truck lit up with blue LED lighting at night"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "9fbdabcd80d702251c7fdd54672a0403b2b7c1a31fc147fb1023d358f64d948b",
+      "bytes": 457907,
+      "alt": "roadside recovery flatbed"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "48e5359cd8a42f08b2fc8d12187362ea7695ead0dc7c536a2cce83f2596a74d1",
+      "bytes": 190385,
+      "alt": "tow truck winch hook vehicle"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "0147ec5f91009ae396301f409f3532ec7a966d16663bfa84b252d536cee38cb8",
+      "bytes": 102563,
+      "alt": "roadside recovery flatbed"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "2b7592eeceab0da2e549de4078a2790897743e50b511b7048fa9a7b9b6b8f2ea",
+      "bytes": 160093,
+      "alt": "Patriotic livery heavy rotator truck parked under an orange sunset sky"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "5dddf40c07ea53f5ba18c768605dbeef60b932624c68880fa62ba9c1de85f78a",
+      "bytes": 322722,
+      "alt": "Crane truck lifting a large cylindrical tank onto a truck bed",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ]
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "d3da1436a370bdd95ae7363e0b1add7c4df156c8849081f5ec4912aa8f7fd410",
+      "bytes": 285480,
+      "alt": "Crane truck lifting an overturned vehicle off a guardrail on a rural road",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing",
+        "unflattering_subject:unflattering:overturned"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "37d99b37c8a046ad0f94af98948192980873c5280078a94c550b72991ebbe749",
+      "bytes": 266858,
+      "alt": "Patriotic livery crane truck lifting a large shipping container near a brick building",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "441f480dea8ad39ca4bd6c50dddaf4079f6621f680164b35903f8ca23414914c",
+      "bytes": 140913,
+      "alt": "Crane truck at a recovery site lifting a large white trailer among crushed guardrails",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "be7673254ef307b7eb96dbffce0dbdaf3685b9fe071cc06bd333886c4ac86d2e",
+      "bytes": 137802,
+      "alt": "Crane truck lifting a large white cylindrical object near another patriotic-livery truck",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "75be3d23483ccb21f144a92bec962d1af43152c2c37939523a93bba78994df4b",
+      "bytes": 477669,
+      "alt": "Patriotic livery crane truck with its boom extended over red dirt ground",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ]
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "8ddb2ef18b436af25cea354408e0df4c0f3c09baf0a809ef096a4d1f72d31761",
+      "bytes": 235732,
+      "alt": "Crane truck at dusk lifting an overturned trailer on the highway with emergency lights visible",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing",
+        "unflattering_subject:unflattering:overturned"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "faef80a3f218c62a76d281d404da0500369a6715102b0bed13fe5e686664f733",
+      "bytes": 162108,
+      "alt": "White rotator crane truck parked with a billboard visible in the background",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:billboard:towing"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "9c5e98a15efd6b7c221f038cc58047428fa58f47ead6049c1ace80ae5c84f173",
+      "bytes": 164106,
+      "alt": "Patriotic flag-livery heavy rotator crane truck parked with its boom extended",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_deny:crane:towing"
+      ]
+    }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "Crane truck lifting a rail car near industrial silos",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": "Patriotic livery crane truck working a semi-truck recovery on the road at night",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": "Crane truck lifting a large cylindrical fuel tank near railroad tracks",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "alt": "Patriotic livery crane truck lifting a green metal container",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "alt": "Crane truck lifting a large cylindrical tank onto a truck bed",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "alt": "Crane truck lifting an overturned vehicle off a guardrail on a rural road",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:overturned",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "alt": "Patriotic livery crane truck lifting a large shipping container near a brick building",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "alt": "Crane truck at a recovery site lifting a large white trailer among crushed guardrails",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "alt": "Crane truck lifting a large white cylindrical object near another patriotic-livery truck",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": "Patriotic livery crane truck with its boom extended over red dirt ground",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "alt": "Crane truck at dusk lifting an overturned trailer on the highway with emergency lights visible",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -30,
+        "reason": "unflattering:overturned",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "alt": "White rotator crane truck parked with a billboard visible in the background",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:billboard:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "alt": "Patriotic flag-livery heavy rotator crane truck parked with its boom extended",
+      "relevance": {
+        "ok": false,
+        "score": -20,
+        "reason": "trade_deny:crane:towing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-1.jpg",
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-quoteband.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg"
+  ],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}

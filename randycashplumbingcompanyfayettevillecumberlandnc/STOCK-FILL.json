@@ -1,129 +1,400 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-26T17:37:56.207Z",
+  "at": "2026-09-01T20:24:12.791Z",
   "trade": "plumbing",
-  "slotHints": {
-    "photo-service-1.jpg": "Drains and sewer lines",
-    "photo-service-2.jpg": "Water heaters",
-    "photo-service-3.jpg": "Excavation and service lines",
-    "photo-service-4.jpg": "Bathroom and fixture work"
-  },
+  "slotHints": {},
   "ok": true,
-  "kept": [
+  "kept": [],
+  "filled": [
     {
       "file": "photo-about.jpg",
-      "sha256": "1bfbe1d958364f044ca9246c6bfc1e7c9373357d722e2829b1a87e7738521191",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "683d75aa25906b8cd222a94ba8995e4993bbe52fdcb23c8b2e9c1f36efed39bc",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/bathroom-interior-with-sink-on-counter-near-mirror-and-bath-6444967/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-interior-light-bathroom-03.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:40.008Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "1d72dd32daa6655aab21290cff7b307b596da51d5abe92ef17cbe75ed38a6ebb",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "c7d9bded14cc1b36743fab5306fa3e2f45af8ee8bb8d3de6969cfa7e47624e0e",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/green-tiled-wall-in-the-bathroom-7587476/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-modern-bathroom-green-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:42.773Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "3c6aa1b5fbdd8b83dceabc4c435321b30b94fa276343a143de1ba70895eaeffe",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "5503ae222bf353ca82e60efb95f82c21f0b305b6245e9b1df0a22acef65c0cc2",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/an-interior-of-a-bathroom-8134778/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-stylish-double-sink-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:18.137Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "bf3e01adf07c7701ba01868d4519fb687a777b3c58da582507f37d771821a627",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "43a92b3cd3370ba36db8cf3fd0761959dcdf3404f95dae40902cc98e79674cd3",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/luxury-bathroom-in-modern-apartment-7545773/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-white-bathtub-placed-03.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:57.109Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "586043bf57401b2ebd095d03473596ce476cd1edf4a65e9350fd3cdb949a5d97",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "7b6b1a4f3771cbc41b8ff8317a47a89c8f096744c7738290bc3eb102e825ab4a",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/elegant-modern-bathroom-interior-design-34574602/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-stylish-modern-bathroom-03.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:45.865Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "70cdae1c1f834037e3ac4d76cc6290b1dd5508eb16d29e2322a91fef68e719b8",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "61f1f4091539b55db24a6e77cd4e4bbb24094eec9a87a595e432f048fdefaa7b",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (royalty free, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/modern-shower-cabin-against-washstand-at-home-7005476/",
+        "subject_alt": "modern home bathroom interior clean",
+        "found_by_query": "modern home bathroom interior clean",
+        "family": "plumbing",
+        "library_file": "plumbing-shower-room-glass-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:48.356Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "d0fd9d9c17de99090761780e94d1d67078553e86954a76e8c566724d7110a141",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "3d229f1d6f90fd143bdd43e31a79a6df796f3e183fe098c54aad956eb961d0b7",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/stainless-steel-faucet-on-white-ceramic-sink-3761560/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-elegant-bathroom-featuring-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T16:04:18.271Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "7b50dcbc0c7fc3f037d84d7c05403ac3bb96c65722dd7ec081398d9f3a9c295e",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "98ee245334db80852dfeafba58d89c15ec7e65ddc7c3f70da5fb0bfeb108e195",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-modern-bathroom-with-tub-7031836/",
+        "subject_alt": "modern home bathroom interior clean",
+        "found_by_query": "modern home bathroom interior clean",
+        "family": "plumbing",
+        "library_file": "plumbing-white-bath-sink-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:49.297Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "a7ceba2f80f2a534e50706f9c98a64fb4cbcdcdd4f3ea0ea2c66a8e32e00d747",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "d830dfd76ae594630db40b253df9daa2a6abb5d938d0f2f410cf05622eff9bae",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-reviewsband.jpg",
-      "sha256": "70c89ed6a7d1a50409d7b7d98f6896dc3d910ec337a58ef0ee9f1ca55e6c4375",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "f4948911e583bef0faf9314305a1c4ad67d774a44fae6dbe4a5f6824ad66e689",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/cozy-bathroom-with-modern-amenities-37929767/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-inviting-bathroom-interior-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:47.402Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "1690bfeb9d7eceaf40616e3e6534befd8985352f1b95730b4e6388cc3340f221",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "0860e67f33f953c1104c7968f4e7d0bcd4db851d5e92c34892f33b1e63798fcb",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-modern-bathroom-with-shower-cabin-and-window-7031839/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-white-bathtub-near-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:42.255Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "42474bc6d67ff36adf3deaf96d4bad55dcd0e706f634e55d8bf72a9466b92005",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "038fc23ab5279f396b73ad50de07fbab4c4409c3de236ec15255771caa5b1f38",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/vintage-bathroom-interior-in-warm-lighting-30823588/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-elegant-vintage-bathroom-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:47.986Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "ae7933db409e67028c0b8fa94ddc232452a4fae7382e47416c14505312b1285a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "ad87e8f88755ee2370df3563bef414e693a7fe174240d582d37ca4edc2b16d8f",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/blue-textured-wall-with-drainpipe-35639814/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-close-up-blue-textured-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:48.951Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "644fcba10ee185ad21a7771162210e5275df34c076b631bb9933f2a49831224e",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "fd29972ef5809c2c05eeb95823342d52c70eaf28295d83cc400b59cf7af8ef74",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (royalty free, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/toilet-and-sink-in-modern-light-bathroom-6890406/",
+        "subject_alt": "modern home bathroom interior clean",
+        "found_by_query": "modern home bathroom interior clean",
+        "family": "plumbing",
+        "library_file": "plumbing-small-modern-bathroom-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:48.357Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "054ba085061731e24efdf714bdca739320234b092d32966ac1747c70677533a4",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "1ab7adab4a2f817e61aa54f1741547c75b227aa02ad5384281f653e09b74404e",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/gutter-on-sheet-metal-wall-20207032/",
+        "subject_alt": "PEX plumbing manifold install",
+        "found_by_query": "PEX plumbing manifold install",
+        "family": "plumbing",
+        "library_file": "plumbing-vibrant-yellow-pipe-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:00.281Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "a579ba0b995732ca0383081c65ec73cb81f02067569854485dd8836efe87a3ef",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "ae15e62662bb906001e6e0eec2e26a6209beee4323e4f8e9a4923f41fb106aa1",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (royalty free, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-modern-bathroom-with-glass-shower-cabin-7005268/",
+        "subject_alt": "modern home bathroom interior clean",
+        "found_by_query": "modern home bathroom interior clean",
+        "family": "plumbing",
+        "library_file": "plumbing-shower-cabin-glass-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:48.360Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "22d52932ec6435dd79dbb9fea6cc8d4b4b83e6f2d1c22dabb2a89450f47b8efc",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "fdfda7de1b08fe9a051249866efe67229fb5949548374b8134ec185ab1a5775f",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (royalty free, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-modern-bathroom-with-bath-near-window-6908355/",
+        "subject_alt": "modern home bathroom interior clean",
+        "found_by_query": "modern home bathroom interior clean",
+        "family": "plumbing",
+        "library_file": "plumbing-toilet-bidet-near-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-12T16:50:48.361Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     }
   ],
-  "filled": [],
   "gaps": [],
-  "distinct": 18,
-  "slots": 18,
-  "stock_provenance_rows": 0,
+  "distinct": 16,
+  "slots": 16,
+  "stock_provenance_rows": 16,
   "family": "plumbing",
   "refuse_borrow": false,
   "provenance_ok": true

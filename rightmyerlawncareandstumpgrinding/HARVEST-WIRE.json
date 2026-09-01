@@ -1,311 +1,52 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-26T17:40:15.610Z",
+ "at": "2026-09-01T20:25:38.115Z",
  "slug": "rightmyerlawncareandstumpgrinding",
  "wired": [
   {
-   "slot": "photo-hero.jpg",
-   "from": "google-6da8c0b04a69523a.jpg",
-   "bytes": 465843,
-   "letterbox_stripped": null,
-   "trade_score": 3.5,
-   "reason": "hero_work_rank"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-8af143d6b2c2c3ae.jpg",
-   "bytes": 198541,
-   "smart_crop": true,
-   "src": "google-8af143d6b2c2c3ae.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x778",
-   "out_wh": "1000x625",
-   "crop_axis": "x",
-   "crop_offset_pct": 45,
-   "detail_score": 26.586,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-b72175b604ae5706.jpg",
-   "bytes": 569759,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-740cebe844e6dc22.jpg",
-   "bytes": 240371,
-   "smart_crop": true,
-   "src": "google-740cebe844e6dc22.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x1200",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 48,
-   "detail_score": 28.479,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-3235c6f4e4b9416f.jpg",
-   "bytes": 236085,
-   "smart_crop": true,
-   "src": "google-3235c6f4e4b9416f.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 5,
-   "detail_score": 37.162,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-6d41aebcfada37f3.jpg",
-   "bytes": 272763,
-   "smart_crop": true,
-   "src": "google-6d41aebcfada37f3.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 100,
-   "detail_score": 37.614,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "from": "google-cc5f5e243b253344.jpg",
-   "bytes": 628458,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "from": "google-df155a0cd5abdb0b.jpg",
-   "bytes": 605460,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "from": "google-49278c7d718768a4.jpg",
-   "bytes": 601721,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-bec7e900a62ca248.jpg",
-   "bytes": 575172,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "google-c43bd8a9a7ceae72.jpg",
-   "bytes": 548273,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-4.jpg",
-   "from": "google-6960363f432e97fe.jpg",
-   "bytes": 518818,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-5.jpg",
-   "from": "google-bd0957d3e8a658ae.jpg",
-   "bytes": 517913,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-6.jpg",
-   "from": "google-ed1cb1c02db64b87.jpg",
-   "bytes": 517062,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-service-1.jpg",
-   "from": "google-67e23cada3c54345.jpg",
-   "bytes": 263800,
-   "smart_crop": true,
-   "src": "google-67e23cada3c54345.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 100,
-   "detail_score": 42.102,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-service-2.jpg",
-   "from": "google-08da5e56d7810b4a.jpg",
-   "bytes": 153857,
-   "smart_crop": true,
-   "src": "google-08da5e56d7810b4a.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x1200",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 50,
-   "detail_score": 22.043,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-service-3.jpg",
-   "from": "google-bd12b5531948b382.jpg",
-   "bytes": 152028,
-   "smart_crop": true,
-   "src": "google-bd12b5531948b382.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "778x1600",
-   "out_wh": "778x486",
-   "crop_axis": "y",
-   "crop_offset_pct": 100,
-   "detail_score": 43.454,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-gallery-7.jpg",
-   "from": "google-f06f6a9e58b63396.jpg",
-   "bytes": 480455,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-8.jpg",
-   "from": "google-80769e42fccbea1f.jpg",
-   "bytes": 479362,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-9.jpg",
-   "from": "google-1ced8be82630e021.jpg",
-   "bytes": 466911,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-services-hero.jpg",
-   "from": "google-0878da80e3e63340.jpg",
-   "bytes": 460979,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-contact.jpg",
-   "from": "google-143def72611a18c8.jpg",
-   "bytes": 450701,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-photos-cta.jpg",
-   "from": "google-aff907ad943726b6.jpg",
-   "bytes": 448261,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-reviewsband.jpg",
-   "from": "google-08016da98b57f779.jpg",
-   "bytes": 441014,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ba-before.jpg",
-   "from": "google-536eca0debecb1d2.jpg",
-   "bytes": 422114,
-   "letterbox_stripped": null,
-   "reason": "dedupe_replaced"
-  },
-  {
-   "slot": "photo-family.jpg",
-   "from": "google-61436203be512ccc.jpg",
-   "bytes": 420830,
-   "letterbox_stripped": null,
-   "reason": "dedupe_replaced"
-  },
-  {
-   "slot": "photo-service-4.jpg",
-   "from": "google-52c8d96b7ba57854.jpg",
-   "bytes": 420105,
-   "letterbox_stripped": null,
-   "reason": "dedupe_replaced"
-  },
-  {
-   "slot": "photo-service-5.jpg",
-   "from": "google-a80de52f990c344c.jpg",
-   "bytes": 387496,
-   "letterbox_stripped": null,
-   "reason": "dedupe_replaced"
-  },
-  {
-   "slot": "photo-service-6.jpg",
-   "from": "google-6e3b6ac1f3977470.jpg",
-   "bytes": 363093,
-   "letterbox_stripped": null,
-   "reason": "dedupe_replaced"
-  },
-  {
    "slot": "logo.png",
-   "from": "human-approved-preserved",
-   "bytes": 85546,
-   "source_url": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\rightmyerlawncareandstumpgrinding\\assets\\google\\google-manualcrop-trailerlogo.jpg",
-   "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18"
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
   }
  ],
  "skipped": [
-  "classification read: 79 verdicts",
-  "staged 41 harvest photos from assets",
-  "refused_unlooked:google-067459e94c78f6b7.jpg:NEEDS_SUBJECT_LOOK",
-  "hero_cand_refuse:google-3235c6f4e4b9416f.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-6d41aebcfada37f3.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-b993bcdd59fe306f.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-cc5f5e243b253344.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-bec7e900a62ca248.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-b72175b604ae5706.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-c43bd8a9a7ceae72.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-6960363f432e97fe.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-bd0957d3e8a658ae.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-ed1cb1c02db64b87.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-67e23cada3c54345.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-bd12b5531948b382.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-f06f6a9e58b63396.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-143def72611a18c8.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-aff907ad943726b6.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-08016da98b57f779.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-536eca0debecb1d2.jpg:road_no_landscape",
-  "hero_cand_refuse:google-52c8d96b7ba57854.jpg:road_no_landscape",
-  "hero_cand_refuse:google-808b03454d6068d5.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-8ad02d15302f295a.jpg:portrait_aspect_hero_refuse"
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 40,
- "refused_by_class": 1,
- "photo_candidates": 39,
- "altBySlot": {
-  "photo-hero.jpg": "Freshly trimmed round hedges and fresh pine straw mulch along a brick house foundation",
-  "photo-card-about.jpg": "Landscaping crew and dump trailer clearing overgrown shrub beds beside a garage",
-  "photo-about.jpg": "Freshly mulched garden bed with a young crepe myrtle beside a brick building and wood fence",
-  "photo-card-services.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 2)",
-  "photo-card-reviews.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 28)",
-  "photo-card-photos.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 18)",
-  "photo-gallery-1.jpg": "Yellow stump grinder parked in a yard beside a broken tree trunk near a house",
-  "photo-gallery-2.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 30)",
-  "photo-gallery-3.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 9)",
-  "photo-ctaband.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 24)",
-  "photo-quoteband.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 17)",
-  "photo-gallery-4.jpg": "Yellow stump grinder with the Rightmyer Lawncare and Stump Grinding branded panel, grinding a fresh stump in a backyard",
-  "photo-gallery-5.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 20)",
-  "photo-gallery-6.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 23)",
-  "photo-service-1.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 10)",
-  "photo-service-2.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 3)",
-  "photo-service-3.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 19)",
-  "photo-gallery-7.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 14)",
-  "photo-gallery-8.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 31)",
-  "photo-gallery-9.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 11)",
-  "photo-services-hero.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 12)",
-  "photo-contact.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 22)",
-  "photo-photos-cta.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 6)",
-  "photo-reviewsband.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 1)",
-  "photo-ba-before.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 15)",
-  "photo-family.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 26)",
-  "photo-service-4.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 25)",
-  "photo-service-5.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 16)",
-  "photo-service-6.jpg": "Rightmyer Lawncare and Stump Grinding - technician at work on site (photo 27)"
- },
- "dedupe_fixed": 5
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

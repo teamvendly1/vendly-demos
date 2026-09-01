@@ -1,0 +1,57 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "briggstowinggastoniagastonnc",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#444108",
+  "palette": {
+    "BRAND": "#444108",
+    "PRIMARY": "#57530A",
+    "PRIMARY_DK": "#403D08",
+    "PRIMARY_MID": "#69640C",
+    "ACCENT": "#7F790F",
+    "ACCENT_DK": "#605C0B",
+    "ACCENT_LT": "#C0B717",
+    "ON_DARK": "#F6F3B6",
+    "MENU_INK": "#292705",
+    "TINT_1": "#FAF8D1",
+    "TINT_2": "#FBFADF",
+    "TINT_3": "#F9F6C8",
+    "TINT_4": "#F9F7CD",
+    "LINE_2": "#F4F0A4",
+    "MUTED_BRAND": "#EAE148",
+    "MIST": "#FDFCEF",
+    "LINE": "#F7F5BF",
+    "PRIMARY_RGB": "87,83,10",
+    "ACCENT_RGB": "127,121,15",
+    "SCRIM_RGB": "105,100,12",
+    "SCRIM2_RGB": "64,61,8",
+    "MENU_INK_RGB": "41,39,5",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 7.93,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 4.52,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 6.96,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 15.14,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: white label on accent button = 3.95:1 (needs 4.5)"
+  ]
+}

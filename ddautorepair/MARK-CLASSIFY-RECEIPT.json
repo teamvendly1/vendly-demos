@@ -1,0 +1,23 @@
+{
+ "schema": "vendly.autodemo.mark-classify-receipt/1",
+ "at": "2026-08-18T21:24:12.067Z",
+ "slug": "ddautorepair",
+ "logo_sha256": "3dafd9318239b14e9c6b1a35296d4f98ab79085a4645bc93dfe41f39cb706891",
+ "origin": "their-google-listing:human-flagged-mark",
+ "source_url": "https://www.google.com/maps/place/D%26D+Auto+Repair/@34.318389,-79.8587554,17z/data=!3m1!4b1!4m6!3m5!1s0x88556f2971faf587:0x6986701281e39068!8m2!3d34.318389!4d-79.8587554!16s%2Fg%2F11jvmhjv84?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+ "source_file": "",
+ "verdict": {
+  "ok": true,
+  "flatness": 0.682,
+  "transparent": 0,
+  "decided_by": "flatness",
+  "w": 835,
+  "h": 553
+ },
+ "human_verdict": "pass",
+ "human_verdict_by": "claude-code-mobile-eyes-audit-2026-08-18",
+ "human_verdict_at": null,
+ "human_verdict_note": "Full mobile-viewport audit: home, about, reviews, contact. Real crossed-pistons logo, real collision-repair/truck photos, real Google reviews (Madison Smith visible), correct phone (843) 309-7424 and address, no placeholders.",
+ "human_verdict_carried_from": "2026-08-18T14:38:09.904Z",
+ "post_stage_transform": "logo-transparent-margin"
+}

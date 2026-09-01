@@ -1,0 +1,12 @@
+DO NOT SEND THIS DEMO TO THE PROSPECT.
+
+Verified 2026-08-17 ~05:06 ET (Claude overnight demo bank): Choice Tire & Automotive has a real,
+working, professional website at https://www.kernersvilletire.com (Shop-For-Tires page, Contact
+page, live). Our HARVEST.json recorded has_website=null / website_quality=none - that was either
+a scrape miss or the site went live after the harvest ran on 2026-08-15. Either way it is stale.
+
+This business does not fit WAVE1 (no-existing-website) trades scope. The demo was still built
+tonight because the generator's own WAVE1_HAS_WEBSITE gate only checks the harvest's own
+has_website field, which is wrong here - it has no way to independently re-verify a business's
+web presence at build time. Never send this one. If Cursor or a future seat is auditing the
+WAVE1 queue, pull this slug and mark the harvest has_website=true before it reaches any send list.
