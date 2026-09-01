@@ -1,0 +1,65 @@
+{
+  "at": "2026-08-18T21:24:40.889Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "trade": "auto-repair",
+  "replaced": [
+    {
+      "file": "photo-about.jpg",
+      "source": "Pexels",
+      "sha256": "94d0adc8e3a08feaf7cf6c72ca1275f66026ca934d237ff64b372efb02f633d5",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenterclintonsampsonnc/photo-card-photos.jpg"
+      ],
+      "service": "crew shop jobsite"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "Pexels",
+      "sha256": "620a74e3cec5533937c5256dbd130d642c89b9ab55883cdb3ff69ce05e71acef",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenterclintonsampsonnc/photo-card-reviews.jpg"
+      ],
+      "service": "crew shop jobsite"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "Pexels",
+      "sha256": "4daaaa0f05d71408ef6798cb811d19c6fd33f4142af6288519197ba06572487f",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenterclintonsampsonnc/photo-card-about.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "Pexels",
+      "sha256": "3c87ef6b86f5b331db3a699e0c61e27361d5fb3a29136afc562fe1364848a5dc",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenterclintonsampsonnc/photo-about.jpg"
+      ],
+      "service": null
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "source": "Pexels",
+      "sha256": "467fba3fa834bd5d00a0901f48b046b34da1d77feae78e748ae9709e620ef188",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenterclintonsampsonnc/photo-card-services.jpg"
+      ],
+      "service": "trade work"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "source": "Pexels",
+      "sha256": "ad33a55d276c4ae068fb04b227809c247e911df481d477d462333e1a252acfaa",
+      "reasons": [
+        "cross_demo_dupe:enrouteautocenterclintonsampsonnc/photo-ctaband.jpg"
+      ],
+      "service": null
+    }
+  ],
+  "kept": [],
+  "failed": [],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}

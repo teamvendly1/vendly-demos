@@ -1,0 +1,156 @@
+{
+  "at": "2026-08-25T23:00:07.440Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/2",
+  "trade": "auto-repair",
+  "replaced": [],
+  "kept": [
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "bcc6858614d631366a809212e995326923aa9643199d2948d9a8b4958275719f",
+      "bytes": 68411,
+      "alt": "J&J technician working underneath a raised Corvette on the shop lift"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "c9fc2d0616ea94933c5f679c6f7366ce4eeb5584b2fcd0c758d9ab005e24f3a2",
+      "bytes": 108038,
+      "alt": "Ford Power Stroke V8 Turbo Diesel engine bay mid-repair with tools staged"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "59274d2f50a2063d2ca96cad9ad6ee0c56f117717bd863e954ff06a9df45b3c2",
+      "bytes": 89834,
+      "alt": "Heavy-duty rotator tow truck crew loading a generator onto a trailer"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "13bf309951bd723c710e6addbd7ff07aadf3f9c976020616ba8ea502411d4498",
+      "bytes": 88676,
+      "alt": "Cummins 6.7L Turbo Diesel engine cover installed in a Dodge Ram engine bay"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "ec1b7d6d108d8d8adddb0196327c2f548f9897c977383128496c1c49eb2860b8",
+      "bytes": 111567,
+      "alt": "Diesel engine hoisted out of a pickup truck by chain hook during teardown in the"
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "1a1ff4818f9d054bef6c41ab7adccf595c84f66dea0835a07a69453fbdf8fca4",
+      "bytes": 96679,
+      "alt": "Disassembled diesel engine and frame components laid out during a rebuild"
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "1fcc243fad0bc49f809e6201fb8d5ecb74e354f9e218dcbed5e87157667f6b0a",
+      "bytes": 53594,
+      "alt": "Pickup truck raised on a four-post lift for engine and drivetrain repair"
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "4df29699f2fe781bf78f894fa18c0abcb845d3889e58b65c96c5a481a52ecb1f",
+      "bytes": 81280,
+      "alt": "Shop floor with two trucks up on lifts, hoods open for service"
+    },
+    {
+      "file": "photo-about.jpg",
+      "sha256": "578aa2d15189c88f5c048c07bdde684afc8b9beebbd181c4bed1d7065faf0cc9",
+      "bytes": 57439,
+      "alt": "J&J technician in a company polo holds a small white puppy in the shop office",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": "J&J technician in a company polo holds a small white puppy in the shop office",
+      "relevance": {
+        "ok": false,
+        "score": -12,
+        "reason": "trade_require_miss:auto"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-about.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg"
+  ],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}

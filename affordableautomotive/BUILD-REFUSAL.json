@@ -1,0 +1,8 @@
+{
+  "refused": true,
+  "problems": [
+    "EMPTY_PHOTO_GALLERY_DESPITE_WIRED_PHOTOS: 9 real photo(s) were wired into assets/photo-gallery-N.jpg but the gallery array is empty - the classified photos have no real alt text (photo.alt/caption/title), so photosToGallery() correctly refused to invent one and dropped them all. Write real alt text for the classified photos (same tool as batch-alt-pass.js), never invent from trade/slot to clear this."
+  ],
+  "generator_defect_fix_version": 1,
+  "checked_at": "2026-08-25T22:56:11.556Z"
+}

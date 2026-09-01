@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "totaltowing",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#163F1A",
+  "palette": {
+    "BRAND": "#163F1A",
+    "PRIMARY": "#19481E",
+    "PRIMARY_DK": "#123516",
+    "PRIMARY_MID": "#1E5724",
+    "ACCENT": "#28712F",
+    "ACCENT_DK": "#1C4F21",
+    "ACCENT_LT": "#379F42",
+    "ON_DARK": "#C3EAC6",
+    "MENU_INK": "#0C220E",
+    "TINT_1": "#D9F2DC",
+    "TINT_2": "#E5F6E6",
+    "TINT_3": "#D2EFD5",
+    "TINT_4": "#D5F0D8",
+    "LINE_2": "#B3E5B8",
+    "MUTED_BRAND": "#68CA71",
+    "MIST": "#F2FAF3",
+    "LINE": "#CAEDCD",
+    "PRIMARY_RGB": "25,72,30",
+    "ACCENT_RGB": "40,113,47",
+    "SCRIM_RGB": "30,87,36",
+    "SCRIM2_RGB": "18,53,22",
+    "MENU_INK_RGB": "12,34,14",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 10.57,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 6.01,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 16.79,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 5.65,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

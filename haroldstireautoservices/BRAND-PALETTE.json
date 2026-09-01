@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "haroldstireautoservices",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#1B0F08",
+  "palette": {
+    "BRAND": "#1B0F08",
+    "PRIMARY": "#4B2A16",
+    "PRIMARY_DK": "#371F10",
+    "PRIMARY_MID": "#5A321B",
+    "ACCENT": "#764223",
+    "ACCENT_DK": "#532E18",
+    "ACCENT_LT": "#A55C31",
+    "ON_DARK": "#ECD0C0",
+    "MENU_INK": "#23140A",
+    "TINT_1": "#F3E2D8",
+    "TINT_2": "#F7EBE3",
+    "TINT_3": "#F1DCD0",
+    "TINT_4": "#F2DFD4",
+    "LINE_2": "#E8C5B0",
+    "MUTED_BRAND": "#D08A62",
+    "MIST": "#FBF5F1",
+    "LINE": "#EFD6C8",
+    "PRIMARY_RGB": "75,42,22",
+    "ACCENT_RGB": "118,66,35",
+    "SCRIM_RGB": "90,50,27",
+    "SCRIM2_RGB": "55,31,16",
+    "MENU_INK_RGB": "35,20,10",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.79,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.16,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.74,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.86,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.55,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

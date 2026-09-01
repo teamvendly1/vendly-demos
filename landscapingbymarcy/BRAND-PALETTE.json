@@ -1,0 +1,60 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "landscapingbymarcy",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#411324",
+  "palette": {
+    "BRAND": "#411324",
+    "PRIMARY": "#4B162A",
+    "PRIMARY_DK": "#37101F",
+    "PRIMARY_MID": "#5B1B32",
+    "ACCENT": "#762342",
+    "ACCENT_DK": "#53182E",
+    "ACCENT_LT": "#A6305C",
+    "ON_DARK": "#EDC0D0",
+    "MENU_INK": "#240A14",
+    "TINT_1": "#F3D8E2",
+    "TINT_2": "#F7E3EB",
+    "TINT_3": "#F1D0DC",
+    "TINT_4": "#F2D4DF",
+    "LINE_2": "#E8B0C5",
+    "MUTED_BRAND": "#D1618A",
+    "MIST": "#FBF1F5",
+    "LINE": "#EFC8D6",
+    "PRIMARY_RGB": "75,22,42",
+    "ACCENT_RGB": "118,35,66",
+    "SCRIM_RGB": "91,27,50",
+    "SCRIM2_RGB": "55,16,31",
+    "MENU_INK_RGB": "36,10,20",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.51,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 10.05,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.02,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.61,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 9.09,
+      "pass": true
+    }
+  ],
+  "notes": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "rextowingmonroeunionnc",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#3A0101",
+  "palette": {
+    "BRAND": "#3A0101",
+    "PRIMARY": "#5F0202",
+    "PRIMARY_DK": "#460101",
+    "PRIMARY_MID": "#730202",
+    "ACCENT": "#960303",
+    "ACCENT_DK": "#690202",
+    "ACCENT_LT": "#D30404",
+    "ON_DARK": "#FEAFAF",
+    "MENU_INK": "#2D0101",
+    "TINT_1": "#FECDCD",
+    "TINT_2": "#FEDCDC",
+    "TINT_3": "#FEC3C3",
+    "TINT_4": "#FEC8C8",
+    "LINE_2": "#FD9B9B",
+    "MUTED_BRAND": "#FC3636",
+    "MIST": "#FFEDED",
+    "LINE": "#FEB9B9",
+    "PRIMARY_RGB": "95,2,2",
+    "ACCENT_RGB": "150,3,3",
+    "SCRIM_RGB": "115,2,2",
+    "SCRIM2_RGB": "70,1,1",
+    "MENU_INK_RGB": "45,1,1"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.04,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.09,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.81,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.04,
+      "pass": true
+    }
+  ],
+  "notes": []
+}
