@@ -1,114 +1,85 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-26T16:16:50.402Z",
+  "at": "2026-09-01T03:26:03.927Z",
   "trade": "plumbing",
-  "slotHints": {
-    "photo-service-1.jpg": "Drains and sewer lines",
-    "photo-service-2.jpg": "Water heaters",
-    "photo-service-3.jpg": "Bathroom and fixture work"
-  },
+  "slotHints": {},
   "ok": true,
-  "kept": [
-    {
-      "file": "photo-about.jpg",
-      "sha256": "a2d0b1af1cb25f67b82d7d94e0960ec37f3f977a9b2aa3b6efab475454e6f646",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "sha256": "975c6a2b969f34fc877daa3c482e13e7e68023c7d220b50f7340b54467e1c739",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-photos.jpg",
-      "sha256": "69c481a4d40e2ede4a71fb973d50ddf9ba3952d3a5f316f95fbc660b7c683f56",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-reviews.jpg",
-      "sha256": "0fb137edd5c65b2f5f58f414e984d91af211c12ddacf33c4d2767d97b88aedf2",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "sha256": "63d0357dafceeb3cecfe7fddadd264a7c6cd5907d0de707aa1e98d4898a45950",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "a4fa658aa3c8ec40e6df1a30a57b8949f535121ba3e0c4dcf917860bbbde2b15",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-hero.jpg",
-      "sha256": "7d0754d58859b3a4285627bd403a3e7af3fbcc6c40897249d82ba056da9bd355",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "9c9343937e97763714bc5761a67e06b2dae6c9c7edf1da995438891d66b1a81a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-service-1.jpg",
-      "sha256": "8228a162eebdd140279108b96c1d6b9804995e3aff77e27aa50023ebd141749a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-service-2.jpg",
-      "sha256": "fede6f5ba12a456e605af0535e0ea4072d3abf7732de10f5c651ac50bbc581b5",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-service-3.jpg",
-      "sha256": "d9ab0b90b3a0c2cc9ff83e2fedef13d928e1ae45ef667d3c9aa713584510e0d0",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "sha256": "b455033c9c13ba205c916d720e62161c291372af7e01ad7851055f1d9dd70a7f",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    }
-  ],
+  "kept": [],
   "filled": [
     {
-      "file": "photo-contact.jpg",
-      "sha256": "7241a9cb343fe0d4ffa63a5d025dd0be774a3c96fe6f5c0c634589260722c934",
+      "file": "photo-about.jpg",
+      "sha256": "eabb2bc9d04edcd086c1a6df6c3e3b847fc1b7d4c08cc9e9eed65ece27285585",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/stainless-steel-faucet-mounted-on-ceramic-tiles-8925979/",
+        "source_url": "https://www.pexels.com/photo/pipes-and-chimneys-on-white-building-15737642/",
         "subject_alt": "pipe wrench on copper pipe",
         "found_by_query": "pipe wrench on copper pipe",
         "family": "plumbing",
-        "library_file": "plumbing-stylish-ceramic-bathtub-01.jpg",
+        "library_file": "plumbing-white-building-chimneys-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:23:26.578Z",
+        "downloaded_at": "2026-08-22T22:23:11.556Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 162
+        "unclaimed_remaining_family_estimate": 45
       }
     },
     {
-      "file": "photo-photos-cta.jpg",
+      "file": "photo-card-about.jpg",
+      "sha256": "f7000dfc33e505315778fa9e37b284b49d56c8427f9b4e38a3848ba077f1b197",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/contemporary-bathroom-8082552/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-elegant-bathroom-featuring-04.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:11.217Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "ea4f3f2e271eccff644d9eb6ebab99d5f029adcf4ff655369f1e0ab09935ce77",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/square-shaped-mirror-in-golden-frame-above-white-sink-7045762/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-interior-classic-bathroom-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:18.909Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
       "sha256": "04d07ac4bb05d8553c1194e050fd853de76a7aa5f3a68dffff49a3e306ef5be4",
       "source": "stock-library",
       "provenance": {
@@ -128,86 +99,302 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 162
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "6d850ce6d56bca3f43b200c06804a3b14e1a5af234a860f9d3b7bdbf741e4f3f",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/kitchenette-interior-design-12513491/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-cozy-kitchenette-blue-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:31.632Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "1612f1be98877c81fcee09c98c512aa1e58d531ce6e1e1cc45a61dd6f4aa0910",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/crop-man-washing-faucet-in-bathroom-4239123/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-unrecognizable-man-wearing-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:34.389Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "fd583bda7f36a7589d0148d8d47c72d5c05ff1457868a04e3b2308dd4c5725be",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/modern-minimalist-bathroom-interior-design-36777904/",
+        "subject_alt": "bathroom faucet install sink",
+        "found_by_query": "bathroom faucet install sink",
+        "family": "plumbing",
+        "library_file": "plumbing-elegant-bathroom-design-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:25:19.359Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "11ec374d3081e67f4268a608263672d0472e92b75952f58ff8513282c95c4bf3",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/drain-pipe-casting-shadow-on-wall-14040055/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
+        "family": "plumbing",
+        "library_file": "plumbing-close-up-corrugated-aluminum-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:08.993Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "7fd801e9d200cf408bd15248ea74dfa479ee04f42de70ad5b85e49b0a014f04a",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/person-holding-wrench-5534767/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
+        "family": "plumbing",
+        "library_file": "plumbing-gloved-hand-holding-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:31:08.728Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 45
+      }
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "52acce9c681ed412e0182d89a76eaa9020f0ce201d04509f0e6def6d75ff0bf2",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/metal-tanks-inside-a-tequila-distillery-10040001/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
+        "family": "plumbing",
+        "library_file": "plumbing-interior-view-industrial-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:22.796Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 44
+      }
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "eed48e18bb500d1e2c02702c1ed8b7d07ede3d2685741eccdb9e0fbbdca1dd1c",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/interior-of-a-luxury-bathroom-with-glass-shower-cabin-in-beige-tone-8082561/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
+        "family": "plumbing",
+        "library_file": "plumbing-spacious-contemporary-bathroom-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:52.656Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 43
+      }
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "1e8519cc2a1ca3e78c374f712c9227e77c5f79311f7f1a5b9726e6b99b2ac5c6",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-man-in-gray-shirt-washing-dishes-7641391/",
+        "subject_alt": "drain snake cable clog",
+        "found_by_query": "drain snake cable clog",
+        "family": "plumbing",
+        "library_file": "plumbing-young-black-man-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:24:35.215Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 42
       }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "ac8d39d05ad6618013966af15179cd2d4647d982e1e6c215e96854374e707e1b",
+      "sha256": "29a34ba711b05959c5ae4aeb81a93b708120231d436ec8a46df5a13ff642c83d",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/set-of-skin-care-products-in-contemporary-bathroom-4239013/",
-        "subject_alt": "bathroom faucet install sink",
-        "found_by_query": "bathroom faucet install sink",
+        "licence": "Pexels License (royalty free, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/bathroom-with-shower-cabin-and-toilet-7227647/",
+        "subject_alt": "modern home bathroom interior clean",
+        "found_by_query": "modern home bathroom interior clean",
         "family": "plumbing",
-        "library_file": "plumbing-interior-modern-bathroom-10.jpg",
+        "library_file": "plumbing-sink-tap-placed-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:25:16.576Z",
+        "downloaded_at": "2026-08-12T16:50:48.358Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 162
+        "unclaimed_remaining_family_estimate": 41
       }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "3426285b8560be6abeb8aa22ee75d7f34ce3dacfe0151ad0bf0de72dcb9cde25",
+      "sha256": "ac6e97c49470cc1722375a9252e3861b1b13e64de0744e2ef2ee283fb005a95d",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/sunlit-white-wall-19051020/",
-        "subject_alt": "drain snake cable clog",
-        "found_by_query": "drain snake cable clog",
+        "source_url": "https://www.pexels.com/photo/pigeon-drinking-water-461329/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
         "family": "plumbing",
-        "library_file": "plumbing-long-shadow-cast-01.jpg",
+        "library_file": "plumbing-pigeon-drinking-fountain-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:24:44.099Z",
+        "downloaded_at": "2026-08-22T22:23:21.236Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 162
+        "unclaimed_remaining_family_estimate": 40
       }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "44c77871c483d4923e8f97a378a81b869ec856272464e46ab82420f5e5fcdd75",
+      "sha256": "db4409616a11a5447df91a98d64312944c57d4c4d1f98371975b9e6843592c1e",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/interior-of-modern-bathroom-in-apartment-7534564/",
-        "subject_alt": "bathroom faucet install sink",
-        "found_by_query": "bathroom faucet install sink",
+        "source_url": "https://www.pexels.com/photo/stylish-interior-of-bathroom-with-shower-cabin-and-white-cupboard-6933775/",
+        "subject_alt": "water heater install basement",
+        "found_by_query": "water heater install basement",
         "family": "plumbing",
-        "library_file": "plumbing-interior-contemporary-bathroom-06.jpg",
+        "library_file": "plumbing-white-door-furniture-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:25:13.801Z",
+        "downloaded_at": "2026-08-22T22:23:47.789Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 162
+        "unclaimed_remaining_family_estimate": 39
+      }
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "58c50dfccbc1b9e419fef640f00f0d4aa70cacd5408aba63d3fdd3c9b6e97659",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/chrome-faucet-against-marble-background-34295404/",
+        "subject_alt": "pipe wrench on copper pipe",
+        "found_by_query": "pipe wrench on copper pipe",
+        "family": "plumbing",
+        "library_file": "plumbing-close-up-chrome-faucet-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:23.416Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 38
       }
     }
   ],
   "gaps": [],
-  "distinct": 17,
-  "slots": 17,
-  "stock_provenance_rows": 5,
+  "distinct": 16,
+  "slots": 16,
+  "stock_provenance_rows": 16,
   "family": "plumbing",
   "refuse_borrow": false,
   "provenance_ok": true

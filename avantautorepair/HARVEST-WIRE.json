@@ -1,114 +1,8 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-26T00:50:06.960Z",
+ "at": "2026-09-01T02:21:49.412Z",
  "slug": "avantautorepair",
  "wired": [
-  {
-   "slot": "photo-hero.jpg",
-   "from": "google-baee77da3cb8fb8e.jpg",
-   "bytes": 370124,
-   "letterbox_stripped": null,
-   "trade_score": 3.5,
-   "reason": "hero_work_rank"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-91c180b6257412cd.jpg",
-   "bytes": 109061,
-   "smart_crop": true,
-   "src": "google-91c180b6257412cd.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x1200",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 50,
-   "detail_score": 21.463,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-2f488e4c3a30b00b.jpg",
-   "bytes": 162949,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-eb2b3179bebf856f.jpg",
-   "bytes": 138143,
-   "smart_crop": true,
-   "src": "google-eb2b3179bebf856f.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 80,
-   "detail_score": 22.34,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-f3c3c2e095a72ec6.jpg",
-   "bytes": 94044,
-   "smart_crop": true,
-   "src": "google-f3c3c2e095a72ec6.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 10,
-   "detail_score": 13.341,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-e4f8de9a4cfb6ce9.jpg",
-   "bytes": 98030,
-   "smart_crop": true,
-   "src": "google-e4f8de9a4cfb6ce9.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 30,
-   "detail_score": 19.584,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "from": "google-7f9e951dc102ae35.jpg",
-   "bytes": 224492,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "from": "google-26c622ed29614f94.jpg",
-   "bytes": 310121,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "from": "google-a028bfb0f0aaa427.jpg",
-   "bytes": 292570,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-47202b5a5915a7b7.jpg",
-   "bytes": 252146,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "google-1afee2a92703b9c8.jpg",
-   "bytes": 246746,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-4.jpg",
-   "from": "google-78af90c9570452f0.jpg",
-   "bytes": 187722,
-   "letterbox_stripped": null
-  },
   {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
@@ -118,16 +12,18 @@
   }
  ],
  "skipped": [
-  "classification read: 26 verdicts",
-  "staged 13 harvest photos from assets",
-  "refused_by_class:google-1d158fd9e3b873f1.jpg:reject",
-  "hero_cand_refuse:google-eb2b3179bebf856f.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-26c622ed29614f94.jpg:road_no_landscape",
-  "hero_cand_refuse:google-a028bfb0f0aaa427.jpg:road_no_landscape",
-  "hero_cand_refuse:google-f3c3c2e095a72ec6.jpg:road_no_landscape",
-  "hero_cand_refuse:google-e4f8de9a4cfb6ce9.jpg:road_no_landscape",
-  "hero_cand_refuse:google-7f9e951dc102ae35.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-2f488e4c3a30b00b.jpg:road_no_landscape",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
   "photo-gallery-5.jpg",
   "photo-gallery-6.jpg",
   "photo-service-1.jpg",
@@ -140,29 +36,17 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 12,
- "refused_by_class": 1,
- "photo_candidates": 12,
- "altBySlot": {
-  "photo-hero.jpg": "Person standing on the seat of a red motorcycle among stacked tires",
-  "photo-card-about.jpg": "Person standing beside a red Hyosung motorcycle among stacked tires in the yard",
-  "photo-about.jpg": "Open engine bay of a tan minivan parked in the yard",
-  "photo-card-services.jpg": "Close-up of a brake rotor and hub assembly on the ground beside shop tools",
-  "photo-card-reviews.jpg": "Close-up of a red motorcycle fuel tank in a cluttered garage",
-  "photo-card-photos.jpg": "Close-up of a brake rotor and caliper assembly removed from a vehicle",
-  "photo-gallery-1.jpg": "Close-up of a radiator removed and leaning against a bumper",
-  "photo-gallery-2.jpg": "Black SUV's front end covered with pine debris parked in the yard",
-  "photo-gallery-3.jpg": "Black SUV parked among trees in the salvage yard",
-  "photo-ctaband.jpg": "Black SUV with a spare tire mounted on the rear door parked in the yard",
-  "photo-quoteband.jpg": "Black SUV parked in the yard with pine needles scattered on the roof",
-  "photo-gallery-4.jpg": "Vintage brown pickup truck with googly-eye stickers on the windshield parked at dusk"
- },
- "dedupe_fixed": 5
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

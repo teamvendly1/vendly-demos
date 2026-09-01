@@ -1,128 +1,400 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-26T00:48:08.651Z",
+  "at": "2026-09-01T02:24:56.205Z",
   "trade": "auto-repair",
-  "slotHints": {
-    "photo-service-1.jpg": "Diagnostics and engine work",
-    "photo-service-2.jpg": "Tires and wheels",
-    "photo-service-3.jpg": "Exhaust and underbody"
-  },
+  "slotHints": {},
   "ok": true,
-  "kept": [
+  "kept": [],
+  "filled": [
     {
       "file": "photo-about.jpg",
-      "sha256": "9e9b26f3dcf20f7d0ca21481f2e2db60f8c8c85c69ebbab9471bdb1e5478665d",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "5f431da8232e116b505d32bc593344f3d0e3ce961edac9eaa79a727c1a18ac35",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/focused-male-mechanic-using-spray-paint-on-metal-detail-3822927/",
+        "subject_alt": "tire mounting machine shop",
+        "found_by_query": "tire mounting machine shop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-male-craftsman-casual-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:36:17.995Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 28
+      }
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "7440e5bde2ce5685e6d1c458c5e0d2e434e8f578590238e62071432718ef9e1a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "619194d0126bf560efcc180f804d99e371ab098b1cf0a6d467d19960e5e2cb99",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tools-and-accessories-on-wall-in-workshop-16243257/",
+        "subject_alt": "brake rotor closeup workshop",
+        "found_by_query": "brake rotor closeup workshop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-cluttered-workshop-tools-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:59:21.686Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 27
+      }
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "ff7b1bafbc8bef4779b04a689e5912bfc21a079be36e71485b4220f60eb3c356",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "938c1d435a1cbbab0326f1e0d71482ed744e9582a9d177822a5af26fdd85124c",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/close-up-of-corvette-ls3-engine-in-red-car-38442312/",
+        "subject_alt": "oil change drain pan under car",
+        "found_by_query": "oil change drain pan under car",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-view-chevrolet-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:35:32.745Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 26
+      }
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "f1c04af445fb707447aa460bb100db569007e0361fcda180eae0e34062f10fcb",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "e6b5d1a93b431a8fc44a89edc64806ba728b2e7f8f14c56b976dd488adc20ee5",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/car-engine-being-lifted-by-chain-4116194/",
+        "subject_alt": "car on lift garage bay",
+        "found_by_query": "car on lift garage bay",
+        "family": "auto-repair",
+        "library_file": "auto-repair-close-up-rusty-engine-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:30:42.679Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 25
+      }
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "1ff176c0b786d62886644796bb0099a6280debdbe7a930610598e644d549cce9",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "cf6b97c50a6023ae5de22b37ce7c9ab54f9bb676279661bddb074a574fceb91b",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/man-in-black-crew-neck-t-shirt-fixing-a-car-8478277/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-mechanic-blue-coveralls-06.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:53.719Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 24
+      }
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "d46a593a7a0276cb6180b593bbc28a23a02c5698d1c987fd9e7b5e2e6da49e3c",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "4a8ab3c3eb16742142cf638046406dcf0d9783afec24b6eec0a71b888c9304fa",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-man-in-black-long-sleeve-shirt-fixing-a-tire-13746777/",
+        "subject_alt": "tire mounting machine shop",
+        "found_by_query": "tire mounting machine shop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-black-white-03.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:35:55.724Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 23
+      }
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "120868fa3bbfdde3faca1f6e20a9e2c12292e4bb5c8f7bbfdf9c0bb75fe42ec3",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "d05e8b1dfef512a2738285fa648bc2d7c8df98647286e864fa4bd1618c8ab79e",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-man-checking-the-white-car-4116169/",
+        "subject_alt": "car on lift garage bay",
+        "found_by_query": "car on lift garage bay",
+        "family": "auto-repair",
+        "library_file": "auto-repair-two-mechanics-inspecting-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:30:39.565Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 22
+      }
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "bda9e5264060c452b2235a41534f1d7a1472dec7977b478fcd9879061015c8b4",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "938c1d435a1cbbab0326f1e0d71482ed744e9582a9d177822a5af26fdd85124c",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/close-up-of-corvette-ls3-engine-in-red-car-38442312/",
+        "subject_alt": "oil change drain pan under car",
+        "found_by_query": "oil change drain pan under car",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-view-chevrolet-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:35:32.745Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 21
+      }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "b92276ea9a0ae3cf8834fd4c10a149306dd02541b3fef8676d00b06924c765a4",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "6f84d11acdcb730356220fabac62407b71752f1dce1b4ca919c4c02f39f3566e",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-reviewsband.jpg",
-      "sha256": "a7ceb6d688cd4cb94a2cbb806b7fa6a61f496bbb1e3346b35a95e6dea3000986",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "dea7c983dfa1bcf6c31cb918b7e324d4cb66f24730a532a324b89b603f7ae2dc",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/black-and-white-photo-of-a-man-cutting-a-car-tire-13746774/",
+        "subject_alt": "tire mounting machine shop",
+        "found_by_query": "tire mounting machine shop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-monochrome-man-skillfully-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:36:11.087Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 20
+      }
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "e572264776e1bccb235d44869ae9e4c2d84cd54a16e1a980214933938dba9bda",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "b14c15f6c4c85c496fc0877c9d1be896e09c774b9a16cdbde87d4d0838d85f2e",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/person-looking-at-the-engine-of-a-car-8478213/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-close-up-mechanic-repairing-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:39:19.547Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 19
+      }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "ee821d88901c404c927d8d0af97521896db25823fef05a75d0ec69006682469f",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "8c82df7b7888b60adceca94eefb6f1140daf78f1986be95a46eb251cf11788c3",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/red-car-on-repair-17623844/",
+        "subject_alt": "oil change drain pan under car",
+        "found_by_query": "oil change drain pan under car",
+        "family": "auto-repair",
+        "library_file": "auto-repair-classic-red-car-02.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:35:36.536Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 18
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "f112ff1c1b20fc027178f789a50c1807fc3ce802f8e85e0f7fe2751da2bc5b4a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "be1612a8ab124e6fb15c39b926a56d6dcfea5119965a6071250631913ef7d3a4",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-mechanic-repairing-a-car-8478265/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-mechanic-blue-overalls-03.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:10.118Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 17
+      }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "4b65621292d3f5628fc67bb08abd9e36e20eb4d62278c979841787ea34095802",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "91949636ca611400e40094655227d5e951c81f2e4e672a52c760382fdd544002",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/man-in-black-jacket-standing-beside-black-motorcycle-3818529/",
+        "subject_alt": "oil change drain pan under car",
+        "found_by_query": "oil change drain pan under car",
+        "family": "auto-repair",
+        "library_file": "auto-repair-mechanic-working-motorcycle-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:35:43.778Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 16
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "f40f52faa459c911023965f22beb4fae4a52e950b8bdc8156b98bf0b2aede6a7",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "37f857cb7512879a7131d279336f9be4d6c540b5bb6067d4f6895e57018804ce",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/a-mechanic-fixing-an-engine-7564865/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-close-up-mechanic-using-03.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:24.467Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 15
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "bd6495479debe27805ca1dc4038e7bc08ae1dfa95a52e9c214834a51b41da893",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "e045109560c32ab4aa97adea788cecef4caf644d65f26fa1f788c24f8c457110",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-fixing-a-tire-13746771/",
+        "subject_alt": "tire mounting machine shop",
+        "found_by_query": "tire mounting machine shop",
+        "family": "auto-repair",
+        "library_file": "auto-repair-black-white-showing-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:36:12.112Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 14
+      }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "536e941ab970fdce775f91a408e79e2bf76350c4f0695f8356c717ae27b508bd",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "98c93fe6f622c64f9a627f4222391a8105789dbacc35902d22ad9a51bcb77d11",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/close-up-of-car-battery-in-engine-bay-37177070/",
+        "subject_alt": "engine bay diagnostic tools",
+        "found_by_query": "engine bay diagnostic tools",
+        "family": "auto-repair",
+        "library_file": "auto-repair-detailed-view-orange-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:58:31.829Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 13
+      }
     }
   ],
-  "filled": [],
   "gaps": [],
-  "distinct": 18,
-  "slots": 18,
-  "stock_provenance_rows": 0,
+  "distinct": 16,
+  "slots": 16,
+  "stock_provenance_rows": 16,
   "family": "auto-repair",
   "refuse_borrow": false,
   "provenance_ok": true

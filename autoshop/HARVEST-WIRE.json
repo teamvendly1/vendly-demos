@@ -1,90 +1,8 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-26T00:48:52.173Z",
+ "at": "2026-09-01T02:19:14.112Z",
  "slug": "autoshop",
  "wired": [
-  {
-   "slot": "photo-hero.jpg",
-   "from": "google-b65e06ba71be7c94.jpg",
-   "bytes": 162714,
-   "letterbox_stripped": null,
-   "trade_score": 3.5,
-   "reason": "hero_work_rank"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-d1a4202b8ad2702a.jpg",
-   "bytes": 106209,
-   "smart_crop": true,
-   "src": "google-d1a4202b8ad2702a.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 35,
-   "detail_score": 24.338,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-fbd1a4f9072cab0e.jpg",
-   "bytes": 251660,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-f14b05b8141013e8.jpg",
-   "bytes": 148193,
-   "smart_crop": true,
-   "src": "google-f14b05b8141013e8.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 57,
-   "detail_score": 29.085,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-29f24e6b2c10ddb0.jpg",
-   "bytes": 122446,
-   "smart_crop": true,
-   "src": "google-29f24e6b2c10ddb0.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x901",
-   "out_wh": "1000x625",
-   "crop_axis": "x",
-   "crop_offset_pct": 50,
-   "detail_score": 26.971,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-0f6d6c240bac8a30.jpg",
-   "bytes": 64067,
-   "smart_crop": true,
-   "src": "google-0f6d6c240bac8a30.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "900x1600",
-   "out_wh": "900x563",
-   "crop_axis": "y",
-   "crop_offset_pct": 23,
-   "detail_score": 15.222,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "from": "google-d4d5483ad5bd239e.jpg",
-   "bytes": 157071,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "from": "google-addb339a3e2caca6.jpg",
-   "bytes": 91314,
-   "letterbox_stripped": null
-  },
   {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
@@ -94,18 +12,14 @@
   }
  ],
  "skipped": [
-  "classification read: 20 verdicts",
-  "staged 13 harvest photos from assets",
-  "refused_by_class:google-75cc1d77919406b9.jpg:reject",
-  "refused_unlooked:google-9fe6541d91f0b493.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-c830502777d8d9f7.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_by_class:google-d2626a4045c1ca69.jpg:reject",
-  "refused_unlooked:google-ed3e3d23d4353494.jpg:NEEDS_SUBJECT_LOOK",
-  "hero_cand_refuse:google-f14b05b8141013e8.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-d1a4202b8ad2702a.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-fbd1a4f9072cab0e.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-0f6d6c240bac8a30.jpg:road_no_landscape",
-  "hero_cand_refuse:google-addb339a3e2caca6.jpg:road_no_landscape",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -124,25 +38,15 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
-  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 8,
- "refused_by_class": 5,
- "photo_candidates": 8,
- "altBySlot": {
-  "photo-hero.jpg": "Waiting room with two gray chairs and a round coffee table facing the glass entry door printed with the oval AutoShop logo, address 305 B, and phone number",
-  "photo-card-about.jpg": "Blue rebuilt engine displayed on a metal stand in the lobby beneath a large wall mirror, red and black branded wainscoting behind it",
-  "photo-about.jpg": "Interior wall mural of the AutoShop car logo behind a display shelf holding branded ball caps, a chrome tailpipe, and a whimsical mechanic mascot made from car parts",
-  "photo-card-services.jpg": "Two technicians in the service bay pose beneath a black Lexus SUV raised on the two-post lift with oil bottles staged on the floor",
-  "photo-card-reviews.jpg": "Lobby seating area looking through to the front reception desk with a computer monitor, next to the glass door bearing the oval AutoShop logo and phone number",
-  "photo-card-photos.jpg": "View through two doorways to the service reception window and a back storage room with the round AutoShop wall decal and shrink-wrapped furniture",
-  "photo-gallery-1.jpg": "Customer waiting area with two gray leather chairs below the black car-outline AutoShop wall mural, wood plank floor",
-  "photo-gallery-2.jpg": "Inside view of the service reception window with the AutoShop oval decal on the wall and a thank-you-for-your-business sign taped beside a small wooden birdhouse"
- },
- "dedupe_fixed": 5
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

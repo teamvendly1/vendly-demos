@@ -2,40 +2,42 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "camdenautomotiveanddieselservice",
   "mold": "_template-skipper-blank",
-  "brand_input": "#59291A",
+  "brand_input": "#123A5E",
   "palette": {
-    "BRAND": "#59291A",
-    "PRIMARY": "#4B2316",
-    "PRIMARY_DK": "#371910",
-    "PRIMARY_MID": "#5B2A1B",
-    "ACCENT": "#763723",
-    "ACCENT_DK": "#532618",
-    "ACCENT_LT": "#A64C30",
-    "ON_DARK": "#EDCAC0",
-    "MENU_INK": "#24100A",
-    "TINT_1": "#F3DED8",
-    "TINT_2": "#F7E8E3",
-    "TINT_3": "#F1D8D0",
-    "TINT_4": "#F2DBD4",
-    "LINE_2": "#E8BDB0",
-    "MUTED_BRAND": "#D17C61",
-    "MIST": "#FBF4F1",
-    "LINE": "#EFD1C8",
-    "PRIMARY_RGB": "75,35,22",
-    "ACCENT_RGB": "118,55,35",
-    "SCRIM_RGB": "91,42,27",
-    "SCRIM2_RGB": "55,25,16",
-    "MENU_INK_RGB": "36,16,10"
+    "BRAND": "#123A5E",
+    "PRIMARY": "#103251",
+    "PRIMARY_DK": "#0B253C",
+    "PRIMARY_MID": "#133D62",
+    "ACCENT": "#194F80",
+    "ACCENT_DK": "#11375A",
+    "ACCENT_LT": "#226FB4",
+    "ON_DARK": "#BBD8F2",
+    "MENU_INK": "#071827",
+    "TINT_1": "#D4E6F7",
+    "TINT_2": "#E1EEF9",
+    "TINT_3": "#CCE1F5",
+    "TINT_4": "#D0E4F6",
+    "LINE_2": "#A9CEEF",
+    "MUTED_BRAND": "#549DDE",
+    "MIST": "#F0F6FC",
+    "LINE": "#C3DDF4",
+    "PRIMARY_RGB": "16,50,81",
+    "ACCENT_RGB": "25,79,128",
+    "SCRIM_RGB": "19,61,98",
+    "SCRIM2_RGB": "11,37,60",
+    "MENU_INK_RGB": "7,24,39",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 13.54,
+      "ratio": 13.15,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 8.97,
+      "ratio": 8.5,
       "pass": true
     },
     {
@@ -45,12 +47,12 @@
     },
     {
       "pair": "menu ink on white",
-      "ratio": 18.21,
+      "ratio": 17.96,
       "pass": true
     },
     {
       "pair": "accent as kicker text on mist",
-      "ratio": 8.25,
+      "ratio": 7.81,
       "pass": true
     }
   ],

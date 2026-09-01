@@ -1,64 +1,8 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-26T16:12:34.711Z",
+ "at": "2026-09-01T03:22:33.646Z",
  "slug": "castlehaynetowing",
  "wired": [
-  {
-   "slot": "photo-hero.jpg",
-   "from": "google-6de944104671edca.jpg",
-   "bytes": 698678,
-   "letterbox_stripped": null,
-   "trade_score": 0,
-   "reason": "hero_work_rank"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-71e69fae403e0ceb.jpg",
-   "bytes": 242152,
-   "smart_crop": true,
-   "src": "google-71e69fae403e0ceb.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 100,
-   "detail_score": 48.523,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-feac706e1d373419.jpg",
-   "bytes": 420592,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-3880a4a59c280152.jpg",
-   "bytes": 124007,
-   "smart_crop": true,
-   "src": "google-3880a4a59c280152.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 98,
-   "detail_score": 28.795,
-   "orientation": "portrait"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-d717ee020c7cfdb9.jpg",
-   "bytes": 55626,
-   "smart_crop": true,
-   "src": "google-d717ee020c7cfdb9.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "900x1600",
-   "out_wh": "900x563",
-   "crop_axis": "y",
-   "crop_offset_pct": 50,
-   "detail_score": 13.328,
-   "orientation": "portrait"
-  },
   {
    "slot": "logo.png",
    "from": "charter-placeholder-your-logo-here",
@@ -68,14 +12,11 @@
   }
  ],
  "skipped": [
-  "classification read: 10 verdicts",
-  "staged 5 harvest photos from assets",
-  "hero_cand_refuse:google-6de944104671edca.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-71e69fae403e0ceb.jpg:road_no_landscape",
-  "hero_cand_refuse:google-feac706e1d373419.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-3880a4a59c280152.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-d717ee020c7cfdb9.jpg:road_no_landscape",
-  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-6de944104671edca.jpg)",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
   "photo-card-photos.jpg",
   "photo-gallery-1.jpg",
   "photo-gallery-2.jpg",
@@ -97,14 +38,15 @@
   "photo-reviewsband.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
-  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
-  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 5,
- "photo_candidates": 5,
- "dedupe_fixed": 5
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

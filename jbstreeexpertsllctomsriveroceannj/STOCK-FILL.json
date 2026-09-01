@@ -1,6 +1,6 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-30T23:39:50.496Z",
+  "at": "2026-09-01T05:57:31.772Z",
   "trade": "tree-service",
   "slotHints": {},
   "ok": false,
@@ -39,28 +39,58 @@
   "filled": [
     {
       "file": "photo-card-photos.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "05dfe550c4329f9a9870b43851014743916388e71b5dc60fd3a1b898ede54ff6",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/tropical-park-with-a-hedge-and-palm-trees-18896036/",
+        "subject_alt": "hedge trimming large shrubs equipment",
+        "found_by_query": "hedge trimming large shrubs equipment",
+        "family": "tree-service",
+        "library_file": "tree-service-serene-outdoor-view-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:44:06.806Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 1
+      }
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "d84cba9b8c207629e395a0c4a833868d1a69692e81e6be4f971ca465219fb1be",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/lush-green-juniper-shrubs-close-up-texture-29052817/",
+        "subject_alt": "hedge trimming large shrubs equipment",
+        "found_by_query": "hedge trimming large shrubs equipment",
+        "family": "tree-service",
+        "library_file": "tree-service-close-up-view-dense-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:44:36.852Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 0
+      }
     },
     {
       "file": "photo-ctaband.jpg",
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -69,7 +99,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -78,7 +108,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -87,7 +117,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -96,7 +126,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -105,7 +135,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -114,7 +144,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -123,7 +153,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     },
@@ -132,7 +162,7 @@
       "sha256": null,
       "source": "STOCK_GAP",
       "service": "",
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
       "refuse_borrow": false
     }
@@ -141,128 +171,79 @@
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
-      "fileName": "photo-card-photos.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
-      "fileName": "photo-contact.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "tree-service",
-      "service": "",
       "fileName": "photo-ctaband.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-photos-cta.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-1.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-2.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-3.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     },
     {
       "ok": false,
       "gap": true,
-      "reason": "stock_gap_all_claimed",
+      "reason": "stock_gap_all_claimed_or_avoided",
       "family": "tree-service",
-      "service": "",
       "fileName": "photo-services-hero.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK"
     }
   ],
-  "distinct": 5,
+  "distinct": 7,
   "slots": 16,
-  "stock_provenance_rows": 0,
+  "stock_provenance_rows": 2,
   "family": "tree-service",
   "refuse_borrow": false,
   "provenance_ok": true

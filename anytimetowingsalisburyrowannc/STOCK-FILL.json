@@ -1,166 +1,400 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-26T00:42:31.089Z",
+  "at": "2026-09-01T02:27:17.888Z",
   "trade": "towing",
-  "slotHints": {
-    "photo-service-1.jpg": "Winch-out and recovery",
-    "photo-service-2.jpg": "Car and light truck transport",
-    "photo-service-3.jpg": "Heavy and oversize loads"
-  },
-  "ok": false,
-  "kept": [
+  "slotHints": {},
+  "ok": true,
+  "kept": [],
+  "filled": [
     {
       "file": "photo-about.jpg",
-      "sha256": "4872ea7ac3bc59702ffcc363274e5b273fea3685583a8754841640faca28842d",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "cefd7d3e28eb302732941fdfa09d921e45c1fda487d68c8cc23a2975b72a5760",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/man-sitting-at-the-back-of-an-ambulance-6519870/",
+        "subject_alt": "roadside recovery flatbed",
+        "found_by_query": "roadside recovery flatbed",
+        "family": "towing",
+        "library_file": "towing-paramedic-attends-patient-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:21:22.506Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 81
+      }
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "a17878675c4d8becf4d56ba0dab3a2c413c2af5ed6b04614924e54ab6b4ebf62",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "882be64f7311962cb1dd4782ceb68d38b760916e767bb153240c9902e5b24c08",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/busy-freight-terminal-at-cairnryan-scotland-32548812/",
+        "subject_alt": "car carrier trailer loading vehicles",
+        "found_by_query": "car carrier trailer loading vehicles",
+        "family": "towing",
+        "library_file": "towing-aerial-view-freight-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:41:10.952Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 80
+      }
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "eac753f5ddbe0c98e1d9044bf3f3000ce43a5dcf027817631c6721748cc75a57",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "78371806c7c427de452a214ad2277a88f04467bbabbd71924e5ce1eaf5f2e4bb",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/traffic-on-highway-19336708/",
+        "subject_alt": "roadside recovery flatbed",
+        "found_by_query": "roadside recovery flatbed",
+        "family": "towing",
+        "library_file": "towing-cars-traveling-highway-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:21:34.718Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 79
+      }
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "e4d58de3a3c3ed637a49764cfa94a43f4ba32f03575da1105bf31a9c226fa51f",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "c74f301d585fa12006453cfc5136df6e7b3e78e67e3e9f6140a9918779be64d6",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/truck-parked-by-warehouse-15084344/",
+        "subject_alt": "tow truck winch hook vehicle",
+        "found_by_query": "tow truck winch hook vehicle",
+        "family": "towing",
+        "library_file": "towing-u-haul-moving-truck-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:20:46.279Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 78
+      }
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "38b1c743243a41312b0574764df5d0719f1eb86367ffd7e5e4b47fddd36a89af",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "9710f077f94e9b1bbf00d60c27e5d754ec26929c330bc44ecb25024ee8908684",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/scenic-coastal-road-with-trucks-and-ocean-view-36136848/",
+        "subject_alt": "tow truck empty flatbed highway",
+        "found_by_query": "tow truck empty flatbed highway",
+        "family": "towing",
+        "library_file": "towing-trucks-traveling-coastal-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:22:09.946Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 77
+      }
     },
     {
       "file": "photo-contact.jpg",
-      "sha256": "0a88b24c62291b5dcf73c732a05da514e8be91994daef061596d307d443ff3d3",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "95770edaecfa7bbd2bb22b71880e9eae64dd88b1bade886a84cf4eb4ae722370",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/low-angle-shot-of-a-man-sitting-in-a-truck-7541981/",
+        "subject_alt": "tow truck driver strapping wheel",
+        "found_by_query": "tow truck driver strapping wheel",
+        "family": "towing",
+        "library_file": "towing-young-man-plaid-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:40:43.528Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 76
+      }
     },
     {
       "file": "photo-ctaband.jpg",
-      "sha256": "8a254d2e4957c97681b5de0ccaf0e39bce881ccbba4f865774eee7e390061c8a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "49a28c61726f4f85e49b5f1d266715841a777eb5b04f6d7c20e41e1ac52c78d2",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/traffic-on-the-highway-in-saudi-arabia-14989848/",
+        "subject_alt": "tow truck hooking up sedan roadside",
+        "found_by_query": "tow truck hooking up sedan roadside",
+        "family": "towing",
+        "library_file": "towing-scenic-aerial-shot-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:41:52.425Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 75
+      }
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "914b3f12b84304cfcf90981524a0b6675150525c41d096ee883e4b5d4f6eaf67",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "0bc316969e7011ebe66791a8322c64194ef6fb54f5b552995043e3b999a699ea",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/mechanic-standing-and-looking-at-a-truck-in-the-garage-7564857/",
+        "subject_alt": "flatbed tow truck loading car",
+        "found_by_query": "flatbed tow truck loading car",
+        "family": "towing",
+        "library_file": "towing-truck-mechanic-carefully-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:28:53.818Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 74
+      }
     },
     {
       "file": "photo-photos-cta.jpg",
-      "sha256": "05e8081bfb29bbb00bbe95cf7cf8677377f6e5584e2a9ba7bd7beae413c47e97",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    },
-    {
-      "file": "photo-quoteband.jpg",
-      "sha256": "c13cb212dbadb32be81eb496636e9e9b98d12d08c2776ae05eff7387e5aef55b",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "b3a941a5c58592710639185bda634500eaea7dcc2cc983bcaf7beed21bb81ce9",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/barges-and-truck-on-river-19922407/",
+        "subject_alt": "car carrier trailer loading vehicles",
+        "found_by_query": "car carrier trailer loading vehicles",
+        "family": "towing",
+        "library_file": "towing-barge-transports-cargo-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:41:24.888Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 73
+      }
     },
     {
       "file": "photo-service-1.jpg",
-      "sha256": "8d9e148e843461ed9b486d4a97336c88e41ccfa0ba350174f2d6b2fc4301db4b",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "acfd07b35a7fe6687f2dea16d014f2a11700f91f24331fa17cb865bdc3bcae74",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/vehicles-on-the-road-6946038/",
+        "subject_alt": "tow truck empty flatbed highway",
+        "found_by_query": "tow truck empty flatbed highway",
+        "family": "towing",
+        "library_file": "towing-traffic-flows-dallas-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:23:02.998Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 72
+      }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "63fd45587e440e8cb71301f58e86d662631ed11fb88778871a80b51224158452",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "0bc316969e7011ebe66791a8322c64194ef6fb54f5b552995043e3b999a699ea",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/mechanic-standing-and-looking-at-a-truck-in-the-garage-7564857/",
+        "subject_alt": "flatbed tow truck loading car",
+        "found_by_query": "flatbed tow truck loading car",
+        "family": "towing",
+        "library_file": "towing-truck-mechanic-carefully-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-13T15:28:53.818Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 71
+      }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "5f03de78202bb2aa67dc7176b4b88a32378bef840156c75a6debceb61c072e8a",
-      "source": "harvest_or_prior",
-      "niche_folder": null
+      "sha256": "59e7f4ce365bd3c18b42eee95ecc9e9684a22d72db7191f9ed0f11f90da038b2",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/scenic-highway-in-bern-with-light-trails-34618898/",
+        "subject_alt": "tow truck empty flatbed highway",
+        "found_by_query": "tow truck empty flatbed highway",
+        "family": "towing",
+        "library_file": "towing-night-shot-highway-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:22:39.062Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 70
+      }
     },
     {
-      "file": "photo-services-hero.jpg",
-      "sha256": "0221ee82bf4d85297514d6052530c8c9d89ad719517b0ecc7dfc16b6f02c0fe8",
-      "source": "harvest_or_prior",
-      "niche_folder": null
-    }
-  ],
-  "filled": [
-    {
       "file": "photo-service-4.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "caabe9b06f8dd701323df56c382db57c42b3df5232cf86b13e91908d43e12d28",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/used-and-old-tires-on-the-side-of-a-road-near-a-wall-6641641/",
+        "subject_alt": "roadside tire change service truck",
+        "found_by_query": "roadside tire change service truck",
+        "family": "towing",
+        "library_file": "towing-roadside-tire-shop-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-31T21:09:33.724Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 69
+      }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
+      "sha256": "224e4d1281887b65648764d149772bb3255e5f9fad79b5be070c334351ec5465",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/scenic-highway-in-california-s-mojave-desert-31325152/",
+        "subject_alt": "tow truck empty flatbed highway",
+        "found_by_query": "tow truck empty flatbed highway",
+        "family": "towing",
+        "library_file": "towing-scenic-highway-view-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-22T22:22:12.459Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 68
+      }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": null,
-      "source": "STOCK_GAP",
-      "service": "",
-      "reason": "stock_gap_all_claimed",
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse_borrow": false
-    }
-  ],
-  "gaps": [
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-4.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "sha256": "49c5b6bb3096dbfdb44dda3afdb44b99bd96d6dec6b48eddfcae7abd3ae84e12",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/dynamic-night-view-of-highway-in-bern-switzerland-34618896/",
+        "subject_alt": "breakdown recovery truck night roadside",
+        "found_by_query": "breakdown recovery truck night roadside",
+        "family": "towing",
+        "library_file": "towing-night-view-highway-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:42:05.992Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 67
+      }
     },
     {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-5.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
-    },
-    {
-      "ok": false,
-      "gap": true,
-      "reason": "stock_gap_all_claimed",
-      "family": "towing",
-      "service": "",
-      "fileName": "photo-service-6.jpg",
-      "unclaimed_remaining": 0,
-      "signal": "BACK_TO_CURSOR_1_EXPAND_STOCK",
-      "refuse": "NICHE_OUT_OF_UNCLAIMED_STOCK — never reuse; expand stock library"
+      "file": "photo-services-hero.jpg",
+      "sha256": "7343d74e7e703d5400dfbaeb8b050a97c3eef41b0685ba8f8e04126a50100218",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/vintage-blue-car-on-sunny-highway-33603469/",
+        "subject_alt": "tow truck hooking up sedan roadside",
+        "found_by_query": "tow truck hooking up sedan roadside",
+        "family": "towing",
+        "library_file": "towing-classic-blue-car-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-08-26T01:41:44.798Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 66
+      }
     }
   ],
-  "distinct": 14,
-  "slots": 17,
-  "stock_provenance_rows": 0,
+  "gaps": [],
+  "distinct": 16,
+  "slots": 16,
+  "stock_provenance_rows": 16,
   "family": "towing",
   "refuse_borrow": false,
   "provenance_ok": true
