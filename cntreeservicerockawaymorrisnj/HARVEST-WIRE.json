@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-02T17:42:49.974Z",
+ "at": "2026-09-02T18:23:20.179Z",
  "slug": "cntreeservicerockawaymorrisnj",
  "wired": [
   {
@@ -214,29 +214,29 @@
   },
   {
    "slot": "photo-family.jpg",
-   "from": "google-4eb5c37d7976f831.jpg",
-   "bytes": 560920,
-   "letterbox_stripped": null,
-   "reason": "dedupe_replaced"
-  },
-  {
-   "slot": "photo-service-4.jpg",
    "from": "google-7c41059c6560de00.jpg",
    "bytes": 502998,
    "letterbox_stripped": null,
    "reason": "dedupe_replaced"
   },
   {
-   "slot": "photo-service-5.jpg",
+   "slot": "photo-service-4.jpg",
    "from": "google-1661b1eba7a8b378.jpg",
    "bytes": 410790,
    "letterbox_stripped": null,
    "reason": "dedupe_replaced"
   },
   {
-   "slot": "photo-service-6.jpg",
+   "slot": "photo-service-5.jpg",
    "from": "google-f9ddbf4e64c249af.jpg",
    "bytes": 406528,
+   "letterbox_stripped": null,
+   "reason": "dedupe_replaced"
+  },
+  {
+   "slot": "photo-service-6.jpg",
+   "from": "google-60f1cc9f52ca14e6.jpg",
+   "bytes": 331078,
    "letterbox_stripped": null,
    "reason": "dedupe_replaced"
   },
@@ -249,11 +249,12 @@
   }
  ],
  "skipped": [
-  "classification read: 83 verdicts",
+  "classification read: 81 verdicts",
   "staged 50 harvest photos from fb-photos:10 + assets:40",
   "refused_by_class:fb-04.jpg:reject",
   "refused_by_class:fb-07.jpg:reject",
   "refused_unlooked:google-32436765069c5766.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-4eb5c37d7976f831.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-b6ef6440f30e0f7c.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:google-d4d3d6f518ea2021.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:google-71768bb20764fbd3.jpg:road_no_landscape",
@@ -285,9 +286,9 @@
   "hero_cand_refuse:google-b77f88511b7a5c85.jpg:road_no_landscape",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 44,
- "refused_by_class": 5,
- "photo_candidates": 44,
+ "candidates": 43,
+ "refused_by_class": 6,
+ "photo_candidates": 43,
  "altBySlot": {
   "photo-hero.jpg": "CN Tree Service bucket truck parked at a blue house with the boom up in the trees.",
   "photo-card-about.jpg": "Worker in a yellow hard hat walking past the chipper truck toward the brush pile.",
@@ -314,10 +315,10 @@
   "photo-photos-cta.jpg": "Front lawn under a large tree with a long shadow across the grass after pruning.",
   "photo-reviewsband.jpg": "Crane boom rigged to a trunk section while the bucket truck works alongside a white fence.",
   "photo-ba-before.jpg": "Bucket truck set up on a lawn under bare trees with the boom raised.",
-  "photo-family.jpg": "Grapple truck loading large log sections onto its bed at the curb.",
-  "photo-service-4.jpg": "Hollow cavity in a bare trunk in front of a white farmhouse.",
-  "photo-service-5.jpg": "Hollow log section lifted by a rigging strap showing the rotted core inside.",
-  "photo-service-6.jpg": "Standing trunk with birdhouses on it being reduced from the top under an overcast sky."
+  "photo-family.jpg": "Hollow cavity in a bare trunk in front of a white farmhouse.",
+  "photo-service-4.jpg": "Hollow log section lifted by a rigging strap showing the rotted core inside.",
+  "photo-service-5.jpg": "Standing trunk with birdhouses on it being reduced from the top under an overcast sky.",
+  "photo-service-6.jpg": "Crane and bucket truck working together on a tall bare tree beside a house."
  },
  "dedupe_fixed": 5
 }
