@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-02T16:32:17.945Z",
+  "at": "2026-09-02T17:15:56.511Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "landscaping",
@@ -17,12 +17,12 @@
     {
       "file": "photo-ctaband.jpg",
       "source": "stock-library",
-      "sha256": "75aaef32792ccb7876f30693ca53898e7010e47209e4874b7ddc4c925c704906",
+      "sha256": "53a934a986f390fd57acf2d0be6a225faa2e6ab690a74f8abbe36d479de0e820",
       "reasons": [
         "off_section_relevance:lifestyle_decor:chair"
       ],
       "service": "trade work",
-      "score_alt": "retaining wall block install"
+      "score_alt": "landscape rake leveling dirt yard"
     },
     {
       "file": "photo-service-1.jpg",
@@ -33,16 +33,6 @@
       ],
       "service": "Lawn care and mowing",
       "score_alt": "sod install roll lawn"
-    },
-    {
-      "file": "photo-service-4.jpg",
-      "source": "stock-library",
-      "sha256": "53a934a986f390fd57acf2d0be6a225faa2e6ab690a74f8abbe36d479de0e820",
-      "reasons": [
-        "off_section_relevance:section_need_miss:Sod, seeding and grading"
-      ],
-      "service": "Sod, seeding and grading",
-      "score_alt": "landscape rake leveling dirt yard"
     },
     {
       "file": "photo-services-hero.jpg",
@@ -183,6 +173,16 @@
       "alt": "Stone-block edged bed of fresh topsoil and small shrubs along a white house corn"
     },
     {
+      "file": "photo-service-4.jpg",
+      "sha256": "1cbe61d5bf931fe4d5bd708d982e77a3ec173db1680c72028b8f78fd9d52c6c8",
+      "bytes": 332284,
+      "alt": "Back lawn bordered by a chain-link fence with a red maple and fresh mulch beds along it.",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:section_need_miss:Sod, seeding and grading"
+      ]
+    },
+    {
       "file": "photo-service-5.jpg",
       "sha256": "653a0c543d4c8063b702a4eb2dd284e1bef23ba9aef52961ce2e427e2591bccc",
       "bytes": 328620,
@@ -288,6 +288,7 @@
     }
   ],
   "skipped": [
+    "correlate_restore_no_stock:photo-service-4.jpg",
     "correlate_restore_no_stock:photo-service-5.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"

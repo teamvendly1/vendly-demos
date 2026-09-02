@@ -1,33 +1,13 @@
 {
-  "at": "2026-09-02T16:36:38.326Z",
+  "at": "2026-09-02T17:20:16.232Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
   "replaced": [
     {
-      "file": "photo-about.jpg",
-      "source": "stock-library",
-      "sha256": "6d0e0ccac9e9145a4d6fa98e96c846d4c948cef30b583bc55534b94ae8412cb0",
-      "reasons": [
-        "off_section_relevance:trade_deny:worker:tree"
-      ],
-      "service": "crew shop jobsite",
-      "score_alt": "logs stacked after tree removal"
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "source": "stock-library",
-      "sha256": "7ef280555aff60bd1d6a365fca51a9eeb144f9b5ee6d1df5285fa9f2ce922f44",
-      "reasons": [
-        "off_section_relevance:trade_deny:worker:tree"
-      ],
-      "service": "crew shop jobsite",
-      "score_alt": "logs stacked after tree removal"
-    },
-    {
       "file": "photo-service-1.jpg",
       "source": "stock-library",
-      "sha256": "ce63a8ee9158a4f4f95cfb86c65418c9fab267298b637fa83fe94e17d71e15fa",
+      "sha256": "f4564d2f3a7d5667478b7ea6d95fd2ff5659cf7da1a1b7ed5bc4195e34047349",
       "reasons": [
         "off_section_relevance:section_need_miss:Tree removal"
       ],
@@ -37,7 +17,7 @@
     {
       "file": "photo-service-3.jpg",
       "source": "stock-library",
-      "sha256": "f4564d2f3a7d5667478b7ea6d95fd2ff5659cf7da1a1b7ed5bc4195e34047349",
+      "sha256": "ce63a8ee9158a4f4f95cfb86c65418c9fab267298b637fa83fe94e17d71e15fa",
       "reasons": [
         "off_section_relevance:section_need_miss:Stump grinding and removal"
       ],
@@ -56,6 +36,18 @@
     }
   ],
   "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "303484dc0dc2971631992109dd2573e0fa3c7b6f3b656efb8672ab4261c74723",
+      "bytes": 124246,
+      "alt": "Bucket truck with the boom up in a tree over a white house with a worker in a ha"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "93f1546d682af11d550ffb449a4fb0ef0b391e87140fbc9b673ed4d028dddfb0",
+      "bytes": 112406,
+      "alt": "Worker in a yellow hard hat walking past the chipper truck toward the brush pile"
+    },
     {
       "file": "photo-card-photos.jpg",
       "sha256": "51d00227e855e44ae0ee99a1be098e56d004704d981219581a4f0a480a6bc465",
@@ -192,36 +184,6 @@
   "failed": [],
   "gallery_gaps": [],
   "rescored": [
-    {
-      "file": "photo-about.jpg",
-      "alt": "Bucket truck with the boom up in a tree over a white house with a worker in a hard hat below.",
-      "relevance": {
-        "ok": false,
-        "score": -20,
-        "reason": "trade_deny:worker:tree"
-      },
-      "flattery": {
-        "ok": true,
-        "score": 0,
-        "reason": "",
-        "strict": true
-      }
-    },
-    {
-      "file": "photo-card-about.jpg",
-      "alt": "Worker in a yellow hard hat walking past the chipper truck toward the brush pile.",
-      "relevance": {
-        "ok": false,
-        "score": -20,
-        "reason": "trade_deny:worker:tree"
-      },
-      "flattery": {
-        "ok": true,
-        "score": 0,
-        "reason": "",
-        "strict": true
-      }
-    },
     {
       "file": "photo-service-1.jpg",
       "alt": "Base of a large trunk with a cut cavity opened up above the roots.",

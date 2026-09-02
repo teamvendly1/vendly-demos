@@ -1,34 +1,22 @@
 {
-  "at": "2026-09-02T16:35:36.787Z",
+  "at": "2026-09-02T17:19:10.206Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
       "file": "photo-card-reviews.jpg",
-      "source": "harvest-fallback",
-      "sha256": "f75c38387d9e6c7af2a21c8aad0b3699110c822c53fed7e3990c08e002662a74",
+      "source": "stock-library",
+      "sha256": "4de041d31cf3c3e0e2cbd2a27eeba3a22abc1f260355d0a262ada45404a81a33",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\fb-photos\\fb-10.jpg",
-      "score_alt": "Windshield with a spider-web crack radiating from an impact point, photographed for replacement."
+      "score_alt": "engine bay diagnostic tools"
     },
     {
       "file": "photo-gallery-5.jpg",
-      "source": "harvest-fallback",
-      "sha256": "c825a7e32fddaa1d49f77f1db50ff0ba21f91cf6dfff4f1b9cd9efd0d00d872f",
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ],
-      "service": null,
-      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\assets\\google\\google-c825a7e32fddaa1d.jpg",
-      "score_alt": "Car raised on a blue two-post lift with its front end stripped to the subframe inside the repair shop."
-    },
-    {
-      "file": "photo-gallery-6.jpg",
-      "source": "stock-library",
+      "source": "Pexels",
       "sha256": "c145d48a28554fdc80c11ba51a028de160e5a05692039b2af52532047ffa2bee",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
@@ -37,34 +25,46 @@
       "score_alt": "engine bay diagnostic tools"
     },
     {
-      "file": "photo-service-4.jpg",
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "40b25aa91e0cb86b3557a7c1f5f8dc68469bd80730cb2b8fec6df7e00dd3264a",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "score_alt": "hydraulic lift post garage bay"
+    },
+    {
+      "file": "photo-reviewsband.jpg",
       "source": "Pexels",
       "sha256": "ce87324da7df4404f1171db76b437d1db370b202e140b17c9bdb1d51d194fbef",
+      "reasons": [
+        "off_section_relevance:lifestyle_decor:chair"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "f75c38387d9e6c7af2a21c8aad0b3699110c822c53fed7e3990c08e002662a74",
+      "reasons": [
+        "cross_demo_dupe:honeapathautossalesandserviceshoneapathandersonsc/photo-hero.jpg"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\fb-photos\\fb-10.jpg",
+      "score_alt": "Windshield with a spider-web crack radiating from an impact point, photographed for replacement."
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "c825a7e32fddaa1d49f77f1db50ff0ba21f91cf6dfff4f1b9cd9efd0d00d872f",
       "reasons": [
         "cross_demo_dupe:allensautomotivejacksonvilleonslownc/photo-ctaband.jpg"
       ],
       "service": "trade work",
-      "score_alt": "engine bay diagnostic tools"
-    },
-    {
-      "file": "photo-service-6.jpg",
-      "source": "stock-library",
-      "sha256": "40b25aa91e0cb86b3557a7c1f5f8dc68469bd80730cb2b8fec6df7e00dd3264a",
-      "reasons": [
-        "cross_demo_dupe:butlerstireautoservice/photo-card-about.jpg"
-      ],
-      "service": "trade work",
-      "score_alt": "hydraulic lift post garage bay"
-    },
-    {
-      "file": "photo-services-hero.jpg",
-      "source": "stock-library",
-      "sha256": "4de041d31cf3c3e0e2cbd2a27eeba3a22abc1f260355d0a262ada45404a81a33",
-      "reasons": [
-        "cross_demo_dupe:aoneautomotivellc/photo-card-reviews.jpg"
-      ],
-      "service": "trade work",
-      "score_alt": "engine bay diagnostic tools"
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\assets\\google\\google-c825a7e32fddaa1d.jpg",
+      "score_alt": "Car raised on a blue two-post lift with its front end stripped to the subframe inside the repair shop."
     }
   ],
   "kept": [
@@ -183,17 +183,17 @@
       "alt": "Windshield with a spider-web crack radiating from an impact point, photographed "
     },
     {
-      "file": "photo-reviewsband.jpg",
-      "sha256": "9954b72190df947dee67b560c72fcee6cff66ac83a7fec1d960262e611bb6da4",
-      "bytes": 98220,
-      "alt": "Front office reception with a curved wood counter, framed certificates and black leather chairs.",
+      "file": "photo-service-6.jpg",
+      "sha256": "ce87324da7df4404f1171db76b437d1db370b202e140b17c9bdb1d51d194fbef",
+      "bytes": 81164,
+      "alt": null,
       "restored": true,
       "reasons": [
-        "off_section_relevance:lifestyle_decor:chair"
+        "cross_demo_dupe:butlerstireautoservice/photo-card-about.jpg"
       ]
     },
     {
-      "file": "photo-service-5.jpg",
+      "file": "photo-services-hero.jpg",
       "sha256": "9f9c20f39d3319c706e01560e76f849c06b69437b40807a2984ac36f701d0259",
       "bytes": 173186,
       "alt": null,
@@ -268,8 +268,8 @@
     }
   ],
   "skipped": [
-    "correlate_restore_no_stock:photo-reviewsband.jpg",
-    "correlate_restore_no_stock:photo-service-5.jpg"
+    "correlate_restore_no_stock:photo-service-6.jpg",
+    "correlate_restore_no_stock:photo-services-hero.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
