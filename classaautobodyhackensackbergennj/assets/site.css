@@ -541,13 +541,13 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /*
   HEADER = THE LOGO'S OWN PLATE COLOUR, NOT THE BRAND PRIMARY (Jacob CLEAR 2026-08-15,
-  HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
+  HydroClean polish). #091D32 comes from keyout-logo-flat-bg.ps1 sampling the logo's own
   canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
   white card, so most demos will now show a white/near-white header instead of the old flat
   #0F3052. That is deliberate - it is what makes the (correctly keyed) logo look like it has
   no plate at all, because the plate colour and the header colour are now the same colour.
 */
-header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
+header.site{background:#091D32!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
 /* header.site .bizmeta .btn{color:#fff} REMOVED 2026-08-15: dated from when the header was
    always a dark/navy plate. HEADER_BG is now the logo's own sampled colour (often white -
@@ -563,9 +563,9 @@ header.site .navtoggle .navtoggle-text{color:#0F3052!important}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
-   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #CFE2F6, which nearly
+   BORDER needs rgba(255,255,255,.45) instead of the old fixed pale #CFE2F6, which nearly
    vanished once the header itself could also be white/pale (see HEADER_BG above). */
-header.site .navtoggle{background:#FFFFFF !important;color:#071727 !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#071727 !important;border:1px solid rgba(255,255,255,.45) !important}
 header.site .navtoggle svg{stroke:#071727 !important}
 header.site .navtoggle .navtoggle-text{color:#071727 !important;opacity:1 !important}
 header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(7,23,39,.18)}
@@ -919,8 +919,4 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions .btn{justify-content:center}
 }
 
-/* HEADER MARK PLATE - ghost 100.0% on #FFFFFF -> 0.0% on #14140F.
-   Written by lib/mark-readability.js chooseMarkPlate(). Scoped to .logo so nav, menu sheet,
-   toggle pill and .bizmeta contrast are untouched. Remove this block only by fixing the mark. */
-header.site .logo{background:#14140F;padding:10px 16px;border-radius:12px;box-shadow:none;box-sizing:border-box}
-header.site .logo-chip{background:transparent}
+
