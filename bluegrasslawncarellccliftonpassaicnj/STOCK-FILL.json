@@ -1,43 +1,63 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-08-26T17:48:53.001Z",
+  "at": "2026-09-02T15:10:08.953Z",
   "trade": "landscaping",
-  "slotHints": {},
+  "slotHints": {
+    "photo-service-1.jpg": "Landscaping"
+  },
   "ok": true,
   "kept": [
     {
       "file": "photo-about.jpg",
-      "sha256": "14c6eecdc01c9522ae56f79054253b4419caa23b4f8895c50829e0b947658abf",
+      "sha256": "c01977c082ed9660a5f7b4569c4e2d8a6eea07cd4198533c10f1af869160087c",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "0e24b204cae784eb4ff5db33197318ec65514b7ff2deb8adca9a4e5078f8a2e9",
+      "sha256": "1fdb86d4d2dd75f45e9b63dcf58f441574f49a622d136157756d40e4a52eca5d",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "aa097e4c1a1014489d5a7ddf84fb6603ecc4b0b71013d53da25d33c7d0e60a8e",
+      "sha256": "5a08e7caf84d56a780ac0cb2e681944ad28f3d823dad83415b72c5e7407772c1",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "95e7c4aecd34820fd87ea0a27813627633137822d1ae25520ed6448c8d38bec4",
+      "sha256": "4078554de192d866da9cd56b2ce9b25a0e289c1b057dc6d04c6f66e3fba9f9bf",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "3895218a815646c4228163cf4e1951e1cc259275cbed0806c646ea53744f7b6e",
+      "sha256": "9c7780eeb3b9bb5acf3f3deebd0e73c69906a0ae9ac620417f5bac895608eb7c",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "6b7771388ae12b11ea624613d213f8942dc3500c9490d71b0d0ecda6505aa439",
       "source": "harvest_or_prior",
       "niche_folder": null
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "c6b56202e36f2e291986705e5cd76d02fdf17ae0bb2b568b8be36cdf3516b79a",
+      "sha256": "bce24f8dcc6394572c91f2805f47eb8171b36905546992d36fe14013497bed76",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "80dbc4c27ec581e9da9ce1a08c45b70578e23140cafd17d0d5b95e06d6931bdb",
+      "source": "harvest_or_prior",
+      "niche_folder": null
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "27a0c58bfbd72eb0096d37a3bcff498b75c9de1954cc911a12d94ff68bb04440",
       "source": "harvest_or_prior",
       "niche_folder": null
     }
@@ -45,78 +65,6 @@
   "filled": [
     {
       "file": "photo-contact.jpg",
-      "sha256": "b4c2ad9dfcf7ff91ab469ec2d48d523b7fb3bfe6a6945988ae0d870ebd944be3",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/red-flowers-with-green-leaves-7000568/",
-        "subject_alt": "landscape edging bed install",
-        "found_by_query": "landscape edging bed install",
-        "family": "landscaping",
-        "library_file": "landscaping-bright-red-roses-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:16:32.189Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
-      }
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "1d171819178dc09d918d515452283ffbb225df85f8580ca34bc5c645edcaf480",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/brown-wooden-bee-box-near-plants-12997197/",
-        "subject_alt": "flagstone walkway retaining wall",
-        "found_by_query": "flagstone walkway retaining wall",
-        "family": "landscaping",
-        "library_file": "landscaping-wooden-beehive-nestled-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:20.861Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
-      }
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "6927f0df6110b6851e2a5bd544b702e4dff7415f63ce1848c67314a18320b584",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/vibrant-hydrangea-bed-in-a-vietnamese-garden-38715191/",
-        "subject_alt": "mulch bed shrub planting",
-        "found_by_query": "mulch bed shrub planting",
-        "family": "landscaping",
-        "library_file": "landscaping-colorful-display-hydrangeas-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:47.028Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
-      }
-    },
-    {
-      "file": "photo-service-1.jpg",
       "sha256": "04f5adc170ea670ff5c2bca1f8ce62acf42b6aad5ba086dce5f851fc5e1cc71d",
       "source": "stock-library",
       "provenance": {
@@ -136,158 +84,182 @@
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 17
+      }
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "73c552dd9f5c7380b139463f0dddb5eecd76640ed053f5f2ff604c480be9a400",
+      "source": "stock-library",
+      "provenance": {
+        "kind": "stock",
+        "source": "Pexels",
+        "licence": "Pexels License (commercial use, no attribution required)",
+        "source_url": "https://www.pexels.com/photo/purple-hydrangea-flowers-near-stone-wall-and-bench-20114857/",
+        "subject_alt": "retaining wall block install",
+        "found_by_query": "retaining wall block install",
+        "family": "landscaping",
+        "library_file": "landscaping-beautiful-purple-hydrangeas-01.jpg",
+        "served_from": "_assets/stock (offline)",
+        "downloaded_at": "2026-09-02T05:21:28.090Z",
+        "service_title": null,
+        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
+      },
+      "service": null,
+      "claims": {
+        "claimed": true,
+        "unclaimed_remaining_family_estimate": 17
       }
     },
     {
       "file": "photo-service-2.jpg",
-      "sha256": "548a48865a1845cf4827b005f6e6ac130e1001e249f8f099a2f30313304f5302",
+      "sha256": "1a9bf6239717a1deaae48d2a226c22811f43bc4c573e432c7cc980e50fd0bd3c",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/lush-evergreen-juniper-shrub-texture-background-29820964/",
-        "subject_alt": "mulch bed shrub planting",
-        "found_by_query": "mulch bed shrub planting",
+        "source_url": "https://www.pexels.com/photo/lush-green-landscape-with-towering-trees-34162142/",
+        "subject_alt": "bush hog clearing brush lot",
+        "found_by_query": "bush hog clearing brush lot",
         "family": "landscaping",
-        "library_file": "landscaping-close-up-lush-green-02.jpg",
+        "library_file": "landscaping-serene-green-landscape-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:51.033Z",
+        "downloaded_at": "2026-09-02T05:21:50.455Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 16
       }
     },
     {
       "file": "photo-service-3.jpg",
-      "sha256": "e979d83fda02234df615eee566f109b228e678e6f8b47a8833084ae9de72bb94",
+      "sha256": "6b2b751e37ef32879bcf32988b66558a3a1689bd7e46088d00b73166e7d4eabc",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/serene-garden-with-potted-plants-and-statue-36814989/",
-        "subject_alt": "landscape edging bed install",
-        "found_by_query": "landscape edging bed install",
+        "source_url": "https://www.pexels.com/photo/winter-trees-in-oghuz-azerbaijan-landscape-37084419/",
+        "subject_alt": "bush hog clearing brush lot",
+        "found_by_query": "bush hog clearing brush lot",
         "family": "landscaping",
-        "library_file": "landscaping-peaceful-outdoor-garden-01.jpg",
+        "library_file": "landscaping-bare-trees-clear-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:16:39.815Z",
+        "downloaded_at": "2026-09-02T05:21:59.866Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 15
       }
     },
     {
       "file": "photo-service-4.jpg",
-      "sha256": "5576ca4b521d7b5c5b37ccebf41177a324f635fd3c2b9c236664e3bc5cdeb766",
+      "sha256": "36e234fdaa1a633ef15a1ad6009400a20d6124609ddbb184f65dc0eaa7a85211",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/vibrant-blue-flowers-and-ferns-in-lush-garden-34764138/",
-        "subject_alt": "mulch bed shrub planting",
-        "found_by_query": "mulch bed shrub planting",
+        "source_url": "https://www.pexels.com/photo/close-up-of-dirt-in-a-field-24343048/",
+        "subject_alt": "bush hog clearing brush lot",
+        "found_by_query": "bush hog clearing brush lot",
         "family": "landscaping",
-        "library_file": "landscaping-lush-garden-vibrant-01.jpg",
+        "library_file": "landscaping-post-fire-landscape-west-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:47.463Z",
+        "downloaded_at": "2026-09-02T05:22:00.860Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 14
       }
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "a6bacf16202c90fff330fc77df0cf558c680200761bd49e16eeba9f37d65a6fc",
+      "sha256": "11c277bab338658855ebbd9813f534ad21b731c0e693a6cbbb9e2f50928c5d0f",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/close-up-of-daffodils-growing-in-a-garden-21417932/",
-        "subject_alt": "landscape edging bed install",
-        "found_by_query": "landscape edging bed install",
+        "source_url": "https://www.pexels.com/photo/watering-of-green-plants-12222739/",
+        "subject_alt": "sprinkler head watering grass",
+        "found_by_query": "sprinkler head watering grass",
         "family": "landscaping",
-        "library_file": "landscaping-close-up-vibrant-yellow-01.jpg",
+        "library_file": "landscaping-lush-green-plants-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:16:38.408Z",
+        "downloaded_at": "2026-09-02T05:19:46.614Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 13
       }
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "301054c998fe4f7b33c60cc1d68f1eada539d26926d7003d71d6461d24e8ff16",
+      "sha256": "e484db5ffdd0f92638396d3c202fc5eb0388295708599bb6cb09bc0f83c6fb28",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/close-up-of-a-red-and-green-shrub-15910656/",
-        "subject_alt": "mulch bed shrub planting",
-        "found_by_query": "mulch bed shrub planting",
+        "source_url": "https://www.pexels.com/photo/lush-summer-field-under-vibrant-blue-sky-36966546/",
+        "subject_alt": "bush hog clearing brush lot",
+        "found_by_query": "bush hog clearing brush lot",
         "family": "landscaping",
-        "library_file": "landscaping-close-up-vibrant-red-01.jpg",
+        "library_file": "landscaping-vibrant-summer-landscape-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:13:51.722Z",
+        "downloaded_at": "2026-09-02T05:21:57.139Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 12
       }
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "f132a64c9c5cc1ca5ccc0a5aa6bf76b754fe057170cc0671e3ea578f0252cf9c",
+      "sha256": "086e59d4d9b216a44c0bfd01d7f024a5ca1fa8daa76847748bfc3b7b657dcf86",
       "source": "stock-library",
       "provenance": {
         "kind": "stock",
         "source": "Pexels",
         "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/scenic-view-of-plowed-farmland-under-blue-sky-31310779/",
-        "subject_alt": "irrigation valve box trench",
-        "found_by_query": "irrigation valve box trench",
+        "source_url": "https://www.pexels.com/photo/well-organized-park-16614487/",
+        "subject_alt": "hedge trimmer shaping shrub row",
+        "found_by_query": "hedge trimmer shaping shrub row",
         "family": "landscaping",
-        "library_file": "landscaping-picturesque-landscape-plowed-01.jpg",
+        "library_file": "landscaping-beautifully-landscaped-garden-01.jpg",
         "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-08-22T22:12:29.318Z",
+        "downloaded_at": "2026-09-02T05:22:41.810Z",
         "service_title": null,
         "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
       },
       "service": null,
       "claims": {
         "claimed": true,
-        "unclaimed_remaining_family_estimate": 86
+        "unclaimed_remaining_family_estimate": 11
       }
     }
   ],
   "gaps": [],
-  "distinct": 16,
-  "slots": 16,
-  "stock_provenance_rows": 10,
+  "distinct": 17,
+  "slots": 17,
+  "stock_provenance_rows": 8,
   "family": "landscaping",
   "refuse_borrow": false,
   "provenance_ok": true
