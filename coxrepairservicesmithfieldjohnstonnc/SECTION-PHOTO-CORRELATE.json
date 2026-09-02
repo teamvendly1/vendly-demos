@@ -1,0 +1,183 @@
+{
+  "at": "2026-09-02T07:30:45.100Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/2",
+  "trade": "towing",
+  "replaced": [
+    {
+      "file": "photo-about.jpg",
+      "source": "stock-library",
+      "sha256": "d01af0d81b59abda3311ba228b689c76211575450a4d7c21704a01959b3ff39f",
+      "reasons": [
+        "cross_demo_dupe:automdbrevardtransylvanianc/photo-card-reviews.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "stock-library",
+      "sha256": "7582ce37c3449be9a3f4e5ece2b143d625010536743eb6d8e9a02f2976357825",
+      "reasons": [
+        "cross_demo_dupe:automdbrevardtransylvanianc/photo-card-photos.jpg"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "stock-library",
+      "sha256": "fc7a5df318107f23e0dd5cf842e7c01570213c6f9a8a0ef071ed9e64e4e2fe1e",
+      "reasons": [
+        "cross_demo_dupe:automdbrevardtransylvanianc/photo-card-about.jpg"
+      ],
+      "service": null,
+      "score_alt": "wheel lift tow truck street"
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "source": "stock-library",
+      "sha256": "9ba95e4fe8bd639036954992f4756e9f5a4c33b657dee0c3bc8c4400755e2b8e",
+      "reasons": [
+        "cross_demo_dupe:automdbrevardtransylvanianc/photo-about.jpg"
+      ],
+      "service": null,
+      "score_alt": "flatbed tow truck loading car"
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "44366606557a7ff2e6d85547f21eb05f08ca46e0773f32ecedb4a7c0d37b5784",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\coxrepairservicesmithfieldjohnstonnc\\assets\\google\\google-44366606557a7ff2.jpg",
+      "score_alt": ""
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "44366606557a7ff2e6d85547f21eb05f08ca46e0773f32ecedb4a7c0d37b5784",
+      "bytes": 331370,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ]
+    }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-hero.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg",
+    "correlate_restore_no_stock:photo-hero.jpg"
+  ],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}
