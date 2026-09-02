@@ -1,0 +1,45 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:22:50.008Z",
+      "files": [
+        {
+          "slot": "photo-services-hero.jpg",
+          "term": "",
+          "stock_file": "towing-classic-blue-pickup-01.jpg",
+          "caption": "A classic blue pickup truck drives down a sunny, tree-lined suburban street.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "services.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        },
+        {
+          "slot": "photo-ctaband.jpg",
+          "term": "",
+          "stock_file": "towing-paramedic-provides-first-01.jpg",
+          "caption": "Paramedic provides first aid to injured man lying on roadside.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}
