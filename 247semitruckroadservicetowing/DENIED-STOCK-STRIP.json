@@ -1,0 +1,45 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:23:20.069Z",
+      "files": [
+        {
+          "slot": "photo-hero.jpg",
+          "term": "",
+          "stock_file": "towing-front-view-vintage-01.jpg",
+          "caption": "Front view of a vintage rusty Chevrolet truck parked outdoors.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        },
+        {
+          "slot": "photo-card-reviews.jpg",
+          "term": "",
+          "stock_file": "towing-detailed-classic-red-01.jpg",
+          "caption": "Detailed image of a classic red Chevrolet 3100 truck showcasing its shiny vintage design.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "card-shot>button>img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:23:20.069Z",
+      "files": [
+        {
+          "slot": "photo-hero.jpg",
+          "term": "",
+          "stock_file": "towing-classic-rusty-truck-01.jpg",
+          "caption": "A classic rusty truck parked outdoors, surrounded by greenery and gravel, evoking a vintage charm.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        },
+        {
+          "slot": "photo-services-hero.jpg",
+          "term": "",
+          "stock_file": "towing-tranquil-highway-minimal-01.jpg",
+          "caption": "A tranquil highway with minimal traffic under clear skies, ideal for road trips and travel enthusiasts.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "services.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}

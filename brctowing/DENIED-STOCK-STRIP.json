@@ -1,0 +1,28 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:23:20.069Z",
+      "files": [
+        {
+          "slot": "photo-photos-cta.jpg",
+          "term": "",
+          "stock_file": "towing-old-rusty-truck-01.jpg",
+          "caption": "Old rusty truck parked among tall grass in a serene garden setting, showcasing classic design.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "photos.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}

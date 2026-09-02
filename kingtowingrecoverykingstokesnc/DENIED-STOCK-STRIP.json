@@ -1,0 +1,45 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:23:20.069Z",
+      "files": [
+        {
+          "slot": "photo-services-hero.jpg",
+          "term": "",
+          "stock_file": "towing-detailed-view-vintage-01.jpg",
+          "caption": "Detailed view of vintage blue truck's front grille and headlight outdoors.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "services.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        },
+        {
+          "slot": "photo-card-reviews.jpg",
+          "term": "",
+          "stock_file": "towing-vintage-truck-adorned-01.jpg",
+          "caption": "A vintage truck adorned with Christmas lights and trees, creating a festive atmosphere at night.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "card-shot>button>img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}

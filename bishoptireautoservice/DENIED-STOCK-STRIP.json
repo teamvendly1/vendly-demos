@@ -1,0 +1,45 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:23:20.069Z",
+      "files": [
+        {
+          "slot": "photo-services-hero.jpg",
+          "term": "",
+          "stock_file": "auto-repair-parked-cars-multi-level-01.jpg",
+          "caption": "Parked cars in a multi-level parking garage overlooking a cityscape.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "services.html",
+              "removed": [
+                "img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        },
+        {
+          "slot": "photo-card-reviews.jpg",
+          "term": "",
+          "stock_file": "auto-repair-bright-red-car-01.jpg",
+          "caption": "Bright red car parked indoors near a WD-40 can, showcasing a shiny modern vehicle in a garage.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "card-shot>button>img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}

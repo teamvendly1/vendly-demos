@@ -1,0 +1,28 @@
+{
+  "schema": "vendly.autodemo.denied-stock-strip/1",
+  "why": "stock photograph refused by SERVICE_CONTEXT_DENY at the selection door (wired 2026-09-02); removed from a shipped page rather than substituted",
+  "strips": [
+    {
+      "at": "2026-09-02T15:23:20.069Z",
+      "files": [
+        {
+          "slot": "photo-card-services.jpg",
+          "term": "",
+          "stock_file": "auto-repair-black-mitsubishi-lancer-01.jpg",
+          "caption": "Black Mitsubishi Lancer parked in an indoor garage. Ideal for car enthusiasts and automotive collections.",
+          "asset_exists": true,
+          "sha_match": true,
+          "pages_changed": [
+            {
+              "page": "index.html",
+              "removed": [
+                "card-shot>button>img x1"
+              ]
+            }
+          ],
+          "asset_deleted": true
+        }
+      ]
+    }
+  ]
+}
