@@ -1,0 +1,72 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "billystruckautokilldevilhillsdarenc",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#340E0D",
+  "palette": {
+    "BRAND": "#340E0D",
+    "PRIMARY": "#4E1513",
+    "PRIMARY_DK": "#390F0E",
+    "PRIMARY_MID": "#5E1917",
+    "ACCENT": "#7A211F",
+    "ACCENT_DK": "#561715",
+    "ACCENT_LT": "#AB2E2B",
+    "ON_DARK": "#EFBFBE",
+    "MENU_INK": "#250A09",
+    "TINT_1": "#F5D7D6",
+    "TINT_2": "#F8E3E2",
+    "TINT_3": "#F3CFCE",
+    "TINT_4": "#F4D3D2",
+    "LINE_2": "#EBAFAD",
+    "MUTED_BRAND": "#CC3936",
+    "MIST": "#FBF1F1",
+    "LINE": "#F1C7C6",
+    "PRIMARY_RGB": "78,21,19",
+    "ACCENT_RGB": "122,33,31",
+    "SCRIM_RGB": "94,25,23",
+    "SCRIM2_RGB": "57,15,14",
+    "MENU_INK_RGB": "37,10,9",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.58,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 10.17,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.93,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.65,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 9.18,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.99,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 3.35:1 (needs 4.5)"
+  ]
+}

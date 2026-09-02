@@ -2,59 +2,71 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "ivylandscapingllcglassborogloucesternj",
   "mold": "_template-skipper-blank",
-  "brand_input": "#2A5434",
+  "brand_input": "#284228",
   "palette": {
-    "BRAND": "#2A5434",
-    "PRIMARY": "#204128",
-    "PRIMARY_DK": "#18301D",
-    "PRIMARY_MID": "#274E30",
-    "ACCENT": "#33663F",
-    "ACCENT_DK": "#24472C",
-    "ACCENT_LT": "#478F58",
-    "ON_DARK": "#C9E4CF",
-    "MENU_INK": "#0F1F13",
-    "TINT_1": "#DDEEE1",
-    "TINT_2": "#E7F3EA",
-    "TINT_3": "#D6EBDB",
-    "TINT_4": "#DAECDE",
-    "LINE_2": "#BBDDC3",
-    "MUTED_BRAND": "#77BB87",
-    "MIST": "#F3F9F5",
-    "LINE": "#CFE7D5",
-    "PRIMARY_RGB": "32,65,40",
-    "ACCENT_RGB": "51,102,63",
-    "SCRIM_RGB": "39,78,48",
-    "SCRIM2_RGB": "24,48,29",
-    "MENU_INK_RGB": "15,31,19",
+    "BRAND": "#284228",
+    "PRIMARY": "#253C25",
+    "PRIMARY_DK": "#1B2C1B",
+    "PRIMARY_MID": "#2C492C",
+    "ACCENT": "#3A5F3A",
+    "ACCENT_DK": "#284328",
+    "ACCENT_LT": "#518551",
+    "ON_DARK": "#CCE0CC",
+    "MENU_INK": "#111D11",
+    "TINT_1": "#DFECDF",
+    "TINT_2": "#E9F2E9",
+    "TINT_3": "#D9E8D9",
+    "TINT_4": "#DCEADC",
+    "LINE_2": "#BFD9BF",
+    "MUTED_BRAND": "#4C7D4C",
+    "MIST": "#F4F8F4",
+    "LINE": "#D3E4D3",
+    "PRIMARY_RGB": "37,60,37",
+    "ACCENT_RGB": "58,95,58",
+    "SCRIM_RGB": "44,73,44",
+    "SCRIM2_RGB": "27,44,27",
+    "MENU_INK_RGB": "17,29,17",
     "HEADER_BG": "#FFFFFF",
     "HEADER_BORDER": "rgba(16,23,36,.22)"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 11.36,
+      "ratio": 11.99,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 6.75,
+      "ratio": 7.3,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 8.38,
+      "ratio": 8.62,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 17.13,
+      "ratio": 17.39,
       "pass": true
     },
     {
       "pair": "accent as kicker text on mist",
-      "ratio": 6.32,
+      "ratio": 6.8,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.83,
       "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.28:1 (needs 4.5)"
+  ]
 }

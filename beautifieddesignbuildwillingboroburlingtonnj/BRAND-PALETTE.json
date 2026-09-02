@@ -1,0 +1,72 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "beautifieddesignbuildwillingboroburlingtonnj",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#012958",
+  "palette": {
+    "BRAND": "#012958",
+    "PRIMARY": "#012D60",
+    "PRIMARY_DK": "#012147",
+    "PRIMARY_MID": "#013674",
+    "ACCENT": "#024697",
+    "ACCENT_DK": "#01316A",
+    "ACCENT_LT": "#0263D4",
+    "ON_DARK": "#AED3FE",
+    "MENU_INK": "#01152D",
+    "TINT_1": "#CDE3FE",
+    "TINT_2": "#DCECFF",
+    "TINT_3": "#C2DEFE",
+    "TINT_4": "#C8E1FE",
+    "LINE_2": "#9AC8FE",
+    "MUTED_BRAND": "#026BE5",
+    "MIST": "#EDF5FF",
+    "LINE": "#B8D8FE",
+    "PRIMARY_RGB": "1,45,96",
+    "ACCENT_RGB": "2,70,151",
+    "SCRIM_RGB": "1,54,116",
+    "SCRIM2_RGB": "1,33,71",
+    "MENU_INK_RGB": "1,21,45",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.59,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.03,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.77,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.32,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.22,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.96,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.89:1 (needs 4.5)"
+  ]
+}

@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-31T22:02:37.688Z",
+ "at": "2026-09-02T15:10:09.207Z",
  "slug": "ivylandscapingllcglassborogloucesternj",
  "wired": [
   {
@@ -13,40 +13,26 @@
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 178622,
+   "from": "google-3cf41d0da799a06c.jpg",
+   "bytes": 241537,
    "smart_crop": true,
-   "src": "fb-09.jpg",
+   "src": "google-3cf41d0da799a06c.jpg",
    "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
    "crop_axis": "y",
-   "crop_offset_pct": 0,
-   "detail_score": 36.636,
+   "crop_offset_pct": 50,
+   "detail_score": 31.538,
    "orientation": "landscape"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 275278,
+   "from": "google-9c8edda8e025e9bf.jpg",
+   "bytes": 690393,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 180651,
-   "smart_crop": true,
-   "src": "fb-10.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 48,
-   "detail_score": 32.117,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
    "from": "fb-06.jpg",
    "bytes": 175737,
    "smart_crop": true,
@@ -60,29 +46,73 @@
    "orientation": "landscape"
   },
   {
-   "slot": "photo-card-photos.jpg",
-   "from": "fb-05.jpg",
-   "bytes": 175425,
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-04.jpg",
+   "bytes": 82937,
    "smart_crop": true,
-   "src": "fb-05.jpg",
+   "src": "fb-04.jpg",
    "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
+   "src_wh": "720x720",
+   "out_wh": "720x450",
    "crop_axis": "y",
-   "crop_offset_pct": 0,
-   "detail_score": 37.72,
+   "crop_offset_pct": 95,
+   "detail_score": 22.609,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-e98e39a49c0d2962.jpg",
+   "bytes": 239212,
+   "smart_crop": true,
+   "src": "google-e98e39a49c0d2962.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 28,
+   "detail_score": 29.735,
    "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 106795,
+   "from": "google-f1c277ec90ac32ce.jpg",
+   "bytes": 631991,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 96636,
+   "from": "google-7d35aff50ee6e5bc.jpg",
+   "bytes": 566878,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "fb-09.jpg",
+   "bytes": 293441,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "fb-07.jpg",
+   "bytes": 275278,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "fb-10.jpg",
+   "bytes": 254906,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "fb-05.jpg",
+   "bytes": 245159,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "fb-03.jpg",
+   "bytes": 106795,
    "letterbox_stripped": null
   },
   {
@@ -93,16 +123,12 @@
   }
  ],
  "skipped": [
-  "classification read: 10 verdicts",
-  "staged 10 harvest photos from fb-photos",
+  "classification read: 19 verdicts",
+  "staged 15 harvest photos from fb-photos:10 + assets:5",
   "refused_by_class:fb-08.jpg:reject",
+  "hero_cand_refuse:google-f1c277ec90ac32ce.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
-  "photo-gallery-3.jpg",
-  "photo-ctaband.jpg",
-  "photo-quoteband.jpg",
-  "photo-gallery-4.jpg",
-  "photo-gallery-5.jpg",
   "photo-gallery-6.jpg",
   "photo-service-1.jpg",
   "photo-service-2.jpg",
@@ -114,8 +140,6 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-ctaband.jpg",
-  "photo-quoteband.jpg",
   "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
@@ -123,18 +147,23 @@
   "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 8,
+ "candidates": 13,
  "refused_by_class": 1,
- "photo_candidates": 8,
+ "photo_candidates": 13,
  "altBySlot": {
-  "photo-hero.jpg": "IVY Landscaping LLC - technician at work on site (photo 2)",
-  "photo-card-about.jpg": "IVY Landscaping LLC - technician at work on site (photo 8)",
-  "photo-about.jpg": "IVY Landscaping LLC - technician at work on site (photo 7)",
-  "photo-card-services.jpg": "IVY Landscaping LLC - technician at work on site (photo 9)",
-  "photo-card-reviews.jpg": "IVY Landscaping LLC - technician at work on site (photo 6)",
-  "photo-card-photos.jpg": "IVY Landscaping LLC - technician at work on site (photo 5)",
-  "photo-gallery-1.jpg": "IVY Landscaping LLC - technician at work on site (photo 3)",
-  "photo-gallery-2.jpg": "IVY Landscaping LLC - technician at work on site (photo 4)"
+  "photo-hero.jpg": "Curved black mulch bed with clipped shrubs along a walkway as a crew member works at the corner.",
+  "photo-card-about.jpg": "Stamped concrete walk to white porch steps with a mulched bed and a monogram flag by the door.",
+  "photo-about.jpg": "Corner of a white house with a tall arborvitae, rounded shrubs and a black mulch bed by a vinyl fence.",
+  "photo-card-services.jpg": "Fallen tree limb down across a lawn against a white vinyl fence, waiting to be cleared, with a small dog nearby.",
+  "photo-card-reviews.jpg": "Back yard graded to bare topsoil ahead of new lawn with a fence line and houses behind.",
+  "photo-card-photos.jpg": "Foundation bed of trimmed boxwoods and a tall evergreen in fresh black mulch beside a white house.",
+  "photo-gallery-1.jpg": "Mulched bed with clipped shrubs, a birdbath and a small memorial plaque beside a white house.",
+  "photo-gallery-2.jpg": "White cape with a brick chimney, two tall arborvitae and rounded shrubs across a mulched front bed.",
+  "photo-gallery-3.jpg": "Shaded lawn under a stand of trees with a bare patch where a stump was ground out.",
+  "photo-ctaband.jpg": "Wide mowed lawn with a mature oak in front of a brick colonial house.",
+  "photo-quoteband.jpg": "Tall trees over a back yard with the roof of a gazebo at the bottom of the frame.",
+  "photo-gallery-4.jpg": "Mowed lawn along a white vinyl fence beneath a large shade tree.",
+  "photo-gallery-5.jpg": "Freshly mowed lawn edge running up to an overgrown tree line at the back of a property."
  },
  "dedupe_fixed": 5
 }
