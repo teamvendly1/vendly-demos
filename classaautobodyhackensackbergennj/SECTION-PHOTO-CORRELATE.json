@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-02T15:25:44.810Z",
+  "at": "2026-09-02T16:35:36.787Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
@@ -25,6 +25,46 @@
       "service": null,
       "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\assets\\google\\google-c825a7e32fddaa1d.jpg",
       "score_alt": "Car raised on a blue two-post lift with its front end stripped to the subframe inside the repair shop."
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "source": "stock-library",
+      "sha256": "c145d48a28554fdc80c11ba51a028de160e5a05692039b2af52532047ffa2bee",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": null,
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "Pexels",
+      "sha256": "ce87324da7df4404f1171db76b437d1db370b202e140b17c9bdb1d51d194fbef",
+      "reasons": [
+        "cross_demo_dupe:allensautomotivejacksonvilleonslownc/photo-ctaband.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "engine bay diagnostic tools"
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "source": "stock-library",
+      "sha256": "40b25aa91e0cb86b3557a7c1f5f8dc68469bd80730cb2b8fec6df7e00dd3264a",
+      "reasons": [
+        "cross_demo_dupe:butlerstireautoservice/photo-card-about.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "hydraulic lift post garage bay"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "source": "stock-library",
+      "sha256": "4de041d31cf3c3e0e2cbd2a27eeba3a22abc1f260355d0a262ada45404a81a33",
+      "reasons": [
+        "cross_demo_dupe:aoneautomotivellc/photo-card-reviews.jpg"
+      ],
+      "service": "trade work",
+      "score_alt": "engine bay diagnostic tools"
     }
   ],
   "kept": [
@@ -143,16 +183,6 @@
       "alt": "Windshield with a spider-web crack radiating from an impact point, photographed "
     },
     {
-      "file": "photo-gallery-6.jpg",
-      "sha256": "52cbea83d1e549854a14de995f0c955108725e9ba714f6f0ecab7fc10c722420",
-      "bytes": 89404,
-      "alt": "Technician in glasses and a dark shirt fitting a panel to a bare body shell on the shop floor.",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ]
-    },
-    {
       "file": "photo-reviewsband.jpg",
       "sha256": "9954b72190df947dee67b560c72fcee6cff66ac83a7fec1d960262e611bb6da4",
       "bytes": 98220,
@@ -160,6 +190,16 @@
       "restored": true,
       "reasons": [
         "off_section_relevance:lifestyle_decor:chair"
+      ]
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "9f9c20f39d3319c706e01560e76f849c06b69437b40807a2984ac36f701d0259",
+      "bytes": 173186,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:laurelparkautohendersonvillehendersonnc/photo-services-hero.jpg"
       ]
     }
   ],
@@ -228,8 +268,8 @@
     }
   ],
   "skipped": [
-    "correlate_restore_no_stock:photo-gallery-6.jpg",
-    "correlate_restore_no_stock:photo-reviewsband.jpg"
+    "correlate_restore_no_stock:photo-reviewsband.jpg",
+    "correlate_restore_no_stock:photo-service-5.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

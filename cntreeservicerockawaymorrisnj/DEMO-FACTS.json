@@ -9,7 +9,7 @@
   "palette_source": "fallback-trade-or-neutral",
   "site_host": "",
   "city": "Rockaway",
-  "region": "",
+  "region": "NJ",
   "owner_first": "",
   "trade_key": "tree-service",
   "stock_key": "tree-service",
@@ -18,7 +18,7 @@
   "schema_type": "LocalBusiness",
   "title_suffix": "",
   "meta_description": "CN Tree Service serving Rockaway - tree service that shows up when you call.",
-  "maps_url": "",
+  "maps_url": "https://www.google.com/maps/place/CN+Tree+Service/@40.8943818,-74.513306,17z/data=!3m1!4b1!4m6!3m5!1s0x89c30a8c126e8987:0x4a4a67a4dfb8eda5!8m2!3d40.8943818!4d-74.513306!16s%2Fg%2F11cn30gpyc?hl=en&entry=ttu&g_ep=EgoyMDI2MDgzMC4wIKXMDSoASAFQAw%3D%3D",
   "facebook_url": "https://www.facebook.com/cntreeservice1",
   "eyebrow": "Rockaway",
   "h1_lead": "",
@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "CN Tree Service serving Rockaway.",
   "about_h2": "About CN Tree Service",
-  "about_p1": "We handle tree service for homes and businesses around Rockaway.",
+  "about_p1": "Our work covers tree removal, trimming and pruning, stump grinding and removal, and storm damage and emergency removal for homes and businesses that need it done right.",
   "about_p2": "We work out of Rockaway and the towns around it.",
   "area_h2": "Rockaway and the area around it",
   "area_lede": "",
@@ -58,10 +58,54 @@
   "svc_list_h2": "What we handle: tree service",
   "services": [
     {
-      "title": "Tree service",
-      "body": "Trees are pruned, removed or cleared with the work planned around what is standing nearby.",
-      "slot": "",
-      "alt": ""
+      "title": "Tree removal",
+      "body": "Where there is room, the tree comes down in one piece; where there is not, it comes down in sections on ropes.",
+      "slot": "photo-service-1.jpg",
+      "alt": "Base of a large trunk with a cut cavity opened up above the roots.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Red boom truck lifted beside a tall bare trunk with the top already taken down, CN Tree Service truck below."
+      }
+    },
+    {
+      "title": "Trimming and pruning",
+      "body": "Dead and crossing limbs come out and the canopy is shaped so the tree stays healthy and off the roof.",
+      "slot": "photo-service-2.jpg",
+      "alt": "Bucket truck at the end of a driveway with the boom raised into the tree line.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Large tree in a front yard pruned back over the driveway and lawn with the house behind."
+      }
+    },
+    {
+      "title": "Stump grinding and removal",
+      "body": "The stump is ground below grade and the chips are raked out or hauled, so the ground is usable again.",
+      "slot": "photo-service-3.jpg",
+      "alt": "Split in a trunk with the bark peeled back to show the wood underneath.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Freshly cleared back yard with a stump ground flush and wood chips raked over the lawn near a shed."
+      }
+    },
+    {
+      "title": "Storm damage and emergency removal",
+      "body": "When a tree has come down on a roof or a deck, the first job is getting the weight off safely.",
+      "slot": "photo-service-4.jpg",
+      "alt": "Hollow cavity in a bare trunk in front of a white farmhouse.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Split in a trunk with the bark peeled back to show the wood underneath."
+      }
+    },
+    {
+      "title": "Climbing and sectional dismantling",
+      "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
+      "slot": "photo-service-5.jpg",
+      "alt": "Hollow log section lifted by a rigging strap showing the rotted core inside.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Crane boom rigged to a trunk section while the bucket truck works alongside a white fence."
+      }
     }
   ],
   "photos_h2": "Recent work",
@@ -69,7 +113,47 @@
   "gallery": [
     {
       "slot": "photo-gallery-1.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 2)",
+      "alt": "Freshly cleared back yard with a stump ground flush and wood chips raked over the lawn near a shed.",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-2.jpg",
+      "alt": "Cut hardwood logs laid on a lawn showing a hollow rotted trunk end.",
+      "subject_class": "finished_result"
+    },
+    {
+      "slot": "photo-gallery-3.jpg",
+      "alt": "Front yard after removal with a stump and surface roots left beside the driveway.",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-4.jpg",
+      "alt": "Bucket truck under tall bare trees with rigging lines up to the crown.",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-5.jpg",
+      "alt": "Base of a large trunk with the root flare exposed beside a driveway.",
+      "subject_class": "finished_result"
+    },
+    {
+      "slot": "photo-gallery-6.jpg",
+      "alt": "Large tree over a lawn with its crown reduced and a cut trunk section at the top.",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-7.jpg",
+      "alt": "Lawn with logs lined up along the driveway after a removal.",
+      "subject_class": "finished_result"
+    },
+    {
+      "slot": "photo-gallery-8.jpg",
+      "alt": "Large tree in a front yard pruned back over the driveway and lawn with the house behind.",
+      "subject_class": "trade_work"
+    },
+    {
+      "slot": "photo-gallery-9.jpg",
+      "alt": "Close view of mossy bark with a long crack running down the trunk.",
       "subject_class": "trade_work"
     }
   ],
@@ -100,28 +184,28 @@
   ],
   "contact_h2": "Talk to us",
   "contact_lede": "",
-  "contact_photo_slot": "",
-  "contact_photo_tier": "none",
+  "contact_photo_slot": "photo-family.jpg",
+  "contact_photo_tier": "owner",
   "contact_map": "link",
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "CN Tree Service - technician at work on site (photo 6)",
-    "card_about": "CN Tree Service - technician at work on site (photo 4)",
-    "card_services": "CN Tree Service - technician at work on site (photo 7)",
-    "card_reviews": "CN Tree Service - technician at work on site (photo 5)",
-    "card_photos": "CN Tree Service - technician at work on site (photo 3)",
-    "ctaband": "Tree service job photo",
-    "about": "CN Tree Service - technician at work on site (photo 8)",
-    "contact": "CN Tree Service",
-    "services_hero": "Tree service services"
+    "hero": "CN Tree Service bucket truck parked at a blue house with the boom up in the trees.",
+    "card_about": "Worker in a yellow hard hat walking past the chipper truck toward the brush pile.",
+    "card_services": "Crew feeding brush into a wood chipper at the curb with the chip truck ahead of it.",
+    "card_reviews": "Yellow stump grinder chewing down a wide stump beside a fence, chips piled around it.",
+    "card_photos": "Climber roped into the top of a bare tree cutting limbs against a cloudy sky.",
+    "ctaband": "Felled bare tree lying across a lawn in front of a brick house waiting to be cut up.",
+    "about": "Bucket truck with the boom up in a tree over a white house with a worker in a hard hat below.",
+    "contact": "",
+    "services_hero": "Tall trunk being taken down in sections with rigging lines running to the bucket truck."
   },
   "send": "NO",
-  "asset_version": "harv20260831221549",
+  "asset_version": "harv20260902163552",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\cntreeservicerockawaymorrisnj\\HARVEST.json",
-    "at": "2026-08-31T22:15:49.737Z",
+    "at": "2026-09-02T16:35:52.934Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\cntreeservicerockawaymorrisnj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -129,10 +213,13 @@
     "harvest_merged": true
   },
   "address": {
-    "street": "",
+    "street": "176 Franklin Ave",
     "city": "Rockaway",
-    "region": "",
-    "postal": ""
+    "region": "NJ",
+    "postal": "07866",
+    "source_url": "",
+    "customers_visit": false,
+    "suppress_street_reason": "mobile or unclassified trade (tree-service) - a street here is very often the owner home address"
   },
   "google_harvest": {
     "rating": 5,
@@ -147,8 +234,31 @@
     "url": "",
     "source_is_google": true
   },
-  "photo_count": 8,
-  "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
-  "contact_photo_omit": true,
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Tree removal",
+        "Trimming and pruning",
+        "Stump grinding and removal",
+        "Storm damage and emergency removal"
+      ]
+    }
+  ],
+  "photo_count": 43,
+  "phone_alt": {
+    "value": "(862) 324-1493",
+    "source": "own truck door lettering, painted beside the business name CN TREE SERVICE LLC, the listed number (201) 709-9820, Wharton NJ and NJ Lic. #13VH09246500",
+    "evidence_photo": "google-4ed1ab4f49ddfc65.jpg (their own Google listing tile, sha256 4ed1ab4f49ddfc655caf53db76a56e824f4e336a65ff77719f155ee47c6b6b79)",
+    "verified_by": "claude-alt-and-collectibles opened the image 2026-09-02",
+    "note": "second line of the prospect. Recorded so photo-pixel-defect-gate ownPhonesForDemo() treats it as the prospect own number. Not a gate change; a fact the record was missing. Never use in outbound copy - the only outbound number is +1 774-426-9684."
+  },
+  "vendly_wave": "2",
+  "vendly_wave2_branch": "2q",
+  "vendly_wave2_segment": "UNKNOWN",
+  "contact_photo_tier_why": "harvest face file photo-family.jpg",
+  "contact_photo_omit": false,
   "_contact_map_mode": "pin-link"
 }

@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Class A Autobody serving Hackensack.",
   "about_h2": "About Class A Autobody",
-  "about_p1": "Our work covers diagnostics and engine work, exhaust and underbody.",
-  "about_p2": "139 customers have left us a review, averaging 4.8 out of 5. We work out of Hackensack and the towns around it.",
+  "about_p1": "Our work covers dent and body work, paint and refinishing, frame and structural repair, and auto glass for drivers who need it done right.",
+  "about_p2": "We work out of Hackensack and the towns around it.",
   "area_h2": "Where we take on collision repair work near Hackensack",
   "area_lede": "",
   "svc_hero_h1": "The collision repair work we take on",
@@ -58,18 +58,54 @@
   "svc_list_h2": "Collision repair services",
   "services": [
     {
-      "title": "Diagnostics and engine work",
-      "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
+      "title": "Collision repair",
+      "body": "Damage is measured against the factory points before the first panel comes off, and the estimate reflects what is actually bent.",
       "slot": "photo-service-1.jpg",
       "alt": "Teal hood and fender masked and primed on the bench ahead of the spray booth.",
-      "evidence": "Shop front with the Class A Autobody sign mounted above the open roll-up bay door."
+      "evidence": {
+        "kind": "photo",
+        "text": "Red Ford F-150 with a crushed front end and buckled hood waiting in the lot for collision repair."
+      }
     },
     {
-      "title": "Exhaust and underbody",
-      "body": "Up on the lift, where the rust and the leaks actually are.",
+      "title": "Dent and body work",
+      "body": "Panels are pulled, filled and blocked flat by hand before any primer goes on.",
       "slot": "photo-service-2.jpg",
       "alt": "Front view of a teal car masked in plastic and tape with the bumper removed for paint.",
-      "evidence": "Car raised on a blue two-post lift with its front end stripped to the subframe inside the "
+      "evidence": {
+        "kind": "photo",
+        "text": "Teal car with its fender and door masked in plastic and tape ahead of paint."
+      }
+    },
+    {
+      "title": "Paint and refinishing",
+      "body": "Colour is matched to the car in front of us and blended into the next panel so the repair does not show.",
+      "slot": "photo-service-3.jpg",
+      "alt": "Windshield with a spider-web crack radiating from an impact point, photographed for replacement.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Teal car with its fender and door masked in plastic and tape ahead of paint."
+      }
+    },
+    {
+      "title": "Frame and structural repair",
+      "body": "Structural pulls are done on the rack to spec, with measurements taken before and after.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Silver Jaguar sedan pulled up on a Car-O-Liner frame rack for measurement."
+      }
+    },
+    {
+      "title": "Auto glass",
+      "body": "Windshields and door glass are replaced with the seal set right, so it does not leak or whistle afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Windshield with a spider-web crack radiating from an impact point, photographed for replacement."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -1113,15 +1149,15 @@
     "card_photos": "Car raised on a blue two-post lift with its front end stripped to the subframe inside the repair shop.",
     "ctaband": "Blue Jaguar XF and a maroon sedan parked side by side on the shop floor after repair.",
     "about": "Black sedan with a freshly refinished front quarter and bumper parked on cracked asphalt.",
-    "contact": "Repair bay with a black SUV and a dark sedan lined up under the shop lights.",
+    "contact": "",
     "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902152455",
+  "asset_version": "harv20260902163308",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\HARVEST.json",
-    "at": "2026-09-02T15:24:55.679Z",
+    "at": "2026-09-02T16:33:08.588Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\classaautobodyhackensackbergennj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -1149,7 +1185,19 @@
     "url": "",
     "source_is_google": true
   },
-  "services_source": "their-photographs",
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Dent and body work",
+        "Paint and refinishing",
+        "Frame and structural repair",
+        "Auto glass"
+      ]
+    }
+  ],
   "photo_count": 28,
   "vendly_wave": "2",
   "vendly_wave2_branch": "2q",

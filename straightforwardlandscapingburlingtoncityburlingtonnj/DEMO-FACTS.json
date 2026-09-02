@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Straightforward Landscaping serving Burlington Township.",
   "about_h2": "About Straightforward Landscaping",
-  "about_p1": "Our work covers landscaping.",
+  "about_p1": "Our work covers lawn care and mowing, mulch and bed work, hardscape, patios and walkways, and sod, seeding and grading for homes and businesses that need it done right.",
   "about_p2": "We work out of Burlington Township and the towns around it.",
   "area_h2": "We work in and around Burlington Township",
   "area_lede": "",
@@ -58,10 +58,54 @@
   "svc_list_h2": "Landscaping services",
   "services": [
     {
-      "title": "Landscaping",
-      "body": "Beds, lawns and hardscape are kept up on a schedule, not just cleaned up once and left.",
+      "title": "Lawn care and mowing",
+      "body": "Lawns are cut, edged and cleaned up on a schedule so the yard never gets ahead of you.",
       "slot": "photo-service-1.jpg",
-      "alt": "Brick-edged planting bed of liriope along a pale blue house wall by the front walk."
+      "alt": "Brick-edged planting bed of liriope along a pale blue house wall by the front walk.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Mowed back lawn with fence lines and a patio set behind a tall tan house."
+      }
+    },
+    {
+      "title": "Mulch and bed work",
+      "body": "Beds are cleaned out, edged and mulched, and plantings are set where they will actually grow.",
+      "slot": "photo-service-2.jpg",
+      "alt": "Foundation bed of new shrubs and mulch along a tan house wall beside the air conditioner.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Stone-front house with a new black-mulched foundation bed of shrubs along the walk."
+      }
+    },
+    {
+      "title": "Hardscape, patios and walkways",
+      "body": "Base is compacted and screeded before a single paver or block goes down, which is why it stays level.",
+      "slot": "photo-service-3.jpg",
+      "alt": "Curved stone retaining wall bed with a weeping tree and shrubs beside a white house.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Light blue ranch house with a paver-edged bed, hanging flower basket and fresh mulch at the corner."
+      }
+    },
+    {
+      "title": "Sod, seeding and grading",
+      "body": "The ground is graded and prepped first, then sodded or seeded so the new lawn takes instead of washing out.",
+      "slot": "photo-service-4.jpg",
+      "alt": "Back lawn bordered by a chain-link fence with a red maple and fresh mulch beds along it.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Stone-block edged bed of fresh topsoil and small shrubs along a white house corner."
+      }
+    },
+    {
+      "title": "Tree and shrub trimming",
+      "body": "Hedges and ornamentals are shaped and dead wood comes out so they fill in instead of going leggy.",
+      "slot": "photo-service-5.jpg",
+      "alt": "Above-ground pool with a fresh mulch ring and a white fence behind it in a back yard.",
+      "evidence": {
+        "kind": "photo",
+        "text": "Tan two-storey colonial with trimmed foundation shrubs and a mulched bed across the front."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -160,15 +204,15 @@
     "card_photos": "New gravel pad with a stone border laid beside a grey house for parking.",
     "ctaband": "Front porch with two chairs above a new stone-edged bed of small shrubs on a lawn.",
     "about": "Two crew members raking out a driveway in front of a colonial house with the work van behind, shot upright.",
-    "contact": "Freshly striped lawn under tall evergreens with a fence line at the back of the yard.",
+    "contact": "",
     "services_hero": "Brick house with an arched entry, fresh foundation beds and a weeping cherry by the walk."
   },
   "send": "NO",
-  "asset_version": "harv20260902151155",
+  "asset_version": "harv20260902163130",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\straightforwardlandscapingburlingtoncityburlingtonnj\\HARVEST.json",
-    "at": "2026-09-02T15:11:55.651Z",
+    "at": "2026-09-02T16:31:30.612Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\straightforwardlandscapingburlingtoncityburlingtonnj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -197,6 +241,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Lawn care and mowing",
+        "Mulch and bed work",
+        "Hardscape, patios and walkways",
+        "Sod, seeding and grading"
+      ]
+    }
+  ],
   "photo_count": 44,
   "vendly_wave": "2",
   "vendly_wave2_branch": "2q",

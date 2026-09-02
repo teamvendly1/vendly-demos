@@ -1,48 +1,58 @@
 {
-  "at": "2026-09-02T15:12:21.467Z",
+  "at": "2026-09-02T16:32:17.945Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "landscaping",
   "replaced": [
     {
       "file": "photo-card-about.jpg",
-      "source": "Pexels",
-      "sha256": "70edd8901817d0b9c35abb3f749d3b81b7310a39ed9b06119bc1b5d0d168bcca",
+      "source": "stock-library",
+      "sha256": "44379baf8d5542e204641d4b4bc7bd0c7d22fb70a7ddf2c8eda500851ea8eb55",
       "reasons": [
         "off_section_relevance:trade_deny:pool:landscape"
       ],
       "service": "crew shop jobsite",
-      "score_alt": "mulch bed shrub planting"
+      "score_alt": "flagstone walkway retaining wall"
     },
     {
       "file": "photo-ctaband.jpg",
       "source": "stock-library",
-      "sha256": "10621995f07a9a831bb8cf552792c810ff05429b28845e7ec0221131975412fe",
+      "sha256": "75aaef32792ccb7876f30693ca53898e7010e47209e4874b7ddc4c925c704906",
       "reasons": [
         "off_section_relevance:lifestyle_decor:chair"
       ],
       "service": "trade work",
-      "score_alt": "mulch bed shrub planting"
+      "score_alt": "retaining wall block install"
     },
     {
-      "file": "photo-service-5.jpg",
+      "file": "photo-service-1.jpg",
       "source": "stock-library",
-      "sha256": "1a9bf6239717a1deaae48d2a226c22811f43bc4c573e432c7cc980e50fd0bd3c",
+      "sha256": "9d508117cdca8386fde1fcd2a8d9ce53da0d0698beb85e174d229905b03a8e3b",
       "reasons": [
-        "off_section_relevance:trade_deny:pool:landscape"
+        "off_section_relevance:section_need_miss:Lawn care and mowing"
       ],
-      "service": "trade work",
-      "score_alt": "bush hog clearing brush lot"
+      "service": "Lawn care and mowing",
+      "score_alt": "sod install roll lawn"
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "source": "stock-library",
+      "sha256": "53a934a986f390fd57acf2d0be6a225faa2e6ab690a74f8abbe36d479de0e820",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Sod, seeding and grading"
+      ],
+      "service": "Sod, seeding and grading",
+      "score_alt": "landscape rake leveling dirt yard"
     },
     {
       "file": "photo-services-hero.jpg",
       "source": "stock-library",
-      "sha256": "e484db5ffdd0f92638396d3c202fc5eb0388295708599bb6cb09bc0f83c6fb28",
+      "sha256": "e7ec64b68eca21c3e19bea28da2a1333040750525b8c80e0e84a6427692d2a36",
       "reasons": [
         "off_section_relevance:trade_require_miss:landscape"
       ],
       "service": "trade work",
-      "score_alt": "bush hog clearing brush lot"
+      "score_alt": "lawn mower cutting turf"
     }
   ],
   "kept": [
@@ -155,12 +165,6 @@
       "alt": "Two white garden sheds on a lawn with a fresh mulch bed cut around their base."
     },
     {
-      "file": "photo-service-1.jpg",
-      "sha256": "3c5b0dab3f3017e96145d2a066d5f38689e87c007b26e0a78a679b0a86742a26",
-      "bytes": 155757,
-      "alt": "Brick-edged planting bed of liriope along a pale blue house wall by the front wa"
-    },
-    {
       "file": "photo-service-2.jpg",
       "sha256": "e53cd3777617a5c2e0871f16b67f0b891db615757b9c4033825fa2f25dd98fcc",
       "bytes": 167146,
@@ -173,16 +177,20 @@
       "alt": "Curved stone retaining wall bed with a weeping tree and shrubs beside a white ho"
     },
     {
-      "file": "photo-service-4.jpg",
-      "sha256": "1cbe61d5bf931fe4d5bd708d982e77a3ec173db1680c72028b8f78fd9d52c6c8",
-      "bytes": 332284,
-      "alt": "Back lawn bordered by a chain-link fence with a red maple and fresh mulch beds a"
-    },
-    {
       "file": "photo-service-6.jpg",
       "sha256": "d28038136dd2ca48c2216de4028fe3a19304b426ba35649888997830bc4f4cc0",
       "bytes": 327838,
       "alt": "Stone-block edged bed of fresh topsoil and small shrubs along a white house corn"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "sha256": "653a0c543d4c8063b702a4eb2dd284e1bef23ba9aef52961ce2e427e2591bccc",
+      "bytes": 328620,
+      "alt": "Above-ground pool with a fresh mulch ring and a white fence behind it in a back yard.",
+      "restored": true,
+      "reasons": [
+        "off_section_relevance:section_need_miss:Tree and shrub trimming"
+      ]
     }
   ],
   "failed": [],
@@ -219,12 +227,42 @@
       }
     },
     {
+      "file": "photo-service-1.jpg",
+      "alt": "Brick-edged planting bed of liriope along a pale blue house wall by the front walk.",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Lawn care and mowing"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "alt": "Back lawn bordered by a chain-link fence with a red maple and fresh mulch beds along it.",
+      "relevance": {
+        "ok": false,
+        "score": -8,
+        "reason": "section_need_miss:Sod, seeding and grading"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
       "file": "photo-service-5.jpg",
       "alt": "Above-ground pool with a fresh mulch ring and a white fence behind it in a back yard.",
       "relevance": {
         "ok": false,
-        "score": -20,
-        "reason": "trade_deny:pool:landscape"
+        "score": -8,
+        "reason": "section_need_miss:Tree and shrub trimming"
       },
       "flattery": {
         "ok": true,
@@ -249,6 +287,8 @@
       }
     }
   ],
-  "skipped": [],
+  "skipped": [
+    "correlate_restore_no_stock:photo-service-5.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

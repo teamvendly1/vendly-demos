@@ -1,180 +1,192 @@
 {
-  "at": "2026-08-31T22:17:21.249Z",
+  "at": "2026-09-02T16:36:38.326Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "tree-service",
-  "replaced": [],
-  "kept": [
-    {
-      "file": "photo-contact.jpg",
-      "sha256": "09ae96822c8754ef0575be8fbe3c143afdf912f267cfe1c2c11eb8f5caafec8b",
-      "bytes": 286835,
-      "alt": "brush pile loading truck yard waste"
-    },
-    {
-      "file": "photo-ctaband.jpg",
-      "sha256": "93b0e841c0dde8f93dc2e373211b9ff8ce3a6763cb010d68f4c6ec011890c051",
-      "bytes": 284619,
-      "alt": "hedge trimming large shrubs equipment"
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "62bfaa2ff7cf3cfaa1b79b4ec6094bdf7634d9879c8e2d420dc66efb78c11867",
-      "bytes": 322676,
-      "alt": "hedge trimming large shrubs equipment"
-    },
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "bb13df41868effd531ca5576ce433296b69fc57f04901e1b1f4bdef8403edb19",
-      "bytes": 264665,
-      "alt": "CN Tree Service - technician at work on site (photo 8)",
-      "restored": true,
+      "source": "stock-library",
+      "sha256": "6d0e0ccac9e9145a4d6fa98e96c846d4c948cef30b583bc55534b94ae8412cb0",
       "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify",
-        "unflattering_subject:about_slot_invented_alt"
-      ]
+        "off_section_relevance:trade_deny:worker:tree"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "logs stacked after tree removal"
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "f9adf9f29f6d82ee14904ba48d36e02f6daac32317b9dcecdcd465fe9fd6df77",
-      "bytes": 220216,
-      "alt": "CN Tree Service - technician at work on site (photo 4)",
-      "restored": true,
+      "source": "stock-library",
+      "sha256": "7ef280555aff60bd1d6a365fca51a9eeb144f9b5ee6d1df5285fa9f2ce922f44",
       "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify",
-        "unflattering_subject:about_slot_invented_alt"
-      ]
+        "off_section_relevance:trade_deny:worker:tree"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "logs stacked after tree removal"
     },
     {
-      "file": "photo-card-photos.jpg",
-      "sha256": "1ac9e5add2c3acdf497d94d25c04052669684832f4e989df8e5020fb6130c85f",
-      "bytes": 121979,
-      "alt": "CN Tree Service - technician at work on site (photo 3)",
-      "restored": true,
+      "file": "photo-service-1.jpg",
+      "source": "stock-library",
+      "sha256": "ce63a8ee9158a4f4f95cfb86c65418c9fab267298b637fa83fe94e17d71e15fa",
       "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify"
-      ]
+        "off_section_relevance:section_need_miss:Tree removal"
+      ],
+      "service": "Tree removal",
+      "score_alt": "chainsaw cutting tree limb"
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "source": "stock-library",
+      "sha256": "f4564d2f3a7d5667478b7ea6d95fd2ff5659cf7da1a1b7ed5bc4195e34047349",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Stump grinding and removal"
+      ],
+      "service": "Stump grinding and removal",
+      "score_alt": "chainsaw cutting tree limb"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "stock-library",
+      "sha256": "3337c161664c92189d628061eeb3462e193ecf14063664df53a9e5c5d9ff212e",
+      "reasons": [
+        "off_section_relevance:section_need_miss:Climbing and sectional dismantling"
+      ],
+      "service": "Climbing and sectional dismantling",
+      "score_alt": "chainsaw cutting tree limb"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-card-photos.jpg",
+      "sha256": "51d00227e855e44ae0ee99a1be098e56d004704d981219581a4f0a480a6bc465",
+      "bytes": 250485,
+      "alt": "Climber roped into the top of a bare tree cutting limbs against a cloudy sky."
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "4e2d1db73fa8e5c67d89203f6a7512da2408dfbd229c12aabf511eaaa04e44d4",
-      "bytes": 172864,
-      "alt": "CN Tree Service - technician at work on site (photo 5)",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify"
-      ]
+      "sha256": "da49471fbf679d1503badcac48b4c22cf607b2df5dfaf4c808ac40ec2fb7deae",
+      "bytes": 241663,
+      "alt": "Yellow stump grinder chewing down a wide stump beside a fence, chips piled aroun"
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "7a119b1f0aef01fd58d5bbaba6882c0b8c50498f4486cd8d44647487e8b6aa5e",
-      "bytes": 208140,
-      "alt": "CN Tree Service - technician at work on site (photo 7)",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify"
-      ]
+      "sha256": "0d2748bedf5ab9fd3ac7fb58f9ae051a0c78bdfd637ccec82b2e361de348ecbc",
+      "bytes": 113729,
+      "alt": "Crew feeding brush into a wood chipper at the curb with the chip truck ahead of "
+    },
+    {
+      "file": "photo-contact.jpg",
+      "sha256": "9d98cd9353a87f96683e4dd731a6b4a335cbbbbffbbb8b6d35e42b53fe10614e",
+      "bytes": 595983,
+      "alt": "Large tree beside a garage with dead limbs removed and the crown cleaned up."
+    },
+    {
+      "file": "photo-ctaband.jpg",
+      "sha256": "62fa96913c8658cd2e4d9f98830bf8e77e928b1b5a773d0df7a0ffcb11c2d05b",
+      "bytes": 690762,
+      "alt": "Felled bare tree lying across a lawn in front of a brick house waiting to be cut"
     },
     {
       "file": "photo-gallery-1.jpg",
-      "sha256": "a7421f46fdbacc23f41b7151e9b8f59888cebe6b9954175d19559028b46bd565",
-      "bytes": 128546,
-      "alt": "CN Tree Service - technician at work on site (photo 2)",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify"
-      ]
+      "sha256": "4aa35748fe688fa038d7cecb1b1a2de1568b69b695cd5de47af0e782d7170885",
+      "bytes": 773281,
+      "alt": "Freshly cleared back yard with a stump ground flush and wood chips raked over th"
     },
     {
       "file": "photo-gallery-2.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "834cf5df03c7c2394a44632aa62c62a8892327aa8058b3a5642c1f9ff0214c8d",
+      "bytes": 704162,
+      "alt": "Cut hardwood logs laid on a lawn showing a hollow rotted trunk end."
     },
     {
       "file": "photo-gallery-3.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "71768bb20764fbd300591cc3a6f19dbd6335368d0df6db3b9d3cca0f7408db32",
+      "bytes": 694786,
+      "alt": "Front yard after removal with a stump and surface roots left beside the driveway"
     },
     {
       "file": "photo-gallery-4.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "43a97211762587d1d70cf23323e4fad91bf198daa80d96eab25d922bebbb0d69",
+      "bytes": 666980,
+      "alt": "Bucket truck under tall bare trees with rigging lines up to the crown."
     },
     {
       "file": "photo-gallery-5.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "098016e29dd6a88b426383cc510e2113a75ce6ad4bd24c6a2f96309410d0b407",
+      "bytes": 650983,
+      "alt": "Base of a large trunk with the root flare exposed beside a driveway."
     },
     {
       "file": "photo-gallery-6.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "754fb425267b20bb5416975ca8354638def528e61314e2f123d29551c62ccb01",
+      "bytes": 643732,
+      "alt": "Large tree over a lawn with its crown reduced and a cut trunk section at the top"
     },
     {
       "file": "photo-gallery-7.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "1afa47e5577d89c466d6068941264723a002000f7f1c63c40f8f78032f14bca0",
+      "bytes": 643292,
+      "alt": "Lawn with logs lined up along the driveway after a removal."
     },
     {
       "file": "photo-gallery-8.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "c9aeefdad555b921ab96b62b56108471275359d4f23a0e8145365965f25d26fa",
+      "bytes": 613774,
+      "alt": "Large tree in a front yard pruned back over the driveway and lawn with the house"
     },
     {
       "file": "photo-gallery-9.jpg",
-      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
-      "bytes": 70,
-      "alt": null,
-      "restored": true,
-      "reasons": [
-        "stub"
-      ]
+      "sha256": "f392c072dff0586c639db31cbef44236b998612071a187311beafc28d70e6bdd",
+      "bytes": 612715,
+      "alt": "Close view of mossy bark with a long crack running down the trunk."
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "a9ca83437a5b014f5827ecda579ee4b63b1d3539968c810a817210491da9ad4c",
-      "bytes": 304138,
-      "alt": "CN Tree Service - technician at work on site (photo 6)",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify",
-        "unflattering_subject:about_slot_invented_alt"
-      ]
+      "sha256": "4ed1ab4f49ddfc655caf53db76a56e824f4e336a65ff77719f155ee47c6b6b79",
+      "bytes": 262413,
+      "alt": "CN Tree Service bucket truck parked at a blue house with the boom up in the tree"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "3de9ccb143d21eb9ecad9ca1cd1415abd854c61ac14f03506547af1fba6401b8",
+      "bytes": 583480,
+      "alt": "Front lawn under a large tree with a long shadow across the grass after pruning."
+    },
+    {
+      "file": "photo-quoteband.jpg",
+      "sha256": "f1f07fd2db0f1b06ccb1490e3d591631848ccc972d77c77c254846e7e0bfe75e",
+      "bytes": 678508,
+      "alt": "Big rounds of a felled hardwood stacked on the ground where the tree came down."
+    },
+    {
+      "file": "photo-reviewsband.jpg",
+      "sha256": "ee67a62ec5b6810b2f692fd5fa976a97d0b6ec8f54a760572d85ed8e9dd0cb8a",
+      "bytes": 575121,
+      "alt": "Crane boom rigged to a trunk section while the bucket truck works alongside a wh"
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "fbeeda16d855d0b9c9e4d5597171a488381ac70430b1293cfd099d946c299241",
+      "bytes": 225403,
+      "alt": "Bucket truck at the end of a driveway with the boom raised into the tree line."
+    },
+    {
+      "file": "photo-service-4.jpg",
+      "sha256": "7c41059c6560de002daa1b9c3a34b7eb6da80ddfedb15520783d9aa691720c93",
+      "bytes": 502998,
+      "alt": "Hollow cavity in a bare trunk in front of a white farmhouse."
+    },
+    {
+      "file": "photo-service-6.jpg",
+      "sha256": "f9ddbf4e64c249af8137a00009ecf9f0f1c50bfd9be0a7d35a7798b16c51f1e1",
+      "bytes": 406528,
+      "alt": "Standing trunk with birdhouses on it being reduced from the top under an overcas"
+    },
+    {
+      "file": "photo-services-hero.jpg",
+      "sha256": "786f5c4356f697bea03a87493993d5a6e0334f023dbe993d1adda9dd3215c773",
+      "bytes": 584637,
+      "alt": "Tall trunk being taken down in sections with rigging lines running to the bucket"
     }
   ],
   "failed": [],
@@ -182,41 +194,41 @@
   "rescored": [
     {
       "file": "photo-about.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 8)",
+      "alt": "Bucket truck with the boom up in a tree over a white house with a worker in a hard hat below.",
       "relevance": {
         "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
+        "score": -20,
+        "reason": "trade_deny:worker:tree"
       },
       "flattery": {
-        "ok": false,
-        "score": -10,
-        "reason": "about_slot_invented_alt",
+        "ok": true,
+        "score": 0,
+        "reason": "",
         "strict": true
       }
     },
     {
       "file": "photo-card-about.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 4)",
+      "alt": "Worker in a yellow hard hat walking past the chipper truck toward the brush pile.",
       "relevance": {
         "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
+        "score": -20,
+        "reason": "trade_deny:worker:tree"
       },
       "flattery": {
-        "ok": false,
-        "score": -10,
-        "reason": "about_slot_invented_alt",
+        "ok": true,
+        "score": 0,
+        "reason": "",
         "strict": true
       }
     },
     {
-      "file": "photo-card-photos.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 3)",
+      "file": "photo-service-1.jpg",
+      "alt": "Base of a large trunk with a cut cavity opened up above the roots.",
       "relevance": {
         "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
+        "score": -8,
+        "reason": "section_need_miss:Tree removal"
       },
       "flattery": {
         "ok": true,
@@ -226,12 +238,12 @@
       }
     },
     {
-      "file": "photo-card-reviews.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 5)",
+      "file": "photo-service-3.jpg",
+      "alt": "Split in a trunk with the bark peeled back to show the wood underneath.",
       "relevance": {
         "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
+        "score": -8,
+        "reason": "section_need_miss:Stump grinding and removal"
       },
       "flattery": {
         "ok": true,
@@ -241,67 +253,21 @@
       }
     },
     {
-      "file": "photo-card-services.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 7)",
+      "file": "photo-service-5.jpg",
+      "alt": "Hollow log section lifted by a rigging strap showing the rotted core inside.",
       "relevance": {
         "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
+        "score": -8,
+        "reason": "section_need_miss:Climbing and sectional dismantling"
       },
       "flattery": {
         "ok": true,
         "score": 0,
         "reason": "",
         "strict": false
-      }
-    },
-    {
-      "file": "photo-gallery-1.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 2)",
-      "relevance": {
-        "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
-      },
-      "flattery": {
-        "ok": true,
-        "score": 0,
-        "reason": "",
-        "strict": false
-      }
-    },
-    {
-      "file": "photo-hero.jpg",
-      "alt": "CN Tree Service - technician at work on site (photo 6)",
-      "relevance": {
-        "ok": false,
-        "score": -11,
-        "reason": "slot_invented_alt_no_verify"
-      },
-      "flattery": {
-        "ok": false,
-        "score": -10,
-        "reason": "about_slot_invented_alt",
-        "strict": true
       }
     }
   ],
-  "skipped": [
-    "correlate_restore_no_stock:photo-about.jpg",
-    "correlate_restore_no_stock:photo-card-about.jpg",
-    "correlate_restore_no_stock:photo-card-photos.jpg",
-    "correlate_restore_no_stock:photo-card-reviews.jpg",
-    "correlate_restore_no_stock:photo-card-services.jpg",
-    "correlate_restore_no_stock:photo-gallery-1.jpg",
-    "correlate_restore_no_stock:photo-gallery-2.jpg",
-    "correlate_restore_no_stock:photo-gallery-3.jpg",
-    "correlate_restore_no_stock:photo-gallery-4.jpg",
-    "correlate_restore_no_stock:photo-gallery-5.jpg",
-    "correlate_restore_no_stock:photo-gallery-6.jpg",
-    "correlate_restore_no_stock:photo-gallery-7.jpg",
-    "correlate_restore_no_stock:photo-gallery-8.jpg",
-    "correlate_restore_no_stock:photo-gallery-9.jpg",
-    "correlate_restore_no_stock:photo-hero.jpg"
-  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
