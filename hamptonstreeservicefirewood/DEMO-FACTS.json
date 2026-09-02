@@ -4,11 +4,12 @@
   "tenant_id": "demo-hamptonstreeservicefirewood",
   "phone": "(252) 777-4797",
   "tel": "+12527774797",
-  "brand_color": "#161A08",
-  "palette_source": "their-photography:google-0972493656124e41.jpg",
+  "email": "",
+  "brand_color": "#26303A",
+  "palette_source": "fallback-trade-or-neutral",
   "site_host": "",
-  "city": "Newport",
-  "region": "NC",
+  "city": "Morehead City",
+  "region": "",
   "owner_first": "",
   "trade_key": "tree-service",
   "stock_key": "tree-service",
@@ -16,29 +17,29 @@
   "trade_label": "Tree service",
   "schema_type": "LocalBusiness",
   "title_suffix": "",
-  "meta_description": "Hampton's Tree Service & Firewood serving Newport - tree service that shows up when you call.",
-  "maps_url": "https://www.google.com/maps/place/Hampton's+Tree+Service+%26+Firewood/@34.7787779,-76.8670924,17z/data=!3m1!4b1!4m6!3m5!1s0x89a8eb76b9e0a3b5:0x56dd22b45d5c6d9e!8m2!3d34.7787779!4d-76.8670924!16s%2Fg%2F11cm0cs1b0?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
+  "meta_description": "Hampton's Tree Service & Firewood serving Morehead City - tree service that shows up when you call.",
+  "maps_url": "",
   "facebook_url": "",
-  "eyebrow": "Newport",
+  "eyebrow": "Morehead City",
   "h1_lead": "",
-  "h1_emph": "Tree work in Newport that shows up when you call.",
-  "hero_lede": "Tree service in Newport. Recent jobs are on the photos page.",
+  "h1_emph": "Tree work in Morehead City, done properly.",
+  "hero_lede": "Tree service in Morehead City. Call and we will take a look.",
   "free_estimates": false,
   "hours_short": "",
-  "area_short": "Newport",
+  "area_short": "Morehead City",
   "owner_operated": false,
   "strip_lead": "",
   "strip_body": "",
   "explore_h2": "Details worth knowing before the tree service visit",
   "explore_lede": "",
-  "card_about": "Who you are calling, and the work we do in Newport.",
+  "card_about": "Who you are calling, and the work we do in Morehead City.",
   "card_services": "See everything we take on",
   "card_reviews": "Read what past customers said",
   "card_photos": "Browse recent job photos",
-  "coverage_h2": "Also serving the towns around Newport",
+  "coverage_h2": "Also serving the towns around Morehead City",
   "hours_line": "",
   "service_areas": [
-    "Newport"
+    "Morehead City"
   ],
   "cta_h2": "Ready when the tree will not wait",
   "cta_body": "Call (252) 777-4797 or send a note.",
@@ -46,50 +47,82 @@
   "quote_lede": "",
   "form_msg_label": "Tell us more",
   "form_placeholder": "",
-  "footer_blurb": "Hampton's Tree Service & Firewood serving Newport.",
+  "footer_blurb": "Hampton's Tree Service & Firewood serving Morehead City.",
   "about_h2": "About Hampton's Tree Service & Firewood",
-  "about_p1": "We handle tree service for homes and businesses around Newport.",
-  "about_p2": "Every photograph on this site is our own work, and it covers climbing and sectional dismantling, stump and debris clearance. We work out of Newport and the towns around it.",
-  "area_h2": "Where we take on tree service work near Newport",
+  "about_p1": "Our work covers cleanup and haul-off, tree removal, trimming and pruning, and stump grinding and removal for homes and businesses that need it done right.",
+  "about_p2": "We work out of Morehead City and the towns around it.",
+  "area_h2": "Where we take on tree service work near Morehead City",
   "area_lede": "",
   "svc_hero_h1": "The tree service work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "tree service jobs we take on",
   "services": [
     {
-      "title": "Climbing and sectional dismantling",
-      "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
-      "slot": "",
-      "alt": "",
-      "evidence": "Climber in red helmet ascending a pine trunk on rope, chainsaw cutting with wood chips fly"
-    },
-    {
-      "title": "Stump and debris clearance",
+      "title": "Cleanup and haul-off",
       "body": "The wood is cut down, cleared out and the ground left usable again.",
       "slot": "",
       "alt": "",
-      "evidence": "Two ground crew members raking and clearing cut branches and pine debris from a yard near "
+      "evidence": {
+        "kind": "name",
+        "text": "Hampton's Tree Service & Firewood"
+      }
+    },
+    {
+      "title": "Tree removal",
+      "body": "Where there is room, the tree comes down in one piece; where there is not, it comes down in sections on ropes.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "As we planned a large tree removal, old stump removal/grind, and some tricky trimming of branches hanging over our deck ",
+        "reviews": 6,
+        "names_service": true,
+        "also": "Alex and his team cut down that large oak tree for me."
+      }
+    },
+    {
+      "title": "Trimming and pruning",
+      "body": "Dead and crossing limbs come out and the canopy is shaped so the tree stays healthy and off the roof.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "As we planned a large tree removal, old stump removal/grind, and some tricky trimming of branches hanging over our deck ",
+        "reviews": 3,
+        "names_service": true,
+        "also": "But gave me quotes on removal & just a trim so I had both options if I ever wanted to get rid of it."
+      }
+    },
+    {
+      "title": "Stump grinding and removal",
+      "body": "The stump is ground below grade and the chips are raked out or hauled, so the ground is usable again.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "As we planned a large tree removal, old stump removal/grind, and some tricky trimming of branches hanging over our deck ",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Storm damage and emergency removal",
+      "body": "When a tree has come down on a roof or a deck, the first job is getting the weight off safely.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They really tried hard not to cause too much damage to the surrounding grass and flattened the area where they removed t",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "A look at the work",
   "photos_lede": "",
-  "gallery": [
-    {
-      "slot": "photo-gallery-1.jpg",
-      "alt": "Climber near the top of a topped tree trunk making a cut with wood debris flying off the saw",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-2.jpg",
-      "alt": "Wide shot of a tall pine tree with a climber near the crown and ropes visible against blue sky",
-      "subject_class": "trade_work"
-    },
-    {
-      "slot": "photo-gallery-3.jpg",
-      "alt": "Climber roped in near the top of a freshly topped dead tree trunk against a hazy white sky",
-      "subject_class": "trade_work"
-    }
-  ],
+  "gallery": [],
   "reviews_h2": "Straight from the people who called us",
   "reviews_lede": "",
   "reviews": [
@@ -214,36 +247,33 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Wide shot of two tall pines with a climber visible high in the left tree against blue sky",
-    "card_about": "Two ground crew members raking and clearing cut branches and pine debris from a yard near a gray house",
-    "card_services": "Close-up of a climber in tree canopy working with ropes and orange safety gear",
-    "card_reviews": "Wide shot of two tall pine trees with a climber working partway up the near trunk against blue sky",
-    "card_photos": "Climber in red helmet ascending a pine trunk on rope, chainsaw cutting with wood chips flying against clear blue sky",
-    "ctaband": "Wide shot of a single tall pine tree with a climber ascending near the top against clear blue sky",
-    "about": "Climber cutting into a large trunk with a chainsaw, sawdust spraying, green tree canopy in background",
-    "contact": "Hampton's Tree Service & Firewood",
-    "services_hero": "Tree service services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260824055014",
+  "asset_version": "harv20260902195852",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hamptonstreeservicefirewood\\HARVEST.json",
-    "at": "2026-08-26T01:04:20.516Z",
+    "at": "2026-09-02T19:58:52.351Z",
     "zero_human_input": true,
-    "facts_path": "C:/Users/jacob/vendly-code/vendly-demos/hamptonstreeservicefirewood/DEMO-FACTS.json",
+    "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hamptonstreeservicefirewood\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
     "rebuilt": true,
-    "harvest_merged": false
+    "harvest_merged": true
   },
   "address": {
-    "street": "204 Graham Rd",
-    "city": "Newport",
-    "region": "NC",
-    "postal": "28570",
-    "source_url": "",
-    "customers_visit": false,
-    "suppress_street_reason": "mobile or unclassified trade (tree-service) - a street here is very often the owner home address"
+    "street": "",
+    "city": "Morehead City",
+    "region": "",
+    "postal": ""
   },
   "google_harvest": {
     "rating": 5,
@@ -258,8 +288,20 @@
     "url": "",
     "source_is_google": true
   },
-  "services_source": "their-photographs",
-  "photo_count": 11,
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Cleanup and haul-off",
+        "Tree removal",
+        "Trimming and pruning",
+        "Stump grinding and removal"
+      ]
+    }
+  ],
+  "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
   "_contact_map_mode": "pin-link"

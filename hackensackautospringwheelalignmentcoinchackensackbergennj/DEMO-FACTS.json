@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Hackensack Auto Spring & Wheel Alignment Co Inc serving Hackensack.",
   "about_h2": "About Hackensack Auto Spring & Wheel Alignment Co Inc",
-  "about_p1": "76 customers have left us a review, averaging 4.2 out of 5.",
+  "about_p1": "Our work covers steering, suspension and alignment, tires and wheels, diagnostics and check engine work, and brakes for drivers who need it done right.",
   "about_p2": "We work out of Hackensack and the towns around it.",
   "area_h2": "Hackensack and the area around it",
   "area_lede": "",
@@ -58,10 +58,50 @@
   "svc_list_h2": "Auto repair, start to finish",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Hackensack Auto Spring & Wheel Alignment Co Inc"
+      }
+    },
+    {
+      "title": "Tires and wheels",
+      "body": "Fitting, balancing and rotation on the machine, with the weights set where they belong.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Hackensack Auto Spring & Wheel Alignment Co Inc"
+      }
+    },
+    {
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They even deducted the diagnostic fee off of my final bill that was already a reasonable price.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "They diagnosed an issue with my car, I had no idea I cracked my rim on a speed bump during a winter storm, but they diag"
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I brought my car for a wheel alignment & brake fluid flush.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Great service, if you need an alignment, springs, struts, brakes, or anything to do with the frame of your vehicle, ther"
+      }
     }
   ],
   "photos_h2": "Auto repair work near Hackensack",
@@ -611,22 +651,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Hackensack",
-    "card_about": "Hackensack Auto Spring & Wheel Alignment Co Inc crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Hackensack Auto Spring & Wheel Alignment Co Inc at work",
-    "contact": "Hackensack Auto Spring & Wheel Alignment Co Inc",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901144120",
+  "asset_version": "harv20260902194111",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hackensackautospringwheelalignmentcoinchackensackbergennj\\HARVEST.json",
-    "at": "2026-09-01T14:41:20.130Z",
+    "at": "2026-09-02T19:41:11.050Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\hackensackautospringwheelalignmentcoinchackensackbergennj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -652,6 +692,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Steering, suspension and alignment",
+        "Tires and wheels",
+        "Diagnostics and check engine work",
+        "Brakes"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

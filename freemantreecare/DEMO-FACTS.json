@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Freeman Tree Care serving Waynesville.",
   "about_h2": "About Freeman Tree Care",
-  "about_p1": "Our work covers tree service.",
-  "about_p2": "90 customers have left us a review, averaging 4.9 out of 5. We work out of Waynesville and the towns around it.",
+  "about_p1": "Our work covers tree removal, trimming and pruning, stump grinding and removal, and storm damage and emergency removal for homes and businesses that need it done right.",
+  "about_p2": "We work out of Waynesville and the towns around it.",
   "area_h2": "We work in and around Waynesville",
   "area_lede": "",
   "svc_hero_h1": "The tree service work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "What we handle: tree service",
   "services": [
     {
-      "title": "Tree service",
-      "body": "Trees are pruned, removed or cleared with the work planned around what is standing nearby.",
+      "title": "Tree removal",
+      "body": "Where there is room, the tree comes down in one piece; where there is not, it comes down in sections on ropes.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The team returned the same week, just before Hurricane Helene, to safely remove the tree beside our house and some wood ",
+        "reviews": 30,
+        "names_service": true,
+        "also": "Marvin and his crew removed two trees right next to our house."
+      }
+    },
+    {
+      "title": "Trimming and pruning",
+      "body": "Dead and crossing limbs come out and the canopy is shaped so the tree stays healthy and off the roof.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I had several trees and bushes that needed trimming, as well as an area of yard that needed to be excavated to grow new ",
+        "reviews": 19,
+        "names_service": true,
+        "also": "Marvin and his crew did an outstanding job today trimming our trees and all our schrubery ..."
+      }
+    },
+    {
+      "title": "Stump grinding and removal",
+      "body": "The stump is ground below grade and the chips are raked out or hauled, so the ground is usable again.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They worked hard and quickly to remove around 30 stumps from the front yard and left the property looking wonderful with",
+        "reviews": 4,
+        "names_service": true,
+        "also": "The team returned the same week, just before Hurricane Helene, to safely remove the tree beside our house and some wood "
+      }
+    },
+    {
+      "title": "Storm damage and emergency removal",
+      "body": "When a tree has come down on a roof or a deck, the first job is getting the weight off safely.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They were very careful and minimized damage to other trees and bushes and were very thorough cleaning everything up afte",
+        "reviews": 8,
+        "names_service": true,
+        "also": "The team returned the same week, just before Hurricane Helene, to safely remove the tree beside our house and some wood "
+      }
+    },
+    {
+      "title": "Climbing and sectional dismantling",
+      "body": "Where there is no room to fell, it comes down in sections on ropes, piece by piece.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "We were impressed with the safety procedures and how they rigged their gear as they climbed the tree to cut and lowered ",
+        "reviews": 3,
+        "names_service": false,
+        "also": "Another man dropped a couple of smaller trees that were too small to climb."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -709,22 +768,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Tree service work in Waynesville",
-    "card_about": "Freeman Tree Care crew and job photo",
-    "card_services": "Tree service photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Tree service job photo",
-    "about": "Freeman Tree Care at work",
-    "contact": "Freeman Tree Care",
-    "services_hero": "Tree service services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901181145",
+  "asset_version": "harv20260902193548",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\freemantreecare\\HARVEST.json",
-    "at": "2026-09-01T18:11:45.272Z",
+    "at": "2026-09-02T19:35:48.986Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\freemantreecare\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -750,6 +809,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Tree removal",
+        "Trimming and pruning",
+        "Stump grinding and removal",
+        "Storm damage and emergency removal"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Courtesy Equipment Transport and Towing serving Snow Hill.",
   "about_h2": "About Courtesy Equipment Transport and Towing",
-  "about_p1": "Our work covers towing in Snow Hill and the towns around it.",
-  "about_p2": "56 customers have left us a review, averaging 4.9 out of 5.",
+  "about_p1": "Our work covers motorcycle transport, roadside assistance, accident recovery, and car and light truck transport for drivers who need it done right.",
+  "about_p2": "We work out of Snow Hill and the towns around it.",
   "area_h2": "Serving Snow Hill and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The towing work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "Towing services",
   "services": [
     {
-      "title": "Towing",
-      "body": "Vehicles and equipment are secured and moved the way the load actually calls for.",
+      "title": "Motorcycle transport",
+      "body": "Bikes go on the deck with soft ties and a wheel chock so nothing is clamped to a frame or a fork that was never meant to take it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Great job loading and unloading my motorcycle.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Brandon towed my motorcycle today."
+      }
+    },
+    {
+      "title": "Roadside assistance",
+      "body": "A jump, a tire swap, a lockout or a can of fuel gets handled at the shoulder when that is all the car actually needs.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Called my auto insurance for roadside assistance, battery jump and possible car tow.",
+        "reviews": 3,
+        "names_service": true,
+        "also": "He told me about his work at Courtesy Equipment Transport and Towing, and was able to quickly gather the tools to help r"
+      }
+    },
+    {
+      "title": "Accident recovery",
+      "body": "After a wreck the car is cleared from the scene, loaded without doing more damage, and taken where you or your insurer want it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They arrived timely to the accident to tow my vehicle and when I needed to go to the lot on Saturday, even though they w",
+        "reviews": 5,
+        "names_service": true,
+        "also": "The gentleman that towed my totaled car was great."
+      }
+    },
+    {
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Called my auto insurance for roadside assistance, battery jump and possible car tow.",
+        "reviews": 26,
+        "names_service": false,
+        "also": "I needed my Classic 1954 Buick towed out to the car show this weekend."
+      }
+    },
+    {
+      "title": "Heavy and oversize loads",
+      "body": "Anything that will sit on a deck can move on one, from plant and trailers to whole buildings.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They handled a multi-tow situation involving a truck and a boat with skill and efficiency.",
+        "reviews": 2,
+        "names_service": false,
+        "also": "Courtesy Towing helped me get my broken down boat trailer back to my house."
+      }
     }
   ],
   "photos_h2": "A look at the work",
@@ -471,22 +530,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Snow Hill",
-    "card_about": "Courtesy Equipment Transport and Towing crew and job photo",
-    "card_services": "Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
-    "about": "Courtesy Equipment Transport and Towing at work",
-    "contact": "Courtesy Equipment Transport and Towing",
-    "services_hero": "Towing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902044636",
+  "asset_version": "harv20260902183306",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\courtesyequipmenttransportandtowing\\HARVEST.json",
-    "at": "2026-09-02T04:46:36.161Z",
+    "at": "2026-09-02T18:33:06.977Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\courtesyequipmenttransportandtowing\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -512,6 +571,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Motorcycle transport",
+        "Roadside assistance",
+        "Accident recovery",
+        "Car and light truck transport"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

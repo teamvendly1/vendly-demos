@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Justice Fleet Towing & 24 hr Truck Repair serving Southern Pines.",
   "about_h2": "About Justice Fleet Towing & 24 hr Truck Repair",
-  "about_p1": "Our work covers towing in Southern Pines and the towns around it.",
-  "about_p2": "56 customers have left us a review, averaging 4.8 out of 5.",
+  "about_p1": "Our work covers car and light truck transport, winch-out and recovery, heavy and oversize loads, and night and out of hours calls for drivers who need it done right.",
+  "about_p2": "We take calls around the clock. We work out of Southern Pines and the towns around it.",
   "area_h2": "Where we take on towing work near Southern Pines",
   "area_lede": "",
   "svc_hero_h1": "The towing work we take on",
@@ -58,10 +58,66 @@
   "svc_list_h2": "The towing work we do",
   "services": [
     {
-      "title": "Towing",
-      "body": "Vehicles and equipment are secured and moved the way the load actually calls for.",
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Justice Fleet Towing & 24 hr Truck Repair"
+      }
+    },
+    {
+      "title": "Winch-out and recovery",
+      "body": "If it has come off the road or dropped a wheel, we run the line out and bring it back up before anything is loaded.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Found myself in a bind today and I called in for a winch out.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Heavy and oversize loads",
+      "body": "Anything that will sit on a deck can move on one, from plant and trailers to whole buildings.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Went for my headlight housing replaced on my semi.",
+        "reviews": 3,
+        "names_service": false,
+        "also": "It ended up he was able to change the blown out tire right there and then with the regular tire without needing the RV t"
+      }
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Called at 3am said they’d come out first thing in the morning .",
+        "reviews": 3,
+        "names_service": false,
+        "also": "We called late at night, and they showed up very fast!"
+      }
+    },
+    {
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The team arrived quickly, honored every agreement, and most importantly diagnosed and fixed the issue efficiently, unlik",
+        "reviews": 3,
+        "names_service": false,
+        "also": "Even though the yard was full, Charles Justice diagnosed a problem in less than 5 minutes."
+      }
     }
   ],
   "photos_h2": "A look at the work",
@@ -471,22 +527,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Southern Pines",
-    "card_about": "Justice Fleet Towing & 24 hr Truck Repair crew and job photo",
-    "card_services": "Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
-    "about": "Justice Fleet Towing & 24 hr Truck Repair at work",
-    "contact": "Justice Fleet Towing & 24 hr Truck Repair",
-    "services_hero": "Towing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901194520",
+  "asset_version": "harv20260902202255",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\justicefleettowing24hrtruckrepair\\HARVEST.json",
-    "at": "2026-09-01T19:45:20.423Z",
+    "at": "2026-09-02T20:22:55.833Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\justicefleettowing24hrtruckrepair\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -512,6 +568,23 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Car and light truck transport",
+        "Winch-out and recovery",
+        "Heavy and oversize loads",
+        "Night and out of hours calls"
+      ]
+    },
+    {
+      "sentence": "hours",
+      "from": "business name: Justice Fleet Towing & 24 hr Truck Repair"
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

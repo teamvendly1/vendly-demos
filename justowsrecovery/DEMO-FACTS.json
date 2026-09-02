@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "JusTows Recovery serving Concord.",
   "about_h2": "About JusTows Recovery",
-  "about_p1": "127 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers winch-out and recovery, roadside assistance, car and light truck transport, and night and out of hours calls for drivers who need it done right.",
   "about_p2": "We work out of Concord and the towns around it.",
   "area_h2": "Concord and the area around it",
   "area_lede": "",
@@ -58,10 +58,53 @@
   "svc_list_h2": "The towing work we do",
   "services": [
     {
-      "title": "Towing",
-      "body": "Vehicles and equipment are secured and moved the way the load actually calls for.",
+      "title": "Winch-out and recovery",
+      "body": "If it has come off the road or dropped a wheel, we run the line out and bring it back up before anything is loaded.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "JusTows Recovery"
+      }
+    },
+    {
+      "title": "Roadside assistance",
+      "body": "A jump, a tire swap, a lockout or a can of fuel gets handled at the shoulder when that is all the car actually needs.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I don’t know what I would’ve done without him & I recommend him for all of your roadside needs!",
+        "reviews": 5,
+        "names_service": true,
+        "also": "Ever need a tow, key locked in the car, ran out of gas, etc?"
+      }
+    },
+    {
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Car showed up about an hour later.",
+        "reviews": 39,
+        "names_service": false,
+        "also": "He was amazing he came in 20 minutes like he said he would and he was very friendly He didn’t charge me an outrageous pr"
+      }
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "JusTows Recovery saved the night.",
+        "reviews": 5,
+        "names_service": false,
+        "also": "They stayed open after hours and personally called someone to fix the car after we were stranded."
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -968,22 +1011,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Concord",
-    "card_about": "JusTows Recovery crew and job photo",
-    "card_services": "Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
-    "about": "JusTows Recovery at work",
-    "contact": "JusTows Recovery",
-    "services_hero": "Towing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901081219",
+  "asset_version": "harv20260902202633",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\justowsrecovery\\HARVEST.json",
-    "at": "2026-09-01T08:12:19.124Z",
+    "at": "2026-09-02T20:26:33.992Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\justowsrecovery\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -1009,6 +1052,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Winch-out and recovery",
+        "Roadside assistance",
+        "Car and light truck transport",
+        "Night and out of hours calls"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

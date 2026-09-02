@@ -11,9 +11,9 @@
   "city": "Powdersville",
   "region": "",
   "owner_first": "",
-  "trade_key": "auto",
-  "stock_key": "auto-repair",
-  "niche": "auto",
+  "trade_key": "hvac",
+  "stock_key": "hvac",
+  "niche": "hvac",
   "trade_label": "Auto / Towing",
   "schema_type": "LocalBusiness",
   "title_suffix": "",
@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Ideal Auto Repair LLC & Towing serving Powdersville.",
   "about_h2": "About Ideal Auto Repair LLC & Towing",
-  "about_p1": "Our work covers towing in Powdersville and the towns around it.",
-  "about_p2": "62 customers have left us a review, averaging 4.6 out of 5.",
+  "about_p1": "Our work covers car and light truck transport, night and out of hours calls, diagnostics and check engine work, and tires and wheels for drivers who need it done right.",
+  "about_p2": "We work out of Powdersville and the towns around it.",
   "area_h2": "Where we take on towing work near Powdersville",
   "area_lede": "",
   "svc_hero_h1": "The towing work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "Towing, start to finish",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "José and Zen took great care of my car, fixing the air conditioning and providing results for a 27 point system too.",
+        "reviews": 27,
+        "names_service": false,
+        "also": "I took a friend to Ideal to pick her car up and happened to ask about my jeep problem...they knew exactly what was wrong"
+      }
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Ideal Auto Repair LLC was able to help me with a tow that was after hours, and he was super nice and accommodating for t",
+        "reviews": 2,
+        "names_service": false,
+        "also": "Towed and repaired my vehicle within 24 hours and saves me a ton of money by correctly diagnosing the battery terminals "
+      }
+    },
+    {
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They even replaced the clips that the first company broke when they were doing their diagnostic tests.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "Towed and repaired my vehicle within 24 hours and saves me a ton of money by correctly diagnosing the battery terminals "
+      }
+    },
+    {
+      "title": "Tires and wheels",
+      "body": "Fitting, balancing and rotation on the machine, with the weights set where they belong.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They changed my tire free of charge.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Air conditioning and heat",
+      "body": "Leaks are found before the system is recharged, so the cold air you pay for stays cold.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "José and Zen took great care of my car, fixing the air conditioning and providing results for a 27 point system too.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "They also repaired my friend's A/C when others costs were quite tremendous and saved us a lot of money and time."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -513,22 +572,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Powdersville",
-    "card_about": "Ideal Auto Repair LLC & Towing crew and job photo",
-    "card_services": "Auto / Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
-    "about": "Ideal Auto Repair LLC & Towing at work",
-    "contact": "Ideal Auto Repair LLC & Towing",
-    "services_hero": "Towing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902004358",
+  "asset_version": "harv20260902200552",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\idealautorepairllctowingpowdersvilleandersonsc\\HARVEST.json",
-    "at": "2026-09-02T00:43:58.762Z",
+    "at": "2026-09-02T20:05:52.955Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\idealautorepairllctowingpowdersvilleandersonsc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -554,6 +613,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Car and light truck transport",
+        "Night and out of hours calls",
+        "Diagnostics and check engine work",
+        "Tires and wheels"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

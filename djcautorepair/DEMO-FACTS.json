@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "DJC Auto Repair serving Summerville.",
   "about_h2": "About DJC Auto Repair",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "50 customers have left us a review, averaging 4.9 out of 5. We work out of Summerville and the towns around it.",
+  "about_p1": "Our work covers diagnostics and check engine work, engine repair, brakes, and steering, suspension and alignment for drivers who need it done right.",
+  "about_p2": "We work out of Summerville and the towns around it.",
   "area_h2": "We work in and around Summerville",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "auto repair jobs we take on",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They diagnosed the issues within one day and provided a very good breakdown of what was found.",
+        "reviews": 3,
+        "names_service": false,
+        "also": "The mechanic here was very nice, he diagnosed the problem quickly, got the parts I needed in the same day!"
+      }
+    },
+    {
+      "title": "Engine repair",
+      "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I had some engine troubles and they fixed me right up.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He replaced all four brake pads and the front rotors at a fair price.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He even recommended that I have my suspension checked on a future visit instead of telling me to fix everything at once.",
+        "reviews": 3,
+        "names_service": true,
+        "also": "They replaced my wheel bearing the same day without an appointment."
+      }
+    },
+    {
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I would highly recommend DJC Auto Repair to anyone who needs vehicle maintenance.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -429,22 +488,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Summerville",
-    "card_about": "DJC Auto Repair crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "DJC Auto Repair at work",
-    "contact": "DJC Auto Repair",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902001129",
+  "asset_version": "harv20260902190032",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\djcautorepair\\HARVEST.json",
-    "at": "2026-09-02T00:11:29.207Z",
+    "at": "2026-09-02T19:00:32.620Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\djcautorepair\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -470,6 +529,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Diagnostics and check engine work",
+        "Engine repair",
+        "Brakes",
+        "Steering, suspension and alignment"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

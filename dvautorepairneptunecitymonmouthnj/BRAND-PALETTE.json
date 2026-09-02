@@ -1,0 +1,72 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "dvautorepairneptunecitymonmouthnj",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#322F1E",
+  "palette": {
+    "BRAND": "#322F1E",
+    "PRIMARY": "#3D3924",
+    "PRIMARY_DK": "#2D2A1B",
+    "PRIMARY_MID": "#49452C",
+    "ACCENT": "#605A39",
+    "ACCENT_DK": "#433F28",
+    "ACCENT_LT": "#867E50",
+    "ON_DARK": "#E0DDCC",
+    "MENU_INK": "#1D1B11",
+    "TINT_1": "#ECEADF",
+    "TINT_2": "#F2F0E9",
+    "TINT_3": "#E8E6D9",
+    "TINT_4": "#EAE8DC",
+    "LINE_2": "#D9D5BF",
+    "MUTED_BRAND": "#7A7349",
+    "MIST": "#F8F8F4",
+    "LINE": "#E4E2D2",
+    "PRIMARY_RGB": "61,57,36",
+    "ACCENT_RGB": "96,90,57",
+    "SCRIM_RGB": "73,69,44",
+    "SCRIM2_RGB": "45,42,27",
+    "MENU_INK_RGB": "29,27,17",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 11.61,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 6.96,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.5,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.25,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 6.53,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.8,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.18:1 (needs 4.5)"
+  ]
+}

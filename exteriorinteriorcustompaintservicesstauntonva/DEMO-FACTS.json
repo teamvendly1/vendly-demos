@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Exterior Interior Custom Paint Services serving Staunton.",
   "about_h2": "About Exterior Interior Custom Paint Services",
-  "about_p1": "13 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers interior painting and exterior painting for homes and businesses that need it done right.",
   "about_p2": "We work out of Staunton and the towns around it.",
   "area_h2": "Where we take on painting work near Staunton",
   "area_lede": "",
@@ -58,10 +58,24 @@
   "svc_list_h2": "The painting work we do",
   "services": [
     {
-      "title": "Painting",
-      "body": "Surfaces are prepped, primed and painted so the finish holds instead of peeling early.",
+      "title": "Interior painting",
+      "body": "Walls and trim are patched, sanded and cut in by hand before the roller goes on, so the finish holds instead of peeling early.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Exterior Interior Custom Paint Services"
+      }
+    },
+    {
+      "title": "Exterior painting",
+      "body": "Surfaces are washed, scraped and primed before the colour goes on, so it lasts through the seasons.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Exterior Interior Custom Paint Services"
+      }
     }
   ],
   "photos_h2": "A look at the work",
@@ -170,22 +184,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Painting work in Staunton",
-    "card_about": "Exterior Interior Custom Paint Services crew and job photo",
-    "card_services": "painting photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Painting job photo",
-    "about": "Exterior Interior Custom Paint Services at work",
-    "contact": "Exterior Interior Custom Paint Services",
-    "services_hero": "Painting services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901042758",
+  "asset_version": "harv20260902192828",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\exteriorinteriorcustompaintservicesstauntonva\\HARVEST.json",
-    "at": "2026-09-01T04:27:58.965Z",
+    "at": "2026-09-02T19:28:28.586Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\exteriorinteriorcustompaintservicesstauntonva\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -211,6 +225,17 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Interior painting",
+        "Exterior painting"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

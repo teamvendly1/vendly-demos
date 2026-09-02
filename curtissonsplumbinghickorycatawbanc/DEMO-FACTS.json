@@ -49,14 +49,27 @@
   "form_placeholder": "",
   "footer_blurb": "Curtis & Sons Plumbing serving Hickory.",
   "about_h2": "About Curtis & Sons Plumbing",
-  "about_p1": "133 customers have left us a review, averaging 4.7 out of 5.",
-  "about_p2": "We work out of Hickory and the towns around it.",
+  "about_p1": "Our work covers water heaters for homes and businesses that need it done right.",
+  "about_p2": "It is a family operation. We work out of Hickory and the towns around it.",
   "area_h2": "We work in and around Hickory",
   "area_lede": "",
   "svc_hero_h1": "The plumbing work we take on",
   "svc_hero_lede": "",
   "svc_list_h2": "plumbing jobs we take on",
   "services": [
+    {
+      "title": "Water heaters",
+      "body": "Elements, thermostats and full replacements, with the old part shown to you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The plumbing crew came out that same afternoon, inspected everything carefully, explained the repair plan in simple term",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Raymond arrived as promised, checked the water heater, found the problem quickly, and repaired it on the spot by replaci"
+      }
+    },
     {
       "title": "Plumbing",
       "body": "Pipes, fixtures and water heaters are opened up and fixed at the failure point rather than patched over it.",
@@ -100,22 +113,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Plumbing work in Hickory",
-    "card_about": "Curtis & Sons Plumbing crew and job photo",
-    "card_services": "Plumber photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Plumbing job photo",
-    "about": "Curtis & Sons Plumbing at work",
-    "contact": "Curtis & Sons Plumbing",
-    "services_hero": "Plumbing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901040054",
+  "asset_version": "harv20260902185642",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\curtissonsplumbinghickorycatawbanc\\HARVEST.json",
-    "at": "2026-09-01T04:00:54.528Z",
+    "at": "2026-09-02T18:56:42.135Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\curtissonsplumbinghickorycatawbanc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -141,6 +154,20 @@
     "url": "https://www.google.com/maps/search/Curtis%20%26%20Sons%20Plumbing%20Hickory%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Water heaters"
+      ]
+    },
+    {
+      "sentence": "family",
+      "from": "business name: Curtis & Sons Plumbing"
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

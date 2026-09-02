@@ -23,7 +23,7 @@
   "eyebrow": "Suffolk",
   "h1_lead": "",
   "h1_emph": "Towing in Suffolk from people who answer the phone.",
-  "hero_lede": "Towing in Suffolk. Call and we will take a look.",
+  "hero_lede": "Towing in Suffolk. Recent jobs are on the photos page.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "Suffolk",
@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Eastover Service & Repair, INC serving Suffolk.",
   "about_h2": "About Eastover Service & Repair, INC",
-  "about_p1": "18 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers winch-out and recovery, accident recovery, night and out of hours calls, and car and light truck transport for drivers who need it done right.",
   "about_p2": "We work out of Suffolk and the towns around it.",
   "area_h2": "Suffolk and the area around it",
   "area_lede": "",
@@ -58,31 +58,52 @@
   "svc_list_h2": "Towing, start to finish",
   "services": [
     {
-      "title": "Towing",
-      "body": "Vehicles and equipment are secured and moved the way the load actually calls for.",
+      "title": "Winch-out and recovery",
+      "body": "If it has come off the road or dropped a wheel, we run the line out and bring it back up before anything is loaded.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Heavy wrecker parked in a dark field at night with its boom and work lights lit."
+      }
+    },
+    {
+      "title": "Accident recovery",
+      "body": "After a wreck the car is cleared from the scene, loaded without doing more damage, and taken where you or your insurer want it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Heavy wrecker parked in a dark field at night with its boom and work lights lit."
+      }
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Heavy wrecker parked in a dark field at night with its boom and work lights lit."
+      }
+    },
+    {
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They diagnosed truck, took back to shop, fixed it quickly and delivered it back to her.",
+        "reviews": 5,
+        "names_service": false,
+        "also": "Not only did Kyle accept the truck and trailer on a Saturday at his location but he had it diagnosed first thing Monday "
+      }
     }
   ],
   "photos_h2": "What we have been working on",
   "photos_lede": "",
-  "gallery": [
-    {
-      "slot": "photo-about.jpg",
-      "alt": "Eastover Service & Repair, INC at work",
-      "subject_class": "reused_about"
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "alt": "towing photo",
-      "subject_class": "reused_card_services"
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "alt": "Recent job photo",
-      "subject_class": "reused_card_photos"
-    }
-  ],
+  "gallery": [],
   "reviews_h2": "Customer words",
   "reviews_lede": "",
   "reviews": [
@@ -221,22 +242,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Suffolk",
-    "card_about": "Eastover Service & Repair, INC crew and job photo",
-    "card_services": "towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
-    "about": "Eastover Service & Repair, INC at work",
-    "contact": "Eastover Service & Repair, INC",
-    "services_hero": "Towing services"
+    "hero": "Heavy wrecker parked in a dark field at night with its boom and work lights lit.",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901060858",
+  "asset_version": "harv20260902190221",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\eastoverservicerepairsuffolk\\HARVEST.json",
-    "at": "2026-09-01T06:08:58.483Z",
+    "at": "2026-09-02T19:02:22.025Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\eastoverservicerepairsuffolk\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -262,7 +283,20 @@
     "url": "",
     "source_is_google": true
   },
-  "photo_count": 6,
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Winch-out and recovery",
+        "Accident recovery",
+        "Night and out of hours calls",
+        "Car and light truck transport"
+      ]
+    }
+  ],
+  "photo_count": 1,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
   "_contact_map_mode": "pin-link"

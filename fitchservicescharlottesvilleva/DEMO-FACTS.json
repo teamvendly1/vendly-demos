@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Fitch Services serving Charlottesville.",
   "about_h2": "About Fitch Services",
-  "about_p1": "Our work covers hvac in Charlottesville and the towns around it.",
-  "about_p2": "137 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers air conditioning repair, heating repair, system replacement and installation, and maintenance and tune-ups for homes and businesses that need it done right.",
+  "about_p2": "We work out of Charlottesville and the towns around it.",
   "area_h2": "Charlottesville and the area around it",
   "area_lede": "",
   "svc_hero_h1": "The hvac work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "What we handle: hvac",
   "services": [
     {
-      "title": "HVAC",
-      "body": "Heating and cooling equipment is serviced, repaired or replaced so the temperature holds where it is set, room to room.",
+      "title": "Air conditioning repair",
+      "body": "Refrigerant leaks, capacitors and compressors are tested and the fault fixed before the system is recharged.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Fitch Services did our recent Air Conditioning checkup.",
+        "reviews": 12,
+        "names_service": true,
+        "also": "After some early season AC issues, I called Fitch for a second opinion on an astronomical quote that another HVAC compan"
+      }
+    },
+    {
+      "title": "Heating repair",
+      "body": "Furnaces and heat pumps are diagnosed at the failed part and repaired so the heat holds where it is set.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Requested a diagnosis for insufficient hot water from a 14 year old water heater.",
+        "reviews": 12,
+        "names_service": false,
+        "also": "The guys that came had to troubleshoot some issues with our old heater but still got it done pretty quickly."
+      }
+    },
+    {
+      "title": "System replacement and installation",
+      "body": "Replacement systems are sized to the house, set level, and charged and tested before we leave.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They communicated clearly every step of the way, installed the system expertly, and even left our basement cleaner than ",
+        "reviews": 3,
+        "names_service": false,
+        "also": "He found suitable replacement and next morning, Sunday, at 8:15, crew arrived with new unit and installed it."
+      }
+    },
+    {
+      "title": "Maintenance and tune-ups",
+      "body": "Coils, filters and refrigerant levels are checked each season so the small things are caught before they become the big one.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Fair pricing on my HVAC maintenance and the system that they installed a year ago has been running flawlessly.",
+        "reviews": 11,
+        "names_service": true,
+        "also": "They cleaned the air handler and installed an air scrubber."
+      }
+    },
+    {
+      "title": "Thermostats and controls",
+      "body": "Thermostats and zone controls are wired and set up so the system runs the way you set it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Diagnosed a wonky thermostat in 5 minutes.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "Larry was my tech today who installed my smart thermostat and guided me on how to set it up."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -1038,22 +1097,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "HVAC work in Charlottesville",
-    "card_about": "Fitch Services crew and job photo",
-    "card_services": "hvac photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "HVAC job photo",
-    "about": "Fitch Services at work",
-    "contact": "Fitch Services",
-    "services_hero": "HVAC services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901180918",
+  "asset_version": "harv20260902193058",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\fitchservicescharlottesvilleva\\HARVEST.json",
-    "at": "2026-09-01T18:09:18.412Z",
+    "at": "2026-09-02T19:30:58.978Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\fitchservicescharlottesvilleva\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -1079,6 +1138,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Air conditioning repair",
+        "Heating repair",
+        "System replacement and installation",
+        "Maintenance and tune-ups"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

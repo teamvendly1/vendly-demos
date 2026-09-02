@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Import Auto Service Center serving Mount Airy.",
   "about_h2": "About Import Auto Service Center",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "13 customers have left us a review, averaging 4.7 out of 5. We work out of Mount Airy and the towns around it.",
+  "about_p1": "Our work covers diagnostics and check engine work for drivers who need it done right.",
+  "about_p2": "We work out of Mount Airy and the towns around it.",
   "area_h2": "The towns around Mount Airy, too",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,17 @@
   "svc_list_h2": "auto repair jobs we take on",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The Scirocco was a limited production vehicle and, after correctly diagnosing that the combustion problem was the basket",
+        "reviews": 2,
+        "names_service": false,
+        "also": "Unable to diagnose anything over the phone we googled the few places that work on imports and we quickly learned that th"
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -170,22 +177,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Mount Airy",
-    "card_about": "Import Auto Service Center crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Import Auto Service Center at work",
-    "contact": "Import Auto Service Center",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901190428",
+  "asset_version": "harv20260902200637",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\importautoservicecentermountairysurrync\\HARVEST.json",
-    "at": "2026-09-01T19:04:28.926Z",
+    "at": "2026-09-02T20:06:37.061Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\importautoservicecentermountairysurrync\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -211,6 +218,16 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Diagnostics and check engine work"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

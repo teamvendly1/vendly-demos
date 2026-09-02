@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Curtis & Sons Plumbing serving Hickory.",
   "about_h2": "About Curtis & Sons Plumbing",
-  "about_p1": "121 customers have left us a review, averaging 4.8 out of 5.",
-  "about_p2": "We work out of Hickory and the towns around it.",
+  "about_p1": "Our work covers leak and pipe repair, drains and sewer lines, water heaters, and well pumps and water systems for homes and businesses that need it done right.",
+  "about_p2": "It is a family operation. We work out of Hickory and the towns around it.",
   "area_h2": "Hickory and the area around it",
   "area_lede": "",
   "svc_hero_h1": "The plumbing work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "The plumbing work we do",
   "services": [
     {
-      "title": "Plumbing",
-      "body": "Pipes, fixtures and water heaters are opened up and fixed at the failure point rather than patched over it.",
+      "title": "Leak and pipe repair",
+      "body": "The pipe is opened at the failure point and fixed there, not patched over where the water shows up.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He arrived within a couple of hours, quickly repaired the damaged pipes, and got our water service back on without delay",
+        "reviews": 44,
+        "names_service": true,
+        "also": "We had a leak on the main water line running from the meter box to the house, and Curtis & Sons Plumbing came out to ins"
+      }
+    },
+    {
+      "title": "Drains and sewer lines",
+      "body": "Blockages get cleared and a failed line gets replaced rather than patched again.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "i had a problem with my basement drain backing up, so i called for plumbing service and was able to set up an appointmen",
+        "reviews": 24,
+        "names_service": true,
+        "also": "If you need plumbing work done in Hickory, don't waste your time anywhere else."
+      }
+    },
+    {
+      "title": "Water heaters",
+      "body": "Elements, thermostats and full replacements, with the old part shown to you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The plumbing crew came out that same afternoon, inspected everything carefully, explained the repair plan in simple term",
+        "reviews": 34,
+        "names_service": true,
+        "also": "Raymond arrived as promised, checked the water heater, found the problem quickly, and repaired it on the spot by replaci"
+      }
+    },
+    {
+      "title": "Well pumps and water systems",
+      "body": "Pumps, pressure tanks and treatment equipment are sized to the house and set so the pressure holds at every tap.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He also helped with our well system and mounted the equipment cleanly along one garage wall with all new components, who",
+        "reviews": 7,
+        "names_service": true,
+        "also": "Earlier, we also had them install an outlet for our sump pump under the house."
+      }
+    },
+    {
+      "title": "Septic systems",
+      "body": "Tanks and lines are located, opened and repaired where the failure actually is, and the yard is put back afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They also put the landscape stones back in place and did a solid cleanup after the septic work was done.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "he also took a moment to check my septic system and gave me some helpful advice about an issue i had there."
+      }
     }
   ],
   "photos_h2": "Recent work",
@@ -926,22 +985,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Plumbing work in Hickory",
-    "card_about": "Curtis & Sons Plumbing crew and job photo",
-    "card_services": "Plumber photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Plumbing job photo",
-    "about": "Curtis & Sons Plumbing at work",
-    "contact": "Curtis & Sons Plumbing",
-    "services_hero": "Plumbing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901035916",
+  "asset_version": "harv20260902185308",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\curtissonsplumbing\\HARVEST.json",
-    "at": "2026-09-01T03:59:16.336Z",
+    "at": "2026-09-02T18:53:08.459Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\curtissonsplumbing\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -967,6 +1026,23 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Leak and pipe repair",
+        "Drains and sewer lines",
+        "Water heaters",
+        "Well pumps and water systems"
+      ]
+    },
+    {
+      "sentence": "family",
+      "from": "business name: Curtis & Sons Plumbing"
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

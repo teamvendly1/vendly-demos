@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Electronixx LLC serving Rocky Mount.",
   "about_h2": "About Electronixx LLC",
-  "about_p1": "14 customers have left us a review, averaging 4.6 out of 5.",
+  "about_p1": "Our work covers lighting and ceiling fans for homes and businesses that need it done right.",
   "about_p2": "We work out of Rocky Mount and the towns around it.",
   "area_h2": "Rocky Mount and the area around it",
   "area_lede": "",
@@ -57,6 +57,19 @@
   "svc_hero_lede": "",
   "svc_list_h2": "The electrical work we do",
   "services": [
+    {
+      "title": "Lighting and ceiling fans",
+      "body": "Fixtures are wired, mounted and trimmed so the room or the yard reads finished, not just wired.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Needed a ceiling fan installed and batteries replaced in my smoke detectors.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
     {
       "title": "Electrical",
       "body": "Wiring, panels and fixtures are installed and repaired to the load the space actually draws.",
@@ -177,22 +190,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Electrical work in Rocky Mount",
-    "card_about": "Electronixx LLC crew and job photo",
-    "card_services": "Electrician photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Electrical job photo",
-    "about": "Electronixx LLC at work",
-    "contact": "Electronixx LLC",
-    "services_hero": "Electrical services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901042232",
+  "asset_version": "harv20260902191108",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\electronixxllc\\HARVEST.json",
-    "at": "2026-09-01T04:22:32.236Z",
+    "at": "2026-09-02T19:11:08.290Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\electronixxllc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -218,6 +231,16 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Lighting and ceiling fans"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
