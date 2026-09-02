@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "City Point Service Station serving Hopewell.",
   "about_h2": "About City Point Service Station",
-  "about_p1": "15 customers have left us a review, averaging 3 out of 5.",
+  "about_p1": "Our work covers oil changes and routine maintenance and state inspections for drivers who need it done right.",
   "about_p2": "We work out of Hopewell and the towns around it.",
   "area_h2": "Where we take on auto repair work near Hopewell",
   "area_lede": "",
@@ -58,10 +58,30 @@
   "svc_list_h2": "Auto repair, start to finish",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I'm usually in and out within 45 minutes for an oil change, which you can't beat.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "State inspections",
+      "body": "The vehicle is checked point by point against the state list, and what fails is explained before it is fixed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Went in this morning for a state inspection.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -184,22 +204,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Hopewell",
-    "card_about": "City Point Service Station crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "City Point Service Station at work",
-    "contact": "City Point Service Station",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901150759",
+  "asset_version": "harv20260902182323",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\citypointservicestationhopewellva\\HARVEST.json",
-    "at": "2026-09-01T15:07:59.738Z",
+    "at": "2026-09-02T18:23:23.917Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\citypointservicestationhopewellva\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -225,6 +245,17 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Oil changes and routine maintenance",
+        "State inspections"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

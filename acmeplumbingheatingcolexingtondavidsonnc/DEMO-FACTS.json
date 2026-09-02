@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "ACME Plumbing & Heating Co serving Lexington.",
   "about_h2": "About ACME Plumbing & Heating Co",
-  "about_p1": "Our work covers plumbing in Lexington and the towns around it.",
-  "about_p2": "24 customers have left us a review, averaging 4.5 out of 5.",
+  "about_p1": "Our work covers heating repair and water heaters for homes and businesses that need it done right.",
+  "about_p2": "We work out of Lexington and the towns around it.",
   "area_h2": "The towns around Lexington, too",
   "area_lede": "",
   "svc_hero_h1": "The plumbing work we take on",
@@ -58,10 +58,27 @@
   "svc_list_h2": "The plumbing work we do",
   "services": [
     {
-      "title": "Plumbing",
-      "body": "Pipes, fixtures and water heaters are opened up and fixed at the failure point rather than patched over it.",
+      "title": "Heating repair",
+      "body": "Furnaces and heat pumps are diagnosed at the failed part and repaired so the heat holds where it is set.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "ACME Plumbing & Heating Co"
+      }
+    },
+    {
+      "title": "Water heaters",
+      "body": "Elements, thermostats and full replacements, with the old part shown to you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Bradley came out the same day and was able to fix my water heater less than 30 minutes.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "A look at the work",
@@ -100,22 +117,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Plumbing work in Lexington",
-    "card_about": "ACME Plumbing & Heating Co crew and job photo",
-    "card_services": "Plumber photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Plumbing job photo",
-    "about": "ACME Plumbing & Heating Co at work",
-    "contact": "ACME Plumbing & Heating Co",
-    "services_hero": "Plumbing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901193617",
+  "asset_version": "harv20260902170557",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\acmeplumbingheatingcolexingtondavidsonnc\\HARVEST.json",
-    "at": "2026-09-01T19:36:17.124Z",
+    "at": "2026-09-02T17:05:57.758Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\acmeplumbingheatingcolexingtondavidsonnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -141,6 +158,17 @@
     "url": "https://www.google.com/maps/search/ACME%20Plumbing%20%26%20Heating%20Co%20Lexington%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Heating repair",
+        "Water heaters"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

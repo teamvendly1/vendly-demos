@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Bishop Tire & Auto Service serving Mount Holly.",
   "about_h2": "About Bishop Tire & Auto Service",
-  "about_p1": "48 customers have left us a review, averaging 4.6 out of 5.",
+  "about_p1": "Our work covers tires and wheels, diagnostics and check engine work, brakes, and steering, suspension and alignment for drivers who need it done right.",
   "about_p2": "We work out of Mount Holly and the towns around it.",
   "area_h2": "The towns around Mount Holly, too",
   "area_lede": "",
@@ -58,16 +58,72 @@
   "svc_list_h2": "auto repair jobs we take on",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Tires and wheels",
+      "body": "Fitting, balancing and rotation on the machine, with the weights set where they belong.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Bishop Tire & Auto Service"
+      }
+    },
+    {
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "If you need tires, oil change, diagnostic, come see these guys and they will have you rolling without a care.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I take all three of my vehicles from South Charlotte to this location when I need brake repair, alignment and tune-ups.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Billy and Luther Bishop are great, AC, tires, suspension, brakes, they always get it done reasonably, and quickly."
+      }
+    },
+    {
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I take all three of my vehicles from South Charlotte to this location when I need brake repair, alignment and tune-ups.",
+        "reviews": 3,
+        "names_service": true,
+        "also": "I made an appt and asked for an alignment."
+      }
+    },
+    {
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "If you need tires, oil change, diagnostic, come see these guys and they will have you rolling without a care.",
+        "reviews": 5,
+        "names_service": true,
+        "also": "I take all three of my vehicles from South Charlotte to this location when I need brake repair, alignment and tune-ups."
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
   "photos_lede": "",
   "gallery": [],
-  "reviews_h2": "Straight from the owner",
+  "reviews_h2": "What people say after we are done",
   "reviews_lede": "",
   "reviews": [
     {
@@ -415,22 +471,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Mount Holly",
-    "card_about": "Bishop Tire & Auto Service crew and job photo",
-    "card_services": "Auto repair / Tire photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Bishop Tire & Auto Service at work",
-    "contact": "Bishop Tire & Auto Service",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901022936",
+  "asset_version": "harv20260902180923",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bishoptireautoservice\\HARVEST.json",
-    "at": "2026-09-01T02:29:36.283Z",
+    "at": "2026-09-02T18:09:23.455Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bishoptireautoservice\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -456,6 +512,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Tires and wheels",
+        "Diagnostics and check engine work",
+        "Brakes",
+        "Steering, suspension and alignment"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

@@ -9,7 +9,7 @@ html{scroll-padding-bottom:112px}
   --paper:#FFFFFF;
   --mist:#F0F6FC;
   --ink:#071827;
-  --muted:#549DDE;
+  --muted:#2474BA;
   --brand:#103251;
   --line:#C3DDF4;
   --radius:16px;
@@ -255,7 +255,7 @@ footer li{margin-bottom:10px}
    *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
    keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#549DDE}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#2474BA}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -452,7 +452,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
 .ctaband p{color:#CCE1F5;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#549DDE;margin-top:14px;margin-bottom:0}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#2474BA;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other

@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Auto Service Experts New Bern serving New Bern.",
   "about_h2": "About Auto Service Experts New Bern",
-  "about_p1": "6 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers transmission and drivetrain for drivers who need it done right.",
   "about_p2": "We work out of New Bern and the towns around it.",
   "area_h2": "Where we take on auto repair work near New Bern",
   "area_lede": "",
@@ -58,16 +58,23 @@
   "svc_list_h2": "Auto repair services",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Transmission and drivetrain",
+      "body": "Shifting problems are diagnosed on the road and on the lift before the case is opened, and rebuilt units go back with fresh fluid and seals.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Wanted to thank the staff at Auto Service Experts who quickly diagnosed and repaired an issue with my transmission.",
+        "reviews": 3,
+        "names_service": true,
+        "also": "I brought my 1989 Toyota pick up truck to Auto Service Experts for changing the timing bell and transmission oil."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
   "photos_lede": "",
   "gallery": [],
-  "reviews_h2": "What customers tell us",
+  "reviews_h2": "Quoted from real jobs",
   "reviews_lede": "",
   "reviews": [
     {
@@ -121,24 +128,26 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in New Bern",
-    "card_about": "Auto Service Experts New Bern crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Auto Service Experts New Bern at work",
-    "contact": "Auto Service Experts New Bern",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901020337",
+  "asset_version": "harv20260902174146",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\autoserviceexpertsnewbern\\HARVEST.json",
-    "at": "2026-09-01T02:24:34.882Z",
+    "at": "2026-09-02T17:41:46.584Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\autoserviceexpertsnewbern\\DEMO-FACTS.json",
+    "wrote_facts_from_harvest": true,
+    "rebuilt": true,
     "harvest_merged": true
   },
   "address": {
@@ -160,6 +169,16 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Transmission and drivetrain"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

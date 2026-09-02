@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Bluegrass lawn care llc serving Clifton.",
   "about_h2": "About Bluegrass lawn care llc",
-  "about_p1": "Our work covers lawn care in Clifton and the towns around it.",
-  "about_p2": "5 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers lawn care and mowing, mulch and bed work, hardscape, patios and walkways, and tree and shrub trimming for homes and businesses that need it done right.",
+  "about_p2": "We work out of Clifton and the towns around it.",
   "area_h2": "The towns around Clifton, too",
   "area_lede": "",
   "svc_hero_h1": "The landscaping work we take on",
@@ -58,10 +58,44 @@
   "svc_list_h2": "The landscaping work we do",
   "services": [
     {
-      "title": "Landscaping",
-      "body": "Beds, lawns and hardscape are kept up on a schedule, not just cleaned up once and left.",
+      "title": "Lawn care and mowing",
+      "body": "Lawns are cut, edged and cleaned up on a schedule so the yard never gets ahead of you.",
       "slot": "photo-service-1.jpg",
-      "alt": "Artificial turf lawn laid beside a patio with outdoor furniture behind a white house."
+      "alt": "Artificial turf lawn laid beside a patio with outdoor furniture behind a white house.",
+      "evidence": {
+        "kind": "category",
+        "text": "Lawn care service"
+      }
+    },
+    {
+      "title": "Mulch and bed work",
+      "body": "Beds are cleaned out, edged and mulched, and plantings are set where they will actually grow.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Fresh mums in orange, red and yellow planted around a tree bed with dark mulch on a front lawn."
+      }
+    },
+    {
+      "title": "Hardscape, patios and walkways",
+      "body": "Base is compacted and screeded before a single paver or block goes down, which is why it stays level.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Front yard with a trimmed lawn, mulched beds and pink flowering shrubs at the porch steps."
+      }
+    },
+    {
+      "title": "Tree and shrub trimming",
+      "body": "Hedges and ornamentals are shaped and dead wood comes out so they fill in instead of going leggy.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Brick house front with fresh mulch beds and trimmed shrubs along a gravel driveway."
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -152,15 +186,15 @@
     "card_photos": "Young arborvitae planted in a line along a white vinyl privacy fence.",
     "ctaband": "Weeping tree and new plantings in a mulched bed beside the front door of a white house.",
     "about": "Row of young arborvitae planted along a black-mulched bed at the edge of a lawn.",
-    "contact": "Bluegrass lawn care llc",
-    "services_hero": "Landscaping services"
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902150943",
+  "asset_version": "harv20260902162910",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\HARVEST.json",
-    "at": "2026-09-02T15:09:43.327Z",
+    "at": "2026-09-02T16:29:10.352Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\bluegrasslawncarellccliftonpassaicnj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -189,6 +223,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Lawn care and mowing",
+        "Mulch and bed work",
+        "Hardscape, patios and walkways",
+        "Tree and shrub trimming"
+      ]
+    }
+  ],
   "photo_count": 15,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

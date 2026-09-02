@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "A B Bentley Stump Grinding & Lawn Care serving Concord.",
   "about_h2": "About A B Bentley Stump Grinding & Lawn Care",
-  "about_p1": "Our work covers tree service.",
-  "about_p2": "17 customers have left us a review, averaging 4.5 out of 5. We work out of Concord and the towns around it.",
+  "about_p1": "Our work covers stump grinding and removal and lawn care and mowing for homes and businesses that need it done right.",
+  "about_p2": "We work out of Concord and the towns around it.",
   "area_h2": "Serving Concord and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The tree service work we take on",
@@ -58,10 +58,24 @@
   "svc_list_h2": "Tree service services",
   "services": [
     {
-      "title": "Tree service",
-      "body": "Trees are pruned, removed or cleared with the work planned around what is standing nearby.",
+      "title": "Stump grinding and removal",
+      "body": "The stump is ground below grade and the chips are raked out or hauled, so the ground is usable again.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "A B Bentley Stump Grinding & Lawn Care"
+      }
+    },
+    {
+      "title": "Lawn care and mowing",
+      "body": "Lawns are cut, edged and cleaned up on a schedule so the yard never gets ahead of you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "A B Bentley Stump Grinding & Lawn Care"
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -100,22 +114,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Tree service work in Concord",
-    "card_about": "A B Bentley Stump Grinding & Lawn Care crew and job photo",
-    "card_services": "Tree service photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Tree service job photo",
-    "about": "A B Bentley Stump Grinding & Lawn Care at work",
-    "contact": "A B Bentley Stump Grinding & Lawn Care",
-    "services_hero": "Tree service services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901171250",
+  "asset_version": "harv20260902165854",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\abbentleystumpgrindinglawncareconcordcabarrusnc\\HARVEST.json",
-    "at": "2026-09-01T17:12:50.748Z",
+    "at": "2026-09-02T16:58:54.282Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\abbentleystumpgrindinglawncareconcordcabarrusnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -141,6 +155,17 @@
     "url": "https://www.google.com/maps/search/A%20B%20Bentley%20Stump%20Grinding%20%26%20Lawn%20Care%20Concord%20NC?hl=en&gl=us",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Stump grinding and removal",
+        "Lawn care and mowing"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

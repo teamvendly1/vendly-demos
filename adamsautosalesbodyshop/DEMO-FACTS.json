@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Adams Auto Sales & Body Shop serving Clover.",
   "about_h2": "About Adams Auto Sales & Body Shop",
-  "about_p1": "Our work covers auto body in Clover and the towns around it.",
-  "about_p2": "19 customers have left us a review, averaging 4.8 out of 5.",
+  "about_p1": "Our work covers dent and body work, paint and refinishing, frame and structural repair, and steering, suspension and alignment for drivers who need it done right.",
+  "about_p2": "We work out of Clover and the towns around it.",
   "area_h2": "Serving Clover and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The collision repair work we take on",
@@ -58,10 +58,56 @@
   "svc_list_h2": "The collision repair work we do",
   "services": [
     {
-      "title": "Collision repair",
-      "body": "Body panels are straightened, replaced and refinished to match the factory line.",
+      "title": "Dent and body work",
+      "body": "Panels are pulled, filled and blocked flat by hand before any primer goes on.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Repaired entire rear suspension and all the body work.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "Did body work for my 2019 Lexus and did a super nice job, at a great price and I had the car back in 2 days!"
+      }
+    },
+    {
+      "title": "Paint and refinishing",
+      "body": "Colour is matched to the car in front of us and blended into the next panel so the repair does not show.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Dustin and everyone is awesome, they do awesome work, fixed door where deer hit it, and repainted and striped perfect on",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Frame and structural repair",
+      "body": "Structural pulls are done on the rack to spec, with measurements taken before and after.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The goal was to not replace sheet metal, and complete the work using a frame machine!",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Repaired entire rear suspension and all the body work.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "Recent work",
@@ -212,22 +258,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Collision repair work in Clover",
-    "card_about": "Adams Auto Sales & Body Shop crew and job photo",
-    "card_services": "Auto body photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Collision repair job photo",
-    "about": "Adams Auto Sales & Body Shop at work",
-    "contact": "Adams Auto Sales & Body Shop",
-    "services_hero": "Collision repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901171750",
+  "asset_version": "harv20260902171118",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\adamsautosalesbodyshop\\HARVEST.json",
-    "at": "2026-09-01T17:17:50.997Z",
+    "at": "2026-09-02T17:11:18.761Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\adamsautosalesbodyshop\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -253,6 +299,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Dent and body work",
+        "Paint and refinishing",
+        "Frame and structural repair",
+        "Steering, suspension and alignment"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

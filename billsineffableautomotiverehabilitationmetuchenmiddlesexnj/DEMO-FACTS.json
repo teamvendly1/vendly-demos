@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Bill's Ineffable Automotive Rehabilitation serving Metuchen.",
   "about_h2": "About Bill's Ineffable Automotive Rehabilitation",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "36 customers have left us a review, averaging 4.8 out of 5. We work out of Metuchen and the towns around it.",
+  "about_p1": "Our work covers diagnostics and check engine work, brakes, oil changes and routine maintenance, and tires and wheels for drivers who need it done right.",
+  "about_p2": "We work out of Metuchen and the towns around it.",
   "area_h2": "Where we take on auto repair work near Metuchen",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,56 @@
   "svc_list_h2": "The auto repair work we do",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He was clear and concise with his diagnosis of the work my car needed.",
+        "reviews": 4,
+        "names_service": false,
+        "also": "You can trust their diagnosis."
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Whether it is a quick fix like needing air in my tire or more extensive work like when they re-did my brakes, they have ",
+        "reviews": 2,
+        "names_service": true,
+        "also": "We needed brake pads/calipers replaced and some other minor maintenance items taken care of."
+      }
+    },
+    {
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I had a standard oil change, tire rotation, and body work done on my van’s front bumper.",
+        "reviews": 6,
+        "names_service": true,
+        "also": "You can trust that your car maintenance and repair will be done right."
+      }
+    },
+    {
+      "title": "Tires and wheels",
+      "body": "Fitting, balancing and rotation on the machine, with the weights set where they belong.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I had a standard oil change, tire rotation, and body work done on my van’s front bumper.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Whether it is a quick fix like needing air in my tire or more extensive work like when they re-did my brakes, they have "
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -331,22 +377,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Metuchen",
-    "card_about": "Bill's Ineffable Automotive Rehabilitation crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Bill's Ineffable Automotive Rehabilitation at work",
-    "contact": "Bill's Ineffable Automotive Rehabilitation",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901184113",
+  "asset_version": "harv20260902180613",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\billsineffableautomotiverehabilitationmetuchenmiddlesexnj\\HARVEST.json",
-    "at": "2026-09-01T18:41:13.683Z",
+    "at": "2026-09-02T18:06:13.786Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\billsineffableautomotiverehabilitationmetuchenmiddlesexnj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -372,6 +418,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Diagnostics and check engine work",
+        "Brakes",
+        "Oil changes and routine maintenance",
+        "Tires and wheels"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

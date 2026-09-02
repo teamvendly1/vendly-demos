@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Butler's Tire & Auto Service serving Kings Mountain.",
   "about_h2": "About Butler's Tire & Auto Service",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "74 customers have left us a review, averaging 4 out of 5. We work out of Kings Mountain and the towns around it.",
+  "about_p1": "Our work covers tires and wheels, diagnostics and check engine work, brakes, and steering, suspension and alignment for drivers who need it done right.",
+  "about_p2": "We work out of Kings Mountain and the towns around it.",
   "area_h2": "Where we take on auto repair work near Kings Mountain",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,66 @@
   "svc_list_h2": "Auto repair, start to finish",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Tires and wheels",
+      "body": "Fitting, balancing and rotation on the machine, with the weights set where they belong.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "Butler's Tire & Auto Service"
+      }
+    },
+    {
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Bonus of on site diagnostic technicians means way less stress and decreased wait time ....",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Jay is great, diagnosed the problem my previous mechanic couldn't find."
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "My right brake light was out on a road trip and a kind gentleman fixed it on short notice, so we could safely get back o",
+        "reviews": 2,
+        "names_service": true,
+        "also": "After a small hiccup, I also got my brakes done there and the owner outdid himself making sure I was satisfied before I "
+      }
+    },
+    {
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I went in thinking I needed an alignment because my SUV was shaking so bad.",
+        "reviews": 3,
+        "names_service": true,
+        "also": "Has my vehicle jacked from from Courage Kia in Gastonia , i arrived at Butlers Automotive without an appointment never b"
+      }
+    },
+    {
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They always go above and beyond to help us with our vehicle repairs and maintenance !!",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "A look at the work",
@@ -597,22 +653,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Kings Mountain",
-    "card_about": "Butler's Tire & Auto Service crew and job photo",
-    "card_services": "Auto repair / Tire photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Butler's Tire & Auto Service at work",
-    "contact": "Butler's Tire & Auto Service",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902004517",
+  "asset_version": "harv20260902182104",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\butlerstireautoservice\\HARVEST.json",
-    "at": "2026-09-02T00:45:17.652Z",
+    "at": "2026-09-02T18:21:04.612Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\butlerstireautoservice\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -638,6 +694,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Tires and wheels",
+        "Diagnostics and check engine work",
+        "Brakes",
+        "Steering, suspension and alignment"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "A One Automotive LLC serving Landrum.",
   "about_h2": "About A One Automotive LLC",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "24 customers have left us a review, averaging 4.8 out of 5. We work out of Landrum and the towns around it.",
+  "about_p1": "Our work covers steering, suspension and alignment, tires and wheels, batteries, starters and electrical, and cooling system for drivers who need it done right.",
+  "about_p2": "We work out of Landrum and the towns around it.",
   "area_h2": "Where we take on auto repair work near Landrum",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,56 @@
   "svc_list_h2": "What we handle: auto repair",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They have been a huge help with getting my Tahoe back to being a reliable vehicle again as well as installing new shocks",
+        "reviews": 2,
+        "names_service": false,
+        "also": "Went there yesterday and got my wheel bearing done on my 2010 Nissan Altima.Jonathan the mechanic was one of the best me"
+      }
+    },
+    {
+      "title": "Tires and wheels",
+      "body": "Fitting, balancing and rotation on the machine, with the weights set where they belong.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Went there yesterday and got my wheel bearing done on my 2010 Nissan Altima.Jonathan the mechanic was one of the best me",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Batteries, starters and electrical",
+      "body": "Charging and starting faults are tested at the battery, the alternator and the cables before a part is sold.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Got a text with a cost estimate, 2 hours later I had a new alternator and a new mechanic!",
+        "reviews": 3,
+        "names_service": false,
+        "also": "My husband got his alternator fixed here."
+      }
+    },
+    {
+      "title": "Cooling system",
+      "body": "Leaks, pumps and thermostats are replaced and the system is bled properly so it holds temperature under load.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Would give this place 6 stars if I could my usual mechanic checked it out and said it was a busted head gasket but they ",
+        "reviews": 2,
+        "names_service": false,
+        "also": "We were from Tennessee we left a few days ago we got to campanello South Carolina and the timing was right I guess becau"
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -247,22 +293,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Landrum",
-    "card_about": "A One Automotive LLC crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "A One Automotive LLC at work",
-    "contact": "A One Automotive LLC",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901185602",
+  "asset_version": "harv20260902173459",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\aoneautomotivellc\\HARVEST.json",
-    "at": "2026-09-01T18:56:02.325Z",
+    "at": "2026-09-02T17:34:59.341Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\aoneautomotivellc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -288,6 +334,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Steering, suspension and alignment",
+        "Tires and wheels",
+        "Batteries, starters and electrical",
+        "Cooling system"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Ivy Landscaping LLC serving Glassboro.",
   "about_h2": "About Ivy Landscaping LLC",
-  "about_p1": "Our work covers landscaping.",
-  "about_p2": "17 customers have left us a review, averaging 5 out of 5. We work out of Glassboro and the towns around it.",
+  "about_p1": "Our work covers lawn care and mowing, mulch and bed work, hardscape, patios and walkways, and sod, seeding and grading for homes and businesses that need it done right.",
+  "about_p2": "We work out of Glassboro and the towns around it.",
   "area_h2": "Serving Glassboro and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The landscaping work we take on",
@@ -58,10 +58,54 @@
   "svc_list_h2": "landscaping jobs we take on",
   "services": [
     {
-      "title": "Landscaping",
-      "body": "Beds, lawns and hardscape are kept up on a schedule, not just cleaned up once and left.",
+      "title": "Lawn care and mowing",
+      "body": "Lawns are cut, edged and cleaned up on a schedule so the yard never gets ahead of you.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Freshly mowed lawn edge running up to an overgrown tree line at the back of a property."
+      }
+    },
+    {
+      "title": "Mulch and bed work",
+      "body": "Beds are cleaned out, edged and mulched, and plantings are set where they will actually grow.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Foundation bed of trimmed boxwoods and a tall evergreen in fresh black mulch beside a white house."
+      }
+    },
+    {
+      "title": "Hardscape, patios and walkways",
+      "body": "Base is compacted and screeded before a single paver or block goes down, which is why it stays level.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Stamped concrete walk to white porch steps with a mulched bed and a monogram flag by the door."
+      }
+    },
+    {
+      "title": "Sod, seeding and grading",
+      "body": "The ground is graded and prepped first, then sodded or seeded so the new lawn takes instead of washing out.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Back yard graded to bare topsoil ahead of new lawn with a fence line and houses behind."
+      }
+    },
+    {
+      "title": "Tree and shrub trimming",
+      "body": "Hedges and ornamentals are shaped and dead wood comes out so they fill in instead of going leggy.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "photo",
+        "text": "Foundation bed of trimmed boxwoods and a tall evergreen in fresh black mulch beside a white house."
+      }
     }
   ],
   "photos_h2": "Recent work",
@@ -231,15 +275,15 @@
     "card_photos": "Foundation bed of trimmed boxwoods and a tall evergreen in fresh black mulch beside a white house.",
     "ctaband": "Wide mowed lawn with a mature oak in front of a brick colonial house.",
     "about": "Corner of a white house with a tall arborvitae, rounded shrubs and a black mulch bed by a vinyl fence.",
-    "contact": "Ivy Landscaping LLC",
-    "services_hero": "Landscaping services"
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902151002",
+  "asset_version": "harv20260902165015",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\ivylandscapingllcglassborogloucesternj\\HARVEST.json",
-    "at": "2026-09-02T15:10:02.580Z",
+    "at": "2026-09-02T16:50:15.056Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\ivylandscapingllcglassborogloucesternj\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -265,6 +309,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Lawn care and mowing",
+        "Mulch and bed work",
+        "Hardscape, patios and walkways",
+        "Sod, seeding and grading"
+      ]
+    }
+  ],
   "photo_count": 13,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Appalachian Automotive serving Waynesville.",
   "about_h2": "About Appalachian Automotive",
-  "about_p1": "196 customers have left us a review, averaging 4.9 out of 5.",
+  "about_p1": "Our work covers diagnostics and check engine work, engine repair, brakes, and steering, suspension and alignment for drivers who need it done right.",
   "about_p2": "We work out of Waynesville and the towns around it.",
   "area_h2": "The towns around Waynesville, too",
   "area_lede": "",
@@ -58,16 +58,75 @@
   "svc_list_h2": "auto repair jobs we take on",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Sierra ran the computer diagnostics and switched out the new wiper for the old one so efficiently that my husband was pl",
+        "reviews": 27,
+        "names_service": true,
+        "also": "With his state of the art equipment he diagnosed the problem quickly, showed me the site, thoroughly explained the solut"
+      }
+    },
+    {
+      "title": "Engine repair",
+      "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He replaced the valve gasket on my car, cleaned my engine and made sure I understood exactly what he was doing.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "When I started experiencing shaking issues, they diagnosed the problem, showed me where the engine mount was broken and "
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I went in just to have my brakes replaced.",
+        "reviews": 8,
+        "names_service": true,
+        "also": "Turned out to be the brand new brake calipers I installed were both defective."
+      }
+    },
+    {
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "The results on the alignment sheet were almost perfect, but a few readings were right on the edge of the limits due to s",
+        "reviews": 8,
+        "names_service": true,
+        "also": "He also did my rear brakes and cv axles and a few other maintenance issues on my 2014 tacoma."
+      }
+    },
+    {
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He also did my rear brakes and cv axles and a few other maintenance issues on my 2014 tacoma.",
+        "reviews": 8,
+        "names_service": true,
+        "also": "No more quick oil change places for me."
+      }
     }
   ],
   "photos_h2": "Recent work",
   "photos_lede": "",
   "gallery": [],
-  "reviews_h2": "Customer words",
+  "reviews_h2": "Reviews from real jobs",
   "reviews_lede": "",
   "reviews": [
     {
@@ -1451,24 +1510,26 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Waynesville",
-    "card_about": "Appalachian Automotive crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Appalachian Automotive at work",
-    "contact": "Appalachian Automotive",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901015920",
+  "asset_version": "harv20260902173830",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\appalachianautomotive\\HARVEST.json",
-    "at": "2026-09-01T02:26:00.041Z",
+    "at": "2026-09-02T17:38:30.108Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\appalachianautomotive\\DEMO-FACTS.json",
+    "wrote_facts_from_harvest": true,
+    "rebuilt": true,
     "harvest_merged": true
   },
   "address": {
@@ -1490,6 +1551,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Diagnostics and check engine work",
+        "Engine repair",
+        "Brakes",
+        "Steering, suspension and alignment"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

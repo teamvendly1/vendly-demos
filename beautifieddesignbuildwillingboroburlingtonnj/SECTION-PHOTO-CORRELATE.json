@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-02T15:42:41.737Z",
+  "at": "2026-09-02T18:01:36.594Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "landscaping",
@@ -7,62 +7,52 @@
     {
       "file": "photo-about.jpg",
       "source": "Pexels",
-      "sha256": "65e164c89140f79daa7d4fa47281a86e540e1c3138d52b8fc25c499989afb777",
+      "sha256": "812e8d8fcd8471cf48d49cff56cb8db7fdcf2eb2bbc782190299e66b7a3be27b",
       "reasons": [
-        "off_section_relevance:trade_deny:worker:landscape"
+        "off_section_relevance:trade_require_miss:landscape"
       ],
       "service": "crew shop jobsite",
-      "score_alt": "lawn mower cutting turf"
+      "score_alt": "landscape edging bed install"
     },
     {
       "file": "photo-card-reviews.jpg",
       "source": "stock-library",
-      "sha256": "ec4d2c8b15d228df52ba40d012d069e9a40e9ebc45daea24097d07e0b72a4d72",
-      "reasons": [
-        "off_section_relevance:trade_deny:worker:landscape"
-      ],
-      "service": null,
-      "score_alt": "mulch bed shrub planting"
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "source": "stock-library",
-      "sha256": "75aaef32792ccb7876f30693ca53898e7010e47209e4874b7ddc4c925c704906",
-      "reasons": [
-        "off_section_relevance:trade_deny:worker:landscape"
-      ],
-      "service": "trade work",
-      "score_alt": "retaining wall block install"
-    },
-    {
-      "file": "photo-gallery-8.jpg",
-      "source": "stock-library",
-      "sha256": "6b2b751e37ef32879bcf32988b66558a3a1689bd7e46088d00b73166e7d4eabc",
+      "sha256": "42613a59c37b07b9c2ea4874b08da87308f694ec34d4891ba9e68d32922465ba",
       "reasons": [
         "off_section_relevance:trade_require_miss:landscape"
       ],
       "service": null,
-      "score_alt": "bush hog clearing brush lot"
+      "score_alt": "flagstone walkway retaining wall"
     },
     {
-      "file": "photo-reviewsband.jpg",
+      "file": "photo-gallery-8.jpg",
       "source": "stock-library",
-      "sha256": "4e89898afd88ba37a413b89b757e2e0266e7ca35578dd25bba657736cfc93faf",
+      "sha256": "8904f84b7d8de5e42676afefc12abdf6409fd31d30b8768649e648ca6020de3e",
       "reasons": [
-        "off_section_relevance:trade_deny:pool:landscape"
+        "off_section_relevance:trade_require_miss:landscape"
       ],
       "service": null,
       "score_alt": "sprinkler head watering grass"
     },
     {
+      "file": "photo-reviewsband.jpg",
+      "source": "stock-library",
+      "sha256": "5914b18074236f534453e906f014327de85910082249b8938dc88180c4353971",
+      "reasons": [
+        "off_section_relevance:trade_deny:pool:landscape"
+      ],
+      "service": null,
+      "score_alt": "drainage trench french drain"
+    },
+    {
       "file": "photo-service-2.jpg",
       "source": "stock-library",
-      "sha256": "924742d6d2c07d45fb0e6695691f28057feb672c9775e55f0bff7dc08f6aebd0",
+      "sha256": "59c0bbdf288716b7667139073e6cf46534c746d40a3c0d69d6bfc9816181f7d3",
       "reasons": [
         "off_section_relevance:section_need_miss:Mulch and bed work"
       ],
       "service": "Mulch and bed work",
-      "score_alt": "wheelbarrow mulch dump garden bed"
+      "score_alt": "mulch bed shrub planting"
     },
     {
       "file": "photo-service-3.jpg",
@@ -87,6 +77,12 @@
       "sha256": "3b546c559f6284dd783d7abb8fde593bed9ffb7c4c6de02214286f252959c51f",
       "bytes": 190077,
       "alt": "Crew setting new white vinyl fence panels to a string line along an open trench,"
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "167862d732f636cce43bca30c80de32a19826453549e4f58cc8630204a72fec4",
+      "bytes": 262656,
+      "alt": "Worker kneeling in a trench connecting a run of black corrugated drainage pipe a"
     },
     {
       "file": "photo-contact.jpg",
@@ -213,8 +209,8 @@
       "alt": "Long stone-faced raised bed under construction along a back fence, with a worker and a wheelbarrow at the far end.",
       "relevance": {
         "ok": false,
-        "score": -20,
-        "reason": "trade_deny:worker:landscape"
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
       },
       "flattery": {
         "ok": true,
@@ -228,23 +224,8 @@
       "alt": "Worker in a beanie setting timber bed edging into a trench along a tall boarded fence.",
       "relevance": {
         "ok": false,
-        "score": -20,
-        "reason": "trade_deny:worker:landscape"
-      },
-      "flattery": {
-        "ok": true,
-        "score": 0,
-        "reason": "",
-        "strict": false
-      }
-    },
-    {
-      "file": "photo-card-services.jpg",
-      "alt": "Worker kneeling in a trench connecting a run of black corrugated drainage pipe across a lawn.",
-      "relevance": {
-        "ok": false,
-        "score": -20,
-        "reason": "trade_deny:worker:landscape"
+        "score": -12,
+        "reason": "trade_require_miss:landscape"
       },
       "flattery": {
         "ok": true,

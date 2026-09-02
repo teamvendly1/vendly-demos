@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Affordable Auto Repair serving Gastonia.",
   "about_h2": "About Affordable Auto Repair",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "74 customers have left us a review, averaging 4.6 out of 5. We work out of Gastonia and the towns around it.",
+  "about_p1": "Our work covers diagnostics and check engine work, engine repair, brakes, and steering, suspension and alignment for drivers who need it done right.",
+  "about_p2": "We work out of Gastonia and the towns around it.",
   "area_h2": "Where we take on auto repair work near Gastonia",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "Auto repair, start to finish",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Diagnostics and check engine work",
+      "body": "The fault gets traced to its actual cause before anything is replaced, so you pay for the part that failed and not the three beside it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "After three months of chasing down an engine light for my DMV inspection, going through 4 to 5 different mechanics with ",
+        "reviews": 6,
+        "names_service": true,
+        "also": "They diagnosed the issue quickly and got it taken care of."
+      }
+    },
+    {
+      "title": "Engine repair",
+      "body": "The engine comes apart far enough to find the actual fault, not far enough to run up the bill.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "After three months of chasing down an engine light for my DMV inspection, going through 4 to 5 different mechanics with ",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Brakes",
+      "body": "Pads, rotors and calipers are checked as a set and the worn ones come off beside the new ones, so you can see what was actually changed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I took the car to Tim at Affordable and after he looked at all 4 wheels he told me that the brakes were still good for a",
+        "reviews": 2,
+        "names_service": true,
+        "also": "This was on a Friday morning and Tim was able to quickly get my car in, correctly diagnose the issue, and get the issue "
+      }
+    },
+    {
+      "title": "Steering, suspension and alignment",
+      "body": "Worn steering and suspension parts come off, the replacement goes on beside them, and the alignment is set on the rack afterwards.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "All I needed was a front end alignment.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I received an affordable oil change and rotated my tires for me because the tread was low in the front.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "He is the only mechanic we take out cars to for regular maintenance and repairs."
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -597,22 +656,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in Gastonia",
-    "card_about": "Affordable Auto Repair crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "Affordable Auto Repair at work",
-    "contact": "Affordable Auto Repair",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901185103",
+  "asset_version": "harv20260902171458",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\affordableautorepair\\HARVEST.json",
-    "at": "2026-09-01T18:51:03.893Z",
+    "at": "2026-09-02T17:14:58.312Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\affordableautorepair\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -638,6 +697,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Diagnostics and check engine work",
+        "Engine repair",
+        "Brakes",
+        "Steering, suspension and alignment"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
