@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Kings Plumbing serving Norfolk.",
   "about_h2": "About Kings Plumbing",
-  "about_p1": "Our work covers plumbing in Norfolk and the towns around it.",
-  "about_p2": "86 customers have left us a review, averaging 4.9 out of 5.",
+  "about_p1": "Our work covers leak and pipe repair, drains and sewer lines, water heaters, and fixtures, faucets and toilets for homes and businesses that need it done right.",
+  "about_p2": "We work out of Norfolk and the towns around it.",
   "area_h2": "Serving Norfolk and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The plumbing work we take on",
@@ -58,31 +58,74 @@
   "svc_list_h2": "plumbing jobs we take on",
   "services": [
     {
-      "title": "Plumbing",
-      "body": "Pipes, fixtures and water heaters are opened up and fixed at the failure point rather than patched over it.",
+      "title": "Leak and pipe repair",
+      "body": "The pipe is opened at the failure point and fixed there, not patched over where the water shows up.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Ron and his partner discovered a huge leak, and they did a fantastic job fixing it!",
+        "reviews": 13,
+        "names_service": true,
+        "also": "We have now used Kings twice, once for a kitchen sink clog and once to replace a leaking pipe coming off our water heate"
+      }
+    },
+    {
+      "title": "Drains and sewer lines",
+      "body": "Blockages get cleared and a failed line gets replaced rather than patched again.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Every other plumber I've used in Norfolk has this ridiculous flat rate price book, where they evaluate your job, hide in",
+        "reviews": 8,
+        "names_service": true,
+        "also": "We have now used Kings twice, once for a kitchen sink clog and once to replace a leaking pipe coming off our water heate"
+      }
+    },
+    {
+      "title": "Water heaters",
+      "body": "Elements, thermostats and full replacements, with the old part shown to you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "We have now used Kings twice, once for a kitchen sink clog and once to replace a leaking pipe coming off our water heate",
+        "reviews": 7,
+        "names_service": true,
+        "also": "Ron answered my call on Saturday morning and came out to check the water heater."
+      }
+    },
+    {
+      "title": "Fixtures, faucets and toilets",
+      "body": "Faucets, toilets and disposals are set and sealed so they stop dripping and stay stopped.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I’ve used Ron and Kings Plumbing now multiple times for my rental property for detecting leaks, fixing leaks, fixing toi",
+        "reviews": 14,
+        "names_service": true,
+        "also": "We have now used Kings twice, once for a kitchen sink clog and once to replace a leaking pipe coming off our water heate"
+      }
+    },
+    {
+      "title": "Bathroom and fixture work",
+      "body": "Including accessible conversions, with the threshold, the seat and the rail set for real use.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Ron and Mitch from Kings plumbing have come by to help us out several times now - for a full water heater replacement, a",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "A look at the work",
   "photos_lede": "",
-  "gallery": [
-    {
-      "slot": "photo-about.jpg",
-      "alt": "Kings Plumbing at work",
-      "subject_class": "reused_about"
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "alt": "plumber photo",
-      "subject_class": "reused_card_services"
-    },
-    {
-      "slot": "photo-card-reviews.jpg",
-      "alt": "Customer review context photo",
-      "subject_class": "reused_card_reviews"
-    }
-  ],
+  "gallery": [],
   "reviews_h2": "What people are saying about the plumbing",
   "reviews_lede": "",
   "reviews": [
@@ -697,22 +740,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Plumbing work in Norfolk",
-    "card_about": "Kings Plumbing crew and job photo",
-    "card_services": "plumber photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Plumbing job photo",
-    "about": "Kings Plumbing at work",
-    "contact": "Kings Plumbing",
-    "services_hero": "Plumbing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901195049",
+  "asset_version": "harv20260902205539",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\kingsplumbingnorfolkva\\HARVEST.json",
-    "at": "2026-09-01T19:50:49.821Z",
+    "at": "2026-09-02T20:55:39.784Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\kingsplumbingnorfolkva\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -738,6 +781,19 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Leak and pipe repair",
+        "Drains and sewer lines",
+        "Water heaters",
+        "Fixtures, faucets and toilets"
+      ]
+    }
+  ],
   "photo_count": 7,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
