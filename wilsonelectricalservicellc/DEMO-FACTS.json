@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Wilson Electrical Service LLC serving Gastonia.",
   "about_h2": "About Wilson Electrical Service LLC",
-  "about_p1": "18 customers have left us a review, averaging 4.6 out of 5.",
+  "about_p1": "Our work covers lighting and ceiling fans and outlets, switches and new circuits for homes and businesses that need it done right.",
   "about_p2": "We work out of Gastonia and the towns around it.",
   "area_h2": "Where we take on electrical work near Gastonia",
   "area_lede": "",
@@ -58,10 +58,30 @@
   "svc_list_h2": "What we handle: electrical",
   "services": [
     {
-      "title": "Electrical",
-      "body": "Wiring, panels and fixtures are installed and repaired to the load the space actually draws.",
+      "title": "Lighting and ceiling fans",
+      "body": "Fixtures are wired, mounted and trimmed so the room or the yard reads finished, not just wired.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "My favorite thing is the flood light he installed for me.",
+        "reviews": 3,
+        "names_service": false,
+        "also": "He also installed several new garage lights for me and did an excellent job."
+      }
+    },
+    {
+      "title": "Outlets, switches and new circuits",
+      "body": "New circuits are run from the panel on their own breaker, sized to what will actually be plugged into them.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I had him rewire alot of my outlets when we bought our house and he did a great job.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -205,22 +225,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Electrical work in Gastonia",
-    "card_about": "Wilson Electrical Service LLC crew and job photo",
-    "card_services": "Electrician photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Electrical job photo",
-    "about": "Wilson Electrical Service LLC at work",
-    "contact": "Wilson Electrical Service LLC",
-    "services_hero": "Electrical services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901112739",
+  "asset_version": "harv20260903044052",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\wilsonelectricalservicellc\\HARVEST.json",
-    "at": "2026-09-01T11:27:39.988Z",
+    "at": "2026-09-03T04:40:52.465Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\wilsonelectricalservicellc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -246,6 +266,17 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Lighting and ceiling fans",
+        "Outlets, switches and new circuits"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

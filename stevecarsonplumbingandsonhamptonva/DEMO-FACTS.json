@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Steve Carson Plumbing & Son serving Hampton.",
   "about_h2": "About Steve Carson Plumbing & Son",
-  "about_p1": "11 customers have left us a review, averaging 4.8 out of 5.",
-  "about_p2": "We work out of Hampton and the towns around it.",
+  "about_p1": "Our work covers leak and pipe repair, drains and sewer lines, water heaters, and fixtures, faucets and toilets for homes and businesses that need it done right.",
+  "about_p2": "It is a family operation. We work out of Hampton and the towns around it.",
   "area_h2": "Hampton and the area around it",
   "area_lede": "",
   "svc_hero_h1": "The plumbing work we take on",
@@ -58,10 +58,69 @@
   "svc_list_h2": "The plumbing work we do",
   "services": [
     {
-      "title": "Plumbing",
-      "body": "Pipes, fixtures and water heaters are opened up and fixed at the failure point rather than patched over it.",
+      "title": "Leak and pipe repair",
+      "body": "The pipe is opened at the failure point and fixed there, not patched over where the water shows up.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I called them for a quick job, just repairing a leak on the cold water tap for the tub, and they cleared my drain, clear",
+        "reviews": 2,
+        "names_service": true,
+        "also": "Fixed all problems immediately (broken water line to refrigerator, leaky toilet, faucet handle loose.) Did everything qu"
+      }
+    },
+    {
+      "title": "Drains and sewer lines",
+      "body": "Blockages get cleared and a failed line gets replaced rather than patched again.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I called them for a quick job, just repairing a leak on the cold water tap for the tub, and they cleared my drain, clear",
+        "reviews": 3,
+        "names_service": true,
+        "also": "did a fantastic job fixing the drain for our bath tub and broken faucet."
+      }
+    },
+    {
+      "title": "Water heaters",
+      "body": "Elements, thermostats and full replacements, with the old part shown to you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I called them for a quick job, just repairing a leak on the cold water tap for the tub, and they cleared my drain, clear",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Fixtures, faucets and toilets",
+      "body": "Faucets, toilets and disposals are set and sealed so they stop dripping and stay stopped.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "did a fantastic job fixing the drain for our bath tub and broken faucet.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "I called them for a quick job, just repairing a leak on the cold water tap for the tub, and they cleared my drain, clear"
+      }
+    },
+    {
+      "title": "Bathroom and fixture work",
+      "body": "Including accessible conversions, with the threshold, the seat and the rail set for real use.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "My downstairs bathroom was shot and not working and the upstairs bathroom was hanging by a tread.",
+        "reviews": 3,
+        "names_service": true,
+        "also": "I called them for a quick job, just repairing a leak on the cold water tap for the tub, and they cleared my drain, clear"
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -156,22 +215,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Plumbing work in Hampton",
-    "card_about": "Steve Carson Plumbing & Son crew and job photo",
-    "card_services": "plumbing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Plumbing job photo",
-    "about": "Steve Carson Plumbing & Son at work",
-    "contact": "Steve Carson Plumbing & Son",
-    "services_hero": "Plumbing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901102700",
+  "asset_version": "harv20260903040917",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stevecarsonplumbingandsonhamptonva\\HARVEST.json",
-    "at": "2026-09-01T10:27:00.995Z",
+    "at": "2026-09-03T04:09:17.666Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\stevecarsonplumbingandsonhamptonva\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -197,6 +256,23 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Leak and pipe repair",
+        "Drains and sewer lines",
+        "Water heaters",
+        "Fixtures, faucets and toilets"
+      ]
+    },
+    {
+      "sentence": "family",
+      "from": "business name: Steve Carson Plumbing & Son"
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

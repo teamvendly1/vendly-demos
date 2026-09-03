@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "Randy Cash Plumbing Company serving Fayetteville.",
   "about_h2": "About Randy Cash Plumbing Company",
-  "about_p1": "Our work covers plumbing in Fayetteville and the towns around it.",
-  "about_p2": "7 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers drains and sewer lines and water heaters for homes and businesses that need it done right.",
+  "about_p2": "We work out of Fayetteville and the towns around it.",
   "area_h2": "The towns around Fayetteville, too",
   "area_lede": "",
   "svc_hero_h1": "The plumbing work we take on",
@@ -58,10 +58,30 @@
   "svc_list_h2": "plumbing jobs we take on",
   "services": [
     {
-      "title": "Plumbing",
-      "body": "Pipes, fixtures and water heaters are opened up and fixed at the failure point rather than patched over it.",
+      "title": "Drains and sewer lines",
+      "body": "Blockages get cleared and a failed line gets replaced rather than patched again.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I had a bad back up in my washing machine drain that I tried to snake and clear.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Water heaters",
+      "body": "Elements, thermostats and full replacements, with the old part shown to you.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "He discussed anything else I wanted to know, like getting a tankless water heater and installing a shower for my dogs.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "Plumbing work near Fayetteville",
@@ -128,22 +148,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Plumbing work in Fayetteville",
-    "card_about": "Randy Cash Plumbing Company crew and job photo",
-    "card_services": "Plumber photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Plumbing job photo",
-    "about": "Randy Cash Plumbing Company at work",
-    "contact": "Randy Cash Plumbing Company",
-    "services_hero": "Plumbing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901202301",
+  "asset_version": "harv20260903041919",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\randycashplumbingcompany\\HARVEST.json",
-    "at": "2026-09-01T20:23:01.931Z",
+    "at": "2026-09-03T04:19:19.129Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\randycashplumbingcompany\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -169,6 +189,17 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Drains and sewer lines",
+        "Water heaters"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
