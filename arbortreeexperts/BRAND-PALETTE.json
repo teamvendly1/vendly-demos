@@ -2,59 +2,71 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "arbortreeexperts",
   "mold": "_template-skipper-blank",
-  "brand_input": "#2B4C7E",
+  "brand_input": "#433019",
   "palette": {
-    "BRAND": "#2B4C7E",
-    "PRIMARY": "#192C48",
-    "PRIMARY_DK": "#122035",
-    "PRIMARY_MID": "#1E3557",
-    "ACCENT": "#274572",
-    "ACCENT_DK": "#1B3050",
-    "ACCENT_LT": "#3760A0",
-    "ON_DARK": "#C2D2EA",
-    "MENU_INK": "#0C1522",
-    "TINT_1": "#D9E3F2",
-    "TINT_2": "#E4EBF6",
-    "TINT_3": "#D1DDEF",
-    "TINT_4": "#D5E0F1",
-    "LINE_2": "#B3C7E5",
-    "MUTED_BRAND": "#678FCB",
-    "MIST": "#F2F5FA",
-    "LINE": "#CAD8ED",
-    "PRIMARY_RGB": "25,44,72",
-    "ACCENT_RGB": "39,69,114",
-    "SCRIM_RGB": "30,53,87",
-    "SCRIM2_RGB": "18,32,53",
-    "MENU_INK_RGB": "12,21,34"
+    "BRAND": "#433019",
+    "PRIMARY": "#47331A",
+    "PRIMARY_DK": "#342513",
+    "PRIMARY_MID": "#553D20",
+    "ACCENT": "#6F502A",
+    "ACCENT_DK": "#4E381D",
+    "ACCENT_LT": "#9C703A",
+    "ON_DARK": "#E9D8C4",
+    "MENU_INK": "#21180C",
+    "TINT_1": "#F1E7DA",
+    "TINT_2": "#F5EEE5",
+    "TINT_3": "#EEE2D2",
+    "TINT_4": "#F0E4D6",
+    "LINE_2": "#E3CEB5",
+    "MUTED_BRAND": "#946937",
+    "MIST": "#FAF6F2",
+    "LINE": "#ECDDCB",
+    "PRIMARY_RGB": "71,51,26",
+    "ACCENT_RGB": "111,80,42",
+    "SCRIM_RGB": "85,61,32",
+    "SCRIM2_RGB": "52,37,19",
+    "MENU_INK_RGB": "33,24,12",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
   },
   "contrast": [
     {
       "pair": "white on primary",
-      "ratio": 14.05,
+      "ratio": 11.96,
       "pass": true
     },
     {
       "pair": "white on accent",
-      "ratio": 9.63,
+      "ratio": 7.35,
       "pass": true
     },
     {
       "pair": "onDark on primary",
-      "ratio": 9.16,
+      "ratio": 8.59,
       "pass": true
     },
     {
       "pair": "menu ink on white",
-      "ratio": 18.32,
+      "ratio": 17.49,
       "pass": true
     },
     {
       "pair": "accent as kicker text on mist",
-      "ratio": 8.81,
+      "ratio": 6.84,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.84,
       "pass": true
     }
   ],
   "notes": [
-    "brand colour rejected (unparseable), fell back to trade-family or neutral #2B4C7E"
+    "contrast repair applied: muted body copy on the mist band = 2.30:1 (needs 4.5)"
   ]
 }

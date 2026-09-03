@@ -23,7 +23,7 @@
   "eyebrow": "Clayton",
   "h1_lead": "",
   "h1_emph": "Auto repair in Clayton, done properly.",
-  "hero_lede": "Car repair in Clayton. Call and we will take a look.",
+  "hero_lede": "Car repair on 148 State Ave in Clayton. Call and we will take a look.",
   "free_estimates": false,
   "hours_short": "",
   "area_short": "Clayton",
@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "42 Collision Center serving Clayton.",
   "about_h2": "About 42 Collision Center",
-  "about_p1": "Our work covers car repair in Clayton and the towns around it.",
-  "about_p2": "47 customers have left us a review, averaging 4.4 out of 5.",
+  "about_p1": "Our work covers dent and body work, paint and refinishing, and insurance claim repairs for drivers who need it done right.",
+  "about_p2": "We work out of Clayton and the towns around it.",
   "area_h2": "Serving Clayton and the towns nearby",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -59,30 +59,57 @@
   "services": [
     {
       "title": "Collision repair",
-      "body": "Body panels are straightened, replaced and refinished to match the factory line.",
+      "body": "Damage is measured against the factory points before the first panel comes off, and the estimate reflects what is actually bent.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "name",
+        "text": "42 Collision Center"
+      }
+    },
+    {
+      "title": "Dent and body work",
+      "body": "Panels are pulled, filled and blocked flat by hand before any primer goes on.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Need body work done, give them a try.",
+        "reviews": 4,
+        "names_service": true,
+        "also": "This past week, my bumper got hit in a parking lot and I knew right away where I was bringing it to get fixed."
+      }
+    },
+    {
+      "title": "Paint and refinishing",
+      "body": "Colour is matched to the car in front of us and blended into the next panel so the repair does not show.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I have seen paint repair work that did not age well, so I decided to wait a few years before leaving this review.",
+        "reviews": 5,
+        "names_service": true,
+        "also": "The truck looked like new after the repairs and paint job."
+      }
+    },
+    {
+      "title": "Insurance claim repairs",
+      "body": "The estimate is written to what the damage actually is, and the car goes back the way it was.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Robyn really took the time to get my rental car squared away when the insurance agent refused to return my calls to set ",
+        "reviews": 3,
+        "names_service": true,
+        "also": "The insurance company said they were a nationwide on your side facility and approved the repairs just like that."
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
   "photos_lede": "",
-  "gallery": [
-    {
-      "slot": "photo-about.jpg",
-      "alt": "42 Collision Center at work",
-      "subject_class": "reused_about"
-    },
-    {
-      "slot": "photo-card-services.jpg",
-      "alt": "Car repair photo",
-      "subject_class": "reused_card_services"
-    },
-    {
-      "slot": "photo-card-photos.jpg",
-      "alt": "Recent job photo",
-      "subject_class": "reused_card_photos"
-    }
-  ],
+  "gallery": [],
   "reviews_h2": "Reviews from real jobs",
   "reviews_lede": "",
   "reviews": [
@@ -424,22 +451,22 @@
   "place_customers_visit": true,
   "has_storefront": true,
   "alts": {
-    "hero": "Auto repair work in Clayton",
-    "card_about": "42 Collision Center crew and job photo",
-    "card_services": "Car repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "42 Collision Center at work",
-    "contact": "42 Collision Center",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260902035832",
+  "asset_version": "harv20260903175252",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\42collisioncenterclaytonnc\\HARVEST.json",
-    "at": "2026-09-02T03:58:32.051Z",
+    "at": "2026-09-03T17:52:52.500Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\42collisioncenterclaytonnc\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -467,6 +494,18 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Dent and body work",
+        "Paint and refinishing",
+        "Insurance claim repairs"
+      ]
+    }
+  ],
   "photo_count": 6,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,

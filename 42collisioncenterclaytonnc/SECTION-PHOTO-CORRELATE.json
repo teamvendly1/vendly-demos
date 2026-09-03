@@ -1,22 +1,11 @@
 {
-  "at": "2026-09-02T04:00:06.310Z",
+  "at": "2026-09-03T17:55:32.288Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
       "file": "photo-about.jpg",
-      "source": "stock-library",
-      "sha256": "7e09feee4420114a31cb224796d6c8257e323e9b17b260e753358e5d734186cc",
-      "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify",
-        "unflattering_subject:about_slot_invented_alt"
-      ],
-      "service": "crew shop jobsite",
-      "score_alt": "brake rotor closeup workshop"
-    },
-    {
-      "file": "photo-card-about.jpg",
       "source": "harvest-fallback",
       "sha256": "ed777bd08b712eb52fd94cf63d18458e266e0e4405948b7f2bc84567c9c194f3",
       "reasons": [
@@ -26,6 +15,17 @@
       "service": "crew shop jobsite",
       "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\42collisioncenterclaytonnc\\assets\\google\\google-ed777bd08b712eb5.jpg",
       "score_alt": ""
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "source": "stock-library",
+      "sha256": "46bfacff6b78b9e395b22f5add90254fa0de6c9a9e8fc8ee07cde65c9561911e",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "score_alt": "Mechanic working on a car"
     },
     {
       "file": "photo-card-photos.jpg",
@@ -51,21 +51,31 @@
     },
     {
       "file": "photo-card-services.jpg",
+      "source": "stock-library",
+      "sha256": "87a743a827e24e507cbce3fdf55be9d397434e7d960c324282e47fc0d61c2226",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": "trade work",
+      "score_alt": "Photograph of wrenches near a yellow screwdriver"
+    },
+    {
+      "file": "photo-contact.jpg",
       "source": "harvest-fallback",
       "sha256": "e5848a05a7bdade773e79fda99cd242f11de3c7cb874bdabff5a2a66ab6231ce",
       "reasons": [
-        "off_section_relevance:slot_invented_alt_no_verify"
+        "cross_demo_dupe:a1automotiveservices/photo-hero.jpg"
       ],
       "service": "trade work",
       "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\42collisioncenterclaytonnc\\assets\\google\\google-e5848a05a7bdade7.jpg",
       "score_alt": ""
     },
     {
-      "file": "photo-contact.jpg",
+      "file": "photo-ctaband.jpg",
       "source": "harvest-fallback",
       "sha256": "0ed1b95a55dfc03afefc478fd142ca05adac1cc3631e6d72e46c555d107ab27c",
       "reasons": [
-        "cross_demo_dupe:a1mufflerservicecenterhickorync/photo-about.jpg"
+        "cross_demo_dupe:meandeansautomotive/photo-card-about.jpg"
       ],
       "service": "trade work",
       "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\42collisioncenterclaytonnc\\assets\\google\\google-0ed1b95a55dfc03a.jpg",
@@ -84,6 +94,12 @@
     }
   ],
   "kept": [
+    {
+      "file": "photo-photos-cta.jpg",
+      "sha256": "1884060207e4d1619f3998b59bdc43a1f3f7416a3ceab8af082c4dda23636cb2",
+      "bytes": 155670,
+      "alt": "brake rotor closeup workshop"
+    },
     {
       "file": "photo-gallery-2.jpg",
       "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
@@ -173,6 +189,36 @@
       "reasons": [
         "off_section_relevance:slot_invented_alt_no_verify",
         "unflattering_subject:about_slot_invented_alt"
+      ]
+    },
+    {
+      "file": "photo-service-1.jpg",
+      "sha256": "b843a7242120e320226ebb9bcac39e4186109f7db970c5f208b6dc108a9e4e68",
+      "bytes": 107888,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:blackstireautoservicesanfordnc/photo-card-about.jpg"
+      ]
+    },
+    {
+      "file": "photo-service-2.jpg",
+      "sha256": "46bfacff6b78b9e395b22f5add90254fa0de6c9a9e8fc8ee07cde65c9561911e",
+      "bytes": 147448,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:bucksautoservicesclaytonnc/photo-card-about.jpg"
+      ]
+    },
+    {
+      "file": "photo-service-3.jpg",
+      "sha256": "5ad47af7a3330867fa2fc420029767376e111364d9ddd130f028b156acb65d36",
+      "bytes": 322263,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "cross_demo_dupe:integrityautomotivewilkesborowilkesnc/photo-services-hero.jpg"
       ]
     }
   ],
@@ -279,7 +325,10 @@
     "correlate_restore_no_stock:photo-gallery-7.jpg",
     "correlate_restore_no_stock:photo-gallery-8.jpg",
     "correlate_restore_no_stock:photo-gallery-9.jpg",
-    "correlate_restore_no_stock:photo-hero.jpg"
+    "correlate_restore_no_stock:photo-hero.jpg",
+    "correlate_restore_no_stock:photo-service-1.jpg",
+    "correlate_restore_no_stock:photo-service-2.jpg",
+    "correlate_restore_no_stock:photo-service-3.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

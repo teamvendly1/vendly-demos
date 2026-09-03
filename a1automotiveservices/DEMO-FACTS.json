@@ -49,8 +49,8 @@
   "form_placeholder": "",
   "footer_blurb": "A-1 Automotive & Services serving King.",
   "about_h2": "About A-1 Automotive & Services",
-  "about_p1": "Our work covers auto repair.",
-  "about_p2": "5 customers have left us a review, averaging 4.8 out of 5. We work out of King and the towns around it.",
+  "about_p1": "Our work covers oil changes and routine maintenance, transmission and drivetrain, and state inspections for drivers who need it done right.",
+  "about_p2": "We work out of King and the towns around it.",
   "area_h2": "The towns around King, too",
   "area_lede": "",
   "svc_hero_h1": "The auto repair work we take on",
@@ -58,10 +58,43 @@
   "svc_list_h2": "auto repair jobs we take on",
   "services": [
     {
-      "title": "Auto repair",
-      "body": "Vehicles are diagnosed and repaired at the actual fault before anything gets replaced.",
+      "title": "Oil changes and routine maintenance",
+      "body": "Oil, filters and fluids are done to the schedule the manufacturer set, with what we found written on the ticket.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Derrick has done both manor and major repairs/maintenance on my cars.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "Transmission and drivetrain",
+      "body": "Shifting problems are diagnosed on the road and on the lift before the case is opened, and rebuilt units go back with fresh fluid and seals.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Reasonable prices,they replaced my transmission in a very timely manner.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
+    },
+    {
+      "title": "State inspections",
+      "body": "The vehicle is checked point by point against the state list, and what fails is explained before it is fixed.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "They preformed an NC safety inspection.",
+        "reviews": 1,
+        "names_service": true,
+        "also": ""
+      }
     }
   ],
   "photos_h2": "Auto repair work near King",
@@ -114,22 +147,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Auto repair work in King",
-    "card_about": "A-1 Automotive & Services crew and job photo",
-    "card_services": "Auto repair photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Auto repair job photo",
-    "about": "A-1 Automotive & Services at work",
-    "contact": "A-1 Automotive & Services",
-    "services_hero": "Auto repair services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901171947",
+  "asset_version": "harv20260903193136",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\a1automotiveservices\\HARVEST.json",
-    "at": "2026-09-01T17:19:47.729Z",
+    "at": "2026-09-03T19:31:36.961Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\a1automotiveservices\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -155,6 +188,18 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Oil changes and routine maintenance",
+        "Transmission and drivetrain",
+        "State inspections"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
