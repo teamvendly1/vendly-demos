@@ -80,7 +80,7 @@ background:
   fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
 */
 @media(max-width:900px){
-  .hero-inner{padding-top:10px;padding-bottom:10px}
+  .hero-inner{padding-top:6px;padding-bottom:6px}
   .hero .eyebrow{margin-bottom:6px}
   /*
     TYPE SCALE IS THE WHOLE LOOK (Lowcountry standard section 4, Jacob 2026-08-15). Measured on the
@@ -91,9 +91,9 @@ background:
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
   */
-  .hero h1{margin:0 0 10px;font-size:clamp(38px,12vw,60px);line-height:1.02;max-width:none;text-wrap:balance}
-  .hero .lede{margin:0 0 14px;font-size:16px;line-height:1.45;max-width:36ch}
-  .hero .cta{margin-bottom:8px;gap:8px}
+  .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
+  .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
+  .hero .cta{margin-bottom:6px;gap:6px}
   .hero-rtb{margin:2px 0 6px}
   .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:5px 10px;padding-bottom:0;margin:0}
   .hero .tchip{font-size:12px;padding:1px 0}

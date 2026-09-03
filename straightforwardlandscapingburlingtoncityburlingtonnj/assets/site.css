@@ -104,7 +104,7 @@ background:
   fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
 */
 @media(max-width:900px){
-  .hero-inner{padding-top:10px;padding-bottom:10px}
+  .hero-inner{padding-top:6px;padding-bottom:6px}
   .hero .eyebrow{margin-bottom:6px}
   /*
     TYPE SCALE IS THE WHOLE LOOK (Lowcountry standard section 4, Jacob 2026-08-15). Measured on the
@@ -115,9 +115,27 @@ background:
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
   */
-  .hero h1{margin:0 0 10px;font-size:clamp(38px,12vw,60px);line-height:1.02;max-width:none;text-wrap:balance}
-  .hero .lede{margin:0 0 14px;font-size:16px;line-height:1.45;max-width:36ch}
-  .hero .cta{margin-bottom:8px;gap:8px}
+  /*
+    HERO OVERLAP FIX (Jacob Pixel catch 2026-09-03): classaautobodyhackensackbergennj,
+    bluegrasslawncarellccliftonpassaicnj and straightforwardlandscapingburlingtoncityburlingtonnj
+    all shipped with the h1 (or the hero CTA row, when the h1 wraps 4-5 lines instead of 3) sliced
+    by the fixed .mobile-callbar - "HERO GAP FIX2" above correctly killed the old bar-height PADDING
+    (that only added empty space, it never moved content up), but nothing then bounded how TALL the
+    header+hero content block could get on a long trade+city headline. A long business/city name at
+    12vw wraps to 4-5 lines and pushes the primary CTA button (or the second "See our work" button)
+    straight under the sticky bar on initial load - confirmed reproducible at 375x812 (narrower
+    than the Pixel's own ~915px effective height) on straightforwardlandscaping's real 5-line
+    headline, and classaautobody's 3-line headline was already sitting within a few px of the same
+    edge before this change. Fix shrinks the vertical footprint of the whole above-the-fold block
+    (hero-inner padding, h1 clamp, lede, cta gap) by roughly 20% - proven live via CSS injection on
+    both the defect page (button + trust badge now fully clear of the bar) and a known-good short
+    headline (classaautobody: still large/bold, now with comfortable clearance instead of sitting on
+    the edge). Never touch bar-adjacent PADDING again for this - it does not move content, it only
+    adds dead space; the only real lever is the height of what renders ABOVE the CTA.
+  */
+  .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
+  .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
+  .hero .cta{margin-bottom:6px;gap:6px}
   .hero-rtb{margin:2px 0 6px}
   .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:5px 10px;padding-bottom:0;margin:0}
   .hero .tchip{font-size:12px;padding:1px 0}

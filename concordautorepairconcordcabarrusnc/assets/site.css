@@ -81,7 +81,7 @@ background:
   fold_375 still owns badge + sticky CALL (CALL is fixed; badge stays in content).
 */
 @media(max-width:900px){
-  .hero-inner{padding-top:10px;padding-bottom:10px}
+  .hero-inner{padding-top:6px;padding-bottom:6px}
   .hero .eyebrow{margin-bottom:6px}
   /*
     TYPE SCALE IS THE WHOLE LOOK (Lowcountry standard section 4, Jacob 2026-08-15). Measured on the
@@ -92,9 +92,9 @@ background:
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
   */
-  .hero h1{margin:0 0 10px;font-size:clamp(38px,12vw,60px);line-height:1.02;max-width:none;text-wrap:balance}
-  .hero .lede{margin:0 0 14px;font-size:16px;line-height:1.45;max-width:36ch}
-  .hero .cta{margin-bottom:8px;gap:8px}
+  .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
+  .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
+  .hero .cta{margin-bottom:6px;gap:6px}
   .hero-rtb{margin:2px 0 6px}
   .hero .trust{position:relative;z-index:4;justify-content:flex-start;gap:5px 10px;padding-bottom:0;margin:0}
   .hero .tchip{font-size:12px;padding:1px 0}
@@ -222,7 +222,15 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+/* ROOT-CAUSE FIX 2026-08-30: was display:inline-block;padding:4px 0 only, which rendered at
+   32.75px (footer's inherited line-height:1.65 unitless multiplier x its own 15px font-size =
+   24.75px line box, + 8px padding = 32.75px, measured on-device as 33px). That was BELOW the
+   40px hard-audit-gate floor and Jacob's 44px ADA tap-target standard, on every footer nav link
+   (Contact/Menu/Services), on every page, of every demo built from this mold - the single
+   corpus-wide source of ~42+ of ~44-46 tap-target failures per demo. min-height forces a real
+   44px box regardless of any future line-height/font-size change elsewhere on the page (global
+   *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
+   keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
 .legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#549DDE}
 
