@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Prince 3C Towing serving Goldsboro.",
   "about_h2": "About Prince 3C Towing",
-  "about_p1": "71 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers motorcycle transport, car and light truck transport, and night and out of hours calls for drivers who need it done right.",
   "about_p2": "We work out of Goldsboro and the towns around it.",
   "area_h2": "Serving Goldsboro and the towns nearby",
   "area_lede": "",
@@ -58,10 +58,43 @@
   "svc_list_h2": "The towing work we do",
   "services": [
     {
-      "title": "Towing",
-      "body": "Vehicles and equipment are secured and moved the way the load actually calls for.",
+      "title": "Motorcycle transport",
+      "body": "Bikes go on the deck with soft ties and a wheel chock so nothing is clamped to a frame or a fork that was never meant to take it.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Needed my motorcycle towed, he was quick to arrive, friendly, great pricing, very thorough with strapping it down and ve",
+        "reviews": 3,
+        "names_service": true,
+        "also": "I had a motorcycle towed from Goldsboro to Clayton and he had the best rates by far."
+      }
+    },
+    {
+      "title": "Car and light truck transport",
+      "body": "Cars, pickups and vans ride flat on the deck and are chained at the points the manufacturer put there for it.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "Excellent customer service, Honest, Respectful, Very helpful, with a sense of responsibility making sure my safety was h",
+        "reviews": 18,
+        "names_service": false,
+        "also": "He was here to tow the car with no problem great price understandable."
+      }
+    },
+    {
+      "title": "Night and out of hours calls",
+      "body": "Breakdowns do not keep office hours, and a good part of this work happens in the dark.",
+      "slot": "",
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "I needed a motorcycle towed one night, last minute and he came quickly to the rescue!",
+        "reviews": 4,
+        "names_service": false,
+        "also": "I had a last-minute flat last night and contacted Prince 3C Towing, and shortly after arriving, he jumped on the situati"
+      }
     }
   ],
   "photos_h2": "Jobs we have finished lately",
@@ -576,22 +609,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Towing work in Goldsboro",
-    "card_about": "Prince 3C Towing crew and job photo",
-    "card_services": "Towing photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Towing job photo",
-    "about": "Prince 3C Towing at work",
-    "contact": "Prince 3C Towing",
-    "services_hero": "Towing services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901085917",
+  "asset_version": "harv20260903031555",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowing\\HARVEST.json",
-    "at": "2026-09-01T08:59:17.909Z",
+    "at": "2026-09-03T03:15:55.290Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\prince3ctowing\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -617,6 +650,18 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Motorcycle transport",
+        "Car and light truck transport",
+        "Night and out of hours calls"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
