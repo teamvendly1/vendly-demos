@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-02T18:45:00.844Z",
+  "at": "2026-09-03T23:04:46.975Z",
   "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "landscaping",
@@ -16,43 +16,43 @@
     },
     {
       "file": "photo-ctaband.jpg",
-      "source": "Pexels",
-      "sha256": "21a038743014ea5c7881f6ba958221644f4755d8c0583cfe532ee72f4f7e479d",
+      "source": "stock-library",
+      "sha256": "b41569bd84a181ef4fe5a2462b8b6413b4a71823e612538c066f31dbfa21aedb",
       "reasons": [
         "off_section_relevance:lifestyle_decor:chair"
       ],
       "service": "trade work",
-      "score_alt": "A garden hose sprays water onto a lush green lawn on a sunny day."
+      "score_alt": "Springtime rural landscape with blossoming tree"
     },
     {
       "file": "photo-service-1.jpg",
       "source": "Pexels",
-      "sha256": "7721c580d0a73c578df594574cde38e340b43362f4ffe9727a90161df49ee56a",
+      "sha256": "11c277bab338658855ebbd9813f534ad21b731c0e693a6cbbb9e2f50928c5d0f",
       "reasons": [
         "off_section_relevance:section_need_miss:Lawn care and mowing"
       ],
       "service": "Lawn care and mowing",
-      "score_alt": "Young men working together on lawn maintenance with a mower in a sunny garden setting."
+      "score_alt": "sprinkler head watering grass"
     },
     {
-      "file": "photo-service-5.jpg",
-      "source": "stock-library",
-      "sha256": "b41569bd84a181ef4fe5a2462b8b6413b4a71823e612538c066f31dbfa21aedb",
+      "file": "photo-service-4.jpg",
+      "source": "Pexels",
+      "sha256": "53a934a986f390fd57acf2d0be6a225faa2e6ab690a74f8abbe36d479de0e820",
       "reasons": [
-        "off_section_relevance:section_need_miss:Tree and shrub trimming"
+        "off_section_relevance:section_need_miss:Sod, seeding and grading"
       ],
-      "service": "Tree and shrub trimming",
-      "score_alt": "Springtime rural landscape with blossoming tree"
+      "service": "Sod, seeding and grading",
+      "score_alt": "landscape rake leveling dirt yard"
     },
     {
       "file": "photo-services-hero.jpg",
-      "source": "Pexels",
-      "sha256": "11c277bab338658855ebbd9813f534ad21b731c0e693a6cbbb9e2f50928c5d0f",
+      "source": "stock-library",
+      "sha256": "05f5f02addd7985a96ae549d280d8d361283ee51c2aeac28cee431490b892c03",
       "reasons": [
         "off_section_relevance:trade_require_miss:landscape"
       ],
       "service": "trade work",
-      "score_alt": "sprinkler head watering grass"
+      "score_alt": "Fresh green cabbage in a garden bed"
     }
   ],
   "kept": [
@@ -183,13 +183,13 @@
       "alt": "Stone-block edged bed of fresh topsoil and small shrubs along a white house corn"
     },
     {
-      "file": "photo-service-4.jpg",
-      "sha256": "1cbe61d5bf931fe4d5bd708d982e77a3ec173db1680c72028b8f78fd9d52c6c8",
-      "bytes": 332284,
-      "alt": "Back lawn bordered by a chain-link fence with a red maple and fresh mulch beds along it.",
+      "file": "photo-service-5.jpg",
+      "sha256": "653a0c543d4c8063b702a4eb2dd284e1bef23ba9aef52961ce2e427e2591bccc",
+      "bytes": 328620,
+      "alt": "Above-ground pool with a fresh mulch ring and a white fence behind it in a back yard.",
       "restored": true,
       "reasons": [
-        "off_section_relevance:section_need_miss:Sod, seeding and grading"
+        "off_section_relevance:section_need_miss:Tree and shrub trimming"
       ]
     }
   ],
@@ -288,7 +288,7 @@
     }
   ],
   "skipped": [
-    "correlate_restore_no_stock:photo-service-4.jpg"
+    "correlate_restore_no_stock:photo-service-5.jpg"
   ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }
