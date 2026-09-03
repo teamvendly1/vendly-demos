@@ -598,5 +598,5 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
 /* HEADER MARK PLATE - ghost 97.9% on #334918 -> 19.6% on #14140F.
    Written by lib/mark-readability.js chooseMarkPlate(). Scoped to .logo so nav, menu sheet,
    toggle pill and .bizmeta contrast are untouched. Remove this block only by fixing the mark. */
-header.site .logo{background:#14140F;padding:10px 16px;border-radius:12px;box-shadow:none;box-sizing:border-box}
+header.site .logo{background:transparent;padding:10px 16px;border-radius:12px;box-shadow:none;box-sizing:border-box}
 header.site .logo-chip{background:transparent}
