@@ -9,7 +9,7 @@ html{scroll-padding-bottom:112px}
   --paper:#FFFFFF;
   --mist:#F4F6F8;
   --ink:#12171C;
-  --muted:#8499AE;
+  --muted:#5C738B;
   --brand:#26303B;
   --line:#D4DBE3;
   --radius:16px;
@@ -114,6 +114,24 @@ background:
 
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
+  */
+  /*
+    HERO OVERLAP FIX (Jacob Pixel catch 2026-09-03): classaautobodyhackensackbergennj,
+    bluegrasslawncarellccliftonpassaicnj and straightforwardlandscapingburlingtoncityburlingtonnj
+    all shipped with the h1 (or the hero CTA row, when the h1 wraps 4-5 lines instead of 3) sliced
+    by the fixed .mobile-callbar - "HERO GAP FIX2" above correctly killed the old bar-height PADDING
+    (that only added empty space, it never moved content up), but nothing then bounded how TALL the
+    header+hero content block could get on a long trade+city headline. A long business/city name at
+    12vw wraps to 4-5 lines and pushes the primary CTA button (or the second "See our work" button)
+    straight under the sticky bar on initial load - confirmed reproducible at 375x812 (narrower
+    than the Pixel's own ~915px effective height) on straightforwardlandscaping's real 5-line
+    headline, and classaautobody's 3-line headline was already sitting within a few px of the same
+    edge before this change. Fix shrinks the vertical footprint of the whole above-the-fold block
+    (hero-inner padding, h1 clamp, lede, cta gap) by roughly 20% - proven live via CSS injection on
+    both the defect page (button + trust badge now fully clear of the bar) and a known-good short
+    headline (classaautobody: still large/bold, now with comfortable clearance instead of sitting on
+    the edge). Never touch bar-adjacent PADDING again for this - it does not move content, it only
+    adds dead space; the only real lever is the height of what renders ABOVE the CTA.
   */
   .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
   .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
@@ -255,7 +273,7 @@ footer li{margin-bottom:10px}
    *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
    keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8499AE}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#5C738B}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -452,7 +470,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
 .ctaband p{color:#DAE0E7;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8499AE;margin-top:14px;margin-bottom:0}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#5C738B;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
