@@ -2,7 +2,7 @@
   "schema": "vendly.autodemo.palette/1",
   "slug": "arturoautorepairllcdunnharnettnc",
   "mold": "_template-skipper-blank",
-  "brand_input": "#180001",
+  "brand_input": "#123A5E",
   "palette": {
     "BRAND": "#123A5E",
     "PRIMARY": "#103251",
@@ -18,7 +18,7 @@
     "TINT_3": "#CCE1F5",
     "TINT_4": "#D0E4F6",
     "LINE_2": "#A9CEEF",
-    "MUTED_BRAND": "#549DDE",
+    "MUTED_BRAND": "#2474BA",
     "MIST": "#F0F6FC",
     "LINE": "#C3DDF4",
     "PRIMARY_RGB": "16,50,81",
@@ -49,9 +49,24 @@
       "pair": "menu ink on white",
       "ratio": 17.96,
       "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.81,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.9,
+      "pass": true
     }
   ],
   "notes": [
-    "brand colour rejected (near_black(l=0.047)), fell back to trade-family or neutral #123A5E"
+    "contrast repair applied: muted body copy on the mist band = 2.66:1 (needs 4.5)"
   ]
 }
