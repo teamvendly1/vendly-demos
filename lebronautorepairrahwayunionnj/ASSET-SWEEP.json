@@ -1,21 +1,31 @@
 {
-  "schema": "vendly.autodemo.asset-sweep/1",
-  "at": "2026-08-20T22:19:19.119Z",
+  "schema": "vendly.autodemo.asset-sweep/2",
+  "at": "2026-09-04T03:49:48.534Z",
   "slug": "lebronautorepairrahwayunionnj",
-  "removed_count": 20,
+  "removed_count": 17,
   "removed_sample": [
-    "logo-keyed.png",
-    "manual-01.jpg",
-    "manual-02.jpg",
-    "manual-03.jpg",
-    "manual-04.jpg",
-    "manual-05.jpg",
-    "manual-06.jpg",
-    "manual-07.jpg",
-    "manual-08.jpg",
-    "manual-09.jpg",
-    "manual-10.jpg",
-    "manual-11.jpg"
+    "fb-01.jpg",
+    "fb-02.jpg",
+    "fb-03.jpg",
+    "fb-04.jpg",
+    "fb-05.jpg",
+    "fb-06.jpg",
+    "fb-07.jpg",
+    "fb-08.jpg",
+    "fb-09.jpg",
+    "photo-ba-after.jpg",
+    "photo-ba-before.jpg",
+    "photo-family.jpg"
   ],
-  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise"
+  "why": "unreferenced by any emitted page, stylesheet or script; rejects and stale stage files ship otherwise",
+  "published_dir_read": "C:\\Users\\jacob\\vendly-code\\vendly-demos\\lebronautorepairrahwayunionnj",
+  "published_ref_count": 18,
+  "retained_published_count": 4,
+  "retained_published_sample": [
+    "photo-gallery-1.jpg",
+    "photo-gallery-2.jpg",
+    "photo-gallery-3.jpg",
+    "photo-gallery-4.jpg"
+  ],
+  "retained_why": "still referenced by the currently published page; a thinner rebuild must not blank a live demo"
 }

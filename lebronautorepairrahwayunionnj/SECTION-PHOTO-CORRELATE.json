@@ -1,51 +1,273 @@
 {
-  "at": "2026-08-20T22:19:17.859Z",
+  "at": "2026-09-04T03:47:43.340Z",
   "ok": true,
-  "schema": "vendly.autodemo.section-photo-correlate/1",
+  "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
-  "replaced": [],
-  "kept": [
+  "replaced": [
     {
       "file": "photo-about.jpg",
-      "sha256": "849349b5120b24dd53f75c0c7afbf6c904548d4dda03847815d6463da9a0bf0c",
-      "bytes": 501835
+      "source": "harvest-fallback",
+      "sha256": "6ec20bacd23304a38f5efab139d25763eedd9bb7441a5ca3b72ec6000dd384c6",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\lebronautorepairrahwayunionnj\\fb-photos\\fb-02.jpg",
+      "score_alt": ""
     },
     {
       "file": "photo-card-about.jpg",
-      "sha256": "13bd8eb5e5868ac4046ebec8cd9be7dd87f5c4d1369c41051720bc118d0e4472",
-      "bytes": 519302
+      "source": "harvest-fallback",
+      "sha256": "07588a12acaff866de0d3003abcec4eb866a6775a4d40f0ea882a35550cd93cb",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": "crew shop jobsite",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\lebronautorepairrahwayunionnj\\fb-photos\\fb-04.jpg",
+      "score_alt": ""
     },
     {
       "file": "photo-card-photos.jpg",
-      "sha256": "70d210bd385f046ccf0498aa5b3964ed8d66298b36f320011b513def525a6914",
-      "bytes": 448254
+      "source": "harvest-fallback",
+      "sha256": "24775a7c52459db607c5f270fe652df1a18db71aeaa7aa20e562466a5728996e",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\lebronautorepairrahwayunionnj\\fb-photos\\fb-05.jpg",
+      "score_alt": ""
     },
     {
       "file": "photo-card-reviews.jpg",
-      "sha256": "519a22a9fb3a37b4317439336a259679b4e3b831b7d760863476c7199b8e99bb",
-      "bytes": 480157
+      "source": "harvest-fallback",
+      "sha256": "db331e541db06c68ce80d5f059824e79485c075a102561fa47e6ec0e8ae44ab4",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\lebronautorepairrahwayunionnj\\fb-photos\\fb-03.jpg",
+      "score_alt": ""
     },
     {
       "file": "photo-card-services.jpg",
-      "sha256": "bb8f9a1d1523f1e4a7018866d6507a8a47691c364d58b1290284a6e9034d68b8",
-      "bytes": 308855
+      "source": "harvest-fallback",
+      "sha256": "ec4f220b015595478edd64baff0535138246c05e6c8a1b57d3fa57d757acab90",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": "trade work",
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\lebronautorepairrahwayunionnj\\fb-photos\\fb-08.jpg",
+      "score_alt": ""
     },
     {
-      "file": "photo-ctaband.jpg",
-      "sha256": "da983d6ed8e727bc5a2d865a7d826abfc557a45663a5ed248cffd7fdf63b0166",
-      "bytes": 360444
+      "file": "photo-gallery-1.jpg",
+      "source": "harvest-fallback",
+      "sha256": "08d1eec872bc594ff059b990529b11e96b59d17c62846f9bb78eaa8317513b55",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\lebronautorepairrahwayunionnj\\fb-photos\\fb-06.jpg",
+      "score_alt": ""
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "source": "stock-library",
+      "sha256": "7ad1ce7b1f0b8ad70a8dc51a1b21bc81ac63b63a2776080bbaec66f469f524d5",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "score_alt": "Auto mechanical parts for repair"
     },
     {
       "file": "photo-hero.jpg",
-      "sha256": "3995ea016278abb2207198adf0512e16bc1b5e64a398921621ff1d723c098340",
-      "bytes": 153773
+      "source": "stock-library",
+      "sha256": "21d5bf1e27911aa1356b89250970762a9ca00e5cfc93e9394253b0a7cb03cf62",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify",
+        "unflattering_subject:about_slot_invented_alt"
+      ],
+      "service": null,
+      "score_alt": "Man repairing the car"
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     },
     {
-      "file": "photo-quoteband.jpg",
-      "sha256": "459c9e7527c0e22a9ed81de1435cc873ceaf061c13d346213e4bac6fb4d6673e",
-      "bytes": 343564
+      "file": "photo-gallery-3.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
     }
   ],
   "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    },
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    },
+    {
+      "file": "photo-hero.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": false,
+        "score": -10,
+        "reason": "about_slot_invented_alt",
+        "strict": true
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-2.jpg",
+    "correlate_restore_no_stock:photo-gallery-3.jpg",
+    "correlate_restore_no_stock:photo-gallery-4.jpg",
+    "correlate_restore_no_stock:photo-gallery-5.jpg",
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg"
+  ],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

@@ -9,7 +9,7 @@ html{scroll-padding-bottom:112px}
   --paper:#FFFFFF;
   --mist:#F0F6FC;
   --ink:#071827;
-  --muted:#549DDE;
+  --muted:#2474BA;
   --brand:#103251;
   --line:#C3DDF4;
   --radius:16px;
@@ -41,6 +41,29 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
 .phone-strip a:hover{background:#0B253C}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+/*
+  NO-PHONE VARIANT (2026-08-31). The strip can now carry an email address instead of a phone
+  number. A phone is ~14 characters; measured across the 378 real phoneless businesses in the
+  email lane, addresses run to 46 (median 24, 48 rows over 30). At the strip's 22px Barlow
+  Condensed a 46-character address overruns 360px, and DEMO-SHIP-STANDARD forbids a page that
+  scrolls sideways.
+
+  Two layers, because the first one alone is not a guarantee:
+    - the generator sets an inline font-size computed from THIS address's actual length, so the
+      common case simply fits at full size and only long addresses shrink;
+    - these rules are the backstop that makes overflow impossible regardless of what the
+      generator computed - the line can never wrap (which would change --phone-strip-h and float
+      the sticky header mid-page, the exact defect Jacob caught on the Pixel 2026-08-17) and can
+      never push the page wider than the viewport.
+
+  Scoped to [data-contact-route="email"], so no existing phone demo can be affected by it -
+  none of them carry that attribute.
+*/
+.phone-strip[data-contact-route="email"] a,
+.phone-strip[data-contact-route="facebook"] a{
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  letter-spacing:.01em;text-transform:none
+}
 
 header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
 .logo{height:88px;width:auto;display:block}
@@ -91,6 +114,24 @@ background:
 
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
+  */
+  /*
+    HERO OVERLAP FIX (Jacob Pixel catch 2026-09-03): classaautobodyhackensackbergennj,
+    bluegrasslawncarellccliftonpassaicnj and straightforwardlandscapingburlingtoncityburlingtonnj
+    all shipped with the h1 (or the hero CTA row, when the h1 wraps 4-5 lines instead of 3) sliced
+    by the fixed .mobile-callbar - "HERO GAP FIX2" above correctly killed the old bar-height PADDING
+    (that only added empty space, it never moved content up), but nothing then bounded how TALL the
+    header+hero content block could get on a long trade+city headline. A long business/city name at
+    12vw wraps to 4-5 lines and pushes the primary CTA button (or the second "See our work" button)
+    straight under the sticky bar on initial load - confirmed reproducible at 375x812 (narrower
+    than the Pixel's own ~915px effective height) on straightforwardlandscaping's real 5-line
+    headline, and classaautobody's 3-line headline was already sitting within a few px of the same
+    edge before this change. Fix shrinks the vertical footprint of the whole above-the-fold block
+    (hero-inner padding, h1 clamp, lede, cta gap) by roughly 20% - proven live via CSS injection on
+    both the defect page (button + trust badge now fully clear of the bar) and a known-good short
+    headline (classaautobody: still large/bold, now with comfortable clearance instead of sitting on
+    the edge). Never touch bar-adjacent PADDING again for this - it does not move content, it only
+    adds dead space; the only real lever is the height of what renders ABOVE the CTA.
   */
   .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
   .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
@@ -222,9 +263,17 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+/* ROOT-CAUSE FIX 2026-08-30: was display:inline-block;padding:4px 0 only, which rendered at
+   32.75px (footer's inherited line-height:1.65 unitless multiplier x its own 15px font-size =
+   24.75px line box, + 8px padding = 32.75px, measured on-device as 33px). That was BELOW the
+   40px hard-audit-gate floor and Jacob's 44px ADA tap-target standard, on every footer nav link
+   (Contact/Menu/Services), on every page, of every demo built from this mold - the single
+   corpus-wide source of ~42+ of ~44-46 tap-target failures per demo. min-height forces a real
+   44px box regardless of any future line-height/font-size change elsewhere on the page (global
+   *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
+   keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#549DDE}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#2474BA}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -300,9 +349,9 @@ border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1p
 .rv-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
 .rv-stars-base svg{fill:#DADCE0}
 .rv-stars-fill svg{fill:#FBBC04}
-.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;max-height:9.5em;overflow-y:auto}
+.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:24;overflow:hidden}
 .home-reviews .rv-card{min-height:220px}
-.home-reviews .rv-body{color:#202124;display:block;min-height:4.5em}
+.home-reviews .rv-body{color:#202124;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;min-height:4.5em}
 .rv-src{display:block;margin-top:8px;color:#70757a;font:500 12.5px/1.4 Inter,sans-serif}
 .rvHonesty{max-width:64ch;margin:0 0 18px;font-size:.92rem;line-height:1.5;opacity:.88}
 @media(max-width:700px){.rv-card{flex-basis:86%;width:86%}}
@@ -421,7 +470,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
 .ctaband p{color:#CCE1F5;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#549DDE;margin-top:14px;margin-bottom:0}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#2474BA;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
@@ -561,6 +610,34 @@ header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E1EEF9 !
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
 .v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
 .v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+/* ---------------------------------------------------------------------------------------------
+   CARD PHOTO CROP FIX - 2026-08-24. Measured: 419 of 419 demos mis-cropped, ZERO clean.
+
+   .card-shot sets aspect-ratio:16/10 on the WRAPPER and expects the photo to fill it. But the
+   <img> is a GRANDCHILD, not a child: lightboxImg() in generate-from-blank-mold.js wraps every
+   photo in <button class="v-lb-btn">. TWO separate rules broke the crop and BOTH had to be
+   fixed - the one-line remedy that was filed only addressed the first and would have left the
+   defect live:
+
+     1. .v-lb-btn has AUTO height, so .card-shot img{height:100%} resolved against an indefinite
+        height. A percentage against an indefinite height is ignored, so object-fit:cover never
+        engaged and the photo rendered at its own intrinsic ratio.
+     2. .v-lb-btn img{height:auto} (line above) TIES .card-shot img{height:100%} on specificity -
+        (0,1,1) each, class + element - and wins on source order because it comes later. So even
+        with a definite button height the image would still have been height:auto.
+
+   Symptoms this produced: ratio above 1.6 letterboxed into a dark #0a1622 band under the photo;
+   ratio below 1.6 silently TOP-CROPPED; 228 demos had a portrait photo in a 16:10 box, worst
+   case 0.41, showing about a quarter of the frame.
+
+   Scoped to .card-shot deliberately. .gallery img and .shot img carry aspect-ratio on the IMAGE
+   itself, so their height:auto resolves to a definite box and they crop correctly today - they
+   are not broken and must not be "fixed".
+
+   VERIFY THIS ON THE RENDERED FRAME, NEVER HERE. Four spacing fixes were confirmed in this
+   stylesheet on 2026-08-12 and changed nothing on screen. */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
 .v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
 background:rgba(10,10,8,.92);touch-action:none}
 .v-lb-root.is-open{display:flex}
@@ -629,6 +706,9 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
 .contact-map iframe{border:0;width:100%;height:100%;display:block;pointer-events:auto}
 .contact-map-static-link{display:block;margin-top:10px;max-width:560px;border-radius:12px;overflow:hidden;line-height:0}
 .contact-map-static{display:block;width:100%;height:auto;max-width:560px;border-radius:12px}
+.contact-map-pin-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 14px;border-radius:10px;background:rgba(26,31,22,.06);color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}
+.contact-map-pin-link:hover{text-decoration:underline}
+.contact-map-pin-icon{color:var(--accent,#c0392b);flex-shrink:0}
 .demo-preview{background:#1c1c1e;color:#e8e6e3;font-size:11px;line-height:1.4;padding:6px 18px;text-align:center}
 .demo-preview a{color:#fff}
 
@@ -856,7 +936,5 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions{flex-direction:column;align-items:stretch}
   .lc-midcta-actions .btn{justify-content:center}
 }
-/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
-.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
-.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
-/* VENDLY-CARDCROP-FIX-20260824 END */
+
+
