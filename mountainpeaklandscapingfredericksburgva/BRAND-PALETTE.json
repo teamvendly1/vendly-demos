@@ -18,7 +18,7 @@
     "TINT_3": "#D6EBDB",
     "TINT_4": "#DAECDE",
     "LINE_2": "#BBDDC3",
-    "MUTED_BRAND": "#77BB87",
+    "MUTED_BRAND": "#407F4F",
     "MIST": "#F3F9F5",
     "LINE": "#CFE7D5",
     "PRIMARY_RGB": "32,65,40",
@@ -54,7 +54,19 @@
       "pair": "accent as kicker text on mist",
       "ratio": 6.32,
       "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.81,
+      "pass": true
     }
   ],
-  "notes": []
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.13:1 (needs 4.5)"
+  ]
 }

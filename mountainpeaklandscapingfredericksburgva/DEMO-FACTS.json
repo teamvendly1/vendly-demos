@@ -49,7 +49,7 @@
   "form_placeholder": "",
   "footer_blurb": "Mountain Peak Landscaping serving Fredericksburg.",
   "about_h2": "About Mountain Peak Landscaping",
-  "about_p1": "13 customers have left us a review, averaging 5 out of 5.",
+  "about_p1": "Our work covers lawn care and mowing for homes and businesses that need it done right.",
   "about_p2": "We work out of Fredericksburg and the towns around it.",
   "area_h2": "Where we take on landscaping work near Fredericksburg",
   "area_lede": "",
@@ -58,10 +58,17 @@
   "svc_list_h2": "What we handle: landscaping",
   "services": [
     {
-      "title": "Landscaping",
-      "body": "Beds, lawns and hardscape are kept up on a schedule, not just cleaned up once and left.",
+      "title": "Lawn care and mowing",
+      "body": "Lawns are cut, edged and cleaned up on a schedule so the yard never gets ahead of you.",
       "slot": "",
-      "alt": ""
+      "alt": "",
+      "evidence": {
+        "kind": "review",
+        "text": "From lawn care and landscaping to fast junk removal, everything was handled professionally and efficiently.",
+        "reviews": 2,
+        "names_service": true,
+        "also": "We hadn’t originally planned on having them mow, edge, and weed whack the yard as well, but we were so impressed with ho"
+      }
     }
   ],
   "photos_h2": "What we have been working on",
@@ -170,22 +177,22 @@
   "place_customers_visit": false,
   "has_storefront": false,
   "alts": {
-    "hero": "Landscaping work in Fredericksburg",
-    "card_about": "Mountain Peak Landscaping crew and job photo",
-    "card_services": "landscaping photo",
-    "card_reviews": "Customer review context photo",
-    "card_photos": "Recent job photo",
-    "ctaband": "Landscaping job photo",
-    "about": "Mountain Peak Landscaping at work",
-    "contact": "Mountain Peak Landscaping",
-    "services_hero": "Landscaping services"
+    "hero": "",
+    "card_about": "",
+    "card_services": "",
+    "card_reviews": "",
+    "card_photos": "",
+    "ctaband": "",
+    "about": "",
+    "contact": "",
+    "services_hero": ""
   },
   "send": "NO",
-  "asset_version": "harv20260901081944",
+  "asset_version": "harv20260904035509",
   "_mold_lane": {
     "built_from": "HARVEST.json",
     "harvest_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mountainpeaklandscapingfredericksburgva\\HARVEST.json",
-    "at": "2026-09-01T08:19:44.366Z",
+    "at": "2026-09-04T03:55:09.619Z",
     "zero_human_input": true,
     "facts_path": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\mountainpeaklandscapingfredericksburgva\\DEMO-FACTS.json",
     "wrote_facts_from_harvest": true,
@@ -211,6 +218,16 @@
     "url": "",
     "source_is_google": true
   },
+  "services_source": "their-evidence",
+  "_about_evidence": [
+    {
+      "sentence": "services",
+      "from": "facts.services (evidenced titles)",
+      "titles": [
+        "Lawn care and mowing"
+      ]
+    }
+  ],
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
