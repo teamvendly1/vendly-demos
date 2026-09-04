@@ -19,7 +19,7 @@
   "title_suffix": "",
   "meta_description": "Pioneer Plumbing serving Wadesboro - plumbing that shows up when you call.",
   "maps_url": "",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/pioneerplumbingnc/",
   "eyebrow": "Wadesboro",
   "h1_lead": "",
   "h1_emph": "Careful plumbing in Wadesboro, start to finish.",
@@ -242,5 +242,16 @@
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.072Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": "Pioneerplumbingnc@gmail.com",
+    "facebook_found": "https://www.facebook.com/pioneerplumbingnc/",
+    "confidence": "high",
+    "verify": "phone_exact_match (704) 641-0415",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

@@ -19,7 +19,7 @@
   "title_suffix": "",
   "meta_description": "Coastal Car Fix serving Murrells Inlet - auto repair that shows up when you call.",
   "maps_url": "",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/p/Coastal-Car-Fix-61570501256527/",
   "eyebrow": "Murrells Inlet",
   "h1_lead": "",
   "h1_emph": "Auto repair in Murrells Inlet that shows up when you call.",
@@ -1091,5 +1091,16 @@
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:43.949Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/p/Coastal-Car-Fix-61570501256527/",
+    "confidence": "high",
+    "verify": "phone_exact_match 843-492-6580, address 11750 Frontage Rd Murrells Inlet SC",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

@@ -19,7 +19,7 @@
   "title_suffix": "",
   "meta_description": "E.R. Well & Plumbing Services serving Dunn - plumbing that shows up when you call.",
   "maps_url": "",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/erplumbinghandymanllc/",
   "eyebrow": "Dunn",
   "h1_lead": "",
   "h1_emph": "Plumbing in Dunn from people who answer the phone.",
@@ -137,5 +137,16 @@
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.051Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/erplumbinghandymanllc/",
+    "confidence": "medium",
+    "verify": "phone_match (919) 701-7716 via BBB, business name variant (E.R. Universal Plumbing & Well Services) vs (E.R. Well & Plumbing), Benson NC not Dunn NC (adjacent town, same phone)",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

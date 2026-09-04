@@ -1,0 +1,11 @@
+{
+  "schema": "vendly.contact-recovery-sidecar/1",
+  "at": "2026-09-04T01:42:15.211Z",
+  "by": "claude-contact-enrich (subagent, 2026-09-03)",
+  "reason": "DEMO-FACTS.json does not exist for this demo (legacy pre-facts-schema build - assets+index.html only). This sidecar was NOT fabricated: every value below was extracted verbatim from the demo's own already-published index.html (tel:/mailto:/facebook.com links), never guessed or pattern-generated.",
+  "page_title": "Berlins for Women | Charleston",
+  "phone_from_html": "+18437235591",
+  "email_from_html": "customerservice@berlinsforwomen.com",
+  "facebook_from_html": null,
+  "caveat": "This is NOT a full DEMO-FACTS.json reconstruction - only contact fields were extracted. If this demo needs a full facts file, that is separate generator work, not this task."
+}

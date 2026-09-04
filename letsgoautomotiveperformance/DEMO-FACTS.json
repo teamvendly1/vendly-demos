@@ -18,7 +18,7 @@
   "title_suffix": "",
   "meta_description": "Let's Go Automotive & Performance serving Myrtle Beach - auto repair that shows up when you call.",
   "maps_url": "https://www.google.com/maps/place/Let's+Go+Automotive+%26+Performance/@33.6900111,-79.2963831,11z/data=!4m10!1m2!2m1!1sLet's+Go+Automotive+%26+Performance+Socastee+(Horry)!3m6!1s0x89003f2495f2796f:0x30a5dc4316787388!8m2!3d33.6900111!4d-79.007992!15sCjJMZXQncyBHbyBBdXRvbW90aXZlICYgUGVyZm9ybWFuY2UgU29jYXN0ZWUgKEhvcnJ5KVoyIjBsZXQncyBnbyBhdXRvbW90aXZlICYgcGVyZm9ybWFuY2Ugc29jYXN0ZWUgaG9ycnmSARBhdXRvX3JlcGFpcl9zaG9wmgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5TYkdSMU1HOW5SUkFC4AEA-gEECB4QQg!16s%2Fg%2F11h196s09f?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/LetsGoAutomotive/",
   "eyebrow": "Myrtle Beach",
   "h1_lead": "",
   "h1_emph": "Auto repair in Myrtle Beach, without the runaround.",
@@ -1145,5 +1145,16 @@
   "photo_count": 40,
   "contact_photo_tier_why": "harvest face file photo-family.jpg",
   "contact_photo_omit": false,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.065Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/LetsGoAutomotive/",
+    "confidence": "high",
+    "verify": "phone_exact_match (843) 306-4098, address 112 S Service Ct Myrtle Beach SC",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

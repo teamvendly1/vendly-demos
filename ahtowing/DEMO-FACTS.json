@@ -19,7 +19,7 @@
   "title_suffix": "",
   "meta_description": "A & H Towing serving Rocky Mount - towing that shows up when you call.",
   "maps_url": "https://www.google.com/maps/place/A+%26+H+TOWING/@35.935191,-77.8010975,17z/data=!3m1!4b1!4m6!3m5!1s0x89ae86c49a576797:0x3fc9895aa93cac43!8m2!3d35.935191!4d-77.8010975!16s%2Fg%2F11g9jmjrmv?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/p/AH-Towing-100075709764502/",
   "eyebrow": "Rocky Mount",
   "h1_lead": "",
   "h1_emph": "Towing in Rocky Mount, without the runaround.",
@@ -306,5 +306,16 @@
   "photo_count": 13,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:43.934Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/p/AH-Towing-100075709764502/",
+    "confidence": "medium",
+    "verify": "name_match_only (A&H Towing vs A & H Towing), city Rocky Mount NC matches, phone not independently confirmed in search snippet",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

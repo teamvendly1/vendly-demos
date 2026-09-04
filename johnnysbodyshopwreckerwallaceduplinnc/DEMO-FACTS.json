@@ -19,7 +19,7 @@
   "title_suffix": "",
   "meta_description": "Johnny's Body Shop & Wrecker serving Wallace - collision repair that shows up when you call.",
   "maps_url": "https://www.google.com/maps/place/Johnny's+Body+Shop+%26+Wrecker/@34.747883,-77.9970797,17z/data=!3m1!4b1!4m6!3m5!1s0x89abd6de2f90ff6d:0xa37eb3ee44b018cc!8m2!3d34.747883!4d-77.9970797!16s%2Fg%2F1tfkgfs4?hl=en&entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/people/Johnnys-Body-Shop/61583475549507/",
   "eyebrow": "Wallace",
   "h1_lead": "",
   "h1_emph": "Careful local service in Wallace, start to finish.",
@@ -197,5 +197,16 @@
   "photo_count": 9,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.062Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/people/Johnnys-Body-Shop/61583475549507/",
+    "confidence": "high",
+    "verify": "phone_exact_match (910) 285-3876, address 1102 N Norwood St Wallace NC",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

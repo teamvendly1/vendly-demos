@@ -19,7 +19,7 @@
   "title_suffix": "",
   "meta_description": "Parrish Tire & Automotive serving Dobson - auto repair that shows up when you call.",
   "maps_url": "",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/ParrishAutoTireDobson/",
   "eyebrow": "Dobson",
   "h1_lead": "",
   "h1_emph": "Careful auto repair in Dobson, start to finish.",
@@ -1045,5 +1045,16 @@
   "vendly_wave2_segment": "UNKNOWN",
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.066Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/ParrishAutoTireDobson/",
+    "confidence": "high",
+    "verify": "address_match 323 N Main St Dobson NC, family business since 1946, single candidate",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

@@ -18,7 +18,7 @@
   "title_suffix": "",
   "meta_description": "Parrish Towing and Hauling serving Kinston - towing that shows up when you call.",
   "maps_url": "https://www.google.com/maps/place/Parrish+Towing+and+Hauling/@35.2703109,-77.593865,17z/data=!3m1!4b1!4m6!3m5!1s0x89a94b0026faf92b:0xd146d612daea74fe!8m2!3d35.2703109!4d-77.593865!16s%2Fg%2F11vwjh4tdp?hl=en&entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/ParrishTowingHaulingLLC/",
   "eyebrow": "Kinston",
   "h1_lead": "",
   "h1_emph": "Towing in Kinston, done properly.",
@@ -327,5 +327,16 @@
   "photo_count": 38,
   "contact_photo_tier_why": "harvest face file photo-family.jpg",
   "contact_photo_omit": false,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.067Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/ParrishTowingHaulingLLC/",
+    "confidence": "high",
+    "verify": "phone_exact_match (252) 933-6115, address 1001 W. Vernon Ave Kinston NC",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

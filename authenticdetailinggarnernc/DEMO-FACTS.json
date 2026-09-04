@@ -18,7 +18,7 @@
   "title_suffix": "",
   "meta_description": "Authentic Detailing serving Garner - auto detailing that shows up when you call.",
   "maps_url": "",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/authenticdetailingnc/",
   "eyebrow": "Garner",
   "h1_lead": "",
   "h1_emph": "Car washing in Garner that shows up when you call.",
@@ -1207,5 +1207,16 @@
   "zero_harvest_photos": true,
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
   "contact_photo_omit": true,
-  "_contact_map_mode": "pin-link"
+  "_contact_map_mode": "pin-link",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:43.938Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/authenticdetailingnc/",
+    "confidence": "high",
+    "verify": "phone_exact_match 919-576-9322 = +19195769322, address 472 Cleveland Crossing Dr Garner NC",
+    "source": "WebSearch 2026-09-03",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }
