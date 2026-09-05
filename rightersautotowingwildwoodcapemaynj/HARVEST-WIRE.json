@@ -1,66 +1,38 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-04T02:47:58.742Z",
+ "at": "2026-09-05T10:02:00.336Z",
  "slug": "rightersautotowingwildwoodcapemaynj",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "fb-02.jpg",
-   "bytes": 94483,
+   "from": "google-5616b0329918ebb7.jpg",
+   "bytes": 373213,
    "letterbox_stripped": null,
-   "trade_score": 0.5,
+   "trade_score": 0,
    "reason": "hero_work_rank"
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "google-87be707e7bc2ad7f.jpg",
-   "bytes": 259325,
+   "from": "google-09b3b6582aabbbc7.jpg",
+   "bytes": 104696,
    "smart_crop": true,
-   "src": "google-87be707e7bc2ad7f.jpg",
+   "src": "google-09b3b6582aabbbc7.jpg",
    "letterbox_stripped": null,
    "src_wh": "1200x1600",
    "out_wh": "1000x625",
    "crop_axis": "y",
-   "crop_offset_pct": 13,
-   "detail_score": 40.944,
+   "crop_offset_pct": 43,
+   "detail_score": 21.135,
    "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "google-8ee06fb1a7d8e63e.jpg",
-   "bytes": 503016,
+   "from": "google-4ab52de3095c3b4b.jpg",
+   "bytes": 440928,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-card-services.jpg",
-   "from": "google-4ab52de3095c3b4b.jpg",
-   "bytes": 215325,
-   "smart_crop": true,
-   "src": "google-4ab52de3095c3b4b.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1200x1600",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 100,
-   "detail_score": 25.45,
-   "orientation": "portrait"
-  },
-  {
    "slot": "photo-card-reviews.jpg",
-   "from": "google-cf844e15a2ace7f1.jpg",
-   "bytes": 166323,
-   "smart_crop": true,
-   "src": "google-cf844e15a2ace7f1.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x1200",
-   "out_wh": "1000x625",
-   "crop_axis": "y",
-   "crop_offset_pct": 75,
-   "detail_score": 23.226,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
    "from": "google-48ce62bc7fbaf31f.jpg",
    "bytes": 156939,
    "smart_crop": true,
@@ -74,51 +46,29 @@
    "orientation": "portrait"
   },
   {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-87be707e7bc2ad7f.jpg",
+   "bytes": 259325,
+   "smart_crop": true,
+   "src": "google-87be707e7bc2ad7f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 13,
+   "detail_score": 40.944,
+   "orientation": "portrait"
+  },
+  {
    "slot": "photo-gallery-1.jpg",
-   "from": "google-97e7c9fc916f7f5b.jpg",
-   "bytes": 389727,
+   "from": "google-cf844e15a2ace7f1.jpg",
+   "bytes": 434844,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
    "from": "google-3a71f8f97b628f6c.jpg",
    "bytes": 357191,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "from": "google-08c3acdb8d9880eb.jpg",
-   "bytes": 355583,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-09b3b6582aabbbc7.jpg",
-   "bytes": 290196,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 177330,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-4.jpg",
-   "from": "google-a2e04fe34cce4995.jpg",
-   "bytes": 170740,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-5.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 163996,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-6.jpg",
-   "from": "google-52f654032be26000.jpg",
-   "bytes": 148418,
    "letterbox_stripped": null
   },
   {
@@ -130,28 +80,37 @@
   }
  ],
  "skipped": [
-  "classification read: 33 verdicts",
+  "classification read: 20 verdicts",
   "staged 21 harvest photos from fb-photos:9 + assets:12",
   "refused_by_class:fb-01.jpg:reject",
+  "refused_unlooked:fb-02.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:fb-03.jpg:reject",
   "refused_by_class:fb-04.jpg:reject",
   "refused_by_class:fb-05.jpg:reject",
   "refused_by_class:fb-06.jpg:reject",
   "refused_by_class:fb-07.jpg:reject",
-  "refused_by_class:google-5616b0329918ebb7.jpg:reject",
+  "refused_unlooked:fb-08.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:fb-09.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-08c3acdb8d9880eb.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-52f654032be26000.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-8ee06fb1a7d8e63e.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-97e7c9fc916f7f5b.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-a2e04fe34cce4995.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:google-87be707e7bc2ad7f.jpg:road_no_landscape",
-  "hero_cand_refuse:google-8ee06fb1a7d8e63e.jpg:road_no_landscape",
   "hero_cand_refuse:google-4ab52de3095c3b4b.jpg:road_no_landscape",
   "hero_cand_refuse:google-cf844e15a2ace7f1.jpg:road_no_landscape",
   "hero_cand_refuse:google-48ce62bc7fbaf31f.jpg:road_no_landscape",
-  "hero_cand_refuse:google-97e7c9fc916f7f5b.jpg:road_no_landscape",
+  "hero_cand_refuse:google-5616b0329918ebb7.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:google-3a71f8f97b628f6c.jpg:road_no_landscape",
-  "hero_cand_refuse:google-08c3acdb8d9880eb.jpg:road_no_landscape",
-  "hero_cand_refuse:google-09b3b6582aabbbc7.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:fb-08.jpg:road_no_landscape",
-  "hero_cand_refuse:google-a2e04fe34cce4995.jpg:blurry_low_contrast",
-  "hero_cand_refuse:fb-09.jpg:road_no_landscape",
-  "hero_cand_refuse:google-52f654032be26000.jpg:portrait_aspect_hero_refuse",
+  "hero_hold_crew_for_about:google-09b3b6582aabbbc7.jpg",
+  "photo-hero.jpg: no landscape candidate, fell back to a classified work photo (google-5616b0329918ebb7.jpg)",
+  "photo-card-services.jpg",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
   "photo-service-1.jpg",
   "photo-service-2.jpg",
   "photo-service-3.jpg",
@@ -162,6 +121,8 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
   "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
@@ -169,80 +130,17 @@
   "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 14,
- "refused_by_class": 7,
- "photo_candidates": 14,
- "altRefused": [
-  {
-   "slot": "photo-hero.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 1)"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 12)"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 8)"
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 4)"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 5)"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 11)"
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 10)"
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 6)"
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 7)"
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 9)"
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 2)"
-  },
-  {
-   "slot": "photo-gallery-4.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 14)"
-  },
-  {
-   "slot": "photo-gallery-5.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 3)"
-  },
-  {
-   "slot": "photo-gallery-6.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "Righter's Auto & Towing - technician at work on site (photo 13)"
-  }
- ],
+ "candidates": 7,
+ "refused_by_class": 14,
+ "photo_candidates": 7,
+ "altBySlot": {
+  "photo-hero.jpg": "The tyre rack stocked out three shelves deep along the wall",
+  "photo-card-about.jpg": "Stood at the truck with the name, the town and the number lettered down the door",
+  "photo-about.jpg": "The reception counter built out in reclaimed timber against the red wall",
+  "photo-card-reviews.jpg": "The waiting room with the seating round the table and the window onto the street",
+  "photo-card-photos.jpg": "A car finished and parked up outside ready for collection",
+  "photo-gallery-1.jpg": "The rollback stood outside with the name and the number down the door",
+  "photo-gallery-2.jpg": "The shop door with the welcome, the opening hours and the number on the glass"
+ },
  "dedupe_fixed": 5
 }

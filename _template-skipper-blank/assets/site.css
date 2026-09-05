@@ -547,6 +547,16 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
 .home-reviews{background:var(--mist);color:var(--ink);padding:clamp(40px,6vw,72px) 0}
 .home-reviews h2{color:var(--ink)}
+/* PHOTO-BAND HEADING MUST BEAT THE FLAT-BAND INK RULE. Jacob caught this on the Pixel 2026-09-05:
+   "what people are saying about the tree service in black letters up against a dark background...
+   impossible for people to read". The correct rule .pband h2{color:#fff} EXISTS at line ~450, but
+   .home-reviews h2{color:var(--ink)} above has IDENTICAL specificity (0,0,1,1) and comes later, so
+   it wins and the heading renders near-black over a photograph. Measured worst contrast 1.48:1
+   against a 4.5:1 requirement. This rule is (0,0,2,1) so it beats both, and it is scoped to
+   .home-reviews.pband so a FLAT-COLOUR reviews band correctly keeps its dark ink - fixing the
+   photo case must not break the non-photo case. Text-shadow matches the .pband .lede treatment
+   already in this file rather than inventing a new one. */
+.home-reviews.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .home-reviews .lede,.home-reviews .kicker{color:var(--muted)}
 .home-reviews .rv-card{background:#fff;color:var(--ink)}
 .home-trust{background:var(--mist);padding:clamp(36px,5vw,64px) 0}

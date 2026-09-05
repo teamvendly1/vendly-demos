@@ -18,7 +18,7 @@
   "title_suffix": "",
   "meta_description": "Oxendine & Son Roofing - roofing that shows up when you call.",
   "maps_url": "",
-  "facebook_url": "",
+  "facebook_url": "https://www.facebook.com/people/Oxendine-Son-Roofing/61586004455592/",
   "eyebrow": "",
   "h1_lead": "",
   "h1_emph": "Roofing work, done properly.",
@@ -154,5 +154,15 @@
     "source_is_google": true
   },
   "contact_photo_tier_why": "logo fallback retired 2026-08-17 - it printed the header mark a second time 150px below itself; the contact column now carries the lead form",
-  "contact_photo_omit": true
+  "contact_photo_omit": true,
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-05T16:21:58.875Z",
+    "by": "contact-gap-scan.js (tier-1b, phone-normalized disk join)",
+    "email_found": null,
+    "facebook_found": "https://www.facebook.com/people/Oxendine-Son-Roofing/61586004455592/",
+    "confidence": "high",
+    "verify": "phone_exact_match 3362922416 against NC.jsonl:facebook",
+    "source": "NC.jsonl:facebook"
+  }
 }

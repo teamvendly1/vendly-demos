@@ -1,0 +1,72 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "waynestreeservicebridgewatersomersetnj",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#4F463B",
+  "palette": {
+    "BRAND": "#4F463B",
+    "PRIMARY": "#373129",
+    "PRIMARY_DK": "#29241F",
+    "PRIMARY_MID": "#433C32",
+    "ACCENT": "#584E41",
+    "ACCENT_DK": "#3D362E",
+    "ACCENT_LT": "#7B6D5C",
+    "ON_DARK": "#DCD7D0",
+    "MENU_INK": "#1A1714",
+    "TINT_1": "#E9E6E2",
+    "TINT_2": "#F0EDEB",
+    "TINT_3": "#E5E1DC",
+    "TINT_4": "#E7E3DF",
+    "LINE_2": "#D3CDC5",
+    "MUTED_BRAND": "#7E6F5E",
+    "MIST": "#F7F6F5",
+    "LINE": "#E0DCD6",
+    "PRIMARY_RGB": "55,49,41",
+    "ACCENT_RGB": "88,78,65",
+    "SCRIM_RGB": "67,60,50",
+    "SCRIM2_RGB": "41,36,31",
+    "MENU_INK_RGB": "26,23,20",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 12.85,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.14,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.98,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.85,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.54,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.5,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.86,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.54:1 (needs 4.5)"
+  ]
+}

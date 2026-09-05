@@ -1,0 +1,73 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "performanceplusautomotivegreenwoodgreenwoodsc",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#3A0202",
+  "palette": {
+    "BRAND": "#3A0202",
+    "PRIMARY": "#5E0303",
+    "PRIMARY_DK": "#450202",
+    "PRIMARY_MID": "#710404",
+    "ACCENT": "#940505",
+    "ACCENT_DK": "#680404",
+    "ACCENT_LT": "#CF0707",
+    "ON_DARK": "#FCB0B0",
+    "MENU_INK": "#2C0202",
+    "TINT_1": "#FDCECE",
+    "TINT_2": "#FEDCDC",
+    "TINT_3": "#FDC4C4",
+    "TINT_4": "#FDC9C9",
+    "LINE_2": "#FC9C9C",
+    "MUTED_BRAND": "#DE0808",
+    "MIST": "#FEEEEE",
+    "LINE": "#FDBABA",
+    "PRIMARY_RGB": "94,3,3",
+    "ACCENT_RGB": "148,5,5",
+    "SCRIM_RGB": "113,4,4",
+    "SCRIM2_RGB": "69,2,2",
+    "MENU_INK_RGB": "44,2,2",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.09,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 9.2,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.04,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.81,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 8.18,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.51,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 5.07,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 3.26:1 (needs 4.5)",
+    "contrast repair applied: muted body copy on the mist band = 3.30:1 (needs 4.5)"
+  ]
+}

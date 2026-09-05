@@ -1,0 +1,72 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "aaaffordableautorepairtowingfreeholdmonmouthnj",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#1E0902",
+  "palette": {
+    "BRAND": "#1E0902",
+    "PRIMARY": "#5B1B06",
+    "PRIMARY_DK": "#431404",
+    "PRIMARY_MID": "#6E2107",
+    "ACCENT": "#8F2B0A",
+    "ACCENT_DK": "#641E07",
+    "ACCENT_LT": "#C93C0D",
+    "ON_DARK": "#FAC4B3",
+    "MENU_INK": "#2B0D03",
+    "TINT_1": "#FCDACF",
+    "TINT_2": "#FDE5DE",
+    "TINT_3": "#FBD3C6",
+    "TINT_4": "#FBD7CA",
+    "LINE_2": "#F9B69F",
+    "MUTED_BRAND": "#CC3D0E",
+    "MIST": "#FEF2EE",
+    "LINE": "#FBCCBC",
+    "PRIMARY_RGB": "91,27,6",
+    "ACCENT_RGB": "143,43,10",
+    "SCRIM_RGB": "110,33,7",
+    "SCRIM2_RGB": "67,20,4",
+    "MENU_INK_RGB": "43,13,3",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 13.09,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 8.34,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 8.48,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.08,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 7.61,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.52,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.95,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.74:1 (needs 4.5)"
+  ]
+}
