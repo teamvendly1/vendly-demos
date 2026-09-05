@@ -1,0 +1,72 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "goodiesautomotiveservicellcwoodburygloucesternj",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#002E46",
+  "palette": {
+    "BRAND": "#002E46",
+    "PRIMARY": "#004061",
+    "PRIMARY_DK": "#002F47",
+    "PRIMARY_MID": "#004D75",
+    "ACCENT": "#006599",
+    "ACCENT_DK": "#00466B",
+    "ACCENT_LT": "#008DD6",
+    "ON_DARK": "#ADE3FF",
+    "MENU_INK": "#001E2E",
+    "TINT_1": "#CCEEFF",
+    "TINT_2": "#DBF3FF",
+    "TINT_3": "#C2EAFF",
+    "TINT_4": "#C7ECFF",
+    "LINE_2": "#99DCFF",
+    "MUTED_BRAND": "#0077B6",
+    "MIST": "#EDF9FF",
+    "LINE": "#B8E7FF",
+    "PRIMARY_RGB": "0,64,97",
+    "ACCENT_RGB": "0,101,153",
+    "SCRIM_RGB": "0,77,117",
+    "SCRIM2_RGB": "0,47,71",
+    "MENU_INK_RGB": "0,30,46",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 11.02,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 6.32,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 7.98,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 17.14,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 5.9,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.54,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 4.87,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: muted body copy on the mist band = 2.06:1 (needs 4.5)"
+  ]
+}

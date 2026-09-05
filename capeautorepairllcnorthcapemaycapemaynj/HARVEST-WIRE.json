@@ -1,0 +1,197 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-04T22:30:11.298Z",
+ "slug": "capeautorepairllcnorthcapemaycapemaynj",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-9cb5b218ea4c7a40.jpg",
+   "bytes": 318687,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "fb-05.jpg",
+   "bytes": 60767,
+   "smart_crop": true,
+   "src": "fb-05.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 28.003,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-f48f120dfc7c3ada.jpg",
+   "bytes": 419244,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-16cdf43fe91890bf.jpg",
+   "bytes": 138363,
+   "smart_crop": true,
+   "src": "google-16cdf43fe91890bf.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 45,
+   "detail_score": 19.686,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-9e7a145e46b06e1e.jpg",
+   "bytes": 143573,
+   "smart_crop": true,
+   "src": "google-9e7a145e46b06e1e.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1068",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 29.769,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "fb-10.jpg",
+   "bytes": 8715,
+   "smart_crop": true,
+   "src": "fb-10.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 90,
+   "detail_score": 22.725,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-64a5badee3106429.jpg",
+   "bytes": 395788,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-3a02dad6e28a366a.jpg",
+   "bytes": 324437,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-94af0d7c69760305.jpg",
+   "bytes": 314040,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-7aca80e759200ebd.jpg",
+   "bytes": 311030,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-66d48ee6757b521e.jpg",
+   "bytes": 307963,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-51833fd7bbd47aea.jpg",
+   "bytes": 253136,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-5.jpg",
+   "from": "google-97afe0dbd07a80b8.jpg",
+   "bytes": 217016,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-6.jpg",
+   "from": "google-c5f7abd7d531235d.jpg",
+   "bytes": 195601,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-7.jpg",
+   "from": "fb-02.jpg",
+   "bytes": 135688,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "facebook-profile-mark:auto-isMark",
+   "bytes": 478336,
+   "source_url": "https://www.facebook.com/capeautorepairnj"
+  }
+ ],
+ "skipped": [
+  "classification read: 31 verdicts",
+  "staged 32 harvest photos from fb-photos:10 + assets:22",
+  "refused_by_class:fb-03.jpg:reject",
+  "refused_by_class:fb-04.jpg:reject",
+  "refused_unlooked:fb-06.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_by_class:fb-07.jpg:reject",
+  "refused_unlooked:fb-08.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:fb-09.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-2aabf760ff5c01f0.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-2bf28d080d93c8cf.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-3a2365b2758c7579.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-515e7cb46d173e46.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-6ef4b9d3e9643605.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-6f6b6cc78fe66e66.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-8916805c6c9050dd.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-dc8507a3bb48a26b.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-e77d6f51edb1878e.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:google-f9d030f06efff0d1.jpg:NEEDS_SUBJECT_LOOK",
+  "hero_cand_refuse:google-16cdf43fe91890bf.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-51833fd7bbd47aea.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:fb-02.jpg:road_no_landscape",
+  "hero_hold_crew_for_about:fb-05.jpg",
+  "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 15,
+ "refused_by_class": 16,
+ "photo_candidates": 15,
+ "altBySlot": {
+  "photo-hero.jpg": "Across the workshop with a car on one lift and a truck on the next",
+  "photo-card-about.jpg": "Two of the team at a local awards evening, one wearing the winners medal",
+  "photo-about.jpg": "Framed local awards stood up on the counter with the years showing",
+  "photo-card-services.jpg": "A technician working under a car raised on the lift in the middle bay",
+  "photo-card-reviews.jpg": "A pickup up on the two post lift beside the tyre machine",
+  "photo-gallery-1.jpg": "Tyres racked above the bench with the tool chests run along the wall",
+  "photo-gallery-2.jpg": "The frontage with the service list along the fascia and all the bays open",
+  "photo-gallery-3.jpg": "The entrance board mounted on the wall beside the key drop",
+  "photo-ctaband.jpg": "The full run of bays with vehicles up and the equipment lined down the middle",
+  "photo-quoteband.jpg": "Down the shop with a sports car in the near bay and both lifts loaded behind it",
+  "photo-gallery-4.jpg": "The office corner with the awards hung in a row above the service window",
+  "photo-gallery-5.jpg": "The waiting room with a leather sofa and the service window through to the office",
+  "photo-gallery-6.jpg": "The customer coffee corner with the machine, the cooler and plants on the table",
+  "photo-gallery-7.jpg": "The shop straight on from the forecourt with every bay door up"
+ },
+ "dedupe_fixed": 5
+}
