@@ -1,38 +1,18 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-02T14:54:19.961Z",
+ "at": "2026-09-05T19:25:36.453Z",
  "slug": "cedarrunplumbingharrisonburgva",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 52599,
+   "from": "fb-01.jpg",
+   "bytes": 21714,
    "letterbox_stripped": null,
    "trade_score": 0,
    "reason": "hero_work_rank"
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-05.jpg",
-   "bytes": 39411,
-   "smart_crop": true,
-   "src": "fb-05.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "720x720",
-   "out_wh": "720x450",
-   "crop_axis": "y",
-   "crop_offset_pct": 25,
-   "detail_score": 16.494,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "fb-01.jpg",
-   "bytes": 21714,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
    "from": "fb-07.jpg",
    "bytes": 7623,
    "smart_crop": true,
@@ -46,21 +26,13 @@
    "orientation": "landscape"
   },
   {
-   "slot": "photo-card-reviews.jpg",
+   "slot": "photo-about.jpg",
    "from": "fb-09.jpg",
-   "bytes": 9660,
-   "smart_crop": true,
-   "src": "fb-09.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "206x206",
-   "out_wh": "206x129",
-   "crop_axis": "y",
-   "crop_offset_pct": 35,
-   "detail_score": 25.037,
-   "orientation": "landscape"
+   "bytes": 9993,
+   "letterbox_stripped": null
   },
   {
-   "slot": "photo-card-photos.jpg",
+   "slot": "photo-card-services.jpg",
    "from": "fb-02.jpg",
    "bytes": 6534,
    "smart_crop": true,
@@ -74,10 +46,18 @@
    "orientation": "landscape"
   },
   {
-   "slot": "photo-gallery-1.jpg",
+   "slot": "photo-card-reviews.jpg",
    "from": "fb-03.jpg",
-   "bytes": 7162,
-   "letterbox_stripped": null
+   "bytes": 6616,
+   "smart_crop": true,
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 15.037,
+   "orientation": "landscape"
   },
   {
    "slot": "logo.png",
@@ -88,18 +68,20 @@
   }
  ],
  "skipped": [
-  "classification read: 8 verdicts",
+  "classification read: 6 verdicts",
   "staged 9 harvest photos from fb-photos:9",
+  "refused_unlooked:fb-04.jpg:NEEDS_SUBJECT_LOOK",
+  "refused_unlooked:fb-05.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:fb-06.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:fb-08.jpg:reject",
-  "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
-  "hero_cand_refuse:fb-05.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-01.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-09.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-02.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
-  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-04.jpg)",
+  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-01.jpg)",
+  "photo-card-photos.jpg",
+  "photo-gallery-1.jpg",
   "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
@@ -126,8 +108,8 @@
   "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 7,
- "refused_by_class": 2,
- "photo_candidates": 7,
+ "candidates": 5,
+ "refused_by_class": 4,
+ "photo_candidates": 5,
  "dedupe_fixed": 5
 }
