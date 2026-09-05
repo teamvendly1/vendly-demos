@@ -1,0 +1,153 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-03T12:34:55.696Z",
+ "slug": "wreckmastertowingandrecoverygalaxva",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-2a4857e19614ac0a.jpg",
+   "bytes": 528720,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-8652198a512c8dc7.jpg",
+   "bytes": 190038,
+   "smart_crop": true,
+   "src": "google-8652198a512c8dc7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 28.256,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-4ba19006cf87653b.jpg",
+   "bytes": 400699,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-846d15ab3759c7e8.jpg",
+   "bytes": 127576,
+   "smart_crop": true,
+   "src": "google-846d15ab3759c7e8.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 15.217,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-c0a0a9299be32110.jpg",
+   "bytes": 123744,
+   "smart_crop": true,
+   "src": "google-c0a0a9299be32110.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 18.86,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-558dda1f56692c93.jpg",
+   "bytes": 105446,
+   "smart_crop": true,
+   "src": "google-558dda1f56692c93.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 55,
+   "detail_score": 16.177,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-e7bdf48d8d4c5c74.jpg",
+   "bytes": 233598,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-ea33937e34ea923c.jpg",
+   "bytes": 222837,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-ecc25a2fc706f4ca.jpg",
+   "bytes": 218609,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-125771e82233e0eb.jpg",
+   "bytes": 164666,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-1f42ee415bfba681.jpg",
+   "bytes": 135807,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-4.jpg",
+   "from": "google-0350bf0108cdaaa7.jpg",
+   "bytes": 40281,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 24 verdicts",
+  "staged 12 harvest photos from assets:12",
+  "hero_cand_refuse:google-8652198a512c8dc7.jpg:road_no_landscape",
+  "hero_cand_refuse:google-4ba19006cf87653b.jpg:road_no_landscape",
+  "hero_cand_refuse:google-c0a0a9299be32110.jpg:road_no_landscape",
+  "hero_cand_refuse:google-558dda1f56692c93.jpg:road_no_landscape",
+  "hero_cand_refuse:google-ea33937e34ea923c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-ecc25a2fc706f4ca.jpg:road_no_landscape",
+  "hero_cand_refuse:google-1f42ee415bfba681.jpg:ground_only_no_horizon",
+  "hero_cand_refuse:google-0350bf0108cdaaa7.jpg:low_res_lt_960",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 12,
+ "photo_candidates": 12,
+ "dedupe_fixed": 5
+}

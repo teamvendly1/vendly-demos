@@ -168,5 +168,17 @@
     "source_is_google": true
   },
   "contact_photo_tier_why": "no owner/crew face and no logo — omit contact shot",
-  "contact_photo_omit": true
+  "contact_photo_omit": true,
+  "facebook_url": "https://www.facebook.com/generalstreeservice/",
+  "_contact_enrichment": {
+    "schema": "vendly.contact-enrichment/1",
+    "at": "2026-09-04T01:40:44.051Z",
+    "by": "claude-contact-enrich (subagent, 2026-09-03)",
+    "email_found": "www.generalstreeservice@comcast.net",
+    "facebook_found": "https://www.facebook.com/generalstreeservice/",
+    "confidence": "high",
+    "verify": "phone_exact_match (856) 221-3572 via normalized-phone join against NJ.jsonl/QUEUE.jsonl (slug in bank was generalstreeservicebridgetoncumberlandnj, different slug convention - this is why the earlier exact-slug join missed it)",
+    "source": "disk-join-phone-normalized (tier-1, no model, no network)",
+    "note": "Added by external web-search discovery task. facebook_url above was filled from facebook_found only if it was previously empty. email_found is NOT wired into the outreach sender automatically - a human/gate must confirm before this address is used to contact anyone."
+  }
 }

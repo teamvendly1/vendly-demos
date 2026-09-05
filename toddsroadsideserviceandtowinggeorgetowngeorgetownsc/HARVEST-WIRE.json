@@ -1,0 +1,202 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-03T06:37:03.945Z",
+ "slug": "toddsroadsideserviceandtowinggeorgetowngeorgetownsc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-7e9a7eac06a65ad9.jpg",
+   "bytes": 511695,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-1616aba905533df1.jpg",
+   "bytes": 227875,
+   "smart_crop": true,
+   "src": "google-1616aba905533df1.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 36.643,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-4586feed7bc7f96d.jpg",
+   "bytes": 587413,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-829bb520a02fa510.jpg",
+   "bytes": 166467,
+   "smart_crop": true,
+   "src": "google-829bb520a02fa510.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 43,
+   "detail_score": 27.635,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-c9fcf883944975d5.jpg",
+   "bytes": 165701,
+   "smart_crop": true,
+   "src": "google-c9fcf883944975d5.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 28,
+   "detail_score": 30.287,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-7eebc359e2bab02f.jpg",
+   "bytes": 208069,
+   "smart_crop": true,
+   "src": "google-7eebc359e2bab02f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x900",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 50,
+   "detail_score": 33.845,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-9b56003eaa3aae33.jpg",
+   "bytes": 366974,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-f0489e4192602fcc.jpg",
+   "bytes": 330085,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-f940068d32355b4d.jpg",
+   "bytes": 297821,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-92c686f44a9461ae.jpg",
+   "bytes": 279511,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-78377633baa09591.jpg",
+   "bytes": 260733,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 24 verdicts",
+  "staged 12 harvest photos from assets:12",
+  "refused_by_class:google-9ec4b3d164bffdcc.jpg:reject",
+  "hero_cand_refuse:google-4586feed7bc7f96d.jpg:road_no_landscape",
+  "hero_cand_refuse:google-829bb520a02fa510.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-f0489e4192602fcc.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 11,
+ "refused_by_class": 1,
+ "photo_candidates": 11,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 8)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 9)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 11)"
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Todd's Roadside Service and Towing - technician at work on site (photo 10)"
+  }
+ ],
+ "dedupe_fixed": 5
+}

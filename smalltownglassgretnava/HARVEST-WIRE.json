@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-30T13:37:01.340Z",
+ "at": "2026-09-02T10:41:39.837Z",
  "slug": "smalltownglassgretnava",
  "wired": [
   {
@@ -87,15 +87,14 @@
   },
   {
    "slot": "logo.png",
-   "from": "charter-placeholder-your-logo-here",
-   "bytes": 21159,
-   "placeholder": true,
-   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+   "from": "facebook-profile-mark:eyes-verified",
+   "bytes": 858357,
+   "source_url": "https://www.facebook.com/smalltownglass"
   }
  ],
  "skipped": [
   "classification read: 10 verdicts",
-  "staged 10 harvest photos from fb-photos",
+  "staged 10 harvest photos from fb-photos:10",
   "refused_by_class:fb-04.jpg:reject",
   "hero_cand_refuse:fb-05.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-06.jpg:low_res_lt_960",
@@ -131,15 +130,47 @@
  "candidates": 8,
  "refused_by_class": 1,
  "photo_candidates": 8,
- "altBySlot": {
-  "photo-hero.jpg": "Small Town Glass - technician at work on site (photo 2)",
-  "photo-card-about.jpg": "Small Town Glass - technician at work on site (photo 3)",
-  "photo-about.jpg": "Small Town Glass - technician at work on site (photo 4)",
-  "photo-card-services.jpg": "Small Town Glass - technician at work on site (photo 5)",
-  "photo-card-reviews.jpg": "Small Town Glass - technician at work on site (photo 6)",
-  "photo-card-photos.jpg": "Small Town Glass - technician at work on site (photo 7)",
-  "photo-gallery-1.jpg": "Small Town Glass - technician at work on site (photo 9)",
-  "photo-gallery-2.jpg": "Small Town Glass - technician at work on site (photo 8)"
- },
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 9)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Small Town Glass - technician at work on site (photo 8)"
+  }
+ ],
  "dedupe_fixed": 5
 }

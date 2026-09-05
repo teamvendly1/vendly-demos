@@ -1,0 +1,145 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-03T16:03:36.467Z",
+ "slug": "forestcitytireforestcityrutherfordnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-8ee1028951b7901c.jpg",
+   "bytes": 480960,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-c2a0c4fbb57ff601.jpg",
+   "bytes": 150620,
+   "smart_crop": true,
+   "src": "google-c2a0c4fbb57ff601.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 24.305,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-188c6742a679993a.jpg",
+   "bytes": 368159,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-ffb718a85b19ed5c.jpg",
+   "bytes": 140181,
+   "smart_crop": true,
+   "src": "google-ffb718a85b19ed5c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 22.815,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-7fd5561a420fd532.jpg",
+   "bytes": 139629,
+   "smart_crop": true,
+   "src": "google-7fd5561a420fd532.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 60,
+   "detail_score": 23.629,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-e393d0e5ed0c47e3.jpg",
+   "bytes": 108209,
+   "smart_crop": true,
+   "src": "google-e393d0e5ed0c47e3.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 16.636,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-6e0b287e046d4c80.jpg",
+   "bytes": 242604,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-202d8f20206073f8.jpg",
+   "bytes": 231796,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-73f82e665601ccd8.jpg",
+   "bytes": 221232,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-8a1f06c690afc0c3.jpg",
+   "bytes": 170390,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 11 harvest photos from assets:11",
+  "refused_by_class:google-337237ae2fa6841a.jpg:reject",
+  "hero_cand_refuse:google-c2a0c4fbb57ff601.jpg:road_no_landscape",
+  "hero_cand_refuse:google-188c6742a679993a.jpg:road_no_landscape",
+  "hero_cand_refuse:google-7fd5561a420fd532.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-e393d0e5ed0c47e3.jpg:road_no_landscape",
+  "hero_cand_refuse:google-6e0b287e046d4c80.jpg:road_no_landscape",
+  "hero_cand_refuse:google-202d8f20206073f8.jpg:road_no_landscape",
+  "hero_cand_refuse:google-8a1f06c690afc0c3.jpg:portrait_aspect_hero_refuse",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 10,
+ "refused_by_class": 1,
+ "photo_candidates": 10,
+ "dedupe_fixed": 5
+}

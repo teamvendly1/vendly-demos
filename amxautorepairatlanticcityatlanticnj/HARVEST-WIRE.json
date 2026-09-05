@@ -1,0 +1,142 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-04T03:24:38.879Z",
+ "slug": "amxautorepairatlanticcityatlanticnj",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "fb-07.jpg",
+   "bytes": 80365,
+   "letterbox_stripped": null,
+   "trade_score": 0,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "fb-02.jpg",
+   "bytes": 83107,
+   "smart_crop": true,
+   "src": "fb-02.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "959x704",
+   "out_wh": "959x599",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 17.257,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "fb-08.jpg",
+   "bytes": 64694,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "fb-05.jpg",
+   "bytes": 57457,
+   "smart_crop": true,
+   "src": "fb-05.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 18.593,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-06.jpg",
+   "bytes": 57078,
+   "smart_crop": true,
+   "src": "fb-06.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 83,
+   "detail_score": 19.44,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "fb-09.jpg",
+   "bytes": 50838,
+   "smart_crop": true,
+   "src": "fb-09.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "720x720",
+   "out_wh": "720x450",
+   "crop_axis": "y",
+   "crop_offset_pct": 63,
+   "detail_score": 18.864,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "fb-10.jpg",
+   "bytes": 53456,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "fb-03.jpg",
+   "bytes": 47130,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "fb-04.jpg",
+   "bytes": 9595,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 10 verdicts",
+  "staged 10 harvest photos from fb-photos:10",
+  "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-02.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-08.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-05.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-06.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-09.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
+  "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
+  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-07.jpg)",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 9,
+ "photo_candidates": 9,
+ "dedupe_fixed": 5
+}

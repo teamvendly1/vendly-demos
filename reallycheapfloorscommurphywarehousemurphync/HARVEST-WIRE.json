@@ -1,0 +1,192 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-03T18:02:54.476Z",
+ "slug": "reallycheapfloorscommurphywarehousemurphync",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-680c85fc60f7411b.jpg",
+   "bytes": 355724,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-2bb863c578fa595d.jpg",
+   "bytes": 154263,
+   "smart_crop": true,
+   "src": "google-2bb863c578fa595d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 20.132,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-12c82e3242bfb7f3.jpg",
+   "bytes": 362370,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-c8aa4c7998799f29.jpg",
+   "bytes": 147298,
+   "smart_crop": true,
+   "src": "google-c8aa4c7998799f29.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1067",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 25.214,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-8db2c0b6b995c97c.jpg",
+   "bytes": 149985,
+   "smart_crop": true,
+   "src": "google-8db2c0b6b995c97c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1067",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 20.224,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-8c0b3db10c591a92.jpg",
+   "bytes": 116592,
+   "smart_crop": true,
+   "src": "google-8c0b3db10c591a92.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 10.285,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-219d007a65afdfb6.jpg",
+   "bytes": 288650,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-01f5dbf6973a678a.jpg",
+   "bytes": 224342,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-040fa74a59ce01c2.jpg",
+   "bytes": 192324,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-8f06d14396abdc8f.jpg",
+   "bytes": 33667,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 11 harvest photos from assets:11",
+  "refused_by_class:google-6ea8abd6f1b0a28f.jpg:reject",
+  "hero_cand_refuse:google-8db2c0b6b995c97c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-8f06d14396abdc8f.jpg:low_res_lt_960",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 10,
+ "refused_by_class": 1,
+ "photo_candidates": 10,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 9)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 10)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "ReallyCheapFloors.com Murphy Warehouse - technician at work on site (photo 8)"
+  }
+ ],
+ "dedupe_fixed": 5
+}

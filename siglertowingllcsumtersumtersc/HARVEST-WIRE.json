@@ -1,0 +1,205 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-04T00:01:18.909Z",
+ "slug": "siglertowingllcsumtersumtersc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-7c350f94a070c729.jpg",
+   "bytes": 170661,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-53f8b8f3605a3eec.jpg",
+   "bytes": 163304,
+   "smart_crop": true,
+   "src": "google-53f8b8f3605a3eec.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 22.325,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-92d7213f14146b57.jpg",
+   "bytes": 422964,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-684a085edc61deb7.jpg",
+   "bytes": 189965,
+   "smart_crop": true,
+   "src": "google-684a085edc61deb7.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 27.556,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-1b4db41cb3f2a3b3.jpg",
+   "bytes": 186047,
+   "smart_crop": true,
+   "src": "google-1b4db41cb3f2a3b3.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1200x1600",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 98,
+   "detail_score": 29.347,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-177105f358f387ab.jpg",
+   "bytes": 134439,
+   "smart_crop": true,
+   "src": "google-177105f358f387ab.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1008x756",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 24.249,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-a73c2e4d15d1f436.jpg",
+   "bytes": 161101,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-6652940337fe42e6.jpg",
+   "bytes": 138381,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-104c17fb4a71d3ea.jpg",
+   "bytes": 124044,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-043717a48f7447a4.jpg",
+   "bytes": 87553,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-3bfc3ab38e48d904.jpg",
+   "bytes": 65936,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 11 harvest photos from assets:11",
+  "hero_cand_refuse:google-92d7213f14146b57.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-684a085edc61deb7.jpg:blurry_low_contrast",
+  "hero_cand_refuse:google-1b4db41cb3f2a3b3.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-a73c2e4d15d1f436.jpg:road_no_landscape",
+  "hero_cand_refuse:google-6652940337fe42e6.jpg:low_res_lt_960",
+  "hero_cand_refuse:google-104c17fb4a71d3ea.jpg:road_no_landscape",
+  "hero_cand_refuse:google-043717a48f7447a4.jpg:road_no_landscape",
+  "hero_cand_refuse:google-3bfc3ab38e48d904.jpg:low_res_lt_960",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 11,
+ "photo_candidates": 11,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 11)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 10)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 8)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 9)"
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Sigler Towing LLC - technician at work on site (photo 3)"
+  }
+ ],
+ "dedupe_fixed": 5
+}

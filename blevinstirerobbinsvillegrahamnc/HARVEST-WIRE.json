@@ -1,0 +1,173 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-02T09:29:05.420Z",
+ "slug": "blevinstirerobbinsvillegrahamnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-2befaaf2c3feb154.jpg",
+   "bytes": 358167,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-6c3da63d23fd5900.jpg",
+   "bytes": 145053,
+   "smart_crop": true,
+   "src": "google-6c3da63d23fd5900.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 20.613,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-ca1370a4df3f5d25.jpg",
+   "bytes": 354335,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-65abd9ccc5e4b39f.jpg",
+   "bytes": 87254,
+   "smart_crop": true,
+   "src": "google-65abd9ccc5e4b39f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 16.205,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-2961b6ad84f53bf0.jpg",
+   "bytes": 86658,
+   "smart_crop": true,
+   "src": "google-2961b6ad84f53bf0.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 26.649,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-7b0f5c6f2c6b8b58.jpg",
+   "bytes": 91306,
+   "smart_crop": true,
+   "src": "google-7b0f5c6f2c6b8b58.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x800",
+   "out_wh": "1000x625",
+   "crop_axis": "x",
+   "crop_offset_pct": 30,
+   "detail_score": 16.614,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-ecb1c90433e1fa67.jpg",
+   "bytes": 170602,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-b861406e171f5cba.jpg",
+   "bytes": 145452,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 16 verdicts",
+  "staged 8 harvest photos from assets:8",
+  "hero_cand_refuse:google-6c3da63d23fd5900.jpg:road_no_landscape",
+  "hero_cand_refuse:google-65abd9ccc5e4b39f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-ecb1c90433e1fa67.jpg:road_no_landscape",
+  "hero_cand_refuse:google-b861406e171f5cba.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "photo_candidates": 8,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 8)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Blevins Tire - technician at work on site (photo 4)"
+  }
+ ],
+ "dedupe_fixed": 5
+}

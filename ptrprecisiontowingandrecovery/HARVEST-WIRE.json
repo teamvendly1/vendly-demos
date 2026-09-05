@@ -1,91 +1,27 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-18T04:47:13.340Z",
+ "at": "2026-09-03T11:05:28.201Z",
  "slug": "ptrprecisiontowingandrecovery",
  "wired": [
-  {
-   "slot": "photo-hero.jpg",
-   "from": "google-2d16947f20c3c7e8.jpg",
-   "bytes": 327680,
-   "letterbox_stripped": null,
-   "trade_score": 3.5,
-   "reason": "hero_work_rank"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "from": "google-1e3e4f40455c2a45.jpg",
-   "bytes": 430335,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "google-0a1cc4231ee65f02.jpg",
-   "bytes": 555041,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "google-0f356c1aa41f4563.jpg",
-   "bytes": 467394,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "google-165a2a1e30a3a9c9.jpg",
-   "bytes": 428896,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "google-1c3bb0c79880adc5.jpg",
-   "bytes": 297514,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-ctaband.jpg",
-   "from": "google-3755b40eb0511911.jpg",
-   "bytes": 192110,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-quoteband.jpg",
-   "from": "google-12d538fd4f320e3e.jpg",
-   "bytes": 142962,
-   "letterbox_stripped": null
-  },
   {
    "slot": "logo.png",
    "from": "facebook-profile-mark:eyes-verified",
    "bytes": 1211080,
-   "source_url": "https://www.facebook.com/PrecisionTowingMB"
+   "source_url": ""
   }
  ],
  "skipped": [
-  "classification read: 18 verdicts",
-  "staged 23 harvest photos",
-  "refused_by_class:google-0da0d5f3a62b48ab.jpg:PHONE_GALLERY_SCREENSHOT_UI_CHROME",
-  "refused_unlooked:google-40cf6619a3ee92ef.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-417f993c1e5a618b.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-46a13298e7c72726.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-49d033c9a13ffb10.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-4f8c769646c80644.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-76f278eb61816ab4.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-88066d3121d12247.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-9dcf0aa1ab333e20.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-a6fcf3e4793576cc.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-bca9b6fd5e7407f9.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-c3efb7ec360e2695.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-cb6690cfc93ee906.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-d2984de46ea401ff.jpg:NEEDS_SUBJECT_LOOK",
-  "refused_unlooked:google-e1d42adf0614fe35.jpg:NEEDS_SUBJECT_LOOK",
-  "hero_cand_refuse:google-0a1cc4231ee65f02.jpg:road_no_landscape",
-  "hero_cand_refuse:google-0f356c1aa41f4563.jpg:road_no_landscape",
-  "hero_cand_refuse:google-1e3e4f40455c2a45.jpg:portrait_aspect_hero_refuse",
-  "hero_cand_refuse:google-165a2a1e30a3a9c9.jpg:road_no_landscape",
-  "hero_cand_refuse:google-12d538fd4f320e3e.jpg:close_crop_alt",
+  "photo-hero.jpg: no work-visible harvest candidate",
+  "photo-card-about.jpg",
+  "photo-about.jpg",
+  "photo-card-services.jpg",
+  "photo-card-reviews.jpg",
+  "photo-card-photos.jpg",
   "photo-gallery-1.jpg",
   "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
   "photo-gallery-4.jpg",
   "photo-gallery-5.jpg",
   "photo-gallery-6.jpg",
@@ -99,18 +35,17 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-after.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-hero.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 8,
- "refused_by_class": 15,
- "altBySlot": {
-  "photo-hero.jpg": "PTR flatbed with We Buy Junk Cars painted on the bed, hauling a wrecked Mustang",
-  "photo-card-about.jpg": "Nighttime rollover recovery, car flipped on its roof beside the flatbed",
-  "photo-about.jpg": "PTR flatbed loaded with a classic black Impala SS on chrome wheels",
-  "photo-card-services.jpg": "PTR flatbed hauling a Horry County Police SUV",
-  "photo-card-reviews.jpg": "PTR flatbed loaded with a silver Challenger, towing a blue sedan behind it",
-  "photo-card-photos.jpg": "PTR flatbed hauling a classic orange and white striped Camaro Z28",
-  "photo-ctaband.jpg": "Yellow PTR flatbed with 24 Hour Service lettered on the door, hauling a BMW",
-  "photo-quoteband.jpg": "Close-up of the PTR Precision Towing and Recovery mark and phone numbers on a truck door"
- }
+ "candidates": 0,
+ "photo_candidates": 0,
+ "dedupe_fixed": 6
 }

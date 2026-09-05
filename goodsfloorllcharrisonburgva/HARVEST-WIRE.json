@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-08-30T13:37:10.479Z",
+ "at": "2026-09-02T10:41:59.487Z",
  "slug": "goodsfloorllcharrisonburgva",
  "wired": [
   {
@@ -94,7 +94,7 @@
  ],
  "skipped": [
   "classification read: 9 verdicts",
-  "staged 9 harvest photos from fb-photos",
+  "staged 9 harvest photos from fb-photos:9",
   "refused_by_class:fb-01.jpg:reject",
   "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-09.jpg:road_no_landscape",
@@ -128,15 +128,47 @@
  "candidates": 8,
  "refused_by_class": 1,
  "photo_candidates": 8,
- "altBySlot": {
-  "photo-hero.jpg": "Goods Floor LLC - technician at work on site (photo 6)",
-  "photo-card-about.jpg": "Goods Floor LLC - technician at work on site (photo 3)",
-  "photo-about.jpg": "Goods Floor LLC - technician at work on site (photo 8)",
-  "photo-card-services.jpg": "Goods Floor LLC - technician at work on site (photo 7)",
-  "photo-card-reviews.jpg": "Goods Floor LLC - technician at work on site (photo 1)",
-  "photo-card-photos.jpg": "Goods Floor LLC - technician at work on site (photo 2)",
-  "photo-gallery-1.jpg": "Goods Floor LLC - technician at work on site (photo 5)",
-  "photo-gallery-2.jpg": "Goods Floor LLC - technician at work on site (photo 4)"
- },
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 8)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Goods Floor LLC - technician at work on site (photo 4)"
+  }
+ ],
  "dedupe_fixed": 5
 }

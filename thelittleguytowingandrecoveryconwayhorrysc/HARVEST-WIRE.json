@@ -1,0 +1,206 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-03T12:35:41.966Z",
+ "slug": "thelittleguytowingandrecoveryconwayhorrysc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-58617910702e0e54.jpg",
+   "bytes": 194973,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-ff847a56efd2545f.jpg",
+   "bytes": 186539,
+   "smart_crop": true,
+   "src": "google-ff847a56efd2545f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1333x1000",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 28.516,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-1433211a453d158c.jpg",
+   "bytes": 252559,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-a9ee98a17c92451f.jpg",
+   "bytes": 121182,
+   "smart_crop": true,
+   "src": "google-a9ee98a17c92451f.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1334x1000",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 21.392,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-375662b2a80f263d.jpg",
+   "bytes": 87958,
+   "smart_crop": true,
+   "src": "google-375662b2a80f263d.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "750x1000",
+   "out_wh": "750x469",
+   "crop_axis": "y",
+   "crop_offset_pct": 10,
+   "detail_score": 23.236,
+   "orientation": "portrait"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-763700daf1b5aa6c.jpg",
+   "bytes": 142172,
+   "smart_crop": true,
+   "src": "google-763700daf1b5aa6c.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1000x750",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 22.125,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-743db9f1525daa5c.jpg",
+   "bytes": 153995,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-b6c6946054b5af46.jpg",
+   "bytes": 151591,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-ea41f267c43262c6.jpg",
+   "bytes": 106376,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "from": "google-38f8e336e9ac9887.jpg",
+   "bytes": 103964,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "from": "google-b49ed5a8d4f9e9c4.jpg",
+   "bytes": 99519,
+   "letterbox_stripped": "v21.7%"
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 11 harvest photos from assets:11",
+  "hero_cand_refuse:google-ff847a56efd2545f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-1433211a453d158c.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-a9ee98a17c92451f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-375662b2a80f263d.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-743db9f1525daa5c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-b6c6946054b5af46.jpg:portrait_aspect_hero_refuse",
+  "hero_cand_refuse:google-ea41f267c43262c6.jpg:road_no_landscape",
+  "hero_cand_refuse:google-38f8e336e9ac9887.jpg:road_no_landscape",
+  "hero_cand_refuse:google-b49ed5a8d4f9e9c4.jpg:portrait_aspect_hero_refuse",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 11,
+ "photo_candidates": 11,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 11)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 9)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 10)"
+  },
+  {
+   "slot": "photo-ctaband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-quoteband.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "The Little Guy Towing and Recovery - technician at work on site (photo 8)"
+  }
+ ],
+ "dedupe_fixed": 5
+}

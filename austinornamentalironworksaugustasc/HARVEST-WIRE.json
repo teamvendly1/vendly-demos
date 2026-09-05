@@ -1,0 +1,170 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-02T10:41:50.226Z",
+ "slug": "austinornamentalironworksaugustasc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "fb-05.jpg",
+   "bytes": 191498,
+   "letterbox_stripped": null,
+   "trade_score": 1.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "fb-02.jpg",
+   "bytes": 226709,
+   "smart_crop": true,
+   "src": "fb-02.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 15,
+   "detail_score": 51.327,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "fb-04.jpg",
+   "bytes": 245424,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "fb-07.jpg",
+   "bytes": 190342,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 65,
+   "detail_score": 46.181,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-03.jpg",
+   "bytes": 110514,
+   "smart_crop": true,
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 0,
+   "detail_score": 23.519,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "fb-08.jpg",
+   "bytes": 116895,
+   "smart_crop": true,
+   "src": "fb-08.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 65,
+   "detail_score": 44.893,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "fb-06.jpg",
+   "bytes": 109176,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "fb-01.jpg",
+   "bytes": 60436,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 8 verdicts",
+  "staged 8 harvest photos from fb-photos:8",
+  "hero_cand_refuse:fb-01.jpg:low_res_lt_960",
+  "photo-gallery-3.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 8,
+ "photo_candidates": 8,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 5)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 8)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Austin Ornamental Iron Works - technician at work on site (photo 1)"
+  }
+ ],
+ "dedupe_fixed": 5
+}

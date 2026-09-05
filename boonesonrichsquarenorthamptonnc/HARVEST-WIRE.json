@@ -1,0 +1,185 @@
+{
+ "schema": "vendly.autodemo.harvest-wire/1",
+ "at": "2026-09-03T22:06:38.556Z",
+ "slug": "boonesonrichsquarenorthamptonnc",
+ "wired": [
+  {
+   "slot": "photo-hero.jpg",
+   "from": "google-d113f8261ed19715.jpg",
+   "bytes": 389459,
+   "letterbox_stripped": null,
+   "trade_score": 3.5,
+   "reason": "hero_work_rank"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "from": "google-47facd841951dd48.jpg",
+   "bytes": 186085,
+   "smart_crop": true,
+   "src": "google-47facd841951dd48.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 100,
+   "detail_score": 23.574,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "google-3319fe2ce7ca89b1.jpg",
+   "bytes": 419481,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "from": "google-b3cb44bdc08e65ae.jpg",
+   "bytes": 171193,
+   "smart_crop": true,
+   "src": "google-b3cb44bdc08e65ae.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 24.367,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "google-c631239ac4968534.jpg",
+   "bytes": 171989,
+   "smart_crop": true,
+   "src": "google-c631239ac4968534.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 25.119,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "google-937a964eb80dc6cb.jpg",
+   "bytes": 166711,
+   "smart_crop": true,
+   "src": "google-937a964eb80dc6cb.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "1600x1200",
+   "out_wh": "1000x625",
+   "crop_axis": "y",
+   "crop_offset_pct": 48,
+   "detail_score": 29.161,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "from": "google-6786767441510c4c.jpg",
+   "bytes": 365045,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "google-d5ee76ed3e4d968f.jpg",
+   "bytes": 297080,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "google-6b481b292bd364d6.jpg",
+   "bytes": 289496,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "logo.png",
+   "from": "charter-placeholder-your-logo-here",
+   "bytes": 21159,
+   "placeholder": true,
+   "charter": "NEVER REFUSE A BUILD FOR LACK OF PHOTOS point 3 (2026-08-20)"
+  }
+ ],
+ "skipped": [
+  "classification read: 22 verdicts",
+  "staged 11 harvest photos from assets:11",
+  "refused_by_class:google-27e772ad63913bfc.jpg:reject",
+  "refused_by_class:google-ee894d1720082101.jpg:reject",
+  "hero_cand_refuse:google-6786767441510c4c.jpg:road_no_landscape",
+  "hero_cand_refuse:google-d5ee76ed3e4d968f.jpg:road_no_landscape",
+  "hero_cand_refuse:google-6b481b292bd364d6.jpg:road_no_landscape",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-gallery-4.jpg",
+  "photo-gallery-5.jpg",
+  "photo-gallery-6.jpg",
+  "photo-service-1.jpg",
+  "photo-service-2.jpg",
+  "photo-service-3.jpg",
+  "photo-gallery-7.jpg",
+  "photo-gallery-8.jpg",
+  "photo-gallery-9.jpg",
+  "photo-services-hero.jpg",
+  "photo-contact.jpg",
+  "photo-photos-cta.jpg",
+  "photo-reviewsband.jpg",
+  "photo-ctaband.jpg",
+  "photo-quoteband.jpg",
+  "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-4.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-5.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
+  "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
+ ],
+ "candidates": 9,
+ "refused_by_class": 2,
+ "photo_candidates": 9,
+ "altRefused": [
+  {
+   "slot": "photo-hero.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 8)"
+  },
+  {
+   "slot": "photo-card-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 2)"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 3)"
+  },
+  {
+   "slot": "photo-card-services.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 6)"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 9)"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 4)"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 1)"
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 7)"
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "reason": "ALT_FROM_SLOT_FORBIDDEN",
+   "alt": "Boone & Son - technician at work on site (photo 5)"
+  }
+ ],
+ "dedupe_fixed": 5
+}
