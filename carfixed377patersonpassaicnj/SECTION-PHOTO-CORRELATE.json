@@ -1,68 +1,88 @@
 {
-  "at": "2026-09-05T17:51:54.781Z",
-  "ok": false,
+  "at": "2026-09-05T19:57:09.131Z",
+  "ok": true,
   "schema": "vendly.autodemo.section-photo-correlate/2",
   "trade": "auto-repair",
   "replaced": [
     {
       "file": "photo-about.jpg",
-      "source": "stock-library",
-      "sha256": "decb8738b2a7c2d5fe81476255cae38217b7717f5ae6f4f4a50a893b620f2814",
+      "source": "Pexels",
+      "sha256": "3720777f5d09eac5e314c1c160b57fc7e4f77150e7b958201518dd5abe209bcf",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": "crew shop jobsite",
-      "score_alt": "Man sanding the leather shoes"
+      "score_alt": "car on lift garage bay"
     },
     {
       "file": "photo-card-about.jpg",
       "source": "stock-library",
-      "sha256": "d56be56ece9cd61ae2181ee74851ec8a6c76c1a7c6d588487035e84242741b3e",
+      "sha256": "ad7512b148c06a2c3c254f908c4d12ac992a44061f4f93feaad3529664aa0825",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": "crew shop jobsite",
-      "score_alt": "Dodge viper engine in detail"
+      "score_alt": "Man in black crew neck t shirt fixing a car"
     },
     {
       "file": "photo-card-services.jpg",
       "source": "stock-library",
-      "sha256": "f1d0a89290fc61ce1ea17e1914097f828120f30a945c4c6bdfdba45b77ed2340",
+      "sha256": "4224e3deac5e4b5eb581d643b4f77ff96858ec8c2eedf3a9a359f6b75919b913",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": "trade work",
-      "score_alt": "Mechanic assembling engine cylinder head"
+      "score_alt": "Car engines on stock"
     },
     {
       "file": "photo-gallery-3.jpg",
       "source": "stock-library",
-      "sha256": "c16736efaada227e1af881d0c84ccb6acbd09d06f8836280f9e5dfd31f0e47aa",
+      "sha256": "ab71217a0132ac19543852040dfcd067e42fd89412cb475619de5d1006eb0476",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": null,
-      "score_alt": "Black car parked in empty underground garage"
+      "score_alt": "Car with an open hood"
     },
     {
       "file": "photo-gallery-7.jpg",
       "source": "stock-library",
-      "sha256": "c5ba8ef85260fd94f843ac494c1b17b5aaa3ff538b055b335f7678c699badf47",
+      "sha256": "37f857cb7512879a7131d279336f9be4d6c540b5bb6067d4f6895e57018804ce",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": null,
-      "score_alt": "Mechanic working with car engine"
+      "score_alt": "Mechanic fixing an engine"
+    },
+    {
+      "file": "photo-photos-cta.jpg",
+      "source": "stock-library",
+      "sha256": "6aa3bd9158fc9167b68cd02b8f6518239d792162ba976f3292c91573a03be3ca",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "trade work",
+      "score_alt": "Senior man working with metal details in workshop"
     },
     {
       "file": "photo-reviewsband.jpg",
-      "source": "Pexels",
-      "sha256": "a5ab9a6bae1a0f4082a8d591bc42c56df5988d31de20bb5865b6babbc75619df",
+      "source": "stock-library",
+      "sha256": "e045109560c32ab4aa97adea788cecef4caf644d65f26fa1f788c24f8c457110",
       "reasons": [
         "off_section_relevance:trade_require_miss:auto"
       ],
       "service": null,
-      "score_alt": "engine bay diagnostic tools"
+      "score_alt": "Man in black long sleeve shirt fixing a tire"
+    },
+    {
+      "file": "photo-service-5.jpg",
+      "source": "stock-library",
+      "sha256": "98c93fe6f622c64f9a627f4222391a8105789dbacc35902d22ad9a51bcb77d11",
+      "reasons": [
+        "off_section_relevance:trade_require_miss:auto"
+      ],
+      "service": "Diagnostics and check engine work",
+      "score_alt": "Car battery in engine bay"
     }
   ],
   "kept": [
@@ -179,46 +199,9 @@
       "sha256": "1f8658e372c527ed58316af95be9577c1f2d4d0b882609ccb6d0b177e1bc2c30",
       "bytes": 268939,
       "alt": "A crossover raised with the front wheels off for suspension work"
-    },
-    {
-      "file": "photo-photos-cta.jpg",
-      "sha256": "c62352a0066c160c8887e7ff45d19d8c031b23299279d4815c5bc470ae752413",
-      "bytes": 291861,
-      "alt": "An SUV finished and stood outside on a wet morning",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ],
-      "restored_hard_reject": true
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "sha256": "789609cca3b986428da32a4c4a36e05be28d0c2394162ba4b27a3ddb2db56306",
-      "bytes": 261687,
-      "alt": "A saloon opened at the front under the lights with the slam panel exposed",
-      "restored": true,
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto"
-      ],
-      "restored_hard_reject": true
     }
   ],
-  "failed": [
-    {
-      "file": "photo-photos-cta.jpg",
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto",
-        "restored_hard_reject_no_stock"
-      ]
-    },
-    {
-      "file": "photo-service-5.jpg",
-      "reasons": [
-        "off_section_relevance:trade_require_miss:auto",
-        "restored_hard_reject_no_stock"
-      ]
-    }
-  ],
+  "failed": [],
   "gallery_gaps": [],
   "rescored": [
     {
@@ -342,9 +325,6 @@
       }
     }
   ],
-  "skipped": [
-    "correlate_restore_no_stock:photo-photos-cta.jpg",
-    "correlate_restore_no_stock:photo-service-5.jpg"
-  ],
+  "skipped": [],
   "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
 }

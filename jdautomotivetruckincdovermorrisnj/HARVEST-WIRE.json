@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-03T03:40:50.191Z",
+ "at": "2026-09-05T20:53:39.284Z",
  "slug": "jdautomotivetruckincdovermorrisnj",
  "wired": [
   {
@@ -13,54 +13,26 @@
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "google-27ceb8b910d7cea9.jpg",
-   "bytes": 209622,
+   "from": "google-5e44253874423b70.jpg",
+   "bytes": 90746,
    "smart_crop": true,
-   "src": "google-27ceb8b910d7cea9.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1440x1080",
+   "src": "google-5e44253874423b70.jpg",
+   "letterbox_stripped": "v3.9%",
+   "src_wh": "1200x1538",
    "out_wh": "1000x625",
    "crop_axis": "y",
    "crop_offset_pct": 50,
-   "detail_score": 44.495,
-   "orientation": "landscape"
+   "detail_score": 13.489,
+   "orientation": "portrait"
   },
   {
    "slot": "photo-about.jpg",
-   "from": "google-5e44253874423b70.jpg",
-   "bytes": 229951,
-   "letterbox_stripped": "v3.9%"
+   "from": "google-948c2124897a6322.jpg",
+   "bytes": 218262,
+   "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
-   "from": "google-948c2124897a6322.jpg",
-   "bytes": 117933,
-   "smart_crop": true,
-   "src": "google-948c2124897a6322.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "1600x900",
-   "out_wh": "1000x625",
-   "crop_axis": "x",
-   "crop_offset_pct": 53,
-   "detail_score": 26.767,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 128348,
-   "smart_crop": true,
-   "src": "fb-04.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 75,
-   "detail_score": 22.303,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
    "from": "fb-10.jpg",
    "bytes": 7561,
    "smart_crop": true,
@@ -74,16 +46,32 @@
    "orientation": "landscape"
   },
   {
-   "slot": "photo-gallery-1.jpg",
+   "slot": "photo-card-reviews.jpg",
    "from": "fb-07.jpg",
-   "bytes": 9120,
-   "letterbox_stripped": null
+   "bytes": 6773,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 20,
+   "detail_score": 19.54,
+   "orientation": "landscape"
   },
   {
-   "slot": "photo-gallery-2.jpg",
+   "slot": "photo-card-photos.jpg",
    "from": "fb-08.jpg",
-   "bytes": 8110,
-   "letterbox_stripped": null
+   "bytes": 8563,
+   "smart_crop": true,
+   "src": "fb-08.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 50,
+   "detail_score": 14.975,
+   "orientation": "landscape"
   },
   {
    "slot": "logo.png",
@@ -93,16 +81,20 @@
   }
  ],
  "skipped": [
-  "classification read: 15 verdicts",
+  "classification read: 12 verdicts",
   "staged 13 harvest photos from fb-photos:10 + assets:3",
   "refused_by_class:fb-03.jpg:reject",
+  "refused_unlooked:fb-04.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:fb-05.jpg:reject",
   "refused_unlooked:fb-06.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:fb-09.jpg:reject",
+  "refused_unlooked:google-27ceb8b910d7cea9.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:google-5e44253874423b70.jpg:portrait_aspect_hero_refuse",
   "hero_cand_refuse:fb-10.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-08.jpg:low_res_lt_960",
+  "photo-gallery-1.jpg",
+  "photo-gallery-2.jpg",
   "photo-gallery-3.jpg",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -128,8 +120,13 @@
   "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 8,
- "refused_by_class": 4,
- "photo_candidates": 8,
+ "candidates": 6,
+ "refused_by_class": 6,
+ "photo_candidates": 6,
+ "altBySlot": {
+  "photo-hero.jpg": "The shop in daylight with both bays open and the beds planted along the front",
+  "photo-card-about.jpg": "The building at dusk with the sign lit above the bay doors",
+  "photo-about.jpg": "The front counter with the trade accreditations displayed along the front of it"
+ },
  "dedupe_fixed": 5
 }
