@@ -1,0 +1,157 @@
+{
+  "at": "2026-09-06T21:46:06.476Z",
+  "ok": true,
+  "schema": "vendly.autodemo.section-photo-correlate/2",
+  "trade": "auto-repair",
+  "replaced": [
+    {
+      "file": "photo-card-photos.jpg",
+      "source": "harvest-fallback",
+      "sha256": "7b91a5d2e05771dcb5137e79b8c8913c0673e4c9b9c2f28e32cf33dc396ea598",
+      "reasons": [
+        "off_section_relevance:slot_invented_alt_no_verify"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westsidetireautojerseycityhudsonnj\\fb-photos\\fb-05.jpg",
+      "score_alt": "Black Mercedes with its hood open beside an AC service machine."
+    },
+    {
+      "file": "photo-gallery-4.jpg",
+      "source": "harvest-fallback",
+      "sha256": "92d21a85224ee870ae9e71b7e1e2fd1b2a3d7e9f66317b75b53ce603259b382f",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westsidetireautojerseycityhudsonnj\\fb-photos\\fb-09.jpg",
+      "score_alt": "Gray Mercedes with front-end damage and a wheel removed, raised on a jack."
+    },
+    {
+      "file": "photo-gallery-5.jpg",
+      "source": "harvest-fallback",
+      "sha256": "ad8ef745c3af05f5ae4fdfb8793a37db2818449488c528090123cd0f4279b9a3",
+      "reasons": [
+        "stub"
+      ],
+      "service": null,
+      "from": "C:\\VendlyVault\\_tmp\\autodemo\\demos\\westsidetireautojerseycityhudsonnj\\fb-photos\\fb-04.jpg",
+      "score_alt": "Two adults work in the shop bay near a silver minivan and cars on lifts."
+    }
+  ],
+  "kept": [
+    {
+      "file": "photo-about.jpg",
+      "sha256": "6f8d66424dce0fe7a0dcd13f81532f44c6efd0d1c45b693daba35038c8c01818",
+      "bytes": 151252,
+      "alt": "Black SUV with its hood open, raised on a two-post lift."
+    },
+    {
+      "file": "photo-card-about.jpg",
+      "sha256": "a216763260014bcefba92bb98c4fc6c3d23b25f8ea341c4b1240309cbddd754f",
+      "bytes": 104253,
+      "alt": "Two adults work in the shop bay near a silver minivan and cars on lifts."
+    },
+    {
+      "file": "photo-card-reviews.jpg",
+      "sha256": "a67fa0a15c01617fa8e958673e1a5d04efd43d03bb3f8c8f459383368e99d2f8",
+      "bytes": 112986,
+      "alt": "Gray Mercedes with front-end damage and a wheel removed, raised on a jack."
+    },
+    {
+      "file": "photo-card-services.jpg",
+      "sha256": "07bc889de6bbf56acd643290d2d3b5bea320116181b3ce55ff8abf50d8623072",
+      "bytes": 122406,
+      "alt": "Black Mercedes with its hood open beside an AC service machine."
+    },
+    {
+      "file": "photo-gallery-1.jpg",
+      "sha256": "4fd54dee9389956dc4c14ecac662a435434ac172614744ceb7765dae65d14996",
+      "bytes": 95603,
+      "alt": "Close-up of an AC service hose connected to a car's high-pressure port."
+    },
+    {
+      "file": "photo-gallery-2.jpg",
+      "sha256": "3b21bd7206dc30f7c7f3074d05a8a6ec24009197963302b93bb299aee2f2761d",
+      "bytes": 91226,
+      "alt": "Refrigerant recovery machine's control panel in the shop."
+    },
+    {
+      "file": "photo-gallery-3.jpg",
+      "sha256": "798a99b5f360269f8e1551a111602741cd1a5042e6133ad9b5c189c17b04ed79",
+      "bytes": 135983,
+      "alt": "White vintage Chevy pickup with Rallye decals raised on a scissor lift."
+    },
+    {
+      "file": "photo-hero.jpg",
+      "sha256": "0c49514cc6525fdd4be75eac72fa3ae4cb87a77aa3f922b1aac813b8194f3288",
+      "bytes": 74587,
+      "alt": "Silver Porsche raised on an alignment lift in the shop."
+    },
+    {
+      "file": "photo-gallery-6.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-7.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-8.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    },
+    {
+      "file": "photo-gallery-9.jpg",
+      "sha256": "6b7fa434f92a8b80aab02d9bf1a12e49ffcae424e4013a1c4f68b67e3d2bbcd0",
+      "bytes": 70,
+      "alt": null,
+      "restored": true,
+      "reasons": [
+        "stub"
+      ]
+    }
+  ],
+  "failed": [],
+  "gallery_gaps": [],
+  "rescored": [
+    {
+      "file": "photo-card-photos.jpg",
+      "alt": null,
+      "relevance": {
+        "ok": false,
+        "score": -11,
+        "reason": "slot_invented_alt_no_verify"
+      },
+      "flattery": {
+        "ok": true,
+        "score": 0,
+        "reason": "",
+        "strict": false
+      }
+    }
+  ],
+  "skipped": [
+    "correlate_restore_no_stock:photo-gallery-6.jpg",
+    "correlate_restore_no_stock:photo-gallery-7.jpg",
+    "correlate_restore_no_stock:photo-gallery-8.jpg",
+    "correlate_restore_no_stock:photo-gallery-9.jpg"
+  ],
+  "law": "DEMO-SECTION-PHOTO-CORRELATE-STOCK-FILL-FOREVER"
+}

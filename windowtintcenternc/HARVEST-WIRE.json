@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-05T19:18:54.160Z",
+ "at": "2026-09-06T21:51:22.262Z",
  "slug": "windowtintcenternc",
  "wired": [
   {
@@ -13,26 +13,40 @@
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 108193,
+   "from": "fb-03.jpg",
+   "bytes": 6416,
    "smart_crop": true,
-   "src": "fb-08.jpg",
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "206x206",
+   "out_wh": "206x129",
+   "crop_axis": "y",
+   "crop_offset_pct": 8,
+   "detail_score": 15.682,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-about.jpg",
+   "from": "fb-08.jpg",
+   "bytes": 137374,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-07.jpg",
+   "bytes": 121608,
+   "smart_crop": true,
+   "src": "fb-07.jpg",
    "letterbox_stripped": null,
    "src_wh": "960x960",
    "out_wh": "960x600",
    "crop_axis": "y",
    "crop_offset_pct": 50,
-   "detail_score": 24.397,
+   "detail_score": 25.161,
    "orientation": "landscape"
   },
   {
-   "slot": "photo-about.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 135569,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
+   "slot": "photo-card-photos.jpg",
    "from": "fb-05.jpg",
    "bytes": 103953,
    "smart_crop": true,
@@ -46,49 +60,27 @@
    "orientation": "landscape"
   },
   {
-   "slot": "photo-card-reviews.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 118634,
-   "smart_crop": true,
-   "src": "fb-10.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 50,
-   "detail_score": 21.844,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 87112,
-   "smart_crop": true,
-   "src": "fb-09.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 63,
-   "detail_score": 24.297,
-   "orientation": "landscape"
-  },
-  {
    "slot": "photo-gallery-1.jpg",
+   "from": "fb-10.jpg",
+   "bytes": 130862,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-2.jpg",
+   "from": "fb-09.jpg",
+   "bytes": 117100,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
    "from": "fb-06.jpg",
    "bytes": 110880,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-gallery-2.jpg",
+   "slot": "photo-ctaband.jpg",
    "from": "fb-04.jpg",
    "bytes": 88453,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 8100,
    "letterbox_stripped": null
   },
   {
@@ -105,7 +97,7 @@
   "hero_cand_refuse:fb-08.jpg:road_no_landscape",
   "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-03.jpg:low_res_lt_960",
-  "photo-ctaband.jpg",
+  "photo-card-services.jpg",
   "photo-quoteband.jpg",
   "photo-gallery-4.jpg",
   "photo-gallery-5.jpg",
@@ -120,7 +112,6 @@
   "photo-contact.jpg",
   "photo-photos-cta.jpg",
   "photo-reviewsband.jpg",
-  "photo-ctaband.jpg",
   "photo-quoteband.jpg",
   "photo-ba-before.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "photo-family.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
@@ -131,5 +122,15 @@
  ],
  "candidates": 9,
  "photo_candidates": 9,
+ "altBySlot": {
+  "photo-hero.jpg": "Red Ford Mustang GT parked outside the Window Tinting Center storefront.",
+  "photo-about.jpg": "Black GMC Denali pickup parked outside the Tint Center storefront.",
+  "photo-card-reviews.jpg": "Black Chevrolet Camaro parked outside the Tint Center storefront.",
+  "photo-card-photos.jpg": "Gray GMC pickup with off-road tires parked outside the Tint Center.",
+  "photo-gallery-1.jpg": "Red Dodge Charger parked outside the Tint Center storefront.",
+  "photo-gallery-2.jpg": "White Jeep Wrangler Sahara parked outside the Tint Center storefront.",
+  "photo-gallery-3.jpg": "Red Jeep Gladiator parked outside the Tint Center storefront.",
+  "photo-ctaband.jpg": "Second view of the red Mustang parked outside the tint shop storefront."
+ },
  "dedupe_fixed": 5
 }

@@ -1,13 +1,13 @@
 {
   "schema": "vendly.autodemo.stock-fill/1",
-  "at": "2026-09-05T17:52:43.365Z",
+  "at": "2026-09-06T21:10:14.655Z",
   "trade": "tree-service",
   "slotHints": {
     "photo-service-1.jpg": "Tree removal",
     "photo-service-2.jpg": "Stump grinding and removal",
     "photo-service-3.jpg": "Storm damage and emergency removal"
   },
-  "ok": true,
+  "ok": false,
   "kept": [
     {
       "file": "photo-about.jpg",
@@ -111,105 +111,33 @@
   "filled": [
     {
       "file": "photo-service-4.jpg",
-      "sha256": "6f98034f0df87fd69c7daddb762c84ea12099a6907e5160602387b72c4089515",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/serene-forest-waterfall-with-tree-branch-31181221/",
-        "subject_alt": "chainsaw cutting tree limb",
-        "found_by_query": "chainsaw cutting tree limb",
-        "family": "tree-service",
-        "library_file": "tree-service-peaceful-scene-waterfall-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-09-01T14:04:21.048Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 150
-      }
+      "sha256": null,
+      "source": "UNFILLED",
+      "service": null
     },
     {
       "file": "photo-service-5.jpg",
-      "sha256": "a2333a34f0f33111e3b5da52ddabdf0be383660388953ef6f9a47642ea0f4566",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/photo-of-ivy-leaves-on-a-tree-trunk-14522377/",
-        "subject_alt": "chainsaw cutting tree limb",
-        "found_by_query": "chainsaw cutting tree limb",
-        "family": "tree-service",
-        "library_file": "tree-service-detailed-view-ivy-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-09-01T14:04:29.086Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 149
-      }
+      "sha256": null,
+      "source": "UNFILLED",
+      "service": null
     },
     {
       "file": "photo-service-6.jpg",
-      "sha256": "ad35f66a3e0265c567bd03c2703ead2c685d866b719f65ff7b0cbc83877e80d5",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/close-up-of-yellow-lichen-on-tree-branch-38296305/",
-        "subject_alt": "chainsaw cutting tree limb",
-        "found_by_query": "chainsaw cutting tree limb",
-        "family": "tree-service",
-        "library_file": "tree-service-macro-shot-vibrant-01.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-09-01T14:04:32.728Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 148
-      }
+      "sha256": null,
+      "source": "UNFILLED",
+      "service": null
     },
     {
       "file": "photo-services-hero.jpg",
-      "sha256": "1e8e7028326971d46a09aebf38b435a2302137c1190a53c755eee418e25cb8b4",
-      "source": "stock-library",
-      "provenance": {
-        "kind": "stock",
-        "source": "Pexels",
-        "licence": "Pexels License (commercial use, no attribution required)",
-        "source_url": "https://www.pexels.com/photo/fallen-tree-trunk-in-a-sunlit-forest-path-28529076/",
-        "subject_alt": "chainsaw cutting tree limb",
-        "found_by_query": "chainsaw cutting tree limb",
-        "family": "tree-service",
-        "library_file": "tree-service-large-fallen-tree-02.jpg",
-        "served_from": "_assets/stock (offline)",
-        "downloaded_at": "2026-09-01T14:02:58.487Z",
-        "service_title": null,
-        "placement_rule": "ATMOSPHERE / EMPTY SLOTS ONLY. Real harvest photos win. Service-matched stock when filling. Never gallery-as-their-work claim. SHA claimed forever in stock-claims.jsonl."
-      },
-      "service": null,
-      "claims": {
-        "claimed": true,
-        "unclaimed_remaining_family_estimate": 147
-      }
+      "sha256": null,
+      "source": "UNFILLED",
+      "service": null
     }
   ],
   "gaps": [],
-  "distinct": 18,
+  "distinct": 14,
   "slots": 18,
-  "stock_provenance_rows": 4,
+  "stock_provenance_rows": 0,
   "family": "tree-service",
   "refuse_borrow": false,
   "provenance_ok": true

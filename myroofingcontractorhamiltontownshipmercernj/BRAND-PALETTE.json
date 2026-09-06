@@ -1,0 +1,73 @@
+{
+  "schema": "vendly.autodemo.palette/1",
+  "slug": "myroofingcontractorhamiltontownshipmercernj",
+  "mold": "_template-skipper-blank",
+  "brand_input": "#151F39",
+  "palette": {
+    "BRAND": "#151F39",
+    "PRIMARY": "#1A2747",
+    "PRIMARY_DK": "#131C34",
+    "PRIMARY_MID": "#202F56",
+    "ACCENT": "#293D70",
+    "ACCENT_DK": "#1D2B4E",
+    "ACCENT_LT": "#3A559D",
+    "ON_DARK": "#C3CEE9",
+    "MENU_INK": "#0C1222",
+    "TINT_1": "#DAE0F1",
+    "TINT_2": "#E5E9F5",
+    "TINT_3": "#D2DAEF",
+    "TINT_4": "#D6DDF0",
+    "LINE_2": "#B4C2E4",
+    "MUTED_BRAND": "#4E6CBD",
+    "MIST": "#F2F4FA",
+    "LINE": "#CBD4EC",
+    "PRIMARY_RGB": "26,39,71",
+    "ACCENT_RGB": "41,61,112",
+    "SCRIM_RGB": "32,47,86",
+    "SCRIM2_RGB": "19,28,52",
+    "MENU_INK_RGB": "12,18,34",
+    "HEADER_BG": "#FFFFFF",
+    "HEADER_BORDER": "rgba(16,23,36,.22)"
+  },
+  "contrast": [
+    {
+      "pair": "white on primary",
+      "ratio": 14.74,
+      "pass": true
+    },
+    {
+      "pair": "white on accent",
+      "ratio": 10.52,
+      "pass": true
+    },
+    {
+      "pair": "onDark on primary",
+      "ratio": 9.35,
+      "pass": true
+    },
+    {
+      "pair": "menu ink on white",
+      "ratio": 18.66,
+      "pass": true
+    },
+    {
+      "pair": "accent as kicker text on mist",
+      "ratio": 9.57,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on mist",
+      "ratio": 4.54,
+      "pass": true
+    },
+    {
+      "pair": "muted body copy on paper",
+      "ratio": 5,
+      "pass": true
+    }
+  ],
+  "notes": [
+    "contrast repair applied: white label on accent button = 4.09:1 (needs 4.5); accent as kicker text on the mist band = 3.95:1 (needs 4.5); muted body copy on the mist band = 1.36:1 (needs 4.5)",
+    "contrast repair applied: muted body copy on the mist band = 3.32:1 (needs 4.5)"
+  ]
+}

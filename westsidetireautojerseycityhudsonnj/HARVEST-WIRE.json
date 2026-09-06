@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-05T19:18:46.037Z",
+ "at": "2026-09-06T21:42:24.259Z",
  "slug": "westsidetireautojerseycityhudsonnj",
  "wired": [
   {
@@ -13,54 +13,6 @@
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-08.jpg",
-   "bytes": 114320,
-   "smart_crop": true,
-   "src": "fb-08.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 88,
-   "detail_score": 28.097,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "fb-05.jpg",
-   "bytes": 144990,
-   "letterbox_stripped": null
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 112986,
-   "smart_crop": true,
-   "src": "fb-09.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 23,
-   "detail_score": 29.497,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 113887,
-   "smart_crop": true,
-   "src": "fb-10.jpg",
-   "letterbox_stripped": null,
-   "src_wh": "960x960",
-   "out_wh": "960x600",
-   "crop_axis": "y",
-   "crop_offset_pct": 10,
-   "detail_score": 27.114,
-   "orientation": "landscape"
-  },
-  {
-   "slot": "photo-card-photos.jpg",
    "from": "fb-04.jpg",
    "bytes": 104253,
    "smart_crop": true,
@@ -74,21 +26,69 @@
    "orientation": "landscape"
   },
   {
-   "slot": "photo-gallery-1.jpg",
-   "from": "fb-03.jpg",
-   "bytes": 101680,
+   "slot": "photo-about.jpg",
+   "from": "fb-08.jpg",
+   "bytes": 151252,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-gallery-2.jpg",
+   "slot": "photo-card-services.jpg",
+   "from": "fb-05.jpg",
+   "bytes": 122406,
+   "smart_crop": true,
+   "src": "fb-05.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 45,
+   "detail_score": 27.946,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-reviews.jpg",
+   "from": "fb-09.jpg",
+   "bytes": 112986,
+   "smart_crop": true,
+   "src": "fb-09.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x960",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 23,
+   "detail_score": 29.497,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-card-photos.jpg",
+   "from": "fb-03.jpg",
+   "bytes": 81348,
+   "smart_crop": true,
+   "src": "fb-03.jpg",
+   "letterbox_stripped": null,
+   "src_wh": "960x958",
+   "out_wh": "960x600",
+   "crop_axis": "y",
+   "crop_offset_pct": 95,
+   "detail_score": 22.758,
+   "orientation": "landscape"
+  },
+  {
+   "slot": "photo-gallery-1.jpg",
    "from": "fb-06.jpg",
    "bytes": 95603,
    "letterbox_stripped": null
   },
   {
-   "slot": "photo-gallery-3.jpg",
+   "slot": "photo-gallery-2.jpg",
    "from": "fb-07.jpg",
    "bytes": 91226,
+   "letterbox_stripped": null
+  },
+  {
+   "slot": "photo-gallery-3.jpg",
+   "from": "fb-10.jpg",
+   "bytes": 135983,
    "letterbox_stripped": null
   },
   {
@@ -105,8 +105,9 @@
   "hero_cand_refuse:fb-08.jpg:road_no_landscape",
   "hero_cand_refuse:fb-09.jpg:road_no_landscape",
   "hero_cand_refuse:fb-10.jpg:road_no_landscape",
-  "hero_cand_refuse:fb-04.jpg:road_no_landscape",
+  "hero_hold_crew_for_about:fb-04.jpg",
   "hero_cand_refuse:fb-03.jpg:road_no_landscape",
+  "hero_cand_refuse:fb-06.jpg:close_crop_alt",
   "hero_cand_refuse:fb-07.jpg:road_no_landscape",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -134,51 +135,21 @@
  ],
  "candidates": 9,
  "photo_candidates": 9,
+ "altBySlot": {
+  "photo-hero.jpg": "Silver Porsche raised on an alignment lift in the shop.",
+  "photo-card-about.jpg": "Two adults work in the shop bay near a silver minivan and cars on lifts.",
+  "photo-about.jpg": "Black SUV with its hood open, raised on a two-post lift.",
+  "photo-card-services.jpg": "Black Mercedes with its hood open beside an AC service machine.",
+  "photo-card-reviews.jpg": "Gray Mercedes with front-end damage and a wheel removed, raised on a jack.",
+  "photo-gallery-1.jpg": "Close-up of an AC service hose connected to a car's high-pressure port.",
+  "photo-gallery-2.jpg": "Refrigerant recovery machine's control panel in the shop.",
+  "photo-gallery-3.jpg": "White vintage Chevy pickup with Rallye decals raised on a scissor lift."
+ },
  "altRefused": [
-  {
-   "slot": "photo-hero.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 2)"
-  },
-  {
-   "slot": "photo-card-about.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 8)"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 5)"
-  },
-  {
-   "slot": "photo-card-services.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 9)"
-  },
-  {
-   "slot": "photo-card-reviews.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 10)"
-  },
   {
    "slot": "photo-card-photos.jpg",
    "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 4)"
-  },
-  {
-   "slot": "photo-gallery-1.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
    "alt": "WestSide Tire & Auto - technician at work on site (photo 3)"
-  },
-  {
-   "slot": "photo-gallery-2.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 6)"
-  },
-  {
-   "slot": "photo-gallery-3.jpg",
-   "reason": "ALT_FROM_SLOT_FORBIDDEN",
-   "alt": "WestSide Tire & Auto - technician at work on site (photo 7)"
   }
  ],
  "dedupe_fixed": 5
