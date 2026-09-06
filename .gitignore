@@ -81,3 +81,29 @@ SOURCE.txt
 # working stashes and backups, never published
 **/.correlate-stash/
 *.bak-*
+
+# ---- VENDLY BUILD SIDECARS - NEVER PUBLISH (added 2026-09-06) ----
+# These are internal build metadata. Served publicly they told a prospect their logo was a
+# placeholder ("charter-placeholder-your-logo-here") and exposed tenant_id, palette_source,
+# trade_key and which photos we could not find. Measured HTTP 200 on the live site.
+HARVEST-WIRE.json
+CONTACT-FACE-TIER.json
+MARK-CLASSIFY-RECEIPT.json
+STOCK-FILL.json
+DEMO-FACTS.json
+DEMO-FACTS.mold-patched.json
+BRAND-PALETTE.json
+ASSET-SWEEP.json
+STOCK-GALLERY-SUBSTITUTE.json
+SECTION-PHOTO-CORRELATE.json
+BUILD-FIX-VERSION.json
+MARK-READABILITY.json
+BUILD-REFUSAL.json
+HERO-FRAME-SCORE.json
+CONTACT-RECOVERY-SIDECAR.json
+DENIED-STOCK-STRIP.json
+PHOTO-NICHE-AUDIT.json
+STOCK-PROVENANCE.json
+PHOTO-VISION-REVIEW.json
+*.bak
+_audit-bj-20260814/DEMO-SHIP-STANDARD.md
