@@ -4,12 +4,12 @@ html{scroll-padding-bottom:112px}
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
   --blue:#990000;
   --blue-dk:#610000;
-  --blue-lt:#3760A0;
+  --blue-lt:#A03737;
   --red:#990000;
   --paper:#FFFFFF;
   --mist:#FFEDED;
   --ink:#2E0000;
-  --muted:#678FCB;
+  --muted:#CB6767;
   --brand:#610000;
   --line:#FFB8B8;
   --radius:16px;
@@ -55,7 +55,7 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 .btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(153,0,0,.7)}
 .btn-red:hover{background:#470000}
 .btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(153,0,0,.7)}
-.btn-blue:hover{background:#1B3050}
+.btn-blue:hover{background:#501B1B}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
 .btn-ghost:hover{border-color:var(--blue)}
 
@@ -224,7 +224,7 @@ footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
 /* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#678FCB}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#CB6767}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -406,7 +406,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 
 /* ref-learn 0037: source line under a counter, so every number on the page
    carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */
-/* WCAG 2.1 AA 1.4.3 contrast: #7A8798 on the #F4F7FB band measured
+/* WCAG 2.1 AA 1.4.3 contrast: #7A8798 on the #FBF4F4 band measured
    3.37:1, under the 4.5:1 floor for body text. My own 0037 edit introduced it.
    var(--muted) #54637A measures 5.70:1 on the same background. */
 .revsrc{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
@@ -420,8 +420,8 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(97,0,0,.72) 0%,rgba(97,0,0,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#D1DDEF;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#678FCB;margin-top:14px;margin-bottom:0}
+.ctaband p{color:#EFD1D1;max-width:54ch;margin:0 auto 18px}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#CB6767;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
@@ -529,7 +529,7 @@ header.site .navtoggle svg{stroke:#610000!important}
 header.site .navtoggle .navtoggle-text{color:#610000!important}
 .hero h1 em{color:#FFADAD!important}
 .btn-red:hover{background:#470000}
-.btn-blue:hover{background:#1B3050}
+.btn-blue:hover{background:#501B1B}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
@@ -540,7 +540,7 @@ header.site .navtoggle svg{stroke:#2E0000 !important}
 header.site .navtoggle .navtoggle-text{color:#2E0000 !important;opacity:1 !important}
 header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(46,0,0,.18)}
 header.site .sitemenu a{color:#2E0000 !important;background:#FFFFFF !important;opacity:1 !important}
-header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E4EBF6 !important;color:#610000 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#F6E4E4 !important;color:#610000 !important}
 /* Hero copy sits on photograph + full-bleed gradient only. Bubble/panel KILLED 2026-08-12. */
 .hero-inner{isolation:isolate;background:transparent}
 .hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
