@@ -1,35 +1,29 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-02T17:46:08.471Z",
+ "at": "2026-09-06T14:57:16.297Z",
  "slug": "northstatestreetmanagementchinagrovenc",
  "wired": [
   {
    "slot": "photo-hero.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 74008,
+   "from": "fb-04.jpg",
+   "bytes": 12574,
    "letterbox_stripped": null,
    "trade_score": 0,
    "reason": "hero_work_rank"
   },
   {
    "slot": "photo-card-about.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 8557,
+   "from": "fb-07.jpg",
+   "bytes": 7888,
    "smart_crop": true,
-   "src": "fb-04.jpg",
+   "src": "fb-07.jpg",
    "letterbox_stripped": null,
    "src_wh": "206x206",
    "out_wh": "206x129",
    "crop_axis": "y",
-   "crop_offset_pct": 50,
-   "detail_score": 29.411,
+   "crop_offset_pct": 18,
+   "detail_score": 19.032,
    "orientation": "landscape"
-  },
-  {
-   "slot": "photo-about.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 11193,
-   "letterbox_stripped": null
   },
   {
    "slot": "logo.png",
@@ -40,17 +34,18 @@
   }
  ],
  "skipped": [
-  "classification read: 8 verdicts",
+  "classification read: 7 verdicts",
   "staged 10 harvest photos from fb-photos:10",
   "refused_by_class:fb-02.jpg:reject",
   "refused_by_class:fb-03.jpg:reject",
   "refused_unlooked:fb-05.jpg:NEEDS_SUBJECT_LOOK",
   "refused_unlooked:fb-06.jpg:NEEDS_SUBJECT_LOOK",
   "refused_by_class:fb-08.jpg:reject",
-  "hero_cand_refuse:fb-09.jpg:low_res_lt_960",
+  "refused_unlooked:fb-09.jpg:NEEDS_SUBJECT_LOOK",
   "hero_cand_refuse:fb-04.jpg:low_res_lt_960",
   "hero_cand_refuse:fb-07.jpg:low_res_lt_960",
-  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-09.jpg)",
+  "photo-hero.jpg: ranker refused all candidates, fell back to largest classified work photo (fb-04.jpg)",
+  "photo-about.jpg",
   "photo-card-services.jpg",
   "photo-card-reviews.jpg",
   "photo-card-photos.jpg",
@@ -81,8 +76,8 @@
   "photo-service-6.jpg:dedupe_removed_no_replacement(kept=photo-ba-after.jpg)",
   "logo.png: NO_HARVESTED_MARK - refuse wordmark/lockup (HydroClean class 2026-08-15). looked at 0 filename-candidate(s), 0 failed isMark()"
  ],
- "candidates": 3,
- "refused_by_class": 5,
- "photo_candidates": 3,
+ "candidates": 2,
+ "refused_by_class": 6,
+ "photo_candidates": 2,
  "dedupe_fixed": 5
 }
