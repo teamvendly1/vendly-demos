@@ -3,18 +3,18 @@ html{scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
   --blue:#3D4C5C;
-  --blue-dk:#26303B;
+  --blue-dk:#605D01;
   --blue-lt:#556B81;
   --red:#3D4C5C;
   --paper:#FFFFFF;
-  --mist:#F4F6F8;
-  --ink:#12171C;
+  --mist:#FFFEED;
+  --ink:#2D2C01;
   --muted:#8499AE;
-  --brand:#26303B;
-  --line:#D4DBE3;
+  --brand:#605D01;
+  --line:#FEFCB8;
   --radius:16px;
-  --shadow:0 12px 30px -16px rgba(38,48,59,.32);
-  --shadow-lg:0 30px 60px -28px rgba(38,48,59,.45);
+  --shadow:0 12px 30px -16px rgba(96,93,1,.32);
+  --shadow-lg:0 30px 60px -28px rgba(96,93,1,.45);
   --wrap:1120px;
 }
 *{box-sizing:border-box}
@@ -304,7 +304,7 @@ footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#26303B;color:#E0E6EB;
+  background:#605D01;color:#E0E6EB;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
@@ -448,10 +448,10 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 /* Compact CTA band - kill the ~450px near-black empty slab under the buttons. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
 .ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.72) 0%,rgba(38,48,59,.58) 100%)}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(96,93,1,.72) 0%,rgba(96,93,1,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#DAE0E7;max-width:54ch;margin:0 auto 18px}
+.ctaband p{color:#FEFCC2;max-width:54ch;margin:0 auto 18px}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8499AE;margin-top:14px;margin-bottom:0}
 
 /*
@@ -473,11 +473,11 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .pband>.wrap{position:relative;z-index:2}
 /* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
    the photo only needs the same scrim ctaband uses, nothing else changes. */
-.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.84) 0%,rgba(38,48,59,.72) 100%)}
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(96,93,1,.84) 0%,rgba(96,93,1,.72) 100%)}
 /* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
    so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
    stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
-#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.92) 0%,rgba(38,48,59,.84) 100%)}
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(96,93,1,.92) 0%,rgba(96,93,1,.84) 100%)}
 #quote.pband h2{color:#fff}
 #quote.pband .kicker{color:#E0E6EB}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
@@ -545,7 +545,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
   canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
   white card, so most demos will now show a white/near-white header instead of the old flat
-  #26303B. That is deliberate - it is what makes the (correctly keyed) logo look like it has
+  #605D01. That is deliberate - it is what makes the (correctly keyed) logo look like it has
   no plate at all, because the plate colour and the header colour are now the same colour.
 */
 header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
@@ -555,23 +555,23 @@ header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius
    see the block above), so this blanket override was a white-on-white landmine for any future
    .bizmeta button that is not .btn-red (.btn-red already sets its own white-on-red via its own
    rule and does not need this). Each button's own class owns its own contrast now. */
-header.site .navtoggle{background:#fff!important;color:#26303B!important;border-color:rgba(255,255,255,.45)}
-header.site .navtoggle svg{stroke:#26303B!important}
-header.site .navtoggle .navtoggle-text{color:#26303B!important}
+header.site .navtoggle{background:#fff!important;color:#605D01!important;border-color:rgba(255,255,255,.45)}
+header.site .navtoggle svg{stroke:#605D01!important}
+header.site .navtoggle .navtoggle-text{color:#605D01!important}
 .hero h1 em{color:#CED6DF!important}
 .btn-red:hover{background:#1C242B}
 .btn-blue:hover{background:#2A3641}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
-   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #DDE3E9, which nearly
+   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #FEFDC8, which nearly
    vanished once the header itself could also be white/pale (see HEADER_BG above). */
-header.site .navtoggle{background:#FFFFFF !important;color:#12171C !important;border:1px solid rgba(16,23,36,.22) !important}
-header.site .navtoggle svg{stroke:#12171C !important}
-header.site .navtoggle .navtoggle-text{color:#12171C !important;opacity:1 !important}
-header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(18,23,28,.18)}
-header.site .sitemenu a{color:#12171C !important;background:#FFFFFF !important;opacity:1 !important}
-header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E9EDF1 !important;color:#26303B !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#2D2C01 !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle svg{stroke:#2D2C01 !important}
+header.site .navtoggle .navtoggle-text{color:#2D2C01 !important;opacity:1 !important}
+header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(45,44,1,.18)}
+header.site .sitemenu a{color:#2D2C01 !important;background:#FFFFFF !important;opacity:1 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#FFFDDC !important;color:#605D01 !important}
 /* Hero copy sits on photograph + full-bleed gradient only. Bubble/panel KILLED 2026-08-12. */
 .hero-inner{isolation:isolate;background:transparent}
 .hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
