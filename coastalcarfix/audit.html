@@ -10,30 +10,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#14140F;--warm:#FBFAF6;--gold:#6A5A1E;--gold-soft:#8A742A;--line:#E7E2D3;--amber:#F4EEDD;}
+:root{--warm:#FBFAF6;--ink:#14140F;--body:#232019;--body-soft:#3C3A30;--muted:#5C5847;--kicker:#6B6656;--foot:#6E6855;--gold:#6A5A1E;--gold-soft:#8A742A;--line:#E7E2D3;--amber:#F4EEDD;--surface:#FFFFFF;--btn-fg:#FBFAF6;}
+@media (prefers-color-scheme: dark){:root{--warm:#15140F;--ink:#EFEADA;--body:#EDE8D8;--body-soft:#D9D3C0;--muted:#BFB9A6;--kicker:#C4BDA9;--foot:#A79F8B;--gold:#D9BE6A;--gold-soft:#B99C46;--line:#3A3628;--amber:#221F16;--surface:#1D1B14;--btn-fg:#15140F;}}
 *{box-sizing:border-box;}
 body{margin:0;background:var(--warm);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55;}
 .wrap{max-width:760px;margin:0 auto;padding:40px 24px 64px;}
 header.report-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:2px solid var(--line);padding-bottom:20px;margin-bottom:28px;flex-wrap:wrap;}
 .wordmark{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:22px;color:var(--gold);letter-spacing:0.01em;}
-.report-kicker{font-size:13px;color:#6B6656;text-transform:uppercase;letter-spacing:0.08em;}
-h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(26px,4vw,36px);line-height:1.2;margin:0 0 10px;}
-.sub{font-size:16px;color:#3C3A30;margin:0 0 32px;max-width:56ch;}
-.finding{border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:16px;background:#fff;}
+.report-kicker{font-size:13px;color:var(--kicker);text-transform:uppercase;letter-spacing:0.08em;}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(26px,4vw,36px);line-height:1.2;margin:0 0 10px;color:var(--ink);}
+.sub{font-size:16px;color:var(--body-soft);margin:0 0 32px;max-width:56ch;}
+.finding{border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:16px;background:var(--surface);}
 .finding-high{border-left:4px solid var(--gold);}
 .finding-medium{border-left:4px solid var(--gold-soft);}
 .finding-low{border-left:4px solid var(--line);}
 .finding-tag{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.09em;color:var(--gold);margin-bottom:6px;}
-.finding h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:19px;margin:0 0 8px;}
-.finding-evidence{margin:0 0 8px;font-size:15px;color:#232019;}
-.finding-cost{margin:0;font-size:14px;color:#5C5847;}
+.finding h3{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:19px;margin:0 0 8px;color:var(--ink);}
+.finding-evidence{margin:0 0 8px;font-size:15px;color:var(--body);}
+.finding-cost{margin:0;font-size:14px;color:var(--muted);}
 .cta{margin-top:36px;padding:26px;border-radius:12px;background:var(--amber);border:1px solid var(--line);}
-.cta h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:21px;margin:0 0 10px;}
-.cta p{margin:0 0 14px;font-size:15px;}
-.cta a.btn{display:inline-block;background:var(--gold);color:var(--warm);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;font-size:15px;}
+.cta h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:21px;margin:0 0 10px;color:var(--ink);}
+.cta p{margin:0 0 14px;font-size:15px;color:var(--body);}
+.cta a.btn{display:inline-block;background:var(--gold);color:var(--btn-fg);text-decoration:none;font-weight:600;padding:12px 22px;border-radius:8px;font-size:15px;}
 .cta .phone{font-weight:600;color:var(--ink);}
-footer.report-foot{margin-top:40px;font-size:12px;color:#8A8570;border-top:1px solid var(--line);padding-top:16px;}
-@media (prefers-color-scheme: dark){body{background:#15140F;color:#EFEADA;}.finding{background:#1D1B14;border-color:#3A3628;}.cta{background:#221F16;border-color:#3A3628;}}
+.keeps{margin:18px 0 16px;padding:0;list-style:none;}
+.keeps li{position:relative;padding:0 0 0 20px;margin:0 0 10px;font-size:15px;color:var(--body);}
+.keeps li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:var(--gold);}
+.cta .price{font-size:15px;color:var(--body);margin:0 0 16px;}
+footer.report-foot{margin-top:40px;font-size:12px;color:var(--foot);border-top:1px solid var(--line);padding-top:16px;}
 </style>
 </head>
 <body>
@@ -41,7 +45,7 @@ footer.report-foot{margin-top:40px;font-size:12px;color:#8A8570;border-top:1px s
 <div class="wrap">
 <header class="report-head">
 <span class="wordmark">Vendly</span>
-<span class="report-kicker">Digital presence check - 2026-09-02</span>
+<span class="report-kicker">Digital presence check - 2026-09-06</span>
 </header>
 <h1>What is costing Coastal Car Fix customers online</h1>
 <p class="sub">A quick, honest look at how Coastal Car Fix in Murrells Inlet shows up when a customer looks for an auto repair online right now. Every line below is something we actually checked, not a guess.</p>
@@ -51,7 +55,15 @@ footer.report-foot{margin-top:40px;font-size:12px;color:#8A8570;border-top:1px s
 <h2>We already started fixing it</h2>
 <p>We put together a working example of what a real site for Coastal Car Fix could look like, built from the real information and photos already tied to this business. Take a look, no cost to look.</p>
 <a class="btn" href="https://teamvendly1.github.io/vendly-demos/coastalcarfix/" rel="noopener">See the example</a>
-<p style="margin-top:14px;">Questions, or want to talk it through? Call or text <span class="phone">+1 774-426-9684</span>.</p>
+<h2 style="margin-top:26px;">And then somebody runs it</h2>
+<p>A page on its own does not fix the problem. Putting a site up stopped being the hard part, and it still does not answer the phone at nine at night while you are finishing the last job. Here is what keeps working after it goes live.</p>
+<ul class="keeps">
+<li>A helper on the site answers customer questions about your services, your hours and your area, and takes a name and number so the lead does not walk while you are on a job.</li>
+<li>A plain email every week telling you what the site actually did. How many people looked, what they asked about, and anything that came in. No dashboard to log into and no jargon.</li>
+<li>We keep it current. Photos, hours, services, the small things that go stale and quietly cost you calls.</li>
+</ul>
+<p class="price">One hundred dollars a month, and the site itself costs you nothing to have built. Agency quality without the agency price or the agency runaround.</p>
+<p style="margin:0;">Questions, or want to talk it through? Call or text <span class="phone">+1 774-426-9684</span>.</p>
 </div>
 <footer class="report-foot">Built by Vendly. Every finding above comes from a real, checkable source - a live search, a Google listing, or the business's own public page. Nothing here is invented.</footer>
 </div>
