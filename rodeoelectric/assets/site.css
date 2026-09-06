@@ -120,7 +120,7 @@ background:
 .hero .lede,.pband .lede{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:18px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
-.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#E0E6EB;background:transparent;border:0;padding:0;border-radius:0}
+.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#EBE8E0;background:transparent;border:0;padding:0;border-radius:0}
 .hero .tchip{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4);padding:4px 0}
 .tchip svg{flex:0 0 auto}
 
@@ -189,7 +189,7 @@ section.mist{background:var(--mist)}
 .hrow:last-child{border-bottom:0}
 .hrow b{color:var(--blue-dk)}
 .hrow span{color:var(--muted)}
-.afterhours{background:var(--blue-dk);color:#E0E6EB;border-radius:var(--radius);padding:29px 26px}
+.afterhours{background:var(--blue-dk);color:#EBE8E0;border-radius:var(--radius);padding:29px 26px}
 .afterhours h3{color:#fff}
 .afterhours p{margin:0 0 20px;font-size:15.5px;color:#D7D2C1}
 
@@ -273,7 +273,7 @@ footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#5E4702;color:#E0E6EB;
+  background:#5E4702;color:#EBE8E0;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
@@ -408,7 +408,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */
 /* WCAG 2.1 AA 1.4.3 contrast: #7A8798 on the #F4F7FB band measured
    3.37:1, under the 4.5:1 floor for body text. My own 0037 edit introduced it.
-   var(--muted) #54637A measures 5.70:1 on the same background. */
+   var(--muted) #7A7154 measures 5.70:1 on the same background. */
 .revsrc{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
 
 /* ref-learn 0037: closing CTA band over licensed atmosphere photography.
@@ -448,7 +448,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
 #quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,71,2,.92) 0%,rgba(94,71,2,.84) 100%)}
 #quote.pband h2{color:#fff}
-#quote.pband .kicker{color:#E0E6EB}
+#quote.pband .kicker{color:#EBE8E0}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
