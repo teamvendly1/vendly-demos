@@ -1,6 +1,6 @@
 {
  "schema": "vendly.autodemo.harvest-wire/1",
- "at": "2026-09-03T04:59:49.895Z",
+ "at": "2026-09-06T15:05:02.027Z",
  "slug": "apllandscapingllcglassborogloucesternj",
  "wired": [
   {
@@ -27,62 +27,62 @@
   },
   {
    "slot": "photo-about.jpg",
-   "from": "fb-10.jpg",
-   "bytes": 292717,
+   "from": "fb-07.jpg",
+   "bytes": 290932,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-card-services.jpg",
-   "from": "fb-07.jpg",
-   "bytes": 189124,
+   "from": "fb-10.jpg",
+   "bytes": 208704,
    "smart_crop": true,
-   "src": "fb-07.jpg",
+   "src": "fb-10.jpg",
    "letterbox_stripped": null,
    "src_wh": "960x960",
    "out_wh": "960x600",
    "crop_axis": "y",
-   "crop_offset_pct": 30,
-   "detail_score": 40.122,
+   "crop_offset_pct": 100,
+   "detail_score": 51.626,
    "orientation": "landscape"
   },
   {
    "slot": "photo-card-reviews.jpg",
-   "from": "fb-04.jpg",
-   "bytes": 193811,
+   "from": "fb-09.jpg",
+   "bytes": 150712,
    "smart_crop": true,
-   "src": "fb-04.jpg",
+   "src": "fb-09.jpg",
    "letterbox_stripped": null,
    "src_wh": "960x960",
    "out_wh": "960x600",
    "crop_axis": "y",
-   "crop_offset_pct": 23,
-   "detail_score": 35.881,
+   "crop_offset_pct": 50,
+   "detail_score": 29.893,
    "orientation": "landscape"
   },
   {
    "slot": "photo-card-photos.jpg",
-   "from": "fb-05.jpg",
-   "bytes": 156964,
+   "from": "fb-06.jpg",
+   "bytes": 147929,
    "smart_crop": true,
-   "src": "fb-05.jpg",
+   "src": "fb-06.jpg",
    "letterbox_stripped": null,
    "src_wh": "960x960",
    "out_wh": "960x600",
    "crop_axis": "y",
-   "crop_offset_pct": 38,
-   "detail_score": 28.213,
+   "crop_offset_pct": 48,
+   "detail_score": 27.911,
    "orientation": "landscape"
   },
   {
    "slot": "photo-gallery-1.jpg",
-   "from": "fb-09.jpg",
-   "bytes": 225056,
+   "from": "fb-04.jpg",
+   "bytes": 279123,
    "letterbox_stripped": null
   },
   {
    "slot": "photo-gallery-2.jpg",
-   "from": "fb-06.jpg",
-   "bytes": 189219,
+   "from": "fb-05.jpg",
+   "bytes": 228825,
    "letterbox_stripped": null
   },
   {
@@ -99,7 +99,7 @@
   }
  ],
  "skipped": [
-  "classification read: 10 verdicts",
+  "classification read: 9 verdicts",
   "staged 10 harvest photos from fb-photos:10",
   "photo-ctaband.jpg",
   "photo-quoteband.jpg",
@@ -127,5 +127,16 @@
  ],
  "candidates": 9,
  "photo_candidates": 9,
+ "altBySlot": {
+  "photo-hero.jpg": "A front lawn cut into clean stripes running the width of the property",
+  "photo-card-about.jpg": "An island bed cut in and mulched with the shrubs set out across it",
+  "photo-about.jpg": "A stone edged bed with clipped shrubs running along the front of the house",
+  "photo-card-services.jpg": "Screening mulch out on the lawn during a bed refresh",
+  "photo-card-reviews.jpg": "Mulched beds and clipped shrubs framing the paver walk up to a stone house",
+  "photo-card-photos.jpg": "A foundation bed mulched and planted along the front of a porch",
+  "photo-gallery-1.jpg": "Mulch rings cut in around the trees across a mown front lawn",
+  "photo-gallery-2.jpg": "A stone edged mulch ring finished around a mature tree in the lawn",
+  "photo-gallery-3.jpg": "A row of young arborvitae planted in along the pool fence and mulched"
+ },
  "dedupe_fixed": 5
 }
