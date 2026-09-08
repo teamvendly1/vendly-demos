@@ -498,5 +498,87 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   root.addEventListener('pointercancel', endPointer);
 })();
 </script>
+
+<script id="__vendly_sweep">
+(function(){
+ try{
+  function rgb(s){var m=/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([\d.]+))?\)/.exec(s||'');
+    return m?{r:+m[1],g:+m[2],b:+m[3],a:m[4]===undefined?1:+m[4]}:null;}
+  function hex(c){if(!c)return null;var h=function(v){return ('0'+v.toString(16)).slice(-2);};
+    return ('#'+h(c.r)+h(c.g)+h(c.b)).toUpperCase();}
+  function effBg(el){var n=el;
+    while(n&&n.nodeType===1){var c=rgb(getComputedStyle(n).backgroundColor);
+      if(c&&c.a>0.95)return hex(c); n=n.parentElement;}
+    return '#FFFFFF';}
+  function tag(el){var cn=(el.className&&typeof el.className==='string')?el.className.trim().split(/\s+/).slice(0,2).join('.'):'';
+    return el.tagName.toLowerCase()+(cn?'.'+cn:'');}
+  function ownText(el){var t='';
+    for(var i=0;i<el.childNodes.length;i++){var n=el.childNodes[i];
+      if(n.nodeType===3)t+=n.nodeValue;}
+    return t.replace(/\s+/g,' ').trim();}
+
+  var root=getComputedStyle(document.documentElement);
+  var V={};['--c','--on-c','--brand','--a','--b','--ink','--c-edge'].forEach(function(k){
+    V[k]=(root.getPropertyValue(k)||'').trim().toUpperCase()||null;});
+  var accents=[V['--c'],V['--brand'],V['--c-edge']].filter(Boolean);
+  function isAccent(h){return h&&accents.indexOf(h)>=0;}
+
+  var ground=[],ink=[];
+  var all=document.querySelectorAll('*');
+  for(var i=0;i<all.length;i++){
+    var el=all[i]; if(/^(script|style|head|meta|link|title|svg|path|g)$/i.test(el.tagName)) continue;
+    var cs=getComputedStyle(el);
+    var bgc=rgb(cs.backgroundColor), bg=(bgc&&bgc.a>0.95)?hex(bgc):null;
+    var col=hex(rgb(cs.color));
+    var px=parseFloat(cs.fontSize)||16, w=parseInt(cs.fontWeight,10)||400;
+    // WCAG large text: >=24px regular, or >=18.66px bold(>=700)
+    var large=(px>=24)||(px>=18.66&&w>=700);
+    var txt=ownText(el);
+    // A. accent as GROUND, and it actually carries characters
+    if(isAccent(bg)&&txt.length>0){
+      ground.push({el:tag(el),bg:bg,color:col,px:px,w:w,large:large,text:txt.slice(0,40)});
+    }
+    // B. accent as INK
+    if(isAccent(col)&&txt.length>0){
+      ink.push({el:tag(el),color:col,on:effBg(el),px:px,w:w,large:large,text:txt.slice(0,40)});
+    }
+    // ::before / ::after glyphs in the accent (the FAQ "+" lives here)
+    ['::before','::after'].forEach(function(pe){
+      var ps=getComputedStyle(el,pe); var cont=ps.content;
+      if(!cont||cont==='none'||cont==='normal')return;
+      if(/^(url|image|-webkit)/.test(cont))return;
+      var pc=hex(rgb(ps.color)); if(!isAccent(pc))return;
+      var ppx=parseFloat(ps.fontSize)||px, pw=parseInt(ps.fontWeight,10)||w;
+      ink.push({el:tag(el)+pe,color:pc,on:effBg(el),px:ppx,w:pw,
+        large:(ppx>=24)||(ppx>=18.66&&pw>=700),text:cont.slice(0,20)});
+    });
+  }
+
+  // focus rings: enumerate the rules, resolve var(--c) via the root palette
+  var focus=[];
+  for(var s=0;s<document.styleSheets.length;s++){
+    var rl; try{rl=document.styleSheets[s].cssRules;}catch(e){continue;}
+    for(var j=0;j<rl.length;j++){
+      var r=rl[j]; if(!r.selectorText||!r.style)continue;
+      if(!/:focus(-visible)?/.test(r.selectorText))continue;
+      var o=r.style.getPropertyValue('outline')||r.style.getPropertyValue('outline-color');
+      if(!o)continue;
+      var vm=/var\(\s*(--[a-z0-9\-]+)/i.exec(o);
+      var resolved=vm?V[vm[1]]:( /#[0-9a-f]{6}/i.exec(o)||[])[0];
+      focus.push({order:s+'.'+j,sel:r.selectorText,decl:o,
+        token:vm?vm[1]:null,color:resolved?String(resolved).toUpperCase():null,
+        offset:r.style.getPropertyValue('outline-offset')||''});
+    }
+  }
+
+  var pre=document.createElement('pre');pre.id='__SWEEP__';
+  pre.textContent='@@'+JSON.stringify({vars:V,ground:ground,ink:ink,focus:focus})+'@@';
+  document.body.appendChild(pre);
+ }catch(e){
+  var p=document.createElement('pre');p.textContent='@@'+JSON.stringify({fatal:String(e)})+'@@';
+  document.body.appendChild(p);
+ }
+})();
+</script>
 </body>
 </html>
