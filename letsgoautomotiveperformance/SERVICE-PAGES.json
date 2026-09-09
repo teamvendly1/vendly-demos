@@ -1,0 +1,68 @@
+{
+  "slug": "letsgoautomotiveperformance",
+  "apply": true,
+  "is_launch": false,
+  "crumbs": 5,
+  "schema": 6,
+  "favicon": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "footer_area": true,
+  "footer_address": true,
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Diagnostics and engine work",
+        "slug": "diagnostics-and-engine-work",
+        "reasons": [
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Brakes, steering and suspension",
+        "slug": "brakes-steering-and-suspension",
+        "reasons": [
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Exhaust and underbody",
+        "slug": "exhaust-and-underbody",
+        "reasons": [
+          "body_too_thin:58<60",
+          "evidence_not_real:missing"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "changed_files": [
+    "assets/site.css",
+    "index.html",
+    "about.html",
+    "services.html",
+    "photos.html",
+    "reviews.html",
+    "contact.html"
+  ],
+  "structural_css": {
+    "added": true,
+    "bytes": 3994
+  },
+  "reviews_wall": {
+    "changed": true,
+    "eligible": 125,
+    "was_showing": 6,
+    "now_showing": 125
+  },
+  "crawler_files": {
+    "written": false,
+    "reason": "not_a_launch_build_noindex_stays"
+  }
+}
