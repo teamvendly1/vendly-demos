@@ -896,3 +896,30 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
 header.site{background:#14140F!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .logo{background:transparent;padding:0;border-radius:0;box-shadow:none}
 header.site .logo-chip{background:transparent}
+
+
+/* ===== STICKY-HEADER CLIP FIX 2026-09-09 =====
+   Both defects below were measured on the RENDERED FRAME at 412x915 and 1280x900, not read out
+   of this stylesheet.
+
+   1. CONTENT SLICED THROUGH THE STICKY STACK. --phone-strip-h claimed 48px; the strip actually
+      rendered 50px on a phone and 46px on desktop, because its height came from its own font
+      and padding at each breakpoint. header.site pins to top:var(--phone-strip-h), so on
+      desktop the header sat 2px below the strip and page copy scrolled visibly through the slit
+      between them. Fixed by LOCKING the strip to the height the variable claims, so the variable
+      is true by construction rather than by a lucky guess.
+
+   2. EVERY ANCHOR JUMP LANDED UNDER THE HEADER. scroll-padding-bottom was set for the call bar
+      and scroll-padding-top was never set at all. Tapping the page own "Get a quote" put 156px
+      of #quote under the opaque header - its heading sat at y=82, completely hidden. */
+:root{--site-header-h:114px}
+@media(max-width:640px){:root{--site-header-h:106px}}
+
+html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
+
+/* The strip is locked to exactly the height the variable promises. line-height (not flex) does
+   the vertical centring on purpose: display:flex would make the link a flex container and
+   silently break the text-overflow:ellipsis that protects the long-email contact variant. */
+.phone-strip{height:var(--phone-strip-h);box-sizing:border-box;overflow:hidden}
+.phone-strip a{display:block;height:100%;box-sizing:border-box;padding:0 16px;line-height:var(--phone-strip-h)}
+@media(min-width:900px){.phone-strip a{padding:0 16px}}
