@@ -1016,3 +1016,28 @@ html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
 .phone-strip{position:static}
 header.site{top:0}
 html{scroll-padding-top:var(--site-header-h)}
+
+/* ==========================================================================
+   FACEBOOK OUT OF THE TOP CHROME - Jacob 2026-09-09: "Facebook in the header
+   questionable." MEASURED on the standard he named, same 390px viewport:
+   lowcountryhydroclean.com carries 3 facebook links and the only one in page
+   chrome is inFooter=TRUE. The standard does not put Facebook in the header.
+
+   WHY IT IS WORSE THAN COSMETIC: a bare Facebook icon pinned in the top chrome
+   is an EXIT, sitting above the fold, competing with the phone at the highest
+   intent moment on the page. It is the same objection the Hydro law already
+   makes to their MAP ("leaves Chrome, Pixel audits die") and to "a second
+   social chrome row just to look like them" - which is literally what this row
+   was. Removing it also shortens the top stack, which is what the pinned-phone
+   fix above wanted anyway.
+
+   The LINK is not lost and the harvest rule is untouched: SOCIAL_ROW_HTML still
+   only ever emits when harvest carries a real facebook_url (never a guessed
+   handle). It now renders inside the footer Contact column on all six pages,
+   which is where the study site keeps it.
+   ========================================================================== */
+footer .lc-social{
+  background:none;border-top:0;padding:12px 0 0;
+  justify-content:flex-start;gap:14px
+}
+footer .lc-social-link{width:34px;height:34px}
