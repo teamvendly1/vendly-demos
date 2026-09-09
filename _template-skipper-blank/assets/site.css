@@ -980,3 +980,39 @@ html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
 .phone-strip{height:var(--phone-strip-h);box-sizing:border-box;overflow:hidden}
 .phone-strip a{display:block;height:100%;box-sizing:border-box;padding:0 16px;line-height:var(--phone-strip-h)}
 @media(min-width:900px){.phone-strip a{padding:0 16px}}
+
+/* ==========================================================================
+   REDUNDANT PINNED PHONE - Jacob 2026-09-09: "phone at top AND call button at
+   bottom is redundant". MEASURED, not argued, at 390x844 over CDP:
+
+     OURS  (5brothersautorepairhackettstownwarrennj)
+       TEL0 (908) 340-8230  top=89   sticky=TRUE   <- .phone-strip
+       TEL1 CALL            top=796  sticky=TRUE   <- .mobile-callbar .mcb-call
+       Both on screen SIMULTANEOUSLY at every scroll position, forever.
+
+     THE STANDARD (lowcountryhydroclean.com, same viewport)
+       6 tel links, ZERO of them pinned. inSticky=false on all six.
+
+   So the study site never pins the phone twice. We pinned it twice on every
+   page of every demo. Jacob is right and it is measurable.
+
+   THE RULING - keep BOTH takes from the Hydro law, drop only the duplication:
+     - Take #1 "Phone is FIRST": the tel bar still sits at the very top of the
+       document, full width, and is the first thing a stranger sees on load.
+       It simply scrolls away like Hydro's does instead of being pinned.
+     - Take #10 "Sticky bottom always on": untouched. CALL stays in the thumb
+       zone at the bottom, beside Get estimate and Ask us (the concierge).
+   Net: phone is still first on load, exactly ONE pinned call action while
+   scrolling, and ~50px of vertical fold handed back on every phone screen.
+
+   WHY BOTH LINES BELOW ARE REQUIRED, and why changing only the first one
+   would REINTRODUCE a defect Jacob already caught on Skipper (2026-08-17):
+   header.site pins to top:var(--phone-strip-h). Un-stick the strip on its own
+   and the header pins 48px down from the top, leaving the logo bar floating
+   mid-page with content sliding under the gap - the exact "logo bar floats
+   mid-page" FAIL in HYDROCLEAN-CLASS-GENERATE-PROMPT.md take #1. The header
+   must pin flush at top:0 once the strip above it is no longer pinned.
+   ========================================================================== */
+.phone-strip{position:static}
+header.site{top:0}
+html{scroll-padding-top:var(--site-header-h)}
