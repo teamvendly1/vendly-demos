@@ -1,0 +1,51 @@
+{
+  "slug": "star-landscaping",
+  "apply": true,
+  "is_launch": false,
+  "crumbs": 0,
+  "schema": 0,
+  "favicon": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "footer_area": false,
+  "footer_address": false,
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Landscape Company",
+        "slug": "landscape-company",
+        "reasons": [
+          "body_too_thin:0<60",
+          "no_real_photo_file:no_slot:0B",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "changed_files": [
+    "reviews.html"
+  ],
+  "structural_css": {
+    "added": false,
+    "reason": "already_present"
+  },
+  "reviews_wall": {
+    "changed": true,
+    "eligible": 1,
+    "was_showing": 1,
+    "now_showing": 1,
+    "removed": 0
+  },
+  "crawler_files": {
+    "written": false,
+    "reason": "not_a_launch_build_noindex_stays"
+  }
+}

@@ -2,8 +2,8 @@
   "slug": "kbelectricalservicesdunnharnettnc",
   "apply": true,
   "is_launch": false,
-  "crumbs": 4,
-  "schema": 5,
+  "crumbs": 0,
+  "schema": 0,
   "favicon": {
     "written": true,
     "sizes": [
@@ -38,22 +38,18 @@
     "reason": "no_service_met_the_floor"
   },
   "changed_files": [
-    "assets/site.css",
-    "index.html",
-    "about.html",
-    "services.html",
-    "reviews.html",
-    "contact.html"
+    "reviews.html"
   ],
   "structural_css": {
-    "added": true,
-    "bytes": 3994
+    "added": false,
+    "reason": "already_present"
   },
   "reviews_wall": {
-    "changed": false,
-    "reason": "no_tail",
+    "changed": true,
     "eligible": 3,
-    "shown": 3
+    "was_showing": 3,
+    "now_showing": 3,
+    "removed": 0
   },
   "crawler_files": {
     "written": false,

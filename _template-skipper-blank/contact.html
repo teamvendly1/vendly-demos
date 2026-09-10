@@ -92,7 +92,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
         <p class="kicker">Contact</p>
         <h2 id="h-contact">{{CONTACT_H2}}</h2>
         {{CONTACT_DETAILS_HTML}}
-        <p class="contact-cta"><a class="btn btn-blue" href="index.html#quote">Get estimate</a></p>
+        <p class="contact-cta"><a class="btn btn-blue" href="#quote">Get estimate</a></p>
       </div>
       <div class="shot shot-contain contact-shot">
         {{CONTACT_SHOT_HTML}}
@@ -100,6 +100,79 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     </div>
   </div>
 </section>
+<!--SECTION:contact-form-->
+<!--
+  THE CONTACT PAGE NOW CARRIES A REAL FORM. Added 2026-09-09 (seat gen-og-form).
+
+  Until today this page had ZERO input, textarea or select elements. Its only
+  contact affordance was a link reading "Get estimate" pointing at
+  index.html#quote - a page titled Contact that sent the visitor somewhere else
+  to make contact, at the exact moment they had decided to hire us. The site we
+  study for this class carries its form on 22 of 22 pages.
+
+  Same field set as the homepage band deliberately, built from the same tokens,
+  so the two can never drift into asking different questions. No photograph
+  behind this band on purpose: every image is deduped sitewide by
+  DemoImageGate, and spending a unique photo on a second form band would cost
+  a slot the gallery needs.
+-->
+<section class="reveal mist" id="quote" aria-labelledby="h-contact-quote">
+  <div class="wrap">
+    <div class="leadwrap">
+      <div>
+        <p class="kicker">Get a quote</p>
+        <h2 id="h-contact-quote">{{QUOTE_H2}}</h2>
+        <p class="lede">{{QUOTE_LEDE}}</p>
+        <div class="badges" style="margin-top:26px">
+          <span class="badge" style="text-transform:none"><a href="tel:{{TEL}}" style="color:inherit;text-decoration:none">{{PHONE}}</a></span>
+        </div>
+      </div>
+      <form id="leadform" method="post" action="{{LEAD_ENDPOINT}}" data-lead-endpoint="{{LEAD_ENDPOINT}}" data-thanks="{{FORM_ALERT}}" novalidate>
+        <div class="field">
+          <label for="f-name">Your name <span class="req">(required)</span></label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone <span class="req">(required)</span></label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-type">What do you need</label>
+          <select id="f-type" name="type">
+{{SERVICE_OPTIONS_HTML}}
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">{{FORM_MSG_LABEL}}</label>
+          <textarea id="f-msg" name="message" placeholder="{{FORM_PLACEHOLDER}}"></textarea>
+        </div>
+        <div class="field">
+          <label for="f-heard">How did you hear about us?</label>
+          <select id="f-heard" name="heard">
+            <option value="">Select one</option>
+            <option>Search engine</option>
+            <option>Social media</option>
+            <option>Recommendation or word of mouth</option>
+            <option>Online review site</option>
+            <option>Advertisement</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="hp-field" aria-hidden="true">
+          <label for="f-website">Website</label>
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn btn-blue" type="submit" style="width:100%;justify-content:center;border:0;cursor:pointer">Send estimate request</button>
+        <p class="formnote">{{FORM_NOTE}}</p>
+      </form>
+    </div>
+  </div>
+</section>
+<!--/SECTION:contact-form-->
 </main>
 
 <footer>

@@ -53,6 +53,7 @@
     "form": "omitted_no_delivering_form_block_found"
   },
   "changed_files": [
+    "reviews.html",
     "services/lawn-care-and-mowing.html"
   ],
   "structural_css": {
@@ -60,10 +61,11 @@
     "reason": "already_present"
   },
   "reviews_wall": {
-    "changed": false,
-    "reason": "no_tail",
+    "changed": true,
     "eligible": 5,
-    "shown": 5
+    "was_showing": 5,
+    "now_showing": 5,
+    "removed": 0
   },
   "crawler_files": {
     "written": false,

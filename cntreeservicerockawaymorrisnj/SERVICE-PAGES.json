@@ -54,6 +54,7 @@
     "form": "omitted_no_delivering_form_block_found"
   },
   "changed_files": [
+    "reviews.html",
     "services/tree-removal.html",
     "services/trimming-and-pruning.html",
     "services/stump-grinding-and-removal.html",
@@ -64,10 +65,11 @@
     "reason": "already_present"
   },
   "reviews_wall": {
-    "changed": false,
-    "reason": "no_tail",
+    "changed": true,
     "eligible": 3,
-    "shown": 3
+    "was_showing": 3,
+    "now_showing": 3,
+    "removed": 0
   },
   "crawler_files": {
     "written": false,

@@ -42,14 +42,19 @@
     ],
     "reason": "no_service_met_the_floor"
   },
-  "changed_files": [],
+  "changed_files": [
+    "reviews.html"
+  ],
   "structural_css": {
     "added": false,
     "reason": "already_present"
   },
   "reviews_wall": {
-    "changed": false,
-    "reason": "already_a_wall"
+    "changed": true,
+    "eligible": 125,
+    "was_showing": 125,
+    "now_showing": 125,
+    "removed": 0
   },
   "crawler_files": {
     "written": false,
