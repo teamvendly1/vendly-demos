@@ -110,3 +110,22 @@ _audit-bj-20260814/DEMO-SHIP-STANDARD.md
 a3-custom-strings-chatbox/knowledge.md
 a3-custom-strings-chatbox/system-prompt.md
 a3-custom-strings-chatbox/knowledge.json
+
+# ---- BUILD-ARTEFACT DIRECTORIES - NEVER PUBLISH. Added 2026-09-09 (pages-size). ----
+#
+# `.correlate-stash/` holds photographs the section-photo correlator moved ASIDE during a build.
+# Nothing serves them: `correlate-stash` appears in ZERO of 7,609 tracked text files in this repo.
+# But `.nojekyll` is present, so GitHub Pages serves dot-directories VERBATIM - these were
+# publicly fetchable at <slug>/assets/.correlate-stash/<file> the entire time they existed.
+#
+# MEASURED 2026-09-09: 2,065 files, 269.5 MB, on a published tree of 3,052 MB against a
+# documented 1 GB Pages limit. Nine per cent of the whole site, serving nobody.
+#
+# This is the SAME CLASS as HARVEST.json above, and the ignore list is why it recurred: that
+# 2026-08-09 block enumerated the FILES that had leaked and never grew to cover a DIRECTORY.
+# Fix the rule, not the file.
+#
+# The originals are preserved in the build tree at
+# _tmp/autodemo/demos/<slug>/assets/correlate-stash/ - copied and SHA-256 verified before the
+# published copies were removed. Nothing was destroyed.
+.correlate-stash/
