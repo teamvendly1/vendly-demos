@@ -335,8 +335,13 @@ footer{padding-bottom:30px}
 /* Google-look review cards + hero badge (2026-08-12). */
 .rv-carousel{display:flex;gap:10px;align-items:stretch}
 .rv-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;flex:1;padding-bottom:10px}
+/* 2026-09-08: border-top keyed to --brand (this business's own PRIMARY token) so the review band
+   reads as this business's page rather than a fixed universal card - Jacob: "customer reviews is
+   the same fucking slide wheel." The Google-look chrome underneath (white card, blue name, gold
+   stars) is unchanged - that resemblance was a deliberate 2026-08-12 design call and stays; only
+   the one accent stripe that had zero per-business variation now carries one. */
 .rv-card{scroll-snap-align:start;flex:0 0 310px;width:310px;max-width:86vw;position:relative;background:#fff;
-border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
+border:1px solid rgba(0,0,0,.10);border-top:3px solid var(--brand,#20402f);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
 .rv-badge{position:absolute;top:12px;right:12px;line-height:0}
 .rv-head{display:flex;align-items:center;gap:10px;padding-right:28px;margin-bottom:8px}
 .rv-avatar,.rv-who{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover}
@@ -975,6 +980,73 @@ html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
 .phone-strip{height:var(--phone-strip-h);box-sizing:border-box;overflow:hidden}
 .phone-strip a{display:block;height:100%;box-sizing:border-box;padding:0 16px;line-height:var(--phone-strip-h)}
 @media(min-width:900px){.phone-strip a{padding:0 16px}}
+
+/* ==========================================================================
+   REDUNDANT PINNED PHONE - Jacob 2026-09-09: "phone at top AND call button at
+   bottom is redundant". MEASURED, not argued, at 390x844 over CDP:
+
+     OURS  (5brothersautorepairhackettstownwarrennj)
+       TEL0 (908) 340-8230  top=89   sticky=TRUE   <- .phone-strip
+       TEL1 CALL            top=796  sticky=TRUE   <- .mobile-callbar .mcb-call
+       Both on screen SIMULTANEOUSLY at every scroll position, forever.
+
+     THE STANDARD (lowcountryhydroclean.com, same viewport)
+       6 tel links, ZERO of them pinned. inSticky=false on all six.
+
+   So the study site never pins the phone twice. We pinned it twice on every
+   page of every demo. Jacob is right and it is measurable.
+
+   THE RULING - keep BOTH takes from the Hydro law, drop only the duplication:
+     - Take #1 "Phone is FIRST": the tel bar still sits at the very top of the
+       document, full width, and is the first thing a stranger sees on load.
+       It simply scrolls away like Hydro's does instead of being pinned.
+     - Take #10 "Sticky bottom always on": untouched. CALL stays in the thumb
+       zone at the bottom, beside Get estimate and Ask us (the concierge).
+   Net: phone is still first on load, exactly ONE pinned call action while
+   scrolling, and ~50px of vertical fold handed back on every phone screen.
+
+   WHY BOTH LINES BELOW ARE REQUIRED, and why changing only the first one
+   would REINTRODUCE a defect Jacob already caught on Skipper (2026-08-17):
+   header.site pins to top:var(--phone-strip-h). Un-stick the strip on its own
+   and the header pins 48px down from the top, leaving the logo bar floating
+   mid-page with content sliding under the gap - the exact "logo bar floats
+   mid-page" FAIL in HYDROCLEAN-CLASS-GENERATE-PROMPT.md take #1. The header
+   must pin flush at top:0 once the strip above it is no longer pinned.
+   ========================================================================== */
+.phone-strip{position:static}
+header.site{top:0}
+html{scroll-padding-top:var(--site-header-h)}
+
+/* ==========================================================================
+   FACEBOOK OUT OF THE TOP CHROME - Jacob 2026-09-09: "Facebook in the header
+   questionable." MEASURED on the standard he named, same 390px viewport:
+   lowcountryhydroclean.com carries 3 facebook links and the only one in page
+   chrome is inFooter=TRUE. The standard does not put Facebook in the header.
+
+   WHY IT IS WORSE THAN COSMETIC: a bare Facebook icon pinned in the top chrome
+   is an EXIT, sitting above the fold, competing with the phone at the highest
+   intent moment on the page. It is the same objection the Hydro law already
+   makes to their MAP ("leaves Chrome, Pixel audits die") and to "a second
+   social chrome row just to look like them" - which is literally what this row
+   was. Removing it also shortens the top stack, which is what the pinned-phone
+   fix above wanted anyway.
+
+   The LINK is not lost and the harvest rule is untouched: SOCIAL_ROW_HTML still
+   only ever emits when harvest carries a real facebook_url (never a guessed
+   handle). It now renders inside the footer Contact column on all six pages,
+   which is where the study site keeps it.
+   ========================================================================== */
+footer .lc-social{
+  background:none;border-top:0;padding:12px 0 0;
+  justify-content:flex-start;gap:14px
+}
+footer .lc-social-link{width:34px;height:34px}
+
+/* Honeypot. A field no human can see, so anything typed into it came from a bot.
+   Kept in the accessibility tree's blind spot the safe way: off-canvas rather than
+   display:none, because some bots skip display:none and some screen readers would
+   still announce it. aria-hidden and tabindex="-1" on the markup do the rest. */
+.hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 
 /* V-STRUCTURAL-CSS-START -- 2026-09-09, seat gen-servicepages.
    THIS BLOCK IS THE ONE SOURCE OF TRUTH FOR THE STRUCTURAL-PASS STYLES.
