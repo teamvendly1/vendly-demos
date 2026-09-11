@@ -1040,7 +1040,7 @@ footer .lc-social{
   background:none;border-top:0;padding:12px 0 0;
   justify-content:flex-start;gap:14px
 }
-footer .lc-social-link{width:34px;height:34px}
+footer .lc-social-link{width:44px;height:44px} /* 2026-09-11: 34px failed the Pixel hard audit tap-target floor (40px) on every page - Facebook link 34px on marinos */
 
 /* Honeypot. A field no human can see, so anything typed into it came from a bot.
    Kept in the accessibility tree's blind spot the safe way: off-canvas rather than
