@@ -335,8 +335,13 @@ footer{padding-bottom:30px}
 /* Google-look review cards + hero badge (2026-08-12). */
 .rv-carousel{display:flex;gap:10px;align-items:stretch}
 .rv-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;flex:1;padding-bottom:10px}
+/* 2026-09-08: border-top keyed to --brand (this business's own PRIMARY token) so the review band
+   reads as this business's page rather than a fixed universal card - Jacob: "customer reviews is
+   the same fucking slide wheel." The Google-look chrome underneath (white card, blue name, gold
+   stars) is unchanged - that resemblance was a deliberate 2026-08-12 design call and stays; only
+   the one accent stripe that had zero per-business variation now carries one. */
 .rv-card{scroll-snap-align:start;flex:0 0 310px;width:310px;max-width:86vw;position:relative;background:#fff;
-border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
+border:1px solid rgba(0,0,0,.10);border-top:3px solid var(--brand,#20402f);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
 .rv-badge{position:absolute;top:12px;right:12px;line-height:0}
 .rv-head{display:flex;align-items:center;gap:10px;padding-right:28px;margin-bottom:8px}
 .rv-avatar,.rv-who{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover}
@@ -948,3 +953,157 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
 }
 
 
+
+
+/* ===== STICKY-HEADER CLIP FIX 2026-09-09 =====
+   Both defects below were measured on the RENDERED FRAME at 412x915 and 1280x900, not read out
+   of this stylesheet.
+
+   1. CONTENT SLICED THROUGH THE STICKY STACK. --phone-strip-h claimed 48px; the strip actually
+      rendered 50px on a phone and 46px on desktop, because its height came from its own font
+      and padding at each breakpoint. header.site pins to top:var(--phone-strip-h), so on
+      desktop the header sat 2px below the strip and page copy scrolled visibly through the slit
+      between them. Fixed by LOCKING the strip to the height the variable claims, so the variable
+      is true by construction rather than by a lucky guess.
+
+   2. EVERY ANCHOR JUMP LANDED UNDER THE HEADER. scroll-padding-bottom was set for the call bar
+      and scroll-padding-top was never set at all. Tapping the page own "Get a quote" put 156px
+      of #quote under the opaque header - its heading sat at y=82, completely hidden. */
+:root{--site-header-h:114px}
+@media(max-width:640px){:root{--site-header-h:106px}}
+
+html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
+
+/* The strip is locked to exactly the height the variable promises. line-height (not flex) does
+   the vertical centring on purpose: display:flex would make the link a flex container and
+   silently break the text-overflow:ellipsis that protects the long-email contact variant. */
+.phone-strip{height:var(--phone-strip-h);box-sizing:border-box;overflow:hidden}
+.phone-strip a{display:block;height:100%;box-sizing:border-box;padding:0 16px;line-height:var(--phone-strip-h)}
+@media(min-width:900px){.phone-strip a{padding:0 16px}}
+
+/* ==========================================================================
+   REDUNDANT PINNED PHONE - Jacob 2026-09-09: "phone at top AND call button at
+   bottom is redundant". MEASURED, not argued, at 390x844 over CDP:
+
+     OURS  (5brothersautorepairhackettstownwarrennj)
+       TEL0 (908) 340-8230  top=89   sticky=TRUE   <- .phone-strip
+       TEL1 CALL            top=796  sticky=TRUE   <- .mobile-callbar .mcb-call
+       Both on screen SIMULTANEOUSLY at every scroll position, forever.
+
+     THE STANDARD (lowcountryhydroclean.com, same viewport)
+       6 tel links, ZERO of them pinned. inSticky=false on all six.
+
+   So the study site never pins the phone twice. We pinned it twice on every
+   page of every demo. Jacob is right and it is measurable.
+
+   THE RULING - keep BOTH takes from the Hydro law, drop only the duplication:
+     - Take #1 "Phone is FIRST": the tel bar still sits at the very top of the
+       document, full width, and is the first thing a stranger sees on load.
+       It simply scrolls away like Hydro's does instead of being pinned.
+     - Take #10 "Sticky bottom always on": untouched. CALL stays in the thumb
+       zone at the bottom, beside Get estimate and Ask us (the concierge).
+   Net: phone is still first on load, exactly ONE pinned call action while
+   scrolling, and ~50px of vertical fold handed back on every phone screen.
+
+   WHY BOTH LINES BELOW ARE REQUIRED, and why changing only the first one
+   would REINTRODUCE a defect Jacob already caught on Skipper (2026-08-17):
+   header.site pins to top:var(--phone-strip-h). Un-stick the strip on its own
+   and the header pins 48px down from the top, leaving the logo bar floating
+   mid-page with content sliding under the gap - the exact "logo bar floats
+   mid-page" FAIL in HYDROCLEAN-CLASS-GENERATE-PROMPT.md take #1. The header
+   must pin flush at top:0 once the strip above it is no longer pinned.
+   ========================================================================== */
+.phone-strip{position:static}
+header.site{top:0}
+html{scroll-padding-top:var(--site-header-h)}
+
+/* ==========================================================================
+   FACEBOOK OUT OF THE TOP CHROME - Jacob 2026-09-09: "Facebook in the header
+   questionable." MEASURED on the standard he named, same 390px viewport:
+   lowcountryhydroclean.com carries 3 facebook links and the only one in page
+   chrome is inFooter=TRUE. The standard does not put Facebook in the header.
+
+   WHY IT IS WORSE THAN COSMETIC: a bare Facebook icon pinned in the top chrome
+   is an EXIT, sitting above the fold, competing with the phone at the highest
+   intent moment on the page. It is the same objection the Hydro law already
+   makes to their MAP ("leaves Chrome, Pixel audits die") and to "a second
+   social chrome row just to look like them" - which is literally what this row
+   was. Removing it also shortens the top stack, which is what the pinned-phone
+   fix above wanted anyway.
+
+   The LINK is not lost and the harvest rule is untouched: SOCIAL_ROW_HTML still
+   only ever emits when harvest carries a real facebook_url (never a guessed
+   handle). It now renders inside the footer Contact column on all six pages,
+   which is where the study site keeps it.
+   ========================================================================== */
+footer .lc-social{
+  background:none;border-top:0;padding:12px 0 0;
+  justify-content:flex-start;gap:14px
+}
+footer .lc-social-link{width:34px;height:34px}
+
+/* Honeypot. A field no human can see, so anything typed into it came from a bot.
+   Kept in the accessibility tree's blind spot the safe way: off-canvas rather than
+   display:none, because some bots skip display:none and some screen readers would
+   still announce it. aria-hidden and tabindex="-1" on the markup do the rest. */
+.hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+
+/* V-STRUCTURAL-CSS-START -- 2026-09-09, seat gen-servicepages.
+   THIS BLOCK IS THE ONE SOURCE OF TRUTH FOR THE STRUCTURAL-PASS STYLES.
+   New builds get it because the generator copies this stylesheet. Demos already published
+   get it because apply-structural-pass.js READS THIS FILE and appends the region between
+   these two sentinels to their own site.css. Do not copy these rules anywhere else - a
+   second copy is a second thing that drifts, which is the whole reason the sentinels exist.
+   Everything between the sentinels must be self-contained and safe to append twice-guarded. */
+
+/* ===========================================================================
+   G3 - THE FULL REVIEWS WALL (2026-09-09, seat gen-servicepages)
+   reviews.html used to render the same six-card horizontal swiper as the homepage.
+   Measured: 436 of 635 demos hold MORE than six harvested reviews; every one of them
+   was publishing six of them twice and throwing the rest away.
+   The homepage swiper (.rv-carousel/.rv-track) is UNTOUCHED - this is a second shape
+   for the page whose whole job is the full set, the study site's /testimonials/ layout.
+   Cards keep their identical chrome; only the container geometry and the body clamp
+   change, because a wall card has no reason to be 310px wide or truncated at 24 lines.
+   =========================================================================== */
+.rv-wall{display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
+.rv-wall .rv-card{flex:none;width:auto;max-width:none;scroll-snap-align:none}
+.rv-wall .rv-body{display:block;-webkit-line-clamp:none;overflow:visible}
+@media(min-width:760px){.rv-wall{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.rv-wall{grid-template-columns:repeat(3,1fr)}}
+
+/* ===========================================================================
+   G5 - BREADCRUMB BAR (2026-09-09, seat gen-servicepages)
+   `grep -ci breadcrumb` returned 0 across all six mold pages. The study site runs a 74px
+   #F5F5F5 bar directly under the dark page-title band on all 18 of its inner pages.
+   Sits under .hero-sub, never on index.html - a one-item trail is not a trail.
+   =========================================================================== */
+.crumb{background:#F5F5F5;border-bottom:1px solid rgba(0,0,0,.06)}
+.crumb .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+padding-top:2px;padding-bottom:2px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
+.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent;display:inline-flex;align-items:center;min-height:44px}
+.crumb a:hover,.crumb a:focus-visible{color:var(--brand,#20402f);border-bottom-color:currentColor}
+.crumb .crumb-sep{color:#9aa19d}
+.crumb .crumb-here{color:#6d746f}
+
+/* ===========================================================================
+   G4 - SERVICE DETAIL PAGE (2026-09-09, seat gen-servicepages)
+   services/{slug}.html. Chrome is inherited wholesale from the rendered services.html, so
+   there is nothing to style here except the body of the page itself.
+   =========================================================================== */
+.svc-detail{max-width:72ch}
+.svc-detail h2{margin:0 0 18px}
+.svc-body{font-size:1.05rem;line-height:1.65;margin:0 0 24px}
+.svc-quote{margin:0 0 26px;padding:16px 20px;border-left:3px solid var(--brand,#20402f);
+background:rgba(0,0,0,.035);font:400 15.5px/1.6 Inter,system-ui,sans-serif;color:#313834}
+.svc-shot{margin:0}
+.svc-shot img{display:block;width:100%;height:auto;border-radius:12px}
+.sib-grid .sib-card{display:block;text-decoration:none;color:inherit}
+.sib-grid .sib-card h3{margin:0 0 8px}
+.sib-grid .sib-card p{margin:0}
+.sib-grid .sib-card:hover,.sib-grid .sib-card:focus-visible{box-shadow:0 2px 6px rgba(0,0,0,.14),0 8px 22px rgba(0,0,0,.08)}
+
+/* G10/G11 - footer service-area and postal-address blocks. Emitted only from harvest. */
+.faddr{margin:0 0 10px;line-height:1.5;opacity:.92}
+.farea{margin:0;line-height:1.6;max-width:34ch;opacity:.92}
+/* V-STRUCTURAL-CSS-END */
