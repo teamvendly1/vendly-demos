@@ -1080,8 +1080,8 @@ footer .lc-social-link{width:34px;height:34px}
    =========================================================================== */
 .crumb{background:#F5F5F5;border-bottom:1px solid rgba(0,0,0,.06)}
 .crumb .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
-padding-top:14px;padding-bottom:14px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
-.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent}
+padding-top:2px;padding-bottom:2px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
+.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent;display:inline-flex;align-items:center;min-height:44px}
 .crumb a:hover,.crumb a:focus-visible{color:var(--brand,#20402f);border-bottom-color:currentColor}
 .crumb .crumb-sep{color:#9aa19d}
 .crumb .crumb-here{color:#6d746f}
