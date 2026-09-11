@@ -1,19 +1,4 @@
 {
-  "slug": "aaaffordableautorepairtowingfreeholdmonmouthnj",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
-    "written": true,
-    "sizes": [
-      "favicon-32.png",
-      "favicon-180.png",
-      "favicon-192.png"
-    ]
-  },
-  "footer_area": true,
-  "footer_address": true,
   "service_pages": {
     "emitted": [],
     "refused": [
@@ -23,7 +8,6 @@
         "reasons": [
           "body_too_thin:52<60",
           "no_real_photo_file:photo-service-1.jpg:0B",
-          "no_written_alt:0<15",
           "evidence_not_real:missing"
         ]
       },
@@ -33,7 +17,6 @@
         "reasons": [
           "body_too_thin:57<60",
           "no_real_photo_file:photo-service-2.jpg:0B",
-          "no_written_alt:0<15",
           "evidence_not_real:missing"
         ]
       },
@@ -55,26 +38,25 @@
         ]
       },
       {
-        "title": "Roadside Assistance",
+        "title": "Roadside assistance",
         "slug": "roadside-assistance",
         "reasons": [
-          "no_real_photo_file:photo-service-5.jpg:0B",
+          "no_real_photo_file:photo-service-4.jpg:0B",
           "no_written_alt:0<15"
         ]
       },
       {
-        "title": "Transmission",
-        "slug": "transmission",
+        "title": "Transmission and drivetrain",
+        "slug": "transmission-and-drivetrain",
         "reasons": [
-          "no_real_photo_file:photo-service-6.jpg:0B",
-          "no_written_alt:0<15"
+          "no_real_photo_file:photo-service-3.jpg:0B"
         ]
       },
       {
         "title": "Undercar Services",
         "slug": "undercar-services",
         "reasons": [
-          "no_real_photo_file:photo-service-7.jpg:0B",
+          "no_real_photo_file:no_slot:0B",
           "no_written_alt:0<15",
           "evidence_not_real:missing"
         ]
@@ -82,19 +64,30 @@
     ],
     "reason": "no_service_met_the_floor"
   },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
+  "crumbs": {
+    "pages": 5
   },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 169,
-    "shown": 169
+  "schema": {
+    "pages": 6
   },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
