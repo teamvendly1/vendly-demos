@@ -1,10 +1,71 @@
 {
-  "slug": "ontopsroofingangiernc",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [
+      {
+        "slug": "roof-replacement",
+        "title": "Roof replacement",
+        "h1": "Roof replacement, Angier, NC",
+        "photo": "photo-service-1.jpg",
+        "has_quote": false,
+        "evidence": "own_words"
+      },
+      {
+        "slug": "roof-repair-and-leaks",
+        "title": "Roof repair and leaks",
+        "h1": "Roof repair and leaks, Angier, NC",
+        "photo": "photo-service-2.jpg",
+        "has_quote": false,
+        "evidence": "own_words"
+      },
+      {
+        "slug": "skylights-and-ventilation",
+        "title": "Skylights and ventilation",
+        "h1": "Skylights and ventilation, Angier, NC",
+        "photo": "photo-service-3.jpg",
+        "has_quote": false,
+        "evidence": "own_words"
+      },
+      {
+        "slug": "roof-inspections",
+        "title": "Roof inspections",
+        "h1": "Roof inspections, Angier, NC",
+        "photo": "photo-service-4.jpg",
+        "has_quote": false,
+        "evidence": "own_words"
+      },
+      {
+        "slug": "metal-roofing",
+        "title": "Metal roofing",
+        "h1": "Metal roofing, Angier, NC",
+        "photo": "photo-service-5.jpg",
+        "has_quote": false,
+        "evidence": "photo"
+      },
+      {
+        "slug": "storm-damage-repair",
+        "title": "Storm damage repair",
+        "h1": "Storm damage repair, Angier, NC",
+        "photo": "photo-service-6.jpg",
+        "has_quote": true,
+        "evidence": "review"
+      }
+    ],
+    "refused": [],
+    "reason": null,
+    "place": "Angier, NC",
+    "linked_from_services_html": 6
+  },
+  "crumbs": {
+    "pages": 5
+  },
+  "schema": {
+    "pages": 6
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,70 +73,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": true,
-  "footer_address": true,
-  "service_pages": {
-    "emitted": [
-      {
-        "slug": "roof-replacement",
-        "title": "Roof replacement",
-        "has_quote": false,
-        "evidence": "own_words"
-      },
-      {
-        "slug": "roof-repair-and-leaks",
-        "title": "Roof repair and leaks",
-        "has_quote": false,
-        "evidence": "own_words"
-      },
-      {
-        "slug": "skylights-and-ventilation",
-        "title": "Skylights and ventilation",
-        "has_quote": false,
-        "evidence": "own_words"
-      },
-      {
-        "slug": "roof-inspections",
-        "title": "Roof inspections",
-        "has_quote": false,
-        "evidence": "own_words"
-      },
-      {
-        "slug": "metal-roofing",
-        "title": "Metal roofing",
-        "has_quote": false,
-        "evidence": "photo"
-      },
-      {
-        "slug": "storm-damage-repair",
-        "title": "Storm damage repair",
-        "has_quote": true,
-        "evidence": "review"
-      }
-    ],
-    "refused": [],
-    "reason": null
-  },
-  "changed_files": [
-    "services/roof-replacement.html",
-    "services/roof-repair-and-leaks.html",
-    "services/skylights-and-ventilation.html",
-    "services/roof-inspections.html",
-    "services/metal-roofing.html",
-    "services/storm-damage-repair.html"
-  ],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 84,
-    "shown": 84
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
