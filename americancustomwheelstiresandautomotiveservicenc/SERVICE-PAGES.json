@@ -1,10 +1,36 @@
 {
-  "slug": "americancustomwheelstiresandautomotiveservicenc",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Tires and wheels",
+        "slug": "tires-and-wheels",
+        "reasons": [
+          "no_written_alt:0<15",
+          "evidence_not_real:name"
+        ]
+      },
+      {
+        "title": "Brakes",
+        "slug": "brakes",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": false,
+    "address": false
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,37 +38,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": false,
-  "footer_address": false,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Auto repair",
-        "slug": "auto-repair",
-        "reasons": [
-          "body_too_thin:0<60",
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:missing"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 16,
-    "shown": 16
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }

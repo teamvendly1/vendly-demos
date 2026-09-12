@@ -1,0 +1,93 @@
+{
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Brake",
+        "slug": "brake",
+        "reasons": [
+          "body_too_thin:52<60",
+          "no_real_photo_file:photo-service-1.jpg:0B",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Electrical",
+        "slug": "electrical",
+        "reasons": [
+          "body_too_thin:57<60",
+          "no_real_photo_file:photo-service-2.jpg:0B",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Engine repair",
+        "slug": "engine-repair",
+        "reasons": [
+          "no_real_photo_file:photo-service-1.jpg:0B"
+        ]
+      },
+      {
+        "title": "General",
+        "slug": "general",
+        "reasons": [
+          "body_too_thin:54<60",
+          "no_real_photo_file:photo-service-4.jpg:0B",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Roadside assistance",
+        "slug": "roadside-assistance",
+        "reasons": [
+          "no_real_photo_file:photo-service-4.jpg:0B",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Transmission and drivetrain",
+        "slug": "transmission-and-drivetrain",
+        "reasons": [
+          "no_real_photo_file:photo-service-3.jpg:0B"
+        ]
+      },
+      {
+        "title": "Undercar Services",
+        "slug": "undercar-services",
+        "reasons": [
+          "no_real_photo_file:no_slot:0B",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 5
+  },
+  "schema": {
+    "pages": 6
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
+  }
+}
