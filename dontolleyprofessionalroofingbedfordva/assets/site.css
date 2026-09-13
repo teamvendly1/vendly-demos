@@ -2,19 +2,19 @@
 html{scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-  --blue:#5F3F3A;
-  --blue-dk:#5C1104;
-  --blue-lt:#855951;
-  --red:#5F3F3A;
+  --blue:#921807;
+  --blue-dk:#5C0F04;
+  --blue-lt:#CC220A;
+  --red:#921807;
   --paper:#FFFFFF;
   --mist:#FEF0EE;
-  --ink:#1D1311;
-  --muted:#B28780;
-  --brand:#5C1104;
-  --line:#FCC4BB;
+  --ink:#2C0702;
+  --muted:#D8240A;
+  --brand:#5C0F04;
+  --line:#FCC3BB;
   --radius:16px;
-  --shadow:0 12px 30px -16px rgba(92,17,4,.32);
-  --shadow-lg:0 30px 60px -28px rgba(92,17,4,.45);
+  --shadow:0 12px 30px -16px rgba(92,15,4,.32);
+  --shadow-lg:0 30px 60px -28px rgba(92,15,4,.45);
   --wrap:1120px;
 }
 *{box-sizing:border-box}
@@ -39,8 +39,31 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 :root{--phone-strip-h:48px}
 .phone-strip{position:sticky;top:0;z-index:80;background:var(--ink);color:#fff;text-align:center;font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;letter-spacing:.04em}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
-.phone-strip a:hover{background:#440C03}
+.phone-strip a:hover{background:#440B03}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+/*
+  NO-PHONE VARIANT (2026-08-31). The strip can now carry an email address instead of a phone
+  number. A phone is ~14 characters; measured across the 378 real phoneless businesses in the
+  email lane, addresses run to 46 (median 24, 48 rows over 30). At the strip's 22px Barlow
+  Condensed a 46-character address overruns 360px, and DEMO-SHIP-STANDARD forbids a page that
+  scrolls sideways.
+
+  Two layers, because the first one alone is not a guarantee:
+    - the generator sets an inline font-size computed from THIS address's actual length, so the
+      common case simply fits at full size and only long addresses shrink;
+    - these rules are the backstop that makes overflow impossible regardless of what the
+      generator computed - the line can never wrap (which would change --phone-strip-h and float
+      the sticky header mid-page, the exact defect Jacob caught on the Pixel 2026-08-17) and can
+      never push the page wider than the viewport.
+
+  Scoped to [data-contact-route="email"], so no existing phone demo can be affected by it -
+  none of them carry that attribute.
+*/
+.phone-strip[data-contact-route="email"] a,
+.phone-strip[data-contact-route="facebook"] a{
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  letter-spacing:.01em;text-transform:none
+}
 
 header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
 .logo{height:88px;width:auto;display:block}
@@ -52,10 +75,10 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 .pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(95,63,58,.7)}
-.btn-red:hover{background:#440C03}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(95,63,58,.7)}
-.btn-blue:hover{background:#432C28}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(146,24,7,.7)}
+.btn-red:hover{background:#440B03}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(146,24,7,.7)}
+.btn-blue:hover{background:#661105}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
 .btn-ghost:hover{border-color:var(--blue)}
 
@@ -72,8 +95,8 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 */
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:0;
 background:
-  linear-gradient(90deg,rgba(73,48,44,.78) 0%,rgba(73,48,44,.62) 34%,rgba(73,48,44,.38) 58%,rgba(73,48,44,.14) 78%,rgba(73,48,44,0) 100%),
-  linear-gradient(180deg,rgba(73,48,44,.45) 0%,rgba(73,48,44,.18) 42%,rgba(73,48,44,.42) 100%)}
+  linear-gradient(90deg,rgba(112,19,5,.78) 0%,rgba(112,19,5,.62) 34%,rgba(112,19,5,.38) 58%,rgba(112,19,5,.14) 78%,rgba(112,19,5,0) 100%),
+  linear-gradient(180deg,rgba(112,19,5,.45) 0%,rgba(112,19,5,.18) 42%,rgba(112,19,5,.42) 100%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(28px,4.5vw,56px) 0 clamp(18px,3vw,36px);background:transparent}
 /*
   HERO GAP FIX2 (2026-08-12): prior 104px sticky clearance WAS the ~275px empty driveway slab.
@@ -92,6 +115,24 @@ background:
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
   */
+  /*
+    HERO OVERLAP FIX (Jacob Pixel catch 2026-09-03): classaautobodyhackensackbergennj,
+    bluegrasslawncarellccliftonpassaicnj and straightforwardlandscapingburlingtoncityburlingtonnj
+    all shipped with the h1 (or the hero CTA row, when the h1 wraps 4-5 lines instead of 3) sliced
+    by the fixed .mobile-callbar - "HERO GAP FIX2" above correctly killed the old bar-height PADDING
+    (that only added empty space, it never moved content up), but nothing then bounded how TALL the
+    header+hero content block could get on a long trade+city headline. A long business/city name at
+    12vw wraps to 4-5 lines and pushes the primary CTA button (or the second "See our work" button)
+    straight under the sticky bar on initial load - confirmed reproducible at 375x812 (narrower
+    than the Pixel's own ~915px effective height) on straightforwardlandscaping's real 5-line
+    headline, and classaautobody's 3-line headline was already sitting within a few px of the same
+    edge before this change. Fix shrinks the vertical footprint of the whole above-the-fold block
+    (hero-inner padding, h1 clamp, lede, cta gap) by roughly 20% - proven live via CSS injection on
+    both the defect page (button + trust badge now fully clear of the bar) and a known-good short
+    headline (classaautobody: still large/bold, now with comfortable clearance instead of sitting on
+    the edge). Never touch bar-adjacent PADDING again for this - it does not move content, it only
+    adds dead space; the only real lever is the height of what renders ABOVE the CTA.
+  */
   .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
   .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
   .hero .cta{margin-bottom:6px;gap:6px}
@@ -105,7 +146,7 @@ background:
   .leadwrap .shot img{object-position:center 12%;aspect-ratio:3/4;max-height:min(70vh,520px)}
   .mist.reveal{padding-bottom:24px}
 }
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#E0CFCC;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#FBBAB1;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
 .hero .eyebrow{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
 /*
   max-width MOVED to a desktop-only query on 2026-08-15. It sat here, unqualified and LATER in the
@@ -115,12 +156,12 @@ background:
 */
 .hero h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
 @media(min-width:901px){.hero h1{max-width:16ch}}
-.hero h1 em{font-style:normal;color:#E0CFCC;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.4)}
+.hero h1 em{font-style:normal;color:#FBBAB1;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.4)}
 .lede{font-size:19px;color:var(--ink);max-width:56ch;margin:0 0 20px}
 .hero .lede,.pband .lede{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:18px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
-.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#FDD5CE;background:transparent;border:0;padding:0;border-radius:0}
+.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#FDD4CE;background:transparent;border:0;padding:0;border-radius:0}
 .hero .tchip{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4);padding:4px 0}
 .tchip svg{flex:0 0 auto}
 
@@ -139,7 +180,7 @@ section.mist{background:var(--mist)}
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--brand)}
-.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(95,63,58,.8)}
+.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(146,24,7,.8)}
 .icn svg{stroke:#fff}
 /* Explore cards use real photographs, never person/asterisk/camera glyphs. */
 .card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
@@ -189,9 +230,9 @@ section.mist{background:var(--mist)}
 .hrow:last-child{border-bottom:0}
 .hrow b{color:var(--blue-dk)}
 .hrow span{color:var(--muted)}
-.afterhours{background:var(--blue-dk);color:#FDD5CE;border-radius:var(--radius);padding:29px 26px}
+.afterhours{background:var(--blue-dk);color:#FDD4CE;border-radius:var(--radius);padding:29px 26px}
 .afterhours h3{color:#fff}
-.afterhours p{margin:0 0 20px;font-size:15.5px;color:#D9C3BF}
+.afterhours p{margin:0 0 20px;font-size:15.5px;color:#FAA99E}
 
 /* area */
 .areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
@@ -216,15 +257,23 @@ textarea{min-height:112px;resize:vertical}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
 
-footer{background:var(--blue-dk);color:#D9C3BF;padding:56px 0 30px;font-size:15px}
+footer{background:var(--blue-dk);color:#FAA99E;padding:56px 0 30px;font-size:15px}
 footer a{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+/* ROOT-CAUSE FIX 2026-08-30: was display:inline-block;padding:4px 0 only, which rendered at
+   32.75px (footer's inherited line-height:1.65 unitless multiplier x its own 15px font-size =
+   24.75px line box, + 8px padding = 32.75px, measured on-device as 33px). That was BELOW the
+   40px hard-audit-gate floor and Jacob's 44px ADA tap-target standard, on every footer nav link
+   (Contact/Menu/Services), on every page, of every demo built from this mold - the single
+   corpus-wide source of ~42+ of ~44-46 tap-target failures per demo. min-height forces a real
+   44px box regardless of any future line-height/font-size change elsewhere on the page (global
+   *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
+   keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#B28780}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#D8240A}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -273,11 +322,11 @@ footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#5C1104;color:#FDD5CE;
+  background:#5C0F04;color:#FDD4CE;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
-.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#49302C;color:#fff;outline:none}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#701305;color:#fff;outline:none}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
@@ -286,8 +335,13 @@ footer{padding-bottom:30px}
 /* Google-look review cards + hero badge (2026-08-12). */
 .rv-carousel{display:flex;gap:10px;align-items:stretch}
 .rv-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;flex:1;padding-bottom:10px}
+/* 2026-09-08: border-top keyed to --brand (this business's own PRIMARY token) so the review band
+   reads as this business's page rather than a fixed universal card - Jacob: "customer reviews is
+   the same fucking slide wheel." The Google-look chrome underneath (white card, blue name, gold
+   stars) is unchanged - that resemblance was a deliberate 2026-08-12 design call and stays; only
+   the one accent stripe that had zero per-business variation now carries one. */
 .rv-card{scroll-snap-align:start;flex:0 0 310px;width:310px;max-width:86vw;position:relative;background:#fff;
-border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
+border:1px solid rgba(0,0,0,.10);border-top:3px solid var(--brand,#20402f);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
 .rv-badge{position:absolute;top:12px;right:12px;line-height:0}
 .rv-head{display:flex;align-items:center;gap:10px;padding-right:28px;margin-bottom:8px}
 .rv-avatar,.rv-who{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover}
@@ -300,9 +354,9 @@ border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1p
 .rv-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
 .rv-stars-base svg{fill:#DADCE0}
 .rv-stars-fill svg{fill:#FBBC04}
-.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;max-height:9.5em;overflow-y:auto}
+.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:24;overflow:hidden}
 .home-reviews .rv-card{min-height:220px}
-.home-reviews .rv-body{color:#202124;display:block;min-height:4.5em}
+.home-reviews .rv-body{color:#202124;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;min-height:4.5em}
 .rv-src{display:block;margin-top:8px;color:#70757a;font:500 12.5px/1.4 Inter,sans-serif}
 .rvHonesty{max-width:64ch;margin:0 0 18px;font-size:.92rem;line-height:1.5;opacity:.88}
 @media(max-width:700px){.rv-card{flex-basis:86%;width:86%}}
@@ -408,20 +462,31 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    carries where it came from. Sources trace to FB-FACTS-HARVEST-1925.md. */
 /* WCAG 2.1 AA 1.4.3 contrast: #7A8798 on the #F4F7FB band measured
    3.37:1, under the 4.5:1 floor for body text. My own 0037 edit introduced it.
-   var(--muted) #7A5A54 measures 5.70:1 on the same background. */
+   var(--muted) #54637A measures 5.70:1 on the same background. */
 .revsrc{display:block;font:500 12.5px/1.4 Inter,sans-serif;color:var(--muted);margin-top:6px}
 
 /* ref-learn 0037: closing CTA band over licensed atmosphere photography.
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
 /* Compact CTA band - kill the ~450px near-black empty slab under the buttons. */
+/* JARED/HYDROCLEAN-QUALITY FIX 2026-09-12: the scrim used to sit at .72/.58 ON TOP of a .62-opacity
+   photo - combined that let through roughly a quarter of the image's actual light and colour, so
+   the "photo band" this comment block itself describes rendered as a near-solid navy slab with no
+   recognisable photograph, directly contradicting HYDROCLEAN-CLASS-GENERATE-PROMPT's own instruction
+   ("Density from photographs and type... never wallpaper every band in the sampled mark colour").
+   Measured live on torqueautorepair (rebuilt 2026-09-12): the CTA band photo was indistinguishable
+   from a flat colour fill at the old values. Raised image opacity and matched the hero band's own,
+   already-proven scrim strength (hero's vertical gradient runs .45/.18/.42) instead of inventing a
+   darker one for no reason; added text-shadow so white type stays legible on the now-visible photo,
+   the same technique the hero already uses (0 1px 2px + 0 3px 14px black). Root fix, every future
+   generate - never a one-off edit on a single slug. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(92,17,4,.72) 0%,rgba(92,17,4,.58) 100%)}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9;z-index:0}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(92,15,4,.50) 0%,rgba(92,15,4,.32) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
-.ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#FCCCC5;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#B28780;margin-top:14px;margin-bottom:0}
+.ctaband h2{color:#fff;margin-bottom:.35em;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+.ctaband p{color:#FCCCC5;max-width:54ch;margin:0 auto 18px;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#D8240A;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
@@ -438,17 +503,21 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   overlay, nothing to strip. See wireHarvestPhotosIntoSlots() targets list.
 */
 .pband{position:relative;overflow:hidden}
-.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.55;z-index:0}
+/* JARED/HYDROCLEAN-QUALITY FIX 2026-09-12: same defect and same fix as .ctaband above - .55 base
+   opacity under a .84-.92 scrim let almost nothing of the photo through. Raised to match. */
+.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.88;z-index:0}
 .pband>.wrap{position:relative;z-index:2}
 /* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
    the photo only needs the same scrim ctaband uses, nothing else changes. */
-.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(92,17,4,.84) 0%,rgba(92,17,4,.72) 100%)}
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(92,15,4,.54) 0%,rgba(92,15,4,.38) 100%)}
 /* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
    so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
-   stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
-#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(92,17,4,.92) 0%,rgba(92,17,4,.84) 100%)}
-#quote.pband h2{color:#fff}
-#quote.pband .kicker{color:#FDD5CE}
+   stays its own solid white card (already box-shadowed) regardless of what sits behind it.
+   Kept slightly darker than ctaband/home-reviews (the form card needs a clean edge to sit on and
+   this band carries less type overall), but nowhere near the old .92/.84 near-opaque fill. */
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(92,15,4,.58) 0%,rgba(92,15,4,.44) 100%)}
+#quote.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+#quote.pband .kicker{color:#FDD4CE;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4)}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -498,6 +567,15 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
 .home-reviews{background:var(--mist);color:var(--ink);padding:clamp(40px,6vw,72px) 0}
 .home-reviews h2{color:var(--ink)}
+/* PHOTO-BAND HEADING MUST BEAT THE FLAT-BAND INK RULE. Jacob caught this on the Pixel 2026-09-05:
+   "what people are saying about the tree service in black letters up against a dark background...
+   impossible for people to read". The correct rule .pband h2{color:#fff} EXISTS at line ~450, but
+   .home-reviews h2{color:var(--ink)} above has IDENTICAL specificity (0,0,1,1) and comes later, so
+   it wins and the heading renders near-black over a photograph. Measured worst contrast 1.48:1
+   against a 4.5:1 requirement. This rule is (0,0,2,1) so it beats both, and it is scoped to
+   .home-reviews.pband so a FLAT-COLOUR reviews band correctly keeps its dark ink - fixing the
+   photo case must not break the non-photo case. Text-shadow matches the .pband .lede treatment
+   already in this file rather than inventing a new one. */
 .home-reviews.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .home-reviews .lede,.home-reviews .kicker{color:var(--muted)}
 .home-reviews .rv-card{background:#fff;color:var(--ink)}
@@ -514,7 +592,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
   canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
   white card, so most demos will now show a white/near-white header instead of the old flat
-  #5C1104. That is deliberate - it is what makes the (correctly keyed) logo look like it has
+  #5C0F04. That is deliberate - it is what makes the (correctly keyed) logo look like it has
   no plate at all, because the plate colour and the header colour are now the same colour.
 */
 header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
@@ -524,23 +602,23 @@ header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius
    see the block above), so this blanket override was a white-on-white landmine for any future
    .bizmeta button that is not .btn-red (.btn-red already sets its own white-on-red via its own
    rule and does not need this). Each button's own class owns its own contrast now. */
-header.site .navtoggle{background:#fff!important;color:#5C1104!important;border-color:rgba(255,255,255,.45)}
-header.site .navtoggle svg{stroke:#5C1104!important}
-header.site .navtoggle .navtoggle-text{color:#5C1104!important}
-.hero h1 em{color:#E0CFCC!important}
-.btn-red:hover{background:#440C03}
-.btn-blue:hover{background:#432C28}
+header.site .navtoggle{background:#fff!important;color:#5C0F04!important;border-color:rgba(255,255,255,.45)}
+header.site .navtoggle svg{stroke:#5C0F04!important}
+header.site .navtoggle .navtoggle-text{color:#5C0F04!important}
+.hero h1 em{color:#FBBAB1!important}
+.btn-red:hover{background:#440B03}
+.btn-blue:hover{background:#661105}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
    BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #FCD0C9, which nearly
    vanished once the header itself could also be white/pale (see HEADER_BG above). */
-header.site .navtoggle{background:#FFFFFF !important;color:#1D1311 !important;border:1px solid rgba(16,23,36,.22) !important}
-header.site .navtoggle svg{stroke:#1D1311 !important}
-header.site .navtoggle .navtoggle-text{color:#1D1311 !important;opacity:1 !important}
-header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(29,19,17,.18)}
-header.site .sitemenu a{color:#1D1311 !important;background:#FFFFFF !important;opacity:1 !important}
-header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#F2EAE9 !important;color:#5C1104 !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#2C0702 !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle svg{stroke:#2C0702 !important}
+header.site .navtoggle .navtoggle-text{color:#2C0702 !important;opacity:1 !important}
+header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(44,7,2,.18)}
+header.site .sitemenu a{color:#2C0702 !important;background:#FFFFFF !important;opacity:1 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#FDE1DD !important;color:#5C0F04 !important}
 /* Hero copy sits on photograph + full-bleed gradient only. Bubble/panel KILLED 2026-08-12. */
 .hero-inner{isolation:isolate;background:transparent}
 .hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
@@ -562,6 +640,34 @@ header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#F2EAE9 !
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
 .v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
 .v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+/* ---------------------------------------------------------------------------------------------
+   CARD PHOTO CROP FIX - 2026-08-24. Measured: 419 of 419 demos mis-cropped, ZERO clean.
+
+   .card-shot sets aspect-ratio:16/10 on the WRAPPER and expects the photo to fill it. But the
+   <img> is a GRANDCHILD, not a child: lightboxImg() in generate-from-blank-mold.js wraps every
+   photo in <button class="v-lb-btn">. TWO separate rules broke the crop and BOTH had to be
+   fixed - the one-line remedy that was filed only addressed the first and would have left the
+   defect live:
+
+     1. .v-lb-btn has AUTO height, so .card-shot img{height:100%} resolved against an indefinite
+        height. A percentage against an indefinite height is ignored, so object-fit:cover never
+        engaged and the photo rendered at its own intrinsic ratio.
+     2. .v-lb-btn img{height:auto} (line above) TIES .card-shot img{height:100%} on specificity -
+        (0,1,1) each, class + element - and wins on source order because it comes later. So even
+        with a definite button height the image would still have been height:auto.
+
+   Symptoms this produced: ratio above 1.6 letterboxed into a dark #0a1622 band under the photo;
+   ratio below 1.6 silently TOP-CROPPED; 228 demos had a portrait photo in a 16:10 box, worst
+   case 0.41, showing about a quarter of the frame.
+
+   Scoped to .card-shot deliberately. .gallery img and .shot img carry aspect-ratio on the IMAGE
+   itself, so their height:auto resolves to a definite box and they crop correctly today - they
+   are not broken and must not be "fixed".
+
+   VERIFY THIS ON THE RENDERED FRAME, NEVER HERE. Four spacing fixes were confirmed in this
+   stylesheet on 2026-08-12 and changed nothing on screen. */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
 .v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
 background:rgba(10,10,8,.92);touch-action:none}
 .v-lb-root.is-open{display:flex}
@@ -620,8 +726,8 @@ footer{position:relative;z-index:1}
 .contact-shot:empty{display:none}
 /* Trade-visible hero that needs a darker type band (not a darker photo) */
 .hero.hero-darken-band::after{background:
-  linear-gradient(90deg,rgba(73,48,44,.90) 0%,rgba(73,48,44,.78) 36%,rgba(73,48,44,.48) 58%,rgba(73,48,44,.18) 78%,rgba(73,48,44,0) 100%),
-  linear-gradient(180deg,rgba(73,48,44,.58) 0%,rgba(73,48,44,.28) 42%,rgba(73,48,44,.52) 100%)}
+  linear-gradient(90deg,rgba(112,19,5,.90) 0%,rgba(112,19,5,.78) 36%,rgba(112,19,5,.48) 58%,rgba(112,19,5,.18) 78%,rgba(112,19,5,0) 100%),
+  linear-gradient(180deg,rgba(112,19,5,.58) 0%,rgba(112,19,5,.28) 42%,rgba(112,19,5,.52) 100%)}
 
 /* Contact address maps link (pattern A) - visible focus, full address is the link text */
 a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}
@@ -630,6 +736,9 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
 .contact-map iframe{border:0;width:100%;height:100%;display:block;pointer-events:auto}
 .contact-map-static-link{display:block;margin-top:10px;max-width:560px;border-radius:12px;overflow:hidden;line-height:0}
 .contact-map-static{display:block;width:100%;height:auto;max-width:560px;border-radius:12px}
+.contact-map-pin-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 14px;border-radius:10px;background:rgba(26,31,22,.06);color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}
+.contact-map-pin-link:hover{text-decoration:underline}
+.contact-map-pin-icon{color:var(--accent,#c0392b);flex-shrink:0}
 .demo-preview{background:#1c1c1e;color:#e8e6e3;font-size:11px;line-height:1.4;padding:6px 18px;text-align:center}
 .demo-preview a{color:#fff}
 
@@ -857,10 +966,8 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions{flex-direction:column;align-items:stretch}
   .lc-midcta-actions .btn{justify-content:center}
 }
-/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
-.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
-.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
-/* VENDLY-CARDCROP-FIX-20260824 END */
+
+
 
 
 /* ===== STICKY-HEADER CLIP FIX 2026-09-09 =====
@@ -888,6 +995,73 @@ html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
 .phone-strip{height:var(--phone-strip-h);box-sizing:border-box;overflow:hidden}
 .phone-strip a{display:block;height:100%;box-sizing:border-box;padding:0 16px;line-height:var(--phone-strip-h)}
 @media(min-width:900px){.phone-strip a{padding:0 16px}}
+
+/* ==========================================================================
+   REDUNDANT PINNED PHONE - Jacob 2026-09-09: "phone at top AND call button at
+   bottom is redundant". MEASURED, not argued, at 390x844 over CDP:
+
+     OURS  (5brothersautorepairhackettstownwarrennj)
+       TEL0 (908) 340-8230  top=89   sticky=TRUE   <- .phone-strip
+       TEL1 CALL            top=796  sticky=TRUE   <- .mobile-callbar .mcb-call
+       Both on screen SIMULTANEOUSLY at every scroll position, forever.
+
+     THE STANDARD (lowcountryhydroclean.com, same viewport)
+       6 tel links, ZERO of them pinned. inSticky=false on all six.
+
+   So the study site never pins the phone twice. We pinned it twice on every
+   page of every demo. Jacob is right and it is measurable.
+
+   THE RULING - keep BOTH takes from the Hydro law, drop only the duplication:
+     - Take #1 "Phone is FIRST": the tel bar still sits at the very top of the
+       document, full width, and is the first thing a stranger sees on load.
+       It simply scrolls away like Hydro's does instead of being pinned.
+     - Take #10 "Sticky bottom always on": untouched. CALL stays in the thumb
+       zone at the bottom, beside Get estimate and Ask us (the concierge).
+   Net: phone is still first on load, exactly ONE pinned call action while
+   scrolling, and ~50px of vertical fold handed back on every phone screen.
+
+   WHY BOTH LINES BELOW ARE REQUIRED, and why changing only the first one
+   would REINTRODUCE a defect Jacob already caught on Skipper (2026-08-17):
+   header.site pins to top:var(--phone-strip-h). Un-stick the strip on its own
+   and the header pins 48px down from the top, leaving the logo bar floating
+   mid-page with content sliding under the gap - the exact "logo bar floats
+   mid-page" FAIL in HYDROCLEAN-CLASS-GENERATE-PROMPT.md take #1. The header
+   must pin flush at top:0 once the strip above it is no longer pinned.
+   ========================================================================== */
+.phone-strip{position:static}
+header.site{top:0}
+html{scroll-padding-top:var(--site-header-h)}
+
+/* ==========================================================================
+   FACEBOOK OUT OF THE TOP CHROME - Jacob 2026-09-09: "Facebook in the header
+   questionable." MEASURED on the standard he named, same 390px viewport:
+   lowcountryhydroclean.com carries 3 facebook links and the only one in page
+   chrome is inFooter=TRUE. The standard does not put Facebook in the header.
+
+   WHY IT IS WORSE THAN COSMETIC: a bare Facebook icon pinned in the top chrome
+   is an EXIT, sitting above the fold, competing with the phone at the highest
+   intent moment on the page. It is the same objection the Hydro law already
+   makes to their MAP ("leaves Chrome, Pixel audits die") and to "a second
+   social chrome row just to look like them" - which is literally what this row
+   was. Removing it also shortens the top stack, which is what the pinned-phone
+   fix above wanted anyway.
+
+   The LINK is not lost and the harvest rule is untouched: SOCIAL_ROW_HTML still
+   only ever emits when harvest carries a real facebook_url (never a guessed
+   handle). It now renders inside the footer Contact column on all six pages,
+   which is where the study site keeps it.
+   ========================================================================== */
+footer .lc-social{
+  background:none;border-top:0;padding:12px 0 0;
+  justify-content:flex-start;gap:14px
+}
+footer .lc-social-link{width:44px;height:44px} /* 2026-09-11: 34px failed the Pixel hard audit tap-target floor (40px) on every page - Facebook link 34px on marinos */
+
+/* Honeypot. A field no human can see, so anything typed into it came from a bot.
+   Kept in the accessibility tree's blind spot the safe way: off-canvas rather than
+   display:none, because some bots skip display:none and some screen readers would
+   still announce it. aria-hidden and tabindex="-1" on the markup do the rest. */
+.hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 
 /* V-STRUCTURAL-CSS-START -- 2026-09-09, seat gen-servicepages.
    THIS BLOCK IS THE ONE SOURCE OF TRUTH FOR THE STRUCTURAL-PASS STYLES.
@@ -921,8 +1095,8 @@ html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
    =========================================================================== */
 .crumb{background:#F5F5F5;border-bottom:1px solid rgba(0,0,0,.06)}
 .crumb .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
-padding-top:14px;padding-bottom:14px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
-.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent}
+padding-top:2px;padding-bottom:2px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
+.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent;display:inline-flex;align-items:center;min-height:44px}
 .crumb a:hover,.crumb a:focus-visible{color:var(--brand,#20402f);border-bottom-color:currentColor}
 .crumb .crumb-sep{color:#9aa19d}
 .crumb .crumb-here{color:#6d746f}
