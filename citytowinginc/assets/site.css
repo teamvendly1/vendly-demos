@@ -9,7 +9,7 @@ html{scroll-padding-bottom:112px}
   --paper:#FFFFFF;
   --mist:#F4F6F8;
   --ink:#12171C;
-  --muted:#8499AE;
+  --muted:#5C738B;
   --brand:#26303B;
   --line:#D4DBE3;
   --radius:16px;
@@ -41,6 +41,29 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
 .phone-strip a:hover{background:#1C242B}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
+/*
+  NO-PHONE VARIANT (2026-08-31). The strip can now carry an email address instead of a phone
+  number. A phone is ~14 characters; measured across the 378 real phoneless businesses in the
+  email lane, addresses run to 46 (median 24, 48 rows over 30). At the strip's 22px Barlow
+  Condensed a 46-character address overruns 360px, and DEMO-SHIP-STANDARD forbids a page that
+  scrolls sideways.
+
+  Two layers, because the first one alone is not a guarantee:
+    - the generator sets an inline font-size computed from THIS address's actual length, so the
+      common case simply fits at full size and only long addresses shrink;
+    - these rules are the backstop that makes overflow impossible regardless of what the
+      generator computed - the line can never wrap (which would change --phone-strip-h and float
+      the sticky header mid-page, the exact defect Jacob caught on the Pixel 2026-08-17) and can
+      never push the page wider than the viewport.
+
+  Scoped to [data-contact-route="email"], so no existing phone demo can be affected by it -
+  none of them carry that attribute.
+*/
+.phone-strip[data-contact-route="email"] a,
+.phone-strip[data-contact-route="facebook"] a{
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  letter-spacing:.01em;text-transform:none
+}
 
 header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(--ink);border-bottom:0;backdrop-filter:none}
 .logo{height:88px;width:auto;display:block}
@@ -91,6 +114,24 @@ background:
 
     max-width goes with it. At 18ch a big headline wraps into a narrow column down the left; theirs
     runs 2-3 centred lines on tight leading, which is what the wider measure and 1.02 buy.
+  */
+  /*
+    HERO OVERLAP FIX (Jacob Pixel catch 2026-09-03): classaautobodyhackensackbergennj,
+    bluegrasslawncarellccliftonpassaicnj and straightforwardlandscapingburlingtoncityburlingtonnj
+    all shipped with the h1 (or the hero CTA row, when the h1 wraps 4-5 lines instead of 3) sliced
+    by the fixed .mobile-callbar - "HERO GAP FIX2" above correctly killed the old bar-height PADDING
+    (that only added empty space, it never moved content up), but nothing then bounded how TALL the
+    header+hero content block could get on a long trade+city headline. A long business/city name at
+    12vw wraps to 4-5 lines and pushes the primary CTA button (or the second "See our work" button)
+    straight under the sticky bar on initial load - confirmed reproducible at 375x812 (narrower
+    than the Pixel's own ~915px effective height) on straightforwardlandscaping's real 5-line
+    headline, and classaautobody's 3-line headline was already sitting within a few px of the same
+    edge before this change. Fix shrinks the vertical footprint of the whole above-the-fold block
+    (hero-inner padding, h1 clamp, lede, cta gap) by roughly 20% - proven live via CSS injection on
+    both the defect page (button + trust badge now fully clear of the bar) and a known-good short
+    headline (classaautobody: still large/bold, now with comfortable clearance instead of sitting on
+    the edge). Never touch bar-adjacent PADDING again for this - it does not move content, it only
+    adds dead space; the only real lever is the height of what renders ABOVE the CTA.
   */
   .hero h1{margin:0 0 8px;font-size:clamp(30px,9.5vw,50px);line-height:1.03;max-width:none;text-wrap:balance}
   .hero .lede{margin:0 0 10px;font-size:15px;line-height:1.4;max-width:36ch}
@@ -222,9 +263,17 @@ footer a{color:#fff}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{margin-bottom:10px}
-/* TAP-TARGET-33PX-FIX 2026-08-30/31: footer li a bumped to min-height:44px. Full root-cause writeup: C:\VendlyVault\_tmp\TAP-TARGET-33PX-FIX-20260830.md */
+/* ROOT-CAUSE FIX 2026-08-30: was display:inline-block;padding:4px 0 only, which rendered at
+   32.75px (footer's inherited line-height:1.65 unitless multiplier x its own 15px font-size =
+   24.75px line box, + 8px padding = 32.75px, measured on-device as 33px). That was BELOW the
+   40px hard-audit-gate floor and Jacob's 44px ADA tap-target standard, on every footer nav link
+   (Contact/Menu/Services), on every page, of every demo built from this mold - the single
+   corpus-wide source of ~42+ of ~44-46 tap-target failures per demo. min-height forces a real
+   44px box regardless of any future line-height/font-size change elsewhere on the page (global
+   *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
+   keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#8499AE}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#5C738B}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -286,8 +335,13 @@ footer{padding-bottom:30px}
 /* Google-look review cards + hero badge (2026-08-12). */
 .rv-carousel{display:flex;gap:10px;align-items:stretch}
 .rv-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;flex:1;padding-bottom:10px}
+/* 2026-09-08: border-top keyed to --brand (this business's own PRIMARY token) so the review band
+   reads as this business's page rather than a fixed universal card - Jacob: "customer reviews is
+   the same fucking slide wheel." The Google-look chrome underneath (white card, blue name, gold
+   stars) is unchanged - that resemblance was a deliberate 2026-08-12 design call and stays; only
+   the one accent stripe that had zero per-business variation now carries one. */
 .rv-card{scroll-snap-align:start;flex:0 0 310px;width:310px;max-width:86vw;position:relative;background:#fff;
-border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
+border:1px solid rgba(0,0,0,.10);border-top:3px solid var(--brand,#20402f);border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.12);text-align:left}
 .rv-badge{position:absolute;top:12px;right:12px;line-height:0}
 .rv-head{display:flex;align-items:center;gap:10px;padding-right:28px;margin-bottom:8px}
 .rv-avatar,.rv-who{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover}
@@ -300,9 +354,9 @@ border:1px solid rgba(0,0,0,.10);border-radius:12px;padding:16px;box-shadow:0 1p
 .rv-stars-fill{position:absolute;top:0;left:0;overflow:hidden}
 .rv-stars-base svg{fill:#DADCE0}
 .rv-stars-fill svg{fill:#FBBC04}
-.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;max-height:9.5em;overflow-y:auto}
+.rv-body{margin:0;color:#202124;font:400 15px/1.5 Inter,sans-serif;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:24;overflow:hidden}
 .home-reviews .rv-card{min-height:220px}
-.home-reviews .rv-body{color:#202124;display:block;min-height:4.5em}
+.home-reviews .rv-body{color:#202124;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6;overflow:hidden;min-height:4.5em}
 .rv-src{display:block;margin-top:8px;color:#70757a;font:500 12.5px/1.4 Inter,sans-serif}
 .rvHonesty{max-width:64ch;margin:0 0 18px;font-size:.92rem;line-height:1.5;opacity:.88}
 @media(max-width:700px){.rv-card{flex-basis:86%;width:86%}}
@@ -415,13 +469,24 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
 /* Compact CTA band - kill the ~450px near-black empty slab under the buttons. */
+/* JARED/HYDROCLEAN-QUALITY FIX 2026-09-12: the scrim used to sit at .72/.58 ON TOP of a .62-opacity
+   photo - combined that let through roughly a quarter of the image's actual light and colour, so
+   the "photo band" this comment block itself describes rendered as a near-solid navy slab with no
+   recognisable photograph, directly contradicting HYDROCLEAN-CLASS-GENERATE-PROMPT's own instruction
+   ("Density from photographs and type... never wallpaper every band in the sampled mark colour").
+   Measured live on torqueautorepair (rebuilt 2026-09-12): the CTA band photo was indistinguishable
+   from a flat colour fill at the old values. Raised image opacity and matched the hero band's own,
+   already-proven scrim strength (hero's vertical gradient runs .45/.18/.42) instead of inventing a
+   darker one for no reason; added text-shadow so white type stays legible on the now-visible photo,
+   the same technique the hero already uses (0 1px 2px + 0 3px 14px black). Root fix, every future
+   generate - never a one-off edit on a single slug. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.72) 0%,rgba(38,48,59,.58) 100%)}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9;z-index:0}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.50) 0%,rgba(38,48,59,.32) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
-.ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#DAE0E7;max-width:54ch;margin:0 auto 18px}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#8499AE;margin-top:14px;margin-bottom:0}
+.ctaband h2{color:#fff;margin-bottom:.35em;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+.ctaband p{color:#DAE0E7;max-width:54ch;margin:0 auto 18px;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#5C738B;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
@@ -438,17 +503,21 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   overlay, nothing to strip. See wireHarvestPhotosIntoSlots() targets list.
 */
 .pband{position:relative;overflow:hidden}
-.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.55;z-index:0}
+/* JARED/HYDROCLEAN-QUALITY FIX 2026-09-12: same defect and same fix as .ctaband above - .55 base
+   opacity under a .84-.92 scrim let almost nothing of the photo through. Raised to match. */
+.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.88;z-index:0}
 .pband>.wrap{position:relative;z-index:2}
 /* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
    the photo only needs the same scrim ctaband uses, nothing else changes. */
-.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.84) 0%,rgba(38,48,59,.72) 100%)}
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.54) 0%,rgba(38,48,59,.38) 100%)}
 /* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
    so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
-   stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
-#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.92) 0%,rgba(38,48,59,.84) 100%)}
-#quote.pband h2{color:#fff}
-#quote.pband .kicker{color:#E0E6EB}
+   stays its own solid white card (already box-shadowed) regardless of what sits behind it.
+   Kept slightly darker than ctaband/home-reviews (the form card needs a clean edge to sit on and
+   this band carries less type overall), but nowhere near the old .92/.84 near-opaque fill. */
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(38,48,59,.58) 0%,rgba(38,48,59,.44) 100%)}
+#quote.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+#quote.pband .kicker{color:#E0E6EB;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4)}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -498,6 +567,15 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .rvHonesty{max-width:64ch;margin:0 0 22px;font-size:.92rem;line-height:1.5;opacity:.88}
 .home-reviews{background:var(--mist);color:var(--ink);padding:clamp(40px,6vw,72px) 0}
 .home-reviews h2{color:var(--ink)}
+/* PHOTO-BAND HEADING MUST BEAT THE FLAT-BAND INK RULE. Jacob caught this on the Pixel 2026-09-05:
+   "what people are saying about the tree service in black letters up against a dark background...
+   impossible for people to read". The correct rule .pband h2{color:#fff} EXISTS at line ~450, but
+   .home-reviews h2{color:var(--ink)} above has IDENTICAL specificity (0,0,1,1) and comes later, so
+   it wins and the heading renders near-black over a photograph. Measured worst contrast 1.48:1
+   against a 4.5:1 requirement. This rule is (0,0,2,1) so it beats both, and it is scoped to
+   .home-reviews.pband so a FLAT-COLOUR reviews band correctly keeps its dark ink - fixing the
+   photo case must not break the non-photo case. Text-shadow matches the .pband .lede treatment
+   already in this file rather than inventing a new one. */
 .home-reviews.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .home-reviews .lede,.home-reviews .kicker{color:var(--muted)}
 .home-reviews .rv-card{background:#fff;color:var(--ink)}
@@ -511,13 +589,13 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /*
   HEADER = THE LOGO'S OWN PLATE COLOUR, NOT THE BRAND PRIMARY (Jacob CLEAR 2026-08-15,
-  HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
+  HydroClean polish). #26303A comes from keyout-logo-flat-bg.ps1 sampling the logo's own
   canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
   white card, so most demos will now show a white/near-white header instead of the old flat
   #26303B. That is deliberate - it is what makes the (correctly keyed) logo look like it has
   no plate at all, because the plate colour and the header colour are now the same colour.
 */
-header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
+header.site{background:#26303A!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
 /* header.site .bizmeta .btn{color:#fff} REMOVED 2026-08-15: dated from when the header was
    always a dark/navy plate. HEADER_BG is now the logo's own sampled colour (often white -
@@ -533,9 +611,9 @@ header.site .navtoggle .navtoggle-text{color:#26303B!important}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
-   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #DDE3E9, which nearly
+   BORDER needs rgba(255,255,255,.45) instead of the old fixed pale #DDE3E9, which nearly
    vanished once the header itself could also be white/pale (see HEADER_BG above). */
-header.site .navtoggle{background:#FFFFFF !important;color:#12171C !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#12171C !important;border:1px solid rgba(255,255,255,.45) !important}
 header.site .navtoggle svg{stroke:#12171C !important}
 header.site .navtoggle .navtoggle-text{color:#12171C !important;opacity:1 !important}
 header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(18,23,28,.18)}
@@ -562,6 +640,34 @@ header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E9EDF1 !
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
 .v-lb-btn:focus-visible{outline:2px solid #FBBC04;outline-offset:3px}
 .v-lb-btn img{display:block;width:100%;height:auto;pointer-events:none}
+/* ---------------------------------------------------------------------------------------------
+   CARD PHOTO CROP FIX - 2026-08-24. Measured: 419 of 419 demos mis-cropped, ZERO clean.
+
+   .card-shot sets aspect-ratio:16/10 on the WRAPPER and expects the photo to fill it. But the
+   <img> is a GRANDCHILD, not a child: lightboxImg() in generate-from-blank-mold.js wraps every
+   photo in <button class="v-lb-btn">. TWO separate rules broke the crop and BOTH had to be
+   fixed - the one-line remedy that was filed only addressed the first and would have left the
+   defect live:
+
+     1. .v-lb-btn has AUTO height, so .card-shot img{height:100%} resolved against an indefinite
+        height. A percentage against an indefinite height is ignored, so object-fit:cover never
+        engaged and the photo rendered at its own intrinsic ratio.
+     2. .v-lb-btn img{height:auto} (line above) TIES .card-shot img{height:100%} on specificity -
+        (0,1,1) each, class + element - and wins on source order because it comes later. So even
+        with a definite button height the image would still have been height:auto.
+
+   Symptoms this produced: ratio above 1.6 letterboxed into a dark #0a1622 band under the photo;
+   ratio below 1.6 silently TOP-CROPPED; 228 demos had a portrait photo in a 16:10 box, worst
+   case 0.41, showing about a quarter of the frame.
+
+   Scoped to .card-shot deliberately. .gallery img and .shot img carry aspect-ratio on the IMAGE
+   itself, so their height:auto resolves to a definite box and they crop correctly today - they
+   are not broken and must not be "fixed".
+
+   VERIFY THIS ON THE RENDERED FRAME, NEVER HERE. Four spacing fixes were confirmed in this
+   stylesheet on 2026-08-12 and changed nothing on screen. */
+.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
+.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
 .v-lb-root{position:fixed;inset:0;z-index:99999;display:none;align-items:center;justify-content:center;
 background:rgba(10,10,8,.92);touch-action:none}
 .v-lb-root.is-open{display:flex}
@@ -630,6 +736,9 @@ a.addr-link:focus-visible{outline:2px solid #FBBC04;outline-offset:3px;border-ra
 .contact-map iframe{border:0;width:100%;height:100%;display:block;pointer-events:auto}
 .contact-map-static-link{display:block;margin-top:10px;max-width:560px;border-radius:12px;overflow:hidden;line-height:0}
 .contact-map-static{display:block;width:100%;height:auto;max-width:560px;border-radius:12px}
+.contact-map-pin-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 14px;border-radius:10px;background:rgba(26,31,22,.06);color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}
+.contact-map-pin-link:hover{text-decoration:underline}
+.contact-map-pin-icon{color:var(--accent,#c0392b);flex-shrink:0}
 .demo-preview{background:#1c1c1e;color:#e8e6e3;font-size:11px;line-height:1.4;padding:6px 18px;text-align:center}
 .demo-preview a{color:#fff}
 
@@ -857,7 +966,159 @@ main > section { padding-top: clamp(44px, 9vw, 96px); padding-bottom: clamp(44px
   .lc-midcta-actions{flex-direction:column;align-items:stretch}
   .lc-midcta-actions .btn{justify-content:center}
 }
-/* VENDLY-CARDCROP-FIX-20260824 START - do not edit inside this block */
-.card-shot .v-lb-btn{display:block;width:100%;height:100%;border-radius:inherit}
-.card-shot .v-lb-btn img{width:100%;height:100%;object-fit:cover;display:block}
-/* VENDLY-CARDCROP-FIX-20260824 END */
+
+
+
+
+/* ===== STICKY-HEADER CLIP FIX 2026-09-09 =====
+   Both defects below were measured on the RENDERED FRAME at 412x915 and 1280x900, not read out
+   of this stylesheet.
+
+   1. CONTENT SLICED THROUGH THE STICKY STACK. --phone-strip-h claimed 48px; the strip actually
+      rendered 50px on a phone and 46px on desktop, because its height came from its own font
+      and padding at each breakpoint. header.site pins to top:var(--phone-strip-h), so on
+      desktop the header sat 2px below the strip and page copy scrolled visibly through the slit
+      between them. Fixed by LOCKING the strip to the height the variable claims, so the variable
+      is true by construction rather than by a lucky guess.
+
+   2. EVERY ANCHOR JUMP LANDED UNDER THE HEADER. scroll-padding-bottom was set for the call bar
+      and scroll-padding-top was never set at all. Tapping the page own "Get a quote" put 156px
+      of #quote under the opaque header - its heading sat at y=82, completely hidden. */
+:root{--site-header-h:114px}
+@media(max-width:640px){:root{--site-header-h:106px}}
+
+html{scroll-padding-top:calc(var(--phone-strip-h) + var(--site-header-h))}
+
+/* The strip is locked to exactly the height the variable promises. line-height (not flex) does
+   the vertical centring on purpose: display:flex would make the link a flex container and
+   silently break the text-overflow:ellipsis that protects the long-email contact variant. */
+.phone-strip{height:var(--phone-strip-h);box-sizing:border-box;overflow:hidden}
+.phone-strip a{display:block;height:100%;box-sizing:border-box;padding:0 16px;line-height:var(--phone-strip-h)}
+@media(min-width:900px){.phone-strip a{padding:0 16px}}
+
+/* ==========================================================================
+   REDUNDANT PINNED PHONE - Jacob 2026-09-09: "phone at top AND call button at
+   bottom is redundant". MEASURED, not argued, at 390x844 over CDP:
+
+     OURS  (5brothersautorepairhackettstownwarrennj)
+       TEL0 (908) 340-8230  top=89   sticky=TRUE   <- .phone-strip
+       TEL1 CALL            top=796  sticky=TRUE   <- .mobile-callbar .mcb-call
+       Both on screen SIMULTANEOUSLY at every scroll position, forever.
+
+     THE STANDARD (lowcountryhydroclean.com, same viewport)
+       6 tel links, ZERO of them pinned. inSticky=false on all six.
+
+   So the study site never pins the phone twice. We pinned it twice on every
+   page of every demo. Jacob is right and it is measurable.
+
+   THE RULING - keep BOTH takes from the Hydro law, drop only the duplication:
+     - Take #1 "Phone is FIRST": the tel bar still sits at the very top of the
+       document, full width, and is the first thing a stranger sees on load.
+       It simply scrolls away like Hydro's does instead of being pinned.
+     - Take #10 "Sticky bottom always on": untouched. CALL stays in the thumb
+       zone at the bottom, beside Get estimate and Ask us (the concierge).
+   Net: phone is still first on load, exactly ONE pinned call action while
+   scrolling, and ~50px of vertical fold handed back on every phone screen.
+
+   WHY BOTH LINES BELOW ARE REQUIRED, and why changing only the first one
+   would REINTRODUCE a defect Jacob already caught on Skipper (2026-08-17):
+   header.site pins to top:var(--phone-strip-h). Un-stick the strip on its own
+   and the header pins 48px down from the top, leaving the logo bar floating
+   mid-page with content sliding under the gap - the exact "logo bar floats
+   mid-page" FAIL in HYDROCLEAN-CLASS-GENERATE-PROMPT.md take #1. The header
+   must pin flush at top:0 once the strip above it is no longer pinned.
+   ========================================================================== */
+.phone-strip{position:static}
+header.site{top:0}
+html{scroll-padding-top:var(--site-header-h)}
+
+/* ==========================================================================
+   FACEBOOK OUT OF THE TOP CHROME - Jacob 2026-09-09: "Facebook in the header
+   questionable." MEASURED on the standard he named, same 390px viewport:
+   lowcountryhydroclean.com carries 3 facebook links and the only one in page
+   chrome is inFooter=TRUE. The standard does not put Facebook in the header.
+
+   WHY IT IS WORSE THAN COSMETIC: a bare Facebook icon pinned in the top chrome
+   is an EXIT, sitting above the fold, competing with the phone at the highest
+   intent moment on the page. It is the same objection the Hydro law already
+   makes to their MAP ("leaves Chrome, Pixel audits die") and to "a second
+   social chrome row just to look like them" - which is literally what this row
+   was. Removing it also shortens the top stack, which is what the pinned-phone
+   fix above wanted anyway.
+
+   The LINK is not lost and the harvest rule is untouched: SOCIAL_ROW_HTML still
+   only ever emits when harvest carries a real facebook_url (never a guessed
+   handle). It now renders inside the footer Contact column on all six pages,
+   which is where the study site keeps it.
+   ========================================================================== */
+footer .lc-social{
+  background:none;border-top:0;padding:12px 0 0;
+  justify-content:flex-start;gap:14px
+}
+footer .lc-social-link{width:44px;height:44px} /* 2026-09-11: 34px failed the Pixel hard audit tap-target floor (40px) on every page - Facebook link 34px on marinos */
+
+/* Honeypot. A field no human can see, so anything typed into it came from a bot.
+   Kept in the accessibility tree's blind spot the safe way: off-canvas rather than
+   display:none, because some bots skip display:none and some screen readers would
+   still announce it. aria-hidden and tabindex="-1" on the markup do the rest. */
+.hp-field{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+
+/* V-STRUCTURAL-CSS-START -- 2026-09-09, seat gen-servicepages.
+   THIS BLOCK IS THE ONE SOURCE OF TRUTH FOR THE STRUCTURAL-PASS STYLES.
+   New builds get it because the generator copies this stylesheet. Demos already published
+   get it because apply-structural-pass.js READS THIS FILE and appends the region between
+   these two sentinels to their own site.css. Do not copy these rules anywhere else - a
+   second copy is a second thing that drifts, which is the whole reason the sentinels exist.
+   Everything between the sentinels must be self-contained and safe to append twice-guarded. */
+
+/* ===========================================================================
+   G3 - THE FULL REVIEWS WALL (2026-09-09, seat gen-servicepages)
+   reviews.html used to render the same six-card horizontal swiper as the homepage.
+   Measured: 436 of 635 demos hold MORE than six harvested reviews; every one of them
+   was publishing six of them twice and throwing the rest away.
+   The homepage swiper (.rv-carousel/.rv-track) is UNTOUCHED - this is a second shape
+   for the page whose whole job is the full set, the study site's /testimonials/ layout.
+   Cards keep their identical chrome; only the container geometry and the body clamp
+   change, because a wall card has no reason to be 310px wide or truncated at 24 lines.
+   =========================================================================== */
+.rv-wall{display:grid;grid-template-columns:1fr;gap:14px;align-items:start}
+.rv-wall .rv-card{flex:none;width:auto;max-width:none;scroll-snap-align:none}
+.rv-wall .rv-body{display:block;-webkit-line-clamp:none;overflow:visible}
+@media(min-width:760px){.rv-wall{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1080px){.rv-wall{grid-template-columns:repeat(3,1fr)}}
+
+/* ===========================================================================
+   G5 - BREADCRUMB BAR (2026-09-09, seat gen-servicepages)
+   `grep -ci breadcrumb` returned 0 across all six mold pages. The study site runs a 74px
+   #F5F5F5 bar directly under the dark page-title band on all 18 of its inner pages.
+   Sits under .hero-sub, never on index.html - a one-item trail is not a trail.
+   =========================================================================== */
+.crumb{background:#F5F5F5;border-bottom:1px solid rgba(0,0,0,.06)}
+.crumb .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+padding-top:2px;padding-bottom:2px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
+.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent;display:inline-flex;align-items:center;min-height:44px}
+.crumb a:hover,.crumb a:focus-visible{color:var(--brand,#20402f);border-bottom-color:currentColor}
+.crumb .crumb-sep{color:#9aa19d}
+.crumb .crumb-here{color:#6d746f}
+
+/* ===========================================================================
+   G4 - SERVICE DETAIL PAGE (2026-09-09, seat gen-servicepages)
+   services/{slug}.html. Chrome is inherited wholesale from the rendered services.html, so
+   there is nothing to style here except the body of the page itself.
+   =========================================================================== */
+.svc-detail{max-width:72ch}
+.svc-detail h2{margin:0 0 18px}
+.svc-body{font-size:1.05rem;line-height:1.65;margin:0 0 24px}
+.svc-quote{margin:0 0 26px;padding:16px 20px;border-left:3px solid var(--brand,#20402f);
+background:rgba(0,0,0,.035);font:400 15.5px/1.6 Inter,system-ui,sans-serif;color:#313834}
+.svc-shot{margin:0}
+.svc-shot img{display:block;width:100%;height:auto;border-radius:12px}
+.sib-grid .sib-card{display:block;text-decoration:none;color:inherit}
+.sib-grid .sib-card h3{margin:0 0 8px}
+.sib-grid .sib-card p{margin:0}
+.sib-grid .sib-card:hover,.sib-grid .sib-card:focus-visible{box-shadow:0 2px 6px rgba(0,0,0,.14),0 8px 22px rgba(0,0,0,.08)}
+
+/* G10/G11 - footer service-area and postal-address blocks. Emitted only from harvest. */
+.faddr{margin:0 0 10px;line-height:1.5;opacity:.92}
+.farea{margin:0;line-height:1.6;max-width:34ch;opacity:.92}
+/* V-STRUCTURAL-CSS-END */
