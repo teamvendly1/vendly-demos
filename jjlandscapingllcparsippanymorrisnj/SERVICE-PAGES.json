@@ -1,27 +1,21 @@
 {
-  "slug": "jjlandscapingllcparsippanymorrisnj",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
-    "written": true,
-    "sizes": [
-      "favicon-32.png",
-      "favicon-180.png",
-      "favicon-192.png"
-    ]
-  },
-  "footer_area": true,
-  "footer_address": true,
   "service_pages": {
     "emitted": [],
     "refused": [
       {
-        "title": "Landscaping",
-        "slug": "landscaping",
+        "title": "Transformed Curb Appeal",
+        "slug": "transformed-curb-appeal",
         "reasons": [
-          "no_real_photo_file:photo-service-1.jpg:0B",
+          "body_too_thin:0<60",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Made Yard Look Great",
+        "slug": "made-yard-look-great",
+        "reasons": [
+          "body_too_thin:0<60",
           "no_written_alt:0<15",
           "evidence_not_real:missing"
         ]
@@ -29,22 +23,30 @@
     ],
     "reason": "no_service_met_the_floor"
   },
-  "changed_files": [
-    "reviews.html"
-  ],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
+  "crumbs": {
+    "pages": 4
   },
-  "reviews_wall": {
-    "changed": true,
-    "eligible": 3,
-    "was_showing": 3,
-    "now_showing": 3,
-    "removed": 0
+  "schema": {
+    "pages": 5
   },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
