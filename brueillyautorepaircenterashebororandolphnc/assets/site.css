@@ -469,12 +469,23 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    All six references close with a full-bleed CTA. The photo is licensed stock
    used as atmosphere only and is never presented as Luke's own work. */
 /* Compact CTA band - kill the ~450px near-black empty slab under the buttons. */
+/* JARED/HYDROCLEAN-QUALITY FIX 2026-09-12: the scrim used to sit at .72/.58 ON TOP of a .62-opacity
+   photo - combined that let through roughly a quarter of the image's actual light and colour, so
+   the "photo band" this comment block itself describes rendered as a near-solid navy slab with no
+   recognisable photograph, directly contradicting HYDROCLEAN-CLASS-GENERATE-PROMPT's own instruction
+   ("Density from photographs and type... never wallpaper every band in the sampled mark colour").
+   Measured live on torqueautorepair (rebuilt 2026-09-12): the CTA band photo was indistinguishable
+   from a flat colour fill at the old values. Raised image opacity and matched the hero band's own,
+   already-proven scrim strength (hero's vertical gradient runs .45/.18/.42) instead of inventing a
+   darker one for no reason; added text-shadow so white type stays legible on the now-visible photo,
+   the same technique the hero already uses (0 1px 2px + 0 3px 14px black). Root fix, every future
+   generate - never a one-off edit on a single slug. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
-.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.62;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,66,3,.72) 0%,rgba(94,66,3,.58) 100%)}
+.ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9;z-index:0}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,66,3,.50) 0%,rgba(94,66,3,.32) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
-.ctaband h2{color:#fff;margin-bottom:.35em}
-.ctaband p{color:#FDEBC4;max-width:54ch;margin:0 auto 18px}
+.ctaband h2{color:#fff;margin-bottom:.35em;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+.ctaband p{color:#FDEBC4;max-width:54ch;margin:0 auto 18px;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
 .photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#986B05;margin-top:14px;margin-bottom:0}
 
 /*
@@ -492,17 +503,21 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
   overlay, nothing to strip. See wireHarvestPhotosIntoSlots() targets list.
 */
 .pband{position:relative;overflow:hidden}
-.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.55;z-index:0}
+/* JARED/HYDROCLEAN-QUALITY FIX 2026-09-12: same defect and same fix as .ctaband above - .55 base
+   opacity under a .84-.92 scrim let almost nothing of the photo through. Raised to match. */
+.pband>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.88;z-index:0}
 .pband>.wrap{position:relative;z-index:2}
 /* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
    the photo only needs the same scrim ctaband uses, nothing else changes. */
-.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,66,3,.84) 0%,rgba(94,66,3,.72) 100%)}
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,66,3,.54) 0%,rgba(94,66,3,.38) 100%)}
 /* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
    so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
-   stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
-#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,66,3,.92) 0%,rgba(94,66,3,.84) 100%)}
-#quote.pband h2{color:#fff}
-#quote.pband .kicker{color:#FDEFCE}
+   stays its own solid white card (already box-shadowed) regardless of what sits behind it.
+   Kept slightly darker than ctaband/home-reviews (the form card needs a clean edge to sit on and
+   this band carries less type overall), but nowhere near the old .92/.84 near-opaque fill. */
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(94,66,3,.58) 0%,rgba(94,66,3,.44) 100%)}
+#quote.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
+#quote.pband .kicker{color:#FDEFCE;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4)}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -1040,7 +1055,7 @@ footer .lc-social{
   background:none;border-top:0;padding:12px 0 0;
   justify-content:flex-start;gap:14px
 }
-footer .lc-social-link{width:34px;height:34px}
+footer .lc-social-link{width:44px;height:44px} /* 2026-09-11: 34px failed the Pixel hard audit tap-target floor (40px) on every page - Facebook link 34px on marinos */
 
 /* Honeypot. A field no human can see, so anything typed into it came from a bot.
    Kept in the accessibility tree's blind spot the safe way: off-canvas rather than
@@ -1080,8 +1095,8 @@ footer .lc-social-link{width:34px;height:34px}
    =========================================================================== */
 .crumb{background:#F5F5F5;border-bottom:1px solid rgba(0,0,0,.06)}
 .crumb .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px;
-padding-top:14px;padding-bottom:14px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
-.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent}
+padding-top:2px;padding-bottom:2px;font:500 13.5px/1.4 Inter,system-ui,sans-serif}
+.crumb a{color:#3f4a44;text-decoration:none;border-bottom:1px solid transparent;display:inline-flex;align-items:center;min-height:44px}
 .crumb a:hover,.crumb a:focus-visible{color:var(--brand,#20402f);border-bottom-color:currentColor}
 .crumb .crumb-sep{color:#9aa19d}
 .crumb .crumb-here{color:#6d746f}
