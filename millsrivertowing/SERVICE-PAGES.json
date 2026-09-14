@@ -1,10 +1,58 @@
 {
-  "slug": "millsrivertowing",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Accident recovery",
+        "slug": "accident-recovery",
+        "reasons": [
+          "no_real_photo_file:no_slot:0B",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Car and light truck transport",
+        "slug": "car-and-light-truck-transport",
+        "reasons": [
+          "no_real_photo_file:no_slot:0B",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Night and out of hours calls",
+        "slug": "night-and-out-of-hours-calls",
+        "reasons": [
+          "no_real_photo_file:no_slot:0B",
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Hendersonville",
+        "slug": "hendersonville",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,37 +60,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": true,
-  "footer_address": true,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Towing",
-        "slug": "towing",
-        "reasons": [
-          "body_too_thin:0<60",
-          "no_real_photo_file:photo-service-1.jpg:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:missing"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 15,
-    "shown": 15
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
