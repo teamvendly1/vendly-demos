@@ -86,3 +86,32 @@
     });
   }catch(e){}
 })();
+
+
+/* sticky-stack measurement 2026-09-09
+   The CSS states the header as 114px / 106px, which is what its own fixed rules produce. But
+   .bizmeta wraps, so a header whose pills run to a second line is taller and a constant would
+   be wrong for that demo - exactly the hardcoded-height mistake this fix exists to end. Measure
+   the real thing and write it back. Fails safe: if anything here throws, the CSS value stands. */
+(function(){
+  try{
+    var root=document.documentElement;
+    function sync(){
+      var strip=document.querySelector(".phone-strip");
+      var head=document.querySelector("header.site");
+      if(head){
+        var h=Math.round(head.getBoundingClientRect().height);
+        if(h>0) root.style.setProperty("--site-header-h", h+"px");
+      }
+      /* The strip is height-locked in CSS, so this only ever confirms it. Kept so a future
+         strip change cannot silently reopen the 2px slit. */
+      if(strip){
+        var s=Math.round(strip.getBoundingClientRect().height);
+        if(s>0) root.style.setProperty("--phone-strip-h", s+"px");
+      }
+    }
+    sync();
+    window.addEventListener("load", sync);
+    window.addEventListener("resize", sync);
+  }catch(e){}
+})();
