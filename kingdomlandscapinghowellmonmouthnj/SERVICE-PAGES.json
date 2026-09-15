@@ -24,28 +24,27 @@
         "photo": "photo-service-3.jpg",
         "has_quote": false,
         "evidence": "photo"
-      },
-      {
-        "slug": "sod-seeding-and-grading",
-        "title": "Sod, seeding and grading",
-        "h1": "Sod, seeding and grading, Howell Township, NJ",
-        "photo": "photo-service-4.jpg",
-        "has_quote": false,
-        "evidence": "photo"
-      },
-      {
-        "slug": "drainage",
-        "title": "Drainage",
-        "h1": "Drainage, Howell Township, NJ",
-        "photo": "photo-service-5.jpg",
-        "has_quote": false,
-        "evidence": "photo"
       }
     ],
-    "refused": [],
+    "refused": [
+      {
+        "title": "Sod, seeding and grading",
+        "slug": "sod-seeding-and-grading",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Drainage",
+        "slug": "drainage",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
     "reason": null,
     "place": "Howell Township, NJ",
-    "linked_from_services_html": 5
+    "linked_from_services_html": 3
   },
   "crumbs": {
     "pages": 5
