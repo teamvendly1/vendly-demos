@@ -1,10 +1,79 @@
 {
-  "slug": "lionofjudahroofingllcvinelandcumberlandnj",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Roof Replacement",
+        "slug": "roof-replacement",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Roof Repair",
+        "slug": "roof-repair",
+        "reasons": [
+          "body_too_thin:58<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Roof Inspection",
+        "slug": "roof-inspection",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Gutter Service",
+        "slug": "gutter-service",
+        "reasons": [
+          "body_too_thin:55<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Storm Damage Repair",
+        "slug": "storm-damage-repair",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Flashing and Ventilation",
+        "slug": "flashing-and-ventilation",
+        "reasons": [
+          "body_too_thin:52<60",
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Vineland",
+        "slug": "vineland",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,37 +81,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": true,
-  "footer_address": true,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Roofing",
-        "slug": "roofing",
-        "reasons": [
-          "body_too_thin:0<60",
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:missing"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 26,
-    "shown": 26
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
