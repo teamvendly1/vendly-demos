@@ -1,10 +1,71 @@
 {
-  "slug": "windowtintcenternc",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Brake Service",
+        "slug": "brake-service",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Engine Diagnostics",
+        "slug": "engine-diagnostics",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Oil and Fluid Service",
+        "slug": "oil-and-fluid-service",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Suspension and Steering",
+        "slug": "suspension-and-steering",
+        "reasons": [
+          "body_too_thin:59<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Tire Service",
+        "slug": "tire-service",
+        "reasons": [
+          "body_too_thin:51<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Battery and Electrical",
+        "slug": "battery-and-electrical",
+        "reasons": [
+          "body_too_thin:56<60",
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [],
+    "reason": "no_service_areas_harvested"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": false,
+    "address": false
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,44 +73,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": false,
-  "footer_address": false,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Automotive window tint",
-        "slug": "automotive-window-tint",
-        "reasons": [
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:name"
-        ]
-      },
-      {
-        "title": "Ceramic tint",
-        "slug": "ceramic-tint",
-        "reasons": [
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 52,
-    "shown": 52
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
