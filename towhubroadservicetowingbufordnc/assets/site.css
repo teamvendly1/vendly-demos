@@ -240,6 +240,18 @@ section.mist{background:var(--mist)}
 
 /* lead form */
 .leadwrap{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,52px);align-items:start}
+/* QUOTE-LEDE-DEAD-SPACE (2026-09-15): the #quote leadwrap's left column is only a kicker + h2 -
+   the QUOTE_LEDE mold token resolves to facts.quote_lede, which lib/facts-from-harvest.js defaults to '' and
+   nothing in this codebase ever sets to anything else (grep confirms the only two writes are that
+   default and this same read), so the <p class="lede"> is empty on every demo, every time. With
+   align-items:start (the .leadwrap default, kept for the contact-lead photo band below, which has
+   real content on both sides) that left column is 2 short lines pinned to the top of a form that
+   commonly runs 500px+ tall, leaving a large blank gap under the heading - reads as unfinished.
+   Scoped to #quote only so the contact-lead band (index.html/contact.html contact-page section,
+   which has real height on both sides already) is untouched. Centering, not inventing copy: an
+   empty lede stays empty (honest, per the sanitizeFactsForMold philosophy elsewhere in this
+   pipeline - "empty is honest and the card collapses"), this only stops it from looking broken. */
+#quote .leadwrap{align-items:center}
 form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,3.4vw,34px);box-shadow:var(--shadow-lg)}
 .field{margin-bottom:17px}
 label{display:block;font:600 14px/1 Inter,sans-serif;color:var(--blue-dk);margin-bottom:8px}
