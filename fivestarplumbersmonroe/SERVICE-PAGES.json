@@ -1,10 +1,55 @@
 {
-  "slug": "fivestarplumbersmonroe",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Leak and pipe repair",
+        "slug": "leak-and-pipe-repair",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Fixtures, faucets and toilets",
+        "slug": "fixtures-faucets-and-toilets",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Bathroom and fixture work",
+        "slug": "bathroom-and-fixture-work",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Monroe",
+        "slug": "monroe",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,36 +57,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": true,
-  "footer_address": true,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Plumbing",
-        "slug": "plumbing",
-        "reasons": [
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:missing"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 7,
-    "shown": 7
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
