@@ -1,10 +1,78 @@
 {
-  "slug": "jamestheplumberfayettevillecumberlandnc",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Drain Cleaning",
+        "slug": "drain-cleaning",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Water Heater Service",
+        "slug": "water-heater-service",
+        "reasons": [
+          "body_too_thin:59<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Leak Detection and Repair",
+        "slug": "leak-detection-and-repair",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Fixture Installation",
+        "slug": "fixture-installation",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Repiping",
+        "slug": "repiping",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Sewer Line Service",
+        "slug": "sewer-line-service",
+        "reasons": [
+          "body_too_thin:52<60",
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Fayetteville",
+        "slug": "fayetteville",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,54 +80,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": true,
-  "footer_address": true,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Leak and pipe repair",
-        "slug": "leak-and-pipe-repair",
-        "reasons": [
-          "no_real_photo_file:photo-service-1.jpg:0B",
-          "no_written_alt:0<15"
-        ]
-      },
-      {
-        "title": "Water heaters",
-        "slug": "water-heaters",
-        "reasons": [
-          "no_real_photo_file:photo-service-2.jpg:0B",
-          "no_written_alt:0<15"
-        ]
-      },
-      {
-        "title": "Fixtures, faucets and toilets",
-        "slug": "fixtures-faucets-and-toilets",
-        "reasons": [
-          "no_real_photo_file:photo-service-3.jpg:0B",
-          "no_written_alt:0<15"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [
-    "reviews.html"
-  ],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": true,
-    "eligible": 3,
-    "was_showing": 3,
-    "now_showing": 3,
-    "removed": 0
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
