@@ -1,0 +1,80 @@
+{
+  "service_pages": {
+    "emitted": [
+      {
+        "slug": "engine-repair",
+        "title": "Engine repair",
+        "h1": "Engine repair, Tryon, NC",
+        "photo": "photo-service-1.jpg",
+        "has_quote": false,
+        "evidence": "photo"
+      },
+      {
+        "slug": "tires-and-wheels",
+        "title": "Tires and wheels",
+        "h1": "Tires and wheels, Tryon, NC",
+        "photo": "photo-service-2.jpg",
+        "has_quote": false,
+        "evidence": "photo"
+      }
+    ],
+    "refused": [
+      {
+        "title": "Exhaust and underbody",
+        "slug": "exhaust-and-underbody",
+        "reasons": [
+          "body_too_thin:58<60"
+        ]
+      },
+      {
+        "title": "Diagnostics and check engine work",
+        "slug": "diagnostics-and-check-engine-work",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": null,
+    "place": "Tryon, NC",
+    "linked_from_services_html": 2
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Tryon",
+        "slug": "tryon",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 5
+  },
+  "schema": {
+    "pages": 6
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
+  }
+}
