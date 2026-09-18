@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Copper Brokers LLC (site clone)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&family=Roboto:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="vendly-banner" id="vendly-banner">
+  <div class="container">
+    <span class="vendly-tag">Vendly Demo</span>
+    <p>This is Corey's current site, shown exactly as it is today, unchanged. The chat bubble in the bottom right corner is the Vendly concierge bolted on top: it answers visitor questions and captures leads any time, day or night, without touching anything else on the page.</p>
+    <button type="button" id="vendly-banner-close">Dismiss</button>
+  </div>
+</div>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="tel:17049616073">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call Us Anytime 704-961-6073
+    </a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="wordmark">
+      <img src="img/logo-mark.jpg" alt="Copper Brokers LLC logo">
+      Copper Brokers LLC.
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container split-hero reveal is-visible">
+      <div>
+        <h1>Get in Touch</h1>
+        <p class="lede">For any quick services, inquiries, or to request a quote, our team is here to assist you.</p>
+      </div>
+      <div class="split-media">
+        <img src="img/dumpster-truck.jpg" alt="Copper Brokers dumpster truck on a job site">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="reveal">
+          <p class="contact-line"><strong>Phone</strong><a href="tel:17049616073">704-961-6073</a></p>
+          <p class="contact-line"><strong>Email</strong><a href="mailto:copperbrokersrecycling@gmail.com">copperbrokersrecycling@gmail.com</a></p>
+        </div>
+        <div class="reveal">
+          <form class="quote-form" novalidate>
+            <h2>Request a Quote</h2>
+            <p class="lede" style="margin-bottom:16px;">Tell us what you need picked up, including the quantity and size, and we'll take care of the rest!</p>
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="cf-phone">Phone</label>
+                <input type="tel" id="cf-phone" name="phone" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <img class="footer-logo-small" src="img/logo-mark.jpg" alt="Copper Brokers LLC logo">
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a><span>|</span>
+      <a href="#">Terms &amp; Conditions</a><span>|</span>
+      <a href="#">Accessibility Statement</a>
+    </div>
+    <span><a href="tel:17049616073">704-961-6073</a> &middot; <a href="mailto:copperbrokersrecycling@gmail.com">copperbrokersrecycling@gmail.com</a></span>
+    <span>&copy; <span data-year>2026</span> Copper Brokers LLC. All rights reserved.</span>
+    <span>Built on discipline, reliability, and quality service.</span>
+  </div>
+</footer>
+
+<button type="button" class="vendly-chat-launcher" id="vendly-chat-launcher" aria-haspopup="dialog" aria-expanded="false" aria-controls="vendly-chat-panel" aria-label="Open concierge chat">
+  <span class="ping" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+</button>
+
+<div class="vendly-chat-panel" id="vendly-chat-panel" role="dialog" aria-label="Copper Brokers concierge chat" hidden>
+  <div class="vendly-chat-head">
+    <div>
+      <strong>Copper Brokers Concierge</strong>
+      <span>Powered by Vendly</span>
+    </div>
+    <button type="button" id="vendly-chat-close" aria-label="Close chat">&times;</button>
+  </div>
+  <div class="vendly-chat-body" id="vendly-chat-body"></div>
+  <form class="vendly-chat-form" id="vendly-chat-form">
+    <div class="field">
+      <label for="cc-name">Name</label>
+      <input type="text" id="cc-name" name="cname" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="cc-phone">Phone</label>
+      <input type="tel" id="cc-phone" name="cphone" autocomplete="tel" required>
+    </div>
+    <button type="submit">Get a Callback</button>
+    <p class="vendly-chat-status" id="vendly-chat-status"></p>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
