@@ -1,10 +1,76 @@
 {
-  "slug": "appomattoxheatingaircolonialheights",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "AC Repair",
+        "slug": "ac-repair",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Heating Repair",
+        "slug": "heating-repair",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "System Installation",
+        "slug": "system-installation",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Preventive Maintenance",
+        "slug": "preventive-maintenance",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Indoor Air Quality",
+        "slug": "indoor-air-quality",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Thermostat and Controls",
+        "slug": "thermostat-and-controls",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Colonial Heights",
+        "slug": "colonial-heights",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
     "written": true,
     "sizes": [
       "favicon-32.png",
@@ -12,53 +78,12 @@
       "favicon-192.png"
     ]
   },
-  "footer_area": true,
-  "footer_address": true,
-  "service_pages": {
-    "emitted": [],
-    "refused": [
-      {
-        "title": "Air conditioning repair",
-        "slug": "air-conditioning-repair",
-        "reasons": [
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:name"
-        ]
-      },
-      {
-        "title": "Heating repair",
-        "slug": "heating-repair",
-        "reasons": [
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15",
-          "evidence_not_real:name"
-        ]
-      },
-      {
-        "title": "System replacement and installation",
-        "slug": "system-replacement-and-installation",
-        "reasons": [
-          "no_real_photo_file:no_slot:0B",
-          "no_written_alt:0<15"
-        ]
-      }
-    ],
-    "reason": "no_service_met_the_floor"
-  },
-  "changed_files": [],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
-  },
-  "reviews_wall": {
-    "changed": false,
-    "reason": "already_correct",
-    "eligible": 20,
-    "shown": 20
-  },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
