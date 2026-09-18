@@ -1,19 +1,4 @@
 {
-  "slug": "samslandscapinglindenunionnj",
-  "apply": true,
-  "is_launch": false,
-  "crumbs": 0,
-  "schema": 0,
-  "favicon": {
-    "written": true,
-    "sizes": [
-      "favicon-32.png",
-      "favicon-180.png",
-      "favicon-192.png"
-    ]
-  },
-  "footer_area": true,
-  "footer_address": true,
   "service_pages": {
     "emitted": [],
     "refused": [
@@ -21,16 +6,14 @@
         "title": "Lawn care and mowing",
         "slug": "lawn-care-and-mowing",
         "reasons": [
-          "no_real_photo_file:photo-service-1.jpg:0B",
-          "no_written_alt:0<15"
+          "no_real_photo_file:photo-service-1.jpg:0B"
         ]
       },
       {
         "title": "Mulch and bed work",
         "slug": "mulch-and-bed-work",
         "reasons": [
-          "no_real_photo_file:photo-service-2.jpg:0B",
-          "no_written_alt:0<15"
+          "no_real_photo_file:photo-service-2.jpg:0B"
         ]
       },
       {
@@ -59,22 +42,43 @@
     ],
     "reason": "no_service_met_the_floor"
   },
-  "changed_files": [
-    "reviews.html"
-  ],
-  "structural_css": {
-    "added": false,
-    "reason": "already_present"
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Linden",
+        "slug": "linden",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
   },
-  "reviews_wall": {
-    "changed": true,
-    "eligible": 64,
-    "was_showing": 64,
-    "now_showing": 64,
-    "removed": 0
+  "crumbs": {
+    "pages": 5
   },
-  "crawler_files": {
-    "written": false,
-    "reason": "not_a_launch_build_noindex_stays"
+  "schema": {
+    "pages": 6
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
   }
 }
