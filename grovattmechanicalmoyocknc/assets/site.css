@@ -440,11 +440,11 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .pband>.wrap{position:relative;z-index:2}
 /* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
    the photo only needs the same scrim ctaband uses, nothing else changes. */
-.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(33,50,64,.84) 0%,rgba(33,50,64,.72) 100%)}
+.home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.58) 100%)}
 /* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
    so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
    stays its own solid white card (already box-shadowed) regardless of what sits behind it. */
-#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(33,50,64,.92) 0%,rgba(33,50,64,.84) 100%)}
+#quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.70) 0%,rgba(0,0,0,.60) 100%)}
 #quote.pband h2{color:#fff}
 #quote.pband .kicker{color:#DDE6EE}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
