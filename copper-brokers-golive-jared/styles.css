@@ -1,8 +1,8 @@
-/* Copper Brokers LLC — GO-LIVE build for Corey. Built on the now-accurate 1:1 page-by-page
+/* Copper Brokers LLC - GO-LIVE build for Corey. Built on the now-accurate 1:1 page-by-page
    understanding of his real site (layout, section order, real photos), with Jared's playbook
    applied on top: benefit-first headline, problem before service list, benefits before features,
    one clear CTA, first-person honest voice. Accent is COPPER (#D2884A, verified 7.59:1 on black),
-   not his real pink — Jacob's call, fits a copper/scrap recycling brand. Real autoplay video header,
+   not his real pink, Jacob's call, fits a copper/scrap recycling brand. Real autoplay video header,
    correct poster (hero-action.jpg). */
 :root{
   --bg:#000000;
@@ -72,15 +72,25 @@ section{padding-block:clamp(44px,7vw,88px);}
 .hero h1{font-size:clamp(28px,4.2vw,44px);color:var(--text);margin-bottom:16px;}
 .hero h1 em{font-style:normal;color:var(--accent);}
 .hero .lede{color:var(--text-muted);}
+.hero-proof{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:11px;}
+.hero-proof li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:var(--text);}
+.hero-proof .icon{color:var(--accent);margin-top:3px;flex:none;}
 .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px;}
 .hero-actions .tel{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-head);font-weight:600;color:var(--text);font-size:16px;}
 .hero-actions .tel .icon{color:var(--accent);}
-.video-block{position:relative;border-radius:2px;overflow:hidden;aspect-ratio:484/517;background-repeat:no-repeat;background-size:cover;background-position:center;}
-.video-block video{width:100%;height:100%;object-fit:cover;display:block;}
-.video-fallback-img{display:none;width:100%;height:100%;object-fit:cover;}
+.video-block{position:relative;border-radius:2px;overflow:hidden;aspect-ratio:484/517;background-repeat:no-repeat;background-size:cover;background-position:center;background-color:#0a0a0a;}
+/* Ken Burns base layer: the fallback image sits BEHIND the video and is ALWAYS visible and always
+   moving, so the hero reads as alive even if the video is weak, slow to load, or absent. When the
+   video plays it covers this layer and provides the motion itself. */
+.video-block .video-fallback-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:0;transform-origin:center;animation:heroKenBurns 22s ease-in-out infinite alternate;}
+.video-block video{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block;}
+@keyframes heroKenBurns{
+  0%{transform:scale(1.05) translate3d(0,0,0);}
+  100%{transform:scale(1.16) translate3d(-2.5%,-2%,0);}
+}
 @media (prefers-reduced-motion: reduce){
   .video-block video{display:none;}
-  .video-block .video-fallback-img{display:block;}
+  .video-block .video-fallback-img{animation:none;transform:none;}
 }
 
 .page-hero{padding-block:clamp(44px,7vw,72px);border-bottom:1px solid var(--line-soft);}
@@ -93,7 +103,7 @@ section{padding-block:clamp(44px,7vw,88px);}
 .photo-strip3 img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;}
 @media (max-width:700px){.photo-strip3{grid-template-columns:1fr;}}
 
-/* problem section — Jared: name the problem before the pitch */
+/* problem section - Jared: name the problem before the pitch */
 .problem{background:var(--bg);}
 .problem .container{max-width:820px;}
 
@@ -128,6 +138,11 @@ section{padding-block:clamp(44px,7vw,88px);}
 .t-card{background:var(--bg-card);border:1px solid var(--line);border-radius:2px;padding:24px;}
 .t-card p{color:var(--text);font-size:15px;margin:0 0 12px;}
 .t-name{font-family:var(--font-head);font-size:13px;color:var(--accent);font-weight:700;}
+.t-card.t-proof{border-color:rgba(210,136,74,0.5);background:linear-gradient(180deg,rgba(210,136,74,0.10),var(--bg-card));}
+.t-proof-stat{display:flex;align-items:baseline;gap:10px;margin-bottom:12px;}
+.t-proof-stat strong{font-family:var(--font-head);font-size:42px;font-weight:900;color:var(--accent);line-height:1;}
+.t-proof-stat span{font-family:var(--font-head);font-size:13px;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);}
+.t-proof-stat .stars{color:var(--accent);font-size:16px;letter-spacing:2px;}
 
 .cta-band{border-top:1px solid var(--line-soft);}
 .cta-band h2{font-size:clamp(28px,4.5vw,48px);font-weight:900;max-width:16ch;}
@@ -137,10 +152,15 @@ section{padding-block:clamp(44px,7vw,88px);}
 @media (max-width:860px){.split-hero{grid-template-columns:1fr;}}
 .split-hero .split-media{border-radius:2px;overflow:hidden;}
 .split-hero .split-media img{width:100%;aspect-ratio:1/1;object-fit:cover;}
+/* page-hero side images breathe so the services/contact headers are not a frozen frame */
+.page-hero .split-media img{transform-origin:center;animation:heroKenBurns 28s ease-in-out infinite alternate;}
+@media (prefers-reduced-motion: reduce){
+  .about-hero .about-hero-bg,.page-hero .split-media img{animation:none;transform:none;}
+}
 .split-hero h1{font-size:clamp(30px,5vw,56px);}
 
-.about-hero{position:relative;padding:0;border-bottom:1px solid var(--line-soft);}
-.about-hero .about-hero-bg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;}
+.about-hero{position:relative;padding:0;border-bottom:1px solid var(--line-soft);overflow:hidden;}
+.about-hero .about-hero-bg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;transform-origin:center;animation:heroKenBurns 26s ease-in-out infinite alternate;}
 @media (max-width:700px){.about-hero .about-hero-bg{aspect-ratio:4/5;}}
 .about-hero .about-hero-card{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,0.82);padding:clamp(24px,5vw,48px);text-align:center;width:min(560px,88%);}
 .about-hero .about-hero-card h1{color:#fff;}
