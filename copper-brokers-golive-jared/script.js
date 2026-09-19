@@ -45,7 +45,7 @@
       var message = (data.get('message') || '').toString().trim();
       var status = document.getElementById('form-status');
       if (!name || !phone) {
-        if (status) { status.textContent = 'Please add your name and a phone number so Corey can reach you back.'; status.className = 'form-status show'; }
+        if (status) { status.textContent = 'Please add your name and a phone number so Cory can reach you back.'; status.className = 'form-status show'; }
         return;
       }
       var bodyLines = [
@@ -59,7 +59,7 @@
         message || '(none)'
       ];
       var mailto = 'mailto:copperbrokersrecycling@gmail.com?subject=' + encodeURIComponent('Quote Request from ' + name) + '&body=' + encodeURIComponent(bodyLines.join('\n'));
-      if (status) { status.textContent = 'Opening your email app with this request pre-filled to Corey, just hit send.'; status.className = 'form-status show'; }
+      if (status) { status.textContent = 'Opening your email app with this request pre-filled to Cory, just hit send.'; status.className = 'form-status show'; }
       window.location.href = mailto;
     });
   }
