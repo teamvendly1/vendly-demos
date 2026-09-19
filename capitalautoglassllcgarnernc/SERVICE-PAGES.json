@@ -3,6 +3,24 @@
     "emitted": [],
     "refused": [
       {
+        "title": "ADAs recalibration",
+        "slug": "adas-recalibration",
+        "reasons": [
+          "body_too_thin:0<60",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Insurance Approved",
+        "slug": "insurance-approved",
+        "reasons": [
+          "body_too_thin:59<60",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
         "title": "Brake Service",
         "slug": "brake-service",
         "reasons": [
@@ -10,40 +28,61 @@
         ]
       },
       {
-        "title": "Engine Diagnostics",
-        "slug": "engine-diagnostics",
+        "title": "OEM Factoy Glass",
+        "slug": "oem-factoy-glass",
         "reasons": [
           "no_written_alt:0<15"
         ]
       },
       {
-        "title": "Oil and Fluid Service",
-        "slug": "oil-and-fluid-service",
+        "title": "Certified Technicians",
+        "slug": "certified-technicians",
         "reasons": [
+          "body_too_thin:0<60",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "100% Guarantee",
+        "slug": "100-guarantee",
+        "reasons": [
+          "body_too_thin:0<60",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
+        ]
+      },
+      {
+        "title": "Auto Glass Technicians",
+        "slug": "auto-glass-technicians",
+        "reasons": [
+          "no_real_photo_file:no_slot:0B",
           "no_written_alt:0<15"
         ]
       },
       {
-        "title": "Suspension and Steering",
-        "slug": "suspension-and-steering",
+        "title": "auto glass windshields replaced",
+        "slug": "auto-glass-windshields-replaced",
         "reasons": [
-          "body_too_thin:59<60",
+          "no_real_photo_file:no_slot:0B",
           "no_written_alt:0<15"
         ]
       },
       {
-        "title": "Tire Service",
-        "slug": "tire-service",
+        "title": "Happy Customers",
+        "slug": "happy-customers",
         "reasons": [
-          "body_too_thin:51<60",
-          "no_written_alt:0<15"
+          "body_too_thin:0<60",
+          "no_real_photo_file:no_slot:0B",
+          "no_written_alt:0<15",
+          "evidence_not_real:missing"
         ]
       },
       {
-        "title": "Battery and Electrical",
-        "slug": "battery-and-electrical",
+        "title": "In Auto Glass Services",
+        "slug": "in-auto-glass-services",
         "reasons": [
-          "body_too_thin:56<60",
+          "no_real_photo_file:no_slot:0B",
           "no_written_alt:0<15"
         ]
       }
