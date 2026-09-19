@@ -3,22 +3,65 @@
     "emitted": [],
     "refused": [
       {
-        "title": "Transmission and drivetrain",
-        "slug": "transmission-and-drivetrain",
+        "title": "Brake Service",
+        "slug": "brake-service",
         "reasons": [
           "no_written_alt:0<15"
         ]
       },
       {
-        "title": "Auto repair",
-        "slug": "auto-repair",
+        "title": "Engine Diagnostics",
+        "slug": "engine-diagnostics",
         "reasons": [
-          "no_written_alt:0<15",
-          "evidence_not_real:missing"
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Oil and Fluid Service",
+        "slug": "oil-and-fluid-service",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Suspension and Steering",
+        "slug": "suspension-and-steering",
+        "reasons": [
+          "body_too_thin:59<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Tire Service",
+        "slug": "tire-service",
+        "reasons": [
+          "body_too_thin:51<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Battery and Electrical",
+        "slug": "battery-and-electrical",
+        "reasons": [
+          "body_too_thin:56<60",
+          "no_written_alt:0<15"
         ]
       }
     ],
     "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Asheboro",
+        "slug": "asheboro",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
   },
   "crumbs": {
     "pages": 4

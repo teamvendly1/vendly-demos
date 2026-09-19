@@ -40,14 +40,54 @@
         var suf=el.getAttribute('data-suffix')||'';
         el.textContent=t+suf;
       });
+      /* MOTION-2026-09-17: reduced-motion users never get the autoplaying hero video, even
+         though the video-hero slot is opt-in per-business - a JS-independent CSS rule in
+         site.css covers the same case, this is the second, belt-and-suspenders layer the mold
+         already uses everywhere else (see the .reveal fail-open pattern above). */
+      document.querySelectorAll('.hero-video').forEach(function(v){
+        try{
+          v.pause();
+          v.style.display='none';
+          var fb=v.nextElementSibling;
+          if(fb && fb.hasAttribute('data-hero-video-fallback')) fb.style.display='';
+        }catch(e){}
+      });
       return;
     }
     /* CTA-BELOW-GAP: explore after strip is on-fold; never wait on IO (sticky -8% hid it). */
     document.querySelectorAll('.strip + .reveal').forEach(function(el){el.classList.add('in');});
+    /* MOTION-2026-09-17: real scroll-in motion, additive and opt-in - see site.css .reveal-armed
+       / .reveal-in. The hiding class (.reveal-armed) is added here, by script, immediately before
+       observing - never by default CSS - so a page with JS blocked or erroring earlier in this
+       try-block is always fully visible on first paint (nothing above this line can leave a
+       section armed with no way to reveal it). A hard fallback timer force-reveals every armed
+       section no matter what IntersectionObserver does, so a slow, unsupported, or broken
+       observer can never leave real content stuck invisible - same defect and same fix as the
+       Copper Brokers rebuild (05 - Clients & Leads/COREY-REBUILD-PROGRESS.md). Sections already
+       forced visible by the CTA-BELOW-GAP rule above are never armed - they are already on the
+       fold, there is nothing to reveal. */
+    var alreadyVisible = new Set(document.querySelectorAll('.strip + .reveal'));
+    var armed = [];
+    document.querySelectorAll('.reveal').forEach(function(el){
+      if(alreadyVisible.has(el)) return;
+      el.classList.add('reveal-armed');
+      armed.push(el);
+    });
     var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          e.target.classList.add('reveal-in');
+          io.unobserve(e.target);
+        }
+      });
     },{threshold:0.08,rootMargin:'0px 0px -72px 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    if(armed.length){
+      window.setTimeout(function(){
+        armed.forEach(function(el){ el.classList.add('reveal-in'); });
+      },1800);
+    }
 
     /* Jacob phone audit 2026-08-02 (em2154): counters did not count up on
        first mobile scroll-into-view. Fix: lower threshold (0.15, not 0.5) so
@@ -85,4 +125,178 @@
       else{ cio.observe(el); }
     });
   }catch(e){}
+})();
+
+/* HERO VIDEO WATCHDOG - 2026-09-17, course-correction follow-up (measured, not theoretical).
+   The <video> element's own onerror attribute (see heroBgHtml() in generate-from-blank-mold.js)
+   does NOT reliably fire for every real failure mode. Measured live testing the graceful-fallback
+   path with a deliberately unreachable video URL: the browser settled at
+   networkState=NETWORK_NO_SOURCE (3) with no MediaError ever set and no 'error' event ever
+   dispatched on the video element - onerror alone left the broken video sitting there forever,
+   hiding the real hero photo behind it. Same fix as the scroll-reveal hard-fallback timer above:
+   never trust a single event to fire. Check the actual playback state after a bounded wait and
+   force the fallback if the clip genuinely never started - a video that IS playing normally clears
+   this in well under a second via its own 'playing' event and costs nothing. Skipped entirely
+   under prefers-reduced-motion, which already hides hero video immediately, unconditionally,
+   above. */
+(function(){
+  try{
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced) return;
+    document.querySelectorAll('video.hero-video').forEach(function(v){
+      var settled=false;
+      function toFallback(){
+        if(settled) return;
+        settled=true;
+        try{
+          v.pause();
+          v.style.display='none';
+          var fb=v.nextElementSibling;
+          if(fb && fb.hasAttribute('data-hero-video-fallback')) fb.style.display='';
+        }catch(e){}
+      }
+      v.addEventListener('playing', function(){ settled=true; }, {once:true});
+      v.addEventListener('error', toFallback);
+      var srcEl=v.querySelector('source');
+      if(srcEl) srcEl.addEventListener('error', toFallback);
+      window.setTimeout(function(){
+        if(settled) return;
+        /* readyState 2 = HAVE_CURRENT_DATA: real frame data has actually decoded. Anything less,
+           or an explicit NETWORK_NO_SOURCE (3), after this long means it is never playing. */
+        if(v.readyState<2 || v.networkState===3){ toFallback(); }
+      },4000);
+    });
+  }catch(e){}
+})();
+
+/* sticky-stack measurement 2026-09-09
+   The CSS states the header as 114px / 106px, which is what its own fixed rules produce. But
+   .bizmeta wraps, so a header whose pills run to a second line is taller and a constant would
+   be wrong for that demo - exactly the hardcoded-height mistake this fix exists to end. Measure
+   the real thing and write it back. Fails safe: if anything here throws, the CSS value stands. */
+(function(){
+  try{
+    var root=document.documentElement;
+    function sync(){
+      var strip=document.querySelector(".phone-strip");
+      var head=document.querySelector("header.site");
+      if(head){
+        var h=Math.round(head.getBoundingClientRect().height);
+        if(h>0) root.style.setProperty("--site-header-h", h+"px");
+      }
+      /* The strip is height-locked in CSS, so this only ever confirms it. Kept so a future
+         strip change cannot silently reopen the 2px slit. */
+      if(strip){
+        var s=Math.round(strip.getBoundingClientRect().height);
+        if(s>0) root.style.setProperty("--phone-strip-h", s+"px");
+      }
+    }
+    sync();
+    window.addEventListener("load", sync);
+    window.addEventListener("resize", sync);
+  }catch(e){}
+})();
+
+/* ---------------------------------------------------------------------------
+   LEAD FORM DELIVERY. Added 2026-09-09 (seat gen-og-form).
+
+   WHAT WAS BROKEN: every lead form this factory has ever shipped had no
+   action, no method, and a submit handler in index.html that did
+   e.preventDefault() and popped an alert. The form rendered perfectly and
+   delivered nothing. Every name and number a visitor typed went nowhere.
+
+   WHY IT LIVES HERE AND NOT IN A PAGE: site.js is copied verbatim onto every
+   emitted page, so one implementation covers index.html, contact.html and any
+   page that grows a form later. A handler written into one page is a handler
+   the next page does not have - which is exactly how index.html ended up
+   being the only page with a form at all.
+
+   IT READS ITS OWN CONFIG, IT INVENTS NOTHING: the endpoint and tenant come
+   from window.SiteAssistantConfig, which every page already carries for the
+   concierge. The thank-you line comes from the form's own data-thanks, filled
+   by the generator, so no copy is authored in JavaScript.
+
+   FAIL SOFT, NEVER SILENT: if the network call fails the visitor is told to
+   call instead and the phone number is right there. A form that swallows a
+   lead and says "thanks" is worse than one that says it could not send.
+--------------------------------------------------------------------------- */
+(function () {
+  var forms = document.querySelectorAll("form[data-lead-endpoint]");
+  if (!forms.length) return;
+
+  function cfg() {
+    try { return window.SiteAssistantConfig || {}; } catch (e) { return {}; }
+  }
+  function val(form, name) {
+    var el = form.querySelector('[name="' + name + '"]');
+    return el && typeof el.value === "string" ? el.value : "";
+  }
+  function setNote(form, text, isError) {
+    var note = form.querySelector(".formnote");
+    if (!note) {
+      note = document.createElement("p");
+      note.className = "formnote";
+      form.appendChild(note);
+    }
+    note.textContent = text;
+    note.setAttribute("role", "status");
+    note.style.color = isError ? "#8c1d18" : "";
+  }
+
+  Array.prototype.forEach.call(forms, function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var c = cfg();
+      var endpoint = form.getAttribute("data-lead-endpoint") || "";
+      if (!/^https?:\/\//i.test(endpoint)) {
+        setNote(form, "Please call us and we will take care of it.", true);
+        return;
+      }
+
+      var name = val(form, "name").trim();
+      var phone = val(form, "phone").trim();
+      var email = val(form, "email").trim();
+      if (!name || (!phone && !email)) {
+        setNote(form, "Please add your name and a phone number or email so we can reply.", true);
+        return;
+      }
+
+      var payload = {
+        tenantId: c.tenantId || "",
+        demoSlug: c.demoSlug || "",
+        name: name,
+        phone: phone,
+        email: email,
+        type: val(form, "type"),
+        heard: val(form, "heard"),
+        message: val(form, "message"),
+        website: val(form, "website"),
+        sourceUrl: (function () { try { return String(location.href).slice(0, 400); } catch (err) { return ""; } })()
+      };
+
+      if (btn) { btn.disabled = true; btn.setAttribute("aria-busy", "true"); }
+      setNote(form, "Sending...", false);
+
+      fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      }).then(function (r) {
+        return r.json().catch(function () { return { ok: r.ok }; });
+      }).then(function (data) {
+        if (data && data.ok) {
+          var thanks = form.getAttribute("data-thanks") || "Thanks. We will get back to you shortly.";
+          form.reset();
+          setNote(form, thanks, false);
+        } else {
+          setNote(form, (data && data.error) || "That did not send. Please call us instead.", true);
+        }
+      }).catch(function () {
+        setNote(form, "That did not send. Please call us instead.", true);
+      }).then(function () {
+        if (btn) { btn.disabled = false; btn.removeAttribute("aria-busy"); }
+      });
+    });
+  });
 })();

@@ -40,14 +40,54 @@
         var suf=el.getAttribute('data-suffix')||'';
         el.textContent=t+suf;
       });
+      /* MOTION-2026-09-17: reduced-motion users never get the autoplaying hero video, even
+         though the video-hero slot is opt-in per-business - a JS-independent CSS rule in
+         site.css covers the same case, this is the second, belt-and-suspenders layer the mold
+         already uses everywhere else (see the .reveal fail-open pattern above). */
+      document.querySelectorAll('.hero-video').forEach(function(v){
+        try{
+          v.pause();
+          v.style.display='none';
+          var fb=v.nextElementSibling;
+          if(fb && fb.hasAttribute('data-hero-video-fallback')) fb.style.display='';
+        }catch(e){}
+      });
       return;
     }
     /* CTA-BELOW-GAP: explore after strip is on-fold; never wait on IO (sticky -8% hid it). */
     document.querySelectorAll('.strip + .reveal').forEach(function(el){el.classList.add('in');});
+    /* MOTION-2026-09-17: real scroll-in motion, additive and opt-in - see site.css .reveal-armed
+       / .reveal-in. The hiding class (.reveal-armed) is added here, by script, immediately before
+       observing - never by default CSS - so a page with JS blocked or erroring earlier in this
+       try-block is always fully visible on first paint (nothing above this line can leave a
+       section armed with no way to reveal it). A hard fallback timer force-reveals every armed
+       section no matter what IntersectionObserver does, so a slow, unsupported, or broken
+       observer can never leave real content stuck invisible - same defect and same fix as the
+       Copper Brokers rebuild (05 - Clients & Leads/COREY-REBUILD-PROGRESS.md). Sections already
+       forced visible by the CTA-BELOW-GAP rule above are never armed - they are already on the
+       fold, there is nothing to reveal. */
+    var alreadyVisible = new Set(document.querySelectorAll('.strip + .reveal'));
+    var armed = [];
+    document.querySelectorAll('.reveal').forEach(function(el){
+      if(alreadyVisible.has(el)) return;
+      el.classList.add('reveal-armed');
+      armed.push(el);
+    });
     var io=new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.classList.add('in');
+          e.target.classList.add('reveal-in');
+          io.unobserve(e.target);
+        }
+      });
     },{threshold:0.08,rootMargin:'0px 0px -72px 0px'});
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+    if(armed.length){
+      window.setTimeout(function(){
+        armed.forEach(function(el){ el.classList.add('reveal-in'); });
+      },1800);
+    }
 
     /* Jacob phone audit 2026-08-02 (em2154): counters did not count up on
        first mobile scroll-into-view. Fix: lower threshold (0.15, not 0.5) so
@@ -87,6 +127,47 @@
   }catch(e){}
 })();
 
+/* HERO VIDEO WATCHDOG - 2026-09-17, course-correction follow-up (measured, not theoretical).
+   The <video> element's own onerror attribute (see heroBgHtml() in generate-from-blank-mold.js)
+   does NOT reliably fire for every real failure mode. Measured live testing the graceful-fallback
+   path with a deliberately unreachable video URL: the browser settled at
+   networkState=NETWORK_NO_SOURCE (3) with no MediaError ever set and no 'error' event ever
+   dispatched on the video element - onerror alone left the broken video sitting there forever,
+   hiding the real hero photo behind it. Same fix as the scroll-reveal hard-fallback timer above:
+   never trust a single event to fire. Check the actual playback state after a bounded wait and
+   force the fallback if the clip genuinely never started - a video that IS playing normally clears
+   this in well under a second via its own 'playing' event and costs nothing. Skipped entirely
+   under prefers-reduced-motion, which already hides hero video immediately, unconditionally,
+   above. */
+(function(){
+  try{
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced) return;
+    document.querySelectorAll('video.hero-video').forEach(function(v){
+      var settled=false;
+      function toFallback(){
+        if(settled) return;
+        settled=true;
+        try{
+          v.pause();
+          v.style.display='none';
+          var fb=v.nextElementSibling;
+          if(fb && fb.hasAttribute('data-hero-video-fallback')) fb.style.display='';
+        }catch(e){}
+      }
+      v.addEventListener('playing', function(){ settled=true; }, {once:true});
+      v.addEventListener('error', toFallback);
+      var srcEl=v.querySelector('source');
+      if(srcEl) srcEl.addEventListener('error', toFallback);
+      window.setTimeout(function(){
+        if(settled) return;
+        /* readyState 2 = HAVE_CURRENT_DATA: real frame data has actually decoded. Anything less,
+           or an explicit NETWORK_NO_SOURCE (3), after this long means it is never playing. */
+        if(v.readyState<2 || v.networkState===3){ toFallback(); }
+      },4000);
+    });
+  }catch(e){}
+})();
 
 /* sticky-stack measurement 2026-09-09
    The CSS states the header as 114px / 106px, which is what its own fixed rules produce. But

@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=harv20260912025402">
-<meta name="vendly-demo-build" content="blank-mold-20260912-hydroclean">
+<meta name="vendly-demo-build" content="blank-mold-20260919-hydroclean">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -117,9 +117,10 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <span class="navtoggle-text">Menu</span>
     </span>
     <div class="bizmeta">
-      <a class="btn btn-red" href="tel:+17049333937">
+      <!-- DESKTOP-HEADER-CALL-COMPACT (2026-09-15): see index.html for the full note. -->
+      <a class="btn btn-red" href="tel:+17049333937" aria-label="Call Cabarrus Plumbing at (704) 933-3937">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        (704) 933-3937
+        Call
       </a>
     </div>
   </div>
@@ -127,7 +128,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About us</a></li>
-      <li><a href="services.html">Services offered</a></li><li><a href="photos.html">Photos</a></li>
+      <li><a href="services.html">Services offered</a></li>
       <li><a href="reviews.html">Customer reviews</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -137,13 +138,13 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 <main id="main">
 
 <section class="hero hero-sub" aria-labelledby="h-svc">
-  <img class="bg" src="assets/photo-services-hero.jpg?v=harv20260912025402" alt="Shot of assorted wrenches" loading="eager">
+  <img class="bg" src="assets/photo-services-hero.jpg?v=harv20260912025402" alt="Red pipe attached on the concrete wall" loading="eager">
   <div class="wrap hero-inner">
     <span class="eyebrow">Services</span>
     <h1 id="h-svc">The plumbing work we take on</h1>
     <div class="cta">
       <a class="btn btn-red phone-cta-desktop" href="tel:+17049333937">Call (704) 933-3937</a>
-      <a class="btn btn-ghost" href="index.html#quote">Get a free estimate</a>
+      <a class="btn btn-ghost" href="index.html#quote">Get a plumbing estimate</a>
     </div>
   </div>
 </section>
@@ -154,19 +155,43 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
   <div class="wrap">
     <div class="center">
       <p class="kicker">What we do</p>
-      <h2 id="h-svc-list">The plumbing work we do</h2>
+      <h2 id="h-svc-list">What each job involves</h2>
     </div>
     <div class="svc" style="margin-top:34px">
       <div class="card card-photo">
-        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-1.jpg?v=harv20260912025402" data-v-lb-alt="Industrial wall with red pipes in minimalist frame" aria-label="Industrial wall with red pipes in minimalist frame - Open photo"><img src="assets/photo-service-1.jpg?v=harv20260912025402" alt="Industrial wall with red pipes in minimalist frame" loading="lazy"></button></div>
-        <h3>Leak and pipe repair</h3>
-        <p>The pipe is opened at the failure point and fixed there, not patched over where the water shows up.</p>
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-1.jpg?v=harv20260912025402" data-v-lb-alt="Red pipes" aria-label="Red pipes - Open photo"><img src="assets/photo-service-1.jpg?v=harv20260912025402" alt="Red pipes" loading="lazy"></button></div>
+        <h3>Drain Cleaning</h3>
+        <p>Clogged drains and main lines cleared with augering and jetting.</p>
       </div>
 
       <div class="card card-photo">
-        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-2.jpg?v=harv20260912025402" data-v-lb-alt="Modern bathroom with shower cabin" aria-label="Modern bathroom with shower cabin - Open photo"><img src="assets/photo-service-2.jpg?v=harv20260912025402" alt="Modern bathroom with shower cabin" loading="lazy"></button></div>
-        <h3>Fixtures, faucets and toilets</h3>
-        <p>Faucets, toilets and disposals are set and sealed so they stop dripping and stay stopped.</p>
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-2.jpg?v=harv20260912025402" data-v-lb-alt="Rusty pipe in weathered wall with green plant" aria-label="Rusty pipe in weathered wall with green plant - Open photo"><img src="assets/photo-service-2.jpg?v=harv20260912025402" alt="Rusty pipe in weathered wall with green plant" loading="lazy"></button></div>
+        <h3>Water Heater Service</h3>
+        <p>Water heater repair, replacement and tankless installation.</p>
+      </div>
+
+      <div class="card card-photo">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-3.jpg?v=harv20260912025402" data-v-lb-alt="Detailed yellow wall with pipe close up" aria-label="Detailed yellow wall with pipe close up - Open photo"><img src="assets/photo-service-3.jpg?v=harv20260912025402" alt="Detailed yellow wall with pipe close up" loading="lazy"></button></div>
+        <h3>Leak Detection and Repair</h3>
+        <p>Hidden and visible leaks located and repaired before damage spreads.</p>
+      </div>
+
+      <div class="card card-photo">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-4.jpg?v=harv20260912025402" data-v-lb-alt="Minimalistic blue surface with beetle and pipe" aria-label="Minimalistic blue surface with beetle and pipe - Open photo"><img src="assets/photo-service-4.jpg?v=harv20260912025402" alt="Minimalistic blue surface with beetle and pipe" loading="lazy"></button></div>
+        <h3>Fixture Installation</h3>
+        <p>Faucets, toilets, sinks and disposals installed and replaced.</p>
+      </div>
+
+      <div class="card card-photo">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-5.jpg?v=harv20260912025402" data-v-lb-alt="Industrial ventilation pipes in modern setting" aria-label="Industrial ventilation pipes in modern setting - Open photo"><img src="assets/photo-service-5.jpg?v=harv20260912025402" alt="Industrial ventilation pipes in modern setting" loading="lazy"></button></div>
+        <h3>Repiping</h3>
+        <p>Old or failing supply and drain lines replaced throughout the home.</p>
+      </div>
+
+      <div class="card card-photo">
+        <div class="card-shot"><button type="button" class="v-lb-btn" data-v-lb data-v-lb-src="assets/photo-service-6.jpg?v=harv20260912025402" data-v-lb-alt="Pump bottle on the bathroom sink" aria-label="Pump bottle on the bathroom sink - Open photo"><img src="assets/photo-service-6.jpg?v=harv20260912025402" alt="Pump bottle on the bathroom sink" loading="lazy"></button></div>
+        <h3>Sewer Line Service</h3>
+        <p>Sewer lines camera-inspected, repaired and replaced.</p>
       </div>
     </div>
     <p class="center" style="margin-top:34px;margin-bottom:0">
@@ -182,7 +207,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
     <div class="fgrid">
       <div>
         <div class="logo-chip" style="margin-bottom:16px">
-          
+          <img class="logo-footer" src="assets/logo-footer.png?v=harv20260912025402" alt="Cabarrus Plumbing">
         </div>
         <p style="margin:0;max-width:34ch">Cabarrus Plumbing serving Kannapolis.</p>
       </div>
@@ -211,8 +236,10 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <div>
         <h3 class="fh">Services</h3>
         <ul>
-          <li>Leak and pipe repair</li>
-          <li>Fixtures, faucets and toilets</li>
+          <li>Drain Cleaning</li>
+          <li>Water Heater Service</li>
+          <li>Leak Detection and Repair</li>
+          <li>Fixture Installation</li>
         </ul>
       </div>
     </div>
