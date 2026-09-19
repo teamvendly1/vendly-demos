@@ -1,0 +1,91 @@
+{
+  "service_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "title": "Lawn Care and Mowing",
+        "slug": "lawn-care-and-mowing",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Landscape Design",
+        "slug": "landscape-design",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Mulch and Bed Maintenance",
+        "slug": "mulch-and-bed-maintenance",
+        "reasons": [
+          "body_too_thin:43<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Tree and Shrub Care",
+        "slug": "tree-and-shrub-care",
+        "reasons": [
+          "body_too_thin:50<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Irrigation",
+        "slug": "irrigation",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Seasonal Cleanup",
+        "slug": "seasonal-cleanup",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      }
+    ],
+    "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Carrsville",
+        "slug": "carrsville",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
+  },
+  "crumbs": {
+    "pages": 4
+  },
+  "schema": {
+    "pages": 5
+  },
+  "footer_local": {
+    "area": true,
+    "address": true
+  },
+  "favicons": {
+    "written": true,
+    "sizes": [
+      "favicon-32.png",
+      "favicon-180.png",
+      "favicon-192.png"
+    ]
+  },
+  "launch": {
+    "is_launch": false,
+    "canonical": 0,
+    "crawler_files": {
+      "written": false,
+      "reason": "not_a_launch_build_noindex_stays"
+    }
+  }
+}
