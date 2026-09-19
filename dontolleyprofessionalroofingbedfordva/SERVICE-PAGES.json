@@ -3,14 +3,65 @@
     "emitted": [],
     "refused": [
       {
-        "title": "Storm damage repair",
+        "title": "Roof Replacement",
+        "slug": "roof-replacement",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Roof Repair",
+        "slug": "roof-repair",
+        "reasons": [
+          "body_too_thin:58<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Roof Inspection",
+        "slug": "roof-inspection",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Gutter Service",
+        "slug": "gutter-service",
+        "reasons": [
+          "body_too_thin:55<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Storm Damage Repair",
         "slug": "storm-damage-repair",
         "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Flashing and Ventilation",
+        "slug": "flashing-and-ventilation",
+        "reasons": [
+          "body_too_thin:52<60",
           "no_written_alt:0<15"
         ]
       }
     ],
     "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Bedford",
+        "slug": "bedford",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
   },
   "crumbs": {
     "pages": 4

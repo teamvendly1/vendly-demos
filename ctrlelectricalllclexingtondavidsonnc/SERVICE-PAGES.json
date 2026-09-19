@@ -3,22 +3,65 @@
     "emitted": [],
     "refused": [
       {
-        "title": "Panels and service upgrades",
-        "slug": "panels-and-service-upgrades",
+        "title": "Panel Upgrades",
+        "slug": "panel-upgrades",
         "reasons": [
           "no_written_alt:0<15"
         ]
       },
       {
-        "title": "Electrical",
-        "slug": "electrical",
+        "title": "Wiring and Rewiring",
+        "slug": "wiring-and-rewiring",
         "reasons": [
-          "no_written_alt:0<15",
-          "evidence_not_real:missing"
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Lighting Installation",
+        "slug": "lighting-installation",
+        "reasons": [
+          "body_too_thin:51<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Outlet and Switch Service",
+        "slug": "outlet-and-switch-service",
+        "reasons": [
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Troubleshooting",
+        "slug": "troubleshooting",
+        "reasons": [
+          "body_too_thin:57<60",
+          "no_written_alt:0<15"
+        ]
+      },
+      {
+        "title": "Generator and EV Charger",
+        "slug": "generator-and-ev-charger",
+        "reasons": [
+          "body_too_thin:55<60",
+          "no_written_alt:0<15"
         ]
       }
     ],
     "reason": "no_service_met_the_floor"
+  },
+  "location_pages": {
+    "emitted": [],
+    "refused": [
+      {
+        "town": "Lexington",
+        "slug": "lexington",
+        "reasons": [
+          "no_location_content_for_town"
+        ]
+      }
+    ],
+    "reason": "no_town_met_the_floor"
   },
   "crumbs": {
     "pages": 4
