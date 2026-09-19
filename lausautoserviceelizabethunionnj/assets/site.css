@@ -88,13 +88,61 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 .hero{position:relative;color:#fff;overflow:hidden;background:var(--blue-dk);min-height:0;height:auto;padding:0}
 /* Lift hero photo so house/tree stay readable behind headline (Round 2 defect). */
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.96}
+/* VIDEO-HERO SLOT (additive, opt-in) - 2026-09-17, DEMO-MOTION-GENERATOR task. heroBgHtml() in
+   generate-from-blank-mold.js only emits a <video class="bg hero-video"> when a real business
+   supplies a real https:// video URL (f.heroVideo); every demo built without one still gets the
+   plain <img class="bg"> above, unchanged. Same box/crop as the image so swapping one for the
+   other never shifts layout. The fallback <img class="bg" data-hero-video-fallback> shares this
+   rule via its own .bg class (kept as the SOLE class token so the generator's hero-wire
+   verification regex, which looks for a literal class="bg" src=..., still matches it - the
+   fallback-vs-normal distinction lives on a data attribute instead, never a second class) and
+   starts display:none - shown by the video's onerror handler, by site.js under
+   prefers-reduced-motion, and by the CSS media rule below as a third, JS-independent guarantee.
+   poster= on the video is always the same real hero photo, so even a browser that cannot play
+   the clip at all paints the identical static photo a visitor would have seen anyway. */
+.hero video.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;opacity:.96}
+@media(prefers-reduced-motion:reduce){
+.hero-video{display:none}
+[data-hero-video-fallback]{display:block!important}
+}
+
+/* HERO AUTO-MOTION - MANDATORY, NOT OPT-IN (Jacob course-correction, 2026-09-17, mid-task: "the
+   header must STILL auto-move on load... never a static image and never a click-to-play").
+   Every hero photo gets a continuous, autoplaying Ken Burns pan/zoom - no click, no hover, no
+   scroll needed, runs from first paint. .hero is already overflow:hidden (line 88), so the zoom
+   never clips outside the band or shifts page layout; object-fit:cover + this transform is the
+   standard safe way to do this. Applies to .hero img.bg unconditionally, which covers BOTH real
+   cases: (1) no video supplied - this IS the visible hero, and (2) a supplied video fails to load
+   - the fallback image becomes visible and should still read as alive, never a frozen frame. When
+   a video IS playing, this rule sits on a hidden element and does nothing (harmless, no visible
+   double-motion). Unlike the scroll-reveal above, this is UNCONDITIONAL - it never waits on JS,
+   never waits on a script arming a class, and never depends on IntersectionObserver; it is pure
+   CSS and therefore cannot fail to start the way a JS-driven effect could. */
+@keyframes heroKenBurns{
+0%{transform:scale(1.05) translate3d(0,0,0)}
+50%{transform:scale(1.12) translate3d(-1.2%,-1%,0)}
+100%{transform:scale(1.05) translate3d(0,0,0)}
+}
+.hero img.bg{animation:heroKenBurns 24s ease-in-out infinite;will-change:transform}
+@media(prefers-reduced-motion:reduce){
+.hero img.bg{animation:none}
+}
 /*
   KILL HERO BUBBLE (Jacob CLEAR 2026-08-12): NO rounded panel / card / pill behind hero copy.
   Readable order: quiet-zone photo -> full-bleed soft gradient (no edge/radius, covers ALL text)
   -> type treatment last (shadow / weight / colour). Never a visible box again.
 */
+/* HERO SCRIM NEUTRALISED 2026-09-18: was rgba(20,57,98,...) - a BRAND-HUED overlay, which on a
+   green (or any strongly-hued) brand tinted the whole hero its own colour and washed the white
+   headline into unreadable pale-on-same-hue. Measured live on infiniteoutdoordesignsllc... - the
+   "A CREW THAT SHOWS UP..." H1 read dark-green-on-green. Same defect and same fix as the CTA band
+   (2026-08-12): the readability scrim must be NEUTRAL BLACK, brand-hue-independent, so white hero
+   text is legible over ANY photo and ANY brand. Vertical mid-stop strengthened (.18 -> .34) so
+   centered mid-hero copy clears too. */
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:0;
-background:linear-gradient(90deg,rgba(0,0,0,.80) 0%,rgba(0,0,0,.64) 34%,rgba(0,0,0,.42) 58%,rgba(0,0,0,.22) 78%,rgba(0,0,0,.12) 100%),linear-gradient(180deg,rgba(0,0,0,.50) 0%,rgba(0,0,0,.34) 42%,rgba(0,0,0,.48) 100%)}
+background:
+  linear-gradient(90deg,rgba(0,0,0,.80) 0%,rgba(0,0,0,.64) 34%,rgba(0,0,0,.42) 58%,rgba(0,0,0,.22) 78%,rgba(0,0,0,.12) 100%),
+  linear-gradient(180deg,rgba(0,0,0,.50) 0%,rgba(0,0,0,.34) 42%,rgba(0,0,0,.48) 100%)}
 .hero-inner{position:relative;z-index:2;padding:clamp(28px,4.5vw,56px) 0 clamp(18px,3vw,36px);background:transparent}
 /*
   HERO GAP FIX2 (2026-08-12): prior 104px sticky clearance WAS the ~275px empty driveway slab.
@@ -154,6 +202,10 @@ background:linear-gradient(90deg,rgba(0,0,0,.80) 0%,rgba(0,0,0,.64) 34%,rgba(0,0
 */
 .hero h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
 @media(min-width:901px){.hero h1{max-width:16ch}}
+/* HERO EM -> WHITE 2026-09-18: was color:#BBD5F1 (a pale brand tint) which washed out the
+   emphasised half of the headline over a photo - measured unreadable on infiniteoutdoordesigns...
+   The hero headline must be high-contrast white end to end; the accent lives in the dark header/
+   bands, not in pale text over a busy photo. */
 .hero h1 em{font-style:normal;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.4)}
 .lede{font-size:19px;color:var(--ink);max-width:56ch;margin:0 0 20px}
 .hero .lede,.pband .lede{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
@@ -447,6 +499,28 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .reveal,.reveal-d1,.reveal-d2,.reveal-d3{opacity:1;transform:none;transition:none}
 .hero .eyebrow,.hero .lede,.hero .cta{animation:none}
 }
+
+/* SCROLL-REVEAL MOTION v2 (additive, opt-in) - 2026-09-17, DEMO-MOTION-GENERATOR task, same
+   pattern proven in the Copper Brokers rebuild (05 - Clients & Leads/COREY-REBUILD-PROGRESS.md).
+   The .reveal rule directly above stays opacity:1/transform:none FOREVER - that is what the
+   generator's REVEAL_INVISIBLE_WITHOUT_JS gate checks for (a dot-reveal-brace-opacity-colon-zero
+   pattern - deliberately not spelled out contiguously in this comment, see the MEGA-1940 note a
+   few lines up for why a comment describing the banned shape can itself trip the same gate) and
+   it is what guarantees a page with JS off, blocked, or throwing mid-script renders fully
+   visible with zero animation, identical to today. The hiding state below lives on a DIFFERENT
+   class, .reveal-armed, which CSS never applies on its own - only site.js adds it, immediately
+   before it starts observing a section, and only when it has already confirmed animation is safe
+   to run (see site.js). That ordering is what makes this additive rather than a reopening of the
+   exact 2026-08-15 "About/explore paint empty" regression: the hide is opt-in by the script that
+   also guarantees the reveal, never a CSS default waiting on a script that might not run. */
+.reveal-armed{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;will-change:opacity,transform}
+.reveal-armed.reveal-in{opacity:1;transform:none}
+.reveal-armed.reveal-d1{transition-delay:.08s}
+.reveal-armed.reveal-d2{transition-delay:.16s}
+.reveal-armed.reveal-d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){
+.reveal-armed{opacity:1;transform:none;transition:none}
+}
 /* CTA-BELOW-GAP FIX 2026-08-12: first section after urgency strip must paint on fold.
    Root cause of ~180px empty white: the old .reveal rule at rest-opacity zero, plus IO
    rootMargin -8%, so explore sat invisible between strip and sticky. Not sticky clearance, not
@@ -490,9 +564,35 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    darker one for no reason; added text-shadow so white type stays legible on the now-visible photo,
    the same technique the hero already uses (0 1px 2px + 0 3px 14px black). Root fix, every future
    generate - never a one-off edit on a single slug. */
+/* WCAG AA CONTRAST FIX 2026-09-17 (measured via check-text-on-photo-contrast.js, the same script
+   DEMO_PIXEL_GATE runs): the 2026-09-12 pass above lightened the scrim to let more photo through and
+   in doing so broke readability again, in the opposite direction. Reproduced on
+   infiniteoutdoordesignsllclakehopatcongsussexnj: the darkest region behind the heading composited
+   to only 3.78:1 against white heading text (need 4.5:1) even though the PAGE MEAN was 7.12:1 - a
+   bright patch (gray steps / sky) sat directly behind the letters while the mean was dragged down by
+   darker foliage elsewhere in the same photo. Averages do not protect a reader; the worst patch does.
+
+   THE SCRIM COLOUR WAS ALSO NOT SAFE TO KEEP AS 16,47,81. PRIMARY is derived at HSL l=0.19
+   (TEMPLATE.json), which is dark for most hues but NOT for yellow/gold/lime brand colours - a dark
+   yellow at that same lightness still reads as high WCAG relative luminance (green channel carries
+   71.52% of the perceptual weight), so a brand-tinted scrim strong enough for a green or blue brand
+   can still fail a yellow one. Measured: at alpha .70 a green-brand scrim over a pure-white photo
+   region reaches 4.65:1, but the equivalent yellow-hue scrim at l=.19 only reaches 3.33:1 at the SAME
+   alpha - so tying the scrim to the business's own brand colour is not a fix that holds for every
+   business, only for the ones whose brand happens to sit on the dark side of that weighting.
+
+   FIX: scrim colour is now a fixed neutral (0,0,0) - hue-independent, so it darkens identically no
+   matter what the business's brand colour is - at alpha .68 (top, behind the heading) / .58 (bottom,
+   behind the buttons, which already carry their own background). Solved against the worst case a
+   photo can present (a pure-white region, WCAG relative luminance 1.0): alpha .58 composited over
+   white yields 4.76:1, alpha .68 yields 7.86:1 - both already clear 4.5:1 with margin, and the
+   checker takes whichever gradient stop it parses first, so both stops had to individually pass, not
+   just the darker one. On the actual failing photo (worst raw pixel ~210,205,200) this scrim measures
+   8.30:1. Never revert to a brand-tinted scrim for this rule without re-proving every hue extreme,
+   not just the demo in front of you - that is exactly how it broke the second time. */
 .ctaband{position:relative;overflow:hidden;background:var(--blue-dk);color:#fff;text-align:center;min-height:0}
 .ctaband img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.9;z-index:0}
-.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(16,47,81,.50) 0%,rgba(16,47,81,.32) 100%)}
+.ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
 .ctaband p{color:#CCE0F5;max-width:54ch;margin:0 auto 18px;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
@@ -519,12 +619,17 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .pband>.wrap{position:relative;z-index:2}
 /* home-reviews is already a dark band with white heading/lede (see .home-reviews rules below) -
    the photo only needs the same scrim ctaband uses, nothing else changes. */
+/* WCAG AA CONTRAST FIX 2026-09-17: same defect and same fix as .ctaband above (see that comment for
+   the full measurement) - a brand-tinted scrim at this alpha is not provably safe against a bright
+   photo region for every brand hue. Neutral black, same alpha as ctaband. */
 .home-reviews.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.58) 100%)}
 /* #quote is normally a light mist section (dark kicker/h2/lede on near-white) - pband darkens it,
    so those three go light-on-dark exactly like ctaband's own heading and body. The lead form
    stays its own solid white card (already box-shadowed) regardless of what sits behind it.
    Kept slightly darker than ctaband/home-reviews (the form card needs a clean edge to sit on and
    this band carries less type overall), but nowhere near the old .92/.84 near-opaque fill. */
+/* WCAG AA CONTRAST FIX 2026-09-17: same defect and same fix as .ctaband above - neutral black,
+   slightly stronger than ctaband/home-reviews per the original design intent kept above. */
 #quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.70) 0%,rgba(0,0,0,.60) 100%)}
 #quote.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
 #quote.pband .kicker{color:#D5E5F7;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4)}
@@ -539,6 +644,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .logo{background:transparent;padding:0;border-radius:0;object-fit:contain}
 .hero{isolation:isolate}
 .hero img.bg{z-index:0}
+.hero video.bg{z-index:0}
 .hero::after{z-index:1}
 .hero-inner{z-index:2}
 .hero h1,.hero .lede,.hero .eyebrow,.hero .cta,.hero .trust{position:relative;z-index:3}
