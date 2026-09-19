@@ -2,19 +2,19 @@
 html{scroll-padding-bottom:112px}
 :root{
   /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
-  --blue:#3A4E5F;
-  --blue-dk:#25313C;
-  --blue-lt:#516D85;
-  --red:#3A4E5F;
+  --blue:#0C4A8D;
+  --blue-dk:#082F59;
+  --blue-lt:#1168C5;
+  --red:#0C4A8D;
   --paper:#FFFFFF;
-  --mist:#F4F6F8;
-  --ink:#11171D;
-  --muted:#56748E;
-  --brand:#25313C;
-  --line:#D3DCE4;
+  --mist:#EFF6FE;
+  --ink:#04162A;
+  --muted:#126FD4;
+  --brand:#082F59;
+  --line:#BDDAF9;
   --radius:16px;
-  --shadow:0 12px 30px -16px rgba(37,49,60,.32);
-  --shadow-lg:0 30px 60px -28px rgba(37,49,60,.45);
+  --shadow:0 12px 30px -16px rgba(8,47,89,.32);
+  --shadow-lg:0 30px 60px -28px rgba(8,47,89,.45);
   --wrap:1120px;
 }
 *{box-sizing:border-box}
@@ -39,7 +39,7 @@ h3{font:700 19px/1.25 Inter,sans-serif}
 :root{--phone-strip-h:48px}
 .phone-strip{position:sticky;top:0;z-index:80;background:var(--ink);color:#fff;text-align:center;font:700 22px/1.1 Barlow Condensed,Inter,sans-serif;letter-spacing:.04em}
 .phone-strip a{display:block;padding:13px 16px;color:#fff;text-decoration:none}
-.phone-strip a:hover{background:#1B242C}
+.phone-strip a:hover{background:#062342}
 @media(min-width:900px){.phone-strip a{padding:12px 16px;font-size:20px}}
 /*
   NO-PHONE VARIANT (2026-08-31). The strip can now carry an email address instead of a phone
@@ -75,10 +75,10 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
 .pill{font:600 13px/1 Inter,sans-serif;color:var(--blue-dk);background:var(--mist);border:1px solid var(--line);padding:9px 13px;border-radius:999px;white-space:nowrap}
 .btn{display:inline-flex;align-items:center;gap:9px;font:700 15px/1 Inter,sans-serif;padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-2px)}
-.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(58,78,95,.7)}
-.btn-red:hover{background:#1B242C}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(58,78,95,.7)}
-.btn-blue:hover{background:#283643}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 10px 24px -12px rgba(12,74,141,.7)}
+.btn-red:hover{background:#062342}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 10px 24px -12px rgba(12,74,141,.7)}
+.btn-blue:hover{background:#083463}
 .btn-ghost{border-color:var(--line);color:var(--blue-dk);background:#fff}
 .btn-ghost:hover{border-color:var(--blue)}
 
@@ -132,7 +132,7 @@ header.site{position:sticky;top:var(--phone-strip-h);z-index:60;background:var(-
   Readable order: quiet-zone photo -> full-bleed soft gradient (no edge/radius, covers ALL text)
   -> type treatment last (shadow / weight / colour). Never a visible box again.
 */
-/* HERO SCRIM NEUTRALISED 2026-09-18: was rgba(44,60,73,...) - a BRAND-HUED overlay, which on a
+/* HERO SCRIM NEUTRALISED 2026-09-18: was rgba(9,57,108,...) - a BRAND-HUED overlay, which on a
    green (or any strongly-hued) brand tinted the whole hero its own colour and washed the white
    headline into unreadable pale-on-same-hue. Measured live on infiniteoutdoordesignsllc... - the
    "A CREW THAT SHOWS UP..." H1 read dark-green-on-green. Same defect and same fix as the CTA band
@@ -192,7 +192,7 @@ background:
   .leadwrap .shot img{object-position:center 12%;aspect-ratio:3/4;max-height:min(70vh,520px)}
   .mist.reveal{padding-bottom:24px}
 }
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#CCD7E0;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#B4D5F9;border:0;padding:0;border-radius:0;margin-bottom:14px;background:transparent}
 .hero .eyebrow{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
 /*
   max-width MOVED to a desktop-only query on 2026-08-15. It sat here, unqualified and LATER in the
@@ -202,7 +202,7 @@ background:
 */
 .hero h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
 @media(min-width:901px){.hero h1{max-width:16ch}}
-/* HERO EM -> WHITE 2026-09-18: was color:#CCD7E0 (a pale brand tint) which washed out the
+/* HERO EM -> WHITE 2026-09-18: was color:#B4D5F9 (a pale brand tint) which washed out the
    emphasised half of the headline over a photo - measured unreadable on infiniteoutdoordesigns...
    The hero headline must be high-contrast white end to end; the accent lives in the dark header/
    bands, not in pale text over a busy photo. */
@@ -211,7 +211,7 @@ background:
 .hero .lede,.pband .lede{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 12px rgba(0,0,0,.45)}
 .cta{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:18px}
 .trust{display:flex;gap:9px;flex-wrap:wrap}
-.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#DFE6EC;background:transparent;border:0;padding:0;border-radius:0}
+.tchip{display:inline-flex;align-items:center;gap:8px;font:600 13.5px/1 Inter,sans-serif;color:#D0E5FB;background:transparent;border:0;padding:0;border-radius:0}
 .hero .tchip{text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4);padding:4px 0}
 .tchip svg{flex:0 0 auto}
 
@@ -230,7 +230,7 @@ section.mist{background:var(--mist)}
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:19px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:29px 25px;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
 .card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:var(--brand)}
-.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(58,78,95,.8)}
+.icn{width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-lt) 100%);display:grid;place-items:center;margin-bottom:17px;box-shadow:0 8px 18px -10px rgba(12,74,141,.8)}
 .icn svg{stroke:#fff}
 /* Explore cards use real photographs, never person/asterisk/camera glyphs. */
 .card-shot{margin:-29px -25px 17px;border-radius:var(--radius) var(--radius) 0 0;overflow:hidden;aspect-ratio:16/10;background:var(--blue-dk)}
@@ -280,9 +280,9 @@ section.mist{background:var(--mist)}
 .hrow:last-child{border-bottom:0}
 .hrow b{color:var(--blue-dk)}
 .hrow span{color:var(--muted)}
-.afterhours{background:var(--blue-dk);color:#DFE6EC;border-radius:var(--radius);padding:29px 26px}
+.afterhours{background:var(--blue-dk);color:#D0E5FB;border-radius:var(--radius);padding:29px 26px}
 .afterhours h3{color:#fff}
-.afterhours p{margin:0 0 20px;font-size:15.5px;color:#BFCDD9}
+.afterhours p{margin:0 0 20px;font-size:15.5px;color:#A1CAF7}
 
 /* area */
 .areas{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
@@ -319,7 +319,7 @@ textarea{min-height:112px;resize:vertical}
 .hint{font-size:13.5px;color:var(--muted);margin:10px 0 0}
 .formnote{font-size:13.5px;color:var(--muted);margin-top:16px}
 
-footer{background:var(--blue-dk);color:#BFCDD9;padding:56px 0 30px;font-size:15px}
+footer{background:var(--blue-dk);color:#A1CAF7;padding:56px 0 30px;font-size:15px}
 footer a{color:#fff}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:34px;margin-bottom:38px}
 footer h3.fh{font:700 13px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-lt);margin:0 0 15px}
@@ -335,7 +335,7 @@ footer li{margin-bottom:10px}
    *{box-sizing:border-box} above makes min-height include the padding); inline-flex+align-items
    keeps the text vertically centered inside that taller box instead of shifting up. */
 footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0}
-.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#56748E}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:13.5px;color:#126FD4}
 
 /* Three-line menu. Luke asked for this by name on 2026-08-02: "Like you click
    three line and then you can choose between like About us, services offered,
@@ -384,11 +384,11 @@ footer li a{display:inline-flex;align-items:center;min-height:44px;padding:4px 0
 .mobile-callbar .mcb-rule{height:1px;width:100%;background:rgba(255,255,255,.28);flex:none;margin:0;border:0}
 .mobile-callbar .mcb-ask{
   display:block;width:100%;border:0;margin:0;cursor:pointer;
-  background:#25313C;color:#DFE6EC;
+  background:#082F59;color:#D0E5FB;
   font:600 13.5px/1 Inter,sans-serif;letter-spacing:.02em;
   padding:14px 10px;text-align:center;min-height:44px
 }
-.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#2C3C49;color:#fff;outline:none}
+.mobile-callbar .mcb-ask:hover,.mobile-callbar .mcb-ask:focus-visible{background:#09396C;color:#fff;outline:none}
 .sa-launch,.sa-peek{display:none!important;visibility:hidden!important;pointer-events:none!important}
 /* Chat sheet sits ABOVE the sticky bar; bar stays the thumb latch. */
 html{scrollbar-gutter:stable}
@@ -572,7 +572,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    bright patch (gray steps / sky) sat directly behind the letters while the mean was dragged down by
    darker foliage elsewhere in the same photo. Averages do not protect a reader; the worst patch does.
 
-   THE SCRIM COLOUR WAS ALSO NOT SAFE TO KEEP AS 37,49,60. PRIMARY is derived at HSL l=0.19
+   THE SCRIM COLOUR WAS ALSO NOT SAFE TO KEEP AS 8,47,89. PRIMARY is derived at HSL l=0.19
    (TEMPLATE.json), which is dark for most hues but NOT for yellow/gold/lime brand colours - a dark
    yellow at that same lightness still reads as high WCAG relative luminance (green channel carries
    71.52% of the perceptual weight), so a brand-tinted scrim strong enough for a green or blue brand
@@ -595,8 +595,8 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 .ctaband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.68) 0%,rgba(0,0,0,.58) 100%)}
 .ctaband .inner{position:relative;z-index:2;padding:clamp(36px,5vw,56px) 0}
 .ctaband h2{color:#fff;margin-bottom:.35em;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
-.ctaband p{color:#D9E1E8;max-width:54ch;margin:0 auto 18px;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
-.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#56748E;margin-top:14px;margin-bottom:0}
+.ctaband p{color:#C7DFFA;max-width:54ch;margin:0 auto 18px;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 10px rgba(0,0,0,.45)}
+.photonote{font:500 12.5px/1.5 Inter,sans-serif;color:#126FD4;margin-top:14px;margin-bottom:0}
 
 /*
   PHOTO BANDS (MEGA-1852, 2026-08-15) - the ctaband treatment above, generalised onto the two other
@@ -632,7 +632,7 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
    slightly stronger than ctaband/home-reviews per the original design intent kept above. */
 #quote.pband::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.70) 0%,rgba(0,0,0,.60) 100%)}
 #quote.pband h2{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.8),0 3px 14px rgba(0,0,0,.5)}
-#quote.pband .kicker{color:#DFE6EC;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4)}
+#quote.pband .kicker{color:#D0E5FB;text-shadow:0 1px 2px rgba(0,0,0,.75),0 2px 8px rgba(0,0,0,.4)}
 /* Inner-page photo lead (services / reviews) - real photo, not a color slab */
 .page-photo{margin:0 0 28px}
 .page-photo .shot{max-width:920px;margin:0 auto}
@@ -705,36 +705,36 @@ text-shadow:0 1px 2px rgba(0,0,0,.55);max-width:36ch}
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /*
   HEADER = THE LOGO'S OWN PLATE COLOUR, NOT THE BRAND PRIMARY (Jacob CLEAR 2026-08-15,
-  HydroClean polish). #2B3A47 comes from keyout-logo-flat-bg.ps1 sampling the logo's own
+  HydroClean polish). #FFFFFF comes from keyout-logo-flat-bg.ps1 sampling the logo's own
   canvas (see headerTokensFromBg in generate-from-blank-mold.js); most logos are drawn on a flat
   white card, so most demos will now show a white/near-white header instead of the old flat
-  #25313C. That is deliberate - it is what makes the (correctly keyed) logo look like it has
+  #082F59. That is deliberate - it is what makes the (correctly keyed) logo look like it has
   no plate at all, because the plate colour and the header colour are now the same colour.
 */
-header.site{background:#2B3A47!important;border-bottom-color:rgba(255,255,255,.12)}
+header.site{background:#FFFFFF!important;border-bottom-color:rgba(255,255,255,.12)}
 header.site .logo{background:transparent;box-shadow:none;padding:0;border-radius:0}
 /* header.site .bizmeta .btn{color:#fff} REMOVED 2026-08-15: dated from when the header was
    always a dark/navy plate. HEADER_BG is now the logo's own sampled colour (often white -
    see the block above), so this blanket override was a white-on-white landmine for any future
    .bizmeta button that is not .btn-red (.btn-red already sets its own white-on-red via its own
    rule and does not need this). Each button's own class owns its own contrast now. */
-header.site .navtoggle{background:#fff!important;color:#25313C!important;border-color:rgba(255,255,255,.45)}
-header.site .navtoggle svg{stroke:#25313C!important}
-header.site .navtoggle .navtoggle-text{color:#25313C!important}
+header.site .navtoggle{background:#fff!important;color:#082F59!important;border-color:rgba(255,255,255,.45)}
+header.site .navtoggle svg{stroke:#082F59!important}
+header.site .navtoggle .navtoggle-text{color:#082F59!important}
 .hero h1 em{color:#fff!important}
-.btn-red:hover{background:#1B242C}
-.btn-blue:hover{background:#283643}
+.btn-red:hover{background:#062342}
+.btn-blue:hover{background:#083463}
 
 /* Vendly blank mold. Palette tokens are derived from the business brand colour. */
 /* Menu chip stays a white pill + dark ink either way (self-contained contrast) - only its
-   BORDER needs rgba(255,255,255,.45) instead of the old fixed pale #DCE3EA, which nearly
+   BORDER needs rgba(16,23,36,.22) instead of the old fixed pale #CBE2FB, which nearly
    vanished once the header itself could also be white/pale (see HEADER_BG above). */
-header.site .navtoggle{background:#FFFFFF !important;color:#11171D !important;border:1px solid rgba(255,255,255,.45) !important}
-header.site .navtoggle svg{stroke:#11171D !important}
-header.site .navtoggle .navtoggle-text{color:#11171D !important;opacity:1 !important}
-header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(17,23,29,.18)}
-header.site .sitemenu a{color:#11171D !important;background:#FFFFFF !important;opacity:1 !important}
-header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#E9EDF2 !important;color:#25313C !important}
+header.site .navtoggle{background:#FFFFFF !important;color:#04162A !important;border:1px solid rgba(16,23,36,.22) !important}
+header.site .navtoggle svg{stroke:#04162A !important}
+header.site .navtoggle .navtoggle-text{color:#04162A !important;opacity:1 !important}
+header.site .sitemenu{background:#FFFFFF !important;z-index:90;box-shadow:0 8px 24px rgba(4,22,42,.18)}
+header.site .sitemenu a{color:#04162A !important;background:#FFFFFF !important;opacity:1 !important}
+header.site .sitemenu a:hover,header.site .sitemenu a:focus{background:#DEEDFC !important;color:#082F59 !important}
 /* Hero copy sits on photograph + full-bleed gradient only. Bubble/panel KILLED 2026-08-12. */
 .hero-inner{isolation:isolate;background:transparent}
 .hero-inner > .eyebrow,.hero-inner > h1,.hero-inner > .lede,.hero-inner > .cta,
@@ -842,8 +842,8 @@ footer{position:relative;z-index:1}
 .contact-shot:empty{display:none}
 /* Trade-visible hero that needs a darker type band (not a darker photo) */
 .hero.hero-darken-band::after{background:
-  linear-gradient(90deg,rgba(44,60,73,.90) 0%,rgba(44,60,73,.78) 36%,rgba(44,60,73,.48) 58%,rgba(44,60,73,.18) 78%,rgba(44,60,73,0) 100%),
-  linear-gradient(180deg,rgba(44,60,73,.58) 0%,rgba(44,60,73,.28) 42%,rgba(44,60,73,.52) 100%)}
+  linear-gradient(90deg,rgba(9,57,108,.90) 0%,rgba(9,57,108,.78) 36%,rgba(9,57,108,.48) 58%,rgba(9,57,108,.18) 78%,rgba(9,57,108,0) 100%),
+  linear-gradient(180deg,rgba(9,57,108,.58) 0%,rgba(9,57,108,.28) 42%,rgba(9,57,108,.52) 100%)}
 
 /* Contact address maps link (pattern A) - visible focus, full address is the link text */
 a.addr-link{color:inherit;text-decoration:underline;text-underline-offset:3px}

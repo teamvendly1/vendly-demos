@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css?v=harv20260907213148">
-<meta name="vendly-demo-build" content="blank-mold-20260912-hydroclean">
+<meta name="vendly-demo-build" content="blank-mold-20260919-hydroclean">
 <style id="v-lb-css">
 .v-lb-btn{display:block;padding:0;margin:0;border:0;background:transparent;cursor:zoom-in;
 width:100%;text-align:inherit;font:inherit;color:inherit;border-radius:inherit;overflow:hidden}
@@ -122,9 +122,10 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <span class="navtoggle-text">Menu</span>
     </span>
     <div class="bizmeta">
-      <a class="btn btn-red" href="tel:+19196394981">
+      <!-- DESKTOP-HEADER-CALL-COMPACT (2026-09-15): see index.html for the full note. -->
+      <a class="btn btn-red" href="tel:+19196394981" aria-label="Call On Tops Roofing at (919) 639-4981">
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
-        (919) 639-4981
+        Call
       </a>
     </div>
   </div>
@@ -151,7 +152,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
 
 <section class="reveal" aria-labelledby="h-svcpage-body">
   <div class="wrap svc-detail">
-    <h2 id="h-svcpage-body">Roof repair and leaks for Angier, NC, done by On Tops Roofing.</h2>
+    <h2 id="h-svcpage-body">How a roof repair and leaks job goes</h2>
     <p class="svc-body">Shingles, flashing and decking are traced back to the actual source of a leak and repaired there, not just patched where the water shows up inside.</p>
       <figure class="svc-shot">
         <img src="../assets/photo-service-2.jpg?v=harv20260907213148" alt="Close up on the roof deck with underlayment and flashing being fitted at a valley." loading="lazy">
@@ -179,9 +180,8 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
       <div>
         <p class="kicker">Get a quote</p>
         <h2 id="h-contact-quote">Tell us what the roof is doing</h2>
-        <div class="badges" style="margin-top:26px">
-          <span class="badge" style="text-transform:none"><a href="tel:+19196394981" style="color:inherit;text-decoration:none">(919) 639-4981</a></span>
-        </div>
+        <!-- bare phone badge retired 2026-09-12 (seat-jared-sweep): this page already prints the
+             number in the labelled Phone block directly above, plus the strip, header and sticky bar. -->
       </div>
       <form id="leadform" method="post" action="https://vendly-jarvis.vercel.app/api/leads" data-lead-endpoint="https://vendly-jarvis.vercel.app/api/leads" data-thanks="Thanks, that came through. This is a preview site, so it reached Vendly, who built the preview, rather than On Tops Roofing. If it is urgent, please call them directly." novalidate>
         <div class="field">
@@ -197,7 +197,7 @@ color:#f5f5f0;font:500 14px/1.4 Inter,system-ui,sans-serif;background:linear-gra
           <input id="f-email" name="email" type="email" autocomplete="email">
         </div>
         <div class="field">
-          <label for="f-type">What do you need</label>
+          <label for="f-type">What do you need?</label>
           <select id="f-type" name="type">
             <option>Roof replacement</option>
             <option>Roof repair and leaks</option>
